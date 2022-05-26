@@ -4,6 +4,8 @@
 // Assuming that customer ID is extracted somehow from the request, implement the following function.
 // Perform rate limiting logic for provided customer ID. Return true if the request is allowed, and false if it is not.
 
+// LeetCode - https://leetcode.com/problems/design-hit-counter/
+
 import java.util.*;
 
 public class RequestsRateLimit {
