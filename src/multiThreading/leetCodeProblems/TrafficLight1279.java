@@ -29,6 +29,7 @@ public class TrafficLight1279 {
 
             crossCar.run();
         }
+
     }
 
     class Signal {
@@ -36,4 +37,5 @@ public class TrafficLight1279 {
         // 1 corresponds to the Road A
         int currentGreenRoad = 1;
     }
+
 }
