@@ -1,5 +1,8 @@
 package multiThreading.leetCodeProblems;
 
+/**
+ * LeetCode - https://leetcode.com/problems/traffic-light-controlled-intersection/submissions/
+ */
 public class TrafficLight1279 {
 
     // Signal maintains the road which is green at the moment
