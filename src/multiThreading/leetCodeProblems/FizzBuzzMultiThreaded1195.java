@@ -6,7 +6,7 @@ package multiThreading.leetCodeProblems;
 
 import java.util.concurrent.Semaphore;
 
-class FizzBuzz {
+class FizzBuzzMultiThreaded1195 {
 
     private int n;
     private int current;
@@ -20,7 +20,7 @@ class FizzBuzz {
     private Semaphore numSem = new Semaphore(1);
 
 
-    public FizzBuzz(int n) {
+    public FizzBuzzMultiThreaded1195(int n) {
         this.n = n;
         this.current = 1;
         // figure out how many total times each thing should print
