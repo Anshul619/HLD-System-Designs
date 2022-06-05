@@ -54,6 +54,9 @@
 ## MongoDB
 - To store unstrcutred data ( that doesn’t have a fixed schema and changed overtime ) like review, ratings, notifications and surveys related data.
 
+# Other important points
+- All these services would have to be scaled horrizontally
+
 # Other Notes
 
 Tasks
