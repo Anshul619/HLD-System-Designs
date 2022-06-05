@@ -24,21 +24,22 @@
 ## Kafka Streams
 - Kafka is used to achieve high throughput in streaming events between read and write repositories of order management, sending real time or batch events to recommendation engine and publishing approved catalog and products(menu and foods) to elastic index.
 
-## AmazonMQ
+## ActiveMQ or AmazonMQ
 - Since we have order work flow, we should use a MQ to update the transaction status quickly ( like order status etc. ).
 - To achieve transactions between distributed microservices and avoid data/transaction loss.
 - MQ vs Kafka - https://www.interviewbit.com/blog/rabbitmq-vs-kafka/#difference-between-rabbitmq-and-kafka
 
 ## Apache Spark/Beam
-- *Open Question - Why is it so?*
--  For running map-reduce jobs to select driver for efficient delivery and generate recommendations based on continuous streams of user activity, order activity, pricing and promo changes, etc.
+- This is the computing engine.
+- For running map-reduce jobs to select driver for efficient delivery and generate recommendations based on continuous streams of user activity, order activity, pricing and promo changes, etc.
+- It will select the distributed data, create a map and then reduce the values to give proper data.
 
 ## Redis Cache
 - To store the location and segments information of all the restaurants in the city. As this is very frequently read and non-changing data, we had chose to setup this in Redis to avoid multiple DB calls. For cart also, we will be storing all the selected items in Redis.
 
 ## Elastic Search
-- *OpenQuestion - Is ES in-memory? Is ES latency better than Redis?*
-- Elastic indexes are used to store all published catalogs and products along with recommended items and placed order queries to achieve the targeted SLA for search and browse requests. Elastic search will also be used for indexing customer calls records and metadata for the transcription.
+- Elastic indexes are used to store all published catalogs and products along with recommended items and placed order queries *to achieve the targeted SLA for search and browse requests*. Elastic search will also be used for indexing customer calls records and metadata for the transcription.
+- Elastic Search has caching option enabled. Hence Redis is not needed b/w App and ElasicSearch.
 
 ## PostgresDB
 - To Store all transactional data ( like orders, shipment, restaurants, delivery, shipment etc.), we have chosen PostgresDB to support native cloud approach but other options like public cloud managed storages can also be considered to achieve high scalability.
@@ -48,11 +49,21 @@
 - To decrease the load and send only relevant data to UI, we have used GraphQL query language to query selective data from the tree instead of complete data. Same goes for recommendation engine as well.
 - To achieve the targeted SLA, we have designed the system to support different repository for read and write, and have made the write repository more aligned towards domain data and read repository towards data that will be requested from UI. To do so, we have bundled all the product and order related data into their respective documents inside the elastic indexes.
 
+## AeroSpike DB
+- In-memory and NoSQL databases are a database combination that is being employed by a growing number of applications. Aerospike features a Hybrid Memory Architecture, which makes it unique. When using a persistent SSD, the index is kept in memory while the data is stored on the disc and then retrieved from the drive, as opposed to when using a non-persistent SSD.
+- To support high throughput in read and write in real time.
+
+## NodeJS
+- Light weight API(s) exposed to perform quick and efficient IO operations and support scalable traffic with controlled memory. Java Reactive/Spring Webflux can also be considered as alternate
+
 ## Web Sockets
 - Will be used to deliver the continuous update of driver location who had picked the delivery, to the customer.
 
 ## MongoDB
 - To store unstrcutred data ( that doesn’t have a fixed schema and changed overtime ) like review, ratings, notifications and surveys related data.
+
+# Other important points
+- All these services would have to be scaled horrizontally
 
 # Other Notes
 
@@ -129,5 +140,6 @@ Monitorings
 
 
 Reference 
-- https://media-exp1.licdn.com/dms/image/C4D12AQGixkOy-waRJg/article-inline_image-shrink_1000_1488/0/1631931391844?e=1659571200&v=beta&t=E9PS2F7y5iWACrHU1K7T9h_sUUCxJduClOik8QjedX8
 - https://www.linkedin.com/pulse/system-design-food-delivery-app-zomatoswiggy-saral-saxena/
+- https://media-exp1.licdn.com/dms/image/C4D12AQGixkOy-waRJg/article-inline_image-shrink_1000_1488/0/1631931391844?e=1659571200&v=beta&t=E9PS2F7y5iWACrHU1K7T9h_sUUCxJduClOik8QjedX8
+
