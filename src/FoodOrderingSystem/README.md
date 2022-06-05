@@ -49,6 +49,10 @@
 - To decrease the load and send only relevant data to UI, we have used GraphQL query language to query selective data from the tree instead of complete data. Same goes for recommendation engine as well.
 - To achieve the targeted SLA, we have designed the system to support different repository for read and write, and have made the write repository more aligned towards domain data and read repository towards data that will be requested from UI. To do so, we have bundled all the product and order related data into their respective documents inside the elastic indexes.
 
+## AeroSpike DB
+- In-memory and NoSQL databases are a database combination that is being employed by a growing number of applications. Aerospike features a Hybrid Memory Architecture, which makes it unique. When using a persistent SSD, the index is kept in memory while the data is stored on the disc and then retrieved from the drive, as opposed to when using a non-persistent SSD.
+- To support high throughput in read and write in real time.
+
 ## NodeJS
 - Light weight API(s) exposed to perform quick and efficient IO operations and support scalable traffic with controlled memory. Java Reactive/Spring Webflux can also be considered as alternate
 
