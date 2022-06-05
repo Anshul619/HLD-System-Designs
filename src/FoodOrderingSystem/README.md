@@ -1,16 +1,14 @@
+# Introduction
+- HLD System Design Interview question asked in Blackbuck, 2ndJune2022
 
-Reference - https://media-exp1.licdn.com/dms/image/C4D12AQGixkOy-waRJg/article-inline_image-shrink_1000_1488/0/1631931391844?e=1659571200&v=beta&t=E9PS2F7y5iWACrHU1K7T9h_sUUCxJduClOik8QjedX8
-
-Asked in Blackbuck, 2ndJune2022
-
+# Basic Requirements
 - Food ordering systems
-- Name, PhoneNumber
-- Search for the restaurants
-- Keywords
-- Restaurant
+- User would have name & phoneNumber
+- User can search for the restaurants
+- User can search for the keywords and get list of restaurants
 - Place a order
 - Track the order
-- Delivery the order
+- Delivery of the order
 - Order fulfilment
 - User can track the status
 - User can track the live location of the delivery
@@ -18,6 +16,19 @@ Asked in Blackbuck, 2ndJune2022
 - Accounting of the restaurant 
     - User would pay Zomato
     - Zomato would pay to delivery, restaurant
+
+# Design decisions and tech choices
+
+## Cloud platform - AWS
+
+## Kafka Streams
+- Kafka is used to achieve high throughput in streaming events between read and write repositories of order management, sending real time or batch events to recommendation engine and publishing approved catalog and products(menu and foods) to elastic index.
+
+## RabbitMQ
+- *Open Question - RabbitMQ vs Kafka* - https://stackoverflow.com/questions/42151544/when-to-use-rabbitmq-over-kafka
+- To achieve transactions between distributed microservices and avoid data/transaction loss.
+
+# Other Notes
 
 Tasks
 - Step1
@@ -90,3 +101,7 @@ Monitorings
     - Payment Gateway
 - All those microservices up and running
 
+
+Reference 
+- https://media-exp1.licdn.com/dms/image/C4D12AQGixkOy-waRJg/article-inline_image-shrink_1000_1488/0/1631931391844?e=1659571200&v=beta&t=E9PS2F7y5iWACrHU1K7T9h_sUUCxJduClOik8QjedX8
+- https://www.linkedin.com/pulse/system-design-food-delivery-app-zomatoswiggy-saral-saxena/
