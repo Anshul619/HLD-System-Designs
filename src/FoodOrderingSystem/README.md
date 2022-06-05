@@ -24,10 +24,10 @@
 ## Kafka Streams
 - Kafka is used to achieve high throughput in streaming events between read and write repositories of order management, sending real time or batch events to recommendation engine and publishing approved catalog and products(menu and foods) to elastic index.
 
-## RabbitMQ
-- *Open Question - RabbitMQ vs Kafka* - https://stackoverflow.com/questions/42151544/when-to-use-rabbitmq-over-kafka,
-- Another Link - https://www.cloudamqp.com/blog/why-use-rabbitmq-in-a-microservice-architecture.html
+## AmazonMQ
+- Since we have order work flow, we should use a MQ to update the transaction status quickly ( like order status etc. ).
 - To achieve transactions between distributed microservices and avoid data/transaction loss.
+- MQ vs Kafka - https://www.interviewbit.com/blog/rabbitmq-vs-kafka/#difference-between-rabbitmq-and-kafka
 
 ## Apache Spark/Beam
 - *Open Question - Why is it so?*
