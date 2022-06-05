@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-06-05T08:12:53.639Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36" etag="zpUsf4pPn9fQc3Sb0ynv" version="19.0.0" type="github">
+<mxfile host="app.diagrams.net" modified="2022-06-05T09:09:52.078Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36" etag="u2Mqvna09o9zcRQqPhhd" version="19.0.0" type="github">
   <diagram id="wnJz8kT59XUkkc-jXowL" name="Page-1">
     <mxGraphModel dx="1636" dy="1523" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -58,17 +58,14 @@
             <mxPoint x="-60" y="229" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="sgyjoKGfFcgplxuwhduN-18" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="sgyjoKGfFcgplxuwhduN-21" edge="1">
+        <mxCell id="sgyjoKGfFcgplxuwhduN-18" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.067;entryY=0.623;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="sgyjoKGfFcgplxuwhduN-21" edge="1" target="sgyjoKGfFcgplxuwhduN-19">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="60" y="229" as="sourcePoint" />
             <mxPoint x="193.1699308747227" y="309.8219119121875" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="sgyjoKGfFcgplxuwhduN-19" value="" style="outlineConnect=0;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;shape=mxgraph.aws3.elasticsearch_service;fillColor=#F58534;gradientColor=none;" parent="1" vertex="1">
-          <mxGeometry x="200" y="300" width="67.5" height="81" as="geometry" />
-        </mxCell>
-        <mxCell id="sgyjoKGfFcgplxuwhduN-20" value="Search Indexes in ElasicSearch" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
-          <mxGeometry x="272" y="360" width="60" height="30" as="geometry" />
+        <mxCell id="sgyjoKGfFcgplxuwhduN-19" value="&lt;span style=&quot;&quot;&gt;Search Indexes in ElasicSearch&lt;/span&gt;" style="outlineConnect=0;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;shape=mxgraph.aws3.elasticsearch_service;fillColor=#F58534;gradientColor=none;" parent="1" vertex="1">
+          <mxGeometry x="202.5" y="344.5" width="67.5" height="81" as="geometry" />
         </mxCell>
         <mxCell id="sgyjoKGfFcgplxuwhduN-21" value="" style="sketch=0;points=[[0,0,0],[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0,0],[0,1,0],[0.25,1,0],[0.5,1,0],[0.75,1,0],[1,1,0],[0,0.25,0],[0,0.5,0],[0,0.75,0],[1,0.25,0],[1,0.5,0],[1,0.75,0]];outlineConnect=0;fontColor=#232F3E;gradientColor=#945DF2;gradientDirection=north;fillColor=#5A30B5;strokeColor=#ffffff;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.managed_streaming_for_kafka;" parent="1" vertex="1">
           <mxGeometry x="-36" y="190" width="78" height="78" as="geometry" />
@@ -433,6 +430,24 @@
         </mxCell>
         <mxCell id="q8Zk_S6X2Y8jFyI1biVI-61" value="Get map location and route information" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="1710" y="490" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="q8Zk_S6X2Y8jFyI1biVI-62" value="GraphQL" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1017" y="270" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="q8Zk_S6X2Y8jFyI1biVI-63" value="GraphQL" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="240" y="288" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="q8Zk_S6X2Y8jFyI1biVI-64" value="User App" style="ellipse;shape=cloud;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1250" y="304" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="q8Zk_S6X2Y8jFyI1biVI-66" value="" style="endArrow=classic;html=1;edgeStyle=orthogonalEdgeStyle;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="q8Zk_S6X2Y8jFyI1biVI-64" target="q8Zk_S6X2Y8jFyI1biVI-35">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1380" y="393" as="sourcePoint" />
+            <mxPoint x="1410" y="480" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="q8Zk_S6X2Y8jFyI1biVI-67" value="Get Driver Location - Web Sockets" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1320" y="405" width="100" height="50" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
