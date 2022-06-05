@@ -37,8 +37,8 @@
 - To store the location and segments information of all the restaurants in the city. As this is very frequently read and non-changing data, we had chose to setup this in Redis to avoid multiple DB calls. For cart also, we will be storing all the selected items in Redis.
 
 ## Elastic Search
-- *OpenQuestion - Is ES in-memory? Is ES latency better than Redis?*
 - Elastic indexes are used to store all published catalogs and products along with recommended items and placed order queries to achieve the targeted SLA for search and browse requests. Elastic search will also be used for indexing customer calls records and metadata for the transcription.
+- Elastic Search has caching option enabled. Hence Redis is not needed b/w App and ElasicSearch.
 
 ## PostgresDB
 - To Store all transactional data ( like orders, shipment, restaurants, delivery, shipment etc.), we have chosen PostgresDB to support native cloud approach but other options like public cloud managed storages can also be considered to achieve high scalability.
