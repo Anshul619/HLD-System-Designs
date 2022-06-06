@@ -1,6 +1,6 @@
 # Requirements
-- Lets consider an API - http://some/api/<filename>/<multibytedata>
-- API Inputs - <filename>, <multibytedata>.
+- Lets consider an API - http://some/api/$filename/$multibytedata
+- API Inputs - $filename, $multibytedata.
 - Check if a file is present
 - If not create a file
 - Append data to file
