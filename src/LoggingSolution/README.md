@@ -7,7 +7,7 @@
 - Users can call this api concurrently
 - Ensure consistency ( file must be saved, before return true to the API )
 
-# Two Possible Options
+# Possible Options
 - Live Aggregation
 - Delayed Aggregation
 - ELK Stack
