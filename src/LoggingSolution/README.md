@@ -6,7 +6,11 @@
 - Append data to file
 - Users can call this api concurrently
 - Ensure consistency ( file must be saved, before return true to the API )
-  
+
+# Two Possible Options
+- Live Aggregation
+- Delayed Aggregation
+
 # Important Points
 - Store recently opened files in the local app server cache
   
