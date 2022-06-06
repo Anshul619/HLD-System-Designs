@@ -10,6 +10,7 @@
 # Two Possible Options
 - Live Aggregation
 - Delayed Aggregation
+- ELK Stack
 
 # Important Points
 - Store recently opened files in the local app server cache
