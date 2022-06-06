@@ -10,7 +10,7 @@
 # Possible Options
 - Live Aggregation
 - Delayed Aggregation
-- ELK Stack
+- FileBeat & ELK Stack - https://www.elastic.co/guide/en/beats/filebeat/current/how-filebeat-works.html
 
 # Important Points
 - Store recently opened files in the local app server cache
