@@ -1,1 +1,97 @@
-<mxfile host="app.diagrams.net" modified="2022-06-06T06:17:33.092Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36" etag="LktlO8utOni2OVWB-kdJ" version="19.0.0" type="github"><diagram id="qoRb17ye9yIBJ7H9PCK_" name="Page-1">7Vpbc5s4FP41fowHJHPxY2wn2UzbmUyzO9t96sggsKYYeYR8SX/9HoGwQaIpzeA4m+2LB32Ig3TOd27CIzxfH+4E2aw+8ZhmI+TEhxFejBAKQh9+FfBUAROEKyAVLK4g9wQ8su9Ug45GtyymRWui5DyTbNMGI57nNJItjAjB9+1pCc/ab92QlFrAY0QyG/2bxXJVoaHnnPA/KEtX9ZtdR99Zk3qyBooVifm+AeGbEZ4LzmV1tT7MaaZ0V+uleu72B3ePCxM0l30euPu0iz6hu627S+/dD4jGf26vrrSUHcm2esPzjCmB1ZLlU60HkAUqh8EM9rFRYJTxLYie7VdM0scNiRS4BxIAtpLrDEYuXCYsy+Y846KUg2NCwyRSYqTg32jjjh+FdJnAHb0kKiQ9/HCv7lGDwDzK11SKJ5iiH5honWvSuR6qxvuTCad6yqphvUBjRJMmPQo+6RUutGp/Qc3YUrOt4Dy+VnwtNUuKgkVtPQq+zWOqXuLAiB6Y/KKux2Hg6fE/5bgeLQ6NqYunxuCBCgbbokJj1VJobDmCoW1YLt+KiP6cTpKIlMrn9OF0m69hH6/DPjUmaEYk27XX22U0/YYHzhSla3bgsE2Po9xaRLVP/VTTpQxBxyhV8ywMQP8tUZUqLFEli44bfzmxfItYH6hS5B3NqQAd8RwGj1TsGNjNpNyJUu4v+3GSJCjq9OPYX/qeP4wfQ1QYB15LxxjZvuy6HWSZnMuZw/M5c9OV3ecdGdz1Ub+QC7niKc9JdnNCh3Rrv6dbu8Fbcmvsv9CtJ44hKDQEndmpp2+CYB2Z4lVJh52erPMvSTqTK8hFZgroTTtkiJq+Lu3qINrg3V+fPxaALGYWAWNSrI784luZsRySQF2DO202koyluaIqkECRaZaRJc0eeMHKDNW4obIFg+r7ozFhyaXk68aEay1S8k2jJl0fUtWFjPd0yaAjKMZrnqc8XsIUuBGryraRqRa3i5vFzQBpyg8My9UBoycHB09RrmeZ8jONmQDr/NdLAs+sufzgwvWAaxdhIEcF5TS/yun+6ht9shQNCpBtbba1lvOcGirWkOVMpkusWRyXwbjLfO3EMESJZkatDu77HebAZzNHYIexAnas1ulnSulLAVepunoQVFfK5QSonYvfke45a7u+URpN3ctGOtSRtPLtb3sPZO+J470xe9snVpYF/6fdV+NU8RKFsJGXX9x94cAMMf54Cuki8PVvW+yZi2I0GZxvOazoS3PQOLhTwxPlylHNuQEZ1bu1qurIi1EKtYNPx/Fa797KZCd63d4K2QU5yBHNmvy9FojmsUzXYfyrFojILhAt7ZNiU+X7hB2UMpp22CiSlIvyZiNv0aVxti4/K80Snkv9TctFJ3zB1iksPWNL1Sh83wqqthQTSZakoFCS3M5JtKJfVc9WjItdOlDrZHwWwU5HqT7pcGd0LksMf9J1DK7jieM3A+yVM3Zw+JMYW47O+X3E65vLL3uSaqZg0xf7hl3PDy8adrHdHVw/3ANwBx3AnthteWe93+oIXljHWyGiGdiNGp/sCzwmG/Y11au0jloW0+tg4nbU/joFDBAskIfHRvqdODXSoGHg12CTiFN8ppCB7fq/jJIAlTFz1Hla+W6SqYeNfsy/cDLFaPAQ/tb7sd5B3L3sV24ziL/4c5hxwofdVw7i9r8n7hMY51wtMlHkUSLUsbYOBe/V+33ctgRy7LPvsINRyDf7ph7+r/qT45+TKlue/uGFb/4F</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2022-06-06T07:31:53.606Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36" etag="ayRtxBUwjZVlVEsvchQj" version="19.0.0" type="github">
+  <diagram id="qoRb17ye9yIBJ7H9PCK_" name="Page-1">
+    <mxGraphModel dx="786" dy="423" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="GMvcM2Gu1vgI1K2edTu--1" value="Client" style="ellipse;shape=cloud;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
+          <mxGeometry x="40" y="152" width="90" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="GMvcM2Gu1vgI1K2edTu--3" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.875;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="GMvcM2Gu1vgI1K2edTu--1" target="GMvcM2Gu1vgI1K2edTu--30" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="380" y="250" as="sourcePoint" />
+            <mxPoint x="210" y="187.5" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="GMvcM2Gu1vgI1K2edTu--6" value="Key Generation Service" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" parent="1" vertex="1">
+          <mxGeometry x="236.75" y="322" width="110" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="GMvcM2Gu1vgI1K2edTu--8" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;edgeStyle=orthogonalEdgeStyle;" parent="1" source="GMvcM2Gu1vgI1K2edTu--6" target="GMvcM2Gu1vgI1K2edTu--17" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="380" y="360" as="sourcePoint" />
+            <mxPoint x="400" y="380" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="GMvcM2Gu1vgI1K2edTu--9" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;edgeStyle=orthogonalEdgeStyle;" parent="1" source="GMvcM2Gu1vgI1K2edTu--30" target="GMvcM2Gu1vgI1K2edTu--6" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="400" y="212.5" as="sourcePoint" />
+            <mxPoint x="420" y="290" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="GMvcM2Gu1vgI1K2edTu--10" value="URLs DB" style="dashed=0;outlineConnect=0;html=1;align=center;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;shape=mxgraph.webicons.mongodb;gradientColor=#DFDEDE" parent="1" vertex="1">
+          <mxGeometry x="670" y="280" width="50" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="GMvcM2Gu1vgI1K2edTu--15" value="Redirection Service" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" parent="1" vertex="1">
+          <mxGeometry x="510" y="167" width="110" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="GMvcM2Gu1vgI1K2edTu--16" value="/assign-new-key" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="220" y="280" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="GMvcM2Gu1vgI1K2edTu--17" value="Used &lt;br&gt;PreGenerated Keys" style="dashed=0;outlineConnect=0;html=1;align=center;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;shape=mxgraph.webicons.mongodb;gradientColor=#DFDEDE" parent="1" vertex="1">
+          <mxGeometry x="160" y="450" width="50" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="GMvcM2Gu1vgI1K2edTu--20" value="Unused &lt;br&gt;PreGenerated Keys" style="dashed=0;outlineConnect=0;html=1;align=center;labelPosition=center;verticalLabelPosition=bottom;verticalAlign=top;shape=mxgraph.webicons.mongodb;gradientColor=#DFDEDE" parent="1" vertex="1">
+          <mxGeometry x="410" y="450" width="50" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="GMvcM2Gu1vgI1K2edTu--21" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;edgeStyle=orthogonalEdgeStyle;" parent="1" source="GMvcM2Gu1vgI1K2edTu--6" target="GMvcM2Gu1vgI1K2edTu--20" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="410" y="360" as="sourcePoint" />
+            <mxPoint x="370" y="396.9230769230769" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="GMvcM2Gu1vgI1K2edTu--24" value="" style="endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="GMvcM2Gu1vgI1K2edTu--30" target="GMvcM2Gu1vgI1K2edTu--15" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="425" y="187.5" as="sourcePoint" />
+            <mxPoint x="410" y="320" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="GMvcM2Gu1vgI1K2edTu--25" value="/redirection" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="380" y="152" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="GMvcM2Gu1vgI1K2edTu--27" value="" style="aspect=fixed;html=1;points=[];align=center;image;fontSize=12;image=img/lib/azure2/databases/Cache_Redis.svg;" parent="1" vertex="1">
+          <mxGeometry x="540" y="300" width="64" height="52" as="geometry" />
+        </mxCell>
+        <mxCell id="GMvcM2Gu1vgI1K2edTu--29" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.406;entryY=-0.038;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="GMvcM2Gu1vgI1K2edTu--15" target="GMvcM2Gu1vgI1K2edTu--27" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="370" y="330" as="sourcePoint" />
+            <mxPoint x="568" y="320" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="GMvcM2Gu1vgI1K2edTu--30" value="API Gateway" style="outlineConnect=0;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;shape=mxgraph.aws3.api_gateway;fillColor=#D9A741;gradientColor=none;" parent="1" vertex="1">
+          <mxGeometry x="253.5" y="140.5" width="76.5" height="93" as="geometry" />
+        </mxCell>
+        <mxCell id="GMvcM2Gu1vgI1K2edTu--31" value="Redis Cache DB" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="535" y="362" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="GMvcM2Gu1vgI1K2edTu--32" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;edgeStyle=orthogonalEdgeStyle;" parent="1" source="GMvcM2Gu1vgI1K2edTu--15" target="GMvcM2Gu1vgI1K2edTu--10" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="370" y="360" as="sourcePoint" />
+            <mxPoint x="420" y="310" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="GMvcM2Gu1vgI1K2edTu--33" value="If not found in Redis" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="630" y="207" width="80" height="26.5" as="geometry" />
+        </mxCell>
+        <mxCell id="2JLTb6VHwSf0zQQlDSvx-4" value="&lt;span style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;Some Unused Keys&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;in Redis DB&lt;/span&gt;" style="outlineConnect=0;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;shape=mxgraph.aws3.redis;fillColor=#2E73B8;gradientColor=none;" vertex="1" parent="1">
+          <mxGeometry x="410" y="320" width="40" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="2JLTb6VHwSf0zQQlDSvx-5" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="GMvcM2Gu1vgI1K2edTu--6" target="2JLTb6VHwSf0zQQlDSvx-4">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="380" y="360" as="sourcePoint" />
+            <mxPoint x="430" y="310" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
