@@ -13,3 +13,6 @@
 - How to archive the logs once aggregation is done? ( Assume logs are coming all 24 hrs, every day. Huge data. )
 - How to maintain partition in the Kafka? When there is too much data coming?
 - What should be the topics in the Kafka?
+  
+# Other Points
+- Interview Question@FluxOn
