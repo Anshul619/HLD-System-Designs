@@ -58,4 +58,5 @@
 - This approach solves our problem of popular users but shifts it to popular videos.
 
 ## References
-- Link - https://www.educative.io/courses/grokking-the-system-design-interview/xV26VjZ7yMl
+- https://www.educative.io/courses/grokking-the-system-design-interview/xV26VjZ7yMl
+- https://www.youtube.com/watch?v=x9Hrn0oNmJM
