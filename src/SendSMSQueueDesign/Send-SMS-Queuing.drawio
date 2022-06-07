@@ -1,0 +1,157 @@
+<mxfile host="app.diagrams.net" modified="2022-06-07T18:54:16.871Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.5005.61 Safari/537.36" etag="6XvE7eF1is4wr6X3vAx_" version="19.0.2" type="github">
+  <diagram id="hSpV1MgLl40jB2ClibWX" name="Page-1">
+    <mxGraphModel dx="786" dy="423" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="RC4oqEELy3gwianFtOuK-1" value="User" style="ellipse;shape=cloud;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" parent="1" vertex="1">
+          <mxGeometry x="332" y="20" width="110" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="RC4oqEELy3gwianFtOuK-3" value="App Server1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" parent="1" vertex="1">
+          <mxGeometry x="194" y="230" width="90" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="RC4oqEELy3gwianFtOuK-4" value="AWS Auto-Scaling" style="rhombus;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
+          <mxGeometry x="352.5" y="110" width="85" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="RC4oqEELy3gwianFtOuK-5" value="" style="endArrow=classic;html=1;rounded=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;edgeStyle=orthogonalEdgeStyle;" parent="1" source="RC4oqEELy3gwianFtOuK-4" target="RC4oqEELy3gwianFtOuK-3" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="380" y="240" as="sourcePoint" />
+            <mxPoint x="430" y="190" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="RC4oqEELy3gwianFtOuK-6" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.55;exitY=0.95;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="RC4oqEELy3gwianFtOuK-1" target="RC4oqEELy3gwianFtOuK-4" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="380" y="240" as="sourcePoint" />
+            <mxPoint x="430" y="190" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="RC4oqEELy3gwianFtOuK-7" value="App Server2" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" parent="1" vertex="1">
+          <mxGeometry x="349" y="230" width="90" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="RC4oqEELy3gwianFtOuK-8" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="1" source="RC4oqEELy3gwianFtOuK-4" target="RC4oqEELy3gwianFtOuK-7" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="380" y="240" as="sourcePoint" />
+            <mxPoint x="430" y="190" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="RC4oqEELy3gwianFtOuK-9" value="App Server3" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" parent="1" vertex="1">
+          <mxGeometry x="530" y="230" width="90" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="RC4oqEELy3gwianFtOuK-10" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;edgeStyle=orthogonalEdgeStyle;" parent="1" source="RC4oqEELy3gwianFtOuK-4" target="RC4oqEELy3gwianFtOuK-9" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="380" y="240" as="sourcePoint" />
+            <mxPoint x="430" y="190" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="RC4oqEELy3gwianFtOuK-12" value="Airtel SMS service" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="155" y="960" width="80" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="RC4oqEELy3gwianFtOuK-13" value="Twillo Airtel Service" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="348" y="960" width="80" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="RC4oqEELy3gwianFtOuK-14" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.297;entryY=0.011;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="RC4oqEELy3gwianFtOuK-3" target="RC4oqEELy3gwianFtOuK-19" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="380" y="450" as="sourcePoint" />
+            <mxPoint x="364" y="365" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="RC4oqEELy3gwianFtOuK-15" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="1" source="RC4oqEELy3gwianFtOuK-7" target="RC4oqEELy3gwianFtOuK-19" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="249" y="280" as="sourcePoint" />
+            <mxPoint x="394" y="400" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="RC4oqEELy3gwianFtOuK-16" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.75;entryY=0;entryDx=0;entryDy=0;" parent="1" source="RC4oqEELy3gwianFtOuK-9" target="RC4oqEELy3gwianFtOuK-19" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="404" y="280" as="sourcePoint" />
+            <mxPoint x="424" y="365" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="RC4oqEELy3gwianFtOuK-19" value="" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="309" y="405" width="165" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="RC4oqEELy3gwianFtOuK-20" value="" style="sketch=0;points=[[0,0,0],[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0,0],[0,1,0],[0.25,1,0],[0.5,1,0],[0.75,1,0],[1,1,0],[0,0.25,0],[0,0.5,0],[0,0.75,0],[1,0.25,0],[1,0.5,0],[1,0.75,0]];outlineConnect=0;fontColor=#232F3E;gradientColor=#FF4F8B;gradientDirection=north;fillColor=#BC1356;strokeColor=#ffffff;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.mq;" parent="1" vertex="1">
+          <mxGeometry x="332" y="425" width="50" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="RC4oqEELy3gwianFtOuK-21" value="" style="sketch=0;points=[[0,0,0],[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0,0],[0,1,0],[0.25,1,0],[0.5,1,0],[0.75,1,0],[1,1,0],[0,0.25,0],[0,0.5,0],[0,0.75,0],[1,0.25,0],[1,0.5,0],[1,0.75,0]];outlineConnect=0;fontColor=#232F3E;gradientColor=#FF4F8B;gradientDirection=north;fillColor=#BC1356;strokeColor=#ffffff;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.mq;" parent="1" vertex="1">
+          <mxGeometry x="400" y="425" width="50" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="RC4oqEELy3gwianFtOuK-24" value="Queue Cluster with Auto-Scaling" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="470" y="380" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="RC4oqEELy3gwianFtOuK-25" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" parent="1" source="RC4oqEELy3gwianFtOuK-27" target="RC4oqEELy3gwianFtOuK-19" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="300" y="570" as="sourcePoint" />
+            <mxPoint x="430" y="560" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="RC4oqEELy3gwianFtOuK-27" value="Send SMS Service" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" parent="1" vertex="1">
+          <mxGeometry x="321.37" y="570" width="135.25" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="RC4oqEELy3gwianFtOuK-28" value="Airtel SMS Service" style="sketch=0;points=[[0,0,0],[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0,0],[0,1,0],[0.25,1,0],[0.5,1,0],[0.75,1,0],[1,1,0],[0,0.25,0],[0,0.5,0],[0,0.75,0],[1,0.25,0],[1,0.5,0],[1,0.75,0]];outlineConnect=0;fontColor=#232F3E;gradientColor=#FF4F8B;gradientDirection=north;fillColor=#BC1356;strokeColor=#ffffff;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.mq;" parent="1" vertex="1">
+          <mxGeometry x="170" y="790" width="50" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="RC4oqEELy3gwianFtOuK-29" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.028;exitY=0.422;exitDx=0;exitDy=0;edgeStyle=orthogonalEdgeStyle;exitPerimeter=0;" parent="1" source="RC4oqEELy3gwianFtOuK-33" target="RC4oqEELy3gwianFtOuK-28" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="380" y="730" as="sourcePoint" />
+            <mxPoint x="430" y="680" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="RC4oqEELy3gwianFtOuK-30" value="Twillo SMS Service" style="sketch=0;points=[[0,0,0],[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0,0],[0,1,0],[0.25,1,0],[0.5,1,0],[0.75,1,0],[1,1,0],[0,0.25,0],[0,0.5,0],[0,0.75,0],[1,0.25,0],[1,0.5,0],[1,0.75,0]];outlineConnect=0;fontColor=#232F3E;gradientColor=#FF4F8B;gradientDirection=north;fillColor=#BC1356;strokeColor=#ffffff;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.mq;" parent="1" vertex="1">
+          <mxGeometry x="363" y="790" width="50" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="RC4oqEELy3gwianFtOuK-33" value="Decide SMS Provider ( based on Queues Size )" style="rhombus;whiteSpace=wrap;html=1;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;" parent="1" vertex="1">
+          <mxGeometry x="340.24" y="660" width="97.5" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="RC4oqEELy3gwianFtOuK-34" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="RC4oqEELy3gwianFtOuK-27" target="RC4oqEELy3gwianFtOuK-33" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="380" y="800" as="sourcePoint" />
+            <mxPoint x="430" y="750" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="RC4oqEELy3gwianFtOuK-35" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="1" source="RC4oqEELy3gwianFtOuK-33" target="RC4oqEELy3gwianFtOuK-30" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="380" y="750" as="sourcePoint" />
+            <mxPoint x="430" y="700" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="RC4oqEELy3gwianFtOuK-36" value="Amazon SMS Service" style="sketch=0;points=[[0,0,0],[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0,0],[0,1,0],[0.25,1,0],[0.5,1,0],[0.75,1,0],[1,1,0],[0,0.25,0],[0,0.5,0],[0,0.75,0],[1,0.25,0],[1,0.5,0],[1,0.75,0]];outlineConnect=0;fontColor=#232F3E;gradientColor=#FF4F8B;gradientDirection=north;fillColor=#BC1356;strokeColor=#ffffff;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.mq;" parent="1" vertex="1">
+          <mxGeometry x="530" y="790" width="50" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="RC4oqEELy3gwianFtOuK-37" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;edgeStyle=orthogonalEdgeStyle;" parent="1" source="RC4oqEELy3gwianFtOuK-33" target="RC4oqEELy3gwianFtOuK-36" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="380" y="870" as="sourcePoint" />
+            <mxPoint x="430" y="820" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="RC4oqEELy3gwianFtOuK-38" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="RC4oqEELy3gwianFtOuK-12" target="RC4oqEELy3gwianFtOuK-28" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="380" y="910" as="sourcePoint" />
+            <mxPoint x="430" y="860" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="RC4oqEELy3gwianFtOuK-40" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="RC4oqEELy3gwianFtOuK-13" target="RC4oqEELy3gwianFtOuK-30" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="380" y="910" as="sourcePoint" />
+            <mxPoint x="430" y="860" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="RC4oqEELy3gwianFtOuK-41" value="Amazon SMS Service" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="515" y="960" width="80" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="RC4oqEELy3gwianFtOuK-42" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="RC4oqEELy3gwianFtOuK-41" target="RC4oqEELy3gwianFtOuK-36" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="550" y="950" as="sourcePoint" />
+            <mxPoint x="430" y="860" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="hsocOPPATjzEpRB6f7Aq-1" value="Listening" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="194" y="860" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="hsocOPPATjzEpRB6f7Aq-2" value="Listening" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="390" y="495" width="60" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
