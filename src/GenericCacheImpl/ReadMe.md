@@ -1,8 +1,10 @@
 
 # Generic Cache Module:
 
-## Problem statement : You are required to implement an in-memory cache module/library which you will embed in your application to improve the application performance, by holding heavily accessed (read/written) application specific objects. To start, we would begin with following minimal requirements.
+## Problem statement
+- You are required to implement an in-memory cache module/library which you will embed in your application to improve the application performance, by holding heavily accessed (read/written) application specific objects. 
 - Asked in Gojek interview, 8-June-2022
+- To start, we would begin with following minimal requirements.
 
 ## Functional Requirements:
 
