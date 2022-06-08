@@ -1,5 +1,6 @@
 package CacheImpl;
 
+import java.util.Collection;
 import java.util.HashMap;
 import java.util.LinkedList;
 import java.util.Queue;
@@ -17,7 +18,7 @@ public class CacheObjImpl {
             return this.name;
         }
     }
-    private HashMap<Object, Object> cacheMap;
+    private HashMap<Collection, Collection> cacheMap;
 
     private Queue<Object> cacheQueue;
 
