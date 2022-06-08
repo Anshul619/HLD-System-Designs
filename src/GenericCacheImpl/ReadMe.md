@@ -28,3 +28,5 @@
 
 ## References
 - Asked in Gojek interview, 8-June-2022
+- LRU Cache - https://leetcode.com/problems/lru-cache/
+- LFU Cache - https://leetcode.com/problems/lfu-cache/
