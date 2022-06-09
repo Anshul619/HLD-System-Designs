@@ -1,7 +1,7 @@
-package MovieBooking;
+package MovieBookingLikeBookMyShow;
 
-import MovieBooking.domains.Seat;
-import MovieBooking.domains.Show;
+import MovieBookingLikeBookMyShow.domains.Seat;
+import MovieBookingLikeBookMyShow.domains.Show;
 
 import java.util.List;
 

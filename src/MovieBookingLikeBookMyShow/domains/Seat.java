@@ -1,4 +1,4 @@
-package MovieBooking.domains;
+package MovieBookingLikeBookMyShow.domains;
 
 public class Seat {
 
