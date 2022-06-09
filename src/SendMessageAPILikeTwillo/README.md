@@ -7,6 +7,7 @@
 - 1000 free messages
 - X amount per whatsapp
 - Y amount per sms
+- 1000 transactions per second
 
 # Tech Specs
 - Kafka can be used to store, process the messages
