@@ -1,4 +1,4 @@
-package CacheImpl;
+/*package CacheImpl;
 
 import org.junit.Test;
 
@@ -52,4 +52,4 @@ public class CacheImplTestCase {
         String item = cache.getItem("5");
         assertEquals(item, null);
     }
-}
+}*/

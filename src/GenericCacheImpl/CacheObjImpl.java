@@ -1,4 +1,4 @@
-package CacheImpl;
+package GenericCacheImpl;
 
 import java.util.Collection;
 import java.util.HashMap;
@@ -18,7 +18,7 @@ public class CacheObjImpl {
             return this.name;
         }
     }
-    private HashMap<Collection, Collection> cacheMap;
+    private HashMap<Object, Object> cacheMap;
 
     private Queue<Object> cacheQueue;
 

@@ -1,4 +1,4 @@
-package CacheImpl;
+package GenericCacheImpl;
 
 import java.util.HashMap;
 import java.util.LinkedList;
