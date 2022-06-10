@@ -8,4 +8,6 @@
 - If a second request is made before the first expires, the record count is incremented.
 - For each request made within the rate limit window, the record is incremented.
 - If the record count reaches the max limit before expiring, then a 429 error status is returned.
-- Reference - https://github.com/jwerre/rate-limit-redis
+
+## References
+- https://github.com/jwerre/rate-limit-redis

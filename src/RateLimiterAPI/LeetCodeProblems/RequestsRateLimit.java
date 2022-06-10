@@ -1,4 +1,4 @@
-// Imagine we are building an application that is used by many different customers. We want to avoid one customer being able to overload the system by sending too many requests, so we enforce a per-customer rate limit. The rate limit is defined as:
+package RateLimiterAPI.LeetCodeProblems;// Imagine we are building an application that is used by many different customers. We want to avoid one customer being able to overload the system by sending too many requests, so we enforce a per-customer rate limit. The rate limit is defined as:
 // “Each customer can make X requests per Y seconds”
 	    
 // Assuming that customer ID is extracted somehow from the request, implement the following function.
