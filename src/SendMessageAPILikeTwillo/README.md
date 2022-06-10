@@ -7,6 +7,7 @@
 - 1000 free messages
 - X amount per whatsapp
 - Y amount per sms
+- 1000 transactions limit per second per team
 
 # Tech Specs
 - Kafka can be used to store, process the messages
@@ -47,3 +48,6 @@
     - Timestamp
     - Message Type
     - Billing Amount
+    
+# References
+- https://www.youtube.com/watch?v=0q0UF6Nd7ro
