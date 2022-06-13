@@ -22,7 +22,7 @@
 9. We would love to see a complete running program; however, if you feel time is a constraint, you can choose to implement a subset of functionality (but technically functionally complete), which can be demonstrated at the end of the discussion.
 10. Needless to say, we highly appreciate a modular, extensible implementation supported with good quality test coverage.
 
-## Open Questions in Implementation:
+## To-Dos/Open Items in Implementation:
 - Generic object implementation in CacheObjImpl
 - Consider 5th point in the Cache Implementation & implement `changeEvictionPolicy()`
 
