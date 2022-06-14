@@ -13,7 +13,7 @@ Rate limiting refers to preventing the frequency of an operation from exceeding 
 - Rate limit can be implemented using Redis ( to solve inconsistency problem )
 - Redis would have count of requests
 
-- <img title="HLD - RateLimiter" alt="Alt text" src="HLD - RateLimiter.drawio.png">
+<img title="HLD - RateLimiter" alt="Alt text" src="HLD - RateLimiter.drawio.png">
 
 ## How would it work?
 - When a request is made, a new temporary record is stored in Redis. This record is defined by the IP address of the request and will expire.
