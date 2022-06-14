@@ -1,3 +1,5 @@
+package OtherLeetCodeProblems;
+
 import java.util.*;
 
 public class LRUCache146 {
@@ -73,7 +75,7 @@ public class LRUCache146 {
 
 		//System.out.println("Hello World!");
         
-		/*LRUCache146 lRUCache = new LRUCache146(2);
+		/*LeetCodeProblems.LRUCache146 lRUCache = new LeetCodeProblems.LRUCache146(2);
 		lRUCache.put(1, 1); // cache is {1=1}
 		lRUCache.put(2, 2); // cache is {1=1, 2=2}
 		lRUCache.get(1);    // return 1
@@ -93,7 +95,7 @@ public class LRUCache146 {
 		lRUCache.get(1);    // 2
 		lRUCache.get(2);    // 6
 		
-		/*LRUCache146 obj = new LRUCache146(2);
+		/*LeetCodeProblems.LRUCache146 obj = new LeetCodeProblems.LRUCache146(2);
         
         obj.put(1, 10);
         obj.put(2, 20);

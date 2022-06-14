@@ -3,7 +3,10 @@
 
 ## Introduction
 - Easy microservice would have separate code repo
-- Define contracts between microservices
+- Define contracts between microservices.
+- In a Microservice Architecture, each service is self-contained and implements a single business capability.
+- It is a popular way where we build web applications now, for those reasons we outlined above.
+- To recap, an architecture makes it easier and fastest way to build and work on individual parts of an application, and thus the application as a whole.
 
 ## Benefits of Microservices design
 
@@ -34,4 +37,5 @@
 - Condense business responsibility to a single place - Every microservice should have proper responsibility and single purpose. And it should correspond to the business use case. ( Less is more )
 
 ## References
+- https://www.geeksforgeeks.org/difference-between-microservice-and-api/
 - https://www.youtube.com/watch?v=rckfN7xFig0&list=PLMCXHnjXnTnvo6alSjVkgxV-VH6EPyvoX&index=34

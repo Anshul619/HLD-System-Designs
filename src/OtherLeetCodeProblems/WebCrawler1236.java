@@ -1,7 +1,4 @@
-import java.util.ArrayList;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Stack;
+package OtherLeetCodeProblems;
 
 /**
  * LeetCode - https://leetcode.com/problems/web-crawler/

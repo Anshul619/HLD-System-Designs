@@ -1,4 +1,4 @@
-/**
+package OtherLeetCodeProblems; /**
  * https://leetcode.com/problems/online-stock-span/submissions/
  *
  * More optimization possible - Instead of hashmap, we can use Queue with last 10 seconds messages only

@@ -1,3 +1,5 @@
+package OtherLeetCodeProblems;
+
 /**
  * https://www.baeldung.com/java-stack-heap
  * https://stackoverflow.com/questions/6569557/what-is-the-actual-memory-place-for-static-variables

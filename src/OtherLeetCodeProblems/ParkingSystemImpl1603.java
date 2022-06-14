@@ -1,3 +1,5 @@
+package OtherLeetCodeProblems;
+
 /**
  * https://leetcode.com/problems/design-parking-system/submissions/
  */
