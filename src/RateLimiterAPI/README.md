@@ -1,5 +1,5 @@
 
-# Rate limit implementation in API
+# Distributed Rate limiter implementation for an API
 - Rate limit can be implemented using Redis
 - Redis would have count of requests
 
