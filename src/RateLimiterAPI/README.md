@@ -11,3 +11,4 @@
 
 ## References
 - https://github.com/jwerre/rate-limit-redis
+- https://akshay-iyangar.github.io/system-design/grokking-system-design/system-design-problems/api-rate-limiter.html
