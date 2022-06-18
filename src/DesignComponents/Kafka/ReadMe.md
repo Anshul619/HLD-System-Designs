@@ -203,7 +203,10 @@ for(int i = 0; i < 100; i++) {
  Payload Size | Default 1MB limit                                                                   | No constraints                                                                                                                                                     |                                                                                             |
  
 # Kafka vs AmazonMQ
-- TBD
+Basis                                 | Kafka                                                                               | AmazonMQ                                                                                                                                                           |
+---------------------------------------|-------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+ Migration | Kafka is a distributed, partitioned, replicated commit log service. It provides the functionality of a messaging system, but with a unique design.                                                 | Amazon MQ is a managed message broker service for Apache ActiveMQ that makes it easy to set up and operate message brokers in the cloud.                                                                     |                                                                                             |
+ Message Transfer Model | Pull Based                                                                          | Push based                                                                                                                                                         |                                                                                             |
 
 # References
 - https://www.interviewbit.com/kafka-interview-questions/
