@@ -207,8 +207,11 @@ Basis                                 | Kafka                                   
 ---------------------------------------|-------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------|
  Migration | Kafka is a distributed, partitioned, replicated commit log service. It provides the functionality of a messaging system, but with a unique design.                                                 | Amazon MQ is a managed message broker service for Apache ActiveMQ that makes it easy to set up and operate message brokers in the cloud.                                                                     |                                                                                             |
 
+# Kafka vs Amazon SQS
+- <TBD> - https://stackoverflow.com/questions/58970006/are-sqs-and-kafka-same
 
 # References
 - https://www.interviewbit.com/kafka-interview-questions/
 - https://www.interviewbit.com/blog/rabbitmq-vs-kafka
+- https://blog.iron.io/amazon-sqs-vs-apache-kafka/
 - https://cloud.in28minutes.com/aws-certification-sqs-vs-sns-vs-amazon-mq
