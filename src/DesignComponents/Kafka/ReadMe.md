@@ -46,12 +46,12 @@
 ## Push Model/Message Queuing ( Point-To-Point, Request-Response technique)
 - Once the message is delivered to the consumer, it would be removed from Queue.
 - The push model's goal is to distribute messages individually and promptly, ensuring that work is parallelized equitably and messages are handled roughly in the order they came in the queue.
-- RabbitMQ supports Point-To-Point model.
+- RabbitMQ, [Amazon SNS ( Simple Notification Service )](https://aws.amazon.com/sns/) support Point-To-Point model.
 - Kafka doesn't support Point-To-Point model.
 
 ## Pull Model/Publisher-Subscriber Model
 - Unlike point-to-point texting, a message is only removed once it has been consumed by all category subscribers.
-- Kafka, ActiveMQ, AmazonMQ, RabbitMQ supports Publisher-Subscriber Model.
+- Kafka, ActiveMQ, AmazonMQ, RabbitMQ, [Amazon SQS ( Simple Queue Service )](https://aws.amazon.com/sqs/) supports Publisher-Subscriber Model.
 - This is completely asynchronous. You can't say for sure when this process will happen and in what order.
 
 # Major Components of Kafka
@@ -208,3 +208,4 @@ for(int i = 0; i < 100; i++) {
 # References
 - https://www.interviewbit.com/kafka-interview-questions/
 - https://www.interviewbit.com/blog/rabbitmq-vs-kafka
+- https://cloud.in28minutes.com/aws-certification-sqs-vs-sns-vs-amazon-mq

@@ -41,6 +41,9 @@ Properties | SQL enables ACID(atomicity, consistency, isolation, and durability)
 Best Features | Secure, Cross Platform Support, Free                                                                                                                                                     | High Performance, Flexible, Easy to use                                                                             |
 Built-in Single Machine Failure | Supported | Not-Supported                                                                                                       |
 
+# SQL - MySQL vs PostgreSQL
+- PostgreSQL is [twice](https://itnext.io/benchmark-databases-in-docker-mysql-postgresql-sql-server-7b129368eed7) as fast as MySQL
+
 # References
 - https://www.educative.io/courses/grokking-the-system-design-interview/YQlK1mDPgpK
 - https://www.interviewbit.com/blog/sql-vs-nosql/
