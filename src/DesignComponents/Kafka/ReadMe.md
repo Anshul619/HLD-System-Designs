@@ -175,7 +175,7 @@ for(int i = 0; i < 100; i++) {
 
 
 # Real world usages of Kafka
-`- **As a events/message broker** - Use Kafka when your application has a High throughput (**1 million messages/sec**), i.e. application has to process a large volume of messages, event driven services etc.
+- **As a events/message broker** - Use Kafka when your application has a High throughput (**1 million messages/sec**), i.e. application has to process a large volume of messages, event driven services etc.
 - **To monitor metrics, logs of the IT infrastructure** - Various systems in the IT infrastructure can push events/messages/logs in the Kafka. And logstash ( in ELK ) can act as a consumer to the Kafka.
 - **For Analytics** - If we want to build own google analytics ( to track app activities, events etc.), we can use Kafka as a broker. 
 - **Stream Processing** - Use Kafka when the event stream needs to process data in multi-stage pipelines, the pipelines can generate graphs of the real-time data flows, thus providing real-time monitoring of traffic in the pipelines. Example - Video streaming in YouTube etc.
