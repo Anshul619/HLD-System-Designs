@@ -67,6 +67,7 @@
 ## Partitioning
 - Partitioning allows Kafka producers to serialize, compress, and load balance data among brokers.
 - Topics can be parallelized via partitions, which split data into a single topic among numerous brokers.
+- [More partitions](https://www.confluent.io/blog/how-choose-number-topics-partitions-kafka-cluster/) lead to higher throughput.
 
 ## Consumer
 - A consumer can subscribe ( listen ) to the topics ( 1 or more ) and read data from those in the Kafka.
@@ -94,11 +95,12 @@
 - Producer sends schema id while pushing the data and consumer look for schema id to get schema.
 
 ## What is Partition Key in Kafka?
+
+<img title="Kafka-Partitioning-Layout" alt="Alt text" src="Kafka-Partitioning-Layout.drawio.png">
+
 - Partitioning is done using key in the record
 - If we want to sequence the records execution in Kafka, as per the records input time, we should push those in the same partition ( hence same key should be used for the records ).
 - If we push those in different partitions, then we can't guarantee of their execution sequence. 
-
-<img title="Kafka-Partitioning-Layout" alt="Alt text" src="Kafka-Partitioning-Layout.drawio.png">
 
 Example 
 - This is important because we may have to deliver records to customers in the same order that they were made. 
