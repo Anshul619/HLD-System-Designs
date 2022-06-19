@@ -187,6 +187,7 @@ for(int i = 0; i < 100; i++) {
 
 # Open Question
 - How many partitions/brokers would be needed in real world use case?
+- Reference - https://www.confluent.io/blog/how-choose-number-topics-partitions-kafka-cluster/
 
 # Kafka vs RabbitMQ
 
