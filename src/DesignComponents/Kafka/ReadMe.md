@@ -2,7 +2,7 @@
 
 # Introduction
 - Apache Kafka is an open-source distributed event streaming platform used by thousands of companies for high-performance data pipelines, streaming analytics, data integration, and mission-critical applications.
-- Kafka can process a large amount of data in a short amount of time (**1 millions/sec**)
+- Kafka can process a large amount of data in a short amount of time (**1 million messages/sec**)
 - It also has low latency, making it possible to process data in real-time.
 - Kafka is Publish Subscriber Model. And can be used for Event Driven Services.
 - Messages ( events ) in the Kafka are immutable and can't be changed once it's pushed.
@@ -14,8 +14,8 @@
 - A cluster of brokers is used to partition and streamline the data thereby, scaling up the storage capacity.
 
 ## Performance 
-- High Throughput ( 1 million messages/sec ).
-- Each Kafka broker can serve more than 1 million reads/writes per second and can hold TBs of data.
+- High Throughput ( **1 million messages/sec** ).
+- Each Kafka broker can serve more than **1 million reads/writes per second** and can hold TBs of data.
 - Default configured message size in Kafka is 1MB.
 
 ## High Volume 

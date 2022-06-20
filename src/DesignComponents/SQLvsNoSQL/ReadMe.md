@@ -15,13 +15,15 @@ Built-in Single Machine Failure | Supported                                     
 
 # SQL - Intro
 
+<img title="SQL - Different Types" alt="Alt text" src="SQL - Different Types.drawio.png">
+
 Relational databases store data in rows and columns.
 - Each row contains all the information about one entity and each column contains all the separate data points.
 - Some of the most popular relational databases are AWS RDS, Postgres, MySQL, Oracle, MS SQL Server, SQLite and MariaDB.
 
-<img title="SQL - Different Types" alt="Alt text" src="SQL - Different Types.drawio.png">
-
 # MySQL - Intro, Different NoSQL types
+
+<img title="NoSQL - Different DB types" alt="Alt text" src="NoSQL - Different DB types.drawio.png">
 
 ## Key-Value Stores 
 - Data is stored in an array of key-value pairs. 
@@ -41,11 +43,9 @@ Relational databases store data in rows and columns.
 - These databases are used to store data whose relations are best represented in a graph ( like parent-child relationship of aadhaar etc.)
 - Data is saved in graph structures with nodes (entities), properties (information about the entities), and lines (connections between the entities).
 
-<img title="NoSQL - Different DB types" alt="Alt text" src="NoSQL - Different DB types.drawio.png">
-
-
 # SQL - MySQL vs PostgreSQL
 - PostgreSQL is [twice](https://itnext.io/benchmark-databases-in-docker-mysql-postgresql-sql-server-7b129368eed7) as fast as MySQL
+- TBD
 
 # References
 - https://www.educative.io/courses/grokking-the-system-design-interview/YQlK1mDPgpK
