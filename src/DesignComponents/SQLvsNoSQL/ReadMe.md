@@ -21,7 +21,7 @@ Relational databases store data in rows and columns.
 - Each row contains all the information about one entity and each column contains all the separate data points.
 - Some of the most popular relational databases are AWS RDS, Postgres, MySQL, Oracle, MS SQL Server, SQLite and MariaDB.
 
-# MySQL - Intro, Different NoSQL types
+# NoSQL - Intro, Different NoSQL types
 
 <img title="NoSQL - Different DB types" alt="Alt text" src="NoSQL - Different DB types.drawio.png">
 
