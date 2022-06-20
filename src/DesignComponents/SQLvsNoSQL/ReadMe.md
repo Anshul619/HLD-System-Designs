@@ -1,4 +1,18 @@
 
+# NoSQL vs SQL
+
+Basis                                 | SQL                                                                                                                                                                                  | NoSQL                                                                                                |
+---------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------|
+Data Type | Normalized, Structured Data                                                                                                                                                          | Denormalized, Unstructured data                                                                      |
+Schema | Fixed Schema                                                                                                                                                                         | Dynamic Schema ( with hierarchical storage supported )                                               |                                                                                             |
+Ideal Use Cases | SQL is best suitable for complex queries, multi-row transactions, joins etc. Data is structured ( like e-commerce, financial applications etc.) and also when data reporting is needed. | NoSQL is best suited for unstructured data or documents ( or large volume of data ). Not ideal for complex queries. |                                                                                             |
+Write Performance | Okay<br/>- Every write is not just an append to a table but also an update to multiple index which might require locking and hence might interfere with other reads and other writes | Very Good<br/>- Writes are cheaper                                                                   |                                                                                             |
+Querying | Very Powerful                                                                                                                                                                        | Okay                                                                                                 |                                                                                             |
+Scalability | Vertically Scalable ( increase memory, CPU of machine ) or Master-Slave technique ( 1 write DB, multiple read DBs )                                                                  | Horrizontally Scalable ( through in-built data sharding technique )                                  |                                                                                             |
+Properties | SQL enables ACID(atomicity, consistency, isolation, and durability) properties.                                                                                                      | NonSQL follows CAP (consistency, availability, partition tolerance) properties.                      |                                                                                             |
+Best Features | Secure, Cross Platform Support, Free                                                                                                                                                 | High Performance, Flexible, Easy to use                                                              |
+Built-in Single Machine Failure | Supported                                                                                                                                                                            | Not-Supported                                                                                        |
+
 # SQL - Intro
 
 Relational databases store data in rows and columns.
@@ -24,22 +38,11 @@ Relational databases store data in rows and columns.
 - Like HBase
 
 ## Graph Databases 
-- These databases are used to store data whose relations are best represented in a graph. 
+- These databases are used to store data whose relations are best represented in a graph ( like parent-child relationship of aadhaar etc.)
 - Data is saved in graph structures with nodes (entities), properties (information about the entities), and lines (connections between the entities).
 
 <img title="NoSQL - Different DB types" alt="Alt text" src="NoSQL - Different DB types.drawio.png">
 
-# NoSQL vs SQL
-Basis                                 | SQL                                                                                                                                                                                      | NoSQL                                                                                                               |
----------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------|
-Write Performance | Not good<br/>- Every write is not just an append to a table but also an update to multiple index which might require locking and hence might interfere with other reads and other writes | Very Good<br/>- Writes are cheaper                                                                                  |                                                                                             |
-Querying | Very Powerful                                                                                                                                                                            | Okay                                                                                                                |                                                                                             |
-Scalability | Vertically Scalable ( increase memory, CPU of machine ) or Master-Slave technique ( 1 write DB, multiple read DBs )                                                                      | Horrizontally Scalable ( through in-built data sharding technique )                                                 |                                                                                             |
-Schema | Fixed Schema                                                                                                                                                                             | Dynamic Schema ( with hierarchical storage supported )                                                              |                                                                                             |
-Ideal Use Cases | SQL is best suitable for complex queries, multi-row transactions, joins etc. Data is structured ( like e-commerce, financial applications etc.) and also when data reporting is needed.  | NoSQL is best suited for unstructured data or documents ( or large volume of data ). Not ideal for complex queries. |                                                                                             |
-Properties | SQL enables ACID(atomicity, consistency, isolation, and durability) properties.                                                                                                          | NonSQL follows CAP (consistency, availability, partition tolerance) properties.                                     |                                                                                             |
-Best Features | Secure, Cross Platform Support, Free                                                                                                                                                     | High Performance, Flexible, Easy to use                                                                             |
-Built-in Single Machine Failure | Supported | Not-Supported                                                                                                       |
 
 # SQL - MySQL vs PostgreSQL
 - PostgreSQL is [twice](https://itnext.io/benchmark-databases-in-docker-mysql-postgresql-sql-server-7b129368eed7) as fast as MySQL
@@ -48,3 +51,5 @@ Built-in Single Machine Failure | Supported | Not-Supported                     
 - https://www.educative.io/courses/grokking-the-system-design-interview/YQlK1mDPgpK
 - https://www.interviewbit.com/blog/sql-vs-nosql/
 - https://aws.amazon.com/blogs/database/scaling-your-amazon-rds-instance-vertically-and-horizontally/
+- https://www.networkworld.com/article/2999856/10-use-cases-where-nosql-will-outperform-sql.html
+- https://softwareengineering.stackexchange.com/questions/175542/why-is-nosql-faster-than-sql
