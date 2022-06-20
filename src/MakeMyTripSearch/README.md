@@ -20,3 +20,7 @@
 - Search Interface 
   - searchbyDate
 - FlightSearch would implement Search Interface 
+
+# References
+- https://ankita4priya.medium.com/flight-booking-website-app-system-design-899c626a6ee6
+- https://www.nexsoftsys.com/articles/how-to-design-backend-system-of-an-online-hotel-booking-app-using-java.html
