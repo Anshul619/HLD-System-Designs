@@ -1,0 +1,22 @@
+Architecture
+- RateLimit
+    - 5000 SMS at a sec
+    - Store it in a shared file/database
+        - Checking and maximum numbers
+        - Echo of the second
+    - SMS Jobs -> How many SMS jobs are executing?
+        - 10000 SMS => SMS_Queue_Pending in ActiveMQ
+        - Observer of SMS_Queue_Pending -> When we pick a job from SMS_Queue_Pending, we check how many jobs are running in SMS_Queue_Running?
+            - Every 1 second or something as frequency
+            - (5000-100) because of distributed system
+        - 5000 Runnings => SMS_Queue_Running in ActiveMQ
+        - Check SMS jobs in the SMS_Queue_Running in ActiveMQ
+        - Redis
+            - SMS_Queue_Sent in last 1 second
+            - Last 20 seconds, count of messages sent
+            - Data Sharding -  10 Seconds => 10 Redis
+- Notification Sending System
+    - Multiple Channels - OTP, 
+    - Email - SMTP Server
+    - SMS - Another API
+    - Push Notification
