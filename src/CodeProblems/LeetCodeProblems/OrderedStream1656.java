@@ -1,4 +1,4 @@
-package OtherLeetCodeProblems; /**
+package CodeProblems.LeetCodeProblems; /**
  * LeetCode - https://leetcode.com/problems/design-an-ordered-stream/
  * TimeComplexity - O(n)
  * Space Complexity - O(n)

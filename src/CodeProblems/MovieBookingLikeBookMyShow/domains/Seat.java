@@ -1,4 +1,4 @@
-package MovieBookingLikeBookMyShow.domains;
+package CodeProblems.MovieBookingLikeBookMyShow.domains;
 
 public class Seat {
 

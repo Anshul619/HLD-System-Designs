@@ -1,6 +1,5 @@
-package GenericCacheImpl;
+package CodeProblems.GenericCacheImpl;
 
-import java.util.Collection;
 import java.util.HashMap;
 import java.util.LinkedList;
 import java.util.Queue;

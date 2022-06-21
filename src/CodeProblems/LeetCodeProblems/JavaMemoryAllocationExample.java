@@ -1,4 +1,4 @@
-package OtherLeetCodeProblems;
+package CodeProblems.LeetCodeProblems;
 
 /**
  * https://www.baeldung.com/java-stack-heap

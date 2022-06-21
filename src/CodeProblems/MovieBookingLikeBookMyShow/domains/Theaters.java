@@ -1,4 +1,4 @@
-package MovieBookingLikeBookMyShow.domains;
+package CodeProblems.MovieBookingLikeBookMyShow.domains;
 
 import java.util.ArrayList;
 import java.util.List;

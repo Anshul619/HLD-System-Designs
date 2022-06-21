@@ -1,4 +1,4 @@
-package GenericCacheImpl;
+package CodeProblems.GenericCacheImpl;
 
 import java.util.HashMap;
 import java.util.LinkedList;

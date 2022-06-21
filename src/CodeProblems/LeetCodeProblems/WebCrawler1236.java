@@ -1,4 +1,4 @@
-package OtherLeetCodeProblems;
+package CodeProblems.LeetCodeProblems;
 
 /**
  * LeetCode - https://leetcode.com/problems/web-crawler/

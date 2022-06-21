@@ -1,4 +1,4 @@
-package OtherLeetCodeProblems;
+package CodeProblems.LeetCodeProblems;
 
 /**
  * https://leetcode.com/problems/design-parking-system/submissions/

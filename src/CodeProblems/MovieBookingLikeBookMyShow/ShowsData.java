@@ -1,7 +1,7 @@
-package MovieBookingLikeBookMyShow;
+package CodeProblems.MovieBookingLikeBookMyShow;
 
-import MovieBookingLikeBookMyShow.domains.Seat;
-import MovieBookingLikeBookMyShow.domains.Show;
+import CodeProblems.MovieBookingLikeBookMyShow.domains.Seat;
+import CodeProblems.MovieBookingLikeBookMyShow.domains.Show;
 
 import java.util.ArrayList;
 import java.util.List;
