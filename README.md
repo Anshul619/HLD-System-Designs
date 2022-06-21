@@ -14,5 +14,4 @@ This repo contains various system design questions and solutions.
 - https://www.youtube.com/watch?v=xpDnVSmNFX0&list=PLMCXHnjXnTnvo6alSjVkgxV-VH6EPyvoX
 - https://www.educative.io/courses/grokking-the-system-design-interview/39RwZr5PBwn
 - https://github.com/donnemartin/system-design-primer
-- https://github.com/donnemartin/system-design-primer/blob/master/solutions/system_design/scaling_aws/README.md
 - https://leetcode.com/discuss/interview-question/system-design?currentPage=1&orderBy=hot&query=
