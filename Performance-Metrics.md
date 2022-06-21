@@ -8,6 +8,17 @@
 | Redis     | 100K queries per second       | -| Caching        | Yes   |
 | DynomoDB  | More than 20 million requests per second | 10-20 ms | NoSQL db       | No  |
 | MongoDB   | || NoSQL Db       | No                                      |
+| ElasticSearch |||Search Engine|No|
+
+# Concurrent Requests Metrices
+
+Based on tuning, the below metrices can vary.
+
+| Component | Concurrent Requests |
+|-----------|-----------------------------------------|
+| Apache | 512 |
+| MySQL | 1000 ( 100 is default )|
+
 
 # Tech Decisions ( Scalability )
 - Develope microservice based architecture
@@ -20,3 +31,4 @@
 - https://www.mongodb.com/pricing
 - https://stackoverflow.com/questions/20520492/how-to-minimize-the-latency-involved-in-kafka-messaging-framework
 - https://www.confluent.io/blog/kafka-fastest-messaging-system/
+- https://medium.com/explorium-ai/how-to-dramatically-increase-your-elasticsearch-throughput-and-concurrency-capacity-c32d7bb02ac2
