@@ -1,23 +1,22 @@
 
-# Requirements
-- RateLimit
-    - 5000 SMS at a sec
-    - Store it in a shared file/database
-        - Checking and maximum numbers
-        - Echo of the second
-    - SMS Jobs -> How many SMS jobs are executing?
-        - 10000 SMS => SMS_Queue_Pending in ActiveMQ
-        - Observer of SMS_Queue_Pending -> When we pick a job from SMS_Queue_Pending, we check how many jobs are running in SMS_Queue_Running?
-            - Every 1 second or something as frequency
-            - (5000-100) because of distributed system
-        - 5000 Runnings => SMS_Queue_Running in ActiveMQ
-        - Check SMS jobs in the SMS_Queue_Running in ActiveMQ
-        - Redis
-            - SMS_Queue_Sent in last 1 second
-            - Last 20 seconds, count of messages sent
-            - Data Sharding -  10 Seconds => 10 Redis
-- Notification Sending System
-    - Multiple Channels - OTP, 
-    - Email - SMTP Server
-    - SMS - Another API
-    - Push Notification
+# Requirements - Notification System
+- SendSMSAPI ( like OTP ) - Consider generate OTP service `A`, which client calls to get the OTP on the different mediums ( like SMS, WhatsApp etc. ).
+- `A` service calls `B` service to send the notification to the user using multiple SMS providers like Twillo, Airtel etc.
+
+# AutoScaling of App Servers
+- Use `Elastic Load Balancing` ( with `AWS AutoScaling` configured )
+- Or implement our own auto-scaling - Based on app server's memory usage/CPU usage, heart beat etc., we can add/delete another app server.
+
+# Autoscaling of Message Queues
+Based on Throttling, autoscaling of the queue system ( [Amazon SQS](https://aws.amazon.com/sqs/) ) can be done
+- Based on number of messages in the queue, the workers can keep adding up ( with min, max configuration )
+- If max configuration of workers is reached, another queue would be added in the cluster.
+
+# How would we implement rate limiting of the SMS providers? ( follow their SLA )
+- Let's assume `Twillo API` has a limit of 5000 SMS per second.
+- We can achieve this either by using `Redis` ( for distributed system ) or we check the current processing queue size to handle this.
+
+# References 
+- https://docs.aws.amazon.com/autoscaling/ec2/userguide/as-using-sqs-queue.html
+- https://developer.ibm.com/tutorials/auto-scale-rabbitmq-consumers-by-queue-size-on-openshift/
+- Asked in GoGroup interview, 22-June-2022
