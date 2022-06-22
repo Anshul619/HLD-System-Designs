@@ -237,3 +237,4 @@ Basis                                 | Kafka                                   
 - https://www.interviewbit.com/blog/rabbitmq-vs-kafka
 - https://blog.iron.io/amazon-sqs-vs-apache-kafka/
 - https://cloud.in28minutes.com/aws-certification-sqs-vs-sns-vs-amazon-mq
+- https://github.com/purbon/kafka-cluster-size-calculator
