@@ -18,6 +18,7 @@
 
 # Open Questions
 - What would be the latency of the system?
+- Latency - 10ms for ElasticSearch.
 
 # Data Modeling
 - Search Interface 
