@@ -1,4 +1,4 @@
-package LoggingSolution;
+package LoggingSolution.CodeProblems;
 
 /**
  * https://stackoverflow.com/questions/14842457/how-to-cache-file-handles

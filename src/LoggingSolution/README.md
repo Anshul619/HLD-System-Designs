@@ -12,22 +12,18 @@
 # Possible Options
 - Live Aggregation
 - Delayed Aggregation
-- FileBeat & ELK Stack - https://www.elastic.co/guide/en/beats/filebeat/current/how-filebeat-works.html
+- [FileBeat & ELK Stack](https://www.elastic.co/guide/en/beats/filebeat/current/how-filebeat-works.html)
 
 # Important Points
 - Recently opened file handles should be stored in the local app server cache
 
 # What is the purpose of [log rotation](https://www.mezmo.com/learn-log-management/what-is-log-rotation-how-does-it-work)?
-
 - Large file issues ( If a log file is already a terabyte at the end of the day, allowing it to grow another terabyte can create several issues. )
   - It would take a lot of disk space ( terabytes of data ) in few days itself.
   - Opening the big file would be impossible if the local device doesn't have enough memory resources.
 - We would keep rotating the log files at 10KB file size. ( for best memory optimization )
-  
-# Open Questions
-- How to archive the logs once aggregation is done? ( Assume logs are coming all 24 hrs, every day. Huge data. )
-- How to maintain partition in the Kafka? When there is too much data coming?
-- What should be the topics in the Kafka?
-  
+- Kafka topics can be log file name.
+- [Kafka Estimation] (https://github.com/Anshul619/System-Designs/tree/main/src/DesignComponents/Kafka)   
+ 
 # Other Points
 - Interview Question@FluxOn, 6thJune2022
