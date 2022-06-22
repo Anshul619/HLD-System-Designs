@@ -175,19 +175,38 @@ for(int i = 0; i < 100; i++) {
 - The Kafka Connector API connects Kafka topics to applications. 
 - This opens up possibilities for constructing and managing the operations of producers and consumers, as well as establishing reusable links between these solutions. A connector, for example, may capture all database updates and ensure that they are made available in a Kafka topic.
 
-
 # Real world usages of Kafka
 - **As a events/message broker** - Use Kafka when your application has a High throughput (**1 million messages/sec**), i.e. application has to process a large volume of messages, event driven services etc.
 - **To monitor metrics, logs of the IT infrastructure** - Various systems in the IT infrastructure can push events/messages/logs in the Kafka. And logstash ( in ELK ) can act as a consumer to the Kafka.
 - **For Analytics** - If we want to build own google analytics ( to track app activities, events etc.), we can use Kafka as a broker. 
 - **Stream Processing** - Use Kafka when the event stream needs to process data in multi-stage pipelines, the pipelines can generate graphs of the real-time data flows, thus providing real-time monitoring of traffic in the pipelines. Example - Video streaming in YouTube etc.
+- [TwilloSendMessageAPI](https://github.com/Anshul619/System-Designs/tree/main/src/TwilloSendMessageAPI)
 
 # How to use Kafka on AWS?
 - Amazon Managed Streaming for Apache Kafka (MSK) - https://aws.amazon.com/msk/
 
-# Open Question
-- How many partitions/brokers would be needed in real world use case?
-- Reference - https://www.confluent.io/blog/how-choose-number-topics-partitions-kafka-cluster/
+# [Estimation - How to decide number of partitions in Kafka?](https://www.confluent.io/blog/how-choose-number-topics-partitions-kafka-cluster/)
+
+[Kafka cluster size calculator](https://docs.google.com/spreadsheets/d/1a3uIa8TTRLlN6HTtMzPPqf8p5j5OxflJuAyff-uHLgk/edit?usp=sharing)
+
+Rough formula for picking the number of partitions = *max(t/p, t/c)*
+
+ Parameter | Title                           | More Description                                                                                |
+-----------|---------------------------------|-------------------------------------------------------------------------------------------------|
+t         | Target Throughput               | Let’s say your target throughput is t. |
+p         | Thoughput on a single partition | You measure the throughout that you can achieve on a single partition for production (call it p). |
+c         | Consumption Rate                | And consumption (call it c). |
+
+## Other Points
+- More partitions lead to higher throughput
+- More partitions requires more open file handles
+  - This is mostly just a configuration issue. 
+  - We have seen production Kafka clusters running with more than 30 thousand open file handles per broker.
+- More partitions may increase unavailability
+  - It’s probably better to limit the number of partitions per broker to two to four thousand and the total number of partitions in the cluster to low tens of thousand.
+- More partitions may increase end-to-end latency
+  - As a rule of thumb, if you care about latency, it’s probably a good idea to limit the number of partitions per broker to *100 x b x r*, where b is the number of brokers in a Kafka cluster and r is the replication factor.
+- More partitions may require more memory in the client
 
 # Kafka vs RabbitMQ
 
@@ -212,9 +231,6 @@ Basis                                 | Kafka                                   
 
 # Kafka vs Amazon SQS
 - TBD - https://stackoverflow.com/questions/58970006/are-sqs-and-kafka-same
-
-# Real World Problems
-- 
 
 # References
 - https://www.interviewbit.com/kafka-interview-questions/

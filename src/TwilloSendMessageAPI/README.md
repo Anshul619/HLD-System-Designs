@@ -1,29 +1,20 @@
 
 # Introduction
-- Design Twillo API. Message platform for business.
+- Design Twillo API - Message platform for business.
 - Different plans - Basic, Paid etc.
 
 <img title="TwilloAPIDesign" alt="Alt text" src="TwilloAPIDesign.drawio.png">
 
-## Basic Plan
+## Requirements - Basic Plan
 - 1000 free messages
 - X amount per whatsapp
 - Y amount per sms
 - 1000 transactions limit per second per team
 
 # Tech Specs
-- Kafka can be used to store, process the messages
-- 2 different topics for SMS, Whats app
-
-# Open Question 
-- How would we design Kafka here?
-- What would be different topics? One general topic or multiple topics ( based on communication channel )?
-- What would be the different brokers?
-- What would be different partitions of the topics?
-- Kafka Broker takes message from Producer and push it to the topic.
-- Multiple brokers, multiple topics?
-- Low level system design of Kafka?
-- Reference - https://www.conduktor.io/kafka/kafka-brokers
+- [Kafka](https://github.com/Anshul619/System-Designs/tree/main/src/DesignComponents/Kafka) can be used to store & process the messages
+- 2 different topics ( in Kafka ) for SMS, WhatsApp message types etc.
+- [Estimation](https://github.com/Anshul619/System-Designs/tree/main/src/DesignComponents/Kafka)
 
 # DB Design
 ## Plan

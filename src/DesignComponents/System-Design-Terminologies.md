@@ -29,5 +29,9 @@
 - Example - https://en.wikipedia.org/wiki/Language-agnostic
 
 # Durability
-- In database systems, durability is the ACID property which guarantees that transactions that have committed will survive permanently. For example, if a flight booking reports that a seat has successfully been booked, then the seat will remain booked even if the system crashes.
+- In database systems, durability is the ACID property which guarantees that *transactions that have committed will survive permanently*. 
+- For example, if a flight booking reports that a seat has successfully been booked, then the seat will remain booked even if the system crashes.
 
+# [High Availability](https://avinetworks.com/glossary/high-availability/)
+- High Availability (HA) describes systems that are dependable enough to operate continuously without failing. 
+- They are well-tested and sometimes equipped with redundant components.
