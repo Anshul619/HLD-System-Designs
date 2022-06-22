@@ -1,4 +1,5 @@
-Architecture
+
+# Requirements
 - RateLimit
     - 5000 SMS at a sec
     - Store it in a shared file/database

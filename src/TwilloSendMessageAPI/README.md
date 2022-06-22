@@ -16,7 +16,7 @@
 - 2 different topics for SMS, Whats app
 
 # Open Question 
-- How would we design Kakka here?
+- How would we design Kafka here?
 - What would be different topics? One general topic or multiple topics ( based on communication channel )?
 - What would be the different brokers?
 - What would be different partitions of the topics?
