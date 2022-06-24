@@ -129,8 +129,10 @@ Servlets in java provide an interface known as `HttpSessionInterface`.
 
 # Open Questions
 - What is [Exception Hierarchy](https://rollbar.com/blog/java-exceptions-hierarchy-explained/)?
+- What is component scan?
 
 # References
+- https://www.geeksforgeeks.org/spring-componentscan-annotation-with-example/
 - https://www.codejava.net/coding/what-is-dependency-injection-with-java-code-example
 - https://www.interviewbit.com/java-interview-questions/
 - https://www.geeksforgeeks.org/java/?ref=shm
