@@ -1,6 +1,6 @@
 
 # Introduction
-- Hibernate is the ORM.
+- Hibernate is the ORM ( object-relational mapping).
 
 # Eager/Lazy Loading In Hibernate
 - https://www.baeldung.com/hibernate-lazy-eager-loading
