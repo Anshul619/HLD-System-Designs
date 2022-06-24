@@ -94,6 +94,30 @@ Y(@PathVariable String smartMeterId)| URL Parameter                         |
 @Entity||
 @Configuration||
 
+# Microservices - How to develop, deploy microservices using Spring Boot?
+
+<img title="Spring-Boot-MicroService-OnPerm.drawio" alt="Alt text" src="Others/Spring-Boot-MicroService-OnPerm.drawio.png">
+
+## [Zulu API Gateway](https://stackabuse.com/spring-cloud-routing-with-zuul-and-gateway/)
+- Zulu is an API gateway, for routing microservices properly. ( An alternative to AWS API gateway )
+- Netflix created Zuul server and later open-sourced it.
+- Spring provided a nice wrapper around it for easily incorporating it to the Spring stack.
+
+## [Eureka Server - Service Registry](https://www.tutorialspoint.com/spring_boot/spring_boot_eureka_server.htm)
+- Eureka naming server is a REST-based server that is used in the AWS Cloud services for load balancing and failover of middle-tier services.
+- Eureka naming server is an application that holds information about all client service applications. 
+- Each microservice registers itself with the Eureka naming server. 
+- The naming server registers the client services with their port numbers and IP addresses. 
+- It is also known as `Discovery Server`.  
+- Eureka naming server comes with the bundle of Spring Cloud. It runs on the default port 8761. 
+- It also comes with a Java-based client component, the eureka client, which makes interactions with the service much easier.
+
 # References
+- https://www.javatpoint.com/microservices
 - https://www.interviewbit.com/spring-boot-interview-questions/
 - https://java2blog.com/spring-restcontroller-example/
+- https://res.cloudinary.com/deop9ytsv/image/upload/v1545143589/1_Z8HUa8vdvIrF68crSJOPTQ.png
+- https://medium.com/geekculture/zuul-api-gateway-2bcdf4dd33e6
+- https://www.javatpoint.com/eureka-naming-server
+- https://1nwu8i3sj55rdbw4k4fm55i1-wpengine.netdna-ssl.com/wp-content/uploads/2015/09/MSArchitech.png
+- https://res.cloudinary.com/practicaldev/image/fetch/s--DXg7gK9m--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://cdn-images-1.medium.com/max/2000/1*b4krMVZ-mqjxAIh_EM1jhQ.png

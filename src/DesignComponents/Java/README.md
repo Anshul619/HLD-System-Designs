@@ -127,6 +127,9 @@ Servlets in java provide an interface known as `HttpSessionInterface`.
 - public long `getLastAccessedTime()`: The time when the session was last accessed is returned by this method. It is measured in milliseconds.
 - public void `invalidate()`: A session can be invalidated by using this method.
 
+# Open Questions
+- What is [Exception Hierarchy](https://rollbar.com/blog/java-exceptions-hierarchy-explained/)?
+
 # References
 - https://www.codejava.net/coding/what-is-dependency-injection-with-java-code-example
 - https://www.interviewbit.com/java-interview-questions/
