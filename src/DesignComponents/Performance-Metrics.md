@@ -3,10 +3,10 @@
 
 | Component | Component Type | Throughput (QPS)                 | Latency | Free |
 |-----------|-----------------------------------------|----------------|----------------|------|
-| [Kafka](https://github.com/Anshul619/System-Designs/tree/main/src/DesignComponents/Kafka)     | MessageQueue(Pub-Sub) | 1 million messages ( write ) per second | ~5ms | Yes   |
-| [RabbitMQ](https://github.com/Anshul619/System-Designs/tree/main/src/DesignComponents/Kafka#kafka-vs-rabbitmq)     | MessageQueue(Point-2-Point) | 20K messages per second | ~1ms |  Yes   |
+| [Kafka](https://github.com/Anshul619/System-Designs/tree/main/src/DesignComponents/Kafka)     | Message Queue (Pub-Sub) - High-throughput | 1 million messages ( write ) per second | ~5ms | Yes   |
+| [RabbitMQ](https://github.com/Anshul619/System-Designs/tree/main/src/DesignComponents/Kafka#kafka-vs-rabbitmq)     | Message Queue (Point-2-Point) | 20K messages per second | ~1ms |  Yes   |
 | [Redis](https://github.com/Anshul619/System-Designs/tree/main/src/DesignComponents/Redis)     | Caching        | 100K queries per second       | -|  Yes   |
-| [DynomoDB](https://github.com/Anshul619/System-Designs/blob/main/src/DesignComponents/SQLvsNoSQL/ReadMe.md#dynomodb)  | AWS fully managed NoSQL DB       | More than 20 million requests per second | less than 10-20 ms | No  |
+| [DynomoDB](https://github.com/Anshul619/System-Designs/blob/main/src/DesignComponents/SQLvsNoSQL/ReadMe.md#dynomodb)  | NoSQL DB as a Service ( AWS ) - Predictable performance and cost| More than 20 million requests per second | less than 10-20 ms | No  |
 | MongoDB   | NoSQL DB       | - | -|  No                                      |
 | [ElasticSearch](https://github.com/Anshul619/System-Designs/tree/main/src/DesignComponents/ElasticSearch) | Search Engine|-|-|No|
 
