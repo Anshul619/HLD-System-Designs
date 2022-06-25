@@ -46,6 +46,7 @@ This repo contains the various system design questions and solutions.
 - [Notification System](https://github.com/Anshul619/System-Designs/tree/main/src/NotificationSystem)
 - [Logging Solution](https://github.com/Anshul619/System-Designs/tree/main/src/LoggingSolution)
 - [MonolothicToMicroService](https://github.com/Anshul619/System-Designs/tree/main/src/MonolothicToMicroservice)
+- [MakeMyTripSearch](https://github.com/Anshul619/System-Designs/tree/main/src/MakeMyTripSearch)
 
 ## System Design Glossaries
 
