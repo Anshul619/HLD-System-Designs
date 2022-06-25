@@ -32,7 +32,7 @@ This repo contains the various system design questions and solutions.
 
 ## Tech Skills
 - [Engineering Principles](https://github.com/Anshul619/System-Designs/tree/main/src/DesignComponents/EngineeringPrinciples)
-- [JS](https://github.com/Anshul619/System-Designs/tree/main/src/DesignComponents/JSAsync)
+- [JS](/DesignComponents/JSAsync)
 - [Java](https://github.com/Anshul619/System-Designs/tree/main/src/DesignComponents/Java)
 - [Spring Boot & Microservices](https://github.com/Anshul619/System-Designs/tree/main/src/DesignComponents/SpringBoot)
 - [Hibernate](https://github.com/Anshul619/System-Designs/blob/main/src/DesignComponents/Hiberate.md)
@@ -61,11 +61,11 @@ This repo contains the various system design questions and solutions.
 - Every transaction might have multiple queries.
 - Hence, QPS is the subset of TPS.
 
-### Atomicity
+### [Atomicity](https://www.techopedia.com/definition/24729/atomicity)
 - Atomicity is a feature of databases systems dictating where a transaction must be all-or-nothing. 
 - That is, the transaction must either fully happen, or not happen at all. 
 - It must not complete partially.
-- Reference - https://www.techopedia.com/definition/24729/atomicity
+- Reference - 
 
 ### [Language Agnostic](https://en.wikipedia.org/wiki/Language-agnostic)
 - We should design the system considering agnostic feature (Language agnostic, AWS agnostic etc.) into the consideration.
