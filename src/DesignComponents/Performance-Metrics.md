@@ -1,14 +1,14 @@
 
 # Performance Metrices
 
-| Component | Throughput (QPS)                 | Latency | Component Type | Free |
+| Component | Component Type | Throughput (QPS)                 | Latency | Free |
 |-----------|-----------------------------------------|----------------|----------------|------|
-| Kafka     | 1 million messages ( write ) per second | ~5ms | MessageQueue(Pub-Sub) | Yes   |
-| RabbitMQ     | 20K messages per second | ~1ms | MessageQueue(Point-2-Point) | Yes   |
-| Redis     | 100K queries per second       | -| Caching        | Yes   |
-| DynomoDB  | More than 20 million requests per second | less than 10-20 ms | NoSQL db       | No  |
-| MongoDB   | || NoSQL Db       | No                                      |
-| ElasticSearch |||Search Engine|No|
+| [Kafka](https://github.com/Anshul619/System-Designs/tree/main/src/DesignComponents/Kafka)     | MessageQueue(Pub-Sub) | 1 million messages ( write ) per second | ~5ms | Yes   |
+| RabbitMQ     | MessageQueue(Point-2-Point) | 20K messages per second | ~1ms |  Yes   |
+| [Redis](https://github.com/Anshul619/System-Designs/tree/main/src/DesignComponents/Redis)     | Caching        | 100K queries per second       | -|  Yes   |
+| [DynomoDB](https://github.com/Anshul619/System-Designs/blob/main/src/DesignComponents/SQLvsNoSQL/ReadMe.md#dynomodb)  | AWS fully managed NoSQL DB       | More than 20 million requests per second | less than 10-20 ms | No  |
+| MongoDB   | NoSQL DB       | - | -|  No                                      |
+| ElasticSearch | Search Engine|-|-|No|
 
 # Concurrent Requests Metrices
 
