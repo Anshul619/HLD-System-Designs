@@ -15,8 +15,21 @@ This repo contains the various system design questions and solutions.
 | [ElasticSearch](https://github.com/Anshul619/System-Designs/tree/main/src/DesignComponents/ElasticSearch) | Search Engine|-|-|No|
 | [Apache](https://apache.org/) | Web Server | 512 concurrent requests|-|Yes|
 
+# Tech Decisions ( Scalability )
+- Develope microservice based architecture
+- We must consider cloud agnostic approach ( & onPerm customer approach ) while designing the solution.
+- **Open Question - Since most cloud apps would be deployed on AWS, shouldn't we consider managed AWS services instead of our own managed instances ( like Amazon SQS instead of Kafka?)**
+- If its a read heavy microservice, the best decision would be to use `Redis`
+- If its a write heavy microservice, the best decision would be to use either use `Kafka` ( as message queue ) or `DynmoDB`. Both can handle high throughput.
+
+# References
+- https://www.mongodb.com/pricing
+- https://stackoverflow.com/questions/20520492/how-to-minimize-the-latency-involved-in-kafka-messaging-framework
+- https://www.confluent.io/blog/kafka-fastest-messaging-system/
+- https://medium.com/explorium-ai/how-to-dramatically-increase-your-elasticsearch-throughput-and-concurrency-capacity-c32d7bb02ac2
+
+
 ## Metrices & Glossaries
-- [Performance Metrices](https://github.com/Anshul619/System-Designs/blob/main/src/DesignComponents/Performance-Metrics.md)
 - [System Design Glossaries](https://github.com/Anshul619/System-Designs/blob/main/src/DesignComponents/System-Design-Terminologies.md)
 
 ## Design Components
