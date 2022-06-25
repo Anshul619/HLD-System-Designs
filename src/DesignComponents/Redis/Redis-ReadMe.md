@@ -30,5 +30,9 @@
 - Redis is single threaded while memcache is multi-threaded.
 - Memcache only supports caching while replication and persistence is supported in Redis ( in addition to caching ).
 
+# [Redis Graph](https://redis.com/nosql/graph-databases/)
+- Graph database from Redis
+- To-Do - Know more about it.
+
 # References
 - https://www.javatpoint.com/redis-interview-questions-and-answers
