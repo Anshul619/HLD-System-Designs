@@ -2,6 +2,7 @@
 
 This repo contains various system design questions and solutions.
 
+## Design Components
 - [Performance Metrices](https://github.com/Anshul619/System-Designs/blob/main/src/DesignComponents/Performance-Metrics.md)
 - [System Design Glossaries](https://github.com/Anshul619/System-Designs/blob/main/src/DesignComponents/System-Design-Terminologies.md)
 - [SQLvsNoSQL](https://github.com/Anshul619/System-Designs/blob/main/src/DesignComponents/SQLvsNoSQL/ReadMe.md)
@@ -10,6 +11,8 @@ This repo contains various system design questions and solutions.
 - [Redis](https://github.com/Anshul619/System-Designs/blob/main/src/DesignComponents/Redis/Redis-ReadMe.md)
 - [Java](https://github.com/Anshul619/System-Designs/tree/main/src/DesignComponents/Java)
 - [Spring Boot](https://github.com/Anshul619/System-Designs/tree/main/src/DesignComponents/SpringBoot)
+
+## Design Problems
 - [Design a system that scales to million of users on AWS](https://github.com/Anshul619/System-Designs/tree/main/src/DesignComponents/DesignScalableSystemWithRDMS)
 
 # References
