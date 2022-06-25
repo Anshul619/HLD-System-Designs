@@ -76,6 +76,7 @@ This repo contains the various system design questions and solutions.
 - They are well-tested and sometimes equipped with redundant components.
 
 # References
+- https://www.youtube.com/watch?v=kKjm4ehYiMs
 - https://www.youtube.com/watch?v=xpDnVSmNFX0&list=PLMCXHnjXnTnvo6alSjVkgxV-VH6EPyvoX
 - https://www.educative.io/courses/grokking-the-system-design-interview/39RwZr5PBwn
 - https://github.com/donnemartin/system-design-primer
