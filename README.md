@@ -24,8 +24,9 @@ This repo contains the various system design questions and solutions.
 
 ## Design Components
 - [SQLvsNoSQL](https://github.com/Anshul619/System-Designs/blob/main/src/DesignComponents/SQLvsNoSQL/ReadMe.md)
-- [EFSvsS3](https://github.com/Anshul619/System-Designs/blob/main/src/DesignComponents/EFSvsS3/ReadMe.md)
 - [Kafka](https://github.com/Anshul619/System-Designs/blob/main/src/DesignComponents/Kafka/ReadMe.md)
+- [AWS](https://github.com/Anshul619/System-Designs/blob/main/src/DesignComponents/AWS.md)
+- [EFSvsS3](https://github.com/Anshul619/System-Designs/blob/main/src/DesignComponents/EFSvsS3/ReadMe.md)
 - [Redis](https://github.com/Anshul619/System-Designs/blob/main/src/DesignComponents/Redis/Redis-ReadMe.md)
 
 ## Tech Skills
