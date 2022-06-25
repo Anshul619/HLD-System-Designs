@@ -1,16 +1,20 @@
 # System-Designs
 
-This repo contains various system design questions and solutions.
+This repo contains the various system design questions and solutions.
 
-## Design Components
+## Metrices & Glossaries
 - [Performance Metrices](https://github.com/Anshul619/System-Designs/blob/main/src/DesignComponents/Performance-Metrics.md)
 - [System Design Glossaries](https://github.com/Anshul619/System-Designs/blob/main/src/DesignComponents/System-Design-Terminologies.md)
+
+## Design Components
 - [SQLvsNoSQL](https://github.com/Anshul619/System-Designs/blob/main/src/DesignComponents/SQLvsNoSQL/ReadMe.md)
 - [EFSvsS3](https://github.com/Anshul619/System-Designs/blob/main/src/DesignComponents/EFSvsS3/ReadMe.md)
 - [Kafka](https://github.com/Anshul619/System-Designs/blob/main/src/DesignComponents/Kafka/ReadMe.md)
 - [Redis](https://github.com/Anshul619/System-Designs/blob/main/src/DesignComponents/Redis/Redis-ReadMe.md)
+
+## Tech Skills
 - [Java](https://github.com/Anshul619/System-Designs/tree/main/src/DesignComponents/Java)
-- [Spring Boot](https://github.com/Anshul619/System-Designs/tree/main/src/DesignComponents/SpringBoot)
+- [Spring Boot & Microservices](https://github.com/Anshul619/System-Designs/tree/main/src/DesignComponents/SpringBoot)
 
 ## Design Problems
 - [Design a system that scales to million of users on AWS](https://github.com/Anshul619/System-Designs/tree/main/src/DesignComponents/DesignScalableSystemWithRDMS)
