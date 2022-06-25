@@ -1,4 +1,6 @@
 
+<img title="Design1" alt="Alt text" src="assests/design1.png">
+
 # References - TBD
 - https://res.cloudinary.com/practicaldev/image/fetch/s--pkQ3ztaH--/c_limit,f_auto,fl_progressive,q_auto,w_880/https://docs.aws.amazon.com/elasticsearch-service/latest/developerguide/images/za-2-az.png
 - https://www.guru99.com/elasticsearch-interview-questions.html

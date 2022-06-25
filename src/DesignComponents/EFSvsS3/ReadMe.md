@@ -1,7 +1,7 @@
 
 # What is S3?
 
-![img.png](img.png)
+![img.png](assests/img.png)
 
 - [S3](https://aws.amazon.com/s3/) is an object store, meaning it is a higher layer data storage system, essentially *it is a database "blob" storage*, storing data in an underlying simple database as an object. 
 - It's designed for Write once Read many access, perfect for media data like image, video, documents particularly as it is distributed and offers a very high level of redundancy.
@@ -9,7 +9,7 @@
 
 # What is EFS?
 
-![img_1.png](img_1.png)
+![img_1.png](assests/img_1.png)
 
 - [EFS](https://docs.aws.amazon.com/efs/latest/ug/whatisefs.html) is a Network Storage system, underlying it is a storage array (SAN) and it offers the standard protocol for multi session network file systems (NFS).
 - It's built on high speed SSD drives and is intended for shared storage for your ec2 instances, think file servers. 

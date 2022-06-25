@@ -3,7 +3,7 @@
 - Sprint boot is a Java-based spring framework used for Rapid Application Development (to build stand-alone microservices). 
 - It has extra support of auto-configuration and *embedded application server like tomcat*, jetty, etc.
 
-<img title="SpringBootArchitecture" alt="Alt text" src="Others/SpringBootArchitecture.drawio.png">
+<img title="SpringBootArchitecture" alt="Alt text" src="assests/SpringBootArchitecture.drawio.png">
 
 # What are the advantages of using Spring Boot?
 - Easy to understand and develop spring applications.
@@ -12,7 +12,7 @@
 - Minimum configuration.
 - We don’t need to write any XML configuration, only a few annotations are required to do the configuration.
 
-<img title="SpringBoot-Features" alt="Alt text" src="Others/SpringBoot-Features.drawio.png">
+<img title="SpringBoot-Features" alt="Alt text" src="assests/SpringBoot-Features.drawio.png">
 
 # What are the Spring Boot key components?
 - Spring Boot auto-configuration.
@@ -96,7 +96,7 @@ Y(@PathVariable String smartMeterId)| URL Parameter                         |
 
 # Microservices - How to develop, deploy microservices using Spring Boot?
 
-<img title="Spring-Boot-MicroService-OnPerm.drawio" alt="Alt text" src="Others/Spring-Boot-MicroService-OnPerm.drawio.png">
+<img title="Spring-Boot-MicroService-OnPerm.drawio" alt="Alt text" src="assests/Spring-Boot-MicroService-OnPerm.drawio.png">
 
 ## [Zulu API Gateway](https://stackabuse.com/spring-cloud-routing-with-zuul-and-gateway/)
 - Zulu is an API gateway, for routing microservices properly. ( An alternative to AWS API gateway )
