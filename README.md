@@ -40,6 +40,12 @@ This repo contains the various system design questions and solutions.
 
 ## Design Problems
 - [Design a system that scales to million of users on AWS](https://github.com/Anshul619/System-Designs/tree/main/src/DesignComponents/DesignScalableSystemWithRDMS)
+- [Zomoto HLD Design](https://github.com/Anshul619/System-Designs/tree/main/src/ZomatoDesignHLD)
+- [Twillo Send Message API](https://github.com/Anshul619/System-Designs/tree/main/src/TwilloSendMessageAPI)
+- [Rate Limiter API](https://github.com/Anshul619/System-Designs/tree/main/src/RateLimiterAPI)
+- [Notification System](https://github.com/Anshul619/System-Designs/tree/main/src/NotificationSystem)
+- [Logging Solution](https://github.com/Anshul619/System-Designs/tree/main/src/LoggingSolution)
+- [MonolothicToMicroService](https://github.com/Anshul619/System-Designs/tree/main/src/MonolothicToMicroservice)
 
 ## System Design Glossaries
 
