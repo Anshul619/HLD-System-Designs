@@ -26,12 +26,17 @@ This repo contains the various system design questions and solutions.
 - [SQLvsNoSQL](https://github.com/Anshul619/System-Designs/blob/main/src/DesignComponents/SQLvsNoSQL/ReadMe.md)
 - [Kafka](https://github.com/Anshul619/System-Designs/blob/main/src/DesignComponents/Kafka/ReadMe.md)
 - [AWS](https://github.com/Anshul619/System-Designs/blob/main/src/DesignComponents/AWS.md)
-- [EFSvsS3](https://github.com/Anshul619/System-Designs/blob/main/src/DesignComponents/EFSvsS3/ReadMe.md)
 - [Redis](https://github.com/Anshul619/System-Designs/blob/main/src/DesignComponents/Redis/Redis-ReadMe.md)
+- [ElasticSearch](https://github.com/Anshul619/System-Designs/blob/main/src/DesignComponents/Redis/Redis-ReadMe.md)
+- [EFSvsS3](https://github.com/Anshul619/System-Designs/blob/main/src/DesignComponents/EFSvsS3/ReadMe.md)
 
 ## Tech Skills
+- [Engineering Principles](https://github.com/Anshul619/System-Designs/tree/main/src/DesignComponents/EngineeringPrinciples)
+- [JS](https://github.com/Anshul619/System-Designs/tree/main/src/DesignComponents/JSAsync)
 - [Java](https://github.com/Anshul619/System-Designs/tree/main/src/DesignComponents/Java)
 - [Spring Boot & Microservices](https://github.com/Anshul619/System-Designs/tree/main/src/DesignComponents/SpringBoot)
+- [Hibernate](https://github.com/Anshul619/System-Designs/blob/main/src/DesignComponents/Hiberate.md)
+- [Testing](https://github.com/Anshul619/System-Designs/blob/main/src/DesignComponents/Testing.md)
 
 ## Design Problems
 - [Design a system that scales to million of users on AWS](https://github.com/Anshul619/System-Designs/tree/main/src/DesignComponents/DesignScalableSystemWithRDMS)
