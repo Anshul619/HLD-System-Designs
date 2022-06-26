@@ -220,16 +220,17 @@ The common type parameters are as follows:
 - N – Number
 - V – Value
 
-# Advantages of Generics
+## Advantages of Generics
 - Code Reuse
 - Type Safety
 - Individual Type Casting is not needed
 - Generics Promotes Code Reusability
 - Implementing Generic Algorithms
 
-# Open Questions
-- What is [Exception Hierarchy](https://rollbar.com/blog/java-exceptions-hierarchy-explained/)?
-- What is component scan?
+# Java Exception Hierarchy
+
+![image](https://user-images.githubusercontent.com/1247944/175828367-7389509d-e5e9-45fb-8a62-94601db0d915.png)
+
 
 # References
 - https://www.geeksforgeeks.org/spring-componentscan-annotation-with-example/
