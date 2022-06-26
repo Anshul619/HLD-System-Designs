@@ -8,6 +8,8 @@
 - It is a popular way where we build web applications now, for those reasons we outlined above.
 - To recap, an architecture makes it easier and fastest way to build and work on individual parts of an application, and thus the application as a whole.
 
+<img title="MonolothicToMicroService" alt="Alt text" src="MonolothicToMicroService.drawio.png">
+
 ## Benefits of Microservices design
 
 ### Separation of Concern
