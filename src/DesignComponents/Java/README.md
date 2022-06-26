@@ -132,51 +132,72 @@ Servlets in java provide an interface known as `HttpSessionInterface`.
 ## Map
 - The map method is used to return a stream consisting of the results of applying the given function to the elements of this stream.
 
-<pre>
+```java
 List<Integer> number = Arrays.asList(2, 3, 4, 5);
 
-        // Apply x->x*x on number list. List as an output.
-        List<Integer> outputList = number.stream().map(x -> x*x).collect(Collectors.toList());
+// Apply x->x*x on number list. List as an output.
+List<Integer> outputList = number.stream().map(x -> x*x).collect(Collectors.toList());
 
-        // Apply x->x*x on number list. Set as an output.
-        Set<Integer> outputSet = number.stream().map(x -> x*x).collect(Collectors.toSet());
-</pre>
+// Apply x->x*x on number list. Set as an output.
+Set<Integer> outputSet = number.stream().map(x -> x*x).collect(Collectors.toSet());
+```
 
 ## Sorted
 - The sorted method is used to sort the stream.
 
-<pre>
+```java
 // create a list of strings
 List<String> strings = Arrays.asList("Anshul", "Agrawal", "Developer");
 
 // Sort the list
 List<String> sorted = strings.stream().sorted().collect(Collectors.toList());
-</pre>
+```
 
 ## Collectors
 -  The collect method is used to return the result of the intermediate operations performed on the stream.
 
-<pre>
-  List<String> sorted = strings.stream().sorted().collect(Collectors.toList());
-  Set<Integer> outputSet = number.stream().map(x -> x*x).collect(Collectors.toSet());
-</pre>
+```java
+List<String> sorted = strings.stream().sorted().collect(Collectors.toList());
+Set<Integer> outputSet = number.stream().map(x -> x*x).collect(Collectors.toSet());
+```
 
 ## Filter
 - The filter method is used to select elements as per the Predicate passed as argument.
 
-<pre>
-  // create a list of strings
-  List<String> strings = Arrays.asList("Anshul", "Agrawal", "Developer");
+```java
+// create a list of strings
+List<String> strings = Arrays.asList("Anshul", "Agrawal", "Developer");
 
-  // Filter list for string starting with "A". Here s->s.startsWith is the predicate.
-  List<String> filtered = strings.stream().filter(s->s.startsWith("A")).collect(Collectors.toList());
-</pre>
+// Filter list for string starting with "A". Here s->s.startsWith is the predicate.
+List<String> filtered = strings.stream().filter(s->s.startsWith("A")).collect(Collectors.toList());
+```
 
 ## Reduce
-- TBD
+- The reduce method is used to reduce the elements of a stream to a single value.
+
+```java
+// create a list of integers
+List<Integer> number = Arrays.asList(2, 3, 4, 5);
+
+// Apply x->x*x on number list. List as an output.
+List<Integer> outputList = number.stream().map(x -> x*x).collect(Collectors.toList());
+
+// Apply x->x*x on number list. Set as an output.
+Set<Integer> outputSet = number.stream().map(x -> x*x).collect(Collectors.toSet());
+
+System.out.println(outputList);
+```
 
 ## ForEach
-- TBD
+- The forEach method is used to iterate through every element of the stream.
+
+```java
+// create a list of integers
+        List<Integer> number = Arrays.asList(2, 3, 4, 5);
+
+        // Apply x->x*x on number list & then print it
+        number.stream().map(x -> x*x).forEach(y->System.out.println(y));
+```  
 
 # Open Questions
 - What is [Exception Hierarchy](https://rollbar.com/blog/java-exceptions-hierarchy-explained/)?
