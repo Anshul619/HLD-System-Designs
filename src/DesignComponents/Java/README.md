@@ -212,6 +212,13 @@ The common type parameters are as follows:
 - N – Number
 - V – Value
 
+# Advantages of Generics
+- Code Reuse
+- Type Safety
+- Individual Type Casting is not needed
+- Generics Promotes Code Reusability
+- Implementing Generic Algorithms
+
 # Open Questions
 - What is [Exception Hierarchy](https://rollbar.com/blog/java-exceptions-hierarchy-explained/)?
 - What is component scan?
