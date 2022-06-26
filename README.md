@@ -26,15 +26,27 @@ This repo contains the various system design questions and solutions.
 - [SQLvsNoSQL](https://github.com/Anshul619/System-Designs/blob/main/src/DesignComponents/SQLvsNoSQL/ReadMe.md)
 - [Kafka](https://github.com/Anshul619/System-Designs/blob/main/src/DesignComponents/Kafka/ReadMe.md)
 - [AWS](https://github.com/Anshul619/System-Designs/blob/main/src/DesignComponents/AWS.md)
-- [EFSvsS3](https://github.com/Anshul619/System-Designs/blob/main/src/DesignComponents/EFSvsS3/ReadMe.md)
 - [Redis](https://github.com/Anshul619/System-Designs/blob/main/src/DesignComponents/Redis/Redis-ReadMe.md)
+- [ElasticSearch](https://github.com/Anshul619/System-Designs/blob/main/src/DesignComponents/Redis/Redis-ReadMe.md)
+- [EFSvsS3](https://github.com/Anshul619/System-Designs/blob/main/src/DesignComponents/EFSvsS3/ReadMe.md)
 
 ## Tech Skills
+- [Engineering Principles](https://github.com/Anshul619/System-Designs/tree/main/src/DesignComponents/EngineeringPrinciples)
+- [JS](https://github.com/Anshul619/System-Designs/tree/main/src/DesignComponents/JSAsync)
 - [Java](https://github.com/Anshul619/System-Designs/tree/main/src/DesignComponents/Java)
 - [Spring Boot & Microservices](https://github.com/Anshul619/System-Designs/tree/main/src/DesignComponents/SpringBoot)
+- [Hibernate](https://github.com/Anshul619/System-Designs/blob/main/src/DesignComponents/Hiberate.md)
+- [Testing](https://github.com/Anshul619/System-Designs/blob/main/src/DesignComponents/Testing.md)
 
 ## Design Problems
 - [Design a system that scales to million of users on AWS](https://github.com/Anshul619/System-Designs/tree/main/src/DesignComponents/DesignScalableSystemWithRDMS)
+- [Zomoto HLD Design](https://github.com/Anshul619/System-Designs/tree/main/src/ZomatoDesignHLD)
+- [Twillo Send Message API](https://github.com/Anshul619/System-Designs/tree/main/src/TwilloSendMessageAPI)
+- [Rate Limiter API](https://github.com/Anshul619/System-Designs/tree/main/src/RateLimiterAPI)
+- [Notification System](https://github.com/Anshul619/System-Designs/tree/main/src/NotificationSystem)
+- [Logging Solution](https://github.com/Anshul619/System-Designs/tree/main/src/LoggingSolution)
+- [MonolothicToMicroService](https://github.com/Anshul619/System-Designs/tree/main/src/MonolothicToMicroservice)
+- [MakeMyTripSearch](https://github.com/Anshul619/System-Designs/tree/main/src/MakeMyTripSearch)
 
 ## System Design Glossaries
 
@@ -56,16 +68,15 @@ This repo contains the various system design questions and solutions.
 - Every transaction might have multiple queries.
 - Hence, QPS is the subset of TPS.
 
-### Atomicity
+### [Atomicity](https://www.techopedia.com/definition/24729/atomicity)
 - Atomicity is a feature of databases systems dictating where a transaction must be all-or-nothing. 
 - That is, the transaction must either fully happen, or not happen at all. 
 - It must not complete partially.
-- Reference - https://www.techopedia.com/definition/24729/atomicity
+- Reference - 
 
-### Language Agnostic
+### [Language Agnostic](https://en.wikipedia.org/wiki/Language-agnostic)
 - We should design the system considering agnostic feature (Language agnostic, AWS agnostic etc.) into the consideration.
 - Language-agnostic - Language-agnostic programming or scripting (also called language-neutral, language-independent, or cross-language) is a software development paradigm where a particular language is chosen because of its appropriateness for a particular task (taking into consideration all factors, including ecosystem, developer skill-sets, performance, etc.), and not purely because of the skill-set available within a development team.
-- Example - https://en.wikipedia.org/wiki/Language-agnostic
 
 ### Durability
 - In database systems, durability is the ACID property which guarantees that *transactions that have committed will survive permanently*. 
