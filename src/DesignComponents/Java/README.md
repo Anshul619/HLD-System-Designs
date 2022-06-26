@@ -129,6 +129,10 @@ Servlets in java provide an interface known as `HttpSessionInterface`.
 
 # [Java Stream](https://www.geeksforgeeks.org/stream-in-java/)
 
+Java Stream is suppported for Collection interfaces.
+
+![image](https://user-images.githubusercontent.com/1247944/175827637-cf1f634e-6850-49d0-9039-0d9b3093902e.png)
+
 ## Map
 - The map method is used to return a stream consisting of the results of applying the given function to the elements of this stream.
 
