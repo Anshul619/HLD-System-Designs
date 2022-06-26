@@ -32,7 +32,7 @@
 
 # [Redis Graph](https://redis.com/nosql/graph-databases/)
 - Graph database from Redis
-- To-Do - Know more about it.
+- To-Do - Add more details.
 
 # References
 - https://www.javatpoint.com/redis-interview-questions-and-answers
