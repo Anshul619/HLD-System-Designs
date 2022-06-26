@@ -38,7 +38,6 @@ public class GenericCacheImpl<K, V> {
 
         if (cacheMap.containsKey(key)) {
             addElementToQueue(key);
-            //print();
             return cacheMap.get(key);
         }
 
@@ -50,7 +49,6 @@ public class GenericCacheImpl<K, V> {
         addElementToQueue(key);
         cacheMap.put(key, value);
 
-        //print();
         return true;
     }
 
