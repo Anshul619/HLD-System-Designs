@@ -23,12 +23,12 @@ This repo contains the various system design questions and solutions.
 - If its a write heavy microservice, the best decision would be to use either use `Kafka` ( as message queue ) or `DynmoDB`. Both can handle high throughput.
 
 ## Design Components
-- [SQLvsNoSQL](https://github.com/Anshul619/System-Designs/blob/main/src/DesignComponents/SQLvsNoSQL/ReadMe.md)
+- [SQL vs NoSQL](https://github.com/Anshul619/System-Designs/blob/main/src/DesignComponents/SQLvsNoSQL/ReadMe.md)
 - [Kafka](https://github.com/Anshul619/System-Designs/blob/main/src/DesignComponents/Kafka/ReadMe.md)
 - [AWS](https://github.com/Anshul619/System-Designs/blob/main/src/DesignComponents/AWS.md)
 - [Redis](https://github.com/Anshul619/System-Designs/blob/main/src/DesignComponents/Redis/Redis-ReadMe.md)
 - [ElasticSearch](https://github.com/Anshul619/System-Designs/blob/main/src/DesignComponents/Redis/Redis-ReadMe.md)
-- [EFSvsS3](https://github.com/Anshul619/System-Designs/blob/main/src/DesignComponents/EFSvsS3/ReadMe.md)
+- [EFS vs S3](https://github.com/Anshul619/System-Designs/blob/main/src/DesignComponents/EFSvsS3/ReadMe.md)
 
 ## Tech Skills
 - [Engineering Principles](https://github.com/Anshul619/System-Designs/tree/main/src/DesignComponents/EngineeringPrinciples)
@@ -45,8 +45,8 @@ This repo contains the various system design questions and solutions.
 - [Rate Limiter API](https://github.com/Anshul619/System-Designs/tree/main/src/RateLimiterAPI)
 - [Notification System](https://github.com/Anshul619/System-Designs/tree/main/src/NotificationSystem)
 - [Logging Solution](https://github.com/Anshul619/System-Designs/tree/main/src/LoggingSolution)
-- [MonolothicToMicroService](https://github.com/Anshul619/System-Designs/tree/main/src/MonolothicToMicroservice)
-- [MakeMyTripSearch](https://github.com/Anshul619/System-Designs/tree/main/src/MakeMyTripSearch)
+- [Monolothic to MicroService](https://github.com/Anshul619/System-Designs/tree/main/src/MonolothicToMicroservice)
+- [MakeMyTrip Search](https://github.com/Anshul619/System-Designs/tree/main/src/MakeMyTripSearch)
 
 ## System Design Glossaries
 
