@@ -129,7 +129,8 @@ Servlets in java provide an interface known as `HttpSessionInterface`.
 
 # [Java Stream](https://www.geeksforgeeks.org/stream-in-java/)
 
-Java Stream is suppported for Collection interfaces.
+Java Stream is by default suppported for Collection interfaces. 
+- To use streams for other data types, we can use [Streams.of(variale)](https://stackify.com/streams-guide-java-8/).
 
 ![image](https://user-images.githubusercontent.com/1247944/175827637-cf1f634e-6850-49d0-9039-0d9b3093902e.png)
 
