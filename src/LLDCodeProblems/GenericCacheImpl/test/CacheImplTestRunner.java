@@ -1,4 +1,4 @@
-/*package CacheImpl;
+package LLDCodeProblems.GenericCacheImpl.test;
 
 import org.junit.runner.Result;
 import org.junit.runner.JUnitCore;
@@ -14,4 +14,4 @@ public class CacheImplTestRunner {
 
         System.out.println(result.wasSuccessful());
     }
-}*/
+}

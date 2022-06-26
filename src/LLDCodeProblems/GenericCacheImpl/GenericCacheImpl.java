@@ -1,24 +1,26 @@
 package LLDCodeProblems.GenericCacheImpl;
 
+import LLDCodeProblems.GenericCacheImpl.domains.Person;
+
 import java.util.HashMap;
 import java.util.LinkedList;
 import java.util.Queue;
 
-public class CacheImpl {
+public class GenericCacheImpl<K, V> {
 
-    private HashMap<String, String> cacheMap;
+    private HashMap<K, V> cacheMap;
 
-    private Queue<String> cacheQueue;
+    private Queue<K> cacheQueue;
 
     private int maxCapacity = 0;
 
-    public CacheImpl(int capacity) {
+    public GenericCacheImpl(int capacity) {
         cacheMap = new HashMap<>();
         cacheQueue = new LinkedList<>();
         maxCapacity = capacity;
     }
 
-    private void addElementToQueue(String key) {
+    private void addElementToQueue(K key) {
 
         if (cacheQueue.contains(key)) {
             cacheQueue.remove(key);
@@ -27,12 +29,12 @@ public class CacheImpl {
         cacheQueue.add(key);
 
         if (cacheQueue.size() > maxCapacity) {
-            String itemToBeRemoved = cacheQueue.remove();
+            Object itemToBeRemoved = cacheQueue.remove();
             cacheMap.remove(itemToBeRemoved);
         }
     }
 
-    public String getItem(String key) {
+    public V getItem(K key) {
 
         if (cacheMap.containsKey(key)) {
             addElementToQueue(key);
@@ -43,7 +45,7 @@ public class CacheImpl {
         return null;
     }
 
-    public boolean addItem(String key, String value) {
+    public boolean addItem(K key, V value) {
 
         addElementToQueue(key);
         cacheMap.put(key, value);
@@ -69,9 +71,9 @@ public class CacheImpl {
         cache.addItem("5", "A1");
         cache.addItem("25", "F");*/
 
-        CacheImpl cache = new CacheImpl(3);
+        GenericCacheImpl<String, Person> cache = new GenericCacheImpl(3);
 
-        cache.addItem("5", "A");
+        /*cache.addItem("5", "A");
         cache.addItem("7", "B");
         cache.getItem("5");
         cache.addItem("9", "C");
@@ -80,9 +82,13 @@ public class CacheImpl {
         cache.addItem("15", "E");
         cache.addItem("21", "E1");
         cache.addItem("5", "A1");
-        cache.addItem("25", "F");
+        cache.addItem(25, "F");*/
 
-        cache.print();
+        cache.addItem("User1", new Person("Anshul"));
+        Person personObj = cache.getItem("User1");
+
+        System.out.println("Name ->" + personObj.getName());
+        //cache.print();
 
         /*CacheImpl.CacheImpl cache = new CacheImpl.CacheImpl(2);
 

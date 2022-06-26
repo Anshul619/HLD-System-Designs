@@ -1,5 +1,6 @@
-/*package CacheImpl;
+package LLDCodeProblems.GenericCacheImpl.test;
 
+import LLDCodeProblems.GenericCacheImpl.others.CacheImpl;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
@@ -52,4 +53,4 @@ public class CacheImplTestCase {
         String item = cache.getItem("5");
         assertEquals(item, null);
     }
-}*/
+}
