@@ -193,11 +193,24 @@ System.out.println(outputList);
 
 ```java
 // create a list of integers
-        List<Integer> number = Arrays.asList(2, 3, 4, 5);
+List<Integer> number = Arrays.asList(2, 3, 4, 5);
 
-        // Apply x->x*x on number list & then print it
-        number.stream().map(x -> x*x).forEach(y->System.out.println(y));
+// Apply x->x*x on number list & then print it
+number.stream().map(x -> x*x).forEach(y->System.out.println(y));
 ```  
+
+# [Generics](https://www.geeksforgeeks.org/generics-in-java/)
+
+## Type Parameters in Java Generics
+
+The type parameters naming conventions are important to learn generics thoroughly. 
+
+The common type parameters are as follows:
+- T – Type
+- E – Element
+- K – Key
+- N – Number
+- V – Value
 
 # Open Questions
 - What is [Exception Hierarchy](https://rollbar.com/blog/java-exceptions-hierarchy-explained/)?
