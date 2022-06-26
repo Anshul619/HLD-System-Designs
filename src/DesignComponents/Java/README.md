@@ -172,6 +172,12 @@ List<String> sorted = strings.stream().sorted().collect(Collectors.toList());
   List<String> filtered = strings.stream().filter(s->s.startsWith("A")).collect(Collectors.toList());
 </pre>
 
+## Reduce
+- TBD
+
+## ForEach
+- TBD
+
 # Open Questions
 - What is [Exception Hierarchy](https://rollbar.com/blog/java-exceptions-hierarchy-explained/)?
 - What is component scan?
@@ -184,3 +190,5 @@ List<String> sorted = strings.stream().sorted().collect(Collectors.toList());
 - https://www.educba.com/jre-vs-jvm/
 - https://www.educba.com/java-7-vs-java-8/
 - https://www.edureka.co/blog/session-in-java/
+- https://blog.knoldus.com/java-8-stream-need-with-examples-and-limitations/
+- https://stackoverflow.com/questions/44180101/in-java-what-are-the-advantages-of-streams-over-loops
