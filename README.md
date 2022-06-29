@@ -18,9 +18,9 @@ This repo contains the various system design questions and solutions.
 # Tech Decisions ( Scalability )
 - Develope microservice based architecture
 - We must consider cloud agnostic approach ( & onPerm customer approach ) while designing the solution.
-- **Open Question - Since most cloud apps would be deployed on AWS, shouldn't we consider managed AWS services instead of our own managed instances ( like Amazon SQS instead of Kafka?)**
-- If its a read heavy microservice, the best decision would be to use `Redis`
+- If its a read heavy microservice, the best decision would be to use `Redis` or multi-read database instances.
 - If its a write heavy microservice, the best decision would be to use either use `Kafka` ( as message queue ) or `DynmoDB`. Both can handle high throughput.
+- Generally, you should aim for maximal throughput with acceptable latency.
 
 ## Design Components
 - [SQL vs NoSQL](https://github.com/Anshul619/System-Designs/blob/main/src/DesignComponents/SQLvsNoSQL/ReadMe.md)
