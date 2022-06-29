@@ -72,7 +72,6 @@ This repo contains the various system design questions and solutions.
 - Atomicity is a feature of databases systems dictating where a transaction must be all-or-nothing. 
 - That is, the transaction must either fully happen, or not happen at all. 
 - It must not complete partially.
-- Reference - 
 
 ### [Language Agnostic](https://en.wikipedia.org/wiki/Language-agnostic)
 - We should design the system considering agnostic feature (Language agnostic, AWS agnostic etc.) into the consideration.
