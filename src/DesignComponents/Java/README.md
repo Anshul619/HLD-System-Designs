@@ -129,6 +129,15 @@ Servlets in java provide an interface known as `HttpSessionInterface`.
 
 # [Java Stream](https://www.geeksforgeeks.org/stream-in-java/)
 
+Java Stream is by default suppported for Collection interfaces. 
+- To use streams for other data types, we can use [Streams.of(variale)](https://stackify.com/streams-guide-java-8/).
+
+![image](https://user-images.githubusercontent.com/1247944/175827637-cf1f634e-6850-49d0-9039-0d9b3093902e.png)
+
+Example Source Codes
+- [Streams](https://github.com/Anshul619/System-Designs/tree/main/src/DesignComponents/Java/Streams)
+- [TW-Code](https://github.com/Anshul619/joy-of-energy/blob/master/src/main/java/uk/tw/energy/service/PricePlanService.java)
+
 ## Map
 - The map method is used to return a stream consisting of the results of applying the given function to the elements of this stream.
 
@@ -212,16 +221,17 @@ The common type parameters are as follows:
 - N – Number
 - V – Value
 
-# Advantages of Generics
+## Advantages of Generics
 - Code Reuse
 - Type Safety
 - Individual Type Casting is not needed
 - Generics Promotes Code Reusability
 - Implementing Generic Algorithms
 
-# Open Questions
-- What is [Exception Hierarchy](https://rollbar.com/blog/java-exceptions-hierarchy-explained/)?
-- What is component scan?
+# Java Exception Hierarchy
+
+![image](https://user-images.githubusercontent.com/1247944/175828367-7389509d-e5e9-45fb-8a62-94601db0d915.png)
+
 
 # References
 - https://www.geeksforgeeks.org/spring-componentscan-annotation-with-example/
