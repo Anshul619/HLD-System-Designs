@@ -18,9 +18,9 @@ This repo contains the various system design questions and solutions.
 # Tech Decisions ( Scalability )
 - Develope microservice based architecture
 - We must consider cloud agnostic approach ( & onPerm customer approach ) while designing the solution.
-- **Open Question - Since most cloud apps would be deployed on AWS, shouldn't we consider managed AWS services instead of our own managed instances ( like Amazon SQS instead of Kafka?)**
-- If its a read heavy microservice, the best decision would be to use `Redis`
+- If its a read heavy microservice, the best decision would be to use `Redis` or multi-read database instances.
 - If its a write heavy microservice, the best decision would be to use either use `Kafka` ( as message queue ) or `DynmoDB`. Both can handle high throughput.
+- Generally, you should aim for maximal throughput with acceptable latency.
 
 ## Design Components
 - [SQL vs NoSQL](https://github.com/Anshul619/System-Designs/blob/main/src/DesignComponents/SQLvsNoSQL/ReadMe.md)
@@ -72,7 +72,6 @@ This repo contains the various system design questions and solutions.
 - Atomicity is a feature of databases systems dictating where a transaction must be all-or-nothing. 
 - That is, the transaction must either fully happen, or not happen at all. 
 - It must not complete partially.
-- Reference - 
 
 ### [Language Agnostic](https://en.wikipedia.org/wiki/Language-agnostic)
 - We should design the system considering agnostic feature (Language agnostic, AWS agnostic etc.) into the consideration.
