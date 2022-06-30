@@ -1,9 +1,9 @@
-package DesignComponents.EngineeringPrinciples.Samples.FactoryDesignPattern;
+package DesignComponents.EngineeringPrinciples.DesignPatterns.FactoryDesignPattern;
 
-import DesignComponents.EngineeringPrinciples.Samples.FactoryDesignPattern.Interface.Notification;
-import DesignComponents.EngineeringPrinciples.Samples.FactoryDesignPattern.domains.EmailNotification;
-import DesignComponents.EngineeringPrinciples.Samples.FactoryDesignPattern.domains.PushNotification;
-import DesignComponents.EngineeringPrinciples.Samples.FactoryDesignPattern.domains.SMSNotification;
+import DesignComponents.EngineeringPrinciples.DesignPatterns.FactoryDesignPattern.interfaces.Notification;
+import DesignComponents.EngineeringPrinciples.DesignPatterns.FactoryDesignPattern.domains.EmailNotification;
+import DesignComponents.EngineeringPrinciples.DesignPatterns.FactoryDesignPattern.domains.PushNotification;
+import DesignComponents.EngineeringPrinciples.DesignPatterns.FactoryDesignPattern.domains.SMSNotification;
 
 /**
  * Create a factory class NotificationFactory.java to instantiate concrete class.

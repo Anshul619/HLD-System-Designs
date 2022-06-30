@@ -1,23 +1,27 @@
 
 # [Factory pattern](https://www.geeksforgeeks.org/factory-method-design-pattern-in-java/)
+- It is part of `Creational Design Pattern` type.
 - A class implementing factory design pattern works as a bridge between multiple classes.
 - Suppose you want to create multiple instances of a similar kind and want to achieve loose coupling then you can go for Factory pattern.
 - Example - DB design, NotificationFactory etc.
-![img.png](Samples/FactoryDesignPattern/assests/img.png)
+![img.png](FactoryDesignPattern/assests/img.png)
 
-# Adapter pattern
+# [Adapter pattern](https://www.geeksforgeeks.org/adapter-pattern/)
+- It is part of `Structural Design Pattern` type.
 - When 2 interfaces are not compatible with each other and want to establish a relationship between them through an adapter it’s called an adapter design pattern.
-- The adapter pattern converts the interface of a class into another interface or class that the client expects, i.e adapter lets classes work together that could not otherwise because of incompatibility. 
+- The adapter pattern converts the interface of a class into another interface or class that the client expects, i.e. adapter lets classes work together that could not otherwise because of incompatibility. 
 - So in these types of incompatible scenarios, we can go for the adapter pattern.
 - The client sees only the target interface and not the adapter. 
 - The adapter implements the target interface. 
 - Adapter delegates all requests to Adaptee.
+![img.png](AdapterDesignPattern/assests/img.png)
 
-# The template pattern
+# [The template pattern](https://www.geeksforgeeks.org/template-method-design-pattern/)
+- It is part of `Behavior Design Pattern` type.
 - The template pattern defines the skeleton of an algorithm in an operation deferring some steps to sub-classes.
 - The template method lets subclasses redefine certain steps of an algorithm without changing the algorithm structure.
 
-# Observer Pattern
+# [Observer Pattern](https://www.geeksforgeeks.org/observer-pattern-set-1-introduction/)
 - The Observer Pattern defines a one to many dependency between objects so that one object changes state, all of its dependents are notified and updated automatically.
 - Subject
 - Observer
@@ -29,7 +33,7 @@ Provides a loosely coupled design between objects that interact.
 Disadvantages
 - Memory leaks caused by Lapsed listener problem because of explicit register and unregistering of observers.
 
-# Singleton Design Pattern
+# [Singleton Design Pattern](https://www.geeksforgeeks.org/singleton-design-pattern/?ref=lbp)
 - Singleton obj is not created until we need it and call getInstance() method. This is called lazy instantiation.
 - Here using synchronized makes sure that only one thread at a time can execute getInstance().
 - The main disadvantage of this is method is that using synchronized every time while creating the singleton object is expensive and may decrease the performance of your program.

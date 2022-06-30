@@ -1,6 +1,6 @@
-package DesignComponents.EngineeringPrinciples.Samples.FactoryDesignPattern;
+package DesignComponents.EngineeringPrinciples.DesignPatterns.FactoryDesignPattern;
 
-import DesignComponents.EngineeringPrinciples.Samples.FactoryDesignPattern.Interface.Notification;
+import DesignComponents.EngineeringPrinciples.DesignPatterns.FactoryDesignPattern.interfaces.Notification;
 
 /**
  *

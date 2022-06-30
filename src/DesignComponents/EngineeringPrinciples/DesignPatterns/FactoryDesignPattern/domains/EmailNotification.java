@@ -1,6 +1,6 @@
-package DesignComponents.EngineeringPrinciples.Samples.FactoryDesignPattern.domains;
+package DesignComponents.EngineeringPrinciples.DesignPatterns.FactoryDesignPattern.domains;
 
-import DesignComponents.EngineeringPrinciples.Samples.FactoryDesignPattern.Interface.Notification;
+import DesignComponents.EngineeringPrinciples.DesignPatterns.FactoryDesignPattern.interfaces.Notification;
 
 public class EmailNotification implements Notification {
 
