@@ -8,8 +8,6 @@ Scopes
 - Lock Set<Seat> seats for x minutes
 - Proceed with the booking
 
-
-
 Different classes
 - Seat
     - Boolean IsAvailable => 1
@@ -45,10 +43,13 @@ Different classes
         - exit
 
 Other questions
-- - User1 - S1, S2, S3
+- User1 - S1, S2, S3
       - 3 Semaphors
       -
-  - User2 - S3, S4
-      - S3 is on the conflict
-      - We can wait for 5 mins
-          - S3 is 
+- User2 - S3, S4
+    - S3 is on the conflict
+    - We can wait for 5 mins
+        - S3 is 
+
+# References
+- https://akshay-iyangar.github.io/system-design/grokking-ood/examples/java/movie-ticket-booking-system.html

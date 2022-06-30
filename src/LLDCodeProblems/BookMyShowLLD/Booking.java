@@ -1,33 +1,26 @@
-package LLDCodeProblems.MovieBookingLikeBookMyShow;
+package LLDCodeProblems.BookMyShowLLD;
 
-import LLDCodeProblems.MovieBookingLikeBookMyShow.domains.Seat;
-import LLDCodeProblems.MovieBookingLikeBookMyShow.domains.Show;
+import LLDCodeProblems.BookMyShowLLD.domains.Show;
+import LLDCodeProblems.BookMyShowLLD.domains.ShowSeat;
+import LLDCodeProblems.BookMyShowLLD.enums.BookingStatus;
 
 import java.util.List;
 
+public class Booking {
+    private String bookingNumber;
+    private int numberOfSeats;
+    private Date createdOn;
+    private BookingStatus status;
 
-public class BookSeat {
+    private Show show;
+    private List<ShowSeat> seats;
+    private Payment payment;
 
-    ShowsData showDataObj = new ShowsData();
-    String date;
-    String movieName;
+    public boolean makePayment(Payment payment);
+    public boolean cancel();
+    public boolean assignSeats(List<ShowSeat> seats);
 
-    public BookSeat(String date, String movieName) {
-        this.date = date;
-        this.movieName = movieName;
-    }
-
-    /*public List<Seat> getAvailableSeats(String date, Show show) {
-
-        List<Show> shows = showDataObj.shows;
-
-        for(int i=0; i < shows.size(); i++) {
-
-            //if (shows.get(i).date == "")
-        }
-    }*/
-
-    public boolean book() {
+    /*public boolean book() {
 
         List<Show> shows = showDataObj.shows;
 
@@ -50,16 +43,16 @@ public class BookSeat {
                         //HashMap
                         //Semaphore seat = new Semaphore(1);
 
-                        /*synchronised (seats.get(j)) {
+                        synchronised (seats.get(j)) {
                             if (seats.get(j).isAvailable == 1) {
                                 // Payment would be done here
                                 //sleep(1000);
                                 seats.get(j).isAvailable = 0;
                                 return true;
                             }
-                        }*/
+                        }
                     }
-                 }
+                }
 
             }
         }
@@ -72,5 +65,5 @@ public class BookSeat {
         BookSeat obj = new BookSeat("20-1-20", "Movie1");
 
         System.out.println(obj.book());
-    }
+    }*/
 }

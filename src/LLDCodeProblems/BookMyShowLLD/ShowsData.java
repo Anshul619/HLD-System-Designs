@@ -1,4 +1,4 @@
-package LLDCodeProblems.MovieBookingLikeBookMyShow;
+package LLDCodeProblems.BookMyShowLLD;
 
 import LLDCodeProblems.MovieBookingLikeBookMyShow.domains.Seat;
 import LLDCodeProblems.MovieBookingLikeBookMyShow.domains.Show;

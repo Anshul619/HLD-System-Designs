@@ -1,4 +1,4 @@
-package LLDCodeProblems.MovieBookingLikeBookMyShow.domains;
+package LLDCodeProblems.BookMyShowLLD.domains;
 
 public class Seat {
 

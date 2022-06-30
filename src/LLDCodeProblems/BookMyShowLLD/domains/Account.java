@@ -1,9 +1,6 @@
 package LLDCodeProblems.MovieBookingLikeBookMyShow.MovieBookingSystem;
 
 public class Account {
-}
-
-public class Account {
     private String id;
     private String password;
     private AccountStatus status;
