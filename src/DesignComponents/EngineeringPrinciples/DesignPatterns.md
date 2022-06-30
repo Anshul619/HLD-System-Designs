@@ -1,8 +1,9 @@
 
-# Factory pattern
+# [Factory pattern](https://www.geeksforgeeks.org/factory-method-design-pattern-in-java/)
 - A class implementing factory design pattern works as a bridge between multiple classes.
 - Suppose you want to create multiple instances of a similar kind and want to achieve loose coupling then you can go for Factory pattern.
-- Example - DB design.
+- Example - DB design, NotificationFactory etc.
+![img.png](Samples/FactoryDesignPattern/assests/img.png)
 
 # Adapter pattern
 - When 2 interfaces are not compatible with each other and want to establish a relationship between them through an adapter it’s called an adapter design pattern.
