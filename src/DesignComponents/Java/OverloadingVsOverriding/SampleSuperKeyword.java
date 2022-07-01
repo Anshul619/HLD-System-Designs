@@ -1,4 +1,4 @@
-package Java.OverloadingVsOverriding;
+package DesignComponents.Java.OverloadingVsOverriding;
 
 /**
  * The super keyword is used to access hidden fields and overridden methods or attributes of the parent class.

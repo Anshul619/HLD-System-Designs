@@ -1,4 +1,4 @@
-package Java.OverloadingVsOverriding;
+package DesignComponents.Java.OverloadingVsOverriding;
 
 /**
  * In Java, method overloading is made possible by introducing different methods in the same class consisting of the same name.

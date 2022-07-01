@@ -1,4 +1,4 @@
-package Java.Others;
+package DesignComponents.Java.Others;
 
 /**
  * https://stackoverflow.com/questions/8798403/string-is-immutable-what-exactly-is-the-meaning#17942294
