@@ -1,12 +1,4 @@
-package Java.DependencyInjection;
-
-interface Person {
-
-}
-
-interface InjectPerson {
-    public void injectHere(Person p);
-}
+package DesignComponents.Java.DependencyInjection.InterfaceInjection;
 
 class Company implements InjectPerson {
     Person injectedPerson;

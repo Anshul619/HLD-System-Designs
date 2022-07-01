@@ -1,7 +1,6 @@
 package DesignComponents.Java.Generics;
 
 /**
- *
  * https://www.geeksforgeeks.org/generics-in-java/
  *
  * @param <T>
@@ -13,7 +12,6 @@ public class SampleGenericClass<T> {
 
     SampleGenericClass(T obj) {
         this.obj = obj;
-
     }
 
     public T getObject() {
@@ -29,7 +27,6 @@ public class SampleGenericClass<T> {
         System.out.println(stringObj.getObject());
 
         //integerObj = stringObj; // Type Cast error
-
     }
 
 }

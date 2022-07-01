@@ -1,4 +1,4 @@
-package Java.Others;
+package DesignComponents.Java.Others;
 
 public class SampleFinalize {
 

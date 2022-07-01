@@ -1,4 +1,4 @@
-package Java.multiThreading.leetCodeProblems;
+package DesignComponents.Java.multiThreading.leetCodeProblems;
 
 /**
  * LeetCode - https://leetcode.com/problems/fizz-buzz-multithreaded/

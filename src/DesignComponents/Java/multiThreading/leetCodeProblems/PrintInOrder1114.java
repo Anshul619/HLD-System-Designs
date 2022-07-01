@@ -1,4 +1,4 @@
-package Java.multiThreading.leetCodeProblems;
+package DesignComponents.Java.multiThreading.leetCodeProblems;
 
 import java.util.concurrent.Semaphore;
 

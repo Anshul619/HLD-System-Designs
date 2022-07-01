@@ -14,9 +14,7 @@ public class SampleGenericMethod {
         SampleGenericMethod obj = new SampleGenericMethod();
 
         obj.genericMethod(20);
-
         obj.genericMethod("Anshul Agrawal");
-
         obj.genericMethod(1.0);
     }
 }

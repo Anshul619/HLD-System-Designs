@@ -1,4 +1,6 @@
-package Java.DependencyInjection;
+package DesignComponents.Java.DependencyInjection;
+
+import DesignComponents.Java.DependencyInjection.ConstructorInjection.ServiceA;
 
 /**
  * Here ClientANoDI is dependent on ServiceA.

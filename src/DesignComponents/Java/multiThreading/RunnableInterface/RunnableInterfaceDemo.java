@@ -1,4 +1,4 @@
-package Java.multiThreading.RunnableInterface;
+package DesignComponents.Java.multiThreading.RunnableInterface;
 
 /**
  * https://www.freecodecamp.org/news/how-to-get-started-with-multithreading-in-java/

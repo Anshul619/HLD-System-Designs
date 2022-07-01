@@ -1,4 +1,4 @@
-package Java.FinalConstruct;
+package DesignComponents.Java.FinalConstruct;
 
 /**
  * No classes can be inherited from the class declared as final.

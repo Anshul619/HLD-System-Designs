@@ -1,4 +1,4 @@
-package Java.multiThreading.RunnableInterface;
+package DesignComponents.Java.multiThreading.RunnableInterface;
 
 public class RunnableWorker implements Runnable{
 	
