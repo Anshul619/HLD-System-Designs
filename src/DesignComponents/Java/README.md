@@ -9,7 +9,7 @@ Java language was developed in such a way that it does not depend on any hardwar
 # What is Garbage Collection?
 - The main objective of this process is to free up the memory space occupied by the unnecessary and unreachable objects during the Java program execution by deleting those unreachable objects.
 - This ensures that the memory resource is used efficiently, but it provides no guarantee that there would be sufficient memory for the program execution.
-- Heap memory would be cleared on garbage collection.
+- `Heap memory` would be cleared on garbage collection.
 
 # How is Java different from C++?
 
@@ -28,34 +28,38 @@ Java language was developed in such a way that it does not depend on any hardwar
 - One more example, since there are no pointers, bad memory access is also not possible.
 
 # What is data encapsulation?
-- Data Encapsulation is an Object-Oriented Programming concept of hiding the data attributes and their behaviours in a single unit. 
+- Data Encapsulation is an `Object-Oriented Programming` concept of hiding the data attributes and their behaviours in a single unit. 
 - It helps developers to follow modularity while developing software by ensuring that each object is independent of other objects by having its own methods, attributes, and functionalities. 
 - It is used for the security of the private properties of an object and hence serves the purpose of data hiding.
 
-# JVM vs JRE
-- The main function of JRE is to provide a runtime environment to run java applications, whereas JVM converts byte code to machine code for execution and provides platform independence.
-- JRE acts as a container, and jvm acts as content.
+<img title="Java - JDK vs JRE vs JVM" alt="Alt text" src="Others/Java - JDK vs JRE vs JVM.drawio.png">
+
+# JRE vs JVM 
+- The main function of JRE is to provide a runtime environment to run java applications, whereas JVM converts a byte code to machine code for execution and provides platform independence.
+- JRE acts as a container and jvm acts as content.
 - JRE is composed of JVM + Libraries to run applications, whereas jvm contains only a runtime environment for executing Java bytecode.
 
 # Just In Time(JIT) compiler
-
-<img title="Java - JDK vs JRE vs JVM" alt="Alt text" src="Others/Java - JDK vs JRE vs JVM.drawio.png">
-
-- JIT stands for Just-In-Time and it is used for improving the performance during run time. It does the task of compiling parts of byte code having similar functionality at the same time thereby reducing the amount of compilation time for the code to run.
+- JIT stands for `Just-In-Time` & it is used for improving the performance during run time. It does the task of compiling parts of byte code having similar functionality at the same time thereby reducing the amount of compilation time for the code to run.
 - The compiler is nothing but a translator of source code to machine-executable code. But what is special about the JIT compiler? Let us see how it works:
-  - First, the Java source code (.java) conversion to byte code (.class) occurs with the help of the javac compiler.
+  - First, the Java source code (`.java`) conversion to byte code (`.class`) occurs with the help of the javac compiler.
   - Then, the .class files are loaded at run time by JVM and with the help of an interpreter, these are converted to machine understandable code.
-  - JIT compiler is a part of JVM. When the JIT compiler is enabled, the JVM analyzes the method calls in the .class files and compiles them to get more efficient and native code. It also ensures that the prioritized method calls are optimized.
-  - Once the above step is done, the JVM executes the optimized code directly instead of interpreting the code again. This increases the performance and speed of the execution.
+  - JIT compiler is a part of JVM. 
+  - When the JIT compiler is enabled, the JVM analyzes the method calls in the `.class` files and compiles them to get more efficient and native code. 
+  - It also ensures that the prioritized method calls are optimized.
+  - Once the above step is done, the JVM executes the optimized code directly instead of interpreting the code again.
+  - This increases the performance and speed of the execution.
 
 # Can the static methods be overridden?
 - No! Declaration of static methods having the same signature can be done in the subclass but run time polymorphism can not take place in such cases.
-- Overriding or dynamic polymorphism occurs during the runtime, but the static methods are loaded and looked up at the compile time statically. Hence, these methods cant be overridden.
+- Overriding or dynamic polymorphism occurs during the runtime, but the static methods are loaded and looked up at the compile time statically. Hence, these methods can't be overridden.
 
 # Difference between static methods, static variables, and static classes in java.
-- Static Methods and Static variables are those methods and variables that belong to the class of the java program, not to the object of the class. This gets memory where the class is loaded. And these can directly be called with the help of class names.
-- For example - We have used mathematical functions in the java program like - max(), min(), sqrt(), pow(), etc. And if we notice that, then we will find that we call it directly with the class name. Like - Math.max(), Math.min(), etc. So that is a static method.  And Similarly static variables we have used like (length) for the array to get the length. So that is the static method.
-- Static classes - A class in the java program cannot be static except if it is the inner class. If it is an inner static class, then it exactly works like other static members of the class.
+- Static Methods and Static variables are those methods and variables that belong to the class of the java program, not to the object of the class. 
+- This gets memory where the class is loaded. And these can directly be called with the help of class names.
+- For example - We have used mathematical functions in the java program like - max(), min(), sqrt(), pow(), etc. 
+- And if we notice that, then we will find that we call it directly with the class name. Like - Math.max(), Math.min(), etc. So that is a static method.  And Similarly static variables we have used like (length) for the array to get the length. So that is the static method.
+- Static classes - `A class in the java program cannot be static except if it is the inner class`. If it is an inner static class, then it exactly works like other static members of the class.
 
 # What makes a HashSet different from a TreeSet?
 - Implementation: For a HashSet, the hash table is utilized for storing the elements in an unordered manner. However, TreeSet makes use of the red-black tree to store the elements in a sorted manner.
@@ -64,7 +68,8 @@ Java language was developed in such a way that it does not depend on any hardwar
 - Objects type: Heterogeneous and null objects can be stored with the help of HashSet. In the case of a TreeSet, runtime exception occurs while inserting heterogeneous objects or null objects.
 
 # What are the differences between HashMap and HashTable in Java?
-- HashMap is not synchronized thereby making it better for non-threaded applications.	HashTable is synchronized and hence it is suitable for threaded applications.
+- HashMap is not synchronized thereby making it better for non-threaded applications.
+- HashTable is synchronized and hence it is suitable for threaded applications.
 - Allows only one null key but any number of null in the values.	This does not allow null in both keys or values.
 - Supports order of insertion by making use of its subclass LinkedHashMap.	Order of insertion is not guaranteed in HashTable.
 
@@ -95,7 +100,7 @@ Inheritance lags behind composition in the following scenarios:
 - In Java, dependency injection is supported since Java EE 6 - called CDI (Contexts and Dependency Injection).
 - And the Spring framework is based on dependency injection, as well as other frameworks like Google Guice and Play.
 - *Dependency injection helps in TDD development.*
-- *Dependency Injection helps in loosely coupling. Its a singleton class and helps in maintaining factory pattern.*
+- *Dependency Injection helps in loosely coupling. It's a singleton class and helps in maintaining factory pattern.*
 
 # Types of DI
 - *Constructor injection*: the dependencies are provided through a class constructor.
@@ -129,7 +134,7 @@ Servlets in java provide an interface known as `HttpSessionInterface`.
 
 # [Java Stream](https://www.geeksforgeeks.org/stream-in-java/)
 
-Java Stream is by default suppported for Collection interfaces. 
+Java Stream is by default supported for Collection interfaces. 
 - To use streams for other data types, we can use [Streams.of(variale)](https://stackify.com/streams-guide-java-8/).
 
 ![image](https://user-images.githubusercontent.com/1247944/175827637-cf1f634e-6850-49d0-9039-0d9b3093902e.png)
@@ -225,8 +230,8 @@ The common type parameters are as follows:
 - Code Reuse
 - Type Safety
 - Individual Type Casting is not needed
-- Generics Promotes Code Reusability
-- Implementing Generic Algorithms
+- Generics promotes Code Re-usability
+- Implement Generic Algorithms
 
 # Java Exception Hierarchy
 
