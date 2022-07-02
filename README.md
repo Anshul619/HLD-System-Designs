@@ -37,8 +37,8 @@ This repo contains the various system design questions and solutions.
 - [DRY](https://github.com/Anshul619/System-Designs/blob/main/src/DesignComponents/EngineeringPrinciples/DRY.md)
 
 ## Tech Skills
+- [Spring Boot & Microservices](https://github.com/Anshul619/System-Designs/tree/main/src/DesignComponents/SpringBootAndMicroServices)
 - [Java](https://github.com/Anshul619/System-Designs/tree/main/src/DesignComponents/Java)
-- [Spring Boot & Microservices](https://github.com/Anshul619/System-Designs/tree/main/src/DesignComponents/SpringBoot)
 - [Hibernate](https://github.com/Anshul619/System-Designs/blob/main/src/DesignComponents/Hiberate.md)
 - [JS](https://github.com/Anshul619/System-Designs/tree/main/src/DesignComponents/JSAsync)
 - [Testing](https://github.com/Anshul619/System-Designs/blob/main/src/DesignComponents/Testing.md)
