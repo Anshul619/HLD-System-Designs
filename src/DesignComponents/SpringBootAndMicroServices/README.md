@@ -56,7 +56,7 @@ Y(@PathVariable String smartMeterId)| URL Parameter in the API                  
 @Entity| To annotate the database object                                                                                                                                                                                    |
 
 # How to disable a specific auto-configuration class?
-You can use exclude attribute of `@EnableAutoConfiguration` if you want auto-configuration not to apply to any specific class.
+You can use exclude attribute of `@EnableAutoConfiguration` if you want auto configuration not to apply to any specific class.
 
 ```java
 //use of exclude
@@ -126,6 +126,24 @@ spring --help
 - This means all operations have got to do with the `Product` are located within the `ProductsController` and consequently within the `ProductsRepository`
 - Hence its preferred each repository is equipped with operations to deal with some aspect of your project.
 - Not all aspects may need a repository, but that is what you decide.
+
+# [Hibernate & JPA](https://www.javatpoint.com/jpa-vs-hibernate)
+
+## What is JPA?
+- JPA is just a specification that facilitates object-relational mapping to manage relational data in Java applications. 
+- It provides a platform to work directly with objects instead of using SQL statements.
+
+## What is Hibernate?
+- Hibernate is a Java framework which is used to store the Java objects in the relational database system. 
+- It is an open-source, lightweight, ORM (Object Relational Mapping) tool.
+
+## [Hibernate example using JPA, MySQL](https://www.geeksforgeeks.org/hibernate-example-using-jpa-and-mysql/)
+
+## [Eager/Lazy Loading In Hibernate](https://www.baeldung.com/hibernate-lazy-eager-loading)
+
+## When to implement RAW query in hibernate?
+- When it's a complex logic to be implemented, we should implement RAW in Hibernate. 
+- Hibernate supports [HQL language][https://www.tutorialspoint.com/hibernate/hibernate_query_language.htm]
 
 # References
 - https://www.javatpoint.com/microservices
