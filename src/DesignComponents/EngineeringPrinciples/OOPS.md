@@ -1,4 +1,6 @@
 
+![img.png](assests/oops_img.png)
+
 # Inheritance - Extends
 - In Java, the extends keyword is used to indicate that the class which is being defined is derived from the base class using inheritance.
 - So basically, extends keyword is used to extend the functionality of the parent class to the subclass.
@@ -22,34 +24,31 @@
 
 # Encapsulation
 - Encapsulation in Java is a process of wrapping code and data together into a single unit, for example, a capsule which is mixed of several medicines.
-- We can create a fully encapsulated class in Java by making all the data members of the class private.
-- Now we can use setter and getter methods to set and get the data in it.
+- We can create a fully encapsulated class in Java by making all the data members of the class `private`.
+- Now we can use `setter` and `getter` methods to set and get the data in it.
 
 # Composition
-- The composition is also a way to achieve Association.
+- The composition is also a way to achieve association.
 - The composition represents the relationship where one object contains other objects as a part of its state.
 - There is a strong relationship between the containing object and the dependent object.
 - It is the state where containing objects do not have an independent existence.
 - If you delete the parent object, all the child objects will be deleted automatically.
 
-# Highly Cohesive
-- *Cohesion refers to the level of a component which performs a single well-defined task.*
-- A single well-defined task is done by a highly cohesive method.
-- The weakly cohesive method will split the task into separate parts.
-- The java.io package is a highly cohesive package because it has I/O related classes and interface.
-- However, the java.util package is a weakly cohesive package because it has unrelated classes and interfaces.
-
 # Interface vs Abstract
 
-Consider using abstract classes if any of these statements apply to your situation:
+## Abstract
+
+Consider using `abstract` classes if any of these statements apply to your situation:
 - In the java application, there are some related classes that need to share some lines of code then you can put these lines of code within the abstract class and this abstract class should be extended by all these related classes.
 - You can define the non-static or non-final field(s) in the abstract class so that via a method you can access and modify the state of the object to which they belong.
 - You can expect that the classes that extend an abstract class have many common methods or fields, or require access modifiers other than public (such as protected and private).
 - Example - `Person` class as abstract class. And `User`, `Admin` classes extending the `Person` class.
 
-Consider using interfaces if any of these statements apply to your situation:
-- It is total abstraction, All methods declared within an interface must be implemented by the class(es) that implements this interface.
-- A class can implement more than one interface. It is called multiple inheritances.
+## Interface
+
+Consider using `interfaces` if any of these statements apply to your situation:
+- It is total abstraction, all methods declared within an interface must be implemented by the class(es) that implements this interface.
+- A class can implement more than one interface. It is called `multiple inheritances`.
 - You want to specify the behavior of a particular data type but are not concerned about who implements its behavior.
 - Example - `Search` interface as interface. And `UserSearch`, `BookSearch` etc. implementing the interface.
 
