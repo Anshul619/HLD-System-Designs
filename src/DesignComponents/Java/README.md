@@ -237,6 +237,9 @@ The common type parameters are as follows:
 
 ![image](https://user-images.githubusercontent.com/1247944/175828367-7389509d-e5e9-45fb-8a62-94601db0d915.png)
 
+# Advanced MultiThreading
+- https://github.com/eugenp/tutorials/tree/master/core-java-modules/core-java-concurrency-advanced/src/main/java/com/baeldung
+
 # References
 - https://www.geeksforgeeks.org/spring-componentscan-annotation-with-example/
 - https://www.codejava.net/coding/what-is-dependency-injection-with-java-code-example

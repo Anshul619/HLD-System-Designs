@@ -1,11 +1,9 @@
 package DesignComponents.Java.multiThreading.RunnableInterface;
 
 /**
- * https://www.freecodecamp.org/news/how-to-get-started-with-multithreading-in-java/
- *
- * // Implementing the runnable interface is a better option than extending the thread class since we can extend only one class, but we can implement multiple interfaces in Java.
- *
- * https://www.interviewbit.com/java-interview-questions/
+ * Implementing the runnable interface is a better option than extending the thread class since we can extend only one class, but we can implement multiple interfaces in Java.
+ * - https://www.interviewbit.com/java-interview-questions/
+ * - https://www.freecodecamp.org/news/how-to-get-started-with-multithreading-in-java/
  *
  * @author anshul.agrawal
  *

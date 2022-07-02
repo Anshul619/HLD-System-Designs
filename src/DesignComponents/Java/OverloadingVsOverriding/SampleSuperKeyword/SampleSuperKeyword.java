@@ -1,4 +1,4 @@
-package DesignComponents.Java.OverloadingVsOverriding;
+package DesignComponents.Java.OverloadingVsOverriding.SampleSuperKeyword;
 
 /**
  * The super keyword is used to access hidden fields and overridden methods or attributes of the parent class.
@@ -27,24 +27,3 @@ public class SampleSuperKeyword {
     }
 }
 
-class Child extends SampleSuperKeyword {
-    private int num = 2;
-
-    Child(){
-        //System.out.println("Child class default Constructor");
-
-        super();    // to call default parent constructor
-        //super("Call Parent");    // to call parameterised constructor.
-    }
-
-    void printNum(){
-        System.out.println(num);
-        System.out.println(super.num); //prints the value of num of parent class
-    }
-
-    @Override
-    public void foo(){
-        System.out.println("Parent class foo!");
-        super.foo();    //Calls foo method of Parent class inside the Overriden foo method of Child class.
-    }
-}

@@ -1,4 +1,4 @@
-package Java.OverloadingVsOverriding.Overriding;
+package DesignComponents.Java.OverloadingVsOverriding.Overriding;
 
 public class HumanBeing {
 

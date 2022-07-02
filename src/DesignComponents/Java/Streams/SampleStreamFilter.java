@@ -16,7 +16,8 @@ public class SampleStreamFilter {
         // create a list of strings
         List<String> strings = Arrays.asList("Anshul", "Agrawal", "Developer");
 
-        // Filter list for string starting with "A". Here s->s.startsWith is the predicate.
+        // Filter list for string starting with "A".
+        // Here s->s.startsWith is the predicate.
         List<String> filtered = strings.stream().filter(s->s.startsWith("A")).collect(Collectors.toList());
 
         System.out.println(filtered);

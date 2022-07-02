@@ -1,4 +1,4 @@
-package Java.Others;
+package DesignComponents.Java.Others;
 
 /**
  * A single try block and multiple catch blocks can co-exist in a Java Program.
