@@ -119,8 +119,12 @@ spring --help
 - Eureka naming server comes with the bundle of Spring Cloud. It runs on the default port 8761. 
 - It also comes with a Java-based client component, the eureka client, which makes interactions with the service much easier.
 
-# Domain-Driven Design
-- Think Domain-Driven Design, and with that in mind, you divide the logical structure of your project not as classes only, but as domains also, which means all operations have got to do with the Product are located within the ProductsController and consequently within the ProductsRepository, so its preferred many repositories each equipped with operations to deal with some aspect of your project.
+# [Domain-Driven Design](https://domaindrivendesign.org/ddd-domain-driven-design/)
+
+![img.png](assests/ddd_img.png)
+- Think Domain-Driven Design, and with that in mind, you divide the logical structure of your project not as classes only, but as domains also. 
+- This means all operations have got to do with the `Product` are located within the `ProductsController` and consequently within the `ProductsRepository`
+- Hence its preferred each repository is equipped with operations to deal with some aspect of your project.
 - Not all aspects may need a repository, but that is what you decide.
 
 # References
