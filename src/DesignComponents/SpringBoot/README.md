@@ -1,7 +1,7 @@
 
 # What is Spring boot?
 - Sprint boot is a Java-based spring framework used for Rapid Application Development (to build stand-alone microservices). 
-- It has extra support of auto-configuration and *embedded application server like tomcat*, jetty, etc.
+- It has an extra support of autoconfiguration and *embedded application server like tomcat*, jetty, etc.
 
 <img title="SpringBootArchitecture" alt="Alt text" src="assests/SpringBootArchitecture.drawio.png">
 
@@ -29,28 +29,51 @@
 - InMemory DB.
 - Actuators
 
-# How does Spring Boot works?
-- Spring Boot automatically configures your application based on the dependencies you have added to the project `by using annotation`. 
+# What is repository?
+- We should create a repository per service if that makes any sense.
+
+# How does Spring Boot work?
+- Spring Boot automatically configures your application based on the dependencies you have added to the project `by using annotations`. 
 - The entry point of the spring boot application is the class that contains `@SpringBootApplication` annotation and the main method.
 - Spring Boot automatically scans all the components included in the project by using `@ComponentScan` annotation.
+
+# Different Annotations
+
+Annotation| Remarks                                                                                                                                                                                                            |
+---------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+@SpringBootApplication||
+@EnableAutoConfiguration| @EnableAutoConfiguration annotation enables the auto-configuration of Spring ApplicationContext by scanning the classpath components and registering the beans.                                                    |
+@ComponentScan|Spring Boot automatically scans all the components included in the project by using `@ComponentScan` annotation.|
+@Configuration||
+@RestController| RestController is used for making restful web services with the help of the @RestController annotation. This annotation is used at the class level and allows the class to handle the requests made by the client. |
+@RequestMapping(value = "/activate",  method = RequestMethod.POST, produces = "application/json")||
+@PostMapping("/store")| Post mapping annotation on the method                                                                                                                                                                              |
+@GetMapping("/store")| Get mapping annotation on the method                                                                                                                                                                               |
+X(@RequestBody MeterReadings meterReadings)| HTTP Post body of the API                                                                                                                                                                                          |
+Y(@PathVariable String smartMeterId)| URL Parameter in the API                                                                                                                                                                                           |
+@Bean| @Bean is a method-level annotation. @Bean annotation specifies that a method produces a return value registered as a bean ( data ) with BeanFactory – managed by Spring Container.                                                                                                                                                                               |
+@Primary||
+@Entity| To annotate the database object                                                                                                                                                                                    |
+
+# How to disable a specific auto-configuration class?
+You can use exclude attribute of `@EnableAutoConfiguration` if you want auto-configuration not to apply to any specific class.
+
+<pre>
+//use of exclude
+@EnableAutoConfiguration(exclude={className})
+</pre>
 
 # Most commonly used Spring Boot CLI commands?
 - `spring --help`
 - `-run, -test, -grap, -jar, -war, -install, -uninstall, --init, -shell, -help.`
 
 # What is the default port of tomcat in spring boot?
-- The default port of the tomcat server-id 8080. It can be changed by adding sever.port properties in the application.property file.
+- The default port of the tomcat server-id 8080. 
+- It can be changed by adding `sever.port` properties in the `application.properties` file.
 
 # Can we override or replace the Embedded tomcat server in Spring Boot?
-- Yes, we can replace the Embedded Tomcat server with any server by using the Starter dependency in the pom.xml file. Like you can use spring-boot-starter-jetty as a dependency for using a jetty server in your project.
-
-# How to disable a specific auto-configuration class?
-You can use exclude attribute of @EnableAutoConfiguration if you want auto-configuration not to apply to any specific class.
-
-<pre>
-//use of exclude
-@EnableAutoConfiguration(exclude={className})
-</pre>
+- Yes, we can replace the Embedded Tomcat server with any server by using the Starter dependency in the pom.xml file. 
+- Like you can use `spring-boot-starter-jetty` as a dependency for using a jetty server in your project.
 
 # How to enable Actuator in Spring boot application?
 
@@ -72,27 +95,8 @@ You can use exclude attribute of @EnableAutoConfiguration if you want auto-confi
 # Min. Java Version needed for Spring Boot
 - Java 8
 
-# Is Dependency needed to create a Spring Boot web application?
+# What dependency needed to create a Spring Boot web application?
 - Spring Boot Starter Web
-
-# Database object must be annotated with?
-- @Entity
-
-# Different Annotations
-
-Annotation| Remarks                               |
----------------------------------------|---------------------------------------|
-@RestController||
-@PostMapping("/store")| Post mapping annotation on the method |
-@GetMapping("/store")| Get mapping annotation on the method  |
-@RequestMapping(value = "/activate",  method = RequestMethod.POST, produces = "application/json")||
-X(@RequestBody MeterReadings meterReadings)| HTTP Post body                        |
-Y(@PathVariable String smartMeterId)| URL Parameter                         |
-@SpringBootApplication||
-@Bean||
-@Primary||
-@Entity||
-@Configuration||
 
 # Microservices - How to develop, deploy microservices using Spring Boot?
 
@@ -112,6 +116,10 @@ Y(@PathVariable String smartMeterId)| URL Parameter                         |
 - Eureka naming server comes with the bundle of Spring Cloud. It runs on the default port 8761. 
 - It also comes with a Java-based client component, the eureka client, which makes interactions with the service much easier.
 
+# Domain-Driven Design
+- Think Domain-Driven Design, and with that in mind, you divide the logical structure of your project not as classes only, but as domains also, which means all operations have got to do with the Product are located within the ProductsController and consequently within the ProductsRepository, so its preferred many repositories each equipped with operations to deal with some aspect of your project.
+- Not all aspects may need a repository, but that is what you decide.
+
 # References
 - https://www.javatpoint.com/microservices
 - https://www.interviewbit.com/spring-boot-interview-questions/
@@ -121,3 +129,4 @@ Y(@PathVariable String smartMeterId)| URL Parameter                         |
 - https://www.javatpoint.com/eureka-naming-server
 - https://1nwu8i3sj55rdbw4k4fm55i1-wpengine.netdna-ssl.com/wp-content/uploads/2015/09/MSArchitech.png
 - https://res.cloudinary.com/practicaldev/image/fetch/s--DXg7gK9m--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://cdn-images-1.medium.com/max/2000/1*b4krMVZ-mqjxAIh_EM1jhQ.png
+- https://stackoverflow.com/questions/6887971/single-or-multiple-repository-classes
