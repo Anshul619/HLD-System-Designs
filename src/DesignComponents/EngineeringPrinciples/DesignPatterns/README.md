@@ -43,8 +43,10 @@ Disadvantages
 - A singleton class shouldn’t have multiple instances in any case and at any cost.
 - Singleton classes are used for logging, driver objects, caching and thread pool, database connections, Networking and Database Connectivity etc.
 
-# Constructor Chaining In Java with Examples
+# Constructor Chaining
 - Constructor chaining is the process of calling one constructor from another constructor with respect to current object.
+
+![img.png](assests/constructorchaining_img.png)
 
 Constructor chaining can be done in two ways:
 - Within same class: It can be done using this() keyword for constructors in same class
@@ -57,3 +59,4 @@ Rules of constructor chaining :
 
 # References
 - https://www.geeksforgeeks.org/design-patterns-set-2-factory-method/?ref=leftbar-rightbar
+- https://www.geeksforgeeks.org/constructor-chaining-java-examples/
