@@ -58,31 +58,34 @@ Y(@PathVariable String smartMeterId)| URL Parameter in the API                  
 # How to disable a specific auto-configuration class?
 You can use exclude attribute of `@EnableAutoConfiguration` if you want auto-configuration not to apply to any specific class.
 
-<pre>
+```java
 //use of exclude
-@EnableAutoConfiguration(exclude={className})
-</pre>
+@EnableAutoConfiguration(exclude={className});
+```
 
 # Most commonly used Spring Boot CLI commands?
-- `spring --help`
-- `-run, -test, -grap, -jar, -war, -install, -uninstall, --init, -shell, -help.`
+
+```script
+spring --help
+-run, -test, -grap, -jar, -war, -install, -uninstall, --init, -shell, -help.
+```
 
 # What is the default port of tomcat in spring boot?
 - The default port of the tomcat server-id 8080. 
 - It can be changed by adding `sever.port` properties in the `application.properties` file.
 
 # Can we override or replace the Embedded tomcat server in Spring Boot?
-- Yes, we can replace the Embedded Tomcat server with any server by using the Starter dependency in the pom.xml file. 
+- Yes, we can replace the Embedded Tomcat server with any server by using the Starter dependency in the `pom.xml` file. 
 - Like you can use `spring-boot-starter-jetty` as a dependency for using a jetty server in your project.
 
 # How to enable Actuator in Spring boot application?
 
-<pre>
+```xml
 <dependency>
-<groupId> org.springframework.boot</groupId>
-<artifactId> spring-boot-starter-actuator </artifactId>
+    <groupId> org.springframework.boot</groupId>
+    <artifactId> spring-boot-starter-actuator </artifactId>
 </dependency>
-</pre>
+```
 
 # What is the starter dependency of the Spring boot module?
 - Data JPA starter.
@@ -108,7 +111,7 @@ You can use exclude attribute of `@EnableAutoConfiguration` if you want auto-con
 - Spring provided a nice wrapper around it for easily incorporating it to the Spring stack.
 
 ## [Eureka Server - Service Registry](https://www.tutorialspoint.com/spring_boot/spring_boot_eureka_server.htm)
-- Eureka naming server is a REST-based server that is used in the AWS Cloud services for load balancing and failover of middle-tier services.
+- Eureka naming server is a REST-based server that is used in the AWS Cloud services for load balancing and fail-over of middle-tier services.
 - Eureka naming server is an application that holds information about all client service applications. 
 - Each microservice registers itself with the Eureka naming server. 
 - The naming server registers the client services with their port numbers and IP addresses. 
