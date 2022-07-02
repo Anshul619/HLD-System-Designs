@@ -101,6 +101,16 @@ spring --help
 # What dependency needed to create a Spring Boot web application?
 - Spring Boot Starter Web
 
+# [Configure the Logging Levels](https://www.baeldung.com/spring-boot-application-configuration)
+
+You can easily tune the logging levels in a Boot application.
+- And just as with a standard Spring app – you can activate different logging systems like Logback, log4j, log4j2, etc. by adding their customized XML or properties file in the classpath and defining the libraries in the pom.
+
+```config
+logging.level.org.springframework.web: DEBUG
+logging.level.org.hibernate: ERROR
+```
+
 # Microservices - How to develop, deploy microservices using Spring Boot?
 
 <img title="Spring-Boot-MicroService-OnPerm.drawio" alt="Alt text" src="assests/Spring-Boot-MicroService-OnPerm.drawio.png">
@@ -119,31 +129,21 @@ spring --help
 - Eureka naming server comes with the bundle of Spring Cloud. It runs on the default port 8761. 
 - It also comes with a Java-based client component, the eureka client, which makes interactions with the service much easier.
 
+## [Microservices - Testing strategy](https://www.simform.com/blog/microservice-testing-strategies/)
+
+![img.png](assests/testing_img.png)
+
+### End-to-End testing in Microservices
+- We usually treat the system as a black box while performing end-to-end tests. 
+- Because, of course the intention differs from other tests, it verifies that the system as a whole meets business goals irrespective of the component architecture in use.
+
 # [Domain-Driven Design](https://domaindrivendesign.org/ddd-domain-driven-design/)
 
 ![img.png](assests/ddd_img.png)
 - Think Domain-Driven Design, and with that in mind, you divide the logical structure of your project not as classes only, but as domains also. 
 - This means all operations have got to do with the `Product` are located within the `ProductsController` and consequently within the `ProductsRepository`
-- Hence its preferred each repository is equipped with operations to deal with some aspect of your project.
+- Hence, its preferred each repository is equipped with operations to deal with some aspect of your project.
 - Not all aspects may need a repository, but that is what you decide.
-
-# [Hibernate & JPA](https://www.javatpoint.com/jpa-vs-hibernate)
-
-## What is JPA?
-- JPA is just a specification that facilitates object-relational mapping to manage relational data in Java applications. 
-- It provides a platform to work directly with objects instead of using SQL statements.
-
-## What is Hibernate?
-- Hibernate is a Java framework which is used to store the Java objects in the relational database system. 
-- It is an open-source, lightweight, ORM (Object Relational Mapping) tool.
-
-## [Hibernate example using JPA, MySQL](https://www.geeksforgeeks.org/hibernate-example-using-jpa-and-mysql/)
-
-## [Eager/Lazy Loading In Hibernate](https://www.baeldung.com/hibernate-lazy-eager-loading)
-
-## When to implement RAW query in hibernate?
-- When it's a complex logic to be implemented, we should implement RAW in Hibernate. 
-- Hibernate supports [HQL language][https://www.tutorialspoint.com/hibernate/hibernate_query_language.htm]
 
 # References
 - https://www.javatpoint.com/microservices
