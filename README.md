@@ -30,8 +30,13 @@ This repo contains the various system design questions and solutions.
 - [ElasticSearch](https://github.com/Anshul619/System-Designs/blob/main/src/DesignComponents/Redis/Redis-ReadMe.md)
 - [EFS vs S3](https://github.com/Anshul619/System-Designs/blob/main/src/DesignComponents/EFSvsS3/ReadMe.md)
 
+## Engineering Principles
+- [SOLID](https://github.com/Anshul619/System-Designs/blob/main/src/DesignComponents/EngineeringPrinciples/SOLID.md)
+- [OOPS](https://github.com/Anshul619/System-Designs/blob/main/src/DesignComponents/EngineeringPrinciples/OOPS.md)
+- [Design Patterns](https://github.com/Anshul619/System-Designs/tree/main/src/DesignComponents/EngineeringPrinciples/DesignPatterns)
+- [DRY](https://github.com/Anshul619/System-Designs/blob/main/src/DesignComponents/EngineeringPrinciples/DRY.md)
+
 ## Tech Skills
-- [Engineering Principles](https://github.com/Anshul619/System-Designs/tree/main/src/DesignComponents/EngineeringPrinciples)
 - [Java](https://github.com/Anshul619/System-Designs/tree/main/src/DesignComponents/Java)
 - [Spring Boot & Microservices](https://github.com/Anshul619/System-Designs/tree/main/src/DesignComponents/SpringBoot)
 - [Hibernate](https://github.com/Anshul619/System-Designs/blob/main/src/DesignComponents/Hiberate.md)
