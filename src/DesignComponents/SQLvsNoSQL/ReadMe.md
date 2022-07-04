@@ -27,30 +27,34 @@ Relational databases store data in rows and columns.
 
 ## Key-Value Stores 
 - Data is stored in an array of key-value pairs. 
-- The ‘key’ is an attribute name which is linked to a ‘value’. 
-- Well-known key-value stores include AWS Dynamo, Redis & Voldemort .
+- The `key` is an attribute name which is linked to a `value`. 
+- Well-known key-value stores include `AWS Dynamo`, `Redis` & `Voldemort`.
 
 ## Document Databases 
 - In these databases, data is stored in documents (instead of rows and columns in a table) and these documents are grouped together in collections. 
 - Each document can have an entirely different structure. 
-- Document databases include the CouchDB and MongoDB.
+- Document databases include the `CouchDB` and `MongoDB`.
 
 ## Wide-Column Databases 
-- Instead of ‘tables,’ in column databases we have column families, which are containers for rows. 
-- Like HBase
+- Instead of `tables`, in column databases we have column families, which are containers for rows. 
+- Example - `Apache HBase`.
 
 ## Graph Databases 
 - These databases are used to store data whose relations are best represented in a graph ( like parent-child relationship of aadhaar etc.)
 - Data is saved in graph structures with nodes (entities), properties (information about the entities), and lines (connections between the entities).
 
 # DynomoDB
-- *Automated Storage Scaling* – There is no limit to the amount of data you can store in a DynamoDB table, and the service automatically allocates more storage, as you store more data using the DynamoDB write APIs.
-- *Provisioned Throughput* – When creating a table, simply specify how much request capacity you require. DynamoDB allocates dedicated resources to your table to meet your performance requirements, and automatically partitions data over a sufficient number of servers to meet your request capacity. If your throughput requirements change, simply update your table's request capacity using the AWS Management Console or the Amazon DynamoDB APIs. You are still able to achieve your prior throughput levels while scaling is underway.
-- *Fully Distributed, Shared Nothing Architecture* – Amazon DynamoDB scales horizontally and can seamlessly scale a single table over hundreds of servers.
+- *Automated Storage Scaling* - There is no limit to the amount of data you can store in a DynamoDB table, and the service automatically allocates more storage, as you store more data using the DynamoDB write APIs.
+- *Provisioned Throughput* 
+  - When creating a table, simply specify how much request capacity you require. 
+  - DynamoDB allocates dedicated resources to your table to meet your performance requirements, and automatically partitions data over a sufficient number of servers to meet your request capacity. 
+  - If your throughput requirements change, simply update your table's request capacity using the AWS Management Console or the Amazon DynamoDB APIs. 
+  - You are still able to achieve your prior throughput levels while scaling is underway.
+- *Fully Distributed, Shared Nothing Architecture* 
+  - Amazon DynamoDB scales horizontally and can seamlessly scale a single table over hundreds of servers.
 
 # SQL - MySQL vs PostgreSQL
 - PostgreSQL is [twice](https://itnext.io/benchmark-databases-in-docker-mysql-postgresql-sql-server-7b129368eed7) as fast as MySQL
-- TBD
 
 # References
 - https://www.educative.io/courses/grokking-the-system-design-interview/YQlK1mDPgpK
