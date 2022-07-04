@@ -18,4 +18,5 @@
 
 # References
 - Asked in `Titan.email on 4-June-2022
+- https://www.educative.io/courses/grokking-the-object-oriented-design-interview/gxkvNgMqDk3
 - https://akshay-iyangar.github.io/system-design/grokking-ood/examples/java/movie-ticket-booking-system.html

@@ -16,11 +16,31 @@ This repo contains the various system design questions and solutions.
 | [Apache](https://apache.org/) | Web Server | 512 concurrent requests|-|Yes|
 
 # Tech Decisions ( Scalability )
-- Develope microservice based architecture
-- We must consider cloud agnostic approach ( & onPerm customer approach ) while designing the solution.
-- If its a read heavy microservice, the best decision would be to use `Redis` or multi-read database instances.
-- If its a write heavy microservice, the best decision would be to use either use `Kafka` ( as message queue ) or `DynmoDB`. Both can handle high throughput.
+- Develop a microservice based architecture
+- We must consider cloud-agnostic approach ( & onPerm customer approach ) while designing the solution.
+- If it's a read heavy microservice, the best decision would be to use `Redis` or multi-read database instances.
+- If it's write heavy microservice, the best decision would be to use either use `Kafka` ( as message queue ) or `DynmoDB`. Both can handle high throughput.
 - Generally, you should aim for maximal throughput with acceptable latency.
+
+# LLD Design - Tips & Techniques
+- Think from user perspective & use cases.
+- Make sure SOLID principals are followed.
+- Think of as many smaller & unit classes as possible.
+- Requirements Gathering
+- Define main & core classes
+- Object Modelling - Define `composition`
+  - Establish the relationships between the classes / objects by observing the interactions among the classes / objects.
+  - This is important perspective.
+  - Most of the classes would have a composition with another domain class. This is natural.
+- Define `abstract classes`
+  - Common, reusable classes which can be extended for various business Actors, UCS etc.
+  - Example - User Account abstract class ( with first name, last name etc. ) can be extended for different user actors ( Employee, Manager etc. ).
+- Define `interfaces`
+  - Interfaces are core entities which can be implemented as per the needs.
+  - Example - `Search` interface, `Piece` interface ( with `move()`) in the chess game ( for pawn, knight, bishop ).
+- Define `enums`
+  - Enums are different types of entities which are hardcoded but at one place.
+  - Example - Payment status, entity status, reservation status, booking status etc.
 
 ## Design Components
 - [SQL vs NoSQL](https://github.com/Anshul619/System-Designs/blob/main/src/DesignComponents/SQLvsNoSQL/ReadMe.md)
@@ -100,3 +120,4 @@ This repo contains the various system design questions and solutions.
 - https://stackoverflow.com/questions/20520492/how-to-minimize-the-latency-involved-in-kafka-messaging-framework
 - https://www.confluent.io/blog/kafka-fastest-messaging-system/
 - https://medium.com/explorium-ai/how-to-dramatically-increase-your-elasticsearch-throughput-and-concurrency-capacity-c32d7bb02ac2
+- https://betterprogramming.pub/how-to-ace-the-low-level-design-interview-3f1be6401070?gi=b3a4a6e1bc7d

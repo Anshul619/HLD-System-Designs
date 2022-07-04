@@ -27,3 +27,6 @@
 - Return a vehicle: To return a vehicle which was checked-out to a member.
 - Add equipment: To add an equipment to a reservation like navigation, child seat, etc.
 - Update car log: To add or update a car log entry, such as refueling, cleaning, damage, etc.
+
+# References
+- https://www.educative.io/courses/grokking-the-object-oriented-design-interview/gxM3gRxmr8Z
