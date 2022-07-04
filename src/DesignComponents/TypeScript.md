@@ -8,9 +8,9 @@ TypeScript is a typed superset of JavaScript that compiles to plain JavaScript.
 
 # What are the Differences between TypeScript and JavaScript?
 - TypeScript is an `Object-Oriented` language. JavaScript is a Scripting language.
-- TypeScript has a feature known as Static typing. JS does not have static typing.
-- TypeScript gives support for modules. JavaScript does not support modules.
-- TypeScript supports optional parameter function. JS does not support optional parameter function
+- TypeScript has a feature known as `Static typing`. JS does not have static typing.
+- TypeScript gives support for `modules`. JavaScript does not support modules.
+- TypeScript supports optional parameter function. JS does not support optional parameter function.
 
 # Why do we need TypeScript?
 
@@ -84,6 +84,8 @@ interface interface_name {
 
 TypeScript introduced classes so that they can avail the benefits of object-oriented techniques like encapsulation and abstraction. 
 - The class in TypeScript is compiled to plain JavaScript functions by the TypeScript compiler to work across platforms and browsers. 
+
+Features of class
 - Inheritance 
 - Encapsulation 
 - Polymorphism 
@@ -133,7 +135,7 @@ The implementation then checks for the type of the supplied parameter and execut
 `ts-node example.ts`
 
 # Explain Decorators in TypeScript.
-- A Decorator is a special kind of declaration that can be applied to classes, methods, accessor, property, or parameter. 
+- A Decorator is a special kind of declaration that can be applied to class, methods, accessor, property, or parameter etc.
 - Decorators are functions that are prefixed `@expression` symbol, where expression must evaluate to a function that will be called at runtime with information about the decorated declaration.
 
 # References

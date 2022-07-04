@@ -235,6 +235,19 @@ The common type parameters are as follows:
 
 # Java Exception Hierarchy
 
+Exception Handling in Java is one of the effective means to handle the runtime errors so that the regular flow of the application can be preserved.
+
+Types of Exceptions
+- User Defined Exception
+- Built-in Exception
+
+# How Does JVM handle an Exception?
+
+Whenever inside a method, if an exception has occurred, the method creates an Object known as an Exception Object and hands it off to the run-time system(JVM).
+- The exception object contains the name and description of the exception and the current state of the program where the exception has occurred.
+- The run-time system searches the call stack to find the method that contains a block of code that can handle the occurred exception. The block of the code is called an Exception handler.
+- The run-time system starts searching from the method in which the exception occurred, and proceeds through the call stack in the reverse order in which methods were called.
+
 ![image](https://user-images.githubusercontent.com/1247944/175828367-7389509d-e5e9-45fb-8a62-94601db0d915.png)
 
 # Advanced MultiThreading
