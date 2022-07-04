@@ -1,6 +1,7 @@
 package LLDCodeProblems.BookMyShowLLD.domains;
 
 import java.util.Date;
+import java.util.List;
 
 public class Movie {
     private String title;
@@ -10,8 +11,10 @@ public class Movie {
     private Date releaseDate;
     private String country;
     private String genre;
-    private LLDCodeProblems.MovieBookingLikeBookMyShow.MovieBookingSystem.Admin movieAddedBy;
+    //private Admin movieAddedBy;
 
     private List<Show> shows;
-    public List<Show> getShows();
+    public List<Show> getShows() {
+        return shows;
+    }
 }

@@ -1,21 +1,13 @@
 package LLDCodeProblems.BookMyShowLLD.domains;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.util.Date;
 
 public class Show {
 
-    // Date class object
-    public String date;
-
-    public List<Seat> seatsList = new ArrayList<Seat>();
-
-    public String movieName;
-
-    public Show(String date, List<Seat> seats, String movie) {
-        this.date = date;
-        this.seatsList = seats;
-        this.movieName = movie;
-    }
-
+    private int showId;
+    private Date createdOn;
+    private Date startTime;
+    private Date endTime;
+    //private CinemaHall playedAt;
+    private Movie movie;
 }
