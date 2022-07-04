@@ -14,6 +14,7 @@
 # Important Points
 - ShowSeats would have "Show" & seat availability properties.
 - Booking would list of seats & show as properties.
+- During the payment, the seats would have to be reserved and blocked in the database.
 
 # References
 - Asked in `Titan.email on 4-June-2022
