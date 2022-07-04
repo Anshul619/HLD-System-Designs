@@ -51,10 +51,10 @@ This repo contains the various system design questions and solutions.
 - [EFS vs S3](https://github.com/Anshul619/System-Designs/blob/main/src/DesignComponents/EFSvsS3/ReadMe.md)
 
 ## Engineering Principles
-- [SOLID](https://github.com/Anshul619/System-Designs/blob/main/src/DesignComponents/EngineeringPrinciples/SOLID.md)
-- [OOPS](https://github.com/Anshul619/System-Designs/blob/main/src/DesignComponents/EngineeringPrinciples/OOPS.md)
-- [Design Patterns](https://github.com/Anshul619/System-Designs/tree/main/src/DesignComponents/EngineeringPrinciples/DesignPatterns)
-- [DRY](https://github.com/Anshul619/System-Designs/blob/main/src/DesignComponents/EngineeringPrinciples/DRY.md)
+- [SOLID](https://github.com/Anshul619/System-Designs/blob/main/src/DesignComponents/SOLID.md)
+- [OOPS](https://github.com/Anshul619/System-Designs/blob/main/src/DesignComponents/OOPS.md)
+- [Design Patterns](https://github.com/Anshul619/System-Designs/tree/main/src/DesignComponents/DesignPatterns)
+- [DRY](https://github.com/Anshul619/System-Designs/blob/main/src/DesignComponents/DRY.md)
 
 ## Tech Skills
 - [Spring Boot & Microservices](https://github.com/Anshul619/System-Designs/tree/main/src/DesignComponents/SpringBootAndMicroServices)

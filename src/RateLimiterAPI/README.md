@@ -21,7 +21,7 @@ Rate limiting refers to preventing the frequency of an operation from exceeding 
 - For each request made within the rate limit window, the record is incremented.
 - If the record count reaches the max limit before expiring, then a 429 error status is returned.
 
-## Two DesignComponents.EngineeringPrinciples.DesignPatterns.AdapterDesignPattern.Main Issues
+## Two DesignComponents.DesignPatterns.AdapterDesignPattern.Main Issues
 
 ### Inconsistency
 - Using the consistent data store ( like Redis, Cassandra ), we can solve inconsistency problem of current rate limiting in distributed systems.
