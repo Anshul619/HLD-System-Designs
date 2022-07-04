@@ -60,8 +60,11 @@ This repo contains the various system design questions and solutions.
 - [Spring Boot & Microservices](https://github.com/Anshul619/System-Designs/tree/main/src/DesignComponents/SpringBootAndMicroServices)
 - [Java](https://github.com/Anshul619/System-Designs/tree/main/src/DesignComponents/Java)
 - [Hibernate](https://github.com/Anshul619/System-Designs/blob/main/src/DesignComponents/Hiberate.md)
-- [JS](https://github.com/Anshul619/System-Designs/tree/main/src/DesignComponents/JSAsync)
+- [JS](https://github.com/Anshul619/System-Designs/tree/main/src/DesignComponents/JavaScript)
 - [Testing](https://github.com/Anshul619/System-Designs/blob/main/src/DesignComponents/Testing.md)
+- [JavaScript](https://github.com/Anshul619/System-Designs/blob/main/src/DesignComponents/JavaScript)
+- [TypeScript](https://github.com/Anshul619/System-Designs/blob/main/src/DesignComponents/TypeScript.md)
+- [Angular8](https://github.com/Anshul619/System-Designs/blob/main/src/DesignComponents/Angular8.md)
 
 ## Design Problems
 - [Design a system that scales to million of users on AWS](https://github.com/Anshul619/System-Designs/tree/main/src/DesignComponents/DesignScalableSystemWithRDMS)
