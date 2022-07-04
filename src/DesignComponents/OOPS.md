@@ -1,5 +1,5 @@
 
-![img.png](EngineeringPrinciples/assests/oops_img.png)
+![img.png](assests/oops_img.png)
 
 # Inheritance - Extends
 - In Java, the extends keyword is used to indicate that the class which is being defined is derived from the base class using inheritance.
