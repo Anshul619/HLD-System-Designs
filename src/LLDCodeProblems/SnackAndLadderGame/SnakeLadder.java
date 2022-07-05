@@ -13,7 +13,9 @@ import java.util.*;
  * - The game will have multiple snakes and ladders and there will be multiple people playing the game.
  * - The game is played automatically based on basic game rules and ends when a player wins.
  *
- * Reference - https://leetcode.com/discuss/interview-question/object-oriented-design/1550957/Snake-and-Ladder-or-LLD
+ * Reference
+ * - https://leetcode.com/discuss/interview-question/object-oriented-design/1550957/Snake-and-Ladder-or-LLD
+ * - https://www.geeksforgeeks.org/design-snake-game/?ref=lbp
  */
 
 public class SnakeLadder {
