@@ -1,11 +1,11 @@
 
 # What are the most prominent features of Angular 8?
 
-- Angular 8 support Cross-Platform Features.
+- Angular 8 support `Cross-Platform Features`.
   - The Angular 8 platform can be used to develop Progressive Web Apps. By using Angular 8, you can develop an extremely fast website that can provide app-like experiences with zero-step installation and high-quality performance.
-- Better Speed & Performance
+- `Better Speed & Performance`
   - Angular 8 supports code generation facility that covert the templates into highly optimized code for JavaScript virtual machines. That's why Angular 8 is super fast.
-- High Productivity
+- `High Productivity`
   - Angular 8 provides easy and powerful template syntax to create UI views.
 - Provide Full Development Support
 
@@ -35,7 +35,7 @@ Angular 8 consists of advanced level features such as
 This ensures systematic workflow and performance improvements.
 
 # What is the usage of Wildcard Route in Angular 8?
-- In Angular 8, the Wildcard Router is used to set a route when the requested URL doesn't match any router paths. 
+- In Angular 8, the `Wildcard Route` is used to set a route when the requested URL doesn't match any router paths. 
 - After using the Wildcard Router, the set route matches to every URL as an instruction to get a clear client-generated view. 
 - This Wildcard route always comes last as it needs to perform its task at the end only. 
 - So, the Wildcard Router is mainly used to define the route of the pages in Angular 8.
@@ -60,11 +60,11 @@ Following is the list of most important parts of the Angular 8 architecture:
   - Each component defines a class that contains application data and logic and is associated with an HTML template that defines a view to be displayed in a target environment.
 
 # What is the usage of @NgModule in Angular 8?
-The NgModules in Angular 8 is used for the following things:
+The `NgModules` in Angular 8 is used for the following things:
 - The NgModule is a class marked by the @NgModule decorator where the @NgModule decorator is used to take a metadata object that describes how to compile a component's template and how to create an injector at runtime.
 - The NgModules is used to configure the injector and the compiler and also help to organize the related things together.
 - The NgModule is used to identify the module's own components, directives, and pipes. 
-- It can also make some of them public, through the exports property, to facilitate external components to use them.
+- It can also make some of them public, through the `exports` property, to facilitate external components to use them.
 
 # What is the usage of Angular 8 ngFor Directive?
 
@@ -226,7 +226,7 @@ export class AppComponent {
 
 # [RxJS - Reactive Extension of JS](https://www.educative.io/blog/rx-js-angular)
 
-Reactive Extensions for JavaScript, or RxJS, is a JavaScript library that uses observables for reactive programming. 
+Reactive Extensions for JavaScript, or RxJS, is a JavaScript library that `uses observables for reactive programming`. 
 - It can be used with other JavaScript libraries and frameworks, and it integrates well into Angular.
 
 Core Features

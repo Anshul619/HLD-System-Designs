@@ -85,12 +85,6 @@ interface interface_name {
 TypeScript introduced classes so that they can avail the benefits of object-oriented techniques like encapsulation and abstraction. 
 - The class in TypeScript is compiled to plain JavaScript functions by the TypeScript compiler to work across platforms and browsers. 
 
-Features of class
-- Inheritance 
-- Encapsulation 
-- Polymorphism 
-- Abstraction
-
 ```javascript
 class Employee {
   empID: number;
@@ -107,12 +101,18 @@ class Employee {
 }
 ```
 
+Features of class
+- Inheritance 
+- Encapsulation 
+- Polymorphism 
+- Abstraction
+
 # What are modules in TypeScript?
 A module is a powerful way of creating a group of related variables, functions, classes, and interfaces, etc.
 - It can be executed within its own scope, but NOT in the global scope.
 - Basically, you cannot access the variables, functions, classes, and interfaces declared in a module outside the module directly.
 
-A module can be created by using the export keyword and can be used in other modules by using the import keyword.
+A module can be created by using the `export` keyword and can be used in other modules by using the `import` keyword.
 
 # What is namespace in Typescript and how to declare it?
 
@@ -126,9 +126,28 @@ Namespace groups functionalities logically.
 Yes, TypeScript supports function overloading. But the implementation is odd.
 - So, when you overload in TypeScript you only have one implementation with multiple signatures.
 
-The first signature has one parameter of type number whereas the second signature has a parameter of type string. 
-The third function contains the actual implementation and has a parameter of type any. 
-The implementation then checks for the type of the supplied parameter and executes a different piece of code based on the supplier parameter type.
+```javascript
+class Customer {
+  name: string;
+  Id: number;
+  add(Id: number);
+  add(name:string);
+  add(value: any) {
+  
+    if (value && typeof value == "number") {
+      //Do something
+    }
+    
+    if (value && typeof value == "string") {
+      //Do Something
+    }
+  }
+```
+
+Notes
+- The first signature has one parameter of type number whereas the second signature has a parameter of type string. 
+- The third function contains the actual implementation and has a parameter of type any. 
+- The implementation then checks for the type of the supplied parameter and executes a different piece of code based on the supplier parameter type.
 
 # [How do I run TypeScript files directly without generating any JavaScript files?](https://docs.google.com/spreadsheets/d/1hp-y74b9ItnAazdxLqsvBW6MAm3SFZRpodwjvIEn9Tw/edit#gid=1089007431)
 
@@ -137,6 +156,19 @@ The implementation then checks for the type of the supplied parameter and execut
 # Explain Decorators in TypeScript.
 - A Decorator is a special kind of declaration that can be applied to class, methods, accessor, property, or parameter etc.
 - Decorators are functions that are prefixed `@expression` symbol, where expression must evaluate to a function that will be called at runtime with information about the decorated declaration.
+
+# What is Lambda/Arrow function?
+
+ES6 version of TypeScript provides shorthand syntax for defining the anonymous function, i.e., for function expressions. 
+- These arrow functions are also called lambda functions. 
+- A lambda function is a function without a name.
+
+```javascript
+let sum = (x: number, y: number): number => { 
+  return x + y; 
+} 
+console.log(sum(10, 20)); //returns 30
+```
 
 # References
 - https://www.edureka.co/blog/interview-questions/typescript-interview-questions/

@@ -3,6 +3,8 @@
 - SendSMSAPI ( like OTP ) - Consider generate OTP service `A`, which client calls to get the OTP on the different mediums ( like SMS, WhatsApp etc. ).
 - `A` service calls `B` service to send the notification to the user using multiple SMS providers like Twillo, Airtel etc.
 
+![Send-SMS-Queuing.drawio.png](Send-SMS-Queuing.drawio.png)
+
 # AutoScaling of App Servers
 - Use `Elastic Load Balancing` ( with `AWS AutoScaling` configured )
 - Or implement our own auto-scaling - Based on app server's memory usage/CPU usage, heart beat etc., we can add/delete another app server.
