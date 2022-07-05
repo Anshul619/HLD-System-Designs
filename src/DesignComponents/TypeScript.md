@@ -4,7 +4,7 @@
 TypeScript is a typed superset of JavaScript that compiles to plain JavaScript.
 - It is pure object-oriented with classes, interfaces and statically typed programming languages like C# or Java.
 - You will need a compiler to compile and generate the code in the JavaScript file.
-- Basically, TypeScript is the [ES6 version](https://www.w3schools.com/Js/js_es6.asp) of JavaScript with some additional features ( like Static Typing ).
+- Basically, TypeScript is the [ES6 version](https://www.w3schools.com/Js/js_es6.asp) of JavaScript with some additional features ( like `Static Typing` ).
 
 # What are the Differences between TypeScript and JavaScript?
 - TypeScript is an `Object-Oriented` language. JavaScript is a Scripting language.
