@@ -47,7 +47,7 @@ This repo contains the various system design questions and solutions.
 - [Kafka](https://github.com/Anshul619/System-Designs/blob/main/src/DesignComponents/Kafka/ReadMe.md)
 - [AWS](https://github.com/Anshul619/System-Designs/blob/main/src/DesignComponents/AWS.md)
 - [Redis](https://github.com/Anshul619/System-Designs/blob/main/src/DesignComponents/Redis/Redis-ReadMe.md)
-- [ElasticSearch](https://github.com/Anshul619/System-Designs/blob/main/src/DesignComponents/Redis/Redis-ReadMe.md)
+- [ElasticSearch](https://github.com/Anshul619/System-Designs/blob/main/src/DesignComponents/ElasticSearch/ReadMe.md)
 - [EFS vs S3](https://github.com/Anshul619/System-Designs/blob/main/src/DesignComponents/EFSvsS3/ReadMe.md)
 
 ## Engineering Principles
@@ -66,7 +66,7 @@ This repo contains the various system design questions and solutions.
 - [TypeScript](https://github.com/Anshul619/System-Designs/blob/main/src/DesignComponents/TypeScript.md)
 - [Angular8](https://github.com/Anshul619/System-Designs/blob/main/src/DesignComponents/Angular8.md)
 
-## Design Problems
+## Design Problems - HLD
 - [Design a system that scales to million of users on AWS](https://github.com/Anshul619/System-Designs/tree/main/src/DesignComponents/DesignScalableSystemWithRDMS)
 - [Zomoto HLD Design](https://github.com/Anshul619/System-Designs/tree/main/src/ZomatoDesignHLD)
 - [Twillo Send Message API](https://github.com/Anshul619/System-Designs/tree/main/src/TwilloSendMessageAPI)
@@ -75,6 +75,13 @@ This repo contains the various system design questions and solutions.
 - [Logging Solution](https://github.com/Anshul619/System-Designs/tree/main/src/LoggingSolution)
 - [Monolothic to MicroService](https://github.com/Anshul619/System-Designs/tree/main/src/MonolothicToMicroservice)
 - [MakeMyTrip Search](https://github.com/Anshul619/System-Designs/tree/main/src/MakeMyTripSearch)
+
+## Design Problems - LLD
+- [Chess Game](https://github.com/Anshul619/System-Designs/tree/main/src/LLDProblems/ChessGame)
+- [Snack & Ladder Game](https://github.com/Anshul619/System-Designs/tree/main/src/LLDProblems/SnackAndLadderGame)
+- [Book My Show](https://github.com/Anshul619/System-Designs/tree/main/src/LLDProblems/BookMyShowLLD)
+- [Insurance Agent Flow](https://github.com/Anshul619/System-Designs/tree/main/src/LLDProblems/InsuranceAgentFlow.md)
+
 
 ## System Design Glossaries
 
