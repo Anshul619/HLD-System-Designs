@@ -1,5 +1,5 @@
 
-![img.png](assests/img.png)
+![img.png](assests/class_diagram_img.png)
 
 # Reference
 - https://www.geeksforgeeks.org/design-a-chess-game/?ref=lbp
