@@ -28,5 +28,8 @@
 - Cash payment: To pay the parking ticket through cash.
 - Add/Modify parking rate: To allow admin to add or modify the hourly parking rate.
 
+# Class Diagram
+![img.png](assests/class_diagram_chess_game.png)
+
 # References
 - https://www.educative.io/courses/grokking-the-object-oriented-design-interview/gxM3gRxmr8Z
