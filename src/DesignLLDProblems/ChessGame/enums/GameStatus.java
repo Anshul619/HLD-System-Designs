@@ -1,4 +1,4 @@
-package LLDProblems.ChessGame.enums;
+package DesignLLDProblems.ChessGame.enums;
 
 public enum GameStatus {
     ACTIVE,

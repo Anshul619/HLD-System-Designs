@@ -1,4 +1,4 @@
-package LLDProblems.SnackAndLadderGame.domains;
+package DesignLLDProblems.SnackAndLadderGame.domains;
 
 import java.util.HashMap;
 import java.util.Map;

@@ -1,6 +1,6 @@
-package LLDProblems.ChessGame.domains;
+package DesignLLDProblems.ChessGame.domains;
 
-import LLDProblems.ChessGame.domains.Abstract.Piece;
+import DesignLLDProblems.ChessGame.domains.Abstract.Piece;
 
 public class Knight extends Piece {
     public Knight(boolean white)

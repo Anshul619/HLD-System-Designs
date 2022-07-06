@@ -1,8 +1,8 @@
-package LLDProblems.ChessGame;
+package DesignLLDProblems.ChessGame;
 
-import LLDProblems.ChessGame.domains.Abstract.Piece;
-import LLDProblems.ChessGame.domains.Abstract.Player;
-import LLDProblems.ChessGame.domains.Spot;
+import DesignLLDProblems.ChessGame.domains.Abstract.Piece;
+import DesignLLDProblems.ChessGame.domains.Abstract.Player;
+import DesignLLDProblems.ChessGame.domains.Spot;
 
 public class Move {
     private Player player;

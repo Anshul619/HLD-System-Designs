@@ -2,31 +2,31 @@
 
 This repo contains the various system design questions and solutions.
 
-# Various components & Performance Metrices
+# Various components & Performance Metrics
 
-| Component | Component Type | Very Rough Throughput (QPS)                 | Latency | Free |
-|-----------|-----------------------------------------|----------------|----------------|------|
-| [Kafka](https://github.com/Anshul619/System-Designs/tree/main/src/DesignComponents/Kafka)     | Message Queue (Pub-Sub) - High-throughput | 1 million messages ( write ) per second | ~5ms | Yes   |
-| [RabbitMQ](https://github.com/Anshul619/System-Designs/tree/main/src/DesignComponents/Kafka#kafka-vs-rabbitmq)     | Message Queue (Point-2-Point) | 20K messages per second | ~1ms |  Yes   |
-| [Redis](https://github.com/Anshul619/System-Designs/tree/main/src/DesignComponents/Redis)     | Caching        | 100K queries per second       | -|  Yes   |
-| [MySQL](https://www.mysql.com/) | SQL DB | 1000 concurrent requests ( 100 as default )| [< 10ms ( to get a row from 1 million records )](https://www.quora.com/How-can-we-calculate-the-throughput-of-MySQL?share=1)|Yes|
-| [DynomoDB](https://github.com/Anshul619/System-Designs/blob/main/src/DesignComponents/SQLvsNoSQL/ReadMe.md#dynomodb)  | NoSQL DB as a Service ( AWS ) - Predictable performance and cost| More than 20 million requests per second | less than 10-20 ms | No  |
-| MongoDB   | NoSQL DB       | - | -|  No                                      |
-| [ElasticSearch](https://github.com/Anshul619/System-Designs/tree/main/src/DesignComponents/ElasticSearch) | Search Engine|-|-|No|
-| [Apache](https://apache.org/) | Web Server | 512 concurrent requests|-|Yes|
+| Component                                                                                                            | Component Type | Very Rough Throughput (QPS)                 | Latency | Free |
+|----------------------------------------------------------------------------------------------------------------------|-----------------------------------------|----------------|----------------|------|
+| [Kafka](https://github.com/Anshul619/System-Designs/tree/main/src/DesignComponents/Kafka)                            | Message Queue (Pub-Sub) - High-throughput | 1 million messages ( write ) per second | ~5ms | Yes   |
+| [RabbitMQ](https://github.com/Anshul619/System-Designs/tree/main/src/DesignComponents/Kafka#kafka-vs-rabbitmq)       | Message Queue (Point-2-Point) | 20K messages per second | ~1ms |  Yes   |
+| [Redis](https://github.com/Anshul619/System-Designs/tree/main/src/DesignComponents/Redis)                            | Caching        | 100K queries per second       | -|  Yes   |
+| [MySQL](https://www.mysql.com/)                                                                                      | SQL DB | 1000 concurrent requests ( 100 as default )| [< 10ms ( to get a row from 1 million records )](https://www.quora.com/How-can-we-calculate-the-throughput-of-MySQL?share=1)|Yes|
+| [DynomoDB](https://github.com/Anshul619/System-Designs/blob/main/src/DesignComponents/SQLvsNoSQL/ReadMe.md#dynomodb) | NoSQL DB as a Service ( AWS ) - Predictable performance and cost| More than 20 million requests per second | less than 10-20 ms | No  |
+| [MongoDB](https://www.mongodb.com)                                                                                   | NoSQL DB       | - | -|  No                                      |
+| [ElasticSearch](https://github.com/Anshul619/System-Designs/tree/main/src/DesignComponents/ElasticSearch)            | Search Engine|-|-|No|
+| [Apache](https://apache.org/)                                                                                        | Web Server | 512 concurrent requests|-|Yes|
 
 # Tech Decisions ( Scalability )
 - Develop a microservice based architecture
-- We must consider cloud-agnostic approach ( & onPerm customer approach ) while designing the solution.
-- If it's a read heavy microservice, the best decision would be to use `Redis` or multi-read database instances.
-- If it's write heavy microservice, the best decision would be to use either use `Kafka` ( as message queue ) or `DynmoDB`. Both can handle high throughput.
-- Generally, you should aim for maximal throughput with acceptable latency.
+- We must consider `cloud-agnostic approach` ( & onPerm customer approach ) while designing the solution.
+- If it's a read heavy microservice, the best decision would be to use `Redis` or `multi-read database instances`.
+- If it's write heavy microservice, the best decision would be to use either use `Kafka` ( as message queue ) or `DynmoDB`. Both can handle `HIGH throughput`.
+- Generally, you should aim for `MAXIMAL throughput` with `ACCEPTABLE latency`.
 
 # LLD Design - Tips & Techniques
-- Think from user perspective & use cases.
-- Make sure SOLID principals are followed.
+- Think from `user perspective` & `use cases`.
+- Make sure `SOLID` principals are followed.
 - Think of as many smaller & unit classes as possible.
-- Requirements Gathering
+- Requirements Gathering - What are use cases? What are business actors?
 - Define main & core classes
 - Object Modelling - Define `composition`
   - Establish the relationships between the classes / objects by observing the interactions among the classes / objects.
@@ -39,8 +39,8 @@ This repo contains the various system design questions and solutions.
   - Interfaces are core entities which can be implemented as per the needs.
   - Example - `Search` interface, `Piece` interface ( with `move()`) in the chess game ( for pawn, knight, bishop ).
 - Define `enums`
-  - Enums are different types of entities which are hardcoded but at one place.
-  - Example - Payment status, entity status, reservation status, booking status etc.
+  - `Enums` are different types of entities which are hardcoded but at one place.
+  - Example - `Payment status`, `entity status`, `reservation status`, `booking status` etc.
 
 ## Design Components
 - [SQL vs NoSQL](https://github.com/Anshul619/System-Designs/blob/main/src/DesignComponents/SQLvsNoSQL/ReadMe.md)
@@ -66,7 +66,7 @@ This repo contains the various system design questions and solutions.
 - [TypeScript](https://github.com/Anshul619/System-Designs/blob/main/src/DesignComponents/TypeScript.md)
 - [Angular8](https://github.com/Anshul619/System-Designs/blob/main/src/DesignComponents/Angular8.md)
 
-## Design Problems - HLD
+## HLD - Design Problems
 - [Design a system that scales to million of users on AWS](https://github.com/Anshul619/System-Designs/tree/main/src/DesignComponents/DesignScalableSystemWithRDMS)
 - [Zomoto HLD Design](https://github.com/Anshul619/System-Designs/tree/main/src/ZomatoDesignHLD)
 - [Twillo Send Message API](https://github.com/Anshul619/System-Designs/tree/main/src/TwilloSendMessageAPI)
@@ -76,24 +76,28 @@ This repo contains the various system design questions and solutions.
 - [Monolothic to MicroService](https://github.com/Anshul619/System-Designs/tree/main/src/MonolothicToMicroservice)
 - [MakeMyTrip Search](https://github.com/Anshul619/System-Designs/tree/main/src/MakeMyTripSearch)
 
-## Design Problems - LLD
-- [Chess Game](https://github.com/Anshul619/System-Designs/tree/main/src/LLDProblems/ChessGame)
-- [Snack & Ladder Game](https://github.com/Anshul619/System-Designs/tree/main/src/LLDProblems/SnackAndLadderGame)
-- [Book My Show](https://github.com/Anshul619/System-Designs/tree/main/src/LLDProblems/BookMyShowLLD)
-- [Insurance Agent Flow](https://github.com/Anshul619/System-Designs/tree/main/src/LLDProblems/InsuranceAgentFlow.md)
-
+## LLD - Design Problems
+- [Chess Game](https://github.com/Anshul619/System-Designs/tree/main/src/DesignLLDProblems/ChessGame)
+- [Snack & Ladder Game](https://github.com/Anshul619/System-Designs/tree/main/src/DesignLLDProblems/SnackAndLadderGame)
+- [Book My Show](https://github.com/Anshul619/System-Designs/tree/main/src/DesignLLDProblems/BookMyShow)
+- [Car Rental System](https://github.com/Anshul619/System-Designs/tree/main/src/DesignLLDProblems/CarRentalSystem)
+- [Vendor Machine](https://github.com/Anshul619/System-Designs/tree/main/src/DesignLLDProblems/VendorMachine)
+- [Hotel Booking System](https://github.com/Anshul619/System-Designs/tree/main/src/DesignLLDProblems/HotelBookingSystem)
+- [Parking Lot](https://github.com/Anshul619/System-Designs/tree/main/src/DesignLLDProblems/ParkingLot)
+- [Generic Cache Implementation](https://github.com/Anshul619/System-Designs/tree/main/src/DesignLLDProblems/GenericCacheImpl)
+- [Insurance Agent Flow](https://github.com/Anshul619/System-Designs/tree/main/src/DesignLLDProblems/InsuranceAgentFlow.md)
 
 ## System Design Glossaries
 
 ### Throughput
 - Throughput is the number of actions executed or results produced per unit of time. 
 - This is measured in units of whatever is being produced (cars, motorcycles, I/O samples, memory words, iterations) per unit of time.
-- Example - 500 transactions per second etc.
+- Example - `500 transactions per second` etc.
 
 ### Latency
 - Latency is the time required to perform an action or to produce some result. 
 - Latency is measured in units of time -- hours, minutes, seconds, nanoseconds or clock periods.
-- Example - 50 secs to do a transaction.
+- Example - `50 secs to do a transaction`.
 
 ### What is TPS ( Transactions per Second )?
 - The number of things to be transmitted every second, that is, the number of transactions per second processed by the server.
@@ -113,7 +117,7 @@ This repo contains the various system design questions and solutions.
 - Language-agnostic - Language-agnostic programming or scripting (also called language-neutral, language-independent, or cross-language) is a software development paradigm where a particular language is chosen because of its appropriateness for a particular task (taking into consideration all factors, including ecosystem, developer skill-sets, performance, etc.), and not purely because of the skill-set available within a development team.
 
 ### Durability
-- In database systems, durability is the ACID property which guarantees that *transactions that have committed will survive permanently*. 
+- In database systems, durability is the ACID property which guarantees that `transactions that have committed will survive permanently`. 
 - For example, if a flight booking reports that a seat has successfully been booked, then the seat will remain booked even if the system crashes.
 
 ### [High Availability](https://avinetworks.com/glossary/high-availability/)

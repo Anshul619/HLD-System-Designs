@@ -1,6 +1,6 @@
-package LLDProblems.ChessGame.domains;
+package DesignLLDProblems.ChessGame.domains;
 
-import LLDProblems.ChessGame.domains.Abstract.Player;
+import DesignLLDProblems.ChessGame.domains.Abstract.Player;
 
 public class ComputerPlayer extends Player {
 

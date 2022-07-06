@@ -1,7 +1,7 @@
-package LLDProblems.SnackAndLadderGame;
+package DesignLLDProblems.SnackAndLadderGame;
 
-import LLDProblems.SnackAndLadderGame.domains.Board;
-import LLDProblems.SnackAndLadderGame.domains.User;
+import DesignLLDProblems.SnackAndLadderGame.domains.Board;
+import DesignLLDProblems.SnackAndLadderGame.domains.User;
 
 import java.util.*;
 

@@ -1,9 +1,9 @@
-package LLDProblems.ChessGame;
+package DesignLLDProblems.ChessGame;
 
-import LLDProblems.ChessGame.domains.*;
-import LLDProblems.ChessGame.domains.Abstract.Piece;
-import LLDProblems.ChessGame.domains.Abstract.Player;
-import LLDProblems.ChessGame.enums.GameStatus;
+import DesignLLDProblems.ChessGame.domains.*;
+import DesignLLDProblems.ChessGame.domains.Abstract.Piece;
+import DesignLLDProblems.ChessGame.domains.Abstract.Player;
+import DesignLLDProblems.ChessGame.enums.GameStatus;
 
 import java.util.List;
 

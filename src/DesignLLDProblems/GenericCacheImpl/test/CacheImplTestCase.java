@@ -1,6 +1,6 @@
-package LLDProblems.GenericCacheImpl.test;
+package DesignLLDProblems.GenericCacheImpl.test;
 
-import LLDProblems.GenericCacheImpl.others.CacheImpl;
+import DesignLLDProblems.GenericCacheImpl.others.CacheImpl;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;

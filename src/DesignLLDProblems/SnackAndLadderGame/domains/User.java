@@ -1,4 +1,4 @@
-package LLDProblems.SnackAndLadderGame.domains;
+package DesignLLDProblems.SnackAndLadderGame.domains;
 
 public class User {
     String name;

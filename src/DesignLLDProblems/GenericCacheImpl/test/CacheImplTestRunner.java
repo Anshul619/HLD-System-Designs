@@ -1,4 +1,4 @@
-package LLDProblems.GenericCacheImpl.test;
+package DesignLLDProblems.GenericCacheImpl.test;
 
 import org.junit.runner.Result;
 import org.junit.runner.JUnitCore;

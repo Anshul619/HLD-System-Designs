@@ -1,4 +1,4 @@
-package LLDProblems.ChessGame.domains;
+package DesignLLDProblems.ChessGame.domains;
 
 public class Board {
     Spot[][] boxes;

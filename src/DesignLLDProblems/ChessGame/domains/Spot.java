@@ -1,6 +1,6 @@
-package LLDProblems.ChessGame.domains;
+package DesignLLDProblems.ChessGame.domains;
 
-import LLDProblems.ChessGame.domains.Abstract.Piece;
+import DesignLLDProblems.ChessGame.domains.Abstract.Piece;
 
 /**
  * Spot: A spot represents one block of the 8×8 grid and an optional piece.

@@ -1,4 +1,4 @@
-package LLDProblems.ChessGame.domains.Abstract;
+package DesignLLDProblems.ChessGame.domains.Abstract;
 
 public abstract class Player {
     public boolean whiteSide;

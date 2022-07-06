@@ -1,7 +1,7 @@
-package LLDProblems.ChessGame.domains.Abstract;
+package DesignLLDProblems.ChessGame.domains.Abstract;
 
-import LLDProblems.ChessGame.domains.Board;
-import LLDProblems.ChessGame.domains.Spot;
+import DesignLLDProblems.ChessGame.domains.Board;
+import DesignLLDProblems.ChessGame.domains.Spot;
 
 /**
  * The basic building block of the system, every piece will be placed on a spot.

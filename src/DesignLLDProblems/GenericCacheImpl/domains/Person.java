@@ -1,4 +1,4 @@
-package LLDProblems.GenericCacheImpl.domains;
+package DesignLLDProblems.GenericCacheImpl.domains;
 
 public class Person {
     private String name;
