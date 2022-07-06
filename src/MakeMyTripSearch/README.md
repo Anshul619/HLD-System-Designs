@@ -14,8 +14,8 @@
 
 # Estimation
 - Assuming each apache ( service ) server can handle 512 concurrent requests.
-- If we consider 1 million concurrent users, around `2000 servers` would be needed.
-- Expectated Latency - `10ms for ElasticSearch`.
+- If we consider `1 million concurrent users`, around `2000 servers` would be needed.
+- Expected Latency - `10ms for ElasticSearch`.
 
 # Data Modeling
 - Search Interface 
