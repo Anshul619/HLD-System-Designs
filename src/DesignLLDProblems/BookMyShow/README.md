@@ -5,7 +5,7 @@
 
 # Scope
 - View movies (screens) for a given date
-- Lock Set<Seat> seats for x minutes
+- Lock `Set<Seat>` seats for x minutes
 - Proceed with the booking
 
 # Class Diagram

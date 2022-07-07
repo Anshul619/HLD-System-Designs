@@ -31,3 +31,4 @@
 - https://medium.com/mindorks/solid-principles-explained-with-examples-79d1ce114ace
 - https://junaidshahid.com/software-engineering-solid-principles/
 - https://www.dereuromark.de/wp-content/uploads/2016/01/SOLID.jpg
+- https://levelup.gitconnected.com/solid-principles-simplified-with-illustrations-fe5265f68ec6

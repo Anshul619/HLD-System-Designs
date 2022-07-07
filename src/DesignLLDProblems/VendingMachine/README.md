@@ -10,9 +10,6 @@
 # 
 # Classes
 # Interfaces
-# 
-# 
-# 
 
 AvailableCurrencyConfig ( 3 rows in DB ) => id, is_active, number, created_at, updated_at, description
 Product ( 3 rows in DB ) => id, price, created_at, updated_at, quantity, name, description, type, is_active ( by default = 1)
