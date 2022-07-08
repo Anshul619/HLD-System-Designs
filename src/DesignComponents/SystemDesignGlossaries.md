@@ -40,7 +40,7 @@
   - Redundancy
   - Replication
 
-![img.png](src/assests/fault_tolerance_img.png)
+![img.png](assests/fault_tolerance_img.png)
 
 ### [High Availability](https://avinetworks.com/glossary/high-availability/)
 - High Availability (HA) describes systems that are dependable enough to operate continuously without failing. 
