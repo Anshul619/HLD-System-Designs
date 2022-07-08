@@ -14,3 +14,5 @@
 # References 
 - https://github.com/donnemartin/system-design-primer/blob/master/solutions/system_design/scaling_aws/README.md
 - https://aws.amazon.com/blogs/database/sharding-with-amazon-relational-database-service/
+- [Scaling up to your first 10 million users](https://www.youtube.com/watch?v=kKjm4ehYiMs)
+

@@ -6,3 +6,4 @@
 - https://www.guru99.com/elasticsearch-interview-questions.html
 - https://www.interviewgig.com/elastic-serach-interview-questions-and-answers/
 - https://stackoverflow.com/questions/57328151/how-does-elasticsearch-store-data
+- [How to dramatically increase your Elasticsearch throughput and concurrency capacity](https://medium.com/explorium-ai/how-to-dramatically-increase-your-elasticsearch-throughput-and-concurrency-capacity-c32d7bb02ac2)

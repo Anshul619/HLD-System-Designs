@@ -212,7 +212,7 @@ c         | Consumption Rate                | And consumption (call it c). |
 
  Basis                                 | Kafka                                                                               | RabbitMQ                                                                                                                                                           |
 ---------------------------------------|-------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------|
- Performance | Up to 1 million messages per second                                                 | Up to 10K messages per second ( ie. around 100 nodes are needed to match with 1 kafka broker )                                                                     |                                                                                             |
+ Performance | Up to 1 million ( 1000K ) messages per second                                       | Up to 10K messages per second ( ie. around 100 nodes are needed to match with 1 kafka broker )                                                                     |                                                                                             |
  Message Transfer Model | Pull Based                                                                          | Push based                                                                                                                                                         |                                                                                             |
  Use Cases | Massive data/high throughput cases ( like analytics )                               | Simple low-latency use cases when message guarantee is needed or some consistent behaviour is needed for every message ( like order workflow, failed orders etc. ) |                                                                                             |
  Event storage structure | Logs                                                                                | Queue                                                                                                                                                              |                                                                                             |
@@ -235,6 +235,8 @@ Basis                                 | Kafka                                   
 # References
 - https://www.interviewbit.com/kafka-interview-questions/
 - https://www.interviewbit.com/blog/rabbitmq-vs-kafka
+- [How to minimize the latency involved in kafka messaging framework?](https://stackoverflow.com/questions/20520492/how-to-minimize-the-latency-involved-in-kafka-messaging-framework)
+- [Benchmarking Apache Kafka, Apache Pulsar, and RabbitMQ: Which is the Fastest?](https://www.confluent.io/blog/kafka-fastest-messaging-system/)
 - https://blog.iron.io/amazon-sqs-vs-apache-kafka/
 - https://cloud.in28minutes.com/aws-certification-sqs-vs-sns-vs-amazon-mq
 - https://github.com/purbon/kafka-cluster-size-calculator
