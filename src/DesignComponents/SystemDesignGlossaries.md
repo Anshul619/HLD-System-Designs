@@ -33,11 +33,11 @@
 
 ![img.png](assests/fault_tolerance_img.png)
 
-## [ACID Properties](https://www.geeksforgeeks.org/acid-properties-in-dbms/)
+## [ACID Properties of the Transaction](https://www.geeksforgeeks.org/acid-properties-in-dbms/)
 
 ![img.png](assests/ACID_Property_DBMS.drawio.png)
 
-### [Atomicity](https://www.techopedia.com/definition/24729/atomicity)
+### [Atomicity](https://www.geeksforgeeks.org/acid-properties-in-dbms/)
 - Atomicity is a feature of databases systems dictating where a transaction must be `all-or-nothing`.
 - That is, the transaction must either fully happen, or not happen at all. It must not complete partially.
 - Each transaction is considered as one unit and either runs to completion or is not executed at all. 
@@ -46,8 +46,9 @@
   - `Commit`: If a transaction commits, changes made are visible.
 
 ### [Consistency](https://www.geeksforgeeks.org/acid-properties-in-dbms/)
-- This means that integrity constraints must be maintained so that the database is consistent before and after the transaction. 
-- It refers to the correctness of a database.
+- This means that integrity constraints must be maintained so that the database is consistent before and after the transaction.
+- Consistency (or `Correctness`) in database systems refers to the requirement that any given database transaction [must change affected data only](https://en.wikipedia.org/wiki/Consistency_(database_systems)) in allowed ways.
+- Any data written to the database must be valid according to all defined rules, including constraints, cascades, triggers, and any combination thereof.
 
 ### [Isolation](https://www.geeksforgeeks.org/acid-properties-in-dbms/)
 - This property ensures that multiple transactions can occur concurrently without leading to the inconsistency of the database state. 
