@@ -33,7 +33,7 @@
 
 ![img.png](assests/fault_tolerance_img.png)
 
-## [ACID](https://www.geeksforgeeks.org/acid-properties-in-dbms/)
+## [ACID Properties](https://www.geeksforgeeks.org/acid-properties-in-dbms/)
 
 ![img.png](assests/ACID_Property_DBMS.drawio.png)
 
