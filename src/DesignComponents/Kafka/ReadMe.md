@@ -231,7 +231,7 @@ Basis                                 | Kafka                                   
 - `Amazon SQS` is based on [QUEUE](https://blog.iron.io/amazon-sqs-vs-apache-kafka/) ( hence message can NOT replayed ) while `Kafka` is based on `LOGS` ( which can be replayed ).
 - Both `Amazon SQS` & `Kafka` are based on [pull based modal](https://blog.iron.io/amazon-sqs-vs-apache-kafka/).
 
-# [Amazon SQS vs Amazon SNS vs Amazon MQ](https://cloud.in28minutes.com/aws-certification-sqs-vs-sns-vs-amazon-mq)
+# [Amazon SQS vs Amazon SNS](https://cloud.in28minutes.com/aws-certification-sqs-vs-sns-vs-amazon-mq)
 
 Basis | Amazon SQS                                                                                           | Amazon SNS |
 ------------------------------------|------------------------------------------------------------------------------------------------------|------------------------------------|
