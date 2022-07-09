@@ -47,7 +47,7 @@
 
 ### [Consistency](https://www.geeksforgeeks.org/acid-properties-in-dbms/)
 - This means that integrity constraints must be maintained so that the database is consistent before and after the transaction.
-- Consistency (or `Correctness`) in database systems refers to the requirement that any given database transaction [must change affected data only](https://en.wikipedia.org/wiki/Consistency_(database_systems)) in allowed ways.
+- Consistency (or `Correctness`) in database systems refers to the requirement that any given database transaction [must change affected data only.](https://en.wikipedia.org/wiki/Consistency_(database_systems)) in allowed ways.
 - Any data written to the database must be valid according to all defined rules, including constraints, cascades, triggers, and any combination thereof.
 
 ### [Isolation](https://www.geeksforgeeks.org/acid-properties-in-dbms/)
@@ -63,4 +63,10 @@
 - We should design the system considering agnostic feature (Language agnostic, AWS agnostic etc.) into the consideration.
 - Language-agnostic - Language-agnostic programming or scripting (also called language-neutral, language-independent, or cross-language) is a software development paradigm where a particular language is chosen because of its appropriateness for a particular task (taking into consideration all factors, including ecosystem, developer skill-sets, performance, etc.), and not purely because of the skill-set available within a development team.
 
+## [CAP Theorem of the Distributed Systems](https://www.geeksforgeeks.org/the-cap-theorem-in-dbms/)
 
+![img.png](assests/CAP_Theorem_Distributed_Systems.drawio.png)
+
+> The use of the word `consistency` in `CAP` and its use in `ACID` do not refer to the same identical concept.
+> - In CAP, the term consistency refers to the consistency of the values in different copies of the same data item in a replicated distributed system. 
+> - In ACID, it refers to the fact that a transaction will not violate the integrity constraints specified on the database schema.
