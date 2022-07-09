@@ -244,3 +244,4 @@ Web Services | - | Provides mobile and enterprise messaging web services - Push 
 - [Kafka Interview Question](https://www.interviewbit.com/kafka-interview-questions/)
 - [How to minimize the latency involved in kafka messaging framework?](https://stackoverflow.com/questions/20520492/how-to-minimize-the-latency-involved-in-kafka-messaging-framework)
 - [Benchmarking Apache Kafka, Apache Pulsar, and RabbitMQ: Which is the Fastest?](https://www.confluent.io/blog/kafka-fastest-messaging-system/)
+- [Apache Kafka on AWS using Amazon MSK](https://aws.amazon.com/msk/what-is-kafka/)
