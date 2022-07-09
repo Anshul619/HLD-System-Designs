@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-07-09T07:21:32.441Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/15.5 Safari/605.1.15" etag="6uMvzn9oLD42XfbJK4KR" version="20.0.4" type="github">
+<mxfile host="app.diagrams.net" modified="2022-07-09T07:25:28.465Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/15.5 Safari/605.1.15" etag="wIaLNPt8nlW-40pGSYDu" version="20.0.4" type="github">
   <diagram id="YFjQFGXf4k5l9e832XUq" name="Page-1">
     <mxGraphModel dx="1636" dy="467" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -190,8 +190,8 @@
         <mxCell id="vovjH_ogP9Qq_OkOsdVs-54" value="key=2, value=record21,&lt;br&gt;topic=X" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="138" y="418" width="60" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="vovjH_ogP9Qq_OkOsdVs-56" value="Assign partition number as key in the data" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
-          <mxGeometry x="-110" y="290" width="140" height="30" as="geometry" />
+        <mxCell id="vovjH_ogP9Qq_OkOsdVs-56" value="Producer would assign partition number as key in the data" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="-140" y="290" width="170" height="30" as="geometry" />
         </mxCell>
         <mxCell id="vovjH_ogP9Qq_OkOsdVs-57" value="Consumer" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" parent="1" vertex="1">
           <mxGeometry x="750" y="295" width="120" height="60" as="geometry" />
@@ -217,8 +217,8 @@
             <mxPoint x="510" y="330" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="vovjH_ogP9Qq_OkOsdVs-62" value="Would remember last offset which was read" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
-          <mxGeometry x="790" y="260" width="140" height="30" as="geometry" />
+        <mxCell id="vovjH_ogP9Qq_OkOsdVs-62" value="Consumer would remember last offset which was read" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="750" y="260" width="180" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
