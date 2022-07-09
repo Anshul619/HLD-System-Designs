@@ -6,14 +6,14 @@ This repo contains the various system design questions and solutions. [Read syst
 
 | Component                                                                                                            | Strength                         | Component Type                                                | Very Rough Throughput (QPS)                       | Latency | Free |
 |----------------------------------------------------------------------------------------------------------------------|----------------------------------|---------------------------------------------------------------|---------------------------------------------------|----------------|------|
-| [Kafka](https://github.com/Anshul619/System-Designs/tree/main/src/DesignComponents/Kafka)                            | High-Throughput MQ               | Message Queue (Pub-Sub)            | 1 million ( 1000K ) messages ( write ) per second | ~5ms | Yes   |
-| [RabbitMQ](https://github.com/Anshul619/System-Designs/tree/main/src/DesignComponents/Kafka#kafka-vs-rabbitmq)       | Low-Latency MQ                   | Message Queue (Point-2-Point)         | 20K messages ( write ) per second                | ~1ms |  Yes   |
-| [Redis](https://github.com/Anshul619/System-Designs/tree/main/src/DesignComponents/Redis)                            | -                                | Caching                          | 100K queries per second                         | -|  Yes   |
-| [MySQL](https://www.mysql.com/)                                                                                      | -                                | SQL DB                           | 1000 concurrent requests ( 100 as default )     | [< 10ms ( to get a row from 1 million records )](https://www.quora.com/How-can-we-calculate-the-throughput-of-MySQL?share=1)|Yes|
-| [DynomoDB](https://github.com/Anshul619/System-Designs/blob/main/src/DesignComponents/SQLvsNoSQL/ReadMe.md#dynomodb) | Predictable performance and cost | NoSQL DB as a Service ( AWS )  | More than 20 million requests per second         | less than 10-20 ms | No  |
-| [MongoDB](https://www.mongodb.com)                                                                                   | -                                | NoSQL DB                         | -                                               | -|  No                                      |
-| [ElasticSearch](https://github.com/Anshul619/System-Designs/tree/main/src/DesignComponents/ElasticSearch)            | -                                | Search Engine                    | -                                               |-|No|
-| [Apache](https://apache.org/)                                                                                        | -                                | Web Server                       | 512 concurrent requests                         |-|Yes|
+| [Kafka](https://github.com/Anshul619/System-Designs/tree/main/src/DesignComponents/Kafka)                            | High-Throughput MQ               | Message Queue (Pub-Sub)            | 1000K ( 1 million ) messages ( write ) per second | ~5ms | Yes   |
+| [RabbitMQ](https://github.com/Anshul619/System-Designs/tree/main/src/DesignComponents/Kafka#kafka-vs-rabbitmq)       | Low-Latency MQ                   | Message Queue (Point-2-Point)         | 20K messages ( write ) per second                 | ~1ms |  Yes   |
+| [Redis](https://github.com/Anshul619/System-Designs/tree/main/src/DesignComponents/Redis)                            | -                                | Caching                          | 100K queries per second                           | -|  Yes   |
+| [MySQL](https://www.mysql.com/)                                                                                      | -                                | SQL DB                           | 1000 concurrent requests ( 100 as default )       | [< 10ms ( to get a row from 1 million records )](https://www.quora.com/How-can-we-calculate-the-throughput-of-MySQL?share=1)|Yes|
+| [DynomoDB](https://github.com/Anshul619/System-Designs/blob/main/src/DesignComponents/SQLvsNoSQL/ReadMe.md#dynomodb) | Predictable performance and cost | NoSQL DB as a Service ( AWS )  | More than 20 million requests per second          | less than 10-20 ms | No  |
+| [MongoDB](https://www.mongodb.com)                                                                                   | -                                | NoSQL DB                         | -                                                 | -|  No                                      |
+| [ElasticSearch](https://github.com/Anshul619/System-Designs/tree/main/src/DesignComponents/ElasticSearch)            | -                                | Search Engine                    | -                                                 |-|No|
+| [Apache](https://apache.org/)                                                                                        | -                                | Web Server                       | 512 concurrent requests                           |-|Yes|
 
 # Tech Guidelines ( from Scalability perspective )
 - Develop the microservice based architecture
@@ -24,7 +24,7 @@ This repo contains the various system design questions and solutions. [Read syst
 
 ## Design Components
 - [SQL vs NoSQL](https://github.com/Anshul619/System-Designs/blob/main/src/DesignComponents/SQLvsNoSQL/ReadMe.md)
-- [MQs like Kafka, RabbitMQ, Amazon MQ, SQS, SNS](https://github.com/Anshul619/System-Designs/blob/main/src/DesignComponents/Kafka/ReadMe.md)
+- [MQs like Kafka, RabbitMQ, Amazon MQ, SQS, SNS etc.](https://github.com/Anshul619/System-Designs/blob/main/src/DesignComponents/Kafka/ReadMe.md)
 - [Redis](https://github.com/Anshul619/System-Designs/blob/main/src/DesignComponents/Redis/Redis-ReadMe.md)
 - [AWS](https://github.com/Anshul619/System-Designs/blob/main/src/DesignComponents/AWS.md)
 - [ElasticSearch](https://github.com/Anshul619/System-Designs/blob/main/src/DesignComponents/ElasticSearch/ReadMe.md)
