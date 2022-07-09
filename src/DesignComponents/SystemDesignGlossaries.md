@@ -38,14 +38,12 @@
 ![img.png](assests/ACID_Property_DBMS.drawio.png)
 
 ### [Atomicity](https://www.techopedia.com/definition/24729/atomicity)
-- Atomicity is a feature of databases systems dictating where a transaction must be all-or-nothing.
-- That is, the transaction must either fully happen, or not happen at all.
-- It must not complete partially.
-- Atomicity is also known as the `All or nothing rule`.
+- Atomicity is a feature of databases systems dictating where a transaction must be `all-or-nothing`.
+- That is, the transaction must either fully happen, or not happen at all. It must not complete partially.
 - Each transaction is considered as one unit and either runs to completion or is not executed at all. 
 - It involves the following two operations.
-  — `Abort`: If a transaction aborts, changes made to the database are not visible.
-  — `Commit`: If a transaction commits, changes made are visible.
+  - `Abort`: If a transaction aborts, changes made to the database are not visible.
+  - `Commit`: If a transaction commits, changes made are visible.
 
 ### [Consistency](https://www.geeksforgeeks.org/acid-properties-in-dbms/)
 - This means that integrity constraints must be maintained so that the database is consistent before and after the transaction. 
