@@ -1,11 +1,17 @@
 
-
 # Introduction
 - Apache Kafka is an open-source distributed event streaming platform used by thousands of companies for high-performance data pipelines, streaming analytics, data integration, and mission-critical applications.
-- Kafka can process a large amount of data in a short amount of time (**1 million messages/sec**)
+- Kafka can process a large amount of data in a short amount of time (`1 million messages/sec`)
 - It also has low latency, making it possible to process data in real-time.
 - Kafka is Publish Subscriber Model. And can be used for Event Driven Services.
 - Messages ( events ) in the Kafka are immutable and can't be changed once it's pushed.
+
+# Real world usages of Kafka
+- `As a events/message broker` - Use Kafka when your application has a High throughput (**1 million messages/sec**), i.e. application has to process a large volume of messages, event driven services etc.
+- `To monitor metrics, logs of the IT infrastructure` - Various systems in the IT infrastructure can push events/messages/logs in the Kafka. And logstash ( in ELK ) can act as a consumer to the Kafka.
+- `For Analytics` - If we want to build own google analytics ( to track app activities, events etc.), we can use Kafka as a broker.
+- `Stream Processing` - Use Kafka when the event stream needs to process data in multi-stage pipelines, the pipelines can generate graphs of the real-time data flows, thus providing real-time monitoring of traffic in the pipelines. Example - Video streaming in YouTube etc.
+- [TwilloSendMessageAPI](https://github.com/Anshul619/System-Designs/tree/main/src/TwilloSendMessageAPI)
 
 # Top Features of Kafka
 
@@ -14,9 +20,9 @@
 - A cluster of brokers is used to partition and streamline the data thereby, scaling up the storage capacity.
 
 ## Performance 
-- High Throughput ( **1 million messages/sec** ).
-- Each Kafka broker can serve more than **1 million reads/writes per second** and can hold TBs of data.
-- Default configured message size in Kafka is 1MB.
+- High Throughput ( `1 million messages/sec` ).
+- Each Kafka broker can serve more than `1 million messages per second` and can hold TBs of data.
+- Default configured message size in Kafka is `1MB`.
 
 ## High Volume 
 - Large amount of data can be stored in the Kafka pool.
@@ -24,7 +30,7 @@
 ## Replication, Durability, Zero Downtime
 - The data is kept persistent ( as per retention policy ) and tolerant to any hardware failures by copying the data in the clusters.
 - Each partition would be replicated across the brokers/servers in the cluster. ( as per configured replication factor )
-- Replication is done using Leader/Follower technique.
+- Replication is done using `Leader/Follower` technique.
 
 ## Fault Tolerance
 - Kafka connector can handle failures with three strategies summarised as fast-fail, ignore and re-queue(sends to another topic).
@@ -82,13 +88,13 @@
 - Zookeeper manages Kafka Cluster ( new broker, new partition etc. ) and brokers coordination
 - Zookeeper also manages leaders selection in the Kafka Cluster.
 - For every partition, there would be 1 leader ( reader/writer of the partition ) and 1 or more follower ( which keeps replicating the leader ).
-- Based on configured **replication factor**, the number of followers would be decided.
+- Based on configured `replication factor`, the number of followers would be decided.
 
 ## Consumer Group
 - The name of an application is essentially represented by a consumer group
 - A consumer in Kafka can be part of one or more consumer groups.
 - A consumer group in Kafka is a collection of consumers who work together to ingest data from the same topic or range of topics.
-- The ‘-group' command must be used to consume messages from a consumer group.
+- The `-group` command must be used to consume messages from a consumer group.
 
 ## Schema Registry
 - Schema Registry holds Avro schemas & ensures that schema used by producer and consumer, are identical.
@@ -99,7 +105,7 @@
 <img title="Kafka-Partitioning-Layout" alt="Alt text" src="Kafka-Partitioning-Layout.drawio.png">
 
 - Partitioning is done using key in the record
-- If we want to sequence the records execution in Kafka, as per the records input time, we should push those in the same partition ( hence same key should be used for the records ).
+- If we want to sequence records execution in Kafka, as per the records input time, we should push those in the same partition ( hence same key should be used for the records ).
 - If we push those in different partitions, then we can't guarantee of their execution sequence. 
 
 Example 
@@ -109,12 +115,10 @@ Example
 - You might use a customer id as the key of these Kafka records to solve this problem and assure ordering. 
 - This will ensure that all of a customer's purchase events are grouped together in the same partition.
 
-# Core APIs in Kafka
+# [Core APIs in Kafka](https://github.com/confluentinc/kafka-rest)
 
-## Producer API
-- Push the message to a topic (1 or more ) in the Kafka
-- https://kafka.apache.org/10/javadoc/org/apache/kafka/clients/producer/KafkaProducer.html
-- https://github.com/confluentinc/kafka-rest
+## [Producer API](https://kafka.apache.org/10/javadoc/org/apache/kafka/clients/producer/KafkaProducer.html)
+- Push the message to a topic (1 or more) in the Kafka
 
 ```java
 
@@ -136,9 +140,8 @@ for(int i = 0; i < 100; i++) {
     producer.close();
 ```
 
-## Consumer API
-- A consumer can subscribe ( poll at the given interval ) to one or more topics in the Kafka. 
-- https://kafka.apache.org/22/javadoc/org/apache/kafka/clients/consumer/KafkaConsumer.html
+## [Consumer API](https://kafka.apache.org/22/javadoc/org/apache/kafka/clients/consumer/KafkaConsumer.html)
+- A consumer can subscribe ( poll at the given interval ) to one or more topics in the Kafka.
 
 ```java
 
@@ -162,40 +165,31 @@ for(int i = 0; i < 100; i++) {
             }
         
         }
-
 ```
 
-## Streams API
+## [Streams API](https://hevodata.com/learn/kafka-streams/)
 - The Kafka Streams API allows an application to use a stream processing architecture to process data in Kafka. 
 - An application can use this API to take input streams from one or more topics, process them using streams operations, and generate output streams to transmit to one or more topics. 
 - The Streams API allows you to convert input streams into output streams in this manner.
-- https://hevodata.com/learn/kafka-streams/
 
 ## Connect API
 - The Kafka Connector API connects Kafka topics to applications. 
 - This opens up possibilities for constructing and managing the operations of producers and consumers, as well as establishing reusable links between these solutions. A connector, for example, may capture all database updates and ensure that they are made available in a Kafka topic.
 
-# Real world usages of Kafka
-- **As a events/message broker** - Use Kafka when your application has a High throughput (**1 million messages/sec**), i.e. application has to process a large volume of messages, event driven services etc.
-- **To monitor metrics, logs of the IT infrastructure** - Various systems in the IT infrastructure can push events/messages/logs in the Kafka. And logstash ( in ELK ) can act as a consumer to the Kafka.
-- **For Analytics** - If we want to build own google analytics ( to track app activities, events etc.), we can use Kafka as a broker. 
-- **Stream Processing** - Use Kafka when the event stream needs to process data in multi-stage pipelines, the pipelines can generate graphs of the real-time data flows, thus providing real-time monitoring of traffic in the pipelines. Example - Video streaming in YouTube etc.
-- [TwilloSendMessageAPI](https://github.com/Anshul619/System-Designs/tree/main/src/TwilloSendMessageAPI)
-
 # How to use Kafka on AWS?
-- Amazon Managed Streaming for Apache Kafka (MSK) - https://aws.amazon.com/msk/
+- Amazon Managed Streaming for [Apache Kafka (MSK)](https://aws.amazon.com/msk/) 
 
 # [Estimation - How to decide number of partitions in Kafka?](https://www.confluent.io/blog/how-choose-number-topics-partitions-kafka-cluster/)
 
 [Kafka cluster size calculator](https://docs.google.com/spreadsheets/d/1a3uIa8TTRLlN6HTtMzPPqf8p5j5OxflJuAyff-uHLgk/edit?usp=sharing)
 
-Rough formula for picking the number of partitions = *max(t/p, t/c)*
+Rough formula for picking the number of partitions = `MAX(t/p, t/c)`
 
  Parameter | Title                           | More Description                                                                                |
 -----------|---------------------------------|-------------------------------------------------------------------------------------------------|
-t         | Target Throughput               | Let’s say your target throughput is t. |
-p         | Thoughput on a single partition | You measure the throughout that you can achieve on a single partition for production (call it p). |
-c         | Consumption Rate                | And consumption (call it c). |
+`t`         | Target Throughput               | Let’s say your target throughput is t. |
+`p`         | Thoughput on a single partition | You measure the throughout that you can achieve on a single partition for production (call it p). |
+`c`         | Consumption Rate                | And consumption (call it c). |
 
 ## Other Points
 - More partitions lead to higher throughput
@@ -208,14 +202,14 @@ c         | Consumption Rate                | And consumption (call it c). |
   - As a rule of thumb, if you care about latency, it’s probably a good idea to limit the number of partitions per broker to *100 x b x r*, where b is the number of brokers in a Kafka cluster and r is the replication factor.
 - More partitions may require more memory in the client
 
-# Kafka vs RabbitMQ
+# [Kafka vs RabbitMQ](https://www.interviewbit.com/blog/rabbitmq-vs-kafka)
 
  Basis                                 | Kafka                                                                               | RabbitMQ                                                                                                                                                           |
 ---------------------------------------|-------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------|
  Performance | Up to 1 million ( 1000K ) messages per second                                       | Up to 10K messages per second ( ie. around 100 nodes are needed to match with 1 kafka broker )                                                                     |                                                                                             |
  Message Transfer Model | Pull Based                                                                          | Push based                                                                                                                                                         |                                                                                             |
  Use Cases | Massive data/high throughput cases ( like analytics )                               | Simple low-latency use cases when message guarantee is needed or some consistent behaviour is needed for every message ( like order workflow, failed orders etc. ) |                                                                                             |
- Event storage structure | Logs                                                                                | Queue                                                                                                                                                              |                                                                                             |
+ Event storage structure | `Logs`                                                                                | `Queue`                                                                                                                                                              |                                                                                             |
  Data Type | Operational                                                                         | Transactional                                                                                                                                                      |                                                                                             |
  Broker/Publisher Type | Dump                                                                                | Smart ( Consistent transmission of messages to consumers at about the same speed as the broker monitors the consumer's status)                                     |                                                                                             |
  Consumer Type | Smart                                                                               | Dumb                                                                                                                                                               |                                                                                             |
@@ -225,18 +219,28 @@ c         | Consumption Rate                | And consumption (call it c). |
  Payload Size | Default 1MB limit                                                                   | No constraints                                                                                                                                                     |                                                                                             |
  
 # Kafka vs AmazonMQ
+
 Basis                                 | Kafka                                                                               | AmazonMQ                                                                                                                                                           |
 ---------------------------------------|-------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------|
  Migration | Kafka is a distributed, partitioned, replicated commit log service. It provides the functionality of a messaging system, but with a unique design.                                                 | Amazon MQ is a managed message broker service for Apache ActiveMQ that makes it easy to set up and operate message brokers in the cloud.                                                                     |                                                                                             |
 
-# Kafka vs Amazon SQS
-- TBD - https://stackoverflow.com/questions/58970006/are-sqs-and-kafka-same
+# [Kafka vs Amazon SQS](https://stackoverflow.com/questions/58970006/are-sqs-and-kafka-same)
+- SQS is an `Amazon managed service` (so you do not have to support infrastructure by yourself).
+- SQS is better for eventing when you need to catch some message (event) by some client and then this message will be automatically popped out from the queue.
+- `Amazon SQS is not so fast as Kafka` and it doesn't fit to high workload, it's much more suitable for `eventing where count of events per second` is not so much.
+- `Amazon SQS` is based on [QUEUE](https://blog.iron.io/amazon-sqs-vs-apache-kafka/) ( hence message can NOT replayed ) while `Kafka` is based on `LOGS` ( which can be replayed ).
+- Both `Amazon SQS` & `Kafka` are based on [pull based modal](https://blog.iron.io/amazon-sqs-vs-apache-kafka/).
+
+# [Amazon SQS vs Amazon SNS vs Amazon MQ](https://cloud.in28minutes.com/aws-certification-sqs-vs-sns-vs-amazon-mq)
+
+Basis | Amazon SQS                                                                                           | Amazon SNS |
+------------------------------------|------------------------------------------------------------------------------------------------------|------------------------------------|
+Paradigm | Pull Modal                                                                                           | Publish-Subscribe (pub-sub) paradigm|
+Process | Message would be pushed to the Queue. Consumers would consume it and it would be removed from Queue. | When an SNS Topic receives an event notification (from publisher), it is broadcast to all Subscribers |
+Use Cases | - | Monitoring Apps, workflow systems, mobile apps |
+Web Services | - | Provides mobile and enterprise messaging web services - Push notifications to Apple, Android, FireOS, Windows devices, Send SMS to mobile users, Send Emails |
 
 # References
-- https://www.interviewbit.com/kafka-interview-questions/
-- https://www.interviewbit.com/blog/rabbitmq-vs-kafka
+- [Kafka Interview Question](https://www.interviewbit.com/kafka-interview-questions/)
 - [How to minimize the latency involved in kafka messaging framework?](https://stackoverflow.com/questions/20520492/how-to-minimize-the-latency-involved-in-kafka-messaging-framework)
 - [Benchmarking Apache Kafka, Apache Pulsar, and RabbitMQ: Which is the Fastest?](https://www.confluent.io/blog/kafka-fastest-messaging-system/)
-- https://blog.iron.io/amazon-sqs-vs-apache-kafka/
-- https://cloud.in28minutes.com/aws-certification-sqs-vs-sns-vs-amazon-mq
-- https://github.com/purbon/kafka-cluster-size-calculator
