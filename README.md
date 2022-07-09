@@ -6,7 +6,7 @@ This repo contains the various system design questions and solutions. [Read syst
 
 | Component                                                                                                            | Strength                         | Component Type                                                | Very Rough Throughput (QPS)                       | Latency | Free |
 |----------------------------------------------------------------------------------------------------------------------|----------------------------------|---------------------------------------------------------------|---------------------------------------------------|----------------|------|
-| [Kafka](https://github.com/Anshul619/System-Designs/tree/main/src/DesignComponents/Kafka)                            | High-throughput MQ               | Message Queue (Pub-Sub)            | 1 million ( 1000K ) messages ( write ) per second | ~5ms | Yes   |
+| [Kafka](https://github.com/Anshul619/System-Designs/tree/main/src/DesignComponents/Kafka)                            | High-Throughput MQ               | Message Queue (Pub-Sub)            | 1 million ( 1000K ) messages ( write ) per second | ~5ms | Yes   |
 | [RabbitMQ](https://github.com/Anshul619/System-Designs/tree/main/src/DesignComponents/Kafka#kafka-vs-rabbitmq)       | Low-Latency MQ                   | Message Queue (Point-2-Point)         | 20K messages ( write ) per second                | ~1ms |  Yes   |
 | [Redis](https://github.com/Anshul619/System-Designs/tree/main/src/DesignComponents/Redis)                            | -                                | Caching                          | 100K queries per second                         | -|  Yes   |
 | [MySQL](https://www.mysql.com/)                                                                                      | -                                | SQL DB                           | 1000 concurrent requests ( 100 as default )     | [< 10ms ( to get a row from 1 million records )](https://www.quora.com/How-can-we-calculate-the-throughput-of-MySQL?share=1)|Yes|
@@ -15,12 +15,12 @@ This repo contains the various system design questions and solutions. [Read syst
 | [ElasticSearch](https://github.com/Anshul619/System-Designs/tree/main/src/DesignComponents/ElasticSearch)            | -                                | Search Engine                    | -                                               |-|No|
 | [Apache](https://apache.org/)                                                                                        | -                                | Web Server                       | 512 concurrent requests                         |-|Yes|
 
-> Tech Guidelines ( from Scalability perspective )
-> - Develop the microservice based architecture
-> - Generally, we should aim for `MAXIMAL throughput` with `ACCEPTABLE latency`.
-> - We must consider `cloud-agnostic approach` ( & onPerm customer approach ) while designing the solution.
-> - If it's a READ heavy microservice, the best decision would be to use `Redis` or `multi-read database instances`.
-> - If it's WRITE heavy microservice ( `HIGH throughput` ), the best decision would be to use either use `Kafka` ( as message queue ) or `DynmoDB`. Both can handle `HIGH throughput`.
+# Tech Guidelines ( from Scalability perspective )
+- Develop the microservice based architecture
+- Generally, we should aim for `MAXIMAL throughput` with `ACCEPTABLE latency`.
+- We must consider `cloud-agnostic approach` ( & onPerm customer approach ) while designing the solution.
+- If it's a READ heavy microservice, the best decision would be to use `Redis` or `multi-read database instances`.
+- If it's WRITE heavy microservice ( `HIGH throughput` ), the best decision would be to use either use `Kafka` ( as message queue ) or `DynmoDB`. Both can handle `HIGH throughput`.
 
 ## Design Components
 - [SQL vs NoSQL](https://github.com/Anshul619/System-Designs/blob/main/src/DesignComponents/SQLvsNoSQL/ReadMe.md)
