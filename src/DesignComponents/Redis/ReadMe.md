@@ -1,5 +1,5 @@
 
-# Key Features of Redis
+# Key Features of Redis ( REmote DIctionary Server)
 
 ## Speed - 100K queries per second
 - Redis is very fast. It can execute `100K queries` per second.
