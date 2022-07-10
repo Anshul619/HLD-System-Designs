@@ -123,6 +123,12 @@ appendonly yes
 - Memcache only supports caching while replication and persistence is supported in Redis ( in addition to caching ).
 - Memcache only supports `String` datatype.
 
+# Open Question - Which redis data type should be used?
+- If we use Redis String ( key, value ) pairs, we would have to do typecast everytime.
+- Hence it would be preferred to use the Redis Set data type to store JSON values in the Redis.
+- The time complexity to get an element from the Redis Set would be O(1). ( In case of nested object, time complexity would be more )
+
+
 # References
 - [Redis Interview Questions & Answers](https://www.javatpoint.com/redis-interview-questions-and-answers)
 - [Top Redis Use Cases by Core Data Structure Types](https://scalegrid.io/blog/top-redis-use-cases-by-core-data-structure-types/)
