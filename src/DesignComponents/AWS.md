@@ -3,19 +3,20 @@
 
 Component|Description|
 -----------|---------------------------------|
-CloudWatch| Cloudwatch is a monitoring service that gives you visibility into the performance and health of your AWS resources and applications. Depending on multiple metrics, it participates in triggering alarms. Helps in monitoring the AWS environments like CPU utilization, EC2, Amazon RDS instances, Amazon SQS, S3, Load Balancer, SNS, etc.|
-CloudTrail|Cloudtrail is a service that logs AWS account activity and API usage for risk auditing, compliance and monitoring|
 [Route 53](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/Welcome.html)| Amazon Route 53 is a highly available and scalable Domain Name System (DNS) web service. You can use Route 53 to perform three main functions in any combination: domain registration, DNS routing, and health checking |
+[Application Load Balancer](https://docs.aws.amazon.com/elasticloadbalancing/latest/application/introduction.html)| Recommended|
 [Availability Zone](https://aws.amazon.com/about-aws/global-infrastructure/regions_az/)| An Availability Zone (AZ) is one or more discrete data centers with redundant power, networking, and connectivity in an AWS Region. AZs give customers the ability to operate production applications and databases that are more highly available, fault tolerant, and scalable than would be possible from a single data center|
-Application Load Balancer | Recommended|
-Amazon Elastic Cache | Managed Redis or Memcache |
-What is AWS CloudFormation? | AWS CloudFormation is a service that helps you model and set up your AWS resources so that you can spend less time managing those resources and more time focusing on your applications that run in AWS. **You create a template that describes all the AWS resources that you want (like Amazon EC2 instances or Amazon RDS DB instances), and CloudFormation takes care of provisioning and configuring those resources for you.** You don't need to individually create and configure AWS resources and figure out what's dependent on what; CloudFormation handles that.|
-What is auto-scaling? | Auto-scaling is a function that allows you to provision and launch new instances whenever there is a demand. It allows you to automatically increase or decrease resource capacity in relation to the demand.|
-Amazon RDS | Amazon RDS is a database management service for relational databases. It manages patching, upgrading, and data backups automatically. It’s a database management service for structured data only.|
+[Auto-scaling](https://aws.amazon.com/autoscaling/) | Auto-scaling is a function that allows you to provision and launch new instances whenever there is a demand. It allows you to automatically increase or decrease resource capacity in relation to the demand.|
+[CloudWatch](https://aws.amazon.com/cloudwatch/)| Cloudwatch is a monitoring service that gives you visibility into the performance and health of your AWS resources and applications. Depending on multiple metrics, it participates in triggering alarms. Helps in monitoring the AWS environments like CPU utilization, EC2, Amazon RDS instances, Amazon SQS, S3, Load Balancer, SNS, etc.|
+[CloudTrail](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-user-guide.html)|Cloudtrail is a service that logs AWS account activity and API usage for risk auditing, compliance and monitoring|
+[Amazon RDS](https://aws.amazon.com/rds/) | Amazon RDS is a database management service for relational databases. It manages patching, upgrading, and data backups automatically. It’s a database management service for structured data only.|
+[Amazon Elastic Cache](https://aws.amazon.com/elasticache/) | Managed Redis or Memcache |
 DynamoDB | On the other hand, DynamoDB is a NoSQL database service for dealing with unstructured data. |
 Redshift | Redshift is a data warehouse product used in data analysis. |
 What is IAM? | AWS IAM allows an administrator to provide multiple users and groups with granular access. Various user groups and users may require varying levels of access to the various resources that have been developed. We may assign roles to users and create roles with defined access levels using IAM. It further gives us Federated Access, which allows us to grant applications and users access to resources without having to create IAM Roles.|
 [AmazonMQ](https://aws.amazon.com/amazon-mq/) | Amazon MQ is a managed message broker service for Apache ActiveMQ and RabbitMQ that makes it easy to set up and operate message brokers on AWS. Amazon MQ reduces your operational responsibilities by managing the provisioning, setup, and maintenance of message brokers for you. Because Amazon MQ connects to your current applications with industry-standard APIs and protocols, you can easily migrate to AWS without having to rewrite code.|
+[AWS CloudFormation - Infrastructure as a CODE](https://aws.amazon.com/cloudformation/) | AWS CloudFormation is a service that helps you model and set up your AWS resources so that you can spend less time managing those resources and more time focusing on your applications that run in AWS. **You create a template that describes all the AWS resources that you want (like Amazon EC2 instances or Amazon RDS DB instances), and CloudFormation takes care of provisioning and configuring those resources for you.** You don't need to individually create and configure AWS resources and figure out what's dependent on what; CloudFormation handles that.|
+[AWS OpsWorks](https://aws.amazon.com/opsworks/) | AWS OpsWorks is a configuration management service that provides managed instances of Chef and Puppet. OpsWorks lets you use Chef and Puppet to automate how servers are configured, deployed, and managed across your EC2 instances or on-premises compute environments.|
 
 # What Is Amazon Virtual Private Cloud (VPC) and Why Is It Used?
 - A VPC is the best way of connecting to your cloud resources from your own data center. Once you connect your datacenter to the VPC in which your instances are present, each instance is assigned a private IP address that can be accessed from your data center. That way, you can access your public cloud resources as if they were on your own private network.
@@ -42,5 +43,11 @@ What is IAM? | AWS IAM allows an administrator to provide multiple users and gro
 # Amazon EC2 AutoScaling
 - Amazon EC2 Auto Scaling enables you to automatically launch or terminate Amazon EC2 instances based on user-defined policies, health status checks, and schedules. You can use a CloudWatch alarm with Amazon EC2 Auto Scaling to scale your EC2 instances based on demand. For more information, see Dynamic Scaling in the Amazon EC2 Auto Scaling User Guide.
 
+# Amazon OpsWorks
+- With AWS OpsWorks, you can automate how nodes are configured, deployed, and managed, whether they are Amazon EC2 instances or on-premises devices.
+
+![img.png](assests/aws_opsworks_img.png)
+
 # References
-- https://www.simplilearn.com/tutorials/aws-tutorial/aws-interview-questions
+- [AWS Interview Questions](https://www.simplilearn.com/tutorials/aws-tutorial/aws-interview-questions)
+- [Elastic Beanstalk vs CloudFormation vs OpsWorks vs CodeDeploy](https://tutorialsdojo.com/elastic-beanstalk-vs-cloudformation-vs-opsworks-vs-codedeploy/)
