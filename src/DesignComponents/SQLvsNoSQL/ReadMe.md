@@ -28,7 +28,7 @@ Relational databases store data in rows and columns.
 ## Key-Value Stores 
 - Data is stored in an array of key-value pairs. 
 - The `key` is an attribute name which is linked to a `value`. 
-- Well-known key-value stores include `AWS Dynamo`, `Redis` & `Voldemort`.
+- Well-known key-value stores include `AWS Dynamo DB`, `Redis`, `Voldemort` etc.
 
 ## Document Databases 
 - In these databases, data is stored in documents (instead of rows and columns in a table) and these documents are grouped together in collections. 
@@ -37,7 +37,7 @@ Relational databases store data in rows and columns.
 
 ## Wide-Column Databases 
 - Instead of `tables`, in column databases we have column families, which are containers for rows. 
-- Example - `Apache HBase`.
+- Example - `Apache Casandra`, `Apache HBase` etc.
 
 ## Graph Databases 
 - These databases are used to store data whose relations are best represented in a graph ( like parent-child relationship of aadhaar etc.)
