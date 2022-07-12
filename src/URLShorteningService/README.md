@@ -85,6 +85,13 @@ KGS can use two tables to store keys:
 - Instead, we can slowly remove expired links and do a lazy cleanup. 
 - Our service will ensure that only expired links will be deleted, although some expired links can live longer but will never be returned to users.
 
+# Telemetry/Analytics
+Some statistics worth tracking:
+- country of the visitor,
+- date and time of access,
+- web page that referred the click,
+- browser, or platform from where the page was accessed.
+
 ## References
 - [Groking the System Design](https://www.educative.io/courses/grokking-the-system-design-interview/m2ygV4E81AR)
 - [System Design : Scalable URL shortener service like TinyURL](https://medium.com/@sandeep4.verma/system-design-scalable-url-shortener-service-like-tinyurl-106f30f23a82)

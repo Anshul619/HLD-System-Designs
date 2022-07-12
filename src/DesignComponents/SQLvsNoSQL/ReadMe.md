@@ -57,9 +57,9 @@ Relational databases store data in rows and columns.
 - PostgreSQL is [twice](https://itnext.io/benchmark-databases-in-docker-mysql-postgresql-sql-server-7b129368eed7) as fast as MySQL
 
 # References
-- https://www.educative.io/courses/grokking-the-system-design-interview/YQlK1mDPgpK
+- [Groking the System Design](https://www.educative.io/courses/grokking-the-system-design-interview/YQlK1mDPgpK)
 - https://www.interviewbit.com/blog/sql-vs-nosql/
 - https://aws.amazon.com/blogs/database/scaling-your-amazon-rds-instance-vertically-and-horizontally/
 - https://www.networkworld.com/article/2999856/10-use-cases-where-nosql-will-outperform-sql.html
 - https://softwareengineering.stackexchange.com/questions/175542/why-is-nosql-faster-than-sql
-- https://stackshare.io/stackups/amazon-dynamodb-vs-kafka
+- [Amazon DynamoDB vs Kafka](https://stackshare.io/stackups/amazon-dynamodb-vs-kafka)
