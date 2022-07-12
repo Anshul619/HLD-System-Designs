@@ -23,7 +23,7 @@ Gotcha: What if two people try to shorten the same URL?
 
 # High Level Design
 
-<img title="URL Shortener" alt="Alt text" src="URL Shortener - HLD.drawio.png">
+<img title="URL Shortener" alt="Alt text" src="assets/URL Shortener - HLD.drawio.png">
 
 # REST APIs
 - `createURL(api_dev_key, original_url, custom_alias=None, user_name=None, expire_date=None)`
