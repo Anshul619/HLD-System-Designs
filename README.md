@@ -39,6 +39,7 @@ This repo contains the various system design questions and solutions. [Read syst
 - [Logging Solution](https://github.com/Anshul619/System-Designs/tree/main/src/LoggingSolution)
 - [Monolothic to MicroService](https://github.com/Anshul619/System-Designs/tree/main/src/MonolothicToMicroservice)
 - [MakeMyTrip Search](https://github.com/Anshul619/System-Designs/tree/main/src/MakeMyTripSearch)
+- [URL Shortening Service](https://github.com/Anshul619/System-Designs/tree/main/src/URLShorteningService)
 
 ## Engineering Principles
 - [SOLID](https://github.com/Anshul619/System-Designs/blob/main/src/DesignComponents/SOLID.md)
