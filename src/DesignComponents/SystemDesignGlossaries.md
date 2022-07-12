@@ -70,3 +70,6 @@
 > The use of the word `consistency` in `CAP` and its use in `ACID` do not refer to the same identical concept.
 > - In CAP, the term consistency refers to the consistency of the values in different copies of the same data item in a replicated distributed system. 
 > - In ACID, it refers to the fact that a transaction will not violate the integrity constraints specified on the database schema.
+
+# Stateful vs Stateless
+- TBD
