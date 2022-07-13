@@ -25,7 +25,7 @@ This repo contains the various system design questions and solutions. [Read syst
 ## Design Components
 - [SQL vs NoSQL](https://github.com/Anshul619/System-Designs/blob/main/src/DesignComponents/SQLvsNoSQL/ReadMe.md)
 - [MQs like Kafka, RabbitMQ, Amazon MQ, SQS, SNS etc.](https://github.com/Anshul619/System-Designs/blob/main/src/DesignComponents/Kafka/ReadMe.md)
-- [Redis](https://github.com/Anshul619/System-Designs/blob/main/src/DesignComponents/Redis/Redis-ReadMe.md)
+- [Redis](https://github.com/Anshul619/System-Designs/blob/main/src/DesignComponents/Redis)
 - [AWS](https://github.com/Anshul619/System-Designs/blob/main/src/DesignComponents/AWS.md)
 - [ElasticSearch](https://github.com/Anshul619/System-Designs/blob/main/src/DesignComponents/ElasticSearch/ReadMe.md)
 - [EFS vs S3](https://github.com/Anshul619/System-Designs/blob/main/src/DesignComponents/EFSvsS3/ReadMe.md)
