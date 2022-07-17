@@ -36,7 +36,7 @@ Relational databases store data in rows and columns.
 - Document databases include the `CouchDB` and `MongoDB`.
 
 ## Wide-Column Databases 
-- Instead of `tables`, in column databases we have column families, which are containers for rows. 
+- Instead of `tables`, we have column families in column databases, which are containers for rows. 
 - Example - `Apache Casandra`, `Apache HBase` etc.
 
 ## Graph Databases 
@@ -53,13 +53,23 @@ Relational databases store data in rows and columns.
 - `Fully Distributed, Shared Nothing Architecture`
   - Amazon DynamoDB scales horizontally and can seamlessly scale a single table over hundreds of servers.
 
+# Casandra
+- [Redis vs Casandra](    - https://www.upsolver.com/blog/redis-vs-apache-cassandra-choosing-between-these-real-time-databases)
+
 # SQL - MySQL vs PostgreSQL
-- PostgreSQL is [twice](https://itnext.io/benchmark-databases-in-docker-mysql-postgresql-sql-server-7b129368eed7) as fast as MySQL
+- PostgreSQL is [twice](https://itnext.io/benchmark-databases-in-docker-mysql-postgresql-sql-server-7b129368eed7) as fast as MySQL.
+
+# [What is AeroSpike?](https://aerospike.com)
+- TBD
+
+# [What is Apache Spark?](https://spark.apache.org)
+- TBD
 
 # References
 - [Groking the System Design](https://www.educative.io/courses/grokking-the-system-design-interview/YQlK1mDPgpK)
-- https://www.interviewbit.com/blog/sql-vs-nosql/
-- https://aws.amazon.com/blogs/database/scaling-your-amazon-rds-instance-vertically-and-horizontally/
-- https://www.networkworld.com/article/2999856/10-use-cases-where-nosql-will-outperform-sql.html
-- https://softwareengineering.stackexchange.com/questions/175542/why-is-nosql-faster-than-sql
+- [SQL vs NoSQL](https://www.interviewbit.com/blog/sql-vs-nosql/)
+- [Scaling Your Amazon RDS Instance Vertically and Horizontally](https://aws.amazon.com/blogs/database/scaling-your-amazon-rds-instance-vertically-and-horizontally/)
+- [10 use cases where NoSQL will outperform SQL](https://www.networkworld.com/article/2999856/10-use-cases-where-nosql-will-outperform-sql.html)
+- [Why is NoSQL faster than SQL?](https://softwareengineering.stackexchange.com/questions/175542/why-is-nosql-faster-than-sql)
 - [Amazon DynamoDB vs Kafka](https://stackshare.io/stackups/amazon-dynamodb-vs-kafka)
+- [Why and How to Migrate from Apache Cassandra to Amazon DynamoDB - AWS Online Tech Talks](https://www.youtube.com/watch?v=WuDGvG_4kC8)

@@ -32,6 +32,7 @@ Rate limiting refers to preventing the frequency of an operation from exceeding 
 - This would make the counter update as atomic in Redis.
 - But this comes at a performance cost ( as latency would increase ).
 
+
 ## References
 - https://medium.com/geekculture/system-design-basics-rate-limiter-351c09a57d14
 - https://github.com/jwerre/rate-limit-redis

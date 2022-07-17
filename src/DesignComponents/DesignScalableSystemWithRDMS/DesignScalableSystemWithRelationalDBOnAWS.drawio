@@ -91,7 +91,7 @@
         <mxCell id="gxSmxHNSXOMdhkajosie-8" value="ElasticCache &lt;br&gt;( Managed Redis )" style="outlineConnect=0;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;shape=mxgraph.aws3.elasticache;fillColor=#2E73B8;gradientColor=none;" parent="1" vertex="1">
           <mxGeometry x="432.5" y="-40" width="67.5" height="81" as="geometry" />
         </mxCell>
-        <mxCell id="gxSmxHNSXOMdhkajosie-11" value="AutoScale" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;dashed=1;" parent="1" vertex="1">
+        <mxCell id="gxSmxHNSXOMdhkajosie-11" value="Others.AutoScale" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;dashed=1;" parent="1" vertex="1">
           <mxGeometry x="220" y="-167.5" width="60" height="30" as="geometry" />
         </mxCell>
         <mxCell id="gxSmxHNSXOMdhkajosie-13" value="S3 - Object Store" style="outlineConnect=0;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;shape=mxgraph.aws3.s3;fillColor=#E05243;gradientColor=none;" parent="1" vertex="1">

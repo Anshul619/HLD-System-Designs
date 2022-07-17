@@ -15,7 +15,7 @@
 
 ## Sales Rank table
 - `id`, `category_id`, `product_id` columns should be indexed.
-- SalesRank service would get the corresponding sales data from sales table and populate this table. And then sort those records.
+- `SalesRank service` would get the corresponding sales data from sales table and populate this table. And then sort those records.
 
 ```
 id int NOT NULL AUTO_INCREMENT
@@ -26,6 +26,14 @@ PRIMARY KEY(id)
 FOREIGN KEY(category_id) REFERENCES Categories(id)
 FOREIGN KEY(product_id) REFERENCES Products(id)
 ```
+
+# Rough Notes
+- In case of multiple categories, put product sale and category in different table
+- Past week’s sale
+- New writes every second
+- Have start and end times in the sales rank table
+- Nightly job to update for last week
+- Cache in the design
 
 # References
 - [Design Amazon's sales rank by category feature](https://github.com/donnemartin/system-design-primer/blob/master/solutions/system_design/sales_rank/README.md)
