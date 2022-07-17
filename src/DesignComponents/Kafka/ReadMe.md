@@ -117,6 +117,8 @@ Example
 
 # [Core APIs in Kafka](https://github.com/confluentinc/kafka-rest)
 
+[Kafka HTTP APIs](https://www.confluent.io/blog/http-and-rest-api-use-cases-and-architecture-with-apache-kafka/) can be integrated in the client apis, to push the message to the specific topic ( & partition key ).
+
 ## [Producer API](https://kafka.apache.org/10/javadoc/org/apache/kafka/clients/producer/KafkaProducer.html)
 - Push the message to a topic (1 or more) in the Kafka
 
