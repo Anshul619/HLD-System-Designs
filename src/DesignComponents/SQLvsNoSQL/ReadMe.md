@@ -54,10 +54,10 @@ Relational databases store data in rows and columns.
   - Amazon DynamoDB scales horizontally and can seamlessly scale a single table over hundreds of servers.
 
 # Casandra
-- [Redis vs Casandra](    - https://www.upsolver.com/blog/redis-vs-apache-cassandra-choosing-between-these-real-time-databases)
+- [Redis vs Casandra](https://www.upsolver.com/blog/redis-vs-apache-cassandra-choosing-between-these-real-time-databases)
 
 # SQL - MySQL vs PostgreSQL
-- PostgreSQL is [twice](https://itnext.io/benchmark-databases-in-docker-mysql-postgresql-sql-server-7b129368eed7) as fast as MySQL.
+- [PostgreSQL is twice as fast as MySQL](https://itnext.io/benchmark-databases-in-docker-mysql-postgresql-sql-server-7b129368eed7).
 
 # [What is AeroSpike?](https://aerospike.com)
 - TBD

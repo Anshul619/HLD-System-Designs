@@ -47,7 +47,7 @@
 
 ### [Consistency](https://www.geeksforgeeks.org/acid-properties-in-dbms/)
 - This means that integrity constraints must be maintained so that the database is consistent before and after the transaction.
-- Consistency (or `Correctness`) in database systems refers to the requirement that any given database transaction [must change affected data only.](https://en.wikipedia.org/wiki/Consistency_(database_systems)) in allowed ways.
+- Consistency (or `Correctness`) in database systems refers to the requirement that any given database transaction [must change affected data only](https://en.wikipedia.org/wiki/Consistency_(database_systems)) in allowed ways.
 - Any data written to the database must be valid according to all defined rules, including constraints, cascades, triggers, and any combination thereof.
 
 ### [Isolation](https://www.geeksforgeeks.org/acid-properties-in-dbms/)
