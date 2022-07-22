@@ -3,15 +3,28 @@
 - Apache Kafka is an open-source distributed event streaming platform used by thousands of companies for high-performance data pipelines, streaming analytics, data integration, and mission-critical applications.
 - Kafka can process a large amount of data in a short amount of time (`1 million messages/sec`)
 - It also has low latency, making it possible to process data in real-time.
-- Kafka is Publish Subscriber Model. And can be used for Event Driven Services.
+- Kafka is `Publish Subscriber Model`. And can be used for `Event Driven Services`.
 - Messages ( events ) in the Kafka are immutable and can't be changed once it's pushed.
 
+# Basic Architecture of Kafka
+
+<img title="Kafka-Architecture" alt="Alt text" src="Kafka-Architecture.drawio.png">
+
 # Real world usages of Kafka
-- `As a events/message broker` - Use Kafka when your application has a High throughput (**1 million messages/sec**), i.e. application has to process a large volume of messages, event driven services etc.
-- `To monitor metrics, logs of the IT infrastructure` - Various systems in the IT infrastructure can push events/messages/logs in the Kafka. And logstash ( in ELK ) can act as a consumer to the Kafka.
-- `For Analytics` - If we want to build own google analytics ( to track app activities, events etc.), we can use Kafka as a broker.
-- `Stream Processing` - Use Kafka when the event stream needs to process data in multi-stage pipelines, the pipelines can generate graphs of the real-time data flows, thus providing real-time monitoring of traffic in the pipelines. Example - Video streaming in YouTube etc.
-- [TwilloSendMessageAPI](https://github.com/Anshul619/System-Designs/tree/main/src/TwilloSendMessageAPI)
+
+## As a events/message broker 
+- Use Kafka when your application has a High throughput (`1 million messages/sec`), i.e. application has to process a large volume of messages, event driven services etc.
+
+## To monitor metrics, logs of the IT infrastructure 
+- Various systems in the IT infrastructure can push events/messages/logs in the Kafka. And logstash ( in ELK ) can act as a consumer to the Kafka.
+
+## For Analytics 
+- If we want to build our own google analytics ( to track app activities, events etc.), we can use Kafka as a broker.
+
+## Stream Processing 
+- Use Kafka when the event stream needs to process data in multi-stage pipelines, the pipelines can generate graphs of the real-time data flows, thus providing real-time monitoring of traffic in the pipelines. Example - Video streaming in YouTube etc.
+
+## [TwilloSendMessageAPI](https://github.com/Anshul619/System-Designs/tree/main/src/TwilloSendMessageAPI)
 
 # Top Features of Kafka
 
@@ -61,8 +74,6 @@
 - This is completely asynchronous. You can't say for sure when this process will happen and in what order.
 
 # Major Components of Kafka
-
-<img title="Kafka-Architecture" alt="Alt text" src="Kafka-Architecture.drawio.png">
 
 ## Topic ( i.e. Category )
 - Topic is a category or feed where messages ( or events ) would be saved and published.
