@@ -20,7 +20,8 @@ This repo contains the various system design questions and solutions. [Read syst
 - Generally, we should aim for `MAXIMAL throughput` with `ACCEPTABLE latency`.
 - We must consider `cloud-agnostic approach` ( & onPerm customer approach ) while designing the solution.
 - If it's a READ heavy microservice, the best decision would be to use `Redis` or `multi-read database instances`.
-- If it's WRITE heavy microservice ( `HIGH throughput` ), the best decision would be to use either use `Kafka` ( as message queue ) or `DynamoDB`. Both can handle `HIGH throughput`.
+- If it's WRITE heavy microservice ( `HIGH throughput` ), the best decision would be to use either `Kafka` ( as message queue ) or `DynamoDB` ( as data store ). 
+  - Both can handle `HIGH throughput`.
 
 ## Design Components
 - [SQL vs NoSQL - MySQL, PostgreSQL, DynomoDB, Casandra, MongoDB etc.](https://github.com/Anshul619/System-Designs/blob/main/src/DesignComponents/SQLvsNoSQL/ReadMe.md)
