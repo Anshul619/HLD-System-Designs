@@ -4,7 +4,13 @@
 - Kafka can process a large amount of data in a short amount of time (`1 million messages/sec`)
 - It also has low latency, making it possible to process data in real-time.
 - Kafka is `Publish Subscriber Model`. And can be used for `Event Driven Services`.
-- Messages ( events ) in the Kafka are immutable and can't be changed once it's pushed.
+- Messages ( events ) in the Kafka are immutable and can't be changed once it's pushed. ( due to Kafka's log based queue nature )
+
+# Reasons of why Kafka has HIGH throughput?
+
+## Kafka is based on `Log Based Queue`
+- Messages are persisted to `append-only log files by the broker`.
+- Producers are appending these log files ( `sequential write` ) & consumers are reading a range of these files ( `sequential reads` ).
 
 # Basic Architecture of Kafka
 
@@ -77,9 +83,16 @@
 
 ## Topic ( i.e. Category )
 - Topic is a category or feed where messages ( or events ) would be saved and published.
+- Topics are logically collections of partitions (the physical files). 
+- A broker contains some partitions for a topic.
 
 ## Producer
-- Producer writes data into the topics ( 1 or more ) in the Kafka
+- Producer writes data into the topics ( 1 or more ) in the Kafka.
+- In Kafka 0.7, producers are `fire-&-forgot`.
+- In Kafka 0.8, there are 3 ACK levels
+  - No ack(0)
+  - Ack from N replicas (1...N)
+  - Ack from all replicas (-1)
 
 ## Partitioning
 - Partitioning allows Kafka producers to serialize, compress, and load balance data among brokers.
@@ -89,11 +102,14 @@
 ## Consumer
 - A consumer can subscribe ( listen ) to the topics ( 1 or more ) and read data from those in the Kafka.
 - Each consumer in a consumer group will be responsible for reading a subset of the partitions of each subject to which they have subscribed.
+- Reading data out of Kafka is very fast thanks to `java.nio.channels.FileChannel#transferTo`.
+  - This method uses `sendFile` system call which allows for very efficient transfer of data from a file to another file ( including sockets ).
 
 ## Broker ( i.e. Server )
-- A Kafka broker is a server that works as part of a Kafka cluster (in other words, a Kafka cluster is made up of a number of brokers)
-- Multiple brokers in the Kafka cluster, provides load balancing, reliable redundancy & failover.
+- `A Kafka broker` is a server that works as part of a Kafka cluster (in other words, a Kafka cluster is made up of a number of brokers)
+- Multiple brokers in the Kafka cluster, provides load balancing, reliable redundancy & fail-over.
 - Without sacrificing performance, each broker instance can handle read and write volumes of hundreds of thousands per second (and gigabytes of messages).
+- Brokers keep very little state, mostly just open file pointers & connections. 
 
 ## ZooKeeper
 - Zookeeper manages Kafka Cluster ( new broker, new partition etc. ) and brokers coordination
@@ -115,9 +131,11 @@
 
 <img title="Kafka-Partitioning-Layout" alt="Alt text" src="Kafka-Partitioning-Layout.drawio.png">
 
-- Partitioning is done using key in the record
+- Partitioning is done using `key` in the record
 - If we want to sequence records execution in Kafka, as per the records input time, we should push those in the same partition ( hence same key should be used for the records ).
 - If we push those in different partitions, then we can't guarantee of their execution sequence. 
+- Producers can be configured with a custom routing function ( implementing the `Partitioner interface` ).
+- Default message routing is `hash-mod`.
 
 Example 
 - This is important because we may have to deliver records to customers in the same order that they were made. 
@@ -131,7 +149,8 @@ Example
 [Kafka HTTP APIs](https://www.confluent.io/blog/http-and-rest-api-use-cases-and-architecture-with-apache-kafka/) can be integrated in the client apis, to push the message to the specific topic ( & partition key ).
 
 ## [Producer API](https://kafka.apache.org/10/javadoc/org/apache/kafka/clients/producer/KafkaProducer.html)
-- Push the message to a topic (1 or more) in the Kafka
+
+- Push the message to a topic (1 or more) in the Kafka.
 
 ```java
 
@@ -146,8 +165,9 @@ Example
     props.put("value.serializer","org.apache.kafka.common.serialization.StringSerializer");
     
     Producer<String, String> producer = new KafkaProducer<>(props);
-for(int i = 0; i < 100; i++) {
-        producer.send(new ProducerRecord<String, String>("my-topic",Integer.toString(i),Integer.toString(i)));
+    
+    for(int i = 0; i < 100; i++) {
+        producer.send(new ProducerRecord<String, String>("my-topic", Integer.toString(i), Integer.toString(i)));
     }
 
     producer.close();
@@ -213,7 +233,15 @@ Rough formula for picking the number of partitions = `MAX(t/p, t/c)`
   - It’s probably better to limit the number of partitions per broker to two to four thousand and the total number of partitions in the cluster to low tens of thousand.
 - More partitions may increase end-to-end latency
   - As a rule of thumb, if you care about latency, it’s probably a good idea to limit the number of partitions per broker to *100 x b x r*, where b is the number of brokers in a Kafka cluster and r is the replication factor.
-- More partitions may require more memory in the client
+- More partitions may require more memory in the client.
+
+## [Kafka Stats in LinkedIn](https://www.slideshare.net/mumrah/kafka-talk-tri-hug)
+- Peak writes per second: `460k`
+- Average writes per day: `28 billion`
+- Average reads per second: `2.3 million`
+- `~700 topics`
+- `Thousands of producers`
+- `~1000 consumers`
 
 # [Kafka vs RabbitMQ](https://www.interviewbit.com/blog/rabbitmq-vs-kafka)
 
@@ -222,10 +250,10 @@ Rough formula for picking the number of partitions = `MAX(t/p, t/c)`
  Performance | Up to 1 million ( 1000K ) messages per second                                       | Up to 10K messages per second ( ie. around 100 nodes are needed to match with 1 kafka broker )                                                                     |                                                                                             |
  Message Transfer Model | Pull Based                                                                          | Push based                                                                                                                                                         |                                                                                             |
  Use Cases | Massive data/high throughput cases ( like analytics )                               | Simple low-latency use cases when message guarantee is needed or some consistent behaviour is needed for every message ( like order workflow, failed orders etc. ) |                                                                                             |
- Event storage structure | `Logs`                                                                                | `Queue`                                                                                                                                                              |                                                                                             |
+ Event storage structure | `Logs`                                                                              | `Queue`                                                                                                                                                              |                                                                                             |
  Data Type | Operational                                                                         | Transactional                                                                                                                                                      |                                                                                             |
  Broker/Publisher Type | Dump                                                                                | Smart ( Consistent transmission of messages to consumers at about the same speed as the broker monitors the consumer's status)                                     |                                                                                             |
- Consumer Type | Smart                                                                               | Dumb                                                                                                                                                               |                                                                                             |
+ Consumer Type | Smart ( Consumers maintain their own state (i.e. "dump" brokers )                   | Dumb                                                                                                                                                               |                                                                                             |
  Ordering Of Messages                  | Supported ( using partition key )                                                   | Not-Supported                                                                                                                                                      |
  Lifetime Of Messages                  | As per retension policy, messages are retained in Kafka. And these can be replayed. | Once message is consumed and acknowledgement is sent, it would be removed from RabbitMQ message queue.                                                             |
  Prioritizing Messages for consumption | Not-Supported.                                                                      | Supported                                                                                                                                                          |                                                                                             |
@@ -240,7 +268,7 @@ Basis                                 | Kafka                                   
 # [Kafka vs Amazon SQS](https://stackoverflow.com/questions/58970006/are-sqs-and-kafka-same)
 - SQS is an `Amazon managed service` (so you do not have to support infrastructure by yourself).
 - SQS is better for eventing when you need to catch some message (event) by some client and then this message will be automatically popped out from the queue.
-- `Amazon SQS is not so fast as Kafka` and it doesn't fit to high workload, it's much more suitable for `eventing where count of events per second` is not so much.
+- `Amazon SQS is NOT so fast as Kafka` and it doesn't fit to high workload, it's much more suitable for `eventing where count of events per second` is not so much.
 - `Amazon SQS` is based on [QUEUE](https://blog.iron.io/amazon-sqs-vs-apache-kafka/) ( hence message can NOT replayed ) while `Kafka` is based on `LOGS` ( which can be replayed ).
 - Both `Amazon SQS` & `Kafka` are based on [pull based modal](https://blog.iron.io/amazon-sqs-vs-apache-kafka/).
 
@@ -258,3 +286,4 @@ Web Services | - | Provides mobile and enterprise messaging web services - Push 
 - [How to minimize the latency involved in kafka messaging framework?](https://stackoverflow.com/questions/20520492/how-to-minimize-the-latency-involved-in-kafka-messaging-framework)
 - [Benchmarking Apache Kafka, Apache Pulsar, and RabbitMQ: Which is the Fastest?](https://www.confluent.io/blog/kafka-fastest-messaging-system/)
 - [Apache Kafka on AWS using Amazon MSK](https://aws.amazon.com/msk/what-is-kafka/)
+- [Kafka Talk by Tri Hug](https://www.slideshare.net/mumrah/kafka-talk-tri-hug)
