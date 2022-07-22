@@ -19,4 +19,5 @@
 - It's been a long time coming for AWS and IMO this was one of the biggest missing key components for aws to really be a competitor to on-premise enterprise data centers.
 
 # References
-- https://stackoverflow.com/questions/29573142/what-is-difference-between-aws-efs-and-s3
+- [What is difference b/w AWS EFS vs S3](https://stackoverflow.com/questions/29573142/what-is-difference-between-aws-efs-and-s3)
+- [EBS vs EFS vs S3 – when to use AWS’ three storage solutions](https://www.justaftermidnight247.com/insights/ebs-efs-and-s3-when-to-use-awss-three-storage-solutions/)

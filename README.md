@@ -23,16 +23,16 @@ This repo contains the various system design questions and solutions. [Read syst
 - If it's WRITE heavy microservice ( `HIGH throughput` ), the best decision would be to use either use `Kafka` ( as message queue ) or `DynamoDB`. Both can handle `HIGH throughput`.
 
 ## Design Components
-- [SQL vs NoSQL - MySQL, PostgreSQL, DynomoDB, Casandra etc.](https://github.com/Anshul619/System-Designs/blob/main/src/DesignComponents/SQLvsNoSQL/ReadMe.md)
+- [SQL vs NoSQL - MySQL, PostgreSQL, DynomoDB, Casandra, MongoDB etc.](https://github.com/Anshul619/System-Designs/blob/main/src/DesignComponents/SQLvsNoSQL/ReadMe.md)
 - [MQs like Kafka, RabbitMQ, Amazon MQ, SQS, SNS etc.](https://github.com/Anshul619/System-Designs/blob/main/src/DesignComponents/Kafka/ReadMe.md)
-- [In-Memory Caching like Redis, MemCache etc.](https://github.com/Anshul619/System-Designs/blob/main/src/DesignComponents/Redis)
-- [AWS](https://github.com/Anshul619/System-Designs/blob/main/src/DesignComponents/AWS.md)
-- [ElasticSearch](https://github.com/Anshul619/System-Designs/blob/main/src/DesignComponents/ElasticSearch)
-- [EFS vs S3](https://github.com/Anshul619/System-Designs/blob/main/src/DesignComponents/EFSvsS3)
+- [ElasticSearch Search Engine](https://github.com/Anshul619/System-Designs/blob/main/src/DesignComponents/ElasticSearch)
+- [In-Memory Cache like Redis, MemCache etc.](https://github.com/Anshul619/System-Designs/blob/main/src/DesignComponents/Redis)
+- [AWS Storage Options - S3 vs EFS vs EBS](https://github.com/Anshul619/System-Designs/blob/main/src/DesignComponents/EFSvsS3)
+- [AWS - Various Components, Guide](https://github.com/Anshul619/System-Designs/blob/main/src/DesignComponents/AWS.md)
 - [Monolothic to MicroService](https://github.com/Anshul619/System-Designs/tree/main/src/DesignComponents/MonolothicToMicroservice)
+- [Design a system that scales to million of users on AWS](https://github.com/Anshul619/System-Designs/tree/main/src/DesignComponents/DesignScalableSystemWithRDMS)
 
 ## HLD - Design Problems
-- [Design a system that scales to million of users on AWS](https://github.com/Anshul619/System-Designs/tree/main/src/DesignComponents/DesignScalableSystemWithRDMS)
 - [Zomoto HLD Design](https://github.com/Anshul619/System-Designs/tree/main/src/ZomatoDesign)
 - [Twillo Send Message API](https://github.com/Anshul619/System-Designs/tree/main/src/TwilloSendMessageAPI)
 - [Rate Limiter API](https://github.com/Anshul619/System-Designs/tree/main/src/RateLimiterAPI)
@@ -56,8 +56,8 @@ This repo contains the various system design questions and solutions. [Read syst
 - [Vendor Machine](https://github.com/Anshul619/System-Designs/tree/main/src/DesignLLDProblems/VendorMachine)
 - [Hotel Booking System](https://github.com/Anshul619/System-Designs/tree/main/src/DesignLLDProblems/HotelBookingSystem)
 - [Parking Lot](https://github.com/Anshul619/System-Designs/tree/main/src/DesignLLDProblems/ParkingLot)
-- [Generic Cache Implementation](https://github.com/Anshul619/System-Designs/tree/main/src/DesignLLDProblems/GenericCacheImpl)
-- [Insurance Agent Flow](https://github.com/Anshul619/System-Designs/tree/main/src/DesignLLDProblems/InsuranceAgentFlow.md)
+- Others
+  - [Insurance Agent Flow](https://github.com/Anshul619/System-Designs/tree/main/src/DesignLLDProblems/InsuranceAgentFlow.md)
 
 ## Tech Skills
 - [Spring Boot & Microservices](https://github.com/Anshul619/System-Designs/tree/main/src/DesignComponents/SpringBootAndMicroServices)

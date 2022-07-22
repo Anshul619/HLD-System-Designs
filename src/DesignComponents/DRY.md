@@ -2,7 +2,7 @@
 ![img.png](assests/dry_img.png)
 
 # DRY principle
-- The DRY (don't repeat yourself) principle is a best practice in software development that recommends software engineers to do something once, and only once.
+- The DRY (`don't repeat yourself`) principle is a best practice in software development that recommends software engineers to do something once, and only once.
 - The goal of the DRY principle is to lower technical debt by eliminating redundancies in process and logic whenever possible.
 
 ## Redundancies in process
