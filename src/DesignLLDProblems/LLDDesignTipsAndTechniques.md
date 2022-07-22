@@ -20,7 +20,7 @@
         - The `BookingController` will handle the booking requests and send a request to the `BookingManager` to book movie seats.
         - `BookingManager` will then interact with the `PaymentProcessor` for completing the payment.
 
-![img.png](assests/booking_controller_img.png)
+![img.png](BookMyShow/assests/booking_controller_img.png)
 
 4. Define `abstract classes`
     - Common, reusable classes which can be extended for various business Actors, UCS etc.
@@ -28,7 +28,7 @@
         - `User Account` abstract class ( with first name, last name etc. ) can be extended for different user actors ( `Employee`, `Manager` etc. ).
         - `Piece` abstract class ( with `move()`) in the chess game ( for pawn, knight, bishop classes ).
 
-![img.png](assests/abstract_classes_img.png)
+![img.png](ChessGame/assests/abstract_classes_img.png)
 
 5. Define `interfaces`
     - Interfaces are core entities which can be implemented as per the needs.

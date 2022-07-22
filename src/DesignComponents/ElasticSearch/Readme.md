@@ -10,7 +10,9 @@
 
 # References - TBD
 - [ElasticSearch Interview Questions](https://www.guru99.com/elasticsearch-interview-questions.html)
-- https://www.interviewgig.com/elastic-serach-interview-questions-and-answers/
-- https://stackoverflow.com/questions/57328151/how-does-elasticsearch-store-data
+- [ElasticSearch Interview Questions - InterviewGig](https://www.interviewgig.com/elastic-serach-interview-questions-and-answers/)
+- [ElasticSearch Interview Questions - JavaPoint](https://www.javatpoint.com/elasticsearch-interview-questions)
+- [How does ElasticSearch stores data?](https://stackoverflow.com/questions/57328151/how-does-elasticsearch-store-data)
 - [How to dramatically increase your Elasticsearch throughput and concurrency capacity](https://medium.com/explorium-ai/how-to-dramatically-increase-your-elasticsearch-throughput-and-concurrency-capacity-c32d7bb02ac2)
 - [ElasticSearch Geo Suppport](https://www.elastic.co/guide/en/elasticsearch/reference/current/query-dsl-geo-bounding-box-query.html)
+- [ElasticSearch vs MongoDB](https://cloud.netapp.com/blog/cvo-blg-elasticsearch-vs-mongodb-6-key-differences)

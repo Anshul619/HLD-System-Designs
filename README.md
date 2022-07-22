@@ -29,15 +29,15 @@ This repo contains the various system design questions and solutions. [Read syst
 - [AWS](https://github.com/Anshul619/System-Designs/blob/main/src/DesignComponents/AWS.md)
 - [ElasticSearch](https://github.com/Anshul619/System-Designs/blob/main/src/DesignComponents/ElasticSearch)
 - [EFS vs S3](https://github.com/Anshul619/System-Designs/blob/main/src/DesignComponents/EFSvsS3)
+- [Monolothic to MicroService](https://github.com/Anshul619/System-Designs/tree/main/src/DesignComponents/MonolothicToMicroservice)
 
 ## HLD - Design Problems
 - [Design a system that scales to million of users on AWS](https://github.com/Anshul619/System-Designs/tree/main/src/DesignComponents/DesignScalableSystemWithRDMS)
-- [Zomoto HLD Design](https://github.com/Anshul619/System-Designs/tree/main/src/ZomatoDesignHLD)
+- [Zomoto HLD Design](https://github.com/Anshul619/System-Designs/tree/main/src/ZomatoDesign)
 - [Twillo Send Message API](https://github.com/Anshul619/System-Designs/tree/main/src/TwilloSendMessageAPI)
 - [Rate Limiter API](https://github.com/Anshul619/System-Designs/tree/main/src/RateLimiterAPI)
 - [Notification System](https://github.com/Anshul619/System-Designs/tree/main/src/NotificationSystem)
 - [Logging Solution](https://github.com/Anshul619/System-Designs/tree/main/src/LoggingSolution)
-- [Monolothic to MicroService](https://github.com/Anshul619/System-Designs/tree/main/src/MonolothicToMicroservice)
 - [MakeMyTrip Search](https://github.com/Anshul619/System-Designs/tree/main/src/MakeMyTripSearch)
 - [URL Shortening Service](https://github.com/Anshul619/System-Designs/tree/main/src/URLShorteningService)
 
