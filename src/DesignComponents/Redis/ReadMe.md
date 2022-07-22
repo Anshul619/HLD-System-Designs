@@ -4,6 +4,7 @@
 ## Speed - 100K queries per second
 - Redis is very fast. It can execute `100K queries` per second.
 - Since Redis uses in-memory for storage, it is very fast.
+- Mostly `O(1)` behavior.
 
 ## [Atomicity - Redis Transaction lock](https://redis.io/docs/reference/patterns/distributed-locks/)
 - Using `RedisTransaction` lock, we can achieve atomicity on the Redis operations (i.e. set/increase the key, add/remove elements from set, increase counter etc.).
@@ -14,19 +15,26 @@
 
 - Strings are Redis `most basic data type`.
 - It is the only data type in Memcached, so it is also very natural for newcomers to use it in Redis.
+- Commands
+  - `SET <KEY> <VALUE>`
+  - `GET <KEY>`
 
 ```
-127.0.0.1:6379>  SET newkey "the redis string"
-OK
-127.0.0.1:6379> GET newkey
-"the redis string"
+SET newkey "the redis string"
+> OK
+GET newkey
+> "the redis string"
+MGET foo bar
+> 1. "a"
+> 2. "b"
+
 ```
 
 ### Hashes
 - `Redis Hashes` are maps between `string fields` and `string values`, so they are the perfect data type to represent objects (e.g. A User with a number of fields like name, surname, age, and so forth).
-
+  
 ```
-HMSET user:1000 username antirez password P1pp0 age 34
+HSET user:1000 username antirez password P1pp0 age 34
 HGETALL user:1000
 HSET user:1000 password 12345
 HGETALL user:1000
@@ -49,7 +57,7 @@ LPUSH mylist b   # now the list is "b","a"
 RPUSH mylist c   # now the list is "b","a","c" (RPUSH was used this time)
 ```
 
-### Sorted sets etc.
+### Sorted sets
 - Every member of a Sorted Set is associated with a score, that is used to keep the Sorted Set in order, from the smallest to the greatest score. 
 - While members are unique, scores may be repeated.
 
@@ -79,7 +87,7 @@ redis 127.0.0.1:6379> ZRANGEBYSCORE w3resourcelist 0 1000
 
 ## [Master-Slave Replication Supported](https://redis.io/docs/manual/replication/)
 - Redis supports `master-slave replication`.
-- Master copy is maintained by master-slave and replicated to n other SLAVE nodes.
+- `Master copy` is maintained by master-slave and replicated to `n other SLAVE` nodes.
 
 ### [How to configure master-slave in Redis?](https://redis.io/docs/manual/replication/)
 
@@ -119,8 +127,8 @@ appendonly yes
 
 # [Redis vs Memcache](https://www.devdude.com/memcached-vs-redis/)
 - `Mostly Redis can be used in all scenarios.`
-- Redis is single threaded while memcache is multi-threaded.
-- Memcache only supports caching while replication and persistence is supported in Redis ( in addition to caching ).
+- Redis is `Single threaded` ( uses async. IO ) while memcache is multi-threaded.
+- Memcache only supports caching while `replication and persistence is supported in Redis` ( in addition to caching ).
 - Memcache only supports `String` datatype.
 
 # Open Questions 
@@ -136,3 +144,4 @@ appendonly yes
 # References
 - [Redis Interview Questions & Answers](https://www.javatpoint.com/redis-interview-questions-and-answers)
 - [Top Redis Use Cases by Core Data Structure Types](https://scalegrid.io/blog/top-redis-use-cases-by-core-data-structure-types/)
+- [Introduction To Redis](https://www.slideshare.net/dvirsky/introduction-to-redis)
