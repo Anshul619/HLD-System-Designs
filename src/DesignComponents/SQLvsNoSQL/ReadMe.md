@@ -43,20 +43,28 @@ Relational databases store data in rows and columns.
 - These databases are used to store data whose relations are best represented in a graph ( like parent-child relationship of aadhaar etc.)
 - Data is saved in graph structures with nodes (entities), properties (information about the entities), and lines (connections between the entities).
 
-# DynomoDB
-- `Automated Storage Scaling` - There is no limit to the amount of data you can store in a DynamoDB table, and the service automatically allocates more storage, as you store more data using the DynamoDB write APIs.
-- `Provisioned Throughput` 
-  - When creating a table, simply specify how much request capacity you require. 
-  - DynamoDB allocates dedicated resources to your table to meet your performance requirements, and automatically partitions data over a sufficient number of servers to meet your request capacity. 
-  - If your throughput requirements change, simply update your table's request capacity using the AWS Management Console or the Amazon DynamoDB APIs. 
-  - You are still able to achieve your prior throughput levels while scaling is underway.
-- `Fully Distributed, Shared Nothing Architecture`
-  - Amazon DynamoDB scales horizontally and can seamlessly scale a single table over hundreds of servers.
+# NoSQL Databases
 
-# Casandra
+## Amazon DynomoDB
+
+### Automated Storage Scaling 
+- There is no limit to the amount of data you can store in a DynamoDB table, and the service automatically allocates more storage, as you store more data using the DynamoDB write APIs.
+
+### Provisioned Throughput
+- When creating a table, simply specify how much request capacity you require. 
+- DynamoDB allocates dedicated resources to your table to meet your performance requirements, and automatically partitions data over a sufficient number of servers to meet your request capacity. 
+- If your throughput requirements change, simply update your table's request capacity using the AWS Management Console or the Amazon DynamoDB APIs. 
+- You are still able to achieve your prior throughput levels while scaling is underway.
+
+### Fully Distributed, Shared Nothing Architecture
+- Amazon DynamoDB scales horizontally and can seamlessly scale a single table over hundreds of servers.
+
+## Casandra
 - [Redis vs Casandra](https://www.upsolver.com/blog/redis-vs-apache-cassandra-choosing-between-these-real-time-databases)
 
-# SQL - MySQL vs PostgreSQL
+# SQL Databases
+
+## MySQL vs PostgreSQL
 - [PostgreSQL is twice as fast as MySQL](https://itnext.io/benchmark-databases-in-docker-mysql-postgresql-sql-server-7b129368eed7).
 
 # [What is AeroSpike?](https://aerospike.com)

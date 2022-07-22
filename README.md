@@ -23,9 +23,9 @@ This repo contains the various system design questions and solutions. [Read syst
 - If it's WRITE heavy microservice ( `HIGH throughput` ), the best decision would be to use either use `Kafka` ( as message queue ) or `DynamoDB`. Both can handle `HIGH throughput`.
 
 ## Design Components
-- [SQL vs NoSQL](https://github.com/Anshul619/System-Designs/blob/main/src/DesignComponents/SQLvsNoSQL/ReadMe.md)
+- [SQL vs NoSQL - MySQL, PostgreSQL, DynomoDB, Casandra etc.](https://github.com/Anshul619/System-Designs/blob/main/src/DesignComponents/SQLvsNoSQL/ReadMe.md)
 - [MQs like Kafka, RabbitMQ, Amazon MQ, SQS, SNS etc.](https://github.com/Anshul619/System-Designs/blob/main/src/DesignComponents/Kafka/ReadMe.md)
-- [Redis](https://github.com/Anshul619/System-Designs/blob/main/src/DesignComponents/Redis)
+- [In-Memory Caching like Redis, MemCache etc.](https://github.com/Anshul619/System-Designs/blob/main/src/DesignComponents/Redis)
 - [AWS](https://github.com/Anshul619/System-Designs/blob/main/src/DesignComponents/AWS.md)
 - [ElasticSearch](https://github.com/Anshul619/System-Designs/blob/main/src/DesignComponents/ElasticSearch)
 - [EFS vs S3](https://github.com/Anshul619/System-Designs/blob/main/src/DesignComponents/EFSvsS3)
