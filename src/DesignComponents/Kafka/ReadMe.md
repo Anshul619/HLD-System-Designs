@@ -53,13 +53,13 @@
 - Replication is done using `Leader/Follower` technique.
 
 ## Fault Tolerance
-- Kafka connector can handle failures with three strategies summarised as fast-fail, ignore and re-queue(sends to another topic).
+- Kafka connector can handle failures with three strategies summarised as `fast-fail`, `ignore` and `re-queue` (sends to another topic).
 
 ## Reliability
-- The distributed, partitioned, replicated, and fault-tolerant nature of Kafka makes it very Reliable.
+- The `distributed, partitioned, replicated, and fault-tolerant` nature of Kafka makes it very reliable.
 
 ## Extensibility
-- Allows multiple ways for applications to plugin and make use of Kafka. 
+- `Allows multiple ways for applications` to plugin and make use of Kafka. 
 - Also, it has provisions for new connectors that you can write as needed.
 
 ## Data Transformation
@@ -82,7 +82,7 @@
 
 # Major Components of Kafka
 
-## Topic ( i.e. Category )
+## Topic ( i.e. Category or Queue )
 - Topic is a category or feed where messages ( or events ) would be saved and published.
 - Topics are logically collections of partitions (the physical files). 
 - A broker contains some partitions for a topic.
