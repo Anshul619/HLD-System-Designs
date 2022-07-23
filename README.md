@@ -4,16 +4,16 @@ This repo contains the various system design questions and solutions. [Read syst
 
 # Various components & Performance Metrics
 
-| Component                                                                                                           | Strength                         | Component Type                                                | Very Rough Throughput (QPS)                       | Latency | Free |
-|---------------------------------------------------------------------------------------------------------------------|----------------------------------|---------------------------------------------------------------|---------------------------------------------------|----------------|------|
-| [Kafka](src/DesignComponents/Kafka)                            | High-Throughput MQ               | Message Queue (Pub-Sub)            | 1000K ( 1 million ) messages ( write ) per second | ~5ms | Yes   |
-| [RabbitMQ](src/DesignComponents/Kafka#kafka-vs-rabbitmq)       | Low-Latency MQ                   | Message Queue (Point-2-Point)         | 20K messages ( write ) per second                 | ~1ms |  Yes   |
-| [Redis](src/DesignComponents/Redis)                           | In-Memory fast Data-Store        | Caching                          | 100K queries per second                           | -|  Yes   |
-| [MySQL](src/DesignComponents/SQLvsNoSQL)                                                                                     | -                                | SQL DB                           | 1000 concurrent requests ( 100 as default )       | [< 10ms ( to get a row from 1 million records )](https://www.quora.com/How-can-we-calculate-the-throughput-of-MySQL?share=1)|Yes|
-| [DynomoDB](src/DesignComponents/SQLvsNoSQL/ReadMe.md#dynomodb) | Predictable performance and cost | NoSQL DB as a Service ( AWS )  | More than 20 million requests per second          | less than 10-20 ms | No  |
-| [MongoDB](src/DesignComponents/SQLvsNoSQL)                                                                                  | -                                | NoSQL DB                         | -                                                 | -|  No                                      |
-| [ElasticSearch](src/DesignComponents/ElasticSearch)           | -                                | Search Engine                    | -                                                 |-|No|
-| [Apache](https://apache.org/)                                                                                       | -                                | Web Server                       | 512 concurrent requests                           |-|Yes|
+| Component                                                                                                           | Strength                               | Component Type                                                | Very Rough Throughput (QPS)                       | Latency | Free |
+|---------------------------------------------------------------------------------------------------------------------|----------------------------------------|---------------------------------------------------------------|---------------------------------------------------|----------------|------|
+| [Kafka](src/DesignComponents/Kafka)                            | High-Throughput MQ                     | Message Queue (Pub-Sub)            | 1000K ( 1 million ) messages ( write ) per second | ~5ms | Yes   |
+| [RabbitMQ](src/DesignComponents/Kafka#kafka-vs-rabbitmq)       | Low-Latency MQ                         | Message Queue (Point-2-Point)         | 20K messages ( write ) per second                 | ~1ms |  Yes   |
+| [Redis](src/DesignComponents/Redis)                           | In-Memory fast Data-Store              | Caching                          | 100K queries per second                           | -|  Yes   |
+| [MySQL](src/DesignComponents/SQLvsNoSQL)                                                                                     | -                                      | SQL DB                           | 1000 concurrent requests ( 100 as default )       | [< 10ms ( to get a row from 1 million records )](https://www.quora.com/How-can-we-calculate-the-throughput-of-MySQL?share=1)|Yes|
+| [DynomoDB](src/DesignComponents/SQLvsNoSQL/ReadMe.md#dynomodb) | Predictable performance and cost       | NoSQL DB as a Service ( AWS )  | More than 20 million requests per second          | less than 10-20 ms | No  |
+| [ElasticSearch](src/DesignComponents/ElasticSearch)           | `Full-Text-Search`, Logs-Analysis (ELK) | Search Engine                    | -                                                 |-|No|
+| [MongoDB](src/DesignComponents/SQLvsNoSQL)                                                                                  | -                                      | NoSQL DB                         | -                                                 | -|  No                                      |
+| [Apache](https://apache.org/)                                                                                       | -                                      | Web Server                       | 512 concurrent requests                           |-|Yes|
 
 # Tech Guidelines ( from Scalability perspective )
 - Develop the microservice based architecture
@@ -23,7 +23,7 @@ This repo contains the various system design questions and solutions. [Read syst
 - If it's WRITE heavy microservice ( `HIGH throughput` ), the best decision would be to use either `Kafka` ( as message queue ) or `DynamoDB` ( as data store ). 
   - Both can handle `HIGH throughput`.
 
-## Design Components
+# Design Components
 - [SQL vs NoSQL - MySQL, PostgreSQL, DynomoDB, Casandra, MongoDB etc.](src/DesignComponents/SQLvsNoSQL)
 - [MQs like Kafka, RabbitMQ, Amazon MQ, SQS, SNS etc.](src/DesignComponents/Kafka)
 - [ElasticSearch - "NoSQL" Search Engine](src/DesignComponents/ElasticSearch)
@@ -33,7 +33,7 @@ This repo contains the various system design questions and solutions. [Read syst
 - [Monolothic to MicroService](src/DesignComponents/MonolothicToMicroservice)
 - [Design a system that scales to million of users on AWS](src/DesignComponents/DesignScalableSystemWithRDMS)
 
-## HLD - Design Problems
+# HLD - Design Problems
 - [Zomoto HLD Design](src/ZomatoDesign)
 - [Twillo Send Message API](src/TwilloSendMessageAPI)
 - [Rate Limiter API](src/RateLimiterAPI)
@@ -42,13 +42,13 @@ This repo contains the various system design questions and solutions. [Read syst
 - [MakeMyTrip Search](src/MakeMyTripSearch)
 - [URL Shortening Service](src/URLShorteningService)
 
-## Engineering Principles
+# Engineering Principles
 - [SOLID](src/DesignComponents/SOLID.md)
 - [OOPS](src/DesignComponents/OOPS.md)
 - [Design Patterns](src/DesignComponents/DesignPatterns)
 - [DRY](src/DesignComponents/DRY.md)
 
-## LLD - Design Problems
+# LLD - Design Problems
 - [LLD Design - Tips & Techniques](src/DesignLLDProblems/LLDDesignTipsAndTechniques.md)
 - [Chess Game](src/DesignLLDProblems/ChessGame)
 - [Snack & Ladder Game](src/DesignLLDProblems/SnackAndLadderGame)
@@ -60,7 +60,7 @@ This repo contains the various system design questions and solutions. [Read syst
 - Others
   - [Insurance Agent Flow](src/DesignLLDProblems/Others/InsuranceAgentFlow.md)
 
-## Tech Skills
+# Tech Skills
 - [Spring Boot & Microservices](src/DesignComponents/SpringBootAndMicroServices)
 - [Java](src/DesignComponents/Java)
 - [Hibernate](src/DesignComponents/Hibernate.md)

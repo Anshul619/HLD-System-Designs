@@ -43,7 +43,12 @@ Relational databases store data in rows and columns.
 - These databases are used to store data whose relations are best represented in a graph ( like parent-child relationship of aadhaar etc.)
 - Data is saved in graph structures with nodes (entities), properties (information about the entities), and lines (connections between the entities).
 
-# NoSQL Databases
+# SQL - Different Databases
+
+## MySQL vs PostgreSQL
+- [PostgreSQL is twice as fast as MySQL](https://itnext.io/benchmark-databases-in-docker-mysql-postgresql-sql-server-7b129368eed7).
+
+# NoSQL - Different Databases
 
 ## Amazon DynomoDB
 
@@ -63,13 +68,10 @@ Relational databases store data in rows and columns.
 
 ## [Redis](../Redis)
 
+## [MongoDB](https://www.interviewbit.com/mongodb-interview-questions/)
+
 ## Casandra
 - [Redis vs Casandra](https://www.upsolver.com/blog/redis-vs-apache-cassandra-choosing-between-these-real-time-databases)
-
-# SQL Databases
-
-## MySQL vs PostgreSQL
-- [PostgreSQL is twice as fast as MySQL](https://itnext.io/benchmark-databases-in-docker-mysql-postgresql-sql-server-7b129368eed7).
 
 # [What is AeroSpike?](https://aerospike.com)
 - TBD
