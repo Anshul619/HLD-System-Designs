@@ -31,9 +31,16 @@ What is IAM? | AWS IAM allows an administrator to provide multiple users and gro
 - VPC Flow Logs
 
 # How does Amazon Route 53 provide high availability and low latency?
-- Globally Distributed Servers - Amazon is a global service and consequently has DNS services globally. Any customer creating a query from any part of the world gets to reach a DNS server local to them that provides low latency. 
-- Dependency - Route 53 provides a high level of dependability required by critical applications.
-- Optimal Locations - Route 53 uses a global anycast network to answer queries from the optimal position automatically.
+
+## Globally Distributed Servers
+- Amazon is a global service and consequently has DNS services globally. 
+- Any customer creating a query from any part of the world gets to reach a `DNS server local` to them that provides low latency. 
+
+## Dependency 
+- Route 53 provides a high level of dependability required by critical applications.
+
+## Optimal Locations 
+- Route 53 uses a `global anycast network` to answer queries from the optimal position automatically.
 
 # What is a maintenance window in Amazon RDS? Will your DB instance be available during maintenance events?
 - RDS maintenance window lets you decide when DB instance modifications, database engine version upgrades, and software patching have to occur. 

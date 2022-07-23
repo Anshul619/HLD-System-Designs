@@ -59,6 +59,10 @@ Relational databases store data in rows and columns.
 ### Fully Distributed, Shared Nothing Architecture
 - Amazon DynamoDB scales horizontally and can seamlessly scale a single table over hundreds of servers.
 
+## [ElasticSearch](../ElasticSearch)
+
+## [Redis](../Redis)
+
 ## Casandra
 - [Redis vs Casandra](https://www.upsolver.com/blog/redis-vs-apache-cassandra-choosing-between-these-real-time-databases)
 
