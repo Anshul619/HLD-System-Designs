@@ -1,19 +1,19 @@
 # System-Designs
 
-This repo contains the various system design questions and solutions. [Read system design glossaries](https://github.com/Anshul619/System-Designs/tree/main/src/DesignComponents/SystemDesignGlossaries.md).
+This repo contains the various system design questions and solutions. [Read system design glossaries](src/DesignComponents/SystemDesignGlossaries.md).
 
 # Various components & Performance Metrics
 
-| Component                                                                                                            | Strength                         | Component Type                                                | Very Rough Throughput (QPS)                       | Latency | Free |
-|----------------------------------------------------------------------------------------------------------------------|----------------------------------|---------------------------------------------------------------|---------------------------------------------------|----------------|------|
+| Component                                                                                                           | Strength                         | Component Type                                                | Very Rough Throughput (QPS)                       | Latency | Free |
+|---------------------------------------------------------------------------------------------------------------------|----------------------------------|---------------------------------------------------------------|---------------------------------------------------|----------------|------|
 | [Kafka](src/DesignComponents/Kafka)                            | High-Throughput MQ               | Message Queue (Pub-Sub)            | 1000K ( 1 million ) messages ( write ) per second | ~5ms | Yes   |
-| [RabbitMQ](https://github.com/Anshul619/System-Designs/tree/main/src/DesignComponents/Kafka#kafka-vs-rabbitmq)       | Low-Latency MQ                   | Message Queue (Point-2-Point)         | 20K messages ( write ) per second                 | ~1ms |  Yes   |
-| [Redis](https://github.com/Anshul619/System-Designs/tree/main/src/DesignComponents/Redis)                            | In-Memory fast Data-Store        | Caching                          | 100K queries per second                           | -|  Yes   |
-| [MySQL](https://www.mysql.com/)                                                                                      | -                                | SQL DB                           | 1000 concurrent requests ( 100 as default )       | [< 10ms ( to get a row from 1 million records )](https://www.quora.com/How-can-we-calculate-the-throughput-of-MySQL?share=1)|Yes|
-| [DynomoDB](https://github.com/Anshul619/System-Designs/blob/main/src/DesignComponents/SQLvsNoSQL/ReadMe.md#dynomodb) | Predictable performance and cost | NoSQL DB as a Service ( AWS )  | More than 20 million requests per second          | less than 10-20 ms | No  |
-| [MongoDB](https://www.mongodb.com)                                                                                   | -                                | NoSQL DB                         | -                                                 | -|  No                                      |
-| [ElasticSearch](https://github.com/Anshul619/System-Designs/tree/main/src/DesignComponents/ElasticSearch)            | -                                | Search Engine                    | -                                                 |-|No|
-| [Apache](https://apache.org/)                                                                                        | -                                | Web Server                       | 512 concurrent requests                           |-|Yes|
+| [RabbitMQ](src/DesignComponents/Kafka#kafka-vs-rabbitmq)       | Low-Latency MQ                   | Message Queue (Point-2-Point)         | 20K messages ( write ) per second                 | ~1ms |  Yes   |
+| [Redis](src/DesignComponents/Redis)                           | In-Memory fast Data-Store        | Caching                          | 100K queries per second                           | -|  Yes   |
+| [MySQL](https://www.mysql.com/)                                                                                     | -                                | SQL DB                           | 1000 concurrent requests ( 100 as default )       | [< 10ms ( to get a row from 1 million records )](https://www.quora.com/How-can-we-calculate-the-throughput-of-MySQL?share=1)|Yes|
+| [DynomoDB](src/DesignComponents/SQLvsNoSQL/ReadMe.md#dynomodb) | Predictable performance and cost | NoSQL DB as a Service ( AWS )  | More than 20 million requests per second          | less than 10-20 ms | No  |
+| [MongoDB](https://www.mongodb.com)                                                                                  | -                                | NoSQL DB                         | -                                                 | -|  No                                      |
+| [ElasticSearch](src/DesignComponents/ElasticSearch)           | -                                | Search Engine                    | -                                                 |-|No|
+| [Apache](https://apache.org/)                                                                                       | -                                | Web Server                       | 512 concurrent requests                           |-|Yes|
 
 # Tech Guidelines ( from Scalability perspective )
 - Develop the microservice based architecture
@@ -24,23 +24,23 @@ This repo contains the various system design questions and solutions. [Read syst
   - Both can handle `HIGH throughput`.
 
 ## Design Components
-- [SQL vs NoSQL - MySQL, PostgreSQL, DynomoDB, Casandra, MongoDB etc.](https://github.com/Anshul619/System-Designs/blob/main/src/DesignComponents/SQLvsNoSQL/ReadMe.md)
-- [MQs like Kafka, RabbitMQ, Amazon MQ, SQS, SNS etc.](https://github.com/Anshul619/System-Designs/blob/main/src/DesignComponents/Kafka/ReadMe.md)
-- [ElasticSearch - "NoSQL" Search Engine](https://github.com/Anshul619/System-Designs/blob/main/src/DesignComponents/ElasticSearch)
-- [In-Memory Cache like Redis, MemCache etc.](https://github.com/Anshul619/System-Designs/blob/main/src/DesignComponents/Redis)
-- [AWS Storage Options - S3 vs EFS vs EBS](https://github.com/Anshul619/System-Designs/blob/main/src/DesignComponents/EFSvsS3)
-- [AWS - Various Components, Guide](https://github.com/Anshul619/System-Designs/blob/main/src/DesignComponents/AWS.md)
-- [Monolothic to MicroService](https://github.com/Anshul619/System-Designs/tree/main/src/DesignComponents/MonolothicToMicroservice)
-- [Design a system that scales to million of users on AWS](https://github.com/Anshul619/System-Designs/tree/main/src/DesignComponents/DesignScalableSystemWithRDMS)
+- [SQL vs NoSQL - MySQL, PostgreSQL, DynomoDB, Casandra, MongoDB etc.](src/DesignComponents/SQLvsNoSQL)
+- [MQs like Kafka, RabbitMQ, Amazon MQ, SQS, SNS etc.](src/DesignComponents/Kafka)
+- [ElasticSearch - "NoSQL" Search Engine](src/DesignComponents/ElasticSearch)
+- [In-Memory Cache like Redis, MemCache etc.](src/DesignComponents/Redis)
+- [AWS Storage Options - S3 vs EFS vs EBS](src/DesignComponents/EFSvsS3)
+- [AWS - Various Components, Guide](src/DesignComponents/AWS.md)
+- [Monolothic to MicroService](src/DesignComponents/MonolothicToMicroservice)
+- [Design a system that scales to million of users on AWS](src/DesignComponents/DesignScalableSystemWithRDMS)
 
 ## HLD - Design Problems
-- [Zomoto HLD Design](https://github.com/Anshul619/System-Designs/tree/main/src/ZomatoDesign)
-- [Twillo Send Message API](https://github.com/Anshul619/System-Designs/tree/main/src/TwilloSendMessageAPI)
-- [Rate Limiter API](https://github.com/Anshul619/System-Designs/tree/main/src/RateLimiterAPI)
-- [Notification System](https://github.com/Anshul619/System-Designs/tree/main/src/NotificationSystem)
-- [Logging Solution](https://github.com/Anshul619/System-Designs/tree/main/src/LoggingSolution)
-- [MakeMyTrip Search](https://github.com/Anshul619/System-Designs/tree/main/src/MakeMyTripSearch)
-- [URL Shortening Service](https://github.com/Anshul619/System-Designs/tree/main/src/URLShorteningService)
+- [Zomoto HLD Design](src/ZomatoDesign)
+- [Twillo Send Message API](src/TwilloSendMessageAPI)
+- [Rate Limiter API](src/RateLimiterAPI)
+- [Notification System](src/NotificationSystem)
+- [Logging Solution](src/LoggingSolution)
+- [MakeMyTrip Search](src/MakeMyTripSearch)
+- [URL Shortening Service](src/URLShorteningService)
 
 ## Engineering Principles
 - [SOLID](https://github.com/Anshul619/System-Designs/blob/main/src/DesignComponents/SOLID.md)
