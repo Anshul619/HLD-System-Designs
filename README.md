@@ -28,7 +28,7 @@ This repo contains the various system design questions and solutions. [Read syst
 - [MQs like Kafka, RabbitMQ, Amazon MQ, SQS, SNS etc.](src/DesignComponents/Kafka)
 - [ElasticSearch - "NoSQL" Search Engine](src/DesignComponents/ElasticSearch)
 - [In-Memory Cache like Redis, MemCache etc.](src/DesignComponents/Redis)
-- [AWS Storage Options - S3 vs EFS vs EBS](src/DesignComponents/EFSvsS3)
+- [AWS Storage Options - S3 vs EFS vs EBS](src/DesignComponents/S3vsEFS)
 - [AWS - Various Components, Guide](src/DesignComponents/AWS.md)
 - [Monolothic to MicroService](src/DesignComponents/MonolothicToMicroservice)
 - [Design a system that scales to million of users on AWS](src/DesignComponents/DesignScalableSystemWithRDMS)
