@@ -9,9 +9,9 @@ This repo contains the various system design questions and solutions. [Read syst
 | [Kafka](src/DesignComponents/Kafka)                            | High-Throughput MQ               | Message Queue (Pub-Sub)            | 1000K ( 1 million ) messages ( write ) per second | ~5ms | Yes   |
 | [RabbitMQ](src/DesignComponents/Kafka#kafka-vs-rabbitmq)       | Low-Latency MQ                   | Message Queue (Point-2-Point)         | 20K messages ( write ) per second                 | ~1ms |  Yes   |
 | [Redis](src/DesignComponents/Redis)                           | In-Memory fast Data-Store        | Caching                          | 100K queries per second                           | -|  Yes   |
-| [MySQL](https://www.mysql.com/)                                                                                     | -                                | SQL DB                           | 1000 concurrent requests ( 100 as default )       | [< 10ms ( to get a row from 1 million records )](https://www.quora.com/How-can-we-calculate-the-throughput-of-MySQL?share=1)|Yes|
+| [MySQL](src/DesignComponents/SQLvsNoSQL)                                                                                     | -                                | SQL DB                           | 1000 concurrent requests ( 100 as default )       | [< 10ms ( to get a row from 1 million records )](https://www.quora.com/How-can-we-calculate-the-throughput-of-MySQL?share=1)|Yes|
 | [DynomoDB](src/DesignComponents/SQLvsNoSQL/ReadMe.md#dynomodb) | Predictable performance and cost | NoSQL DB as a Service ( AWS )  | More than 20 million requests per second          | less than 10-20 ms | No  |
-| [MongoDB](https://www.mongodb.com)                                                                                  | -                                | NoSQL DB                         | -                                                 | -|  No                                      |
+| [MongoDB](src/DesignComponents/SQLvsNoSQL)                                                                                  | -                                | NoSQL DB                         | -                                                 | -|  No                                      |
 | [ElasticSearch](src/DesignComponents/ElasticSearch)           | -                                | Search Engine                    | -                                                 |-|No|
 | [Apache](https://apache.org/)                                                                                       | -                                | Web Server                       | 512 concurrent requests                           |-|Yes|
 
@@ -28,8 +28,8 @@ This repo contains the various system design questions and solutions. [Read syst
 - [MQs like Kafka, RabbitMQ, Amazon MQ, SQS, SNS etc.](src/DesignComponents/Kafka)
 - [ElasticSearch - "NoSQL" Search Engine](src/DesignComponents/ElasticSearch)
 - [In-Memory Cache like Redis, MemCache etc.](src/DesignComponents/Redis)
-- [AWS Storage Options - S3 vs EFS vs EBS](src/DesignComponents/S3vsEFS)
-- [AWS - Various Components, Guide](src/DesignComponents/AWS.md)
+- [AWS - Various Components, Guide](src/DesignComponents/AWS/AWS.md)
+  - [AWS Storage Options - S3 vs EFS vs EBS](src/DesignComponents/AWS/S3vsEFS)
 - [Monolothic to MicroService](src/DesignComponents/MonolothicToMicroservice)
 - [Design a system that scales to million of users on AWS](src/DesignComponents/DesignScalableSystemWithRDMS)
 
@@ -54,16 +54,16 @@ This repo contains the various system design questions and solutions. [Read syst
 - [Snack & Ladder Game](src/DesignLLDProblems/SnackAndLadderGame)
 - [Book My Show](src/DesignLLDProblems/BookMyShow)
 - [Car Rental System](src/DesignLLDProblems/CarRentalSystem)
-- [Vendor Machine](src/DesignLLDProblems/VendorMachine)
+- [Vendor Machine](src/DesignLLDProblems/VendingMachine)
 - [Hotel Booking System](src/DesignLLDProblems/HotelBookingSystem)
 - [Parking Lot](src/DesignLLDProblems/ParkingLot)
 - Others
-  - [Insurance Agent Flow](src/DesignLLDProblems/InsuranceAgentFlow.md)
+  - [Insurance Agent Flow](src/DesignLLDProblems/Others/InsuranceAgentFlow.md)
 
 ## Tech Skills
 - [Spring Boot & Microservices](src/DesignComponents/SpringBootAndMicroServices)
 - [Java](src/DesignComponents/Java)
-- [Hibernate](src/DesignComponents/Hiberate.md)
+- [Hibernate](src/DesignComponents/Hibernate.md)
 - [JS](src/DesignComponents/JavaScript)
 - [Testing](src/DesignComponents/Testing.md)
 - [JavaScript](src/DesignComponents/JavaScript)

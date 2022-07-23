@@ -53,7 +53,7 @@ What is IAM? | AWS IAM allows an administrator to provide multiple users and gro
 # Amazon OpsWorks
 - With AWS OpsWorks, you can automate how nodes are configured, deployed, and managed, whether they are Amazon EC2 instances or on-premises devices.
 
-![img.png](assests/aws_opsworks_img.png)
+![img.png](../assests/aws_opsworks_img.png)
 
 # References
 - [AWS Interview Questions](https://www.simplilearn.com/tutorials/aws-tutorial/aws-interview-questions)
