@@ -23,7 +23,7 @@
   - Opening the big file would be impossible if the local device doesn't have enough memory resources.
 - We would keep rotating the log files at 10KB file size. ( for best memory optimization )
 - Kafka topics can be log file name.
-- [Kafka Estimation] (https://github.com/Anshul619/System-Designs/tree/main/src/DesignComponents/Kafka)   
+- [Kafka Estimation](../DesignComponents/Kafka)   
  
 # Other Points
 - Interview Question@FluxOn, 6thJune2022

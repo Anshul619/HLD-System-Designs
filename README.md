@@ -43,32 +43,32 @@ This repo contains the various system design questions and solutions. [Read syst
 - [URL Shortening Service](src/URLShorteningService)
 
 ## Engineering Principles
-- [SOLID](https://github.com/Anshul619/System-Designs/blob/main/src/DesignComponents/SOLID.md)
-- [OOPS](https://github.com/Anshul619/System-Designs/blob/main/src/DesignComponents/OOPS.md)
-- [Design Patterns](https://github.com/Anshul619/System-Designs/tree/main/src/DesignComponents/DesignPatterns)
-- [DRY](https://github.com/Anshul619/System-Designs/blob/main/src/DesignComponents/DRY.md)
+- [SOLID](src/DesignComponents/SOLID.md)
+- [OOPS](src/DesignComponents/OOPS.md)
+- [Design Patterns](src/DesignComponents/DesignPatterns)
+- [DRY](src/DesignComponents/DRY.md)
 
 ## LLD - Design Problems
-- [LLD Design - Tips & Techniques](https://github.com/Anshul619/System-Designs/tree/main/src/DesignLLDProblems/LLDDesignTipsAndTechniques.md)
-- [Chess Game](https://github.com/Anshul619/System-Designs/tree/main/src/DesignLLDProblems/ChessGame)
-- [Snack & Ladder Game](https://github.com/Anshul619/System-Designs/tree/main/src/DesignLLDProblems/SnackAndLadderGame)
-- [Book My Show](https://github.com/Anshul619/System-Designs/tree/main/src/DesignLLDProblems/BookMyShow)
-- [Car Rental System](https://github.com/Anshul619/System-Designs/tree/main/src/DesignLLDProblems/CarRentalSystem)
-- [Vendor Machine](https://github.com/Anshul619/System-Designs/tree/main/src/DesignLLDProblems/VendorMachine)
-- [Hotel Booking System](https://github.com/Anshul619/System-Designs/tree/main/src/DesignLLDProblems/HotelBookingSystem)
-- [Parking Lot](https://github.com/Anshul619/System-Designs/tree/main/src/DesignLLDProblems/ParkingLot)
+- [LLD Design - Tips & Techniques](src/DesignLLDProblems/LLDDesignTipsAndTechniques.md)
+- [Chess Game](src/DesignLLDProblems/ChessGame)
+- [Snack & Ladder Game](src/DesignLLDProblems/SnackAndLadderGame)
+- [Book My Show](src/DesignLLDProblems/BookMyShow)
+- [Car Rental System](src/DesignLLDProblems/CarRentalSystem)
+- [Vendor Machine](src/DesignLLDProblems/VendorMachine)
+- [Hotel Booking System](src/DesignLLDProblems/HotelBookingSystem)
+- [Parking Lot](src/DesignLLDProblems/ParkingLot)
 - Others
-  - [Insurance Agent Flow](https://github.com/Anshul619/System-Designs/tree/main/src/DesignLLDProblems/InsuranceAgentFlow.md)
+  - [Insurance Agent Flow](src/DesignLLDProblems/InsuranceAgentFlow.md)
 
 ## Tech Skills
-- [Spring Boot & Microservices](https://github.com/Anshul619/System-Designs/tree/main/src/DesignComponents/SpringBootAndMicroServices)
-- [Java](https://github.com/Anshul619/System-Designs/tree/main/src/DesignComponents/Java)
-- [Hibernate](https://github.com/Anshul619/System-Designs/blob/main/src/DesignComponents/Hiberate.md)
-- [JS](https://github.com/Anshul619/System-Designs/tree/main/src/DesignComponents/JavaScript)
-- [Testing](https://github.com/Anshul619/System-Designs/blob/main/src/DesignComponents/Testing.md)
-- [JavaScript](https://github.com/Anshul619/System-Designs/blob/main/src/DesignComponents/JavaScript)
-- [TypeScript](https://github.com/Anshul619/System-Designs/blob/main/src/DesignComponents/TypeScript.md)
-- [Angular8](https://github.com/Anshul619/System-Designs/blob/main/src/DesignComponents/Angular8.md)
+- [Spring Boot & Microservices](src/DesignComponents/SpringBootAndMicroServices)
+- [Java](src/DesignComponents/Java)
+- [Hibernate](src/DesignComponents/Hiberate.md)
+- [JS](src/DesignComponents/JavaScript)
+- [Testing](src/DesignComponents/Testing.md)
+- [JavaScript](src/DesignComponents/JavaScript)
+- [TypeScript](src/DesignComponents/TypeScript.md)
+- [Angular8](src/DesignComponents/Angular8.md)
 
 # References
 - [System Design Primer](https://github.com/donnemartin/system-design-primer)

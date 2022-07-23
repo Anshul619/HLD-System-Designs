@@ -140,7 +140,7 @@ Java Stream is by default supported for Collection interfaces.
 ![image](https://user-images.githubusercontent.com/1247944/175827637-cf1f634e-6850-49d0-9039-0d9b3093902e.png)
 
 Example Source Codes
-- [Streams](https://github.com/Anshul619/System-Designs/tree/main/src/DesignComponents/Java/Streams)
+- [Streams](Streams)
 - [TW-Code](https://github.com/Anshul619/joy-of-energy/blob/master/src/main/java/uk/tw/energy/service/PricePlanService.java)
 
 ## Map

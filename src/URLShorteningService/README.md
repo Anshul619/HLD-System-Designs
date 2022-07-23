@@ -52,7 +52,7 @@ Gotcha: What if two people try to shorten the same URL?
 
 # Which database to use? - SQL vs NoSQL
 - `NoSQL` can be used here since we are anticipating a billion of rows & no relationship is needed between rows.
-- Read more about [NoSQL vs SQL](https://github.com/Anshul619/System-Designs/blob/main/src/DesignComponents/SQLvsNoSQL/ReadMe.md).
+- Read more about [NoSQL vs SQL](../DesignComponents/SQLvsNoSQL/ReadMe.md).
 
 # Key Generation Service
 - Whenever we want to shorten a URL, we will take one of the already-generated keys `UnusedKeys` and use it ( & move it to `UsedKeys` table )

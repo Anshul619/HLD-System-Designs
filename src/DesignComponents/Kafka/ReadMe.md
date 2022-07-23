@@ -31,7 +31,7 @@
 - Use Kafka when the event stream needs to process data in multi-stage pipelines, the pipelines can generate graphs of the real-time data flows, thus providing real-time monitoring of traffic in the pipelines. Example - Video streaming in YouTube etc.
 
 ## Other Examples
-- [TwilloSendMessageAPI](https://github.com/Anshul619/System-Designs/tree/main/src/TwilloSendMessageAPI)
+- [TwilloSendMessageAPI](../../TwilloSendMessageAPI)
 
 # Top Features of Kafka
 
