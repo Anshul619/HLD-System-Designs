@@ -26,7 +26,7 @@ This repo contains the various system design questions and solutions. [Read syst
 ## Design Components
 - [SQL vs NoSQL - MySQL, PostgreSQL, DynomoDB, Casandra, MongoDB etc.](https://github.com/Anshul619/System-Designs/blob/main/src/DesignComponents/SQLvsNoSQL/ReadMe.md)
 - [MQs like Kafka, RabbitMQ, Amazon MQ, SQS, SNS etc.](https://github.com/Anshul619/System-Designs/blob/main/src/DesignComponents/Kafka/ReadMe.md)
-- [ElasticSearch Search Engine](https://github.com/Anshul619/System-Designs/blob/main/src/DesignComponents/ElasticSearch)
+- [ElasticSearch - "NoSQL" Search Engine](https://github.com/Anshul619/System-Designs/blob/main/src/DesignComponents/ElasticSearch)
 - [In-Memory Cache like Redis, MemCache etc.](https://github.com/Anshul619/System-Designs/blob/main/src/DesignComponents/Redis)
 - [AWS Storage Options - S3 vs EFS vs EBS](https://github.com/Anshul619/System-Designs/blob/main/src/DesignComponents/EFSvsS3)
 - [AWS - Various Components, Guide](https://github.com/Anshul619/System-Designs/blob/main/src/DesignComponents/AWS.md)
