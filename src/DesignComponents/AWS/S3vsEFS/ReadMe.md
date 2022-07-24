@@ -13,12 +13,13 @@
 
 # S3 vs EFS
 
-Basis                                 | S3                                                                        | EFS                                                                          |
----------------------------------------|---------------------------------------------------------------------------|------------------------------------------------------------------------------|
+Basis                                 | S3                                                                        | EFS                                                                        |
+---------------------------------------|---------------------------------------------------------------------------|----------------------------------------------------------------------------|
 Storage | Object Storage ( can be mounted using s3fs plugin or accessed over HTTP ) | Actual FileSystem ( NFS interface, which can be shared b/w `EC2 instances` ) |
-IO Speed | Relatively slower than EFS                                                | Faster than S3                                                               |
-Costing | [$0.021 per GB](https://aws.amazon.com/s3/pricing/)                       | [$0.043/GB-Month ( 2x as S3 )](https://aws.amazon.com/efs/pricing/)          |
-Use Cases | Static Web Content, Media Data ( like image, video, documents )           | Shared Volume b/w EC2 instances                                              |
+IO Speed | Relatively slower than EFS                                                | Faster than S3                                                             |
+Costing | [$0.021 per GB](https://aws.amazon.com/s3/pricing/)                       | [$0.043/GB-Month ( 2x as S3 )](https://aws.amazon.com/efs/pricing/)        |
+Use Cases | Static Web Content, Media Data ( like image, video, documents )           | Shared Volume b/w EC2 instances                                            |
+Availability | 99.999999999% (twelve 9’s) durability, redundancy in at least 3 AZs in S3 Region | 99.9% availability, with multiple AZs availability |
 
 # References
 - [What is difference b/w AWS EFS vs S3](https://stackoverflow.com/questions/29573142/what-is-difference-between-aws-efs-and-s3)

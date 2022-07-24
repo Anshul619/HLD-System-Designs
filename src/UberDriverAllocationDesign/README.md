@@ -64,4 +64,4 @@ Notification
 - Firebase for push notification
 
 # References
-- [Uber Backend Design](https://www.educative.io/blog/uber-backend-system-design)
+- [Uber Backend Design - Educative.io](https://www.educative.io/blog/uber-backend-system-design)

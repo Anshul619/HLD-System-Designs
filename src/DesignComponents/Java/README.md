@@ -250,8 +250,7 @@ Whenever inside a method, if an exception has occurred, the method creates an Ob
 
 ![image](https://user-images.githubusercontent.com/1247944/175828367-7389509d-e5e9-45fb-8a62-94601db0d915.png)
 
-# Advanced MultiThreading
-- https://github.com/eugenp/tutorials/tree/master/core-java-modules/core-java-concurrency-advanced/src/main/java/com/baeldung
+# [Advanced MultiThreading](https://github.com/eugenp/tutorials/tree/master/core-java-modules/core-java-concurrency-advanced/src/main/java/com/baeldung)
 
 # References
 - https://www.geeksforgeeks.org/spring-componentscan-annotation-with-example/
@@ -263,3 +262,4 @@ Whenever inside a method, if an exception has occurred, the method creates an Ob
 - https://www.edureka.co/blog/session-in-java/
 - https://blog.knoldus.com/java-8-stream-need-with-examples-and-limitations/
 - https://stackoverflow.com/questions/44180101/in-java-what-are-the-advantages-of-streams-over-loops
+- [15 Practical Exercises Help You Master Java Stream API](https://blog.devgenius.io/15-practical-exercises-help-you-master-java-stream-api-3f9c86b1cf82)

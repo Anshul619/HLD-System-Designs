@@ -24,15 +24,15 @@ This repo contains the various system design questions and solutions. [Read syst
   - Both can handle `HIGH throughput`.
 
 # Design Components
-- [SQL vs NoSQL - MySQL, PostgreSQL, DynomoDB, Casandra, MongoDB etc.](src/DesignComponents/SQLvsNoSQL)
+- [SQL vs NoSQL - MySQL, DynomoDB etc.](src/DesignComponents/SQLvsNoSQL)
   - [DynamoDB](src/DesignComponents/AWS/DynamoDB.md)
-- [MQs like Kafka, RabbitMQ, Amazon MQ, SQS, SNS etc.](src/DesignComponents/Kafka)
+- [MQs like Kafka, RabbitMQ etc.](src/DesignComponents/Kafka)
 - [ElasticSearch - "NoSQL" Search Engine](src/DesignComponents/ElasticSearch)
 - [In-Memory Cache like Redis, MemCache etc.](src/DesignComponents/Redis)
-- [AWS - Various Components, Guide](src/DesignComponents/AWS/AWS.md)
-  - [AWS Storage Options - S3 vs EFS vs EBS](src/DesignComponents/AWS/S3vsEFS)
+- [AWS - Various Components, Guide](src/DesignComponents/AWS/README.md)
+  - [S3 vs EFS vs EBS](src/DesignComponents/AWS/S3vsEFS)
 - [Monolothic to MicroService](src/DesignComponents/MonolothicToMicroservice)
-- [Design a system that scales to million of users on AWS](src/DesignComponents/DesignScalableSystemWithRDMS)
+- [Design a system that scales to million of users on AWS](src/DesignComponents/AWS/DesignScalableSystemWithRDMS)
 
 # HLD - Design Problems
 - [Zomoto HLD Design](src/ZomatoDesign)

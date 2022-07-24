@@ -19,9 +19,18 @@
 - Every transaction might have multiple queries.
 - Hence, QPS is the subset of TPS.
 
-## [High Availability](https://avinetworks.com/glossary/high-availability/)
+## [High Availability ( HA )](https://avinetworks.com/glossary/high-availability/)
 - High Availability (HA) describes systems that are dependable enough to operate continuously without failing.
 - They are well-tested and sometimes equipped with redundant components.
+- `99.99% uptime` means that website is down only for `52 mins` in the complete year. This means it is `highly available`.
+- In AWS, high availability is achieved through multiple deployments of the app in different `availability zones`.
+- [DesignScalableSystemWithRDMS](AWS/DesignScalableSystemWithRDMS)
+
+### Components of HA
+- `Redundancy` - Ensures that critical system components have another identical components with the same data, that can take over in case of failure.
+- `Monitoring` - Identify problems in production systems that may disrupt or degrade service.
+- `Failover` - Switch from an active system component to a redundant component in case of failure with degraded performance or functionality.
+- `Failback` - Switch back from a redundant component to the primary active component, when it has recovered from failure.
 
 ## [Fault Tolerance](https://www.fortinet.com/resources/cyberglossary/fault-tolerance)
 - Fault tolerance is a process that enables an operating system to respond to a failure in hardware or software.
@@ -68,8 +77,11 @@
 ![img.png](assests/CAP_Theorem_Distributed_Systems.drawio.png)
 
 > The use of the word `consistency` in `CAP` and its use in `ACID` do not refer to the same identical concept.
-> - In CAP, the term consistency refers to the consistency of the values in different copies of the same data item in a replicated distributed system. 
+> - In CAP, the term consistency refers to the `consistency of the values in different copies of the same data item in a replicated distributed system`.
+>   - In case of high availability, it takes time for data to be replicated in multiple highly available zones.
+>   - Hence `Consistency` won't be there for those `milliseconds`.
 > - In ACID, it refers to the fact that a transaction will not violate the integrity constraints specified on the database schema.
 
-# Stateful vs Stateless
-- TBD
+# [Stateful vs Stateless](https://www.geeksforgeeks.org/difference-between-stateless-and-stateful-protocol/)
+- `Stateless Protocol` does not require the server to retain the server information or session details.
+- `Stateful Protocol` require server to save the status and session information.
