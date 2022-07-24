@@ -136,12 +136,12 @@ appendonly yes
 ## Which redis data type should be used?
 - If we use Redis String ( key, value ) pairs, we would have to do typecast everytime.
 - Hence it would be preferred to use the Redis Set data type to store JSON values in the Redis.
-- The time complexity to get an element from the Redis Set would be O(1). ( In case of nested object, time complexity would be more )
+- The time complexity to get an element from the Redis Set would be `O(1)`. ( In case of nested object, time complexity would be more )
 
-## When to use Redis & not `Master-Slave` technique of RDMS database?
-- TBD
+## When to use Redis & NOT `Master-Slave` technique of RDMS database?
+- Since Redis offers high LATENCY, it would be useful in corresponding scenario.
 
 # References
+- [Introduction To Redis](https://www.slideshare.net/dvirsky/introduction-to-redis)
 - [Redis Interview Questions & Answers](https://www.javatpoint.com/redis-interview-questions-and-answers)
 - [Top Redis Use Cases by Core Data Structure Types](https://scalegrid.io/blog/top-redis-use-cases-by-core-data-structure-types/)
-- [Introduction To Redis](https://www.slideshare.net/dvirsky/introduction-to-redis)

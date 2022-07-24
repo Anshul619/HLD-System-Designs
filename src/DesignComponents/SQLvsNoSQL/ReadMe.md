@@ -4,7 +4,7 @@
 Basis                                 | SQL                                                                                                                                                                                     | NoSQL                                                                                                                                                                             |
 ---------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 Data Type | Normalized, Structured Data                                                                                                                                                             | Denormalized, Unstructured data                                                                                                                                                   |
-Schema | Fixed Schema                                                                                                                                                                            | Dynamic Schema ( with hierarchical storage supported )                                                                                                                            |                                                                                             |
+Schema | `Fixed Schema`                                                                                                                                                                            | Dynamic Schema ( with hierarchical storage supported )                                                                                                                            |                                                                                             |
 Ideal Use Cases | SQL is best suitable for complex queries, multi-row transactions, joins etc. Data is structured ( like e-commerce, financial applications etc.) and also when data reporting is needed. | NoSQL is best suited for unstructured data or documents ( or large volume of data ). Not ideal for complex queries.                                                               |                                                                                             |
 Write Performance | Okay<br/>- Every write is not just an append to a table but also an update to multiple index which might require locking and hence might interfere with other reads and other writes    | Very Good<br/>- Writes are cheaper                                                                                                                                                |                                                                                             |
 Querying | Very Powerful                                                                                                                                                                           | Okay                                                                                                                                                                              |                                                                                             |
@@ -28,16 +28,16 @@ Relational databases store data in rows and columns.
 ## Key-Value Stores 
 - Data is stored in an array of key-value pairs. 
 - The `key` is an attribute name which is linked to a `value`. 
-- Well-known key-value stores include `AWS Dynamo DB`, `Redis`, `Voldemort` etc.
+- Well-known key-value stores include `AWS Dynamo DB`, `Redis` etc.
 
 ## Document Databases 
 - In these databases, data is stored in documents (instead of rows and columns in a table) and these documents are grouped together in collections. 
 - Each document can have an entirely different structure. 
-- Document databases include the `CouchDB` and `MongoDB`.
+- Document databases include `MongoDB`, `CouchDB` etc.
 
 ## Wide-Column Databases 
 - Instead of `tables`, we have column families in column databases, which are containers for rows. 
-- Example - `Apache Casandra`, `Apache HBase` etc.
+- Examples - `Apache Casandra`, `Apache HBase` etc.
 
 ## Graph Databases 
 - These databases are used to store data whose relations are best represented in a graph ( like parent-child relationship of aadhaar etc.)
