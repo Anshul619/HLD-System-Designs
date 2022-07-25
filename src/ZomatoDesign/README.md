@@ -29,19 +29,20 @@
 - To achieve transactions between distributed microservices and avoid data/transaction loss.
 - MQ vs Kafka - https://www.interviewbit.com/blog/rabbitmq-vs-kafka/#difference-between-rabbitmq-and-kafka
 
-## Apache Spark/Beam
+## [Apache Spark/Beam](../DesignComponents/AWS/AmazonEMRForApacheSpark.md)
 - This is the computing engine.
-- For running map-reduce jobs to select driver for efficient delivery and generate recommendations based on continuous streams of user activity, order activity, pricing and promo changes, etc.
+- For running map-reduce jobs to `select driver for efficient delivery` and generate recommendations based on continuous streams of user activity, order activity, pricing and promo changes, etc.
 - It will select the distributed data, create a map and then reduce the values to give proper data.
 
 ## Redis Cache
 - To store the location and segments information of all the restaurants in the city. 
-- As this is very frequently read and non-changing data, we had chose to setup this in Redis to avoid multiple DB calls. For cart also, we will be storing all the selected items in Redis.
+- As this is very frequently read and non-changing data, we had chosen to setup this in Redis to avoid multiple DB calls. 
+- For cart also, we will be storing all the selected items in Redis.
 
-## Elastic Search
+## ElasticSearch
 - Elastic indexes are used to store all published catalogs and products along with recommended items and placed order queries *to achieve the targeted SLA for search and browse requests*. 
-- Elastic search will also be used for indexing customer calls records and metadata for the transcription.
-- Elastic Search has caching option enabled. 
+- ElasticSearch will also be used for indexing customer calls records and metadata for the transcription.
+- ElasticSearch has caching option enabled. 
 - Hence Redis is not needed b/w App and ElasicSearch.
 
 ## PostgresDB
@@ -145,6 +146,4 @@ Monitoring
 
 # Reference 
 - HLD System Design Interview question asked in Blackbuck, 2ndJune2022
-- https://www.linkedin.com/pulse/system-design-food-delivery-app-zomatoswiggy-saral-saxena/
-- https://media-exp1.licdn.com/dms/image/C4D12AQGixkOy-waRJg/article-inline_image-shrink_1000_1488/0/1631931391844?e=1659571200&v=beta&t=E9PS2F7y5iWACrHU1K7T9h_sUUCxJduClOik8QjedX8
-
+- [System Design of food delivery app (Zomato/Swiggy)](https://www.linkedin.com/pulse/system-design-food-delivery-app-zomatoswiggy-saral-saxena/)

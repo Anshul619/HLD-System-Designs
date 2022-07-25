@@ -74,7 +74,6 @@ This repo contains the various system design questions and solutions. [Read syst
 # Open Items
 
 ## [What is AeroSpike?](https://aerospike.com)
-## [What is Apache Spark?](https://spark.apache.org)
 
 # References
 - [System Design Primer](https://github.com/donnemartin/system-design-primer)
