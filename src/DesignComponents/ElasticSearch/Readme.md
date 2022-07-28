@@ -56,6 +56,9 @@
 - Tokenizers are used to generate the `tokens from a text string`. 
 - It breaks down the text string into tokens where it finds whitespace or other punctuation symbols
 
+# [GraphQL Support in ElasticSearch](https://blog.smartive.ch/graphql-and-elasticsearch-a-love-letter-9ed64d5c094)
+- TBD
+
 # References
 - [Elasticsearch from the Bottom Up](https://www.elastic.co/blog/found-elasticsearch-from-the-bottom-up)
 - [ElasticSearch Interview Questions - JavaPoint](https://www.javatpoint.com/elasticsearch-interview-questions)
