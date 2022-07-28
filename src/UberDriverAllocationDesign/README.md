@@ -1,14 +1,12 @@
 
-/*
+
+# Design Problem
 
 Design driver allocation to riders in an Uber-like system
-
 - Assume many riders and drivers are using the system in parellel
 - Various solutions and their trade-offs
 - What happens when traffic increases?
 - Components/ services required
-
-*/
 
 User Actors
 - Rider
@@ -65,3 +63,4 @@ Notification
 
 # References
 - [Uber Backend Design - Educative.io](https://www.educative.io/blog/uber-backend-system-design)
+- [How Uber Scales Their Real-Time Market Platform](http://highscalability.com/blog/2015/9/14/how-uber-scales-their-real-time-market-platform.html)

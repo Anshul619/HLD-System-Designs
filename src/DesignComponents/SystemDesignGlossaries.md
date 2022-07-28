@@ -7,12 +7,12 @@
 - Example - `500 transactions per second` etc.
 
 ## Latency
-- Latency is the time required to perform an action or to produce some result. 
+- Latency is the time required to `perform an action or to produce some result`. 
 - Latency is measured in units of time - hours, minutes, seconds, nanoseconds or clock periods.
 - Example - `50 secs to do a transaction`.
 
 ## What is TPS ( Transactions per Second )?
-- The number of things to be transmitted every second, that is, the number of transactions per second processed by the server.
+- The number of things to be `transmitted every second`, that is, the number of transactions per second processed by the server.
 - The TPS includes a message entry and a message, plus a user database access. (Business TPS = CAPSX per call average TPs)
 
 ## What is QPS ( Queries per Second )?
@@ -76,7 +76,7 @@
 
 ![img.png](assests/CAP_Theorem_Distributed_Systems.drawio.png)
 
-> The use of the word `consistency` in `CAP` and its use in `ACID` do not refer to the same identical concept.
+> The use of the word `Consistency` in `CAP` and its use in `ACID` do not refer to the same identical concept.
 > - In CAP, the term consistency refers to the `consistency of the values in different copies of the same data item in a replicated distributed system`.
 >   - In case of high availability, it takes time for data to be replicated in multiple highly available zones.
 >   - Hence `Consistency` won't be there for those `milliseconds`.
@@ -85,3 +85,10 @@
 # [Stateful vs Stateless](https://www.geeksforgeeks.org/difference-between-stateless-and-stateful-protocol/)
 - `Stateless Protocol` does not require the server to retain the server information or session details.
 - `Stateful Protocol` require server to save the status and session information.
+
+# [Load Balancers](https://github.com/ema2159/Grokking-System-Design-Interview-Quizzes/blob/master/Quizzes/Load%20Balancer.org)
+
+It helps to spread the traffic across a cluster of servers to improve responsiveness and availability of applications, websites or databases.
+
+LB also keeps `track of the status of all the resources` while distributing requests.
+- If a server is not available to take new requests or is NOT responding or has elevated error rate, LB will stop sending traffic to such a server.
