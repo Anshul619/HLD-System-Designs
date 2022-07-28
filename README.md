@@ -71,10 +71,6 @@ This repo contains the various system design questions and solutions. [Read syst
 - [TypeScript](src/DesignComponents/TypeScript.md)
 - [Angular8](src/DesignComponents/Angular8.md)
 
-# Open Items
-
-## [What is AeroSpike?](https://aerospike.com)
-
 # References
 - [System Design Primer](https://github.com/donnemartin/system-design-primer)
 - [Grokking the System Design](https://www.educative.io/courses/grokking-the-system-design-interview/39RwZr5PBwn)
