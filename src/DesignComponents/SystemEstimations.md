@@ -32,7 +32,7 @@
 
 # Estimation Tips
 
-- The best way to do estimations is to have `BASE ballmark parameters` ( a bit realistic )
+The best way to do estimations is to have `BASE ballmark parameters` ( a bit realistic )
 
 ## No. of shards
 
