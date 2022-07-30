@@ -1,4 +1,8 @@
 
+# Introduction
+- Amazon SNS stands for `Amazon Simple Notification Service`.
+- Amazon SQS stands for `Amazon Simple Queue Service`.
+
 # [Amazon SQS vs Amazon SNS](https://cloud.in28minutes.com/aws-certification-sqs-vs-sns-vs-amazon-mq)
 
 Basis | Amazon SQS                                                                                           | Amazon SNS                                                                                                                                                   |
