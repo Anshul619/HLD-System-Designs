@@ -13,7 +13,7 @@
 - Define contracts ( request/response ) between microservices
 - Routing between microservices
 - Use `jenkins ( & docker containers )` for the deployment
-- [Fast Communication between microservices](../Kafka) - `Kafka`, `RabbitMQ`, `ActiveMQ` etc.
+- [Fast Communication between microservices](../MessageBrokers) - `Kafka`, `RabbitMQ`, `ActiveMQ` etc.
 - Logging using `ELK`, `Kafka Cluster`.
 
 ## Benefits of Microservices design

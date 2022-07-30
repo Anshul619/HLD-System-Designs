@@ -10,7 +10,7 @@
 
 ## Identify Read/Write Ratio of the apis/queries
 - If it's a READ heavy microservice, the best decision would be to use [Redis](Redis) or `multi-read database instances`.
-- If it's a WRITE heavy microservice ( `HIGH throughput` ), the best decision would be to use either [Kafka](Kafka) ( as message queue ) or [DynamoDB](AWS/DynamoDB.md) ( as data store ).
+- If it's a WRITE heavy microservice ( `HIGH throughput` ), the best decision would be to use either [Kafka](MessageBrokers) ( as message queue ) or [DynamoDB](AWS/DynamoDB.md) ( as data store ).
 
 ## Use Leverage Managed Infrastructures like AWS RDS, DynamoDB etc.
 - We must consider `cloud-agnostic approach` ( & onPerm customer approach ) while designing the solution.
@@ -20,7 +20,7 @@
 
 ## Asynchronous Processing ( [Event Driven Architecture](SystemGlossaries.md) )
 - Communicate the events b/w microservices asynchronously. As a result, producer & consumer would be loosely coupled.
-- [Read more - Kafka, RabbitMQ etc.](../DesignComponents/Kafka)
+- [Read more - Kafka, RabbitMQ etc.](../DesignComponents/MessageBrokers)
 
 ## Identify Key Components
 - Identify key components in the required architecture like `Data Chunking`, `Data Aggregation` etc.

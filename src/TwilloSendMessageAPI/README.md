@@ -12,9 +12,9 @@
 - 1000 transactions limit per second per team
 
 # Tech Specs
-- [Kafka](../DesignComponents/Kafka) can be used to store & process the messages
+- [Kafka](../DesignComponents/MessageBrokers) can be used to store & process the messages
 - 2 different topics ( in Kafka ) for SMS, WhatsApp message types etc.
-- [Estimation](../DesignComponents/Kafka)
+- [Estimation](../DesignComponents/MessageBrokers)
 
 # DB Design
 ## Plan
