@@ -18,7 +18,7 @@
 
 # Real world usages of Kafka
 
-## As a events/message broker 
+## As a events/message broker in Event-Driven Architecture 
 - Use Kafka when your application has a High throughput (`1 million messages/sec`), i.e. application has to process a large volume of messages, event driven services etc.
 
 ## To monitor metrics, logs of the IT infrastructure 

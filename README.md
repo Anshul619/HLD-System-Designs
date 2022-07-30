@@ -17,16 +17,6 @@ This repo contains the various system design questions and solutions.
 | [MongoDB](src/DesignComponents/SQLvsNoSQL)               | -                                       | NoSQL DB                         | -                                                 | -|  No                                      |
 | [Apache](https://apache.org/)                            | -                                       | Web Server                       | 512 concurrent requests                           |-|Yes|
 
-# Tech Guidelines ( from Scalability perspective )
-- Develop the microservice based architecture.
-- Generally, we should aim for `MAXIMAL throughput` with `ACCEPTABLE latency`.
-- We must consider `cloud-agnostic approach` ( & onPerm customer approach ) while designing the solution.
-- Identify `READ vs Write` ratio of the apis/queries
-  - If it's a READ heavy microservice, the best decision would be to use `Redis` or `multi-read database instances`.
-  - If it's WRITE heavy microservice ( `HIGH throughput` ), the best decision would be to use either `Kafka` ( as message queue ) or `DynamoDB` ( as data store ). 
-    - Both can handle `HIGH throughput`.
-- Identify key components in the architecture like `Data Chunking`, `Data Aggregation` etc.
-
 # Design Components
 - [SQL vs NoSQL - MySQL, DynomoDB etc.](src/DesignComponents/SQLvsNoSQL)
   - [DynamoDB](src/DesignComponents/AWS/DynamoDB.md)

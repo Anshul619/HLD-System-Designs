@@ -1,30 +1,28 @@
 
 # System Design Glossaries
 
-## Throughput
-- Throughput is the number of actions executed or results produced per unit of time. 
-- This is measured in units of whatever is being produced (cars, motorcycles, I/O samples, memory words, iterations) per unit of time.
-- Example - `500 transactions per second` etc.
-
 ## Latency
 - Latency is the time required to `perform an action or to produce some result`. 
 - Latency is measured in units of time - hours, minutes, seconds, nanoseconds or clock periods.
 - Example - `50 secs to do a transaction`.
 
-## What is TPS ( Transactions per Second )?
-- The number of things to be `transmitted every second`, that is, the number of transactions per second processed by the server.
+## Throughput or TPS (Transactions per Second)
+- Throughput is the number of actions executed or results produced per unit of time.
+- This is measured in units of whatever is being produced (cars, motorcycles, I/O samples, memory words, iterations) per unit of time.
+- For transactions processing systems, throughput is typically measured in `TPS`.
 - The TPS includes a message entry and a message, plus a user database access. (Business TPS = CAPSX per call average TPs)
+- Example - `500 transactions per second ( 500 TPS )` etc.
 
 ## What is QPS ( Queries per Second )?
 - Every transaction might have multiple queries.
-- Hence, QPS is the subset of TPS.
+- Hence, `QPS is the subset of TPS`.
 
 ## [High Availability ( HA )](https://avinetworks.com/glossary/high-availability/)
 - High Availability (HA) describes systems that are dependable enough to operate continuously without failing.
 - They are well-tested and sometimes equipped with redundant components.
 - `99.99% uptime` means that website is down only for `52 mins` in the complete year. This means it is `highly available`.
-- In AWS, high availability is achieved through multiple deployments of the app in different `availability zones`.
-- [DesignScalableSystemWithRDMS](AWS/DesignScalableSystemWithRDMS)
+- In AWS, high availability is achieved through multiple deployments of the app in `different availability zones`.
+- [Design Scalable System With RDMS on AWS](AWS/DesignScalableSystemWithRDMS)
 
 ### Components of HA
 - `Redundancy` - Ensures that critical system components have another identical components with the same data, that can take over in case of failure.
@@ -56,7 +54,7 @@
 
 ### [Consistency](https://www.geeksforgeeks.org/acid-properties-in-dbms/)
 - This means that integrity constraints must be maintained so that the database is consistent before and after the transaction.
-- Consistency (or `Correctness`) in database systems refers to the requirement that any given database transaction [must change affected data only](https://en.wikipedia.org/wiki/Consistency_(database_systems)) in allowed ways.
+- `Consistency` (or `Correctness`) in database systems refers to the requirement that any given database transaction [must change affected data only](https://en.wikipedia.org/wiki/Consistency_(database_systems)) in allowed ways.
 - Any data written to the database must be valid according to all defined rules, including constraints, cascades, triggers, and any combination thereof.
 
 ### [Isolation](https://www.geeksforgeeks.org/acid-properties-in-dbms/)
@@ -68,10 +66,6 @@
 - In database systems, durability is the `ACID property` which guarantees that `transactions that have committed will survive permanently`.
 - For example, if a flight booking reports that a seat has successfully been booked, then the seat will remain booked even if the system crashes.
 
-## [Language Agnostic](https://en.wikipedia.org/wiki/Language-agnostic)
-- We should design the system considering agnostic feature (Language agnostic, AWS agnostic etc.) into the consideration.
-- Language-agnostic - Language-agnostic programming or scripting (also called language-neutral, language-independent, or cross-language) is a software development paradigm where a particular language is chosen because of its appropriateness for a particular task (taking into consideration all factors, including ecosystem, developer skill-sets, performance, etc.), and not purely because of the skill-set available within a development team.
-
 ## [CAP Theorem of the Distributed Systems](https://www.geeksforgeeks.org/the-cap-theorem-in-dbms/)
 
 ![img.png](assests/CAP_Theorem_Distributed_Systems.drawio.png)
@@ -82,13 +76,27 @@
 >   - Hence `Consistency` won't be there for those `milliseconds`.
 > - In ACID, it refers to the fact that a transaction will not violate the integrity constraints specified on the database schema.
 
-# [Stateful vs Stateless](https://www.geeksforgeeks.org/difference-between-stateless-and-stateful-protocol/)
+## [Language Agnostic](https://en.wikipedia.org/wiki/Language-agnostic)
+- We should design the system considering agnostic feature (Language agnostic, AWS agnostic etc.) into the consideration.
+- Language-agnostic programming or scripting (also called language-neutral, language-independent, or cross-language) is a software development paradigm where a particular language is chosen because of its appropriateness for a particular task (taking into consideration all factors, including ecosystem, developer skill-sets, performance, etc.), and not purely because of the skill-set available within a development team.
+
+## [Stateful vs Stateless](https://www.geeksforgeeks.org/difference-between-stateless-and-stateful-protocol/)
 - `Stateless Protocol` does not require the server to retain the server information or session details.
 - `Stateful Protocol` require server to save the status and session information.
 
-# [Load Balancers](https://github.com/ema2159/Grokking-System-Design-Interview-Quizzes/blob/master/Quizzes/Load%20Balancer.org)
-
-It helps to spread the traffic across a cluster of servers to improve responsiveness and availability of applications, websites or databases.
-
-LB also keeps `track of the status of all the resources` while distributing requests.
+## [Load Balancers](https://github.com/ema2159/Grokking-System-Design-Interview-Quizzes/blob/master/Quizzes/Load%20Balancer.org)
+- It helps to spread the traffic across a cluster of servers to improve responsiveness and availability of applications, websites or databases.
+- LB also keeps `track of the status of all the resources` while distributing requests.
 - If a server is not available to take new requests or is NOT responding or has elevated error rate, LB will stop sending traffic to such a server.
+
+
+
+## [Event Driven Architecture](https://aws.amazon.com/event-driven-architecture/)
+- An event-driven architecture uses events to trigger and communicate between decoupled services and is common in modern applications built with microservice.
+- An event is a change in state, or an update, like an item being placed in a shopping cart on an e-commerce website.
+- Events can either carry the state (the item purchased, its price, and a delivery address) or events can be identifiers (a notification that an order was shipped).
+
+## [Domain Driven Architecture](https://www.geeksforgeeks.org/domain-driven-design-ddd/)
+
+![img.png](assests/domain_driven_design.png)
+
