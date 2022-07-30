@@ -1,7 +1,8 @@
 # System-Designs
 
 This repo contains the various system design questions and solutions. 
-- Read [System design glossaries](src/DesignComponents/SystemDesignGlossaries.md)
+- Read [System design glossaries](src/DesignComponents/SystemGlossaries.md)
+- Read [System Scalability Guidelines](src/DesignComponents/SystemScalabilityGuidelines.md)
 - Read [System estimation guide](src/DesignComponents/SystemEstimations.md)
 
 # Various components & Performance Metrics

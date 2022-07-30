@@ -14,8 +14,8 @@
 - Example - `500 transactions per second ( 500 TPS )` etc.
 
 ## What is QPS ( Queries per Second )?
-- Every transaction might have multiple queries.
-- Hence, `QPS is the subset of TPS`.
+- `Every transaction might have multiple queries`.
+- Hence, QPS is the subset of TPS.
 
 ## [High Availability ( HA )](https://avinetworks.com/glossary/high-availability/)
 - High Availability (HA) describes systems that are dependable enough to operate continuously without failing.
@@ -92,11 +92,13 @@
 
 
 ## [Event Driven Architecture](https://aws.amazon.com/event-driven-architecture/)
-- An event-driven architecture uses events to trigger and communicate between decoupled services and is common in modern applications built with microservice.
+- An event-driven architecture uses events to `trigger and communicate between decoupled services` and is common in modern applications built with microservice.
 - An event is a change in state, or an update, like an item being placed in a shopping cart on an e-commerce website.
 - Events can either carry the state (the item purchased, its price, and a delivery address) or events can be identifiers (a notification that an order was shipped).
 
 ## [Domain Driven Architecture](https://www.geeksforgeeks.org/domain-driven-design-ddd/)
+- When we are developing software our focus should not be primarily on technology, rather it should be primarily on business/domain.
+- Classes, modals, services, microservices, rest apis etc. should be designed according to the domains.
 
 ![img.png](assests/domain_driven_design.png)
 

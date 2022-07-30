@@ -18,7 +18,7 @@
 
 ## Use Caching ( like Redis or CDNs )
 
-## Asynchronous Processing ( [Event Driven Architecture](SystemDesignGlossaries.md) )
+## Asynchronous Processing ( [Event Driven Architecture](SystemGlossaries.md) )
 - Communicate the events b/w microservices asynchronously. As a result, producer & consumer would be loosely coupled.
 - [Read more - Kafka, RabbitMQ etc.](../DesignComponents/Kafka)
 
