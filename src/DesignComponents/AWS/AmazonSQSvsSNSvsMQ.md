@@ -32,7 +32,7 @@ Web Services | -                                                                
 - SQS is an `Amazon managed service` (so you do not have to support infrastructure by yourself).
 - SQS is better for eventing when you need to catch some message (event) by some client and then this message will be automatically popped out from the queue.
 
-# [AmazonMQ - Fully Managed Service for open source message brokers](https://aws.amazon.com/amazon-mq/?amazon-mq.sort-by=item.additionalFields.postDateTime&amazon-mq.sort-order=desc)
+# [Amazon MQ](https://aws.amazon.com/amazon-mq/?amazon-mq.sort-by=item.additionalFields.postDateTime&amazon-mq.sort-order=desc)
 - Amazon MQ is a managed message broker service for `Apache ActiveMQ` and `RabbitMQ` that makes it easy to set up and operate message brokers on AWS.
 - Amazon MQ reduces your operational responsibilities by managing the provisioning, setup, and maintenance of message brokers for you. 
 - Because Amazon MQ connects to your current applications with industry-standard APIs and protocols, `you can easily migrate to AWS without having to rewrite code`.
