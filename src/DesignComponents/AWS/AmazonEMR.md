@@ -1,5 +1,5 @@
 
-# [Amazon EMR](https://aws.amazon.com/emr/)
+# [Amazon EMR for Apache Spark](https://aws.amazon.com/emr/)
 - Easily run and scale Apache Spark, Hive, Presto, and other big data workloads.
 
 # [What is Apache Spark?](https://spark.apache.org)

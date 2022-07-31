@@ -58,7 +58,7 @@ For example:
 - Display the correct product price by sending price modifications in the right order.
 - Prevent a student from enrolling in a course before registering for an account.
 
-# [Amazon SQS vs Others]()
+# [Amazon SQS vs Others](../../../README.md#message-brokers)
 
 # References
 - [SQS vs SNS vs Amazon MQ - Comparison - AWS Certification Cheat Sheet](https://cloud.in28minutes.com/aws-certification-sqs-vs-sns-vs-amazon-mq)

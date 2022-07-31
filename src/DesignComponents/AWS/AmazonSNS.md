@@ -8,14 +8,7 @@
 
 ![img.png](assests/sns_img.png)
 
-## Amazon SQS vs Amazon SNS
-
-Basis | Amazon SQS                                                                                             | Amazon SNS                                                                                                                                                   |
-------------------------------------|--------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------|
-Paradigm | `Pull Model`                                                                                           | `Push Model`                                                                                                                                                 |
-Process | Message would be pushed to the `Queue`. Consumers would consume it and it would be removed from Queue. | When an SNS Topic receives an event notification (from publisher), it is broadcasted to all Subscribers.                                                     |
-Use Cases | -                                                                                                      | Monitoring Apps, workflow systems, mobile apps                                                                                                               |
-Web Services | -                                                                                                      | Provides mobile and enterprise messaging web services - Push notifications to Apple, Android, FireOS, Windows devices, Send SMS to mobile users, Send Emails |
+# [Amazon SNS vs Others](../../../README.md#message-brokers)
 
 # References
 - [SQS vs SNS vs Amazon MQ - Comparison - AWS Certification Cheat Sheet](https://cloud.in28minutes.com/aws-certification-sqs-vs-sns-vs-amazon-mq)
