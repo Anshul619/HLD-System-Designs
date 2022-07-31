@@ -6,14 +6,16 @@
 - Latency is measured in units of time - hours, minutes, seconds, nanoseconds or clock periods.
 - Example - `50 secs to do a transaction`.
 
-## Throughput or TPS (Transactions per Second)
+## Throughput
 - Throughput is the number of actions executed or results produced per unit of time.
 - This is measured in units of whatever is being produced (cars, motorcycles, I/O samples, memory words, iterations) per unit of time.
+
+### TPS (Transactions per Second)
 - For transactions processing systems, throughput is typically measured in `TPS`.
 - The TPS includes a message entry and a message, plus a user database access. (Business TPS = CAPSX per call average TPs)
 - Example - `500 transactions per second ( 500 TPS )` etc.
 
-## What is QPS ( Queries per Second )?
+### QPS (Queries per Second)
 - `Every transaction might have multiple queries`.
 - Hence, QPS is the subset of TPS.
 
@@ -88,8 +90,6 @@
 - It helps to spread the traffic across a cluster of servers to improve responsiveness and availability of applications, websites or databases.
 - LB also keeps `track of the status of all the resources` while distributing requests.
 - If a server is not available to take new requests or is NOT responding or has elevated error rate, LB will stop sending traffic to such a server.
-
-
 
 ## [Event Driven Architecture](https://aws.amazon.com/event-driven-architecture/)
 - An event-driven architecture uses events to `trigger and communicate between decoupled services` and is common in modern applications built with microservice.

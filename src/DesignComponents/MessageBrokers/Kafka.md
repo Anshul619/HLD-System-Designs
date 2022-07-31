@@ -233,7 +233,7 @@ Parameter | Title                           | More Description                  
 
 ## [Kafka vs ActiveMQ](ActiveMQ.md)
 
-## [Kafka vs Amazon SQS](../AWS/AmazonSQSvsSNSvsMQ.md)
+## [Kafka vs Amazon SQS](../AWS/AmazonSQS.md)
 
 # References
 - [Kafka Interview Question](https://www.interviewbit.com/kafka-interview-questions/)
