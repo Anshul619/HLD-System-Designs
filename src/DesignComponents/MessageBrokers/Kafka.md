@@ -227,13 +227,7 @@ Parameter | Title                           | More Description                  
 - `Thousands of producers`
 - `~1000 consumers`
 
-# Kafka vs Others
-
-## [Kafka vs RabbitMQ](RabbitMQ.md)
-
-## [Kafka vs ActiveMQ](ActiveMQ.md)
-
-## [Kafka vs Amazon SQS](../AWS/AmazonSQS.md)
+# [Kafka vs Others](../../../README.md#message-brokers)
 
 # References
 - [Kafka Interview Question](https://www.interviewbit.com/kafka-interview-questions/)
