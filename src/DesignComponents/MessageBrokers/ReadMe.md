@@ -3,7 +3,7 @@
 
 <img title="Message-Transfer-Model" alt="Alt text" src="assests/Traditional-Message-Patterns.drawio.png">
 
-## Push Model/Message Queuing ( Point-To-Point, Request-Response technique)
+## Push Model/Message Queuing ( Point-To-Point technique)
 - Once the message is delivered to the consumer, it would be removed from Queue.
 - The main goal is to `distribute messages individually` and promptly, ensuring that `work is parallelized equitably` and messages are handled roughly in the order they came in the queue.
 - [RabbitMQ](RabbitMQ.md), [Amazon SNS](../AWS/AmazonSNS.md) support `Push Model` ( i.e. `Point-To-Point` model ).

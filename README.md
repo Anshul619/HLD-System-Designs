@@ -26,15 +26,6 @@ This repo contains the various system design questions and solutions.
 - [Monolothic to MicroService](src/DesignComponents/MonolothicToMicroservice)
 - [Design a system that scales to million of users on AWS](src/DesignComponents/AWS/DesignScalableSystemWithRDMS)
 
-## Amazon SQS vs Amazon SNS
-
-Basis | Amazon SQS                                                                                             | Amazon SNS                                                                                                                                                   |
-------------------------------------|--------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------|
-Paradigm | `Pull Model`                                                                                           | `Push Model`                                                                                                                                                 |
-Process | Message would be pushed to the `Queue`. Consumers would consume it and it would be removed from Queue. | When an SNS Topic receives an event notification (from publisher), it is broadcasted to all Subscribers.                                                     |
-Use Cases | -                                                                                                      | Monitoring Apps, workflow systems, mobile apps                                                                                                               |
-Web Services | -                                                                                                      | Provides mobile and enterprise messaging web services - Push notifications to Apple, Android, FireOS, Windows devices, Send SMS to mobile users, Send Emails |
-
 ## [Message Brokers](src/DesignComponents/MessageBrokers)
 
 Basis                                 | [Kafka](src/DesignComponents/MessageBrokers/Kafka.md)                                 | [RabbitMQ](src/DesignComponents/MessageBrokers/RabbitMQ.md)                                                                                                          | [Amazon SQS](src/DesignComponents/AWS/AmazonSQS.md)                 | [Amazon SNS](src/DesignComponents/AWS/AmazonSNS.md)                                                                                                                                                       | [Active MQ](src/DesignComponents/MessageBrokers/ActiveMQ.md)               |
