@@ -28,13 +28,13 @@ This repo contains the various system design questions and solutions.
 
 ## [Message Brokers](src/DesignComponents/MessageBrokers)
 
-| Component                                                    | Strength                        | Transfer Model          | Very Rough Throughput (QPS)                       | Latency | Component Type                                                                        |
-|--------------------------------------------------------------|---------------------------------|-------------------------|---------------------------------------------------|---------|---------------------------------------------------------------------------------------|
-| [Kafka](src/DesignComponents/MessageBrokers/Kafka.md)        | High-Throughput MQ | Pull Model (Pub-Sub)    | 1000K ( 1 million ) messages ( write ) per second | ~5ms    | `Open Source` ( [Amazon MSK](src/DesignComponents/AWS/AmazonSQSvsSNSvsMQ.md) on AWS ) |
+| Component                                                    | Strength                        | Transfer Model             | Very Rough Throughput (QPS)                       | Latency | Component Type                                                                        |
+|--------------------------------------------------------------|---------------------------------|----------------------------|---------------------------------------------------|---------|---------------------------------------------------------------------------------------|
+| [Kafka](src/DesignComponents/MessageBrokers/Kafka.md)        | High-Throughput MQ | Pull Model (Pub-Sub)       | 1000K ( 1 million ) messages ( write ) per second | ~5ms    | `Open Source` ( [Amazon MSK](src/DesignComponents/AWS/AmazonSQSvsSNSvsMQ.md) on AWS ) |
 | [RabbitMQ](src/DesignComponents/MessageBrokers/RabbitMQ.md)  | Low-Latency MQ                  | Push Model (Point-2-Point) | 20K messages ( write ) per second                 | ~1ms    | `Open Source` ( [Amazon MQ](src/DesignComponents/AWS/AmazonSQSvsSNSvsMQ.md) on AWS )  |
-| [Amazon SQS](src/DesignComponents/AWS/AmazonSQSvsSNSvsMQ.md) | -                               | Pull Model (Pub-Sub)    | -                                                 | -       | `AWS Managed Service`                                                                 |
+| [Amazon SQS](src/DesignComponents/AWS/AmazonSQSvsSNSvsMQ.md) | -                               | Pull Model                 | -                                                 | -       | `AWS Managed Service`                                                                 |
 | [Amazon SNS](src/DesignComponents/AWS/AmazonSQSvsSNSvsMQ.md) | -                               | Push Model (Point-2-Point) | -                                                 | -       | `AWS Managed Service`                                                                 |
-| [Active MQ](src/DesignComponents/MessageBrokers/ActiveMQ.md) | Enterprise-Based MQ             | Pull Model (Pub-Sub)    | -                                                 | -       | `Open Source` ( [Amazon MQ](src/DesignComponents/AWS/AmazonSQSvsSNSvsMQ.md) on AWS )                                                                        |
+| [Active MQ](src/DesignComponents/MessageBrokers/ActiveMQ.md) | Enterprise-Based MQ             | Pull Model (Pub-Sub)       | -                                                 | -       | `Open Source` ( [Amazon MQ](src/DesignComponents/AWS/AmazonSQSvsSNSvsMQ.md) on AWS )                                                                        |
 
 # HLD - Design Problems
 - [Zomoto HLD Design](src/ZomatoDesign)
