@@ -11,13 +11,7 @@
 
 ## Pull Model/Publisher-Subscriber Model
 - Unlike point-to-point texting, a message is only removed once it has been consumed by all category subscribers or according to retention policy.
-- [Kafka](Kafka.md), [ActiveMQ](ActiveMQ.md), [Amazon SQS](../AWS/AmazonSQSvsSNSvsMQ.md) supports Publisher-Subscriber Model.
+- [Kafka](Kafka.md), [Active MQ](ActiveMQ.md), [Amazon SQS](../AWS/AmazonSQSvsSNSvsMQ.md) supports Publisher-Subscriber Model.
 - This is completely asynchronous. You can't say for sure when this process will happen and in what order.
 
-## Various Message Brokers
-- [Kafka](Kafka.md)
-- [RabbitMQ](RabbitMQ.md)
-- [ActiveMQ](ActiveMQ.md)
-- [Amazon SQS](../AWS/AmazonSQSvsSNSvsMQ.md)
-- [Amazon SNS](../AWS/AmazonSQSvsSNSvsMQ.md)
-- [Amazon MQ](../AWS/AmazonSQSvsSNSvsMQ.md)
+## [Various Message Brokers](../../../README.md)

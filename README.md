@@ -1,16 +1,14 @@
 # System-Designs
 
 This repo contains the various system design questions and solutions. 
-- Read [System design glossaries](src/DesignComponents/SystemGlossaries.md)
-- Read [System Scalability Guidelines](src/DesignComponents/SystemScalabilityGuidelines.md)
-- Read [System estimation guide](src/DesignComponents/SystemEstimations.md)
+- Read [System Design Glossaries](src/DesignComponents/SystemGlossaries.md)
+- Read [System Scalability Guide](src/DesignComponents/SystemScalabilityGuidelines.md)
+- Read [System Estimation Guide](src/DesignComponents/SystemEstimations.md)
 
 # Various components & Performance Metrics
 
 | Component                                                | Strength                                | Component Type                                                | Very Rough Throughput (QPS)                       | Latency | Free |
 |----------------------------------------------------------|-----------------------------------------|---------------------------------------------------------------|---------------------------------------------------|----------------|------|
-| [Kafka](src/DesignComponents/MessageBrokers)                      | High-Throughput MQ                      | Message Queue (Pub-Sub)            | 1000K ( 1 million ) messages ( write ) per second | ~5ms | Yes   |
-| [RabbitMQ](src/DesignComponents/MessageBrokers#kafka-vs-rabbitmq) | Low-Latency MQ                          | Message Queue (Point-2-Point)         | 20K messages ( write ) per second                 | ~1ms |  Yes   |
 | [Redis](src/DesignComponents/Redis)                      | In-Memory fast Data-Store (Caching)     | Caching                          | 100K queries per second                           | -|  Yes   |
 | [MySQL](src/DesignComponents/SQLvsNoSQL)                 | -                                       | SQL DB                           | 1000 concurrent requests ( 100 as default )       | [< 10ms ( to get a row from 1 million records )](https://www.quora.com/How-can-we-calculate-the-throughput-of-MySQL?share=1)|Yes|
 | [DynomoDB](src/DesignComponents/AWS/DynamoDB.md)         | Predictable performance and cost        | NoSQL DB as a Service ( AWS )  | More than 20 million requests per second          | less than 10-20 ms | No  |
@@ -29,12 +27,14 @@ This repo contains the various system design questions and solutions.
 - [Design a system that scales to million of users on AWS](src/DesignComponents/AWS/DesignScalableSystemWithRDMS)
 
 ## [Message Brokers](src/DesignComponents/MessageBrokers)
-- [Kafka](src/DesignComponents/MessageBrokers/Kafka.md)
-- [RabbitMQ](src/DesignComponents/MessageBrokers/RabbitMQ.md)
-- [ActiveMQ](src/DesignComponents/MessageBrokers/ActiveMQ.md)
-- [Amazon SQS](src/DesignComponents/AWS/AmazonSQSvsSNSvsMQ.md)
-- [Amazon SNS](src/DesignComponents/AWS/AmazonSQSvsSNSvsMQ.md)
-- [Amazon MQ](src/DesignComponents/AWS/AmazonSQSvsSNSvsMQ.md)
+
+| Component                                                    | Strength                        | Transfer Model          | Very Rough Throughput (QPS)                       | Latency | Component Type                                                                        |
+|--------------------------------------------------------------|---------------------------------|-------------------------|---------------------------------------------------|---------|---------------------------------------------------------------------------------------|
+| [Kafka](src/DesignComponents/MessageBrokers/Kafka.md)        | High-Throughput MQ | Pull Model (Pub-Sub)    | 1000K ( 1 million ) messages ( write ) per second | ~5ms    | `Open Source` ( [Amazon MSK](src/DesignComponents/AWS/AmazonSQSvsSNSvsMQ.md) on AWS ) |
+| [RabbitMQ](src/DesignComponents/MessageBrokers/RabbitMQ.md)  | Low-Latency MQ                  | Push Model (Point-2-Point) | 20K messages ( write ) per second                 | ~1ms    | `Open Source` ( [Amazon MQ](src/DesignComponents/AWS/AmazonSQSvsSNSvsMQ.md) on AWS )  |
+| [Amazon SQS](src/DesignComponents/AWS/AmazonSQSvsSNSvsMQ.md) | -                               | Pull Model (Pub-Sub)    | -                                                 | -       | `AWS Managed Service`                                                                 |
+| [Amazon SNS](src/DesignComponents/AWS/AmazonSQSvsSNSvsMQ.md) | -                               | Push Model (Point-2-Point) | -                                                 | -       | `AWS Managed Service`                                                                 |
+| [Active MQ](src/DesignComponents/MessageBrokers/ActiveMQ.md) | Enterprise-Based MQ             | Pull Model (Pub-Sub)    | -                                                 | -       | `Open Source` ( [Amazon MQ](src/DesignComponents/AWS/AmazonSQSvsSNSvsMQ.md) on AWS )                                                                        |
 
 # HLD - Design Problems
 - [Zomoto HLD Design](src/ZomatoDesign)
