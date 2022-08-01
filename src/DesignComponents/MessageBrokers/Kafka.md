@@ -3,13 +3,13 @@
 - Apache Kafka is an open-source distributed event streaming platform used by thousands of companies for high-performance data pipelines, streaming analytics, data integration, and mission-critical applications.
 - Kafka can process a large amount of data in a short amount of time (`1 million messages/sec`)
 - It also has low latency, making it possible to process data in real-time.
-- Kafka is `Publish Subscriber Model`. And can be used for `Event Driven Services`.
+- Kafka is based on `Publish-Subscriber Model`. And can be used for `Event-Driven Architecture`.
 - Messages ( events ) in the Kafka are immutable and can't be changed once it's pushed. ( due to Kafka's log based queue nature )
 - [Amazon Managed Streaming for Apache Kafka (MSK)](https://aws.amazon.com/msk/) can be used to deploy `Kafka` on AWS.
 
 # Reasons of why Kafka has HIGH throughput?
 
-## Kafka is based on `Log Based Queue`
+## Kafka is based on Log Based Queue
 - Messages are persisted to `append-only log files by the broker`.
 - Producers are appending these log files ( `sequential write` ) & consumers are reading a range of these files ( `sequential reads` ).
 
