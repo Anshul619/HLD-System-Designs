@@ -60,5 +60,9 @@ For example:
 
 # [Amazon SQS vs Others](../../../README.md#message-brokers)
 
+# Real-life example
+
+![img.png](assests/aws_sns_sqs_example_img.png)
+
 # References
 - [SQS vs SNS vs Amazon MQ - Comparison - AWS Certification Cheat Sheet](https://cloud.in28minutes.com/aws-certification-sqs-vs-sns-vs-amazon-mq)
