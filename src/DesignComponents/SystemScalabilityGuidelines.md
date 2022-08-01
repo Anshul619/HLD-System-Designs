@@ -34,6 +34,8 @@
 - Minimize `select columns` in the `SQL Queries`.
 - Observe `MySQL Slow Queries` logs and find out SLOW Queries in it.
 
+## Use S3 for files storage
+
 ## Other Points
 - Implement `Pagination` while loading data in the UI pages ( i.e. Page wise scaling )
 - Implement `Divide & Conquer` approach in the UI pages ( i.e. data chunking, single responsibility APIs )

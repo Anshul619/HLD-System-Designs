@@ -6,14 +6,15 @@
 - The A2P functionality enables you to send messages to users at scale via SMS, mobile push, and email.
 - The A2A pub/sub functionality provides topics for high-throughput, push-based, many-to-many messaging between distributed systems, microservices, and event-driven serverless applications.
 
-![img.png](assests/sns_img.png)
+![img.png](../assests/sns_img.png)
 
-# [Amazon SNS vs Others](../../../README.md#message-brokers)
+# [Amazon SNS vs Others](../../../../README.md#message-brokers)
 
 # Real-life example
 
-![img.png](assests/aws_sns_sqs_example_img.png)
+![img.png](../assests/aws_sns_sqs_example_img.png)
 
 # References
 - [SQS vs SNS vs Amazon MQ - Comparison - AWS Certification Cheat Sheet](https://cloud.in28minutes.com/aws-certification-sqs-vs-sns-vs-amazon-mq)
 - [SNS vs SQS Comparison? Whats the difference?](https://www.youtube.com/watch?v=mXk0MNjlO7A)
+- [Event-Driven Computing with Amazon SNS and AWS Compute, Storage, Database, and Networking Services](https://aws.amazon.com/blogs/compute/event-driven-computing-with-amazon-sns-compute-storage-database-and-networking-services/)

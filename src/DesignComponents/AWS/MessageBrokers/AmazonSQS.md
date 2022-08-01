@@ -6,7 +6,7 @@
     - `Standard queues` offer maximum throughput, best-effort ordering, and at-least-once delivery.
     - `SQS FIFO queues` are designed to guarantee that messages are processed exactly once, in the exact order that they are sent.
 
-![img.png](assests/sqs/sqs_img.png)
+![img.png](../assests/sqs/sqs_img.png)
 
 # Queue types
 
@@ -21,7 +21,7 @@
 ### Best-Effort Ordering
 - Occasionally, `messages might be delivered in an order different from which they were sent`.
 
-![img.png](assests/sqs/standard_queues_sqs_img.png)
+![img.png](../assests/sqs/standard_queues_sqs_img.png)
 
 ### Use Cases
 
@@ -47,7 +47,7 @@ For example:
 ### First-In-First-Out Delivery
 - The order in which messages are sent and received is strictly preserved (i.e. `First-In-First-Out`).
 
-![img.png](assests/sqs/sqs_fifo_queues.png)
+![img.png](../assests/sqs/sqs_fifo_queues.png)
 
 ### Use Cases
 
@@ -58,11 +58,11 @@ For example:
 - Display the correct product price by sending price modifications in the right order.
 - Prevent a student from enrolling in a course before registering for an account.
 
-# [Amazon SQS vs Others](../../../README.md#message-brokers)
+# [Amazon SQS vs Others](../../../../README.md#message-brokers)
 
 # Real-life example
 
-![img.png](assests/aws_sns_sqs_example_img.png)
+![img.png](../assests/aws_sns_sqs_example_img.png)
 
 # References
 - [SQS vs SNS vs Amazon MQ - Comparison - AWS Certification Cheat Sheet](https://cloud.in28minutes.com/aws-certification-sqs-vs-sns-vs-amazon-mq)
