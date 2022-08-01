@@ -22,7 +22,6 @@ This repo contains the various system design questions and solutions.
 - [ElasticSearch - "NoSQL" Search Engine](src/DesignComponents/ElasticSearch)
 - [In-Memory Cache like Redis, MemCache etc.](src/DesignComponents/Redis)
 - [AWS - Various Components, Guide](src/DesignComponents/AWS/README.md)
-  - [S3 vs EFS vs EBS](src/DesignComponents/AWS/S3vsEFS)
 - [Monolothic to MicroService](src/DesignComponents/MonolothicToMicroservice)
 - [Design a system that scales to million of users on AWS](src/DesignComponents/AWS/DesignScalableSystemWithRDMS)
 
@@ -46,6 +45,16 @@ Consumer Type | `Smart` ( Consumers maintain their own state i.e. "dump" brokers
 Ordering Of Messages                  | `Supported ( using partition key )`                                                   | Not-Supported                                                                                                                                                      | Supported in `FIFO SQS Queues` ( not in Standard SQS Queues )      | Supported in `FIFO SNS Topics`                                                                                                                                                    |                                                                            |                                                                                                                                                                      |                                                                      |                                                     |                                                                            |
 Prioritizing Messages for consumption | Not-Supported.                                                                        | `Supported`                                                                                                                                                        |                                                                    |
 Payload Size | `Default 1MB limit`                                                                   | No constraints                                                                                                                                                     |                                                                    |
+
+## [File Storages on AWS]
+
+Basis                                 | [S3](src/DesignComponents/AWS/FileStorages/AmazonS3.md)                                   | [EFS](src/DesignComponents/AWS/FileStorages/AmazonEFS.md)                    |
+---------------------------------------|----------------------------------------------------------------------------------|------------------------------------------------------------------------------|
+Storage | Object Storage ( can be mounted using s3fs plugin or accessed over HTTP )        | Actual FileSystem ( NFS interface, which can be shared b/w `EC2 instances` ) |
+IO Speed | Relatively slower than EFS                                                       | Faster than S3                                                               |
+Costing | [$0.021 per GB](https://aws.amazon.com/s3/pricing/)                              | [$0.043/GB-Month ( 2x as S3 )](https://aws.amazon.com/efs/pricing/)          |
+Use Cases | Static Web Content, Media Data ( like image, video, documents )                  | Shared Volume b/w EC2 instances                                              |
+Availability | `99.999999999%` (twelve 9’s) durability, redundancy in at least 3 AZs in S3 Region | `99.9% availability`, with multiple AZs availability                           |
 
 # HLD - Design Problems
 - [Zomoto HLD Design](src/ZomatoDesign)
