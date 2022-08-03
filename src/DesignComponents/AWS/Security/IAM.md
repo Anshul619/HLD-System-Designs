@@ -1,6 +1,6 @@
 
-# AWS Identity and Access Management (IAM)
-- Unquestionably, security has a lot to do with access and what gets accessed. 
-- This service offers an effective fortification of sensitive data and AWS resources. 
-- It can also be used in conjunction with your organization’s 2FA and MFA. 
-- It’s just an additional layer of security that never hurts.
+# [AWS Identity and Access Management (IAM)](https://aws.amazon.com/iam/)
+- AWS IAM allows an administrator to provide multiple users and groups with granular access.
+- Various user groups and users may require varying levels of access to the various resources that have been developed.
+- We may assign roles to users and create roles with defined access levels using IAM.
+- It further gives us Federated Access, which allows us to grant applications and users access to resources without having to create IAM Roles.
