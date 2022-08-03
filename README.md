@@ -21,8 +21,8 @@ This repo contains the various system design questions and solutions.
   - [DynamoDB](src/DesignComponents/AWS/Databases/DynamoDB.md)
 - [ElasticSearch - "NoSQL" Search Engine](src/DesignComponents/ElasticSearch)
 - [In-Memory Cache like Redis, MemCache etc.](src/DesignComponents/Redis)
-- [AWS - Various Components, Guide](src/DesignComponents/AWS/README.md)
-- [Monolothic to MicroService](src/DesignComponents/MonolothicToMicroservice)
+- [AWS - Various Components](src/DesignComponents/AWS/README.md)
+- [MicroServices Based Architecture](src/DesignComponents/MicroServicesArchitecture)
 - [Design a system that scales to million of users on AWS](src/DesignComponents/AWS/DesignScalableSystemWithRDMS)
 
 ## [Message Brokers](src/DesignComponents/MessageBrokers)
@@ -86,6 +86,7 @@ File Size Limitation | Max Object Size of 5TB ( Max Object Size of 5GB through P
   - [Insurance Agent Flow](src/DesignLLDProblems/Others/InsuranceAgentFlow.md)
 
 # Tech Skills
+- [GoLang](src/DesignComponents/GoLang)
 - [Spring Boot & Microservices](src/DesignComponents/SpringBootAndMicroServices)
 - [Java](src/DesignComponents/Java)
 - [Hibernate](src/DesignComponents/Hibernate.md)
@@ -94,6 +95,14 @@ File Size Limitation | Max Object Size of 5TB ( Max Object Size of 5GB through P
 - [JavaScript](src/DesignComponents/JavaScript)
 - [TypeScript](src/DesignComponents/TypeScript.md)
 - [Angular8](src/DesignComponents/Angular8.md)
+
+# API Technology Options
+
+API Option| Description                                                                                                                 |
+-----------|-----------------------------------------------------------------------------------------------------------------------------|
+[REST](src/DesignComponents/APITechOptions/REST.md) | Used for CRUD style public APis and web app. Mostly used API option.                                                        |
+[gPRC](src/DesignComponents/APITechOptions/gPRC.md) | Used for communication b/w microservices or to collect data from IoT devices. It is relatively faster than REST or GraphQL. |
+[GraphQL](src/DesignComponents/APITechOptions/GraphQL.md) | Used for public API with customizable request body or to aggregate internal data from multiple sources in a public API.     |
 
 # References
 - [System Design Primer](https://github.com/donnemartin/system-design-primer)

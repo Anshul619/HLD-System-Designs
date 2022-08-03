@@ -3,7 +3,7 @@
 
 ## Service-Oriented Architecture ( i.e. Microservice, Loosely coupled architecture )
 - Develop the service oriented architecture i.e. loosely coupled system, `microservice based architecture`.
-- [Read More](MonolothicToMicroservice)
+- [Read More](MicroServicesArchitecture)
 
 ## Design system with High Throughput & Acceptable Latency
 - While designing the solution, generally we should aim for `MAXIMAL throughput` with `ACCEPTABLE latency`.

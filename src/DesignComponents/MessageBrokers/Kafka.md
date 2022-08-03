@@ -99,7 +99,7 @@
 - Brokers keep very little state, mostly just open file pointers & connections.
 
 ## ZooKeeper
-- Zookeeper manages Kafka Cluster ( new broker, new partition etc. ) and brokers coordination
+- Zookeeper manages Kafka Cluster ( new broker, new partition etc. ) and brokers coordination.
 - Zookeeper also manages leaders selection in the Kafka Cluster.
 - For every partition, there would be 1 leader ( reader/writer of the partition ) and 1 or more follower ( which keeps replicating the leader ).
 - Based on configured `replication factor`, the number of followers would be decided.
