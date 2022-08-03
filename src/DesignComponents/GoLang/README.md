@@ -39,10 +39,45 @@
 
 ![img.png](assests/gopackages_img.png)
 
-# Is Golang case sensitive or insensitive?
+# Is Golang case-sensitive or insensitive?
 - Go is a `case-sensitive language`.
 
-# What are Golang pointers?
+# [How to build and install Go Programs?](https://www.digitalocean.com/community/tutorials/how-to-build-and-install-go-programs)
+
+## Test Go Program
+
+```go
+go run <goFileName.go>
+```
+
+## Create a Go Module to build a Go Binary
+
+````go
+go mod init <moduleName>
+````
+
+## Creating Go Binaries
+
+
+````go
+go build // Build with the same name as moduleName in pwd directory
+
+go build -o bin/hello // Build with "hello" name in bin/ directory
+````
+
+## Run Go Binaries
+
+````go
+./moduleName
+````
+
+## Installing Go Programs
+
+````go
+go install // This will build the binary and place it in $GOPATH/bin.
+````
+
+# What is Golang pointers?
 - `*` operator - This operator is called a `dereferencing operator` and is used for accessing the value in the address stored by the pointer.
 - `&` operator - This operator is called the `address operator` and is used for returning the address of the variable stored in the pointer.
 
@@ -315,6 +350,12 @@ return fmt.Sprintf ("Size: %d MB.", 50)
 ```go
 t := i.(T)
 ```
+
+# How to create interfaces in GoLang?
+TBD
+
+# How to write unit tests in GoLang?
+- https://blog.alexellis.io/golang-writing-unit-tests/
 
 # References
 - [Golang Interview Questions](https://www.interviewbit.com/golang-interview-questions/)
