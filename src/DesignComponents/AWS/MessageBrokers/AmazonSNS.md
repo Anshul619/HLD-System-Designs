@@ -1,5 +1,5 @@
 
-# [Amazon SNS (Simple Notification Service)](https://docs.aws.amazon.com/sns/latest/dg/welcome.html)
+# [Amazon SNS (Simple Notification Service)](https://aws.amazon.com/sns)
 
 - Amazon Simple Notification Service (Amazon SNS) is a fully managed messaging service for both application-to-application (A2A) and application-to-person (A2P) communication.
 - Using Amazon SNS topics, your publisher systems can fanout messages to a large number of subscriber systems, including Amazon SQS queues, AWS Lambda functions, HTTPS endpoints, and Amazon Kinesis Data Firehose, for parallel processing.

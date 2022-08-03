@@ -11,14 +11,14 @@ This repo contains the various system design questions and solutions.
 |----------------------------------------------------------|-----------------------------------------|---------------------------------------------------------------|---------------------------------------------------|----------------|------|
 | [Redis](src/DesignComponents/Redis)                      | In-Memory fast Data-Store (Caching)     | Caching                          | 100K queries per second                           | -|  Yes   |
 | [MySQL](src/DesignComponents/SQLvsNoSQL)                 | -                                       | SQL DB                           | 1000 concurrent requests ( 100 as default )       | [< 10ms ( to get a row from 1 million records )](https://www.quora.com/How-can-we-calculate-the-throughput-of-MySQL?share=1)|Yes|
-| [DynomoDB](src/DesignComponents/AWS/DynamoDB.md)         | Predictable performance and cost        | NoSQL DB as a Service ( AWS )  | More than 20 million requests per second          | less than 10-20 ms | No  |
+| [DynomoDB](src/DesignComponents/AWS/Databases/DynamoDB.md)         | Predictable performance and cost        | NoSQL DB as a Service ( AWS )  | More than 20 million requests per second          | less than 10-20 ms | No  |
 | [ElasticSearch](src/DesignComponents/ElasticSearch)      | `Full-Text-Search`, Logs-Analysis (ELK) | Search Engine                    | -                                                 |-|No|
 | [MongoDB](src/DesignComponents/SQLvsNoSQL)               | -                                       | NoSQL DB                         | -                                                 | -|  No                                      |
 | [Apache](https://apache.org/)                            | -                                       | Web Server                       | 512 concurrent requests                           |-|Yes|
 
 # Design Components
 - [SQL vs NoSQL - MySQL, DynomoDB etc.](src/DesignComponents/SQLvsNoSQL)
-  - [DynamoDB](src/DesignComponents/AWS/DynamoDB.md)
+  - [DynamoDB](src/DesignComponents/AWS/Databases/DynamoDB.md)
 - [ElasticSearch - "NoSQL" Search Engine](src/DesignComponents/ElasticSearch)
 - [In-Memory Cache like Redis, MemCache etc.](src/DesignComponents/Redis)
 - [AWS - Various Components, Guide](src/DesignComponents/AWS/README.md)
