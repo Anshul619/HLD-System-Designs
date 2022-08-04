@@ -3,7 +3,7 @@
 
 Amazon Route 53 is a `highly available and scalable Domain Name System (DNS)` web service. 
 
-You can use Route 53 to perform three main functions in any combination
+You can use Route 53 to perform three main functions in any combination,
 - Domain registration
 - DNS routing
 - Health checking                                                                                                                                                                                                                                                                                                                                                    |
@@ -19,5 +19,15 @@ You can use Route 53 to perform three main functions in any combination
 
 ## Dependency
 - `Route 53` provides a high level of dependability required by critical applications.
+
+# Routing Policy
+
+## Geo Based DNS routing
+- The Geo Based DNS routing takes decisions based on the geographic location of the request.
+- Geo Based routing is used when you want to direct the customer to different websites based on the country or region they are browsing from.
+
+## Latency Based Routing
+- Latency Based Routing utilizes latency measurements between networks and AWS data centers.
+- Latency Based Routing is used when you want to give your customers the lowest latency possible.
 
 
