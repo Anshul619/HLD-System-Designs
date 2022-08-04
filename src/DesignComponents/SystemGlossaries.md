@@ -24,7 +24,7 @@
 - They are well-tested and sometimes equipped with redundant components.
 - `99.99% uptime` means that website is down only for `52 mins` in the complete year. This means it is `highly available`.
 - In AWS, high availability is achieved through multiple deployments of the app in `different availability zones`.
-- [Design Scalable System With RDMS on AWS](AWS/DesignScalableSystemWithRDMS)
+- [Design Scalable System With RDMS on AWS](DesignScalableSystemWithRDMS)
 
 ### Components of HA
 - `Redundancy` - Ensures that critical system components have another identical components with the same data, that can take over in case of failure.

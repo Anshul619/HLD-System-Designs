@@ -11,7 +11,7 @@
 ## Point-To-Point Model (Message Queuing)
 - Once the message is delivered to the consumer ( one  ), it would be removed from Queue.
 - The main goal is to `distribute messages individually` and promptly, ensuring that `work is parallelized equitably` and messages are handled roughly in the order they came in the queue.
-- [RabbitMQ](RabbitMQ.md), [Amazon SNS](../AWS/MessageBrokers/AmazonSNS.md) support `Point-To-Point` technique.
+- [RabbitMQ](RabbitMQ.md), [Amazon SNS](../AWS/MessageBrokerServices/AmazonSNS.md) support `Point-To-Point` technique.
 
 ### Two types of point-to-point messaging
 
@@ -24,7 +24,7 @@
 ## Publisher-Subscriber Model (Pub/Sub)
 - Unlike point-to-point model, a message is only removed once it has been consumed by `all category subscribers` or according to `retention policy`.
 - This is `completely asynchronous`. You can't say for sure when this process will happen and in what order.
-- [Kafka](Kafka.md), [Active MQ](ActiveMQ.md), [Amazon SQS](../AWS/MessageBrokers/AmazonSQS.md) supports `Publisher-Subscriber` Model.
+- [Kafka](Kafka.md), [Active MQ](ActiveMQ.md), [Amazon SQS](../AWS/MessageBrokerServices/AmazonSQS.md) supports `Publisher-Subscriber` Model.
 
 ## [Various Message Brokers](../../../README.md)
 
