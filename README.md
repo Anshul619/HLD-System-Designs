@@ -21,9 +21,8 @@ This repo contains the various system design questions and solutions.
   - [DynamoDB](src/DesignComponents/AWS/DatabaseServices/DynamoDB.md)
 - [ElasticSearch - "NoSQL" Search Engine](src/DesignComponents/ElasticSearch)
 - [In-Memory Cache like Redis, MemCache etc.](src/DesignComponents/Redis)
-- [AWS - Various Components](src/DesignComponents/AWS/README.md)
+- [AWS Components](src/DesignComponents/AWS/README.md)
 - [MicroServices Based Architecture](src/DesignComponents/MicroServicesArchitecture)
-- [Design a system that scales to million of users on AWS](src/DesignComponents/DesignScalableSystemWithRDMS)
 
 ## [Message Brokers](src/DesignComponents/MessageBrokers)
 
@@ -66,6 +65,7 @@ File Size Limitation | Max Object Size of 5TB ( Max Object Size of 5GB through P
 - [Logging Solution](src/LoggingSolution)
 - [MakeMyTrip Search](src/MakeMyTripSearch)
 - [URL Shortening Service](src/URLShorteningService)
+- [Design a system that scales to million of users on AWS](src/DesignComponents/DesignScalableSystemWithRDMS)
 
 # Engineering Principles
 - [SOLID](src/DesignComponents/SOLID.md)
