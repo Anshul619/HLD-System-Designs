@@ -45,9 +45,9 @@ Ordering Of Messages                  | `Supported ( using partition key )`     
 Prioritizing Messages for consumption | Not-Supported.                                                                        | `Supported`                                                                                                                                                        |                                                                    |
 Payload Size | `Default 1MB limit`                                                                   | No constraints                                                                                                                                                     |                                                                    |
 
-## [File Storages on AWS](src/DesignComponents/AWS/FileStorageServices)
+## [File Storages on AWS](src/DesignComponents/AWS/StorageServices)
 
-Basis                                 | [S3](src/DesignComponents/AWS/FileStorageServices/AmazonS3.md)                 | [EFS](src/DesignComponents/AWS/FileStorageServices/AmazonEFS.md)                    | EBS                                                   |
+Basis                                 | [S3](src/DesignComponents/AWS/StorageServices/AmazonS3.md)                 | [EFS](src/DesignComponents/AWS/StorageServices/AmazonEFS.md)                    | EBS                                                   |
 ---------------------------------------|-------------------------------------------------------------------------|------------------------------------------------------------------------------|-------------------------------------------------------|
 Storage | Object Storage ( can be mounted using s3fs plugin or accessed over HTTP ) | Actual FileSystem ( NFS interface, which can be shared b/w `EC2 instances` ) |
 IO Speed | Relatively slower than EFS                                              | Faster than S3                                                               |

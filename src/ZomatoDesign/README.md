@@ -29,7 +29,7 @@
 - To achieve transactions between distributed microservices and avoid data/transaction loss.
 - MQ vs Kafka - https://www.interviewbit.com/blog/rabbitmq-vs-kafka/#difference-between-rabbitmq-and-kafka
 
-## [Apache Spark/Beam](../DesignComponents/AWS/ComputingServices/AmazonEMR.md)
+## [Apache Spark/Beam](../DesignComponents/AWS/ComputeServices/AmazonEMR.md)
 - This is the computing engine.
 - For running map-reduce jobs to `select driver for efficient delivery` and generate recommendations based on continuous streams of user activity, order activity, pricing and promo changes, etc.
 - It will select the distributed data, create a map and then reduce the values to give proper data.
