@@ -34,7 +34,7 @@ Component| Service Type                    | Description                        
 - [DesignScalableSystemWithRDMS](../../DesignScalableSystemWithRDMS)
 
 # Centralized Logging Solution in AWS
-- The essential services that can be used is `Amazon CloudWatch` Logs, store them in `Amazon S3`, and then use `Amazon Elastic Search` to visualize them. 
+- The essential services that can be used is `Amazon CloudWatch` logs, store them in `Amazon S3`, and then use `Amazon Elastic Search` to visualize them. 
 - Amazon Kinesis Firehose can also be used to move the data from Amazon S3 to Amazon ElasticSearch.
 
 # AWS Cost Exploration Services

@@ -9,12 +9,12 @@ This repo contains the various system design components info, questions and solu
 
 # [SQL & NoSQL databases](src/DesignComponents/SQLvsNoSQL)
 
-| Component                                                         | Strength                                | Component Type                | Very Rough Throughput (QPS)                 | Latency | Open Sourced? |
-|-------------------------------------------------------------------|-----------------------------------------|-------------------------------|---------------------------------------------|----------------|---------------|
-| [MySQL](src/DesignComponents/SQLvsNoSQL)                          | -                                       | SQL DB                        | 1000 concurrent requests ( 100 as default ) | [< 10ms ( to get a row from 1 million records )](https://www.quora.com/How-can-we-calculate-the-throughput-of-MySQL?share=1)| Yes           |
-| [DynamoDB](src/DesignComponents/AWS/DatabaseServices/DynamoDB.md) | Predictable performance and cost        | NoSQL DB as a Service ( AWS ) | More than 20 million requests per second    | less than 10-20 ms | No            |
-| [ElasticSearch](src/DesignComponents/ElasticSearch)               | `Full-Text-Search`, `Logs-Analysis (ELK)` | NoSQL Search Engine           | -                                           |-|No|
-| [MongoDB](src/DesignComponents/SQLvsNoSQL)                        | -                                       | NoSQL DB                      | -                                           | -| No            |
+| Component                                                         | Strength                                | Component Type                | Very Rough Throughput (QPS)                 | Latency | Pricing Model                                                   |
+|-------------------------------------------------------------------|-----------------------------------------|-------------------------------|---------------------------------------------|----------------|-----------------------------------------------------------------|
+| [MySQL](src/DesignComponents/SQLvsNoSQL)                          | -                                       | SQL DB                        | 1000 concurrent requests ( 100 as default ) | [< 10ms ( to get a row from 1 million records )](https://www.quora.com/How-can-we-calculate-the-throughput-of-MySQL?share=1)| `Open Source` ( [RDS](src/DesignComponents/AWS/RDS.md) on AWS ) |
+| [DynamoDB](src/DesignComponents/AWS/DatabaseServices/DynamoDB.md) | Predictable performance and cost        | NoSQL DB as a Service ( AWS ) | More than 20 million requests per second    | less than 10-20 ms | `AWS Managed Service`   |
+| [ElasticSearch](src/DesignComponents/ElasticSearch)               | `Full-Text-Search`, `Logs-Analysis (ELK)` | NoSQL Search Engine           | -                                           |-| `Open Source`                                                             |
+| [MongoDB](src/DesignComponents/SQLvsNoSQL)                        | -                                       | NoSQL DB                      | -                                           | -| `Open Source`                                                              |
 
 # [InMemory Cache](src/DesignComponents/Redis)
 
