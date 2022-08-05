@@ -12,7 +12,7 @@
 - It should create the corresponding micro containers for those different micro-services.
 
 ## Up
-- Start up the application stack using the docker-compose up command. We’ll add the -d flag to run everything in the background. 
+- Start up the application stack using the docker-compose up command. We’ll add the -d flag to run everything in the background.
 
 ````
 docker-compose -f docker-compose.yaml -f service-credit/docker-compose.service-credit.yaml up -d
@@ -37,10 +37,3 @@ docker-compose -f docker-compose.yaml -f service-credit/docker-compose.service-c
 ````
 reflex -r "\.go$$" -s -- sh -c "go run ./cmd/api/"
 ````
-
-
-# [Kubernates](https://www.techtarget.com/searchitoperations/tutorial/A-step-by-step-tutorial-for-Kubernetes-implementation)
-- TBD
-
-# References
-- [The Uber Engineering Tech Stack, Part I: The Foundation](https://eng.uber.com/tech-stack-part-one-foundation/)

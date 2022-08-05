@@ -1,5 +1,5 @@
 
-# [Amazon DynomoDB](https://aws.amazon.com/dynamodb/)
+# [Amazon DynamoDB](https://aws.amazon.com/dynamodb/)
 
 ## Automated Storage Scaling
 - There is `no limit to the amount of data you can store in a DynamoDB table`, and the service automatically allocates more storage, as you store more data using the DynamoDB write APIs.
@@ -27,8 +27,6 @@
 ### Strong Consistency Model
 - The second model is called the Strong Consistency Model. 
 - This model has a delay in writing the data, but it guarantees that you will always see the updated data every time you read it.
-
-
 
 # References
 - [Amazon DynamoDB vs Kafka](https://stackshare.io/stackups/amazon-dynamodb-vs-kafka)
