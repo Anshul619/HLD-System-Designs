@@ -1,4 +1,7 @@
 
+# Introduction
+- A distributed, RESTful modern search and analytics engine based on Apache Lucene info.
+
 # Key Features of ElasticSearch
 
 ## Stores unstructured data
@@ -25,7 +28,7 @@
 
 ## Inverted indexes and Index Terms
 - The inverted index maps `terms` to `documents` (and possibly positions in the documents) containing the term.
-- Using inverted indexes, we can efficiently find documents given term prefixes
+- Using inverted indexes, we can efficiently find documents given term prefixes.
   - For example - find all documents, starting with `c`.
 
 ![img.png](assests/inverted_indexes.png)
@@ -40,24 +43,16 @@
 ## Shard in ES
 - The data stored in an index can be divided into multiple partitions. 
 - Each of these partitions is called Shard, which is managed and controlled by a separate node. 
-- An Elasticsearch index has `five shards by default`.
+- An `Elasticsearch index has five shards by default`.
+
+## What is tokenizer in Elasticsearch?
+- Tokenizers are used to generate the `tokens from a text string`. 
+- It breaks down the text string into tokens where it finds whitespace or other punctuation symbols.
 
 ## [GeoLocation Support](https://www.elastic.co/guide/en/elasticsearch/reference/current/query-dsl-geo-bounding-box-query.html)
 - TBD
 
-# What is ELK stack? How Elasticsearch connect with it?
-- `Elasticsearch` is a `NoSQL database tool`, which is used to store the unstructured data.
-- `Logstash` is a `log pipeline tool` to perform transformation on data. 
-  - It takes input from different sources and performs various transformations on it. 
-  - At last, it exports the data into various targets.
-- `Kibana` is a `data visualization tool`, which provides an interactive UI (User Interface) to the users for data visualization.
-
-# What is tokenizer in Elasticsearch?
-- Tokenizers are used to generate the `tokens from a text string`. 
-- It breaks down the text string into tokens where it finds whitespace or other punctuation symbols
-
-# [GraphQL Support in ElasticSearch](https://blog.smartive.ch/graphql-and-elasticsearch-a-love-letter-9ed64d5c094)
-- TBD
+# [GraphQL with ElasticSearch](ESWithGraphQL.md)
 
 # References
 - [Elasticsearch from the Bottom Up](https://www.elastic.co/blog/found-elasticsearch-from-the-bottom-up)

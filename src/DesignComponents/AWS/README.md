@@ -31,7 +31,7 @@ Component| Service Type                    | Description                        
 [Amazon EMR](ComputeServices/AmazonEMR.md) | Other Service                   | Fully Managed Service for Amazon Spark                                           |
 
 # System Designs Using AWS
-- [DesignScalableSystemWithRDMS](../DesignScalableSystemWithRDMS)
+- [DesignScalableSystemWithRDMS](../../DesignScalableSystemWithRDMS)
 
 # Centralized Logging Solution in AWS
 - The essential services that can be used is `Amazon CloudWatch` Logs, store them in `Amazon S3`, and then use `Amazon Elastic Search` to visualize them. 

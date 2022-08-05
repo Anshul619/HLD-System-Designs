@@ -1,4 +1,7 @@
 
+# Introduction
+- Popular in-memory data platform used as a cache that can be deployed on-premises, across clouds, and hybrid environments.
+
 # Key Features of Redis ( REmote DIctionary Server)
 
 ## Speed - 100K queries per second
@@ -27,7 +30,6 @@ GET newkey
 MGET foo bar
 > 1. "a"
 > 2. "b"
-
 ```
 
 ### Hashes
@@ -90,7 +92,6 @@ redis 127.0.0.1:6379> ZRANGEBYSCORE w3resourcelist 0 1000
 - `Master copy` is maintained by master-slave and replicated to `n other SLAVE` nodes.
 
 ### [How to configure master-slave in Redis?](https://redis.io/docs/manual/replication/)
-
 - To configure basic Redis replication is trivial.
 - Just add the following line to the replica configuration file `redis.conf`.
 
@@ -105,7 +106,7 @@ replicaof 192.168.1.1 6379
 - Java etc.
 
 ## [Sharding is supported in Redis](https://redis.io/docs/manual/scaling/)
-- Redis scales `horizontally with a deployment topology` called `Redis Cluster`.
+- Redis scales `horizontally with a deployment topology called Redis Cluster`.
 - What do you get with `Redis Cluster`?
   - The ability to automatically split your dataset among multiple nodes.
   - The ability to continue operations when a subset of the nodes are experiencing failures or are unable to communicate with the rest of the cluster.
@@ -113,7 +114,6 @@ replicaof 192.168.1.1 6379
 ### [How to enable Redis Cluster?](https://redis.io/docs/manual/scaling/)
 
 - Go to `redis.conf` file and add following lines
-
 ```
 port 7000
 cluster-enabled yes
@@ -125,11 +125,7 @@ appendonly yes
 # [LRU - default eviction policy in Redis](https://docs.redis.com/latest/rs/databases/configure/eviction-policy/)
 - `volatile-lru` - The least recently used keys would be removed with expire field set to true.
 
-# [Redis vs Memcache](https://www.devdude.com/memcached-vs-redis/)
-- `Mostly Redis can be used in all scenarios.`
-- Redis is `Single threaded` ( uses async. IO ) while memcache is multi-threaded.
-- Memcache only supports caching while `replication and persistence is supported in Redis` ( in addition to caching ).
-- Memcache only supports `String` datatype.
+# [Redis vs Memcache](RedisVsMemCache.md)
 
 # Open Questions 
 

@@ -6,7 +6,7 @@
 - The A2P functionality enables you to send messages to users at scale via SMS, mobile push, and email.
 - The A2A pub/sub functionality provides topics for high-throughput, push-based, many-to-many messaging between distributed systems, microservices, and event-driven serverless applications.
 
-![img.png](../assests/sns_img.png)
+![img.png](assests/sns/sns_img.png)
 
 # [Amazon SNS vs Others](../../../../README.md#message-brokers)
 
