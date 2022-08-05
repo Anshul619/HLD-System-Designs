@@ -15,25 +15,29 @@
 - Start up the application stack using the docker-compose up command. We’ll add the -d flag to run everything in the background.
 
 ````
-docker-compose -f docker-compose.yaml -f service-credit/docker-compose.service-credit.yaml up -d
+docker-compose -f docker-compose.yaml -f service/docker-compose.service.yaml up -d
 ````
 
 ## Down
 - When you’re ready to tear it all down, simply run docker-compose down or hit the trash can on the Docker Dashboard for the entire app. The containers will stop and the network will be removed.
 
 ````
-docker-compose -f docker-compose.yaml -f service-credit/docker-compose.service-credit.yaml down
+docker-compose -f docker-compose.yaml -f service/docker-compose.service.yaml down
 ````
 
 ## Logs
 - Let’s look at the logs using the docker-compose logs -f command. You’ll see the logs from each of the services interleaved into a single stream. This is incredibly useful when you want to watch for timing-related issues. The -f flag “follows” the log, so will give you live output as it’s generated.
 
 ````
-docker-compose -f docker-compose.yaml -f service-credit/docker-compose.service-credit.yaml`  logs -f
+docker-compose -f docker-compose.yaml -f service/docker-compose.service.yaml`  logs -f
 ````
 
-### Docker command
+## Specify Runtime options with Memory, CPUs, and GPUs
 
 ````
-reflex -r "\.go$$" -s -- sh -c "go run ./cmd/api/"
+docker run -it \
+--cpu-rt-runtime=950000 \
+--ulimit rtprio=99 \
+--cap-add=sys_nice \
+debian:jessie
 ````

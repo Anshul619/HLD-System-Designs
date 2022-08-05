@@ -9,7 +9,7 @@ Component| Service Type                    | Description                        
 [Amazon Route 53](NetworkingServices/AmazonRoute53.md)| Networking Service              | AWS DNS Service                                                                  |
 [Amazon EC2](ComputeServices/EC2.md) | Compute Service                 | Virtual Machine service                                                          |
 [AWS Lamdba](ComputeServices/AWSLambda.md) | Compute Service               | Run code without thinking about servers or clusters                              |
-[AWS AutoScaling](ManagementServices/AutoScaling.md) | Compute Service               | Auto-scaling of EC2 instances, based on demand & traffic                         |
+[AWS AutoScaling](MgmtServices/AutoScaling.md) | Compute Service               | Auto-scaling of EC2 instances, based on demand & traffic                         |
 [Amazon RDS](DatabaseServices/RDS.md) | Database Service                | Database management service for relational databases                             |
 [Dynamo DB](DatabaseServices/DynamoDB.md) | Database Service                | NoSQL service                                                                    |
 [Amazon S3](StorageServices/AmazonS3.md) | Storage Service             | Object storage built to retrieve any amount of data from anywhere                |
@@ -25,7 +25,7 @@ Component| Service Type                    | Description                        
 [Amazon SQS](MessageBrokerServices/AmazonSQS.md) | Message Broker Service          | Fully managed Message Queue Service                                              |
 [Amazon MQ](MessageBrokerServices/AmazonMQ.md) | Message Broker Service          | Open Source ( ActiveMQ, RabbitMQ ) Queue Migration service                       |
 [Amazon Elastic Cache](https://aws.amazon.com/elasticache/) | Cache Service                   | Fully Managed Redis or Memcache                                                  |
-[Cloud Formation](ManagementServices/CloudFormation.md) | AWS Resource Provisioning Service ||
+[Cloud Formation](MgmtServices/CloudFormation.md) | AWS Resource Provisioning Service ||
 [Amazon Redshift](https://aws.amazon.com/redshift/) | Other Service                   | Redshift is a data warehouse product used in data analysis.                      |
 [AWS Beanstalk](https://aws.amazon.com/elasticbeanstalk/) | Other Service                   | Servers Management - Easy to begin, Impossible to outgrow                        |
 [Amazon EMR](ComputeServices/AmazonEMR.md) | Other Service                   | Fully Managed Service for Amazon Spark                                           |
