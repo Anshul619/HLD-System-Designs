@@ -17,14 +17,16 @@ This repo contains the various system design components info, questions and solu
 | [MongoDB](src/DesignComponents/SQLvsNoSQL)                        | -                                       | NoSQL DB                      | -                                           | -| No            |
 
 # [InMemory Cache](src/DesignComponents/Redis)
-- [Read about Redis vs MemCache](src/DesignComponents/Redis/RedisVsMemCache.md)
 
 | Component                                                         | Strength                                                                               | Very Rough Throughput (QPS)                       | Latency | Pricing Model                                                         |
 |-------------------------------------------------------------------|-----------------------------------------|---------------------------------------------------|----------------|-----------------------------------------------------------------------|
 | [Redis](src/DesignComponents/Redis)                               | In-Memory fast Data-Store (Caching)     | 100K queries per second                           | -| `Open Source` ( [Elastic Cache](https://aws.amazon.com/elasticache/) on AWS ) |
 
+[Read about Redis vs MemCache](src/DesignComponents/Redis/RedisVsMemCache.md)
+
 # [Message Brokers](src/DesignComponents/MessageBrokers)
-- Message brokers are used to decouple and enable `Event Driven Architectures` i.e. communicate the events between microservices.
+
+Message brokers are used to decouple and enable `Event Driven Architectures` i.e. communicate the events between microservices.
 
 | Basis                                 | [Kafka](src/DesignComponents/MessageBrokers/Kafka.md)                                     | [RabbitMQ](src/DesignComponents/MessageBrokers/RabbitMQ.md)                                                                                                        | [Amazon SQS](src/DesignComponents/AWS/MessageBrokerServices/AmazonSQS.md)                                                                                      | [Amazon SNS](src/DesignComponents/AWS/MessageBrokerServices/AmazonSNS.md)                                                                                                                           | [Active MQ](src/DesignComponents/MessageBrokers/ActiveMQ.md)               |
 |---------------------------------------|-------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------|
