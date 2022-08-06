@@ -18,6 +18,8 @@ A CloudFormation template is deployed into the AWS environment as a `STACK`.
 - Use AWS CloudFormation to call the bucket and `create a stack on your template`.
 - CloudFormation reads the file and understands the services that are called, their order, the relationship between the services, and provisions the services one after the other.
 
+![cloudformation_how_it_works.png](https://d1.awsstatic.com/Products/product-name/diagrams/product-page-diagram_CloudFormation.ad3a4c93b4fdd3366da3da0de4fb084d89a5d761.png)
+
 # Pros and Cons
 
 | Pros                                 | Cons                                      |
@@ -27,9 +29,15 @@ A CloudFormation template is deployed into the AWS environment as a `STACK`.
 | Integration with CI Pipeline         | Drift can be painful                      |
 | Large Community Support              |                                           |
 
+# Alternatives to AWS CloudFormation
+- [Terraform - Open Source](https://www.terraform.io/)
+- [Puppet - Open Source](https://puppet.com/)
+- [Ansible by Red Hat](https://www.ansible.com/)
+
 # [Sample Cloudformation templates](https://github.com/awslabs/aws-cloudformation-templates)
 - [Aurora Serverless](templates/aurora_serverless.yml)
 - [EKS cluster for EC2 instances](templates/EKS_ECS.yml)
+- [AutoScaling of EC2 instances](templates/Auto_Scaling_Group.yml)
 
 # References
-[What is AWS Cloudformation? Pros and Cons?](https://www.youtube.com/watch?v=0Sh9OySCyb4)
+- [What is AWS Cloudformation? Pros and Cons?](https://www.youtube.com/watch?v=0Sh9OySCyb4)

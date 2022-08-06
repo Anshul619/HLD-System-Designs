@@ -16,7 +16,7 @@ This repo contains the various system design components info, questions and solu
 | [ElasticSearch](src/DesignComponents/ElasticSearch)               | `Full-Text-Search`, `Logs-Analysis (ELK)` | NoSQL Search Engine           | -                                           |-| `Open Source`                                                             |
 | [MongoDB](src/DesignComponents/SQLvsNoSQL)                        | -                                       | NoSQL DB                      | -                                           | -| `Open Source`                                                              |
 
-# [InMemory Cache](src/DesignComponents/Redis)
+# [In Memory Cache](src/DesignComponents/Redis)
 
 | Component                                                         | Strength                                                                               | Very Rough Throughput (QPS)                       | Latency | Pricing Model                                                         |
 |-------------------------------------------------------------------|-----------------------------------------|---------------------------------------------------|----------------|-----------------------------------------------------------------------|
@@ -104,8 +104,6 @@ Message brokers are used to decouple and enable `Event Driven Architectures` i.e
 # Tech Skills
 - [GoLang](src/DesignComponents/GoLang)
 - [Spring Boot & Microservices](src/DesignComponents/SpringBootAndMicroServices)
-- [Docker](src/DesignComponents/DevOps/Docker.md)
-- [Kubernates](src/DesignComponents/DevOps/Kubernates.md)
 - [Hibernate](src/DesignComponents/Hibernate.md)
 - [Java](src/DesignComponents/Java)
 - [Hibernate](src/DesignComponents/Hibernate.md)
@@ -114,6 +112,10 @@ Message brokers are used to decouple and enable `Event Driven Architectures` i.e
 - [JavaScript](src/DesignComponents/JavaScript)
 - [TypeScript](src/DesignComponents/TypeScript.md)
 - [Angular8](src/DesignComponents/Angular8.md)
+
+# DevOps Skills
+- [Docker](src/DesignComponents/DevOps/Docker.md)
+- [Kubernates](src/DesignComponents/DevOps/Kubernates.md)
 
 # References
 - [System Design Primer](https://github.com/donnemartin/system-design-primer)

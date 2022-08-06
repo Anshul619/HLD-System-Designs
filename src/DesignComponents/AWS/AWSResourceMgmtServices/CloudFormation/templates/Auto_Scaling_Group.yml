@@ -1,0 +1,42 @@
+# https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-as-group.html
+Type: AWS::AutoScaling::AutoScalingGroup
+Properties:
+AutoScalingGroupName: String
+AvailabilityZones:
+- String
+CapacityRebalance: Boolean
+Context: String
+Cooldown: String
+DefaultInstanceWarmup: Integer
+DesiredCapacity: String
+DesiredCapacityType: String
+HealthCheckGracePeriod: Integer
+HealthCheckType: String
+InstanceId: String
+LaunchConfigurationName: String
+LaunchTemplate:
+LaunchTemplateSpecification
+LifecycleHookSpecificationList:
+- LifecycleHookSpecification
+LoadBalancerNames:
+- String
+MaxInstanceLifetime: Integer
+MaxSize: String
+MetricsCollection:
+- MetricsCollection
+MinSize: String
+MixedInstancesPolicy:
+MixedInstancesPolicy
+NewInstancesProtectedFromScaleIn: Boolean
+NotificationConfigurations:
+- NotificationConfiguration
+PlacementGroup: String
+ServiceLinkedRoleARN: String
+Tags:
+- TagProperty
+TargetGroupARNs:
+- String
+TerminationPolicies:
+- String
+VPCZoneIdentifier:
+- String
