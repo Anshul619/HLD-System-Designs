@@ -6,11 +6,9 @@
 
 ![img.png](../assests/RDS_database_engines.png)
 
-# [Amazon DMS](https://aws.amazon.com/dms/)
-- AWS Database Migration Service, to migrate other database to Amazon RDS.
-
 # [Amazon Aurora](https://aws.amazon.com/rds/aurora/)
 - Designed for unparalleled high performance and availability at global scale with full MySQL and PostgreSQL compatibility.
+- [Aurora Serverless - Cloudformation template](../AWSResourceMgmtServices/CloudFormation/templates/aurora_serverless.yml)
 
 # Which type of scaling would you recommend for RDS and why?
 
@@ -26,3 +24,6 @@
 - RDS maintenance window lets you decide when DB instance modifications, database engine version upgrades, and software patching have to occur.
 - The automatic scheduling is done only for patches that are related to security and durability.
 - By default, there is a 30-minute value assigned as the maintenance window and the DB instance will still be available during these events though you might observe a minimal effect on performance.
+
+# [Amazon DMS](https://aws.amazon.com/dms/)
+- AWS Database Migration Service, to migrate other databases to Amazon RDS.

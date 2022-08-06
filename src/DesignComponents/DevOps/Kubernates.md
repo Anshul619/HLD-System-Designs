@@ -1,12 +1,17 @@
 
 # [Kubernates](https://kubernetes.io)
 - Kubernetes, also known as K8s, is an `open-source system for automating deployment, scaling, and management of containerized applications`.
+- We can use kubernates to manage, create containers ( through pods, nodes )
+- Each docker container would run the micro-service ( golang, java, python service )
+- A pod can contain one or multiple containers
+- And a node can have one or multiple pods.
+- Kubernates would manage these - Create, Update, Delete, Auto-Scale based on the configuration and params.
+
+![img.png](assests/kubernates_docker_img.png)
 
 # [What are Pods?](https://kubernetes.io/docs/concepts/workloads/pods/)
 - Pods are the smallest deployable units of computing that you can create and manage in Kubernetes.
-- A Pod (as in a pod of whales or pea pod) is a group of one or more containers, with shared storage and network resources, and a specification for how to run the containers. 
-
-![img.png](assests/kubernates_docker_img.png)
+- A Pod (as in a pod of whales or pea pod) is a group of one or more containers, with shared storage and network resources, and a specification for how to run the containers.
 
 # [kubectl Cheat Sheet](https://kubernetes.io/docs/reference/kubectl/cheatsheet/)
 
