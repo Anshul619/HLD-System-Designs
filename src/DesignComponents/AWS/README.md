@@ -46,7 +46,7 @@ Component| Service Type                                           | Description 
 - [AWS Budgets](https://aws.amazon.com/aws-cost-management/aws-budgets/)
 - [Cost Allocation Tags](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/cost-alloc-tags.html)
 
-# [Why some services are called "AWS XXX" and the others "Amazon XXX"?](https://stackoverflow.com/questions/33125790/why-some-services-are-called-aws-xxx-and-the-others-amazon-xxx)
+# [Why some services are called "AWS X" and the others "Amazon Y"?](https://stackoverflow.com/questions/33125790/why-some-services-are-called-aws-xxx-and-the-others-amazon-xxx)
 - Utility services are prefixed with AWS, while standalone services are prefixed by "Amazon".
 
 # References
