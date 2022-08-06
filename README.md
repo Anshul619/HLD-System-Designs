@@ -73,6 +73,7 @@ Message brokers are used to decouple and enable `Event Driven Architectures` i.e
 
 # Other Design Components
 - [ELK](src/DesignComponents/ElasticSearch/ELK.md)
+- [Apache Spark](src/DesignComponents/ApacheSpark.md)
 
 # HLD - Design Problems
 - [Zomoto HLD Design](src/ZomatoDesign)
