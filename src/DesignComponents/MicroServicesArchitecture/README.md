@@ -14,7 +14,7 @@
 - API Gateway to route between microservices.
 - Use [message brokers](../MessageBrokers) ([Kafka Cluster](../MessageBrokers/Kafka.md), [RabbitMQ](../MessageBrokers/RabbitMQ.md), [ActiveMQ](../MessageBrokers/ActiveMQ.md) etc.) to asynchronously pass data b/w microservices.
 - Use Jenkins, [Docker](../DevOps/Docker.md), [Kubernates](../DevOps/Kubernates.md) for the deployment
-- Logging using [ELK](../DevOps/ELK.md), [Kafka Cluster](../MessageBrokers/Kafka.md) etc.
+- Logging using [ELK](../MonitoringTools/ELK.md), [Kafka Cluster](../MessageBrokers/Kafka.md) etc.
 
 ## Benefits of Microservices design
 

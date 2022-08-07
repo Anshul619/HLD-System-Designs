@@ -1,10 +1,10 @@
 # System-Designs
 
 This repo contains the various system design components info, questions and solutions.
+- :star: [AWS Components](src/DesignComponents/AWS)
 - [System Design Glossaries](src/DesignComponents/SystemGlossaries.md)
 - [System Design Tips](src/DesignComponents/SystemDesignTips.md)
 - [System Estimation Guide](src/DesignComponents/SystemEstimations.md)
-- :star: [AWS Components](src/DesignComponents/AWS)
 - [MicroServices Based Architecture](src/DesignComponents/MicroServicesArchitecture)
 
 # [SQL & NoSQL databases](src/DesignComponents/SQLvsNoSQL)
@@ -18,9 +18,9 @@ This repo contains the various system design components info, questions and solu
 
 # [In Memory Cache](src/DesignComponents/Redis)
 
-| Component                                                         | Strength                                                                               | Very Rough Throughput (QPS)                       | Latency | Pricing Model                                                         |
-|-------------------------------------------------------------------|-----------------------------------------|---------------------------------------------------|----------------|-----------------------------------------------------------------------|
-| :star:[Redis](src/DesignComponents/Redis)                               | In-Memory fast Data-Store (Caching)     | 100K queries per second                           | -| `Open Source` ( [Elastic Cache](https://aws.amazon.com/elasticache/) on AWS ) |
+| Component                                  | Strength                                                                               | Very Rough Throughput (QPS)                       | Latency | Pricing Model                                                         |
+|--------------------------------------------|-----------------------------------------|---------------------------------------------------|----------------|-----------------------------------------------------------------------|
+| :star: [Redis](src/DesignComponents/Redis) | In-Memory fast Data-Store (Caching)     | 100K queries per second                           | -| `Open Source` ( [Elastic Cache](https://aws.amazon.com/elasticache/) on AWS ) |
 
 [Read about Redis vs MemCache](src/DesignComponents/Redis/RedisVsMemCache.md)
 
@@ -53,27 +53,23 @@ Message brokers are used to decouple and enable `Event Driven Architectures` i.e
 | IO Speed | Relatively slower than EFS                                                | Faster than S3                                                               |
 | Rough Costing | [$0.021/GB-Month](https://aws.amazon.com/s3/pricing/)                     | [$0.30/GB-Month](https://aws.amazon.com/efs/pricing/)                        | [$0.10/GB-month](https://aws.amazon.com/ebs/pricing/) |
 | Use Cases | Static Web Content, Media Data ( like image, video, documents )           | Shared Volume b/w EC2 instances                                              | Volume for a single EC2 instance                      |
-| Availability | `99.999999999% availability`, durability in at least 3 AZs in S3 Region   | `99.9% availability`, with multiple AZs                                      | `99.999% availability`, with multiple AZs             |
+| Availability | `99.999999999% availability`, durability in at least `3 AZs in S3 Region`   | `99.9% availability`, with multiple AZs                                      | `99.999% availability`, with multiple AZs             |
 | Storage Size | No limit                                                                  | No limit                                                                     | Max Storage size of 16TB                              |
 | File Size Limitation | Max Object Size of 5TB ( Max Object Size of 5GB through PUT API )         | Max File Size of 48TB                                                        | No Limit                                              |
 
 # API Technology Options
 
-| API Option| Description                                                                                                                |
-| -----------|----------------------------------------------------------------------------------------------------------------------------|
-| [REST](src/DesignComponents/APITechOptions/REST.md) | Used for CRUD style public APis and web app.                                                 |
-| [gPRC](src/DesignComponents/APITechOptions/gPRC.md) | Used for communication b/w microservices or to collect data from IoT devices. It is relatively faster than REST or GraphQL. |
-| [GraphQL](src/DesignComponents/APITechOptions/GraphQL.md) | Used for public API with customizable request body or to aggregate internal data from multiple sources in a public API.    |
+| API Option| Description                                                                                                                     |
+| -----------|---------------------------------------------------------------------------------------------------------------------------------|
+| :star: [REST](src/DesignComponents/APITechOptions/REST.md) | Used for CRUD style public APis and web app.                                                                                    |
+| [gPRC](src/DesignComponents/APITechOptions/gPRC.md) | Used for communication b/w [microservices](src/DesignComponents/MicroServicesArchitecture) or to collect data from IoT devices. It is relatively faster than REST or GraphQL. |
+| [GraphQL](src/DesignComponents/APITechOptions/GraphQL.md) | Used for public API with customizable request body or to aggregate internal data from multiple sources in a public API.         |
 
 # App Servers
 
 | Component                                                         | Strength                                                                               | Very Rough Throughput (QPS)                       | Latency | Pricing Model                                                         |
 |-------------------------------------------------------------------|-----------------------------------------|---------------------------------------------------|----------------|-----------------------------------------------------------------------|
 | [Apache](https://apache.org/)                                     | -                                       | Web Server                       | 512 concurrent requests                           |-|Yes|
-
-# Other Design Components
-- [ELK](src/DesignComponents/DevOps/ELK.md)
-- [Apache Spark](src/DesignComponents/ApacheSpark.md)
 
 # HLD - Design Problems
 - :star: [Zomoto HLD Design](src/ZomatoDesign)
@@ -86,8 +82,8 @@ Message brokers are used to decouple and enable `Event Driven Architectures` i.e
 - [URL Shortening Service](src/URLShorteningService)
 
 # Engineering Principles
-- [SOLID](src/DesignComponents/SOLID.md)
-- [OOPS](src/DesignComponents/OOPS.md)
+- :star: [SOLID](src/DesignComponents/SOLID.md)
+- :star: [OOPS](src/DesignComponents/OOPS.md)
 - [Design Patterns](src/DesignComponents/DesignPatterns)
 - [DRY](src/DesignComponents/DRY.md)
 
@@ -115,8 +111,15 @@ Message brokers are used to decouple and enable `Event Driven Architectures` i.e
 - [Angular8](src/DesignComponents/Angular8.md)
 
 # DevOps Skills
-- [Docker](src/DesignComponents/DevOps/Docker.md)
 - :star: [Kubernates](src/DesignComponents/DevOps/Kubernates.md)
+- [Docker](src/DesignComponents/DevOps/Docker.md)
+
+# Monitoring Tools
+- :star: [New Relic](src/DesignComponents/MonitoringTools/NewRelic.md)
+- [ELK](src/DesignComponents/MonitoringTools/ELK.md)
+
+# Other Design Components
+- [Apache Spark](src/DesignComponents/ApacheSpark.md)
 
 # References
 - [System Design Primer](https://github.com/donnemartin/system-design-primer)

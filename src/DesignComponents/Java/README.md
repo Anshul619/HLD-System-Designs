@@ -17,7 +17,7 @@ Java language was developed in such a way that it does not depend on any hardwar
 - Java does not provide low-level programming functionalities like Pointers
 - Java makes use of references as these cannot be manipulated, unlike pointers.
 - For example, non-primitives are always references in Java.
-- So we cannot pass large objects (like we can do in C++) to functions, *we always pass references in Java*.
+- So we cannot pass large objects (like we can do in C++) to functions, `we always pass references in Java`.
 
 2. Better Code Maintainability in Java
 - Also, Java codes are always written in the form of classes and objects.

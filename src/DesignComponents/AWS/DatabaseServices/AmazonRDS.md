@@ -23,3 +23,6 @@
 
 # [Amazon DMS](https://aws.amazon.com/dms/)
 - AWS Database Migration Service, to migrate other databases to Amazon RDS.
+
+# References
+- [AWS RDS Max Connections Limit As Per Instance Type](https://sysadminxpert.com/aws-rds-max-connections-limit/)

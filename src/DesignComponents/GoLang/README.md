@@ -6,8 +6,9 @@
   - It also uses a compile-link model for generating executable binaries from the source code. 
   - Go is a simple language with elegant and easy to understand syntax structures. 
   - It has a built-in collection of powerful standard libraries that helps developers in solving problems without the need for third party packages. 
-  - Go has first-class support for Concurrency having the ability to use `multi-core processor architectures` to the advantage of the developer and utilize memory efficiently. 
+  - Go has first-class supports for Concurrency having the ability to use `multi-core processor architectures` to the advantage of the developer and utilize memory efficiently. 
   - This helps the applications scale in a simpler way.
+- Go technically is [pass by value](https://stackoverflow.com/questions/47296325/passing-by-reference-and-value-in-go-to-functions)
 
 # What are the advantages of Golang over other languages?
 
@@ -26,7 +27,7 @@
 - This ensures that the `code is type-safe and all type conversions are handled efficiently`. 
 - This is done for reducing the chances of errors at runtime.
 
-## Easy to install Binaries
+## Easy to install binaries
 - Go provides support for generating binaries for the applications with all required dependencies.
 
 ## Good Testing Support
@@ -45,20 +46,16 @@
 # [How to build and install Go Programs?](https://www.digitalocean.com/community/tutorials/how-to-build-and-install-go-programs)
 
 ## Test Go Program
-
 ```go
 go run <goFileName.go>
 ```
 
 ## Create a Go Module to build a Go Binary
-
 ````go
 go mod init <moduleName>
 ````
 
 ## Creating Go Binaries
-
-
 ````go
 go build // Build with the same name as moduleName in pwd directory
 
@@ -66,13 +63,11 @@ go build -o bin/hello // Build with "hello" name in bin/ directory
 ````
 
 ## Run Go Binaries
-
 ````go
 ./moduleName
 ````
 
 ## Installing Go Programs
-
 ````go
 go install // This will build the binary and place it in $GOPATH/bin.
 ````
@@ -351,11 +346,9 @@ return fmt.Sprintf ("Size: %d MB.", 50)
 t := i.(T)
 ```
 
-# How to create interfaces in GoLang?
-TBD
+# [How to create interfaces in GoLang?](https://gobyexample.com/interfaces)
 
-# How to write unit tests in GoLang?
-- https://blog.alexellis.io/golang-writing-unit-tests/
+# [How to write unit tests in GoLang?](https://blog.alexellis.io/golang-writing-unit-tests/)
 
 # References
 - [Golang Interview Questions](https://www.interviewbit.com/golang-interview-questions/)
