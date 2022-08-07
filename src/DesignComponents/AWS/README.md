@@ -38,18 +38,18 @@ Component| Service Type                                           | Description 
 
 # Amazon Aurora vs Amazon RDS
 
-| Basis                                      | :star:[Amazon Aurora](DatabaseServices/AmazonAurora.md) | [Amazon RDS](DatabaseServices/AmazonRDS.md) |
-|--------------------------------------------|---------------------------------------------------------|---------------------------------------------|
-| Compatible DB Engines                      | Postgres, MySQL                                         | Postgres, MySQL, Oracle, MS SQL, Oracle     |
-| Performance                                | 5x faster than RDS MySQL, 3x than RDS Postgres          | -                                           |
-| Size                                       | Supports upto 128 TB DB size                            | Supports upto 64 TB DB size                 |
-| Max Read Replicas                          | Upto 15 read-replicas                                   | Upto 5 read-replicas                        |
-| Replica lag                                | ~ 100 ms ( max 30 seconds )                             | ~ few mins                                  |
-| Pricing                                    | 20% costly than RDS                                     | -                                           |
-| Crash Recovery                             | Quicker than RDS                                        | -                                           |
-| Fail Over                                  | ~30 secs                                                | ~60-120 seconds                             |
-| IOPS (input/output operations per second ) | Greater than 80K IOPS                                   | Max 80K IOPS                                |
-| HA                                         | 6 replicas in 3 AZs                                     | Replicas in 2 AZs                           |
+| Basis                                      | :star: [Amazon Aurora](DatabaseServices/AmazonAurora.md) | [Amazon RDS](DatabaseServices/AmazonRDS.md) |
+|--------------------------------------------|----------------------------------------------------------|---------------------------------------------|
+| Compatible DB Engines                      | Postgres, MySQL                                          | Postgres, MySQL, Oracle, MS SQL, Oracle     |
+| Performance                                | 5x faster than RDS MySQL, 3x than RDS Postgres           | -                                           |
+| Size                                       | Supports upto 128 TB DB size                             | Supports upto 64 TB DB size                 |
+| Max Read Replicas                          | Upto 15 read-replicas                                    | Upto 5 read-replicas                        |
+| Replica lag                                | ~ 100 ms ( max 30 seconds )                              | ~ few mins                                  |
+| Pricing                                    | 20% costly than RDS                                      | -                                           |
+| Crash Recovery                             | Quicker than RDS                                         | -                                           |
+| Fail Over                                  | ~30 secs                                                 | ~60-120 seconds                             |
+| IOPS (input/output operations per second ) | Greater than 80K IOPS                                    | Max 80K IOPS                                |
+| HA                                         | 6 replicas in 3 AZs                                      | Replicas in 2 AZs                           |
 
 # System Designs Using AWS
 - [DesignScalableSystemWithRDMS](../../DesignScalableSystemWithRDMS)

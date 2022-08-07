@@ -4,17 +4,17 @@ This repo contains the various system design components info, questions and solu
 - [System Design Glossaries](src/DesignComponents/SystemGlossaries.md)
 - [System Design Tips](src/DesignComponents/SystemDesignTips.md)
 - [System Estimation Guide](src/DesignComponents/SystemEstimations.md)
-- [AWS Components](src/DesignComponents/AWS)
+- :star: [AWS Components](src/DesignComponents/AWS)
 - [MicroServices Based Architecture](src/DesignComponents/MicroServicesArchitecture)
 
 # [SQL & NoSQL databases](src/DesignComponents/SQLvsNoSQL)
 
-| Component                                                         | Strength                                | Component Type                | Very Rough Throughput (QPS)                 | Latency | Pricing Model                                                   |
-|-------------------------------------------------------------------|-----------------------------------------|-------------------------------|---------------------------------------------|----------------|-----------------------------------------------------------------|
-| [MySQL](src/DesignComponents/SQLvsNoSQL)                          | -                                       | SQL DB                        | 1000 concurrent requests ( 100 as default ) | [< 10ms ( to get a row from 1 million records )](https://www.quora.com/How-can-we-calculate-the-throughput-of-MySQL?share=1)| `Open Source` ( [RDS](src/DesignComponents/AWS/RDS.md) on AWS ) |
+| Component                                                               | Strength                                | Component Type                | Very Rough Throughput (QPS)                 | Latency | Pricing Model                                                   |
+|-------------------------------------------------------------------------|-----------------------------------------|-------------------------------|---------------------------------------------|----------------|-----------------------------------------------------------------|
+| [MySQL](src/DesignComponents/SQLvsNoSQL)                                | -                                       | SQL DB                        | 1000 concurrent requests ( 100 as default ) | [< 10ms ( to get a row from 1 million records )](https://www.quora.com/How-can-we-calculate-the-throughput-of-MySQL?share=1)| `Open Source` ( [RDS](src/DesignComponents/AWS/RDS.md) on AWS ) |
 | [DynamoDB](src/DesignComponents/AWS/DatabaseServices/AmazonDynamoDB.md) | Predictable performance and cost        | NoSQL DB as a Service ( AWS ) | More than 20 million requests per second    | less than 10-20 ms | `AWS Managed Service`   |
-| :star:[ElasticSearch](src/DesignComponents/ElasticSearch)               | `Full-Text-Search`, `Logs-Analysis (ELK)` | NoSQL Search Engine           | -                                           |-| `Open Source`                                                             |
-| [MongoDB](src/DesignComponents/SQLvsNoSQL)                        | -                                       | NoSQL DB                      | -                                           | -| `Open Source`                                                              |
+| :star: [ElasticSearch](src/DesignComponents/ElasticSearch)              | `Full-Text-Search`, `Logs-Analysis (ELK)` | NoSQL Search Engine           | -                                           |-| `Open Source`                                                             |
+| [MongoDB](src/DesignComponents/SQLvsNoSQL)                              | -                                       | NoSQL DB                      | -                                           | -| `Open Source`                                                              |
 
 # [In Memory Cache](src/DesignComponents/Redis)
 
@@ -28,7 +28,7 @@ This repo contains the various system design components info, questions and solu
 
 Message brokers are used to decouple and enable `Event Driven Architectures` i.e. communicate the events between microservices.
 
-| Basis                                 | :star:[Kafka](src/DesignComponents/MessageBrokers/Kafka.md)                                     | [RabbitMQ](src/DesignComponents/MessageBrokers/RabbitMQ.md)                                                                                                        | [Amazon SQS](src/DesignComponents/AWS/MessageBrokerServices/AmazonSQS.md)                                                                                      | [Amazon SNS](src/DesignComponents/AWS/MessageBrokerServices/AmazonSNS.md)                                                                                                                           | [Active MQ](src/DesignComponents/MessageBrokers/ActiveMQ.md)                                     |
+| Basis                                 | :star: [Kafka](src/DesignComponents/MessageBrokers/Kafka.md)                              | [RabbitMQ](src/DesignComponents/MessageBrokers/RabbitMQ.md)                                                                                                        | [Amazon SQS](src/DesignComponents/AWS/MessageBrokerServices/AmazonSQS.md)                                                                                      | [Amazon SNS](src/DesignComponents/AWS/MessageBrokerServices/AmazonSNS.md)                                                                                                                           | [Active MQ](src/DesignComponents/MessageBrokers/ActiveMQ.md)                                     |
 |---------------------------------------|-------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------|
 |  Strength                             | High-Throughput Broker                                                                    | Low-Latency MQ                                                                                                                                                     | -                                                                                                                                                              | Push-Notification-Based-Broker                                                                                                                                                                      | Enterprise-Based MQ                                                                              |
 |  Performance                          | Up to `1 million ( 1000K ) messages per second`                                           | Up to `10K messages per second` ( ie. around 100 nodes are needed to match with 1 kafka broker )                                                                   | Up to `30K messages per second`                                                                                                                                |
@@ -47,15 +47,15 @@ Message brokers are used to decouple and enable `Event Driven Architectures` i.e
 
 # [Storage Services on AWS](src/DesignComponents/AWS/StorageServices)
 
-| Basis                                 | :star:[S3](src/DesignComponents/AWS/StorageServices/AmazonS3.md)                        | [EFS](src/DesignComponents/AWS/StorageServices/AmazonEFS.md)                    | EBS                                                   |
-| ---------------------------------------|-----------------------------------------------------------------------------------|------------------------------------------------------------------------------|-------------------------------------------------------|
-| Storage | Object Storage ( can be mounted using s3fs plugin or accessed over HTTP )         | Actual FileSystem ( NFS interface, which can be shared b/w `EC2 instances` ) |
-| IO Speed | Relatively slower than EFS                                                        | Faster than S3                                                               |
-| Rough Costing | [$0.021/GB-Month](https://aws.amazon.com/s3/pricing/)                             | [$0.30/GB-Month](https://aws.amazon.com/efs/pricing/)                        | [$0.10/GB-month](https://aws.amazon.com/ebs/pricing/) |
-| Use Cases | Static Web Content, Media Data ( like image, video, documents )                   | Shared Volume b/w EC2 instances                                              | Volume for a single EC2 instance                      |
-| Availability | `99.999999999% availability`, durability in at least 3 AZs in S3 Region | `99.9% availability`, with multiple AZs                                      | `99.999% availability`, with multiple AZs             |
-| Storage Size | No limit                                                                          | No limit                                                                     | Max Storage size of 16TB                              |
-| File Size Limitation | Max Object Size of 5TB ( Max Object Size of 5GB through PUT API )                 | Max File Size of 48TB                                                        | No Limit                                              |
+| Basis                                 | :star: [S3](src/DesignComponents/AWS/StorageServices/AmazonS3.md)         | [EFS](src/DesignComponents/AWS/StorageServices/AmazonEFS.md)                    | EBS                                                   |
+| ---------------------------------------|---------------------------------------------------------------------------|------------------------------------------------------------------------------|-------------------------------------------------------|
+| Storage | Object Storage ( can be mounted using s3fs plugin or accessed over HTTP ) | Actual FileSystem ( NFS interface, which can be shared b/w `EC2 instances` ) |
+| IO Speed | Relatively slower than EFS                                                | Faster than S3                                                               |
+| Rough Costing | [$0.021/GB-Month](https://aws.amazon.com/s3/pricing/)                     | [$0.30/GB-Month](https://aws.amazon.com/efs/pricing/)                        | [$0.10/GB-month](https://aws.amazon.com/ebs/pricing/) |
+| Use Cases | Static Web Content, Media Data ( like image, video, documents )           | Shared Volume b/w EC2 instances                                              | Volume for a single EC2 instance                      |
+| Availability | `99.999999999% availability`, durability in at least 3 AZs in S3 Region   | `99.9% availability`, with multiple AZs                                      | `99.999% availability`, with multiple AZs             |
+| Storage Size | No limit                                                                  | No limit                                                                     | Max Storage size of 16TB                              |
+| File Size Limitation | Max Object Size of 5TB ( Max Object Size of 5GB through PUT API )         | Max File Size of 48TB                                                        | No Limit                                              |
 
 # API Technology Options
 
@@ -76,7 +76,7 @@ Message brokers are used to decouple and enable `Event Driven Architectures` i.e
 - [Apache Spark](src/DesignComponents/ApacheSpark.md)
 
 # HLD - Design Problems
-- :star:[Zomoto HLD Design](src/ZomatoDesign)
+- :star: [Zomoto HLD Design](src/ZomatoDesign)
 - [Design a system that scales to million of users on AWS](src/DesignScalableSystemWithRDMS)
 - [Twillo Send Message API](src/TwilloSendMessageAPI)
 - [Rate Limiter API](src/RateLimiterAPI)
@@ -103,7 +103,7 @@ Message brokers are used to decouple and enable `Event Driven Architectures` i.e
 - [Insurance Agent Flow](src/LLDDesignProblems/Others/InsuranceAgentFlow.md)
 
 # Tech Skills
-- :star:[GoLang](src/DesignComponents/GoLang)
+- :star: [GoLang](src/DesignComponents/GoLang)
 - [Spring Boot & Microservices](src/DesignComponents/SpringBootAndMicroServices)
 - [Hibernate](src/DesignComponents/Hibernate.md)
 - [Java](src/DesignComponents/Java)
@@ -116,7 +116,7 @@ Message brokers are used to decouple and enable `Event Driven Architectures` i.e
 
 # DevOps Skills
 - [Docker](src/DesignComponents/DevOps/Docker.md)
-- :star:[Kubernates](src/DesignComponents/DevOps/Kubernates.md)
+- :star: [Kubernates](src/DesignComponents/DevOps/Kubernates.md)
 
 # References
 - [System Design Primer](https://github.com/donnemartin/system-design-primer)
