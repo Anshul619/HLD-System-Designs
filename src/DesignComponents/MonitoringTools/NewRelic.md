@@ -34,3 +34,6 @@
 
 # [NewRelic vs Splunk](https://www.quora.com/How-does-New-Relic-and-Splunk-compare-or-differ-Is-there-functionality-that-is-similar-in-both-products)
 - Splunk is a log aggregator ( like ELK ) while New Relic is a web application performance profiler.
+
+# [Pricing](https://newrelic.com/pricing)
+![img.png](assests/newrelic_img.png)
