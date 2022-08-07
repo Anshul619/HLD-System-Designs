@@ -17,11 +17,11 @@
 
 ## Identify Read/Write Ratio of the apis/queries
 - If it's a READ heavy microservice, the best decision would be to use [Redis](Redis) or `multi-read database instances`.
-- If it's a WRITE heavy microservice ( `HIGH throughput` ), the best decision would be to use either [Kafka](MessageBrokers/Kafka.md) ( as message broker ) or [DynamoDB](AWS/DatabaseServices/DynamoDB.md) ( as data store ).
+- If it's a WRITE heavy microservice ( `HIGH throughput` ), the best decision would be to use either [Kafka](MessageBrokers/Kafka.md) ( as message broker ) or [DynamoDB](AWS/DatabaseServices/AmazonDynamoDB.md) ( as data store ).
 
 ## Use Leverage Managed Infrastructures like Amazon RDS, DynamoDB etc.
 - We must consider `cloud-agnostic approach` ( & onPerm customer approach ) while designing the solution.
-- But whenever applicable, we should use `Leverage Managed Infrastructures` like [Amazon S3](AWS/StorageServices/AmazonS3.md), [Amazon RDS](AWS/DatabaseServices/RDS.md), [DynamoDB](AWS/DatabaseServices/DynamoDB.md) etc.
+- But whenever applicable, we should use `Leverage Managed Infrastructures` like [Amazon S3](AWS/StorageServices/AmazonS3.md), [Amazon RDS](AWS/DatabaseServices/AmazonRDS.md), [DynamoDB](AWS/DatabaseServices/AmazonDynamoDB.md) etc.
 
 ## Identify Key Components in the system
 - Identify key components in the required architecture like `Data Chunking`, `Data Aggregation` etc.

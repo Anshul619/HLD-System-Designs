@@ -1,9 +1,9 @@
 
 # Introduction
 
-| Basis  | [EKS](EKS.md)                                                                                                     | [ECS](ECS.md)                                                                 | [Fargate](../ComputeServices/Fargate.md)                                                                                                                                                |
+| Basis  | [EKS](AmazonEKS.md)                                                                                                     | [ECS](AmazonECS.md)                                                                 | [Fargate](../ComputeServices/AWSFargate.md)                                                                                                                                                |
 |--------|-------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Intro  | Fully managed [Kubernetes](../../DevOps/Kubernates.md) service. It is easy to migrate existing Kubernates to AWS. | Fully managed container management service ( with EC2 auto-scaling support ). | Serverless compute for containers. Compatible with both [EKS](EKS.md) & [ECS](ECS.md) i.e. these services can run with Fargate as deployment option, instead of EC2. |
+| Intro  | Fully managed [Kubernetes](../../DevOps/Kubernates.md) service. It is easy to migrate existing Kubernates to AWS. | Fully managed container management service ( with EC2 auto-scaling support ). | Serverless compute for containers. Compatible with both [EKS](AmazonEKS.md) & [ECS](AmazonECS.md) i.e. these services can run with Fargate as deployment option, instead of EC2. |
 | Pricing | `$72 per month per cluster` + EC2 instances cost                                                                  | Free AWS Service + EC2 instances cost                                                           | [No Upfront cost. Pay as per vCPU, memory GB usage](https://aws.amazon.com/fargate/pricing/)                                                                         
 
 # References

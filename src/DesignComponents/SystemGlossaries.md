@@ -19,11 +19,11 @@
 - `Every transaction might have multiple queries`.
 - Hence, QPS is the subset of TPS.
 
-## [High Availability ( HA )](https://avinetworks.com/glossary/high-availability/)
+## [High Availability](https://avinetworks.com/glossary/high-availability/)
 - High Availability (HA) describes systems that are dependable enough to operate continuously without failing.
 - They are well-tested and sometimes equipped with redundant components.
 - `99.99% uptime` means that website is down only for `52 mins` in the complete year. This means it is `highly available`.
-- In AWS, high availability is achieved through multiple deployments of the app in `different availability zones`.
+- In AWS, high availability is achieved through multiple deployments of the app in [different availability zones](AWS/HA-Region-AZ.md).
 - [Design Scalable System With RDMS on AWS](../DesignScalableSystemWithRDMS)
 
 ### Components of HA
@@ -31,6 +31,13 @@
 - `Monitoring` - Identify problems in production systems that may disrupt or degrade service.
 - `Failover` - Switch from an active system component to a redundant component in case of failure with degraded performance or functionality.
 - `Failback` - Switch back from a redundant component to the primary active component, when it has recovered from failure.
+
+## [Event Driven Architecture](https://aws.amazon.com/event-driven-architecture/)
+- An event-driven architecture uses events to `trigger and communicate between decoupled services` and is common in modern applications built with microservice.
+- An event is a change in state, or an update, like an item being placed in a shopping cart on an e-commerce website.
+- Events can either carry the state (the item purchased, its price, and a delivery address) or events can be identifiers (a notification that an order was shipped).
+- [Read more about microservices](MicroServicesArchitecture)
+- [Read more about message brokers like Kafka, RabbitMQ etc.](MessageBrokers)
 
 ## [Fault Tolerance](https://www.fortinet.com/resources/cyberglossary/fault-tolerance)
 - Fault tolerance is a process that enables an operating system to respond to a failure in hardware or software.
@@ -41,6 +48,11 @@
   - Replication
 
 ![img.png](assests/fault_tolerance_img.png)
+
+## [Load Balancers](https://github.com/ema2159/Grokking-System-Design-Interview-Quizzes/blob/master/Quizzes/Load%20Balancer.org)
+- It helps to spread the traffic across a cluster of servers to improve responsiveness and availability of applications, websites or databases.
+- LB also keeps `track of the status of all the resources` while distributing requests.
+- If a server is not available to take new requests or is NOT responding or has elevated error rate, LB will stop sending traffic to such a server.
 
 ## [ACID Properties of the Transaction](https://www.geeksforgeeks.org/acid-properties-in-dbms/)
 
@@ -86,21 +98,15 @@
 - `Stateless Protocol` does not require the server to retain the server information or session details.
 - `Stateful Protocol` require server to save the status and session information.
 
-## [Load Balancers](https://github.com/ema2159/Grokking-System-Design-Interview-Quizzes/blob/master/Quizzes/Load%20Balancer.org)
-- It helps to spread the traffic across a cluster of servers to improve responsiveness and availability of applications, websites or databases.
-- LB also keeps `track of the status of all the resources` while distributing requests.
-- If a server is not available to take new requests or is NOT responding or has elevated error rate, LB will stop sending traffic to such a server.
-
-## [Event Driven Architecture](https://aws.amazon.com/event-driven-architecture/)
-- An event-driven architecture uses events to `trigger and communicate between decoupled services` and is common in modern applications built with microservice.
-- An event is a change in state, or an update, like an item being placed in a shopping cart on an e-commerce website.
-- Events can either carry the state (the item purchased, its price, and a delivery address) or events can be identifiers (a notification that an order was shipped).
-- [Read more about message brokers like Kafka, RabbitMQ etc.](MessageBrokers)
-- [Read more about microservices](MicroServicesArchitecture)
-
 ## [Domain Driven Architecture](https://www.geeksforgeeks.org/domain-driven-design-ddd/)
 - When we are developing software our focus should not be primarily on technology, rather it should be primarily on business/domain.
 - Classes, modals, services, microservices, rest apis etc. should be designed according to the domains.
-
 ![img.png](assests/domain_driven_design.png)
+
+## [Server Cluster](https://www.racksolutions.com/news/blog/server-cluster-how-it-works/)
+- A server cluster consists of a group of servers working simultaneously under a single IP address.
+- Server clustering also ensures higher availability, proper load balancing, and system scalability.
+![img.png](assests/server_cluster_img.png)
+
+
 

@@ -12,7 +12,7 @@ This repo contains the various system design components info, questions and solu
 | Component                                                         | Strength                                | Component Type                | Very Rough Throughput (QPS)                 | Latency | Pricing Model                                                   |
 |-------------------------------------------------------------------|-----------------------------------------|-------------------------------|---------------------------------------------|----------------|-----------------------------------------------------------------|
 | [MySQL](src/DesignComponents/SQLvsNoSQL)                          | -                                       | SQL DB                        | 1000 concurrent requests ( 100 as default ) | [< 10ms ( to get a row from 1 million records )](https://www.quora.com/How-can-we-calculate-the-throughput-of-MySQL?share=1)| `Open Source` ( [RDS](src/DesignComponents/AWS/RDS.md) on AWS ) |
-| [DynamoDB](src/DesignComponents/AWS/DatabaseServices/DynamoDB.md) | Predictable performance and cost        | NoSQL DB as a Service ( AWS ) | More than 20 million requests per second    | less than 10-20 ms | `AWS Managed Service`   |
+| [DynamoDB](src/DesignComponents/AWS/DatabaseServices/AmazonDynamoDB.md) | Predictable performance and cost        | NoSQL DB as a Service ( AWS ) | More than 20 million requests per second    | less than 10-20 ms | `AWS Managed Service`   |
 | [ElasticSearch](src/DesignComponents/ElasticSearch)               | `Full-Text-Search`, `Logs-Analysis (ELK)` | NoSQL Search Engine           | -                                           |-| `Open Source`                                                             |
 | [MongoDB](src/DesignComponents/SQLvsNoSQL)                        | -                                       | NoSQL DB                      | -                                           | -| `Open Source`                                                              |
 
@@ -72,7 +72,7 @@ Message brokers are used to decouple and enable `Event Driven Architectures` i.e
 | [Apache](https://apache.org/)                                     | -                                       | Web Server                       | 512 concurrent requests                           |-|Yes|
 
 # Other Design Components
-- [ELK](src/DesignComponents/ElasticSearch/ELK.md)
+- [ELK](src/DesignComponents/DevOps/ELK.md)
 - [Apache Spark](src/DesignComponents/ApacheSpark.md)
 
 # HLD - Design Problems

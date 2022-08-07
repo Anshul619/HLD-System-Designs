@@ -7,14 +7,14 @@
 - In a Microservice Architecture, each service is self-contained and implements a single business capability.
 - Microservice architecture makes it easier and fastest way to build and work on individual parts of an application, and thus the application as a whole.
 
-<img title="MonolothicToMicroService" alt="Alt text" src="MonolothicToMicroService.drawio.png">
+![img.png](assests/MonolothicToMicroService.drawio.png)
 
 ## Microservices - Design Principles
 - Define contracts ( request/response ) between microservices.
-- API Gateway to route between microservices
-- Use [message brokers](../MessageBrokers) (`Kafka`, `RabbitMQ`, `ActiveMQ` etc.) to asynchronously pass data b/w microservices.
-- Use `jenkins ( & docker containers )` for the deployment
-- Logging using `ELK`, `Kafka Cluster` etc.
+- API Gateway to route between microservices.
+- Use [message brokers](../MessageBrokers) ([Kafka Cluster](../MessageBrokers/Kafka.md), [RabbitMQ](../MessageBrokers/RabbitMQ.md), [ActiveMQ](../MessageBrokers/ActiveMQ.md) etc.) to asynchronously pass data b/w microservices.
+- Use Jenkins, [Docker](../DevOps/Docker.md), [Kubernates](../DevOps/Kubernates.md) for the deployment
+- Logging using [ELK](../DevOps/ELK.md), [Kafka Cluster](../MessageBrokers/Kafka.md) etc.
 
 ## Benefits of Microservices design
 
