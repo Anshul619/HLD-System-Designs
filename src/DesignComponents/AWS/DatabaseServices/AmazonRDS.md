@@ -6,10 +6,6 @@
 
 ![img.png](../assests/RDS_database_engines.png)
 
-# [Amazon Aurora](https://aws.amazon.com/rds/aurora/)
-- Designed for unparalleled high performance and availability at global scale with full MySQL and PostgreSQL compatibility.
-- [Aurora Serverless - Cloudformation template](../AWSResourceMgmtServices/CloudFormation/templates/aurora_serverless.yml)
-
 # Which type of scaling would you recommend for RDS and why?
 
 ## Vertical Scaling

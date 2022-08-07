@@ -43,7 +43,7 @@
 
 ![img.png](assests/ha_vs_fault_tolerant.png)
 
-## Failover Policies
+## Fail over Policies
 
 ### `Active-Active` policy
 - An active-active cluster is typically made up of at least two nodes, both actively running the same kind of service simultaneously.
@@ -119,6 +119,9 @@
 - A server cluster consists of a group of servers working simultaneously under a single IP address.
 - Server clustering also ensures higher availability, proper load balancing, and system scalability.
 ![img.png](assests/server_cluster_img.png)
+
+## Recovery Point Objective (RPO) 
+## Recovery Time Objective (RTO)
 
 
 

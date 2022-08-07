@@ -11,13 +11,14 @@ Component| Service Type                                           | Description 
 :star: [Amazon EC2](ComputeServices/AmazonEC2.md) | [Compute Service](ComputeServices)                     | Virtual Machine service                                                                                                                                              |
 [AWS Lamdba](ComputeServices/AWSLambda.md) | [Compute Service](ComputeServices)                     | Run code without thinking about servers or clusters                                                                                                                  |
 [AWS Fargate ](ComputeServices/AWSFargate.md) | [Compute Service](ComputeServices) | Serverless compute for containers. Compatible with both [EKS](EKS.md) & [ECS](ECS.md) i.e. these services can run with Fargate as deployment option, instead of EC2. |
-:star: [AWS AutoScaling](AWSResourceMgmtServices/AWSAutoScaling.md) | [Compute Service](ComputeServices)                     | Auto-scaling of [EC2 instances](ComputeServices/AmazonEC2.md), based on demand & traffic                                                                                   |
-:star: [Amazon RDS](DatabaseServices/AmazonRDS.md) | [Database Service](DatabaseServices)                   | Database management service for relational databases                                                                                                                 |
+:star: [AWS AutoScaling](AWSResourceMgmtServices/AWSAutoScaling.md) | [Compute Service](ComputeServices)                     | Auto-scaling of [EC2 instances](ComputeServices/AmazonEC2.md), based on demand & traffic                                                                             |
+:star: [Amazon Aurora](DatabaseServices/AmazonAurora.md) | [Database Service](DatabaseServices)                   | DB management service for Postgres and MySQL ( faster & more reliable than RDS )                                                                                     |
+[Amazon RDS](DatabaseServices/AmazonRDS.md) | [Database Service](DatabaseServices)                   | Database management service for relational databases                                                                                                                 |
 :star: [Amazon Dynamo DB](DatabaseServices/AmazonDynamoDB.md) | [Database Service](DatabaseServices)                   | NoSQL service                                                                                                                                                        |
-:star: [Amazon S3](StorageServices/AmazonS3.md) | [Storage Service](StorageServices)                     | `Object storage` built to retrieve any amount of data from anywhere. `Cost effective & mostly used storage service in AWS`                                            |
-[Amazon EFS](StorageServices/AmazonEFS.md) | [Storage Service](StorageServices)                     | Shared File Storage between [EC2 instances](ComputeServices/AmazonEC2.md)                                                                                                  |
+:star: [Amazon S3](StorageServices/AmazonS3.md) | [Storage Service](StorageServices)                     | `Object storage` built to retrieve any amount of data from anywhere. `Cost effective & mostly used storage service in AWS`                                           |
+[Amazon EFS](StorageServices/AmazonEFS.md) | [Storage Service](StorageServices)                     | Shared File Storage between [EC2 instances](ComputeServices/AmazonEC2.md)                                                                                            |
 :star: [Amazon CloudWatch](MonitoringServices/AmazonCloudWatch.md) | [Monitoring Service](MonitoringServices)               | Monitor AWS Resources & set Alarms                                                                                                                                   |
-[Amazon CloudTrail](MonitoringServices/AWSCloudTrail.md) | [Monitoring Service](MonitoringServices)               | Monitor [Amazon Route 53 API](NetworkingAndContentDelivery/AmazonRoute53.md) activities in AWS Account                                                                         |
+[Amazon CloudTrail](MonitoringServices/AWSCloudTrail.md) | [Monitoring Service](MonitoringServices)               | Monitor [Amazon Route 53 API](NetworkingAndContentDelivery/AmazonRoute53.md) activities in AWS Account                                                               |
 [Amazon Config](MonitoringServices/AWSConfig.md) | [Monitoring Service](MonitoringServices)               | Monitor Configration changes of AWS Resources                                                                                                                        |
 [Amazon VPC](SecurityAndIdentityServices/AmazonVPC.md) | [Security Service](SecurityAndIdentityServices)                   | Define and launch AWS resources in a logically isolated virtual network                                                                                              |
 [AWS IAM](SecurityAndIdentityServices/AWSIAM.md) | [Security Service](SecurityAndIdentityServices)                                       | AWS User Management Service                                                                                                                                          |
@@ -33,6 +34,22 @@ Component| Service Type                                           | Description 
 [Amazon Redshift](https://aws.amazon.com/redshift/) | Other Service                                          | Redshift is a data warehouse product used in data analysis.                                                                                                          |
 [AWS Elastic Beanstalk](https://aws.amazon.com/elasticbeanstalk/) | [Resource Management Service](AWSResourceMgmtServices) | Servers Management - Easy to begin, Impossible to outgrow                                                                                                            |
 [Amazon EMR](ComputeServices/AmazonEMR.md) | Other Service                                          | Fully Managed Service for [Apache Spark](../ApacheSpark.md)                                                                                                          |
+
+
+# Amazon Aurora vs Amazon RDS
+
+| Basis                                      | :star:[Amazon Aurora](DatabaseServices/AmazonAurora.md) | [Amazon RDS](DatabaseServices/AmazonRDS.md) |
+|--------------------------------------------|---------------------------------------------------------|---------------------------------------------|
+| Compatible DB Engines                      | Postgres, MySQL                                         | Postgres, MySQL, Oracle, MS SQL, Oracle     |
+| Performance                                | 5x faster than RDS MySQL, 3x than RDS Postgres          | -                                           |
+| Size                                       | Supports upto 128 TB DB size                            | Supports upto 64 TB DB size                 |
+| Max Read Replicas                          | Upto 15 read-replicas                                   | Upto 5 read-replicas                        |
+| Replica lag                                | ~ 100 ms ( max 30 seconds )                             | ~ few mins                                  |
+| Pricing                                    | 20% costly than RDS                                     | -                                           |
+| Crash Recovery                             | Quicker than RDS                                        | -                                           |
+| Fail Over                                  | ~30 secs                                                | ~60-120 seconds                             |
+| IOPS (input/output operations per second ) | Greater than 80K IOPS                                   | Max 80K IOPS                                |
+| HA                                         | 6 replicas in 3 AZs                                     | Replicas in 2 AZs                           |
 
 # System Designs Using AWS
 - [DesignScalableSystemWithRDMS](../../DesignScalableSystemWithRDMS)
@@ -53,3 +70,4 @@ Component| Service Type                                           | Description 
 - [AWS Documentation Overview](https://aws.amazon.com/documentation-overview/)
 - [AWS Interview Questions](https://www.simplilearn.com/tutorials/aws-tutorial/aws-interview-questions)
 - [The Top 10 Most Used AWS Services](https://insider.ssi-net.com/insights/the-top-10-most-used-aws-services)
+- [Is Amazon RDS for PostgreSQL or Amazon Aurora PostgreSQL a better choice for me?](https://aws.amazon.com/blogs/database/is-amazon-rds-for-postgresql-or-amazon-aurora-postgresql-a-better-choice-for-me/)
