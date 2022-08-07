@@ -30,4 +30,8 @@ You can use Route 53 to perform three main functions in any combination,
 - Latency Based Routing utilizes latency measurements between networks and AWS data centers.
 - Latency Based Routing is used when you want to give your customers the lowest latency possible.
 
+## Failover routing policy
+- Use when you want to configure active-passive failover. 
+- You can use failover routing to create records in a private hosted zone.
+
 

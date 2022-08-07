@@ -23,7 +23,7 @@
 - High Availability (HA) describes systems that are dependable enough to operate continuously without failing.
 - They are well-tested and sometimes equipped with redundant components.
 - `99.99% uptime` means that website is down only for `52 mins` in the complete year. This means it is `highly available`.
-- In AWS, high availability is achieved through multiple deployments of the app in [different availability zones](AWS/HA-Region-AZ.md).
+- In AWS, high availability is achieved through multiple deployments of the app in [different availability zones](AWS/NetworkingAndContentDelivery/HA-Region-AZ.md).
 - [Design Scalable System With RDMS on AWS](../DesignScalableSystemWithRDMS)
 
 ### Components of HA
@@ -32,20 +32,32 @@
 - `Failover` - Switch from an active system component to a redundant component in case of failure with degraded performance or functionality.
 - `Failback` - Switch back from a redundant component to the primary active component, when it has recovered from failure.
 
+## [Fault Tolerance vs HA](https://www.linkedin.com/pulse/high-availability-vs-fault-tolerance-jon-bonso/)
+- Fault Tolerance, on the other hand, has the goal of keeping your application running with `zero downtime`.
+- Think of it as an `upgraded version of High Availability`.
+- As its name implies, it can tolerate any component fault to avoid any performance impact, data loss, or system crashes by having redundant resources beyond what is typically needed.
+- It has a more complex design, and higher redundancy to sustain any fault in one of its components.
+- A system can be highly available but not fault-tolerant, and it can be both. 
+- `If an application is said to be fault-tolerant then it is also considered highly available.`
+- In AWS, fault tolerance can be implemented using `active-active` failover policy ( instead of `active-passive` policy ) in `HA cluster`.
+
+![img.png](assests/ha_vs_fault_tolerant.png)
+
+## Failover Policies
+
+### `Active-Active` policy
+- An active-active cluster is typically made up of at least two nodes, both actively running the same kind of service simultaneously.
+
+### `Active-Passive` policy
+- In the case of two nodes, for example, if the first node is already active, the second node must be passive or on standby.
+- Not all nodes are going to be active at the same time.
+
 ## [Event Driven Architecture](https://aws.amazon.com/event-driven-architecture/)
 - An event-driven architecture uses events to `trigger and communicate between decoupled services` and is common in modern applications built with microservice.
 - An event is a change in state, or an update, like an item being placed in a shopping cart on an e-commerce website.
 - Events can either carry the state (the item purchased, its price, and a delivery address) or events can be identifiers (a notification that an order was shipped).
 - [Read more about microservices](MicroServicesArchitecture)
 - [Read more about message brokers like Kafka, RabbitMQ etc.](MessageBrokers)
-
-## [Fault Tolerance](https://www.fortinet.com/resources/cyberglossary/fault-tolerance)
-- Fault tolerance is a process that enables an operating system to respond to a failure in hardware or software.
-- This fault-tolerance definition refers to the system’s ability to continue operating despite failures or malfunctions.
-- Components of a `Fault-tolerance` system
-  - Diversity
-  - Redundancy
-  - Replication
 
 ![img.png](assests/fault_tolerance_img.png)
 
