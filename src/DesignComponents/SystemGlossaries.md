@@ -95,6 +95,8 @@
 - An event-driven architecture uses events to `trigger and communicate between decoupled services` and is common in modern applications built with microservice.
 - An event is a change in state, or an update, like an item being placed in a shopping cart on an e-commerce website.
 - Events can either carry the state (the item purchased, its price, and a delivery address) or events can be identifiers (a notification that an order was shipped).
+- [Read more about message brokers like Kafka, RabbitMQ etc.](MessageBrokers)
+- [Read more about microservices](MicroServicesArchitecture)
 
 ## [Domain Driven Architecture](https://www.geeksforgeeks.org/domain-driven-design-ddd/)
 - When we are developing software our focus should not be primarily on technology, rather it should be primarily on business/domain.
