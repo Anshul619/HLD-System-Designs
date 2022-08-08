@@ -87,7 +87,7 @@ Message brokers are used to decouple and enable `Event Driven Architectures` i.e
 - [Design Patterns](src/DesignComponents/DesignPatterns)
 - [DRY](src/DesignComponents/ObjectOrientedDesign/DRY.md)
 
-# LLD - Design Problems
+# [LLD - Design Problems](src/LLDDesignProblems)
 - [LLD Design - Tips & Techniques](src/LLDDesignProblems/LLDDesignTipsAndTechniques.md)
 - [Chess Game](src/LLDDesignProblems/ChessGame)
 - [Snack & Ladder Game](src/LLDDesignProblems/SnackAndLadderGame)
@@ -98,17 +98,16 @@ Message brokers are used to decouple and enable `Event Driven Architectures` i.e
 - [Parking Lot](src/LLDDesignProblems/ParkingLot)
 - [Insurance Agent Flow](src/LLDDesignProblems/Others/InsuranceAgentFlow.md)
 
-# Tech Skills
-- :star: [GoLang](src/DesignComponents/GoLang)
-- [Spring Boot & Microservices](src/DesignComponents/Java/SpringBootAndMicroServices)
-- [Hibernate](src/DesignComponents/Java/Hibernate.md)
-- [Java](src/DesignComponents/Java)
-- [Hibernate](src/DesignComponents/Java/Hibernate.md)
-- [JS](src/DesignComponents/JavaScript)
+# [Programming Languages](src/ProgLanguages)
+- :star: [GoLang](src/ProgLanguages/GoLang)
+- [Spring Boot & Microservices](src/ProgLanguages/Java/SpringBootAndMicroServices)
+- [Hibernate](src/ProgLanguages/Java/Hibernate.md)
+- [Java](src/ProgLanguages/Java)
+- [Hibernate](src/ProgLanguages/Java/Hibernate.md)
 - [Testing](src/DesignComponents/Testing/Readme.md)
-- [JavaScript](src/DesignComponents/JavaScript)
-- [TypeScript](src/DesignComponents/FrontEnd/TypeScript.md)
-- [Angular8](src/DesignComponents/FrontEnd/Angular8.md)
+- [JavaScript](src/ProgLanguages/JavaScript)
+- [TypeScript](src/ProgLanguages/FrontEnd/TypeScript.md)
+- [Angular8](src/ProgLanguages/FrontEnd/Angular8.md)
 
 # DevOps Skills
 - :star: [Kubernates](src/DesignComponents/DevOps/Kubernates.md)
