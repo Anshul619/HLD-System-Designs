@@ -41,17 +41,15 @@
 - Encryption in flight/transmit using SSL
 - Authentication using IAM
 
-## Aurora Serverless
-- No need to choose an instance size
-- Only supports MySQL 5.6 (as of Jan 2019) & Postgres ( beta )
-- Helpful when you can't predict the workload
+## [Aurora Serverless](https://aws.amazon.com/rds/aurora/serverless/)
+- `No need to choose an instance size`. Helpful when you can't predict the workload.
+- Available for the Amazon Aurora MySQL-Compatible Edition and PostgreSQL-Compatible Edition.
 - DB Cluster starts, shutdown and scales automatically based on CPU/connections.
 - Can migrate from Aurora Cluster to Aurora Serverless & vice-versa.
-- Aurora serverless usage is measured in ACU ( Aurora Capacity Units )
+- Aurora serverless usage is measured in `ACU ( Aurora Capacity Units )`.
 - Billed in 5 mins increment of ACU.
 
 ## [Aurora Multi-master clusters](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/aurora-multi-master.html)
-- TBD
 
 ## Cloudformation template
 - [Aurora Serverless - Cloudformation template](../AWSResourceMgmtServices/CloudFormation/templates/aurora_serverless.yml)

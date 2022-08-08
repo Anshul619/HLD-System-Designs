@@ -82,10 +82,10 @@ Message brokers are used to decouple and enable `Event Driven Architectures` i.e
 - [URL Shortening Service](src/URLShorteningService)
 
 # Engineering Principles
-- :star: [SOLID](src/DesignComponents/SOLID.md)
-- :star: [OOPS](src/DesignComponents/OOPS.md)
+- :star: [SOLID](src/DesignComponents/ObjectOrientedDesign/SOLID.md)
+- :star: [OOPS](src/DesignComponents/ObjectOrientedDesign/OOPS.md)
 - [Design Patterns](src/DesignComponents/DesignPatterns)
-- [DRY](src/DesignComponents/DRY.md)
+- [DRY](src/DesignComponents/ObjectOrientedDesign/DRY.md)
 
 # LLD - Design Problems
 - [LLD Design - Tips & Techniques](src/LLDDesignProblems/LLDDesignTipsAndTechniques.md)
@@ -119,7 +119,7 @@ Message brokers are used to decouple and enable `Event Driven Architectures` i.e
 - [ELK](src/DesignComponents/MonitoringTools/ELK.md)
 
 # Other Design Components
-- [Apache Spark](src/DesignComponents/ApacheSpark.md)
+- [Apache Spark](src/DesignComponents/BigDataTools/ApacheSpark.md)
 
 # References
 - [System Design Primer](https://github.com/donnemartin/system-design-primer)

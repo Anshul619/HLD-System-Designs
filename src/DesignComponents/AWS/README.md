@@ -33,7 +33,7 @@ Component| Service Type                                           | Description 
 [Amazon OpenSearch service](https://aws.amazon.com/opensearch-service/) | [Database Service](DatabaseServices)                   | Successor to Amazon [ElasticSearch](../ElasticSearch) Service`, includes built in OpenSearch Dashboard and Kibana                                                    |
 [Amazon Redshift](https://aws.amazon.com/redshift/) | Other Service                                          | Redshift is a data warehouse product used in data analysis.                                                                                                          |
 [AWS Elastic Beanstalk](https://aws.amazon.com/elasticbeanstalk/) | [Resource Management Service](AWSResourceMgmtServices) | Servers Management - Easy to begin, Impossible to outgrow                                                                                                            |
-[Amazon EMR](ComputeServices/AmazonEMR.md) | Other Service                                          | Fully Managed Service for [Apache Spark](../ApacheSpark.md)                                                                                                          |
+[Amazon EMR](ComputeServices/AmazonEMR.md) | Other Service                                          | Fully Managed Service for [Apache Spark](../BigDataTools/ApacheSpark.md)                                                                                                          |
 
 
 # Amazon Aurora vs Amazon RDS
