@@ -19,7 +19,7 @@
 - `Every transaction might have multiple queries`.
 - Hence, QPS is the subset of TPS.
 
-## [High Availability](https://avinetworks.com/glossary/high-availability/)
+## :star: [High Availability](https://avinetworks.com/glossary/high-availability/)
 - High Availability (HA) describes systems that are dependable enough to operate continuously without failing.
 - They are well-tested and sometimes equipped with redundant components.
 - `99.99% uptime` means that website is down only for `52 mins` in the complete year. This means it is `highly available`.
@@ -43,6 +43,10 @@
 
 ![img.png](assests/ha_vs_fault_tolerant.png)
 
+## [Disaster Recovery](https://en.wikipedia.org/wiki/Disaster_recovery)
+- In AWS, disaster recovery is done through multi-region replication.
+- For example - [Amazon Aurora Global Database](AWS/DatabaseServices/AmazonAurora.md#aurora-global-database)
+
 ## Fail over Policies
 
 ### `Active-Active` policy
@@ -52,7 +56,7 @@
 - In the case of two nodes, for example, if the first node is already active, the second node must be passive or on standby.
 - Not all nodes are going to be active at the same time.
 
-## [Event Driven Architecture](https://aws.amazon.com/event-driven-architecture/)
+## :star: [Event Driven Architecture](https://aws.amazon.com/event-driven-architecture/)
 - An event-driven architecture uses events to `trigger and communicate between decoupled services` and is common in modern applications built with microservice.
 - An event is a change in state, or an update, like an item being placed in a shopping cart on an e-commerce website.
 - Events can either carry the state (the item purchased, its price, and a delivery address) or events can be identifiers (a notification that an order was shipped).
@@ -66,7 +70,7 @@
 - LB also keeps `track of the status of all the resources` while distributing requests.
 - If a server is not available to take new requests or is NOT responding or has elevated error rate, LB will stop sending traffic to such a server.
 
-## [ACID Properties of the Transaction](https://www.geeksforgeeks.org/acid-properties-in-dbms/)
+## :star: [ACID Properties of the Transaction](https://www.geeksforgeeks.org/acid-properties-in-dbms/)
 
 ![img.png](assests/ACID_Property_DBMS.drawio.png)
 
@@ -92,7 +96,7 @@
 - In database systems, durability is the `ACID property` which guarantees that `transactions that have committed will survive permanently`.
 - For example, if a flight booking reports that a seat has successfully been booked, then the seat will remain booked even if the system crashes.
 
-## [CAP Theorem of the Distributed Systems](https://www.geeksforgeeks.org/the-cap-theorem-in-dbms/)
+## :star: [CAP Theorem of the Distributed Systems](https://www.geeksforgeeks.org/the-cap-theorem-in-dbms/)
 
 ![img.png](assests/CAP_Theorem_Distributed_Systems.drawio.png)
 

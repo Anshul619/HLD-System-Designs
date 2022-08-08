@@ -100,15 +100,15 @@ Message brokers are used to decouple and enable `Event Driven Architectures` i.e
 
 # Tech Skills
 - :star: [GoLang](src/DesignComponents/GoLang)
-- [Spring Boot & Microservices](src/DesignComponents/SpringBootAndMicroServices)
-- [Hibernate](src/DesignComponents/Hibernate.md)
+- [Spring Boot & Microservices](src/DesignComponents/Java/SpringBootAndMicroServices)
+- [Hibernate](src/DesignComponents/Java/Hibernate.md)
 - [Java](src/DesignComponents/Java)
-- [Hibernate](src/DesignComponents/Hibernate.md)
+- [Hibernate](src/DesignComponents/Java/Hibernate.md)
 - [JS](src/DesignComponents/JavaScript)
-- [Testing](src/DesignComponents/Testing.md)
+- [Testing](src/DesignComponents/Testing/Readme.md)
 - [JavaScript](src/DesignComponents/JavaScript)
-- [TypeScript](src/DesignComponents/TypeScript.md)
-- [Angular8](src/DesignComponents/Angular8.md)
+- [TypeScript](src/DesignComponents/FrontEnd/TypeScript.md)
+- [Angular8](src/DesignComponents/FrontEnd/Angular8.md)
 
 # DevOps Skills
 - :star: [Kubernates](src/DesignComponents/DevOps/Kubernates.md)

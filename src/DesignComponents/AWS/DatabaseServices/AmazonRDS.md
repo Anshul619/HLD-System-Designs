@@ -3,6 +3,7 @@
 - Amazon RDS is a `database management service for relational databases`. 
 - It manages patching, upgrading, and data backups automatically. 
 - It’s a database management service for structured data only ( database engines like MySQL, PostgresSQL, SQL Server etc.)
+- [How Amazon Aurora engine is better than Amazon RDS, for MySQL/Postgres DB engines?](../README.md#amazon-aurora-vs-amazon-rds)
 
 ![img.png](../assests/RDS_database_engines.png)
 

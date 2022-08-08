@@ -38,21 +38,18 @@ Component| Service Type                                           | Description 
 
 # Amazon Aurora vs Amazon RDS
 
-| Basis                                      | :star: [Amazon Aurora](DatabaseServices/AmazonAurora.md) | [Amazon RDS](DatabaseServices/AmazonRDS.md) |
-|--------------------------------------------|----------------------------------------------------------|---------------------------------------------|
-| Compatible DB Engines                      | Postgres, MySQL                                          | Postgres, MySQL, Oracle, MS SQL, Oracle     |
-| Performance                                | 5x faster than RDS MySQL, 3x than RDS Postgres           | -                                           |
-| Size                                       | Supports upto 128 TB DB size                             | Supports upto 64 TB DB size                 |
-| Max Read Replicas                          | Upto 15 read-replicas                                    | Upto 5 read-replicas                        |
-| Replica lag                                | ~ 100 ms ( max 30 seconds )                              | ~ few mins                                  |
-| Pricing                                    | 20% costly than RDS                                      | -                                           |
-| Crash Recovery                             | Quicker than RDS                                         | -                                           |
-| Fail Over                                  | ~30 secs                                                 | ~60-120 seconds                             |
-| IOPS (input/output operations per second ) | Greater than 80K IOPS                                    | Max 80K IOPS                                |
-| HA                                         | 6 replicas in 3 AZs                                      | Replicas in 2 AZs                           |
-
-# System Designs Using AWS
-- [DesignScalableSystemWithRDMS](../../DesignScalableSystemWithRDMS)
+| Basis                                      | :star: [Amazon Aurora](DatabaseServices/AmazonAurora.md)                             | [Amazon RDS](DatabaseServices/AmazonRDS.md) |
+|--------------------------------------------|--------------------------------------------------------------------------------------|---------------------------------------------|
+| Compatible DB Engines                      | Postgres, MySQL                                                                      | Postgres, MySQL, Oracle, MS SQL, Oracle     |
+| Performance                                | 5x faster than RDS MySQL, 3x than RDS Postgres. High throughput (200K writes/second) | -                                           |
+| Size                                       | Supports upto 128 TB DB size                                                         | Supports upto 64 TB DB size                 |
+| Max Read Replicas                          | Upto 15 read-replicas, across multiple regions                                       | Upto 5 read-replicas                        |
+| Replica lag                                | ~ 100 ms ( max 1 second ), uses `physical, log-based asynchronous replication`       | ~ few mins                                  |
+| Pricing                                    | 20% costly than RDS                                                                  | -                                           |
+| Crash Recovery                             | Quicker than RDS                                                                     | -                                           |
+| Fail Over                                  | less than 30 secs, in case of AZ or region failure                                   | around 60-120 seconds                       |
+| IOPS (input/output operations per second ) | Greater than 80K IOPS                                                                | Max 80K IOPS                                |
+| HA ( by default )                          | 6 replicas in 3 AZs                                                                  | Replicas in 2 AZs                           |
 
 # Centralized Logging Solution in AWS
 - The essential services that can be used is [Amazon CloudWatch](MonitoringServices/AmazonCloudWatch.md) logs, store them in [Amazon S3](StorageServices/AmazonS3.md), and then use [Amazon OpenSearch service](https://aws.amazon.com/opensearch-service/) to visualize them. 
@@ -63,8 +60,11 @@ Component| Service Type                                           | Description 
 - [AWS Budgets](https://aws.amazon.com/aws-cost-management/aws-budgets/)
 - [Cost Allocation Tags](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/cost-alloc-tags.html)
 
-# [Why some services are called "AWS X" and the others "Amazon Y"?](https://stackoverflow.com/questions/33125790/why-some-services-are-called-aws-xxx-and-the-others-amazon-xxx)
-- Utility services are prefixed with AWS, while standalone services are prefixed by "Amazon".
+# System Designs Using AWS
+- [DesignScalableSystemWithRDMS](../../DesignScalableSystemWithRDMS)
+
+# Other Notes
+- Utility services are prefixed with AWS, while standalone services are prefixed by "Amazon". [Reference](https://stackoverflow.com/questions/33125790/why-some-services-are-called-aws-xxx-and-the-others-amazon-xxx).
 
 # References
 - [AWS Documentation Overview](https://aws.amazon.com/documentation-overview/)
