@@ -27,7 +27,7 @@ A CloudFormation template is deployed into the AWS environment as a `STACK`.
 | Makes your life easier               | Steep Learning Curve                      |
 | Coding Review Infrastructure Changes | Innocent Looking changes can be dangerous |
 | Integration with CI Pipeline         | Drift can be painful                      |
-| Large Community Support              |                                           |
+| Large Community Support              | -                                         |
 
 # Alternatives to AWS CloudFormation
 - [Terraform - Open Source](https://www.terraform.io/)

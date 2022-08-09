@@ -4,6 +4,6 @@
 - Compatible with both [EKS](../AWSResourceMgmtServices/AmazonEKS.md) & [ECS](../AWSResourceMgmtServices/AmazonECS.md) i.e. these services can run with Fargate as deployment option, instead of EC2.
 - You can use it to run containers without managing servers or clusters of Amazon EC2 instances. 
 - Fargate has a flexible computing model, which does not require you to select an instance type or directly configure your cluster. 
-- It scales up transparently and you pay according to the CPU and memory resources you actually use.
+- It scales up transparently & you pay according to the CPU and memory resources you actually use.
 
 ![img.png](../assests/aws_ecs_fargate.png)
