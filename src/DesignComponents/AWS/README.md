@@ -64,6 +64,7 @@ Component| Service Type                                           | Description 
 - [DesignScalableSystemWithRDMS](../../DesignScalableSystemWithRDMS)
 
 # Other Notes
+- ARN stands for `Amazon Resouce Name`.
 - Utility services are prefixed with AWS, while standalone services are prefixed by "Amazon". [Reference](https://stackoverflow.com/questions/33125790/why-some-services-are-called-aws-xxx-and-the-others-amazon-xxx).
 
 # References

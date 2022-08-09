@@ -5,6 +5,7 @@
 - SQS offers two types of message queues.
     - `Standard queues` offer maximum throughput, best-effort ordering, and at-least-once delivery.
     - `SQS FIFO queues` are designed to guarantee that messages are processed exactly once, in the exact order that they are sent.
+- Amazon SQS supports [dead-letter queues (DLQ)](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/sqs-dead-letter-queues.html), which other queues (source queues) can target for messages that can't be processed (consumed) successfully.
 
 ![img.png](assests/sqs/sqs_img.png)
 

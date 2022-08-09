@@ -1,6 +1,8 @@
-package main
+package oop
 
-// Reference - https://golangbot.com/structs-instead-of-classes/
+/**
+Reference - https://golangbot.com/structs-instead-of-classes/
+*/
 
 import "log"
 
@@ -11,10 +13,10 @@ type Employee struct {
 	LeavesTaken int
 }
 
-// Package method - private method
+// Package method - private method. Constructor.
 func new(firstName string, lastName string, totalLeave int, leavesTaken int) Employee {
 
-	// No need to specify object key. Magic of comma.
+	// No need to specify object key. This is magic of comma.
 	e := Employee{firstName, lastName, totalLeave, leavesTaken}
 	return e
 }

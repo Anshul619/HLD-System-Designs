@@ -6,6 +6,7 @@
 - Initialisation can be skipped with `:=`.
 - Semicolon is not needed at the end.
 - Trailing comma is needed while initializing struct.
+- Go does not support inheritance, however, it does support composition.
 
 ```go
 package main // folder name is generally specified as package name
@@ -44,5 +45,28 @@ func main() { // first calling function
 go X() // asynchrnously call X() function
 ````
 
+# Important Links
+- [Structs Instead of Classes - OOP in Go](SampleCode/oop/employee/employees.go)
+
+# Error Interface
+````
+type error interface {  
+    Error() string
+}
+````
+
+# [Different ways to extract more information from the error](https://golangbot.com/custom-errors/)
+- Asserting the underlying struct type and getting more information from the struct fields.
+- Asserting the underlying struct type and getting more information using methods
+- Direct comparison
+````
+  var ErrBadPattern = errors.New("syntax error in pattern")
+````
+
+# [Panic & Recover](https://golangbot.com/panic-and-recover/)
+# Go Tutorials
+- https://golangbot.com/learn-golang-series/
+- https://yourbasic.org/golang/implement-fifo-queue/
+- https://dave.cheney.net/2016/08/20/solid-go-design
 
 
