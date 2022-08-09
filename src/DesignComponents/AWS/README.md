@@ -35,22 +35,6 @@ Component| Service Type                                           | Description 
 [AWS Elastic Beanstalk](https://aws.amazon.com/elasticbeanstalk/) | [Resource Management Service](AWSResourceMgmtServices) | Servers Management - Easy to begin, Impossible to outgrow                                                                                                            |
 [Amazon EMR](ComputeServices/AmazonEMR.md) | Other Service                                          | Fully Managed Service for [Apache Spark](../BigDataTools/ApacheSpark.md)                                                                                             |
 
-
-# Amazon Aurora vs Amazon RDS
-
-| Basis                                      | :star: [Amazon Aurora](DatabaseServices/AmazonAurora.md)                             | [Amazon RDS](DatabaseServices/AmazonRDS.md) |
-|--------------------------------------------|--------------------------------------------------------------------------------------|---------------------------------------------|
-| Compatible DB Engines                      | Postgres, MySQL                                                                      | Postgres, MySQL, Oracle, MS SQL, Oracle     |
-| Performance                                | 5x faster than RDS MySQL, 3x than RDS Postgres. High throughput (200K writes/second) | -                                           |
-| Size                                       | Supports upto 128 TB DB size                                                         | Supports upto 64 TB DB size                 |
-| Max Read Replicas                          | Upto 15 read-replicas, across multiple regions                                       | Upto 5 read-replicas                        |
-| Replica lag                                | ~ 100 ms ( max 1 second ), uses `physical, log-based asynchronous replication`       | ~ few mins                                  |
-| Pricing                                    | 20% costly than RDS                                                                  | -                                           |
-| Crash Recovery                             | Quicker than RDS                                                                     | -                                           |
-| Fail Over                                  | less than 30 secs, in case of AZ or region failure                                   | around 60-120 seconds                       |
-| IOPS (input/output operations per second ) | Greater than 80K IOPS                                                                | Max 80K IOPS                                |
-| HA ( by default )                          | 6 replicas in 3 AZs                                                                  | Replicas in 2 AZs                           |
-
 # Centralized Logging Solution in AWS
 - The essential services that can be used is [Amazon CloudWatch](MonitoringServices/AmazonCloudWatch.md) logs, store them in [Amazon S3](StorageServices/AmazonS3.md), and then use [Amazon OpenSearch service](https://aws.amazon.com/opensearch-service/) to visualize them. 
 - [Amazon Kinesis Firehose](https://aws.amazon.com/kinesis/data-firehose/) can also be used to move the data from Amazon S3 to Amazon ElasticSearch.
