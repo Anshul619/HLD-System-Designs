@@ -14,7 +14,7 @@ This repo contains the various system design components info, questions and solu
 | [MySQL](src/DesignComponents/SQLvsNoSQL)                                | -                                       | SQL DB                        | 1000 concurrent requests ( 100 as default ) | [< 10ms ( to get a row from 1 million records )](https://www.quora.com/How-can-we-calculate-the-throughput-of-MySQL?share=1)| `Open Source` ( [RDS](src/DesignComponents/AWS/RDS.md) on AWS ) |
 | [DynamoDB](src/DesignComponents/AWS/DatabaseServices/AmazonDynamoDB.md) | Predictable performance and cost        | NoSQL DB as a Service ( AWS ) | More than 20 million requests per second    | less than 10-20 ms | `AWS Managed Service`   |
 | :star: [ElasticSearch](src/DesignComponents/ElasticSearch)              | `Full-Text-Search`, `Logs-Analysis (ELK)` | NoSQL Search Engine           | -                                           |-| `Open Source`                                                             |
-| [MongoDB](src/DesignComponents/SQLvsNoSQL)                              | -                                       | NoSQL DB                      | -                                           | -| `Open Source`                                                              |
+| [MongoDB](src/DesignComponents/SQLvsNoSQL/MongoDB)                      | -                                       | NoSQL DB                      | -                                           | -| `Open Source`                                                              |
 
 # [In Memory Cache](src/DesignComponents/Redis)
 
@@ -65,12 +65,6 @@ Message brokers are used to decouple and enable `Event Driven Architectures` i.e
 | [gPRC](src/DesignComponents/APITechOptions/gPRC.md) | Used for communication b/w [microservices](src/DesignComponents/MicroServicesArchitecture) or to collect data from IoT devices. It is relatively faster than REST or GraphQL. |
 | [GraphQL](src/DesignComponents/APITechOptions/GraphQL.md) | Used for public API with customizable request body or to aggregate internal data from multiple sources in a public API.         |
 
-# App Servers
-
-| Component                                                         | Strength                                                                               | Very Rough Throughput (QPS)                       | Latency | Pricing Model                                                         |
-|-------------------------------------------------------------------|-----------------------------------------|---------------------------------------------------|----------------|-----------------------------------------------------------------------|
-| [Apache](https://apache.org/)                                     | -                                       | Web Server                       | 512 concurrent requests                           |-|Yes|
-
 # HLD - Design Problems
 - :star: [Zomoto HLD Design](src/ZomatoDesign)
 - [Design a system that scales to million of users on AWS](src/DesignScalableSystemWithRDMS)
@@ -88,14 +82,14 @@ Message brokers are used to decouple and enable `Event Driven Architectures` i.e
 - [DRY](src/DesignComponents/ObjectOrientedDesign/DRY.md)
 
 # [LLD - Design Problems](src/LLDDesignProblems)
-- [LLD Design - Tips & Techniques](src/LLDDesignProblems/LLDDesignTipsAndTechniques.md)
+- :star: [LLD Design - Tips & Techniques](src/LLDDesignProblems/LLDDesignTipsAndTechniques.md)
 - [Chess Game](src/LLDDesignProblems/ChessGame)
+- [Parking Lot](src/LLDDesignProblems/ParkingLot)
 - [Snack & Ladder Game](src/LLDDesignProblems/SnackAndLadderGame)
 - [Book My Show](src/LLDDesignProblems/BookMyShow)
 - [Car Rental System](src/LLDDesignProblems/CarRentalSystem)
 - [Vendor Machine](src/LLDDesignProblems/VendingMachine)
 - [Hotel Booking System](src/LLDDesignProblems/HotelBookingSystem)
-- [Parking Lot](src/LLDDesignProblems/ParkingLot)
 - [Insurance Agent Flow](src/LLDDesignProblems/Others/InsuranceAgentFlow.md)
 
 # [Programming Languages](src/ProgLanguages)
@@ -104,7 +98,6 @@ Message brokers are used to decouple and enable `Event Driven Architectures` i.e
 - [Hibernate](src/ProgLanguages/Java/Hibernate.md)
 - [Java](src/ProgLanguages/Java)
 - [Hibernate](src/ProgLanguages/Java/Hibernate.md)
-- [Testing](src/DesignComponents/Testing/Readme.md)
 - [JavaScript](src/ProgLanguages/JavaScript)
 - [TypeScript](src/ProgLanguages/FrontEnd/TypeScript.md)
 - [Angular8](src/ProgLanguages/FrontEnd/Angular8.md)
@@ -119,6 +112,9 @@ Message brokers are used to decouple and enable `Event Driven Architectures` i.e
 
 # Other Design Components
 - [Apache Spark](src/DesignComponents/BigDataTools/ApacheSpark.md)
+- [Apache Web Server](https://apache.org/)
+  - Web Server which can handle 512 concurrent requests.
+- [Testing](src/DesignComponents/Testing/Readme.md)
 
 # References
 - [System Design Primer](https://github.com/donnemartin/system-design-primer)
