@@ -17,8 +17,6 @@ Built-in Single Machine Failure | Supported                                     
 
 ![img.png](assests/SQLDifferentTypes.png)
 
-<img title="SQL - Different Types" alt="Alt text" src="">
-
 Relational databases store data in rows and columns.
 - Each row contains all the information about one entity and each column contains all the separate data points.
 - Some of the most popular relational databases are `AWS RDS`, `Postgres`, `MySQL`, `Oracle`, `MS SQL Server`, `SQLite` and `MariaDB`.
