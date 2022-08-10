@@ -54,7 +54,7 @@ Message brokers are used to decouple and enable `Event Driven Architectures` i.e
 
 # HLD - Design Problems
 - :star: [Zomoto HLD Design](src/3_HLDDesignProblems/ZomatoDesign)
-- [Design a system that scales to million of users on AWS](src/3_HLDDesignProblems/DesignScalableSystemWithRDMS)
+- :star: [Design a system that scales to million of users on AWS](src/3_HLDDesignProblems/DesignScalableSystemWithRDMS)
 - [Twillo Send Message API](src/3_HLDDesignProblems/TwilloSendMessageAPI)
 - [Rate Limiter API](src/3_HLDDesignProblems/RateLimiterAPI)
 - [Notification System](src/3_HLDDesignProblems/NotificationSystem)
