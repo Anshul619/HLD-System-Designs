@@ -12,9 +12,9 @@
 ## Microservices - Design Principles
 - Define contracts ( request/response ) between microservices.
 - API Gateway to route between microservices.
-- Use [message brokers](../MessageBrokers) ([Kafka Cluster](../MessageBrokers/Kafka.md), [RabbitMQ](../MessageBrokers/RabbitMQ.md), [ActiveMQ](../MessageBrokers/ActiveMQ.md) etc.) to asynchronously pass data b/w microservices.
-- Use Jenkins, [Docker](../DevOps/Docker.md), [Kubernates](../DevOps/Kubernates.md) for the deployment
-- Logging using [ELK](../MonitoringTools/ELK.md), [Kafka Cluster](../MessageBrokers/Kafka.md) etc.
+- Use [message brokers](../4_MessageBrokers) ([Kafka Cluster](../4_MessageBrokers/Kafka.md), [RabbitMQ](../4_MessageBrokers/RabbitMQ.md), [ActiveMQ](../4_MessageBrokers/ActiveMQ.md) etc.) to asynchronously pass data b/w microservices.
+- Use Jenkins, [Docker](../6_DevOps/Docker.md), [Kubernates](../6_DevOps/Kubernates.md) for the deployment
+- Logging using [ELK](../7_MonitoringTools/ELK.md), [Kafka Cluster](../4_MessageBrokers/Kafka.md) etc.
 
 ## Benefits of Microservices design
 
@@ -49,7 +49,7 @@
 ## Examples of MicroServices
 - Search, Start Page, Recommendation etc. as separate components/services.
 - Feed, Search, Product Details etc. services in `LinkedIn`.
-- [Zomoto Design](../ZomatoDesign)
+- [Zomoto Design](../../3_HLDDesignProblems/ZomatoDesign)
 
 ## References
 - [Difference between Microservice and API](https://www.geeksforgeeks.org/difference-between-microservice-and-api/)

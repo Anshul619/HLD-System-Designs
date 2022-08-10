@@ -1,5 +1,5 @@
 
-![img.png](../1_HLDDesignComponents/assests/solid_img.png)
+![img.png](../1_HLDDesignComponents/10_Others_assests/solid_img.png)
 
 # S - Single Responsibility Principle (known as SRP)
 - The name itself suggest that the `class should be having one and only one responsibility`.

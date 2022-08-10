@@ -5,7 +5,7 @@
 
 ## Service-Oriented Architecture ( i.e. Microservice, Loosely coupled architecture )
 - Develop the service oriented architecture i.e. loosely coupled system, `microservice based architecture`.
-- [Read More](MicroServicesArchitecture)
+- [Read More](1_MicroServicesArchitecture)
 
 ## Asynchronous Processing using message brokers ( [Event Driven Architecture](SystemGlossaries.md) )
 - Communicate the events b/w microservices asynchronously.
@@ -16,8 +16,8 @@
 - While designing the solution, generally we should aim for `MAXIMAL throughput` with `ACCEPTABLE latency`.
 
 ## Identify Read/Write Ratio of the apis/queries
-- If it's a READ heavy microservice, the best decision would be to use [Redis](Redis) or `multi-read database instances`.
-- If it's a WRITE heavy microservice ( `HIGH throughput` ), the best decision would be to use either [Kafka](MessageBrokers/Kafka.md) ( as message broker ) or [DynamoDB](../2_AWSComponents/6_DatabaseServices/AmazonDynamoDB.md) ( as data store ).
+- If it's a READ heavy microservice, the best decision would be to use [Redis](5_Redis) or `multi-read database instances`.
+- If it's a WRITE heavy microservice ( `HIGH throughput` ), the best decision would be to use either [Kafka](4_MessageBrokers/Kafka.md) ( as message broker ) or [DynamoDB](../2_AWSComponents/6_DatabaseServices/AmazonDynamoDB.md) ( as data store ).
 
 ## Use Leverage Managed Infrastructures like Amazon RDS, DynamoDB etc.
 - We must consider `cloud-agnostic approach` ( & onPerm customer approach ) while designing the solution.
@@ -35,7 +35,7 @@
 - `Minimize select columns` in the `SQL Queries`.
 - `Observe MySQL Slow Queries logs` and find out SLOW Queries in it.
 
-## Use Caching ( like [Redis](Redis) or CDNs )
+## Use Caching ( like [Redis](5_Redis) or CDNs )
 
 ## Other Points
 - Implement `Pagination` while loading data in the UI pages ( i.e. Page wise scaling )

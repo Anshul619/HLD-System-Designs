@@ -41,7 +41,7 @@
 - `If an application is said to be fault-tolerant then it is also considered highly available.`
 - In AWS, fault tolerance can be implemented using `active-active` failover policy ( instead of `active-passive` policy ) in `HA cluster`.
 
-![img.png](assests/ha_vs_fault_tolerant.png)
+![img.png](10_Others_assests/ha_vs_fault_tolerant.png)
 
 ## [Disaster Recovery](https://en.wikipedia.org/wiki/Disaster_recovery)
 - In AWS, disaster recovery is done through multi-region replication.
@@ -66,10 +66,10 @@
 - An event-driven architecture uses events to `trigger and communicate between decoupled services` and is common in modern applications built with microservice.
 - An event is a change in state, or an update, like an item being placed in a shopping cart on an e-commerce website.
 - Events can either carry the state (the item purchased, its price, and a delivery address) or events can be identifiers (a notification that an order was shipped).
-- [Read more about microservices](MicroServicesArchitecture)
-- [Read more about message brokers like Kafka, RabbitMQ etc.](MessageBrokers)
+- [Read more about microservices](1_MicroServicesArchitecture)
+- [Read more about message brokers like Kafka, RabbitMQ etc.](4_MessageBrokers)
 
-![img.png](assests/fault_tolerance_img.png)
+![img.png](10_Others_assests/fault_tolerance_img.png)
 
 ## [Load Balancers](https://github.com/ema2159/Grokking-System-Design-Interview-Quizzes/blob/master/Quizzes/Load%20Balancer.org)
 - It helps to spread the traffic across a cluster of servers to improve responsiveness and availability of applications, websites or databases.
@@ -78,7 +78,7 @@
 
 ## :star: [ACID Properties of the Transaction](https://www.geeksforgeeks.org/acid-properties-in-dbms/)
 
-![img.png](assests/ACID_Property_DBMS.drawio.png)
+![img.png](10_Others_assests/ACID_Property_DBMS.drawio.png)
 
 ### [Atomicity](https://www.geeksforgeeks.org/acid-properties-in-dbms/)
 - Atomicity is a feature of databases systems dictating where a transaction must be `all-or-nothing`.
@@ -104,7 +104,7 @@
 
 ## :star: [CAP Theorem of the Distributed Systems](https://www.geeksforgeeks.org/the-cap-theorem-in-dbms/)
 
-![img.png](assests/CAP_Theorem_Distributed_Systems.drawio.png)
+![img.png](10_Others_assests/CAP_Theorem_Distributed_Systems.drawio.png)
 
 > The use of the word `Consistency` in `CAP` and its use in `ACID` do not refer to the same identical concept.
 > - In CAP, the term consistency refers to the `consistency of the values in different copies of the same data item in a replicated distributed system`.
@@ -123,10 +123,10 @@
 ## [Domain Driven Architecture](https://www.geeksforgeeks.org/domain-driven-design-ddd/)
 - When we are developing software our focus should not be primarily on technology, rather it should be primarily on business/domain.
 - Classes, modals, services, microservices, rest apis etc. should be designed according to the domains.
-![img.png](assests/domain_driven_design.png)
+![img.png](10_Others_assests/domain_driven_design.png)
 
 ## [Server Cluster](https://www.racksolutions.com/news/blog/server-cluster-how-it-works/)
 - A server cluster consists of a group of servers working simultaneously under a single IP address.
 - Server clustering also ensures higher availability, proper load balancing, and system scalability.
-![img.png](assests/server_cluster_img.png)
+![img.png](10_Others_assests/server_cluster_img.png)
 

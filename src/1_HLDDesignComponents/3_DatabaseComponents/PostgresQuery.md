@@ -1,7 +1,7 @@
 
 # [Different Types of joins](https://www.w3schools.com/sql/sql_join.asp)
 
-![img.png](assets/sql_queries_joins_img.png)
+![img.png](assests/sql_queries_joins_img.png)
 
 # [Having Clause](https://www.w3schools.com/sql/sql_having.asp)
 

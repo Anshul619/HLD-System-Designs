@@ -5,12 +5,12 @@ This repo contains the various system design components info, questions and solu
 - [System Design Glossaries](src/1_HLDDesignComponents/SystemGlossaries.md)
 - [System Design Tips](src/1_HLDDesignComponents/SystemDesignTips.md)
 - [System Estimation Guide](src/1_HLDDesignComponents/SystemEstimations.md)
-- [MicroServices Based Architecture](src/1_HLDDesignComponents/MicroServicesArchitecture)
+- [MicroServices Based Architecture](src/1_HLDDesignComponents/1_MicroServicesArchitecture)
 
-# [Message Brokers](src/1_HLDDesignComponents/MessageBrokers)
+# [Message Brokers](src/1_HLDDesignComponents/4_MessageBrokers)
 Message brokers are used to decouple and enable `Event Driven Architectures` i.e. communicate the events between microservices to pass the data.
 
-| Basis                                 | :star: [Kafka](src/1_HLDDesignComponents/MessageBrokers/Kafka.md)                              | [RabbitMQ](src/1_HLDDesignComponents/MessageBrokers/RabbitMQ.md)                                                                                                        | [Amazon SQS](src/2_AWSComponents/5_MessageBrokerServices/AmazonSQS.md)                                                                                      | [Amazon SNS](src/2_AWSComponents/5_MessageBrokerServices/AmazonSNS.md)                                                                                                                           | [Active MQ](src/1_HLDDesignComponents/MessageBrokers/ActiveMQ.md)                                     |
+| Basis                                 | :star: [Kafka](src/1_HLDDesignComponents/4_MessageBrokers/Kafka.md)                              | [RabbitMQ](src/1_HLDDesignComponents/4_MessageBrokers/RabbitMQ.md)                                                                                                        | [Amazon SQS](src/2_AWSComponents/5_MessageBrokerServices/AmazonSQS.md)                                                                                      | [Amazon SNS](src/2_AWSComponents/5_MessageBrokerServices/AmazonSNS.md)                                                                                                                           | [Active MQ](src/1_HLDDesignComponents/4_MessageBrokers/ActiveMQ.md)                                     |
 |---------------------------------------|-------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------|
 |  Strength                             | High-Throughput Broker                                                                    | Low-Latency MQ                                                                                                                                                     | -                                                                                                                                                              | Push-Notification-Based-Broker                                                                                                                                                                      | Enterprise-Based MQ                                                                              |
 |  Performance                          | Up to `1 million ( 1000K ) messages per second`                                           | Up to `10K messages per second` ( ie. around 100 nodes are needed to match with 1 kafka broker )                                                                   | Up to `30K messages per second`                                                                                                                                |
@@ -31,26 +31,26 @@ Message brokers are used to decouple and enable `Event Driven Architectures` i.e
 
 | API Option| Description                                                                                                                     |
 | -----------|---------------------------------------------------------------------------------------------------------------------------------|
-| :star: [REST](src/1_HLDDesignComponents/APITechOptions/REST.md) | Used for CRUD style public APis and web app.                                                                                    |
-| [gPRC](src/1_HLDDesignComponents/APITechOptions/gPRC.md) | Used for communication b/w [microservices](src/1_HLDDesignComponents/MicroServicesArchitecture) or to collect data from IoT devices. It is relatively faster than REST or GraphQL. |
-| [GraphQL](src/1_HLDDesignComponents/APITechOptions/GraphQL.md) | Used for public API with customizable request body or to aggregate internal data from multiple sources in a public API.         |
+| :star: [REST](src/1_HLDDesignComponents/2_APITechOptions/REST.md) | Used for CRUD style public APis and web app.                                                                                    |
+| [gPRC](src/1_HLDDesignComponents/2_APITechOptions/gPRC.md) | Used for communication b/w [microservices](src/1_HLDDesignComponents/1_MicroServicesArchitecture) or to collect data from IoT devices. It is relatively faster than REST or GraphQL. |
+| [GraphQL](src/1_HLDDesignComponents/2_APITechOptions/GraphQL.md) | Used for public API with customizable request body or to aggregate internal data from multiple sources in a public API.         |
 
-# [SQL & NoSQL databases](src/1_HLDDesignComponents/SQLvsNoSQL)
+# [SQL & NoSQL databases](src/1_HLDDesignComponents/3_DatabaseComponents)
 
 | Component                                                               | Strength                                | Component Type                | Very Rough Throughput (QPS)                 | Latency | Pricing Model                                                   |
 |-------------------------------------------------------------------------|-----------------------------------------|-------------------------------|---------------------------------------------|----------------|-----------------------------------------------------------------|
-| [MySQL](src/1_HLDDesignComponents/SQLvsNoSQL)                                | -                                       | SQL DB                        | 1000 concurrent requests ( 100 as default ) | [< 10ms ( to get a row from 1 million records )](https://www.quora.com/How-can-we-calculate-the-throughput-of-MySQL?share=1)| `Open Source` ( [RDS](src/2_AWSComponents/RDS.md) on AWS ) |
+| [MySQL](src/1_HLDDesignComponents/3_DatabaseComponents)                                | -                                       | SQL DB                        | 1000 concurrent requests ( 100 as default ) | [< 10ms ( to get a row from 1 million records )](https://www.quora.com/How-can-we-calculate-the-throughput-of-MySQL?share=1)| `Open Source` ( [RDS](src/2_AWSComponents/RDS.md) on AWS ) |
 | [DynamoDB](src/2_AWSComponents/6_DatabaseServices/AmazonDynamoDB.md) | Predictable performance and cost        | NoSQL DB as a Service ( AWS ) | More than 20 million requests per second    | less than 10-20 ms | `AWS Managed Service`   |
-| :star: [ElasticSearch](src/1_HLDDesignComponents/ElasticSearch)              | `Full-Text-Search`, `Logs-Analysis (ELK)` | NoSQL Search Engine           | -                                           |-| `Open Source`                                                             |
-| [MongoDB](src/1_HLDDesignComponents/SQLvsNoSQL/MongoDB)                      | -                                       | NoSQL DB                      | -                                           | -| `Open Source`                                                              |
+| :star: [ElasticSearch](src/1_HLDDesignComponents/3_DatabaseComponents/ElasticSearch)              | `Full-Text-Search`, `Logs-Analysis (ELK)` | NoSQL Search Engine           | -                                           |-| `Open Source`                                                             |
+| [MongoDB](src/1_HLDDesignComponents/3_DatabaseComponents/MongoDB)                      | -                                       | NoSQL DB                      | -                                           | -| `Open Source`                                                              |
 
-# [In Memory Cache](src/1_HLDDesignComponents/Redis)
+# [In Memory Cache](src/1_HLDDesignComponents/5_Redis)
 
 | Component                                  | Strength                                                                               | Very Rough Throughput (QPS)                       | Latency | Pricing Model                                                         |
 |--------------------------------------------|-----------------------------------------|---------------------------------------------------|----------------|-----------------------------------------------------------------------|
-| :star: [Redis](src/1_HLDDesignComponents/Redis) | In-Memory fast Data-Store (Caching)     | 100K queries per second                           | -| `Open Source` ( [Elastic Cache](https://aws.amazon.com/elasticache/) on AWS ) |
+| :star: [Redis](src/1_HLDDesignComponents/5_Redis) | In-Memory fast Data-Store (Caching)     | 100K queries per second                           | -| `Open Source` ( [Elastic Cache](https://aws.amazon.com/elasticache/) on AWS ) |
 
-[Read about Redis vs MemCache](src/1_HLDDesignComponents/Redis/RedisVsMemCache.md)
+[Read about Redis vs MemCache](src/1_HLDDesignComponents/5_Redis/RedisVsMemCache.md)
 
 # HLD - Design Problems
 - :star: [Zomoto HLD Design](src/3_HLDDesignProblems/ZomatoDesign)
@@ -89,18 +89,18 @@ Message brokers are used to decouple and enable `Event Driven Architectures` i.e
 - [Angular8](src/5_ProgrammingLanguages/4_FrontEnd/Angular8.md)
 
 # DevOps Skills
-- :star: [Kubernates](src/1_HLDDesignComponents/DevOps/Kubernates.md)
-- [Docker](src/1_HLDDesignComponents/DevOps/Docker.md)
+- :star: [Kubernates](src/1_HLDDesignComponents/6_DevOps/Kubernates.md)
+- [Docker](src/1_HLDDesignComponents/6_DevOps/Docker.md)
 
 # Monitoring Tools
-- :star: [New Relic](src/1_HLDDesignComponents/MonitoringTools/NewRelic.md)
-- [ELK](src/1_HLDDesignComponents/MonitoringTools/ELK.md)
+- :star: [New Relic](src/1_HLDDesignComponents/7_MonitoringTools/NewRelic.md)
+- [ELK](src/1_HLDDesignComponents/7_MonitoringTools/ELK.md)
 
 # Other Design Components
-- [Apache Spark](src/1_HLDDesignComponents/BigDataTools/ApacheSpark.md)
+- [Apache Spark](src/1_HLDDesignComponents/8_BigDataTools/ApacheSpark.md)
 - [Apache Web Server](https://apache.org/)
   - Web Server which can handle 512 concurrent requests.
-- [Testing](src/1_HLDDesignComponents/Testing/Readme.md)
+- [Testing](src/6_Others/QATools/Readme.md)
 
 # References
 - [System Design Primer](https://github.com/donnemartin/system-design-primer)

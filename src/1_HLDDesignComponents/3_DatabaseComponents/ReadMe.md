@@ -15,7 +15,9 @@ Built-in Single Machine Failure | Supported                                     
 
 # SQL - Intro
 
-<img title="SQL - Different Types" alt="Alt text" src="SQL - Different Types.drawio.png">
+![img.png](assests/SQLDifferentTypes.png)
+
+<img title="SQL - Different Types" alt="Alt text" src="">
 
 Relational databases store data in rows and columns.
 - Each row contains all the information about one entity and each column contains all the separate data points.
@@ -23,7 +25,7 @@ Relational databases store data in rows and columns.
 
 # NoSQL - Intro, Different NoSQL types
 
-<img title="NoSQL - Different DB types" alt="Alt text" src="NoSQL - Different DB types.drawio.png">
+![img.png](assests/NoSQLDifferentTypes.png)
 
 ## Key-Value Stores 
 - Data is stored in an array of key-value pairs. 
