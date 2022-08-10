@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-08-10T07:24:10.224Z" agent="5.0 (Macintosh)" etag="jHCRrF-VQ2g5yqrDj0Yh" version="20.2.3" type="github">
+<mxfile host="app.diagrams.net" modified="2022-08-10T07:24:49.110Z" agent="5.0 (Macintosh)" etag="BhbJY_CRbXUalar8d8mi" version="20.2.3" type="github">
   <diagram id="onmVZMC7TlNop5oKB3UY" name="Page-1">
     <mxGraphModel dx="1796" dy="1630" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -183,6 +183,9 @@
         </mxCell>
         <mxCell id="VerBMDBRh4YoSRX80HrU-1" value="Image Upload" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="640" y="-20" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="VerBMDBRh4YoSRX80HrU-2" value="CloudWatch" style="sketch=0;points=[[0,0,0],[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0,0],[0,1,0],[0.25,1,0],[0.5,1,0],[0.75,1,0],[1,1,0],[0,0.25,0],[0,0.5,0],[0,0.75,0],[1,0.25,0],[1,0.5,0],[1,0.75,0]];points=[[0,0,0],[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0,0],[0,1,0],[0.25,1,0],[0.5,1,0],[0.75,1,0],[1,1,0],[0,0.25,0],[0,0.5,0],[0,0.75,0],[1,0.25,0],[1,0.5,0],[1,0.75,0]];outlineConnect=0;fontColor=#232F3E;gradientColor=#F34482;gradientDirection=north;fillColor=#BC1356;strokeColor=#ffffff;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.cloudwatch_2;" vertex="1" parent="1">
+          <mxGeometry x="631" y="238" width="78" height="78" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
