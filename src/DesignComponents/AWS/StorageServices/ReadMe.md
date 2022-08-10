@@ -1,5 +1,5 @@
 
-# [S3 vs EFS vs EBS](../../../../README.md)
+# [S3 vs EFS vs EBS](S3vsEFSvsEBS.md)
 
 # References
 - [What is difference b/w AWS EFS vs S3](https://stackoverflow.com/questions/29573142/what-is-difference-between-aws-efs-and-s3)

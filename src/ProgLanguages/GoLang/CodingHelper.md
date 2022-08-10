@@ -7,6 +7,8 @@
 - Semicolon is not needed at the end.
 - Trailing comma is needed while initializing struct.
 - Go does not support inheritance, however, it does support composition.
+- `In Go's philosophy, it is better to avoid unnecessary branches and indentation of code. It is also considered better to return as early as possible.`
+
 
 ```go
 package main // folder name is generally specified as package name
@@ -59,11 +61,14 @@ type error interface {
 - Asserting the underlying struct type and getting more information from the struct fields.
 - Asserting the underlying struct type and getting more information using methods
 - Direct comparison
-````
-  var ErrBadPattern = errors.New("syntax error in pattern")
+````go
+package main
+
+var ErrBadPattern = errors.New("syntax error in pattern")
 ````
 
 # [Panic & Recover](https://golangbot.com/panic-and-recover/)
+
 # Go Tutorials
 - https://golangbot.com/learn-golang-series/
 - https://yourbasic.org/golang/implement-fifo-queue/

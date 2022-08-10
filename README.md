@@ -7,26 +7,8 @@ This repo contains the various system design components info, questions and solu
 - [System Estimation Guide](src/DesignComponents/SystemEstimations.md)
 - [MicroServices Based Architecture](src/DesignComponents/MicroServicesArchitecture)
 
-# [SQL & NoSQL databases](src/DesignComponents/SQLvsNoSQL)
-
-| Component                                                               | Strength                                | Component Type                | Very Rough Throughput (QPS)                 | Latency | Pricing Model                                                   |
-|-------------------------------------------------------------------------|-----------------------------------------|-------------------------------|---------------------------------------------|----------------|-----------------------------------------------------------------|
-| [MySQL](src/DesignComponents/SQLvsNoSQL)                                | -                                       | SQL DB                        | 1000 concurrent requests ( 100 as default ) | [< 10ms ( to get a row from 1 million records )](https://www.quora.com/How-can-we-calculate-the-throughput-of-MySQL?share=1)| `Open Source` ( [RDS](src/DesignComponents/AWS/RDS.md) on AWS ) |
-| [DynamoDB](src/DesignComponents/AWS/DatabaseServices/AmazonDynamoDB.md) | Predictable performance and cost        | NoSQL DB as a Service ( AWS ) | More than 20 million requests per second    | less than 10-20 ms | `AWS Managed Service`   |
-| :star: [ElasticSearch](src/DesignComponents/ElasticSearch)              | `Full-Text-Search`, `Logs-Analysis (ELK)` | NoSQL Search Engine           | -                                           |-| `Open Source`                                                             |
-| [MongoDB](src/DesignComponents/SQLvsNoSQL/MongoDB)                      | -                                       | NoSQL DB                      | -                                           | -| `Open Source`                                                              |
-
-# [In Memory Cache](src/DesignComponents/Redis)
-
-| Component                                  | Strength                                                                               | Very Rough Throughput (QPS)                       | Latency | Pricing Model                                                         |
-|--------------------------------------------|-----------------------------------------|---------------------------------------------------|----------------|-----------------------------------------------------------------------|
-| :star: [Redis](src/DesignComponents/Redis) | In-Memory fast Data-Store (Caching)     | 100K queries per second                           | -| `Open Source` ( [Elastic Cache](https://aws.amazon.com/elasticache/) on AWS ) |
-
-[Read about Redis vs MemCache](src/DesignComponents/Redis/RedisVsMemCache.md)
-
 # [Message Brokers](src/DesignComponents/MessageBrokers)
-
-Message brokers are used to decouple and enable `Event Driven Architectures` i.e. communicate the events between microservices.
+Message brokers are used to decouple and enable `Event Driven Architectures` i.e. communicate the events between microservices to pass the data.
 
 | Basis                                 | :star: [Kafka](src/DesignComponents/MessageBrokers/Kafka.md)                              | [RabbitMQ](src/DesignComponents/MessageBrokers/RabbitMQ.md)                                                                                                        | [Amazon SQS](src/DesignComponents/AWS/MessageBrokerServices/AmazonSQS.md)                                                                                      | [Amazon SNS](src/DesignComponents/AWS/MessageBrokerServices/AmazonSNS.md)                                                                                                                           | [Active MQ](src/DesignComponents/MessageBrokers/ActiveMQ.md)                                     |
 |---------------------------------------|-------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------|
@@ -45,18 +27,6 @@ Message brokers are used to decouple and enable `Event Driven Architectures` i.e
 |  Payload Size                         | `Default 1MB limit`                                                                       | No constraints                                                                                                                                                     | No constraints                                                                                                                                                                | No constraints| No constraints                                                                                   |
 |  API Endpoints available              | Yes                                                                                       | Yes | Yes                                                                                                                                                            | Yes | Yes                                                                                              |
 
-# [Storage Services on AWS](src/DesignComponents/AWS/StorageServices)
-
-| Basis                                 | :star: [S3](src/DesignComponents/AWS/StorageServices/AmazonS3.md)         | [EFS](src/DesignComponents/AWS/StorageServices/AmazonEFS.md)                    | EBS                                                   |
-| ---------------------------------------|---------------------------------------------------------------------------|------------------------------------------------------------------------------|-------------------------------------------------------|
-| Storage | Object Storage ( can be mounted using s3fs plugin or accessed over HTTP ) | Actual FileSystem ( NFS interface, which can be shared b/w `EC2 instances` ) |
-| IO Speed | Relatively slower than EFS                                                | Faster than S3                                                               |
-| Rough Costing | [$0.021/GB-Month](https://aws.amazon.com/s3/pricing/)                     | [$0.30/GB-Month](https://aws.amazon.com/efs/pricing/)                        | [$0.10/GB-month](https://aws.amazon.com/ebs/pricing/) |
-| Use Cases | Static Web Content, Media Data ( like image, video, documents )           | Shared Volume b/w EC2 instances                                              | Volume for a single EC2 instance                      |
-| Availability | `99.999999999% availability`, durability in at least `3 AZs in S3 Region`   | `99.9% availability`, with multiple AZs                                      | `99.999% availability`, with multiple AZs             |
-| Storage Size | No limit                                                                  | No limit                                                                     | Max Storage size of 16TB                              |
-| File Size Limitation | Max Object Size of 5TB ( Max Object Size of 5GB through PUT API )         | Max File Size of 48TB                                                        | No Limit                                              |
-
 # API Technology Options
 
 | API Option| Description                                                                                                                     |
@@ -64,6 +34,23 @@ Message brokers are used to decouple and enable `Event Driven Architectures` i.e
 | :star: [REST](src/DesignComponents/APITechOptions/REST.md) | Used for CRUD style public APis and web app.                                                                                    |
 | [gPRC](src/DesignComponents/APITechOptions/gPRC.md) | Used for communication b/w [microservices](src/DesignComponents/MicroServicesArchitecture) or to collect data from IoT devices. It is relatively faster than REST or GraphQL. |
 | [GraphQL](src/DesignComponents/APITechOptions/GraphQL.md) | Used for public API with customizable request body or to aggregate internal data from multiple sources in a public API.         |
+
+# [SQL & NoSQL databases](src/DesignComponents/SQLvsNoSQL)
+
+| Component                                                               | Strength                                | Component Type                | Very Rough Throughput (QPS)                 | Latency | Pricing Model                                                   |
+|-------------------------------------------------------------------------|-----------------------------------------|-------------------------------|---------------------------------------------|----------------|-----------------------------------------------------------------|
+| [MySQL](src/DesignComponents/SQLvsNoSQL)                                | -                                       | SQL DB                        | 1000 concurrent requests ( 100 as default ) | [< 10ms ( to get a row from 1 million records )](https://www.quora.com/How-can-we-calculate-the-throughput-of-MySQL?share=1)| `Open Source` ( [RDS](src/DesignComponents/AWS/RDS.md) on AWS ) |
+| [DynamoDB](src/DesignComponents/AWS/DatabaseServices/AmazonDynamoDB.md) | Predictable performance and cost        | NoSQL DB as a Service ( AWS ) | More than 20 million requests per second    | less than 10-20 ms | `AWS Managed Service`   |
+| :star: [ElasticSearch](src/DesignComponents/ElasticSearch)              | `Full-Text-Search`, `Logs-Analysis (ELK)` | NoSQL Search Engine           | -                                           |-| `Open Source`                                                             |
+| [MongoDB](src/DesignComponents/SQLvsNoSQL/MongoDB)                      | -                                       | NoSQL DB                      | -                                           | -| `Open Source`                                                              |
+
+# [In Memory Cache](src/DesignComponents/Redis)
+
+| Component                                  | Strength                                                                               | Very Rough Throughput (QPS)                       | Latency | Pricing Model                                                         |
+|--------------------------------------------|-----------------------------------------|---------------------------------------------------|----------------|-----------------------------------------------------------------------|
+| :star: [Redis](src/DesignComponents/Redis) | In-Memory fast Data-Store (Caching)     | 100K queries per second                           | -| `Open Source` ( [Elastic Cache](https://aws.amazon.com/elasticache/) on AWS ) |
+
+[Read about Redis vs MemCache](src/DesignComponents/Redis/RedisVsMemCache.md)
 
 # HLD - Design Problems
 - :star: [Zomoto HLD Design](src/ZomatoDesign)

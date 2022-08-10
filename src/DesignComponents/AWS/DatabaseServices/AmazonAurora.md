@@ -1,5 +1,5 @@
 
-# [How Amazon Aurora engine is better than Amazon RDS, for MySQL/Postgres DB engines?](AWSAuroraVsRDS.md)
+# [Why Amazon Aurora engine is better than Amazon RDS, for MySQL/Postgres DB engines?](AWSAuroraVsRDS.md)
 
 # [Amazon Aurora](https://aws.amazon.com/rds/aurora/)
 - Designed for unparalleled high performance and availability at global scale with full MySQL and PostgreSQL compatibility ( that means your drivers will work as if Aurora was a Postgres or MySQL database).
