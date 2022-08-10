@@ -23,7 +23,7 @@
 - High Availability (HA) describes systems that are dependable enough to operate continuously without failing.
 - They are well-tested and sometimes equipped with redundant components.
 - `99.99% uptime` means that website is down only for `52 mins` in the complete year. This means it is `highly available`.
-- In AWS, high availability is achieved through multiple deployments of the app in [different availability zones](AWS/NetworkingAndContentDelivery/HA-Region-AZ.md).
+- In AWS, high availability is achieved through multiple deployments of the app in [different availability zones](AWS/AWS-Global-Architecture-Region-AZ.md).
 - [Design Scalable System With RDMS on AWS](../DesignScalableSystemWithRDMS)
 
 ### Components of HA
