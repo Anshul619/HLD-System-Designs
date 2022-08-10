@@ -56,6 +56,12 @@
 - In the case of two nodes, for example, if the first node is already active, the second node must be passive or on standby.
 - Not all nodes are going to be active at the same time.
 
+## [Recovery Point Objective (RPO)](https://docs.aws.amazon.com/whitepapers/latest/microservices-on-aws/disaster-recovery.html)
+- Recovery time objective is the maximum acceptable delay between the interruption of service and restoration of service. This objective determines what is considered an acceptable time window when service is unavailable and is defined by the organization.
+
+## [Recovery Time Objective (RTO)](https://docs.aws.amazon.com/whitepapers/latest/microservices-on-aws/disaster-recovery.html)
+- Recovery point objective is the maximum acceptable amount of time since the last data recovery point. This objective determines what is considered an acceptable loss of data between the last recovery point and the interruption of service and is defined by the organization.
+
 ## :star: [Event Driven Architecture](https://aws.amazon.com/event-driven-architecture/)
 - An event-driven architecture uses events to `trigger and communicate between decoupled services` and is common in modern applications built with microservice.
 - An event is a change in state, or an update, like an item being placed in a shopping cart on an e-commerce website.
@@ -123,9 +129,4 @@
 - A server cluster consists of a group of servers working simultaneously under a single IP address.
 - Server clustering also ensures higher availability, proper load balancing, and system scalability.
 ![img.png](assests/server_cluster_img.png)
-
-## Recovery Point Objective (RPO) 
-## Recovery Time Objective (RTO)
-
-
 

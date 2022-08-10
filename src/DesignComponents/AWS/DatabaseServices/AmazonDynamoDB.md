@@ -1,5 +1,14 @@
 
 # [Amazon DynamoDB](https://aws.amazon.com/dynamodb/)
+- Managed NoSQL database
+- Provisioned Throughput
+- Fast, predictable performance
+- JSON Support
+- Items up to 400 KB
+- TTL
+- Streams and triggers
+- AWS Application auto scaling
+- Global tables
 
 ## Automated Storage Scaling
 - There is `no limit to the amount of data you can store in a DynamoDB table`, and the service automatically allocates more storage, as you store more data using the DynamoDB write APIs.

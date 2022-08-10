@@ -53,7 +53,7 @@
 ## [Aurora Multi-master clusters](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/aurora-multi-master.html)
 
 ## Cloudformation template
-- [Aurora Serverless - Cloudformation template](../AWSResourceMgmtServices/CloudFormation/templates/aurora_serverless.yml)
+- [Aurora Serverless - Cloudformation template](../AWSInfraAutomation/CloudFormation/templates/aurora_serverless.yml)
 
 ## References
 - :star: [Amazon Aurora Global Database Design Patterns for HA and DR | Amazon Web Services](https://www.youtube.com/watch?v=bbiWciJSouY)
