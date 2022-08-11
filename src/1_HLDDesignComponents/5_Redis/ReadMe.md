@@ -6,9 +6,11 @@
 # Key Features of Redis ( REmote DIctionary Server)
 
 ## Speed - 100K queries per second
-- Redis is very fast. It can execute `100K queries` per second.
+- Redis is very fast. It can execute `100K queries per second`.
 - Since Redis uses in-memory for storage, it is very fast.
-- Mostly `O(1)` behavior.
+- Mostly `O(1)` behavior, to get data from redis.
+
+[![img.png](https://pbs.twimg.com/media/FMx3JZRUYAIWWKq?format=jpg&name=4096x4096)](https://www.youtube.com/watch?v=5TRFpFBccQM)
 
 ## [Atomicity - Redis Transaction lock](https://redis.io/docs/reference/patterns/distributed-locks/)
 - Using `RedisTransaction` lock, we can achieve atomicity on the Redis operations (i.e. set/increase the key, add/remove elements from set, increase counter etc.).
@@ -134,10 +136,6 @@ appendonly yes
 - C/C++
 - Go
 - Java etc.
-
-# [Why is redis so fast?](https://www.youtube.com/watch?v=5TRFpFBccQM)
-
-![img.png](assests/redis_so_fast.png)
 
 # [Redis vs Memcache](RedisVsMemCache.md)
 

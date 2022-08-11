@@ -30,11 +30,29 @@
 | 1 Million | `10^6 units`                  |
 | 1 Billion | `10^3 million` = `10^9 units` |
 
+## Time Calculation
+
+| Base          | Value             | 
+|---------------|-------------------|
+| Nano-Seconds  | 1 sec = `10^9 ns` |
+| Micro-Seconds | 1 sec = `10^6 us` |
+| Milli-Second  | 1 sec = `10^3 ms` |
+
+## [Latency Comparison Numbers](https://github.com/donnemartin/system-design-primer#latency-numbers-every-programmer-should-know)
+
+| Storage                | Read latency ( 1 byte ) | Comparison                  |
+|------------------------|-----------------------|-----------------------------|
+| L1 cache reference     | 0.1 ns                | -                           |
+| L2 cache reference     | 2.8 ns                | -                           |
+| L3 cache reference     | 12.9 ns               | -                           |
+| :star: RAM/Main Memory | 120 ns (4 GB/sec)     | ~`4 times faster than SSD`  |
+| :star: SSD             | 50-150 us (1 GB/sec)  | ~`30 times faster than HDD` |
+| HDD                    | 1-10 ms (30 MB/sec)   | -                           |
+
 # Estimation Tips
+The best way to do estimations is to have `BASE ballmark parameters` ( a bit realistic ).
 
-The best way to do estimations is to have `BASE ballmark parameters` ( a bit realistic )
-
-## No. of shards
+## No. of shards ( for scaling purpose )
 
 `Total storage needed`/`Per machine storage available`
 
@@ -50,5 +68,5 @@ where
   - Max Cache data at any time.
   - Per machine RAM available.
 
-## Round the numbers
+## Round the numbers, to simplify the values
 
