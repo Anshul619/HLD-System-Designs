@@ -48,7 +48,7 @@ Message brokers are used to decouple and enable `Event Driven Architectures` i.e
 
 | Component                                  | Strength                                                                               | Very Rough Throughput (QPS)                       | Latency | Pricing Model                                                         |
 |--------------------------------------------|-----------------------------------------|---------------------------------------------------|----------------|-----------------------------------------------------------------------|
-| :star: [Redis](src/1_HLDDesignComponents/5_Redis) | In-Memory fast Data-Store (Caching)     | 100K queries per second                           | -| `Open Source` ( [Elastic Cache](https://aws.amazon.com/elasticache/) on AWS ) |
+| :star: [Redis](src/1_HLDDesignComponents/5_Redis) | In-Memory fast Data-Store (Caching)     | `100K queries per second`                           | -| `Open Source` ( [Elastic Cache](https://aws.amazon.com/elasticache/) on AWS ) |
 
 [Read about Redis vs MemCache](src/1_HLDDesignComponents/5_Redis/RedisVsMemCache.md)
 
@@ -66,8 +66,8 @@ Message brokers are used to decouple and enable `Event Driven Architectures` i.e
 - :star: [OOP Design](src/4_ObjectOrientedDesign/OOP.md)
 - :star: [SOLID Principles](src/4_ObjectOrientedDesign/SOLID.md)
 - :star: [Design Tips & Techniques](src/4_ObjectOrientedDesign/TipsAndTechniques.md)
+- :star: [Design Patterns](src/4_ObjectOrientedDesign/DesignPatterns)
 - [DRY Principle](src/4_ObjectOrientedDesign/DRY.md)
-- [Design Patterns](src/4_ObjectOrientedDesign/DesignPatterns)
 - [Design Problems](src/4_ObjectOrientedDesign/OOPDesignProblems)
   - [Chess Game](src/4_ObjectOrientedDesign/OOPDesignProblems/ChessGame)
   - [Parking Lot](src/4_ObjectOrientedDesign/OOPDesignProblems/ParkingLot)

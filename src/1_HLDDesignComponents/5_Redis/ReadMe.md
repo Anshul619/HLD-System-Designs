@@ -1,6 +1,7 @@
 
 # Introduction
 - Popular in-memory data platform used as a cache that can be deployed on-premises, across clouds, and hybrid environments.
+- LRU is the [default eviction policy](https://docs.redis.com/latest/rs/databases/configure/eviction-policy/) in redis
 
 # Key Features of Redis ( REmote DIctionary Server)
 
@@ -15,9 +16,11 @@
 ## [Multiple data types supported](https://redis.io/docs/manual/data-types/)
 
 ### [Strings](https://www.w3resource.com/redis/redis-data-types.php)
-
 - Strings are Redis `most basic data type`.
 - It is the only data type in Memcached, so it is also very natural for newcomers to use it in Redis.
+- There are two ways to store JSON in Redis.
+  - Option1 - `Stringify and then store JSON` in Redis, as string datatype
+  - Option2 - Use [RedisJSON](https://redis.io/docs/stack/json/), which supports JSON value in Redis.
 - Commands
   - `SET <KEY> <VALUE>`
   - `GET <KEY>`
@@ -33,8 +36,7 @@ MGET foo bar
 ```
 
 ### Hashes
-- `Redis Hashes` are maps between `string fields` and `string values`, so they are the perfect data type to represent objects (e.g. A User with a number of fields like name, surname, age, and so forth).
-  
+- `Redis Hashes` are maps between `string fields` and `string values`, so they are the perfect data type to `represent objects` (e.g. A User with a number of fields like name, surname, age, and so forth).
 ```
 HSET user:1000 username antirez password P1pp0 age 34
 HGETALL user:1000
@@ -87,32 +89,37 @@ redis 127.0.0.1:6379> ZRANGEBYSCORE w3resourcelist 0 1000
   - Product-recommendation engine
   - Identity and access management
 
-## [Master-Slave Replication Supported](https://redis.io/docs/manual/replication/)
+## [HA - Master-Slave Replication Supported](https://redis.io/docs/manual/replication/)
 - Redis supports `master-slave replication`.
 - `Master copy` is maintained by master-slave and replicated to `n other SLAVE` nodes.
+
+![img.png](https://i1.wp.com/www.learnsteps.com/wp-content/uploads/2020/07/masterslave.png?w=840&ssl=1)
+
+### [Advantages of Master-Slave replication](https://www.quora.com/Whats-the-point-of-master-slave-replication-in-Redis)
+- Turn off persistence on the master node, so that you get consistent low latency response time. No forking to disk will be done. No wasted I/O.
+- Deliver `High availability`
+  - If master node goes down, the slave can be immediately promoted, so you don't experience any down time.
+- Increased throughput
+  - Under extremely high load, you could balance the `reads between the master and slave`. 
+  - Although it would be recommended to setup up additional `no persistence, memory only` slaves for that purpose.
 
 ### [How to configure master-slave in Redis?](https://redis.io/docs/manual/replication/)
 - To configure basic Redis replication is trivial.
 - Just add the following line to the replica configuration file `redis.conf`.
-
 ```
 replicaof 192.168.1.1 6379
 ```
 
-## [Rich Client-Side library](https://redis.io/docs/libraries/)
-- PHP
-- C/C++
-- Go
-- Java etc.
-
-## [Sharding is supported in Redis](https://redis.io/docs/manual/scaling/)
+## [Scaling - Sharding supported, using Redis Cluster](https://redis.io/docs/manual/scaling/)
 - Redis scales `horizontally with a deployment topology called Redis Cluster`.
-- What do you get with `Redis Cluster`?
-  - The ability to automatically split your dataset among multiple nodes.
-  - The ability to continue operations when a subset of the nodes are experiencing failures or are unable to communicate with the rest of the cluster.
+
+![img.png](https://i1.wp.com/www.learnsteps.com/wp-content/uploads/2020/07/cluster.png?w=840&ssl=1)
+
+### Advantages of Redis Cluster
+- The ability to automatically `split your dataset` among multiple nodes.
+- The ability to continue operations when a subset of the nodes are experiencing failures or are unable to communicate with the rest of the cluster.
 
 ### [How to enable Redis Cluster?](https://redis.io/docs/manual/scaling/)
-
 - Go to `redis.conf` file and add following lines
 ```
 port 7000
@@ -122,22 +129,20 @@ cluster-node-timeout 5000
 appendonly yes
 ```
 
-# [LRU - default eviction policy in Redis](https://docs.redis.com/latest/rs/databases/configure/eviction-policy/)
-- `volatile-lru` - The least recently used keys would be removed with expire field set to true.
+## [Rich Client-Side library](https://redis.io/docs/libraries/)
+- PHP
+- C/C++
+- Go
+- Java etc.
+
+# [Why is redis so fast?](https://www.youtube.com/watch?v=5TRFpFBccQM)
+
+![img.png](assests/redis_so_fast.png)
 
 # [Redis vs Memcache](RedisVsMemCache.md)
-
-# Open Questions 
-
-## Which redis data type should be used?
-- If we use Redis String ( key, value ) pairs, we would have to do typecast everytime.
-- Hence it would be preferred to use the Redis Set data type to store JSON values in the Redis.
-- The time complexity to get an element from the Redis Set would be `O(1)`. ( In case of nested object, time complexity would be more )
-
-## When to use Redis & NOT `Master-Slave` technique of RDMS database?
-- Since Redis offers high LATENCY, it would be useful in corresponding scenario.
 
 # References
 - [Introduction To Redis](https://www.slideshare.net/dvirsky/introduction-to-redis)
 - [Redis Interview Questions & Answers](https://www.javatpoint.com/redis-interview-questions-and-answers)
 - [Top Redis Use Cases by Core Data Structure Types](https://scalegrid.io/blog/top-redis-use-cases-by-core-data-structure-types/)
+- [What are Redis master-slave and Redis clusters and the difference between them?](https://www.learnsteps.com/what-are-redis-master-slave-and-redis-clusters-and-the-difference-between-them/)
