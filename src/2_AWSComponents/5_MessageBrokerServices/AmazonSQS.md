@@ -1,6 +1,5 @@
 
 # [Amazon SQS (Simple Queue Service)](https://aws.amazon.com/sqs/)
-
 - Amazon Simple Queue Service (SQS) is a fully managed message queuing service that enables you to decouple and scale microservices, distributed systems, and serverless applications.
 - SQS offers two types of message queues.
     - `Standard queues` offer maximum throughput, best-effort ordering, and at-least-once delivery.
@@ -10,7 +9,7 @@
 ![img.png](assests/sqs/sqs_img.png)
 
 # How SQS works? How it implements At-least-Once delivery?
-- Amazon SQS is a message queueing service, meaning that it exposes an API to publish and consume messages. 
+- `Amazon SQS is a message queueing service, meaning that it exposes an API to publish and consume messages`. 
 - Unlike a publish-subscribe system, a single message should be delivered to a single consumer, even when there are a lot of consumers running concurrently (also known as the `competing consumers pattern`).
 - When a message is being received from the system, it is blocked from being visible to other consumers for a given period of time. 
 - If the message isn't deleted before this timeout elapses, it will be re-delivered. That way, `SQS implements at-least-once delivery`.

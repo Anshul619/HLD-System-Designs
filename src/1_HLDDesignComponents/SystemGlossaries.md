@@ -5,7 +5,7 @@
 - `Latency is the time required to perform an action or to produce some result`. 
 - Latency is measured in units of time - hours, minutes, seconds, nanoseconds or clock periods.
 - [Latency comparison numbers](SystemEstimationTips.md#latency-comparison-numbers)
-- Example - `50 secs to do a transaction`.
+- For example - `50 secs to do a transaction`.
 
 ## Throughput
 - Throughput is the number of actions executed or results produced per unit of time.
@@ -14,11 +14,26 @@
 ### TPS (Transactions per Second)
 - For transactions processing systems, throughput is typically measured in `TPS`.
 - The TPS includes a message entry and a message, plus a user database access. (Business TPS = CAPSX per call average TPs)
-- Example - `500 transactions per second ( 500 TPS )` etc.
+- For example - `500 transactions per second ( 500 TPS )`.
 
 ### QPS (Queries per Second)
 - `Every transaction might have multiple queries`.
 - Hence, QPS is the subset of TPS.
+
+## Scalability
+
+### Horizontal scalability ( Scale Out )
+- [Load Balancers](https://github.com/ema2159/Grokking-System-Design-Interview-Quizzes/blob/master/Quizzes/Load%20Balancer.org) are used for the horizontal scalability.
+- LB helps to spread the traffic across a cluster of servers to improve responsiveness and availability of applications, websites or databases.
+- LB also keeps track of the status of all the resources while distributing requests.
+- If a server is not available to take new requests or is NOT responding or has elevated error rate, LB will stop sending traffic to such a server.
+- In AWS, [Elastic Load Balancer](../2_AWSComponents/1_NetworkingAndContentDelivery/ElasticLoadBalancer.md) is used for the load balancing.
+
+![img.png](https://dzone.com/storage/temp/5747694-picture1.png)
+
+### Vertical scalability ( Scale Up )
+
+![img.png](https://dzone.com/storage/temp/5747695-picture2.png)
 
 ## :star: [High Availability](https://avinetworks.com/glossary/high-availability/)
 - High Availability (HA) describes systems that are dependable enough to operate continuously without failing.
@@ -46,7 +61,7 @@
 
 ![img.png](10_Others_assests/ha_vs_fault_tolerant.png)
 
-## [Disaster Recovery](https://en.wikipedia.org/wiki/Disaster_recovery)
+### [Disaster Recovery](https://en.wikipedia.org/wiki/Disaster_recovery)
 - In AWS, disaster recovery is done through multi-region replication.
 - For example - [Amazon Aurora Global Database](../2_AWSComponents/6_DatabaseServices/AmazonAurora.md#aurora-global-database)
 
@@ -57,13 +72,6 @@
   - An update like an item being placed in a shopping cart on an e-commerce website.
   - Item purchased, its price, and a delivery address.
   - A notification that an order was shipped.
-
-## [Load Balancers](https://github.com/ema2159/Grokking-System-Design-Interview-Quizzes/blob/master/Quizzes/Load%20Balancer.org)
-- It helps to spread the traffic across a cluster of servers to improve responsiveness and availability of applications, websites or databases.
-- `LB also keeps track of the status of all the resources while distributing requests`.
-- If a server is not available to take new requests or is NOT responding or has elevated error rate, LB will stop sending traffic to such a server.
-
-![img.png](10_Others_assests/load_balancer_img.png)
 
 ## :star: [ACID Properties of the Transaction](https://www.geeksforgeeks.org/acid-properties-in-dbms/)
 
@@ -134,3 +142,7 @@
 - Server clustering also ensures higher availability, proper load balancing, and system scalability.
 ![img.png](10_Others_assests/server_cluster_img.png)
 
+
+
+# References
+- [Scalability and High Availability](https://dzone.com/refcardz/scalability)
