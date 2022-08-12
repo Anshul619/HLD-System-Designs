@@ -33,14 +33,16 @@
 - `Failover` - Switch from an active system component to a redundant component in case of failure with degraded performance or functionality.
 - `Failback` - Switch back from a redundant component to the primary active component, when it has recovered from failure.
 
-## [Fault Tolerance vs HA](https://www.linkedin.com/pulse/high-availability-vs-fault-tolerance-jon-bonso/)
-- Fault Tolerance, on the other hand, has the goal of keeping your application running with `zero downtime`.
-- Think of it as an `upgraded version of High Availability`.
-- As its name implies, it can tolerate any component fault to avoid any performance impact, data loss, or system crashes by having redundant resources beyond what is typically needed.
-- It has a more complex design, and higher redundancy to sustain any fault in one of its components.
-- A system can be highly available but not fault-tolerant, and it can be both. 
-- `If an application is said to be fault-tolerant then it is also considered highly available.`
-- In AWS, fault tolerance can be implemented using `active-active fail-over policy` ( instead of `active-passive` policy ) in `HA cluster`.
+## [Fault Tolerance](https://www.linkedin.com/pulse/high-availability-vs-fault-tolerance-jon-bonso/)
+- Fault Tolerance, on the other hand, has the goal of keeping your application running with `zero downtime`. (`upgraded version of High Availability`)
+- It can tolerate any component fault to avoid any performance impact, data loss, or system crashes by having redundant resources beyond what is typically needed.
+
+### Comparison with HA
+- More complex design 
+- Higher redundancy 
+- Higher cost
+- `Active-Active fail-over policy` ( instead of `active-passive` policy ) in `AWS HA cluster`
+- `If an application is said to be fault-tolerant then it is also considered highly available`. But vice-verse is not true.
 
 ![img.png](10_Others_assests/ha_vs_fault_tolerant.png)
 
