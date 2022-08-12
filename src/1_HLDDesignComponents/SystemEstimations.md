@@ -12,6 +12,22 @@
 | Avg machine RAM                                   | RAM       | `72 GB`                            |
 | Max CPU utilization                               | CPU       | `80% max utilization`              |
 
+## [Latency Comparison Numbers](https://github.com/donnemartin/system-design-primer#latency-numbers-every-programmer-should-know)
+
+| Storage                                   | Read latency     | Comparison               |
+|-------------------------------------------|------------------|--------------------------|
+| Mutex lock/unlock                         | 25 ns            | -                        |
+| :star: RAM/Main Memory reference          | 100 ns           | |
+| Read 1 MB sequentially from memory | 250 us (4 GB/sec) | ~`4 times faster than SSD` |
+| :star: SSD Reference                      | 50 us       | |
+| Read 1 MB sequentially from SSD    | 1 ms (1 GB/sec)  | ~`30 times faster than HDD` |
+| HDD seek                                  | 10 ms            | -                        |
+| Read 1 MB sequentially from HDD           | 30 ms (30 MB/sec) | -                        |
+
+Handy Metrics:
+- `2,000 round trips per second within a data center`.
+- `6-7 world-wide round trips per second`.
+
 ## Size Calculation (Storage, RAM etc.)
 
 | Base             | Value        | 
@@ -37,17 +53,6 @@
 | Nano-Seconds  | 1 sec = `10^9 ns` |
 | Micro-Seconds | 1 sec = `10^6 us` |
 | Milli-Second  | 1 sec = `10^3 ms` |
-
-## [Latency Comparison Numbers](https://github.com/donnemartin/system-design-primer#latency-numbers-every-programmer-should-know)
-
-| Storage                | Read latency ( 1 byte ) | Comparison                  |
-|------------------------|-----------------------|-----------------------------|
-| L1 cache reference     | 0.1 ns                | -                           |
-| L2 cache reference     | 2.8 ns                | -                           |
-| L3 cache reference     | 12.9 ns               | -                           |
-| :star: RAM/Main Memory | 120 ns (4 GB/sec)     | ~`4 times faster than SSD`  |
-| :star: SSD             | 50-150 us (1 GB/sec)  | ~`30 times faster than HDD` |
-| HDD                    | 1-10 ms (30 MB/sec)   | -                           |
 
 # Estimation Tips
 The best way to do estimations is to have `BASE ballmark parameters` ( a bit realistic ).
