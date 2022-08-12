@@ -4,6 +4,7 @@
 ## Latency
 - Latency is the time required to `perform an action or to produce some result`. 
 - Latency is measured in units of time - hours, minutes, seconds, nanoseconds or clock periods.
+- [Latency comparison numbers](SystemEstimationTips.md#latency-comparison-numbers)
 - Example - `50 secs to do a transaction`.
 
 ## Throughput
@@ -39,7 +40,7 @@
 - It has a more complex design, and higher redundancy to sustain any fault in one of its components.
 - A system can be highly available but not fault-tolerant, and it can be both. 
 - `If an application is said to be fault-tolerant then it is also considered highly available.`
-- In AWS, fault tolerance can be implemented using `active-active` failover policy ( instead of `active-passive` policy ) in `HA cluster`.
+- In AWS, fault tolerance can be implemented using `active-active` fail-over policy ( instead of `active-passive` policy ) in `HA cluster`.
 
 ![img.png](10_Others_assests/ha_vs_fault_tolerant.png)
 
