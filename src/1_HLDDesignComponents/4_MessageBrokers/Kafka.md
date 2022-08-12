@@ -11,7 +11,7 @@
 - Kafka achieves low latency message delivery through `Sequential I/O and Zero Copy Principle`. 
 - The same techniques are commonly used in many other messaging/streaming platforms.
 
-[img.png](https://pbs.twimg.com/media/FOi-gjZVgAQdG9B?format=jpg&name=large)
+![img.png](https://pbs.twimg.com/media/FOi-gjZVgAQdG9B?format=jpg&name=large)
 
 # Reasons of why Kafka has HIGH throughput?
 
