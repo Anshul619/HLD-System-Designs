@@ -13,14 +13,8 @@
 - If it's a READ heavy microservice, the best decision would be to use [Redis](5_Redis) or `multi-read database instances`.
 - If it's a WRITE heavy microservice ( `HIGH throughput` ), the best decision would be to use either [Kafka](4_MessageBrokers/Kafka.md) ( as message broker ) or [DynamoDB](../2_AWSComponents/6_DatabaseServices/AmazonDynamoDB.md) ( as data store ).
 
-## Service-Oriented Architecture ( i.e. Microservice, Loosely coupled architecture )
-- Develop the service oriented architecture i.e. loosely coupled system, `microservice based architecture`.
-- [Read More](1_MicroServicesArchitecture)
-
-## Asynchronous Processing using message brokers ( [Event Driven Architecture](SystemGlossaries.md) )
-- Communicate the events b/w microservices asynchronously.
-- As a result, producer & consumer would be loosely coupled.
-- [Read more - Kafka, RabbitMQ etc.](/MessageBrokers)
+## [Event Driven Architecture](SystemGlossaries.md) ( i.e. Microservice, Loosely coupled architecture )
+- Develop the service oriented architecture i.e. loosely coupled system, [microservice based architecture](1_MicroServicesArchitecture).
 
 ## Use Leverage Managed Infrastructures like Amazon RDS, DynamoDB etc.
 - We must consider `cloud-agnostic approach` ( & onPerm customer approach ) while designing the solution.

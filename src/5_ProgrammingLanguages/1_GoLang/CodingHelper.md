@@ -35,12 +35,12 @@ func main() { // first calling function
 
 # Different constructs
 
-| Purpose                             | Function |
-|-------------------------------------|----------|
-| Check if x string contains y string | strings.Contains(x, y)          |
-| Compare two bytes array             | bytes.Compare(sl1, sl2)         |
-|                                     |          |
-|                                     |          |
+| Purpose                            | Function                |
+|------------------------------------|-------------------------|
+| Check if x string contains y string | strings.Contains(x, y)  |
+| Compare two bytes array            | bytes.Compare(sl1, sl2) |
+| Length of array                    | len(array)              |
+|                                    |                         |
 
 # Multi-Threading
 ````
@@ -69,7 +69,18 @@ var ErrBadPattern = errors.New("syntax error in pattern")
 
 # [Panic & Recover](https://golangbot.com/panic-and-recover/)
 
+# Method Pointers
+```
+func (s *MyStruct) pointerMethod() { } // method on pointer. Does the method need to modify the receiver? If it does, the receiver must be a pointer. 
+func (s MyStruct)  valueMethod()   { } // method on value
+```
+
+# [Why does Go have type parameters?](https://go.dev/doc/faq#overloading)
+- Type parameters permit what is known as generic programming, in which functions and data structures are defined in terms of types that are specified later, when those functions and data structures are used. 
+- For example, they make it possible to write a function that returns the minimum of two values of any ordered type, without having to write a separate version for each possible type.
+
 # Go Tutorials
+- [Frequently Asked Questions (FAQ) - Go](https://go.dev/doc/faq#overloading)
 - https://golangbot.com/learn-golang-series/
 - https://yourbasic.org/golang/implement-fifo-queue/
 - https://dave.cheney.net/2016/08/20/solid-go-design
