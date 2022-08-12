@@ -7,6 +7,12 @@
 - Messages ( events ) in the Kafka are immutable and can't be changed once it's pushed. ( due to Kafka's log based queue nature )
 - [Amazon Managed Streaming for Apache Kafka (MSK)](https://aws.amazon.com/msk/) can be used to deploy `Kafka` on AWS.
 
+# [Why Kafka is so fast?](https://twitter.com/alexxubyte/status/1506663791961919488/photo/1)
+- Kafka achieves low latency message delivery through `Sequential I/O and Zero Copy Principle`. 
+- The same techniques are commonly used in many other messaging/streaming platforms.
+
+[img.png](https://pbs.twimg.com/media/FOi-gjZVgAQdG9B?format=jpg&name=large)
+
 # Reasons of why Kafka has HIGH throughput?
 
 ## Kafka is based on Log Based Queue
