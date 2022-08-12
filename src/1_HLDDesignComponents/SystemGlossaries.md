@@ -50,6 +50,57 @@
 - In AWS, disaster recovery is done through multi-region replication.
 - For example - [Amazon Aurora Global Database](../2_AWSComponents/6_DatabaseServices/AmazonAurora.md#aurora-global-database)
 
+## :star: [Event Driven Architecture](https://aws.amazon.com/event-driven-architecture/)
+- An event-driven architecture uses events to trigger and communicate between loosely coupled services and is common in modern applications built with [microservices](1_MicroServicesArchitecture).
+- [Message brokers](4_MessageBrokers) like [Kafka](4_MessageBrokers/Kafka.md), [RabbitMQ](4_MessageBrokers/RabbitMQ.md) etc., are used in the event-driven architecture.
+- Examples of an event,
+  - An update like an item being placed in a shopping cart on an e-commerce website.
+  - Item purchased, its price, and a delivery address.
+  - A notification that an order was shipped.
+
+## [Load Balancers](https://github.com/ema2159/Grokking-System-Design-Interview-Quizzes/blob/master/Quizzes/Load%20Balancer.org)
+- It helps to spread the traffic across a cluster of servers to improve responsiveness and availability of applications, websites or databases.
+- `LB also keeps track of the status of all the resources while distributing requests`.
+- If a server is not available to take new requests or is NOT responding or has elevated error rate, LB will stop sending traffic to such a server.
+
+![img.png](10_Others_assests/load_balancer_img.png)
+
+## :star: [ACID Properties of the Transaction](https://www.geeksforgeeks.org/acid-properties-in-dbms/)
+
+![img.png](10_Others_assests/ACID_Property_DBMS.drawio.png)
+
+### [Atomicity](https://www.geeksforgeeks.org/acid-properties-in-dbms/)
+- Atomicity is a feature of databases systems dictating where a transaction must be `all-or-nothing`.
+- That is, the transaction must either fully happen, or not happen at all. It must not complete partially.
+- Each transaction is considered as one unit and either runs to completion or is not executed at all.
+- It involves the following two operations.
+  - `Abort`: If a transaction aborts, changes made to the database are not visible.
+  - `Commit`: If a transaction commits, changes made are visible.
+
+### [Consistency](https://www.geeksforgeeks.org/acid-properties-in-dbms/)
+- This means that integrity constraints must be maintained so that the database is consistent before and after the transaction.
+- `Consistency` (or `Correctness`) in database systems refers to the requirement that any given database transaction [must change affected data only](https://en.wikipedia.org/wiki/Consistency_(database_systems)) in allowed ways.
+- Any data written to the database must be valid according to all defined rules, including constraints, cascades, triggers, and any combination thereof.
+
+### [Isolation](https://www.geeksforgeeks.org/acid-properties-in-dbms/)
+- This property ensures that multiple transactions can occur concurrently without leading to the inconsistency of the database state.
+- Transactions occur independently without interference.
+- Changes occurring in a particular transaction will not be visible to any other transaction until that particular change in that transaction is written to memory or has been committed
+
+### [Durability](https://en.wikipedia.org/wiki/Durability)
+- In database systems, durability is the `ACID property` which guarantees that `transactions that have committed will survive permanently`.
+- For example, if a flight booking reports that a seat has successfully been booked, then the seat will remain booked even if the system crashes.
+
+## :star: [CAP Theorem of the Distributed Systems](https://www.geeksforgeeks.org/the-cap-theorem-in-dbms/)
+
+![img.png](10_Others_assests/CAP_Theorem_Distributed_Systems.drawio.png)
+
+> The use of the word `Consistency` in `CAP` and its use in `ACID` do not refer to the same identical concept.
+> - In CAP, the term consistency refers to the `consistency of the values in different copies of the same data item in a replicated distributed system`.
+    >   - In case of high availability, it takes time for data to be replicated in multiple highly available zones.
+>   - Hence `Consistency` won't be there for those `milliseconds`.
+> - In ACID, it refers to the fact that a transaction will not violate the integrity constraints specified on the database schema.
+
 ## Fail over Policies
 
 ### Active-Active policy
@@ -64,56 +115,6 @@
 
 ## [Recovery Time Objective (RTO)](https://docs.aws.amazon.com/whitepapers/latest/microservices-on-aws/disaster-recovery.html)
 - Recovery point objective is the maximum acceptable amount of time since the last data recovery point. This objective determines what is considered an acceptable loss of data between the last recovery point and the interruption of service and is defined by the organization.
-
-## :star: [Event Driven Architecture](https://aws.amazon.com/event-driven-architecture/)
-- `An event-driven architecture uses events to trigger and communicate between decoupled services` and is common in modern applications built with microservice.
-- An event is a change in state, or an update, like an item being placed in a shopping cart on an e-commerce website.
-- Events can either carry the state (the item purchased, its price, and a delivery address) or events can be identifiers (a notification that an order was shipped).
-- [Read more about microservices](1_MicroServicesArchitecture)
-- [Read more about message brokers like Kafka, RabbitMQ etc.](4_MessageBrokers)
-
-![img.png](10_Others_assests/fault_tolerance_img.png)
-
-## [Load Balancers](https://github.com/ema2159/Grokking-System-Design-Interview-Quizzes/blob/master/Quizzes/Load%20Balancer.org)
-- It helps to spread the traffic across a cluster of servers to improve responsiveness and availability of applications, websites or databases.
-- `LB also keeps track of the status of all the resources while distributing requests`.
-- If a server is not available to take new requests or is NOT responding or has elevated error rate, LB will stop sending traffic to such a server.
-
-## :star: [ACID Properties of the Transaction](https://www.geeksforgeeks.org/acid-properties-in-dbms/)
-
-![img.png](10_Others_assests/ACID_Property_DBMS.drawio.png)
-
-### [Atomicity](https://www.geeksforgeeks.org/acid-properties-in-dbms/)
-- Atomicity is a feature of databases systems dictating where a transaction must be `all-or-nothing`.
-- That is, the transaction must either fully happen, or not happen at all. It must not complete partially.
-- Each transaction is considered as one unit and either runs to completion or is not executed at all. 
-- It involves the following two operations.
-  - `Abort`: If a transaction aborts, changes made to the database are not visible.
-  - `Commit`: If a transaction commits, changes made are visible.
-
-### [Consistency](https://www.geeksforgeeks.org/acid-properties-in-dbms/)
-- This means that integrity constraints must be maintained so that the database is consistent before and after the transaction.
-- `Consistency` (or `Correctness`) in database systems refers to the requirement that any given database transaction [must change affected data only](https://en.wikipedia.org/wiki/Consistency_(database_systems)) in allowed ways.
-- Any data written to the database must be valid according to all defined rules, including constraints, cascades, triggers, and any combination thereof.
-
-### [Isolation](https://www.geeksforgeeks.org/acid-properties-in-dbms/)
-- This property ensures that multiple transactions can occur concurrently without leading to the inconsistency of the database state. 
-- Transactions occur independently without interference. 
-- Changes occurring in a particular transaction will not be visible to any other transaction until that particular change in that transaction is written to memory or has been committed
-
-### [Durability](https://en.wikipedia.org/wiki/Durability)
-- In database systems, durability is the `ACID property` which guarantees that `transactions that have committed will survive permanently`.
-- For example, if a flight booking reports that a seat has successfully been booked, then the seat will remain booked even if the system crashes.
-
-## :star: [CAP Theorem of the Distributed Systems](https://www.geeksforgeeks.org/the-cap-theorem-in-dbms/)
-
-![img.png](10_Others_assests/CAP_Theorem_Distributed_Systems.drawio.png)
-
-> The use of the word `Consistency` in `CAP` and its use in `ACID` do not refer to the same identical concept.
-> - In CAP, the term consistency refers to the `consistency of the values in different copies of the same data item in a replicated distributed system`.
->   - In case of high availability, it takes time for data to be replicated in multiple highly available zones.
->   - Hence `Consistency` won't be there for those `milliseconds`.
-> - In ACID, it refers to the fact that a transaction will not violate the integrity constraints specified on the database schema.
 
 ## [Language Agnostic](https://en.wikipedia.org/wiki/Language-agnostic)
 - We should design the system considering agnostic feature (Language agnostic, AWS agnostic etc.) into the consideration.
