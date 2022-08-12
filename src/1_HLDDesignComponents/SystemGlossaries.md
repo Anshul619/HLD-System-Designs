@@ -2,7 +2,7 @@
 # System Design Glossaries
 
 ## Latency
-- Latency is the time required to `perform an action or to produce some result`. 
+- `Latency is the time required to perform an action or to produce some result`. 
 - Latency is measured in units of time - hours, minutes, seconds, nanoseconds or clock periods.
 - [Latency comparison numbers](SystemEstimationTips.md#latency-comparison-numbers)
 - Example - `50 secs to do a transaction`.
@@ -23,7 +23,7 @@
 ## :star: [High Availability](https://avinetworks.com/glossary/high-availability/)
 - High Availability (HA) describes systems that are dependable enough to operate continuously without failing.
 - They are well-tested and sometimes equipped with redundant components.
-- `99.99% uptime` means that website is down only for `52 mins` in the complete year. This means it is `highly available`.
+- `99.99% uptime means that website is down only for 52 mins in the complete year`. This means it is `highly available`.
 - In AWS, high availability is achieved through multiple deployments of the app in [different availability zones](../2_AWSComponents/AWS-Global-Architecture-Region-AZ.md).
 - [Design Scalable System With RDMS on AWS](../3_HLDDesignProblems/DesignScalableSystemWithRDMS)
 
@@ -40,7 +40,7 @@
 - It has a more complex design, and higher redundancy to sustain any fault in one of its components.
 - A system can be highly available but not fault-tolerant, and it can be both. 
 - `If an application is said to be fault-tolerant then it is also considered highly available.`
-- In AWS, fault tolerance can be implemented using `active-active` fail-over policy ( instead of `active-passive` policy ) in `HA cluster`.
+- In AWS, fault tolerance can be implemented using `active-active fail-over policy` ( instead of `active-passive` policy ) in `HA cluster`.
 
 ![img.png](10_Others_assests/ha_vs_fault_tolerant.png)
 
@@ -50,10 +50,10 @@
 
 ## Fail over Policies
 
-### `Active-Active` policy
+### Active-Active policy
 - An active-active cluster is typically made up of at least two nodes, both actively running the same kind of service simultaneously.
 
-### `Active-Passive` policy
+### Active-Passive policy
 - In the case of two nodes, for example, if the first node is already active, the second node must be passive or on standby.
 - Not all nodes are going to be active at the same time.
 
@@ -64,7 +64,7 @@
 - Recovery point objective is the maximum acceptable amount of time since the last data recovery point. This objective determines what is considered an acceptable loss of data between the last recovery point and the interruption of service and is defined by the organization.
 
 ## :star: [Event Driven Architecture](https://aws.amazon.com/event-driven-architecture/)
-- An event-driven architecture uses events to `trigger and communicate between decoupled services` and is common in modern applications built with microservice.
+- `An event-driven architecture uses events to trigger and communicate between decoupled services` and is common in modern applications built with microservice.
 - An event is a change in state, or an update, like an item being placed in a shopping cart on an e-commerce website.
 - Events can either carry the state (the item purchased, its price, and a delivery address) or events can be identifiers (a notification that an order was shipped).
 - [Read more about microservices](1_MicroServicesArchitecture)
@@ -74,7 +74,7 @@
 
 ## [Load Balancers](https://github.com/ema2159/Grokking-System-Design-Interview-Quizzes/blob/master/Quizzes/Load%20Balancer.org)
 - It helps to spread the traffic across a cluster of servers to improve responsiveness and availability of applications, websites or databases.
-- LB also keeps `track of the status of all the resources` while distributing requests.
+- `LB also keeps track of the status of all the resources while distributing requests`.
 - If a server is not available to take new requests or is NOT responding or has elevated error rate, LB will stop sending traffic to such a server.
 
 ## :star: [ACID Properties of the Transaction](https://www.geeksforgeeks.org/acid-properties-in-dbms/)

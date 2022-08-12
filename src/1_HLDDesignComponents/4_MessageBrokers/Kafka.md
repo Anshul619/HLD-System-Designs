@@ -16,7 +16,7 @@
 # Reasons of why Kafka has HIGH throughput?
 
 ## Kafka is based on Log Based Queue
-- Messages are persisted to `append-only log files by the broker`.
+- `Messages are persisted to append-only log files by the broker`.
 - Producers are appending these log files ( `sequential write` ) & consumers are reading a range of these files ( `sequential reads` ).
 
 # Basic Architecture of Kafka
