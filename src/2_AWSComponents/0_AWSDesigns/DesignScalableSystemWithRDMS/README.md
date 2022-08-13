@@ -1,5 +1,5 @@
 
-<img title="DesignScalableSystemWithRelationalDBOnAWS" alt="Alt text" src="DesignScalableSystemWithRelationalDBOnAWS.drawio.png">
+![img.png](DesignScalableSystemWithRelationalDBOnAWS.drawio.png)
 
 # References 
 - [Design a system that scales to millions of users on AWS](https://github.com/donnemartin/system-design-primer/blob/master/solutions/system_design/scaling_aws/README.md)

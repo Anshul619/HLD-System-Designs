@@ -5,18 +5,9 @@
 - Amazon RDS is a `database management service for relational databases`.
 - It manages patching, upgrading, and data backups automatically. 
 - It’s a database management service for structured data only ( database engines like MySQL, PostgresSQL, SQL Server etc.)
+- Amazon RDS can be scaled either through [Vertical Scaling](../../1_HLDDesignComponents/0_SystemGlossaries/Scalability.md#vertical-scalability--scale-up-) or [Horizontal Scaling (master-slave)](../../1_HLDDesignComponents/0_SystemGlossaries/Scalability.md#db---horizontal-scaling-techniques).
 
 ![img.png](assests/RDS_database_engines.png)
-
-# Which type of scaling would you recommend for RDS and why?
-
-## Vertical Scaling
-- Vertical scaling lets you vertically scale up your master database with the press of a button. 
-- A database can only be scaled vertically, and there are 18 different instances in which you can resize the RDS.
-
-## Horizontal Scaling
-- On the other hand, horizontal scaling is good for replicas. 
-- `These are read-only replicas that can only be done through Amazon Aurora`.
 
 # What is a maintenance window in Amazon RDS? Will your DB instance be available during maintenance events?
 - RDS maintenance window lets you decide when DB instance modifications, database engine version upgrades, and software patching have to occur.

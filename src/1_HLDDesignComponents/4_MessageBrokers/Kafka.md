@@ -21,7 +21,7 @@
 
 # Basic Architecture of Kafka Cluster
 
-<img title="Kafka-Architecture" alt="Alt text" src="assests/Kafka-Architecture.drawio.png">
+![img.png](assests/Kafka-Architecture.drawio.png)
 
 # Real world usages of Kafka
 

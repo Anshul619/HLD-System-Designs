@@ -13,7 +13,7 @@
 
 # [Disaster Recovery](https://en.wikipedia.org/wiki/Disaster_recovery)
 - In AWS, disaster recovery is done through [multi-region replication](../../2_AWSComponents/AWS-Global-Architecture-Region-AZ.md).
-- For example - [Amazon Aurora Global Database](../../2_AWSComponents/6_DatabaseServices/AmazonAurora.md#aurora-global-database)
+- For example - [Amazon Aurora Global Database](../../2_AWSComponents/6_DatabaseServices/AmazonAurora/Readme.md#aurora-global-database)
 
 ## [Recovery Point Objective (RPO)](https://docs.aws.amazon.com/whitepapers/latest/microservices-on-aws/disaster-recovery.html)
 - Recovery time objective is the maximum acceptable delay between the interruption of service and restoration of service. 

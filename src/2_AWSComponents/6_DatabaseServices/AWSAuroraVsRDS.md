@@ -1,7 +1,7 @@
 
 # Amazon Aurora vs Amazon RDS
 
-| Basis                                      | :star: [Amazon Aurora](AmazonAurora.md)                                              | [Amazon RDS](AmazonRDS.md)                                      |
+| Basis                                      | :star: [Amazon Aurora](AmazonAurora/Readme.md)                                              | [Amazon RDS](AmazonRDS.md)                                      |
 |--------------------------------------------|--------------------------------------------------------------------------------------|-----------------------------------------------------------------|
 | Compatible DB Engines                      | Postgres, MySQL                                                                      | Postgres, MySQL, Oracle, MS SQL, Oracle                         |
 | Performance                                | `5x faster than RDS MySQL, 3x than RDS Postgres`. High throughput (200K writes/second) | -                                                               |

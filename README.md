@@ -2,10 +2,10 @@
 
 This repo contains the various system design components info, questions and solutions.
 - :star: [AWS Components](src/2_AWSComponents)
-- [System Design Glossaries](src/1_HLDDesignComponents/0_SystemGlossaries/Readme.md)
+- [System Design Glossaries](src/1_HLDDesignComponents/0_SystemGlossaries/README.md)
 - [System Design Tips](src/1_HLDDesignComponents/SystemDesignTips.md)
 - [System Estimation Tips](src/1_HLDDesignComponents/SystemEstimationTips.md)
-- [MicroServices Based Architecture](src/1_HLDDesignComponents/1_MicroServicesSOA)
+- [MicroServices - Modern SOA Architecture](src/1_HLDDesignComponents/1_MicroServicesSOA)
 
 # [Message Brokers](src/1_HLDDesignComponents/4_MessageBrokers)
 Message brokers are used to decouple & enable [Event Driven Architectures](src/1_HLDDesignComponents/0_SystemGlossaries/EventDrivenArchitecture.md) i.e. communicate the events & pass the data between [microservices](src/1_HLDDesignComponents/1_MicroServicesSOA).
@@ -34,12 +34,8 @@ Message brokers are used to decouple & enable [Event Driven Architectures](src/1
 | [MongoDB](src/1_HLDDesignComponents/3_DatabaseComponents/MongoDB)                      | -                                       | NoSQL DB                      | -                                           | -| `Open Source`                                                              |
 
 # [In Memory Cache](src/1_HLDDesignComponents/5_Redis)
-
-| Component                                  | Strength                                                                               | Very Rough Throughput (QPS)                       | Latency | Pricing Model                                                         |
-|--------------------------------------------|-----------------------------------------|---------------------------------------------------|----------------|-----------------------------------------------------------------------|
-| :star: [Redis](src/1_HLDDesignComponents/5_Redis) | In-Memory fast Data-Store (Caching)     | `100K queries per second`                           | -| `Open Source` ( [Elastic Cache](https://aws.amazon.com/elasticache/) on AWS ) |
-
-[Read about Redis vs MemCache](src/1_HLDDesignComponents/5_Redis/RedisVsMemCache.md)
+- :star: [Redis](src/1_HLDDesignComponents/5_Redis)
+- [Redis vs MemCache](src/1_HLDDesignComponents/5_Redis/RedisVsMemCache.md)
 
 # HLD - Design Problems
 - :star: [Zomoto HLD Design](src/3_HLDDesignProblems/ZomatoDesign)
@@ -79,7 +75,7 @@ Message brokers are used to decouple & enable [Event Driven Architectures](src/1
 
 # DevOps Skills
 - :star: [Kubernates](src/1_HLDDesignComponents/6_DevOps/Kubernates.md)
-- [Docker](src/1_HLDDesignComponents/6_DevOps/Docker.md)
+- :star: [Docker](src/1_HLDDesignComponents/6_DevOps/Docker.md)
 
 # Monitoring Tools
 - :star: [New Relic](src/1_HLDDesignComponents/7_MonitoringTools/NewRelic.md)
