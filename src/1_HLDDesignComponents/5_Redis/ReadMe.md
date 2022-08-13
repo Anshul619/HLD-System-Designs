@@ -114,8 +114,8 @@ redis 127.0.0.1:6379> ZRANGEBYSCORE w3resourcelist 0 1000
 replicaof 192.168.1.1 6379
 ```
 
-## [Sharding Supported (using Redis Cluster)](https://redis.io/docs/manual/scaling/)
-- Redis scales `horizontally with a deployment topology called Redis Cluster`.
+## Sharding Supported (using Redis Cluster)
+- Redis scales horizontally with a deployment topology called [Redis Cluster](https://redis.io/docs/manual/scaling/).
 
 ![img.png](https://i1.wp.com/www.learnsteps.com/wp-content/uploads/2020/07/cluster.png?w=840&ssl=1)
 

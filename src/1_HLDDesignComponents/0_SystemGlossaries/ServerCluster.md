@@ -1,8 +1,13 @@
 # [Server Cluster](https://www.racksolutions.com/news/blog/server-cluster-how-it-works/)
 - A server cluster consists of a group of servers working simultaneously under a single IP address.
-- Server clustering also ensures [higher availability](HighAvailability.md), proper load balancing, and [system scalability](Scalability.md).
+- Server clustering also ensures [higher availability](HighAvailability.md), proper load balancing and [System Scalability](Scalability.md).
 
 ![img.png](../10_Others_assests/server_cluster_img.png)
+
+# Examples
+- [Redis Cluster](../5_Redis#sharding-supported-using-redis-cluster)
+- [Kafka Cluster](../4_MessageBrokers/Kafka.md#basic-architecture-of-kafka-cluster)
+- [ElasicSearch Cluster](../3_DatabaseComponents/ElasticSearch#elasticsearch-cluster)
 
 ## Fail over Policies
 

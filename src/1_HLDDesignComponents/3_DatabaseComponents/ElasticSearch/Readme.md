@@ -33,7 +33,7 @@
 
 ![img.png](assests/inverted_indexes.png)
 
-## Cluster
+## ElasticSearch Cluster
 - In Elasticsearch, a cluster is a collection of nodes. 
 - Cluster and nodes work together and hold the data, where node is an instance of Elasticsearch. 
 - A cluster provides joined indexing as well as search capabilities to Elasticsearch users.

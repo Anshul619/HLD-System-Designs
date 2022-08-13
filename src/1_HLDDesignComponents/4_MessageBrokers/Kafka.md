@@ -1,11 +1,11 @@
 
-# Introduction
-- Apache Kafka is an open-source distributed event streaming platform used by thousands of companies for high-performance data pipelines, streaming analytics, data integration, and mission-critical applications.
-- Kafka can process a large amount of data in a short amount of time (`1 million messages/sec`)
+# :star: Apache Kafka 
+- Apache Kafka is an `open-source` [distributed](../0_SystemGlossaries/DistributedSystems.md) `event streaming platform` used by thousands of companies for high-performance data pipelines, streaming analytics, data integration, and mission-critical applications.
+- Kafka can process a large amount of data in a short amount of time (`1 million messages/sec`).
 - It also has low latency, making it possible to process data in real-time.
-- Kafka is based on `Publish-Subscriber Model`. And can be used for `Event-Driven Architecture`.
-- Messages ( events ) in the Kafka are immutable and can't be changed once it's pushed. ( due to Kafka's log based queue nature )
-- [Amazon Managed Streaming for Apache Kafka (MSK)](https://aws.amazon.com/msk/) can be used to deploy `Kafka` on AWS.
+- Kafka is based on [Publish-Subscriber Model](../4_MessageBrokers#publisher-subscriber-model-pubsub). And can be used for [Event-Driven Architecture](../0_SystemGlossaries/EventDrivenArchitecture.md).
+- Messages ( events ) in the Kafka are immutable and can't be changed once it's pushed ( due to `Kafka's log based queue nature` ).
+- [Amazon Managed Streaming for Apache Kafka (MSK)](https://aws.amazon.com/msk/) can be used to deploy `Kafka` on [AWS](../../2_AWSComponents).
 
 # [Why Kafka is so fast?](https://twitter.com/alexxubyte/status/1506663791961919488/photo/1)
 - Kafka achieves low latency message delivery through `Sequential I/O and Zero Copy Principle`. 
@@ -16,16 +16,16 @@
 # Reasons of why Kafka has HIGH throughput?
 
 ## Kafka is based on Log Based Queue
-- `Messages are persisted to append-only log files by the broker`.
+- :star: `Messages are persisted to append-only log files by the broker`.
 - Producers are appending these log files ( `sequential write` ) & consumers are reading a range of these files ( `sequential reads` ).
 
-# Basic Architecture of Kafka
+# Basic Architecture of Kafka Cluster
 
 <img title="Kafka-Architecture" alt="Alt text" src="assests/Kafka-Architecture.drawio.png">
 
 # Real world usages of Kafka
 
-## As an events/message broker in Event-Driven Architecture
+## As an events/message broker in [Event-Driven Architecture](../0_SystemGlossaries/EventDrivenArchitecture.md)
 - Use Kafka when your application has a High throughput (`1 million messages/sec`), i.e. application has to process a large volume of messages, event driven services etc.
 
 ## To monitor metrics, logs of the IT infrastructure
@@ -35,7 +35,8 @@
 - If we want to build our own Google Analytics ( to track app activities, events etc.), we can use Kafka as a broker.
 
 ## Stream Processing
-- Use Kafka when the event stream needs to process data in multi-stage pipelines, the pipelines can generate graphs of the real-time data flows, thus providing real-time monitoring of traffic in the pipelines. Example - Video streaming in YouTube etc.
+- Use Kafka when the event stream needs to process data in multi-stage pipelines, the pipelines can generate graphs of the real-time data flows, thus providing real-time monitoring of traffic in the pipelines. 
+- Example - Video streaming in YouTube etc.
 
 ## Other Examples
 - [TwilloSendMessageAPI](../../3_HLDDesignProblems/TwilloSendMessageAPI)
@@ -43,30 +44,27 @@
 # Top Features of Kafka
 
 ## Scalability
-- Kafka can be `horizontally scaled` easily across the cluster.
+- Kafka can be [horizontally scaled](../0_SystemGlossaries/Scalability.md) easily across the cluster.
 - A cluster of brokers is used to partition and streamline the data thereby, scaling up the storage capacity.
 
-## Performance
-- High Throughput ( `1 million messages/sec` ).
+## Performance - [High Throughput](../0_SystemGlossaries/LatencyThroughput.md#Throughput)
 - Each Kafka broker can serve more than `1 million messages per second` and can hold TBs of data.
 - Default configured message size in Kafka is `1MB`.
 
 ## High Volume
 - Large amount of data can be stored in the Kafka pool.
 
-## Replication, Durability, Zero Downtime
+## [Durability](../0_SystemGlossaries/ACID.md#Durability)
 - The data is kept persistent ( as per retention policy ) and tolerant to any hardware failures by copying the data in the clusters.
+
+## [High Availability](../0_SystemGlossaries/HighAvailability.md), [Fault Tolerance](../0_SystemGlossaries/FaultTolerance&DisasterRecovery.md)
+- The `distributed, partitioned, replicated, and fault-tolerant` nature of Kafka makes it very reliable.
+- Kafka connector can handle failures with three strategies summarised as `fast-fail`, `ignore` and `re-queue` (sends to another topic).
 - Each partition would be replicated across the brokers/servers in the cluster. ( as per configured replication factor )
 - Replication is done using `Leader/Follower` technique.
 
-## Fault Tolerance
-- Kafka connector can handle failures with three strategies summarised as `fast-fail`, `ignore` and `re-queue` (sends to another topic).
-
-## Reliability
-- The `distributed, partitioned, replicated, and fault-tolerant` nature of Kafka makes it very reliable.
-
 ## Extensibility
-- `Allows multiple ways for applications` to plugin and make use of Kafka.
+- `Allows multiple ways for applications to plugin and make use of Kafka`.
 - Also, it has provisions for new connectors that you can write as needed.
 
 ## Data Transformation
@@ -87,7 +85,7 @@
     - Ack from N replicas (1...N)
     - Ack from all replicas (-1)
 
-## Partitioning
+## Sharding/Partitioning
 - Partitioning allows Kafka producers to serialize, compress, and load balance data among brokers.
 - Topics can be parallelized via partitions, which split data into a single topic among numerous brokers.
 - [More partitions](https://www.confluent.io/blog/how-choose-number-topics-partitions-kafka-cluster/) lead to higher throughput.
@@ -106,7 +104,7 @@
 
 ## ZooKeeper
 - Zookeeper manages Kafka Cluster ( new broker, new partition etc. ) and brokers coordination.
-- Zookeeper also manages leaders selection in the Kafka Cluster.
+- Zookeeper also manages leaders selection in the `Kafka Cluster`.
 - For every partition, there would be 1 leader ( reader/writer of the partition ) and 1 or more follower ( which keeps replicating the leader ).
 - Based on configured `replication factor`, the number of followers would be decided.
 
@@ -142,7 +140,6 @@ Example
 [Kafka HTTP APIs](https://www.confluent.io/blog/http-and-rest-api-use-cases-and-architecture-with-apache-kafka/) can be integrated in the client apis, to push the message to the specific topic ( & partition key ).
 
 ## [Producer API](https://kafka.apache.org/10/javadoc/org/apache/kafka/clients/producer/KafkaProducer.html)
-
 - Push the message to a topic (1 or more) in the Kafka.
 
 ```java
