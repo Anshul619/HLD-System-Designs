@@ -1,6 +1,6 @@
 
 # [AWS Lambda](https://aws.amazon.com/lambda/)
-- Lambda is a compute service that lets you run code without provisioning or managing servers. 
+- `Lambda is a compute service that lets you run code without provisioning or managing servers.` 
 - Lambda runs your code on a high-availability compute infrastructure and performs all the administration of compute resources, including server and operating system maintenance, capacity provisioning and automatic scaling, code monitoring and logging. 
 - With Lambda, you can run code for virtually any type of application or backend service. 
 - All you need to do is supply your code in one of the languages that Lambda supports.

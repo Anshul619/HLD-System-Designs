@@ -6,7 +6,7 @@
 ## [Application Load Balancer](https://docs.aws.amazon.com/elasticloadbalancing/latest/application/introduction.html)
 - It is highly available by default, in AWS. 
 - It is used to divide the traffic between app servers.
-- [More about Load Balancer](../../1_HLDDesignComponents/SystemGlossaries.md)
+- [More about Load Balancer](../../1_HLDDesignComponents/0_SystemGlossaries/Scalability.md)
 
 ![img.png](assests/AWS_Application_Load_Balancer.drawio.png)
 

@@ -9,6 +9,12 @@
 - Go does not support inheritance, however, it does support composition.
 - `In Go's philosophy, it is better to avoid unnecessary branches and indentation of code. It is also considered better to return as early as possible.`
 
+| Purpose                            | Function                |
+|------------------------------------|-------------------------|
+| Check if x string contains y string | strings.Contains(x, y)  |
+| Compare two bytes array            | bytes.Compare(sl1, sl2) |
+| Length of array                    | len(array)              |
+|                                    |                         |
 
 ```go
 package main // folder name is generally specified as package name
@@ -32,15 +38,6 @@ func FindNumber(list []int) (bool, error) {
 func main() { // first calling function
 }
 ```
-
-# Different constructs
-
-| Purpose                            | Function                |
-|------------------------------------|-------------------------|
-| Check if x string contains y string | strings.Contains(x, y)  |
-| Compare two bytes array            | bytes.Compare(sl1, sl2) |
-| Length of array                    | len(array)              |
-|                                    |                         |
 
 # Multi-Threading
 ````
@@ -68,16 +65,52 @@ var ErrBadPattern = errors.New("syntax error in pattern")
 ````
 
 # [Panic & Recover](https://golangbot.com/panic-and-recover/)
+- TBD
 
 # Method Pointers
+- Does the method need to modify the receiver? If it does, the receiver must be a pointer.
 ```
-func (s *MyStruct) pointerMethod() { } // method on pointer. Does the method need to modify the receiver? If it does, the receiver must be a pointer. 
+func (s *MyStruct) pointerMethod() { } // method on pointer. 
 func (s MyStruct)  valueMethod()   { } // method on value
 ```
 
 # [Why does Go have type parameters?](https://go.dev/doc/faq#overloading)
 - Type parameters permit what is known as generic programming, in which functions and data structures are defined in terms of types that are specified later, when those functions and data structures are used. 
 - For example, they make it possible to write a function that returns the minimum of two values of any ordered type, without having to write a separate version for each possible type.
+
+# [Difference b/w make & new](https://stackoverflow.com/questions/9320862/why-would-i-make-or-new)
+- The make built-in function allocates and initializes an object of type slice, map, or chan (only). 
+- Like new, the first argument is a type, not a value. 
+- Unlike new, make's return type is the same as the type of its argument, not a pointer to it. 
+- The specification of the result depends on the type.
+
+```
+themes := make([]*Template, 0)
+theme := new(Theme)
+```
+
+# [How to run the app server in GoLang?](https://go.dev/doc/articles/wiki/)
+
+````go
+//go:build ignore
+
+package main
+
+import (
+    "fmt"
+    "log"
+    "net/http"
+)
+
+func handler(w http.ResponseWriter, r *http.Request) {
+    fmt.Fprintf(w, "Hi there, I love %s!", r.URL.Path[1:])
+}
+
+func main() {
+	http.HandleFunc("/", handler)
+	log.Fatal(http.ListenAndServe(":8080", nil)) // Run app server on 8080 port
+}
+````
 
 # Go Tutorials
 - [Frequently Asked Questions (FAQ) - Go](https://go.dev/doc/faq#overloading)

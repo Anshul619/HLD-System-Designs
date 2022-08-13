@@ -2,10 +2,10 @@
 
 This repo contains the various system design components info, questions and solutions.
 - :star: [AWS Components](src/2_AWSComponents)
-- [System Design Glossaries](src/1_HLDDesignComponents/SystemGlossaries.md)
+- [System Design Glossaries](src/1_HLDDesignComponents/0_SystemGlossaries/Readme.md)
 - [System Design Tips](src/1_HLDDesignComponents/SystemDesignTips.md)
 - [System Estimation Tips](src/1_HLDDesignComponents/SystemEstimationTips.md)
-- [MicroServices Based Architecture](src/1_HLDDesignComponents/1_MicroServicesArchitecture)
+- [MicroServices Based Architecture](src/1_HLDDesignComponents/1_MicroServices)
 
 # [Message Brokers](src/1_HLDDesignComponents/4_MessageBrokers)
 Message brokers are used to decouple and enable `Event Driven Architectures` i.e. communicate the events between microservices to pass the data.
@@ -32,7 +32,7 @@ Message brokers are used to decouple and enable `Event Driven Architectures` i.e
 | API Option| Description                                                                                                                     |
 | -----------|---------------------------------------------------------------------------------------------------------------------------------|
 | :star: [REST](src/1_HLDDesignComponents/2_APITechOptions/REST.md) | Used for CRUD style public APis and web app.                                                                                    |
-| [gPRC](src/1_HLDDesignComponents/2_APITechOptions/gPRC.md) | Used for communication b/w [microservices](src/1_HLDDesignComponents/1_MicroServicesArchitecture) or to collect data from IoT devices. It is relatively faster than REST or GraphQL. |
+| [gPRC](src/1_HLDDesignComponents/2_APITechOptions/gPRC.md) | Used for communication b/w [microservices](src/1_HLDDesignComponents/1_MicroServices) or to collect data from IoT devices. It is relatively faster than REST or GraphQL. |
 | [GraphQL](src/1_HLDDesignComponents/2_APITechOptions/GraphQL.md) | Used for public API with customizable request body or to aggregate internal data from multiple sources in a public API.         |
 
 # [SQL & NoSQL databases](src/1_HLDDesignComponents/3_DatabaseComponents)
