@@ -8,7 +8,7 @@
   - [CAP Theorem of the Distributed Systems](CAP.md)
   - [ServerCluster.md](ServerCluster.md)
   - [EventDrivenArchitecture](EventDrivenArchitecture.md)
-- [ACID](ACID.md)
+- [ACID Properties of the Transaction](ACID.md)
 
 ## [Language Agnostic](https://en.wikipedia.org/wiki/Language-agnostic)
 - We should design the system considering agnostic feature (Language agnostic, AWS agnostic etc.) into the consideration.
