@@ -1,6 +1,6 @@
 
 # Introduction
-- Message brokers are used to decouple & enable [Event Driven Architectures](../0_SystemGlossaries/EventDrivenArchitecture.md) i.e. communicate the events & pass the data between [microservices](../1_MicroServices).
+- Message brokers are used to decouple & enable [Event Driven Architectures](../0_SystemGlossaries/EventDrivenArchitecture.md) i.e. communicate the events & pass the data between [microservices](../1_MicroServicesSOA).
 - In modern software architecture, the application needs to be decoupled, high scalability, serving high performance. 
 - Messaging service come in allows us to build that kind of application.
 

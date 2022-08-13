@@ -6,8 +6,8 @@
   - [Reliability - Fault Tolerance, Disaster Recovery](FaultTolerance&DisasterRecovery.md)
   - [Efficiency - Latency, Throughput](LatencyThroughput.md)
   - [CAP Theorem of the Distributed Systems](CAP.md)
-  - [ServerCluster.md](ServerCluster.md)
   - [EventDrivenArchitecture](EventDrivenArchitecture.md)
+  - [Servers Cluster](ServersCluster.md)
 - [ACID Properties of the Transaction](ACID.md)
 
 ## [Language Agnostic](https://en.wikipedia.org/wiki/Language-agnostic)

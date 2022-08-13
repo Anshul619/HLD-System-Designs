@@ -5,10 +5,10 @@ This repo contains the various system design components info, questions and solu
 - [System Design Glossaries](src/1_HLDDesignComponents/0_SystemGlossaries/Readme.md)
 - [System Design Tips](src/1_HLDDesignComponents/SystemDesignTips.md)
 - [System Estimation Tips](src/1_HLDDesignComponents/SystemEstimationTips.md)
-- [MicroServices Based Architecture](src/1_HLDDesignComponents/1_MicroServices)
+- [MicroServices Based Architecture](src/1_HLDDesignComponents/1_MicroServicesSOA)
 
 # [Message Brokers](src/1_HLDDesignComponents/4_MessageBrokers)
-Message brokers are used to decouple & enable [Event Driven Architectures](src/1_HLDDesignComponents/0_SystemGlossaries/EventDrivenArchitecture.md) i.e. communicate the events & pass the data between [microservices](src/1_HLDDesignComponents/1_MicroServices).
+Message brokers are used to decouple & enable [Event Driven Architectures](src/1_HLDDesignComponents/0_SystemGlossaries/EventDrivenArchitecture.md) i.e. communicate the events & pass the data between [microservices](src/1_HLDDesignComponents/1_MicroServicesSOA).
 - [Comparison between Various Message Brokers](src/1_HLDDesignComponents/4_MessageBrokers/KafkaVsRabbitMQVsSQSVsSNS.md)
 - :star: [Kafka](src/1_HLDDesignComponents/4_MessageBrokers/Kafka.md)
 - [RabbitMQ](src/1_HLDDesignComponents/4_MessageBrokers/RabbitMQ.md)
@@ -21,7 +21,7 @@ Message brokers are used to decouple & enable [Event Driven Architectures](src/1
 | API Option| Description                                                                                                                     |
 | -----------|---------------------------------------------------------------------------------------------------------------------------------|
 | :star: [REST](src/1_HLDDesignComponents/2_APITechOptions/REST.md) | Used for CRUD style public APis and web app.                                                                                    |
-| [gPRC](src/1_HLDDesignComponents/2_APITechOptions/gPRC.md) | Used for communication b/w [microservices](src/1_HLDDesignComponents/1_MicroServices) or to collect data from IoT devices. It is relatively faster than REST or GraphQL. |
+| [gPRC](src/1_HLDDesignComponents/2_APITechOptions/gPRC.md) | Used for communication b/w [microservices](src/1_HLDDesignComponents/1_MicroServicesSOA) or to collect data from IoT devices. It is relatively faster than REST or GraphQL. |
 | [GraphQL](src/1_HLDDesignComponents/2_APITechOptions/GraphQL.md) | Used for public API with customizable request body or to aggregate internal data from multiple sources in a public API.         |
 
 # [SQL & NoSQL databases](src/1_HLDDesignComponents/3_DatabaseComponents)

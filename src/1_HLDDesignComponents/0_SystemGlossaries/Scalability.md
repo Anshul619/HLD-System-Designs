@@ -1,6 +1,8 @@
 
 # Scalability
 
+# Types of Scalability
+
 ## Horizontal scalability ( Scale Out )
 - [Load Balancers](https://github.com/ema2159/Grokking-System-Design-Interview-Quizzes/blob/master/Quizzes/Load%20Balancer.org) are used for the horizontal scalability.
 - LB helps to spread the traffic across a cluster of servers to improve responsiveness and availability of applications, websites or databases.
@@ -9,6 +11,9 @@
 - In AWS, [Elastic Load Balancer](../2_AWSComponents/1_NetworkingAndContentDelivery/ElasticLoadBalancer.md) is used for the load balancing.
 
 ![img.png](https://dzone.com/storage/temp/5747694-picture1.png)
+
+## Master-Slave Technique
+- TBD
 
 ## Vertical scalability ( Scale Up )
 

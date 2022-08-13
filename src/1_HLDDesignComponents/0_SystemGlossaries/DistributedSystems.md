@@ -9,5 +9,5 @@
 
 # Other Properties
 - [CAP Theorem of the Distributed Systems](CAP.md)
-- [ServerCluster.md](ServerCluster.md)
+- [ServerCluster.md](ServersCluster.md)
 - [EventDrivenArchitecture](EventDrivenArchitecture.md)

@@ -33,10 +33,10 @@
 - Each service can be written in its own language or framework, and can have its own database or lack thereof.
 - `Dedicated data store for every service` 
   - Every component should be single source of truth. 
-  - And whenever needed, the microservice would ask the other microservice for the data. ( through network call )
+  - And whenever needed, the microservice would ask the other microservice for the data ( through network call ).
 - `Condense business responsibility to a single place` 
   - Every microservice should have proper responsibility and single purpose. 
-  - And it should correspond to the business use case. ( Less is more )
+  - And it should correspond to the business use case ( Less is more ).
 
 ### Deployment is easier
 - If one service goes down, not complete product would be down.
@@ -49,7 +49,7 @@
 - `Safety` - The contract should be defined properly between microservices.
 - `Resilience` - Client should be able to handle failure scenarios properly.
 - `Large Team` - `Monolothic is good for small team` while `Microservice is good for large team`.
-- `Dependency` - Micro-servies would be dependent to each other. Sometimes, there can be circular dependencies also.
+- `Dependency` - Micro-services would be dependent to each other. Sometimes, there can be circular dependencies also.
 
 ## Examples of MicroServices
 - Search, Start Page, Recommendation etc. as separate components/services.
