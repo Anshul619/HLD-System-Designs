@@ -233,7 +233,7 @@ Parameter | Title                           | More Description                  
 - `Thousands of producers`
 - `~1000 consumers`
 
-# [Kafka vs Others](../../../README.md#message-brokers)
+# [Kafka vs Others](KafkaVsRabbitMQVsSQSVsSNS.md)
 
 # References
 - [Kafka Interview Question](https://www.interviewbit.com/kafka-interview-questions/)

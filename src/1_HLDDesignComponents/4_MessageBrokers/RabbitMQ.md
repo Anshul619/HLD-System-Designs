@@ -1,5 +1,5 @@
 
-# [RabbitMQ vs Others](../../../README.md#message-brokers)
+# [RabbitMQ vs Others](KafkaVsRabbitMQVsSQSVsSNS.md)
 
 # References
 - [RabbitMQ vs Kafka - InterviewBit](https://www.interviewbit.com/blog/rabbitmq-vs-kafka/)

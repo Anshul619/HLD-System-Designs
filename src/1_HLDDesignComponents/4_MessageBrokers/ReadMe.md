@@ -1,6 +1,6 @@
 
 # Introduction
-- Message brokers are used to enable `Event Driven Architectures`, to communicate the events between microservices.
+- Message brokers are used to decouple & enable [Event Driven Architectures](../0_SystemGlossaries/EventDrivenArchitecture.md) i.e. communicate the events & pass the data between [microservices](../1_MicroServices).
 - In modern software architecture, the application needs to be decoupled, high scalability, serving high performance. 
 - Messaging service come in allows us to build that kind of application.
 
@@ -9,7 +9,7 @@
 <img title="Message-Transfer-Model" alt="Alt text" src="assests/Traditional-Message-Patterns.drawio.png">
 
 ## Point-To-Point Model (Message Queuing)
-- Once the message is delivered to the consumer ( one  ), it would be removed from Queue.
+- Once the message is delivered to the one consumer, it would be removed from Queue.
 - The main goal is to `distribute messages individually` and promptly, ensuring that `work is parallelized equitably` and messages are handled roughly in the order they came in the queue.
 - [RabbitMQ](RabbitMQ.md), [Amazon SNS](../../2_AWSComponents/5_MessageBrokerServices/AmazonSNS.md) support `Point-To-Point` technique.
 
@@ -26,7 +26,7 @@
 - This is `completely asynchronous`. You can't say for sure when this process will happen and in what order.
 - [Kafka](Kafka.md), [Active MQ](ActiveMQ.md), [Amazon SQS](../../2_AWSComponents/5_MessageBrokerServices/AmazonSQS.md) supports `Publisher-Subscriber` Model.
 
-## [Various Message Brokers](../../../README.md)
+## [Comparison between Various Message Brokers](KafkaVsRabbitMQVsSQSVsSNS.md)
 
 # References
 - [Point-to-Point and Publish/Subscribe Messaging model](https://programmingsharing.com/point-to-point-and-publish-subscribe-messaging-model-2efc4d2b6726)
