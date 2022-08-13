@@ -4,9 +4,10 @@
 ## Introduction
 - Easy microservice would have separate git code repo.
 - Define contracts between microservices.
-- Microservices are a modern [service-oriented architecture](https://www.geeksforgeeks.org/service-oriented-architecture/).
+- Microservices are a modern [Service-Oriented Architecture](https://www.geeksforgeeks.org/service-oriented-architecture/).
 - In a Microservice Architecture, each service is self-contained and implements a single business capability.
 - Microservice architecture makes it easier and fastest way to build and work on individual parts of an application, and thus the application as a whole.
+- [Implementing microServices on AWS](../../2_AWSComponents/0_AWSDesigns/MicroservicesOnAWS.md)
 
 ![img.png](assests/MonolothicToMicroService.drawio.png)
 
@@ -53,7 +54,7 @@
 
 ## Examples of MicroServices
 - Search, Start Page, Recommendation etc. as separate components/services.
-- Feed, Search, Product Details etc. services in `LinkedIn`.
+- Feed, Search, Product Details etc. services in [LinkedIn](https://www.linkedin.com/feed/).
 - [Zomoto Design](../../3_HLDDesignProblems/ZomatoDesign)
 
 ## References

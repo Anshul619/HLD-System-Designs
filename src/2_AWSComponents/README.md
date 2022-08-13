@@ -1,8 +1,9 @@
 
 # Introduction
 - AWS manages its [global architecture](AWS-Global-Architecture-Region-AZ.md) through region and availability zones.
+- [AWS Designs](0_AWSDesigns)
 
-[![img.png](../3_HLDDesignProblems/DesignScalableSystemWithRDMS/DesignScalableSystemWithRelationalDBOnAWS.drawio.png)](../3_HLDDesignProblems/DesignScalableSystemWithRDMS)
+[![img.png](0_AWSDesigns/DesignScalableSystemWithRDMS/DesignScalableSystemWithRelationalDBOnAWS.drawio.png)](0_AWSDesigns/DesignScalableSystemWithRDMS)
 
 # AWS Services
 

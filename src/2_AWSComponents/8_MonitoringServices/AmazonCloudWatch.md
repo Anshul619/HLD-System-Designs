@@ -8,7 +8,7 @@
 - Analyse - Trends & metric math
 - Compliance & security
 
-# What AWS resources can be monitored in CloudWatch?
+## What AWS resources can be monitored in CloudWatch?
 - CPU, Memory utilization of EC2
 - Amazon RDS instances
 - Amazon SQS
@@ -18,7 +18,7 @@
 
 ![img.png](assests/cloudwatch_img.png)
 
-# [CloudWatch metrics for the Application Load Balancer](https://docs.aws.amazon.com/elasticloadbalancing/latest/application/load-balancer-cloudwatch-metrics.html)
+## [CloudWatch metrics for the Application Load Balancer](https://docs.aws.amazon.com/elasticloadbalancing/latest/application/load-balancer-cloudwatch-metrics.html)
 
 ![img.png](https://www.splunk.com/content/dam/splunk-blogs/signalfx-assets/blog-images/ELB-CloudWatch-1024x457.png)
 
