@@ -1,12 +1,14 @@
 ## :star: CAP Theorem of the Distributed Systems
 
-![img.png](assests/CAP_Theorem_Distributed_Systems.drawio.png)
+- [Consistency](ReplicationAndDataConsistency.md)
+- [Availability](HighAvailability.md)
+- Partition Tolerance
+
+![img.png](assests/CAP_Theorem.drawio.png)
 
 We cannot build a general data store that is [highly available](HighAvailability.md), [sequentially consistent](ReplicationAndDataConsistency.md), and tolerant to any partition failures.
 
-![img.png](https://www.researchgate.net/profile/Hamzeh-Khazaei/publication/282679529/figure/fig2/AS:614316814372880@1523475950595/Visualization-of-CAP-theorem.png)
-
-We can only build a system that has any two of these three properties.
+We can only build a system that has `any two of these three properties`.
 - Because, to be consistent, all nodes should see the same set of updates in the same order.
 - But if the network loses a partition, updates in one partition might not make it to the other partitions before a client reads from the out-of-date partition after having read from the up-to-date one.
 - The only thing that can be done to cope with this possibility is to stop serving requests from the out-of-date partition, but then the service is no longer 100% available.

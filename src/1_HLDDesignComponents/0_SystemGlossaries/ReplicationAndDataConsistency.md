@@ -7,15 +7,22 @@
 - Each slave outputs a message stating that it has received the update successfully, thus allowing the sending of subsequent updates.
 - Read more about replication lag in [Amazon Aurora vs RDS](../../2_AWSComponents/6_DatabaseServices/AWSAuroraVsRDS.md).
 
-## Various consistency models
+## Consistency patterns
 
 ### Eventual Consistency Model
 - Eventual Consistency Model `maximizes the read throughput`.
-- However, it might not reflect the results of a recently completed write.
-- Fortunately, all the copies of data usually reach consistency within a second.
+- However, it might not reflect the results of a recently completed write. Data is replicated asynchronously.
+- Fortunately, all the copies of data usually reach consistency within milliseconds.
 
-### Strong Consistency Model
+### Strong Consistency
 - This model has a delay in writing the data, but it guarantees that you will always see the updated data every time you read it.
+- After a write, reads will see it. Data is replicated synchronously.
+- This approach is seen in `file systems and RDBMS`. `Strong consistency works well in systems that need transactions`.
 
-# References
+### Weak consistency
+- After a write, reads may or may not see it. A best effort approach is taken.
+
+# Source(s) and further reading
+- [Consistency Patterns](https://github.com/donnemartin/system-design-primer#consistency-patterns)
 - [Redundancy and Replication](https://github.com/jeremyyew/tech-prep-jeremy.io/blob/master/systems-design/topics/databases/redundancy-and-replication.md)
+- [Google I/O 2009 - Transactions Across Datacenters..](http://snarfed.org/transactions_across_datacenters_io.html)
