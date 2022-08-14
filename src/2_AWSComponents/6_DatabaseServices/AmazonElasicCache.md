@@ -1,7 +1,7 @@
 
 # [Amazon Elastic Cache](https://aws.amazon.com/elasticache/)
 - Fully Managed Memcached or [Redis](../../1_HLDDesignComponents/5_Redis).
-- Scale from one to many nodes, using [Cluster](../../1_HLDDesignComponents/0_SystemGlossaries/ServerCluster.md).
+- Scale from one to many nodes, using [Cluster](../../1_HLDDesignComponents/0_SystemGlossaries/ServersCluster.md).
 - Self-healing ( replaces dead instance )
 - `Single-digit millisecond speed` (usually).
 - Multi-AZ deployments for [availability](../../1_HLDDesignComponents/0_SystemGlossaries/HighAvailability.md).

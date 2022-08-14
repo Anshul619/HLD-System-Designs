@@ -1,4 +1,3 @@
-
 # Fanout Pattern using Amazon SQS and SNS
 - We can design fanout pattern by using both SNS and SQS. 
 - In this pattern, a message published to an SNS topic is distributed to multiple SQS queues in parallel.

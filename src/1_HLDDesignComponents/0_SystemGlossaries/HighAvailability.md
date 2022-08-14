@@ -1,9 +1,12 @@
 # :star: [High Availability](https://avinetworks.com/glossary/high-availability/)
 - High Availability (HA) describes systems that are dependable enough to operate continuously without failing.
 - They are well-tested and sometimes equipped with redundant components.
-- `99.99% uptime means that website is down only for 52 mins in the complete year`. This means it is `highly available`.
+- `99.99% uptime means that website is down only for 52 mins in the complete year`. 
+  - This means it is `highly available`.
 - In AWS, high availability is achieved through multiple deployments of the app in [different availability zones](../../2_AWSComponents/AWS-Global-Architecture-Region-AZ.md).
-- [Design Scalable System With RDMS on AWS](../../2_AWSComponents/0_AWSDesigns/DesignScalableSystemWithRDMS)
+- [High Availability vs Fault Tolerance](FaultTolerance&DisasterRecovery.md#fault-tolerance-vs-high-availabilityhighavailabilitymd)
+
+![img.png](../../2_AWSComponents/0_AWSDesigns/DesignScalableSystemWithRDMS/DesignScalableSystemWithRelationalDBOnAWS.drawio.png)
 
 ## Components of HA
 - `Redundancy` - Ensures that critical system components have another identical components with the same data, that can take over in case of failure.

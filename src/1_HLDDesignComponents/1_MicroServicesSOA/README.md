@@ -21,7 +21,7 @@
 - To get the data from one microservice to another, [REST](../2_APITechOptions/REST.md) or [gPRC](../2_APITechOptions/gPRC.md) api protocols can be used.
 - [Redis](../5_Redis) can be used to share the session data between microservices.
 
-## Benefits of Microservices design
+## :thumbsup: Advantages of Microservices design
 
 ### Separation of Concern
 - Scalability would be easy. 
@@ -44,7 +44,7 @@
   - Example - With big code base & 100 engineers team in [Airbnb](https://www.infoq.com/presentations/airbnb-culture-soa/), it was taking `1 day to deploy monolothic code`.
 - Instead of deploying complete code for any change, only corresponding microservice can be deployed.
 
-## Disadvantages of Microservices design
+## :thumbsdown: Disadvantages of Microservices design
 - `Obviousness` - With large number of services, it would be a bit tricky to find the microservice for the required change.
 - `Safety` - The contract should be defined properly between microservices.
 - `Resilience` - Client should be able to handle failure scenarios properly.

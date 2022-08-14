@@ -2,9 +2,9 @@
 
 This repo contains the various system design components info, questions and solutions.
 - :star: [AWS Components](src/2_AWSComponents)
-- [System Design Glossaries](src/1_HLDDesignComponents/0_SystemGlossaries/README.md)
-- [System Design Tips](src/1_HLDDesignComponents/SystemDesignTips.md)
+- :star: [System Design Glossaries](src/1_HLDDesignComponents/0_SystemGlossaries/README.md)
 - [System Estimation Tips](src/1_HLDDesignComponents/SystemEstimationTips.md)
+- [System Design Tips](src/1_HLDDesignComponents/SystemDesignTips.md)
 - [MicroServices - Modern SOA Architecture](src/1_HLDDesignComponents/1_MicroServicesSOA)
 
 # [Message Brokers](src/1_HLDDesignComponents/4_MessageBrokers)

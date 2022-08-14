@@ -1,6 +1,6 @@
 
 # :star: Apache Kafka 
-- Apache Kafka is an `open-source` [distributed](../0_SystemGlossaries/DistributedSystems.md) `event streaming platform` used by thousands of companies for high-performance data pipelines, streaming analytics, data integration, and mission-critical applications.
+- Apache Kafka is an `open-source` [distributed](../0_SystemGlossaries) `event streaming platform` used by thousands of companies for high-performance data pipelines, streaming analytics, data integration, and mission-critical applications.
 - Kafka can process a large amount of data in a short amount of time (`1 million messages/sec`).
 - It also has low latency, making it possible to process data in real-time.
 - Kafka is based on [Publish-Subscriber Model](../4_MessageBrokers#publisher-subscriber-model-pubsub). And can be used for [Event-Driven Architecture](../0_SystemGlossaries/EventDrivenArchitecture.md).

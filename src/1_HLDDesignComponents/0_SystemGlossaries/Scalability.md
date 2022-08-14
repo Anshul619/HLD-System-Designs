@@ -12,6 +12,8 @@
 - Single-Master-Slave Technique
 - Multi-Master-Slave Technique ( Sharding )
 
+![img.png](../../2_AWSComponents/0_AWSDesigns/DesignScalableSystemWithRDMS/DesignScalableSystemWithRelationalDBOnAWS.drawio.png)
+
 ## Vertical scalability ( Scale Up )
 - Generally, it's not recommended to do vertical scalability ( due to cost, license issues ). 
 - :star: Horizontal scalability is more preferred. But it needs initial design in-place.
