@@ -11,5 +11,10 @@
 
 ![img.png](https://github.com/jeremyyew/tech-prep-jeremy.io/raw/master/.gitbook/assets/image%20%2814%29.png)
 
+# Terminologies
+- Origin servers are the origin of data. 
+- Edge servers get data from the origin server. 
+- A POP (point of presence) is a single physical location that consists of one or multiple edge servers.
+
 # Source(s) and further reading
 - [CDN](https://github.com/jeremyyew/tech-prep-jeremy.io/blob/master/systems-design/topics/cdns.md)
