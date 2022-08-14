@@ -15,7 +15,7 @@
 - By default, there is a 30-minute value assigned as the maintenance window and the DB instance will still be available during these events though you might observe a minimal effect on performance.
 
 # [Amazon DMS](https://aws.amazon.com/dms/)
-- AWS Database Migration Service, to migrate other databases to Amazon RDS.
+- AWS Database Migration Service to migrate other databases to Amazon RDS.
 
 # References
 - [AWS RDS Max Connections Limit As Per Instance Type](https://sysadminxpert.com/aws-rds-max-connections-limit/)

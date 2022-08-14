@@ -7,6 +7,7 @@
 - [Reliability - Fault Tolerance, Disaster Recovery](FaultTolerance&DisasterRecovery.md)
 - [Load Balancer](LoadBalancer.md)
 - [ACID Properties of the Transaction](ACID.md)
+- [Durability](Durability.md)
 - [Event Driven Architecture](EventDrivenArchitecture.md)
 - [CAP Theorem of the Distributed Systems](CAP.md)
 

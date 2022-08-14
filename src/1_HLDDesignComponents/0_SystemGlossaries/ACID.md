@@ -20,6 +20,4 @@
 - Transactions occur independently without interference.
 - Changes occurring in a particular transaction will not be visible to any other transaction until that particular change in that transaction is written to memory or has been committed
 
-# Durability
-- In database systems, [durability](https://en.wikipedia.org/wiki/Durability) is the `ACID property` which guarantees that `transactions that have committed will survive permanently`.
-- For example, if a flight booking reports that a seat has successfully been booked, then the seat will remain booked even if the system crashes.
+# [Durability](Durability.md)
