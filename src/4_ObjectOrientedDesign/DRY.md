@@ -1,5 +1,5 @@
 
-![img.png](../1_HLDDesignComponents/10_Others_assests/dry_img.png)
+![img.png](assests/dry_img.png)
 
 # DRY principle
 - The DRY (`don't repeat yourself`) principle is a best practice in software development that recommends software engineers to do something once, and only once.

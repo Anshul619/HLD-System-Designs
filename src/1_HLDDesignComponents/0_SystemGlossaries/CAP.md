@@ -1,6 +1,6 @@
 ## :star: CAP Theorem of the Distributed Systems
 
-![img.png](../10_Others_assests/CAP_Theorem_Distributed_Systems.drawio.png)
+![img.png](assests/CAP_Theorem_Distributed_Systems.drawio.png)
 
 The use of the word [Consistency](ReplicationOrDataConsistency.md) in [CAP](https://www.geeksforgeeks.org/the-cap-theorem-in-dbms/) and its use in [ACID](ACID.md) do not refer to the same identical concept.
 - In [CAP](https://www.geeksforgeeks.org/the-cap-theorem-in-dbms/), the term [Consistency](ReplicationOrDataConsistency.md) refers to the data mismatch during `replication lag`.

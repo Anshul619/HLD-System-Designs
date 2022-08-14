@@ -1,4 +1,3 @@
-
 # :star: Apache Kafka 
 - Apache Kafka is an `open-source` [distributed](../0_SystemGlossaries) `event streaming platform` used by thousands of companies for high-performance data pipelines, streaming analytics, data integration, and mission-critical applications.
 - Kafka can process a large amount of data in a short amount of time (`1 million messages/sec`).
@@ -120,7 +119,7 @@
 
 ## What is Partition Key in Kafka?
 
-<img title="Kafka-Partitioning-Layout" alt="Alt text" src="assests/Kafka-Partitioning-Layout.drawio.png">
+![img.png](assests/Kafka-Partitioning-Layout.drawio.png)
 
 - Partitioning is done using `key` in the record
 - If we want to sequence records execution in Kafka, as per the records input time, we should push those in the same partition ( hence same key should be used for the records ).

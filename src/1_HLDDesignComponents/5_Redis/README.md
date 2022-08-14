@@ -12,8 +12,8 @@
 
 [![img.png](https://pbs.twimg.com/media/FMx3JZRUYAIWWKq?format=jpg&name=4096x4096)](https://www.youtube.com/watch?v=5TRFpFBccQM)
 
-## [Atomicity - Redis Transaction lock](https://redis.io/docs/reference/patterns/distributed-locks/)
-- Using `RedisTransaction` lock, we can achieve atomicity on the Redis operations (i.e. set/increase the key, add/remove elements from set, increase counter etc.).
+## Atomicity - Redis Transaction lock
+- Using [RedisTransaction](https://redis.io/docs/reference/patterns/distributed-locks/) lock, we can achieve [atomicity](../0_SystemGlossaries/Atomicity) on the Redis operations (i.e. set/increase the key, add/remove elements from set, increase counter etc.).
 
 ## [Multiple data types supported](https://redis.io/docs/manual/data-types/)
 

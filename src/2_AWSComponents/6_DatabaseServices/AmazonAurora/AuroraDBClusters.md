@@ -2,7 +2,8 @@
 
 ![img.png](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/images/AuroraArch001.png)
 
-## [Aurora Multi-master clusters](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/aurora-multi-master.html)
+## Aurora Multi-master cluster
+- About [Aurora Multi-master cluster](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/aurora-multi-master.html)
 
 ### :thumbsdown: Disadvantages with Aurora Multi-master clusters
 - You can have a maximum of `four master DB instances` in a multi-master cluster.

@@ -10,7 +10,7 @@
 - `Active-Active fail-over policy` ( instead of `active-passive` policy ) in [AWS HA cluster](../../2_AWSComponents/AWS-Global-Architecture-Region-AZ.md).
 - `If an application is said to be fault-tolerant then it is also considered highly available`. But vice-verse is not true.
 
-![img.png](../10_Others_assests/ha_vs_fault_tolerant.png)
+![img.png](assests/ha_vs_fault_tolerant.png)
 
 # [Disaster Recovery](https://en.wikipedia.org/wiki/Disaster_recovery)
 - In AWS, disaster recovery is done through [multi-region replication](../../2_AWSComponents/AWS-Global-Architecture-Region-AZ.md).

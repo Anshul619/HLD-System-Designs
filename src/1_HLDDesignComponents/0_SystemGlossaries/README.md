@@ -12,6 +12,7 @@
 | [Event Driven Architecture](EventDrivenArchitecture.md)                                | `Message Brokers`                  |
 | [ACID Properties of the Transaction](ACID.md)                                          | `Data Stores`                      |
 | [CAP Theorem of the Distributed Systems](CAP.md)                                       | `Data Stores`                      |
+| [Atomicity](Atomicity)                                                                 | `Data Stores`                      |
 | [Durability](Durability.md)                                                            | `Data Stores`                      |
 | [Replication or Data Consistency](ReplicationOrDataConsistency.md)                     | `Data Stores`                      |
 
@@ -26,7 +27,7 @@
 # [Domain Driven Architecture](https://www.geeksforgeeks.org/domain-driven-design-ddd/)
 - When we are developing software our focus should not be primarily on technology, rather it should be primarily on business/domain.
 - Classes, modals, services, microservices, rest apis etc. should be designed according to the domains.
-![img.png](../10_Others_assests/domain_driven_design.png)
+![img.png](assests/domain_driven_design.png)
 
 
 

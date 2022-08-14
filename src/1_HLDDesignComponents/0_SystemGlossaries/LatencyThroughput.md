@@ -1,6 +1,6 @@
 # Latency
 - `Latency is the time required to perform an action or to produce some result`.
-- Latency is measured in units of time - hours, minutes, seconds, nanoseconds or clock periods.
+- Latency is measured in units of time - minutes, seconds, nanoseconds or clock periods.
 - [Latency comparison numbers](../SystemEstimationTips.md#latency-comparison-numbers)
 - For example - `50 secs to do a transaction`.
 
