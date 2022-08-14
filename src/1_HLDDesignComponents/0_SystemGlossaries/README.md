@@ -11,8 +11,9 @@
 | [Servers Cluster](ServersCluster.md)                                                   | `Data Stores` or `Message Brokers` |
 | [Event Driven Architecture](EventDrivenArchitecture.md)                                | `Message Brokers`                  |
 | [ACID Properties of the Transaction](ACID.md)                                          | `Data Stores`                      |
-| [Durability](Durability.md)                                                            | `Data Stores`                      |
 | [CAP Theorem of the Distributed Systems](CAP.md)                                       | `Data Stores`                      |
+| [Durability](Durability.md)                                                            | `Data Stores`                      |
+| [Replication or Data Consistency](ReplicationOrDataConsistency.md)                     | `Data Stores`                      |
 
 # [Language Agnostic](https://en.wikipedia.org/wiki/Language-agnostic)
 - We should design the system considering agnostic feature (Language agnostic, AWS agnostic etc.) into the consideration.
