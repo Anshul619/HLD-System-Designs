@@ -6,8 +6,6 @@
 - In AWS, high availability is achieved through multiple deployments of the app in [different availability zones](../../2_AWSComponents/AWS-Global-Architecture-Region-AZ.md).
 - [High Availability vs Fault Tolerance](FaultTolerance&DisasterRecovery.md#fault-tolerance-vs-high-availabilityhighavailabilitymd)
 
-![img.png](../../2_AWSComponents/6_DatabaseServices/AmazonAurora/assests/aurora_global_database_img.png)
-
 ## Components of HA
 - `Redundancy` - Ensures that critical system components have another identical components with the same data, that can take over in case of failure.
 - `Monitoring` - Identify problems in production systems that may disrupt or degrade service.

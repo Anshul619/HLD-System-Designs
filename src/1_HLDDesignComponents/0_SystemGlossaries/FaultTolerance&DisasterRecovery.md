@@ -1,5 +1,6 @@
-# [Fault Tolerance](https://www.linkedin.com/pulse/high-availability-vs-fault-tolerance-jon-bonso/)
-- Fault Tolerance has the goal of keeping your application running with `zero downtime`. (`upgraded version of High Availability`)
+# Fault Tolerance
+- [Fault Tolerance](https://www.linkedin.com/pulse/high-availability-vs-fault-tolerance-jon-bonso/) has the goal of keeping your application running with `zero downtime`. 
+- It is an upgraded version of [High Availability](HighAvailability.md)
 - It can tolerate any component fault to avoid any performance impact, data loss, or system crashes by having redundant resources beyond what is typically needed.
 
 ## Fault Tolerance vs [High Availability](HighAvailability.md)
@@ -14,6 +15,8 @@
 # [Disaster Recovery](https://en.wikipedia.org/wiki/Disaster_recovery)
 - In AWS, disaster recovery is done through [multi-region replication](../../2_AWSComponents/AWS-Global-Architecture-Region-AZ.md).
 - For example - [Amazon Aurora Global Database](../../2_AWSComponents/6_DatabaseServices/AmazonAurora/AuroraGlobalDatabase.md)
+
+![img.png](../../2_AWSComponents/6_DatabaseServices/AmazonAurora/assests/aurora_global_database_img.png)
 
 ## [Recovery Point Objective (RPO)](https://docs.aws.amazon.com/whitepapers/latest/microservices-on-aws/disaster-recovery.html)
 - Recovery time objective is the maximum acceptable delay between the interruption of service and restoration of service. 
