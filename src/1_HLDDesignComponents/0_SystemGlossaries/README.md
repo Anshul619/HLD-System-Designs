@@ -10,7 +10,7 @@
 | [Load Balancer](LoadBalancer.md)                                                       | ALL                                |
 | :star: [Servers Cluster](ServersCluster.md)                                            | `Data Stores` or `Message Brokers` |
 | :star: [Event Driven Architecture](EventDrivenArchitecture.md)                         | `Message Brokers`                  |
-| :star: [ACID Properties of the Transaction](ACIDTransaction.md)                        | `Data Stores`                      |
+| :star: [ACID Properties of the Transaction](ACIDPropertyTransaction.md)                        | `Data Stores`                      |
 | :star: [CAP Theorem of the Distributed Systems](CAPTheorem.md)                         | `Data Stores`                      |
 | :star: [Replication & Data Consistency](ReplicationAndDataConsistency.md)              | `Data Stores`                      |
 | [Atomicity](Atomicity.md)                                                              | `Data Stores`                      |
