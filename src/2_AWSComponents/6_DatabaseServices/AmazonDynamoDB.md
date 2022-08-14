@@ -23,5 +23,5 @@
 - Amazon DynamoDB scales horizontally and can seamlessly scale a single table over hundreds of servers.
 
 ## Consistency Models
-- [Eventual Consistency Model](../../1_HLDDesignComponents/0_SystemGlossaries/ReplicationOrDataConsistency.md#eventual-consistency-model)
-- [Strong Consistency Model](../../1_HLDDesignComponents/0_SystemGlossaries/ReplicationOrDataConsistency.md#strong-consistency-model)
+- [Eventual Consistency Model](../../1_HLDDesignComponents/0_SystemGlossaries/ReplicationAndDataConsistency.md#eventual-consistency-model)
+- [Strong Consistency Model](../../1_HLDDesignComponents/0_SystemGlossaries/ReplicationAndDataConsistency.md#strong-consistency-model)

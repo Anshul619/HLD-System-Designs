@@ -14,7 +14,7 @@
 | [CAP Theorem of the Distributed Systems](CAP.md)                                       | `Data Stores`                      |
 | [Atomicity](Atomicity.md)                                                              | `Data Stores`                      |
 | [Durability](Durability.md)                                                            | `Data Stores`                      |
-| [Replication or Data Consistency](ReplicationOrDataConsistency.md)                     | `Data Stores`                      |
+| [Replication or Data Consistency](ReplicationAndDataConsistency.md)                     | `Data Stores`                      |
 
 # [Language Agnostic](https://en.wikipedia.org/wiki/Language-agnostic)
 - We should design the system considering agnostic feature (Language agnostic, AWS agnostic etc.) into the consideration.
