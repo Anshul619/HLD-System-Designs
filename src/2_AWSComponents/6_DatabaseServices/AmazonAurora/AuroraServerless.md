@@ -5,4 +5,4 @@
 - Can migrate from [Aurora Cluster](AuroraDBClusters.md) to Aurora Serverless & vice-versa.
 - Aurora serverless usage is measured in `ACU ( Aurora Capacity Units )`.
 - Billed in 5 mins increment of ACU.
-- [Aurora Serverless - Cloudformation template](../../3_InfraAutomation/CloudFormation/templates/aurora_serverless.yml)
+- [Aurora Serverless - Cloudformation template](../../3_InfraAutomation/AWSCloudFormation/templates/aurora_serverless.yml)

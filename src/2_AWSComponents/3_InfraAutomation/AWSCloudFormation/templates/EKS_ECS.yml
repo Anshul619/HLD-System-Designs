@@ -1,6 +1,6 @@
 ---
 AWSTemplateFormatVersion: 2010-09-09
-Description: AWS CloudFormation Sample Template EKS Cluster on EC2
+Description: AWS AWSCloudFormation Sample Template EKS Cluster on EC2
 
 Mappings:
   ServicePrincipalPartitionMap:

@@ -1,15 +1,26 @@
 
 # Introduction
 - AWS manages its [global architecture](AWS-Global-Architecture-Region-AZ.md) through region and availability zones.
-- [AWS Designs](0_AWSDesigns)
 
 [![img.png](0_AWSDesigns/DesignScalableSystemWithRDMS/DesignScalableSystemWithRelationalDBOnAWS.drawio.png)](0_AWSDesigns/DesignScalableSystemWithRDMS)
+
+# [AWS Designs](0_AWSDesigns)
+- [Design Scalable System on AWS](0_AWSDesigns/DesignScalableSystemWithRDMS)
+- [Fanout Pattern with SNS & SQS](0_AWSDesigns/FanoutPatternSNSSQS.md)
+- [WP Site with CloudFront & S3](0_AWSDesigns/WPSiteCloudFront&S3.md)
+- [Microservices On AWS](0_AWSDesigns/MicroservicesOnAWS.md)
+
+# AWS Services Comparisons
+- [Amazon Aurora vs RDS](6_DatabaseServices/AWSAuroraVsRDS.md)
+- [Amazon SQS vs SNS](../1_HLDDesignComponents/4_MessageBrokers/KafkaVsRabbitMQVsSQSVsSNS.md)
+- [Amazon S3 vs EFS vs EBS](7_StorageServices/S3vsEFSvsEBS.md)
+- [Amazon ECS vs EKS vs Fargate](3_InfraAutomation/EKSvsECSvsFargate.md)
 
 # AWS Services
 
 Service| Type                                                                  | Description                                                                                                                                                                       |
 -----------|-----------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-:star: [AWS Cloud Formation](3_InfraAutomation/CloudFormation/AWSCloudFormation.md) | [AWS Infrastructure Automation](3_InfraAutomation)                   | `Infrastructure as a CODE`. Configure & manage complete AWS infrastructure through cloudformation templates ( yaml or json ).                                                     |
+:star: [AWS Cloud Formation](3_InfraAutomation/AWSCloudFormation/Readme.md) | [AWS Infrastructure Automation](3_InfraAutomation)                   | `Infrastructure as a CODE`. Configure & manage complete AWS infrastructure through cloudformation templates ( yaml or json ).                                                     |
 :star: [Amazon Route 53](1_NetworkingAndContentDelivery/AmazonRoute53.md)| [Networking & Content Delivery Service](1_NetworkingAndContentDelivery) | `AWS DNS Service`                                                                                                                                                                 |
 :star: [Amazon Elastic Load Balancer](1_NetworkingAndContentDelivery/ElasticLoadBalancer.md)| [Networking & Content Delivery Service](1_NetworkingAndContentDelivery) | `AWS Load Balancer Service`                                                                                                                                                       |
 :star: [Amazon CloudFront](1_NetworkingAndContentDelivery/AmazonCloudFront.md) | [Networking & Content Delivery Service](1_NetworkingAndContentDelivery) | `AWS Low-Latency CDN Service`, which securely delivers content with `low latency and high transfer speeds`                                                                        |
