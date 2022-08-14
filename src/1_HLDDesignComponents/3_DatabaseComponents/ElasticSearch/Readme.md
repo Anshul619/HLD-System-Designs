@@ -33,17 +33,7 @@
 
 ![img.png](assests/inverted_indexes.png)
 
-## ElasticSearch Cluster
-- In Elasticsearch, a cluster is a collection of nodes. 
-- Cluster and nodes work together and hold the data, where node is an instance of Elasticsearch. 
-- A cluster provides joined indexing as well as search capabilities to Elasticsearch users.
-
-<img title="Design1" alt="Alt text" src="assests/design1.png">
-
-## Shard in ES
-- The data stored in an index can be divided into multiple partitions. 
-- Each of these partitions is called Shard, which is managed and controlled by a separate node. 
-- An `Elasticsearch index has five shards by default`.
+## [ElasticSearch Cluster](ElasticSearchCluster.md)
 
 ## What is tokenizer in Elasticsearch?
 - Tokenizers are used to generate the `tokens from a text string`. 
