@@ -16,7 +16,7 @@
 
 ## Vertical scalability ( Scale Up )
 - Generally, it's not recommended to do vertical scalability ( due to cost, license issues ). 
-- :star: Horizontal scalability is more preferred. But it needs initial design in-place.
+- :star: Horizontal scalability is more preferred. But it needs initial design think-through.
 
 ![img.png](https://dzone.com/storage/temp/5747695-picture2.png)
 

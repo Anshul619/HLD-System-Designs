@@ -3,7 +3,7 @@
 - It is an upgraded version of [High Availability](HighAvailability.md)
 - It can tolerate any component fault to avoid any performance impact, data loss, or system crashes by having redundant resources beyond what is typically needed.
 
-## Fault Tolerance vs [High Availability](HighAvailability.md)
+# Fault Tolerance vs [High Availability](HighAvailability.md)
 - More complex design
 - Higher redundancy
 - Higher cost

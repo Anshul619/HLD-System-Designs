@@ -16,4 +16,4 @@
 ## QPS (Queries per Second)
 - `Every transaction might have multiple queries`.
 - Hence, QPS is the subset of TPS.
-  - TBD - What is difference b/w TPS and QPS?
+- What is difference b/w TPS and QPS?

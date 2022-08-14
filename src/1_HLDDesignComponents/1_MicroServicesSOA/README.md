@@ -1,4 +1,3 @@
-
 # Microservices design
 
 ## Introduction

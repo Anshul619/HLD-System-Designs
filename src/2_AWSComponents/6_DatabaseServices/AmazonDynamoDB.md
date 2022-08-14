@@ -11,7 +11,7 @@
 - [DynamoDB Accelerator (DAX)](https://aws.amazon.com/dynamodb/dax/) provides caching capabilities for accessing data in microseconds.
 
 ## Automated Storage Scaling
-- There is `no limit to the amount of data you can store in a DynamoDB table`, and the service automatically allocates more storage, as you store more data using the DynamoDB write APIs.
+- `There is no limit to the amount of data you can store in a DynamoDB table`, and the service automatically allocates more storage, as you store more data using the DynamoDB write APIs.
 
 ## Provisioned Throughput
 - When creating a table, simply specify how much request capacity you require?
