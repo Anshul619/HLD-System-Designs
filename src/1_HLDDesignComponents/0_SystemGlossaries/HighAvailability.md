@@ -18,5 +18,28 @@
 | :star: 99.99% availability | Four 9s   | 52 mins         |
 | 99.9% availability         | Three 9s  | 8 hr 45 mins    |
 
-# References
+## Availability Patterns
+
+## Fail over Policies
+
+### Active-Active policy
+- An active-active cluster is typically made up of at least two nodes, both actively running the same kind of service simultaneously.
+- In active-active, both servers are managing traffic, spreading the load between them.
+- This would enable application to be [fault-tolerant](FaultTolerance&DisasterRecovery.md).
+
+### Active-Passive policy
+- With active-passive fail-over, `heartbeats` are sent between the active and the passive server on standby. 
+- If the heartbeat is interrupted, the passive server takes over the active's IP address and resumes service.
+- The length of downtime is determined by whether the passive server is already running in 'hot' standby or whether it needs to start up from 'cold' standby. 
+- Only the active server handles traffic.
+- Active-passive failover can also be referred to as `master-slave failover`.
+
+### :thumbsdown: Disadvantages
+- Fail-over adds more hardware and additional complexity.
+- There is a potential for loss of data if the active system fails before any newly written data can be replicated to the passive.
+
+## Replication & Data Consistency
+- [Read here about replication & data consistency](ReplicationAndDataConsistency.md)
+
+# Source(s) and further reading
 - [Scalability and High Availability](https://dzone.com/refcardz/scalability)

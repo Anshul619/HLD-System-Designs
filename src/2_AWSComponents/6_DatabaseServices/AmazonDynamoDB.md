@@ -1,4 +1,9 @@
 # [Amazon DynamoDB](https://aws.amazon.com/dynamodb/)
+- Fully managed NoSQL database service. 
+- All data items are stored on Solid State Drives (SSDs), and are replicated across 3 Availability Zones for [high availability](../../1_HLDDesignComponents/0_SystemGlossaries/HighAvailability.md) and [durability](../../1_HLDDesignComponents/0_SystemGlossaries/Durability.md). 
+- With DynamoDB, you can offload the administrative burden of operating and scaling a highly available distributed database cluster, while paying a low price for only what you use.
+
+## Key Features
 - Managed NoSQL database
 - Provisioned Throughput
 - Fast, predictable performance
@@ -23,5 +28,5 @@
 - Amazon DynamoDB scales horizontally and can seamlessly scale a single table over hundreds of servers.
 
 ## Consistency Models
-- [Eventual Consistency Model](../../1_HLDDesignComponents/0_SystemGlossaries/ReplicationAndDataConsistency.md#eventual-consistency-model)
-- [Strong Consistency Model](../../1_HLDDesignComponents/0_SystemGlossaries/ReplicationAndDataConsistency.md#strong-consistency-model)
+- [Eventual Consistency Model](../../1_HLDDesignComponents/0_SystemGlossaries/ReplicationAndDataConsistency.md#consistency-patterns)
+- [Strong Consistency Model](../../1_HLDDesignComponents/0_SystemGlossaries/ReplicationAndDataConsistency.md#consistency-patterns)

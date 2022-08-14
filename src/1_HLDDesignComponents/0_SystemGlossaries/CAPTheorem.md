@@ -19,3 +19,4 @@ We can only build a system that has `any two of these three properties`.
 
 # Reference
 - [CAP Theorem](https://akshay-iyangar.github.io/system-design/grokking-system-design/system-design-basics/cap-theorem.html)
+- [Beyond CAP Theorem](https://www.grokkingsystemdesigns.com/beyond-cap-theorem/)

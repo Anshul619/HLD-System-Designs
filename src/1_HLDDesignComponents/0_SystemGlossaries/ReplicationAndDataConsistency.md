@@ -9,20 +9,21 @@
 
 ## Consistency patterns
 
-### Eventual Consistency Model
+### Eventual Consistency (async replication)
 - Eventual Consistency Model `maximizes the read throughput`.
 - However, it might not reflect the results of a recently completed write. Data is replicated asynchronously.
 - Fortunately, all the copies of data usually reach consistency within milliseconds.
 
-### Strong Consistency
+### Strong Consistency (sync replication)
 - This model has a delay in writing the data, but it guarantees that you will always see the updated data every time you read it.
 - After a write, reads will see it. Data is replicated synchronously.
 - This approach is seen in `file systems and RDBMS`. `Strong consistency works well in systems that need transactions`.
 
-### Weak consistency
+### Weak consistency (not really consistent)
 - After a write, reads may or may not see it. A best effort approach is taken.
 
 # Source(s) and further reading
 - [Consistency Patterns](https://github.com/donnemartin/system-design-primer#consistency-patterns)
 - [Redundancy and Replication](https://github.com/jeremyyew/tech-prep-jeremy.io/blob/master/systems-design/topics/databases/redundancy-and-replication.md)
 - [Google I/O 2009 - Transactions Across Datacenters..](http://snarfed.org/transactions_across_datacenters_io.html)
+- [CAP by Jeremyyew](https://github.com/jeremyyew/tech-prep-jeremy.io/tree/master/systems-design/topics/consistency-availability-partition-tolerance-cap)

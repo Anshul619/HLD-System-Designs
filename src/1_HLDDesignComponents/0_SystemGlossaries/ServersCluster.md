@@ -1,7 +1,8 @@
 # [Server Cluster](https://www.racksolutions.com/news/blog/server-cluster-how-it-works/)
 - A server cluster consists of a group of servers working simultaneously under a `single IP address`.
 - Server clustering also ensures [Higher Availability](HighAvailability.md) (through replications), proper [Load Balancing](LoadBalancer.md) and [System Scalability](Scalability.md) (through sharding & read replicas).
-- In AWS, one cluster ( in multi-AZs ) would be in one Region. Every region would have its own cluster. 
+- In AWS, [one cluster ( in multi-AZs ) would be in one Region](../../2_AWSComponents/AWS-Global-Architecture-Region-AZ.md). 
+  - Every region would have its own cluster. 
 
 # Few Examples
 
