@@ -3,16 +3,16 @@
 
 | Basis                                                                                  | Applicable Components              |
 |----------------------------------------------------------------------------------------|------------------------------------|
-| [Efficiency - Latency, Throughput](LatencyThroughput.md)                               | ALL                                |
-| [Scalability](Scalability.md)                                                          | ALL                                |
-| [High Availability](HighAvailability.md)                                               | ALL                                |
+| :star: [Efficiency - Latency, Throughput](LatencyThroughput.md)                        | ALL                                |
+| :star: [Scalability](Scalability.md)                                                   | ALL                                |
+| :star: [High Availability](HighAvailability.md)                                        | ALL                                |
 | [Reliability - Fault Tolerance, Disaster Recovery](FaultTolerance&DisasterRecovery.md) | ALL                                |
 | [Load Balancer](LoadBalancer.md)                                                       | ALL                                |
-| [Servers Cluster](ServersCluster.md)                                                   | `Data Stores` or `Message Brokers` |
-| [Event Driven Architecture](EventDrivenArchitecture.md)                                | `Message Brokers`                  |
-| [ACID Properties of the Transaction](ACIDTransaction.md)                                          | `Data Stores`                      |
-| [CAP Theorem of the Distributed Systems](CAPTheorem.md)                                       | `Data Stores`                      |
-| [Replication or Data Consistency](ReplicationAndDataConsistency.md)                     | `Data Stores`                      |
+| :star: [Servers Cluster](ServersCluster.md)                                            | `Data Stores` or `Message Brokers` |
+| :star: [Event Driven Architecture](EventDrivenArchitecture.md)                         | `Message Brokers`                  |
+| :star: [ACID Properties of the Transaction](ACIDTransaction.md)                        | `Data Stores`                      |
+| :star: [CAP Theorem of the Distributed Systems](CAPTheorem.md)                         | `Data Stores`                      |
+| :star: [Replication & Data Consistency](ReplicationAndDataConsistency.md)              | `Data Stores`                      |
 | [Atomicity](Atomicity.md)                                                              | `Data Stores`                      |
 | [Durability](Durability.md)                                                            | `Data Stores`                      |
 
