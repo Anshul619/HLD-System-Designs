@@ -53,7 +53,7 @@
 ## High Volume
 - Large amount of data can be stored in the Kafka pool.
 
-## [Durability](../0_SystemGlossaries/ACID.md#Durability)
+## [Durability](../0_SystemGlossaries/ACIDTransaction.md#Durability)
 - The data is kept persistent ( as per retention policy ) and tolerant to any hardware failures by copying the data in the clusters.
 
 ## [High Availability](../0_SystemGlossaries/HighAvailability.md), [Fault Tolerance](../0_SystemGlossaries/FaultTolerance&DisasterRecovery.md)

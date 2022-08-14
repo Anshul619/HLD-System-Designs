@@ -1,7 +1,7 @@
 
 # Durability
 - [Durability](https://en.wikipedia.org/wiki/Durability) guarantees that `transactions that have committed will survive permanently`.
-- In database systems, durability is the [ACID property](ACID.md).
+- In database systems, durability is the [ACID property](ACIDTransaction.md).
 - For example, if a flight booking reports that a seat has successfully been booked, then the seat will remain booked even if the system crashes.
 
 | Durability | 9s | Remarks                                                                                                                          |
