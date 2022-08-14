@@ -9,9 +9,9 @@
 | [Reliability - Fault Tolerance, Disaster Recovery](FaultTolerance&DisasterRecovery.md) | ALL                                |
 | [Load Balancer](LoadBalancer.md)                                                       | ALL                                |
 | [Servers Cluster](ServersCluster.md)                                                   | `Data Stores` or `Message Brokers` |
+| [Event Driven Architecture](EventDrivenArchitecture.md)                                | `Message Brokers`                  |
 | [ACID Properties of the Transaction](ACID.md)                                          | `Data Stores`                      |
 | [Durability](Durability.md)                                                            | `Data Stores`                      |
-| [Event Driven Architecture](EventDrivenArchitecture.md)                                | `Message Brokers`                  |
 | [CAP Theorem of the Distributed Systems](CAP.md)                                       | `Data Stores`                      |
 
 # [Language Agnostic](https://en.wikipedia.org/wiki/Language-agnostic)
