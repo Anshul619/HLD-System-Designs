@@ -2,7 +2,7 @@
 
 ![img.png](assests/ACID_Property_DBMS.drawio.png)
 
-# [Atomicity](Atomicity)
+# [Atomicity](Atomicity.md)
 
 # [Consistency](https://www.geeksforgeeks.org/acid-properties-in-dbms/)
 - This means that integrity constraints must be maintained so that the database is consistent before and after the transaction.
@@ -14,4 +14,4 @@
 - Transactions occur independently without interference.
 - Changes occurring in a particular transaction will not be visible to any other transaction until that particular change in that transaction is written to memory or has been committed
 
-# [Durability](Durability)
+# [Durability](Durability.md)

@@ -12,7 +12,7 @@
 | [Event Driven Architecture](EventDrivenArchitecture.md)                                | `Message Brokers`                  |
 | [ACID Properties of the Transaction](ACID.md)                                          | `Data Stores`                      |
 | [CAP Theorem of the Distributed Systems](CAP.md)                                       | `Data Stores`                      |
-| [Atomicity](Atomicity)                                                                 | `Data Stores`                      |
+| [Atomicity](Atomicity.md)                                                              | `Data Stores`                      |
 | [Durability](Durability.md)                                                            | `Data Stores`                      |
 | [Replication or Data Consistency](ReplicationOrDataConsistency.md)                     | `Data Stores`                      |
 
