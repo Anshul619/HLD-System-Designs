@@ -20,25 +20,25 @@
 
 ## Availability Patterns
 
-## Fail over Policies
+### Fail over Policies
 
-### Active-Active policy
+#### Active-Active policy
 - An active-active cluster is typically made up of at least two nodes, both actively running the same kind of service simultaneously.
 - In active-active, both servers are managing traffic, spreading the load between them.
 - This would enable application to be [fault-tolerant](FaultTolerance&DisasterRecovery.md).
 
-### Active-Passive policy
-- With active-passive fail-over, `heartbeats` are sent between the active and the passive server on standby. 
+#### Active-Passive policy
+- With active-passive fail-over, only the active server handles traffic & `heartbeats` are sent between the active and the passive server on standby. 
 - If the heartbeat is interrupted, the passive server takes over the active's IP address and resumes service.
 - The length of downtime is determined by whether the passive server is already running in 'hot' standby or whether it needs to start up from 'cold' standby. 
-- Only the active server handles traffic.
-- Active-passive failover can also be referred to as `master-slave failover`.
+- `Active-Passive` policy is generally used for the [disaster recovery](FaultTolerance&DisasterRecovery.md#disaster-recoveryhttpsenwikipediaorgwikidisaster_recovery).
+- In AWS, active-passive policy can be configured in the [fail-over routing policy](../../2_AWSComponents/1_NetworkingAndContentDelivery/AmazonRoute53.md#failover-routing-policy) in [Route53](../../2_AWSComponents/1_NetworkingAndContentDelivery/AmazonRoute53.md).
 
-### :thumbsdown: Disadvantages
+#### :thumbsdown: Disadvantages of fail over policies
 - Fail-over adds more hardware and additional complexity.
 - There is a potential for loss of data if the active system fails before any newly written data can be replicated to the passive.
 
-## Replication & Data Consistency
+### Replication & Data Consistency
 - [Read here about replication & data consistency](ReplicationAndDataConsistency.md)
 
 # Source(s) and further reading
