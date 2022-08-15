@@ -23,20 +23,21 @@
 
 # Stateful vs Stateless
 
-## Stateless Protocol
+## :star: Stateless Protocol
 - [Stateless Protocol](https://www.geeksforgeeks.org/difference-between-stateless-and-stateful-protocol/) does not require the server to retain the server information or session details.
 - In a stateless architecture, the server must treat all client requests independently of prior requests or sessions, and should not store any session information locally.
-- Stateless applications can scale horizontally, since any request can be handled by any available computing resources (e.g. instances, containers or functions).
-- Sharing state with any instances, containers, or functions is possible by using in-memory object caching systems like Memcached, Redis, EVCache, or distributed databases like Cassandra or DynamoDB, depending on the structure of your object and your requirements in terms of performances.
+- `Stateless applications can scale horizontally, since any request can be handled by any available computing resources (e.g. instances, containers or functions).`
+- Sharing state with any instances, containers, or functions is possible by using in-memory object caching systems like [Redis](../3_DatabaseComponents/Redis) or distributed databases like [Cassandra](../3_DatabaseComponents/Casandra.md) or [DynamoDB](../../2_AWSComponents/6_DatabaseServices/AmazonDynamoDB.md), depending on the structure of the object and the requirements in terms of performances.
 
-## [Stateful Protocol](https://www.geeksforgeeks.org/difference-between-stateless-and-stateful-protocol/) require server to save the status and session information.
+## Stateful Protocol
+- [Stateful Protocol](https://www.geeksforgeeks.org/difference-between-stateless-and-stateful-protocol/) require server to save the status and session information.
 
 # [Domain Driven Architecture](https://www.geeksforgeeks.org/domain-driven-design-ddd/)
 - When we are developing software our focus should not be primarily on technology, rather it should be primarily on business/domain.
 - Classes, modals, services, microservices, rest apis etc. should be designed according to the domains.
 ![img.png](assests/domain_driven_design.png)
 
-# References
+# Source(s) and further reading
 - [How to build a multi-region active-active architecture on AWS](https://acloudguru.com/blog/engineering/why-and-how-do-we-build-a-multi-region-active-active-architecture)
 
 

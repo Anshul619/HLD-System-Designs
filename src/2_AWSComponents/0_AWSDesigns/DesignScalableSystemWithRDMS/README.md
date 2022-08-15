@@ -1,7 +1,7 @@
 
 ![img.png](DesignScalableSystemWithRelationalDBOnAWS.drawio.png)
 
-# References 
+# Source(s) and further reading 
 - [Design a system that scales to millions of users on AWS](https://github.com/donnemartin/system-design-primer/blob/master/solutions/system_design/scaling_aws/README.md)
 - [Scaling up to your first 10 million users](https://www.youtube.com/watch?v=kKjm4ehYiMs)
 - [Sharding with Amazon Relational Database Service](https://aws.amazon.com/blogs/database/sharding-with-amazon-relational-database-service/)

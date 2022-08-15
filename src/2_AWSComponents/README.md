@@ -5,8 +5,8 @@
 [![img.png](0_AWSDesigns/DesignScalableSystemWithRDMS/DesignScalableSystemWithRelationalDBOnAWS.drawio.png)](0_AWSDesigns/DesignScalableSystemWithRDMS)
 
 # [AWS Designs](0_AWSDesigns)
-- [Design Scalable System on AWS](0_AWSDesigns/DesignScalableSystemWithRDMS)
-- [HA-Multi-Region-Multi-AZs](0_AWSDesigns/DesignMultiRegionActiveActiveArchitectureOnAWS)
+- :star: [Design Scalable System on AWS](0_AWSDesigns/DesignScalableSystemWithRDMS)
+- :star: [Design Multi-Region Active-Active Architecture On AWS](0_AWSDesigns/DesignMultiRegionActiveActiveArchitectureOnAWS)
 - [Fanout Pattern with SNS & SQS](0_AWSDesigns/FanoutPatternSNSSQS.md)
 - [WP Site with CloudFront & S3](0_AWSDesigns/WPSiteCloudFront&S3.md)
 - [Microservices On AWS](0_AWSDesigns/MicroservicesOnAWS.md)
@@ -67,7 +67,7 @@ Service| Type                                                                  |
 - The essential services that can be used is [Amazon CloudWatch](8_MonitoringServices/AmazonCloudWatch.md) logs, store them in [Amazon S3](7_StorageServices/AmazonS3.md), and then use [Amazon OpenSearch service](https://aws.amazon.com/opensearch-service/) to visualize them.
 - [Amazon Kinesis Firehose](https://aws.amazon.com/kinesis/data-firehose/) can also be used to move the data from Amazon S3 to Amazon ElasticSearch.
 
-# References
+# Source(s) and further reading
 - [AWS Documentation Overview](https://aws.amazon.com/documentation-overview/)
 - [AWS Interview Questions](https://www.simplilearn.com/tutorials/aws-tutorial/aws-interview-questions)
 - [The Top 10 Most Used AWS Services](https://insider.ssi-net.com/insights/the-top-10-most-used-aws-services)

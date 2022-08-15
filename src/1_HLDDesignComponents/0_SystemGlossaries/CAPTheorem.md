@@ -17,6 +17,6 @@ We can only build a system that has `any two of these three properties`.
 > - In [CAP](https://www.geeksforgeeks.org/the-cap-theorem-in-dbms/), the term [Consistency](ReplicationAndDataConsistency.md) refers to the data mismatch during `replication lag`.
 > - In [ACID](ACIDPropertyTransaction.md), it refers to the fact that a transaction will not violate the integrity constraints specified on the database schema.
 
-# Reference
+# Source(s) and further reading
 - [CAP Theorem](https://akshay-iyangar.github.io/system-design/grokking-system-design/system-design-basics/cap-theorem.html)
 - [Beyond CAP Theorem](https://www.grokkingsystemdesigns.com/beyond-cap-theorem/)
