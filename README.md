@@ -9,10 +9,10 @@ This repo contains the various system design components info, questions and solu
 
 # [Message Brokers](src/1_HLDDesignComponents/4_MessageBrokers)
 Message brokers are used to decouple & enable [Event Driven Architectures](src/1_HLDDesignComponents/0_SystemGlossaries/EventDrivenArchitecture.md) i.e. communicate the events & pass the data between [microservices](src/1_HLDDesignComponents/1_MicroServicesSOA).
-- [Comparison between Various Message Brokers](src/1_HLDDesignComponents/4_MessageBrokers/KafkaVsRabbitMQVsSQSVsSNS.md)
+- :star: [Comparison between Various Message Brokers](src/1_HLDDesignComponents/4_MessageBrokers/KafkaVsRabbitMQVsSQSVsSNS.md)
 - :star: [Kafka](src/1_HLDDesignComponents/4_MessageBrokers/Kafka.md)
-- [RabbitMQ](src/1_HLDDesignComponents/4_MessageBrokers/RabbitMQ.md)
 - :star: [Amazon SQS](src/2_AWSComponents/5_MessageBrokerServices/AmazonSQS.md)
+- [RabbitMQ](src/1_HLDDesignComponents/4_MessageBrokers/RabbitMQ.md)
 - [Amazon SNS](src/2_AWSComponents/5_MessageBrokerServices/AmazonSNS.md)
 - [Active MQ](src/1_HLDDesignComponents/4_MessageBrokers/ActiveMQ.md)
 
