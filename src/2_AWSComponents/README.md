@@ -2,7 +2,6 @@
 # Introduction
 - AWS manages its [global architecture](AWS-Global-Architecture-Region-AZ.md) through region and availability zones.
 - [Amazon Resouce Name (ARN)](https://docs.aws.amazon.com/general/latest/gr/aws-arns-and-namespaces.html) uniquely identify AWS resources.
-- [Utility services](https://stackoverflow.com/questions/33125790/why-some-services-are-called-aws-xxx-and-the-others-amazon-xxx) are prefixed with `AWS`, while standalone services are prefixed by `Amazon`.
 
 ![img.png](0_AWSDesigns/DesignMultiRegionActiveActiveArchitectureOnAWS/AWS-AZ-Region-HA.drawio.png)
 
@@ -58,6 +57,8 @@ Service| Type                                                                  |
 [AWS Elastic Beanstalk](https://aws.amazon.com/elasticbeanstalk/) | [AWS Infrastructure Automation](3_InfraAutomation)                | Servers Management - Easy to begin, Impossible to outgrow                                                                                                                     |
 [Amazon EMR](4_ComputeServices/AmazonEMR.md) | Other Service                                                         | Fully Managed Service for [Apache Spark](../1_HLDDesignComponents/8_BigDataTools/ApacheSpark.md)                                                                              |
 [AWS Private Link](https://aws.amazon.com/privatelink) |[Networking & Content Delivery Service](1_NetworkingAndContentDelivery)| Establish private connectivity between [Amazon VPC](2_SecurityAndIdentityServices/AmazonVPC.md) and services hosted on AWS or on-premises, without exposing data to the internet. |
+
+* [Utility services](https://stackoverflow.com/questions/33125790/why-some-services-are-called-aws-xxx-and-the-others-amazon-xxx) are prefixed with `AWS`, while standalone services are prefixed by `Amazon`.
 
 # AWS - Cost Exploration Services
 - [Cost Explorer](https://aws.amazon.com/aws-cost-management/aws-cost-explorer/)
