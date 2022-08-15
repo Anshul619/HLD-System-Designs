@@ -14,8 +14,8 @@
 # AWS - System Designs
 - :star: [Design Multi-Region Active-Active Architecture On AWS](0_AWSDesigns/DesignMultiRegionActiveActiveArchitectureOnAWS)
 - :star: [Design Scalable System on AWS](0_AWSDesigns/DesignScalableSystemWithRDMS)
-- [Fanout Pattern with SNS & SQS](0_AWSDesigns/FanoutPatternSNSSQS.md)
-- [WP Site with CloudFront & S3](0_AWSDesigns/WPSiteCloudFront&S3.md)
+- [Fanout Pattern with Amazon SNS & SQS](0_AWSDesigns/FanoutPatternSNSSQS.md)
+- [WP Site with Amazon CloudFront & S3](0_AWSDesigns/WPSiteCloudFront&S3.md)
 - [Microservices On AWS](0_AWSDesigns/MicroservicesOnAWS.md)
 
 # AWS - Comparisons b/w Services
