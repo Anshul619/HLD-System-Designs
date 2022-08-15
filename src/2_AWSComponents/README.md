@@ -1,23 +1,30 @@
 
 # Introduction
 - AWS manages its [global architecture](AWS-Global-Architecture-Region-AZ.md) through region and availability zones.
+- `ARN` stands for [Amazon Resouce Name](https://docs.aws.amazon.com/general/latest/gr/aws-arns-and-namespaces.html).
+- [Utility services](https://stackoverflow.com/questions/33125790/why-some-services-are-called-aws-xxx-and-the-others-amazon-xxx) are prefixed with `AWS`, while standalone services are prefixed by `Amazon`.
 
-[![img.png](0_AWSDesigns/DesignScalableSystemWithRDMS/DesignScalableSystemWithRelationalDBOnAWS.drawio.png)](0_AWSDesigns/DesignScalableSystemWithRDMS)
+![img.png](0_AWSDesigns/DesignMultiRegionActiveActiveArchitectureOnAWS/AWS-AZ-Region-HA.drawio.png)
 
-# [AWS Designs](0_AWSDesigns)
-- :star: [Design Scalable System on AWS](0_AWSDesigns/DesignScalableSystemWithRDMS)
+# Design Scalable System on AWS
+
+![img.png](0_AWSDesigns/DesignScalableSystemWithRDMS/DesignScalableSystemWithRelationalDBOnAWS.drawio.png)
+
+
+# AWS - System Designs
 - :star: [Design Multi-Region Active-Active Architecture On AWS](0_AWSDesigns/DesignMultiRegionActiveActiveArchitectureOnAWS)
+- :star: [Design Scalable System on AWS](0_AWSDesigns/DesignScalableSystemWithRDMS)
 - [Fanout Pattern with SNS & SQS](0_AWSDesigns/FanoutPatternSNSSQS.md)
 - [WP Site with CloudFront & S3](0_AWSDesigns/WPSiteCloudFront&S3.md)
 - [Microservices On AWS](0_AWSDesigns/MicroservicesOnAWS.md)
 
-# AWS Services Comparisons
+# AWS - Comparisons b/w Services
 - [Amazon Aurora vs RDS](6_DatabaseServices/AWSAuroraVsRDS.md)
 - [Amazon SQS vs SNS](../1_HLDDesignComponents/4_MessageBrokers/KafkaVsRabbitMQVsSQSVsSNS.md)
 - [Amazon S3 vs EFS vs EBS](7_StorageServices/S3vsEFSvsEBS.md)
 - [Amazon ECS vs EKS vs Fargate](3_InfraAutomation/EKSvsECSvsFargate.md)
 
-# AWS Services
+# AWS - Various Services
 
 Service| Type                                                                  | Description                                                                                                                                                                   |
 -----------|-----------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -54,18 +61,10 @@ Service| Type                                                                  |
 [Amazon EMR](4_ComputeServices/AmazonEMR.md) | Other Service                                                         | Fully Managed Service for [Apache Spark](../1_HLDDesignComponents/8_BigDataTools/ApacheSpark.md)                                                                              |
 [AWS Private Link](https://aws.amazon.com/privatelink) |[Networking & Content Delivery Service](1_NetworkingAndContentDelivery)| Establish private connectivity between [Amazon VPC](2_SecurityAndIdentityServices/AmazonVPC.md) and services hosted on AWS or on-premises, without exposing data to the internet. |
 
-# Important Points
-- `ARN` stands for [Amazon Resouce Name](https://docs.aws.amazon.com/general/latest/gr/aws-arns-and-namespaces.html).
-- [Utility services](https://stackoverflow.com/questions/33125790/why-some-services-are-called-aws-xxx-and-the-others-amazon-xxx) are prefixed with `AWS`, while standalone services are prefixed by `Amazon`.
-
-# AWS Cost Exploration Services
+# AWS - Cost Exploration Services
 - [Cost Explorer](https://aws.amazon.com/aws-cost-management/aws-cost-explorer/)
 - [AWS Budgets](https://aws.amazon.com/aws-cost-management/aws-budgets/)
 - [Cost Allocation Tags](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/cost-alloc-tags.html)
-
-# Centralized Logging Solution in AWS
-- The essential services that can be used is [Amazon CloudWatch](8_MonitoringServices/AmazonCloudWatch.md) logs, store them in [Amazon S3](7_StorageServices/AmazonS3.md), and then use [Amazon OpenSearch service](https://aws.amazon.com/opensearch-service/) to visualize them.
-- [Amazon Kinesis Firehose](https://aws.amazon.com/kinesis/data-firehose/) can also be used to move the data from Amazon S3 to Amazon ElasticSearch.
 
 # Source(s) and further reading
 - [AWS Documentation Overview](https://aws.amazon.com/documentation-overview/)
