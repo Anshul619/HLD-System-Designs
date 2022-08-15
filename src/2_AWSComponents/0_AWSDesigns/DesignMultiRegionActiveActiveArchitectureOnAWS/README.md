@@ -8,13 +8,13 @@
 ## Improve latency for end-users
 - [Amazon CloudFront](../../1_NetworkingAndContentDelivery/AmazonCloudFront.md) can be used to speed up delivery static content (static files such as site code, HTML/CSS/JS, photos, and videos etc.) to end-users across the globe.
 - Using a globally-distributed network of caching servers, static content is served as if it was local to consumers, thus improving the delivery of that static content.
-- `However the multi-region backend setup might be needed for dynamic API calls.`
+- However the [multi-region](../../AWS-Global-Architecture-Region-AZ.md) backend setup might be needed for dynamic API calls.
   - For example, if you have users in Europe but your backend is in US or Australia, the added latency is respectively approximately 140ms and 300ms. 
   - Those delays would be unacceptable to start with for many popular games, banking requirements, or interactive applications.
 ![img.png](https://acg-wordpress-content-production.s3.us-west-2.amazonaws.com/app/uploads/2021/01/1_-rGhWmNF23-Hfx4uQWR5LA.png)
 
 ## Disaster Recovery
-- Multi-Region setup helps in the [disaster recovery](../../../1_HLDDesignComponents/0_SystemGlossaries/FaultTolerance&DisasterRecovery.md#disaster-recoveryhttpsenwikipediaorgwikidisaster_recovery).
+- [multi-region](../../AWS-Global-Architecture-Region-AZ.md) setup helps in the [disaster recovery](../../../1_HLDDesignComponents/0_SystemGlossaries/FaultTolerance&DisasterRecovery.md#disaster-recoveryhttpsenwikipediaorgwikidisaster_recovery).
 
 ## Business Requirements like GDPR, Localization etc.
 

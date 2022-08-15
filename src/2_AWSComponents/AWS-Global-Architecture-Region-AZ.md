@@ -1,8 +1,8 @@
 
 # Region
-- [A region](https://aws.amazon.com/about-aws/global-infrastructure/regions_az/) is a `geographic location` where every data center inside the region is called an `availability zone`, AZ in short.
+- A [region](https://aws.amazon.com/about-aws/global-infrastructure/regions_az/) is a `geographic location` where every data center inside the region is called an `availability zone`, AZ in short.
 - There are `25 geographic regions` available in AWS, around the world.
-- For example 
+- For examples,
   - us-east-1 (US East (N. Virginia))
   - eu-west-1 (Europe (Ireland))
   - eu-north-1 (Europe (Stockholm))
@@ -19,6 +19,6 @@
 
 ![img.png](0_AWSDesigns/DesignMultiRegionActiveActiveArchitectureOnAWS/AWS-AZ-Region-HA.drawio.png)
 
-# References
+# Source(s) and further reading
 - [What are the differences AWS Regions and Availability Zones?](https://www.quora.com/What-are-the-differences-AWS-Regions-and-Availability-Zones)
 
