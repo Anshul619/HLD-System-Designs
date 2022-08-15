@@ -22,15 +22,59 @@ You can use Route 53 to perform three main functions in any combination,
 
 # Routing Policy
 
+## Simple policy
+- Point a domain to a single, simple resource.
+
 ## :star: Latency Based Routing
 - Latency Based Routing utilizes latency measurements between networks and AWS data centers.
 - Latency Based Routing is used when you want to give your customers the lowest latency possible.
+- This is most used multi-region (active-active) routing policy (if application has no geographic requirements).
+
+````
+
+// Basic Routing Policy using Terraform
+
+resource "aws_route53_record" "latency-use1" {
+  zone_id         = "${data.aws_route53_zone.my_zone.zone_id}"
+  name            = "my-application"
+  type            = "A"
+  set_identifier  = "service-us-east-1"
+
+  alias {
+    zone_id                = "${aws_lb.main_us_east_1.zone_id}"
+    name                   = "${aws_lb.main_us_east_1.dns_name}"
+    evaluate_target_health = true
+  }
+
+  latency_routing_policy {
+    region = "us-east-1"
+  }
+}
+
+resource "aws_route53_record" "latency-euc1" {
+  zone_id         = "${data.aws_route53_zone.my_zone.zone_id}"
+  name            = "my-application"
+  type            = "A"
+  set_identifier  = "service-eu-central-1"
+
+  alias {
+    zone_id                = "${aws_lb.main_eu_central_1.zone_id}"
+    name                   = "${aws_lb.main_eu_central_1.dns_name}"
+    evaluate_target_health = true
+  }
+
+  latency_routing_policy {
+    region = "eu-central-1"
+  }
+}
+````
 
 ## Geo Based DNS routing
 - The Geo Based DNS routing takes decisions based on the geographic location of the request.
 - Geo Based routing is used when you want to direct the customer to different websites based on the country or region they are browsing from.
 
-## Failover routing policy
+## Fail-over routing policy
 - Use when you want to configure [active-passive fail over for disaster recovery](../../1_HLDDesignComponents/0_SystemGlossaries/HighAvailability.md#active-passive-policy).
 
-
+# References
+- [How to implement the perfect failover strategy using Amazon Route53](https://medium.com/dazn-tech/how-to-implement-the-perfect-failover-strategy-using-amazon-route53-1cc4b19fa9c7)

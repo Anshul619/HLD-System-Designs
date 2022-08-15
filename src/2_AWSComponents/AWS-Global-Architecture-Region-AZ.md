@@ -17,7 +17,7 @@
 - Every AZ is labeled with a letter a, b, c etc.
 - For example - AWS Region eu-central-1 has three availability zones eu-central-1a,1b,1c.
 
-![img.png](9_OtherServices/assests/AWS-AZ-Region-HA.drawio.png)
+![img.png](0_AWSDesigns/DesignMultiRegionActiveActiveArchitectureOnAWS/AWS-AZ-Region-HA.drawio.png)
 
 # References
 - [What are the differences AWS Regions and Availability Zones?](https://www.quora.com/What-are-the-differences-AWS-Regions-and-Availability-Zones)

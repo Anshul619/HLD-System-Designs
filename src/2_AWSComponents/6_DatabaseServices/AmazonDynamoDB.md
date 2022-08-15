@@ -30,3 +30,5 @@
 ## Consistency Models
 - [Eventual Consistency Model](../../1_HLDDesignComponents/0_SystemGlossaries/ReplicationAndDataConsistency.md#consistency-patterns)
 - [Strong Consistency Model](../../1_HLDDesignComponents/0_SystemGlossaries/ReplicationAndDataConsistency.md#consistency-patterns)
+
+# [Amazon DynamoDB global tables](https://aws.amazon.com/dynamodb/global-tables/)
