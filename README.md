@@ -33,9 +33,9 @@ Message brokers are used to decouple & enable [Event Driven Architectures](src/1
 | :star: [ElasticSearch](src/1_HLDDesignComponents/3_DatabaseComponents/ElasticSearch)              | `Full-Text-Search`, `Logs-Analysis (ELK)` | NoSQL Search Engine           | -                                           |-| `Open Source`                                                             |
 | [MongoDB](src/1_HLDDesignComponents/3_DatabaseComponents/MongoDB)                      | -                                       | NoSQL DB                      | -                                           | -| `Open Source`                                                              |
 
-# [In Memory Cache](src/1_HLDDesignComponents/5_Redis)
-- :star: [Redis](src/1_HLDDesignComponents/5_Redis)
-- [Redis vs MemCache](src/1_HLDDesignComponents/5_Redis/RedisVsMemCache.md)
+# [In Memory Cache](src/1_HLDDesignComponents/3_DatabaseComponents/Redis)
+- :star: [Redis](src/1_HLDDesignComponents/3_DatabaseComponents/Redis)
+- [Redis vs MemCache](src/1_HLDDesignComponents/3_DatabaseComponents/Redis/RedisVsMemCache.md)
 
 # HLD - Design Problems
 - :star: [Zomoto HLD Design](src/3_HLDDesignProblems/ZomatoDesign)

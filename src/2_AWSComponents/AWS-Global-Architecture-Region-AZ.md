@@ -12,7 +12,7 @@
 
 # [Availability Zone](https://aws.amazon.com/about-aws/global-infrastructure/regions_az/) 
 - An Availability Zone (AZ) is `one or more discrete data centers` with redundant power, networking, and connectivity in an AWS Region. 
-- AZs give customers the ability to operate production applications and databases that are more highly available, fault-tolerant, and scalable than would be possible from a single data center.
+- AZs give customers the ability to operate production applications and databases that are more [highly available](../1_HLDDesignComponents/0_SystemGlossaries/HighAvailability.md), [fault-tolerant](../1_HLDDesignComponents/0_SystemGlossaries/FaultTolerance&DisasterRecovery.md), and [scalable](../1_HLDDesignComponents/0_SystemGlossaries/Scalability.md) than would be possible from a single data center.
 - There are `69 availability zones` available in AWS, around the world.
 - Every AZ is labeled with a letter a, b, c etc.
 - For example
@@ -21,9 +21,9 @@
 ![img.png](9_OtherServices/assests/aws_az_region.png)
 
 # [How to implement Fault-Tolerance in AWS?](https://www.linkedin.com/pulse/high-availability-vs-fault-tolerance-jon-bonso/) 
-- An application requires 6 EC2 instances to handle the expected load. 
-- A system can be considered highly available as long as it has several EC2 instances running in 2 different AZs. 
-- On the other hand, a `fault-tolerant architecture is the one that still has 6 running instances, even if one AZ goes down`. 
+- Let's say, an application requires [6 EC2 instances](4_ComputeServices/EC2) to handle the expected load. 
+- A system can be considered highly available as long as it has several [EC2 instances](4_ComputeServices/EC2) running in 2 different AZs. 
+- On the other hand, a [fault-tolerant architecture](../1_HLDDesignComponents/0_SystemGlossaries/FaultTolerance&DisasterRecovery.md) is the one that still has 6 running instances, even if one AZ goes down.
 - It could mean that the application has a total of 9 running instances on a regular basis, where there are 3 running instances on 3 different AZs. 
 - So if one AZ experienced an outage, there are still 6 instances running that can handle the load.
 

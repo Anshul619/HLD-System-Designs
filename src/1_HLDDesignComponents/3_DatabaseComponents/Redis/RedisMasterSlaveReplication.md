@@ -9,9 +9,9 @@
 - `Turn off persistence on the master node`, so that you get consistent low latency response time.
     - No forking to disk will be done.
     - No wasted I/O.
-- Deliver [High availability](../0_SystemGlossaries/HighAvailability.md)
+- Deliver [High availability](../../0_SystemGlossaries/HighAvailability.md)
     - If master node goes down, the slave can be immediately promoted, so you don't experience any downtime.
-- Increased [throughput](../0_SystemGlossaries/LatencyThroughput.md) & improves [Scalability ( Read Queries )](../0_SystemGlossaries/Scalability.md)
+- Increased [throughput](../../0_SystemGlossaries/LatencyThroughput.md) & improves [Scalability ( Read Queries )](../../0_SystemGlossaries/Scalability.md)
     - Under extremely high read load, you could balance the `reads between the master and slave`.
     - Although it would be recommended to setup up additional `no persistence, memory only` slaves for that purpose.
 

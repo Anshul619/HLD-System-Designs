@@ -28,7 +28,7 @@ Relational databases store data in rows and columns.
 ## Key-Value Stores 
 - Data is stored in an array of key-value pairs. 
 - The `key` is an attribute name which is linked to a `value`. 
-- Well-known key-value stores include [AWS Dynamo DB](../../2_AWSComponents/6_DatabaseServices/AmazonDynamoDB.md), [Redis](../5_Redis) etc.
+- Well-known key-value stores include [AWS Dynamo DB](../../2_AWSComponents/6_DatabaseServices/AmazonDynamoDB.md), [Redis](Redis) etc.
 
 ## Document Databases 
 - In these databases, data is stored in documents (instead of rows and columns in a table) and these documents are grouped together in collections. 
