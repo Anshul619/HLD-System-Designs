@@ -17,6 +17,13 @@ We can only build a system that has `any two of these three properties`.
 > - In [CAP](https://www.geeksforgeeks.org/the-cap-theorem-in-dbms/), the term [Consistency](ReplicationAndDataConsistency.md) refers to the data mismatch during `replication lag`.
 > - In [ACID](ACIDPropertyTransaction.md), it refers to the fact that a transaction will not violate the integrity constraints specified on the database schema.
 
+# PACELC theorem
+The PACELC theorem states that in a system that replicates data:
+- If there is a partition (‘P’), a distributed system can tradeoff between availability and consistency (i.e., ‘A’ and ‘C’);
+- else (‘E’), when the system is running normally in the absence of partitions, the system can tradeoff between latency (‘L’) and consistency (‘C’).
+
+![img.png](assests/PACELC_Diagram.drawio.png)
+
 # Source(s) and further reading
 - [CAP Theorem](https://akshay-iyangar.github.io/system-design/grokking-system-design/system-design-basics/cap-theorem.html)
 - [Beyond CAP Theorem](https://www.grokkingsystemdesigns.com/beyond-cap-theorem/)

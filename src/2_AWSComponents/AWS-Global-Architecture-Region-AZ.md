@@ -20,7 +20,7 @@
 ![img.png](0_AWSDesigns/DesignMultiRegionActiveActiveArchitectureOnAWS/AWS-AZ-Region-HA.drawio.png)
 
 # Points of Presence
-- The POPs are used for both [Amazon CloudFront](1_NetworkingAndContentDelivery/AmazonCloudFront.md) to deliver content to end users at high speeds, and [Lambda@Edge](4_ComputeServices/AWSLambda.md) to run Lambda functions with the lowest possible latency. 
+- POPs are used for both [Amazon CloudFront](1_NetworkingAndContentDelivery/AmazonCloudFront.md) to deliver content to end users at high speeds, and [Lambda@Edge](4_ComputeServices/AWSLambda.md) to run Lambda functions with the lowest possible latency. 
 - As of April 2020, there are `216 Points of Presence` in 84 cities across 42 countries.
 
 ![img.png](https://d2908q01vomqb2.cloudfront.net/5b384ce32d8cdef02bc3a139d4cac0a22bb029e8/2022/06/17/CloudFront_400-1024x580.png)
