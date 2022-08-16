@@ -31,4 +31,23 @@
 - [Eventual Consistency Model](../../1_HLDDesignComponents/0_SystemGlossaries/ReplicationAndDataConsistency.md#consistency-patterns)
 - [Strong Consistency Model](../../1_HLDDesignComponents/0_SystemGlossaries/ReplicationAndDataConsistency.md#consistency-patterns)
 
+## :thumbsdown: What are disadvantages of DynamoDB?
+- Deployable only on AWS and cannot be installed on individual desktops/servers
+- Queries - Querying data is extremely limited
+- Table Joins - Joins are impossible
+- No Triggers
+- No foreign keys concept to refer to other table items
+- No server side scripts
+
+## Data types supported in DynamoDB
+
+DynamoDB supports a large set of data types for table attributes. Each data type falls into one of the three following categories -
+- Scalar - These types represent a single value, and include number, string, binary, Boolean, and null.
+- Document - These types represent a complex structure possessing nested attributes, and include lists and maps.
+- Set - These types represent multiple scalars, and include string sets, number sets, and binary sets.
+
 # [Amazon DynamoDB global tables](https://aws.amazon.com/dynamodb/global-tables/)
+
+# References
+- [Top DynamoDB Interview Questions](https://www.javainuse.com/misc/dynamodb-interview-questions)
+- [20 DynamoDB Interview Questions and Answers](https://climbtheladder.com/dynamodb-interview-questions/)
