@@ -3,12 +3,22 @@
 
 # Types of ELB Load Balancers
 
-## :star: Application Load Balancer
+## :star: Application Load Balancer (Recommended)
 - [ALB](https://aws.amazon.com/elasticloadbalancing/application-load-balancer/) is highly available by default, in AWS. 
 - It is used to divide the traffic between app servers.
 - [More about Load Balancer](../../1_HLDDesignComponents/0_SystemGlossaries/LoadBalancer.md)
 
 ![img.png](assests/AWS_Application_Load_Balancer.drawio.png)
+
+### Key Features
+- Highly available
+- Health checks
+- Session stickiness
+- Monitoring/logging
+- Content-based routing
+- Container based apps
+- WebSockets
+- HTTP/2
 
 ### ELB Load Balancer setup in Multi-Regions & Multi-AZs
 
