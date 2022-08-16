@@ -19,15 +19,18 @@
 - Putting a cache between application servers and a database is a common mechanism for reducing the read load on the database, which, in turn, may allow resources to be used to support more writes.
 - Caches can also improve latency.
 
-~~## Scalability - Data Sharding of the datastore
-- To scale the data store horizontally ( i.e. improve `write throughput` ), shard the databases. ( through consistent hashing technique etc. )~~
+## Scalability - Data Sharding of the datastore
+- To scale the data store horizontally ( i.e. improve `write throughput` ), shard the databases. ( through consistent hashing technique etc. )
 
 ## Use Leverage Managed Infrastructures like [Amazon S3](../2_AWSComponents/7_StorageServices/AmazonS3.md), [Amazon Aurora](../2_AWSComponents/6_DatabaseServices/AmazonAurora/Readme.md), [DynamoDB](../2_AWSComponents/6_DatabaseServices/AmazonDynamoDB.md) etc.
 - We should use `Leverage Managed Infrastructures` like [Amazon S3](../2_AWSComponents/7_StorageServices/AmazonS3.md), [Amazon Aurora](../2_AWSComponents/6_DatabaseServices/AmazonAurora/Readme.md), [DynamoDB](../2_AWSComponents/6_DatabaseServices/AmazonDynamoDB.md) etc.
 - Sometimes, we must have to consider `cloud-agnostic approach` ( & onPerm customer approach ) while designing the solution.
 
 ## SQL Queries - Performance Techniques
-- [Index the columns](https://www.geeksforgeeks.org/indexing-in-databases-set-1/) which are used in `where`, `join` etc. clauses. This will increase performance of SQL queries.
+- [Index the columns](https://www.geeksforgeeks.org/indexing-in-databases-set-1/) which are used in `where`, `join` etc. clauses. 
+  - This will increase performance of SQL queries.
+  - Since indexes lead to increase to write performance, hence we should create only required indexes.
+  - Indexes can be created using one or more columns of a database table, providing the basis for both rapid random lookups and efficient access of ordered records.
 - `Minimize use of JOINS` in the `SQL queries`.
 - `Minimize select columns` in the `SQL Queries`.
 - Observe [MySQL Slow Queries logs](https://severalnines.com/blog/how-identify-mysql-performance-issues-slow-queries/) and find out SLOW Queries in it.

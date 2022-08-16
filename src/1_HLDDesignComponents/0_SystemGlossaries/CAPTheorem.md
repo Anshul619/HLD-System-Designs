@@ -19,10 +19,19 @@ We can only build a system that has `any two of these three properties`.
 
 # PACELC theorem
 The PACELC theorem states that in a system that replicates data:
-- If there is a partition (‘P’), a distributed system can tradeoff between availability and consistency (i.e., ‘A’ and ‘C’);
-- else (‘E’), when the system is running normally in the absence of partitions, the system can tradeoff between latency (‘L’) and consistency (‘C’).
+- If there is a network partition (‘P’), a distributed system can tradeoff between availability and consistency (i.e., ‘A’ and ‘C’);
+- else (‘E’), when the system is running normally in the absence of partitions, the system can trade off between latency (‘L’) and consistency (‘C’).
 
 ![img.png](assests/PACELC_Diagram.drawio.png)
+
+## DynamoDB and Cassandra
+- PA/EL systems - They choose availability over consistency when a partition occurs; otherwise, they choose lower latency.
+
+## BigTable and HBase
+- PC/EC - They will always choose consistency, giving up availability and lower latency.
+
+## MongoDB
+- PA/EC (default configuration) - In the case of a network partition, MongoDB chooses availability, but otherwise guarantees consistency.
 
 # Source(s) and further reading
 - [CAP Theorem](https://akshay-iyangar.github.io/system-design/grokking-system-design/system-design-basics/cap-theorem.html)
