@@ -17,9 +17,9 @@
 | Storage                            | [Latency](https://github.com/donnemartin/system-design-primer#latency-numbers-every-programmer-should-know) | Remarks                     |
 |------------------------------------|-------------------------------------------------------------------------------------------------------------|-----------------------------|
 | Mutex lock/unlock                  | 25 ns                                                                                                       | -                           |
-| :star: RAM/Main Memory reference   | 100 ns                                                                                                      |                             |
-| Read 1 MB sequentially from memory | 250 us (`4 GB/sec`)                                                                                           | ~`4 times faster than SSD`  |
-| :star: SSD Reference               | 50 us                                                                                                       |                             |
+| RAM/Main Memory reference   | 100 ns                                                                                                      |                             |
+| :star: Read 1 MB sequentially from memory | 250 us (`4 GB/sec`)                                                                                           | ~`4 times faster than SSD`  |
+| SSD Reference               | 50 us                                                                                                       |                             |
 | :star: Read 1 MB sequentially from SSD    | 1 ms (`1 GB/sec`)                                                                                             | ~`30 times faster than HDD` |
 | HDD seek                    | 10 ms                                                                                                       | -                           |
 | Read 1 MB sequentially from HDD    | 30 ms (30 MB/sec)                                                                                           | -                           |
