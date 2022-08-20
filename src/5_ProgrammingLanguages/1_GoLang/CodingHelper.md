@@ -13,6 +13,25 @@
 - Don't use Math functions since those work on float only. Hence, typecasting would be needed.
 - [Slices](https://stackoverflow.com/questions/38731467/pass-array-by-reference-in-golang) are passed by reference in the function call, so no need to specify pointers.
 
+# Various Go Constructs
+
+| Purpose                                          | Data Structure | Function                                                                                                                                            |
+|--------------------------------------------------|--------------|-----------------------------------------------------------------------------------------------------------------------------------------------------|
+| :star: Initialize Empty Slice                    | Slice   | slice := []int{}<br>var slice []int                                                                                                                 |
+| :star: Initialize Slice with non-constant length | Slice        | slice := make([]int, len(nums))                                                                                                                     |
+| :star: Append element to the list                | Array, Slice | output := []int{10}<br>output = append(output, 5) // append 5 to output slice                                                                       |
+| :star: Append multiple elements to the list      | Array, Slice | output = append(output, input[:5]...)                                                                                                               |
+| Get elements from start to end index, from slice | Array, Slice | output[:5] // 0th to 5th index<br> output[1:] // 1st to last index<br> output[1,5] // 1st to 5th index                                              |
+| :star: Length of an array or slice               | Array, Slice | len(array)                                                                                                                                          |
+| :star: Sort an array or slice                    | Array, Slice | sort.Ints(seats)                                                                                                                                    |
+| :star: Create a Map object                       | Hash Map     | m := make(map[int]int)<br>m := map[int]int                                                                                                          |
+| :star: Get value from Map                        | Hash Map     | val, ok := m[key]                                                                                                                                   |
+| :star: Create object of the struct               | Struct       | obj := new(ListNode) // pointer to object, without all variables initialized <br>obj := ListNode{5, 10} // with all variables of struct initialized |
+| Copy one slice to another                        | Slice        | copy(dest, src)                                                                                                                                     |
+| Compare two bytes array                          | Slice        | bytes.Compare(sl1, sl2)                                                                                                                             |
+| While loop in GoLang                             | Looping      | for n!=0 {}                                                                                                                                         |
+| Check if x string contains y string              | String       | strings.Contains(x, y)                                                                                                                              |
+
 ## Array vs Slice
 - Slice with dynamic length ( like arraylist in Java ) while Array with constant length.
 - [Sample Code](SampleCode/SampleArraySlice.go)
@@ -30,24 +49,16 @@ log.Println(reflect.TypeOf(slice).Kind()) // slice
 log.Println(reflect.TypeOf(slice_1).Kind()) //slice
 ```
 
-# Various Go Constructs
+# [Difference b/w make & new](https://stackoverflow.com/questions/9320862/why-would-i-make-or-new)
+- The make built-in function allocates and initializes an object of type slice, map, or chan (only).
+- Like new, the first argument is a type, not a value.
+- Unlike new, make's return type is the same as the type of its argument, not a pointer to it.
+- The specification of the result depends on the type.
 
-| Purpose                                          | Data Structure | Function                                                                                                                         |
-|--------------------------------------------------|--------------|----------------------------------------------------------------------------------------------------------------------------------|
-| :star: Initialize Empty Slice                    | Slice   | slice := []int{}<br>var slice []int                                                                                              |
-| :star: Initialize Slice with non-constant length | Slice        | slice := make([]int, len(nums))                                                                                                  |
-| :star: Append element to the list                | Array, Slice | output := []int{10}<br>output = append(output, 5) // append 5 to output array                                                    |
-| :star: Append multiple elements to the list      | Array, Slice | output = append(output, input[:5]...)                                                                                            |
-| Get elements from start to end index, from slice | Array, Slice | output[:5] // 0th to 5th index<br> output[1:] // 1st to last index<br> output[1,5] // 1st to 5th index                           |
-| :star: Length of array or slice                  | Array, Slice | len(array)                                                                                                                       |
-| :star: Sort array or slice                       | Array, Slice | sort.Ints(seats)                                                                                                                 |
-| :star: Create Map object                         | Hash Map     | m := make(map[int]int)<br>m := map[int]int                                                                                       |
-| :star: Get value from Map                        | Hash Map     | val, ok := m[key]                                                                                                                |
-| :star: Create object of the struct               | Struct       | obj := new(ListNode) // without all variables initialized <br>obj := ListNode{5, 10} // with all variables of struct initialized |
-| Copy one slice to another                        | Slice        | copy(dest, src)                                                                                                                  |
-| Compare two bytes array                          | Slice        | bytes.Compare(sl1, sl2)                                                                                                          |
-| While loop in GoLang                             | Looping      | for n!=0 {}                                                                                                                      |
-| Check if x string contains y string              | String       | strings.Contains(x, y)                                                                                                           |
+```
+themes := make([]*Template, 0)
+theme := new(Theme) // Pointer to new Theme object
+```
 
 ## Sample Go Code
 
@@ -83,17 +94,6 @@ func (s MyStruct)  valueMethod()   { } // method on value
 # [Why does Go have type parameters?](https://go.dev/doc/faq#overloading)
 - Type parameters permit what is known as generic programming, in which functions and data structures are defined in terms of types that are specified later, when those functions and data structures are used.
 - For example, they make it possible to write a function that returns the minimum of two values of any ordered type, without having to write a separate version for each possible type.
-
-# [Difference b/w make & new](https://stackoverflow.com/questions/9320862/why-would-i-make-or-new)
-- The make built-in function allocates and initializes an object of type slice, map, or chan (only).
-- Like new, the first argument is a type, not a value.
-- Unlike new, make's return type is the same as the type of its argument, not a pointer to it.
-- The specification of the result depends on the type.
-
-```
-themes := make([]*Template, 0)
-theme := new(Theme) // Pointer to new Theme object
-```
 
 # Multi-Threading
 ````
