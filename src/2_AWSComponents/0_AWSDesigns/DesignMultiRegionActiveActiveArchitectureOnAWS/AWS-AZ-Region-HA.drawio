@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-08-20T16:52:19.487Z" agent="5.0 (Macintosh)" etag="pA_A0itPyCqDTpRkHMI5" version="20.2.4" type="github">
+<mxfile host="app.diagrams.net" modified="2022-08-20T16:53:42.487Z" agent="5.0 (Macintosh)" etag="S-X4CdXPEVim6yi10Hv8" version="20.2.4" type="github">
   <diagram id="h8v-6QUQEio8k4uJFmfZ" name="Page-1">
     <mxGraphModel dx="946" dy="1630" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -262,8 +262,8 @@
             <mxPoint x="520" y="420" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="Wmalpy7YAR69c_Yvq_LL-8" value="Write Forwarding" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;dashed=1;" parent="1" vertex="1">
-          <mxGeometry x="694" y="500" width="60" height="30" as="geometry" />
+        <mxCell id="Wmalpy7YAR69c_Yvq_LL-8" value="Write Forwarding&amp;nbsp; &amp;amp; Replication" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;dashed=1;" parent="1" vertex="1">
+          <mxGeometry x="694" y="500" width="76" height="40" as="geometry" />
         </mxCell>
         <mxCell id="Wmalpy7YAR69c_Yvq_LL-12" value="" style="endArrow=block;html=1;rounded=0;edgeStyle=orthogonalEdgeStyle;dashed=1;startArrow=block;startFill=0;endFill=0;" parent="1" source="lsaxf8yKaR_f1hrxd2cD-23" target="lsaxf8yKaR_f1hrxd2cD-12" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
