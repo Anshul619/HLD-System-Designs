@@ -1,18 +1,17 @@
 
 # Basic Guidelines
+- `In Go's philosophy, it is better to avoid unnecessary branches and indentation of code. It is also considered better to return as early as possible.`
 - Type is defined at the end of declaration.
 - Return variables ( multiple variables ) would be defined at the end.
 - Multiple variables can be defined by `,`.
-- Initialisation can be skipped with `:=`.
+- Initialisation can be skipped with `:=`. 
+  - Hence, practice to use `:=` mostly, instead of `var =`
+  - Nil can’t be initialised to the variable without explicit type.
+- Trailing comma is not needed while initializing struct.
 - Semicolon is not needed at the end.
-- Trailing comma is needed while initializing struct.
-- Go does not support inheritance, however, it does support composition.
-- `In Go's philosophy, it is better to avoid unnecessary branches and indentation of code. It is also considered better to return as early as possible.`
-- Don't use Math functions since those work on float only. Hence typecasting would be needed.
-- Nil can’t be initialised to the variable without explicit type
-- Comma is not needed b/w variables in the struct type
-- Practice to use `:=` mostly, instead of `var =`
-
+- Brackets are not needed in `for or if` constructs.
+- Don't use Math functions since those work on float only. Hence, typecasting would be needed.
+- [Slices ( created using make statement )](https://stackoverflow.com/questions/38731467/pass-array-by-reference-in-golang) are passed by reference in the function call, so no need to specify pointers.
 
 | Purpose                            | Function                |
 |------------------------------------|-------------------------|
@@ -127,6 +126,9 @@ func main() {
 	log.Fatal(http.ListenAndServe(":8080", nil)) // Run app server on 8080 port
 }
 ````
+
+# OOPs
+- Go does not support inheritance, however, it does support composition.
 
 # Go Tutorials
 - [Frequently Asked Questions (FAQ) - Go](https://go.dev/doc/faq#overloading)

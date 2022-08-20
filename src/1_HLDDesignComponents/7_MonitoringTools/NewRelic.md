@@ -1,6 +1,7 @@
 # [NewRelic](https://newrelic.com/)
 - Monitor, debug, and improve your entire stack.
 - New Relic is where dev, ops, security and business teams solve software–performance problems with data.
+- New Relic uses [Apache Lucene](https://lucene.apache.org/).
 
 ## Application Monitoring
 ![img.png](https://newrelic.com/sites/default/files/styles/1200w/public/2022-04/Homepage-capabilities-APM-April2022.jpg?itok=dpx3Xo8o)
