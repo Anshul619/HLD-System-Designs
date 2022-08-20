@@ -11,6 +11,7 @@
 - Don't use Math functions since those work on float only. Hence typecasting would be needed.
 - Nil can’t be initialised to the variable without explicit type
 - Comma is not needed b/w variables in the struct type
+- Practice to use `:=` mostly, instead of `var =`
 
 
 | Purpose                            | Function                |
@@ -27,8 +28,8 @@
 |Get elements from start to end index, from slice|output[:5] // 0th to 5th index<br> output[1:] // 1st to last index<br> output[1,5] // 1st to 5th index|
 |Append element to the list|output := []int{10}<br>output = append(output, 5) // append 5 to output array|
 |Append multiple elements to the list|output = append(output, input[:5]...)|
-|Empty Array|[]int{}|
-|While loop in GoLang|for <trueCondition>{}|
+|Empty Array|array := []int{}<br>var array []int |
+|While loop in GoLang|for n!=0 {}|
 
 
 ```go
