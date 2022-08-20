@@ -9,6 +9,9 @@
 - Go does not support inheritance, however, it does support composition.
 - `In Go's philosophy, it is better to avoid unnecessary branches and indentation of code. It is also considered better to return as early as possible.`
 - Don't use Math functions since those work on float only. Hence typecasting would be needed.
+- Nil can’t be initialised to the variable without explicit type
+- Comma is not needed b/w variables in the struct type
+
 
 | Purpose                            | Function                |
 |------------------------------------|-------------------------|
@@ -18,12 +21,14 @@
 | Sort array                                   | sort.Ints(seats)                        |
 |Slice with non-constant length|array := make([]int, len(nums))|
 |Copy one slice array to another|copy(dest, src)|
-|Create Map|m := make(map[int]int)|
+|Create Map|m := make(map[int]int)<br>m := map[int]int|
 |Get value from Map|mIndex, ok := m[val]|
 |Create object of a struct|node := new(TreeNode)|
 |Get elements from start to end index, from slice|output[:5] // 0th to 5th index<br> output[1:] // 1st to last index<br> output[1,5] // 1st to 5th index|
 |Append element to the list|output := []int{10}<br>append(output, 5) // append 5 to output array|
 |Append multiple elements to the list|append(output, input[:5]...)|
+|Empty Array|[]int{}|
+|While loop in GoLang|for <trueCondition>{}|
 
 
 ```go
@@ -75,7 +80,7 @@ var ErrBadPattern = errors.New("syntax error in pattern")
 ````
 
 # [Panic & Recover](https://golangbot.com/panic-and-recover/)
-- TBD
+- Panic is like exception in GoLang
 
 # Method Pointers
 - Does the method need to modify the receiver? If it does, the receiver must be a pointer.
