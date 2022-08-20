@@ -6,7 +6,7 @@
 - Multiple variables can be defined by `,`.
 - Initialisation can be skipped with `:=`. 
   - Hence, practice to use `:=` mostly, instead of `var =`
-  - Nil can’t be initialised to the variable without explicit type.
+  - `Nil` can’t be initialised to the variable without explicit type.
 - Trailing comma is not needed while initializing struct.
 - Semicolon is not needed at the end.
 - Brackets are not needed in `for or if` constructs.
