@@ -33,21 +33,21 @@ log.Println(reflect.TypeOf(slice_1).Kind()) //slice
 # Various Go Constructs
 
 | Purpose                                          | Data Structure | Function                                                                                                                         |
-|--------------------------------------------------|----------------|----------------------------------------------------------------------------------------------------------------------------------|
-| Check if x string contains y string              | String         | strings.Contains(x, y)                                                                                                           |
-| Compare two bytes array                          | Slice          | bytes.Compare(sl1, sl2)                                                                                                          |
-| :star: Length of array or slice                  | Array, Slice   | len(array)                                                                                                                       |
-| :star: Sort array or slice                       | Array, Slice   | sort.Ints(seats)                                                                                                                 |
-| :star: Slice with non-constant length            | Slice          | slice := make([]int, len(nums))                                                                                                  |
-| Copy one slice to another                        | Slice          | copy(dest, src)                                                                                                                  |
-| :star: Create Map object                         | Hash Map       | m := make(map[int]int)<br>m := map[int]int                                                                                       |
-| Get value from Map                               | Hash Map       | mIndex, ok := m[val]                                                                                                             |
-| :star: Create object of the struct               | Struct         | obj := new(ListNode) // without all variables initialized <br>obj := ListNode{5, 10} // with all variables of struct initialized |
-| Get elements from start to end index, from slice | Array, Slice   | output[:5] // 0th to 5th index<br> output[1:] // 1st to last index<br> output[1,5] // 1st to 5th index                           |
-| :star: Append element to the list                | Array, Slice   | output := []int{10}<br>output = append(output, 5) // append 5 to output array                                                    |
-| Append multiple elements to the list             | Array, Slice   | output = append(output, input[:5]...)                                                                                            |
-| Initialize Empty Array                           | Array, Slice   | array := []int{}<br>var array []int                                                                                              |
-| While loop in GoLang                             | Looping        | for n!=0 {}                                                                                                                      |
+|--------------------------------------------------|--------------|----------------------------------------------------------------------------------------------------------------------------------|
+| :star: Initialize Empty Slice                    | Slice   | slice := []int{}<br>var slice []int                                                                                              |
+| :star: Initialize Slice with non-constant length | Slice        | slice := make([]int, len(nums))                                                                                                  |
+| :star: Append element to the list                | Array, Slice | output := []int{10}<br>output = append(output, 5) // append 5 to output array                                                    |
+| :star: Append multiple elements to the list      | Array, Slice | output = append(output, input[:5]...)                                                                                            |
+| Get elements from start to end index, from slice | Array, Slice | output[:5] // 0th to 5th index<br> output[1:] // 1st to last index<br> output[1,5] // 1st to 5th index                           |
+| :star: Length of array or slice                  | Array, Slice | len(array)                                                                                                                       |
+| :star: Sort array or slice                       | Array, Slice | sort.Ints(seats)                                                                                                                 |
+| :star: Create Map object                         | Hash Map     | m := make(map[int]int)<br>m := map[int]int                                                                                       |
+| :star: Get value from Map                        | Hash Map     | val, ok := m[key]                                                                                                                |
+| :star: Create object of the struct               | Struct       | obj := new(ListNode) // without all variables initialized <br>obj := ListNode{5, 10} // with all variables of struct initialized |
+| Copy one slice to another                        | Slice        | copy(dest, src)                                                                                                                  |
+| Compare two bytes array                          | Slice        | bytes.Compare(sl1, sl2)                                                                                                          |
+| While loop in GoLang                             | Looping      | for n!=0 {}                                                                                                                      |
+| Check if x string contains y string              | String       | strings.Contains(x, y)                                                                                                           |
 
 ## Sample Go Code
 
