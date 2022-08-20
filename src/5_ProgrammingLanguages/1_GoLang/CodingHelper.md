@@ -11,24 +11,41 @@
 - Semicolon is not needed at the end.
 - Brackets are not needed in `for or if` constructs.
 - Don't use Math functions since those work on float only. Hence, typecasting would be needed.
-- [Slices ( created using make statement )](https://stackoverflow.com/questions/38731467/pass-array-by-reference-in-golang) are passed by reference in the function call, so no need to specify pointers.
+- [Slices](https://stackoverflow.com/questions/38731467/pass-array-by-reference-in-golang) are passed by reference in the function call, so no need to specify pointers.
 
-| Purpose                            | Function                |
-|------------------------------------|-------------------------|
-| Check if x string contains y string | strings.Contains(x, y)  |
-| Compare two bytes array            | bytes.Compare(sl1, sl2) |
-| Length of array                    | len(array)              |
-| Sort array                                   | sort.Ints(seats)                        |
-|Slice with non-constant length|array := make([]int, len(nums))|
-|Copy one slice array to another|copy(dest, src)|
-|Create Map|m := make(map[int]int)<br>m := map[int]int|
-|Get value from Map|mIndex, ok := m[val]|
-|Create object of a struct|node := new(TreeNode)|
-|Get elements from start to end index, from slice|output[:5] // 0th to 5th index<br> output[1:] // 1st to last index<br> output[1,5] // 1st to 5th index|
-|Append element to the list|output := []int{10}<br>output = append(output, 5) // append 5 to output array|
-|Append multiple elements to the list|output = append(output, input[:5]...)|
-|Empty Array|array := []int{}<br>var array []int |
-|While loop in GoLang|for n!=0 {}|
+## Array vs Slice
+- Slice with dynamic length ( like arraylist in Java ) while Array with constant length.
+- [Sample Code](SampleCode/SampleArraySlice.go)
+
+```go
+package main
+
+array := [6]int{1, 2, 3, 4, 5} // array
+len(array)
+slice := make([]int, 6) // slice
+slice_1 := []byte{'G', 'E', 'E', 'K', 'S'} // slice
+
+log.Println(reflect.TypeOf(array).Kind()) // array
+log.Println(reflect.TypeOf(slice).Kind()) // slice
+log.Println(reflect.TypeOf(slice_1).Kind()) //slice
+```
+
+| Purpose                                          | Data Structure | Function                                                                                               |
+|--------------------------------------------------|----------------|--------------------------------------------------------------------------------------------------------|
+| Check if x string contains y string              | String         | strings.Contains(x, y)                                                                                 |
+| Compare two bytes array                          | Slice          | bytes.Compare(sl1, sl2)                                                                                |
+| Length of array or slice                         | Array, Slice   | len(array)                                                                                             |
+| Sort array or slice                              | Array, Slice   | sort.Ints(seats)                                                                                       |
+| Slice with non-constant length                   | Slice          | slice := make([]int, len(nums))                                                                        |
+| Copy one slice to another                        | Slice          | copy(dest, src)                                                                                        |
+| Create Map                                       | Hash Map       | m := make(map[int]int)<br>m := map[int]int                                                             |
+| Get value from Map                               | Hash Map       | mIndex, ok := m[val]                                                                                   |
+| Create object of a struct                        | Struct         | node := new(TreeNode)                                                                                  |
+| Get elements from start to end index, from slice | Array, Slice   | output[:5] // 0th to 5th index<br> output[1:] // 1st to last index<br> output[1,5] // 1st to 5th index |
+| Append element to the list                       | Array, Slice   | output := []int{10}<br>output = append(output, 5) // append 5 to output array                          |
+| Append multiple elements to the list             | Array, Slice   | output = append(output, input[:5]...)                                                                  |
+| Empty Array                                      | Array, Slice   | array := []int{}<br>var array []int                                                                    |
+| While loop in GoLang                             | Looping        | for n!=0 {}                                                                                            |
 
 
 ```go

@@ -34,5 +34,4 @@ func main() {
 	for name, info := range employeeInfo {
 		log.Printf("Employee: %s Salary:$%d  Country: %s\n", name, info.salary, info.country)
 	}
-
 }

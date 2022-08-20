@@ -24,4 +24,11 @@ func main() {
 
 	cSlice := c[0:1]
 	log.Println(cSlice)
+
+	array := [6]int{1, 2, 3, 4, 5} // array
+	log.Println(len(array))
+	log.Println(array[1:4])
+
+	slice := make([]int, 6) // slice
+	log.Println(len(slice))
 }
