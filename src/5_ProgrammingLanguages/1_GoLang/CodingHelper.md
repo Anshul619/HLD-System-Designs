@@ -25,8 +25,8 @@
 |Get value from Map|mIndex, ok := m[val]|
 |Create object of a struct|node := new(TreeNode)|
 |Get elements from start to end index, from slice|output[:5] // 0th to 5th index<br> output[1:] // 1st to last index<br> output[1,5] // 1st to 5th index|
-|Append element to the list|output := []int{10}<br>append(output, 5) // append 5 to output array|
-|Append multiple elements to the list|append(output, input[:5]...)|
+|Append element to the list|output := []int{10}<br>output = append(output, 5) // append 5 to output array|
+|Append multiple elements to the list|output = append(output, input[:5]...)|
 |Empty Array|[]int{}|
 |While loop in GoLang|for <trueCondition>{}|
 
