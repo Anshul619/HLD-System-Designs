@@ -3,8 +3,8 @@
 - `In Go's philosophy, it is better to avoid unnecessary branches and indentation of code. It is also considered better to return as early as possible.`
 - Type is defined at the end of declaration.
 - Return variables ( multiple variables ) would be defined at the end.
-- Multiple variables can be defined by `,`.
-- Initialisation can be skipped with `:=`. 
+- Multiple variables can be assigned by `,`. ( `j, k, l := "shark", 2.05, 15`)
+- Initialisation can be skipped with `:=`. (`i := 72`)
   - Hence, practice to use `:=` mostly, instead of `var =`
   - `Nil` can’t be initialised to the variable without explicit type.
 - Trailing comma is not needed while initializing struct.
@@ -12,6 +12,14 @@
 - Brackets are not needed in `for or if` constructs.
 - Don't use Math functions since those work on float only. Hence, typecasting would be needed.
 - [Slices](https://stackoverflow.com/questions/38731467/pass-array-by-reference-in-golang) are passed by reference in the function call, so no need to specify pointers.
+
+# Naming variables
+- Variable names are case-sensitive.
+  - If a variable starts with an uppercase letter, then that variable is accessible outside the package it was declared in (or exported). 
+  - If a variable starts with a lowercase letter, then it is only available within the package it is declared in.
+- Conventional style of variable names is `MixedCaps` or `mixedCaps`. (instead of underscore or space )
+- Use shorter variable names as possible (`prefer i over index as it is shorter`)
+- Acronyms should be capitalized (`serveHTTP` instead of `serveHttp`)
 
 # Various Go Constructs
 
@@ -289,6 +297,7 @@ func main() {
 
 # Go Tutorials
 - [Frequently Asked Questions (FAQ) - Go](https://go.dev/doc/faq#overloading)
+- [How To Use Variables and Constants in Go](https://www.digitalocean.com/community/tutorials/how-to-use-variables-and-constants-in-go)
 - https://golangbot.com/learn-golang-series/
 - https://yourbasic.org/golang/implement-fifo-queue/
 - https://dave.cheney.net/2016/08/20/solid-go-design
