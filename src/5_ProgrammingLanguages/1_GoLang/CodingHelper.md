@@ -16,23 +16,24 @@
 # Various Go Constructs
 
 | Purpose                                          | Data Structure | Function                                                                                                                                            |
-|--------------------------------------------------|--------------|-----------------------------------------------------------------------------------------------------------------------------------------------------|
-| :star: Initialize Empty Slice                    | Slice   | slice := []int{}<br>var slice []int                                                                                                                 |
-| :star: Initialize Slice with non-constant length | Slice        | slice := make([]int, len(nums))                                                                                                                     |
-| :star: Append element to the list                | Array, Slice | output := []int{10}<br>output = append(output, 5) // append 5 to output slice                                                                       |
-| :star: Append multiple elements to the list      | Array, Slice | output = append(output, input[:5]...)                                                                                                               |
-| Get elements from start to end index, from slice | Array, Slice | output[:5] // 0th to 5th index<br> output[1:] // 1st to last index<br> output[1,5] // 1st to 5th index                                              |
-| :star: Length of an array or slice               | Array, Slice | len(array)                                                                                                                                          |
-| :star: Sort an array or slice                    | Array, Slice | sort.Ints(seats)                                                                                                                                    |
-| :star: Create a Map object                       | Hash Map     | m := make(map[int]int)<br>m := map[int]int                                                                                                          |
-| :star: Get value from Map                        | Hash Map     | val, ok := m[key]                                                                                                                                   |
-| :star: Create object of the struct               | Struct       | obj := new(ListNode) // pointer to object, without all variables initialized <br>obj := ListNode{5, 10} // with all variables of struct initialized |
-| Copy one slice to another                        | Slice        | copy(dest, src)                                                                                                                                     |
-| Compare two bytes array                          | Slice        | bytes.Compare(sl1, sl2)                                                                                                                             |
-| While loop in GoLang                             | Looping      | for n!=0 {}                                                                                                                                         |
-| Check if x string contains y string              | String       | strings.Contains(x, y)                                                                                                                              |
+|--------------------------------------------------|----------------|-----------------------------------------------------------------------------------------------------------------------------------------------------|
+| :star: Initialize Empty Slice                    | Slice          | slice := []int{}<br>var slice []int                                                                                                                 |
+| :star: Initialize Slice with non-constant length | Slice          | slice := make([]int, len(nums))                                                                                                                     |
+| :star: Append element to the list                | Array, Slice   | output := []int{10}<br>output = append(output, 5) // append 5 to output slice                                                                       |
+| :star: Append multiple elements to the list      | Array, Slice   | output = append(output, input[:5]...)                                                                                                               |
+| Get elements from start to end index, from slice | Array, Slice   | output[:5] // 0th to 5th index<br> output[1:] // 1st to last index<br> output[1,5] // 1st to 5th index                                              |
+| :star: Length of an array or slice               | Array, Slice   | len(array)                                                                                                                                          |
+| :star: Sort an array or slice                    | Array, Slice   | sort.Ints(seats)                                                                                                                                    |
+| :star: Create a Map object                       | Hash Map       | m := make(map[int]int)<br>m := map[int]int                                                                                                          |
+| :star: Get value from Map                        | Hash Map       | val, ok := m[key]                                                                                                                                   |
+| :star: Create object of the struct               | Struct         | obj := new(ListNode) // pointer to object, without all variables initialized <br>obj := ListNode{5, 10} // with all variables of struct initialized |
+| Copy one slice to another                        | Slice          | copy(dest, src)                                                                                                                                     |
+| Compare two bytes array                          | Slice          | bytes.Compare(sl1, sl2)                                                                                                                             |
+| While loop in GoLang                             | Looping        | for n!=0 {}                                                                                                                                         |
+| Check if x string contains y string              | String         | strings.Contains(x, y)                                                                                                                              |
+| Split the string                                 | String         | strings.Split(y, " ")                                                                                                                               |
 
-## Array vs Slice
+# Array vs Slice
 - Slice with dynamic length ( like arraylist in Java ) while Array with constant length.
 - [Sample Code](SampleCode/SampleArraySlice.go)
 
@@ -94,6 +95,66 @@ func (s MyStruct)  valueMethod()   { } // method on value
 # [Why does Go have type parameters?](https://go.dev/doc/faq#overloading)
 - Type parameters permit what is known as generic programming, in which functions and data structures are defined in terms of types that are specified later, when those functions and data structures are used.
 - For example, they make it possible to write a function that returns the minimum of two values of any ordered type, without having to write a separate version for each possible type.
+
+# How to implement Queue?
+- [Reference](https://www.educative.io/answers/how-to-implement-a-queue-in-golang)
+
+## Using Slice
+```go
+package main
+import "fmt"
+
+func enqueue(queue[] int, element int) []int {
+  queue = append(queue, element); // Simply append to enqueue.
+  fmt.Println("Enqueued:", element);
+  return queue
+}
+
+func dequeue(queue[] int) ([]int) {
+  element := queue[0]; // The first element is the one to be dequeued.
+  fmt.Println("Dequeued:", element)
+  return queue[1:]; // Slice off the element once it is dequeued.
+}
+
+func main() {
+  var queue[] int; // Make a queue of ints.
+
+  queue = enqueue(queue, 10);
+  queue = enqueue(queue, 20);
+  queue = enqueue(queue, 30);
+
+  fmt.Println("Queue:", queue);
+
+  queue = dequeue(queue);
+  fmt.Println("Queue:", queue);
+
+  queue = enqueue(queue, 40);
+  fmt.Println("Queue:", queue);
+}
+```
+
+## Using LinkedList
+````go
+package main
+import "container/list"
+import "fmt"
+
+func main() {
+    // new linked list
+    queue := list.New()
+
+    // Simply append to enqueue.
+    queue.PushBack(10)
+    queue.PushBack(20)
+    queue.PushBack(30)
+
+    // Dequeue
+    front:=queue.Front()
+    fmt.Println(front.Value)
+    // This will remove the allocated memory and avoid memory leaks
+    queue.Remove(front)
+}
+````
 
 # Multi-Threading
 ````
