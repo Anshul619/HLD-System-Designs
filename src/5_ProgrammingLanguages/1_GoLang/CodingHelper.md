@@ -11,7 +11,10 @@
 - Semicolon is not needed at the end.
 - Brackets are not needed in `for or if` constructs.
 - Don't use Math functions since those work on float only. Hence, typecasting would be needed.
-- [Slices](https://stackoverflow.com/questions/38731467/pass-array-by-reference-in-golang) are passed by reference in the function call, so no need to specify pointers.
+- [Slices](https://stackoverflow.com/questions/38731467/pass-array-by-reference-in-golang) are passed by reference in the function call, so no need to specify [pointers](https://www.geeksforgeeks.org/pointers-in-golang/).
+- To access elements of a pointer array, use `(*h)[10]` instead of `*h[10]`.
+- Type casting of the generic interface to the specific type, is done like `.(SpecificTypeObj)`.
+- 
 
 # Naming variables
 - Variable names are case-sensitive.
@@ -298,6 +301,7 @@ func main() {
 # Go Tutorials
 - [Frequently Asked Questions (FAQ) - Go](https://go.dev/doc/faq#overloading)
 - [How To Use Variables and Constants in Go](https://www.digitalocean.com/community/tutorials/how-to-use-variables-and-constants-in-go)
+- [Practical Go: Real world advice for writing maintainable Go programs](https://dave.cheney.net/practical-go/presentations/qcon-china.html)
 - https://golangbot.com/learn-golang-series/
 - https://yourbasic.org/golang/implement-fifo-queue/
 - https://dave.cheney.net/2016/08/20/solid-go-design
