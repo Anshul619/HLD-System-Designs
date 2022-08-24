@@ -3,10 +3,10 @@
 - `In Go's philosophy, it is better to avoid unnecessary branches and indentation of code. It is also considered better to return as early as possible.`
 - Type is defined at the end of declaration.
 - Return variables ( multiple variables ) would be defined at the end.
-- Multiple variables can be assigned by `,`. ( `j, k, l := "shark", 2.05, 15`)
-- Initialisation can be skipped with `:=`. (`i := 72`)
+- Multiple variables can be assigned by `,`. ( example - `j, k, l := "shark", 2.05, 15`)
+- Initialisation can be skipped with `:=`. ( example - `i := 72`)
   - Hence, practice to use `:=` mostly, instead of `var =`
-  - `Nil` can’t be initialised to the variable without explicit type.
+  - `Nil` can’t be initialised to the variable without explicit type (`var =`).
 - Trailing comma is not needed while initializing struct.
 - Semicolon is not needed at the end.
 - Brackets are not needed in `for or if` constructs.
@@ -14,7 +14,8 @@
 - [Slices](https://stackoverflow.com/questions/38731467/pass-array-by-reference-in-golang) are passed by reference in the function call, so no need to specify [pointers](https://www.geeksforgeeks.org/pointers-in-golang/).
 - To access elements of a pointer array, use `(*h)[10]` instead of `*h[10]`.
 - Type casting of the generic interface to the specific type, is done like `.(SpecificTypeObj)`.
-- 
+- To get byte from string, use index on the string ( like `string[0]`). ( instead of `range` value )
+- `string(x)` gives string of the x ( x can be `int32` etc.).
 
 # Naming variables
 - Variable names are case-sensitive.
