@@ -131,10 +131,12 @@ There are 3 ACK levels in `Kafka`
 - The Kafka controller in a Kafka cluster is in charge of managing partition leaders and replication.
 - [Kafka Controller does leader election for the topic](https://stackoverflow.com/questions/49525141/how-many-kafka-controllers-are-there-in-a-cluster-and-what-is-the-purpose-of-a-c) ( if existing leader goes down ).
 - [The Kafka controller is brain of the Kafka cluster](https://stackoverflow.com/questions/49525141/how-many-kafka-controllers-are-there-in-a-cluster-and-what-is-the-purpose-of-a-c). It monitors the liveliness of the brokers and acts on broker failures.
-- The first broker that starts in the cluster will become the Kafka Controller by creating an `ephemeral node called "/controller"` in `Zookeeper`. 
-- When other brokers starts they also try to create this node in Zookeeper, but will receive an "node already exists" exception, by which they understands that there is already a Controller elected in the cluster.
-- When the Zookeeper doesn't receive heartbeat messages from the Controller, the ephemeral node in Zookeeper will get deleted. 
-- It then notifies all the other brokers in the cluster that the Controller is gone via Zookeeper watcher, which starts a new election for new Controller again. 
+
+### Controller Election
+- The first broker that starts in the cluster will become the Kafka Controller by creating an `ephemeral node called "/controller"` in [Zookeeper](#zookeeper)
+- When other brokers starts they also try to create this node in Zookeeper, but will receive an "node already exists" exception, by which they understand that there is already a Controller elected in the cluster.
+- `When the Zookeeper doesn't receive heartbeat messages from the Controller, the ephemeral node in Zookeeper will get deleted.`
+- `It then notifies all the other brokers in the cluster that the Controller is gone via Zookeeper watcher, which starts a new election for new Controller again.` 
 - All the other brokers will again try to create a ephemeral node "/controller" and the first one to succeed will be elected as the new Controller.
 
 ## What is Partition Key in Kafka?
