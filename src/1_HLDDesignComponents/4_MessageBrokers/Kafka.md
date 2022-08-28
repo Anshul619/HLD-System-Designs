@@ -9,14 +9,11 @@
 # [Why Kafka is so fast?](https://twitter.com/alexxubyte/status/1506663791961919488/photo/1)
 - Kafka achieves low latency message delivery through `Sequential I/O and Zero Copy Principle`. 
 - The same techniques are commonly used in many other messaging/streaming platforms.
+- Kafka is based on Log Based Queue
+  - :star: `Messages are persisted to append-only log files by the broker`.
+  - Producers are appending these log files ( `sequential write` ) & consumers are reading a range of these files ( `sequential reads` ).
 
 ![img.png](https://pbs.twimg.com/media/FOi-gjZVgAQdG9B?format=jpg&name=large)
-
-# Reasons of why Kafka has HIGH throughput?
-
-## Kafka is based on Log Based Queue
-- :star: `Messages are persisted to append-only log files by the broker`.
-- Producers are appending these log files ( `sequential write` ) & consumers are reading a range of these files ( `sequential reads` ).
 
 # Basic Architecture of Kafka Cluster
 
@@ -25,7 +22,7 @@
 # Real world usages of Kafka
 
 ## As an events/message broker in [Event-Driven Architecture](../0_SystemGlossaries/EventDrivenArchitecture.md)
-- Use Kafka when your application has a High throughput (`1 million messages/sec`), i.e. application has to process a large volume of messages, event driven services etc.
+- Use Kafka when your application has a High Throughput ( around `1 million messages/sec`), i.e. application has to process a large volume of messages, event driven services etc.
 
 ## To monitor metrics, logs of the IT infrastructure
 - Various systems in the IT infrastructure can push events/messages/logs in the Kafka. And logstash ( in ELK ) can act as a consumer to the Kafka.
@@ -59,8 +56,7 @@
 ## [High Availability](../0_SystemGlossaries/HighAvailability.md), [Fault Tolerance](../0_SystemGlossaries/FaultTolerance&DisasterRecovery.md)
 - The `distributed, partitioned, replicated, and fault-tolerant` nature of Kafka makes it very reliable.
 - Kafka connector can handle failures with three strategies summarised as `fast-fail`, `ignore` and `re-queue` (sends to another topic).
-- Each partition would be replicated across the brokers/servers in the cluster. ( as per configured replication factor )
-- Replication is done using `Leader/Follower` technique.
+- [Read more about replication in Kafka](#replication)
 
 ## Extensibility
 - `Allows multiple ways for applications to plugin and make use of Kafka`.
@@ -78,11 +74,7 @@
 
 ## Producer
 - Producer writes data into the topics ( 1 or more ) in the Kafka.
-- In Kafka 0.7, producers are `fire-&-forgot`.
-- In Kafka 0.8, there are 3 ACK levels
-    - No ack(0)
-    - Ack from N replicas (1...N)
-    - Ack from all replicas (-1)
+- [Read about ACK levels in Kafka](#ack-levels)
 
 ## Sharding/Partitioning
 - Partitioning allows Kafka producers to serialize, compress, and load balance data among brokers.
@@ -102,10 +94,11 @@
 - Brokers keep very little state, mostly just open file pointers & connections.
 
 ## ZooKeeper
-- Zookeeper manages Kafka Cluster ( new broker, new partition etc. ) and brokers coordination.
+- [Zookeeper](https://zookeeper.apache.org/) manages Kafka Cluster ( new broker, new partition etc. ) and brokers coordination.
 - Zookeeper also manages leaders selection in the `Kafka Cluster`.
-- For every partition, there would be 1 leader ( reader/writer of the partition ) and 1 or more follower ( which keeps replicating the leader ).
-- Based on configured `replication factor`, the number of followers would be decided.
+- `Kafka stores basic metadata in Zookeeper ( in-memory ), like info about brokers, topics, partitions, partition lead/followers, consumer offset etc.`
+- Zookeeper notifies consumers and producers of the arrival of new broker or failure of existing broker, as well as routing all requests to partition's leaders.
+- [Read more about replication in Kafka](#replication)
 
 ## Consumer Group
 - The name of an application is essentially represented by a consumer group
@@ -113,9 +106,29 @@
 - A consumer group in Kafka is a collection of consumers who work together to ingest data from the same topic or range of topics.
 - The `-group` command must be used to consume messages from a consumer group.
 
+## Replication
+- Each partition would be replicated across the brokers/servers in the cluster ( as per configured replication factor )
+- Only one partition (of the topic ) would be active at the time, called `Leader`.
+- `Leader would handle all read/write requests for the partition`.
+- Other partitions ( of the topic ) would only replicate message ( `In-sync replication` ), called `Followers`.
+- Based on configured `replication factor`, the number of followers would be decided.
+  - Example - 3 replication factor means there would be 1 leader and 2 followers.
+
+### ACK levels 
+
+There are 3 ACK levels in `Kafka`
+- No ack(0)
+- Ack from N replicas (1...N)
+- Ack from all replicas (-1)
+  
 ## Schema Registry
 - Schema Registry holds Avro schemas & ensures that schema used by producer and consumer, are identical.
 - Producer sends schema id while pushing the data and consumer look for schema id to get schema.
+
+## Kafka Controller
+- In a Kafka cluster, one of the brokers serves as the controller, which is responsible for managing the states of partitions and replicas and for performing administrative tasks like reassigning partitions. 
+- At any given time there is only one controller broker in your cluster.
+- [Kafka Controller does leader election for the topic](https://stackoverflow.com/questions/49525141/how-many-kafka-controllers-are-there-in-a-cluster-and-what-is-the-purpose-of-a-c) ( if existing leader goes down ).
 
 ## What is Partition Key in Kafka?
 
@@ -211,13 +224,13 @@ Parameter | Title                           | More Description                  
 `c`         | Consumption Rate                | And consumption (call it c). |
 
 ## Other Points
-- More partitions lead to `higher throughput`
+- More partitions lead to `higher throughput`.
 - More partitions requires `more open file handles`
     - This is mostly just a configuration issue.
     - We have seen production Kafka clusters running with more than 30 thousand open file handles per broker.
-- More partitions may `increase unavailability`
+- More partitions may `increase unavailability`.
     - It’s probably better to limit the number of partitions per broker to two to four thousand and the total number of partitions in the cluster to low tens of thousand.
-- More partitions may increase end-to-end latency
+- More partitions may increase end-to-end latency.
     - As a rule of thumb, if you care about latency, it’s probably a good idea to limit the number of partitions per broker to *100 x b x r*, where b is the number of brokers in a Kafka cluster and r is the replication factor.
 - More partitions may require more memory in the client.
 
@@ -236,3 +249,5 @@ Parameter | Title                           | More Description                  
 - [How to minimize the latency involved in kafka messaging framework?](https://stackoverflow.com/questions/20520492/how-to-minimize-the-latency-involved-in-kafka-messaging-framework)
 - [Apache Kafka on AWS using Amazon MSK](https://aws.amazon.com/msk/what-is-kafka/)
 - [Kafka Talk by Tri Hug](https://www.slideshare.net/mumrah/kafka-talk-tri-hug)
+- [Role of ZooKeeper in Kafka](https://www.youtube.com/watch?v=bnHWrSwPvig)
+- [Replication in Kafka](https://medium.com/@_amanarora/replication-in-kafka-58b39e91b64e)
