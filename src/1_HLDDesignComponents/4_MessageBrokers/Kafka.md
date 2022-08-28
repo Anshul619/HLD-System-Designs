@@ -250,6 +250,9 @@ Parameter | Title                           | More Description                  
 - `~700 topics`
 - `Thousands of producers`
 - `~1000 consumers`
+- LinkedIn has 4 data centers in US ( texas, virginnia, oregon etc. )
+- LinkedIn has separate kafka clusters in every data center. ( for high scalability, disaster recovery etc. )
+
 
 # [Kafka vs Others](KafkaVsRabbitMQVsSQSVsSNS.md)
 
