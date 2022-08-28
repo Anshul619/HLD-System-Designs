@@ -1,29 +1,49 @@
-
 # Basic Guidelines
 - `In Go's philosophy, it is better to avoid unnecessary branches and indentation of code. It is also considered better to return as early as possible.`
+- Function Declaration
+  - Return variables ( multiple variables ) would be defined at the end.
+- Semicolon is not needed at the end of the code statement.
+- Brackets are not needed in `for or if` constructs.
+- Type casting of the generic interface to the specific type, is done like `.(SpecificTypeObj)`.
+- Don't use Math functions since those work on float only. Hence, typecasting would be needed.
+
+# Initialization
 - Type is defined at the end of declaration.
-- Return variables ( multiple variables ) would be defined at the end.
 - Multiple variables can be assigned by `,`. ( example - `j, k, l := "shark", 2.05, 15`)
 - Initialisation can be skipped with `:=`. ( example - `i := 72`)
-  - Hence, practice to use `:=` mostly, instead of `var =`
-  - `Nil` can’t be initialised to the variable without explicit type (`var =`).
+  - Hence, practice to use `:=` mostly, instead of `var =`.
+  - `nil` can’t be initialised to the variable without explicit type (`var =`).
+  - Note `:=` doesn't work with the global variables.
 - Trailing comma is not needed while initializing struct.
-- Semicolon is not needed at the end.
-- Brackets are not needed in `for or if` constructs.
-- Don't use Math functions since those work on float only. Hence, typecasting would be needed.
-- [Slices](https://stackoverflow.com/questions/38731467/pass-array-by-reference-in-golang) are passed by reference in the function call, so no need to specify [pointers](https://www.geeksforgeeks.org/pointers-in-golang/).
-- To access elements of a pointer array, use `(*h)[10]` instead of `*h[10]`.
-- Type casting of the generic interface to the specific type, is done like `.(SpecificTypeObj)`.
-- To get byte from string, use index on the string ( like `string[0]`). ( instead of `range` value )
-- `string(x)` gives string of the x ( x can be `int32` etc.).
+- [Global Variables](https://www.tutorialspoint.com/go/go_scope_rules.htm) can be defined like `var g int = 20`.
 
 # Naming variables
 - Variable names are case-sensitive.
   - If a variable starts with an uppercase letter, then that variable is accessible outside the package it was declared in (or exported). 
   - If a variable starts with a lowercase letter, then it is only available within the package it is declared in.
 - Conventional style of variable names is `MixedCaps` or `mixedCaps`. (instead of underscore or space )
-- Use shorter variable names as possible (`prefer i over index as it is shorter`)
-- Acronyms should be capitalized (`serveHTTP` instead of `serveHttp`)
+- Use shorter variable names as possible (`prefer i over index as it is shorter`).
+- Acronyms should be capitalized (`serveHTTP` instead of `serveHttp`).
+
+# Pointers
+- Pointer can be created using `new(int)`.
+- Pointer can be passed using `func x(output [][]*int)`.
+- [Slices](https://stackoverflow.com/questions/38731467/pass-array-by-reference-in-golang) are passed by reference in the function call, so no need to specify [pointers](https://www.geeksforgeeks.org/pointers-in-golang/).
+- To access elements of a pointer array, use `(*h)[10]` instead of `*h[10]`.
+- If method needs to modify the reciever, receiver must be pointer.
+
+```
+func (s *MyStruct) pointerMethod() { } // method on pointer. 
+func (s MyStruct)  valueMethod()   { } // method on value
+```
+
+- Unlike new, [make's return type](https://stackoverflow.com/questions/9320862/why-would-i-make-or-new) is the same as the type of its argument, not a pointer to it.
+- The make built-in function allocates and initializes an object of type slice, map, or chan (only).
+
+```
+themes := make([]*Template, 0)
+theme := new(Theme) // Pointer to new Theme object
+```
 
 # Various Go Constructs
 
@@ -44,6 +64,8 @@
 | While loop in GoLang                             | Looping        | for n!=0 {}                                                                                                                                         |
 | Check if x string contains y string              | String         | strings.Contains(x, y)                                                                                                                              |
 | Split the string                                 | String         | strings.Split(y, " ")                                                                                                                               |
+| Convert byte (i.e. stringArray[i]) to string     | String         | string(x)                                                                                                                                           |
+| Compare strings                                  | String         | x==y                                                                                                                                                |
 
 # Array vs Slice
 - Slice with dynamic length ( like arraylist in Java ) while Array with constant length.
@@ -62,48 +84,6 @@ log.Println(reflect.TypeOf(slice).Kind()) // slice
 log.Println(reflect.TypeOf(slice_1).Kind()) //slice
 ```
 
-# [Difference b/w make & new](https://stackoverflow.com/questions/9320862/why-would-i-make-or-new)
-- The make built-in function allocates and initializes an object of type slice, map, or chan (only).
-- Like new, the first argument is a type, not a value.
-- Unlike new, make's return type is the same as the type of its argument, not a pointer to it.
-- The specification of the result depends on the type.
-
-```
-themes := make([]*Template, 0)
-theme := new(Theme) // Pointer to new Theme object
-```
-
-## Sample Go Code
-
-```go
-package main // folder name is generally specified as package name
-
-import "log"
-
-// Private method since starting character is small case
-func findNumber(list []int) {
-
-	var1, var2 := 1, 2 // multiple variables, separated by comma
-
-	log.Println(var1)
-	log.Println(var2)
-}
-
-// Public method since starting character is capital case
-func FindNumber(list []int) (bool, error) {
-	return false, nil
-}
-
-func main() { // first calling function
-}
-```
-# Method Pointers
-- Does the method need to modify the receiver? If it does, the receiver must be a pointer.
-```
-func (s *MyStruct) pointerMethod() { } // method on pointer. 
-func (s MyStruct)  valueMethod()   { } // method on value
-```
-
 # [Why does Go have type parameters?](https://go.dev/doc/faq#overloading)
 - Type parameters permit what is known as generic programming, in which functions and data structures are defined in terms of types that are specified later, when those functions and data structures are used.
 - For example, they make it possible to write a function that returns the minimum of two values of any ordered type, without having to write a separate version for each possible type.
@@ -112,6 +92,7 @@ func (s MyStruct)  valueMethod()   { } // method on value
 - [Reference](https://www.educative.io/answers/how-to-implement-a-queue-in-golang)
 
 ## Using Slice
+
 ```go
 package main
 import "fmt"
@@ -248,9 +229,6 @@ func (s *Stack) Pop() (string, bool) {
 go X() // asynchrnously call X() function
 ````
 
-# Important Links
-- [Structs Instead of Classes - OOP in Go](SampleCode/oop/employee/employees.go)
-
 # Error Interface
 ````
 type error interface {  
@@ -270,8 +248,6 @@ var ErrBadPattern = errors.New("syntax error in pattern")
 
 # [Panic & Recover](https://golangbot.com/panic-and-recover/)
 - Panic is like exception in GoLang
-
-
 
 # [How to run the app server in GoLang?](https://go.dev/doc/articles/wiki/)
 
@@ -295,6 +271,31 @@ func main() {
 	log.Fatal(http.ListenAndServe(":8080", nil)) // Run app server on 8080 port
 }
 ````
+
+## Sample Go Code
+
+```go
+package main // folder name is generally specified as package name
+
+import "log"
+
+// Private method since starting character is small case
+func findNumber(list []int) {
+
+	var1, var2 := 1, 2 // multiple variables, separated by comma
+
+	log.Println(var1)
+	log.Println(var2)
+}
+
+// Public method since starting character is capital case
+func FindNumber(list []int) (bool, error) {
+	return false, nil
+}
+
+func main() { // first calling function
+}
+```
 
 # OOPs
 - Go does not support inheritance, however, it does support composition.
