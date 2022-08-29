@@ -76,11 +76,6 @@
 - Producer writes data into the topics ( 1 or more ) in the Kafka.
 - [Read about ACK levels in Kafka](#ack-levels)
 
-## Sharding/Partitioning
-- Partitioning allows Kafka producers to serialize, compress, and load balance data among brokers.
-- Topics can be parallelized via partitions, which split data into a single topic among numerous brokers.
-- [More partitions](https://www.confluent.io/blog/how-choose-number-topics-partitions-kafka-cluster/) lead to higher throughput.
-
 ## Consumer
 - A consumer can subscribe ( listen ) to the topics ( 1 or more ) and read data from those in the Kafka.
 - Each consumer in a consumer group will be responsible for reading a subset of the partitions of each subject to which they have subscribed.
@@ -92,13 +87,19 @@
 - Multiple brokers in the Kafka cluster, provides load balancing, reliable redundancy & fail-over.
 - Without sacrificing performance, each broker instance can handle read and write volumes of hundreds of thousands per second (and gigabytes of messages).
 - Brokers keep very little state, mostly just open file pointers & connections.
+- `To scale writes, number of leader partitions per broker can be reduced to spread the writes across more brokers.`
 
 ## ZooKeeper
 - [Zookeeper](https://zookeeper.apache.org/) manages Kafka Cluster ( new broker, new partition etc. ) and brokers coordination.
-- Zookeeper also manages leaders selection in the `Kafka Cluster`.
 - `Kafka stores basic metadata in Zookeeper ( in-memory ), like info about brokers, topics, partitions, partition lead/followers, consumer offset etc.`
+- Zookeeper is also used in the [Controller election](#controller-election) in the `Kafka Cluster`.
 - Zookeeper notifies consumers and producers of the arrival of new broker or failure of existing broker, as well as routing all requests to partition's leaders.
 - [Read more about replication in Kafka](#replication)
+
+## Sharding/Partitioning
+- Partitioning allows Kafka producers to serialize, compress, and load balance data among brokers.
+- Topics can be parallelized via partitions, which split data into a single topic among numerous brokers.
+- [More partitions](https://www.confluent.io/blog/how-choose-number-topics-partitions-kafka-cluster/) lead to higher throughput.
 
 ## Consumer Group
 - The name of an application is essentially represented by a consumer group
@@ -107,19 +108,52 @@
 - The `-group` command must be used to consume messages from a consumer group.
 
 ## Replication
-- Each partition would be replicated across the brokers/servers in the cluster ( as per configured replication factor )
-- Only one partition (of the topic ) would be active at the time, called `Leader`.
-- `Leader would handle all read/write requests for the partition`.
-- Other partitions ( of the topic ) would only replicate message ( `In-sync replication` ), called `Followers`.
-- Based on configured `replication factor`, the number of followers would be decided.
-  - Example - 3 replication factor means there would be 1 leader and 2 followers.
+- Each partition would be replicated across the brokers/servers in the cluster ( as per configured replication factor ).
+
+### Leader
+- Only one partition (of the topic) would be active at the time, called `Leader`.
+- `Write requests on the partition, would be handled by Leader`
+
+### Follower
+- Other partitions ( of the topic ) would only replicate message, called `Followers`.
+- Based on configured replication factor (`replication.factor`), the number of followers would be decided.
+- Example - 3 replication factor means there would be 1 leader and 2 followers.
+
+### In-Sync Replicas
+- An in-sync replica (ISR) is a broker that has the latest data for a given partition. 
+  - A leader is always an in-sync replica. 
+  - A follower is an in-sync replica only if it has fully caught up to the partition it’s following. 
+  - In other words, it can't be behind on the latest records for a given partition.
+- `Read requests on the partition, would be handled by in-sync replicas`.
+- The message is considered committed to the log only when all in-sync replicas have the message. 
+  - Accordingly, ack is sent to the producer.
+
+![img.png](https://accu.org/journals/overload/28/159/kozlovski/2.png)
 
 ### ACK levels 
+The `acks` setting is a client (producer) configuration. 
+- It denotes the number of brokers that must receive the record before we consider the write as successful. 
+- It support three values – 0, 1, and all.
 
-There are 3 ACK levels in `Kafka`
-- No ack(0)
-- Ack from N replicas (1...N)
-- Ack from all replicas (-1)
+The `acks` setting is a good way to configure your preferred trade-off between durability guarantees and performance.
+- If you’d like to be sure your records are nice and safe – configure your acks to all.
+- If you value latency and throughput over sleeping well at night, set a low threshold of 0. You may have a greater chance of losing messages, but you inherently have better latency and throughput.
+
+#### acks=0
+- With a value of 0, the producer won’t even wait for a response from the broker. 
+- It immediately considers the write successful the moment the record is sent out.
+
+#### acks=1
+- With a setting of 1, the producer will consider the write successful when the leader receives the record. 
+- The leader broker will know to immediately respond the moment it receives the record and not wait any longer.
+
+![img.png](https://accu.org/journals/overload/28/159/kozlovski/4.png)
+
+#### acks=all
+- When set to all, the producer will consider the write successful when all of the in-sync replicas receive the record. 
+- This is achieved by the leader broker being smart as to when it responds to the request – it’ll send back a response once all the in-sync replicas receive the record themselves.
+
+![img.png](https://accu.org/journals/overload/28/159/kozlovski/6.png)
   
 ## Schema Registry
 - Schema Registry holds Avro schemas & ensures that schema used by producer and consumer, are identical.
@@ -155,6 +189,15 @@ Example
 - If you receive a cancellation event before a buy event, the cancellation will be rejected as invalid (since the purchase has not yet been registered in the system), and the system will then record the purchase and send the product to the client (and lose you money).
 - You might use a customer id as the key of these Kafka records to solve this problem and assure ordering.
 - This will ensure that all of a customer's purchase events are grouped together in the same partition.
+
+## Security
+- All components ( brokers, zookeeper, producers, consumers etc. ) should authenticate each other and setup an encrypted channel for communication. 
+  - Kafka supports SSL based authentication and encryption.
+- `Authorization` - ACLs should be defined and enforced to control which users can perform what action? 
+
+### Multiple Tenants Isolation
+- Each tenant will have a separate topic prefix. Eg. User A can only create and access topics with prefix “A.”, user B can only create and access topics with prefix “B.”
+- Define and enforce ACLs for topic creation and access (produce and consume) restricting each user to their own topic prefixes.
 
 # [Core APIs in Kafka](https://github.com/confluentinc/kafka-rest)
 
@@ -253,13 +296,14 @@ Parameter | Title                           | More Description                  
 - LinkedIn has 4 data centers in US ( texas, virginnia, oregon etc. )
 - LinkedIn has separate kafka clusters in every data center. ( for high scalability, disaster recovery etc. )
 
-
 # [Kafka vs Others](KafkaVsRabbitMQVsSQSVsSNS.md)
 
 # References
+- [Kafka official documentation](https://kafka.apache.org/documentation/#theproducer)
 - [Kafka Interview Question](https://www.interviewbit.com/kafka-interview-questions/)
 - [How to minimize the latency involved in kafka messaging framework?](https://stackoverflow.com/questions/20520492/how-to-minimize-the-latency-involved-in-kafka-messaging-framework)
 - [Apache Kafka on AWS using Amazon MSK](https://aws.amazon.com/msk/what-is-kafka/)
 - [Kafka Talk by Tri Hug](https://www.slideshare.net/mumrah/kafka-talk-tri-hug)
 - [Role of ZooKeeper in Kafka](https://www.youtube.com/watch?v=bnHWrSwPvig)
 - [Replication in Kafka](https://medium.com/@_amanarora/replication-in-kafka-58b39e91b64e)
+- [Kafka Acks Explained](https://accu.org/journals/overload/28/159/kozlovski/)
