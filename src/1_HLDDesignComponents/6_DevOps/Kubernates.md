@@ -39,5 +39,7 @@ kubectl cp /tmp/foo_dir my-pod:/tmp/bar_dir            # Copy /tmp/foo_dir local
 - [Install and Set Up kubectl on macOS](https://kubernetes.io/docs/tasks/tools/install-kubectl-macos/)
 - [MiniKube Start](https://minikube.sigs.k8s.io/docs/start/)
 
+# StatefulSets
+- [TBD](https://kubernetes.io/docs/concepts/workloads/controllers/statefulset/)
 # References
 - [The Uber Engineering Tech Stack, Part I: The Foundation](https://eng.uber.com/tech-stack-part-one-foundation/)
