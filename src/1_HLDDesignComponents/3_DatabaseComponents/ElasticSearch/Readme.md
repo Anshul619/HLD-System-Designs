@@ -1,6 +1,6 @@
 
 # Introduction
-- A distributed, RESTful modern search and analytics engine based on [Apache Lucene](../ApacheLucene.md) info.
+- A distributed, RESTful modern search and analytics engine based on [Apache Lucene](../ApacheLucene.md).
 - Data is stored in the form of `JSONs`, in ElasticSearch.
 - We can only interact with elastic search through REST API.
 - Main Use Cases are `full-text-search`, `logs-analysis` ( ELK ) etc.
