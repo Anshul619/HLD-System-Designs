@@ -1,32 +1,27 @@
 
 # Introduction
-- A distributed, RESTful modern search and analytics engine based on Apache Lucene info.
+- A distributed, RESTful modern search and analytics engine based on [Apache Lucene](../ApacheLucene.md) info.
+- Data is stored in the form of `JSONs`, in ElasticSearch.
+- We can only interact with elastic search through REST API.
+- Main Use Cases are `full-text-search`, `logs-analysis` ( ELK ) etc.
 
 # Key Features of ElasticSearch
 
-## Stores unstructured data
-- ElasticSearch stores data in inverted indexes ( term and documents mapped to it ).
-- Main Use Cases are `full-text-search`, `logs-analysis` ( ELK ) etc.
+## Different data types supported
+- Textual
+- Numerical
+- [GeoSpatial (geo-point, geo-shape data types)](https://www.elastic.co/guide/en/elasticsearch/reference/current/query-dsl-geo-bounding-box-query.html)
+- Unstructured etc.
 
-## REST APIs
+## REST APIs (JSON based)
 - Document APIs
 - Search APIs
 - Aggregation APIs
 - Index APIs
 - Cluster APIs
 
-## [Based on Apache Lucene](https://stackoverflow.com/questions/57328151/how-does-elasticsearch-store-data)
-- ElasticSearch uses [lucene](https://lucene.apache.org/core/) under the hood.
-- Lucene is a text search engine. It stores text in a custom binary format optimized for retrieval purposes. The format is highly optimized and complicated.
-- Lucene uses the concept of `indices containing documents`. 
-  - Internally every index consists of several segments. 
-  - Segments are saved in several files in the file system. 
-  - Documents are split up in several lookup structures, residing in the files.
-- When you browse the data folder of elastic you see this lucene index and segment structure. 
-  - There is no storage of json formatted data on the file system level. 
-  - The files contain `optimized binary data` and `you need to pass through the elastic API to get a JSON representation of a document`.
-
 ## Inverted indexes and Index Terms
+- Internally, ElasticSearch stores data in inverted indexes ( term and documents mapped to it ).
 - The inverted index maps `terms` to `documents` (and possibly positions in the documents) containing the term.
 - Using inverted indexes, we can efficiently find documents given term prefixes.
   - For example - find all documents, starting with `c`.
@@ -39,10 +34,9 @@
 - Tokenizers are used to generate the `tokens from a text string`. 
 - It breaks down the text string into tokens where it finds whitespace or other punctuation symbols.
 
-## [GeoLocation Support](https://www.elastic.co/guide/en/elasticsearch/reference/current/query-dsl-geo-bounding-box-query.html)
-- TBD
-
 # [GraphQL with ElasticSearch](ESWithGraphQL.md)
+
+- [Docker ELK](https://github.com/deviantony/docker-elk)
 
 # References
 - [Elasticsearch from the Bottom Up](https://www.elastic.co/blog/found-elasticsearch-from-the-bottom-up)
