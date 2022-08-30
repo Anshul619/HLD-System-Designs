@@ -36,6 +36,7 @@
 
 # [GraphQL with ElasticSearch](ESWithGraphQL.md)
 
+# Installation Methods
 - [Docker ELK](https://github.com/deviantony/docker-elk)
 
 # References
