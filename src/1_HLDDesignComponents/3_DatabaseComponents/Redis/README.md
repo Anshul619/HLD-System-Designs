@@ -9,6 +9,7 @@
 - Redis is very fast. It can execute `100K queries per second`.
 - Since Redis uses in-memory for storage, it is very fast.
 - Mostly `O(1)` behavior, to get data from redis.
+- Generally, reading data from `Redis` is [5 times faster](../../SystemEstimationTips.md#latency-comparison-numbers) than reading it from database.
 
 [![img.png](https://pbs.twimg.com/media/FMx3JZRUYAIWWKq?format=jpg&name=4096x4096)](https://www.youtube.com/watch?v=5TRFpFBccQM)
 
