@@ -1,11 +1,27 @@
-# System-Designs
+# Key Characteristics of Distributed Systems
+
+| Basis                                                                                  | Applicable Components              |
+|----------------------------------------------------------------------------------------|------------------------------------|
+| :star: [Efficiency - Latency, Throughput](src/1_HLDDesignComponents/0_SystemGlossaries/LatencyThroughput.md)                        | ALL                                |
+| :star: [Scalability](src/1_HLDDesignComponents/0_SystemGlossaries/Scalability.md)                                                   | ALL                                |
+| :star: [High Availability](src/1_HLDDesignComponents/0_SystemGlossaries/HighAvailability.md)                                        | ALL                                |
+| [Reliability - Fault Tolerance, Disaster Recovery](src/1_HLDDesignComponents/0_SystemGlossaries/FaultTolerance&DisasterRecovery.md) | ALL                                |
+| [Load Balancer](src/1_HLDDesignComponents/0_SystemGlossaries/LoadBalancer.md)                                                       | ALL                                |
+| :star: [Servers Cluster](src/1_HLDDesignComponents/0_SystemGlossaries/ServersCluster.md)                                            | `Data Stores` or `Message Brokers` |
+| :star: [Event Driven Architecture](src/1_HLDDesignComponents/0_SystemGlossaries/EventDrivenArchitecture.md)                         | `Message Brokers`                  |
+| :star: [ACID Properties of the Transaction](src/1_HLDDesignComponents/0_SystemGlossaries/ACIDPropertyTransaction.md)                | `Data Stores`                      |
+| :star: [CAP Theorem of the Distributed Systems](src/1_HLDDesignComponents/0_SystemGlossaries/CAPTheorem.md)                         | `Data Stores`                      |
+| :star: [Replication & Data Consistency](src/1_HLDDesignComponents/0_SystemGlossaries/ReplicationAndDataConsistency.md)              | `Data Stores`                      |
+| [Atomicity](src/1_HLDDesignComponents/0_SystemGlossaries/Atomicity.md)                                                              | `Data Stores`                      |
+| [Durability](src/1_HLDDesignComponents/0_SystemGlossaries/Durability.md)                                                            | `Data Stores`                      |
+| [Content Delivery Network (CDN)](src/1_HLDDesignComponents/0_SystemGlossaries/CDNs.md)                                              | `Static Content`                    |
 
 This repo contains the various system design components info, questions and solutions.
 - :star: [AWS Components](src/2_AWSComponents)
-- :star: [System Design Glossaries](src/1_HLDDesignComponents/0_SystemGlossaries/README.md)
-- [System Estimation Tips](src/1_HLDDesignComponents/SystemEstimationTips.md)
+- :star: [System Estimation Tips](src/1_HLDDesignComponents/SystemEstimationTips.md)
 - [System Design Tips](src/1_HLDDesignComponents/SystemDesignTips.md)
 - [MicroServices - Modern SOA Architecture](src/1_HLDDesignComponents/1_MicroServicesSOA)
+- [Other Glossaries](src/1_HLDDesignComponents/0_SystemGlossaries/README.md)
 
 # [Message Brokers](src/1_HLDDesignComponents/4_MessageBrokers)
 Message brokers are used to decouple & enable [Event Driven Architectures](src/1_HLDDesignComponents/0_SystemGlossaries/EventDrivenArchitecture.md) i.e. communicate the events & pass the data between [microservices](src/1_HLDDesignComponents/1_MicroServicesSOA).

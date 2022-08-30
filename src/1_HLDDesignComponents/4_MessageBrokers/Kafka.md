@@ -263,6 +263,11 @@ Example
 - The Kafka Connector API connects Kafka topics to applications.
 - This opens up possibilities for constructing and managing the operations of producers and consumers, as well as establishing reusable links between these solutions. A connector, for example, may capture all database updates and ensure that they are made available in a Kafka topic.
 
+## Metadata Request
+- The producer sends a Metadata request with a list of topics to one of the brokers in the broker-list you supplied when configuring the producer.
+- The broker responds with a list of partitions in those topics and the leader for each partition. 
+- The producer caches this information and knows where to redirect its produce messages.
+
 # [Estimation - How to decide number of partitions in Kafka?](https://www.confluent.io/blog/how-choose-number-topics-partitions-kafka-cluster/)
 
 [Kafka cluster size calculator](https://docs.google.com/spreadsheets/d/1a3uIa8TTRLlN6HTtMzPPqf8p5j5OxflJuAyff-uHLgk/edit?usp=sharing)

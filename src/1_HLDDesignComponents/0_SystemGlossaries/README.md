@@ -1,22 +1,4 @@
 
-# Key Characteristics of Distributed Systems
-
-| Basis                                                                                  | Applicable Components              |
-|----------------------------------------------------------------------------------------|------------------------------------|
-| :star: [Efficiency - Latency, Throughput](LatencyThroughput.md)                        | ALL                                |
-| :star: [Scalability](Scalability.md)                                                   | ALL                                |
-| :star: [High Availability](HighAvailability.md)                                        | ALL                                |
-| [Reliability - Fault Tolerance, Disaster Recovery](FaultTolerance&DisasterRecovery.md) | ALL                                |
-| [Load Balancer](LoadBalancer.md)                                                       | ALL                                |
-| :star: [Servers Cluster](ServersCluster.md)                                            | `Data Stores` or `Message Brokers` |
-| :star: [Event Driven Architecture](EventDrivenArchitecture.md)                         | `Message Brokers`                  |
-| :star: [ACID Properties of the Transaction](ACIDPropertyTransaction.md)                | `Data Stores`                      |
-| :star: [CAP Theorem of the Distributed Systems](CAPTheorem.md)                         | `Data Stores`                      |
-| :star: [Replication & Data Consistency](ReplicationAndDataConsistency.md)              | `Data Stores`                      |
-| [Atomicity](Atomicity.md)                                                              | `Data Stores`                      |
-| [Durability](Durability.md)                                                            | `Data Stores`                      |
-| [Content Delivery Network (CDN)](CDNs.md)                                              | `Static Content`                    |
-
 # [Language Agnostic](https://en.wikipedia.org/wiki/Language-agnostic)
 - We should design the system considering agnostic feature (Language agnostic, AWS agnostic etc.) into the consideration.
 - Language-agnostic programming or scripting (also called language-neutral, language-independent, or cross-language) is a software development paradigm where a particular language is chosen because of its appropriateness for a particular task (taking into consideration all factors, including ecosystem, developer skill-sets, performance, etc.), and not purely because of the skill-set available within a development team.
