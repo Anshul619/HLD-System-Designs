@@ -16,17 +16,23 @@
 
 | Storage                            | [Latency](https://github.com/donnemartin/system-design-primer#latency-numbers-every-programmer-should-know) | Remarks                     |
 |------------------------------------|-------------------------------------------------------------------------------------------------------------|-----------------------------|
+| :star: Read 1 MB sequentially from memory | 250 us (`4 GB/sec`)                                                                                           | ~`4 times faster than SSD`  |
+| :star: Read 1 MB sequentially from SSD    | 1 ms (`1 GB/sec`)                                                                                             | ~`30 times faster than HDD` |
+| Read 1 MB sequentially from HDD    | 30 ms (30 MB/sec)                                                                                           | -                           |
 | Mutex lock/unlock                  | 25 ns                                                                                                       | -                           |
 | RAM/Main Memory reference   | 100 ns                                                                                                      |                             |
-| :star: Read 1 MB sequentially from memory | 250 us (`4 GB/sec`)                                                                                           | ~`4 times faster than SSD`  |
 | SSD Reference               | 50 us                                                                                                       |                             |
-| :star: Read 1 MB sequentially from SSD    | 1 ms (`1 GB/sec`)                                                                                             | ~`30 times faster than HDD` |
 | HDD seek                    | 10 ms                                                                                                       | -                           |
-| Read 1 MB sequentially from HDD    | 30 ms (30 MB/sec)                                                                                           | -                           |
 
 Handy Metrics:
 - `2,000 round trips per second within a data center`.
 - `6-7 world-wide round trips per second`.
+
+### Example REST API
+
+Client (India) & Server (UK), Simple REST API deployed on AWS.
+- `870ms` - Read data from database. 
+- `160ms` (5x faster) - Read data from [redis](3_DatabaseComponents/Redis).
 
 ## Size Calculation (Storage, RAM etc.)
 
