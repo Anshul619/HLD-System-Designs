@@ -119,7 +119,7 @@
 - Based on configured replication factor (`replication.factor`), the number of followers would be decided.
 - Example - 3 replication factor means there would be 1 leader and 2 followers.
 
-### In-Sync Replicas
+### In-Sync Replicas (ISR)
 - An in-sync replica (ISR) is a broker that has the latest data for a given partition. 
   - A leader is always an in-sync replica. 
   - A follower is an in-sync replica only if it has fully caught up to the partition it’s following. 
@@ -127,6 +127,7 @@
 - `Read requests on the partition, would be handled by in-sync replicas`.
 - The message is considered committed to the log only when all in-sync replicas have the message. 
   - Accordingly, ack is sent to the producer.
+- The number of [brokers](#broker--ie-server-) should be greater than the `minimum in-sync replica size` (i.e. at least 3).
 
 ![img.png](https://accu.org/journals/overload/28/159/kozlovski/2.png)
 
@@ -301,7 +302,17 @@ Parameter | Title                           | More Description                  
 - LinkedIn has 4 data centers in US ( texas, virginnia, oregon etc. )
 - LinkedIn has separate kafka clusters in every data center. ( for high scalability, disaster recovery etc. )
 
+## Kafka Cluster (with min. nodes), for high availability
+So, if you wish to design a Kafka cluster that can tolerate one planned and one unplanned failure, you should consider the following requirements:
+- A minimum in-sync replicas of 2.
+- A replication factor of 3 for topics.
+- At least 3 Kafka brokers, each running on different nodes. 
+- Nodes spread across three availability zones.
+
 # [Kafka vs Others](KafkaVsRabbitMQVsSQSVsSNS.md)
+
+# Kafka Sample Apps
+- [Designing and testing a highly available Kafka cluster on Kubernetes (without zookeeper)](https://learnk8s.io/kafka-ha-kubernetes)
 
 # References
 - [Kafka official documentation](https://kafka.apache.org/documentation/#theproducer)
