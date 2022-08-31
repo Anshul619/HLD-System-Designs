@@ -1,8 +1,8 @@
 
 # Introduction
-- A distributed, RESTful modern search and analytics engine based on [Apache Lucene](../ApacheLucene.md).
-- Data is stored in the form of `JSONs`, in ElasticSearch.
-- We can only interact with elastic search through REST API.
+- A distributed, RESTful modern search and analytics engine based on [Apache Lucene](ApacheLucene.md).
+- In ElasticSearch, data is stored in the form of `JSONs`, .
+- We can only interact with ElasticSearch through REST APIs.
 - Main Use Cases are `full-text-search`, `logs-analysis` ( ELK ) etc.
 
 # Key Features of ElasticSearch
@@ -14,27 +14,15 @@
 - Unstructured etc.
 
 ## REST APIs (JSON based)
+- [Search APIs](https://www.elastic.co/guide/en/elasticsearch/reference/current/search.html) (`GET /my-index-000001/_search`)
 - Document APIs
-- Search APIs
 - Aggregation APIs
-- Index APIs
+- Index APIs (`GET /_cat/indices`)
 - Cluster APIs
-
-## Inverted indexes and Index Terms
-- Internally, ElasticSearch stores data in inverted indexes ( term and documents mapped to it ).
-- The inverted index maps `terms` to `documents` (and possibly positions in the documents) containing the term.
-- Using inverted indexes, we can efficiently find documents given term prefixes.
-  - For example - find all documents, starting with `c`.
-
-![img.png](assests/inverted_indexes.png)
 
 ## [ElasticSearch Cluster](ElasticSearchCluster.md)
 
-## What is tokenizer in Elasticsearch?
-- Tokenizers are used to generate the `tokens from a text string`. 
-- It breaks down the text string into tokens where it finds whitespace or other punctuation symbols.
-
-# [GraphQL with ElasticSearch](ESWithGraphQL.md)
+# [GraphQL with ElasticSearch](ElasticSearchWithGraphQL.md)
 
 # Installation Methods
 - [Docker ELK](https://github.com/deviantony/docker-elk)
