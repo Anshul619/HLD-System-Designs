@@ -19,3 +19,6 @@
 - The TPS includes a message entry and a message, plus a user database access.
 - A transaction might have mutiple requests. Hence, QPS is the subset of TPS.
 - For example - `5 transactions per second ( 5 TPS )`.
+
+# References
+- [What is TPS, what is QPS, and what is the difference?](https://topic.alibabacloud.com/a/what-is-tps-what-is-qps-and-what-is-the-difference-_-internet_2_60_20293740.html)

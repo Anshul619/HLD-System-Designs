@@ -23,7 +23,7 @@ Relational databases store data in rows and columns.
 
 # NoSQL - Intro, Different NoSQL types
 
-![img.png](assests/NoSQLDifferentTypes.png)
+![img.png](assests/NoSQL-DifferentDBtypes.png)
 
 ## Key-Value Stores 
 - Data is stored in an array of key-value pairs. 
