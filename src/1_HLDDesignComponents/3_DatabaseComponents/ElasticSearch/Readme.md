@@ -1,9 +1,10 @@
 
 # Introduction
 - A distributed, RESTful modern search and analytics engine based on [Apache Lucene](ApacheLucene.md).
-- In ElasticSearch, data is stored in the form of `JSONs`, .
-- We can only interact with ElasticSearch through REST APIs.
-- Main Use Cases are `full-text-search`, `logs-analysis` ( ELK ) etc.
+- In ElasticSearch, data is stored in the form of `JSONs`.
+- We can only interact with ElasticSearch through [REST APIs](../../2_APITechOptions/REST.md).
+- ElasticSearch can be deployed using `Amazon OpenSearch` service, on [AWS](../../../2_AWSComponents).
+- ElasticSearch is [paid and not open-sourced](https://www.elastic.co/pricing/).
 
 # Key Features of ElasticSearch
 
@@ -21,6 +22,12 @@
 - Cluster APIs
 
 ## [ElasticSearch Cluster](ElasticSearchCluster.md)
+
+## Real world usages of ElasticSearch
+- `Search - Full-text, Partial etc.`
+- [Logs-analysis with ELK](../../7_MonitoringTools/ELK.md)
+- [Dashboard, Visualize data, Metrics etc. with ELK](../../7_MonitoringTools/ELK.md)
+- [Read about usages of Lucene](ApacheLucene.md#real-world-usages-of-apache-lucene)
 
 # [GraphQL with ElasticSearch](ElasticSearchWithGraphQL.md)
 
