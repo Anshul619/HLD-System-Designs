@@ -4,6 +4,7 @@
 - In ElasticSearch, data is stored in the form of `JSONs`.
 - We can only interact with ElasticSearch through [REST APIs](../../2_APITechOptions/REST.md).
 - ElasticSearch can be deployed using [Amazon OpenSearch](../../../2_AWSComponents/6_DatabaseServices/AmazonOpenSearch.md) service, on [AWS](../../../2_AWSComponents).
+- For data analysis, it operates alongside Kibana, and Logstash to form the [ELK stack](../../7_MonitoringTools/ELK.md).
 - ElasticSearch is [paid and not open-sourced](https://www.elastic.co/pricing/).
 
 # Key Features of ElasticSearch
@@ -22,6 +23,12 @@
 - Cluster APIs
 
 ## [ElasticSearch Cluster](ElasticSearchCluster.md)
+
+## Data Storage Architecture
+- Settings, index mapping, alternative cluster states, and other metadata are saved to Elasticsearch files outside the [Lucene](ApacheLucene.md) environment.
+- In Lucene, data updates are resource-intensive operations, because segments are immutable, and every commit creates a new segment, then segments are merged automatically. 
+- To avoid this excessive I/O, Elasticsearch creates dedicated transactional index logs, preventing low-level Lucene commits for each indexing procedure. 
+- These logs can also be used for recovery in case of data corruption.
 
 ## Real world usages of ElasticSearch
 - `Search - Full-text, Partial etc.`
