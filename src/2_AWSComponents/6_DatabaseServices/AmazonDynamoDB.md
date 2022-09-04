@@ -5,15 +5,14 @@
 - With DynamoDB, `you can offload the administrative burden of operating and scaling a highly available distributed database cluster`, while paying a low price for only what you use.
 
 ## Key Features
-- Managed NoSQL database
 - Provisioned Throughput
-- Fast, predictable performance
-- JSON Support
+- Fast, predictable performance (`single-digit millisecond performance`)
 - [Partitions and data distribution](#partitionssharding-and-data-distribution)
 - [Global tables](#amazon-dynamodb---global-tableshttpsawsamazoncomdynamodbglobal-tables)
 - [DynamoDB Accelerator (DAX)](https://aws.amazon.com/dynamodb/dax/) provides caching capabilities for accessing data in microseconds.
 - [PartiQL - a SQL-compatible query language for Amazon DynamoDB](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/ql-reference.html)
 - [Time to Live (TTL) supported for the data](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/TTL.html)
+- JSON Support
 - Items size up to 400 KB
 
 ## Automated Storage Scaling

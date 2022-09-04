@@ -28,7 +28,7 @@ Relational databases store data in rows and columns.
 ## Key-Value Stores 
 - Data is stored in an array of key-value pairs. 
 - The `key` is an attribute name which is linked to a `value`. 
-- Well-known key-value stores include [AWS Dynamo DB](../../2_AWSComponents/6_DatabaseServices/AmazonDynamoDB.md), [Redis](Redis) etc.
+- Well-known key-value stores include [Amazon Dynamo DB](../../2_AWSComponents/6_DatabaseServices/AmazonDynamoDB.md), [Redis](Redis) etc.
 
 ## Document Databases 
 - In these databases, data is stored in documents (instead of rows and columns in a table) and these documents are grouped together in collections. 
@@ -54,4 +54,4 @@ Relational databases store data in rows and columns.
 - [Scaling Your Amazon RDS Instance Vertically and Horizontally](https://aws.amazon.com/blogs/database/scaling-your-amazon-rds-instance-vertically-and-horizontally/)
 - [10 use cases where NoSQL will outperform SQL](https://www.networkworld.com/article/2999856/10-use-cases-where-nosql-will-outperform-sql.html)
 - [Why is NoSQL faster than SQL?](https://softwareengineering.stackexchange.com/questions/175542/why-is-nosql-faster-than-sql)
-- [Why and How to Migrate from Apache Cassandra to Amazon DynamoDB - AWS Online Tech Talks](https://www.youtube.com/watch?v=WuDGvG_4kC8)
+- [Why and How to Migrate from Apache Cassandra to Amazon DynamoDB - AWS Online Tech Talks?](https://www.youtube.com/watch?v=WuDGvG_4kC8)
