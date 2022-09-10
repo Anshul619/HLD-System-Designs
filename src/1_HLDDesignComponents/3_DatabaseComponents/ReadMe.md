@@ -1,7 +1,7 @@
 
 # SQL vs NoSQL
 
-Basis                                 | SQL                                                                                                                                                                                                                                                                                                              | NoSQL                                                                                                                                                                 |
+Basis                                 | SQL                                                                                                                                                                                                                                                                                                              | [NoSQL](NoSQL-Databases)                                                                                                                                                            |
 ---------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 Data Type | Normalized, Structured Data                                                                                                                                                                                                                                                                                      | Denormalized, Unstructured data                                                                                                                                       |
 Schema | `Fixed Schema`                                                                                                                                                                                                                                                                                                   | Dynamic Schema ( with hierarchical storage supported )                                                                                                                |                                                                                             |
@@ -22,32 +22,7 @@ Relational databases store data in rows and columns.
 - Some of the most popular relational databases are [AWS Aurora](../../2_AWSComponents/6_DatabaseServices/AmazonAurora/Readme.md), `Postgres`, `MySQL`, `Oracle`, `MS SQL Server`, `SQLite` and `MariaDB`.
 
 # NoSQL - Intro, Different NoSQL types
-
-![img.png](assests/NoSQL-DifferentDBtypes.drawio.png)
-
-## Key-Value Stores 
-- Data is stored in an array of key-value pairs. 
-- The `key` is an attribute name which is linked to a `value`. 
-- Well-known key-value stores include [Amazon Dynamo DB](../../2_AWSComponents/6_DatabaseServices/AmazonDynamoDB.md), [Redis](Redis) etc.
-
-## Document Databases 
-- In these databases, data is stored in documents (instead of rows and columns in a table) and these documents are grouped together in collections. 
-- Each document can have an entirely different structure. 
-- Document databases include [MongoDB](MongoDB), [ElasticSearch](ElasticSearch), [CouchDB](https://couchdb.apache.org) etc.
-
-## Wide-Column Databases 
-- Instead of `tables`, we have column families in column databases, which are containers for rows. 
-- Examples - [Apache Casandra](Casandra.md), [Apache HBase](https://hbase.apache.org) etc.
-
-## Graph Databases 
-- These databases are used to store data whose relations are best represented in a graph ( like parent-child relationship of aadhaar etc.)
-- Data is saved in graph structures with nodes (entities), properties (information about the entities), and lines (connections between the entities).
-
-| Component                                                                     | Strength                                | Component Type                | Very Rough Throughput (QPS)                 | Latency | Pricing Model                                              |
-|-------------------------------------------------------------------------------|-----------------------------------------|-------------------------------|---------------------------------------------|----------------|------------------------------------------------------------|
-| [Amazon DynamoDB](6_DatabaseServices/AmazonDynamoDB.md)   | Predictable performance and cost        | NoSQL DB as a Service ( AWS ) | More than 20 million requests per second    | less than 10-20 ms | `AWS Managed Service`                                      |
-| [ElasticSearch](3_DatabaseComponents/ElasticSearch) | `Full-Text-Search`, `Logs-Analysis (ELK)` | NoSQL Search Engine           | -                                           |-| `Paid`                                                     |
-| [MongoDB](3_DatabaseComponents/MongoDB)             | -                                       | NoSQL DB                      | -                                           | -| `Open Source`                                              |
+- [Read here](NoSQL-Databases)
 
 # SQL - Different Databases
 

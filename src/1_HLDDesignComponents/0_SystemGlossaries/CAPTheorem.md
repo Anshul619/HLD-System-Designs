@@ -24,14 +24,14 @@ The PACELC theorem states that in a system that replicates data:
 
 ![img.png](assests/PACELC_Diagram.drawio.png)
 
-## DynamoDB and Cassandra
-- PA/EL systems - They choose availability over consistency when a partition occurs; otherwise, they choose lower latency.
+## DynamoDB & Cassandra
+- PA/EL systems - [DynamoDB](../../2_AWSComponents/6_DatabaseServices/AmazonDynamoDB.md) and [Cassandra](../3_DatabaseComponents/NoSQL-Databases/ApacheCasandra.md) choose availability over consistency when a partition occurs; otherwise, they choose lower latency.
 
-## BigTable and HBase
-- PC/EC - They will always choose consistency, giving up availability and lower latency.
+## HBase & BigTable
+- PC/EC - [HBase](../3_DatabaseComponents/NoSQL-Databases/ApacheHBase.md) & BigTable will always choose consistency, giving up availability and lower latency.
 
 ## MongoDB
-- PA/EC (default configuration) - In the case of a network partition, MongoDB chooses availability, but otherwise guarantees consistency.
+- PA/EC (default configuration) - In the case of a network partition, [MongoDB](../3_DatabaseComponents/NoSQL-Databases/MongoDB) chooses availability, but otherwise guarantees consistency.
 
 # Source(s) and further reading
 - [CAP Theorem](https://akshay-iyangar.github.io/system-design/grokking-system-design/system-design-basics/cap-theorem.html)

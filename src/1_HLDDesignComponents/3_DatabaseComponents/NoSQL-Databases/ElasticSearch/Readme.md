@@ -2,9 +2,9 @@
 # Introduction
 - A distributed, RESTful modern search and analytics engine based on [Apache Lucene](ApacheLucene.md).
 - In ElasticSearch, data is stored in the form of `JSONs`.
-- We can only interact with ElasticSearch through [REST APIs](../../2_APITechOptions/REST.md).
-- ElasticSearch can be deployed using [Amazon OpenSearch](../../../2_AWSComponents/6_DatabaseServices/AmazonOpenSearch.md) service, on [AWS](../../../2_AWSComponents).
-- For data analysis, it operates alongside Kibana, and Logstash to form the [ELK stack](../../7_MonitoringTools/ELK.md).
+- We can only interact with ElasticSearch through [REST APIs](../../../2_APITechOptions/REST.md).
+- ElasticSearch can be deployed using [Amazon OpenSearch](../../../../2_AWSComponents/6_DatabaseServices/AmazonOpenSearch.md) service, on [AWS](../../../../2_AWSComponents).
+- For data analysis, it operates alongside Kibana, and Logstash to form the [ELK stack](../../../7_MonitoringTools/ELK.md).
 - ElasticSearch is [paid and not open-sourced](https://www.elastic.co/pricing/).
 
 # Key Features of ElasticSearch
@@ -32,9 +32,9 @@
 
 ## Real world usages of ElasticSearch
 - `Search - Full-text, Partial etc.`
-- [Logs-analysis with ELK](../../7_MonitoringTools/ELK.md)
-- [Dashboard, Visualize data, Metrics etc. with ELK](../../7_MonitoringTools/ELK.md)
-- [Security, SIEM with ELK](../../7_MonitoringTools/ELK.md)
+- [Logs-analysis with ELK](../../../7_MonitoringTools/ELK.md)
+- [Dashboard, Visualize data, Metrics etc. with ELK](../../../7_MonitoringTools/ELK.md)
+- [Security, SIEM with ELK](../../../7_MonitoringTools/ELK.md)
 - [Read more about usages of Lucene](ApacheLucene.md#real-world-usages-of-apache-lucene)
 
 # Other Points

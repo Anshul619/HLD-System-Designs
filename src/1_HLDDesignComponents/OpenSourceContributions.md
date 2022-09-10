@@ -7,6 +7,6 @@
 | [gRPC](2_APITechOptions/gPRC.md)                                        | Google                                                                                |         |
 | ReactJS                                                                 | Facebook                                                                              |         |
 | [OpenSearch](../2_AWSComponents/6_DatabaseServices/AmazonOpenSearch.md) | Amazon                                                                                | -       |
-| [Apache Casandra](3_DatabaseComponents/Casandra.md)            | [Facebook](https://cassandra.apache.org/_/index.html)                                                                            | -       |
+| [Apache Casandra](3_DatabaseComponents/ApacheCasandra.md)            | [Facebook](https://cassandra.apache.org/_/index.html)                                                                            | -       |
 
 

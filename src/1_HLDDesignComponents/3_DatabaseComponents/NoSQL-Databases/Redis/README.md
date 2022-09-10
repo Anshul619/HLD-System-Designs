@@ -9,12 +9,12 @@
 - Redis is very fast. It can execute `100K queries per second`.
 - Since Redis uses in-memory for storage, it is very fast.
 - Mostly `O(1)` behavior, to get data from redis.
-- Generally, reading data from `Redis` is [5 times faster](../../SystemEstimationTips.md#latency-comparison-numbers) than reading it from `database`.
+- Generally, reading data from `Redis` is [5 times faster](../../../SystemEstimationTips.md#latency-comparison-numbers) than reading it from `database`.
 
 [![img.png](https://pbs.twimg.com/media/FMx3JZRUYAIWWKq?format=jpg&name=4096x4096)](https://www.youtube.com/watch?v=5TRFpFBccQM)
 
 ## Redis Transaction lock
-- Using [RedisTransaction](https://redis.io/docs/reference/patterns/distributed-locks/) lock, we can achieve [atomicity](../../0_SystemGlossaries/Atomicity.md) on the Redis operations (i.e. set/increase the key, add/remove elements from set, increase counter etc.).
+- Using [RedisTransaction](https://redis.io/docs/reference/patterns/distributed-locks/) lock, we can achieve [atomicity](../../../0_SystemGlossaries/Atomicity.md) on the Redis operations (i.e. set/increase the key, add/remove elements from set, increase counter etc.).
 
 ## [Multiple data types supported](https://redis.io/docs/manual/data-types/)
 
@@ -109,3 +109,4 @@ redis 127.0.0.1:6379> ZRANGEBYSCORE w3resourcelist 0 1000
 - [Redis Interview Questions & Answers](https://www.javatpoint.com/redis-interview-questions-and-answers)
 - [Top Redis Use Cases by Core Data Structure Types](https://scalegrid.io/blog/top-redis-use-cases-by-core-data-structure-types/)
 - [What are Redis master-slave and Redis clusters and the difference between them?](https://www.learnsteps.com/what-are-redis-master-slave-and-redis-clusters-and-the-difference-between-them/)
+- [Why Migrate a Dynomite Database to a Redis Enterprise Active-Active Database?](https://redis.com/blog/why-migrate-dynomite-database-to-redis-enterprise-active-active-database/)

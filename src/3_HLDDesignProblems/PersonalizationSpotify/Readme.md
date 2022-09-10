@@ -4,19 +4,19 @@
 # Why Casandra?
 
 ## Scale Horizontally
-- [Casandra scales horizontally](../../1_HLDDesignComponents/3_DatabaseComponents/Casandra.md#scale-horizontally)
+- [Casandra scales horizontally](../../1_HLDDesignComponents/3_DatabaseComponents/ApacheCasandra.md#scale-horizontally)
 
 ## Low Latency, Fast Writes
-- [Casandra offers low-latency with fast writes](../../1_HLDDesignComponents/3_DatabaseComponents/Casandra.md#low-latency-fast-writes)
+- [Casandra offers low-latency with fast writes](../../1_HLDDesignComponents/3_DatabaseComponents/ApacheCasandra.md#low-latency-fast-writes)
 - In fact in our usage of Cassandra for personalization, writes are typically an order of magnitude faster than reads.
 
 ## Support replication – preferably cross-site ( EU data center and NA data center)
-- [Casandra supports cross-site replication](../../1_HLDDesignComponents/3_DatabaseComponents/Casandra.md#support-replication---cross-site-data-centers)
+- [Casandra supports cross-site replication](../../1_HLDDesignComponents/3_DatabaseComponents/ApacheCasandra.md#support-replication---cross-site-data-centers)
    
 ## Others  
 - Have the ability to load bulk and streaming data from Crunch and Storm respectively
 - Have a decent ability to model different data schemas for different use-cases of entity metadata since we didn’t want to invest in yet another solution for EMS as that would have increased our operational cost.
-- [Casandra supports bulk-support replication](../../1_HLDDesignComponents/3_DatabaseComponents/Casandra.md#bulk-import-option---hdfs-hadoop)
+- [Casandra supports bulk-support replication](../../1_HLDDesignComponents/3_DatabaseComponents/ApacheCasandra.md#good-integration-with-open-source-softwares-like-hadoop-spark-hive-hdfs-etc)
 
 # Casandra Column Families
 

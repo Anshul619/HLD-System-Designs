@@ -11,10 +11,10 @@
 ## Design [Microservice Based architecture](1_MicroServicesSOA) ([Event Driven Architecture](0_SystemGlossaries/EventDrivenArchitecture.md), loosely coupled architecture)
 
 ## Identify Read/Write Ratio of the apis/queries
-- If it's a READ heavy microservice, the best decision would be to use [Redis](3_DatabaseComponents/Redis) or `multi-read database instances`.
+- If it's a READ heavy microservice, the best decision would be to use [Redis](3_DatabaseComponents/NoSQL-Databases/Redis) or `multi-read database instances`.
 - If it's a WRITE heavy microservice ( `HIGH throughput` ), the best decision would be to use either [Kafka](4_MessageBrokers/Kafka.md) ( as message broker ) or [DynamoDB](../2_AWSComponents/6_DatabaseServices/AmazonDynamoDB.md) ( as data store ).
 
-## Use [Redis](3_DatabaseComponents/Redis) for caching layer
+## Use [Redis](3_DatabaseComponents/NoSQL-Databases/Redis) for caching layer
 - Redis improves the read throughput of the system.
 - Putting a cache between application servers and a database is a common mechanism for reducing the read load on the database, which, in turn, may allow resources to be used to support more writes.
 - Caches can also improve latency.

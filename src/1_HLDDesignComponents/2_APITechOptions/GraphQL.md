@@ -8,7 +8,7 @@
 
 ![img.png](assests/graphql.png)
 
-# [GraphQL with ElasticSearch](../3_DatabaseComponents/ElasticSearch/ElasticSearchWithGraphQL.md)
+# [GraphQL with ElasticSearch](../3_DatabaseComponents/NoSQL-Databases/ElasticSearch/ElasticSearchWithGraphQL.md)
 
 # References
 - [GraphQL vs REST APIs | What's the Best Kind of API?](https://www.youtube.com/watch?v=F0_pkxQMZnc)

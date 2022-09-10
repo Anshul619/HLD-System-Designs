@@ -1,6 +1,6 @@
 
 # Amazon OpenSearch
-- Full-Managed [ElasticSearch](../../1_HLDDesignComponents/3_DatabaseComponents/ElasticSearch) service.
+- Full-Managed [ElasticSearch](../../1_HLDDesignComponents/3_DatabaseComponents/NoSQL-Databases/ElasticSearch) service.
 - Amazon OpenSearch Service makes it easy for you to perform interactive log analytics, real-time application monitoring, website search, and more.
 - Amazon OpenSearch Service is the successor to Amazon Elasticsearch Service, and offers the latest versions of OpenSearch, support for 19 versions of Elasticsearch (1.5 to 7.10 versions), as well as visualization capabilities powered by OpenSearch Dashboards and Kibana (1.5 to 7.10 versions).
 - Amazon OpenSearch Service currently has tens of thousands of active customers with hundreds of thousands of clusters under management processing hundreds of trillions of requests per month.

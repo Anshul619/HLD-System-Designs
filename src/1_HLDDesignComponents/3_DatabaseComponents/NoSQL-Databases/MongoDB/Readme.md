@@ -17,7 +17,7 @@ MongoDB is more suitable to manage NoSQL data requiring create, read, update and
 
 ## MQL (Mongo Query Language)
 - MongoDB has a rich query language called MQL. It supports a wide variety of modern native drivers as well as a shell.
-- MongoDB supports [fully ACID compliant transactions](../../0_SystemGlossaries/ACIDPropertyTransaction.md).
+- MongoDB supports [fully ACID compliant transactions](../../../0_SystemGlossaries/ACIDPropertyTransaction.md).
 
 # References
 - [Cassandra vs MongoDB Comparison](https://www.mongodb.com/compare/cassandra-vs-mongodb)

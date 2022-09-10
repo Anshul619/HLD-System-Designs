@@ -5,7 +5,7 @@
 - This makes writes (throughput) generally very fast.
 
 # Supported Databases
-- [Casandra](../3_DatabaseComponents/Casandra.md)
+- [Casandra](../3_DatabaseComponents/ApacheCasandra.md)
 - [Kafka](../4_MessageBrokers/Kafka.md)
 
 # Reference

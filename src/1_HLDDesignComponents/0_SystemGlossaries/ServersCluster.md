@@ -9,12 +9,12 @@
 | Tech                                                                                                | Remarks                                                              |
 |-----------------------------------------------------------------------------------------------------|----------------------------------------------------------------------|
 | [Kafka Cluster](../4_MessageBrokers/Kafka.md)                                                       | Cluster of Topics ( High-Throughput MQ)                              |                     
-| [Redis Cluster](../3_DatabaseComponents/Redis/RedisCluster.md)                                      | Cluster of Redis Nodes ( In-Memory Cache )                           |
-| [ElasticSearch Cluster](../3_DatabaseComponents/ElasticSearch/ElasticSearchCluster.md)              | Cluster of JSON Data, Indexes etc.                                   |
+| [Redis Cluster](../3_DatabaseComponents/NoSQL-Databases/Redis/RedisCluster.md)                                      | Cluster of Redis Nodes ( In-Memory Cache )                           |
+| [ElasticSearch Cluster](../3_DatabaseComponents/NoSQL-Databases/ElasticSearch/ElasticSearchCluster.md)              | Cluster of JSON Data, Indexes etc.                                   |
 | [OpenSearch Cluster](../../2_AWSComponents/6_DatabaseServices/AmazonOpenSearch.md)                  | Cluster of JSON Data, Indexes etc.                                   |
 | [Amazon Aurora Clusters](../../2_AWSComponents/6_DatabaseServices/AmazonAurora/AuroraDBClusters.md) | Cluster of DB instances, across Multi-AZs ( One cluster per region ) |
 | [Amazon Elastic Cache Cluster](../../2_AWSComponents/6_DatabaseServices/AmazonElasicCache.md)       | Cluster of Redis Nodes, across Multi-AZs ( One cluster per region )  |
 | [Kubernates Cluster](../6_DevOps/Kubernates.md)                                                     | Cluster of Containers                                                |
-| [Casandra Cluster](../3_DatabaseComponents/Casandra.md)                                             | Cluster of wide-columns DBs                                          |
+| [Casandra Cluster](../3_DatabaseComponents/NoSQL-Databases/ApacheCasandra.md)                                             | Cluster of wide-columns DBs                                          |
 
 ![img.png](assests/server_cluster_img.png)
