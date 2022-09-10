@@ -3,14 +3,14 @@
 - Kafka can process a large amount of data in a short amount of time (`1 million messages/sec`).
 - It also has low latency, making it possible to process data in real-time.
 - Kafka is based on [Publish-Subscriber Model](../4_MessageBrokers#publisher-subscriber-model-pubsub). And can be used for [Event-Driven Architecture](../0_SystemGlossaries/EventDrivenArchitecture.md).
-- Messages ( events ) in the Kafka are immutable and can't be changed once it's pushed ( due to `Kafka's log based queue nature` ).
+- Messages ( events ) in the Kafka are immutable and can't be changed once it's pushed ( due to [log based queue nature](../0_SystemGlossaries/AppendOnlyDBStorages.md) ).
 - [Amazon Managed Streaming for Apache Kafka (MSK)](https://aws.amazon.com/msk/) can be used to deploy `Kafka` on [AWS](../../2_AWSComponents).
 
 # [Why Kafka is so fast?](https://twitter.com/alexxubyte/status/1506663791961919488/photo/1)
 - Kafka achieves low latency message delivery through `Sequential I/O and Zero Copy Principle`. 
 - The same techniques are commonly used in many other messaging/streaming platforms.
 - Kafka is based on Log Based Queue
-  - :star: `Messages are persisted to append-only log files by the broker`.
+  - :star: Messages are persisted to [append-only log files](../0_SystemGlossaries/AppendOnlyDBStorages.md) by the broker.
   - Producers are appending these log files ( `sequential write` ) & consumers are reading a range of these files ( `sequential reads` ).
 
 ![img.png](https://pbs.twimg.com/media/FOi-gjZVgAQdG9B?format=jpg&name=large)

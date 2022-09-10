@@ -49,8 +49,6 @@ Message brokers are used to decouple & enable [Event Driven Architectures](src/1
 | :star: [gPRC](src/1_HLDDesignComponents/2_APITechOptions/gPRC.md) | Used for communication b/w [microservices](src/1_HLDDesignComponents/1_MicroServicesSOA) or to collect data from IoT devices. It is relatively faster than REST or GraphQL. |
 | [GraphQL](src/1_HLDDesignComponents/2_APITechOptions/GraphQL.md) | Used for public API with customizable request body or to aggregate internal data from multiple sources in a public API.         |
 
-
-
 # [In Memory Cache](src/1_HLDDesignComponents/3_DatabaseComponents/Redis)
 - :star: [Redis](src/1_HLDDesignComponents/3_DatabaseComponents/Redis)
 - [Redis vs MemCache](src/1_HLDDesignComponents/3_DatabaseComponents/Redis/RedisVsMemCache.md)
@@ -58,6 +56,7 @@ Message brokers are used to decouple & enable [Event Driven Architectures](src/1
 # HLD - Design Problems
 - :star: [Zomoto HLD Design](src/3_HLDDesignProblems/ZomatoDesign)
 - :star: [Design a system that scales to million of users on AWS](src/2_AWSComponents/0_AWSDesigns/DesignScalableSystemWithRDMS)
+- :star: [Personalization at Spotify using Casandra](src/3_HLDDesignProblems/PersonalizationSpotify)
 - [Twillo Send Message API](src/3_HLDDesignProblems/TwilloSendMessageAPI)
 - [Rate Limiter API](src/3_HLDDesignProblems/RateLimiterAPI)
 - [Notification System](src/3_HLDDesignProblems/NotificationSystem)
