@@ -1,4 +1,3 @@
-
 # Introduction
 - A distributed, RESTful modern search and analytics engine based on [Apache Lucene](ApacheLucene.md).
 - In ElasticSearch, data is stored in the form of `JSONs`.
