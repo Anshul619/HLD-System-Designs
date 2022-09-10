@@ -19,7 +19,7 @@
 
 ![img.png](assests/Kafka-Architecture.drawio.png)
 
-# Real world usages of Kafka
+# Domain wise use cases of Kafka
 
 ## As an events/message broker in [Event-Driven Architecture](../0_SystemGlossaries/EventDrivenArchitecture.md)
 - Use Kafka when your application has a High Throughput ( around `1 million messages/sec`), i.e. application has to process a large volume of messages, event driven services etc.
@@ -34,7 +34,8 @@
 - Use Kafka when the event stream needs to process data in multi-stage pipelines, the pipelines can generate graphs of the real-time data flows, thus providing real-time monitoring of traffic in the pipelines. 
 - Example - Video streaming in YouTube etc.
 
-## Other Examples
+# :star: Real world use cases of Kafka
+- [Personalization at Spotify using Cassandra](https://engineering.atspotify.com/2015/01/personalization-at-spotify-using-cassandra/)
 - [TwilloSendMessageAPI](../../3_HLDDesignProblems/TwilloSendMessageAPI)
 
 # Top Features of Kafka

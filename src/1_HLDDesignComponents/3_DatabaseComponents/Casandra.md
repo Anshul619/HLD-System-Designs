@@ -39,6 +39,9 @@
 - Using cqlsh, you can define a schema, insert data, and execute a query.
 - `Cassandra does not support joins or subqueries` and therefore requires a developer to denormalize the data or duplicate data for efficient access.
 
+# :star: Real world use cases of Casandra
+- [Personalization at Spotify using Cassandra](https://engineering.atspotify.com/2015/01/personalization-at-spotify-using-cassandra/)
+
 # References
 - [Redis vs Apache Cassandra: Choosing Between These Real-Time Databases](https://www.upsolver.com/blog/redis-vs-apache-cassandra-choosing-between-these-real-time-databases)
 - [Golang Cassandra Example](https://golangdocs.com/golang-cassandra-example)
