@@ -45,9 +45,9 @@ Relational databases store data in rows and columns.
 
 | Component                                                                     | Strength                                | Component Type                | Very Rough Throughput (QPS)                 | Latency | Pricing Model                                              |
 |-------------------------------------------------------------------------------|-----------------------------------------|-------------------------------|---------------------------------------------|----------------|------------------------------------------------------------|
-| [Amazon DynamoDB](src/2_AWSComponents/6_DatabaseServices/AmazonDynamoDB.md)   | Predictable performance and cost        | NoSQL DB as a Service ( AWS ) | More than 20 million requests per second    | less than 10-20 ms | `AWS Managed Service`                                      |
-| [ElasticSearch](src/1_HLDDesignComponents/3_DatabaseComponents/ElasticSearch) | `Full-Text-Search`, `Logs-Analysis (ELK)` | NoSQL Search Engine           | -                                           |-| `Paid`                                                     |
-| [MongoDB](src/1_HLDDesignComponents/3_DatabaseComponents/MongoDB)             | -                                       | NoSQL DB                      | -                                           | -| `Open Source`                                              |
+| [Amazon DynamoDB](6_DatabaseServices/AmazonDynamoDB.md)   | Predictable performance and cost        | NoSQL DB as a Service ( AWS ) | More than 20 million requests per second    | less than 10-20 ms | `AWS Managed Service`                                      |
+| [ElasticSearch](3_DatabaseComponents/ElasticSearch) | `Full-Text-Search`, `Logs-Analysis (ELK)` | NoSQL Search Engine           | -                                           |-| `Paid`                                                     |
+| [MongoDB](3_DatabaseComponents/MongoDB)             | -                                       | NoSQL DB                      | -                                           | -| `Open Source`                                              |
 
 # SQL - Different Databases
 
