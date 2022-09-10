@@ -14,3 +14,10 @@ MongoDB is better suited for high write and update throughput operations without
 MongoDB is more suitable to manage NoSQL data requiring create, read, update and delete (CRUD) operations. 
 - It offers high scalability, reliability, and performance. 
 - MongoDB also uses text-based indexes for full-text queries, but the search is slow, and the search server does not provide tokenizers and analyzers like [Elasticsearch](../ElasticSearch) does.
+
+## MQL (Mongo Query Language)
+- MongoDB has a rich query language called MQL. It supports a wide variety of modern native drivers as well as a shell.
+- MongoDB supports [fully ACID compliant transactions](../../0_SystemGlossaries/ACIDPropertyTransaction.md).
+
+# References
+- [Cassandra vs MongoDB Comparison](https://www.mongodb.com/compare/cassandra-vs-mongodb)

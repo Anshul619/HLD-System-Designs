@@ -59,6 +59,7 @@ Service| Type                                                                  |
 [Amazon EMR](4_ComputeServices/AmazonEMR.md) | Other Service                                                         | Fully Managed Service for [Apache Spark](../1_HLDDesignComponents/8_BigDataTools/ApacheSpark.md)                                                                                  |
 [Amazon Cognito](9_OtherServices/AmazonCognito.md) |Other Service | Users login/signin service.                                                                                                                                                       |
 [AWS Private Link](https://aws.amazon.com/privatelink) |[Networking & Content Delivery Service](1_NetworkingAndContentDelivery)| Establish private connectivity between [Amazon VPC](2_SecurityAndIdentityServices/AmazonVPC.md) and services hosted on AWS or on-premises, without exposing data to the internet. |
+[Amazon KeySpaces](6_DatabaseServices/AmazonKeySpaces.md) |[Database Service](6_DatabaseServices) | Fully managed service for [Apache Casandra](../1_HLDDesignComponents/3_DatabaseComponents/Casandra.md)                                                                            |
 
 * [Utility services](https://stackoverflow.com/questions/33125790/why-some-services-are-called-aws-xxx-and-the-others-amazon-xxx) are prefixed with `AWS`, while standalone services are prefixed by `Amazon`.
 
