@@ -32,6 +32,15 @@ Message brokers are used to decouple & enable [Event Driven Architectures](src/1
 - [Amazon SNS](src/2_AWSComponents/5_MessageBrokerServices/AmazonSNS.md)
 - [Active MQ](src/1_HLDDesignComponents/4_MessageBrokers/ActiveMQ.md)
 
+# Various Databases
+- :star: [SQL & NoSQL databases](src/1_HLDDesignComponents/3_DatabaseComponents)
+- :star: [Redis](src/1_HLDDesignComponents/3_DatabaseComponents/Redis)
+- :star: [ElasticSearch](src/1_HLDDesignComponents/3_DatabaseComponents/ElasticSearch)
+- :star: [MongoDB](src/1_HLDDesignComponents/3_DatabaseComponents/MongoDB)
+- [Casandra](src/1_HLDDesignComponents/3_DatabaseComponents/Casandra.md)
+- [AeroSpike](src/1_HLDDesignComponents/3_DatabaseComponents/AeroSpike.md)
+- [Postgres](src/1_HLDDesignComponents/3_DatabaseComponents/PostgresQuery.md)
+
 # API Technology Options
 
 | API Option| Description                                                                                                                     |
@@ -40,14 +49,7 @@ Message brokers are used to decouple & enable [Event Driven Architectures](src/1
 | :star: [gPRC](src/1_HLDDesignComponents/2_APITechOptions/gPRC.md) | Used for communication b/w [microservices](src/1_HLDDesignComponents/1_MicroServicesSOA) or to collect data from IoT devices. It is relatively faster than REST or GraphQL. |
 | [GraphQL](src/1_HLDDesignComponents/2_APITechOptions/GraphQL.md) | Used for public API with customizable request body or to aggregate internal data from multiple sources in a public API.         |
 
-# [SQL & NoSQL databases](src/1_HLDDesignComponents/3_DatabaseComponents)
 
-| Component                                                               | Strength                                | Component Type                | Very Rough Throughput (QPS)                 | Latency | Pricing Model                                              |
-|-------------------------------------------------------------------------|-----------------------------------------|-------------------------------|---------------------------------------------|----------------|------------------------------------------------------------|
-| [MySQL](src/1_HLDDesignComponents/3_DatabaseComponents)                                | -                                       | SQL DB                        | 1000 concurrent requests ( 100 as default ) | [< 10ms ( to get a row from 1 million records )](https://www.quora.com/How-can-we-calculate-the-throughput-of-MySQL?share=1)| `Open Source` ( [RDS](src/2_AWSComponents/RDS.md) on AWS ) |
-| [DynamoDB](src/2_AWSComponents/6_DatabaseServices/AmazonDynamoDB.md) | Predictable performance and cost        | NoSQL DB as a Service ( AWS ) | More than 20 million requests per second    | less than 10-20 ms | `AWS Managed Service`                                      |
-| [ElasticSearch](src/1_HLDDesignComponents/3_DatabaseComponents/ElasticSearch)              | `Full-Text-Search`, `Logs-Analysis (ELK)` | NoSQL Search Engine           | -                                           |-| `Paid`                                                     |
-| [MongoDB](src/1_HLDDesignComponents/3_DatabaseComponents/MongoDB)                      | -                                       | NoSQL DB                      | -                                           | -| `Open Source`                                              |
 
 # [In Memory Cache](src/1_HLDDesignComponents/3_DatabaseComponents/Redis)
 - :star: [Redis](src/1_HLDDesignComponents/3_DatabaseComponents/Redis)

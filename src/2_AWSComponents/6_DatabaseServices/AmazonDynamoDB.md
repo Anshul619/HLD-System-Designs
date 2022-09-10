@@ -1,6 +1,6 @@
-
 # [Amazon DynamoDB](https://aws.amazon.com/dynamodb/)
 - Fully managed [NoSQL](../../1_HLDDesignComponents/3_DatabaseComponents) database service. 
+- DynamoDB is a key-value and document database. Every record in a DynamoDB database can be considered as a map of attributes and values with a primary key to retrieve the record.
 - All data items are stored on `Solid State Drives (SSDs)`, and are replicated across `3 Availability Zones` for [high availability](../../1_HLDDesignComponents/0_SystemGlossaries/HighAvailability.md) and [durability](../../1_HLDDesignComponents/0_SystemGlossaries/Durability.md). 
 - With DynamoDB, `you can offload the administrative burden of operating and scaling a highly available distributed database cluster`, while paying a low price for only what you use.
 

@@ -43,10 +43,20 @@ Relational databases store data in rows and columns.
 - These databases are used to store data whose relations are best represented in a graph ( like parent-child relationship of aadhaar etc.)
 - Data is saved in graph structures with nodes (entities), properties (information about the entities), and lines (connections between the entities).
 
+| Component                                                                     | Strength                                | Component Type                | Very Rough Throughput (QPS)                 | Latency | Pricing Model                                              |
+|-------------------------------------------------------------------------------|-----------------------------------------|-------------------------------|---------------------------------------------|----------------|------------------------------------------------------------|
+| [Amazon DynamoDB](src/2_AWSComponents/6_DatabaseServices/AmazonDynamoDB.md)   | Predictable performance and cost        | NoSQL DB as a Service ( AWS ) | More than 20 million requests per second    | less than 10-20 ms | `AWS Managed Service`                                      |
+| [ElasticSearch](src/1_HLDDesignComponents/3_DatabaseComponents/ElasticSearch) | `Full-Text-Search`, `Logs-Analysis (ELK)` | NoSQL Search Engine           | -                                           |-| `Paid`                                                     |
+| [MongoDB](src/1_HLDDesignComponents/3_DatabaseComponents/MongoDB)             | -                                       | NoSQL DB                      | -                                           | -| `Open Source`                                              |
+
 # SQL - Different Databases
 
 ## MySQL vs PostgreSQL
 - [PostgreSQL is twice as fast as MySQL](https://itnext.io/benchmark-databases-in-docker-mysql-postgresql-sql-server-7b129368eed7).
+
+| Component                                                               | Strength                                | Component Type                | Very Rough Throughput (QPS)                 | Latency | Pricing Model                                              |
+|-------------------------------------------------------------------------|-----------------------------------------|-------------------------------|---------------------------------------------|----------------|------------------------------------------------------------|
+| [MySQL](src/1_HLDDesignComponents/3_DatabaseComponents)                                | -                                       | SQL DB                        | 1000 concurrent requests ( 100 as default ) | [< 10ms ( to get a row from 1 million records )](https://www.quora.com/How-can-we-calculate-the-throughput-of-MySQL?share=1)| `Open Source` ( [RDS](src/2_AWSComponents/RDS.md) on AWS ) |
 
 # References
 - [Groking the System Design](https://www.educative.io/courses/grokking-the-system-design-interview/YQlK1mDPgpK)
