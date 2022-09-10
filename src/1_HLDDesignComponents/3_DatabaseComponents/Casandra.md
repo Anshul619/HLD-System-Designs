@@ -1,5 +1,5 @@
 
-# Casandra
+# Apache Casandra
 - [Apache Cassandra](https://cassandra.apache.org/_/index.html) is a free and open-source, distributed & [wide column store](ReadMe.md#nosql---intro-different-nosql-types). ( can handle large amount of data )
 - It is a NoSQL database management system designed to handle large amounts of data across many commodity servers, providing [high availability with no single point of failure](../0_SystemGlossaries/FaultTolerance&DisasterRecovery.md). 
 - Cassandra offers robust support for [clusters spanning multiple data centers](../0_SystemGlossaries/ServersCluster.md), with asynchronous masterless replication allowing low latency operations for all clients.
@@ -13,7 +13,7 @@
 # Why Casandra?
 
 ## Peer to Peer Architecture 
-– There is no single point of failure in Cassandra, since it uses a P2P architecture, instead of master-slave architecture. 
+- There is no single point of failure in Cassandra, since it uses a P2P architecture, instead of master-slave architecture. 
 - Any number of servers/nodes can be added to any Cassandra cluster in any of the data centers.
 
 ## Low-Latency, Fast Writes
