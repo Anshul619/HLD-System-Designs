@@ -3,19 +3,19 @@
 - [Apache Cassandra](https://cassandra.apache.org/_/index.html) is a free and open-source, distributed & [wide column store](../ReadMe.md#nosql---intro-different-nosql-types). ( can handle large amount of data )
 - It is a NoSQL database management system designed to handle large amounts of data across many commodity servers, providing [high availability with no single point of failure](../../0_SystemGlossaries/FaultTolerance&DisasterRecovery.md). 
 - Cassandra offers robust support for [clusters spanning multiple data centers](../../0_SystemGlossaries/ServersCluster.md), with asynchronous masterless replication allowing low latency operations for all clients.
-- Casandra is based on [Apache Hadoop](../../8_BigDataComponents/ApacheHadoop/Readme.md). And modeled after [Amazon DynamoDB](../../../2_AWSComponents/6_DatabaseServices/AmazonDynamoDB.md) & BigTable.
+- Casandra is based on [Apache Hadoop](../../5_BigDataComponents/ApacheHadoop/Readme.md). And modeled after [Amazon DynamoDB](../../../2_AWSComponents/6_DatabaseServices/AmazonDynamoDB.md) & BigTable.
 - [Amazon KeySpaces](../../../2_AWSComponents/6_DatabaseServices/AmazonKeySpaces.md) can be used to deploy Casandra on AWS.
 
 ![img.png](https://www.scylladb.com/wp-content/uploads/Wide-column-Database-diagram.png)
+
+# Who created Casandra?
+- Released in 2008 by Facebook and developed initially by Indians Avinash Lakshman and Prashant Malik, Cassandra was initially used in [Facebook’s inbox search feature](https://m.facebook.com/nt/screen/?params=%7B%22note_id%22%3A10158772759272200%7D&path=%2Fnotes%2Fnote%2F&paipv=0&eav=AfYuSXXQPZ5fvm0_ScPdSlfj5BEFhRVT3iy_6Rsz7NZDbQ2vfq9opnedmTLSjG1aZBA&_rdr).
 
 # Ideal Use Cases
 - Processing server logs
 - Social media posts
 - PDF documents
 - Emails etc.
-
-# Who created Casandra?
-- Released in 2008 by Facebook and developed initially by Indians Avinash Lakshman and Prashant Malik, Cassandra was initially used in [Facebook’s inbox search feature](https://m.facebook.com/nt/screen/?params=%7B%22note_id%22%3A10158772759272200%7D&path=%2Fnotes%2Fnote%2F&paipv=0&eav=AfYuSXXQPZ5fvm0_ScPdSlfj5BEFhRVT3iy_6Rsz7NZDbQ2vfq9opnedmTLSjG1aZBA&_rdr).
 
 # Features
 
@@ -70,6 +70,12 @@
 
 ![img.png](../../../3_HLDDesignProblems/PersonalizationSpotify/assests/PersonalizationSpotify.drawio.png)
 
+## Inbox Search Feature & Instagram Unit at Facebook, using Casandra
+- Facebook originally built Cassandra to power its [Inbox search feature](https://m.facebook.com/nt/screen/?params=%7B%22note_id%22%3A10158772759272200%7D&path=%2Fnotes%2Fnote%2F&paipv=0&eav=AfYuSXXQPZ5fvm0_ScPdSlfj5BEFhRVT3iy_6Rsz7NZDbQ2vfq9opnedmTLSjG1aZBA&_rdr), with over 200 nodes deployed.
+- This was abandoned in late 2010 when they built Facebook Messaging platform on [HBase](ApacheHBase.md) as they [found Cassandra's eventual consistency model to be a difficult pattern](#supported-consistency-patterns).
+- Facebook moved off its pre-Apache Cassandra deployment in late 2010 when they replaced Inbox Search with the Facebook Messaging platform.
+- In 2012, [Facebook began using Apache Cassandra in its Instagram unit](https://www.quora.com/Does-Facebook-use-Apache-Cassandra).
+
 ## Others
 - [Exploring Data @ Netflix](https://netflixtechblog.com/exploring-data-netflix-9d87e20072e3)
 
@@ -77,3 +83,4 @@
 - [Redis vs Apache Cassandra: Choosing Between These Real-Time Databases](https://www.upsolver.com/blog/redis-vs-apache-cassandra-choosing-between-these-real-time-databases)
 - [Golang Cassandra Example](https://golangdocs.com/golang-cassandra-example)
 - [Cassandra vs MongoDB Comparison](https://www.mongodb.com/compare/cassandra-vs-mongodb)
+- [Does-Facebook-use-Apache-Cassandra](https://www.quora.com/Does-Facebook-use-Apache-Cassandra)

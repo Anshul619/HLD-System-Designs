@@ -7,4 +7,4 @@
 ![img.png](../../3_HLDDesignProblems/PersonalizationSpotify/assests/PersonalizationSpotify.drawio.png)
 
 ## ApacheStorm vs Spark
-- [Read More](https://phoenixnap.com/kb/apache-storm-vs-spark)
+- [Read the differences](https://phoenixnap.com/kb/apache-storm-vs-spark)

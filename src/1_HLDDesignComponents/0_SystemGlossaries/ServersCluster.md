@@ -16,7 +16,7 @@
 | [Amazon Elastic Cache Cluster](../../2_AWSComponents/6_DatabaseServices/AmazonElasicCache.md)      | Cluster of Redis Nodes, across Multi-AZs ( One cluster per region )  |
 | [Kubernates Cluster](../6_DevOps/Kubernates.md)                                                    | Cluster of Containers                                                |
 | [Casandra Cluster](../3_DatabaseComponents/NoSQL-Databases/ApacheCasandra.md)                      | Cluster of wide-columns DBs                                          |
-| [Hadoop Cluster](../8_BigDataComponents/ApacheHadoop)                                                                                 | Cluster of different components                                      |
+| [Hadoop Cluster](../5_BigDataComponents/ApacheHadoop)                                                                                 | Cluster of different components                                      |
 
 
 

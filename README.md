@@ -36,11 +36,23 @@ Message brokers are used to decouple & enable [Event Driven Architectures](src/1
 - :star: [SQL & NoSQL databases](src/1_HLDDesignComponents/3_DatabaseComponents)
 - [Postgres](src/1_HLDDesignComponents/3_DatabaseComponents/PostgresQuery.md)
 
-## [NoSQL Databases](src/1_HLDDesignComponents/3_DatabaseComponents/NoSQL-Databases)
+## NoSQL Databases
 - :star: [ElasticSearch](src/1_HLDDesignComponents/3_DatabaseComponents/NoSQL-Databases/ElasticSearch)
 - :star: [Casandra](src/1_HLDDesignComponents/3_DatabaseComponents/NoSQL-Databases/ApacheCasandra.md)
 - :star: [HBase](src/1_HLDDesignComponents/3_DatabaseComponents/NoSQL-Databases/ApacheHBase.md)
 - [MongoDB](src/1_HLDDesignComponents/3_DatabaseComponents/NoSQL-Databases/MongoDB)
+
+## In-Memory DBs/Cache
+- :star: [Redis](src/1_HLDDesignComponents/3_DatabaseComponents/NoSQL-Databases/Redis)
+- [Redis vs MemCache](src/1_HLDDesignComponents/3_DatabaseComponents/NoSQL-Databases/Redis/RedisVsMemCache.md)
+- [AeroSpike](src/1_HLDDesignComponents/3_DatabaseComponents/NoSQL-Databases/AeroSpike.md)
+
+# Big Data Components
+- :star: [Apache Spark](src/1_HLDDesignComponents/5_BigDataComponents/ApacheSpark.md)
+- :star: [Apache HDFS](src/1_HLDDesignComponents/5_BigDataComponents/ApacheHadoop/ApacheHDFS.md)
+- [Apache Spark vs MapReduce](src/1_HLDDesignComponents/5_BigDataComponents/ApacheSparkVsHadoopMapReduce.md)
+- [Apache Hadoop](src/1_HLDDesignComponents/5_BigDataComponents/ApacheHadoop)
+- [Apache Storm](src/1_HLDDesignComponents/5_BigDataComponents/ApacheStorm.md)
 
 # API Technology Options
 
@@ -49,18 +61,6 @@ Message brokers are used to decouple & enable [Event Driven Architectures](src/1
 | :star: [REST](src/1_HLDDesignComponents/2_APITechOptions/REST.md) | Used for CRUD style public APis and web app.                                                                                    |
 | :star: [gPRC](src/1_HLDDesignComponents/2_APITechOptions/gPRC.md) | Used for communication b/w [microservices](src/1_HLDDesignComponents/1_MicroServicesSOA) or to collect data from IoT devices. It is relatively faster than REST or GraphQL. |
 | [GraphQL](src/1_HLDDesignComponents/2_APITechOptions/GraphQL.md) | Used for public API with customizable request body or to aggregate internal data from multiple sources in a public API.         |
-
-# [In Memory Cache](src/1_HLDDesignComponents/3_DatabaseComponents/NoSQL-Databases/Redis)
-- :star: [Redis](src/1_HLDDesignComponents/3_DatabaseComponents/NoSQL-Databases/Redis)
-- [Redis vs MemCache](src/1_HLDDesignComponents/3_DatabaseComponents/NoSQL-Databases/Redis/RedisVsMemCache.md)
-- [AeroSpike](src/1_HLDDesignComponents/3_DatabaseComponents/NoSQL-Databases/AeroSpike.md)
-
-# Big Data Components
-- :star: [Apache Spark](src/1_HLDDesignComponents/8_BigDataComponents/ApacheSpark.md)
-- :star: [Apache HDFS](src/1_HLDDesignComponents/8_BigDataComponents/ApacheHadoop/ApacheHDFS.md)
-- [Apache Spark vs MapReduce](src/1_HLDDesignComponents/8_BigDataComponents/ApacheSparkVsHadoopMapReduce.md)
-- [Apache Hadoop](src/1_HLDDesignComponents/8_BigDataComponents/ApacheHadoop)
-- [Apache Storm](src/1_HLDDesignComponents/8_BigDataComponents/ApacheStorm.md)
 
 # HLD - Design Problems
 - :star: [Zomoto HLD Design](src/3_HLDDesignProblems/ZomatoDesign)
