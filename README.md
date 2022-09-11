@@ -60,6 +60,7 @@ Message brokers are used to decouple & enable [Event Driven Architectures](src/1
 - :star: [Apache HDFS](src/1_HLDDesignComponents/8_BigDataComponents/ApacheHadoop/ApacheHDFS.md)
 - [Apache Spark vs MapReduce](src/1_HLDDesignComponents/8_BigDataComponents/ApacheSparkVsHadoopMapReduce.md)
 - [Apache Hadoop](src/1_HLDDesignComponents/8_BigDataComponents/ApacheHadoop)
+- [Apache Storm](src/1_HLDDesignComponents/8_BigDataComponents/ApacheStorm.md)
 
 # HLD - Design Problems
 - :star: [Zomoto HLD Design](src/3_HLDDesignProblems/ZomatoDesign)
