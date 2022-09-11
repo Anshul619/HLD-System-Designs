@@ -34,12 +34,13 @@ Message brokers are used to decouple & enable [Event Driven Architectures](src/1
 
 # Various Databases
 - :star: [SQL & NoSQL databases](src/1_HLDDesignComponents/3_DatabaseComponents)
-- :star: [Redis](src/1_HLDDesignComponents/3_DatabaseComponents/NoSQL-Databases/Redis)
-- :star: [ElasticSearch](src/1_HLDDesignComponents/3_DatabaseComponents/NoSQL-Databases/ElasticSearch)
-- :star: [MongoDB](src/1_HLDDesignComponents/3_DatabaseComponents/NoSQL-Databases/MongoDB)
-- [Casandra](src/1_HLDDesignComponents/3_DatabaseComponents/NoSQL-Databases/ApacheCasandra.md)
-- [AeroSpike](src/1_HLDDesignComponents/3_DatabaseComponents/NoSQL-Databases/AeroSpike.md)
 - [Postgres](src/1_HLDDesignComponents/3_DatabaseComponents/PostgresQuery.md)
+
+## [NoSQL Databases](src/1_HLDDesignComponents/3_DatabaseComponents/NoSQL-Databases)
+- :star: [ElasticSearch](src/1_HLDDesignComponents/3_DatabaseComponents/NoSQL-Databases/ElasticSearch)
+- :star: [Casandra](src/1_HLDDesignComponents/3_DatabaseComponents/NoSQL-Databases/ApacheCasandra.md)
+- :star: [HBase](src/1_HLDDesignComponents/3_DatabaseComponents/NoSQL-Databases/ApacheHBase.md)
+- [MongoDB](src/1_HLDDesignComponents/3_DatabaseComponents/NoSQL-Databases/MongoDB)
 
 # API Technology Options
 
@@ -52,6 +53,13 @@ Message brokers are used to decouple & enable [Event Driven Architectures](src/1
 # [In Memory Cache](src/1_HLDDesignComponents/3_DatabaseComponents/NoSQL-Databases/Redis)
 - :star: [Redis](src/1_HLDDesignComponents/3_DatabaseComponents/NoSQL-Databases/Redis)
 - [Redis vs MemCache](src/1_HLDDesignComponents/3_DatabaseComponents/NoSQL-Databases/Redis/RedisVsMemCache.md)
+- [AeroSpike](src/1_HLDDesignComponents/3_DatabaseComponents/NoSQL-Databases/AeroSpike.md)
+
+# Big Data Components
+- :star: [Apache Spark](src/1_HLDDesignComponents/8_BigDataComponents/ApacheSpark.md)
+- :star: [Apache HDFS](src/1_HLDDesignComponents/8_BigDataComponents/ApacheHadoop/ApacheHDFS.md)
+- [Apache Spark vs MapReduce](src/1_HLDDesignComponents/8_BigDataComponents/ApacheSparkVsHadoopMapReduce.md)
+- [Apache Hadoop](src/1_HLDDesignComponents/8_BigDataComponents/ApacheHadoop)
 
 # HLD - Design Problems
 - :star: [Zomoto HLD Design](src/3_HLDDesignProblems/ZomatoDesign)
@@ -90,16 +98,16 @@ Message brokers are used to decouple & enable [Event Driven Architectures](src/1
 - [TypeScript](src/5_ProgrammingLanguages/4_FrontEnd/TypeScript.md)
 - [Angular8](src/5_ProgrammingLanguages/4_FrontEnd/Angular8.md)
 
-# DevOps Skills
+# DevOps Components
 - :star: [Kubernates](src/1_HLDDesignComponents/6_DevOps/Kubernates.md)
 - :star: [Docker](src/1_HLDDesignComponents/6_DevOps/Docker.md)
+- [Apache Yarn](src/1_HLDDesignComponents/6_DevOps/ApacheYarn.md)
 
 # Monitoring Tools
 - :star: [New Relic](src/1_HLDDesignComponents/7_MonitoringTools/NewRelic.md)
 - [ELK](src/1_HLDDesignComponents/7_MonitoringTools/ELK.md)
 
 # Other Design Components
-- [Apache Spark](src/1_HLDDesignComponents/8_BigDataComponents/ApacheSpark.md)
 - [Apache Web Server](https://apache.org/)
   - Web Server which can handle 512 concurrent requests.
 - [Testing](src/6_Others/QATools/Readme.md)
