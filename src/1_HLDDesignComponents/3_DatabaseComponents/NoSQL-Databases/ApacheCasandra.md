@@ -3,7 +3,7 @@
 - [Apache Cassandra](https://cassandra.apache.org/_/index.html) is a free and open-source, distributed & [wide column store](../ReadMe.md#nosql---intro-different-nosql-types). ( can handle large amount of data )
 - It is a NoSQL database management system designed to handle large amounts of data across many commodity servers, providing [high availability with no single point of failure](../../0_SystemGlossaries/FaultTolerance&DisasterRecovery.md). 
 - Cassandra offers robust support for [clusters spanning multiple data centers](../../0_SystemGlossaries/ServersCluster.md), with asynchronous masterless replication allowing low latency operations for all clients.
-- Casandra is based on [Apache Hadoop](../../0_SystemGlossaries/ApacheHadoop.md). And modeled after [Amazon DynamoDB](../../../2_AWSComponents/6_DatabaseServices/AmazonDynamoDB.md) & BigTable.
+- Casandra is based on [Apache Hadoop](../../8_BigDataComponents/ApacheHadoop/ApacheHadoop.md). And modeled after [Amazon DynamoDB](../../../2_AWSComponents/6_DatabaseServices/AmazonDynamoDB.md) & BigTable.
 - [Amazon KeySpaces](../../../2_AWSComponents/6_DatabaseServices/AmazonKeySpaces.md) can be used to deploy Casandra on AWS.
 
 ![img.png](https://www.scylladb.com/wp-content/uploads/Wide-column-Database-diagram.png)

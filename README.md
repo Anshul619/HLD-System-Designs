@@ -99,7 +99,7 @@ Message brokers are used to decouple & enable [Event Driven Architectures](src/1
 - [ELK](src/1_HLDDesignComponents/7_MonitoringTools/ELK.md)
 
 # Other Design Components
-- [Apache Spark](src/1_HLDDesignComponents/8_BigDataTools/ApacheSpark.md)
+- [Apache Spark](src/1_HLDDesignComponents/8_BigDataComponents/ApacheSpark.md)
 - [Apache Web Server](https://apache.org/)
   - Web Server which can handle 512 concurrent requests.
 - [Testing](src/6_Others/QATools/Readme.md)

@@ -22,17 +22,17 @@
 
 ```sql
 CREATE TABLE entitymetadata (
-entityid text,
-featurename text,
-featurevalue text,
-PRIMARY KEY (entityid, featurekey)
+    entityid text,
+    featurename text,
+    featurevalue text,
+    PRIMARY KEY (entityid, featurekey)
 )
 
 CREATE TABLE userprofilelatest (
-userid text,
-featurename text,
-featurevalue text,
-PRIMARY KEY (userid, featurename)
+    userid text,
+    featurename text,
+    featurevalue text,
+    PRIMARY KEY (userid, featurename)
 )
 ```
 
