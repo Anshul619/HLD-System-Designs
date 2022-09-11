@@ -6,8 +6,8 @@
 | [Amazon DynamoDB](../../../2_AWSComponents/6_DatabaseServices/AmazonDynamoDB.md) | Predictable performance and cost. <br/>- More than 20 million requests per second <br/>- Less than 10-20 ms latency | Key-Value      | `AWS Managed Service` |
 | [ElasticSearch](ElasticSearch)     | `Full-Text-Search`, `Logs-Analysis (ELK)`, `Metrics, Analysis`                                                      | Document-DB    | `Open Source`         |
 | [MongoDB](MongoDB)                 | -                                                                                                                   | Document-DB    | `Open Source`         |
-| [Apache Casandra](ApacheCasandra.md) | Handle large amount of data, at low latency (with compromising latency)                                             | Wide-Column-DB | `Open Source`         |
-| [Apache HBase](ApacheHBase.md)    | -                                                                                                                   | Wide-Column-DB | `Open Source`         |
+| [Apache Casandra](ApacheCasandra.md) | Handle large amount of data, at low latency (with eventual consistency)                                             | Wide-Column-DB | `Open Source`         |
+| [Apache HBase](ApacheHBase.md)    | Handle large amount of data, with strong consistency (& normal latency)                                             | Wide-Column-DB | `Open Source`         |
 
 # NoSQL-DB types
 
