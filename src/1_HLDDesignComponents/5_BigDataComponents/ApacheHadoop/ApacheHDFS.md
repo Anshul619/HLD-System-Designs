@@ -10,5 +10,10 @@
 
 ![img.png](../../../3_HLDDesignProblems/PersonalizationSpotify/assests/PersonalizationSpotify.drawio.png)
 
+# HDFS vs S3
+- With better scalability, built-in persistence, and lower prices, [S3](../../../2_AWSComponents/7_StorageServices/AmazonS3.md) is tonight’s winner! 
+- Still, HDFS comes away with a couple of important consolation prizes. For better performance and no limitations on file size or storage format, HDFS is the way to go](https://www.integrate.io/blog/storing-apache-hadoop-data-cloud-hdfs-vs-s3/).
+
 # References
 - [What is Hadoop?](https://aws.amazon.com/emr/details/hadoop/what-is-hadoop/)
+- [Storing Apache Hadoop Data on the Cloud - HDFS vs. S3](https://www.integrate.io/blog/storing-apache-hadoop-data-cloud-hdfs-vs-s3/)
