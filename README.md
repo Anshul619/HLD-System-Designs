@@ -102,6 +102,8 @@ Message brokers are used to decouple & enable [Event Driven Architectures](src/1
 # DevOps Components
 - :star: [Kubernates](src/1_HLDDesignComponents/6_DevOps/Kubernates.md)
 - :star: [Docker](src/1_HLDDesignComponents/6_DevOps/Docker.md)
+- :star: [Apache Zookeeper](src/1_HLDDesignComponents/6_DevOps/ApacheZookeeper.md)
+- [Apache Marathon & Mesos](src/1_HLDDesignComponents/6_DevOps/ApacheMarathon&Mesos.md)
 - [Apache Yarn](src/1_HLDDesignComponents/6_DevOps/ApacheYarn.md)
 
 # Monitoring Tools

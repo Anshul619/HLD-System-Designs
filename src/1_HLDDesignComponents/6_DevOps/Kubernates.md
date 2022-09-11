@@ -1,6 +1,8 @@
 
-# [Kubernates](https://kubernetes.io)
-- Kubernetes, also known as K8s, is an `OPEN-SOURCE system for automating deployment, scaling, and management of containerized applications`.
+# Kubernates
+- [Kubernetes](https://kubernetes.io), also known as K8s, is an `OPEN-SOURCE system for automating deployment, scaling, and management of containerized applications`.
+- Kubernetes is a Greek word meaning `captain` in English. 
+  - Like the captain is responsible for the safe journey of the ship in the seas, Kubernetes is responsible for carrying and delivering those boxes safely to locations where they can be used.
 - We can use kubernates to manage, create containers ( through pods, worker nodes )
 - Each docker container would run the micro-service ( golang, java, python service etc. )
 - A pod can contain one or multiple containers
@@ -14,7 +16,6 @@
 - A Pod (as in a pod of whales or pea pod) is a group of one or more containers, with shared storage and network resources, and a specification for how to run the containers.
 
 # [kubectl Cheat Sheet](https://kubernetes.io/docs/reference/kubectl/cheatsheet/)
-
 - `apply` manages applications through files defining Kubernetes resources. It creates and updates resources in a cluster through running `kubectl apply`.
 
 ```
@@ -41,5 +42,9 @@ kubectl cp /tmp/foo_dir my-pod:/tmp/bar_dir            # Copy /tmp/foo_dir local
 
 # StatefulSets
 - [TBD](https://kubernetes.io/docs/concepts/workloads/controllers/statefulset/)
+
+# Who uses K8s?
+- Google
+
 # References
-- [The Uber Engineering Tech Stack, Part I: The Foundation](https://eng.uber.com/tech-stack-part-one-foundation/)
+- [Mesos vs. Kubernetes](https://www.baeldung.com/ops/mesos-kubernetes-comparison)

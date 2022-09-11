@@ -1,4 +1,3 @@
-
 # App Provisioning
 - We use Docker containers on Mesos to run our microservices with consistent configurations scalably, with help from Aurora for long-running services and cron jobs.
 - One of our infrastructure teams, Application Platform, produced a template library that builds services into shippable Docker images.

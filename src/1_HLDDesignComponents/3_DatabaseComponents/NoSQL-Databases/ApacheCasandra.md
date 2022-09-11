@@ -40,7 +40,7 @@ Large amount of data like,
 - Cassandra [cluster](../../0_SystemGlossaries/ServersCluster.md) can be easily scaled-up or scaled-down.
 - Generally doubling the size of the cluster, would result in the half [latency](../../0_SystemGlossaries/LatencyThroughput.md) (both at the median and 99th percentile).
 
-## High-level data model
+## Rich data model
 - [This is column-oriented](../ReadMe.md#nosql---intro-different-nosql-types). 
 - It means, Cassandra stores columns based on the column names, leading to very quick slicing. 
 - Unlike traditional databases, where column names only consist of metadata, in `Cassandra column names can also consist of the actual data`.
@@ -77,6 +77,9 @@ Large amount of data like,
 - This was abandoned in late 2010 when they built Facebook Messaging platform on [HBase](ApacheHBase.md) as they [found Cassandra's eventual consistency model to be a difficult pattern](#supported-consistency-patterns).
 - Facebook moved off its pre-Apache Cassandra deployment in late 2010 when they replaced Inbox Search with the Facebook Messaging platform.
 - In 2012, [Facebook began using Apache Cassandra in its Instagram unit](https://www.quora.com/Does-Facebook-use-Apache-Cassandra).
+
+### How Uber Manages a Million Writes Per Second Using Mesos and Cassandra Across Multiple Datacenters?
+- [Read more](../../../3_HLDDesignProblems/UberCasandraMesos)
 
 ## Other UCs
 - [Exploring Data @ Netflix](https://netflixtechblog.com/exploring-data-netflix-9d87e20072e3)
