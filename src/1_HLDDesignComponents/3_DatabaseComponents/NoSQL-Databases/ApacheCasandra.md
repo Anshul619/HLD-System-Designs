@@ -78,7 +78,7 @@ Large amount of data like,
 - Facebook moved off its pre-Apache Cassandra deployment in late 2010 when they replaced Inbox Search with the Facebook Messaging platform.
 - In 2012, [Facebook began using Apache Cassandra in its Instagram unit](https://www.quora.com/Does-Facebook-use-Apache-Cassandra).
 
-### How Uber Manages a Million Writes Per Second Using Mesos and Cassandra Across Multiple Datacenters?
+## How Uber Manages a Million Writes Per Second Using Mesos and Cassandra Across Multiple Datacenters?
 - [Read more](../../../3_HLDDesignProblems/UberCasandraMesos)
 
 ## Other UCs
