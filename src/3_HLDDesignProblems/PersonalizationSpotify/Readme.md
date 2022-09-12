@@ -1,4 +1,6 @@
 
+# Personalization at Spotify using Cassandra & HDFS
+
 ![img.png](assests/PersonalizationSpotify.drawio.png)
 
 # Why Casandra?
