@@ -3,7 +3,7 @@
 - [Apache Cassandra](https://cassandra.apache.org/_/index.html) is a free and open-source, distributed & [wide column store](../ReadMe.md#nosql---intro-different-nosql-types). ( can handle large amount of data )
 - It is a NoSQL database management system designed to handle large amounts of data across many commodity servers, providing [high availability with no single point of failure](../../0_SystemGlossaries/FaultTolerance&DisasterRecovery.md). 
 - Cassandra offers robust support for [clusters spanning multiple data centers](../../0_SystemGlossaries/ServersCluster.md), with asynchronous masterless replication allowing low latency operations for all clients.
-- Casandra is based on [Apache Hadoop](../../5_BigDataComponents/ApacheHadoop/Readme.md). And modeled after [Amazon DynamoDB](../../../2_AWSComponents/6_DatabaseServices/AmazonDynamoDB.md) & BigTable.
+- Casandra is based modeled after [Amazon DynamoDB](../../../2_AWSComponents/6_DatabaseServices/AmazonDynamoDB.md) & BigTable.
 - [Amazon KeySpaces](../../../2_AWSComponents/6_DatabaseServices/AmazonKeySpaces.md) can be used to deploy Casandra on AWS.
 
 # Who created Casandra?
@@ -26,7 +26,7 @@ Large amount of data like,
 ## Low-Latency, Faster Writes
 - Since writes in Casandra result in storage in an [append-only structure](../../0_SystemGlossaries/AppendOnlyDBStorages.md), writes are generally very fast.
 - Casandra provides [low latency](../../0_SystemGlossaries/LatencyThroughput.md), at the cost of [consistency](../../0_SystemGlossaries/ReplicationAndDataConsistency.md). 
-  - Refer [CAP theorem](../../0_SystemGlossaries/CAPTheorem.md) for more info.
+  - Refer [PACELC theorem](../../0_SystemGlossaries/CAPTheorem.md#pael-systems---dynamodb--cassandra) for more info.
 - Hence Casandra should be used when transactions aren't performing (i.e. consistency can be compromised)
 
 ## High Availability, Fault-Tolerance
