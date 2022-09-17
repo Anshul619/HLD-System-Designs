@@ -9,12 +9,12 @@
 - If, for example, one services uses a lot of CPU it matches well with a service that uses a lot of storage or memory, then these two services can be efficiently run on the same server. Machine utilization goes up.
 
 # Stats
-- As in 2016, Uber has about 20 Cassandra clusters now and plans on having 100 in the future.
+- As in 2016, Uber had about 20 Cassandra clusters and planned on having 100 in the future.
   - It’s very hard to get all that in a single shared cluster. 
   - If you, for example, made a 1000 node Cassandra cluster it would not scale or it would also have performance interference across different clusters.
-- ~300 machine across two data centers
+- ~300 machine across two data centers.
 - Largest 2 clusters: `More than a million writes/sec and ~100k reads/sec` 
-  - One of the clusters is storing the location that is sent out every 30 seconds by both the driver and rider apps.
+  - One of the clusters was storing the location that was sent out every 30 seconds by both the driver and rider apps.
 
 # References
 - [HighScalability - How Uber Manages a Million Writes Per Second Using Mesos and Cassandra Across Multiple Datacenters?](http://highscalability.com/blog/2016/9/28/how-uber-manages-a-million-writes-per-second-using-mesos-and.html)
