@@ -70,7 +70,7 @@ Large amount of data like,
 ## Personalization at Spotify using Cassandra
 - [Read more](../../../3_HLDDesignProblems/PersonalizationSpotify)
 
-![img.png](../../../3_HLDDesignProblems/PersonalizationSpotify/assests/PersonalizationSpotify.drawio.png)
+![img.png](../../../3_HLDDesignProblems/PersonalizationSpotify/assets/PersonalizationSpotify.drawio.png)
 
 ## Inbox Search Feature & Instagram Unit at Facebook, using Casandra
 - Facebook originally built Cassandra to power its [Inbox search feature](https://m.facebook.com/nt/screen/?params=%7B%22note_id%22%3A10158772759272200%7D&path=%2Fnotes%2Fnote%2F&paipv=0&eav=AfYuSXXQPZ5fvm0_ScPdSlfj5BEFhRVT3iy_6Rsz7NZDbQ2vfq9opnedmTLSjG1aZBA&_rdr), with over 200 nodes deployed.

@@ -9,7 +9,7 @@
 
 ## Personalization at Spotify using Cassandra & HDFS
 
-[![img.png](../../../3_HLDDesignProblems/PersonalizationSpotify/assests/PersonalizationSpotify.drawio.png)](../../../3_HLDDesignProblems/PersonalizationSpotify)
+[![img.png](../../../3_HLDDesignProblems/PersonalizationSpotify/assets/PersonalizationSpotify.drawio.png)](../../../3_HLDDesignProblems/PersonalizationSpotify)
 
 - [Read more](../../../3_HLDDesignProblems/PersonalizationSpotify)
 

@@ -7,7 +7,7 @@ Design driver allocation to riders in an Uber-like system
 - What happens when traffic increases?
 - Components/ services required
 
-![img.png](assests/UberDriverAllocation.drawio.png)
+![img.png](assets/UberDriverAllocation.drawio.png)
 
 # User Actors
 - Rider

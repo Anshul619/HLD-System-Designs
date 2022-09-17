@@ -1,7 +1,7 @@
 
 # How Uber Manages a Million Writes Per Second Using Mesos and Cassandra Across Multiple Datacenters?
 
-![img.png](assests/uber-casandra-mesos.png)
+![img.png](assets/uber-casandra-mesos.png)
 
 # Co-Host services
 - A single machine can run services of different kinds. (Co-host services on the single machine)
