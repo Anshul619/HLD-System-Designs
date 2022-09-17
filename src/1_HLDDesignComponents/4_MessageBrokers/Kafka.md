@@ -6,9 +6,15 @@
 - Messages ( events ) in the Kafka are immutable and can't be changed once it's pushed ( due to [log based queue nature](../0_SystemGlossaries/AppendOnlyDBStorages.md) ).
 - [Amazon Managed Streaming for Apache Kafka (MSK)](https://aws.amazon.com/msk/) can be used to deploy `Kafka` on [AWS](../../2_AWSComponents).
 
+# :star: Real world use cases of Kafka
+- [Personalization at Spotify using Cassandra](../../3_HLDDesignProblems/PersonalizationSpotify)
+- [Zomato - HLD Design](../../3_HLDDesignProblems/ZomatoDesign)
+- [Uber Driver Allocation](../../3_HLDDesignProblems/UberDriverAllocationDesign)
+- [Twillo - Send Message API Design](../../3_HLDDesignProblems/TwilloSendMessageAPI)
+
 # [Why Kafka is so fast?](https://twitter.com/alexxubyte/status/1506663791961919488/photo/1)
 - Kafka achieves low latency message delivery through `Sequential I/O and Zero Copy Principle`. 
-- The same techniques are commonly used in many other messaging/streaming platforms.
+- The same techniques are commonly used in much other messaging/streaming platforms.
 - Kafka is based on Log Based Queue
   - :star: Messages are persisted to [append-only log files](../0_SystemGlossaries/AppendOnlyDBStorages.md) by the broker.
   - Producers are appending these log files ( `sequential write` ) & consumers are reading a range of these files ( `sequential reads` ).
@@ -19,7 +25,7 @@
 
 ![img.png](assests/Kafka-Architecture.drawio.png)
 
-# Domain wise use cases of Kafka
+# General use cases of Kafka
 
 ## As an events/message broker in [Event-Driven Architecture](../0_SystemGlossaries/EventDrivenArchitecture.md)
 - Use Kafka when your application has a High Throughput ( around `1 million messages/sec`), i.e. application has to process a large volume of messages, event driven services etc.
@@ -33,10 +39,6 @@
 ## Stream Processing
 - Use Kafka when the event stream needs to process data in multi-stage pipelines, the pipelines can generate graphs of the real-time data flows, thus providing real-time monitoring of traffic in the pipelines. 
 - Example - Video streaming in YouTube etc.
-
-# :star: Real world use cases of Kafka
-- [Personalization at Spotify using Cassandra](https://engineering.atspotify.com/2015/01/personalization-at-spotify-using-cassandra/)
-- [TwilloSendMessageAPI](../../3_HLDDesignProblems/TwilloSendMessageAPI)
 
 # Top Features of Kafka
 

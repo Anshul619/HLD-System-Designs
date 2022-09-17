@@ -8,6 +8,10 @@
 
 ![img.png](https://www.altexsoft.com/media/2021/06/word-image-14.png)
 
+# :star: Real world use cases of Apache Spark
+- [Zomato - HLD Design](../../3_HLDDesignProblems/ZomatoDesign)
+- [Uber Driver Allocation](../../3_HLDDesignProblems/UberDriverAllocationDesign)
+
 # What is Spark Streaming and how is it implemented in Spark?
 - Data from sources like [Kafka](../4_MessageBrokers/Kafka.md), Kinesis, Flume, etc. are processed and pushed to various destinations like databases, dashboards, machine learning APIs, or as simple as file systems.
 - The data is divided into various streams (similar to batches) and is processed accordingly.
@@ -18,7 +22,7 @@
 
 ![img.png](assests/apache_spark_spark_streaming.png)
 
-# Spark vs Others
+# Apache Spark vs Others
 - [Apache Spark vs Hadoop MapReduce](ApacheSparkVsHadoopMapReduce.md) 
 - [Apach Spark vs Storm](ApacheStorm.md#apachestorm-vs-spark)
 

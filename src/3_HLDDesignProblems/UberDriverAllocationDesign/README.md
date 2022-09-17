@@ -1,6 +1,5 @@
 
-
-# Design Problem
+# Uber Driver Allocation - Design Problem
 
 Design driver allocation to riders in an Uber-like system
 - Assume many riders and drivers are using the system in parellel
@@ -18,30 +17,30 @@ Design driver allocation to riders in an Uber-like system
 
 ## Rider - Book Cab
 - Enter Pick the location, destination location & click `Continue`
-- `Search Cab` service would publish message to Kafka `Search Driver` topic
-- Consumer would consume from Kafka `Allocation Driver` topic
-- "Algo" to find riders for the given {rider, pickup, drop} location msg
-- Match the rider pick location with the corresponding location in `DriverLocationDB`
-- Push the notification to the matched drivers
-- If one of them accepts the trip, then we will create "Trips" database.
-  Notify the rider through push notification.
+- `Search Cab` service would publish message to [Search Driver Kafka topic](../../1_HLDDesignComponents/4_MessageBrokers/Kafka.md).
+- Consumer would consume from [Allocation Driver Kafka topic](../../1_HLDDesignComponents/4_MessageBrokers/Kafka.md).
+- [Driver Match Algo](#star-driver-match-algo) to find riders for the given `{rider, pickup, drop}` location msg.
+- Match the rider pick location with the corresponding location in `DriverLocationDB`.
+- Push the notification to the matched drivers.
+- If one of them accepts the trip, then we will create `TripsDB` record. 
+- And notify the rider through push notification.
 
 ## Driver - Push Location
-- Push the current location via kafka "Driver Location" topic (high throughput)
-- Consumer would consume from Kafka & then push to elasticSearch geo support
+- Push the current location via [Driver Location Kafka topic](../../1_HLDDesignComponents/4_MessageBrokers/Kafka.md) ([high throughput](../../1_HLDDesignComponents/0_SystemGlossaries/LatencyThroughput.md)).
+- Consumer would consume from [Kafka](../../1_HLDDesignComponents/4_MessageBrokers/Kafka.md) & then push to [ElasticSearch (Geospatial supported)](../../1_HLDDesignComponents/3_DatabaseComponents/NoSQL-Databases/ElasticSearch#geospatial-support).
 
-## Driver Match algo
+## :star: Driver Match algo
 - Area filter
 - Availability of driver (not available, busy, schedule)
-- location estimate?
+- Location estimate?
   - Distance - High performance intensive (between pickup)
-- Special - Give preference ( top rated drivers ) to the premium riders
+- Special - Give preference ( top-rated drivers ) to the premium riders
 - filtered drivers, can be done on the end
 
 ## Multiple driver accepting trip
 - location L requested - 10 drivers are present
-- lock TripsDB so only one driver accepts
-- if locked/ trip accepted, notify other 9 drivers something
+- Lock `TripsDB` record so only one driver accepts the trip.
+- If locked/ trip accepted, notify other 9 drivers something.
 
 # DB Schemas
 
@@ -56,15 +55,15 @@ Design driver allocation to riders in an Uber-like system
 - payment_mode
 - id_payment
 
-## ElasticSearch GeoDB - DriverLocationDB
+## DriverLocationDB - ElasticSearch GeoSpatial DB
 - location : [{driver, timestamp}]
-- retaining last x mins of info (`TTL` config)
+- Retaining last x mins of info ( i.e. `TTL` config)
 
 ## GeoDB cache Redis (less accurate but fast)
 - location to driver
 
 # How to scale the system?
-- 
+- AutoScale the instances using AWS AutoScaling group.
 
 # References
 - [Uber Backend Design - Educative.io](https://www.educative.io/blog/uber-backend-system-design)

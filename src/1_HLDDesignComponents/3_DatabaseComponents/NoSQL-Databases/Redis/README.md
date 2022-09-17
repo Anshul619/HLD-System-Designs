@@ -3,6 +3,9 @@
 - Popular in-memory data platform used as a cache that can be deployed on-premises, across clouds, and hybrid environments.
 - LRU is the [default eviction policy](https://docs.redis.com/latest/rs/databases/configure/eviction-policy/) in redis
 
+# :star: Real world use cases of Redis Cache
+- [Zomato - HLD Design](../../../../3_HLDDesignProblems/ZomatoDesign)
+
 # Key Features of Redis ( REmote DIctionary Server)
 
 ## Speed - 100K queries per second

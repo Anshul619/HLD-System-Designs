@@ -11,7 +11,7 @@
 
 # NoSQL-DB types
 
-![img.png](assests/NoSQL-DifferentDBtypes.drawio.png)
+![img.png](assets/NoSQL-DifferentDBtypes.drawio.png)
 
 ## Key-Value Stores
 - Data is stored in an array of key-value pairs.

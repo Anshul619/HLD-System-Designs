@@ -6,12 +6,16 @@
 - For data analysis, it operates alongside Kibana, and Logstash to form the [ELK stack](../../../7_MonitoringTools/ELK.md).
 - ElasticSearch is [paid and not open-sourced](https://www.elastic.co/pricing/).
 
+# :star: Real world use cases of ElasticSearch
+- [Zomato - HLD Design](../../../../3_HLDDesignProblems/ZomatoDesign)
+- [Uber Driver Allocation](../../../../3_HLDDesignProblems/UberDriverAllocationDesign)
+
 # Key Features of ElasticSearch
 
 ## Different data types supported
 - Textual
 - Numerical
-- [GeoSpatial (geo-point, geo-shape data types)](https://www.elastic.co/guide/en/elasticsearch/reference/current/query-dsl-geo-bounding-box-query.html)
+- [GeoSpatial (geo-point, geo-shape data types etc.)](#geospatial-support)
 - Unstructured etc.
 
 ## REST APIs (JSON based)
@@ -29,12 +33,18 @@
 - To avoid this excessive I/O, Elasticsearch creates dedicated transactional index logs, preventing low-level Lucene commits for each indexing procedure. 
 - These logs can also be used for recovery in case of data corruption.
 
-## Real world usages of ElasticSearch
+## General Use Cases of ElasticSearch
 - `Search - Full-text, Partial etc.`
 - [Logs-analysis with ELK](../../../7_MonitoringTools/ELK.md)
 - [Dashboard, Visualize data, Metrics etc. with ELK](../../../7_MonitoringTools/ELK.md)
 - [Security, SIEM with ELK](../../../7_MonitoringTools/ELK.md)
 - [Read more about usages of Lucene](ApacheLucene.md#real-world-usages-of-apache-lucene)
+
+## GeoSpatial Support
+
+[Different geo queries](https://www.elastic.co/guide/en/elasticsearch/reference/current/geo-queries.html) are supported in ElasticSearch, for GeoSpatial
+- Geo-Point
+- Geo-Shape etc.
 
 # Other Points
 - [Installation using Docker ELK](https://github.com/deviantony/docker-elk)

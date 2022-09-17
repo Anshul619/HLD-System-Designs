@@ -63,7 +63,8 @@ Message brokers are used to decouple & enable [Event Driven Architectures](src/1
 | [GraphQL](src/1_HLDDesignComponents/2_APITechOptions/GraphQL.md) | Used for public API with customizable request body or to aggregate internal data from multiple sources in a public API.         |
 
 # HLD - Design Problems
-- :star: [Zomoto HLD Design](src/3_HLDDesignProblems/ZomatoDesign)
+- :star: [Zomoto HLD Design](src/3_HLDDesignProblems/ZomatoDesign/README.md)
+- :star: [Uber Driver Allocation](src/3_HLDDesignProblems/UberDriverAllocationDesign/README.md)
 - :star: [Design a system that scales to million of users on AWS](src/2_AWSComponents/0_AWSDesigns/DesignScalableSystemWithRDMS)
 - :star: [Personalization at Spotify using Casandra](src/3_HLDDesignProblems/PersonalizationSpotify)
 - [Twillo Send Message API](src/3_HLDDesignProblems/TwilloSendMessageAPI)

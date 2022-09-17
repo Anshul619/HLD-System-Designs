@@ -1,22 +1,24 @@
 
 # [MongoDB](https://www.interviewbit.com/mongodb-interview-questions/)
 
-<img title="MongoDB_JSON" alt="Alt text" src="assests/MongoDB_JSON.png">
+<img title="MongoDB_JSON" alt="Alt text" src="assets/MongoDB_JSON.png">
 
-## Data Storage Architecture
-
+# Data Storage Architecture
 MongoDB is better suited for high write and update throughput operations without draining CPU resources and/or causing disk I/O issues. 
 - It is written in C++ and uses a memory map file to map on-disk data files to in-memory byte arrays. 
 - It organizes data using a doubly linked data structure: documents contain linked lists to one another and to the `BSON-encoded` data behind the scenes.
 
-## Use Cases
+# :star: Real world use cases of AeroSpike
+- [Zomato - HLD Design](../../../../3_HLDDesignProblems/ZomatoDesign/README.md)
 
+# General Use Cases
 MongoDB is more suitable to manage NoSQL data requiring create, read, update and delete (CRUD) operations. 
 - It offers high scalability, reliability, and performance. 
 - MongoDB also uses text-based indexes for full-text queries, but the search is slow, and the search server does not provide tokenizers and analyzers like [Elasticsearch](../ElasticSearch) does.
 
-## MQL (Mongo Query Language)
-- MongoDB has a rich query language called MQL. It supports a wide variety of modern native drivers as well as a shell.
+# MQL (Mongo Query Language)
+- MongoDB has a rich query language called MQL. 
+- It supports a wide variety of modern native drivers as well as a shell.
 - MongoDB supports [fully ACID compliant transactions](../../../0_SystemGlossaries/ACIDPropertyTransaction.md).
 
 # References
