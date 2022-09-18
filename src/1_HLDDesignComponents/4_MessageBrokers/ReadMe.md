@@ -4,6 +4,8 @@
 - In modern software architecture, the application needs to be decoupled, high scalability, serving high performance. 
 - Messaging service come in allows us to build that kind of application.
 
+# :star: [Comparison between Various Message Brokers](KafkaVsRabbitMQVsSQSVsSNS.md)
+
 # Methods of Message Transfer
 
 <img title="Message-Transfer-Model" alt="Alt text" src="assests/Traditional-Message-Patterns.drawio.png">
@@ -25,8 +27,6 @@
 - Unlike point-to-point model, a message is only removed once it has been consumed by `all category subscribers` or according to `retention policy`.
 - This is `completely asynchronous`. You can't say for sure when this process will happen and in what order.
 - [Kafka](Kafka.md), [Active MQ](ActiveMQ.md), [Amazon SQS](../../2_AWSComponents/5_MessageBrokerServices/AmazonSQS.md) supports `Publisher-Subscriber` Model.
-
-## [Comparison between Various Message Brokers](KafkaVsRabbitMQVsSQSVsSNS.md)
 
 # References
 - [Point-to-Point and Publish/Subscribe Messaging model](https://programmingsharing.com/point-to-point-and-publish-subscribe-messaging-model-2efc4d2b6726)

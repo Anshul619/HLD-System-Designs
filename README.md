@@ -25,21 +25,31 @@ This repo contains the various system design components info, questions and solu
 - [Open Source Contributions](src/1_HLDDesignComponents/OpenSourceContributions.md)
 - [Other Glossaries](src/1_HLDDesignComponents/0_SystemGlossaries/README.md)
 
-# [Message Brokers](src/1_HLDDesignComponents/4_MessageBrokers)
-Message brokers are used to decouple & enable [Event Driven Architectures](src/1_HLDDesignComponents/0_SystemGlossaries/EventDrivenArchitecture.md) i.e. communicate the events & pass the data between [microservices](src/1_HLDDesignComponents/1_MicroServicesSOA).
-- :star: [Comparison between Various Message Brokers](src/1_HLDDesignComponents/4_MessageBrokers/KafkaVsRabbitMQVsSQSVsSNS.md)
-- :star: [Kafka](src/1_HLDDesignComponents/4_MessageBrokers/Kafka.md)
-- :star: [Amazon SQS](src/2_AWSComponents/5_MessageBrokerServices/AmazonSQS.md)
-- [RabbitMQ](src/1_HLDDesignComponents/4_MessageBrokers/RabbitMQ.md)
-- [Amazon SNS](src/2_AWSComponents/5_MessageBrokerServices/AmazonSNS.md)
-- [Active MQ](src/1_HLDDesignComponents/4_MessageBrokers/ActiveMQ.md)
-
-<div class="container">
+<table>
+<tbody>
+<tr>
+<td>
+<a href="src/1_HLDDesignComponents/4_MessageBrokers">Message brokers</a>
+</td>
+<td>
+<a href="src/1_HLDDesignComponents/4_MessageBrokers/KafkaVsRabbitMQVsSQSVsSNS.md">Comparisons</a>
+</td>
+<td>
+<div class="container" style="background:white">
     <div class="block two first">
         <a href="/src/1_HLDDesignComponents/4_MessageBrokers/Kafka.md"><img src="http://i1.wp.com/airisdata.com/wp-content/uploads/2016/01/kafka-logo-600x390.jpg?resize=600%2C390" width="200"></a>
+        <a href="/src/2_AWSComponents/5_MessageBrokerServices/AmazonSQS.md"><img src="https://i0.wp.com/blog.knoldus.com/wp-content/uploads/2021/09/sqs.png?w=711&ssl=1" width="200"></a>
+        <a href="/src/2_AWSComponents/5_MessageBrokerServices/AmazonSNS.md"><img src="https://static.mparticle.com/providerimg/forwarderlogo_93_AmazonSNS.svg" width="200"></a>
         <a href="/src/1_HLDDesignComponents/4_MessageBrokers/RabbitMQ.md"><img src="https://www.logo.wine/a/logo/RabbitMQ/RabbitMQ-Logo.wine.svg" width="200"></a>
+        <a href="/src/1_HLDDesignComponents/4_MessageBrokers/ActiveMQ.md"><img src="https://cdn.icon-icons.com/icons2/2699/PNG/512/apache_activemq_logo_icon_168628.png" width="200"></a>
     </div>
 </div>
+</td>
+
+</tr>
+</tbody>
+</table>
+
 
 # Various Databases
 - :star: [SQL & NoSQL databases](src/1_HLDDesignComponents/3_DatabaseComponents)
