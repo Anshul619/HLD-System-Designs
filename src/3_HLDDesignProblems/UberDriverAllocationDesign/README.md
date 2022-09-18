@@ -7,6 +7,12 @@ Design driver allocation to riders in an Uber-like system
 - What happens when traffic increases?
 - Components/ services required
 
+# Stats
+- `The goal for Uber’s geospatial index is a million write per second`.
+- Many multiples of that for reading.
+- `The dispatch system has thousands of nodes`.
+
+
 ![img.png](assets/UberDriverAllocation.drawio.png)
 
 # User Actors
