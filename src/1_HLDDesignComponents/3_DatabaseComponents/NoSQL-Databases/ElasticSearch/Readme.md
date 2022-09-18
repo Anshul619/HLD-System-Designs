@@ -1,16 +1,23 @@
 # Introduction
-- A distributed, RESTful modern search and analytics engine based on [Apache Lucene](ApacheLucene.md).
+- A distributed, [RESTful](../../../2_APITechOptions/REST.md) modern search and analytics engine based on [Apache Lucene](ApacheLucene.md).
 - In ElasticSearch, data is stored in the form of `JSONs`.
 - We can only interact with ElasticSearch through [REST APIs](../../../2_APITechOptions/REST.md).
 - ElasticSearch can be deployed using [Amazon OpenSearch](../../../../2_AWSComponents/6_DatabaseServices/AmazonOpenSearch.md) service, on [AWS](../../../../2_AWSComponents).
 - For data analysis, it operates alongside Kibana, and Logstash to form the [ELK stack](../../../7_MonitoringTools/ELK.md).
-- ElasticSearch is [paid and not open-sourced](https://www.elastic.co/pricing/).
+- ElasticSearch is [Paid and NOT open-sourced](https://www.elastic.co/pricing/).
 
 # :star: Real world use cases of ElasticSearch
 - [Zomato - HLD Design](../../../../3_HLDDesignProblems/ZomatoDesign)
 - [Uber Driver Allocation](../../../../3_HLDDesignProblems/UberDriverAllocationDesign)
 
 # Key Features of ElasticSearch
+
+## :star: General Use Cases of ElasticSearch
+- `Search - Full-text, Partial etc.`
+- [Logs-analysis with ELK](../../../7_MonitoringTools/ELK.md)
+- [Dashboard, Visualize data, Metrics etc. with ELK](../../../7_MonitoringTools/ELK.md)
+- [Security, SIEM with ELK](../../../7_MonitoringTools/ELK.md)
+- [Read more about usages of Lucene](ApacheLucene.md#real-world-usages-of-apache-lucene)
 
 ## Different data types supported
 - Textual
@@ -25,26 +32,17 @@
 - Index APIs (`GET /_cat/indices`)
 - Cluster APIs
 
-## [ElasticSearch Cluster](ElasticSearchCluster.md)
+## :star: [ElasticSearch Cluster](ElasticSearchCluster.md)
+
+## :star: [ElasticSearch Data Streaming](ElasticSearchDataStreams.md)
+
+## :star: [ElasticSearch Data Streaming](ElasticSearchGeoSpatialSupport.md)
 
 ## Data Storage Architecture
 - Settings, index mapping, alternative cluster states, and other metadata are saved to Elasticsearch files outside the [Lucene](ApacheLucene.md) environment.
-- In Lucene, data updates are resource-intensive operations, because segments are immutable, and every commit creates a new segment, then segments are merged automatically. 
-- To avoid this excessive I/O, Elasticsearch creates dedicated transactional index logs, preventing low-level Lucene commits for each indexing procedure. 
+- In [Lucene](ApacheLucene.md), data updates are resource-intensive operations, because segments are immutable, and every commit creates a new segment, then segments are merged automatically. 
+- `To avoid this excessive I/O, Elasticsearch creates dedicated transactional index logs, preventing low-level Lucene commits for each indexing procedure`. 
 - These logs can also be used for recovery in case of data corruption.
-
-## General Use Cases of ElasticSearch
-- `Search - Full-text, Partial etc.`
-- [Logs-analysis with ELK](../../../7_MonitoringTools/ELK.md)
-- [Dashboard, Visualize data, Metrics etc. with ELK](../../../7_MonitoringTools/ELK.md)
-- [Security, SIEM with ELK](../../../7_MonitoringTools/ELK.md)
-- [Read more about usages of Lucene](ApacheLucene.md#real-world-usages-of-apache-lucene)
-
-## GeoSpatial Support
-
-[Different geo queries](https://www.elastic.co/guide/en/elasticsearch/reference/current/geo-queries.html) are supported in ElasticSearch, for GeoSpatial
-- Geo-Point
-- Geo-Shape etc.
 
 # Other Points
 - [Installation using Docker ELK](https://github.com/deviantony/docker-elk)
