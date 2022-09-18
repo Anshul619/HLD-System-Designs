@@ -88,5 +88,7 @@ Suppose you want to figure out all the supplies available within a 3km radius of
 
 # References
 - [System Design of Uber App – Uber System Architecture](https://www.geeksforgeeks.org/system-design-of-uber-app-uber-system-architecture/)
+- [Scaling Uber’s Elasticsearch as an Geo-Temporal Database](https://qconlondon.com/ln2018/system/files/presentation-slides/qcon-london-2018-pdf.pdf)
+- [codeKarle - Uber System Design | Ola System Design | System Design Interview Question - Grab, Lyft](https://www.youtube.com/watch?v=Tp8kpMe-ZKw)
 - [How Uber Scales Their Real-Time Market Platform](http://highscalability.com/blog/2015/9/14/how-uber-scales-their-real-time-market-platform.html)
 - [Uber Backend Design - Educative.io](https://www.educative.io/blog/uber-backend-system-design)
