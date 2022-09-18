@@ -22,6 +22,7 @@ This repo contains the various system design components info, questions and solu
 - :star: [System Estimation Tips](src/1_HLDDesignComponents/SystemEstimationTips.md)
 - [System Design Tips](src/1_HLDDesignComponents/SystemDesignTips.md)
 - [MicroServices - Modern SOA Architecture](src/1_HLDDesignComponents/1_MicroServicesSOA)
+- [Open Source Contributions](src/1_HLDDesignComponents/OpenSourceContributions.md)
 - [Other Glossaries](src/1_HLDDesignComponents/0_SystemGlossaries/README.md)
 
 # [Message Brokers](src/1_HLDDesignComponents/4_MessageBrokers)
