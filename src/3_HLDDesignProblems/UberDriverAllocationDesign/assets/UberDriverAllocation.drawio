@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-09-17T17:07:46.355Z" agent="5.0 (Macintosh)" etag="PBpM6B0FWa21Int0jXuf" version="20.3.2" type="github">
+<mxfile host="app.diagrams.net" modified="2022-09-18T11:04:21.055Z" agent="5.0 (Macintosh)" etag="SzikNRkEtx7aMGPPe9sU" version="20.3.2" type="github">
   <diagram id="pcyGeBuE8nyzWbv3072U" name="Page-1">
     <mxGraphModel dx="1796" dy="526" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -28,7 +28,7 @@
             <mxPoint x="450" y="340" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="frjB1W2SkOTdsVXl6TDt-8" value="Driver Location DB &lt;br&gt;&lt;div&gt;(ElasticSearch - &lt;br&gt;&lt;/div&gt;&lt;div&gt;GeoSpatial Supported)&lt;/div&gt;" style="outlineConnect=0;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;shape=mxgraph.aws3.elasticsearch_service;fillColor=#F58534;gradientColor=none;" parent="1" vertex="1">
+        <mxCell id="frjB1W2SkOTdsVXl6TDt-8" value="Driver GeoLocation DB &lt;br&gt;&lt;div&gt;(ElasticSearch - &lt;br&gt;&lt;/div&gt;&lt;div&gt;GeoSpatial Supported)&lt;/div&gt;" style="outlineConnect=0;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;shape=mxgraph.aws3.elasticsearch_service;fillColor=#F58534;gradientColor=none;" parent="1" vertex="1">
           <mxGeometry x="457.75" y="740" width="67.5" height="81" as="geometry" />
         </mxCell>
         <mxCell id="frjB1W2SkOTdsVXl6TDt-10" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" parent="1" source="frjB1W2SkOTdsVXl6TDt-11" target="frjB1W2SkOTdsVXl6TDt-5" edge="1">
@@ -49,14 +49,11 @@
         <mxCell id="frjB1W2SkOTdsVXl6TDt-16" value="Driver" style="ellipse;shape=cloud;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
           <mxGeometry x="425" y="80" width="120" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="frjB1W2SkOTdsVXl6TDt-17" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.55;exitY=0.95;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="frjB1W2SkOTdsVXl6TDt-16" target="frjB1W2SkOTdsVXl6TDt-18" edge="1">
+        <mxCell id="frjB1W2SkOTdsVXl6TDt-17" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.55;exitY=0.95;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="frjB1W2SkOTdsVXl6TDt-16" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="310" y="370" as="sourcePoint" />
-            <mxPoint x="490" y="270" as="targetPoint" />
+            <mxPoint x="492" y="440" as="targetPoint" />
           </mxGeometry>
-        </mxCell>
-        <mxCell id="frjB1W2SkOTdsVXl6TDt-18" value="Push Location" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" parent="1" vertex="1">
-          <mxGeometry x="431.5" y="280" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="frjB1W2SkOTdsVXl6TDt-19" value="Accept Trip" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" parent="1" vertex="1">
           <mxGeometry x="610" y="280" width="120" height="60" as="geometry" />
@@ -67,16 +64,10 @@
             <mxPoint x="360" y="310" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="frjB1W2SkOTdsVXl6TDt-22" value="Driver Location Topic" style="sketch=0;points=[[0,0,0],[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0,0],[0,1,0],[0.25,1,0],[0.5,1,0],[0.75,1,0],[1,1,0],[0,0.25,0],[0,0.5,0],[0,0.75,0],[1,0.25,0],[1,0.5,0],[1,0.75,0]];outlineConnect=0;fontColor=#232F3E;gradientColor=#945DF2;gradientDirection=north;fillColor=#5A30B5;strokeColor=#ffffff;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.managed_streaming_for_kafka;" parent="1" vertex="1">
+        <mxCell id="frjB1W2SkOTdsVXl6TDt-22" value="Driver GeoLocation Topic" style="sketch=0;points=[[0,0,0],[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0,0],[0,1,0],[0.25,1,0],[0.5,1,0],[0.75,1,0],[1,1,0],[0,0.25,0],[0,0.5,0],[0,0.75,0],[1,0.25,0],[1,0.5,0],[1,0.75,0]];outlineConnect=0;fontColor=#232F3E;gradientColor=#945DF2;gradientDirection=north;fillColor=#5A30B5;strokeColor=#ffffff;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.managed_streaming_for_kafka;" parent="1" vertex="1">
           <mxGeometry x="453.5" y="443" width="78" height="78" as="geometry" />
         </mxCell>
-        <mxCell id="frjB1W2SkOTdsVXl6TDt-23" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="frjB1W2SkOTdsVXl6TDt-18" target="frjB1W2SkOTdsVXl6TDt-22" edge="1">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="310" y="550" as="sourcePoint" />
-            <mxPoint x="360" y="500" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="frjB1W2SkOTdsVXl6TDt-25" value="Push Driver Location Consumer" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" parent="1" vertex="1">
+        <mxCell id="frjB1W2SkOTdsVXl6TDt-25" value="Push Driver&#39;s GeoLocation Consumer" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" parent="1" vertex="1">
           <mxGeometry x="432.5" y="610" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="frjB1W2SkOTdsVXl6TDt-26" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="frjB1W2SkOTdsVXl6TDt-22" target="frjB1W2SkOTdsVXl6TDt-25" edge="1">
@@ -91,8 +82,8 @@
             <mxPoint x="360" y="550" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="frjB1W2SkOTdsVXl6TDt-28" value="Send Notification To Matched Drivers" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
-          <mxGeometry x="710" y="1040" width="100" height="30" as="geometry" />
+        <mxCell id="frjB1W2SkOTdsVXl6TDt-28" value="4. Send Notification To Matched Drivers" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="325" y="1035" width="120" height="30" as="geometry" />
         </mxCell>
         <mxCell id="frjB1W2SkOTdsVXl6TDt-29" value="Accept Trip Topic" style="sketch=0;points=[[0,0,0],[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0,0],[0,1,0],[0.25,1,0],[0.5,1,0],[0.75,1,0],[1,1,0],[0,0.25,0],[0,0.5,0],[0,0.75,0],[1,0.25,0],[1,0.5,0],[1,0.75,0]];outlineConnect=0;fontColor=#232F3E;gradientColor=#945DF2;gradientDirection=north;fillColor=#5A30B5;strokeColor=#ffffff;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.managed_streaming_for_kafka;" parent="1" vertex="1">
           <mxGeometry x="631" y="443" width="78" height="78" as="geometry" />
@@ -121,20 +112,20 @@
             <mxPoint x="370" y="610" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="frjB1W2SkOTdsVXl6TDt-39" value="Get Drivers, within the location" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
-          <mxGeometry x="346" y="790" width="94" height="30" as="geometry" />
+        <mxCell id="frjB1W2SkOTdsVXl6TDt-39" value="2. Get Drivers, for the the geolocations" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="330" y="790" width="110" height="30" as="geometry" />
         </mxCell>
         <mxCell id="frjB1W2SkOTdsVXl6TDt-40" value="Drivers DB" style="sketch=0;outlineConnect=0;fontColor=#232F3E;gradientColor=none;fillColor=#2E27AD;strokeColor=none;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;pointerEvents=1;shape=mxgraph.aws4.rds_postgresql_instance;" parent="1" vertex="1">
-          <mxGeometry x="631" y="850" width="78" height="78" as="geometry" />
+          <mxGeometry x="649" y="850" width="78" height="78" as="geometry" />
         </mxCell>
-        <mxCell id="frjB1W2SkOTdsVXl6TDt-44" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="1" source="frjB1W2SkOTdsVXl6TDt-35" target="frjB1W2SkOTdsVXl6TDt-40" edge="1">
+        <mxCell id="frjB1W2SkOTdsVXl6TDt-44" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.75;exitY=1;exitDx=0;exitDy=0;edgeStyle=orthogonalEdgeStyle;" parent="1" source="frjB1W2SkOTdsVXl6TDt-35" target="frjB1W2SkOTdsVXl6TDt-40" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="320" y="870" as="sourcePoint" />
             <mxPoint x="370" y="820" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="frjB1W2SkOTdsVXl6TDt-45" value="Update Driver Availability" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
-          <mxGeometry x="610" y="750" width="60" height="30" as="geometry" />
+        <mxCell id="frjB1W2SkOTdsVXl6TDt-45" value="2. Update Driver Availability" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="640" y="715" width="60" height="30" as="geometry" />
         </mxCell>
         <mxCell id="frjB1W2SkOTdsVXl6TDt-46" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;edgeStyle=elbowEdgeStyle;" parent="1" source="frjB1W2SkOTdsVXl6TDt-11" target="frjB1W2SkOTdsVXl6TDt-40" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
@@ -145,20 +136,20 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="frjB1W2SkOTdsVXl6TDt-47" value="Check Available Driver" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
-          <mxGeometry x="290" y="920" width="94" height="30" as="geometry" />
+        <mxCell id="frjB1W2SkOTdsVXl6TDt-47" value="3. Check Driver&#39;s Availability" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="335" y="920" width="94" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="frjB1W2SkOTdsVXl6TDt-54" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.25;exitDx=0;exitDy=0;edgeStyle=orthogonalEdgeStyle;" parent="1" source="frjB1W2SkOTdsVXl6TDt-35" target="frjB1W2SkOTdsVXl6TDt-58" edge="1">
+        <mxCell id="frjB1W2SkOTdsVXl6TDt-54" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.25;exitDx=0;exitDy=0;edgeStyle=orthogonalEdgeStyle;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="frjB1W2SkOTdsVXl6TDt-35" target="frjB1W2SkOTdsVXl6TDt-58" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="880" y="670" as="sourcePoint" />
-            <mxPoint x="930" y="620" as="targetPoint" />
+            <mxPoint x="910" y="980" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="frjB1W2SkOTdsVXl6TDt-55" value="Send Notification To Rider about Trip" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
-          <mxGeometry x="940" y="730" width="60" height="30" as="geometry" />
+        <mxCell id="frjB1W2SkOTdsVXl6TDt-55" value="2. Send Notification To Rider &amp;amp; Driver about Booked Trip&lt;br&gt;&lt;br&gt;Or Send Notification To Drivers about failed booking" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="930" y="730" width="90" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="frjB1W2SkOTdsVXl6TDt-56" value="Create New Trip" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
-          <mxGeometry x="780" y="740" width="60" height="30" as="geometry" />
+        <mxCell id="frjB1W2SkOTdsVXl6TDt-56" value="&lt;div&gt;1. Create New Trip&lt;/div&gt;&lt;div&gt;(TransactionLock)&lt;br&gt;&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="771" y="740" width="130" height="30" as="geometry" />
         </mxCell>
         <mxCell id="frjB1W2SkOTdsVXl6TDt-58" value="&lt;div&gt;Notification Service &lt;br&gt;&lt;/div&gt;&lt;div&gt;( SNS or Firebase )&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#333333;" parent="1" vertex="1">
           <mxGeometry x="860" y="990" width="130" height="70" as="geometry" />
@@ -169,14 +160,50 @@
             <mxPoint x="600" y="820" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="39VdxQCoYcgSN5myBxom-1" value="Push" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+        <mxCell id="39VdxQCoYcgSN5myBxom-1" value="Push" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="246" y="410" width="60" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="39VdxQCoYcgSN5myBxom-2" value="Listen" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+        <mxCell id="39VdxQCoYcgSN5myBxom-2" value="Listen" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="250" y="660" width="60" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="39VdxQCoYcgSN5myBxom-3" value="Find Available Drivers within given pickup location &amp;amp; ready for delivery location" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="-20" y="770" width="170" height="30" as="geometry" />
+        <mxCell id="VM7dyoGf9EZAc1K57mq5-1" value="Map" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://cdn1.iconfinder.com/data/icons/ui-essential-17/32/UI_Essential_Outline_2_essential-app-ui-location-map-pin-22-128.png" vertex="1" parent="1">
+          <mxGeometry x="-260" y="745" width="70" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="VM7dyoGf9EZAc1K57mq5-2" value="Google S2 Library" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="1">
+          <mxGeometry x="-107" y="750.5" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="VM7dyoGf9EZAc1K57mq5-4" value="" style="endArrow=classic;html=1;rounded=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="frjB1W2SkOTdsVXl6TDt-11" target="VM7dyoGf9EZAc1K57mq5-2">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="110" y="830" as="sourcePoint" />
+            <mxPoint x="160" y="780" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="VM7dyoGf9EZAc1K57mq5-5" value="" style="endArrow=classic;html=1;rounded=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="VM7dyoGf9EZAc1K57mq5-2" target="VM7dyoGf9EZAc1K57mq5-1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="110" y="830" as="sourcePoint" />
+            <mxPoint x="160" y="780" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="VM7dyoGf9EZAc1K57mq5-6" value="1. Find GeoLocations within the pickup geolocation area ( say 3km )" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="24" y="800" width="135" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="VM7dyoGf9EZAc1K57mq5-7" value="&lt;div&gt;Push Location every 4 seconds&lt;br&gt;&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="500" y="230" width="95" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="VM7dyoGf9EZAc1K57mq5-8" value="" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://cdn4.iconfinder.com/data/icons/transportation-190/1000/transportation_cabrio_automobile_cabriolet_car_vehicle_cab-128.png" vertex="1" parent="1">
+          <mxGeometry x="417" y="10" width="128" height="128" as="geometry" />
+        </mxCell>
+        <mxCell id="VM7dyoGf9EZAc1K57mq5-9" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.75;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="frjB1W2SkOTdsVXl6TDt-25" target="frjB1W2SkOTdsVXl6TDt-40">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="600" y="740" as="sourcePoint" />
+            <mxPoint x="650" y="690" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="VM7dyoGf9EZAc1K57mq5-10" value="Update Driver&#39;s Latest Location" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="545" y="715" width="75" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="VM7dyoGf9EZAc1K57mq5-14" value="Save Location" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="432.5" y="685" width="60" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
