@@ -32,13 +32,28 @@ Design driver allocation to riders in an Uber-like system
 ## :star: Driver Match algo
 - Area filter
 - Availability of driver (not available, busy, schedule)
-- Location estimate?
+- [Dispatch System - Location estimate?](#dispatch-system---using-google-s2-library)
   - Distance - High performance intensive (between pickup)
 - Special - Give preference ( top-rated drivers ) to the premium riders
-- filtered drivers, can be done on the end
+- filtered drivers, can be done on the end.
+
+### Dispatch System - Using Google S2 Library
+
+The dispatch system completely works on maps and location data/GPS, so the first thing which is important is to model our maps and location data.
+- Earth has a spherical shape, so it’s difficult to do summarization and approximation by using latitude and longitude. 
+- To solve this problem Uber uses the [Google S2 library](https://s2geometry.io/). 
+- This library divides the map data into tiny cells (for example 3km) and gives the unique ID to each cell. 
+- This is an easy way to spread data in the distributed system and store it easily.
+- S2 library gives coverage for any given shape easily. 
+
+Suppose you want to figure out all the supplies available within a 3km radius of a city. 
+- `Using the S2 libraries you can draw a circle of 3km radius, and it will filter out all the cells with IDs that lie in that particular circle`. 
+- This way you can easily match the rider to the driver, and you can easily find out the number of cars(supply) available in a particular region.
+
+![img.png](https://s2geometry.io/devguide/img/s2hierarchy.gif)
 
 ## Multiple driver accepting trip
-- location L requested - 10 drivers are present
+- Lets say `L Location is requested & 10 drivers are present`.
 - Lock `TripsDB` record so only one driver accepts the trip.
 - If locked/ trip accepted, notify other 9 drivers something.
 
@@ -66,6 +81,6 @@ Design driver allocation to riders in an Uber-like system
 - AutoScale the instances using AWS AutoScaling group.
 
 # References
-- [Uber Backend Design - Educative.io](https://www.educative.io/blog/uber-backend-system-design)
 - [System Design of Uber App – Uber System Architecture](https://www.geeksforgeeks.org/system-design-of-uber-app-uber-system-architecture/)
 - [How Uber Scales Their Real-Time Market Platform](http://highscalability.com/blog/2015/9/14/how-uber-scales-their-real-time-market-platform.html)
+- [Uber Backend Design - Educative.io](https://www.educative.io/blog/uber-backend-system-design)
