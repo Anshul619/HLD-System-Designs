@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-09-18T10:55:05.932Z" agent="5.0 (Macintosh)" etag="6hERbZC5x4EofEN98RAS" version="20.3.2" type="github">
+<mxfile host="app.diagrams.net" modified="2022-09-18T11:04:21.055Z" agent="5.0 (Macintosh)" etag="SzikNRkEtx7aMGPPe9sU" version="20.3.2" type="github">
   <diagram id="pcyGeBuE8nyzWbv3072U" name="Page-1">
     <mxGraphModel dx="1796" dy="526" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -124,7 +124,7 @@
             <mxPoint x="370" y="820" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="frjB1W2SkOTdsVXl6TDt-45" value="Update Driver Availability" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+        <mxCell id="frjB1W2SkOTdsVXl6TDt-45" value="2. Update Driver Availability" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="640" y="715" width="60" height="30" as="geometry" />
         </mxCell>
         <mxCell id="frjB1W2SkOTdsVXl6TDt-46" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;edgeStyle=elbowEdgeStyle;" parent="1" source="frjB1W2SkOTdsVXl6TDt-11" target="frjB1W2SkOTdsVXl6TDt-40" edge="1">
@@ -139,17 +139,17 @@
         <mxCell id="frjB1W2SkOTdsVXl6TDt-47" value="3. Check Driver&#39;s Availability" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="335" y="920" width="94" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="frjB1W2SkOTdsVXl6TDt-54" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.25;exitDx=0;exitDy=0;edgeStyle=orthogonalEdgeStyle;" parent="1" source="frjB1W2SkOTdsVXl6TDt-35" target="frjB1W2SkOTdsVXl6TDt-58" edge="1">
+        <mxCell id="frjB1W2SkOTdsVXl6TDt-54" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.25;exitDx=0;exitDy=0;edgeStyle=orthogonalEdgeStyle;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="frjB1W2SkOTdsVXl6TDt-35" target="frjB1W2SkOTdsVXl6TDt-58" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="880" y="670" as="sourcePoint" />
-            <mxPoint x="930" y="620" as="targetPoint" />
+            <mxPoint x="910" y="980" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="frjB1W2SkOTdsVXl6TDt-55" value="Send Notification To Rider about Trip" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
-          <mxGeometry x="940" y="730" width="60" height="30" as="geometry" />
+        <mxCell id="frjB1W2SkOTdsVXl6TDt-55" value="2. Send Notification To Rider &amp;amp; Driver about Booked Trip&lt;br&gt;&lt;br&gt;Or Send Notification To Drivers about failed booking" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="930" y="730" width="90" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="frjB1W2SkOTdsVXl6TDt-56" value="Create New Trip" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
-          <mxGeometry x="780" y="740" width="60" height="30" as="geometry" />
+        <mxCell id="frjB1W2SkOTdsVXl6TDt-56" value="&lt;div&gt;1. Create New Trip&lt;/div&gt;&lt;div&gt;(TransactionLock)&lt;br&gt;&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="771" y="740" width="130" height="30" as="geometry" />
         </mxCell>
         <mxCell id="frjB1W2SkOTdsVXl6TDt-58" value="&lt;div&gt;Notification Service &lt;br&gt;&lt;/div&gt;&lt;div&gt;( SNS or Firebase )&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#333333;" parent="1" vertex="1">
           <mxGeometry x="860" y="990" width="130" height="70" as="geometry" />
@@ -201,6 +201,9 @@
         </mxCell>
         <mxCell id="VM7dyoGf9EZAc1K57mq5-10" value="Update Driver&#39;s Latest Location" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="545" y="715" width="75" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="VM7dyoGf9EZAc1K57mq5-14" value="Save Location" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="432.5" y="685" width="60" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
