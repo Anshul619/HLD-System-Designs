@@ -26,6 +26,7 @@ This repo contains the various system design components info, questions and solu
 - [Other Glossaries](src/1_HLDDesignComponents/0_SystemGlossaries/README.md)
 
 # HLD Components
+
 <table>
   <tbody>
     <tr>
