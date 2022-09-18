@@ -1,7 +1,7 @@
 # Key Characteristics of Distributed Systems
 
-| Basis                                                                                  | Applicable Components              |
-|----------------------------------------------------------------------------------------|------------------------------------|
+| Basis                                                                                                                               | Applicable Components              |
+|-------------------------------------------------------------------------------------------------------------------------------------|------------------------------------|
 | :star: [Efficiency - Latency, Throughput](src/1_HLDDesignComponents/0_SystemGlossaries/LatencyThroughput.md)                        | ALL                                |
 | :star: [Scalability](src/1_HLDDesignComponents/0_SystemGlossaries/Scalability.md)                                                   | ALL                                |
 | :star: [High Availability](src/1_HLDDesignComponents/0_SystemGlossaries/HighAvailability.md)                                        | ALL                                |
@@ -14,7 +14,8 @@
 | [Load Balancer](src/1_HLDDesignComponents/0_SystemGlossaries/LoadBalancer.md)                                                       | ALL                                |
 | [Atomicity](src/1_HLDDesignComponents/0_SystemGlossaries/Atomicity.md)                                                              | `Data Stores`                      |
 | [Durability](src/1_HLDDesignComponents/0_SystemGlossaries/Durability.md)                                                            | `Data Stores`                      |
-| [Content Delivery Network (CDN)](src/1_HLDDesignComponents/0_SystemGlossaries/CDNs.md)                                              | `Static Content`                    |
+| [Content Delivery Network (CDN)](src/1_HLDDesignComponents/0_SystemGlossaries/CDNs.md)                                              | `Static Content`                   |
+| [Append Only DB Storages](src/1_HLDDesignComponents/0_SystemGlossaries/AppendOnlyDBStorages.md)                                     | `Data Stores`                      |
 
 This repo contains the various system design components info, questions and solutions.
 - :star: [AWS Components](src/2_AWSComponents)
