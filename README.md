@@ -36,8 +36,8 @@ Message brokers are used to decouple & enable [Event Driven Architectures](src/1
 
 <div class="container">
     <div class="block two first">
-        <a href="/src/1_HLDDesignComponents/4_MessageBrokers/Kafka.md"><img src="http://i1.wp.com/airisdata.com/wp-content/uploads/2016/01/kafka-logo-600x390.jpg?resize=600%2C390" width="50"></a>
-        <a href="/src/1_HLDDesignComponents/4_MessageBrokers/RabbitMQ.md"><img src="https://www.logo.wine/a/logo/RabbitMQ/RabbitMQ-Logo.wine.svg" width="50"></a>
+        <a href="/src/1_HLDDesignComponents/4_MessageBrokers/Kafka.md"><img src="http://i1.wp.com/airisdata.com/wp-content/uploads/2016/01/kafka-logo-600x390.jpg?resize=600%2C390" width="200"></a>
+        <a href="/src/1_HLDDesignComponents/4_MessageBrokers/RabbitMQ.md"><img src="https://www.logo.wine/a/logo/RabbitMQ/RabbitMQ-Logo.wine.svg" width="200"></a>
     </div>
 </div>
 
