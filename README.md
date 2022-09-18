@@ -34,6 +34,13 @@ Message brokers are used to decouple & enable [Event Driven Architectures](src/1
 - [Amazon SNS](src/2_AWSComponents/5_MessageBrokerServices/AmazonSNS.md)
 - [Active MQ](src/1_HLDDesignComponents/4_MessageBrokers/ActiveMQ.md)
 
+<div class="container">
+    <div class="block two first">
+        <a href="/src/1_HLDDesignComponents/4_MessageBrokers/Kafka.md"><img src="http://i1.wp.com/airisdata.com/wp-content/uploads/2016/01/kafka-logo-600x390.jpg?resize=600%2C390" width="50"></a>
+        <a href="/src/1_HLDDesignComponents/4_MessageBrokers/RabbitMQ.md"><img src="https://www.logo.wine/a/logo/RabbitMQ/RabbitMQ-Logo.wine.svg" width="50"></a>
+    </div>
+</div>
+
 # Various Databases
 - :star: [SQL & NoSQL databases](src/1_HLDDesignComponents/3_DatabaseComponents)
 - [Postgres](src/1_HLDDesignComponents/3_DatabaseComponents/PostgresQuery.md)
@@ -41,7 +48,7 @@ Message brokers are used to decouple & enable [Event Driven Architectures](src/1
 ## NoSQL Databases
 - :star: [ElasticSearch](src/1_HLDDesignComponents/3_DatabaseComponents/NoSQL-Databases/ElasticSearch)
 - :star: [Casandra](src/1_HLDDesignComponents/3_DatabaseComponents/NoSQL-Databases/ApacheCasandra.md)
-- :star: [HBase](src/1_HLDDesignComponents/3_DatabaseComponents/NoSQL-Databases/ApacheHBase.md)
+- [HBase](src/1_HLDDesignComponents/3_DatabaseComponents/NoSQL-Databases/ApacheHBase.md)
 - [MongoDB](src/1_HLDDesignComponents/3_DatabaseComponents/NoSQL-Databases/MongoDB)
 
 ## In-Memory DBs/Cache
@@ -55,6 +62,10 @@ Message brokers are used to decouple & enable [Event Driven Architectures](src/1
 - [Apache Spark vs MapReduce](src/1_HLDDesignComponents/5_BigDataComponents/ApacheSparkVsHadoopMapReduce.md)
 - [Apache Hadoop](src/1_HLDDesignComponents/5_BigDataComponents/ApacheHadoop)
 - [Apache Storm](src/1_HLDDesignComponents/5_BigDataComponents/ApacheStorm.md)
+
+
+
+
 
 # API Technology Options
 
