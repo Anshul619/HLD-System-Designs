@@ -1,20 +1,20 @@
-<mxfile host="app.diagrams.net" modified="2022-09-19T05:04:48.789Z" agent="5.0 (Macintosh)" etag="Gi210KTNu5m9yFGoWben" version="20.3.2" type="github">
+<mxfile host="app.diagrams.net" modified="2022-09-19T05:08:26.143Z" agent="5.0 (Macintosh)" etag="nxanA1cad6WidU2OAFSd" version="20.3.2" type="github">
   <diagram id="B0SlMsek6jtzEiFGTetp" name="Page-1">
     <mxGraphModel dx="946" dy="526" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
         <mxCell id="Unap_gfNNR2s0oB9kgBv-1" value="" style="rounded=0;whiteSpace=wrap;html=1;dashed=1;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#333333;" parent="1" vertex="1">
-          <mxGeometry x="70" y="60" width="420" height="120" as="geometry" />
+          <mxGeometry x="70" y="60" width="530" height="120" as="geometry" />
         </mxCell>
         <mxCell id="Unap_gfNNR2s0oB9kgBv-3" value="Key-Value Stores" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="70" y="30" width="100" height="30" as="geometry" />
         </mxCell>
         <mxCell id="Unap_gfNNR2s0oB9kgBv-4" value="Redis" style="outlineConnect=0;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;shape=mxgraph.aws3.redis;fillColor=#2E73B8;gradientColor=none;" parent="1" vertex="1">
-          <mxGeometry x="316" y="82.63" width="60" height="63" as="geometry" />
+          <mxGeometry x="250" y="87.63" width="60" height="63" as="geometry" />
         </mxCell>
         <mxCell id="Unap_gfNNR2s0oB9kgBv-5" value="Amazon DynamoDB" style="outlineConnect=0;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;shape=mxgraph.aws3.dynamo_db;fillColor=#2E73B8;gradientColor=none;" parent="1" vertex="1">
-          <mxGeometry x="393" y="77" width="65" height="70.25" as="geometry" />
+          <mxGeometry x="341" y="84.63" width="65" height="70.25" as="geometry" />
         </mxCell>
         <mxCell id="Unap_gfNNR2s0oB9kgBv-6" value="" style="rounded=0;whiteSpace=wrap;html=1;dashed=1;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#333333;" parent="1" vertex="1">
           <mxGeometry x="70" y="240" width="610" height="120" as="geometry" />
@@ -63,6 +63,9 @@
         </mxCell>
         <mxCell id="o3ATrYxjZSOSUljGKmYA-1" value="Amazon DynamoDB" style="outlineConnect=0;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;shape=mxgraph.aws3.dynamo_db;fillColor=#2E73B8;gradientColor=none;" vertex="1" parent="1">
           <mxGeometry x="494" y="261.38" width="65" height="70.25" as="geometry" />
+        </mxCell>
+        <mxCell id="o3ATrYxjZSOSUljGKmYA-3" value="" style="shape=image;imageAspect=0;aspect=fixed;verticalLabelPosition=bottom;verticalAlign=top;image=https://dwglogo.com/wp-content/uploads/2018/09/RocksDB_logo_01-1024x577.png;" vertex="1" parent="1">
+          <mxGeometry x="420" y="94.55" width="97.9" height="55.16" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
