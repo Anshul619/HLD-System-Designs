@@ -24,6 +24,8 @@ Relational databases store data in rows and columns.
 # NoSQL - Intro, Different NoSQL types
 - [Read here](NoSQL-Databases)
 
+![img.png](NoSQL-Databases/assets/NoSQL-DifferentDBtypes.drawio.png)
+
 # SQL - Different Databases
 
 ## MySQL vs PostgreSQL
