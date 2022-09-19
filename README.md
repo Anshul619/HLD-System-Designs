@@ -31,6 +31,23 @@ This repo contains the various system design components info, questions and solu
   <tbody>
     <tr>
       <td>
+        <a href="src/1_HLDDesignComponents/3_DatabaseComponents/NoSQL-Databases/Redis/RedisVsMemCache.md">In-Memory DBs/Cache</a>
+      </td>
+      <td>
+        <div class="container" style="background:white">
+            <div class="block two first">
+                <a href="/src/1_HLDDesignComponents/3_DatabaseComponents/NoSQL-Databases/Redis" target="_blank">
+                  <img src="https://upload.wikimedia.org/wikipedia/en/6/6b/Redis_Logo.svg" width="150">
+                </a>
+                <a href="/src/1_HLDDesignComponents/3_DatabaseComponents/NoSQL-Databases/AeroSpike.md" target="_blank">
+                  <img src="https://aerospike.com/wp-content/uploads/2021/03/logo-4.png" width="150">
+                </a>
+            </div>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td>
         <a href="src/1_HLDDesignComponents/4_MessageBrokers">Message brokers</a>
         <br><br>
         <a href="src/1_HLDDesignComponents/4_MessageBrokers/KafkaVsRabbitMQVsSQSVsSNS.md">Comparisons</a>
@@ -51,9 +68,7 @@ This repo contains the various system design components info, questions and solu
     </tr>
     <tr>
       <td>
-        <a href="src/1_HLDDesignComponents/4_MessageBrokers" target="_blank">Databases</a>
-        <br><br>
-        <a href="src/1_HLDDesignComponents/3_DatabaseComponents/ReadMe.md" target="_blank">Comparisons</a>
+        <a href="src/1_HLDDesignComponents/3_DatabaseComponents/ReadMe.md" target="_blank">Databases</a>
       </td>
       <td>
         <div class="container" style="background:white">
@@ -74,14 +89,6 @@ This repo contains the various system design components info, questions and solu
     </tr>
   </tbody>
 </table>
-
-# Various Databases
-- [Postgres](src/1_HLDDesignComponents/3_DatabaseComponents/PostgresQuery.md)
-
-## In-Memory DBs/Cache
-- :star: [Redis](src/1_HLDDesignComponents/3_DatabaseComponents/NoSQL-Databases/Redis)
-- [Redis vs MemCache](src/1_HLDDesignComponents/3_DatabaseComponents/NoSQL-Databases/Redis/RedisVsMemCache.md)
-- [AeroSpike](src/1_HLDDesignComponents/3_DatabaseComponents/NoSQL-Databases/AeroSpike.md)
 
 # Big Data Components
 - :star: [Apache Spark](src/1_HLDDesignComponents/5_BigDataComponents/ApacheSpark.md)
