@@ -8,7 +8,7 @@
 | :star: [Apache Casandra](ApacheCasandra.md)                                             | Handle large amount of data, at [low latency](../../0_SystemGlossaries/LatencyThroughput.md) (with [eventual consistency](../../0_SystemGlossaries/ReplicationAndDataConsistency.md))  | Wide-Column-DB | `Open Source`         |
 | [Apache HBase](ApacheHBase.md)                                                          | Handle large amount of data, at [normal latency](../../0_SystemGlossaries/LatencyThroughput.md) (with [strong consistency](../../0_SystemGlossaries/ReplicationAndDataConsistency.md)) | Wide-Column-DB | `Open Source`         |
 | [MongoDB](MongoDB)                                                                      | -                                                                                                                                                                                      | Document-DB    | `Open Source`         |
-| [RocksDB](RocksDB.md)                                                                   | -                                                                                                                                                                                      | Document-DB    | `Open Source`         |
+| [RocksDB](RocksDB.md)                                                                   | [low latency](../../0_SystemGlossaries/LatencyThroughput.md), key-value data store for timeline use cases (like newsfeed).                                                             | Document-DB    | `Open Source`         |
 
 # NoSQL-DB types
 

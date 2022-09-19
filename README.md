@@ -31,7 +31,7 @@ This repo contains the various system design components info, questions and solu
   <tbody>
     <tr>
       <td>
-        <a href="src/1_HLDDesignComponents/3_DatabaseComponents/NoSQL-Databases/Redis/RedisVsMemCache.md">In-Memory DBs/Cache</a>
+        <a href="src/1_HLDDesignComponents/3_DatabaseComponents/NoSQL-Databases/Redis/README.md">In-Memory DBs/Cache</a>
       </td>
       <td>
         <div class="container" style="background:white">
@@ -68,6 +68,28 @@ This repo contains the various system design components info, questions and solu
     </tr>
     <tr>
       <td>
+        <a href="src/1_HLDDesignComponents/5_BigDataComponents">BigData Compute Engines</a>
+        <br><br>
+        <a href="src/1_HLDDesignComponents/5_BigDataComponents/ApacheSparkVsHadoopMapReduce.md">Comparisons</a>
+      </td>
+      <td>
+        <div class="container" style="background:white">
+            <div class="block two first">
+                <a href="/src/1_HLDDesignComponents/5_BigDataComponents/ApacheSpark.md" target="_blank">
+                  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Apache_Spark_logo.svg/1200px-Apache_Spark_logo.svg.png" width="150">
+                </a>
+                <a href="/src/1_HLDDesignComponents/5_BigDataComponents/ApacheHadoop" target="_blank">
+                  <img src="https://miro.medium.com/max/1400/0*xEggq2GoZSUT9AG6.png" width="150">
+                </a>
+                <a href="/src/1_HLDDesignComponents/5_BigDataComponents/ApacheStorm.md" target="_blank">
+                  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Apache_Storm_logo.svg/1200px-Apache_Storm_logo.svg.png" width="150">
+                </a>
+            </div>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td>
         <a href="src/1_HLDDesignComponents/3_DatabaseComponents/ReadMe.md" target="_blank">Databases</a>
       </td>
       <td>
@@ -87,16 +109,25 @@ This repo contains the various system design components info, questions and solu
         </div>
       </td>
     </tr>
+    <tr>
+      <td>
+        <a href="src/1_HLDDesignComponents/5_BigDataComponents/ApacheHadoop/ApacheHDFS.md" target="_blank">Storage Services</a>
+      </td>
+      <td>
+        <div class="container" style="background:white">
+            <div class="block two first">
+                <a href="src/2_AWSComponents/7_StorageServices/AmazonS3.md" target="_blank">
+                  <img src="https://www.freecodecamp.org/news/content/images/size/w2000/2020/08/Screenshot-2020-08-10-at-6.26.31-PM.png" width="150">
+                </a>
+                <a href="/src/1_HLDDesignComponents/5_BigDataComponents/ApacheHadoop/ApacheHDFS.md" target="_blank">
+                  <img src="https://intellipaat.com/mediaFiles/2015/07/hadoop-hdfs.png" width="150">
+                </a>
+            </div>
+        </div>
+      </td>
+    </tr>
   </tbody>
 </table>
-
-# Big Data Components
-- :star: [Apache Spark](src/1_HLDDesignComponents/5_BigDataComponents/ApacheSpark.md)
-- :star: [Apache HDFS](src/1_HLDDesignComponents/5_BigDataComponents/ApacheHadoop/ApacheHDFS.md)
-- [Apache Spark vs MapReduce](src/1_HLDDesignComponents/5_BigDataComponents/ApacheSparkVsHadoopMapReduce.md)
-- [Apache Hadoop](src/1_HLDDesignComponents/5_BigDataComponents/ApacheHadoop)
-- [Apache Storm](src/1_HLDDesignComponents/5_BigDataComponents/ApacheStorm.md)
-
 
 # API Technology Options
 

@@ -1,4 +1,3 @@
-
 # Introduction
 - [Apache HDFS (Hadoop Distributed File System)](https://hadoop.apache.org/docs/r1.2.1/hdfs_design.html) is a distributed file system that runs on standard or low-end hardware. (handles large data sets)
 - HDFS provides better [data throughput](../../0_SystemGlossaries/LatencyThroughput.md) than traditional file systems, in addition to [high fault tolerance](../../0_SystemGlossaries/FaultTolerance&DisasterRecovery.md) and native support of large datasets.
@@ -19,5 +18,5 @@
 
 # References
 - [What is Hadoop?](https://aws.amazon.com/emr/details/hadoop/what-is-hadoop/)
-- [Storing Apache Hadoop Data on the Cloud - HDFS vs. S3](https://www.integrate.io/blog/storing-apache-hadoop-data-cloud-hdfs-vs-s3/)
+- [Storing Apache Hadoop Data on the Cloud - HDFS vs S3](https://www.integrate.io/blog/storing-apache-hadoop-data-cloud-hdfs-vs-s3/)
 - [Scale an Apache Hadoop cluster to hundreds of nodes with the Hadoop Distributed File System (HDFS)](https://www.ibm.com/in-en/topics/hdfs)

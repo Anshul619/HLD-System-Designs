@@ -9,7 +9,8 @@
 |----------------------------------------------------------------------------------------------------------------|---------|
 | [Casandra](../3_DatabaseComponents/NoSQL-Databases/ApacheCasandra.md)                                          | -       |
 | [Kafka](../4_MessageBrokers/Kafka.md)                                                                          | -       |
-| [ElasticSearch Data Stream](../3_DatabaseComponents/NoSQL-Databases/ElasticSearch/ElasticSearchDataStreams.md) |         |
+| [ElasticSearch Data Stream](../3_DatabaseComponents/NoSQL-Databases/ElasticSearch/ElasticSearchDataStreams.md) | -       |
+| [RocksDB](../3_DatabaseComponents/NoSQL-Databases/RocksDB.md)                                                  | -       |
 
 # Reference
 - [Append-Only-Wiki](https://en.wikipedia.org/wiki/Append-only)
