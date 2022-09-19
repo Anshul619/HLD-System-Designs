@@ -49,19 +49,34 @@ This repo contains the various system design components info, questions and solu
         </div>
       </td>
     </tr>
+    <tr>
+      <td>
+        <a href="src/1_HLDDesignComponents/4_MessageBrokers" target="_blank">Databases</a>
+        <br><br>
+        <a href="src/1_HLDDesignComponents/3_DatabaseComponents/ReadMe.md" target="_blank">Comparisons</a>
+      </td>
+      <td>
+        <div class="container" style="background:white">
+            <div class="block two first">
+                <a href="src/1_HLDDesignComponents/3_DatabaseComponents/NoSQL-Databases/ApacheCasandra.md" target="_blank">
+                  <img src="https://fontslogo.com/wp-content/uploads/2018/12/Apache-Cassandra-Logo-Font.jpg" width="150">
+                </a>
+                <a href="/src/1_HLDDesignComponents/3_DatabaseComponents/NoSQL-Databases/ElasticSearch/Readme.md" target="_blank">
+                  <img src="https://miro.medium.com/max/1200/1*20yTn7K6c6vcmEdgwAgjSA.png" width="150"></a>
+                <a href="/src/1_HLDDesignComponents/3_DatabaseComponents/NoSQL-Databases/MongoDB" target="_blank">
+                  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/MongoDB_Logo.svg/2560px-MongoDB_Logo.svg.png" width="150"></a>
+                <a href="/src/1_HLDDesignComponents/3_DatabaseComponents/NoSQL-Databases/ApacheHBase.md" target="_blank">
+                  <img src="https://hbase.apache.org/images/hbase_logo_with_orca_large.png" width="150">
+                </a>
+            </div>
+        </div>
+      </td>
+    </tr>
   </tbody>
 </table>
 
-
 # Various Databases
-- :star: [SQL & NoSQL databases](src/1_HLDDesignComponents/3_DatabaseComponents)
 - [Postgres](src/1_HLDDesignComponents/3_DatabaseComponents/PostgresQuery.md)
-
-## NoSQL Databases
-- :star: [ElasticSearch](src/1_HLDDesignComponents/3_DatabaseComponents/NoSQL-Databases/ElasticSearch)
-- :star: [Casandra](src/1_HLDDesignComponents/3_DatabaseComponents/NoSQL-Databases/ApacheCasandra.md)
-- [HBase](src/1_HLDDesignComponents/3_DatabaseComponents/NoSQL-Databases/ApacheHBase.md)
-- [MongoDB](src/1_HLDDesignComponents/3_DatabaseComponents/NoSQL-Databases/MongoDB)
 
 ## In-Memory DBs/Cache
 - :star: [Redis](src/1_HLDDesignComponents/3_DatabaseComponents/NoSQL-Databases/Redis)
@@ -74,9 +89,6 @@ This repo contains the various system design components info, questions and solu
 - [Apache Spark vs MapReduce](src/1_HLDDesignComponents/5_BigDataComponents/ApacheSparkVsHadoopMapReduce.md)
 - [Apache Hadoop](src/1_HLDDesignComponents/5_BigDataComponents/ApacheHadoop)
 - [Apache Storm](src/1_HLDDesignComponents/5_BigDataComponents/ApacheStorm.md)
-
-
-
 
 
 # API Technology Options
