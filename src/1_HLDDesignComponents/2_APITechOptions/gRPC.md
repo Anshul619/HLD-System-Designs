@@ -1,12 +1,12 @@
 
-# [What is GPRC?](https://grpc.io)
+# Introduction
 
 - A high performance, open source universal RPC framework.
-- gRPC is a `modern open source high performance Remote Procedure Call` framework that can run in any environment.
+- [gRPC](https://grpc.io) is a `modern open source high performance Remote Procedure Call` framework that can run in any environment.
 - gRPC is contract-based: a contract needs to be available on both sides of communication to make sense of data going between them. 
 - To define the contracts, gRPC uses a declarative language called `Protocol Buffers (Protobuf)`.
 
-# Advantages of GPRC
+# Advantages of gRPC
 
 ## Built on HTTP 2 Instead of HTTP 1.1 
 - In HTTP 2, when a microservice receives multiple requests from more than one client, it achieves multiplexing by serving many requests and responses simultaneously.

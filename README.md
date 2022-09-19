@@ -31,6 +31,26 @@ This repo contains the various system design components info, questions and solu
   <tbody>
     <tr>
       <td>
+        <a href="src/1_HLDDesignComponents/2_APITechOptions/README.md">API Tech Options</a>
+      </td>
+      <td>
+        <div class="container" style="background:white">
+            <div class="block two first">
+                <a href="/src/1_HLDDesignComponents/2_APITechOptions/REST.md" target="_blank">
+                  <img src="https://www.snmpcenter.com/wp-content/uploads/2016/10/RESTful-API-logo-for-light-bg-600x205.png" width="150">
+                </a>
+                <a href="/src/1_HLDDesignComponents/2_APITechOptions/gRPC.md" target="_blank">
+                  <img src="https://grpc.io/img/logos/grpc-logo.png" width="150">
+                </a>
+                <a href="/src/1_HLDDesignComponents/2_APITechOptions/GraphQL.md" target="_blank">
+                  <img src="https://marmelab.com/images/blog/graphql/logo.png" width="150">
+                </a>
+            </div>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td>
         <a href="src/1_HLDDesignComponents/3_DatabaseComponents/NoSQL-Databases/Redis/README.md">In-Memory DBs/Cache</a>
       </td>
       <td>
@@ -128,14 +148,6 @@ This repo contains the various system design components info, questions and solu
     </tr>
   </tbody>
 </table>
-
-# API Technology Options
-
-| API Option                                                         | Description                                                                                                                                                                 |
-|--------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| :star: [REST](src/1_HLDDesignComponents/2_APITechOptions/REST.md)  | Used for CRUD style public APis and web app.                                                                                                                                |
-| :star: [gPRC](src/1_HLDDesignComponents/2_APITechOptions/gPRC.md)  | Used for communication b/w [microservices](src/1_HLDDesignComponents/1_MicroServicesSOA) or to collect data from IoT devices. It is relatively faster than REST or GraphQL. |
-| [GraphQL](src/1_HLDDesignComponents/2_APITechOptions/GraphQL.md)   | Used for public API with customizable request body or to aggregate internal data from multiple sources in a public API.                                                     |
 
 # HLD - Design Problems
 - :star: [Zomoto HLD Design](src/3_HLDDesignProblems/ZomatoDesign/README.md)
