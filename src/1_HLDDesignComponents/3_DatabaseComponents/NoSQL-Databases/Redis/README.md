@@ -9,8 +9,8 @@
 # Key Features of Redis ( REmote DIctionary Server)
 
 ## Speed - 100K queries per second
-- Redis is very fast. It can execute `100K queries per second`.
 - Since Redis uses in-memory for storage, it is very fast.
+- It can execute `100K queries per second`.
 - Mostly `O(1)` behavior, to get data from redis.
 - Generally, reading data from `Redis` is [5 times faster](../../../SystemEstimationTips.md#latency-comparison-numbers) than reading it from `database`.
 
