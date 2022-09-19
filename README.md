@@ -1,30 +1,12 @@
-# Key Characteristics of Distributed Systems
 
-| Basis                                                                                                                               | Applicable Components              |
-|-------------------------------------------------------------------------------------------------------------------------------------|------------------------------------|
-| :star: [Efficiency - Latency, Throughput](src/1_HLDDesignComponents/0_SystemGlossaries/LatencyThroughput.md)                        | ALL                                |
-| :star: [Scalability](src/1_HLDDesignComponents/0_SystemGlossaries/Scalability.md)                                                   | ALL                                |
-| :star: [High Availability](src/1_HLDDesignComponents/0_SystemGlossaries/HighAvailability.md)                                        | ALL                                |
-| :star: [Servers Cluster](src/1_HLDDesignComponents/0_SystemGlossaries/ServersCluster.md)                                            | `Data Stores` or `Message Brokers` |
-| :star: [Event Driven Architecture](src/1_HLDDesignComponents/0_SystemGlossaries/EventDrivenArchitecture.md)                         | `Message Brokers`                  |
-| :star: [ACID Properties of the Transaction](src/1_HLDDesignComponents/0_SystemGlossaries/ACIDPropertyTransaction.md)                | `Data Stores`                      |
-| :star: [CAP Theorem of the Distributed Systems](src/1_HLDDesignComponents/0_SystemGlossaries/CAPTheorem.md)                         | `Data Stores`                      |
-| :star: [Replication & Data Consistency](src/1_HLDDesignComponents/0_SystemGlossaries/ReplicationAndDataConsistency.md)              | `Data Stores`                      |
-| [Reliability - Fault Tolerance, Disaster Recovery](src/1_HLDDesignComponents/0_SystemGlossaries/FaultTolerance&DisasterRecovery.md) | ALL                                |
-| [Load Balancer](src/1_HLDDesignComponents/0_SystemGlossaries/LoadBalancer.md)                                                       | ALL                                |
-| [Atomicity](src/1_HLDDesignComponents/0_SystemGlossaries/Atomicity.md)                                                              | `Data Stores`                      |
-| [Durability](src/1_HLDDesignComponents/0_SystemGlossaries/Durability.md)                                                            | `Data Stores`                      |
-| [Content Delivery Network (CDN)](src/1_HLDDesignComponents/0_SystemGlossaries/CDNs.md)                                              | `Static Content`                   |
-| [Append Only DB Storages](src/1_HLDDesignComponents/0_SystemGlossaries/AppendOnlyDBStorages.md)                                     | `Data Stores`                      |
+# Introduction
 
 This repo contains the various system design components info, questions and solutions.
 - :star: [System Estimation Tips](src/1_HLDDesignComponents/SystemEstimationTips.md)
 - [System Design Tips](src/1_HLDDesignComponents/SystemDesignTips.md)
-- [MicroServices - Modern SOA Architecture](src/1_HLDDesignComponents/1_MicroServicesSOA)
-- [Open Source Contributions](src/1_HLDDesignComponents/OpenSourceContributions.md)
-- [Other Glossaries](src/1_HLDDesignComponents/0_SystemGlossaries/README.md)
+- [Key Components of Distributed Systems](#key-characteristics-of-distributed-systems)
 
-# HLD Components
+# Tech Stack
 
 <table>
   <tbody>
@@ -187,6 +169,26 @@ This repo contains the various system design components info, questions and solu
 - [MakeMyTrip Search](src/3_HLDDesignProblems/MakeMyTripSearch)
 - [URL Shortening Service](src/3_HLDDesignProblems/URLShorteningService)
 
+# Key Characteristics of Distributed Systems
+
+| Basis                                                                                                                               | Applicable Components              |
+|-------------------------------------------------------------------------------------------------------------------------------------|------------------------------------|
+| :star: [Efficiency - Latency, Throughput](src/1_HLDDesignComponents/0_SystemGlossaries/LatencyThroughput.md)                        | ALL                                |
+| :star: [Scalability](src/1_HLDDesignComponents/0_SystemGlossaries/Scalability.md)                                                   | ALL                                |
+| :star: [High Availability](src/1_HLDDesignComponents/0_SystemGlossaries/HighAvailability.md)                                        | ALL                                |
+| :star: [Servers Cluster](src/1_HLDDesignComponents/0_SystemGlossaries/ServersCluster.md)                                            | `Data Stores` or `Message Brokers` |
+| :star: [Event Driven Architecture](src/1_HLDDesignComponents/0_SystemGlossaries/EventDrivenArchitecture.md)                         | `Message Brokers`                  |
+| :star: [ACID Properties of the Transaction](src/1_HLDDesignComponents/0_SystemGlossaries/ACIDPropertyTransaction.md)                | `Data Stores`                      |
+| :star: [CAP Theorem of the Distributed Systems](src/1_HLDDesignComponents/0_SystemGlossaries/CAPTheorem.md)                         | `Data Stores`                      |
+| :star: [Replication & Data Consistency](src/1_HLDDesignComponents/0_SystemGlossaries/ReplicationAndDataConsistency.md)              | `Data Stores`                      |
+| [MicroServices - Modern SOA Architecture](src/1_HLDDesignComponents/1_MicroServicesSOA)                                             | ALL                                |
+| [Reliability - Fault Tolerance, Disaster Recovery](src/1_HLDDesignComponents/0_SystemGlossaries/FaultTolerance&DisasterRecovery.md) | ALL                                |
+| [Load Balancer](src/1_HLDDesignComponents/0_SystemGlossaries/LoadBalancer.md)                                                       | ALL                                |
+| [Atomicity](src/1_HLDDesignComponents/0_SystemGlossaries/Atomicity.md)                                                              | `Data Stores`                      |
+| [Durability](src/1_HLDDesignComponents/0_SystemGlossaries/Durability.md)                                                            | `Data Stores`                      |
+| [Content Delivery Network (CDN)](src/1_HLDDesignComponents/0_SystemGlossaries/CDNs.md)                                              | `Static Content`                   |
+| [Append Only DB Storages](src/1_HLDDesignComponents/0_SystemGlossaries/AppendOnlyDBStorages.md)                                     | `Data Stores`                      |
+
 # [OOP Design & Problems](src/4_ObjectOrientedDesign)
 - :star: [OOP Design](src/4_ObjectOrientedDesign/OOP.md)
 - :star: [SOLID Principles](src/4_ObjectOrientedDesign/SOLID.md)
@@ -212,8 +214,9 @@ This repo contains the various system design components info, questions and solu
 - [TypeScript](src/5_ProgrammingLanguages/4_FrontEnd/TypeScript.md)
 - [Angular8](src/5_ProgrammingLanguages/4_FrontEnd/Angular8.md)
 
-# Other Design Components
+# Other Components
 - :star: [Apache Zookeeper](src/1_HLDDesignComponents/6_DevOps/ApacheZookeeper.md)
+- :star: [Open Source Contributions](src/1_HLDDesignComponents/OpenSourceContributions.md)
 - [Apache Marathon & Mesos](src/1_HLDDesignComponents/6_DevOps/ApacheMarathon&Mesos.md)
 - [Apache Yarn](src/1_HLDDesignComponents/6_DevOps/ApacheYarn.md)
 - [Apache Web Server](https://apache.org/)
