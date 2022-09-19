@@ -30,20 +30,6 @@ This repo contains the various system design components info, questions and solu
   <tbody>
     <tr>
       <td>
-        Monitoring Services
-      </td>
-      <td>
-        <a href="src/1_HLDDesignComponents/7_MonitoringTools/NewRelic.md">
-          <img src="https://www.vectorlogo.zone/logos/newrelic/newrelic-ar21.svg" width="150">
-        </a>
-        <a href="src/1_HLDDesignComponents/7_MonitoringTools/ELK.md">
-          <img src="https://miro.medium.com/max/746/1*DbdVXy9_6uJVe8q1NOYVfg.png" width="150">
-        </a>
-        <br/><br/>
-      </td>
-    </tr>
-    <tr>
-      <td>
         <a href="src/1_HLDDesignComponents/2_APITechOptions/README.md">API Tech Options</a>
       </td>
       <td>
@@ -170,6 +156,20 @@ This repo contains the various system design components info, questions and solu
                 </a>
             </div>
         </div>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <a href="src/1_HLDDesignComponents/7_MonitoringTools/">Monitoring Services</a>
+      </td>
+      <td>
+        <a href="src/1_HLDDesignComponents/7_MonitoringTools/NewRelic.md">
+          <img src="https://www.vectorlogo.zone/logos/newrelic/newrelic-ar21.svg" width="150">
+        </a>
+        <a href="src/1_HLDDesignComponents/7_MonitoringTools/ELK.md">
+          <img src="https://miro.medium.com/max/746/1*DbdVXy9_6uJVe8q1NOYVfg.png" width="150">
+        </a>
+        <br/><br/>
       </td>
     </tr>
   </tbody>
