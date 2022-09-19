@@ -1,12 +1,11 @@
 
 # MongoDB
 
-![img.png](assests/MongoDB_JSON.png)
-
-# Data Storage Architecture
 [MongoDB](https://www.interviewbit.com/mongodb-interview-questions/) is better suited for high write and update throughput operations without draining CPU resources and/or causing disk I/O issues. 
 - It is written in C++ and uses a memory map file to map on-disk data files to in-memory byte arrays. 
 - It organizes data using a doubly linked data structure: documents contain linked lists to one another and to the `BSON-encoded` data behind the scenes.
+
+![img.png](assests/MongoDB_JSON.png)
 
 # :star: Real world use cases of MongoDB
 - [Zomato - HLD Design](../../../../3_HLDDesignProblems/ZomatoDesign/README.md)
