@@ -40,7 +40,7 @@ This repo contains the various system design components info, questions and solu
                   <img src="https://www.snmpcenter.com/wp-content/uploads/2016/10/RESTful-API-logo-for-light-bg-600x205.png" width="150">
                 </a>
                 <a href="/src/1_HLDDesignComponents/2_APITechOptions/gRPC.md" target="_blank">
-                  <img src="https://grpc.io/img/logos/grpc-logo.png" width="150">
+                  <img src="https://grpc.io/img/logos/grpc-icon-color.png" width="150">
                 </a>
                 <a href="/src/1_HLDDesignComponents/2_APITechOptions/GraphQL.md" target="_blank">
                   <img src="https://marmelab.com/images/blog/graphql/logo.png" width="150">
