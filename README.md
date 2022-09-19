@@ -47,15 +47,25 @@ This repo contains the various system design components info, questions and solu
             </div>
         </div>
       </td>
-      <td rowspan=5>
+      <td rowspan=6 width="150px">
         <a href="src/2_AWSComponents">
-          <img src="https://i.pinimg.com/originals/50/bd/c9/50bdc91f32650905e776d6751478928c.png" height="150">
+          <img src="https://i.pinimg.com/originals/50/bd/c9/50bdc91f32650905e776d6751478928c.png">
         </a>
+        <br/><br/>
+        <a href="src/1_HLDDesignComponents/7_MonitoringTools/NewRelic.md">
+          <img src="https://www.vectorlogo.zone/logos/newrelic/newrelic-ar21.svg">
+        </a>
+        <br/><br/>
+        <a href="src/1_HLDDesignComponents/7_MonitoringTools/ELK.md">
+          <img src="https://miro.medium.com/max/746/1*DbdVXy9_6uJVe8q1NOYVfg.png">
+        </a>
+        <br/><br/>
         <a href="src/1_HLDDesignComponents/6_DevOps/Kubernates.md">
-          <img src="https://logos-download.com/wp-content/uploads/2018/09/Kubernetes_Logo.png" height="150">
+          <img src="https://logos-download.com/wp-content/uploads/2018/09/Kubernetes_Logo.png">
         </a>
+        <br/><br/>
         <a href="src/1_HLDDesignComponents/6_DevOps/Docker.md">
-          <img src="https://www.docker.com/wp-content/uploads/2022/03/vertical-logo-monochromatic.png" height="150">
+          <img src="https://www.docker.com/wp-content/uploads/2022/03/vertical-logo-monochromatic.png">
         </a>
       </td>
     </tr>
@@ -196,16 +206,10 @@ This repo contains the various system design components info, questions and solu
 - [TypeScript](src/5_ProgrammingLanguages/4_FrontEnd/TypeScript.md)
 - [Angular8](src/5_ProgrammingLanguages/4_FrontEnd/Angular8.md)
 
-# DevOps Components
+# Other Design Components
 - :star: [Apache Zookeeper](src/1_HLDDesignComponents/6_DevOps/ApacheZookeeper.md)
 - [Apache Marathon & Mesos](src/1_HLDDesignComponents/6_DevOps/ApacheMarathon&Mesos.md)
 - [Apache Yarn](src/1_HLDDesignComponents/6_DevOps/ApacheYarn.md)
-
-# Monitoring Tools
-- :star: [New Relic](src/1_HLDDesignComponents/7_MonitoringTools/NewRelic.md)
-- [ELK](src/1_HLDDesignComponents/7_MonitoringTools/ELK.md)
-
-# Other Design Components
 - [Apache Web Server](https://apache.org/)
   - Web Server which can handle 512 concurrent requests.
 - [Testing](src/6_Others/QATools/Readme.md)
