@@ -30,6 +30,20 @@ This repo contains the various system design components info, questions and solu
   <tbody>
     <tr>
       <td>
+        Monitoring Services
+      </td>
+      <td>
+        <a href="src/1_HLDDesignComponents/7_MonitoringTools/NewRelic.md">
+          <img src="https://www.vectorlogo.zone/logos/newrelic/newrelic-ar21.svg">
+        </a>
+        <a href="src/1_HLDDesignComponents/7_MonitoringTools/ELK.md">
+          <img src="https://miro.medium.com/max/746/1*DbdVXy9_6uJVe8q1NOYVfg.png">
+        </a>
+        <br/><br/>
+      </td>
+    </tr>
+    <tr>
+      <td>
         <a href="src/1_HLDDesignComponents/2_APITechOptions/README.md">API Tech Options</a>
       </td>
       <td>
@@ -50,14 +64,6 @@ This repo contains the various system design components info, questions and solu
       <td rowspan=6 width="150px">
         <a href="src/2_AWSComponents">
           <img src="https://i.pinimg.com/originals/50/bd/c9/50bdc91f32650905e776d6751478928c.png">
-        </a>
-        <br/><br/>
-        <a href="src/1_HLDDesignComponents/7_MonitoringTools/NewRelic.md">
-          <img src="https://www.vectorlogo.zone/logos/newrelic/newrelic-ar21.svg">
-        </a>
-        <br/><br/>
-        <a href="src/1_HLDDesignComponents/7_MonitoringTools/ELK.md">
-          <img src="https://miro.medium.com/max/746/1*DbdVXy9_6uJVe8q1NOYVfg.png">
         </a>
         <br/><br/>
         <a href="src/1_HLDDesignComponents/6_DevOps/Kubernates.md">
