@@ -34,10 +34,10 @@ This repo contains the various system design components info, questions and solu
       </td>
       <td>
         <a href="src/1_HLDDesignComponents/7_MonitoringTools/NewRelic.md">
-          <img src="https://www.vectorlogo.zone/logos/newrelic/newrelic-ar21.svg">
+          <img src="https://www.vectorlogo.zone/logos/newrelic/newrelic-ar21.svg" width="150">
         </a>
         <a href="src/1_HLDDesignComponents/7_MonitoringTools/ELK.md">
-          <img src="https://miro.medium.com/max/746/1*DbdVXy9_6uJVe8q1NOYVfg.png">
+          <img src="https://miro.medium.com/max/746/1*DbdVXy9_6uJVe8q1NOYVfg.png" width="150">
         </a>
         <br/><br/>
       </td>
