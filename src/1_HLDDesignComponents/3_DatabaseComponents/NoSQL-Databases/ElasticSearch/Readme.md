@@ -36,7 +36,7 @@
 
 ## :star: [ElasticSearch Data Streaming](ElasticSearchDataStreams.md)
 
-## :star: [ElasticSearch Data Streaming](ElasticSearchGeoSpatialSupport.md)
+## :star: [ElasticSearch Geo Spatial Support](ElasticSearchGeoSpatialSupport.md)
 
 ## Data Storage Architecture
 - Settings, index mapping, alternative cluster states, and other metadata are saved to Elasticsearch files outside the [Lucene](ApacheLucene.md) environment.
