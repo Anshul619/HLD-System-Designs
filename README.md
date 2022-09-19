@@ -18,7 +18,6 @@
 | [Append Only DB Storages](src/1_HLDDesignComponents/0_SystemGlossaries/AppendOnlyDBStorages.md)                                     | `Data Stores`                      |
 
 This repo contains the various system design components info, questions and solutions.
-- :star: [AWS Components](src/2_AWSComponents)
 - :star: [System Estimation Tips](src/1_HLDDesignComponents/SystemEstimationTips.md)
 - [System Design Tips](src/1_HLDDesignComponents/SystemDesignTips.md)
 - [MicroServices - Modern SOA Architecture](src/1_HLDDesignComponents/1_MicroServicesSOA)
@@ -47,6 +46,17 @@ This repo contains the various system design components info, questions and solu
                 </a>
             </div>
         </div>
+      </td>
+      <td rowspan=5>
+        <a href="src/2_AWSComponents">
+          <img src="https://i.pinimg.com/originals/50/bd/c9/50bdc91f32650905e776d6751478928c.png" height="150">
+        </a>
+        <a href="src/1_HLDDesignComponents/6_DevOps/Kubernates.md">
+          <img src="https://logos-download.com/wp-content/uploads/2018/09/Kubernetes_Logo.png" height="150">
+        </a>
+        <a href="src/1_HLDDesignComponents/6_DevOps/Docker.md">
+          <img src="https://www.docker.com/wp-content/uploads/2022/03/vertical-logo-monochromatic.png" height="150">
+        </a>
       </td>
     </tr>
     <tr>
@@ -98,11 +108,11 @@ This repo contains the various system design components info, questions and solu
                 <a href="/src/1_HLDDesignComponents/5_BigDataComponents/ApacheSpark.md" target="_blank">
                   <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Apache_Spark_logo.svg/1200px-Apache_Spark_logo.svg.png" width="150">
                 </a>
-                <a href="/src/1_HLDDesignComponents/5_BigDataComponents/ApacheHadoop" target="_blank">
-                  <img src="https://miro.medium.com/max/1400/0*xEggq2GoZSUT9AG6.png" width="150">
-                </a>
                 <a href="/src/1_HLDDesignComponents/5_BigDataComponents/ApacheStorm.md" target="_blank">
                   <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Apache_Storm_logo.svg/1200px-Apache_Storm_logo.svg.png" width="150">
+                </a>
+                <a href="/src/1_HLDDesignComponents/5_BigDataComponents/ApacheHadoop" target="_blank">
+                  <img src="http://viloratech.com/images/course_images_banner/20908.jpg" width="150">
                 </a>
             </div>
         </div>
@@ -180,7 +190,6 @@ This repo contains the various system design components info, questions and solu
 # [Programming Languages](src/5_ProgrammingLanguages)
 - :star: [GoLang](src/5_ProgrammingLanguages/1_GoLang)
 - [Spring Boot & Microservices](src/5_ProgrammingLanguages/2_Java/SpringBootAndMicroServices)
-- [Hibernate](src/5_ProgrammingLanguages/2_Java/Hibernate.md)
 - [Java](src/5_ProgrammingLanguages/2_Java)
 - [Hibernate](src/5_ProgrammingLanguages/2_Java/Hibernate.md)
 - [JavaScript](src/5_ProgrammingLanguages/3_JavaScript)
@@ -188,8 +197,6 @@ This repo contains the various system design components info, questions and solu
 - [Angular8](src/5_ProgrammingLanguages/4_FrontEnd/Angular8.md)
 
 # DevOps Components
-- :star: [Kubernates](src/1_HLDDesignComponents/6_DevOps/Kubernates.md)
-- :star: [Docker](src/1_HLDDesignComponents/6_DevOps/Docker.md)
 - :star: [Apache Zookeeper](src/1_HLDDesignComponents/6_DevOps/ApacheZookeeper.md)
 - [Apache Marathon & Mesos](src/1_HLDDesignComponents/6_DevOps/ApacheMarathon&Mesos.md)
 - [Apache Yarn](src/1_HLDDesignComponents/6_DevOps/ApacheYarn.md)
