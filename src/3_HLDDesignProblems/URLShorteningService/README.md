@@ -1,7 +1,4 @@
 
-## Important Points
-- `URL Shortening Service` is a read-heavy system. `100:1` ratio between read and write.
-
 # Functional Requirements
 - Shortening: Take a url and return a much shorter url. Ex: http://www.interviewbit.com/courses/programming/topics/time-complexity/ => http://goo.gl/GUKA8w/
 - Redirection: Take a short url and redirect to the original url.
@@ -18,6 +15,7 @@ Gotcha: What if two people try to shorten the same URL?
 - Shortened links should not be guessable (not predictable).
 
 # Read vs Writes - URL Shortening is a read-heavy
+- `URL Shortening Service` is a read-heavy system. `100:1` ratio between read and write.
 - There will be lots of redirection requests compared to new URL shortenings.
 - Let’s assume a 100:1 ratio between read and write.
 

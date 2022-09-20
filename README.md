@@ -174,7 +174,7 @@ This repo contains the various system design components info, questions and solu
 | [Notification System](src/3_HLDDesignProblems/NotificationSystem)                                                                                                                           |         |
 | [Logging Solution](src/3_HLDDesignProblems/LoggingSolution)                                                                                                                                 |         |
 | [Search - Make My Trip](src/3_HLDDesignProblems/MakeMyTripSearch)                                                                                                                           |         |
-| [URL Shortening Service](src/3_HLDDesignProblems/URLShorteningService)                                                                                                                      |         |
+| [URL Shortening Service](src/3_HLDDesignProblems/URLShorteningService/README.md)                                                                                                            |         |
 | [Dropbox Design](src/3_HLDDesignProblems/DropboxDesign)                                                                                                                                     |         |
 | [Instagram Design](src/3_HLDDesignProblems/InstagramDesign)                                                                                                                                 |         |
 | [Sales Rank By Category](src/3_HLDDesignProblems/SalesRankByCategory)                                                                                                                       |         |
