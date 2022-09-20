@@ -14,7 +14,7 @@
 - [Fanout Pattern with Amazon SNS & SQS](0_AWSDesigns/FanoutPatternSNSSQS.md)
 - [WP Site with Amazon CloudFront & S3](0_AWSDesigns/WPSiteCloudFront&S3.md)
 - [Microservices On AWS](0_AWSDesigns/MicroservicesOnAWS.md)
-- [Dropbox Saves Millions by Building a Scalable Metadata Store on Amazon DynamoDB and Amazon S3](0_AWSDesigns/DropboxAmazonDynamoDB/DropboxAmazonDynamoDB.md)
+- [Dropbox Saves Millions by Building a Scalable Metadata Store on Amazon DynamoDB and Amazon S3](0_AWSDesigns/DropboxAmazonDynamoDB/Readme.md)
 
 # AWS - Comparisons b/w Services
 - [Amazon Aurora vs RDS](6_DatabaseServices/AWSAuroraVsRDS.md)
