@@ -6,7 +6,7 @@ This repo contains the various system design components info, questions and solu
 - [System Design Tips](src/1_HLDDesignComponents/SystemDesignTips.md)
 - [Key Components of Distributed Systems](#key-characteristics-of-distributed-systems)
 
-# Tech Stack
+# System Design - Tech Stack
 
 <table>
   <tbody>
@@ -112,6 +112,9 @@ This repo contains the various system design components info, questions and solu
                 <a href="src/1_HLDDesignComponents/3_DatabaseComponents/NoSQL-Databases/ApacheCasandra.md" target="_blank">
                   <img src="https://fontslogo.com/wp-content/uploads/2018/12/Apache-Cassandra-Logo-Font.jpg" width="150">
                 </a>
+                <a href="src/2_AWSComponents/6_DatabaseServices/AmazonDynamoDB.md">
+                  <img src="https://www.magnitude.com/assets/images/Logos/Data-connector-logos/edit_dynamodb.png" width="150">
+                </a>
                 <a href="/src/1_HLDDesignComponents/3_DatabaseComponents/NoSQL-Databases/ElasticSearch/Readme.md" target="_blank">
                   <img src="https://miro.medium.com/max/1200/1*20yTn7K6c6vcmEdgwAgjSA.png" width="150"></a>
                 <a href="/src/1_HLDDesignComponents/3_DatabaseComponents/NoSQL-Databases/MongoDB" target="_blank">
@@ -189,7 +192,7 @@ This repo contains the various system design components info, questions and solu
 | [Content Delivery Network (CDN)](src/1_HLDDesignComponents/0_SystemGlossaries/CDNs.md)                                              | `Static Content`                   |
 | [Append Only DB Storages](src/1_HLDDesignComponents/0_SystemGlossaries/AppendOnlyDBStorages.md)                                     | `Data Stores`                      |
 
-# [OOP Design & Problems](src/4_ObjectOrientedDesign)
+# OOP Design & Problems (LLD)
 - :star: [OOP Design](src/4_ObjectOrientedDesign/OOP.md)
 - :star: [SOLID Principles](src/4_ObjectOrientedDesign/SOLID.md)
 - :star: [Design Tips & Techniques](src/4_ObjectOrientedDesign/TipsAndTechniques.md)
@@ -205,7 +208,7 @@ This repo contains the various system design components info, questions and solu
   - [Hotel Booking System](src/4_ObjectOrientedDesign/OOPDesignProblems/HotelBookingSystem)
   - [Insurance Agent Flow](src/4_ObjectOrientedDesign/OOPDesignProblems/Others/InsuranceAgentFlow.md)
 
-# [Programming Languages](src/5_ProgrammingLanguages)
+# Programming Languages
 - :star: [GoLang](src/5_ProgrammingLanguages/1_GoLang)
 - [Spring Boot & Microservices](src/5_ProgrammingLanguages/2_Java/SpringBootAndMicroServices)
 - [Java](src/5_ProgrammingLanguages/2_Java)
