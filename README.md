@@ -8,6 +8,7 @@ This repo contains the various system design components info, questions and solu
 
 # System Design - Tech Stack
 
+[A](src/2_AWSComponents/1_NetworkingAndContentDelivery/AmazonCloudFront.md)
 <table>
   <tbody>
     <tr>
@@ -25,6 +26,9 @@ This repo contains the various system design components info, questions and solu
                 </a>
                 <a href="/src/1_HLDDesignComponents/2_APITechOptions/GraphQL.md" target="_blank">
                   <img src="https://marmelab.com/images/blog/graphql/logo.png" width="150">
+                </a>
+                <a href="/src/2_AWSComponents/1_NetworkingAndContentDelivery/AmazonCloudFront.md" target="_blank">
+                  <img src="https://cdn-blog.lawrencemcdaniel.com/wp-content/uploads/2018/09/10093747/aws-cdn-cloudfront.png" width="150">
                 </a>
             </div>
         </div>
@@ -128,7 +132,9 @@ This repo contains the various system design components info, questions and solu
     </tr>
     <tr>
       <td>
-        <a href="src/1_HLDDesignComponents/5_BigDataComponents/ApacheHadoop/ApacheHDFS.md" target="_blank">Storage Services</a>
+        <a href="src/1_HLDDesignComponents/5_BigDataComponents/ApacheHadoop/ApacheHDFS.md" target="_blank">
+          Storage Services (Files, Images etc.)
+        </a>
       </td>
       <td>
         <div class="container" style="background:white">
@@ -162,29 +168,29 @@ This repo contains the various system design components info, questions and solu
 
 # HLD - Design Problems
 
-| Problem                                                                                                                                                                                     | Remarks |
-|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------|
-| :star: [Zomoto HLD Design](src/3_HLDDesignProblems/ZomatoDesign/README.md)                                                                                                                  | -       |
-| :star: [Uber Driver Allocation](src/3_HLDDesignProblems/UberDriverAllocationDesign/README.md)                                                                                               | -       |
-| :star: [AWS - Design a system that scales to million of users on AWS](src/2_AWSComponents/0_AWSDesigns/DesignScalableSystemWithRDMS)                                                        | -       |
-| :star: [Personalization at Spotify using Casandra](src/3_HLDDesignProblems/PersonalizationSpotify)                                                                                          | -       |
-| [AWS - Design Multi-Region Active-Active Architecture On AWS](src/2_AWSComponents/0_AWSDesigns/DesignMultiRegionActiveActiveArchitectureOnAWS)                                              | -       |
-| [Twillo Send Message API](src/3_HLDDesignProblems/TwilloSendMessageAPI)                                                                                                                     |         |
-| [Rate Limiter API](src/3_HLDDesignProblems/RateLimiterAPI)                                                                                                                                  |         |
-| [Notification System](src/3_HLDDesignProblems/NotificationSystem)                                                                                                                           |         |
-| [Logging Solution](src/3_HLDDesignProblems/LoggingSolution)                                                                                                                                 |         |
-| [Search - Make My Trip](src/3_HLDDesignProblems/MakeMyTripSearch)                                                                                                                           |         |
-| [URL Shortening Service](src/3_HLDDesignProblems/URLShorteningService/README.md)                                                                                                            |         |
-| [Dropbox Design](src/3_HLDDesignProblems/DropboxDesign)                                                                                                                                     |         |
-| [Instagram Design](src/3_HLDDesignProblems/InstagramDesign)                                                                                                                                 |         |
-| [Sales Rank By Category](src/3_HLDDesignProblems/SalesRankByCategory)                                                                                                                       |         |
-| [Servers Health System Design](src/3_HLDDesignProblems/ServersHealthSystemDesign)                                                                                                           |         |
-| [YouTube Video Streaming](src/3_HLDDesignProblems/YouTubeVideoStreaming)                                                                                                                    |         |
-| [How Uber Manages a Million Writes Per Second Using Mesos and Cassandra Across Multiple Datacenters?](src/3_HLDDesignProblems/UberCasandraMesos)                                            |         |
-| [AWS - Dropbox Saves Millions by Building a Scalable Metadata Store (for AuditLog Data) on Amazon DynamoDB and Amazon S3](src/2_AWSComponents/0_AWSDesigns/DropboxAmazonDynamoDB/Readme.md) |         |
-| [AWS - Implementing Microservices on AWS](src/2_AWSComponents/0_AWSDesigns/MicroservicesOnAWS.md)                                                                                           |         |
-| [Deploy WordPress Site with Amazon Cloudfront & S3](src/2_AWSComponents/0_AWSDesigns/WPSiteCloudFront&S3.md)                                                                                |         |
-| [Fanout Pattern using Amazon SQS and SNS](src/2_AWSComponents/0_AWSDesigns/FanoutPatternSNSSQS.md)                                                                                          |         |
+| Problem                                                                                                                                                                                     | Remarks  |
+|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------|
+| :star: [Zomoto HLD Design](src/3_HLDDesignProblems/ZomatoDesign/README.md)                                                                                                                  | -        |
+| :star: [Uber Driver Allocation](src/3_HLDDesignProblems/UberDriverAllocationDesign/README.md)                                                                                               | -        |
+| :star: [AWS - Design a system that scales to million of users on AWS](src/2_AWSComponents/0_AWSDesigns/DesignScalableSystemWithRDMS)                                                        | -        |
+| :star: [Personalization at Spotify using Casandra](src/3_HLDDesignProblems/PersonalizationSpotify)                                                                                          | -        |
+| [AWS - Design Multi-Region Active-Active Architecture On AWS](src/2_AWSComponents/0_AWSDesigns/DesignMultiRegionActiveActiveArchitectureOnAWS)                                              | -        |
+| [Twillo Send Message API](src/3_HLDDesignProblems/TwilloSendMessageAPI)                                                                                                                     |          |
+| [Rate Limiter API](src/3_HLDDesignProblems/RateLimiterAPI)                                                                                                                                  |          |
+| [Notification System](src/3_HLDDesignProblems/NotificationSystem)                                                                                                                           |          |
+| [Logging Solution](src/3_HLDDesignProblems/LoggingSolution)                                                                                                                                 |          |
+| [Search - Make My Trip](src/3_HLDDesignProblems/MakeMyTripSearch)                                                                                                                           |          |
+| [URL Shortening Service](src/3_HLDDesignProblems/URLShorteningService/README.md)                                                                                                            |          |
+| [Dropbox Design](src/3_HLDDesignProblems/DropboxDesign)                                                                                                                                     |          |
+| [Instagram Design](src/3_HLDDesignProblems/InstagramDesign)                                                                                                                                 |          |
+| [Sales Rank By Category](src/3_HLDDesignProblems/SalesRankByCategory)                                                                                                                       |          |
+| [Servers Health System Design](src/3_HLDDesignProblems/ServersHealthSystemDesign)                                                                                                           |          |
+| [YouTube Video Streaming](src/3_HLDDesignProblems/YouTubeVideoStreaming)                                                                                                                    |          |
+| [How Uber Manages a Million Writes Per Second Using Mesos and Cassandra Across Multiple Datacenters?](src/3_HLDDesignProblems/UberCasandraMesos)                                            |          |
+| [AWS - Dropbox Saves Millions by Building a Scalable Metadata Store (for AuditLog Data) on Amazon DynamoDB and Amazon S3](src/2_AWSComponents/0_AWSDesigns/DropboxAmazonDynamoDB/Readme.md) |          |
+| [AWS - Implementing Microservices on AWS](src/2_AWSComponents/0_AWSDesigns/MicroservicesOnAWS.md)                                                                                           |          |
+| [AWS - Deploy WordPress Site with Amazon Cloudfront & S3](src/2_AWSComponents/0_AWSDesigns/WPSiteCloudFront&S3.md)                                                                          |          |
+| [AWS - Fanout Pattern using Amazon SQS and SNS](src/2_AWSComponents/0_AWSDesigns/FanoutPatternSNSSQS.md)                                                                                    | SQS, SNS |
 
 # Key Characteristics of Distributed Systems
 
