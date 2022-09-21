@@ -13,7 +13,7 @@ This repo contains the various system design components info, questions and solu
   <tbody>
     <tr>
       <td>
-        <a href="src/1_HLDDesignComponents/2_APITechOptions/README.md">API Tech Options</a>
+        <a href="src/1_HLDDesignComponents/2_APITechOptions/README.md">API Tech Options ( or CDN)</a>
       </td>
       <td>
         <div class="container" style="background:white">
@@ -28,7 +28,7 @@ This repo contains the various system design components info, questions and solu
                   <img src="https://marmelab.com/images/blog/graphql/logo.png" width="150">
                 </a>
                 <a href="/src/2_AWSComponents/1_NetworkingAndContentDelivery/AmazonCloudFront.md" target="_blank">
-                  <img src="https://cdn-blog.lawrencemcdaniel.com/wp-content/uploads/2018/09/10093747/aws-cdn-cloudfront.png" width="150">
+                  <img src="https://ericknavarro.io/images/thumbnails/12.png" width="150">
                 </a>
             </div>
         </div>
