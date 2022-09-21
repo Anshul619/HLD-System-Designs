@@ -23,6 +23,7 @@
 - [Read more](../../../3_HLDDesignProblems/UberCasandraMesos)
 
 ## Other UCs
+- [Twillo - Send Message API Design](../../../3_HLDDesignProblems/TwilloSendMessageAPI)
 - [Exploring Data @ Netflix](https://netflixtechblog.com/exploring-data-netflix-9d87e20072e3)
 
 # Who created Casandra?

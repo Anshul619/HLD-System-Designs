@@ -5,6 +5,7 @@
 
 # :star: Real world use cases of Redis Cache
 - [Zomato - HLD Design](../../../../3_HLDDesignProblems/ZomatoDesign)
+- [Twillo - Send Message API Design](../../../../3_HLDDesignProblems/TwilloSendMessageAPI)
 
 # Key Features of Redis ( REmote DIctionary Server)
 

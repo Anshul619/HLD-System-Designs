@@ -4,6 +4,9 @@
 - All data items are stored on `Solid State Drives (SSDs)`, and are replicated across `3 Availability Zones` for [high availability](../../1_HLDDesignComponents/0_SystemGlossaries/HighAvailability.md) and [durability](../../1_HLDDesignComponents/0_SystemGlossaries/Durability.md). 
 - With DynamoDB, `you can offload the administrative burden of operating and scaling a highly available distributed database cluster`, while paying a low price for only what you use.
 
+## :star: Real world use cases of DynamoDB
+- [Twillo - Send Message API Design](../../3_HLDDesignProblems/TwilloSendMessageAPI)
+
 ## Key Features
 - Provisioned Throughput
 - Fast, predictable performance (`single-digit millisecond performance`)
