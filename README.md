@@ -13,7 +13,7 @@ This repo contains the various system design components info, questions and solu
   <tbody>
     <tr>
       <td>
-        <a href="src/1_HLDDesignComponents/2_APITechOptions/README.md">API Tech Options ( or CDN)</a>
+        <a href="src/1_HLDDesignComponents/2_APITechOptions/README.md">API Tech Options (or CDN)</a>
       </td>
       <td>
         <div class="container" style="background:white">
