@@ -11,6 +11,7 @@
 - [Zomato - HLD Design](../../3_HLDDesignProblems/ZomatoDesign)
 - [Uber Driver Allocation](../../3_HLDDesignProblems/UberDriverAllocationDesign)
 - [Twillo - Send Message API Design](../../3_HLDDesignProblems/TwilloSendMessageAPI)
+- [Distributed Logging Solution](../../3_HLDDesignProblems/LoggingSolution)
 
 # [Why Kafka is so fast?](https://twitter.com/alexxubyte/status/1506663791961919488/photo/1)
 - Kafka achieves low latency message delivery through `Sequential I/O and Zero Copy Principle`. 

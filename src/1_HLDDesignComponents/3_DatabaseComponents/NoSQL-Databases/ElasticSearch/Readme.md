@@ -9,6 +9,7 @@
 # :star: Real world use cases of ElasticSearch
 - [Zomato - HLD Design](../../../../3_HLDDesignProblems/ZomatoDesign)
 - [Uber Driver Allocation](../../../../3_HLDDesignProblems/UberDriverAllocationDesign)
+- [Distributed Logging Solution](../../../../3_HLDDesignProblems/LoggingSolution/README.md)
 
 # Key Features of ElasticSearch
 

@@ -5,6 +5,6 @@
 - Zookeeper is also used in the `Leader Election or Controller election in the Cluster`.
 - Zookeeper notifies consumers and producers of the arrival of new broker or failure of existing broker, as well as routing all requests to partition's leaders.
 
-## Real work use cases
+## :star: Real world use cases
 - [Apache Kafka](../4_MessageBrokers/Kafka.md)
 - [Apache Marathon & Mesos](ApacheMarathon&Mesos.md)
