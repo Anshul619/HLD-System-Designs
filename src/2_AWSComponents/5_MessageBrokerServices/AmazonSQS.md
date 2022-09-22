@@ -78,6 +78,11 @@ For example:
 
 ![img.png](assests/sqs_ha_img.png)
 
+# How large can Amazon SQS message queues be?
+- A single Amazon SQS message queue can contain an unlimited number of messages. 
+- However, there is a quota of 120,000 for the number of inflight messages for a standard queue and 20,000 for a FIFO queue. 
+- Messages are inflight after they have been received from the queue by a consuming component, but have not yet been deleted from the queue.
+
 # References
 - [Amazon's SQS performance and latency](https://softwaremill.com/amazon-sqs-performance-latency/)
 - [SQS vs SNS vs Amazon MQ - Comparison - AWS Certification Cheat Sheet](https://cloud.in28minutes.com/aws-certification-sqs-vs-sns-vs-amazon-mq)
