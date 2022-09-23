@@ -17,7 +17,7 @@
 - [Based on number of messages in the "Notifications" queue](https://docs.aws.amazon.com/autoscaling/ec2/userguide/as-using-sqs-queue.html) (like [Amazon SQS](../../2_AWSComponents/5_MessageBrokerServices/AmazonSQS.md)), the workers can keep on scaling up & scaling down ( with min, max configuration ).
 
 # How would we implement rate limiting of the 3rd party SMS providers? ( & follow their SLA )
-- Let's assume [Twillo API](../TwilloSendMessageAPI) has a limit of 5000 SMS per second.
+- We would need to rate limit on our end, before calling 3rd-party API (like [Twillo API](../TwilloSendMessageAPI) which might have a `limit of 5000 SMS per second in the SLA`)
 - We can achieve this either by using [Redis](../../1_HLDDesignComponents/3_DatabaseComponents/NoSQL-Databases/Redis/README.md) ( for distributed system ) or we check the current processing queue size to handle this.
 - [To understand more about Rate Limiting, check here](../RateLimiterAPI)
 
