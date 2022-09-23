@@ -4,6 +4,7 @@
 - LRU is the [default eviction policy](https://docs.redis.com/latest/rs/databases/configure/eviction-policy/) in redis
 
 # :star: Real world use cases of Redis Cache
+- [Rate Limiting in Distributed Systems](../../../../3_HLDDesignProblems/RateLimiterAPI/README.md)
 - [Zomato - HLD Design](../../../../3_HLDDesignProblems/ZomatoDesign)
 - [Twillo - Send Message API Design](../../../../3_HLDDesignProblems/TwilloSendMessageAPI)
 - [AWS - Send-SMS-API design (App Internal Clients, Multiple SMS-Providers, AutoScaling)](../../../../3_HLDDesignProblems/NotificationSystem)
