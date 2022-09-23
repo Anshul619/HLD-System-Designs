@@ -10,7 +10,7 @@
 ## How to do EC2 Auto-Scaling?
 - Create a Launch template/configuration.
   - Specify Min. Nodes in the group.
-- Create a single-instance `Auto Scaling group`.
+- Create a single-instance [Auto Scaling group](https://docs.aws.amazon.com/autoscaling/ec2/userguide/auto-scaling-groups.html).
 - Verify your Auto Scaling group.
 - Terminate an instance in your Auto Scaling group.
 
