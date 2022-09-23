@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-09-23T17:00:07.590Z" agent="5.0 (Macintosh)" etag="_fGT-iNZqwQG9a8hdTmG" version="20.3.6" type="github">
+<mxfile host="app.diagrams.net" modified="2022-09-23T17:04:58.495Z" agent="5.0 (Macintosh)" etag="FM7IGLVickKomnY8maZp" version="20.3.6" type="github">
   <diagram id="VWrhCisDLrr0_K0WHJ6l" name="Page-1">
     <mxGraphModel dx="946" dy="526" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -29,7 +29,7 @@
           <mxGeometry x="400" y="390" width="100" height="30" as="geometry" />
         </mxCell>
         <mxCell id="qmjXaFrcUxJEYhlF_J-Z-11" value="&lt;div&gt;Amazon S3 &lt;br&gt;&lt;/div&gt;&lt;div&gt;- Thumbnails Bucket&lt;/div&gt;" style="outlineConnect=0;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;shape=mxgraph.aws3.s3;fillColor=#E05243;gradientColor=none;" vertex="1" parent="1">
-          <mxGeometry x="90" y="456" width="70" height="80" as="geometry" />
+          <mxGeometry x="73.25" y="456" width="70" height="80" as="geometry" />
         </mxCell>
         <mxCell id="qmjXaFrcUxJEYhlF_J-Z-13" value="&lt;div&gt;Amazon DynamoDB&lt;/div&gt;" style="outlineConnect=0;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;shape=mxgraph.aws3.dynamo_db;fillColor=#2E73B8;gradientColor=none;" vertex="1" parent="1">
           <mxGeometry x="356" y="720" width="72" height="81" as="geometry" />
@@ -66,6 +66,27 @@
         </mxCell>
         <mxCell id="qmjXaFrcUxJEYhlF_J-Z-21" value="1. Read App Specific Secrets" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="480" y="460" width="90" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="qmjXaFrcUxJEYhlF_J-Z-22" value="CloudFront" style="outlineConnect=0;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;shape=mxgraph.aws3.cloudfront;fillColor=#F58536;gradientColor=none;" vertex="1" parent="1">
+          <mxGeometry x="70" y="90" width="76.5" height="93" as="geometry" />
+        </mxCell>
+        <mxCell id="qmjXaFrcUxJEYhlF_J-Z-23" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.16;exitY=0.55;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="qmjXaFrcUxJEYhlF_J-Z-1" target="qmjXaFrcUxJEYhlF_J-Z-22">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="400" y="380" as="sourcePoint" />
+            <mxPoint x="450" y="330" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qmjXaFrcUxJEYhlF_J-Z-24" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="qmjXaFrcUxJEYhlF_J-Z-22" target="qmjXaFrcUxJEYhlF_J-Z-11">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="400" y="380" as="sourcePoint" />
+            <mxPoint x="450" y="330" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qmjXaFrcUxJEYhlF_J-Z-25" value="Get thumbnails" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="200" y="100" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="qmjXaFrcUxJEYhlF_J-Z-26" value="Fetch" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="110" y="300" width="60" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
