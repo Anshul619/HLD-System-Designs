@@ -1,1 +1,73 @@
-<mxfile host="app.diagrams.net" modified="2022-09-23T16:14:51.738Z" agent="5.0 (Macintosh)" version="20.3.6" etag="a3Nh_MdlqsIvkFsKMf7Z" type="github"><diagram id="VWrhCisDLrr0_K0WHJ6l">UzV2zq1wL0osyPDNT0nNUTV2VTV2LsrPL4GwciucU3NyVI0MMlNUjV1UjYwMgFjVyA2HrCFY1qAgsSg1rwSLBiADYTaQg2Y1AA==</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2022-09-23T17:00:07.590Z" agent="5.0 (Macintosh)" etag="_fGT-iNZqwQG9a8hdTmG" version="20.3.6" type="github">
+  <diagram id="VWrhCisDLrr0_K0WHJ6l" name="Page-1">
+    <mxGraphModel dx="946" dy="526" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="qmjXaFrcUxJEYhlF_J-Z-1" value="Client" style="ellipse;shape=cloud;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="323" y="90" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="qmjXaFrcUxJEYhlF_J-Z-2" value="&lt;div&gt;Amazon S3 &lt;br&gt;&lt;/div&gt;&lt;div&gt;- Original Image Bucket&lt;/div&gt;" style="outlineConnect=0;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;shape=mxgraph.aws3.s3;fillColor=#E05243;gradientColor=none;" vertex="1" parent="1">
+          <mxGeometry x="355" y="240" width="70" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="qmjXaFrcUxJEYhlF_J-Z-3" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.55;exitY=0.95;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="qmjXaFrcUxJEYhlF_J-Z-1" target="qmjXaFrcUxJEYhlF_J-Z-2">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="400" y="300" as="sourcePoint" />
+            <mxPoint x="450" y="250" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qmjXaFrcUxJEYhlF_J-Z-5" value="&lt;div&gt;AWS Lambda Function&lt;/div&gt;&lt;div&gt;- Resize Image, &lt;br&gt;&lt;/div&gt;&lt;div&gt;Generate Thumbnails&lt;br&gt;&lt;/div&gt;" style="outlineConnect=0;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;shape=mxgraph.aws3.lambda_function;fillColor=#F58534;gradientColor=none;" vertex="1" parent="1">
+          <mxGeometry x="356" y="460" width="69" height="72" as="geometry" />
+        </mxCell>
+        <mxCell id="qmjXaFrcUxJEYhlF_J-Z-7" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="qmjXaFrcUxJEYhlF_J-Z-2" target="qmjXaFrcUxJEYhlF_J-Z-5">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="400" y="390" as="sourcePoint" />
+            <mxPoint x="450" y="340" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qmjXaFrcUxJEYhlF_J-Z-8" value="Automatic Event Triggered by S3 on file upload" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="400" y="390" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="qmjXaFrcUxJEYhlF_J-Z-11" value="&lt;div&gt;Amazon S3 &lt;br&gt;&lt;/div&gt;&lt;div&gt;- Thumbnails Bucket&lt;/div&gt;" style="outlineConnect=0;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;shape=mxgraph.aws3.s3;fillColor=#E05243;gradientColor=none;" vertex="1" parent="1">
+          <mxGeometry x="90" y="456" width="70" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="qmjXaFrcUxJEYhlF_J-Z-13" value="&lt;div&gt;Amazon DynamoDB&lt;/div&gt;" style="outlineConnect=0;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;shape=mxgraph.aws3.dynamo_db;fillColor=#2E73B8;gradientColor=none;" vertex="1" parent="1">
+          <mxGeometry x="356" y="720" width="72" height="81" as="geometry" />
+        </mxCell>
+        <mxCell id="qmjXaFrcUxJEYhlF_J-Z-14" value="" style="endArrow=classic;html=1;rounded=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="qmjXaFrcUxJEYhlF_J-Z-5" target="qmjXaFrcUxJEYhlF_J-Z-11">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="260" y="600" as="sourcePoint" />
+            <mxPoint x="310" y="550" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qmjXaFrcUxJEYhlF_J-Z-15" value="Upload Image" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="395" y="190" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="qmjXaFrcUxJEYhlF_J-Z-16" value="2. Upload Thumbnails" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="200" y="460" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="qmjXaFrcUxJEYhlF_J-Z-17" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="qmjXaFrcUxJEYhlF_J-Z-5" target="qmjXaFrcUxJEYhlF_J-Z-13">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="390" y="530" as="sourcePoint" />
+            <mxPoint x="440" y="480" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qmjXaFrcUxJEYhlF_J-Z-18" value="3. Save Thumbnails URLs, metadata" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="400" y="640" width="110" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="qmjXaFrcUxJEYhlF_J-Z-19" value="AWS Secrets Manager" style="sketch=0;points=[[0,0,0],[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0,0],[0,1,0],[0.25,1,0],[0.5,1,0],[0.75,1,0],[1,1,0],[0,0.25,0],[0,0.5,0],[0,0.75,0],[1,0.25,0],[1,0.5,0],[1,0.75,0]];outlineConnect=0;fontColor=#232F3E;gradientColor=#F54749;gradientDirection=north;fillColor=#C7131F;strokeColor=#ffffff;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.secrets_manager;" vertex="1" parent="1">
+          <mxGeometry x="660" y="458" width="78" height="78" as="geometry" />
+        </mxCell>
+        <mxCell id="qmjXaFrcUxJEYhlF_J-Z-20" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="qmjXaFrcUxJEYhlF_J-Z-5" target="qmjXaFrcUxJEYhlF_J-Z-19">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="390" y="430" as="sourcePoint" />
+            <mxPoint x="440" y="380" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qmjXaFrcUxJEYhlF_J-Z-21" value="1. Read App Specific Secrets" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="480" y="460" width="90" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
