@@ -6,6 +6,7 @@
 # :star: Real world use cases of Redis Cache
 - [Zomato - HLD Design](../../../../3_HLDDesignProblems/ZomatoDesign)
 - [Twillo - Send Message API Design](../../../../3_HLDDesignProblems/TwilloSendMessageAPI)
+- [AWS - Send-SMS-API design (App Internal Clients, Multiple SMS-Providers, AutoScaling)](../../../../3_HLDDesignProblems/NotificationSystem)
 
 # Key Features of Redis ( REmote DIctionary Server)
 
