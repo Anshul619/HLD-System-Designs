@@ -3,6 +3,8 @@
 - AWS manages its [global architecture](AWS-Global-Architecture-Region-AZ.md) through region and availability zones.
 - [Amazon Resouce Name (ARN)](https://docs.aws.amazon.com/general/latest/gr/aws-arns-and-namespaces.html) uniquely identify AWS resources.
 
+# Design Multi-Region Active-Active Architecture On AWS
+
 ![img.png](0_AWSDesigns/DesignMultiRegionActiveActiveArchitectureOnAWS/AWS-AZ-Region-HA.drawio.png)
 
 # Design Scalable System on AWS
@@ -16,6 +18,7 @@
 # AWS - System Designs
 - :star: [Design Multi-Region Active-Active Architecture On AWS](0_AWSDesigns/DesignMultiRegionActiveActiveArchitectureOnAWS)
 - :star: [Design Scalable System on AWS](0_AWSDesigns/DesignScalableSystemWithRDMS)
+- [Upload Image using Amazon S3 and Lambda](0_AWSDesigns/DesignUploadImageAWSLambdaS3/README.md)
 - [Send-SMS-API design - App Internal Clients, Multiple SMS-Providers, AutoScaling](../3_HLDDesignProblems/NotificationSystem)
 - [Fanout Pattern with Amazon SNS & SQS](0_AWSDesigns/FanoutPatternSNSSQS.md)
 - [WP Site with Amazon CloudFront & S3](0_AWSDesigns/WPSiteCloudFront&S3.md)
@@ -54,7 +57,7 @@ Service| Type                                                                  |
 [Amazon SNS](5_MessageBrokerServices/AmazonSNS.md) | [Message Broker Service](5_MessageBrokerServices)                       | Fully managed pub/sub messaging, SMS, email, and mobile push notifications                                                                                                        |
 [Amazon RDS](6_DatabaseServices/AmazonRDS.md) | [Database Service](6_DatabaseServices)                                  | Database management service for relational databases                                                                                                                              |
 [Amazon EFS](7_StorageServices/AmazonEFS.md) | [Storage Service](7_StorageServices)                                    | Shared File Storage between [EC2 instances](4_ComputeServices/EC2/ReadMe.md)                                                                                                      |
-[AWS Lamdba](4_ComputeServices/AWSLambda.md) | [Compute Service](4_ComputeServices)                                    | Run code without thinking about servers or clusters.                                                                                                                              |
+:star: [AWS Lambda](4_ComputeServices/AWSLambda.md) | [Compute Service](4_ComputeServices)                                    | Run code without thinking about servers or clusters.                                                                                                                              |
 [Amazon CloudTrail](8_MonitoringServices/AWSCloudTrail.md) | [Monitoring Service](8_MonitoringServices)                              | Monitor [Amazon Route 53 API](1_NetworkingAndContentDelivery/AmazonRoute53.md) activities in AWS Account                                                                          |
 [Amazon Config](8_MonitoringServices/AWSConfig.md) | [Monitoring Service](8_MonitoringServices)                              | Monitor Configration changes of AWS Resources                                                                                                                                     |
 [AWS Shield](2_SecurityAndIdentityServices/AWSShield.md) | [Security Service](2_SecurityAndIdentityServices)                       | DDOS Prevention Service                                                                                                                                                           |

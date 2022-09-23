@@ -2,6 +2,8 @@
 # Dropbox Saves Millions by Building a Scalable Metadata Store (for AuditLog Data) on Amazon DynamoDB and Amazon S3
 - [Read more](https://aws.amazon.com/solutions/case-studies/dropbox-dynamodb-case-study/?pg=dynamodb&sec=cs#dropbox)
 
+![img.png](assets/DropboxAmazonDynamoDB.drawio.png)
+
 ## Building Hot and Cold Metadata Stores Using AWS Solutions
 - [Amazon DynamoDB](../../6_DatabaseServices/AmazonDynamoDB.md) acts as the [hot storage layer](../../../1_HLDDesignComponents/0_SystemGlossaries/README.md#hot-storage), `ingesting audit logging data to six DynamoDB tables at 4,000–6,000 writes per second per table`. 
 - Then each of these tables stores `50–80 GB daily`. 
@@ -11,4 +13,3 @@
 ## Continuing to Create a Superior User Storage Experience
 - The Alki team is exploring how it might use [Amazon EMR](../../4_ComputeServices/AmazonEMR.md) to `more efficiently offload the data from Amazon DynamoDB to Amazon S3`, a process that is currently handled by Dropbox’s own batch processing system. 
 
-![img.png](DropboxAmazonDynamoDB.drawio.png)
