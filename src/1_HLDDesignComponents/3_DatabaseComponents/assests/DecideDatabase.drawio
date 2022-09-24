@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-09-24T14:11:07.088Z" agent="5.0 (Macintosh)" etag="jlHJNNvq5jqIBADey7W6" version="20.3.6" type="github">
+<mxfile host="app.diagrams.net" modified="2022-09-24T14:17:31.305Z" agent="5.0 (Macintosh)" etag="3oFTj5Y-xQVpWykKFVNn" version="20.3.6" type="github">
   <diagram id="WJcpJdLpVQAO5bj-L5qH" name="Page-1">
     <mxGraphModel dx="946" dy="526" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -23,7 +23,7 @@
           <mxGeometry x="330" y="90" width="60" height="30" as="geometry" />
         </mxCell>
         <mxCell id="1aiNwclXw_bC3SveTIxH-10" value="&lt;div&gt;Document DB&lt;/div&gt;&lt;div&gt;(MongoDB, CouchBase, ElasticSearch, DynamoDB )&lt;br&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
-          <mxGeometry x="553" y="430" width="135" height="70" as="geometry" />
+          <mxGeometry x="546" y="430" width="148" height="70" as="geometry" />
         </mxCell>
         <mxCell id="1aiNwclXw_bC3SveTIxH-11" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;edgeStyle=orthogonalEdgeStyle;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="1aiNwclXw_bC3SveTIxH-3" target="1aiNwclXw_bC3SveTIxH-14">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
@@ -46,12 +46,6 @@
         <mxCell id="1aiNwclXw_bC3SveTIxH-17" value="&lt;div&gt;Ever Increasing Data&lt;/div&gt;&lt;div&gt;&amp;amp; Finite Queries&lt;br&gt; &lt;/div&gt;" style="rhombus;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
           <mxGeometry x="770" y="230" width="130" height="110" as="geometry" />
         </mxCell>
-        <mxCell id="1aiNwclXw_bC3SveTIxH-18" value="UCs - Product Catalog etc." style="text;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="560" y="510" width="140" height="40" as="geometry" />
-        </mxCell>
-        <mxCell id="1aiNwclXw_bC3SveTIxH-19" value="UCs - Financial Transactions etc. " style="text;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="170" y="310" width="150" height="40" as="geometry" />
-        </mxCell>
         <mxCell id="1aiNwclXw_bC3SveTIxH-20" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;edgeStyle=orthogonalEdgeStyle;" edge="1" parent="1" source="1aiNwclXw_bC3SveTIxH-3" target="1aiNwclXw_bC3SveTIxH-17">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="430" y="390" as="sourcePoint" />
@@ -73,8 +67,32 @@
         <mxCell id="1aiNwclXw_bC3SveTIxH-24" value="No" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="510" y="90" width="60" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="1aiNwclXw_bC3SveTIxH-25" value="UCs - Driver Location etc." style="text;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="780" y="510" width="140" height="40" as="geometry" />
+        <mxCell id="1aiNwclXw_bC3SveTIxH-29" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="1aiNwclXw_bC3SveTIxH-4" target="1aiNwclXw_bC3SveTIxH-31">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="430" y="330" as="sourcePoint" />
+            <mxPoint x="220" y="360" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1aiNwclXw_bC3SveTIxH-31" value="UC - Financial Transactions etc. " style="ellipse;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="150" y="370" width="140" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="1aiNwclXw_bC3SveTIxH-33" value="&lt;div&gt;UC - Product &lt;br&gt;&lt;/div&gt;&lt;div&gt;Catalog etc.&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="550" y="580" width="140" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="1aiNwclXw_bC3SveTIxH-34" value="&lt;div&gt;UC &lt;br&gt;&lt;/div&gt;&lt;div&gt;- Uber Driver Location etc.&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="765" y="580" width="140" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="1aiNwclXw_bC3SveTIxH-35" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="1aiNwclXw_bC3SveTIxH-10" target="1aiNwclXw_bC3SveTIxH-33">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="430" y="430" as="sourcePoint" />
+            <mxPoint x="480" y="380" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1aiNwclXw_bC3SveTIxH-36" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="1aiNwclXw_bC3SveTIxH-21" target="1aiNwclXw_bC3SveTIxH-34">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="430" y="470" as="sourcePoint" />
+            <mxPoint x="480" y="420" as="targetPoint" />
+          </mxGeometry>
         </mxCell>
       </root>
     </mxGraphModel>
