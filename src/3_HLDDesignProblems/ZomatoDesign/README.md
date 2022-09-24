@@ -33,7 +33,7 @@
 - It will select the distributed data, create a map and then reduce the values to give proper data.
 
 ## Redis Cache
-- [Redis cache](../../1_HLDDesignComponents/3_DatabaseComponents/NoSQL-Databases/Redis/README.md) can be used, to store the location and segments information of all the restaurants in the city.
+- [Redis cache](../../1_HLDDesignComponents/3_DatabaseComponents/In-Memory-Cache/Redis/README.md) can be used, to store the location and segments information of all the restaurants in the city.
 - As this is very frequently read and non-changing data, we had chosen to setup this in Redis to avoid multiple DB calls. 
 - For cart also, we will be storing all the selected items in Redis.
 
@@ -51,7 +51,7 @@
 - To do so, we have bundled all the product and order related data into their respective documents inside the elastic indexes.
 
 ## AeroSpike DB
-- [Aerospike](../../1_HLDDesignComponents/3_DatabaseComponents/NoSQL-Databases/AeroSpike.md) features a Hybrid Memory Architecture (`In-Memory` + `No-SQL database`), which makes it unique.
+- [Aerospike](../../1_HLDDesignComponents/3_DatabaseComponents/In-Memory-Cache/AeroSpike.md) features a Hybrid Memory Architecture (`In-Memory` + `No-SQL database`), which makes it unique.
 - When using a persistent SSD, the index is kept in memory while the data is stored on the disc and then retrieved from the drive, as opposed to when using a non-persistent SSD.
 - To support high throughput in read and write in real time.
 

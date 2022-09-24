@@ -18,7 +18,7 @@
 ### How microservices communicate with each other?
 - To asynchronously pass [events](../0_SystemGlossaries/EventDrivenArchitecture.md) & data b/w microservices, [Message Brokers](../4_MessageBrokers) ( like [Kafka](../4_MessageBrokers/Kafka.md), [RabbitMQ](../4_MessageBrokers/RabbitMQ.md), [Amazon SQS](../../2_AWSComponents/5_MessageBrokerServices/AmazonSQS.md) etc.) can be used.
 - To get the data from one microservice to another, [REST](../2_APITechOptions/REST.md) or [gPRC](../2_APITechOptions/gRPC.md) api protocols can be used.
-- [Redis](../3_DatabaseComponents/NoSQL-Databases/Redis) can be used to share the session data between microservices.
+- [Redis](../3_DatabaseComponents/In-Memory-Cache/Redis) can be used to share the session data between microservices.
 
 ## :thumbsup: Advantages of Microservices design
 

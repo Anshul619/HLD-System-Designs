@@ -18,7 +18,7 @@
 
 # How would we implement rate limiting of the 3rd party SMS providers? ( & follow their SLA )
 - We would need to rate limit on our end, before calling 3rd-party API (like [Twillo API](../TwilloSendMessageAPI) which might have a `limit of 5000 SMS per second in the SLA`)
-- We can achieve this either by using [Redis](../../1_HLDDesignComponents/3_DatabaseComponents/NoSQL-Databases/Redis/README.md) ( for distributed system ) or we check the current processing queue size to handle this.
+- We can achieve this either by using [Redis](../../1_HLDDesignComponents/3_DatabaseComponents/In-Memory-Cache/Redis/README.md) ( for distributed system ) or we check the current processing queue size to handle this.
 - [To understand more about Rate Limiting, check here](../RateLimiterAPI)
 
 # References

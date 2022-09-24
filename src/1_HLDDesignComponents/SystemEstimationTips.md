@@ -32,7 +32,7 @@ Handy Metrics:
 
 Client (India) & Server (UK), Simple REST API deployed on AWS.
 - `870ms` - Read data from database. 
-- `160ms` (5x faster) - Read data from [redis](3_DatabaseComponents/NoSQL-Databases/Redis).
+- `160ms` (5x faster) - Read data from [redis](3_DatabaseComponents/In-Memory-Cache/Redis).
 
 ## Size Calculation (Storage, RAM etc.)
 

@@ -17,7 +17,7 @@
 ## Key-Value Stores
 - Data is stored in an array of key-value pairs.
 - The `key` is an attribute name which is linked to a `value`.
-- Well-known key-value stores include [Amazon DynamoDB](../../../2_AWSComponents/6_DatabaseServices/AmazonDynamoDB.md), [Redis](Redis), [RocksDB](RocksDB.md) etc.
+- Well-known key-value stores include [Amazon DynamoDB](../../../2_AWSComponents/6_DatabaseServices/AmazonDynamoDB.md), [Redis](../In-Memory-Cache/Redis), [RocksDB](RocksDB.md) etc.
 
 ## Document Databases
 - In these databases, data is stored in documents (instead of rows and columns in a table) and these documents are grouped together in collections.
