@@ -33,7 +33,7 @@ Design driver allocation to riders in an Uber-like system
 
 ## Driver - Push Location
 - Push the current location via [Driver Location Kafka topic](../../1_HLDDesignComponents/4_MessageBrokers/Kafka.md) ([high throughput](../../1_HLDDesignComponents/0_SystemGlossaries/LatencyThroughput.md)).
-- Consumer would consume from [Kafka](../../1_HLDDesignComponents/4_MessageBrokers/Kafka.md) & then push to [ElasticSearch (Geospatial supported)](../../1_HLDDesignComponents/3_DatabaseComponents/NoSQL-Databases/ElasticSearch#geospatial-support).
+- Consumer would consume from [Kafka](../../1_HLDDesignComponents/4_MessageBrokers/Kafka.md) & then push to [ElasticSearch (Geospatial supported)](../../1_HLDDesignComponents/3_DatabaseComponents/Search-Engines/ElasticSearch#geospatial-support).
 
 ## :star: Driver Match algo
 - Area filter

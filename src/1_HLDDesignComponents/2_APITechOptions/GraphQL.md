@@ -20,7 +20,7 @@
 - [Zomato - HLD Design](../../3_HLDDesignProblems/ZomatoDesign/README.md#GraphQL)
 - [Uber Driver Allocation](../../3_HLDDesignProblems/UberDriverAllocationDesign)
 
-# [GraphQL with ElasticSearch](../3_DatabaseComponents/NoSQL-Databases/ElasticSearch/ElasticSearchWithGraphQL.md)
+# [GraphQL with ElasticSearch](../3_DatabaseComponents/Search-Engines/ElasticSearch/ElasticSearchWithGraphQL.md)
 
 # References
 - [What is GraphQL and why Facebook felt the need to build it?](https://buddy.works/tutorials/what-is-graphql-and-why-facebook-felt-the-need-to-build-it#why-facebook-built-graphql)

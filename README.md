@@ -107,6 +107,23 @@ This repo contains the various system design components info, questions and solu
     </tr>
     <tr>
       <td>
+        <a href="src/1_HLDDesignComponents/3_DatabaseComponents/ReadMe.md" target="_blank">Search Engines</a>
+      </td>
+      <td>
+        <div class="container" style="background:white">
+            <div class="block two first">
+                <a href="/src/1_HLDDesignComponents/3_DatabaseComponents/NoSQL-Databases/ElasticSearch/Readme.md" target="_blank">
+                  <img src="https://miro.medium.com/max/1200/1*20yTn7K6c6vcmEdgwAgjSA.png" width="150">
+                </a>
+                <a href="/src/1_HLDDesignComponents/3_DatabaseComponents/NoSQL-Databases/ApacheSolr.md" target="_blank">
+                  <img src="https://solr.apache.org/theme/images/identity/Solr_Logo_on_white.png" width="150">
+                </a>
+            </div>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td>
         <a href="src/1_HLDDesignComponents/3_DatabaseComponents/ReadMe.md" target="_blank">Databases</a>
       </td>
       <td>
@@ -118,8 +135,6 @@ This repo contains the various system design components info, questions and solu
                 <a href="src/2_AWSComponents/6_DatabaseServices/AmazonDynamoDB.md">
                   <img src="https://www.magnitude.com/assets/images/Logos/Data-connector-logos/edit_dynamodb.png" width="150">
                 </a>
-                <a href="/src/1_HLDDesignComponents/3_DatabaseComponents/NoSQL-Databases/ElasticSearch/Readme.md" target="_blank">
-                  <img src="https://miro.medium.com/max/1200/1*20yTn7K6c6vcmEdgwAgjSA.png" width="150"></a>
                 <a href="/src/1_HLDDesignComponents/3_DatabaseComponents/NoSQL-Databases/MongoDB" target="_blank">
                   <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/MongoDB_Logo.svg/2560px-MongoDB_Logo.svg.png" width="150"></a>
                 <a href="/src/1_HLDDesignComponents/3_DatabaseComponents/NoSQL-Databases/ApacheHBase.md" target="_blank">
@@ -175,7 +190,7 @@ This repo contains the various system design components info, questions and solu
 | :star: [Personalization at Spotify using Casandra](src/3_HLDDesignProblems/PersonalizationSpotify)                                                                                          | -                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
 | [AWS - Design Multi-Region Active-Active Architecture On AWS](src/2_AWSComponents/0_AWSDesigns/DesignMultiRegionActiveActiveArchitectureOnAWS)                                              | -                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
 | :star: [Rate Limiting in Distributed Systems](src/3_HLDDesignProblems/RateLimiterAPI/README.md)                                                                                             | [Redis](src/1_HLDDesignComponents/3_DatabaseComponents/NoSQL-Databases/Redis/README.md)                                                                                                                                                                                                                                                                                                                                                                                                                    |
-| [Logging Solution in Distributed Systems](src/3_HLDDesignProblems/LoggingSolution)                                                                                                          | [Kafka](src/1_HLDDesignComponents/4_MessageBrokers/Kafka.md), [Elastic Search](src/1_HLDDesignComponents/3_DatabaseComponents/NoSQL-Databases/ElasticSearch/Readme.md), [ELK](src/1_HLDDesignComponents/7_MonitoringTools/ELK.md)                                                                                                                                                                                                                                                                          |
+| [Logging Solution in Distributed Systems](src/3_HLDDesignProblems/LoggingSolution)                                                                                                          | [Kafka](src/1_HLDDesignComponents/4_MessageBrokers/Kafka.md), [Elastic Search](src/1_HLDDesignComponents/3_DatabaseComponents/Search-Engines/ElasticSearch/Readme.md), [ELK](src/1_HLDDesignComponents/7_MonitoringTools/ELK.md)                                                                                                                                                                                                                                                                          |
 | [Search - Make My Trip](src/3_HLDDesignProblems/MakeMyTripSearch)                                                                                                                           |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
 | [URL Shortening Service](src/3_HLDDesignProblems/URLShorteningService/README.md)                                                                                                            |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
 | [Dropbox Design](src/3_HLDDesignProblems/DropboxDesign)                                                                                                                                     |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |

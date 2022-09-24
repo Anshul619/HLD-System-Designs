@@ -9,7 +9,7 @@
 |----------------------------------------------------------------------------------------------------------------|---------|
 | [Casandra](../3_DatabaseComponents/NoSQL-Databases/ApacheCasandra.md)                                          | -       |
 | [Kafka](../4_MessageBrokers/Kafka.md)                                                                          | -       |
-| [ElasticSearch Data Stream](../3_DatabaseComponents/NoSQL-Databases/ElasticSearch/ElasticSearchDataStreams.md) | -       |
+| [ElasticSearch Data Stream](../3_DatabaseComponents/Search-Engines/ElasticSearch/ElasticSearchDataStreams.md) | -       |
 | [RocksDB](../3_DatabaseComponents/NoSQL-Databases/RocksDB.md)                                                  | -       |
 
 # Reference

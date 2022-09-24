@@ -7,7 +7,7 @@
     - Internally every index consists of several segments.
     - Segments are saved in several files in the file system.
     - Documents are split up in several lookup structures, residing in the files.
-- When you browse the data folder of [ElasticSearch](), you see this lucene index and segment structure.
+- When you browse the data folder of [ElasticSearch](ElasticSearch/Readme.md), you see this lucene index and segment structure.
     - There is no storage of json formatted data on the file system level.
     - The files contain `optimized binary data` and `you need to pass through the elastic API to get a JSON representation of a document`.
 
@@ -27,7 +27,7 @@
 - The inverted index maps `terms` to `documents` (and possibly positions in the documents) containing the term.
 - Using inverted indexes, lucene internally & efficiently finds documents with given term prefixes.
 - For example - find all documents, starting with `c`.
-![img.png](assests/inverted_indexes.png)
+![img.png](assets/inverted_indexes.png)
 
 # Reference
 - [How does elasticsearch store data?](https://stackoverflow.com/questions/57328151/how-does-elasticsearch-store-data)

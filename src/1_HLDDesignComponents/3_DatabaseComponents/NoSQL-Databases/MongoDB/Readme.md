@@ -13,7 +13,7 @@
 # General Use Cases
 [MongoDB](https://www.interviewbit.com/mongodb-interview-questions/) is more suitable to manage NoSQL data requiring create, read, update and delete (CRUD) operations. 
 - It offers high scalability, reliability, and performance. 
-- MongoDB also uses text-based indexes for full-text queries, but the search is slow, and the search server does not provide tokenizers and analyzers like [Elasticsearch](../ElasticSearch) does.
+- MongoDB also uses text-based indexes for full-text queries, but the search is slow, and the search server does not provide tokenizers and analyzers like [Elasticsearch](../../Search-Engines/ElasticSearch) does.
 
 # MQL (Mongo Query Language)
 - [MongoDB](https://www.interviewbit.com/mongodb-interview-questions/) has a rich query language called MQL. 

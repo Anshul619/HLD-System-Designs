@@ -4,7 +4,7 @@
 | Database                                                                                | Strength                                                                                                                                                                               | DB Type        | Pricing Model         |
 |-----------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------|-----------------------|
 | :star: [Amazon DynamoDB](../../../2_AWSComponents/6_DatabaseServices/AmazonDynamoDB.md) | Predictable performance and cost. <br/>- More than 20 million requests per second <br/>- Less than 10-20 ms latency                                                                    | Key-Value      | `AWS Managed Service` |
-| :star: [ElasticSearch](ElasticSearch)                                                   | `Full-Text-Search`, `Logs-Analysis (ELK)`, `Metrics, Analysis`                                                                                                                         | Document-DB    | `Open Source`         |
+| :star: [ElasticSearch](../Search-Engines/ElasticSearch)                                                   | `Full-Text-Search`, `Logs-Analysis (ELK)`, `Metrics, Analysis`                                                                                                                         | Document-DB    | `Open Source`         |
 | :star: [Apache Casandra](ApacheCasandra.md)                                             | Handle large amount of data, at [low latency](../../0_SystemGlossaries/LatencyThroughput.md) (with [eventual consistency](../../0_SystemGlossaries/ReplicationAndDataConsistency.md))  | Wide-Column-DB | `Open Source`         |
 | [Apache HBase](ApacheHBase.md)                                                          | Handle large amount of data, at [normal latency](../../0_SystemGlossaries/LatencyThroughput.md) (with [strong consistency](../../0_SystemGlossaries/ReplicationAndDataConsistency.md)) | Wide-Column-DB | `Open Source`         |
 | [MongoDB](MongoDB)                                                                      | -                                                                                                                                                                                      | Document-DB    | `Open Source`         |
@@ -22,7 +22,7 @@
 ## Document Databases
 - In these databases, data is stored in documents (instead of rows and columns in a table) and these documents are grouped together in collections.
 - Each document can have an entirely different structure.
-- Document databases include [MongoDB](MongoDB), [ElasticSearch](ElasticSearch), [Amazon DynamoDB](../../../2_AWSComponents/6_DatabaseServices/AmazonDynamoDB.md), [CouchDB](https://couchdb.apache.org) etc.
+- Document databases include [MongoDB](MongoDB), [ElasticSearch](../Search-Engines/ElasticSearch), [Amazon DynamoDB](../../../2_AWSComponents/6_DatabaseServices/AmazonDynamoDB.md), [CouchDB](https://couchdb.apache.org) etc.
 
 ## Wide-Column Databases
 - Instead of `tables`, we have column families in column databases, which are containers for rows.
