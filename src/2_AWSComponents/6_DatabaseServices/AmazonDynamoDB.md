@@ -72,3 +72,4 @@ Each data type falls into one of the three following categories -
 # References
 - [Top DynamoDB Interview Questions](https://www.javainuse.com/misc/dynamodb-interview-questions)
 - [20 DynamoDB Interview Questions and Answers](https://climbtheladder.com/dynamodb-interview-questions/)
+- [What I’ve Learned From Using AWS DynamoDB in Production for More Than 3 Years?](https://medium.com/aws-tip/what-ive-learned-from-using-aws-dynamodb-in-production-for-more-than-3-years-49a077886b5c)

@@ -8,6 +8,3 @@
 
 # AWS Macie
 - To discover sensitive information that the enterprise stores in AWS and then use `NLP` to classify the data and provide business-related insights.
-
-# AWS Secrets Manager
-- [AWS Secrets Manager helps you manage, retrieve, and rotate database credentials, API keys, and other secrets throughout their lifecycles](https://aws.amazon.com/secrets-manager/)
