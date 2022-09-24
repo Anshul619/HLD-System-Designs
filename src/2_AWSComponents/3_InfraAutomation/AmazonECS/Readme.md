@@ -12,3 +12,7 @@
 
 # Amazon ECR
 - [Amazon Elastic Container Registry (Amazon ECR)](https://aws.amazon.com/ecr/) is a fully managed container registry offering high-performance hosting, so you can reliably deploy application images and artifacts anywhere.
+
+# Amazon ECS with Fargate
+
+![img.png](../../4_ComputeServices/assests/aws_ecs_fargate.png)
