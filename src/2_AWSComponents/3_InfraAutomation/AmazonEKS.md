@@ -1,8 +1,13 @@
 
-# [Amazon EKS - Amazon Elastic Kubernetes Service](https://aws.amazon.com/eks/)
-- Amazon Elastic Kubernetes Service (Amazon EKS) is a `managed container service` to run and scale [Kubernetes](../../1_HLDDesignComponents/6_DevOps/Kubernates.md) applications in the cloud or on-premises.
-- [EKS cluster for EC2 instances - Cloudformation template](/CloudFormation/templates/EKS_ECS.yml)
+# Amazon EKS - Amazon Elastic Kubernetes Service
+- [Amazon Elastic Kubernetes Service (Amazon EKS)](https://aws.amazon.com/eks/) is a `managed container service` to run and scale [Kubernetes](../../1_HLDDesignComponents/6_DevOps/Kubernates.md) applications in the cloud or on-premises.
+- [EKS cluster for EC2 instances - Cloudformation template](AWSCloudFormation/templates/EKS_ECS.yml)
+- [Amazon EKS vs ECS vs Fargate](EKSvsECSvsFargate.md)
 
-# [Modular and Scalable Amazon EKS Architecture on AWS](https://aws.amazon.com/quickstart/architecture/amazon-eks/)
+![img.png](AmazonECS/assests/AmazonECS-Steps.drawio.png)
+
+# Modular and Scalable Amazon EKS Architecture on AWS
 
 ![img.png](assests/eks_architecture.png)
+
+[Read more](https://aws.amazon.com/quickstart/architecture/amazon-eks/)
