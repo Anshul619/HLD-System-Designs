@@ -32,7 +32,7 @@ This repo contains the various system design components info, questions and solu
             </div>
         </div>
       </td>
-      <td rowspan=6 width="150px">
+      <td rowspan=7 width="150px">
         <a href="src/2_AWSComponents">
           <img src="https://i.pinimg.com/originals/50/bd/c9/50bdc91f32650905e776d6751478928c.png">
         </a>

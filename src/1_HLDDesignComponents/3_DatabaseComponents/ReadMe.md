@@ -13,6 +13,12 @@ Properties | SQL enables [ACID (atomicity, consistency, isolation, and durabilit
 Best Features | Secure, Cross Platform Support, Free                                                                                                                                                                                                                                                                             | High Performance, Flexible, Easy to use                                                                                                                               |
 Built-in Single Machine Failure | Supported                                                                                                                                                                                                                                                                                                        | Not-Supported                                                                                                                                                         |
 
+# How to choose database in the system design?
+
+![img.png](assests/DecideDatabase.drawio.png)
+
+[Read more](DecideDatabase.md)
+
 # SQL - Intro
 
 ![img.png](assests/SQLDifferentTypes.png)
@@ -22,14 +28,16 @@ Relational databases store data in rows and columns.
 - Some of the most popular relational databases are [AWS Aurora](../../2_AWSComponents/6_DatabaseServices/AmazonAurora/Readme.md), `Postgres`, `MySQL`, `Oracle`, `MS SQL Server`, `SQLite` and `MariaDB`.
 
 # NoSQL - Intro, Different NoSQL types
-- [Read here](NoSQL-Databases)
 
 ![img.png](NoSQL-Databases/assets/NoSQL-DifferentDBtypes.drawio.png)
+
+[Read more](NoSQL-Databases)
 
 # SQL - Different Databases
 
 ## MySQL vs PostgreSQL
-- [PostgreSQL is twice as fast as MySQL](https://itnext.io/benchmark-databases-in-docker-mysql-postgresql-sql-server-7b129368eed7).
+
+[PostgreSQL is twice as fast as MySQL](https://itnext.io/benchmark-databases-in-docker-mysql-postgresql-sql-server-7b129368eed7).
 
 | Component                                                               | Strength                                | Component Type                | Very Rough Throughput (QPS)                 | Latency | Pricing Model                                              |
 |-------------------------------------------------------------------------|-----------------------------------------|-------------------------------|---------------------------------------------|----------------|------------------------------------------------------------|
