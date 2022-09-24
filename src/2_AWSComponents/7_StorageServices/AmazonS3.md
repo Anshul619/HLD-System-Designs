@@ -12,8 +12,9 @@
 
 ![img.png](https://acg-wordpress-content-production.s3.us-west-2.amazonaws.com/app/uploads/2021/01/1_SMawCtVcSkQ6ZaQMZ0Vd7Q.png)
 
-## Automatic event on adding file  
-- [Granting permissions in S3 to publish event notification messages to a destination (Lambda, SQS, SNS etc.)](https://docs.aws.amazon.com/AmazonS3/latest/userguide/grant-destinations-permissions-to-s3.html)
+## Automatic event on adding file in S3
+
+[Granting permissions in S3 to publish event notification messages to a destination (Lambda, SQS, SNS etc.)](https://docs.aws.amazon.com/AmazonS3/latest/userguide/grant-destinations-permissions-to-s3.html)
 
 # :star: Real world use cases of Amazon S3
 
@@ -29,10 +30,14 @@
 
 [Read more](../0_AWSDesigns/DesignUploadImageAWSLambdaS3/README.md)
 
-# [S3 vs Others](S3vsEFSvsEBS.md)
+# :star: [S3 vs Others](S3vsEFSvsEBS.md)
 
-# [S3 Cli](https://docs.aws.amazon.com/cli/latest/reference/s3/)
+# S3 Cli
 
-## Copy file
-## Move file
-## Sync folder
+| Command     | Remarks |
+|-------------|---------|
+| Copy file   |         |
+| Move file   |         |
+| Sync folder |         |
+
+[Read more](https://docs.aws.amazon.com/cli/latest/reference/s3/)
