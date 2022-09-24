@@ -48,7 +48,7 @@ This repo contains the various system design components info, questions and solu
     </tr>
     <tr>
       <td>
-        <a href="src/1_HLDDesignComponents/3_DatabaseComponents/NoSQL-Databases/Redis/README.md">In-Memory Cache/DBs</a>
+        <a href="src/1_HLDDesignComponents/3_DatabaseComponents/In-Memory-Cache">In-Memory Cache/DBs</a>
       </td>
       <td>
         <div class="container" style="background:white">
@@ -85,6 +85,23 @@ This repo contains the various system design components info, questions and solu
     </tr>
     <tr>
       <td>
+        <a href="src/1_HLDDesignComponents/3_DatabaseComponents/Search-Engines" target="_blank">Search Engines</a>
+      </td>
+      <td>
+        <div class="container" style="background:white">
+            <div class="block two first">
+                <a href="/src/1_HLDDesignComponents/3_DatabaseComponents/Search-Engines/ElasticSearch/Readme.md" target="_blank">
+                  <img src="https://miro.medium.com/max/1200/1*20yTn7K6c6vcmEdgwAgjSA.png" width="150">
+                </a>
+                <a href="/src/1_HLDDesignComponents/3_DatabaseComponents/Search-Engines/ApacheSolr.md" target="_blank">
+                  <img src="https://solr.apache.org/theme/images/identity/Solr_Logo_on_white.png" width="150">
+                </a>
+            </div>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td>
         <a href="src/1_HLDDesignComponents/5_BigDataComponents">BigData Compute Engines</a>
         <br><br>
         <a href="src/1_HLDDesignComponents/5_BigDataComponents/ApacheSparkVsHadoopMapReduce.md">Comparisons</a>
@@ -100,23 +117,6 @@ This repo contains the various system design components info, questions and solu
                 </a>
                 <a href="/src/1_HLDDesignComponents/5_BigDataComponents/ApacheHadoop" target="_blank">
                   <img src="http://viloratech.com/images/course_images_banner/20908.jpg" width="150">
-                </a>
-            </div>
-        </div>
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <a href="src/1_HLDDesignComponents/3_DatabaseComponents/ReadMe.md" target="_blank">Search Engines</a>
-      </td>
-      <td>
-        <div class="container" style="background:white">
-            <div class="block two first">
-                <a href="/src/1_HLDDesignComponents/3_DatabaseComponents/Search-Engines/ElasticSearch/Readme.md" target="_blank">
-                  <img src="https://miro.medium.com/max/1200/1*20yTn7K6c6vcmEdgwAgjSA.png" width="150">
-                </a>
-                <a href="/src/1_HLDDesignComponents/3_DatabaseComponents/Search-Engines/ApacheSolr.md" target="_blank">
-                  <img src="https://solr.apache.org/theme/images/identity/Solr_Logo_on_white.png" width="150">
                 </a>
             </div>
         </div>
