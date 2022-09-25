@@ -24,6 +24,7 @@
 
 ## Other UCs
 - [Twillo - Send Message API Design](../../../3_HLDDesignProblems/TwilloSendMessageAPI)
+- [Flight Booking Search](../../../3_HLDDesignProblems/FlightBookingSearch/README.md)
 - [Exploring Data @ Netflix](https://netflixtechblog.com/exploring-data-netflix-9d87e20072e3)
 
 # Who created Casandra?

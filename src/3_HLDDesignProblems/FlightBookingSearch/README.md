@@ -12,15 +12,21 @@
 - Flight booking
 - New flight onboarding ( admin )
 
-# Estimation
-- Assuming each apache ( service ) server can handle 512 concurrent requests.
-- If we consider `1 million concurrent users`, around `2000 servers` would be needed.
-- Expected Latency - `10ms for ElasticSearch`.
+[//]: # (# Estimation)
 
-# Data Modeling
-- Search Interface 
-  - searchbyDate
-- FlightSearch would implement Search Interface 
+[//]: # (- Assuming each apache &#40; service &#41; server can handle 512 concurrent requests.)
+
+[//]: # (- If we consider `1 million concurrent users`, around `2000 servers` would be needed.)
+
+[//]: # (- Expected Latency - `10ms for ElasticSearch`.)
+
+[//]: # (# Data Modeling)
+
+[//]: # (- Search Interface )
+
+[//]: # (  - searchbyDate)
+
+[//]: # (- FlightSearch would implement Search Interface )
 
 # References
 - [Flight booking Website System Design](https://ankita4priya.medium.com/flight-booking-website-app-system-design-899c626a6ee6)

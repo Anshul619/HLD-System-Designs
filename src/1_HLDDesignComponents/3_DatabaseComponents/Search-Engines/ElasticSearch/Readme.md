@@ -10,7 +10,8 @@
 # :star: Real world use cases of ElasticSearch
 - [Zomato - HLD Design](../../../../3_HLDDesignProblems/ZomatoDesign)
 - [Uber Driver Allocation](../../../../3_HLDDesignProblems/UberDriverAllocationDesign)
-- [Distributed Logging Solution](../../../../3_HLDDesignProblems/LoggingSolution/README.md)
+- [Logging Solution in Distributed Systems](../../../../3_HLDDesignProblems/LoggingSolution/README.md)
+- [Flight Booking Search](../../../../3_HLDDesignProblems/FlightBookingSearch/README.md)
 
 # Key Features of ElasticSearch
 
@@ -20,7 +21,7 @@
 - [Logs-analysis with ELK](../../../7_MonitoringTools/ELK.md)
 - [Dashboard, Visualize data, Metrics etc. with ELK](../../../7_MonitoringTools/ELK.md)
 - [Security, SIEM with ELK](../../../7_MonitoringTools/ELK.md)
-- [Read more about usages of Lucene](../ApacheLucene.md#real-world-usages-of-apache-lucene)
+- [Read more about usages of Lucene](../ApacheLucene.md#star-real-world-usages-of-apache-lucene)
 
 ## Different data types supported
 - Textual
@@ -54,6 +55,27 @@
 # Other Points
 - [Installation using Docker ELK](https://github.com/deviantony/docker-elk)
 - [GraphQL with ElasticSearch](ElasticSearchWithGraphQL.md)
+
+# Sample Queries
+
+## Sort Search Results
+- [Read more](https://www.elastic.co/guide/en/elasticsearch/reference/current/sort-search-results.html)
+
+````
+GET /my-index-000001/_search
+{
+  "sort" : [
+    { "post_date" : {"order" : "asc", "format": "strict_date_optional_time_nanos"}},
+    "user",
+    { "name" : "desc" },
+    { "age" : "desc" },
+    "_score"
+  ],
+  "query" : {
+    "term" : { "user" : "kimchy" }
+  }
+}
+````
 
 # References
 - [ElasticSearch from the Bottom Up](https://www.elastic.co/blog/found-elasticsearch-from-the-bottom-up)
