@@ -5,12 +5,12 @@
 - Customer can then select the flight.
 - System should be scalable with high performance.
 
+![img.png](assets/MakeMyTripFlightSearch.drawio.png)
+
 # Different Events to update the search index
 - Price Update
 - Flight booking
 - New flight onboarding ( admin )
-
-<img title="MakeMyTrip" alt="Alt text" src="MakeMyTripFlightSearch.drawio.png">
 
 # Estimation
 - Assuming each apache ( service ) server can handle 512 concurrent requests.
@@ -23,6 +23,6 @@
 - FlightSearch would implement Search Interface 
 
 # References
-- https://ankita4priya.medium.com/flight-booking-website-app-system-design-899c626a6ee6
-- https://www.nexsoftsys.com/articles/how-to-design-backend-system-of-an-online-hotel-booking-app-using-java.html
-- Asked in Amazon Interview Question, 15June2022
+- [Flight booking Website System Design](https://ankita4priya.medium.com/flight-booking-website-app-system-design-899c626a6ee6)
+- [Design Backend System of an online Hotel booking application using Java Microservices](https://www.nexsoftsys.com/articles/how-to-design-backend-system-of-an-online-hotel-booking-app-using-java.html)
+- Asked in Amazon System Design Interview, 15June2022
