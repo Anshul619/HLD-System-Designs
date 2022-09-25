@@ -1,7 +1,7 @@
-# Intro
+# Append only DB storages
 - Messages ( events ) in the DB store are immutable and can't be changed once it's pushed.
 - Write appends ( `sequential write` ) to the store/logs, without modifying the existing data.
-- This makes [writes (throughput)](LatencyThroughput.md) generally very fast.
+- This makes [writes (i.e. throughput)](LatencyThroughput.md) generally very fast.
 
 # Supported Databases
 
