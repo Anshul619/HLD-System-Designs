@@ -12,6 +12,7 @@
 - [Uber Driver Allocation](../../../../3_HLDDesignProblems/UberDriverAllocationDesign)
 - [Logging Solution in Distributed Systems](../../../../3_HLDDesignProblems/LoggingSolution/README.md)
 - [Flight Booking Search](../../../../3_HLDDesignProblems/FlightBookingSearch/README.md)
+- [Shopify: Powering the search for better help documentation using Elastic Site Search](https://www.elastic.co/customers/shopify)
 
 # Key Features of ElasticSearch
 
