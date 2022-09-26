@@ -28,16 +28,16 @@
 }
 ````
 
-## Two Major Issues
-
-### Inconsistency
-- Using the consistent data store ( like [Redis](../../1_HLDDesignComponents/3_DatabaseComponents/In-Memory-Cache/Redis/README.md), [Cassandra](../../1_HLDDesignComponents/3_DatabaseComponents/NoSQL-Databases/ApacheCasandra.md) ), we can solve inconsistency problem of current rate limiting in distributed systems.
-- This would add a bit of latency.
+## Two Major Issues & Solution
 
 ### Race Conditions
 - To solve the race condition while updating the counter in [Redis](../../1_HLDDesignComponents/3_DatabaseComponents/In-Memory-Cache/Redis/README.md), we would have to apply [transaction locks on the read-write operation](../../1_HLDDesignComponents/3_DatabaseComponents/In-Memory-Cache/Redis/README.md#redis-transaction-lock).
 - This would make the [counter update as atomic](../../1_HLDDesignComponents/0_SystemGlossaries/Atomicity.md) in Redis.
 - But this comes at a performance cost ( as latency would increase ).
+
+### Inconsistency
+- Using the consistent data store ( like [Redis](../../1_HLDDesignComponents/3_DatabaseComponents/In-Memory-Cache/Redis/README.md), [Cassandra](../../1_HLDDesignComponents/3_DatabaseComponents/NoSQL-Databases/ApacheCasandra.md) ), we can solve inconsistency problem of current rate limiting in distributed systems.
+- This would add a bit of latency.
 
 ## References
 - [Groking the system design - Designing an API Rate Limiter](https://akshay-iyangar.github.io/system-design/grokking-system-design/system-design-problems/api-rate-limiter.html)

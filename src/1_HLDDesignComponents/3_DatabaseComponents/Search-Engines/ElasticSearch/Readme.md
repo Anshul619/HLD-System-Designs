@@ -14,8 +14,6 @@
 - [Flight Booking Search](../../../../3_HLDDesignProblems/FlightBookingSearch/README.md)
 - [Shopify: Powering the search for better help documentation using Elastic Site Search](https://www.elastic.co/customers/shopify)
 
-# Key Features of ElasticSearch
-
 ## :star: General Use Cases of ElasticSearch
 - [Search - Full-text, Partial etc.](https://www.elastic.co/guide/en/elasticsearch/reference/current/full-text-queries.html)
 - [Search - Fuzzy Query](https://www.elastic.co/guide/en/elasticsearch/reference/current/query-dsl-fuzzy-query.html)
@@ -23,6 +21,8 @@
 - [Dashboard, Visualize data, Metrics etc. with ELK](../../../7_MonitoringTools/ELK.md)
 - [Security, SIEM with ELK](../../../7_MonitoringTools/ELK.md)
 - [Read more about usages of Lucene](../ApacheLucene.md#star-real-world-usages-of-apache-lucene)
+
+# Key Features of ElasticSearch
 
 ## Different data types supported
 - Textual
@@ -62,7 +62,7 @@
 ## Sort Search Results
 - [Read more](https://www.elastic.co/guide/en/elasticsearch/reference/current/sort-search-results.html)
 
-````
+````json
 GET /my-index-000001/_search
 {
   "sort" : [
