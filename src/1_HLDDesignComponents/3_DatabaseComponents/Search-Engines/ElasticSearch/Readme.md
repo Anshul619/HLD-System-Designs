@@ -1,6 +1,7 @@
 # Introduction
 - A distributed, [RESTful](../../../2_APITechOptions/REST.md) modern search and analytics engine based on [Apache Lucene](../ApacheLucene.md).
 - In ElasticSearch, data is stored in the form of `JSONs`.
+- Data in Elasticsearch is organized into [indices](https://www.elastic.co/guide/en/elasticsearch/guide/2.x/_add_an_index.html). Each index is made up of one or more shards.
 - We can only interact with ElasticSearch through [REST APIs](../../../2_APITechOptions/REST.md).
 - ElasticSearch can be deployed using [Amazon OpenSearch](../../../../2_AWSComponents/6_DatabaseServices/AmazonOpenSearch.md) service, on [AWS](../../../../2_AWSComponents).
 - For data analysis, it operates alongside Kibana, and Logstash to form the [ELK stack](../../../7_MonitoringTools/ELK.md).
@@ -43,9 +44,11 @@
 
 [Read more](ElasticSearchCluster.md)
 
-## :star: [ElasticSearch Data Streaming](ElasticSearchDataStreams.md)
+## ElasticSearch Data Streaming
 
-![img.png](https://www.elastic.co/guide/en/elasticsearch/reference/current/images/data-streams/data-streams-index-request.svg)
+![img.png](assests/ElasticSearch-DataStream.png)
+
+[Read more](ElasticSearchDataStreams.md)
 
 ## :star: [ElasticSearch Geo Spatial Support](ElasticSearchGeoSpatialSupport.md)
 
