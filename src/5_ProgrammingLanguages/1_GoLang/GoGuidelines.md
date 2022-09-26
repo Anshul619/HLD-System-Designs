@@ -30,7 +30,7 @@
 - Pointer can be passed using `func x(output [][]*int)`.
 - [Slices](https://stackoverflow.com/questions/38731467/pass-array-by-reference-in-golang) are passed by reference in the function call, so no need to specify [pointers](https://www.geeksforgeeks.org/pointers-in-golang/).
 - To access elements of a pointer array, use `(*h)[10]` instead of `*h[10]`.
-- If method needs to modify the reciever, receiver must be pointer.
+- If method needs to modify the receiver, receiver must be pointer.
 
 ```
 func (s *MyStruct) pointerMethod() { } // method on pointer. 
@@ -47,25 +47,32 @@ theme := new(Theme) // Pointer to new Theme object
 
 # Various Go Constructs
 
-| Purpose                                          | Data Structure | Function                                                                                                                                            |
-|--------------------------------------------------|----------------|-----------------------------------------------------------------------------------------------------------------------------------------------------|
-| :star: Initialize Empty Slice                    | Slice          | slice := []int{}<br>var slice []int                                                                                                                 |
-| :star: Initialize Slice with non-constant length | Slice          | slice := make([]int, len(nums))                                                                                                                     |
-| :star: Append element to the list                | Array, Slice   | output := []int{10}<br>output = append(output, 5) // append 5 to output slice                                                                       |
-| :star: Append multiple elements to the list      | Array, Slice   | output = append(output, input[:5]...)                                                                                                               |
-| Get elements from start to end index, from slice | Array, Slice   | output[:5] // 0th to 5th index<br> output[1:] // 1st to last index<br> output[1,5] // 1st to 5th index                                              |
-| :star: Length of an array or slice               | Array, Slice   | len(array)                                                                                                                                          |
-| :star: Sort an array or slice                    | Array, Slice   | sort.Ints(seats)                                                                                                                                    |
-| :star: Create a Map object                       | Hash Map       | m := make(map[int]int)<br>m := map[int]int                                                                                                          |
-| :star: Get value from Map                        | Hash Map       | val, ok := m[key]                                                                                                                                   |
-| :star: Create object of the struct               | Struct         | obj := new(ListNode) // pointer to object, without all variables initialized <br>obj := ListNode{5, 10} // with all variables of struct initialized |
-| Copy one slice to another                        | Slice          | copy(dest, src)                                                                                                                                     |
-| Compare two bytes array                          | Slice          | bytes.Compare(sl1, sl2)                                                                                                                             |
-| While loop in GoLang                             | Looping        | for n!=0 {}                                                                                                                                         |
-| Check if x string contains y string              | String         | strings.Contains(x, y)                                                                                                                              |
-| Split the string                                 | String         | strings.Split(y, " ")                                                                                                                               |
-| Convert byte (i.e. stringArray[i]) to string     | String         | string(x)                                                                                                                                           |
-| Compare strings                                  | String         | x==y                                                                                                                                                |
+| Purpose                                                                                                                      | Data Structure | Function                                                                                                                                            |
+|------------------------------------------------------------------------------------------------------------------------------|----------------|-----------------------------------------------------------------------------------------------------------------------------------------------------|
+| :star: Initialize Empty Slice                                                                                                | Slice          | slice := []int{}<br>var slice []int                                                                                                                 |
+| :star: Initialize Slice with non-constant length                                                                             | Slice          | slice := make([]int, len(nums))                                                                                                                     |
+| :star: Append element to the list                                                                                            | Array, Slice   | output := []int{10}<br>output = append(output, 5) // append 5 to output slice                                                                       |
+| :star: Append multiple elements to the list                                                                                  | Array, Slice   | output = append(output, input[:5]...)                                                                                                               |
+| Get elements from start to end index, from slice                                                                             | Array, Slice   | output[:5] // 0th to 5th index<br> output[1:] // 1st to last index<br> output[1,5] // 1st to 5th index                                              |
+| :star: Length of an array or slice                                                                                           | Array, Slice   | len(array)                                                                                                                                          |
+| :star: Sort an array or slice                                                                                                | Array, Slice   | sort.Ints(seats)                                                                                                                                    |
+| :star: Create a Map object                                                                                                   | Hash Map       | m := make(map[int]int)<br>m := map[int]int                                                                                                          |
+| :star: Get value from Map                                                                                                    | Hash Map       | val, ok := m[key]                                                                                                                                   |
+| :star: Create object of the struct                                                                                           | Struct         | obj := new(ListNode) // pointer to object, without all variables initialized <br>obj := ListNode{5, 10} // with all variables of struct initialized |
+| Copy one slice to another                                                                                                    | Slice          | copy(dest, src)                                                                                                                                     |
+| Compare two bytes array                                                                                                      | Slice          | bytes.Compare(sl1, sl2)                                                                                                                             |
+| While loop in GoLang                                                                                                         | Looping        | for n!=0 {}                                                                                                                                         |
+| Check if x string contains y string                                                                                          | String         | strings.Contains(x, y)                                                                                                                              |
+| Split the string                                                                                                             | String         | strings.Split(y, " ")                                                                                                                               |
+| Convert rune (i.e. stringArray[i]) to string                                                                                 | Rune           | string(x)                                                                                                                                           |
+| Compare strings                                                                                                              | String         | x==y                                                                                                                                                |
+| Replace in string                                                                                                            | String         | res1 := strings.ReplaceAll(str1, "Source", "Target")                                                                                                |
+| [Convert string to an array of Rune, helps in modifying string](https://stackoverflow.com/questions/19310700/what-is-a-rune) | Rune           | out1 := []rune("string") <br>out[0] // rune at 0th index in stringVar                                                                               |
+| [Convert int to float](https://www.digitalocean.com/community/tutorials/how-to-convert-data-types-in-go)                     | Int            | float64(3)                                                                                                                                          |
+| [Convert int to string](https://www.digitalocean.com/community/tutorials/how-to-convert-data-types-in-go)                    | Int            | a := strconv.Itoa(12)                                                                                                                               |
+| [Convert string to int](https://www.golangprograms.com/how-to-convert-string-to-integer-type-in-go.html)                     | Int            | b := strconv.Atoi("string")                                                                                                                         |
+| [Get max/min of integer](https://gosamples.dev/int-min-max/)                                                                 | Int            | math.MaxInt<br>math.MinInt                                                                                                                                     |                                                                                                                                                    |||
+| [Get power of a number](https://stackoverflow.com/questions/64108933/how-to-use-math-pow-with-integers-in-golang)                                                                  | Int            | int(math.Pow(float64(x), float64(y)))                                                                                                                                     |                                                                                                                                                    |||
 
 # Array vs Slice
 - Slice with dynamic length ( like arraylist in Java ) while Array with constant length.
@@ -299,6 +306,11 @@ func main() { // first calling function
 
 # OOPs
 - Go does not support inheritance, however, it does support composition.
+
+# What are channels in Go?
+- [Reference](https://www.geeksforgeeks.org/channel-in-golang/)
+
+![img.png](https://media.geeksforgeeks.org/wp-content/uploads/20190731140438/Untitled-Diagram46.jpg)
 
 # Go Tutorials
 - [Frequently Asked Questions (FAQ) - Go](https://go.dev/doc/faq#overloading)
