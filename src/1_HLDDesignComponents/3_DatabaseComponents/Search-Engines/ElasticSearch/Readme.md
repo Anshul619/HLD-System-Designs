@@ -37,9 +37,11 @@
 - Index APIs (`GET /_cat/indices`)
 - Cluster APIs
 
-## :star: [ElasticSearch Cluster](ElasticSearchCluster.md)
+## :star: ElasticSearch Cluster
 
-![img.png](assests/design1.png)
+![img.png](assests/ElasticSearch-Cluster.png)
+
+[Read more](ElasticSearchCluster.md)
 
 ## :star: [ElasticSearch Data Streaming](ElasticSearchDataStreams.md)
 
