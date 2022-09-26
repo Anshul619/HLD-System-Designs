@@ -14,14 +14,13 @@
 - [Logging Solution in Distributed Systems](../../3_HLDDesignProblems/LoggingSolution)
 - [Flight Booking Search](../../3_HLDDesignProblems/FlightBookingSearch/README.md)
 
-# [Why Kafka is so fast?](https://twitter.com/alexxubyte/status/1506663791961919488/photo/1)
+# Why Kafka is so fast?
 - Kafka achieves low latency message delivery through `Sequential I/O and Zero Copy Principle`. 
 - The same techniques are commonly used in much other messaging/streaming platforms.
 - Kafka is based on Log Based Queue
   - :star: Messages are persisted to [append-only log files](../0_SystemGlossaries/AppendOnlyDBStorages.md) by the broker.
   - Producers are appending these log files ( `sequential write` ) & consumers are reading a range of these files ( `sequential reads` ).
-
-![img.png](https://pbs.twimg.com/media/FOi-gjZVgAQdG9B?format=jpg&name=large)
+- [Read more](https://twitter.com/alexxubyte/status/1506663791961919488/photo/1)
 
 # Basic Architecture of Kafka Cluster
 
