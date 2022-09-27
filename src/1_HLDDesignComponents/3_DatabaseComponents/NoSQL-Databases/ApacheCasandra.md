@@ -9,9 +9,16 @@
 # :star: Real world use cases of Casandra
 
 ## Personalization at Spotify using Cassandra
-- [Read more](../../../3_HLDDesignProblems/PersonalizationSpotify)
 
 ![img.png](../../../3_HLDDesignProblems/PersonalizationSpotify/assets/PersonalizationSpotify.drawio.png)
+
+- [Read more](../../../3_HLDDesignProblems/PersonalizationSpotify)
+
+## Search - Flight Booking
+
+![img.png](../../../3_HLDDesignProblems/FlightBookingSearch/assets/MakeMyTripFlightSearch.drawio.png)
+
+- [Read more](../../../3_HLDDesignProblems/FlightBookingSearch/README.md))
 
 ## Inbox Search Feature & Instagram Unit at Facebook, using Casandra
 - Facebook originally built Cassandra to power its [Inbox search feature](https://m.facebook.com/nt/screen/?params=%7B%22note_id%22%3A10158772759272200%7D&path=%2Fnotes%2Fnote%2F&paipv=0&eav=AfYuSXXQPZ5fvm0_ScPdSlfj5BEFhRVT3iy_6Rsz7NZDbQ2vfq9opnedmTLSjG1aZBA&_rdr), with over 200 nodes deployed.
@@ -24,11 +31,7 @@
 
 ## Other UCs
 - [Twillo - Send Message API Design](../../../3_HLDDesignProblems/TwilloSendMessageAPI)
-- [Flight Booking Search](../../../3_HLDDesignProblems/FlightBookingSearch/README.md)
 - [Exploring Data @ Netflix](https://netflixtechblog.com/exploring-data-netflix-9d87e20072e3)
-
-# Who created Casandra?
-- Released in 2008 by Facebook and developed initially by Indians Avinash Lakshman and Prashant Malik, Cassandra was initially used in [Facebook’s inbox search feature](https://m.facebook.com/nt/screen/?params=%7B%22note_id%22%3A10158772759272200%7D&path=%2Fnotes%2Fnote%2F&paipv=0&eav=AfYuSXXQPZ5fvm0_ScPdSlfj5BEFhRVT3iy_6Rsz7NZDbQ2vfq9opnedmTLSjG1aZBA&_rdr).
 
 # Ideal Use Cases
 
@@ -85,6 +88,9 @@ Large amount of data like,
 - Using this shell, you can execute [Cassandra Query Language (CQL)](https://cassandra.apache.org/doc/latest/cassandra/cql/). 
 - Using cqlsh, you can define a schema, insert data, and execute a query.
 - `Cassandra does not support joins or subqueries` and therefore requires a developer to denormalize the data or duplicate data for efficient access.
+
+# Who created Casandra?
+- Released in 2008 by Facebook and developed initially by Indians Avinash Lakshman and Prashant Malik, Cassandra was initially used in [Facebook’s inbox search feature](https://m.facebook.com/nt/screen/?params=%7B%22note_id%22%3A10158772759272200%7D&path=%2Fnotes%2Fnote%2F&paipv=0&eav=AfYuSXXQPZ5fvm0_ScPdSlfj5BEFhRVT3iy_6Rsz7NZDbQ2vfq9opnedmTLSjG1aZBA&_rdr).
 
 # References
 - [Redis vs Apache Cassandra: Choosing Between These Real-Time Databases](https://www.upsolver.com/blog/redis-vs-apache-cassandra-choosing-between-these-real-time-databases)
