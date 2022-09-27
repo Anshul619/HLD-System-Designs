@@ -1,9 +1,9 @@
 
-# :star: [Amazon SQS (Simple Queue Service)](https://aws.amazon.com/sqs/)
-- Amazon Simple Queue Service (SQS) is a fully managed message queuing service that enables you to decouple and scale microservices, distributed systems, and serverless applications.
+# :star: Amazon SQS (Simple Queue Service)
+- [Amazon SQS (Simple Queue Service)](https://aws.amazon.com/sqs/) is a fully managed message queuing service that enables you to [decouple and scale microservices](../../1_HLDDesignComponents/1_MicroServicesSOA/README.md), [distributed systems](../../1_HLDDesignComponents/0_SystemGlossaries/README.md), and serverless applications.
 - SQS offers two types of message queues.
-    - `Standard queues` offer maximum throughput, best-effort ordering, and at-least-once delivery.
-    - `SQS FIFO queues` are designed to guarantee that messages are processed exactly once, in the exact order that they are sent.
+    - [Standard queues](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/standard-queues.html) offer maximum throughput, best-effort ordering, and at-least-once delivery.
+    - [SQS FIFO queues](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/FIFO-queues.html) are designed to guarantee that messages are processed exactly once, in the exact order that they are sent.
 - Amazon SQS supports [dead-letter queues (DLQ)](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/sqs-dead-letter-queues.html), which other queues (source queues) can target for messages that can't be processed (consumed) successfully.
 
 ![img.png](assests/sqs/sqs_img.png)
