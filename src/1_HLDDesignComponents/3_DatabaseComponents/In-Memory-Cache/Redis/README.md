@@ -116,3 +116,4 @@ redis 127.0.0.1:6379> ZRANGEBYSCORE w3resourcelist 0 1000
 - [Top Redis Use Cases by Core Data Structure Types](https://scalegrid.io/blog/top-redis-use-cases-by-core-data-structure-types/)
 - [What are Redis master-slave and Redis clusters and the difference between them?](https://www.learnsteps.com/what-are-redis-master-slave-and-redis-clusters-and-the-difference-between-them/)
 - [Why Migrate a Dynomite Database to a Redis Enterprise Active-Active Database?](https://redis.com/blog/why-migrate-dynomite-database-to-redis-enterprise-active-active-database/)
+- [AWS ElastiCache vs RDS ReadReplica](https://stackoverflow.com/questions/24728634/aws-elasticache-vs-rds-readreplica)
