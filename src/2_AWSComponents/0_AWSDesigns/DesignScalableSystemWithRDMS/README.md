@@ -1,4 +1,6 @@
 
+# Design a system that scales to a million of users on AWS
+
 ![img.png](DesignScalableSystemWithRelationalDBOnAWS.drawio.png)
 
 # Source(s) and further reading 
