@@ -1,6 +1,6 @@
 
-# [Amazon CloudWatch](https://aws.amazon.com/cloudwatch/) 
-- `Cloudwatch` is a real-time monitoring service that gives you visibility into the performance and health of your AWS resources and applications. 
+# Amazon CloudWatch
+- [Amazon CloudWatch](https://aws.amazon.com/cloudwatch/) is a real-time monitoring service that gives you visibility into the performance and health of your AWS resources and applications. 
 - Depending on multiple metrics, it participates in triggering alarms and gives actionable insights.
 - Collect - Metrics & Logs
 - Monitor - Alarms & dashboards
@@ -18,9 +18,11 @@
 
 ![img.png](assests/cloudwatch_img.png)
 
-## [CloudWatch metrics for the Application Load Balancer](https://docs.aws.amazon.com/elasticloadbalancing/latest/application/load-balancer-cloudwatch-metrics.html)
+## CloudWatch metrics for the Application Load Balancer
 
 ![img.png](https://www.splunk.com/content/dam/splunk-blogs/signalfx-assets/blog-images/ELB-CloudWatch-1024x457.png)
+
+[Read more](https://docs.aws.amazon.com/elasticloadbalancing/latest/application/load-balancer-cloudwatch-metrics.html)
 
 ## CloudWatch metrics for Elastic Cache
 
