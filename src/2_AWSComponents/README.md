@@ -20,7 +20,7 @@
 - :star: [Design Scalable System on AWS](0_AWSDesigns/DesignScalableSystemWithRDMS)
 - [Upload Image using Amazon S3 and Lambda](0_AWSDesigns/DesignUploadImageAWSLambdaS3/README.md)
 - [Send-SMS-API design - App Internal Clients, Multiple SMS-Providers, AutoScaling](../3_HLDDesignProblems/NotificationSystem)
-- [Fanout Pattern with Amazon SNS & SQS](0_AWSDesigns/FanoutPatternSNSSQS.md)
+- [Fanout Pattern with Amazon SNS & SQS](0_AWSDesigns/FanOutPatternSNSSQS/Readme.md)
 - [WP Site with Amazon CloudFront & S3](0_AWSDesigns/WPSiteCloudFront&S3.md)
 - [Microservices On AWS](0_AWSDesigns/MicroservicesOnAWS.md)
 - [Dropbox Saves Millions by Building a Scalable Metadata Store on Amazon DynamoDB and Amazon S3](0_AWSDesigns/DropboxAmazonDynamoDB/Readme.md)

@@ -6,7 +6,7 @@
     - [SQS FIFO queues](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/FIFO-queues.html) are designed to guarantee that messages are processed exactly once, in the exact order that they are sent.
 - Amazon SQS supports [dead-letter queues (DLQ)](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/sqs-dead-letter-queues.html), which other queues (source queues) can target for messages that can't be processed (consumed) successfully.
 
-![img.png](assests/sqs/sqs_img.png)
+![img.png](../0_AWSDesigns/FanOutPatternSNSSQS/assets/FanOutPatternSQSSNS.png)
 
 # How SQS works? How it implements At-least-Once delivery?
 - `Amazon SQS is a message queueing service, meaning that it exposes an API to publish and consume messages`. 
@@ -66,10 +66,6 @@ For example:
 
 # [Amazon SQS vs Others](../../../README.md#message-brokers)
 
-# Real-life example ( Fan-Out Pattern )
-
-![img.png](assests/sns/aws_sns_sqs_example_img.png)
-
 # Performance-Latency
 
 ![img.png](assests/sqs_threads_img.png)
@@ -82,6 +78,9 @@ For example:
 - A single Amazon SQS message queue can contain an unlimited number of messages. 
 - However, there is a quota of 120,000 for the number of inflight messages for a standard queue and 20,000 for a FIFO queue. 
 - Messages are inflight after they have been received from the queue by a consuming component, but have not yet been deleted from the queue.
+
+# Amazon SQS vs others
+- [Read here](../../1_HLDDesignComponents/4_MessageBrokers/KafkaVsRabbitMQVsSQSVsSNS.md)
 
 # References
 - [Amazon's SQS performance and latency](https://softwaremill.com/amazon-sqs-performance-latency/)
