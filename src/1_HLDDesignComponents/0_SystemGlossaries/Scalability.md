@@ -29,7 +29,7 @@
 | [ElasticSearch Cluster](../3_DatabaseComponents/Search-Engines/ElasticSearch/ElasticSearchCluster.md)                                                      | Cluster/Sharding of Indexes                                                        |
 | [Amazon Aurora Multi-Master Cluster](../../2_AWSComponents/6_DatabaseServices/AmazonAurora/AuroraDBClusters.md#aurora-multi-master-cluster) | Multi-master Cluster of DB instances, across Multi-AZs ( One cluster per region ). |
 
-![img.png](../../2_AWSComponents/0_AWSDesigns/DesignScalableSystemWithRDMS/DesignScalableSystemWithRelationalDBOnAWS.drawio.png)
+![img.png](../../2_AWSComponents/0_AWSDesigns/DesignScalableSystemWithRDMS/assets/DesignScalableSystemWithRelationalDBOnAWS.drawio.png)
 
 ## Vertical scalability ( Scale Up )
 - Generally, it's not recommended to do vertical scalability ( due to cost, license issues ). 

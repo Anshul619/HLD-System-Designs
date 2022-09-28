@@ -9,7 +9,7 @@
 
 # Design Scalable System on AWS
 
-![img.png](0_AWSDesigns/DesignScalableSystemWithRDMS/DesignScalableSystemWithRelationalDBOnAWS.drawio.png)
+![img.png](0_AWSDesigns/DesignScalableSystemWithRDMS/assets/DesignScalableSystemWithRelationalDBOnAWS.drawio.png)
 
 # Upload Image using Amazon S3 and Lambda
 

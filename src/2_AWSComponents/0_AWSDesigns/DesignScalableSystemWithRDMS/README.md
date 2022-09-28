@@ -1,7 +1,7 @@
 
 # Design a system that scales to a million of users on AWS
 
-![img.png](DesignScalableSystemWithRelationalDBOnAWS.drawio.png)
+![img.png](assets/DesignScalableSystemWithRelationalDBOnAWS.drawio.png)
 
 # Source(s) and further reading 
 - [Video - Scaling up to your first 10 million users](https://www.youtube.com/watch?v=kKjm4ehYiMs)
