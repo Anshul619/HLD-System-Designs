@@ -1,8 +1,9 @@
 
 # Dropbox Saves Millions by Building a Scalable Metadata Store (for AuditLog Data) on Amazon DynamoDB and Amazon S3
-- [Read more](https://aws.amazon.com/solutions/case-studies/dropbox-dynamodb-case-study/?pg=dynamodb&sec=cs#dropbox)
 
 ![img.png](assets/DropboxAmazonDynamoDB.drawio.png)
+
+- [Read more](https://aws.amazon.com/solutions/case-studies/dropbox-dynamodb-case-study/?pg=dynamodb&sec=cs#dropbox)
 
 ## Building Hot and Cold Metadata Stores Using AWS Solutions
 - [Amazon DynamoDB](../../6_DatabaseServices/AmazonDynamoDB.md) acts as the [hot storage layer](../../../1_HLDDesignComponents/0_SystemGlossaries/README.md#hot-storage), `ingesting audit logging data to six DynamoDB tables at 4,000–6,000 writes per second per table`. 
