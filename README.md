@@ -37,6 +37,10 @@ This repo contains the various system design components info, questions and solu
           <img src="https://i.pinimg.com/originals/50/bd/c9/50bdc91f32650905e776d6751478928c.png">
         </a>
         <br/><br/>
+        <a href="/src/2_AWSComponents/3_InfraAutomation/AWSCloudFormation/Readme.md" target="_blank">
+          <img src="https://i0.wp.com/www.australtech.net/wp-content/uploads/2019/05/cloudformation-logo.png" width="150">
+        </a>
+        <br/><br/>
         <a href="src/1_HLDDesignComponents/6_DevOps/Kubernates.md">
           <img src="https://logos-download.com/wp-content/uploads/2018/09/Kubernetes_Logo.png">
         </a>
