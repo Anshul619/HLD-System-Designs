@@ -32,6 +32,9 @@
 - Encryption in flight/transmit using SSL
 - Authentication using IAM
 
+# Master-Slave vs Read Replica?
+- [Read More](https://www.quora.com/What-does-it-mean-by-read-replica-in-Amazon-RDS-Is-that-similar-to-the-slave-server)
+
 ## References
 - :star: [Amazon Aurora Global Database Design Patterns for HA and DR | Amazon Web Services](https://www.youtube.com/watch?v=bbiWciJSouY)
 - [Amazon Aurora Introduction - By Stephane Maarek](https://www.youtube.com/watch?v=ZCt3ctVfGIk)

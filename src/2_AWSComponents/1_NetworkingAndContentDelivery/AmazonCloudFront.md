@@ -1,10 +1,18 @@
-
-# [Amazon CloudFront](https://aws.amazon.com/cloudfront/)
-- CloudFront helps to improve website speed and access to cloud-based data - `Securely deliver content with low latency and high transfer speeds`.
+# Amazon CloudFront
+- [Amazon CloudFront](https://aws.amazon.com/cloudfront/) helps to improve website speed and access to cloud-based data - `Securely deliver content with low latency and high transfer speeds`.
 - CloudFront works as a [Global Content Delivery Service (CDN)](../../1_HLDDesignComponents/0_SystemGlossaries/CDNs.md) to deliver the content efficiently to the end users. 
 - You’ll notice a significant increase in web page loading speed with this service. 
 - It even pulls website static files from data centers throughout the world.
 - Cloudfront is also used to [serve HTTPS requests](https://aws.amazon.com/premiumsupport/knowledge-center/cloudfront-https-requests-s3/) for the [Amazon S3 bucket](../7_StorageServices/AmazonS3.md).
+
+# Key Facts
+- [Cache content for faster delivery](../../1_HLDDesignComponents/0_SystemGlossaries/CDNs.md)
+- Lower load upon origin
+- Static content ( like songs, images, documents, files etc.)
+- Streaming audio or video
+- Custom SSL certificates
+- Short time-to-live (TTL) (as little as 0 seconds, for dynamic content)
+- Optimized for AWS
 
 ## CloudFront Point-Of-Presence Footprint
 - [Read more about Point of presence](../AWS-Global-Architecture-Region-AZ.md#points-of-presence)
