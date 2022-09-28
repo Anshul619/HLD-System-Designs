@@ -7,7 +7,7 @@
 
 ![img.png](../0_AWSDesigns/FanOutPatternSNSSQS/assets/FanOutPatternSQSSNS.png)
 
-# Amazon SNS vs Others
+# :star: Amazon SNS vs Others
 - [Read here](../../1_HLDDesignComponents/4_MessageBrokers/KafkaVsRabbitMQVsSQSVsSNS.md)
 
 # References

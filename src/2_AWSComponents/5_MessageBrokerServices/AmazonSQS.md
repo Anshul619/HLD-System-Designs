@@ -64,7 +64,9 @@ For example:
 - Display the correct product price by sending price modifications in the right order.
 - Prevent a student from enrolling in a course before registering for an account.
 
-# [Amazon SQS vs Others](../../../README.md#message-brokers)
+# :star: Amazon SQS vs others
+- [Read here](../../1_HLDDesignComponents/4_MessageBrokers/KafkaVsRabbitMQVsSQSVsSNS.md)
+
 
 # Performance-Latency
 
@@ -79,8 +81,6 @@ For example:
 - However, there is a quota of 120,000 for the number of inflight messages for a standard queue and 20,000 for a FIFO queue. 
 - Messages are inflight after they have been received from the queue by a consuming component, but have not yet been deleted from the queue.
 
-# Amazon SQS vs others
-- [Read here](../../1_HLDDesignComponents/4_MessageBrokers/KafkaVsRabbitMQVsSQSVsSNS.md)
 
 # References
 - [Amazon's SQS performance and latency](https://softwaremill.com/amazon-sqs-performance-latency/)
