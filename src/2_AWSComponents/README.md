@@ -18,12 +18,33 @@
             </div>
         </div>
       </td>
-      <td rowspan=7 width="150px">
-        <a href="3_InfraAutomation/AWSCloudFormation/Readme.md" target="_blank">
-          <img src="https://i0.wp.com/www.australtech.net/wp-content/uploads/2019/05/cloudformation-logo.png" width="150">
-        </a>
-        <br/><br/>
-      </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="2_SecurityAndIdentityServices">Security Services</a>
+        </td>
+        <td>
+            <div class="container" style="background:white">
+                <a href="2_SecurityAndIdentityServices/AWSIAM.md" target="_blank">
+                  <img src="https://i0.wp.com/sra.io/wp-content/uploads/2020/01/AWS-IAM-Exploitation.png?fit=1102%2C620&ssl=1" width="150">
+                </a>   
+                <a href="2_SecurityAndIdentityServices/AWSWAF.md" target="_blank">
+                  <img src="https://www.trinimbus.com/wp-content/uploads/2016/12/Get-The-Last-WAF-with-AWS-Web-Application-Firewall.jpg" width="150">
+                </a>
+                <a href="2_SecurityAndIdentityServices/AmazonVPC.md" target="_blank">
+                  <img src="https://www.kamprasad.com/wp-content/uploads/2019/08/aws-vpc.png" width="150">
+                </a>
+                <a href="2_SecurityAndIdentityServices/AWSShield.md" target="_blank">
+                  <img src="https://d33wubrfki0l68.cloudfront.net/de9af514e658d43b6f0b24dc5f063c67df7b394c/82078/images/aws/00-icons/shield.png" width="150">
+                </a>
+            </div>
+        </td>
+        <td rowspan=11 width="150px">
+            <a href="3_InfraAutomation/AWSCloudFormation/Readme.md" target="_blank">
+              <img src="https://i0.wp.com/www.australtech.net/wp-content/uploads/2019/05/cloudformation-logo.png" width="250">
+            </a>
+            <br/><br/>
+        </td>
     </tr>
     <tr>
       <td>
@@ -79,6 +100,33 @@
     </tr>
     <tr>
         <td>
+            <a href="3_InfraAutomation">Orchestration Services</a>
+        </td>
+        <td>
+            <div class="container" style="background:white">
+                <a href="3_InfraAutomation/AmazonECS/Readme.md" target="_blank">
+                  <img src="https://i0.wp.com/miro.medium.com/max/626/1*RmiGt6GAWf4pkO9ohOnRaQ.png?w=810&ssl=1" width="150">
+                </a>
+                <a href="3_InfraAutomation/AmazonEKS.md" target="_blank">
+                  <img src="https://www.turbonomic.com/wp-content/uploads/2020/11/AWS-EKS-logo-no-background.png" width="150">
+                </a>
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="6_DatabaseServices">In-Memory DB/Cache</a>
+        </td>
+        <td>
+            <div class="container" style="background:white">
+                <a href="6_DatabaseServices/AmazonElasticCache.md" target="_blank">
+                  <img src="https://www.devopsschool.com/blog/wp-content/uploads/2022/03/amazone_elasticache-740x414.png" width="150">
+                </a>
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td>
             <a href="5_MessageBrokerServices">Message Broker Services</a>
         </td>
         <td>
@@ -100,20 +148,81 @@
     </tr>
     <tr>
         <td>
-            <a href="6_DatabaseServices">In-Memory DB/Cache</a>
+            <a href="6_DatabaseServices">Search Engine</a>
         </td>
         <td>
             <div class="container" style="background:white">
-                <a href="6_DatabaseServices/AmazonElasticCache.md" target="_blank">
-                  <img src="https://www.devopsschool.com/blog/wp-content/uploads/2022/03/amazone_elasticache-740x414.png" width="150">
+                <a href="6_DatabaseServices/AmazonOpenSearch.md" target="_blank">
+                  <img src="https://d2908q01vomqb2.cloudfront.net/ca3512f4dfa95a03169c5a670a4c91a19b3077b4/2021/07/12/opensearch_logo_1000x500.png" width="150">
+                </a>
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="6_DatabaseServices">Database Services</a>
+        </td>
+        <td>
+            <div class="container" style="background:white">
+                <a href="6_DatabaseServices/AmazonAurora/Readme.md" target="_blank">
+                  <img src="https://ty33w2cevsm2b9jau43ym0n6-wpengine.netdna-ssl.com/wp-content/uploads/2021/10/Amazon-Aurora-logo.png" width="150">
+                </a>
+                <a href="6_DatabaseServices/AmazonRDS.md" target="_blank">
+                  <img src="https://secpigeon.com/media/2022/04/RDS.png" width="150">
+                </a>
+                <a href="6_DatabaseServices/AmazonDynamoDB.md" target="_blank">
+                  <img src="https://user-images.githubusercontent.com/6509926/70553550-f033b980-1b40-11ea-9192-759b3b1053b3.png" width="150">
+                </a>
+                <a href="6_DatabaseServices/AmazonKeySpaces.md" target="_blank">
+                  <img src="https://static.datadoghq.com/static/images/logos/amazon-keyspaces_large.svg" width="150">
+                </a>
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="7_StorageServices">Storage Services</a>
+        </td>
+        <td>
+            <div class="container" style="background:white">
+                <a href="7_StorageServices/AmazonS3.md" target="_blank">
+                  <img src="https://miro.medium.com/max/580/1*DHe24MbDHtbkOeIJzxrfdA.png" width="150">
+                </a>
+                <a href="7_StorageServices/AmazonEFS.md" target="_blank">
+                  <img src="https://www.justaftermidnight247.com/wp-content/uploads/2020/09/EFS-logo.jpg" width="150">
+                </a>
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="6_DatabaseServices">Data Warehousing</a>
+        </td>
+        <td>
+            <div class="container" style="background:white">
+                <a href="6_DatabaseServices/AmazonRedshift.md" target="_blank">
+                  <img src="https://w7.pngwing.com/pngs/404/507/png-transparent-amazon-com-amazon-redshift-amazon-web-services-amazon-relational-database-service-amazon-elasticache-amazon-redshift-blue-angle-text.png" width="150">
+                </a>
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="8_MonitoringServices">Monitoring Services</a>
+        </td>
+        <td>
+            <div class="container" style="background:white">
+                <a href="8_MonitoringServices/AmazonCloudWatch.md" target="_blank">
+                  <img src="https://miro.medium.com/max/800/1*ffbynFsxn43lPdne2kaHMQ.png" width="150">
+                </a>
+                <a href="8_MonitoringServices/AWSCloudTrail.md" target="_blank">
+                  <img src="https://i0.wp.com/blog.knoldus.com/wp-content/uploads/2022/02/feature.png?w=360&ssl=1" width="150">
                 </a>
             </div>
         </td>
     </tr>
   </tbody>
 </table>
-
-
 
 # How to use Application Load Balancer on AWS?
 
@@ -134,6 +243,10 @@
 # Fanout Pattern with Amazon SNS & SQS
 
 ![img.png](0_AWSDesigns/FanOutPatternSNSSQS/assets/FanOutPatternSQSSNS.png)
+
+# Amazon ECR, along with ECS & EKS
+
+![img.png](3_InfraAutomation/AmazonECS/assests/AmazonECS-Steps.drawio.png)
 
 # AWS - System Designs
 - :star: [Design Multi-Region Active-Active Architecture On AWS](0_AWSDesigns/DesignMultiRegionActiveActiveArchitectureOnAWS)

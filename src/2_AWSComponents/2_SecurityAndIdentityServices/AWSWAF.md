@@ -1,6 +1,6 @@
 
-# [AWS WAF - Web Application Firewall](https://aws.amazon.com/waf/)
-- AWS WAF or AWS Web Application Firewall protects your web applications from web exploitations. 
+# AWS WAF - Web Application Firewall
+- [AWS Web Application Firewall (WAF)](https://aws.amazon.com/waf/) protects your web applications from web exploitations. 
 - It helps you control the traffic flow to your applications. 
 - With WAF, you can also create custom rules that block common attack patterns. 
 
