@@ -72,7 +72,7 @@
                   <img src="https://www.brcline.com/wp-content/uploads/2021/09/aws-lambda-logo.png" width="150">
                 </a>
                 <a href="4_ComputeServices/AmazonEMR.md" target="_blank">
-                  <img src="https://www.clipartmax.com/png/small/70-700800_amazon-emr.png" width="150">
+                  <img src="https://www.clipartmax.com/png/small/70-700800_amazon-emr.png" width="50">
                 </a>
             </div>
         </td>
@@ -90,7 +90,7 @@
                   <img src="https://miro.medium.com/max/720/0*QjKNs9dEShlQ39VI.png" width="150">
                 </a>
                 <a href="5_MessageBrokerServices/AmazonMQ.md" target="_blank">
-                  <img src="https://dejim.com/wp-content/uploads/2019/06/amazon_mq-200x200-1.png" width="150">
+                  <img src="https://res.cloudinary.com/practicaldev/image/fetch/s--UbYwdyFm--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/n1uck9jt481r6rcezx57.png" width="150">
                 </a>
                 <a href="5_MessageBrokerServices/AmazonMSK.md" target="_blank">
                   <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcjocd4vh1S29xvfJ_bjgJWb-SR5SzW2Dz2A&usqp=CAU" width="150">
