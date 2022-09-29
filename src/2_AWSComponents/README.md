@@ -5,13 +5,13 @@
 
 <table>
   <tbody>
-    <tr>
+     <tr>
       <td>
-        <a href="1_NetworkingAndContentDelivery">Networking & CDN</a>
+        <a href="1_NetworkingAndContentDelivery">DNS Service</a>
       </td>
       <td>
         <div class="container" style="background:white">
-            <div class="block two first">
+            <div>
                 <a href="1_NetworkingAndContentDelivery/AmazonRoute53.md" target="_blank">
                   <img src="https://storage.googleapis.com/yama-blog.appspot.com/1/2018/08/eyecatch-route53.png" width="150">
                 </a>
@@ -24,6 +24,46 @@
         </a>
         <br/><br/>
       </td>
+    </tr>
+    <tr>
+      <td>
+        <a href="1_NetworkingAndContentDelivery">Gateway & CDN</a>
+      </td>
+      <td>
+        <div class="container" style="background:white">
+            <div>
+                <a href="1_NetworkingAndContentDelivery/AmazonCloudFront.md" target="_blank">
+                  <img src="https://ericknavarro.io/images/thumbnails/12.png" width="150">
+                </a>
+            </div>
+        </div>
+        <div class="container" style="background:white">
+            <div>
+                <a href="1_NetworkingAndContentDelivery/AmazonAPIGateway.md" target="_blank">
+                  <img src="https://www.prolim.com/wp-content/uploads/2019/09/amazon-api-gatewat-1.jpg" width="150">
+                </a>
+            </div>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <a href="1_NetworkingAndContentDelivery">Load Balancer</a>
+      </td>
+      <td>
+        <div class="container" style="background:white">
+            <div>
+                <a href="1_NetworkingAndContentDelivery/ElasticLoadBalancer.md" target="_blank">
+                  <img src="https://static.wixstatic.com/media/e37c27_65bd886d7d284196a495daa7b2582486~mv2.png/v1/fill/w_560,h_560,al_c,lg_1,q_85,enc_auto/e37c27_65bd886d7d284196a495daa7b2582486~mv2.png" width="150">
+                </a>
+            </div>
+        </div>
+      </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="1_NetworkingAndContentDelivery">Compute Services</a>
+        </td>
     </tr>
   </tbody>
 </table>

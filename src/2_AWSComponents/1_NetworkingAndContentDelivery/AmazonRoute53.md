@@ -1,7 +1,7 @@
 
-# [Route 53](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/Welcome.html)
+# Amazon Route 53
 
-Amazon Route 53 is a `highly available and scalable Domain Name System (DNS)` web service. 
+[Amazon Route 53](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/Welcome.html) is a [highly available](../../1_HLDDesignComponents/0_SystemGlossaries/HighAvailability.md) and [scalable](../../1_HLDDesignComponents/0_SystemGlossaries/Scalability.md) [Domain Name System (DNS)](https://www.cloudflare.com/learning/dns/what-is-dns/) web service. 
 
 You can use Route 53 to perform three main functions in any combination,
 - Domain registration
@@ -28,7 +28,7 @@ You can use Route 53 to perform three main functions in any combination,
 ## :star: Latency Based Routing
 - Latency Based Routing utilizes latency measurements between networks and AWS data centers.
 - Latency Based Routing is used when you want to give your customers the lowest latency possible.
-- This is most used multi-region (active-active) routing policy (if application has no geographic requirements).
+- This is most used [multi-region (active-active) routing policy](../AWS-Global-Architecture-Region-AZ.md) (if application has no geographic requirements).
 
 ````
 
