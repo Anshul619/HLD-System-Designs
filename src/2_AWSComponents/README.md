@@ -228,32 +228,44 @@
 
 ![img.png](1_NetworkingAndContentDelivery/assests/AWS_Application_Load_Balancer.drawio.png)
 
+[Read more](1_NetworkingAndContentDelivery/ElasticLoadBalancer.md)
+
 # Design Multi-Region Active-Active Architecture On AWS
 
 ![img.png](0_AWSDesigns/DesignMultiRegionActiveActiveArchitectureOnAWS/AWS-AZ-Region-HA.drawio.png)
+
+[Read more](0_AWSDesigns/DesignMultiRegionActiveActiveArchitectureOnAWS/README.md)
 
 # Design Scalable System on AWS
 
 ![img.png](0_AWSDesigns/DesignScalableSystemWithRDMS/assets/DesignScalableSystemWithRelationalDBOnAWS.drawio.png)
 
+[Read more](0_AWSDesigns/DesignScalableSystemWithRDMS/README.md)
+
 # Upload Image using Amazon S3 and Lambda
 
 ![img.png](0_AWSDesigns/DesignUploadImageAWSLambdaS3/assets/UploadImage-Lambda.drawio.png)
+
+[Read more](0_AWSDesigns/DesignUploadImageAWSLambdaS3/README.md)
 
 # Fanout Pattern with Amazon SNS & SQS
 
 ![img.png](0_AWSDesigns/FanOutPatternSNSSQS/assets/FanOutPatternSQSSNS.png)
 
+[Read more](0_AWSDesigns/FanOutPatternSNSSQS/README.md)
+
 # Amazon ECR, along with ECS & EKS
 
 ![img.png](3_InfraAutomation/AmazonECS/assests/AmazonECS-Steps.drawio.png)
+
+[Read more](3_InfraAutomation/AmazonECS/README.md)
 
 # AWS - System Designs
 - :star: [Design Multi-Region Active-Active Architecture On AWS](0_AWSDesigns/DesignMultiRegionActiveActiveArchitectureOnAWS)
 - :star: [Design Scalable System on AWS](0_AWSDesigns/DesignScalableSystemWithRDMS)
 - [Upload Image using Amazon S3 and Lambda](0_AWSDesigns/DesignUploadImageAWSLambdaS3/README.md)
 - [Send-SMS-API design - App Internal Clients, Multiple SMS-Providers, AutoScaling](../3_HLDDesignProblems/NotificationSystem/README.md)
-- [Fanout Pattern with Amazon SNS & SQS](0_AWSDesigns/FanOutPatternSNSSQS/Readme.md)
+- [Fanout Pattern with Amazon SNS & SQS](0_AWSDesigns/FanOutPatternSNSSQS/README.md)
 - [WP Site with Amazon CloudFront & S3](0_AWSDesigns/WPSiteCloudFront&S3.md)
 - [Microservices On AWS](0_AWSDesigns/MicroservicesOnAWS.md)
 - [Dropbox Saves Millions by Building a Scalable Metadata Store on Amazon DynamoDB and Amazon S3](0_AWSDesigns/DropboxAmazonDynamoDB/Readme.md)
@@ -281,7 +293,7 @@
  :star: [Amazon SQS](5_MessageBrokerServices/AmazonSQS.md)                                    | [Message Broker Service](5_MessageBrokerServices)                       | Fully managed Message Queue Service                                                                                                                                               |
  :star: [Amazon Dynamo DB](6_DatabaseServices/AmazonDynamoDB.md)                              | [Database Service](6_DatabaseServices)                                  | Fully managed NoSQL service                                                                                                                                                       |
  :star: [Amazon CloudWatch](8_MonitoringServices/AmazonCloudWatch.md)                         | [Monitoring Service](8_MonitoringServices)                              | Monitor AWS Resources & set Alarms                                                                                                                                                |
- :star: [Amazon ECS](3_InfraAutomation/AmazonECS/Readme.md)                                          | [AWS Infrastructure Automation](3_InfraAutomation)                      | `Containers as a service`.                                                                                                                                                        |
+ :star: [Amazon ECS](3_InfraAutomation/AmazonECS/README.md)                                          | [AWS Infrastructure Automation](3_InfraAutomation)                      | `Containers as a service`.                                                                                                                                                        |
  :star: [AWS Fargate ](4_ComputeServices/AWSFargate.md)                                       | [Compute Service](4_ComputeServices)                                    | Serverless compute for containers. Compatible with both [EKS](EKS.md) & [ECS](ECS.md) i.e. these services can run with Fargate as deployment option, instead of EC2.              |
  :star: [Amazon OpenSearch service](6_DatabaseServices/AmazonOpenSearch.md)                   | [Database Service](6_DatabaseServices)                                  | Successor to Amazon [ElasticSearch](../1_HLDDesignComponents/3_DatabaseComponents/Search-Engines/ElasticSearch) Service, includes built in OpenSearch Dashboard and Kibana.      |
  [Amazon EKS](3_InfraAutomation/AmazonEKS.md)                                                 | [AWS Infrastructure Automation](3_InfraAutomation)                      | Fully managed [Kubernetes](../1_HLDDesignComponents/6_DevOps/Kubernates.md) service                                                                                               |
