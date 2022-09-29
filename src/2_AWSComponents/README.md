@@ -3,6 +3,31 @@
 - AWS manages its [global architecture](AWS-Global-Architecture-Region-AZ.md) through region and availability zones.
 - [Amazon Resouce Name (ARN)](https://docs.aws.amazon.com/general/latest/gr/aws-arns-and-namespaces.html) uniquely identify AWS resources.
 
+<table>
+  <tbody>
+    <tr>
+      <td>
+        <a href="1_NetworkingAndContentDelivery">Networking & CDN</a>
+      </td>
+      <td>
+        <div class="container" style="background:white">
+            <div class="block two first">
+                <a href="1_NetworkingAndContentDelivery/AmazonRoute53.md" target="_blank">
+                  <img src="https://storage.googleapis.com/yama-blog.appspot.com/1/2018/08/eyecatch-route53.png" width="150">
+                </a>
+            </div>
+        </div>
+      </td>
+      <td rowspan=7 width="150px">
+        <a href="3_InfraAutomation/AWSCloudFormation/Readme.md" target="_blank">
+          <img src="https://i0.wp.com/www.australtech.net/wp-content/uploads/2019/05/cloudformation-logo.png" width="150">
+        </a>
+        <br/><br/>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
 # Design Multi-Region Active-Active Architecture On AWS
 
 ![img.png](0_AWSDesigns/DesignMultiRegionActiveActiveArchitectureOnAWS/AWS-AZ-Region-HA.drawio.png)

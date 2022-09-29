@@ -97,7 +97,5 @@ Large amount of data like,
 - [Building a Performant API using Go and Cassandra](https://getstream.io/blog/building-a-performant-api-using-go-and-cassandra/)
 
 # References
-- [Redis vs Apache Cassandra: Choosing Between These Real-Time Databases](https://www.upsolver.com/blog/redis-vs-apache-cassandra-choosing-between-these-real-time-databases)
 - [Golang Cassandra Example](https://golangdocs.com/golang-cassandra-example)
-- [Cassandra vs MongoDB Comparison](https://www.mongodb.com/compare/cassandra-vs-mongodb)
 - [Does-Facebook-use-Apache-Cassandra](https://www.quora.com/Does-Facebook-use-Apache-Cassandra)
