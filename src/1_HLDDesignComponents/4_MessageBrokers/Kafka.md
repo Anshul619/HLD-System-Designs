@@ -4,7 +4,7 @@
 - It also has low latency, making it possible to process data in real-time.
 - Kafka is based on [Publish-Subscriber Model](../4_MessageBrokers#publisher-subscriber-model-pubsub). And can be used for [Event-Driven Architecture](../0_SystemGlossaries/EventDrivenArchitecture.md).
 - Messages ( events ) in the Kafka are immutable and can't be changed once it's pushed ( due to [log based queue nature](../0_SystemGlossaries/AppendOnlyDBStorages.md) ).
-- [Amazon Managed Streaming for Apache Kafka (MSK)](https://aws.amazon.com/msk/) can be used to deploy `Kafka` on [AWS](../../2_AWSComponents).
+- [Amazon Managed Streaming for Apache Kafka (MSK)](../../2_AWSComponents/5_MessageBrokerServices/AmazonMSK.md) can be used to deploy Kafka on [AWS](../../2_AWSComponents).
 
 # :star: Real world use cases of Kafka
 - [Personalization at Spotify using Cassandra](../../3_HLDDesignProblems/PersonalizationSpotify)
