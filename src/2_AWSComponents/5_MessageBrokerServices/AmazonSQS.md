@@ -67,7 +67,6 @@ For example:
 # :star: Amazon SQS vs others
 - [Read here](../../1_HLDDesignComponents/4_MessageBrokers/KafkaVsRabbitMQVsSQSVsSNS.md)
 
-
 # Performance-Latency
 
 ![img.png](assests/sqs_threads_img.png)
