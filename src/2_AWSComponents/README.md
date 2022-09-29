@@ -72,7 +72,7 @@
                   <img src="https://www.brcline.com/wp-content/uploads/2021/09/aws-lambda-logo.png" width="150">
                 </a>
                 <a href="4_ComputeServices/AmazonEMR.md" target="_blank">
-                  <img src="https://www.clipartmax.com/png/small/70-700800_amazon-emr.png" width="50">
+                  <img src="https://www.clipartmax.com/png/small/70-700800_amazon-emr.png" width="80">
                 </a>
             </div>
         </td>
