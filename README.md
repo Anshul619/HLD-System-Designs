@@ -158,7 +158,7 @@ This repo contains the various system design components info, questions and solu
         <div class="container" style="background:white">
             <div class="block two first">
                 <a href="src/2_AWSComponents/7_StorageServices/AmazonS3.md" target="_blank">
-                  <img src="https://www.freecodecamp.org/news/content/images/size/w2000/2020/08/Screenshot-2020-08-10-at-6.26.31-PM.png" width="150">
+                  <img src="https://miro.medium.com/max/580/1*DHe24MbDHtbkOeIJzxrfdA.png" width="150">
                 </a>
                 <a href="/src/1_HLDDesignComponents/5_BigDataComponents/ApacheHadoop/ApacheHDFS.md" target="_blank">
                   <img src="https://intellipaat.com/mediaFiles/2015/07/hadoop-hdfs.png" width="150">
