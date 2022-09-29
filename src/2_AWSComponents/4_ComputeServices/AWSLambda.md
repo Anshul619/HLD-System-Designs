@@ -13,6 +13,18 @@
 
 [Read more](../0_AWSDesigns/DesignUploadImageAWSLambdaS3/README.md)
 
+# Design Scalable System on AWS
+
+![img.png](../0_AWSDesigns/DesignScalableSystemWithRDMS/assets/DesignScalableSystemWithRelationalDBOnAWS.drawio.png)
+
+[Read more](../0_AWSDesigns/DesignScalableSystemWithRDMS/README.md)
+
+# Fanout Pattern with Amazon SNS & SQS
+
+![img.png](../0_AWSDesigns/FanOutPatternSNSSQS/assets/FanOutPatternSQSSNS.png)
+
+[Read more](../0_AWSDesigns/FanOutPatternSNSSQS/README.md)
+
 ## Backup Jobs
 - Lambda can be used to configure backup scripts for the application.
 
