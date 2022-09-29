@@ -1,16 +1,16 @@
-
 # :star: Amazon SQS (Simple Queue Service)
 - [Amazon SQS (Simple Queue Service)](https://aws.amazon.com/sqs/) is a fully managed message queuing service that enables you to [decouple and scale microservices](../../1_HLDDesignComponents/1_MicroServicesSOA/README.md), [distributed systems](../../1_HLDDesignComponents/0_SystemGlossaries/README.md), and serverless applications.
-- SQS offers two types of message queues.
-    - [Standard queues](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/standard-queues.html) offer maximum throughput, best-effort ordering, and at-least-once delivery.
-    - [SQS FIFO queues](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/FIFO-queues.html) are designed to guarantee that messages are processed exactly once, in the exact order that they are sent.
 - Amazon SQS supports [dead-letter queues (DLQ)](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/sqs-dead-letter-queues.html), which other queues (source queues) can target for messages that can't be processed (consumed) successfully.
+
+Amazon SQS offers two types of message queues.
+- [Recommended - Standard queues (better throughput than FIFO)](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/standard-queues.html) offer maximum throughput, best-effort ordering, and at-least-once delivery.
+- [SQS FIFO queues](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/FIFO-queues.html) are designed to guarantee that messages are processed exactly once, in the exact order that they are sent.
 
 ![img.png](../0_AWSDesigns/FanOutPatternSNSSQS/assets/FanOutPatternSQSSNS.png)
 
 # How SQS works? How it implements At-least-Once delivery?
 - `Amazon SQS is a message queueing service, meaning that it exposes an API to publish and consume messages`. 
-- Unlike a publish-subscribe system, a single message should be delivered to a single consumer, even when there are a lot of consumers running concurrently (also known as the `competing consumers pattern`).
+- Unlike a [publish-subscribe system](../../1_HLDDesignComponents/4_MessageBrokers/ReadMe.md), a single message should be delivered to a single consumer, even when there are a lot of consumers running concurrently (also known as the `competing consumers pattern`).
 - When a message is being received from the system, it is blocked from being visible to other consumers for a given period of time. 
 - If the message isn't deleted before this timeout elapses, it will be re-delivered. That way, `SQS implements at-least-once delivery`.
 
@@ -44,7 +44,7 @@ For example:
 - By default, FIFO queues support up to `300 messages per second` (300 send, receive, or delete operations per second). 
 - When you batch 10 messages per operation (maximum), FIFO queues can support up to 3,000 messages per second. 
 - If you require higher throughput, you can enable high throughput mode for FIFO on the Amazon SQS console.
-  - This will support up to `30,000 messages per second` with batching, or up to 3,000 messages per second without batching.
+- This will support up to `30,000 messages per second` with batching, or up to `3,000 messages per second without batching`.
 
 ### Exactly-Once Processing
 - `A message is delivered once and remains available until a consumer processes and deletes it`. 
@@ -79,7 +79,6 @@ For example:
 - A single Amazon SQS message queue can contain an unlimited number of messages. 
 - However, there is a quota of 120,000 for the number of inflight messages for a standard queue and 20,000 for a FIFO queue. 
 - Messages are inflight after they have been received from the queue by a consuming component, but have not yet been deleted from the queue.
-
 
 # References
 - [Amazon's SQS performance and latency](https://softwaremill.com/amazon-sqs-performance-latency/)

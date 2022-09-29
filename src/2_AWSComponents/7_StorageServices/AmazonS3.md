@@ -16,7 +16,7 @@
 # Other Features
 
 ## Cross-Region Supported
-- Cross-region replication is a bucket-level configuration that enables automatic, asynchronous copying of objects across buckets in different AWS Regions.
+- [Cross-region replication](../AWS-Global-Architecture-Region-AZ.md) is a bucket-level configuration that enables automatic, asynchronous copying of objects across buckets in different AWS Regions.
 
 ![img.png](https://acg-wordpress-content-production.s3.us-west-2.amazonaws.com/app/uploads/2021/01/1_SMawCtVcSkQ6ZaQMZ0Vd7Q.png)
 
