@@ -1,17 +1,15 @@
 
-# [Amazon Elastic Cache](https://aws.amazon.com/elasticache/)
-- Fully Managed Memcached or [Redis](../../1_HLDDesignComponents/3_DatabaseComponents/In-Memory-Cache/Redis).
+# Amazon Elastic Cache
+- [Amazon Elastic Cache](https://aws.amazon.com/elasticache/) is a [fully Managed Memcached or Redis](../../1_HLDDesignComponents/3_DatabaseComponents/In-Memory-Cache/Redis).
 - Scale from one to many nodes, using [Cluster](../../1_HLDDesignComponents/0_SystemGlossaries/ServersCluster.md).
-- Self-healing ( replaces dead instance )
-- `Single-digit millisecond speed` (usually).
-- Multi-AZ deployments for [availability](../../1_HLDDesignComponents/0_SystemGlossaries/HighAvailability.md).
-- Maybe a bit expensive, compared to self-hosted Redis on EC2 instance.
-
-# [Redis on ElasticCache](https://docs.aws.amazon.com/AmazonElastiCache/latest/red-ug/Replication.Redis-RedisCluster.html)
-
-## Redis (Cluster Mode Disabled) vs. Redis (Cluster Mode Enabled)
+- Self-healing ( automatically replaces dead instance )
+- [Single-digit millisecond speed](../../1_HLDDesignComponents/0_SystemGlossaries/LatencyThroughput.md) (usually).
+- [Multi-AZ deployments for availability](../AWS-Global-Architecture-Region-AZ.md).
+- [How to use ElasticCache for Redis?](https://docs.aws.amazon.com/AmazonElastiCache/latest/red-ug/Replication.Redis-RedisCluster.html)
 
 ![img.png](https://docs.aws.amazon.com/AmazonElastiCache/latest/red-ug/images/ElastiCache-Cluster-Redis.png)
+
+# Redis (Cluster Mode Disabled) vs. Redis (Cluster Mode Enabled)
 
 | Feature                       | [Redis (cluster mode disabled)](../../1_HLDDesignComponents/3_DatabaseComponents/In-Memory-Cache/Redis/RedisMasterSlaveReplication.md)     | [Redis (cluster mode enabled)](../../1_HLDDesignComponents/3_DatabaseComponents/In-Memory-Cache/Redis/RedisCluster.md)                                          |
 |-------------------------------|----------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------|

@@ -93,7 +93,19 @@
                   <img src="https://res.cloudinary.com/practicaldev/image/fetch/s--UbYwdyFm--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/n1uck9jt481r6rcezx57.png" width="150">
                 </a>
                 <a href="5_MessageBrokerServices/AmazonMSK.md" target="_blank">
-                  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcjocd4vh1S29xvfJ_bjgJWb-SR5SzW2Dz2A&usqp=CAU" width="150">
+                  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcjocd4vh1S29xvfJ_bjgJWb-SR5SzW2Dz2A&usqp=CAU" width="100">
+                </a>
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="6_DatabaseServices">In-Memory DB/Cache</a>
+        </td>
+        <td>
+            <div class="container" style="background:white">
+                <a href="6_DatabaseServices/AmazonElasticCache.md" target="_blank">
+                  <img src="https://www.devopsschool.com/blog/wp-content/uploads/2022/03/amazone_elasticache-740x414.png" width="150">
                 </a>
             </div>
         </td>
@@ -152,7 +164,7 @@
  :star: [AWS EC2 AutoScaling](4_ComputeServices/EC2/AWSEC2AutoScaling.md)                     | [Compute Service](4_ComputeServices)                                    | Auto-scaling of [EC2 instances](4_ComputeServices/EC2/ReadMe.md), based on demand & traffic ( CPU, Memory ).                                                                      |
  :star: [Amazon EC2](4_ComputeServices/EC2/ReadMe.md)                                         | [Compute Service](4_ComputeServices)                                    | `Self-Managed Virtual Machine` that run the application in the cloud.                                                                                                             |
  :star: [Amazon Aurora](6_DatabaseServices/AmazonAurora/Readme.md)                            | [Database Service](6_DatabaseServices)                                  | DB management service for Postgres and MySQL ( faster & more reliable than RDS )                                                                                                  |
- :star: [Amazon Elastic Cache](6_DatabaseServices/AmazonElasicCache.md)                       | [Database Service](6_DatabaseServices)                                  | Fully Managed [Redis & Memcache](../1_HLDDesignComponents/3_DatabaseComponents/In-Memory-Cache/Redis/README.md) service                                                           |
+ :star: [Amazon Elastic Cache](6_DatabaseServices/AmazonElasticCache.md)                       | [Database Service](6_DatabaseServices)                                  | Fully Managed [Redis & Memcache](../1_HLDDesignComponents/3_DatabaseComponents/In-Memory-Cache/Redis/README.md) service                                                           |
  :star: [Amazon SQS](5_MessageBrokerServices/AmazonSQS.md)                                    | [Message Broker Service](5_MessageBrokerServices)                       | Fully managed Message Queue Service                                                                                                                                               |
  :star: [Amazon Dynamo DB](6_DatabaseServices/AmazonDynamoDB.md)                              | [Database Service](6_DatabaseServices)                                  | Fully managed NoSQL service                                                                                                                                                       |
  :star: [Amazon CloudWatch](8_MonitoringServices/AmazonCloudWatch.md)                         | [Monitoring Service](8_MonitoringServices)                              | Monitor AWS Resources & set Alarms                                                                                                                                                |

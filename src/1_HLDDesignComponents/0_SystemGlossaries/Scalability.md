@@ -16,7 +16,7 @@
 | Tech                                                                                                       | Remarks                                                |
 |------------------------------------------------------------------------------------------------------------|--------------------------------------------------------|
 | [Redis - Master Slave Replication](../3_DatabaseComponents/In-Memory-Cache/Redis/RedisMasterSlaveReplication.md)                              | -                                                      |
-| [Amazon Elastic Cache ( Cluster Disabled )](../../2_AWSComponents/6_DatabaseServices/AmazonElasicCache.md#redis-cluster-mode-disabled-vs-redis-cluster-mode-enabled) | Elastic Cache single-master slave ( cluster disabled ) |
+| [Amazon Elastic Cache ( Cluster Disabled )](../../2_AWSComponents/6_DatabaseServices/AmazonElasticCache.md#redis-cluster-mode-disabled-vs-redis-cluster-mode-enabled) | Elastic Cache single-master slave ( cluster disabled ) |
 | [Amazon Aurora](../../2_AWSComponents/6_DatabaseServices/AmazonAurora)                                     | Aurora single-master slave cluster                     |
 
 #### Multi-Master-Slave Technique ( Sharding )
@@ -25,7 +25,7 @@
 |---------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------|
 | [Kafka Cluster](../4_MessageBrokers/Kafka.md)                                                                                               | Cluster/Sharding of Topics ( High-Throughput MQ)                                   |                     
 | [Redis Cluster](../3_DatabaseComponents/In-Memory-Cache/Redis/RedisCluster.md)                                                                                                 | Cluster/Sharding of Redis Nodes ( In-Memory Cache )                                |
-| [Amazon Elastic Cache Cluster](../../2_AWSComponents/6_DatabaseServices/AmazonElasicCache.md#redis-cluster-mode-disabled-vs-redis-cluster-mode-enabled)                                               | Cluster of Redis Nodes, across Multi-AZs ( One cluster per region )                |
+| [Amazon Elastic Cache Cluster](../../2_AWSComponents/6_DatabaseServices/AmazonElasticCache.md#redis-cluster-mode-disabled-vs-redis-cluster-mode-enabled)                                               | Cluster of Redis Nodes, across Multi-AZs ( One cluster per region )                |
 | [ElasticSearch Cluster](../3_DatabaseComponents/Search-Engines/ElasticSearch/ElasticSearchCluster.md)                                                      | Cluster/Sharding of Indexes                                                        |
 | [Amazon Aurora Multi-Master Cluster](../../2_AWSComponents/6_DatabaseServices/AmazonAurora/AuroraDBClusters.md#aurora-multi-master-cluster) | Multi-master Cluster of DB instances, across Multi-AZs ( One cluster per region ). |
 
