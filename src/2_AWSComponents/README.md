@@ -33,7 +33,7 @@
         <div class="container" style="background:white">
             <div class="block two first">
                 <a href="1_NetworkingAndContentDelivery/AmazonCloudFront.md" target="_blank">
-                  <img src="https://ericknavarro.io/images/thumbnails/12.png" width="150">
+                  <img src="https://ericknavarro.io/images/thumbnails/12.png" width="400">
                 </a>
                 <a href="1_NetworkingAndContentDelivery/AmazonAPIGateway.md" target="_blank">
                   <img src="https://www.prolim.com/wp-content/uploads/2019/09/amazon-api-gatewat-1.jpg" width="150">
