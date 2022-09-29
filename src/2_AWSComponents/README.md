@@ -64,6 +64,10 @@
   </tbody>
 </table>
 
+# How to use Application Load Balancer on AWS?
+
+![img.png](1_NetworkingAndContentDelivery/assests/AWS_Application_Load_Balancer.drawio.png)
+
 # Design Multi-Region Active-Active Architecture On AWS
 
 ![img.png](0_AWSDesigns/DesignMultiRegionActiveActiveArchitectureOnAWS/AWS-AZ-Region-HA.drawio.png)
