@@ -4,7 +4,7 @@
 - Amazon MQ reduces your operational responsibilities by managing the provisioning, setup, and maintenance of message brokers for you.
 - Because Amazon MQ connects to your current applications with industry-standard APIs and protocols, `you can easily migrate to AWS without having to rewrite code`.
 
-# Amazon SNS vs Others
+# Amazon MQ vs Others
 - [Read here](../../1_HLDDesignComponents/4_MessageBrokers/KafkaVsRabbitMQVsSQSVsSNS.md)
 
 # References
