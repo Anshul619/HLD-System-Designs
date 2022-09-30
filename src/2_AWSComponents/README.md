@@ -263,7 +263,7 @@
 
 [Read more](0_AWSDesigns/FanOutPatternSNSSQS/README.md)
 
-# Amazon ECR, along with ECS & EKS
+# Build & Deployment Steps - Amazon ECR, along with ECS & EKS
 
 ![img.png](3_InfraAutomation/AmazonECS/assests/AmazonECS-Steps.drawio.png)
 

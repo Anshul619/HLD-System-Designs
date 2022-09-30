@@ -10,6 +10,10 @@
 
 ![img.png](assests/AmazonECS-Steps.drawio.png)
 
+# :star: Amazon ECS with Application Load Balancer
+
+![img.png](../../1_NetworkingAndContentDelivery/assests/AWS_Application_Load_Balancer.drawio.png)
+
 # Amazon ECR
 - [Amazon Elastic Container Registry (Amazon ECR)](https://aws.amazon.com/ecr/) is a fully managed container registry offering high-performance hosting, so you can reliably deploy application images and artifacts anywhere.
 
