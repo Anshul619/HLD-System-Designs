@@ -134,6 +134,9 @@
                 <a href="5_MessageBrokerServices/AmazonSQS.md" target="_blank">
                   <img src="https://i0.wp.com/blog.knoldus.com/wp-content/uploads/2021/09/sqs.png?w=711&ssl=1" width="150">
                 </a>
+                <a href="5_MessageBrokerServices/AmazonEventBridge.md" target="_blank">
+                  <img src="https://user-images.githubusercontent.com/3268013/149550617-d92fa8ff-f95d-499c-8515-0ed0be976fbf.png" width="150">
+                </a>
                 <a href="5_MessageBrokerServices/AmazonSNS.md" target="_blank">
                   <img src="https://miro.medium.com/max/720/0*QjKNs9dEShlQ39VI.png" width="150">
                 </a>
@@ -248,6 +251,12 @@
 
 [Read more](0_AWSDesigns/DesignUploadImageAWSLambdaS3/README.md)
 
+# Amazon EventBridge
+
+![img.png](5_MessageBrokerServices/assests/eventbridge/EventBridge.png)
+
+[Read more](5_MessageBrokerServices/AmazonEventBridge.md)
+
 # Fanout Pattern with Amazon SNS & SQS
 
 ![img.png](0_AWSDesigns/FanOutPatternSNSSQS/assets/FanOutPatternSQSSNS.png)
@@ -291,13 +300,14 @@
  :star: [Amazon Aurora](6_DatabaseServices/AmazonAurora/Readme.md)                            | [Database Service](6_DatabaseServices)                                  | DB management service for Postgres and MySQL ( faster & more reliable than RDS )                                                                                                  |
  :star: [Amazon Elastic Cache](6_DatabaseServices/AmazonElasticCache.md)                       | [Database Service](6_DatabaseServices)                                  | Fully Managed [Redis & Memcache](../1_HLDDesignComponents/3_DatabaseComponents/In-Memory-Cache/Redis/README.md) service                                                           |
  :star: [Amazon SQS](5_MessageBrokerServices/AmazonSQS.md)                                    | [Message Broker Service](5_MessageBrokerServices)                       | Fully managed Message Queue Service                                                                                                                                               |
+ :star: [Amazon Event Bridge](5_MessageBrokerServices/AmazonEventBridge.md)                                    | [Message Broker Service](5_MessageBrokerServices)                       | Fully managed Message Queue Service                                                                                                                                               |
  :star: [Amazon Dynamo DB](6_DatabaseServices/AmazonDynamoDB.md)                              | [Database Service](6_DatabaseServices)                                  | Fully managed NoSQL service                                                                                                                                                       |
  :star: [Amazon CloudWatch](8_MonitoringServices/AmazonCloudWatch.md)                         | [Monitoring Service](8_MonitoringServices)                              | Monitor AWS Resources & set Alarms                                                                                                                                                |
  :star: [Amazon ECS](3_InfraAutomation/AmazonECS/README.md)                                          | [AWS Infrastructure Automation](3_InfraAutomation)                      | `Containers as a service`.                                                                                                                                                        |
  :star: [AWS Fargate ](4_ComputeServices/AWSFargate.md)                                       | [Compute Service](4_ComputeServices)                                    | Serverless compute for containers. Compatible with both [EKS](EKS.md) & [ECS](ECS.md) i.e. these services can run with Fargate as deployment option, instead of EC2.              |
  :star: [Amazon OpenSearch service](6_DatabaseServices/AmazonOpenSearch.md)                   | [Database Service](6_DatabaseServices)                                  | Successor to Amazon [ElasticSearch](../1_HLDDesignComponents/3_DatabaseComponents/Search-Engines/ElasticSearch) Service, includes built in OpenSearch Dashboard and Kibana.      |
  [Amazon EKS](3_InfraAutomation/AmazonEKS.md)                                                 | [AWS Infrastructure Automation](3_InfraAutomation)                      | Fully managed [Kubernetes](../1_HLDDesignComponents/6_DevOps/Kubernates.md) service                                                                                               |
-:star: [AWS Cloud Formation](3_InfraAutomation/AWSCloudFormation/Readme.md)                         | [AWS Infrastructure Automation](3_InfraAutomation)                      | `Infrastructure as a CODE`. Configure & manage complete AWS infrastructure through cloudformation templates ( yaml or json ).                                                     |
+ :star: [AWS Cloud Formation](3_InfraAutomation/AWSCloudFormation/Readme.md)                         | [AWS Infrastructure Automation](3_InfraAutomation)                      | `Infrastructure as a CODE`. Configure & manage complete AWS infrastructure through cloudformation templates ( yaml or json ).                                                     |
  [Amazon API Gateway](1_NetworkingAndContentDelivery/AmazonAPIGateway.md)                     | [Networking & Content Delivery Service](1_NetworkingAndContentDelivery) | API Gateway for microservices implementation.                                                                                                                                     |
  [Amazon SNS](5_MessageBrokerServices/AmazonSNS.md)                                           | [Message Broker Service](5_MessageBrokerServices)                       | Fully managed pub/sub messaging, SMS, email, and mobile push notifications                                                                                                        |
  [Amazon RDS](6_DatabaseServices/AmazonRDS.md)                                                | [Database Service](6_DatabaseServices)                                  | Database management service for relational databases                                                                                                                              |

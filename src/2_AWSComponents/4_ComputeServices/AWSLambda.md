@@ -33,7 +33,7 @@
 - [Amazon S3](../7_StorageServices/AmazonS3.md) - S3 can be configured so that AWS Lambda function would be invoked automatically when a file is added in S3 bucket.
 - [Amazon SQS](../5_MessageBrokerServices/AmazonSQS.md) - SQS can be configured so that AWS Lambda function would be invoked automatically when a new message arrives in SQS Queue.
 - [Amazon DynamoDB](../6_DatabaseServices/AmazonDynamoDB.md)
-- [Manually from code through Amazon EventBridge](https://aws.amazon.com/eventbridge/)
+- [Manually from code through Amazon EventBridge](../5_MessageBrokerServices/AmazonEventBridge.md)
 - [Others](https://docs.aws.amazon.com/lambda/latest/dg/lambda-invocation.html)
 
 # What languages does Lambda supports?
