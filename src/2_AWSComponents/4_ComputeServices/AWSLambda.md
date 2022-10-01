@@ -25,6 +25,12 @@
 
 [Read more](../0_AWSDesigns/FanOutPatternSNSSQS/README.md)
 
+# AWS Step Functions with Lambda
+
+![img.png](assests/AWSStepFunctions.png)
+
+[Read more](AWSStepFunctions.md)
+
 ## Backup Jobs
 - Lambda can be used to configure backup scripts for the application.
 

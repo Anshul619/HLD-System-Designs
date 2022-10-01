@@ -269,6 +269,12 @@
 
 [Read more](3_InfraAutomation/AmazonECS/README.md)
 
+# AWS Step Functions with Lambda
+
+![img.png](4_ComputeServices/assests/AWSStepFunctions.png)
+
+[Read more](4_ComputeServices/AWSStepFunctions.md)
+
 # AWS - System Designs
 - :star: [Design Multi-Region Active-Active Architecture On AWS](0_AWSDesigns/DesignMultiRegionActiveActiveArchitectureOnAWS)
 - :star: [Design Scalable System on AWS](0_AWSDesigns/DesignScalableSystemWithRDMS)
@@ -305,7 +311,7 @@
  :star: [Amazon CloudWatch](8_MonitoringServices/AmazonCloudWatch.md)                         | [Monitoring Service](8_MonitoringServices)                              | Monitor AWS Resources & set Alarms                                                                                                                                                |
  :star: [Amazon ECS](3_InfraAutomation/AmazonECS/README.md)                                          | [AWS Infrastructure Automation](3_InfraAutomation)                      | `Containers as a service`.                                                                                                                                                        |
  :star: [AWS Fargate ](4_ComputeServices/AWSFargate.md)                                       | [Compute Service](4_ComputeServices)                                    | Serverless compute for containers. Compatible with both [EKS](EKS.md) & [ECS](ECS.md) i.e. these services can run with Fargate as deployment option, instead of EC2.              |
- :star: [Amazon OpenSearch service](6_DatabaseServices/AmazonOpenSearch.md)                   | [Database Service](6_DatabaseServices)                                  | Successor to Amazon [ElasticSearch](../1_HLDDesignComponents/3_DatabaseComponents/Search-Engines/ElasticSearch) Service, includes built in OpenSearch Dashboard and Kibana.      |
+ :star: [Amazon OpenSearch service](6_DatabaseServices/AmazonOpenSearch.md)                   | [Database Service](6_DatabaseServices)                                  | Successor to Amazon [ElasticSearch](../1_HLDDesignComponents/3_DatabaseComponents/Search-Engines/ElasticSearch) Service, includes built in OpenSearch Dashboard and Kibana.       |
  [Amazon EKS](3_InfraAutomation/AmazonEKS.md)                                                 | [AWS Infrastructure Automation](3_InfraAutomation)                      | Fully managed [Kubernetes](../1_HLDDesignComponents/6_DevOps/Kubernates.md) service                                                                                               |
  :star: [AWS Cloud Formation](3_InfraAutomation/AWSCloudFormation/Readme.md)                         | [AWS Infrastructure Automation](3_InfraAutomation)                      | `Infrastructure as a CODE`. Configure & manage complete AWS infrastructure through cloudformation templates ( yaml or json ).                                                     |
  [Amazon API Gateway](1_NetworkingAndContentDelivery/AmazonAPIGateway.md)                     | [Networking & Content Delivery Service](1_NetworkingAndContentDelivery) | API Gateway for microservices implementation.                                                                                                                                     |
@@ -327,6 +333,8 @@
  [AWS Private Link](https://aws.amazon.com/privatelink)                                       | [Networking & Content Delivery Service](1_NetworkingAndContentDelivery) | Establish private connectivity between [Amazon VPC](2_SecurityAndIdentityServices/AmazonVPC.md) and services hosted on AWS or on-premises, without exposing data to the internet. |
  [Amazon KeySpaces](6_DatabaseServices/AmazonKeySpaces.md)                                    | [Database Service](6_DatabaseServices)                                  | Fully managed service for [Apache Casandra](../1_HLDDesignComponents/3_DatabaseComponents/NoSQL-Databases/ApacheCasandra.md)                                                      |
  [Amazon WorkSpaces](https://aws.amazon.com/workspaces/)                                      | Other Service                                                           | Secure, reliable, and scalable access to persistent desktops from any location.                                                                                                   |
+ [Amazon Kinesis](5_MessageBrokerServices/AmazonKinesis.md)                                   | [Message Broker Service](5_MessageBrokerServices)                       | Easily collect, process, and analyze video and data streams in real time.                                                                                                         |
+ [AWS Step Functions](4_ComputeServices/AWSStepFunctions.md)                                  | [Compute Service](4_ComputeServices)                                    | Secure, reliable, and scalable access to persistent desktops from any location.                                                                                                   |
 
 * [Utility services](https://stackoverflow.com/questions/33125790/why-some-services-are-called-aws-xxx-and-the-others-amazon-xxx) are prefixed with `AWS`, while standalone services are prefixed by `Amazon`.
 
