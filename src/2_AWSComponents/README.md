@@ -263,12 +263,6 @@
 
 [Read more](0_AWSDesigns/FanOutPatternSNSSQS/README.md)
 
-# Build & Deployment Steps - Amazon ECR, along with ECS & EKS
-
-![img.png](3_InfraAutomation/AmazonECS/assests/AmazonECS-Steps.drawio.png)
-
-[Read more](3_InfraAutomation/AmazonECS/README.md)
-
 # Amazon ECS - Tasks, Fargate
 
 ![img.png](3_InfraAutomation/AmazonECS/assests/ECS-Tasks.png)
