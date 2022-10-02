@@ -1,6 +1,6 @@
 
 # Apache Marathon (A container orchestration platform for Mesos and DC/OS)
-- [Marathon](https://mesosphere.github.io/marathon/) is a production-grade container orchestration platform for Mesosphere’s Datacenter Operating System (DC/OS) and [Apache Mesos](https://mesos.apache.org/).
+- [Marathon](https://mesosphere.github.io/marathon/) is a [production-grade container orchestration platform](../0_SystemGlossaries/ContainerOrchestrationService.md) for Mesosphere’s Datacenter Operating System (DC/OS) and [Apache Mesos](https://mesos.apache.org/).
 
 # What is Apache Mesos? 
 - [Apache Mesos](https://mesos.apache.org/) is built using the same principles as the Linux kernel, only at a different level of abstraction. 
@@ -12,8 +12,8 @@
 - [Apache Mesos](https://mesos.apache.org/) abstracts CPU, memory, storage away from machines
 - Program like it's a single of resources.
 
-### [Linear Scalability](../0_SystemGlossaries/Scalability.md)
-- Industry proven to easily scale to 10,000s of nodes.
+### Linear Scalability
+- [Linear Scalability](../0_SystemGlossaries/Scalability.md) - Industry proven to easily scale to 10,000s of nodes.
 
 ### High availability
 - [Fault-tolerant](../0_SystemGlossaries/HighAvailability.md) replicated master and agents using [Zookeeper](ApacheZookeeper.md). Non-disruptive upgrades.

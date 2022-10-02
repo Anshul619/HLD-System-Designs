@@ -1,13 +1,13 @@
 
 # Kubernates
-- [Kubernetes](https://kubernetes.io), also known as K8s, is an `OPEN-SOURCE system for automating deployment, scaling, and management of containerized applications`.
+- [Kubernetes](https://kubernetes.io), also known as K8s, is an `OPEN-SOURCE system for automating deployment, scaling, and management of containerized applications`. 
+- Kubernates is a [container orchestration service](../0_SystemGlossaries/ContainerOrchestrationService.md).
 - Kubernetes is a Greek word meaning `captain` in English. 
   - Like the captain is responsible for the safe journey of the ship in the seas, Kubernetes is responsible for carrying and delivering those boxes safely to locations where they can be used.
 - We can use kubernates to manage, create containers ( through pods, worker nodes )
 - Each docker container would run the micro-service ( golang, java, python service etc. )
-- A pod can contain one or multiple containers
-- And a `worker node` can have one or multiple pods.
-- Kubernates would manage the `worker nodes` i.e. Create, Update, Delete, Auto-Scale based on the configuration and params.
+- And a [worker node](https://kubernetes.io/docs/concepts/architecture/nodes/) can have one or multiple pods.
+- Kubernates would manage the [worker nodes](https://kubernetes.io/docs/concepts/architecture/nodes/) i.e. Create, Update, Delete, Auto-Scale based on the configuration and params.
 
 ![img.png](assests/Kubernates-Architecture.png)
 

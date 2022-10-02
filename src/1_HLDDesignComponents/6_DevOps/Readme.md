@@ -1,11 +1,11 @@
 
-| Component                                          | Strength                                                                    | Type                                                    | Remarks |
-|----------------------------------------------------|-----------------------------------------------------------------------------|---------------------------------------------------------|---------|
-| :star: [Kubernates](Kubernates.md)                 | Can run 10s of thousands of machines, across multiple clusters              | Orchestration Container Platform                         | -       |
-| :star: [Apache Zookeeper](ApacheZookeeper.md)      | Highly reliable distributed coordination                                    | Coordinator                                             | -       |
-| :star: [Docker](Docker.md)                         | Mostly used containerization                                                | Containerization                                        | -       |
-| [Apache Marathon & Mesos](ApacheMarathon&Mesos.md) | Can run 10s of thousands of machines, across multiple clusters              | Orchestration Container Platform (with Containerization) | -       |
-| [Apache Yarn](ApacheYarn.md)                       | Big-Data Processing (part of [Hadoop](../5_BigDataComponents/ApacheHadoop)) | Orchestration Container Platform                         | -       |
+| Component                                          | Strength                                                                    | Type                                                                                            | Remarks |
+|----------------------------------------------------|-----------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------|---------|
+| :star: [Kubernates](Kubernates.md)                 | Can run 10s of thousands of machines, across multiple clusters              | [Orchestration Container Service](../0_SystemGlossaries/ContainerOrchestrationService.md)                             | -       |
+| :star: [Apache Zookeeper](ApacheZookeeper.md)      | Highly reliable distributed coordination                                    | Coordinator                                                                                     | -       |
+| :star: [Docker](Docker.md)                         | Mostly used containerization                                                | Containerization                                                                                | -       |
+| [Apache Marathon & Mesos](ApacheMarathon&Mesos.md) | Can run 10s of thousands of machines, across multiple clusters              | [Orchestration Container Service](../0_SystemGlossaries/ContainerOrchestrationService.md) (with Own Containerization) | -       |
+| [Apache Yarn](ApacheYarn.md)                       | Big-Data Processing (part of [Hadoop](../5_BigDataComponents/ApacheHadoop)) | [Orchestration Container Service](../0_SystemGlossaries/ContainerOrchestrationService.md)                             | -       |
 
 # Different DevOps Components
 
