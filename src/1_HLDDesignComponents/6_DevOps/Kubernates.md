@@ -9,14 +9,23 @@
 - And a `worker node` can have one or multiple pods.
 - Kubernates would manage the `worker nodes` i.e. Create, Update, Delete, Auto-Scale based on the configuration and params.
 
-![img.png](assests/kubernates_docker_img.png)
+![img.png](assests/Kubernates-Architecture.png)
 
-# [What are Pods?](https://kubernetes.io/docs/concepts/workloads/pods/)
-- Pods are the smallest deployable units of computing that you can create and manage in Kubernetes.
+# What are Pods?
+- [Pods](https://kubernetes.io/docs/concepts/workloads/pods/) are the smallest deployable units of computing that you can create and manage in Kubernetes.
 - A Pod (as in a pod of whales or pea pod) is a group of one or more containers, with shared storage and network resources, and a specification for how to run the containers.
 
-# [kubectl Cheat Sheet](https://kubernetes.io/docs/reference/kubectl/cheatsheet/)
+```
+kubectl scale --replicas=5 rc/foo rc/bar rc/baz                   # Scale multiple replication controllers i.e. 5 pods for each of the services
+```
+
+# What are Labels?
+- [Labels](https://kubernetes.io/docs/concepts/overview/working-with-objects/labels/) are key/value pairs that are attached to objects, such as pods. 
+- Labels are intended to be used to specify identifying attributes of objects that are meaningful and relevant to users, but do not directly imply semantics to the core system.
+
+# kubectl - Cheat Sheet
 - `apply` manages applications through files defining Kubernetes resources. It creates and updates resources in a cluster through running `kubectl apply`.
+- [Read more](https://kubernetes.io/docs/reference/kubectl/cheatsheet/)
 
 ```
 kubectl get pods                              # List all pods in the namespace
@@ -28,7 +37,6 @@ kubectl apply -f ./dir                         # create resource(s) in all manif
 kubectl apply -f https://git.io/vPieo          # create resource(s) from url
 
 kubectl autoscale deployment foo --min=2 --max=10                # Auto scale a deployment "foo"
-kubectl scale --replicas=5 rc/foo rc/bar rc/baz                   # Scale multiple replication controllers
 
 kubectl logs my-pod                                 # dump pod logs (stdout)
 kubectl logs -l name=myLabel                        # dump pod logs, with label name=myLabel (stdout)
