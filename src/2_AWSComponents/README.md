@@ -269,6 +269,12 @@
 
 [Read more](3_InfraAutomation/AmazonECS/README.md)
 
+# Amazon ECS - Tasks, Fargate
+
+![img.png](3_InfraAutomation/AmazonECS/assests/ECS-Tasks.png)
+
+[Read more](3_InfraAutomation/AmazonECS/README.md)
+
 # AWS Step Functions with Lambda
 
 ![img.png](4_ComputeServices/assests/AWSStepFunctions.png)
