@@ -4,7 +4,7 @@
 - [EKS cluster for EC2 instances - Cloudformation template](AWSCloudFormation/templates/EKS_ECS.yml)
 - [Amazon EKS vs ECS vs Fargate](EKSvsECSvsFargate.md)
 
-![img.png](AmazonECS/assests/AmazonECS-Steps.drawio.png)
+![img.png](../1_NetworkingAndContentDelivery/assests/AWS_Application_Load_Balancer.drawio.png)
 
 # Modular and Scalable Amazon EKS Architecture on AWS
 
