@@ -2,7 +2,7 @@
 # Amazon EventBridge
 - [Amazon EventBridge](https://aws.amazon.com/eventbridge/) is a serverless event bus that lets you receive, filter, transform, route, and deliver events. 
 - Using Amazon EventBridge, we can build [event-driven applications at scale](../../1_HLDDesignComponents/1_MicroServicesSOA) across AWS, existing systems, or SaaS applications.
-- [Guide to archive Amazon EventBridge events & replay those](https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-archive-event.html)
+- [Guide to archive Amazon EventBridge events & replay those later.](https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-archive-event.html)
 
 # What is Amazon EventBridge rules?
 - [An event bridge rule](https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-rules.html) matches incoming events and sends them to targets for processing. 

@@ -6,7 +6,9 @@
 You can use Route 53 to perform three main functions in any combination,
 - Domain registration
 - DNS routing
-- Health checking                                                                                                                                                                                                                                                                                                                                                    |
+- Health checking
+
+![img.png](../0_AWSDesigns/DesignMultiRegionActiveActiveArchitectureOnAWS/AWS-AZ-Region-HA.drawio.png)
 
 # How does Amazon Route 53 provide high availability and low latency?
 
@@ -15,10 +17,10 @@ You can use Route 53 to perform three main functions in any combination,
 - Any customer creating a query from any part of the world gets to reach a `DNS server local` to them that provides low latency.
 
 ## Optimal Locations
-- `Route 53` uses a [global anycast network](https://www.cloudflare.com/learning/cdn/glossary/anycast-network/) to answer queries from the optimal position automatically.
+- [Route 53](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/Welcome.html) uses a [global anycast network](https://www.cloudflare.com/learning/cdn/glossary/anycast-network/) to answer queries from the optimal position automatically.
 
 ## Dependency
-- `Route 53` provides a high level of dependability required by critical applications.
+- [Route 53](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/Welcome.html) provides a high level of dependability required by critical applications.
 
 # Routing Policy
 
@@ -26,9 +28,9 @@ You can use Route 53 to perform three main functions in any combination,
 - Point a domain to a single, simple resource.
 
 ## :star: Latency Based Routing
-- Latency Based Routing utilizes latency measurements between networks and AWS data centers.
+- Latency Based Routing utilizes [latency measurements between networks and AWS data centers](../../1_HLDDesignComponents/0_SystemGlossaries/LatencyThroughput.md).
 - Latency Based Routing is used when you want to give your customers the lowest latency possible.
-- This is most used [multi-region (active-active) routing policy](../AWS-Global-Architecture-Region-AZ.md) (if application has no geographic requirements).
+- [This is mostly used multi-region (active-active) routing policy](../AWS-Global-Architecture-Region-AZ.md) (if application has no geographic requirements).
 
 ````
 
