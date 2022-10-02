@@ -9,8 +9,7 @@
 
 ![img.png](assests/AmazonECS-Steps.drawio.png)
 
-# What are EC2 tasks?
-
+# Amazon ECS tasks
 - With Amazon ECS, your containers are defined in a [task definition](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/task_definitions.html) that you use to run an individual task or task within a service.
 
 ![img.png](assests/ECS-Tasks.png)
@@ -19,5 +18,10 @@
 
 ![img.png](../../1_NetworkingAndContentDelivery/assests/AWS_Application_Load_Balancer.drawio.png)
 
-# Amazon ECR
+# Amazon ECR (Repository for Docker Images)
 - [Amazon Elastic Container Registry (Amazon ECR)](https://aws.amazon.com/ecr/) is a fully managed container registry offering high-performance hosting, so you can reliably deploy application images and artifacts anywhere.
+- Amazon ECR store, manage & deploy Docker container images.
+- Amazon ECR is an alternative to [Docker Hub](https://hub.docker.com/).
+
+# References
+- [Containers on AWS Overview: ECS | EKS | Fargate | ECR](https://www.youtube.com/watch?v=AYAh6YDXuho)
