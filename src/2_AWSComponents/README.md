@@ -18,6 +18,12 @@
             </div>
         </div>
       </td>
+       <td rowspan=13 width="150px">
+            <a href="3_InfraAutomation/AWSCloudFormation/Readme.md" target="_blank">
+              <img src="https://i0.wp.com/www.australtech.net/wp-content/uploads/2019/05/cloudformation-logo.png" width="400">
+            </a>
+            <br/><br/>
+        </td>
     </tr>
     <tr>
         <td>
@@ -38,12 +44,6 @@
                   <img src="https://quintagroup.com/blog/amazon-cognito/@@download/image/Amazon%20Cognito.jpg" width="150">
                 </a>
             </div>
-        </td>
-        <td rowspan=11 width="150px">
-            <a href="3_InfraAutomation/AWSCloudFormation/Readme.md" target="_blank">
-              <img src="https://i0.wp.com/www.australtech.net/wp-content/uploads/2019/05/cloudformation-logo.png" width="250">
-            </a>
-            <br/><br/>
         </td>
     </tr>
     <tr>
