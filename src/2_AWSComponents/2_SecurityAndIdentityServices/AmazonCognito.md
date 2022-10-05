@@ -1,6 +1,6 @@
 
 # Amazon Cognito
-- To add user sign-up, sign-in, and access control to the web and mobile apps quickly and easily.
+- [Amazon Cognito](https://aws.amazon.com/cognito/) can be used to add user sign-up, sign-in, and access control to the web and mobile apps quickly and easily.
 
 ![img.png](../9_OtherServices/assests/amazon_cognito.png)
 
