@@ -1,26 +1,25 @@
 # AWS Auto-Scaling
-- [AWS Auto-scaling](https://aws.amazon.com/autoscaling/) is a function that allows you to provision and launch new instances whenever there is a incoming demand. 
-- `It allows you to automatically increase or decrease resource capacity in relation to the demand.`
+- [AWS Auto-scaling Group (ASG)](https://aws.amazon.com/autoscaling/) is a function that allows you to [provision and launch new instances](../ReadMe.md) whenever there is a incoming demand. 
+- It allows you to automatically increase or decrease resource capacity in relation to the demand.
+- [AWS EC2 Auto Scaling](https://aws.amazon.com/getting-started/hands-on/ec2-auto-scaling-spot-instances/) enables you to automatically launch or terminate [Amazon EC2 instances](../ReadMe.md) based on user-defined policies, health status checks, and schedules.
 
-# EC2 Auto-Scaling
-- [AWS EC2 Auto Scaling](https://aws.amazon.com/getting-started/hands-on/ec2-auto-scaling-spot-instances/) enables you to automatically launch or terminate [Amazon EC2 instances](../ReadMe.md)) based on user-defined policies, health status checks, and schedules.
-- You can use a [CloudWatch alarm](../../../8_MonitoringServices/AmazonCloudWatch.md) with Amazon EC2 Auto Scaling to scale your EC2 instances based on demand. 
-- For more information, see [Dynamic Scaling](https://docs.aws.amazon.com/autoscaling/ec2/userguide/as-scale-based-on-demand.html) in the Amazon EC2 Auto Scaling User Guide.
+# How Auto-Scaling works?
+- [Read here](HowAutoScalingWorks.md)
 
-## How to do EC2 Auto-Scaling?
+# Steps to configure AutoScaling
 - Create a Launch template/configuration.
   - Specify Min. Nodes in the group.
 - Create a single-instance [Auto Scaling group](https://docs.aws.amazon.com/autoscaling/ec2/userguide/auto-scaling-groups.html).
 - Verify your Auto Scaling group.
 - Terminate an instance in your Auto Scaling group.
 
-## EC2 Auto-Scaling based on Amazon SQS
+# Auto-Scaling based on Amazon SQS
 - Based on the [Amazon SQS](../../../5_MessageBrokerServices/AmazonSQS.md) queue size, the [auto-scaling of the EC2 instances](https://docs.aws.amazon.com/autoscaling/ec2/userguide/as-using-sqs-queue.html) can also be done.
 - Example Design - [Send-SMS-API design (App Internal Clients, Multiple SMS-Providers, AutoScaling)](../../../../3_HLDDesignProblems/NotificationSystem)
 
 ![img.png](https://docs.aws.amazon.com/autoscaling/ec2/userguide/images/sqs-as-custom-metric-diagram.png)
 
-## :thumbsdown: Disadvantages of EC2 AutoScaling
+# :thumbsdown: Disadvantages of AutoScaling
 - It would be difficult to optimise the number of instances around the particular demands of the services. 
 - For example - A whole new EC2 instance could be spun up due to the load on a first instance, but only utilised to 10% CPU.
 - This can be resolved using [AWS Fargate - Serverless container service](../../AWSFargate.md).
