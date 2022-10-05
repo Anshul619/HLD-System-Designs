@@ -100,14 +100,14 @@
     </tr>
     <tr>
         <td>
-            <a href="3_InfraAutomation">Orchestration Services</a>
+            <a href="4_ComputeServices">Container Orchestration Services</a>
         </td>
         <td>
             <div class="container" style="background:white">
-                <a href="3_InfraAutomation/AmazonECS/README.md" target="_blank">
+                <a href="4_ComputeServices/AmazonECS/README.md" target="_blank">
                   <img src="https://i0.wp.com/miro.medium.com/max/626/1*RmiGt6GAWf4pkO9ohOnRaQ.png?w=810&ssl=1" width="150">
                 </a>
-                <a href="3_InfraAutomation/AmazonEKS.md" target="_blank">
+                <a href="4_ComputeServices/AmazonEKS.md" target="_blank">
                   <img src="https://www.turbonomic.com/wp-content/uploads/2020/11/AWS-EKS-logo-no-background.png" width="150">
                 </a>
             </div>
@@ -265,9 +265,9 @@
 
 # Amazon ECS - Tasks, Fargate
 
-![img.png](3_InfraAutomation/AmazonECS/assests/ECS-Tasks.png)
+![img.png](4_ComputeServices/AmazonECS/assests/ECS-Tasks.png)
 
-[Read more](3_InfraAutomation/AmazonECS/README.md)
+[Read more](4_ComputeServices/AmazonECS/README.md)
 
 # AWS Step Functions with Lambda
 
@@ -289,7 +289,7 @@
 - [Amazon Aurora vs RDS](6_DatabaseServices/AWSAuroraVsRDS.md)
 - [Amazon SQS vs SNS](../1_HLDDesignComponents/4_MessageBrokers/KafkaVsRabbitMQVsSQSVsSNS.md)
 - [Amazon S3 vs EFS vs EBS](7_StorageServices/S3vsEFSvsEBS.md)
-- [Amazon ECS vs EKS vs Fargate](3_InfraAutomation/EKSvsECSvsFargate.md)
+- [Amazon ECS vs EKS vs Fargate](4_ComputeServices/EKSvsECSvsFargate.md)
 
 # AWS - Various Services
 
@@ -301,12 +301,12 @@
  :star: [AWS Cloud Formation](3_InfraAutomation/AWSCloudFormation/Readme.md)                  | [AWS Infrastructure Automation](3_InfraAutomation)                      | `Infrastructure as a CODE`. <br/>Configure & manage complete AWS infrastructure through cloudformation templates ( yaml or json ).                                                                                          |
  :star: [Amazon CloudFront](1_NetworkingAndContentDelivery/AmazonCloudFront.md)               | [Networking & Content Delivery Service](1_NetworkingAndContentDelivery) | AWS Low-Latency [CDN Service](../1_HLDDesignComponents/0_SystemGlossaries/CDNs.md), which securely delivers content with `low latency and high transfer speeds`                                                             |
  :star: [Amazon Elastic Load Balancer](1_NetworkingAndContentDelivery/ElasticLoadBalancer.md) | [Networking & Content Delivery Service](1_NetworkingAndContentDelivery) | Fully Managed `AWS Load Balancer Service`                                                                                                                                                                                   |
- :star: [Amazon EC2](4_ComputeServices/EC2/ReadMe.md)                                         | [Compute Service](4_ComputeServices)                                    | `Self-Managed Virtual Machine` that run the application in the cloud.                                                                                                                                                       |
- :star: [AWS EC2 AutoScaling](4_ComputeServices/EC2/AutoScalingGroup/README.md)               | [Compute Service](4_ComputeServices)                                    | Auto-scaling of [EC2 instances](4_ComputeServices/AutoScalingGroup/README.md), based on demand & traffic (CPU, Memory).                                                                                                     |
- :star: [AWS Fargate ](4_ComputeServices/AWSFargate.md)                                       | [Compute Service](4_ComputeServices)                                    | Serverless compute for containers. Compatible with both [EKS](3_InfraAutomation/AmazonEKS.md) & [ECS](3_InfraAutomation/AmazonECS/README.md) i.e. these services can run with Fargate as deployment option, instead of EC2. |
+ :star: [Amazon EC2](4_ComputeServices/AmazonEC2/ReadMe.md)                                         | [Compute Service](4_ComputeServices)                                    | `Self-Managed Virtual Machine` that run the application in the cloud.                                                                                                                                                       |
+ :star: [AWS EC2 AutoScaling](4_ComputeServices/AmazonEC2/AutoScalingGroup/README.md)               | [Compute Service](4_ComputeServices)                                    | Auto-scaling of [EC2 instances](4_ComputeServices/AutoScalingGroup/README.md), based on demand & traffic (CPU, Memory).                                                                                                     |
+ :star: [AWS Fargate ](4_ComputeServices/AWSFargate.md)                                       | [Compute Service](4_ComputeServices)                                    | Serverless compute for containers. Compatible with both [EKS](4_ComputeServices/AmazonEKS.md) & [ECS](4_ComputeServices/AmazonECS/README.md) i.e. these services can run with Fargate as deployment option, instead of EC2. |
  :star: [AWS Lambda](4_ComputeServices/AWSLambda.md)                                          | [Compute Service](4_ComputeServices)                                    | Run code without thinking about servers or clusters.                                                                                                                                                                        |
- :star: [Amazon ECS](3_InfraAutomation/AmazonECS/README.md)                                   | [AWS Infrastructure Automation](3_InfraAutomation)                      | Full Managed [Container Orchestration Service](../1_HLDDesignComponents/0_SystemGlossaries/ContainerOrchestrationService.md) (Containers as a service).                                                                     |
- :star: [Amazon EKS](3_InfraAutomation/AmazonEKS.md)                                          | [AWS Infrastructure Automation](3_InfraAutomation)                      | Fully managed [Kubernetes](../1_HLDDesignComponents/6_DevOps/Kubernates.md) service                                                                                                                                         |
+ :star: [Amazon ECS](4_ComputeServices/AmazonECS/README.md)                                   | [Container Orchestration Service](4_ComputeServices)                    | Full Managed [Container Orchestration Service](../1_HLDDesignComponents/0_SystemGlossaries/ContainerOrchestrationService.md) (Containers as a service).                                                                     |
+ :star: [Amazon EKS](4_ComputeServices/AmazonEKS.md)                                          | [Container Orchestration Service](4_ComputeServices)                                    | Fully managed [Kubernetes](../1_HLDDesignComponents/6_DevOps/Kubernates.md) service                                                                                                                                         |
  :star: [Amazon Aurora](6_DatabaseServices/AmazonAurora/Readme.md)                            | [Database Service](6_DatabaseServices)                                  | Fully Managed DB service for Postgres and MySQL ( faster & more reliable than RDS )                                                                                                                                         |
  :star: [Amazon Elastic Cache](6_DatabaseServices/AmazonElasticCache.md)                      | [Database Service](6_DatabaseServices)                                  | Fully Managed [Redis & Memcache](../1_HLDDesignComponents/3_DatabaseComponents/In-Memory-Cache/Redis/README.md) service                                                                                                     |
  :star: [Amazon S3](7_StorageServices/AmazonS3.md)                                            | [Storage Service](7_StorageServices)                                    | `Object storage` built to retrieve any amount of data from anywhere. <br/>Cost effective & mostly used storage service in AWS.                                                                                              |
@@ -327,7 +327,7 @@
  [AWS Secrets Manager](https://aws.amazon.com/secrets-manager/)                               | [Security Service](2_SecurityAndIdentityServices)                       | AWS Secrets Manager helps you manage, retrieve, and rotate database credentials, API keys, and other secrets throughout their lifecycles.                                                                                   |
  [AWS VPN](https://aws.amazon.com/vpn/)                                                       | [Security Service](2_SecurityAndIdentityServices)                       | Extend your on-premises networks to the cloud and securely access them from anywhere.                                                                                                                                       |
  [Amazon Cognito](2_SecurityAndIdentityServices/AmazonCognito.md)                             | [Security Service](2_SecurityAndIdentityServices)                       | Users login/signin service.                                                                                                                                                                                                 |
- [Amazon EFS](7_StorageServices/AmazonEFS.md)                                                 | [Storage Service](7_StorageServices)                                    | Shared File Storage between [EC2 instances](4_ComputeServices/EC2/ReadMe.md)                                                                                                                                                |
+ [Amazon EFS](7_StorageServices/AmazonEFS.md)                                                 | [Storage Service](7_StorageServices)                                    | Shared File Storage between [EC2 instances](4_ComputeServices/AmazonEC2/ReadMe.md)                                                                                                                                                |
  [Amazon CloudTrail](8_MonitoringServices/AWSCloudTrail.md)                                   | [Monitoring Service](8_MonitoringServices)                              | To monitor [Amazon Route 53 API](1_NetworkingAndContentDelivery/AmazonRoute53.md) activities in AWS Account                                                                                                                 |
  [Amazon Config](8_MonitoringServices/AWSConfig.md)                                           | [Monitoring Service](8_MonitoringServices)                              | To monitor Configration changes of AWS Resources                                                                                                                                                                            |
  [Amazon EMR](4_ComputeServices/AmazonEMR.md)                                                 | [Compute Service](4_ComputeServices)                                    | Fully Managed Service for [Apache Spark](../1_HLDDesignComponents/5_BigDataComponents/ApacheSpark.md)                                                                                                                       |

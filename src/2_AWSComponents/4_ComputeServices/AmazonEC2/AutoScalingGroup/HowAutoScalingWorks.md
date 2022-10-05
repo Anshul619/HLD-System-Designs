@@ -5,4 +5,4 @@
 - We can use a [CloudWatch alarm](../../../8_MonitoringServices/AmazonCloudWatch.md) with Amazon EC2 Auto Scaling to scale your [Amazon EC2 instances](../ReadMe.md) based on demand.
 - For more information, see [Dynamic Scaling](https://docs.aws.amazon.com/autoscaling/ec2/userguide/as-scale-based-on-demand.html) in the Amazon EC2 Auto Scaling User Guide.
 
-- ![img.png](../../assests/auto-scaling-elb.png)
+- ![img.png](assets/auto-scaling-elb.png)

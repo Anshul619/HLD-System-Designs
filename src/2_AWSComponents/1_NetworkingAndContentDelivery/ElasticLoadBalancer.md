@@ -1,6 +1,6 @@
 
 # Amazon ELB - Elastic Load Balancer
-- [Amazon ELB - Elastic Load Balancer](https://docs.aws.amazon.com/elasticloadbalancing) automatically distributes your incoming traffic across multiple targets, such as [EC2 instances](../4_ComputeServices/EC2), [containers](../3_InfraAutomation/AmazonECS), and IP addresses, in [one or more Availability Zones](../AWS-Global-Architecture-Region-AZ.md). 
+- [Amazon ELB - Elastic Load Balancer](https://docs.aws.amazon.com/elasticloadbalancing) automatically distributes your incoming traffic across multiple targets, such as [EC2 instances](../4_ComputeServices/AmazonEC2), [containers](../4_ComputeServices/AmazonECS), and IP addresses, in [one or more Availability Zones](../AWS-Global-Architecture-Region-AZ.md). 
 - It monitors the `health of its registered targets` and [routes traffic only to the healthy targets](../../1_HLDDesignComponents/0_SystemGlossaries/LoadBalancer.md).
 
 
@@ -15,13 +15,13 @@
 - A [listener](https://docs.aws.amazon.com/elasticloadbalancing/latest/network/load-balancer-listeners.html) checks for connection requests from clients, using the protocol and port that you configure, and forwards requests to a target group.
 
 # What is Target Group?
-- [Each target group](https://docs.aws.amazon.com/elasticloadbalancing/latest/network/load-balancer-target-groups.html) routes requests to one or more registered targets, such as [EC2 instances](../4_ComputeServices/EC2), using the TCP protocol ( in case of [Network Load Balancer](#network-load-balancer)) and the port number that you specify.
+- [Each target group](https://docs.aws.amazon.com/elasticloadbalancing/latest/network/load-balancer-target-groups.html) routes requests to one or more registered targets, such as [EC2 instances](../4_ComputeServices/AmazonEC2), using the TCP protocol ( in case of [Network Load Balancer](#network-load-balancer)) and the port number that you specify.
 - You can register a target with multiple target groups.
 - You can configure health checks on a per target group basis.
 - Health checks are performed on all targets registered to a target group that is specified in a listener rule for your load balancer.
 
 # How ELB works with AutoScaling?
-- [Read here](../4_ComputeServices/EC2/AutoScalingGroup/README.md)
+- [Read here](../4_ComputeServices/AmazonEC2/AutoScalingGroup/README.md)
 
 
 # Types of ELB Load Balancers
