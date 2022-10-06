@@ -23,6 +23,8 @@
 - [POPs](https://www.medianova.com/en-blog/what-is-a-pop-and-how-do-we-create-one/) are used for both [Amazon CloudFront](1_NetworkingAndContentDelivery/AmazonCloudFront.md) to deliver content to end users at high speeds, and [Lambda@Edge](4_ComputeServices/AWSLambda.md) to run Lambda functions with the lowest possible latency. 
 - As of April 2020, there are `216 Points of Presence` in 84 cities across 42 countries.
 
+![img.png](https://d2908q01vomqb2.cloudfront.net/5b384ce32d8cdef02bc3a139d4cac0a22bb029e8/2022/06/17/CloudFront_400-1024x580.png)
+
 # Summary
 
 | Component          | Count |
@@ -30,8 +32,6 @@
 | Geographic Regions | 25    |
 | Availability Zones | 69    |
 | Points Of Presence | 216   |
-
-![img.png](https://d2908q01vomqb2.cloudfront.net/5b384ce32d8cdef02bc3a139d4cac0a22bb029e8/2022/06/17/CloudFront_400-1024x580.png)
 
 # Source(s) and further reading
 - [What are the differences AWS Regions and Availability Zones?](https://www.quora.com/What-are-the-differences-AWS-Regions-and-Availability-Zones)
