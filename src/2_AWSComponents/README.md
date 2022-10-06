@@ -48,17 +48,11 @@
     </tr>
     <tr>
       <td>
-        <a href="1_NetworkingAndContentDelivery">Gateway & CDN</a>
+        <a href="1_NetworkingAndContentDelivery">VPC - Public, Private Subnet</a>
       </td>
       <td>
         <div class="container" style="background:white">
             <div class="block two first">
-                <a href="1_NetworkingAndContentDelivery/AmazonCloudFront.md" target="_blank">
-                  <img src="https://ericknavarro.io/images/thumbnails/12.png" width="400">
-                </a>
-                <a href="1_NetworkingAndContentDelivery/AmazonAPIGateway.md" target="_blank">
-                  <img src="https://www.prolim.com/wp-content/uploads/2019/09/amazon-api-gatewat-1.jpg" width="150">
-                </a>
                 <a href="1_NetworkingAndContentDelivery/AmazonVPC.md" target="_blank">
                   <img src="https://www.kamprasad.com/wp-content/uploads/2019/08/aws-vpc.png" width="150">
                 </a>
@@ -68,13 +62,19 @@
     </tr>
     <tr>
       <td>
-        <a href="1_NetworkingAndContentDelivery">Load Balancer</a>
+        <a href="1_NetworkingAndContentDelivery">Load Balancer, API Gateway, CDN</a>
       </td>
       <td>
         <div class="container" style="background:white">
             <div>
                 <a href="1_NetworkingAndContentDelivery/ElasticLoadBalancer.md" target="_blank">
                   <img src="https://static.wixstatic.com/media/e37c27_65bd886d7d284196a495daa7b2582486~mv2.png/v1/fill/w_560,h_560,al_c,lg_1,q_85,enc_auto/e37c27_65bd886d7d284196a495daa7b2582486~mv2.png" width="150">
+                </a>
+                <a href="1_NetworkingAndContentDelivery/AmazonAPIGateway.md" target="_blank">
+                  <img src="https://www.prolim.com/wp-content/uploads/2019/09/amazon-api-gatewat-1.jpg" width="150">
+                </a>
+                <a href="1_NetworkingAndContentDelivery/AmazonCloudFront.md" target="_blank">
+                  <img src="https://ericknavarro.io/images/thumbnails/12.png" width="400">
                 </a>
             </div>
         </div>

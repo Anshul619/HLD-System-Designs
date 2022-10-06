@@ -3,8 +3,6 @@
 - [Amazon ELB - Elastic Load Balancer](https://docs.aws.amazon.com/elasticloadbalancing) automatically distributes your incoming traffic across multiple targets, such as [EC2 instances](../4_ComputeServices/AmazonEC2), [containers](../4_ComputeServices/AmazonECS), and IP addresses, in [one or more Availability Zones](../AWS-Global-Architecture-Region-AZ.md). 
 - It monitors the `health of its registered targets` and [routes traffic only to the healthy targets](../../1_HLDDesignComponents/0_SystemGlossaries/LoadBalancer.md).
 
-
-
 ![img.png](assests/AWS_Application_Load_Balancer.drawio.png)
 
 # ELB Load Balancer setup in Multi-Regions & Multi-AZs
@@ -22,7 +20,6 @@
 
 # How ELB works with AutoScaling?
 - [Read here](../4_ComputeServices/AmazonEC2/AutoScalingGroup/README.md)
-
 
 # Types of ELB Load Balancers
 
@@ -44,14 +41,14 @@ You can select the type of [load balancer](../../1_HLDDesignComponents/0_SystemG
 
 ![img.png](https://s3.eu-west-1.amazonaws.com/elb-polaris-static-content-eu-west-1-prod/2022-09-19T20-42-20_fc1ae7b23404afb246e594df0e2d4e9e9f00cb47e1e00dda5f179758e9a0fb67/Static/ALBdiagram.svg)
 
-### Key Features
+### Key Features of ALB
 - [Highly available](../../1_HLDDesignComponents/0_SystemGlossaries/HighAvailability.md)
 - [Health checks](https://aws.amazon.com/builders-library/implementing-health-checks/)
-- Session stickiness
+- [Session stickiness](https://docs.aws.amazon.com/elasticloadbalancing/latest/application/sticky-sessions.html)
+- [Content-based routing](https://aws.amazon.com/blogs/aws/new-advanced-request-routing-for-aws-application-load-balancers/)
 - Monitoring/logging
-- Content-based routing
 - Container based apps
-- WebSockets
+- [WebSockets](https://aws.amazon.com/blogs/compute/using-websockets-and-load-balancers-part-two/)
 - HTTP/2
 
 ## Gateway Load Balancer
