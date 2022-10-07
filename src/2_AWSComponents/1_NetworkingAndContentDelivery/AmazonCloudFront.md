@@ -3,6 +3,11 @@
 - CloudFront works as a [Global Content Delivery Service (CDN)](../../1_HLDDesignComponents/0_SystemGlossaries/CDNs.md) to deliver the content efficiently to the end users.
 - CloudFront is perfect for `Static content like WebSite, Media, Image, Video, Songs, Documents etc.` ( stored in [Amazon S3 bucket](../7_StorageServices/AmazonS3.md), for example)
 
+# Amazon S3 + Amazon CloudFront: A Match Made in the Cloud
+- Instead of [directly accessing the S3 resource](https://aws.amazon.com/blogs/networking-and-content-delivery/amazon-s3-amazon-cloudfront-a-match-made-in-the-cloud/), we should use [CloudFront distribution](../1_NetworkingAndContentDelivery/AmazonCloudFront.md) in the middle (which acts as [CDN](../../1_HLDDesignComponents/0_SystemGlossaries/CDNs.md))
+
+![img.png](https://d2908q01vomqb2.cloudfront.net/5b384ce32d8cdef02bc3a139d4cac0a22bb029e8/2018/06/27/4-v-2.png)
+
 # :star: Real world use cases of Amazon CloudFront
 
 ## Design Scalable System on AWS
