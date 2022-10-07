@@ -5,7 +5,7 @@
 - Traffic between your VPC and the service does not leave the Amazon network.
 
 Private links are a great way to [increase the isolation and security of microservices architecture](../../1_HLDDesignComponents/1_MicroServicesSOA). 
-- A microservice, for example, could be deployed in a [totally separate VPC](AmazonVPC.md), fronted by a [load balancer](ElasticLodBalancer/Readme.md), and exposed to other microservices through a [AWS PrivateLink]() endpoint. 
+- A microservice, for example, could be deployed in a [totally separate VPC](AmazonVPC.md), fronted by a [load balancer](ElasticLoadBalancer/Readme.md), and exposed to other microservices through a [AWS PrivateLink]() endpoint. 
 - With this setup, using [AWS PrivateLink](), the network traffic to and from the [microservice](../../1_HLDDesignComponents/1_MicroServicesSOA) never traverses the public internet. 
 - One use case for such isolation includes regulatory compliance for services handling sensitive data such as PCI, HIPPA and EU/US Privacy Shield. 
 - Additionally, [AWS PrivateLink]() allows connecting microservices across different accounts and [Amazon VPCs](AmazonVPC.md), with no need for firewall rules, path definitions, or route tables; simplifying network management. 

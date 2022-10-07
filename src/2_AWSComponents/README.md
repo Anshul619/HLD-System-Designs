@@ -1,6 +1,6 @@
 
 # Introduction
-- AWS manages its [global architecture](AWS-Global-Architecture-Region-AZ.md) through region and availability zones.
+- AWS manages its [global architecture through region and availability zones](AWS-Global-Architecture-Region-AZ.md).
 - [Amazon Resouce Name (ARN)](https://docs.aws.amazon.com/general/latest/gr/aws-arns-and-namespaces.html) uniquely identify AWS resources.
 
 <table>
@@ -261,9 +261,9 @@
 
 # How to use Elastic Load Balancer on AWS?
 
-![img.png](1_NetworkingAndContentDelivery/ElasticLodBalancer/assests/AWS_Application_Load_Balancer.drawio.png)
+![img.png](1_NetworkingAndContentDelivery/ElasticLoadBalancer/assests/AWS_Application_Load_Balancer.drawio.png)
 
-[Read more](1_NetworkingAndContentDelivery/ElasticLodBalancer/Readme.md)
+[Read more](1_NetworkingAndContentDelivery/ElasticLoadBalancer/Readme.md)
 
 # Upload Image using Amazon S3 and Lambda
 
@@ -310,6 +310,7 @@
 - [Amazon SQS vs SNS](../1_HLDDesignComponents/4_MessageBrokers/KafkaVsRabbitMQVsSQSVsSNS.md)
 - [Amazon S3 vs EFS vs EBS](7_StorageServices/S3vsEFSvsEBS.md)
 - [Amazon ECS vs EKS vs Fargate](4_ComputeServices/EKSvsECSvsFargate.md)
+- [Amazon API Gateway vs ELB](1_NetworkingAndContentDelivery/AmazonAPIGatewayVsELB.md)
 
 # AWS - Various Services
 
@@ -321,7 +322,7 @@
  :star: [AWS Cloud Formation](3_InfraAutomation/AWSCloudFormation/Readme.md)                  | [AWS Infrastructure Automation](3_InfraAutomation)                        | Infrastructure as a CODE <br/>- Configure & manage complete AWS infrastructure through cloudformation templates ( yaml or json ).                                                                                                    |
  :star: [Amazon CloudFront](1_NetworkingAndContentDelivery/AmazonCloudFront.md)               | [Networking & Content Delivery Service](1_NetworkingAndContentDelivery)   | AWS Low-Latency [CDN Service](../1_HLDDesignComponents/0_SystemGlossaries/CDNs.md), which securely delivers content with `low latency and high transfer speeds`                                                                      |
  :star: [Amazon API Gateway](1_NetworkingAndContentDelivery/AmazonAPIGateway/Readme.md)                     | [Networking & Content Delivery Service](1_NetworkingAndContentDelivery)   | Serverless API service for API development.                                                                                                                                                                                          |
- :star: [Amazon Elastic Load Balancer](1_NetworkingAndContentDelivery/ElasticLodBalancer/Readme.md) | [Networking & Content Delivery Service](1_NetworkingAndContentDelivery)   | Fully Managed `AWS Load Balancer Service`                                                                                                                                                                                            |
+ :star: [Amazon Elastic Load Balancer](1_NetworkingAndContentDelivery/ElasticLoadBalancer/Readme.md) | [Networking & Content Delivery Service](1_NetworkingAndContentDelivery)   | Fully Managed `AWS Load Balancer Service`                                                                                                                                                                                            |
  :star: [Amazon EC2](4_ComputeServices/AmazonEC2/ReadMe.md)                                         | [Compute Service](4_ComputeServices)                                      | `Self-Managed Virtual Machine` that run the application in the cloud.                                                                                                                                                                |
  :star: [AWS EC2 AutoScaling](4_ComputeServices/AmazonEC2/AutoScalingGroup/README.md)               | [Compute Service](4_ComputeServices)                                      | Auto-scaling of [EC2 instances](4_ComputeServices/AutoScalingGroup/README.md), based on demand & traffic (CPU, Memory).                                                                                                              |
  :star: [AWS Fargate ](4_ComputeServices/AWSFargate.md)                                       | [Compute Service](4_ComputeServices)                                      | Serverless compute for containers. <br/>- Compatible with both [EKS](4_ComputeServices/AmazonEKS.md) & [ECS](4_ComputeServices/AmazonECS/README.md) i.e. these services can run with Fargate as deployment option, instead of [EC2](4_ComputeServices/AmazonEC2/ReadMe.md). |

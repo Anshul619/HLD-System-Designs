@@ -2,6 +2,7 @@
 # Amazon ELB - Elastic Load Balancer
 - [Amazon ELB - Elastic Load Balancer](https://docs.aws.amazon.com/elasticloadbalancing) automatically distributes your incoming traffic across multiple targets, such as [EC2 instances](../../4_ComputeServices/AmazonEC2), [containers](../../4_ComputeServices/AmazonECS), and IP addresses, in [one or more Availability Zones](../../AWS-Global-Architecture-Region-AZ.md). 
 - It monitors the `health of its registered targets` and [routes traffic only to the healthy targets](../../../1_HLDDesignComponents/0_SystemGlossaries/LoadBalancer.md).
+- [ELB vs API Gateway](../AmazonAPIGatewayVsELB.md)
 
 ![img.png](assests/AWS_Application_Load_Balancer.drawio.png)
 

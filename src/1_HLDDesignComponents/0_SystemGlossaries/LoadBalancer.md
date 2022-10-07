@@ -4,7 +4,7 @@
 - LB helps to spread the traffic across a cluster of servers to improve responsiveness and availability of applications, websites or databases.
 - LB also keeps track of the status of all the resources while distributing requests.
 - If a server is not available to take new requests or is NOT responding or has elevated error rate, LB will stop sending traffic to such a server.
-- In AWS, [Elastic Load Balancer](../../2_AWSComponents/1_NetworkingAndContentDelivery/ElasticLodBalancer/Readme.md) is used for the load balancing.
+- In AWS, [Elastic Load Balancer](../../2_AWSComponents/1_NetworkingAndContentDelivery/ElasticLoadBalancer/Readme.md) is used for the load balancing.
 
 ## Benefits of Load Balancing
 - Users experience faster, uninterrupted service.

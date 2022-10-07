@@ -10,7 +10,7 @@
 # AutoScaling
 
 ## AutoScaling of "Service A" App Servers
-- Use [Elastic Load Balancing](../../2_AWSComponents/1_NetworkingAndContentDelivery/ElasticLodBalancer/Readme.md) ( with [AWS AutoScaling](../../2_AWSComponents/4_ComputeServices/AmazonEC2/AutoScalingGroup/README.md) configured )
+- Use [Elastic Load Balancing](../../2_AWSComponents/1_NetworkingAndContentDelivery/ElasticLoadBalancer/Readme.md) ( with [AWS AutoScaling](../../2_AWSComponents/4_ComputeServices/AmazonEC2/AutoScalingGroup/README.md) configured )
 - Or we can implement our own auto-scaling (i.e. delete/add another app server), based on app server's memory usage/CPU usage, heart beat etc.
 
 ## AutoScaling of "Notification queue" workers

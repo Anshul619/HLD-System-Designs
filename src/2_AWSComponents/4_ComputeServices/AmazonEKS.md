@@ -7,7 +7,7 @@
 - There is no need to manually set up credentials for authenticating with the Kubernetes control plane. 
 - The IAM integration enables you to use [IAM](../2_SecurityAndIdentityServices/AWSIAM.md) to directly authenticate with the control plane itself and provide fine granular access to the public endpoint of your [Kubernetes](../../1_HLDDesignComponents/6_DevOps/Kubernates.md) control plane.
 
-![img.png](../1_NetworkingAndContentDelivery/ElasticLodBalancer/assests/AWS_Application_Load_Balancer.drawio.png)
+![img.png](../1_NetworkingAndContentDelivery/ElasticLoadBalancer/assests/AWS_Application_Load_Balancer.drawio.png)
 
 # Modular and Scalable Amazon EKS Architecture on AWS
 
