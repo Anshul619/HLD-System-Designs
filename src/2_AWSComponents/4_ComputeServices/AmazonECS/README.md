@@ -4,7 +4,7 @@
 - You can use it to run, stop, and manage containers on a cluster.
 - Amazon ECS reduces the burden of setting up network, compute and security configurations, and managing scalability. 
 - Up to `5,000 instances per cluster`, can be launched in ECS.
-- For example, you don’t need to build a generalized abstraction if you need a load balancer—ECS seamlessly integrates features such as [AWS Application Load Balancer (ALB)](../../1_NetworkingAndContentDelivery/ElasticLodBalancer/ElasticLoadBalancer.md) and Network Load Balancer (NLB).
+- For example, you don’t need to build a generalized abstraction if you need a load balancer—ECS seamlessly integrates features such as [AWS Application Load Balancer (ALB)](../../1_NetworkingAndContentDelivery/ElasticLodBalancer/Readme.md) and Network Load Balancer (NLB).
 - [Amazon EKS vs ECS vs Fargate](../EKSvsECSvsFargate.md)
 
 ![img.png](../../1_NetworkingAndContentDelivery/ElasticLodBalancer/assests/AWS_Application_Load_Balancer.drawio.png)
