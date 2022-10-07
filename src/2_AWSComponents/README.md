@@ -82,16 +82,16 @@
     </tr>
     <tr>
       <td>
-        <a href="1_NetworkingAndContentDelivery">Load Balancer, API Gateway</a>
+        <a href="1_NetworkingAndContentDelivery">API Gateway, Load Balancer</a>
       </td>
       <td>
         <div class="container" style="background:white">
             <div>
-                <a href="1_NetworkingAndContentDelivery/ElasticLoadBalancer/Readme.md" target="_blank">
-                  <img src="https://static.wixstatic.com/media/e37c27_65bd886d7d284196a495daa7b2582486~mv2.png/v1/fill/w_560,h_560,al_c,lg_1,q_85,enc_auto/e37c27_65bd886d7d284196a495daa7b2582486~mv2.png" width="150">
-                </a>
                 <a href="1_NetworkingAndContentDelivery/AmazonAPIGateway/Readme.md" target="_blank">
                   <img src="https://www.prolim.com/wp-content/uploads/2019/09/amazon-api-gatewat-1.jpg" width="150">
+                </a>
+                <a href="1_NetworkingAndContentDelivery/ElasticLoadBalancer/Readme.md" target="_blank">
+                  <img src="https://static.wixstatic.com/media/e37c27_65bd886d7d284196a495daa7b2582486~mv2.png/v1/fill/w_560,h_560,al_c,lg_1,q_85,enc_auto/e37c27_65bd886d7d284196a495daa7b2582486~mv2.png" width="150">
                 </a>
             </div>
         </div>
@@ -320,7 +320,7 @@
  :star: [Amazon VPC](1_NetworkingAndContentDelivery/AmazonVPC.md)                              | [Networking & Content Delivery Service](1_NetworkingAndContentDelivery)   | Define and launch AWS resources in a logically isolated virtual network                                                                                                                                                              |
  :star: [AWS Cloud Formation](3_InfraAutomation/AWSCloudFormation/Readme.md)                  | [AWS Infrastructure Automation](3_InfraAutomation)                        | Infrastructure as a CODE <br/>- Configure & manage complete AWS infrastructure through cloudformation templates ( yaml or json ).                                                                                                    |
  :star: [Amazon CloudFront](1_NetworkingAndContentDelivery/AmazonCloudFront.md)               | [Networking & Content Delivery Service](1_NetworkingAndContentDelivery)   | AWS Low-Latency [CDN Service](../1_HLDDesignComponents/0_SystemGlossaries/CDNs.md), which securely delivers content with `low latency and high transfer speeds`                                                                      |
- :star: [Amazon API Gateway](1_NetworkingAndContentDelivery/AmazonAPIGatway/Readme.md)                     | [Networking & Content Delivery Service](1_NetworkingAndContentDelivery)   | Serverless API service for API development.                                                                                                                                                                                          |
+ :star: [Amazon API Gateway](1_NetworkingAndContentDelivery/AmazonAPIGateway/Readme.md)                     | [Networking & Content Delivery Service](1_NetworkingAndContentDelivery)   | Serverless API service for API development.                                                                                                                                                                                          |
  :star: [Amazon Elastic Load Balancer](1_NetworkingAndContentDelivery/ElasticLodBalancer/Readme.md) | [Networking & Content Delivery Service](1_NetworkingAndContentDelivery)   | Fully Managed `AWS Load Balancer Service`                                                                                                                                                                                            |
  :star: [Amazon EC2](4_ComputeServices/AmazonEC2/ReadMe.md)                                         | [Compute Service](4_ComputeServices)                                      | `Self-Managed Virtual Machine` that run the application in the cloud.                                                                                                                                                                |
  :star: [AWS EC2 AutoScaling](4_ComputeServices/AmazonEC2/AutoScalingGroup/README.md)               | [Compute Service](4_ComputeServices)                                      | Auto-scaling of [EC2 instances](4_ComputeServices/AutoScalingGroup/README.md), based on demand & traffic (CPU, Memory).                                                                                                              |

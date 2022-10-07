@@ -35,7 +35,7 @@
 - Lambda can be used to configure backup scripts for the application.
 
 # Who can invoke Lambda Functions? (event resources)
-- [Amazon API Gateway](../1_NetworkingAndContentDelivery/AmazonAPIGatway/Readme.md) - API Gateway can directly call AWS Lambda function.
+- [Amazon API Gateway](../1_NetworkingAndContentDelivery/AmazonAPIGateway/Readme.md) - API Gateway can directly call AWS Lambda function.
 - [Amazon S3](../7_StorageServices/AmazonS3.md) - S3 can be configured so that AWS Lambda function would be invoked automatically when a file is added in S3 bucket.
 - [Amazon SQS](../5_MessageBrokerServices/AmazonSQS.md) - SQS can be configured so that AWS Lambda function would be invoked automatically when a new message arrives in SQS Queue.
 - [Amazon DynamoDB](../6_DatabaseServices/AmazonDynamoDB.md)
