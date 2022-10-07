@@ -259,7 +259,7 @@
 
 [Read more](0_AWSDesigns/DesignMultiRegionActiveActiveArchitectureOnAWS/README.md)
 
-# How to use Application Load Balancer on AWS?
+# How to use Elastic Load Balancer on AWS?
 
 ![img.png](1_NetworkingAndContentDelivery/ElasticLodBalancer/assests/AWS_Application_Load_Balancer.drawio.png)
 
