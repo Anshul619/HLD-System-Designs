@@ -52,6 +52,19 @@
 
 ![img.png](https://miro.medium.com/max/1400/1*_KpXUpdyW8W37wsJjlnobw.jpeg)
 
+# Anatomy of a Lambda function
+
+````java
+/*
+- Event Object (book) - Data sent during Lambda Function Invocation
+- Context Object - Methods available to interact with runtime information (request ID, log group etc.)
+ */
+public String handleRequest(Book book, Context context) {
+    saveBook(book);
+    return book.getName() + " saved!";
+}
+````
+
 # Reference
 - [AWS Lambda (The Heart of Serverless)](https://rochisha-jaiswal70.medium.com/aws-lambda-the-heart-of-serverless-9a5cdcb6e27c)
 - [Invoking Lambda functions](https://docs.aws.amazon.com/lambda/latest/dg/lambda-invocation.html)

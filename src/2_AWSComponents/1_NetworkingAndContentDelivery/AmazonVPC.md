@@ -8,12 +8,15 @@
 - That way, you can access your public cloud resources as if they were on your own private network.
 
 # Name and explain some security products and features available in VPC?
-- `Security groups` - This acts as a firewall for the [EC2 instances](../4_ComputeServices/AmazonEC2), controlling inbound and outbound traffic at the instance level. 
+- [Security groups](https://docs.aws.amazon.com/vpc/latest/userguide/VPC_SecurityGroups.html)
+  - This acts as a firewall for the [EC2 instances](../4_ComputeServices/AmazonEC2), controlling inbound and outbound traffic at the instance level. 
   - Includes `Route Tables`, `IP Ranges`, `Subnets` etc.
-- `Network access control lists` - It acts as a firewall for the subnets, controlling inbound and outbound traffic at the subnet level.
-- `Flow logs` - These capture the inbound and outbound traffic from the network interfaces in your VPC.
+- [Network access control lists](https://docs.aws.amazon.com/vpc/latest/userguide/vpc-network-acls.html)
+  - It acts as a firewall for the subnets, controlling inbound and outbound traffic at the subnet level.
+- [Flow logs](https://docs.aws.amazon.com/vpc/latest/userguide/flow-logs.html) 
+  - These capture the inbound and outbound traffic from the network interfaces in your VPC.
 
 # How do you monitor Amazon VPC?
 - [CloudWatch](../8_MonitoringServices/AmazonCloudWatch.md)
-- `CloudWatch logs`
+- [CloudWatch logs](../8_MonitoringServices/AmazonCloudWatch.md)
 - `VPC Flow Logs`
