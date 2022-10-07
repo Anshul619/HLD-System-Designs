@@ -13,3 +13,17 @@
 
 ## Auditing
 ![img.png](https://docs.aws.amazon.com/whitepapers/latest/microservices-on-aws/images/image16.png)
+
+# Key Components
+
+## Compute Services
+- [AWS PrivateLink](../1_NetworkingAndContentDelivery/AWSPrivateLink.md)
+- [Amazon ECS](../4_ComputeServices/AmazonECS/README.md)
+- [Amazon EKS](../4_ComputeServices/AmazonEKS.md)
+- [AWS Lambda](../4_ComputeServices/AWSLambda.md)
+- [AWS Fargate](../4_ComputeServices/AWSFargate.md)
+
+## Data Store
+- [Amazon Elastic Cache](../6_DatabaseServices/AmazonElasticCache.md)
+- [Amazon Aurora](../6_DatabaseServices/AmazonAurora)
+- [Amazon DynamoDB](../6_DatabaseServices/AmazonDynamoDB.md)

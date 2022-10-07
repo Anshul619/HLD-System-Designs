@@ -18,7 +18,7 @@
             </div>
         </div>
       </td>
-       <td rowspan=13 width="150px">
+       <td rowspan=14 width="150px">
             <a href="3_InfraAutomation/AWSCloudFormation/Readme.md" target="_blank">
               <img src="https://i0.wp.com/www.australtech.net/wp-content/uploads/2019/05/cloudformation-logo.png" width="400">
             </a>
@@ -65,7 +65,24 @@
     </tr>
     <tr>
       <td>
-        <a href="1_NetworkingAndContentDelivery">Load Balancer, API Gateway, CDN</a>
+        <a href="1_NetworkingAndContentDelivery">CDN - Static Content (Image, Video)</a>
+      </td>
+      <td>
+        <div class="container" style="background:white">
+            <div>
+                <a href="1_NetworkingAndContentDelivery/AmazonCloudFront.md" target="_blank">
+                  <img src="https://ericknavarro.io/images/thumbnails/12.png" width="400">
+                </a>
+                <a href="7_StorageServices/AmazonS3.md" target="_blank">
+                  <img src="https://miro.medium.com/max/580/1*DHe24MbDHtbkOeIJzxrfdA.png" width="150">
+                </a>
+            </div>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <a href="1_NetworkingAndContentDelivery">Load Balancer, API Gateway</a>
       </td>
       <td>
         <div class="container" style="background:white">
@@ -75,9 +92,6 @@
                 </a>
                 <a href="1_NetworkingAndContentDelivery/AmazonAPIGateway.md" target="_blank">
                   <img src="https://www.prolim.com/wp-content/uploads/2019/09/amazon-api-gatewat-1.jpg" width="150">
-                </a>
-                <a href="1_NetworkingAndContentDelivery/AmazonCloudFront.md" target="_blank">
-                  <img src="https://ericknavarro.io/images/thumbnails/12.png" width="400">
                 </a>
             </div>
         </div>
@@ -235,9 +249,9 @@
 
 # How to use Application Load Balancer on AWS?
 
-![img.png](1_NetworkingAndContentDelivery/assests/AWS_Application_Load_Balancer.drawio.png)
+![img.png](1_NetworkingAndContentDelivery/ElasticLodBalancer/assests/AWS_Application_Load_Balancer.drawio.png)
 
-[Read more](1_NetworkingAndContentDelivery/ElasticLoadBalancer.md)
+[Read more](1_NetworkingAndContentDelivery/ElasticLodBalancer/ElasticLoadBalancer.md)
 
 # Design Multi-Region Active-Active Architecture On AWS
 
@@ -306,7 +320,7 @@
  :star: [Amazon VPC](1_NetworkingAndContentDelivery/AmazonVPC.md)                              | [Networking & Content Delivery Service](1_NetworkingAndContentDelivery)   | Define and launch AWS resources in a logically isolated virtual network                                                                                                                                                              |
  :star: [AWS Cloud Formation](3_InfraAutomation/AWSCloudFormation/Readme.md)                  | [AWS Infrastructure Automation](3_InfraAutomation)                        | Infrastructure as a CODE <br/>- Configure & manage complete AWS infrastructure through cloudformation templates ( yaml or json ).                                                                                                    |
  :star: [Amazon CloudFront](1_NetworkingAndContentDelivery/AmazonCloudFront.md)               | [Networking & Content Delivery Service](1_NetworkingAndContentDelivery)   | AWS Low-Latency [CDN Service](../1_HLDDesignComponents/0_SystemGlossaries/CDNs.md), which securely delivers content with `low latency and high transfer speeds`                                                                      |
- :star: [Amazon Elastic Load Balancer](1_NetworkingAndContentDelivery/ElasticLoadBalancer.md) | [Networking & Content Delivery Service](1_NetworkingAndContentDelivery)   | Fully Managed `AWS Load Balancer Service`                                                                                                                                                                                            |
+ :star: [Amazon Elastic Load Balancer](1_NetworkingAndContentDelivery/ElasticLodBalancer/ElasticLoadBalancer.md) | [Networking & Content Delivery Service](1_NetworkingAndContentDelivery)   | Fully Managed `AWS Load Balancer Service`                                                                                                                                                                                            |
  :star: [Amazon EC2](4_ComputeServices/AmazonEC2/ReadMe.md)                                         | [Compute Service](4_ComputeServices)                                      | `Self-Managed Virtual Machine` that run the application in the cloud.                                                                                                                                                                |
  :star: [AWS EC2 AutoScaling](4_ComputeServices/AmazonEC2/AutoScalingGroup/README.md)               | [Compute Service](4_ComputeServices)                                      | Auto-scaling of [EC2 instances](4_ComputeServices/AutoScalingGroup/README.md), based on demand & traffic (CPU, Memory).                                                                                                              |
  :star: [AWS Fargate ](4_ComputeServices/AWSFargate.md)                                       | [Compute Service](4_ComputeServices)                                      | Serverless compute for containers. <br/>- Compatible with both [EKS](4_ComputeServices/AmazonEKS.md) & [ECS](4_ComputeServices/AmazonECS/README.md) i.e. these services can run with Fargate as deployment option, instead of [EC2](4_ComputeServices/AmazonEC2/ReadMe.md). |
@@ -321,7 +335,7 @@
  :star: [Amazon Event Bridge](5_MessageBrokerServices/AmazonEventBridge.md)                   | [Message Broker Service](5_MessageBrokerServices)                         | Fully Managed Event Bus Service                                                                                                                                                                                                      |
  :star: [Amazon CloudWatch](8_MonitoringServices/AmazonCloudWatch.md)                         | [Monitoring Service](8_MonitoringServices)                                | To monitor AWS Resources & set Alarms                                                                                                                                                                                                |
  :star: [Amazon OpenSearch service](6_DatabaseServices/AmazonOpenSearch.md)                   | [Database Service](6_DatabaseServices)                                    | Successor to [Amazon ElasticSearch](../1_HLDDesignComponents/3_DatabaseComponents/Search-Engines/ElasticSearch) Service, includes built in OpenSearch Dashboard and Kibana.                                                          |
- [Amazon API Gateway](1_NetworkingAndContentDelivery/AmazonAPIGateway.md)                     | [Networking & Content Delivery Service](1_NetworkingAndContentDelivery)   | Serverless API service for API development.                                                                                                                                                                                          |
+ [Amazon API Gateway](1_NetworkingAndContentDelivery/AmazonAPIGatway/AmazonAPIGateway.md)                     | [Networking & Content Delivery Service](1_NetworkingAndContentDelivery)   | Serverless API service for API development.                                                                                                                                                                                          |
  [Amazon SNS](5_MessageBrokerServices/AmazonSNS.md)                                           | [Message Broker Service](5_MessageBrokerServices)                         | Fully Managed Pub/Sub messaging, SMS, email, and mobile push notifications                                                                                                                                                           |
  [Amazon MQ](5_MessageBrokerServices/AmazonMQ.md)                                             | [Message Broker Service](5_MessageBrokerServices)                         | Open Source ([ActiveMQ](../1_HLDDesignComponents/4_MessageBrokers/ActiveMQ.md), [RabbitMQ](../1_HLDDesignComponents/4_MessageBrokers/RabbitMQ.md)) Queue Migration service                                                           |
  [Amazon Kinesis](5_MessageBrokerServices/AmazonKinesis.md)                                   | [Message Broker Service](5_MessageBrokerServices)                         | Easily collect, process, and analyze video and data streams in real time.                                                                                                                                                            |
@@ -338,7 +352,7 @@
  [Amazon Config](8_MonitoringServices/AWSConfig.md)                                           | [Monitoring Service](8_MonitoringServices)                                | To monitor Configration changes of AWS Resources                                                                                                                                                                                     |
  [Amazon EMR](4_ComputeServices/AmazonEMR.md)                                                 | [Compute Service](4_ComputeServices)                                      | Fully Managed Service for [Apache Spark](../1_HLDDesignComponents/5_BigDataComponents/ApacheSpark.md)                                                                                                                                |
  [AWS Step Functions](4_ComputeServices/AWSStepFunctions.md)                                  | [Compute Service](4_ComputeServices)                                      | Low-code, visual workflow service.                                                                                                                                                                                                   |
- [AWS Private Link](https://aws.amazon.com/privatelink)                                       | [Networking & Content Delivery Service](1_NetworkingAndContentDelivery)   | Establish private connectivity between [Amazon VPC](1_NetworkingAndContentDelivery/AmazonVPC.md) and services hosted on AWS or on-premises, without exposing data to the internet.                                                   |
+ [AWS Private Link](1_NetworkingAndContentDelivery/AWSPrivateLink.md)                      | [Networking & Content Delivery Service](1_NetworkingAndContentDelivery)   | Establish private connectivity between [Amazon VPC](1_NetworkingAndContentDelivery/AmazonVPC.md) and services hosted on AWS or on-premises, without exposing data to the internet.                                                   |
  [AWS Elastic Beanstalk](https://aws.amazon.com/elasticbeanstalk/)                            | [AWS Infrastructure Automation](3_InfraAutomation)                        | Servers Management - Easy to begin, Impossible to outgrow                                                                                                                                                                            |
  [Amazon WorkSpaces](https://aws.amazon.com/workspaces/)                                      | [End User Computing](https://aws.amazon.com/products/end-user-computing/) | Secure, reliable, and scalable access to persistent desktops from any location.                                                                                                                                                      |
 
