@@ -4,7 +4,7 @@
 - CloudFront is perfect for `Static content like WebSite, Media, Image, Video, Songs, Documents etc.` ( stored in [Amazon S3 bucket](../7_StorageServices/AmazonS3.md), for example)
 
 # Amazon S3 + Amazon CloudFront: A Match Made in the Cloud
-- Instead of [directly accessing the S3 resource](https://aws.amazon.com/blogs/networking-and-content-delivery/amazon-s3-amazon-cloudfront-a-match-made-in-the-cloud/), we should use [CloudFront distribution](../1_NetworkingAndContentDelivery/AmazonCloudFront.md) in the middle (which acts as [CDN](../../1_HLDDesignComponents/0_SystemGlossaries/CDNs.md))
+- Instead of [directly accessing the S3 resource](https://aws.amazon.com/blogs/networking-and-content-delivery/amazon-s3-amazon-cloudfront-a-match-made-in-the-cloud/), we should use [CloudFront distribution](../1_NetworkingAndContentDelivery/AmazonCloudFront.md) in the middle (which acts as a [CDN](../../1_HLDDesignComponents/0_SystemGlossaries/CDNs.md))
 
 ![img.png](https://d2908q01vomqb2.cloudfront.net/5b384ce32d8cdef02bc3a139d4cac0a22bb029e8/2018/06/27/4-v-2.png)
 
@@ -37,10 +37,10 @@
 - Short time-to-live (TTL) (as little as 0 seconds, for dynamic content)
 - Optimized for AWS
 
-# CloudFront Point-Of-Presence Footprint
-- [Read more about Point of presence](../AWS-Global-Architecture-Region-AZ.md#points-of-presence)
-
+# Point-Of-Presence Footprint in CloudFront
 ![img.png](https://d2908q01vomqb2.cloudfront.net/5b384ce32d8cdef02bc3a139d4cac0a22bb029e8/2022/06/17/CloudFront_400-1024x580.png)
+
+[Read more about Point of presence](../AWS-Global-Architecture-Region-AZ.md#points-of-presence)
 
 # What is geo-targeting in CloudFront?
 - [Geo-Targeting](https://aws.amazon.com/blogs/networking-and-content-delivery/leverage-amazon-cloudfront-geolocation-headers-for-state-level-geo-targeting/) is a concept where `businesses can show personalized content to their audience` based on their geographic location without changing the URL. 

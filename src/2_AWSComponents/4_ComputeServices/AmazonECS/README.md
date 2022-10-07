@@ -14,6 +14,9 @@
 
 ![img.png](assests/ECS-Tasks.png)
 
+# DNS-based service discovery using ECS
+- [Amazon ECS]() now includes integrated service discovery that makes it easy for your containerized services to discover and connect with each other.
+
 # :star: Amazon ECR (Repository for Docker Images)
 - [Amazon Elastic Container Registry (Amazon ECR)](https://aws.amazon.com/ecr/) is a fully managed container registry offering high-performance hosting, so you can reliably deploy application images and artifacts anywhere.
 - Amazon ECR store, manage & deploy Docker container images.
