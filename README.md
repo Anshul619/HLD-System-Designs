@@ -260,6 +260,10 @@ This repo contains the various system design components info, questions and solu
 - [TypeScript](src/5_ProgrammingLanguages/4_FrontEnd/TypeScript.md)
 - [Angular8](src/5_ProgrammingLanguages/4_FrontEnd/Angular8.md)
 
+# API Dev, Documentation
+- :star: [Swagger](src/5_ProgrammingLanguages/5_API_Dev_Documentation/Swagger/Readme.md)
+- [Open API Spec](src/5_ProgrammingLanguages/5_API_Dev_Documentation/Swagger/OpenAPISpec.md)
+
 # Other Components
 - :star: [Apache Zookeeper](src/1_HLDDesignComponents/6_DevOps/ApacheZookeeper.md)
 - :star: [Open Source Contributions](src/1_HLDDesignComponents/OpenSourceContributions.md)
