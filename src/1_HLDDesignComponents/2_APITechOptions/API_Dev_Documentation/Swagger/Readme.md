@@ -1,6 +1,9 @@
 # Introduction
 - [Swagger](https://swagger.io/) can be used for API development (to specify API skeleton, request, response body etc.) and documentation.
-- [Open API Specification](OpenAPISpec.md) (formerly called Swagger Specification) is supported in swagger.
+
+# Key Components
+- [Open API Specification](OpenAPISpec.md) (formerly called Swagger Specification)
+- [Swagger Editor](https://editor-next.swagger.io/)
 
 # API Development Steps (with GoLang)
 
