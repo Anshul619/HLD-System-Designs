@@ -1,10 +1,10 @@
 # OpenAPI
-- [OpenAPI Specification](https://swagger.io/docs/specification/about/) (formerly Swagger Specification) is an API description format for REST APIs. 
-- API specifications can be written in YAML or JSON.
+- [OpenAPI Specification](https://swagger.io/docs/specification/about/) (formerly [Swagger](Readme.md) Specification) is an API description format for [REST APIs](../../REST.md). 
+- API specifications can be written in [YAML](https://en.wikipedia.org/wiki/YAML) or [JSON](https://www.w3schools.com/js/js_json_intro.asp).
 
 An OpenAPI file allows you to describe your entire API, including:
-- Available endpoints (/users) and operations on each endpoint (GET /users, POST /users)
-- Operation parameters Input and output for each operation
+- Available endpoints (`/users`) and operations on each endpoint (`GET /users`, `POST /users`)
+- Operation parameters - Input and output for each operation
 - Authentication methods
 - Contact information, license, terms of use and other information.
 

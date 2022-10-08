@@ -5,5 +5,5 @@
 - Node, Python, PHP - Single-Threaded
 
 # API Dev, Documentation 
-- [Swagger](5_API_Dev_Documentation/Swagger/Readme.md)
-- [Open API Spec](5_API_Dev_Documentation/Swagger/OpenAPISpec.md)
+- [Swagger](../1_HLDDesignComponents/2_APITechOptions/API_Dev_Documentation/Swagger/Readme.md)
+- [Open API Spec](../1_HLDDesignComponents/2_APITechOptions/API_Dev_Documentation/Swagger/OpenAPISpec.md)

@@ -151,7 +151,7 @@ func NewHandler(c *Config) {
 ````
 
 ## Step3 - Generate Documentation
-- swagger.yaml can be generated from swagger.json, which be used for the documentation.
+- `swagger.yaml` can be generated from `swagger.json`, which be used for the documentation.
 
 ````script
 # TBD - Command
