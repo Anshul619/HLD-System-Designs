@@ -259,37 +259,43 @@
 
 [Read more](0_AWSDesigns/DesignMultiRegionActiveActiveArchitectureOnAWS/README.md)
 
-# How to use Elastic Load Balancer on AWS?
-
-![img.png](1_NetworkingAndContentDelivery/ElasticLoadBalancer/assests/AWS_Application_Load_Balancer.drawio.png)
-
-[Read more](1_NetworkingAndContentDelivery/ElasticLoadBalancer/Readme.md)
-
 # Upload Image using Amazon S3 and Lambda
 
 ![img.png](0_AWSDesigns/DesignUploadImageAWSLambdaS3/assets/UploadImage-Lambda.drawio.png)
 
 [Read more](0_AWSDesigns/DesignUploadImageAWSLambdaS3/README.md)
 
-# Amazon EventBridge
-
-![img.png](5_MessageBrokerServices/assests/eventbridge/EventBridge.png)
-
-[Read more](5_MessageBrokerServices/AmazonEventBridge.md)
-
-# Fanout Pattern with Amazon SNS & SQS
+# FanOut Pattern with Amazon SNS & SQS
 
 ![img.png](0_AWSDesigns/FanOutPatternSNSSQS/assets/FanOutPatternSQSSNS.png)
 
 [Read more](0_AWSDesigns/FanOutPatternSNSSQS/README.md)
 
-# Amazon ECS - Tasks, Fargate
+# Amazon API Gateway - Features
+
+![img.png](1_NetworkingAndContentDelivery/AmazonAPIGateway/assets/AmazonAPIGateway_Features.drawio.png)
+
+[Read more](1_NetworkingAndContentDelivery/AmazonAPIGateway/Readme.md)
+
+# Amazon Elastic Load Balancer
+
+![img.png](1_NetworkingAndContentDelivery/ElasticLoadBalancer/assests/AWS_Application_Load_Balancer.drawio.png)
+
+[Read more](1_NetworkingAndContentDelivery/ElasticLoadBalancer/Readme.md)
+
+# Amazon EventBridge - Targets, Rules etc.
+
+![img.png](5_MessageBrokerServices/assests/eventbridge/EventBridge.png)
+
+[Read more](5_MessageBrokerServices/AmazonEventBridge.md)
+
+# Amazon ECS - Tasks, Fargate etc.
 
 ![img.png](4_ComputeServices/AmazonECS/assests/ECS-Tasks.png)
 
 [Read more](4_ComputeServices/AmazonECS/README.md)
 
-# AWS Step Functions with Lambda
+# AWS Step Functions - Lambda
 
 ![img.png](4_ComputeServices/assests/AWSStepFunctions.png)
 

@@ -16,6 +16,8 @@
 
 # Key Features of Amazon API Gateway
 
+![img.png](assets/AmazonAPIGateway_Features.drawio.png)
+
 ## Support for RESTful APIs and WebSocket APIs
 
 ## Private integrations with AWS ELB & AWS Cloud Map
@@ -31,7 +33,7 @@
 - You can also use [AWS Lambda functions](../../4_ComputeServices/AWSLambda.md) to verify and authorize bearer tokens such as JWT tokens or SAML assertions.
 
 ## Caching of API response
-- The response of the APIs, can be cached in the API Gateway.
+- The [response of the APIs can be cached](https://docs.aws.amazon.com/apigateway/latest/developerguide/api-gateway-caching.html) in the API Gateway.
 
 ## API Keys for Third-Party Developers
 - If you’re using REST APIs, API Gateway helps you manage the ecosystem of third-party developers accessing your APIs.
