@@ -1,9 +1,10 @@
 
 # Introduction
 - [gRPC](https://grpc.io) is a `modern open source high performance Remote Procedure Call` framework that can run in any environment.
+- [gRPC Performance Multi-language Dashboard](https://performance-dot-grpc-testing.appspot.com/explore?dashboard=5180705743044608)
 
-gRPC is contract-based 
-- a contract needs to be available on both sides of communication to make sense of data going between them. 
+gRPC is contract-based, 
+- A Contract needs to be available on both sides of communication to make sense of data going between them. 
 - To define the contracts, gRPC uses a declarative language called [Protocol Buffers (Protobuf)](https://developers.google.com/protocol-buffers/).
 
 # :thumbsup: Advantages of gRPC
@@ -27,3 +28,4 @@ gRPC is contract-based
 
 # Reference
 - [GPRC is 7 to 10 times faster than REST](https://blog.dreamfactory.com/grpc-vs-rest-how-does-grpc-compare-with-traditional-rest-apis/)
+- [Is gRPC(HTTP/2) faster than REST with HTTP/2?](https://stackoverflow.com/questions/44877606/is-grpchttp-2-faster-than-rest-with-http-2)
