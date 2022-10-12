@@ -1,9 +1,10 @@
 
 # Apache Casandra
-- [Apache Cassandra](https://cassandra.apache.org/_/index.html) is a free and open-source, distributed & [wide column store](../ReadMe.md#nosql---intro-different-nosql-types). ( can handle large amount of data )
+- [Apache Cassandra](https://cassandra.apache.org/_/index.html) is a free and open-source, distributed & [wide column store](../ReadMe.md#nosql---intro-different-nosql-types).
 - It is a NoSQL database management system designed to handle large amounts of data across many commodity servers, providing [high availability with no single point of failure](../../0_SystemGlossaries/FaultTolerance&DisasterRecovery.md). 
+- Since [Casandra]() is [append-only db storage](../../0_SystemGlossaries/AppendOnlyDBStorages.md), it can handle [large amount data with high throughput](../../0_SystemGlossaries/LatencyThroughput.md).
 - Cassandra offers robust support for [clusters spanning multiple data centers](../../0_SystemGlossaries/ServersCluster.md), with asynchronous masterless replication allowing low latency operations for all clients.
-- Casandra is based modeled after [Amazon DynamoDB](../../../2_AWSComponents/6_DatabaseServices/AmazonDynamoDB.md) & BigTable.
+- Casandra is based modeled after [Amazon DynamoDB](../../../2_AWSComponents/6_DatabaseServices/AmazonDynamoDB.md) & [BigTable](https://cloud.google.com/bigtable).
 - [Amazon KeySpaces](../../../2_AWSComponents/6_DatabaseServices/AmazonKeySpaces.md) can be used to deploy Casandra on AWS.
 
 # :star: Real world use cases of Casandra
@@ -33,13 +34,16 @@
 - [Twillo - Send Message API Design](../../../3_HLDDesignProblems/TwilloSendMessageAPI)
 - [Exploring Data @ Netflix](https://netflixtechblog.com/exploring-data-netflix-9d87e20072e3)
 
-# Ideal Use Cases
+# :star: Ideal Use Cases
 
 Large amount of data like,
 - Processing server logs
 - Social media posts
 - PDF documents
 - Emails etc.
+
+# :star: Casandra vs MongoDB
+- [Read more](CasandraVsMongoDB.md)
 
 # Features
 
@@ -91,6 +95,8 @@ Large amount of data like,
 
 # Who created Casandra?
 - Released in 2008 by Facebook and developed initially by Indians Avinash Lakshman and Prashant Malik, Cassandra was initially used in [Facebook’s inbox search feature](https://m.facebook.com/nt/screen/?params=%7B%22note_id%22%3A10158772759272200%7D&path=%2Fnotes%2Fnote%2F&paipv=0&eav=AfYuSXXQPZ5fvm0_ScPdSlfj5BEFhRVT3iy_6Rsz7NZDbQ2vfq9opnedmTLSjG1aZBA&_rdr).
+
+
 
 # Sample Apps
 - [Example: Deploying Cassandra with a StatefulSet](https://kubernetes.io/docs/tutorials/stateful-application/cassandra/)

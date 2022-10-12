@@ -31,7 +31,7 @@ Relational databases store data in rows and columns.
 
 ![img.png](NoSQL-Databases/assets/NoSQL-DifferentDBtypes.drawio.png)
 
-[Read more](NoSQL-Databases)
+[Read more](NoSQL-Databases/Readme.md)
 
 # SQL - Different Databases
 
