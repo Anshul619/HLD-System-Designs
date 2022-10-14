@@ -137,7 +137,7 @@ This repo contains the various system design components info, questions and solu
                 <a href="src/1_HLDDesignComponents/3_DatabaseComponents/NoSQL-Databases/ApacheCasandra.md" target="_blank">
                   <img src="https://fontslogo.com/wp-content/uploads/2018/12/Apache-Cassandra-Logo-Font.jpg" width="150">
                 </a>
-                <a href="src/2_AWSComponents/6_DatabaseServices/AmazonDynamoDB.md">
+                <a href="src/2_AWSComponents/6_DatabaseServices/AmazonDynamoDB/Readme.md">
                   <img src="https://www.magnitude.com/assets/images/Logos/Data-connector-logos/edit_dynamodb.png" width="150">
                 </a>
                 <a href="/src/1_HLDDesignComponents/3_DatabaseComponents/NoSQL-Databases/MongoDB" target="_blank">

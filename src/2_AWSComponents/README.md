@@ -193,7 +193,7 @@
                 <a href="6_DatabaseServices/AmazonRDS.md" target="_blank">
                   <img src="https://secpigeon.com/media/2022/04/RDS.png" width="150">
                 </a>
-                <a href="6_DatabaseServices/AmazonDynamoDB.md" target="_blank">
+                <a href="6_DatabaseServices/AmazonDynamoDB/Readme.md" target="_blank">
                   <img src="https://user-images.githubusercontent.com/6509926/70553550-f033b980-1b40-11ea-9192-759b3b1053b3.png" width="150">
                 </a>
                 <a href="6_DatabaseServices/AmazonKeySpaces.md" target="_blank">
