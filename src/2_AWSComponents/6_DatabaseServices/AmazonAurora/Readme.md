@@ -8,7 +8,12 @@
 
 ![img.png](assests/aurora.png)
 
-## Amazon Aurora High Availability & Scaling (through read replicas )
+# Important Points
+- [Aurora DB Clusters](AuroraDBClusters.md)
+- [Aurora Global Database](AuroraGlobalDatabase.md)
+- [Aurora Serverless](AuroraServerless.md)
+
+# Amazon Aurora High Availability & Scaling (through read replicas )
 - Aurora is [highly available](../../../1_HLDDesignComponents/0_SystemGlossaries/HighAvailability.md) and fail over is instantaneous. 
   - Automated fail over for master in less than 30 seconds.
 - It automatically maintains `6 copies of the data across 3 Availability Zones` and automatically backs up data in [Amazon S3](../../7_StorageServices/AmazonS3.md).
@@ -20,12 +25,7 @@
 
 ![img.png](assests/aurora_high_availability_img.png)
 
-## Important Points
-- [Aurora DB Clusters](AuroraDBClusters.md)
-- [Aurora Global Database](AuroraGlobalDatabase.md)
-- [Aurora Serverless](AuroraServerless.md)
-
-## Aurora Security ( similar to RDS )
+# Aurora Security ( similar to RDS )
 - Encryption at rest using KMS
 - Automated backups, snapshots & replicas are also encrypted.
 - Encryption in flight/transmit using SSL
@@ -34,6 +34,6 @@
 # Master-Slave vs Read Replica?
 - [Read More](https://www.quora.com/What-does-it-mean-by-read-replica-in-Amazon-RDS-Is-that-similar-to-the-slave-server)
 
-## References
+# References
 - :star: [Amazon Aurora Global Database Design Patterns for HA and DR | Amazon Web Services](https://www.youtube.com/watch?v=bbiWciJSouY)
 - [Amazon Aurora Introduction - By Stephane Maarek](https://www.youtube.com/watch?v=ZCt3ctVfGIk)

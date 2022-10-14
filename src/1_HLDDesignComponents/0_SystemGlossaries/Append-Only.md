@@ -22,3 +22,6 @@ Log-structured data structures found in Log-structured file systems and database
 | [Amazon Aurora Global Database - Replication](../../2_AWSComponents/6_DatabaseServices/AmazonAurora/AuroraGlobalDatabase.md) | -       |
 | [RocksDB](../3_DatabaseComponents/NoSQL-Databases/RocksDB.md)                                                                | -       |
 
+# References
+- [Building an Append-only Log From Scratch](https://eileen-code4fun.medium.com/building-an-append-only-log-from-scratch-e8712b49c924)
+- 
