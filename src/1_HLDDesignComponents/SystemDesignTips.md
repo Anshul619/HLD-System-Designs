@@ -12,7 +12,7 @@
 
 ## Identify Read/Write Ratio of the apis/queries
 - If it's a READ heavy microservice, the best decision would be to use [Redis](3_DatabaseComponents/In-Memory-Cache/Redis) or `multi-read database instances`.
-- If it's a WRITE heavy microservice ( `HIGH throughput` ), the best decision would be to use either [Kafka](4_MessageBrokers/Kafka.md) ( as message broker ) or [DynamoDB](../2_AWSComponents/6_DatabaseServices/AmazonDynamoDB.md) ( as data store ).
+- If it's a WRITE heavy microservice ( `HIGH throughput` ), the best decision would be to use either [Kafka](4_MessageBrokers/Kafka.md) ( as message broker ) or [DynamoDB](../2_AWSComponents/6_DatabaseServices/AmazonDynamoDB/Readme.md) ( as data store ).
 - [How to choose database in the system design?](3_DatabaseComponents/DecideDatabase.md)
 
 ## Use Redis for caching layer
@@ -23,8 +23,8 @@
 ## Scalability - Data Sharding of the datastore
 - To scale the data store horizontally ( i.e. improve `write throughput` ), shard the databases. ( through consistent hashing technique etc. )
 
-## Use Leverage Managed Infrastructures like [Amazon S3](../2_AWSComponents/7_StorageServices/AmazonS3.md), [Amazon Aurora](../2_AWSComponents/6_DatabaseServices/AmazonAurora/Readme.md), [DynamoDB](../2_AWSComponents/6_DatabaseServices/AmazonDynamoDB.md) etc.
-- We should use `Leverage Managed Infrastructures` like [Amazon S3](../2_AWSComponents/7_StorageServices/AmazonS3.md), [Amazon Aurora](../2_AWSComponents/6_DatabaseServices/AmazonAurora/Readme.md), [DynamoDB](../2_AWSComponents/6_DatabaseServices/AmazonDynamoDB.md) etc.
+## Use Leverage Managed Infrastructures like [Amazon S3](../2_AWSComponents/7_StorageServices/AmazonS3.md), [Amazon Aurora](../2_AWSComponents/6_DatabaseServices/AmazonAurora/Readme.md), [DynamoDB](../2_AWSComponents/6_DatabaseServices/AmazonDynamoDB/Readme.md) etc.
+- We should use `Leverage Managed Infrastructures` like [Amazon S3](../2_AWSComponents/7_StorageServices/AmazonS3.md), [Amazon Aurora](../2_AWSComponents/6_DatabaseServices/AmazonAurora/Readme.md), [DynamoDB](../2_AWSComponents/6_DatabaseServices/AmazonDynamoDB/Readme.md) etc.
 - Sometimes, we must have to consider `cloud-agnostic approach` ( & onPerm customer approach ) while designing the solution.
 
 ## SQL Queries - Performance Techniques

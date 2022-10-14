@@ -1,20 +1,20 @@
 
-| Basis                                                                                    | Applicable Components              |
-|------------------------------------------------------------------------------------------|------------------------------------|
-| :star: [Efficiency - Latency, Throughput](LatencyThroughput.md)                          | ALL                                |
-| :star: [Scalability](Scalability.md)                                                     | ALL                                |
-| :star: [High Availability](HighAvailability.md)                                          | ALL                                |
-| :star: [Servers Cluster](ServersCluster.md)                                              | `Data Stores` or `Message Brokers` |
-| :star: [Event Driven Architecture](EventDrivenArchitecture.md)                           | `Message Brokers`                  |
-| :star: [ACID Properties of the Transaction](ACIDPropertyTransaction.md)                  | `Data Stores`                      |
-| :star: [CAP Theorem of the Distributed Systems](CAPTheorem.md)                           | `Data Stores`                      |
-| :star: [Replication & Data Consistency](ReplicationAndDataConsistency.md)                | `Data Stores`                      |
-| [Reliability - Fault Tolerance, Disaster Recovery](FaultTolerance&DisasterRecovery.md)   | ALL                                |
-| [Load Balancer](LoadBalancer.md)                                                         | ALL                                |
-| [Atomicity](Atomicity.md)                                                                | `Data Stores`                      |
-| [Durability](Durability.md)                                                              | `Data Stores`                      |
-| [Content Delivery Network (CDN)](CDNs.md)                                                | `Static Content`                   |
-| [Append Only DB Storages](AppendOnlyDBStorages.md)                                       | `Data Stores`                      |
+| Basis                                                                                   | Applicable Components              |
+|-----------------------------------------------------------------------------------------|------------------------------------|
+| :star: [Efficiency - Latency, Throughput](LatencyThroughput.md)                         | ALL                                |
+| :star: [Scalability](Scalability.md)                                                    | ALL                                |
+| :star: [High Availability](HighAvailability.md)                                         | ALL                                |
+| :star: [Servers Cluster](ServersCluster.md)                                             | `Data Stores` or `Message Brokers` |
+| :star: [Event Driven Architecture](EventDrivenArchitecture.md)                          | `Message Brokers`                  |
+| :star: [ACID Properties of the Transaction](ACIDPropertyTransaction.md)                 | `Data Stores`                      |
+| :star: [CAP Theorem of the Distributed Systems](CAPTheorem.md)                          | `Data Stores`                      |
+| :star: [Replication & Data Consistency](ReplicationAndDataConsistency.md)               | `Data Stores`                      |
+| [Reliability - Fault Tolerance, Disaster Recovery](FaultTolerance&DisasterRecovery.md)  | ALL                                |
+| [Load Balancer](LoadBalancer.md)                                                        | ALL                                |
+| [Atomicity](Atomicity.md)                                                               | `Data Stores`                      |
+| [Durability](Durability.md)                                                             | `Data Stores`                      |
+| [Content Delivery Network (CDN)](CDNs.md)                                               | `Static Content`                   |
+| [Append Only](Append-Only.md)                                       | `Data Stores`                      |
 
 
 # [Language Agnostic](https://en.wikipedia.org/wiki/Language-agnostic)
@@ -27,7 +27,7 @@
 - [Stateless Protocol](https://www.geeksforgeeks.org/difference-between-stateless-and-stateful-protocol/) does not require the server to retain the server information or session details.
 - In a stateless architecture, the server must treat all client requests independently of prior requests or sessions, and should not store any session information locally.
 - `Stateless applications can scale horizontally, since any request can be handled by any available computing resources (e.g. instances, containers or functions).`
-- Sharing state with any instances, containers, or functions is possible by using in-memory object caching systems like [Redis](../3_DatabaseComponents/In-Memory-Cache/Redis) or distributed databases like [Cassandra](../3_DatabaseComponents/NoSQL-Databases/ApacheCasandra.md) or [Amazon DynamoDB](../../2_AWSComponents/6_DatabaseServices/AmazonDynamoDB.md), depending on the structure of the object and the requirements in terms of performances.
+- Sharing state with any instances, containers, or functions is possible by using in-memory object caching systems like [Redis](../3_DatabaseComponents/In-Memory-Cache/Redis) or distributed databases like [Cassandra](../3_DatabaseComponents/NoSQL-Databases/ApacheCasandra.md) or [Amazon DynamoDB](../../2_AWSComponents/6_DatabaseServices/AmazonDynamoDB/Readme.md), depending on the structure of the object and the requirements in terms of performances.
 
 ## Stateful Protocol
 - [Stateful Protocol](https://www.geeksforgeeks.org/difference-between-stateless-and-stateful-protocol/) requires server to save the status and session information.
@@ -43,7 +43,7 @@
 - [Hot storage](https://www.ctera.com/company/blog/differences-hot-warm-cold-file-storage/) is data that is accessed frequently. 
 - This could be data that is being actively used by employees or customers. 
 - It needs to be stored on fast storage (like `SSD`) so that it can be accessed quickly.
-- Examples - [Amazon Dynamo DB](../../2_AWSComponents/6_DatabaseServices/AmazonDynamoDB.md), [Amazon Aurora](../../2_AWSComponents/6_DatabaseServices/AmazonAurora)
+- Examples - [Amazon Dynamo DB](../../2_AWSComponents/6_DatabaseServices/AmazonDynamoDB/Readme.md), [Amazon Aurora](../../2_AWSComponents/6_DatabaseServices/AmazonAurora)
 
 ## Warm Storage
 - [Warm storage](https://www.ctera.com/company/blog/differences-hot-warm-cold-file-storage/) (like `HDD`) is data that is accessed less frequently. 

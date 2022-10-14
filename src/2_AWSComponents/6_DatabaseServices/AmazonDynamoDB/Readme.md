@@ -1,18 +1,19 @@
 # Amazon DynamoDB
-- [DynamoDB](https://aws.amazon.com/dynamodb/) is a fully managed [NoSQL](../../1_HLDDesignComponents/3_DatabaseComponents) database service. 
-- DynamoDB is a key-value and document database. Every record in a DynamoDB database can be considered as a map of attributes and values with a primary key to retrieve the record.
-- All data items are stored on `Solid State Drives (SSDs)`, and are replicated across `3 Availability Zones` for [high availability](../../1_HLDDesignComponents/0_SystemGlossaries/HighAvailability.md) and [durability](../../1_HLDDesignComponents/0_SystemGlossaries/Durability.md). 
+- [DynamoDB](https://aws.amazon.com/dynamodb/) is a fully managed [NoSQL](../../../1_HLDDesignComponents/3_DatabaseComponents) database service. 
+- DynamoDB is a key-value and document database. 
+- Every record in a DynamoDB database can be considered as a map of attributes and values with a primary key to retrieve the record.
+- All data items are stored on `Solid State Drives (SSDs)`, and are replicated across [3 Availability Zones](../../AWS-Global-Architecture-Region-AZ.md) for [high availability](../../../1_HLDDesignComponents/0_SystemGlossaries/HighAvailability.md) and [durability](../../../1_HLDDesignComponents/0_SystemGlossaries/Durability.md). 
 - With DynamoDB, `you can offload the administrative burden of operating and scaling a highly available distributed database cluster`, while paying a low price for only what you use.
 
 ## :star: Real world use cases of DynamoDB
-- [Twillo - Send Message API Design](../../3_HLDDesignProblems/TwilloSendMessageAPI)
+- [Twillo - Send Message API Design](../../../3_HLDDesignProblems/TwilloSendMessageAPI)
 
 ## Key Features
 - Provisioned Throughput
 - Fast, predictable performance (`1000s of records per second, single-digit millisecond performance`)
 - [Partitions and data distribution](#partitionssharding-and-data-distribution)
-- [Global tables](#amazon-dynamodb---global-tables)
-- [DynamoDB Accelerator (DAX)](https://aws.amazon.com/dynamodb/dax/) provides caching capabilities for accessing data in microseconds.
+- [DynamoDB Global tables](DynamoDBGlobalTables.md)
+- [DynamoDB Accelerator (DAX)](DynamoDBAccelerator.md)
 - [PartiQL - a SQL-compatible query language for Amazon DynamoDB](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/ql-reference.html)
 - [Time to Live (TTL) supported for the data](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/TTL.html)
 - JSON Support
@@ -28,8 +29,8 @@
 - You are still able to achieve your prior throughput levels while scaling is underway.
 
 ## Consistency Models
-- [Eventual Consistency Model](../../1_HLDDesignComponents/0_SystemGlossaries/ReplicationAndDataConsistency.md#consistency-patterns)
-- [Strong Consistency Model](../../1_HLDDesignComponents/0_SystemGlossaries/ReplicationAndDataConsistency.md#consistency-patterns)
+- [Eventual Consistency Model](../../../1_HLDDesignComponents/0_SystemGlossaries/ReplicationAndDataConsistency.md#consistency-patterns)
+- [Strong Consistency Model](../../../1_HLDDesignComponents/0_SystemGlossaries/ReplicationAndDataConsistency.md#consistency-patterns)
 
 ## Data types supported in DynamoDB
 
@@ -57,13 +58,6 @@ Each data type falls into one of the three following categories -
   - DynamoDB uses this value as input to its hash function, yielding the partition in which the item can be found.
 
 ![img.png](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/images/HowItWorksPartitionKey.png)
-
-## Amazon DynamoDB - Global Tables
-- When you create a [DynamoDB global table](https://aws.amazon.com/dynamodb/global-tables/), it consists of multiple replica tables (one per AWS Region) that DynamoDB treats as a single unit. 
-- Every replica has the same table name and the same primary key schema. 
-- When an application writes data to a replica table in one Region, DynamoDB propagates the write to the other replica tables in the other AWS Regions automatically.
-
-![img.png](https://d1.awsstatic.com/product-marketing/DynamoDB/DynamoDB_Global-Tables-01.dad2508b80e8b7c544fe1a94a2abd3f770b789da.png)
 
 ## :thumbsdown: What are disadvantages of DynamoDB?
 - Deployable only on AWS and cannot be installed on individual desktops/servers

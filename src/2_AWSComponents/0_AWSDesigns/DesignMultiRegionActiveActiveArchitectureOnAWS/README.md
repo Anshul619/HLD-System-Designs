@@ -35,7 +35,7 @@
 Amazon Services with [Cross-Region](../../AWS-Global-Architecture-Region-AZ.md) support, should be used like,
 - [Amazon S3](../../7_StorageServices/AmazonS3.md#cross-region-supported)
 - [Amazon Aurora Global Database](../../6_DatabaseServices/AmazonAurora/AuroraGlobalDatabase.md)
-- [Amazon DynamoDB Global Tables](../../6_DatabaseServices/AmazonDynamoDB.md#amazon-dynamodb-global-tableshttpsawsamazoncomdynamodbglobal-tables)
+- [Amazon DynamoDB Global Tables](../../6_DatabaseServices/AmazonDynamoDB/Readme.md#amazon-dynamodb-global-tableshttpsawsamazoncomdynamodbglobal-tables)
 
 ## DNS routing using Amazon Route53
 - [Read more](../../1_NetworkingAndContentDelivery/AmazonRoute53.md)

@@ -3,7 +3,7 @@
 - Consider there is a `Send-SMS-API` which sends SMS to the client (like OTP) 
 - In Send-SMS-API, there is a `OTP service A`, which client calls to get the OTP on SMS.
 - `Service A` calls `Service B`, to send the notification to the user using multiple SMS providers like Airtel, Twillo etc.
-- To store SMS Messages for auditing perspective, [Amazon DynamoDB](../../2_AWSComponents/6_DatabaseServices/AmazonDynamoDB.md) can be used.
+- To store SMS Messages for auditing perspective, [Amazon DynamoDB](../../2_AWSComponents/6_DatabaseServices/AmazonDynamoDB/Readme.md) can be used.
 
 ![Send-SMS-Queuing.drawio.png](assets/Send-SMS-Queuing.drawio.png)
 

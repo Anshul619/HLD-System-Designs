@@ -25,7 +25,7 @@ The PACELC theorem states that in a system that replicates data:
 ![img.png](assests/PACELC_Diagram.drawio.png)
 
 ## PA/EL systems - DynamoDB & Cassandra
-- [DynamoDB](../../2_AWSComponents/6_DatabaseServices/AmazonDynamoDB.md) and [Cassandra](../3_DatabaseComponents/NoSQL-Databases/ApacheCasandra.md) choose availability over consistency when a partition occurs; otherwise, they choose lower latency.
+- [DynamoDB](../../2_AWSComponents/6_DatabaseServices/AmazonDynamoDB/Readme.md) and [Cassandra](../3_DatabaseComponents/NoSQL-Databases/ApacheCasandra.md) choose availability over consistency when a partition occurs; otherwise, they choose lower latency.
 
 ## PC/EC - HBase & BigTable
 - [HBase](../3_DatabaseComponents/NoSQL-Databases/ApacheHBase.md) & BigTable will always choose consistency, giving up availability and lower latency.
