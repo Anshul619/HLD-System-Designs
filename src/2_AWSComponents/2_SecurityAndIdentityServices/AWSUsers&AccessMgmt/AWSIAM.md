@@ -8,7 +8,7 @@
 # IAM Policy
 - [IAM Policy](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies.html) helps to define user access (through AWS Console or AWS Cli) for the AWS resources.
 
-## Example User Policy
+## User Policy - Example1
 
 ````json
 {
@@ -53,6 +53,43 @@
       
     }
   ]
+}
+````
+
+## User Policy - Example2
+
+````json
+{
+   "Id":"ID1",
+   "Version":"2012-10-17",
+   "Statement":[
+      {
+         "Sid":"SID1",
+         "Action":[
+            "s3:AbortMultipartUpload",
+            "s3:DeleteObject",
+            "s3:GetObject",
+            "s3:ListBucket",
+            "s3:GetBucketLocation",
+            "s3:PutObject"
+         ],
+         "Effect":"Allow",
+         "Resource":[
+            "arn:aws:s3:::bucket1",
+            "arn:aws:s3:::bucket2/*"
+         ],
+         "Condition": {
+            "StringEquals":{
+               "aws:sourceVpce":"vpce-1"
+            }
+         },
+         "Principal":{
+            "AWS":[
+               "arn:aws:iam::123:root"
+            ]
+         }
+      }
+   ]
 }
 ````
 

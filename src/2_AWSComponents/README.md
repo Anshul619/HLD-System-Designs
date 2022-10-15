@@ -103,7 +103,7 @@
         </td>
         <td>
             <div class="container" style="background:white">
-                <a href="4_ComputeServices/EC2/ReadMe.md" target="_blank">
+                <a href="4_ComputeServices/AmazonEC2/ReadMe.md" target="_blank">
                   <img src="https://miro.medium.com/max/750/1*q6F0j8HFHd8jeYXyQBqrCQ.jpeg" width="150">
                 </a>
                 <a href="4_ComputeServices/AWSFargate.md" target="_blank">
