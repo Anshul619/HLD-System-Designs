@@ -37,10 +37,46 @@
 - Short time-to-live (TTL) (as little as 0 seconds, for dynamic content)
 - Optimized for AWS
 
-# Point-Of-Presence Footprint in CloudFront
+# Point-Of-Presence/Edges Footprint in CloudFront
 ![img.png](https://d2908q01vomqb2.cloudfront.net/5b384ce32d8cdef02bc3a139d4cac0a22bb029e8/2022/06/17/CloudFront_400-1024x580.png)
 
 [Read more about Point of presence](../AWS-Global-Architecture-Region-AZ.md#points-of-presence)
+
+# Adding the CloudFront HTTP headers
+- You can [configure CloudFront to add specific HTTP headers](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/using-cloudfront-headers.html) to the requests that CloudFront receives from viewers. 
+- The values of these HTTP headers are based on characteristics of the viewer request. 
+- The headers can provide information about the viewer's device type, IP address, geographic location, request protocol (HTTP or HTTPS), HTTP version, and TLS connection details.
+
+# CDN Customizations with Edge Functions
+
+## Customizing at the edge with CloudFront Functions
+- With [CloudFront Functions in Amazon CloudFront](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/cloudfront-functions.html), lightweight functions can be developed in [JavaScript]() for [high-scale, latency-sensitive CDN customizations](../../1_HLDDesignComponents/0_SystemGlossaries/CDNs.md). 
+- Your functions can manipulate the requests and responses that flow through CloudFront, perform basic authentication and authorization, generate HTTP responses at the edge, and more. 
+- The CloudFront Functions runtime environment offers [submillisecond startup times, scales immediately to handle millions of requests per second](../../1_HLDDesignComponents/0_SystemGlossaries/LatencyThroughput.md), and is highly secure. 
+- CloudFront Functions is a native feature of CloudFront, which means you can build, test, and deploy your code entirely within CloudFront.
+- Generally [CloudFront Functions is more performance and cheaper than Lambda@Edge](https://aws.amazon.com/blogs/aws/introducing-cloudfront-functions-run-your-code-at-the-edge-with-low-latency-at-any-scale/) functions.
+
+Ideal Use Cases
+- Cache key normalization
+- HTTP Header manipulation
+- URL redirects or rewrites based on user's IP address, [cloudfront-viewer-country](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/using-cloudfront-headers.html) etc.
+- Request authorization etc.
+
+![img.png](https://d2908q01vomqb2.cloudfront.net/da4b9237bacccdf19c0760cab7aec4a8359010b0/2021/04/08/cloudfront-function-and-lambda-edge-2-1024x454.png)
+
+## Customizing at the edge with Lambda@Edge
+- [Lambda@Edge](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/lambda-at-the-edge.html) is an extension of [AWS Lambda](../4_ComputeServices/AWSLambda.md), a compute service that lets you execute functions that customize the content that CloudFront delivers. 
+- You can author Node.js or Python functions in one Region, US East (N. Virginia), and then execute them in AWS locations globally that are closer to the viewer, without provisioning or managing servers. 
+- Lambda@Edge scales automatically, from a few requests per day to thousands per second. 
+- Processing requests at AWS locations closer to the viewer instead of on [origin servers significantly reduces latency and improves the user experience](../../1_HLDDesignComponents/0_SystemGlossaries/LatencyThroughput.md).
+
+Ideal Use Cases
+- Inspect Cookies & Rewrite URLs
+- Different Presentation for the Viewer based on `User-Agent header`
+- HTTP Header manipulation
+- Additional API Call etc.
+
+![img.png](https://d2908q01vomqb2.cloudfront.net/da4b9237bacccdf19c0760cab7aec4a8359010b0/2021/04/08/cloudfront-functions-only-lambda-egde-1024x413.png)
 
 # What is geo-targeting in CloudFront?
 - [Geo-Targeting](https://aws.amazon.com/blogs/networking-and-content-delivery/leverage-amazon-cloudfront-geolocation-headers-for-state-level-geo-targeting/) is a concept where `businesses can show personalized content to their audience` based on their geographic location without changing the URL. 
