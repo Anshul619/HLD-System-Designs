@@ -47,7 +47,7 @@
 ![img.png](https://miro.medium.com/max/1400/1*rHZDB-E3ZS8ZBBTHmr8DuA.png)
 
 # AWS Lambda Function Permissions
-- An [IAM resource-based policy](../2_SecurityAndIdentityServices/AWSIAM.md) controls the permissions to invoke the function. 
+- An [IAM resource-based policy](../2_SecurityAndIdentityServices/AWSUsers&AccessMgmt/AWSIAM.md) controls the permissions to invoke the function. 
 - An IAM execution role defines the permissions that control what the function is allowed to do when interacting with other AWS services.
 
 ![img.png](https://miro.medium.com/max/1400/1*_KpXUpdyW8W37wsJjlnobw.jpeg)

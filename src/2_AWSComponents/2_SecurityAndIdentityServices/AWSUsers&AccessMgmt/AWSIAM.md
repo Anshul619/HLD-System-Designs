@@ -66,12 +66,6 @@
 - [An IAM Roles](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles.html) is an IAM identity that you can create in your account that has specific permissions.
 - An IAM role is similar to an IAM user, in that it is an AWS identity with permission policies that determine what the identity can and cannot do in AWS.
 
-# IAM Identity Center
-- [An IAM Identity Center (successor to AWS Single Sign-On)](https://aws.amazon.com/iam/identity-center/) helps you securely create or connect your workforce identities and manage their access centrally across AWS accounts and applications.
-- IAM Identity Center is the recommended approach for workforce authentication and authorization on AWS for organizations of any size and type.
-
-![img.png](https://d1.awsstatic.com/product-marketing/IAM/product-page-diagram_AWS-IAM-Identity-Center_SSO-Rework.45817a4d5cdf0acf33a75257713d3266879196b1.png)
-
 # Security Practices
 - [Apply least-privilege permissions](https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html#grant-least-privilege)
 

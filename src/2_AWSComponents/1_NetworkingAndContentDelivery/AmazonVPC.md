@@ -20,3 +20,14 @@
 - [CloudWatch](../8_MonitoringServices/AmazonCloudWatch.md)
 - [CloudWatch logs](../8_MonitoringServices/AmazonCloudWatch.md)
 - `VPC Flow Logs`
+
+# Transit Gateway
+- [A transit gateway](https://docs.aws.amazon.com/vpc/latest/tgw/what-is-transit-gateway.html) is a network transit hub that you can use to interconnect your [virtual private clouds (VPCs)]() and on-premises networks. 
+- As your cloud infrastructure expands globally, inter-Region peering connects transit gateways together using the AWS Global Infrastructure. 
+- Your data is automatically encrypted and never travels over the public internet.
+- [VPC Peering vs Transit Gateway](https://ably.com/blog/aws-vpc-peering-vs-transit-gateway-and-beyond))
+
+![img.png](https://ik.imagekit.io/ably/ghost/prod/2022/09/transit_gateway-1.png?tr=w-1520,q-50)
+
+# References
+[Key choices in AWS network design: VPC peering vs Transit Gateway and beyond](https://ably.com/blog/aws-vpc-peering-vs-transit-gateway-and-beyond)

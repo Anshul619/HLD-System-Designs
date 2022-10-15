@@ -29,7 +29,7 @@
 
 ## AWS Authorization
 - To authorize and verify API requests to AWS services, [API Gateway]() can help you leverage signature version 4 for REST APIs and WebSocket APIs. 
-- Using signature version 4 authentication, you can use [AWS Identity and Access Management (IAM)](../../2_SecurityAndIdentityServices/AWSIAM.md) and access policies to authorize access to your APIs and all your other AWS resources.
+- Using signature version 4 authentication, you can use [AWS Identity and Access Management (IAM)](../../2_SecurityAndIdentityServices/AWSUsers&AccessMgmt/AWSIAM.md) and access policies to authorize access to your APIs and all your other AWS resources.
 - You can also use [AWS Lambda functions](../../4_ComputeServices/AWSLambda.md) to verify and authorize bearer tokens such as JWT tokens or SAML assertions.
 
 ## Caching of API response
