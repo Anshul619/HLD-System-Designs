@@ -74,13 +74,10 @@ Ideal Use Cases
 - Inspect Cookies & Rewrite URLs
 - Different Presentation for the Viewer based on `User-Agent header`
 - HTTP Header manipulation
+- [Geo-Targeting - Personalized Ads, Content etc.](https://aws.amazon.com/blogs/networking-and-content-delivery/leverage-amazon-cloudfront-geolocation-headers-for-state-level-geo-targeting/)
 - Additional API Call etc.
 
 ![img.png](https://d2908q01vomqb2.cloudfront.net/da4b9237bacccdf19c0760cab7aec4a8359010b0/2021/04/08/cloudfront-functions-only-lambda-egde-1024x413.png)
-
-# What is geo-targeting in CloudFront?
-- [Geo-Targeting](https://aws.amazon.com/blogs/networking-and-content-delivery/leverage-amazon-cloudfront-geolocation-headers-for-state-level-geo-targeting/) is a concept where `businesses can show personalized content to their audience` based on their geographic location without changing the URL. 
-- This helps you create customized content for the audience of a specific geographical area, keeping their needs in the forefront.
 
 # References
 - [How do I use CloudFront to serve HTTPS requests for my Amazon S3 bucket?](https://aws.amazon.com/premiumsupport/knowledge-center/cloudfront-https-requests-s3/)
