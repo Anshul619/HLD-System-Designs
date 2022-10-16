@@ -25,7 +25,8 @@
 - Using HTTP APIs, you can build APIs for services behind [private ALBs, private NLBs](../ElasticLoadBalancer/Readme.md), and IP-based services registered in AWS Cloud Map, such as [ECS tasks](../../4_ComputeServices/AmazonECS/README.md).
   
 ## Resiliency
-- API Gateway helps you manage traffic to your backend systems by allowing you to set [throttling rules](../../../3_HLDDesignProblems/RateLimiterAPI) based on the number of requests per second for each HTTP method in your APIs.
+- API Gateway helps you manage traffic to your backend systems by allowing you to set [throttling rules](https://docs.aws.amazon.com/apigateway/latest/developerguide/api-gateway-request-throttling.html) based on the number of requests per second for each HTTP method in your APIs.
+- [AWS WAF](../../2_SecurityAndIdentityServices/AWSWAF.md) can also be configured on [API Gateway](https://docs.aws.amazon.com/apigateway/latest/developerguide/apigateway-control-access-aws-waf.html) to protect the APIs (i.e. Rate Limiting, XSS Attack, SQL Injection etc.)
 
 ## AWS Authorization
 - To authorize and verify API requests to AWS services, [API Gateway]() can help you leverage signature version 4 for REST APIs and WebSocket APIs. 
