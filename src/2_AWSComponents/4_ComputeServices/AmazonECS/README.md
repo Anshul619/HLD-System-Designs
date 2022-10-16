@@ -4,24 +4,25 @@
 - You can use it to run, stop, and manage containers on a cluster.
 - Amazon ECS reduces the burden of setting up network, compute and security configurations, and managing scalability. 
 - Up to `5,000 instances per cluster`, can be launched in ECS.
-- For example, you don’t need to build a generalized abstraction if you need a load balancer—ECS seamlessly integrates features such as [AWS Application Load Balancer (ALB)](../../1_NetworkingAndContentDelivery/ElasticLoadBalancer/Readme.md) and Network Load Balancer (NLB).
-- [Amazon EKS vs ECS vs Fargate](../EKSvsECSvsFargate.md)
-
-![img.png](../../1_NetworkingAndContentDelivery/ElasticLoadBalancer/assests/AWS_Application_Load_Balancer.drawio.png)
 
 # Amazon ECS tasks
 - With Amazon ECS, your containers are defined in a [task definition](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/task_definitions.html) that you use to run an individual task or task within a service.
 
 ![img.png](assests/ECS-Tasks.png)
 
+# Integration with ELB
+- ECS seamlessly integrates with [ELB](../../1_NetworkingAndContentDelivery/ElasticLoadBalancer/Readme.md).
+- [How to configure ELB with ECS?](https://docs.aws.amazon.com/AmazonECS/latest/userguide/create-load-balancer.html)
+
+![img.png](../../1_NetworkingAndContentDelivery/ElasticLoadBalancer/assests/AWS_Elastic_Load_Balancer.png)
+
 # DNS-based service discovery using ECS
 - [Amazon ECS]() now includes integrated service discovery that makes it easy for your containerized services to discover and connect with each other.
 
-# :star: Amazon ECR (Repository for Docker Images)
-- [Amazon Elastic Container Registry (Amazon ECR)](https://aws.amazon.com/ecr/) is a fully managed container registry offering high-performance hosting, so you can reliably deploy application images and artifacts anywhere.
-- Amazon ECR store, manage & deploy [Docker container images](../../../1_HLDDesignComponents/6_DevOps/Docker.md).
-- Amazon ECR is an alternative to [Docker Hub](https://hub.docker.com/).
-- [How to push a Docker Image to ECR?](https://docs.aws.amazon.com/AmazonECR/latest/userguide/docker-push-ecr-image.html)
+# Other Links
+- [Amazon ECR](AmazonECR.md)
+- [Amazon EKS vs ECS vs Fargate](../EKSvsECSvsFargate.md)
 
 # References
 - [Containers on AWS Overview: ECS | EKS | Fargate | ECR](https://www.youtube.com/watch?v=AYAh6YDXuho)
+- [Application Load Balancer with ECS Fargate](https://stackoverflow.com/questions/64409699/application-load-balancer-with-ecs-fargate)

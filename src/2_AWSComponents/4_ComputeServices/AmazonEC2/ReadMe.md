@@ -10,3 +10,6 @@
 
 # What is AutoScaling group?
 - [Read here](AutoScalingGroup/README.md)
+
+# How Auto-Scaling works?
+- [Read here](AutoScalingGroup/HowAutoScalingWorks.md)

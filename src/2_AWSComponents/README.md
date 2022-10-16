@@ -279,7 +279,7 @@
 
 # Amazon Elastic Load Balancer
 
-![img.png](1_NetworkingAndContentDelivery/ElasticLoadBalancer/assests/AWS_Application_Load_Balancer.drawio.png)
+![img.png](1_NetworkingAndContentDelivery/ElasticLoadBalancer/assests/AWS_Elastic_Load_Balancer.png)
 
 [Read more](1_NetworkingAndContentDelivery/ElasticLoadBalancer/Readme.md)
 
