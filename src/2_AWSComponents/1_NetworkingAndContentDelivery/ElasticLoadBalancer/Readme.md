@@ -20,7 +20,7 @@
 ## Target Group
 - [Each target group](https://docs.aws.amazon.com/elasticloadbalancing/latest/network/load-balancer-target-groups.html) routes requests to one or more registered targets, such as [EC2 instances](../../4_ComputeServices/AmazonEC2), using the TCP protocol ( in case of [Network Load Balancer](#network-load-balancer)) and the port number that you specify.
 - You can register a target with multiple target groups.
-- You can configure health checks on a per target group basis.
+- You can [configure health checks on a per target group basis](https://docs.aws.amazon.com/elasticloadbalancing/latest/application/target-group-health-checks.html).
 - Health checks are performed on all targets registered to a target group that is specified in a listener rule for your load balancer.
 
 # Types of ELB Load Balancers
@@ -30,18 +30,28 @@ You can select the type of [load balancer](../../../1_HLDDesignComponents/0_Syst
 - [Application Load Balancer](#application-load-balancer)
 - [Gateway Load Balancer](#gateway-load-balancer)
 
+## Difference b/w Network Load Balancer and Application Load Balancer
+
+| Basis                        | Network Load Balancer                           | Application Load Balancer |
+|------------------------------|-------------------------------------------------|---------------------------|
+| Supported Protocols          | TCP, UDP                                        | HTTP, HTTPs               |
+| Supported Target Group Types | Instance, IP                                    | Instance, IP, Lambda      |
+| Content-Based Routing        | Not-Supported                      | Supported                 |
+| Rough Throughput             | Millions of requests per second                 | -                         |
+| Ideally Use Cases            | Microservices (if API gateway used), other apps | Microservices, Container-based apps |
+
 ## Network Load Balancer
 - Choose a [Network Load Balancer](https://docs.aws.amazon.com/elasticloadbalancing/latest/network/introduction.html) when you need ultra-high performance, TLS offloading at scale, centralized certificate deployment, support for UDP, and static IP addresses for your applications.
-- Operating at the [connection level (TCD, UDP)](https://www.diffen.com/difference/TCP_vs_UDP), Network Load Balancers are capable of handling [millions of requests per second securely](../../../1_HLDDesignComponents/0_SystemGlossaries/LatencyThroughput.md)  while maintaining [ultra-low latencies](../../../1_HLDDesignComponents/0_SystemGlossaries/LatencyThroughput.md).
+- Operating at the [connection level (TCD, UDP)](https://www.diffen.com/difference/TCP_vs_UDP), Network Load Balancers are capable of handling [millions of requests per second securely](../../../1_HLDDesignComponents/0_SystemGlossaries/LatencyThroughput.md) while maintaining [ultra-low latencies](../../../1_HLDDesignComponents/0_SystemGlossaries/LatencyThroughput.md).
 
-![img.png](https://s3.eu-west-1.amazonaws.com/elb-polaris-static-content-eu-west-1-prod/2022-09-19T20-42-20_fc1ae7b23404afb246e594df0e2d4e9e9f00cb47e1e00dda5f179758e9a0fb67/Static/NLBdiagram.svg)
+[//]: # (![img.png]&#40;https://s3.eu-west-1.amazonaws.com/elb-polaris-static-content-eu-west-1-prod/2022-09-19T20-42-20_fc1ae7b23404afb246e594df0e2d4e9e9f00cb47e1e00dda5f179758e9a0fb67/Static/NLBdiagram.svg&#41;)
 
 ## Application Load Balancer
 - Choose an [Application Load Balancer](https://aws.amazon.com/elasticloadbalancing/application-load-balancer/) when you need a flexible feature set for your applications with [HTTP and HTTPS traffic](https://www.izooto.com/blog/understanding-http-https-protocols). 
 - Operating at the request level (HTTP, HTTPs), Application Load Balancers provide advanced routing and visibility features targeted at application architectures, including [microservices](../../../1_HLDDesignComponents/1_MicroServicesSOA) and [containers](../../../1_HLDDesignComponents/0_SystemGlossaries/ContainerOrchestrationService.md).
 - Application Load Balancer allows for multiple applications (using [Content-based routing - /FOO, /BAR](https://aws.amazon.com/blogs/aws/new-advanced-request-routing-for-aws-application-load-balancers/) etc.) to be hosted behind a single load balancer.
 
-![img.png](https://s3.eu-west-1.amazonaws.com/elb-polaris-static-content-eu-west-1-prod/2022-09-19T20-42-20_fc1ae7b23404afb246e594df0e2d4e9e9f00cb47e1e00dda5f179758e9a0fb67/Static/ALBdiagram.svg)
+[//]: # (![img.png]&#40;https://s3.eu-west-1.amazonaws.com/elb-polaris-static-content-eu-west-1-prod/2022-09-19T20-42-20_fc1ae7b23404afb246e594df0e2d4e9e9f00cb47e1e00dda5f179758e9a0fb67/Static/ALBdiagram.svg&#41;)
 
 ### Key Features of ALB
 - [Highly available](../../../1_HLDDesignComponents/0_SystemGlossaries/HighAvailability.md)
