@@ -63,8 +63,6 @@ You can select the type of [load balancer](../../../1_HLDDesignComponents/0_Syst
 - Choose a [Gateway Load Balancer](https://docs.aws.amazon.com/elasticloadbalancing/latest/gateway/introduction.html) when you need to deploy and manage a fleet of third-party virtual appliances that support GENEVE. 
 - These appliances enable you to improve security, compliance, and policy controls.
 
-![img.png](https://s3.eu-west-1.amazonaws.com/elb-polaris-static-content-eu-west-1-prod/2022-09-19T20-42-20_fc1ae7b23404afb246e594df0e2d4e9e9f00cb47e1e00dda5f179758e9a0fb67/Static/GWLBdiagram.svg)
-
 # ELB Load Balancer setup in Multi-Regions & Multi-AZs
 
 ![img.png](../../0_AWSDesigns/DesignMultiRegionActiveActiveArchitectureOnAWS/AWS-AZ-Region-HA.drawio.png)
