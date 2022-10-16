@@ -10,19 +10,22 @@
 
 # Components
 
-When you deploy Kubernetes, you get [a cluster](../0_SystemGlossaries/ServersCluster.md).
+## Cluster
+- When you deploy Kubernetes, you get [a cluster](../0_SystemGlossaries/ServersCluster.md).
 - A [Kubernetes cluster](https://kubernetes.io/docs/concepts/overview/components/) consists of a set of worker machines, called [nodes](), that run containerized applications. 
 - Every cluster has at least one worker node.
 
 ![img.png](https://d33wubrfki0l68.cloudfront.net/2475489eaf20163ec0f54ddc1d92aa8d4c87c96b/e7c81/images/docs/components-of-kubernetes.svg)
 
-## Control Plane
+## Control Plane (master node)
 - [The control plane](https://kubernetes.io/docs/concepts/overview/components/) manages the worker nodes and the Pods in the cluster.
 - In production environments, the control plane usually runs across multiple computers and a cluster usually runs multiple nodes, providing fault-tolerance and high availability.
+- Nodes with [controlplane]((https://kubernetes.io/docs/concepts/overview/components/)) role run the K8s master components (excluding `etcd`, as its separate role). 
+- [Read more](https://kubernetes.io/docs/concepts/overview/components/)
 
 ## Worker Nodes
-- Each docker/Pod container would run the micro-service ( golang, java, python service etc. )
-- And a [worker node](https://kubernetes.io/docs/concepts/architecture/nodes/) can have one or multiple pods.
+- Each docker/Pod container would run the micro-service (golang, java, python service etc.)
+- And a [worker node can have one or multiple pods](https://kubernetes.io/docs/concepts/architecture/nodes/).
 - Kubernates would manage the [worker nodes](https://kubernetes.io/docs/concepts/architecture/nodes/) i.e. Create, Update, Delete, Auto-Scale based on the configuration and params.
 
 ## Pods
@@ -41,8 +44,12 @@ kubectl scale --replicas=5 rc/foo rc/bar rc/baz                   # Scale multip
 - [Labels](https://kubernetes.io/docs/concepts/overview/working-with-objects/labels/) are key/value pairs that are attached to objects, such as pods. 
 - Labels are intended to be used to specify identifying attributes of objects that are meaningful and relevant to users, but do not directly imply semantics to the core system.
 
+## K8s Networking
+- K8s manages its own load balance, service discovery etc.
+- [Read more](https://kubernetes.io/docs/concepts/services-networking/_print/)
+
 # Horizontal Pod Autoscaling
-- In Kubernetes, [a HorizontalPodAutoscaler](https://kubernetes.io/docs/tasks/run-application/horizontal-pod-autoscale/) automatically updates a workload resource (such as a Deployment or StatefulSet), with the aim of automatically scaling the workload to match demand.
+- In Kubernetes, [a Horizontal Pod Autoscaler](https://kubernetes.io/docs/tasks/run-application/horizontal-pod-autoscale/) automatically updates a workload resource (such as a Deployment or StatefulSet), with the aim of automatically scaling the workload to match demand.
 
 ## AutoScaling on Container resource metrics
 
