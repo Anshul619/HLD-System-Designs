@@ -8,8 +8,12 @@
 
 ![img.png](../../0_AWSDesigns/DesignScalableSystemWithRDMS/assets/DesignScalableSystemWithRelationalDBOnAWS.drawio.png)
 
-# What is AutoScaling group?
-- [Read here](AutoScalingGroup/README.md)
+# EC2 with ELB
 
-# How Auto-Scaling works?
-- [Read here](AutoScalingGroup/HowAutoScalingWorks.md)
+![img.png](../../1_NetworkingAndContentDelivery/ElasticLoadBalancer/assests/AWS_Elastic_Load_Balancer.png)
+
+# What is Auto-Scaling group?
+
+![img.png](AutoScalingGroup/assets/Auto-Scaling-ELB.png)
+
+- [Read here](AutoScalingGroup/README.md)

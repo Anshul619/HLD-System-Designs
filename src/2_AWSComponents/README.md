@@ -295,6 +295,12 @@
 
 [Read more](0_AWSDesigns/FanOutPatternSNSSQS/README.md)
 
+# Auto-Scaling - How it works?
+
+![img.png](4_ComputeServices/AmazonEC2/AutoScalingGroup/assets/Auto-Scaling-ELB.png)
+
+[Read more](4_ComputeServices/AmazonEC2/AutoScalingGroup/README.md)
+
 # AWS Step Functions - Lambda
 
 ![img.png](4_ComputeServices/assests/AWSStepFunctions.png)

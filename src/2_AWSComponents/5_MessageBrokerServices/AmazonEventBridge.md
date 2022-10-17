@@ -4,7 +4,7 @@
 - Using Amazon EventBridge, we can build [event-driven applications at scale](../../1_HLDDesignComponents/1_MicroServicesSOA) across AWS, existing systems, or SaaS applications.
 - [Guide to archive Amazon EventBridge events & replay those later.](https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-archive-event.html)
 
-# What is Amazon EventBridge rules?
+# What are Amazon EventBridge rules?
 - [An event bridge rule](https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-rules.html) matches incoming events and sends them to targets for processing. 
 - A single rule can send an event to multiple targets, which then run in parallel. 
 - Rules are based either on an event pattern or a schedule. 
@@ -12,6 +12,12 @@
 - Rules that are based on a schedule perform an action at regular intervals.
 
 ![img.png](assests/eventbridge/EventBridge.png)
+
+# Amazon EventBridge - Evolution of Cloudwatch Events
+- [Amazon EventBridge]() was announced at the AWS New York Summit in 2019. 
+- It’s a serverless event bus service that uses the [Amazon CloudWatch Events API](../8_MonitoringServices/AmazonCloudWatch.md), but also includes more functionality, like the ability to ingest events from SaaS apps. 
+- The EventBridge service uses the [CloudWatch Events API](../8_MonitoringServices/AmazonCloudWatch.md) and it is fully backward compatible, so you don’t need to make any changes to your existing CloudFormation templates or API calls.
+- [Read more](https://aws.amazon.com/blogs/compute/upgrading-to-amazon-eventbridge-from-amazon-cloudwatch-events/)
 
 # References
 - [Reducing custom code by using advanced rules in Amazon EventBridge](https://aws.amazon.com/blogs/compute/reducing-custom-code-by-using-advanced-rules-in-amazon-eventbridge/)
