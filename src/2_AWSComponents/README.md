@@ -271,17 +271,23 @@
 
 [Read more](1_NetworkingAndContentDelivery/ElasticLoadBalancer/Readme.md)
 
+# Amazon ECS - Tasks, Fargate etc.
+
+![img.png](4_ComputeServices/AmazonECS/assests/ECS-Tasks.png)
+
+[Read more](4_ComputeServices/AmazonECS/README.md)
+
 # Amazon EventBridge - Targets, Rules etc.
 
 ![img.png](5_MessageBrokerServices/assests/eventbridge/EventBridge.png)
 
 [Read more](5_MessageBrokerServices/AmazonEventBridge.md)
 
-# Amazon ECS - Tasks, Fargate etc.
+# Amazon SNS - Pub/Sub, Push etc.
 
-![img.png](4_ComputeServices/AmazonECS/assests/ECS-Tasks.png)
+![img.png](5_MessageBrokerServices/assests/sns/FanOutPatternSQSSNS.png)
 
-[Read more](4_ComputeServices/AmazonECS/README.md)
+[Read more](5_MessageBrokerServices/AmazonSNS.md)
 
 # Upload Image using Amazon S3 and Lambda
 
@@ -289,11 +295,7 @@
 
 [Read more](0_AWSDesigns/DesignUploadImageAWSLambdaS3/README.md)
 
-# FanOut Pattern with Amazon SNS & SQS
 
-![img.png](0_AWSDesigns/FanOutPatternSNSSQS/assets/FanOutPatternSQSSNS.png)
-
-[Read more](0_AWSDesigns/FanOutPatternSNSSQS/README.md)
 
 # Auto-Scaling - How it works?
 
@@ -312,7 +314,6 @@
 - :star: [Design Scalable System on AWS](0_AWSDesigns/DesignScalableSystemWithRDMS)
 - [Upload Image using Amazon S3 and Lambda](0_AWSDesigns/DesignUploadImageAWSLambdaS3/README.md)
 - [Send-SMS-API design - App Internal Clients, Multiple SMS-Providers, AutoScaling](../3_HLDDesignProblems/NotificationSystem/README.md)
-- [Fanout Pattern with Amazon SNS & SQS](0_AWSDesigns/FanOutPatternSNSSQS/README.md)
 - [WP Site with Amazon CloudFront & S3](0_AWSDesigns/WPSiteCloudFront&S3.md)
 - [Microservices On AWS](0_AWSDesigns/MicroservicesOnAWS.md)
 - [Dropbox Saves Millions by Building a Scalable Metadata Store on Amazon DynamoDB and Amazon S3](0_AWSDesigns/DropboxAmazonDynamoDB/Readme.md)

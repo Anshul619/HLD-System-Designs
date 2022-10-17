@@ -1,11 +1,18 @@
 
 # Amazon Simple Notification Service (Amazon SNS)
-- [Amazon SNS (Simple Notification Service)](https://aws.amazon.com/sns) is a fully managed messaging service for both application-to-application (A2A) and application-to-person (A2P) communication.
-- Using Amazon SNS topics, your publisher systems can fanout messages to a large number of subscriber systems, including Amazon SQS queues, AWS Lambda functions, HTTPS endpoints, and Amazon Kinesis Data Firehose, for parallel processing.
-- The A2P functionality enables you to send messages to users at scale via SMS, mobile push, and email.
-- The A2A pub/sub functionality provides topics for high-throughput, push-based, many-to-many messaging between distributed systems, microservices, and event-driven serverless applications.
+- [Amazon SNS (Simple Notification Service)](https://aws.amazon.com/sns) is a fully managed messaging service for both [application-to-application (A2A)](https://docs.aws.amazon.com/sns/latest/dg/sns-system-to-system-messaging.html) and [application-to-person (A2P)](https://docs.aws.amazon.com/sns/latest/dg/sns-user-notifications.html) communication.
+- Using Amazon SNS topics, your publisher systems can fanout messages to a large number of subscriber systems, including [Amazon SQS queues](AmazonSQS.md), [AWS Lambda functions](../4_ComputeServices/AWSLambda.md), HTTPS endpoints, and [Amazon Kinesis Data Firehose](AmazonKinesis.md), for parallel processing.
+- The [application-to-person (A2P)](https://docs.aws.amazon.com/sns/latest/dg/sns-user-notifications.html) functionality enables you to send messages to users at scale via SMS, mobile push, and email.
 
-![img.png](../0_AWSDesigns/FanOutPatternSNSSQS/assets/FanOutPatternSQSSNS.png)
+## Application-to-Application (A2A)
+
+The [application-to-application (A2A) pub/sub functionality](https://docs.aws.amazon.com/sns/latest/dg/sns-system-to-system-messaging.html) provides topics which are helpful in,
+- [high-throughput, push-based, many-to-many messaging between distributed systems](../../1_HLDDesignComponents/0_SystemGlossaries/LatencyThroughput.md)
+- [microservices, and event-driven serverless](../../1_HLDDesignComponents/1_MicroServicesSOA/README.md) applications.
+
+![img.png](assests/sns/FanOutPatternSQSSNS.png)
+
+- This pattern also known as [Fanout-pattern](https://aws.amazon.com/getting-started/hands-on/send-fanout-event-notifications/)
 
 # :star: Amazon SNS vs Others
 - [Read here](../../1_HLDDesignComponents/4_MessageBrokers/KafkaVsRabbitMQVsSQSVsSNS.md)

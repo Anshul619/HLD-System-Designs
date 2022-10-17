@@ -19,11 +19,11 @@
 
 [Read more](../0_AWSDesigns/DesignScalableSystemWithRDMS/README.md)
 
-# Fanout Pattern with Amazon SNS & SQS
+# Amazon SNS with Lambda
 
-![img.png](../0_AWSDesigns/FanOutPatternSNSSQS/assets/FanOutPatternSQSSNS.png)
+![img.png](../5_MessageBrokerServices/assests/sns/FanOutPatternSQSSNS.png)
 
-[Read more](../0_AWSDesigns/FanOutPatternSNSSQS/README.md)
+[Read more](../5_MessageBrokerServices/AmazonSNS.md)
 
 # AWS Step Functions with Lambda
 

@@ -6,7 +6,7 @@ Amazon SQS offers two types of message queues.
 - [Recommended - Standard queues (better throughput than FIFO)](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/standard-queues.html) offer maximum throughput, best-effort ordering, and at-least-once delivery.
 - [SQS FIFO queues](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/FIFO-queues.html) are designed to guarantee that messages are processed exactly once, in the exact order that they are sent.
 
-![img.png](../0_AWSDesigns/FanOutPatternSNSSQS/assets/FanOutPatternSQSSNS.png)
+![img.png](assests/sns/FanOutPatternSQSSNS.png)
 
 # How SQS works? How it implements At-least-Once delivery?
 - `Amazon SQS is a message queueing service, meaning that it exposes an API to publish and consume messages`. 
