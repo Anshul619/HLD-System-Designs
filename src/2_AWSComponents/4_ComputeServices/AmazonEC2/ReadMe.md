@@ -12,7 +12,7 @@
 
 ![img.png](../../1_NetworkingAndContentDelivery/ElasticLoadBalancer/assests/AWS_Elastic_Load_Balancer.png)
 
-# What is Auto-Scaling group?
+# How EC2 Auto-Scaling works?
 
 ![img.png](AutoScalingGroup/assets/Auto-Scaling-ELB.png)
 
