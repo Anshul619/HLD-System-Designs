@@ -22,7 +22,7 @@
 ## Highly Available
 - [Amazon SQS]() is [highly available](../../1_HLDDesignComponents/0_SystemGlossaries/HighAvailability.md), by default.
 
-# Inflight Messages Limit
+## Inflight Messages Limit
 
 A single Amazon SQS message queue can contain an unlimited number of messages.
 
@@ -30,7 +30,7 @@ However, there is a quota of inflight messages
 - 120,000 for a standard queue
 - 20,000 for a FIFO queue
  
-* [Messages are inflight](https://aws.amazon.com/premiumsupport/knowledge-center/sqs-message-backlog/) after they have been received from the queue by a consuming component, but have not yet been deleted from the queue.
+Note - [Messages are inflight](https://aws.amazon.com/premiumsupport/knowledge-center/sqs-message-backlog/) after they have been received from the queue by a consuming component, but have not yet been deleted from the queue.
 
 ## Queue types
 
