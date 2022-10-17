@@ -277,6 +277,12 @@
 
 [Read more](4_ComputeServices/AmazonECS/README.md)
 
+# Amazon SQS - Queue, Consumers etc.
+
+![img.png](5_MessageBrokerServices/assests/sqs/SQS-DLD-More-Info.png)
+
+[Read more](5_MessageBrokerServices/AmazonSQS.md)
+
 # Amazon EventBridge - Targets, Rules etc.
 
 ![img.png](5_MessageBrokerServices/assests/eventbridge/EventBridge.png)
@@ -294,8 +300,6 @@
 ![img.png](0_AWSDesigns/DesignUploadImageAWSLambdaS3/assets/UploadImage-Lambda.drawio.png)
 
 [Read more](0_AWSDesigns/DesignUploadImageAWSLambdaS3/README.md)
-
-
 
 # Auto-Scaling - How it works?
 
