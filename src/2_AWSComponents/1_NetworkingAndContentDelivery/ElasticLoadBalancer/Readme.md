@@ -68,6 +68,9 @@ You can select the type of [load balancer](../../../1_HLDDesignComponents/0_Syst
 ![img.png](../../0_AWSDesigns/DesignMultiRegionActiveActiveArchitectureOnAWS/AWS-AZ-Region-HA.drawio.png)
 
 # How ELB works with AutoScaling?
+
+![img.png](../../4_ComputeServices/AmazonEC2/AutoScalingGroup/assets/Auto-Scaling-ELB.png)
+
 - [Read here](../../4_ComputeServices/AmazonEC2/AutoScalingGroup/README.md)
 
 # References
