@@ -30,7 +30,7 @@ However, there is a quota of inflight messages
 - 120,000 for a standard queue
 - 20,000 for a FIFO queue
  
-Note - [Messages are inflight](https://aws.amazon.com/premiumsupport/knowledge-center/sqs-message-backlog/) after they have been received from the queue by a consuming component, but have not yet been deleted from the queue.
+**Note** - [Messages are inflight](https://aws.amazon.com/premiumsupport/knowledge-center/sqs-message-backlog/) after they have been received from the queue by a consuming component, but have not yet been deleted from the queue.
 
 ## Queue types
 
