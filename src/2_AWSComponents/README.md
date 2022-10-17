@@ -259,18 +259,6 @@
 
 [Read more](0_AWSDesigns/DesignMultiRegionActiveActiveArchitectureOnAWS/README.md)
 
-# Upload Image using Amazon S3 and Lambda
-
-![img.png](0_AWSDesigns/DesignUploadImageAWSLambdaS3/assets/UploadImage-Lambda.drawio.png)
-
-[Read more](0_AWSDesigns/DesignUploadImageAWSLambdaS3/README.md)
-
-# FanOut Pattern with Amazon SNS & SQS
-
-![img.png](0_AWSDesigns/FanOutPatternSNSSQS/assets/FanOutPatternSQSSNS.png)
-
-[Read more](0_AWSDesigns/FanOutPatternSNSSQS/README.md)
-
 # Amazon API Gateway - Features
 
 ![img.png](1_NetworkingAndContentDelivery/AmazonAPIGateway/assets/AmazonAPIGateway_Features.drawio.png)
@@ -294,6 +282,18 @@
 ![img.png](4_ComputeServices/AmazonECS/assests/ECS-Tasks.png)
 
 [Read more](4_ComputeServices/AmazonECS/README.md)
+
+# Upload Image using Amazon S3 and Lambda
+
+![img.png](0_AWSDesigns/DesignUploadImageAWSLambdaS3/assets/UploadImage-Lambda.drawio.png)
+
+[Read more](0_AWSDesigns/DesignUploadImageAWSLambdaS3/README.md)
+
+# FanOut Pattern with Amazon SNS & SQS
+
+![img.png](0_AWSDesigns/FanOutPatternSNSSQS/assets/FanOutPatternSQSSNS.png)
+
+[Read more](0_AWSDesigns/FanOutPatternSNSSQS/README.md)
 
 # AWS Step Functions - Lambda
 
