@@ -106,6 +106,54 @@ kubectl logs -l name=myLabel                        # dump pod logs, with label 
 kubectl cp /tmp/foo_dir my-pod:/tmp/bar_dir            # Copy /tmp/foo_dir local directory to /tmp/bar_dir in a remote pod in the current namespace
 ```
 
+# Configure a Pod to Use a ConfigMap
+- [ConfigMaps](https://kubernetes.io/docs/tasks/configure-pod-container/configure-pod-configmap/) are the Kubernetes way to inject application pods with configuration data. 
+- ConfigMaps allow you to decouple configuration artifacts from image content to keep containerized applications portable
+
+````yaml
+apiVersion: v1
+  
+kind: Pod
+  
+metadata:
+  
+  name: dapi-test-pod
+  
+spec:
+  
+  containers:
+  
+    - name: test-container
+  
+      image: registry.k8s.io/busybox
+  
+      command: [ "/bin/sh", "-c", "env" ]
+  
+      env:
+  
+        - name: SPECIAL_LEVEL_KEY
+  
+          valueFrom:
+  
+            configMapKeyRef:
+  
+              name: special-config
+  
+              key: special.how
+  
+        - name: LOG_LEVEL
+  
+          valueFrom:
+  
+            configMapKeyRef:
+  
+              name: env-config
+  
+              key: log_level
+  
+  restartPolicy: Never
+````
+
 # Installation Guide
 - [Install and Set Up kubectl on macOS](https://kubernetes.io/docs/tasks/tools/install-kubectl-macos/)
 - [MiniKube Start](https://minikube.sigs.k8s.io/docs/start/)
