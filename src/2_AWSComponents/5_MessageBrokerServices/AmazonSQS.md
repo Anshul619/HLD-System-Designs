@@ -38,7 +38,7 @@ Amazon SQS offers two types of message queues.
 - [Recommended - Standard queues (better throughput than FIFO)](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/standard-queues.html) offer [maximum throughput](../../1_HLDDesignComponents/0_SystemGlossaries/LatencyThroughput.md), best-effort ordering, and at-least-once delivery.
 - [SQS FIFO queues](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/FIFO-queues.html) are designed to guarantee that messages are processed exactly once, in the exact order that they are sent.
 
-### Standard Queues (Out-Of-Order)
+### :star: Standard Queues (Out-Of-Order)
 
 #### Unlimited Throughput
 - Standard queues support a nearly [unlimited number of transactions per second (TPS)](../../1_HLDDesignComponents/0_SystemGlossaries/LatencyThroughput.md) per API action.
