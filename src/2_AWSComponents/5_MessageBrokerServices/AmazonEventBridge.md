@@ -9,7 +9,7 @@
 - A single rule can send an event to multiple targets, which then run in parallel. 
 - Rules are based either on an event pattern or a schedule. 
 - [An event pattern](https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-event-patterns.html) defines the event structure and the fields that a rule matches. 
-- Rules that are based on a schedule perform an action at regular intervals.
+- [Rules that are based on a schedule](https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-create-rule-schedule.html) perform an action at regular intervals.
 
 ![img.png](assests/eventbridge/EventBridge.png)
 

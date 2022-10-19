@@ -25,6 +25,10 @@ The [application-to-application (A2A) pub/sub functionality](https://docs.aws.am
 - Send SMS to mobile users, 
 - Send Emails etc.
 
+# Amazon SNS message filtering
+- By default, an Amazon SNS topic subscriber receives every message published to the topic. 
+- To receive a subset of the messages, a [subscriber must assign a filter policy to the topic subscription](https://docs.aws.amazon.com/sns/latest/dg/sns-message-filtering.html).
+
 # :star: Amazon SNS vs Others
 - [Read here](../../1_HLDDesignComponents/4_MessageBrokers/KafkaVsRabbitMQVsSQSVsSNS.md)
 
