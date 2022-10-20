@@ -33,6 +33,13 @@
 | Availability Zones | 69    |
 | Points Of Presence | 216   |
 
+
+# Global vs Regional vs AZ Resource locations
+
+![img.png](https://jayendrapatil.com/wp-content/uploads/2016/03/AWS-Global-vs-Regional-vs-AZs.png)
+
+[Read more](https://jayendrapatil.com/aws-global-vs-regional-vs-az-resources/)
+
 # Source(s) and further reading
 - [What are the differences AWS Regions and Availability Zones?](https://www.quora.com/What-are-the-differences-AWS-Regions-and-Availability-Zones)
 

@@ -5,12 +5,6 @@
 
 # System Designs
 
-# Global vs Regional vs AZ Resource locations
-
-![img.png](https://jayendrapatil.com/wp-content/uploads/2016/03/AWS-Global-vs-Regional-vs-AZs.png)
-
-[Read more](https://jayendrapatil.com/aws-global-vs-regional-vs-az-resources/)
-
 ## Design Scalable System on AWS
 
 ![img.png](0_AWSDesigns/DesignScalableSystemWithRDMS/assets/DesignScalableSystemWithRelationalDBOnAWS.drawio.png)
