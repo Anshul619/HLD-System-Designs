@@ -24,8 +24,16 @@
 - [Amazon Redshift Clusters](../6_DatabaseServices/AmazonRedshift.md)
 - [SAAS Integrations - Partner Sources](https://aws.amazon.com/eventbridge/integrations/)
 
-# Other Links
+# Archives
+- For [disaster recovery](../../1_HLDDesignComponents/0_SystemGlossaries/FaultTolerance&DisasterRecovery.md) and auditing purposes event are also set up to be archived. 
+- This is very helpful for replaying these events.
 - [Guide to archive Amazon EventBridge events & replay those later.](https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-archive-event.html)
+
+# Replays
+- To be able to debug the behaviour of the system based for older events, we can use the replays.
+- [Replaying archived Amazon EventBridge events](https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-replay-archived-event.html)
+
+# Other Links
 - :star: [Amazon EventBridge vs others](../../1_HLDDesignComponents/4_MessageBrokers/KafkaVsRabbitMQVsSQSVsSNS.md)
 
 # References
