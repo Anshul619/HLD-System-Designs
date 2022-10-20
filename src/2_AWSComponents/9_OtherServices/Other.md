@@ -8,3 +8,8 @@
 
 # AWS Macie
 - To discover sensitive information that the enterprise stores in AWS and then use `NLP` to classify the data and provide business-related insights.
+
+# AWS - Cost Exploration Services
+- [Cost Explorer](https://aws.amazon.com/aws-cost-management/aws-cost-explorer/)
+- [AWS Budgets](https://aws.amazon.com/aws-cost-management/aws-budgets/)
+- [Cost Allocation Tags](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/cost-alloc-tags.html)

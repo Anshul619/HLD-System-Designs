@@ -3,6 +3,40 @@
 - AWS manages its [global architecture through region and availability zones](AWS-Global-Architecture-Region-AZ.md).
 - [Amazon Resouce Name (ARN)](https://docs.aws.amazon.com/general/latest/gr/aws-arns-and-namespaces.html) uniquely identify AWS resources.
 
+# System Designs
+
+# Global vs Regional vs AZ Resource locations
+
+![img.png](https://jayendrapatil.com/wp-content/uploads/2016/03/AWS-Global-vs-Regional-vs-AZs.png)
+
+[Read more](https://jayendrapatil.com/aws-global-vs-regional-vs-az-resources/)
+
+## Design Scalable System on AWS
+
+![img.png](0_AWSDesigns/DesignScalableSystemWithRDMS/assets/DesignScalableSystemWithRelationalDBOnAWS.drawio.png)
+
+[Read more](0_AWSDesigns/DesignScalableSystemWithRDMS/README.md)
+
+## Design Multi-Region Active-Active Architecture On AWS
+
+![img.png](0_AWSDesigns/DesignMultiRegionActiveActiveArchitectureOnAWS/AWS-AZ-Region-HA.drawio.png)
+
+[Read more](0_AWSDesigns/DesignMultiRegionActiveActiveArchitectureOnAWS/README.md)
+
+## Upload Image using Amazon S3 and Lambda
+
+![img.png](0_AWSDesigns/DesignUploadImageAWSLambdaS3/assets/UploadImage-Lambda.drawio.png)
+
+[Read more](0_AWSDesigns/DesignUploadImageAWSLambdaS3/README.md)
+
+## Others
+- [Send-SMS-API design - App Internal Clients, Multiple SMS-Providers, AutoScaling](../3_HLDDesignProblems/NotificationSystem/README.md)
+- [WP Site with Amazon CloudFront & S3](0_AWSDesigns/WPSiteCloudFront&S3.md)
+- [Microservices On AWS](0_AWSDesigns/MicroservicesOnAWS.md)
+- [Dropbox Saves Millions by Building a Scalable Metadata Store on Amazon DynamoDB and Amazon S3](0_AWSDesigns/DropboxAmazonDynamoDB/Readme.md)
+
+# AWS Services - Architecture, Features etc.
+
 <table>
   <tbody>
      <tr>
@@ -247,95 +281,62 @@
   </tbody>
 </table>
 
-# Global vs Regional vs AZ Resource locations
-
-![img.png](https://jayendrapatil.com/wp-content/uploads/2016/03/AWS-Global-vs-Regional-vs-AZs.png)
-
-[Read more](https://jayendrapatil.com/aws-global-vs-regional-vs-az-resources/)
-
-# Design Scalable System on AWS
-
-![img.png](0_AWSDesigns/DesignScalableSystemWithRDMS/assets/DesignScalableSystemWithRelationalDBOnAWS.drawio.png)
-
-[Read more](0_AWSDesigns/DesignScalableSystemWithRDMS/README.md)
-
-# Design Multi-Region Active-Active Architecture On AWS
-
-![img.png](0_AWSDesigns/DesignMultiRegionActiveActiveArchitectureOnAWS/AWS-AZ-Region-HA.drawio.png)
-
-[Read more](0_AWSDesigns/DesignMultiRegionActiveActiveArchitectureOnAWS/README.md)
-
-# Amazon API Gateway - Features
+## Amazon API Gateway - Features
 
 ![img.png](1_NetworkingAndContentDelivery/AmazonAPIGateway/assets/AmazonAPIGateway_Features.drawio.png)
 
 [Read more](1_NetworkingAndContentDelivery/AmazonAPIGateway/Readme.md)
 
-# Amazon Elastic Load Balancer
+## Amazon Elastic Load Balancer
 
 ![img.png](1_NetworkingAndContentDelivery/ElasticLoadBalancer/assests/AWS_Elastic_Load_Balancer.png)
 
 [Read more](1_NetworkingAndContentDelivery/ElasticLoadBalancer/Readme.md)
 
-# Amazon ECS - Tasks, Fargate etc.
+## Amazon ECS - Tasks, Fargate etc.
 
 ![img.png](4_ComputeServices/AmazonECS/assests/ECS-Tasks.png)
 
 [Read more](4_ComputeServices/AmazonECS/README.md)
 
-# Amazon SQS - Queue, Consumers etc.
+## Amazon SQS - Queue, Consumers etc.
 
 ![img.png](5_MessageBrokerServices/assests/sqs/SQS-DLD-More-Info.png)
 
 [Read more](5_MessageBrokerServices/AmazonSQS.md)
 
-# Amazon EventBridge - Targets, Rules etc.
+## Amazon EventBridge - Targets, Rules etc.
 
 ![img.png](5_MessageBrokerServices/assests/eventbridge/EventBridge.png)
 
 [Read more](5_MessageBrokerServices/AmazonEventBridge.md)
 
-# Amazon SNS - Pub/Sub, Push etc.
+## Amazon SNS - Pub/Sub, Push etc.
 
 ![img.png](5_MessageBrokerServices/assests/sns/FanOutPatternSQSSNS.png)
 
 [Read more](5_MessageBrokerServices/AmazonSNS.md)
 
-# Upload Image using Amazon S3 and Lambda
-
-![img.png](0_AWSDesigns/DesignUploadImageAWSLambdaS3/assets/UploadImage-Lambda.drawio.png)
-
-[Read more](0_AWSDesigns/DesignUploadImageAWSLambdaS3/README.md)
-
-# Auto-Scaling - How it works?
+## Auto-Scaling - How it works?
 
 ![img.png](4_ComputeServices/AmazonEC2/AutoScalingGroup/assets/Auto-Scaling-ELB.png)
 
 [Read more](4_ComputeServices/AmazonEC2/AutoScalingGroup/README.md)
 
-# AWS Step Functions - Lambda
+## AWS Step Functions - Lambda
 
 ![img.png](4_ComputeServices/assests/AWSStepFunctions.png)
 
 [Read more](4_ComputeServices/AWSStepFunctions.md)
 
-# AWS - System Designs
-- :star: [Design Multi-Region Active-Active Architecture On AWS](0_AWSDesigns/DesignMultiRegionActiveActiveArchitectureOnAWS)
-- :star: [Design Scalable System on AWS](0_AWSDesigns/DesignScalableSystemWithRDMS)
-- [Upload Image using Amazon S3 and Lambda](0_AWSDesigns/DesignUploadImageAWSLambdaS3/README.md)
-- [Send-SMS-API design - App Internal Clients, Multiple SMS-Providers, AutoScaling](../3_HLDDesignProblems/NotificationSystem/README.md)
-- [WP Site with Amazon CloudFront & S3](0_AWSDesigns/WPSiteCloudFront&S3.md)
-- [Microservices On AWS](0_AWSDesigns/MicroservicesOnAWS.md)
-- [Dropbox Saves Millions by Building a Scalable Metadata Store on Amazon DynamoDB and Amazon S3](0_AWSDesigns/DropboxAmazonDynamoDB/Readme.md)
-
-# AWS - Comparisons b/w Services
+## AWS - Comparisons b/w Services
 - [Amazon Aurora vs RDS](6_DatabaseServices/AWSAuroraVsRDS.md)
 - [Amazon SQS vs SNS](../1_HLDDesignComponents/4_MessageBrokers/KafkaVsRabbitMQVsSQSVsSNS.md)
 - [Amazon S3 vs EFS vs EBS](7_StorageServices/S3vsEFSvsEBS.md)
 - [Amazon ECS vs EKS vs Fargate](4_ComputeServices/EKSvsECSvsFargate.md)
 - [Amazon API Gateway vs ELB](1_NetworkingAndContentDelivery/AmazonAPIGatewayVsELB.md)
 
-# AWS - Various Services
+## AWS - Services List, Table
 
  Service                                                                                      | Type                                                                      | [Fully Managed?](FullyManagedVsSelfManaged.md)    | Service Type                               | Description                                                                                                                                                                                                                                                               |
 ----------------------------------------------------------------------------------------------|---------------------------------------------------------------------------|---------------------------------------------------|--------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -385,11 +386,6 @@
  [Amazon Elastic IP](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/elastic-ip-addresses-eip.html)  | [Networking & Content Delivery Service](1_NetworkingAndContentDelivery)   | :white_check_mark:                                | Regional                                   | An Elastic IP address is a static IPv4 address designed for dynamic cloud computing.                                                                                                                                                                                      |
 
 * [Utility services](https://stackoverflow.com/questions/33125790/why-some-services-are-called-aws-xxx-and-the-others-amazon-xxx) are prefixed with `AWS`, while standalone services are prefixed by `Amazon`.
-
-# AWS - Cost Exploration Services
-- [Cost Explorer](https://aws.amazon.com/aws-cost-management/aws-cost-explorer/)
-- [AWS Budgets](https://aws.amazon.com/aws-cost-management/aws-budgets/)
-- [Cost Allocation Tags](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/cost-alloc-tags.html)
 
 # Source(s) and further reading
 - [AWS Documentation Overview](https://aws.amazon.com/documentation-overview/)
