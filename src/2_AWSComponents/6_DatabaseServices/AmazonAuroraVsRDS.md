@@ -15,6 +15,3 @@
 | [Fail Over](../../1_HLDDesignComponents/0_SystemGlossaries/HighAvailability.md#fail-over-policies) | less than 30 secs, in case of AZ or region failure                                                                                                                                                                  | around 60-120 seconds                                             |
 | IOPs (input/output operations per second )                                                         | Greater than 80K IOPS                                                                                                                                                                                               | Max 80K IOPS                                                      |
 | Storage                                                                                            | Uses a `single, virtual cluster volume` that uses SSDs.                                                                                                                                                             | Supports `Amazon EBS` solid state drive (SSD)-based storage types |
-
-
-  [a](../../1_HLDDesignComponents/0_SystemGlossaries/Append-Only.md)
