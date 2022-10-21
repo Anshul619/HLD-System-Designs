@@ -25,6 +25,10 @@
 
 ![img.png](assests/aurora_high_availability_img.png)
 
+# Multi-AZ Feature
+- In an [Amazon RDS Multi-AZ deployment](https://aws.amazon.com/rds/features/multi-az/), Amazon RDS automatically creates a primary database (DB) instance and synchronously replicates the data to an instance in a different AZ. 
+- When it detects a failure, Amazon RDS automatically fails over to a standby instance without manual intervention.
+
 # Aurora Security ( similar to RDS )
 - Encryption at rest using KMS
 - Automated backups, snapshots & replicas are also encrypted.
