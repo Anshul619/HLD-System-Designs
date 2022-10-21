@@ -1,5 +1,5 @@
 
-# Geographic Regions
+# :earth_americas: Geographic Regions
 - A [region](https://aws.amazon.com/about-aws/global-infrastructure/regions_az/) is a `geographic location` where every data center inside the region is called an `availability zone`, AZ in short.
 - There are `25 geographic regions` available in AWS, around the world.
 - For examples,
@@ -30,19 +30,19 @@ Every AZ is labeled with a letter a, b, c etc.
 
 # Summary
 
-| Component              | Count |
-|------------------------|-------|
-| Geographic Regions     | 25    |
-| Availability Zones(AZ) | 69    |
-| Points Of Presence     | 216   |
+| Component                           | Count |
+|-------------------------------------|-------|
+| :earth_americas: Geographic Regions | 25    |
+| Availability Zones(AZ)              | 69    |
+| Points Of Presence                  | 216   |
 
 # Global vs Regional vs Availability Zone Resource locations
 
-| Type                       | Description                                                                        |
-|----------------------------|------------------------------------------------------------------------------------|
-| Global                     | AWS Service needs to be setup once in the AWS account, irrespective of any region. |
-| Regional                   | AWS Service needs to be setup for every region in AWS account                      |
-| Availability Zone Resource | AWS Service needs to be setup for every availability zone, in AWS account          |
+| Type                          | Description                                                                        |
+|-------------------------------|------------------------------------------------------------------------------------|
+| :globe_with_meridians: Global | AWS Service needs to be setup once in the AWS account, irrespective of any region. |
+| :earth_americas: Regional     | AWS Service needs to be setup for every region in AWS account                      |
+| Availability Zone Resource    | AWS Service needs to be setup for every availability zone, in AWS account          |
 
 ![img.png](https://jayendrapatil.com/wp-content/uploads/2016/03/AWS-Global-vs-Regional-vs-AZs.png)
 
