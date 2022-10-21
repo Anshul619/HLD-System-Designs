@@ -3,7 +3,7 @@
 - [AWS Lambda](https://aws.amazon.com/lambda/) is a compute service that lets you run code without provisioning or managing servers. 
 - AWS Lambda runs your code on a [high-availability compute infrastructure](../../../1_HLDDesignComponents/0_SystemGlossaries/HighAvailability.md) and performs all the administration of compute resources, including server and operating system maintenance, capacity provisioning and automatic scaling, code monitoring and logging. 
 - With Lambda, you can run code for virtually any type of application or backend service. 
-- All you need to do is [supply your code in one of the languages that Lambda supports](#what-languages-does-lambda-supports).
+- All you need to do is [supply your code in one of the languages that Lambda supports](#supported-code-upload-options--languages).
 
 # Supported Code Upload Options & Languages
 
@@ -43,7 +43,7 @@
 - [Amazon S3](../../7_StorageServices/AmazonS3.md) - S3 can be configured so that AWS Lambda function would be invoked automatically when a file is added in S3 bucket.
 - [Amazon SQS](../../5_MessageBrokerServices/AmazonSQS.md) - SQS can be configured so that AWS Lambda function would be invoked automatically when a new message arrives in SQS Queue.
 - [Amazon DynamoDB](../../6_DatabaseServices/AmazonDynamoDB/Readme.md)
-- [Manually from code through Amazon EventBridge](../../5_MessageBrokerServices/AmazonEventBridge.md)
+- [Amazon EventBridge](../../5_MessageBrokerServices/AmazonEventBridge.md)
 - [Others](https://docs.aws.amazon.com/lambda/latest/dg/lambda-invocation.html)
 
 # AWS Lambda Function Permissions
@@ -68,5 +68,6 @@ public String handleRequest(Book book, Context context) {
 # Reference
 - [AWS Lambda (The Heart of Serverless)](https://rochisha-jaiswal70.medium.com/aws-lambda-the-heart-of-serverless-9a5cdcb6e27c)
 - [Invoking Lambda functions](https://docs.aws.amazon.com/lambda/latest/dg/lambda-invocation.html)
+- [AWS Fargate vs. Lambda: Comparing Two Serverless Solutions and their Use Cases](https://www.simform.com/blog/aws-fargate-vs-lambda/)
 
 
