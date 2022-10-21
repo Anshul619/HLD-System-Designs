@@ -65,7 +65,7 @@ Ideal Use Cases
 ![img.png](https://d2908q01vomqb2.cloudfront.net/da4b9237bacccdf19c0760cab7aec4a8359010b0/2021/04/08/cloudfront-function-and-lambda-edge-2-1024x454.png)
 
 ## Customizing at the edge with Lambda@Edge
-- [Lambda@Edge](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/lambda-at-the-edge.html) is an extension of [AWS Lambda](../4_ComputeServices/AWSLambda.md), a compute service that lets you execute functions that customize the content that CloudFront delivers. 
+- [Lambda@Edge](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/lambda-at-the-edge.html) is an extension of [AWS Lambda](../4_ComputeServices/AWSLambda/Readme.md), a compute service that lets you execute functions that customize the content that CloudFront delivers. 
 - You can author Node.js or Python functions in one Region, US East (N. Virginia), and then execute them in AWS locations globally that are closer to the viewer, without provisioning or managing servers. 
 - Lambda@Edge scales automatically, from a few requests per day to thousands per second. 
 - Processing requests at AWS locations closer to the viewer instead of on [origin servers significantly reduces latency and improves the user experience](../../1_HLDDesignComponents/0_SystemGlossaries/LatencyThroughput.md).

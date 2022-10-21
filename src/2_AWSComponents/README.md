@@ -137,7 +137,7 @@
                 <a href="4_ComputeServices/AWSFargate.md" target="_blank">
                   <img src="https://www.nclouds.com/img/services/toolkit/fargate.png" width="150">
                 </a>
-                <a href="4_ComputeServices/AWSLambda.md" target="_blank">
+                <a href="4_ComputeServices/AWSLambda/Readme.md" target="_blank">
                   <img src="https://www.brcline.com/wp-content/uploads/2021/09/aws-lambda-logo.png" width="150">
                 </a>
                 <a href="4_ComputeServices/AmazonEMR.md" target="_blank">
@@ -311,6 +311,12 @@
 
 [Read more](5_MessageBrokerServices/AmazonSNS.md)
 
+## AWS Lambda
+
+![img.png](4_ComputeServices/AWSLambda/assets/Lambda-Code-Upload-Options.png)
+
+[Read more](4_ComputeServices/AWSLambda/Readme.md)
+
 ## Auto-Scaling - How it works?
 
 ![img.png](4_ComputeServices/AmazonEC2/AutoScalingGroup/assets/Auto-Scaling-ELB.png)
@@ -346,7 +352,7 @@ Service                                                                         
 [Amazon EBS](https://aws.amazon.com/ebs/)                                                     | [Storage Service](7_StorageServices)                                                | :x:                                            | Availability Zone                                                                 |
 [Amazon Elastic IP](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/elastic-ip-addresses-eip.html)  | [Networking & Content Delivery Service](1_NetworkingAndContentDelivery)             | :white_check_mark:                             | :earth_americas: Regional                                                         | An Elastic IP address is a static IPv4 address designed for dynamic cloud computing.                                                                                                                                                                                      |
 :star: [AWS Fargate ](4_ComputeServices/AWSFargate.md)                                       | [Compute Service](4_ComputeServices)                                                | :white_check_mark:                             | :earth_americas: Regional                                                         | Serverless compute for containers. <br/>- Compatible with both [EKS](4_ComputeServices/AmazonEKS.md) & [ECS](4_ComputeServices/AmazonECS/README.md) i.e. these services can run with Fargate as deployment option, instead of [EC2](4_ComputeServices/AmazonEC2/ReadMe.md). |
-:star: [AWS Lambda](4_ComputeServices/AWSLambda.md)                                          | [Compute Service](4_ComputeServices)                                                | :white_check_mark:                             | :earth_americas: Regional                                                         | Run code without thinking about servers or clusters.                                                                                                                                                                                                                      |
+:star: [AWS Lambda](4_ComputeServices/AWSLambda/Readme.md)                                          | [Compute Service](4_ComputeServices)                                                | :white_check_mark:                             | :earth_americas: Regional                                                         | Run code without thinking about servers or clusters.                                                                                                                                                                                                                      |
 :star: [Amazon ECS](4_ComputeServices/AmazonECS/README.md)                                   | [Container Orchestration Service](4_ComputeServices)                                | :white_check_mark:                             | :earth_americas: Regional                                                         | Full Managed [Container Orchestration Service](../1_HLDDesignComponents/0_SystemGlossaries/ContainerOrchestrationService.md) (Containers as a service).                                                                                                                   |
 :star: [Amazon EKS](4_ComputeServices/AmazonEKS.md)                                          | [Container Orchestration Service](4_ComputeServices)                                | :white_check_mark:                             | :earth_americas: Regional                                                         | Fully managed [Kubernetes](../1_HLDDesignComponents/6_DevOps/Kubernates.md) service                                                                                                                                                                                       |
 [Amazon RDS](6_DatabaseServices/AmazonRDS.md)                                                | [Database Service](6_DatabaseServices)                                              | :x:                                            | Availability Zone <br/>(Highly Available if Multi-AZ enabled)                     | Database management service for relational databases                                                                                                                                                                                                                      |

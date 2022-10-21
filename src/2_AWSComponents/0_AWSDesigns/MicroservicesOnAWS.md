@@ -11,7 +11,7 @@
 - [AWS PrivateLink](../1_NetworkingAndContentDelivery/AWSPrivateLink.md)
 - [Amazon ECS](../4_ComputeServices/AmazonECS/README.md)
 - [Amazon EKS](../4_ComputeServices/AmazonEKS.md)
-- [AWS Lambda](../4_ComputeServices/AWSLambda.md)
+- [AWS Lambda](../4_ComputeServices/AWSLambda/Readme.md)
 - [AWS Fargate](../4_ComputeServices/AWSFargate.md)
 
 ## Data Store

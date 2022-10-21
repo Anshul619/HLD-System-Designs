@@ -14,7 +14,7 @@
 ![img.png](assests/eventbridge/EventBridge.png)
 
 # Available Target Services
-- [AWS Lambda](../4_ComputeServices/AWSLambda.md)
+- [AWS Lambda](../4_ComputeServices/AWSLambda/Readme.md)
 - [Amazon SQS](AmazonSQS.md)
 - [Amazon SNS](AmazonSNS.md)
 - [AWS Step Functions](../4_ComputeServices/AWSStepFunctions.md)

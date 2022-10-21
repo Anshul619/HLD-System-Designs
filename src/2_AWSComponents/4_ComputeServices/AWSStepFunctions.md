@@ -1,6 +1,6 @@
 
 # AWS Step Functions
-- [AWS Step Functions](https://docs.aws.amazon.com/step-functions/latest/dg/welcome.html) is a serverless orchestration service that lets you integrate with [AWS Lambda](AWSLambda.md) functions and other AWS services to build business-critical applications.
+- [AWS Step Functions](https://docs.aws.amazon.com/step-functions/latest/dg/welcome.html) is a serverless orchestration service that lets you integrate with [AWS Lambda](AWSLambda/Readme.md) functions and other AWS services to build business-critical applications.
 
 ![img.png](assests/AWSStepFunctions.png)
 

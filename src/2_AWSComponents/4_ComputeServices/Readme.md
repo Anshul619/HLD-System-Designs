@@ -4,6 +4,6 @@
 - [Amazon ECS](AmazonECS/README.md)
 - [Amazon EKS](AmazonEKS.md)
 - [Amazon EMR](AmazonEMR.md)
-- [AWS Lambda](AWSLambda.md)
+- [AWS Lambda](AWSLambda/Readme.md)
 - [AWS Step Functions](AWSStepFunctions.md)
 - [Amazon EKS vs ECS vs Fargate](EKSvsECSvsFargate.md)
