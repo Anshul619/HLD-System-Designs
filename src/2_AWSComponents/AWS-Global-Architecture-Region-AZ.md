@@ -33,7 +33,13 @@
 | Availability Zones | 69    |
 | Points Of Presence | 216   |
 
-# Global vs Regional vs AZ Resource locations
+# Global vs Regional vs Availability Zone Resource locations
+
+| Type                       | Description                                                                        |
+|----------------------------|------------------------------------------------------------------------------------|
+| Global                     | AWS Service needs to be setup once in the AWS account, irrespective of any region. |
+| Regional                   | AWS Service needs to be setup for every region in AWS account                      |
+| Availability Zone Resource | AWS Service needs to be setup for every availability zone, in AWS account          |
 
 ![img.png](https://jayendrapatil.com/wp-content/uploads/2016/03/AWS-Global-vs-Regional-vs-AZs.png)
 
