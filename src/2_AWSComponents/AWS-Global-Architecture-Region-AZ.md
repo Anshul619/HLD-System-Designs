@@ -1,5 +1,5 @@
 
-# Region
+# Geographic Regions
 - A [region](https://aws.amazon.com/about-aws/global-infrastructure/regions_az/) is a `geographic location` where every data center inside the region is called an `availability zone`, AZ in short.
 - There are `25 geographic regions` available in AWS, around the world.
 - For examples,
@@ -8,16 +8,19 @@
   - eu-north-1 (Europe (Stockholm))
   - ap-south-1 (Asia Pacific (Mumbai))
 
-![img.png](6_DatabaseServices/AmazonAurora/assests/aurora_global_database_img.png)
+![img.png](0_AWSDesigns/DesignMultiRegionActiveActiveArchitectureOnAWS/AWS-AZ-Region-HA.drawio.png)
 
-# Availability Zone
+# Availability Zones (AZ)
 - [An Availability Zone (AZ)](https://aws.amazon.com/about-aws/global-infrastructure/regions_az/) is `one or more discrete data centers` with redundant power, networking, and connectivity in an AWS Region. 
 - AZs give customers the ability to operate production applications and databases that are more [highly available](../1_HLDDesignComponents/0_SystemGlossaries/HighAvailability.md), [fault-tolerant](../1_HLDDesignComponents/0_SystemGlossaries/FaultTolerance&DisasterRecovery.md), and [scalable](../1_HLDDesignComponents/0_SystemGlossaries/Scalability.md) than would be possible from a single data center.
+- [Most Regions]() are home to 2-3 different Availability Zones each, providing adequate redundancy when necessary within a given Region.
+- All Availability Zones within a single Region are connected to one another through [private fiber-optic networking](), allowing each Availability Zone to communicate with one another and transfer data quickly and efficiently as required.
 - There are `69 availability zones` available in AWS, around the world.
-- Every AZ is labeled with a letter a, b, c etc.
-- For example - AWS Region eu-central-1 has three availability zones eu-central-1a,1b,1c.
 
-![img.png](0_AWSDesigns/DesignMultiRegionActiveActiveArchitectureOnAWS/AWS-AZ-Region-HA.drawio.png)
+Every AZ is labeled with a letter a, b, c etc.
+- For example - [AWS Region eu-central-1 has three availability zones eu-central-1a,1b,1c](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Concepts.RegionsAndAvailabilityZones.html).
+
+![img.png](https://d0.awsstatic.com/global-infrastructure/maps/Global_Infrastructure_5.13.png)
 
 # Points of Presence
 - [POPs](https://www.medianova.com/en-blog/what-is-a-pop-and-how-do-we-create-one/) are used for both [Amazon CloudFront](1_NetworkingAndContentDelivery/AmazonCloudFront.md) to deliver content to end users at high speeds, and [Lambda@Edge](4_ComputeServices/AWSLambda.md) to run Lambda functions with the lowest possible latency. 
@@ -27,11 +30,11 @@
 
 # Summary
 
-| Component          | Count |
-|--------------------|-------|
-| Geographic Regions | 25    |
-| Availability Zones | 69    |
-| Points Of Presence | 216   |
+| Component              | Count |
+|------------------------|-------|
+| Geographic Regions     | 25    |
+| Availability Zones(AZ) | 69    |
+| Points Of Presence     | 216   |
 
 # Global vs Regional vs Availability Zone Resource locations
 
