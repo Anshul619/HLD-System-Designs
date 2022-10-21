@@ -5,7 +5,7 @@
 - It takes time (known as [Replica Lag](https://cloud.google.com/sql/docs/mysql/replication/replication-lag)) for data to be replicated in [multiple highly available zones ( or regions )](../../2_AWSComponents/AWS-Global-Architecture-Region-AZ.md).
 - Hence `Data Consistency won't be there for those milliseconds`.
 - Each slave outputs a message stating that it has received the update successfully, thus allowing the sending of subsequent updates.
-- Read more about replication lag in [Amazon Aurora vs RDS](../../2_AWSComponents/6_DatabaseServices/AWSAuroraVsRDS.md).
+- Read more about replication lag in [Amazon Aurora vs RDS](../../2_AWSComponents/6_DatabaseServices/AmazonAuroraVsRDS.md).
 
 ## Consistency patterns
 

@@ -4,7 +4,7 @@
 - It manages patching, upgrading, and data backups automatically. 
 - It's a database management service for structured data only ( database engines like MySQL, PostgresSQL, SQL Server etc.)
 - Amazon RDS can be scaled either through [Vertical Scaling](../../1_HLDDesignComponents/0_SystemGlossaries/Scalability.md#vertical-scalability--scale-up-) or [Horizontal Scaling (master-slave)](../../1_HLDDesignComponents/0_SystemGlossaries/Scalability.md#db---horizontal-scaling-techniques).
-- [Why Amazon Aurora engine is better than Amazon RDS, for MySQL/Postgres DB engines?](AWSAuroraVsRDS.md)
+- [Why Amazon Aurora engine is better than Amazon RDS, for MySQL/Postgres DB engines?](AmazonAuroraVsRDS.md)
 
 ![img.png](assests/RDS_database_engines.png)
 

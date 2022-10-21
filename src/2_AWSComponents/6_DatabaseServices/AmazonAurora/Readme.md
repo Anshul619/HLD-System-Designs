@@ -4,7 +4,7 @@
 - Aurora is a proprietary technology from AWS (not open sourced).
 - Aurora is `AWS Cloud Optimized` and claims `5x performance improvement over MySQL on RDS`, over `3x performance improvement over Postgres on RDS`.
 - [High throughput up to 200K writes/second](../../../1_HLDDesignComponents/0_SystemGlossaries/LatencyThroughput.md), with negligible performance impact.
-- [Why Amazon Aurora engine is better than Amazon RDS, for MySQL/Postgres DB engines?](../AWSAuroraVsRDS.md)
+- [Why Amazon Aurora engine is better than Amazon RDS, for MySQL/Postgres DB engines?](../AmazonAuroraVsRDS.md)
 
 ![img.png](assests/aurora.png)
 
