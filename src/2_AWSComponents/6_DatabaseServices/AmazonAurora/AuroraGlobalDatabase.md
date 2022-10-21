@@ -5,7 +5,7 @@
 ![img.png](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/images/aurora-global-databases-conceptual-illo.png)
 
 ## :thumbsup: Advantages of Aurora Global Database
-- `Cross-Region Replication with low replica lag` ( in less than 1 second ). 
+- [Cross-Region Replication with low replica lag ( in less than 1 second )](../../AWS-Global-Architecture-Region-AZ.md). 
   - Aurora uses [physical, log-based asynchronous replication](../../../1_HLDDesignComponents/0_SystemGlossaries/Append-Only.md).
 - [Disaster Recovery](../../../1_HLDDesignComponents/0_SystemGlossaries/FaultTolerance&DisasterRecovery.md) promotes remote databases to a primary for faster recovery ( in less than 1 min ) in the event of a disaster. 
   - For industries like `Financial Services` etc.
