@@ -33,7 +33,6 @@
 | Availability Zones | 69    |
 | Points Of Presence | 216   |
 
-
 # Global vs Regional vs AZ Resource locations
 
 ![img.png](https://jayendrapatil.com/wp-content/uploads/2016/03/AWS-Global-vs-Regional-vs-AZs.png)
