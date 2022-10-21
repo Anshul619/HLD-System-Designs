@@ -1,7 +1,7 @@
 
 # Amazon ELB - Elastic Load Balancer
 - [Amazon ELB - Elastic Load Balancer](https://docs.aws.amazon.com/elasticloadbalancing) automatically distributes your incoming traffic across multiple targets, such as [EC2 instances](../../4_ComputeServices/AmazonEC2), [containers](../../4_ComputeServices/AmazonECS), and IP addresses, in [one or more Availability Zones](../../AWS-Global-Architecture-Region-AZ.md). 
-- It [monitors the health of its registered targets and routes traffic only to the healthy targets](https://aws.amazon.com/builders-library/implementing-health-checks/).
+- [It monitors the health of its registered targets and routes traffic only to the healthy targets](https://aws.amazon.com/builders-library/implementing-health-checks/).
 - [ELB vs API Gateway](../AmazonAPIGatewayVsELB.md)
 
 ![img.png](assests/AWS_Elastic_Load_Balancer.png)
@@ -72,6 +72,9 @@ You can select the type of [load balancer](../../../1_HLDDesignComponents/0_Syst
 ![img.png](../../4_ComputeServices/AmazonEC2/AutoScalingGroup/assets/Auto-Scaling-ELB.png)
 
 - [Read here](../../4_ComputeServices/AmazonEC2/AutoScalingGroup/README.md)
+
+# Other Links
+- [How can I associate an ACM SSL/TLS certificate with a Classic, Application, or Network Load Balancer?](https://aws.amazon.com/premiumsupport/knowledge-center/associate-acm-certificate-alb-nlb/)
 
 # References
 - [Application Load Balancer vs Network Load Balancer vs Classic Load Balancer | AWS CSAA | Whizlabs](https://www.youtube.com/watch?v=WqJDac1H81I)
