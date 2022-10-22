@@ -16,7 +16,7 @@
 
 ## Data Store
 - [Amazon Elastic Cache](../6_DatabaseServices/AmazonElasticCache.md)
-- [Amazon Aurora](../6_DatabaseServices/AmazonAurora)
+- [Amazon Aurora](../6_DatabaseServices/AmazonRDSAurora)
 - [Amazon DynamoDB](../6_DatabaseServices/AmazonDynamoDB/Readme.md)
 
 ## Message Brokers

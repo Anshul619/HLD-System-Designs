@@ -6,17 +6,17 @@
 
 # Few Examples
 
-| Tech                                                                                               | Remarks                                                              |
-|----------------------------------------------------------------------------------------------------|----------------------------------------------------------------------|
-| [Kafka Cluster](../4_MessageBrokers/Kafka.md)                                                      | Cluster of Topics ( High-Throughput MQ)                              |                     
-| [Redis Cluster](../3_DatabaseComponents/In-Memory-Cache/Redis/RedisCluster.md)                     | Cluster of Redis Nodes ( In-Memory Cache )                           |
+| Tech                                                                                                  | Remarks                                                              |
+|-------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------|
+| [Kafka Cluster](../4_MessageBrokers/Kafka.md)                                                         | Cluster of Topics ( High-Throughput MQ)                              |                     
+| [Redis Cluster](../3_DatabaseComponents/In-Memory-Cache/Redis/RedisCluster.md)                        | Cluster of Redis Nodes ( In-Memory Cache )                           |
 | [ElasticSearch Cluster](../3_DatabaseComponents/Search-Engines/ElasticSearch/ElasticSearchCluster.md) | Cluster of JSON Data, Indexes etc.                                   |
-| [OpenSearch Cluster](../../2_AWSComponents/6_DatabaseServices/AmazonOpenSearch.md)                 | Cluster of JSON Data, Indexes etc.                                   |
-| [Amazon Aurora Clusters](../../2_AWSComponents/6_DatabaseServices/AmazonAurora/AuroraDBClusters.md) | Cluster of DB instances, across Multi-AZs ( One cluster per region ) |
-| [Amazon Elastic Cache Cluster](../../2_AWSComponents/6_DatabaseServices/AmazonElasticCache.md)      | Cluster of Redis Nodes, across Multi-AZs ( One cluster per region )  |
-| [Kubernates Cluster](../6_DevOps/Kubernates.md)                                                    | Cluster of Containers                                                |
-| [Casandra Cluster](../3_DatabaseComponents/NoSQL-Databases/ApacheCasandra.md)                      | Cluster of wide-columns DBs                                          |
-| [Hadoop Cluster](../5_BigDataComponents/ApacheHadoop)                                                                                 | Cluster of different components                                      |
+| [OpenSearch Cluster](../../2_AWSComponents/6_DatabaseServices/AmazonOpenSearch.md)                    | Cluster of JSON Data, Indexes etc.                                   |
+| [Amazon Aurora Clusters](../../2_AWSComponents/6_DatabaseServices/AmazonRDSAurora/Readme.md)             | Cluster of DB instances, across Multi-AZs ( One cluster per region ) |
+| [Amazon Elastic Cache Cluster](../../2_AWSComponents/6_DatabaseServices/AmazonElasticCache.md)        | Cluster of Redis Nodes, across Multi-AZs ( One cluster per region )  |
+| [Kubernates Cluster](../6_DevOps/Kubernates.md)                                                       | Cluster of Containers                                                |
+| [Casandra Cluster](../3_DatabaseComponents/NoSQL-Databases/ApacheCasandra.md)                         | Cluster of wide-columns DBs                                          |
+| [Hadoop Cluster](../5_BigDataComponents/ApacheHadoop)                                                 | Cluster of different components                                      |
 
 
 

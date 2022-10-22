@@ -4,8 +4,8 @@
 - It is helpful when you can't predict the workload (low/normal base load, but spiky peaks ).
 - Available for the Amazon Aurora MySQL-Compatible Edition and PostgreSQL-Compatible Edition.
 - DB Cluster starts, shutdown and scales automatically based on CPU/connections.
-- Can migrate from [Aurora Cluster](AuroraDBClusters.md) to [Aurora Serverless]() & vice-versa.
-- Aurora serverless usage is measured in [ACU ( Aurora Capacity Units )](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/aurora-serverless-v1.how-it-works.html).
+- Can migrate from [Aurora Cluster](Readme.md) to [Aurora Serverless](Readme.md) & vice-versa.
+- Aurora serverless usage is measured in [ACU (Aurora Capacity Units)](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/aurora-serverless-v1.how-it-works.html).
 
 # How AWS internally handles load in Aurora Serverless?
 

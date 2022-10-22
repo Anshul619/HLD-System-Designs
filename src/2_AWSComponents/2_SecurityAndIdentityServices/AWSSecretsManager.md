@@ -4,7 +4,7 @@
 
 # How it works?
 - Use [AWS Secrets Manager](https://aws.amazon.com/secrets-manager/) to store, rotate, monitor and control access to secrets such as database credentials, API keys and OAuth tokens. 
-- Enable secret rotation using built-in integration for MySQL, PostgreSQL and [Amazon Aurora on Amazon RDS](../6_DatabaseServices/AmazonAurora). 
+- Enable secret rotation using built-in integration for MySQL, PostgreSQL and [Amazon Aurora on Amazon RDS](../6_DatabaseServices/AmazonRDSAurora). 
 - You can also enable rotation for other secrets using [AWS Lambda functions](../4_ComputeServices/AWSLambda/Readme.md). 
 - To retrieve secrets, you simply replace hard-coded secrets in applications with a call to Secrets Manager APIs, eliminating the need to expose plaintext secrets.
 

@@ -25,7 +25,7 @@ Built-in Single Machine Failure | Supported                                     
 
 Relational databases store data in rows and columns.
 - Each row contains all the information about one entity and each column contains all the separate data points.
-- Some of the most popular relational databases are [AWS Aurora](../../2_AWSComponents/6_DatabaseServices/AmazonAurora/Readme.md), `Postgres`, `MySQL`, `Oracle`, `MS SQL Server`, `SQLite` and `MariaDB`.
+- Some of the most popular relational databases are [AWS Aurora](../../2_AWSComponents/6_DatabaseServices/AmazonRDSAurora/Readme.md), `Postgres`, `MySQL`, `Oracle`, `MS SQL Server`, `SQLite` and `MariaDB`.
 
 # NoSQL - Intro, Different NoSQL types
 

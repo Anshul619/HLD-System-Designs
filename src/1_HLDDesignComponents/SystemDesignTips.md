@@ -23,8 +23,8 @@
 ## Scalability - Data Sharding of the datastore
 - To scale the data store horizontally ( i.e. improve `write throughput` ), shard the databases. ( through consistent hashing technique etc. )
 
-## Use Leverage Managed Infrastructures like [Amazon S3](../2_AWSComponents/7_StorageServices/AmazonS3.md), [Amazon Aurora](../2_AWSComponents/6_DatabaseServices/AmazonAurora/Readme.md), [DynamoDB](../2_AWSComponents/6_DatabaseServices/AmazonDynamoDB/Readme.md) etc.
-- We should use `Leverage Managed Infrastructures` like [Amazon S3](../2_AWSComponents/7_StorageServices/AmazonS3.md), [Amazon Aurora](../2_AWSComponents/6_DatabaseServices/AmazonAurora/Readme.md), [DynamoDB](../2_AWSComponents/6_DatabaseServices/AmazonDynamoDB/Readme.md) etc.
+## Use Leverage Managed Infrastructures like [Amazon S3](../2_AWSComponents/7_StorageServices/AmazonS3.md), [Amazon Aurora](../2_AWSComponents/6_DatabaseServices/AmazonRDSAurora/Readme.md), [DynamoDB](../2_AWSComponents/6_DatabaseServices/AmazonDynamoDB/Readme.md) etc.
+- We should use `Leverage Managed Infrastructures` like [Amazon S3](../2_AWSComponents/7_StorageServices/AmazonS3.md), [Amazon Aurora](../2_AWSComponents/6_DatabaseServices/AmazonRDSAurora/Readme.md), [DynamoDB](../2_AWSComponents/6_DatabaseServices/AmazonDynamoDB/Readme.md) etc.
 - Sometimes, we must have to consider `cloud-agnostic approach` ( & onPerm customer approach ) while designing the solution.
 
 ## SQL Queries - Performance Techniques

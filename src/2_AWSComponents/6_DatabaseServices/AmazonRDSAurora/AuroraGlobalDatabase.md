@@ -1,6 +1,6 @@
 # Aurora Global Database
 - [Amazon Aurora global databases](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/aurora-global-database.html) span multiple AWS Regions, enabling low latency global reads and providing fast recovery from the rare outage that might affect an entire AWS Region. 
-- An Aurora global database has a primary [Aurora DB cluster](AuroraDBClusters.md) in one Region, and up to five secondary [Aurora DB clusters](AuroraDBClusters.md) in different Regions.
+- An Aurora global database has a primary [Aurora DB cluster](Readme.md) in one Region, and up to five secondary [Aurora DB clusters](Readme.md) in different Regions.
 
 ![img.png](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/images/aurora-global-databases-conceptual-illo.png)
 
