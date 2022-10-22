@@ -7,10 +7,10 @@
 
 ![img.png](assests/aurora.png)
 
-# Important Points
-- [Aurora Global Database](AuroraGlobalDatabase.md)
+# Important Links
+- [:globe_with_meridians: Aurora Global Database](AuroraGlobalDatabase.md)
 - [Aurora Serverless](AuroraServerless.md)
-- [Why Amazon Aurora engine is better than Amazon RDS, for MySQL/Postgres DB engines?](../AmazonAuroraVsRDS.md)
+- [Amazon RDS Aurora vs Other RDS DB engines](../AmazonAuroraVsRDS.md)
 
 # High Availability
 
