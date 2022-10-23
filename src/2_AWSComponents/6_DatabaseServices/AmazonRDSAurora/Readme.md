@@ -1,6 +1,6 @@
 
 # Amazon RDS Aurora
-- [Amazon RDS Aurora](https://aws.amazon.com/rds/aurora/) is designed for unparalleled [high performance and availability at global scale](../../../1_HLDDesignComponents/0_SystemGlossaries/LatencyThroughput.md) with full MySQL and PostgreSQL compatibility (that means your drivers will work as if Aurora was a Postgres or MySQL database).
+- [Amazon RDS Aurora](https://aws.amazon.com/rds/aurora/) is designed for [unparalleled high performance and availability at global scale](../../../1_HLDDesignComponents/0_SystemGlossaries/LatencyThroughput.md) with full MySQL and PostgreSQL compatibility (that means your drivers will work as if Aurora was a Postgres or MySQL database).
 - Aurora is `AWS Cloud Optimized` and claims `5x performance improvement over MySQL on RDS`, over `3x performance improvement over Postgres on RDS`.
 - [High throughput up to 200K writes/second](../../../1_HLDDesignComponents/0_SystemGlossaries/LatencyThroughput.md), with negligible performance impact.
 - [Amazon RDS Aurora vs Other RDS DB engines](../AmazonAuroraVsRDS.md)
@@ -10,13 +10,13 @@
 
 # High Availability
 
-## Aurora Storage - High Availability
+## Aurora Storage
 - The [Amazon Aurora PostgreSQL and Amazon Aurora MySQL engines](https://aws.amazon.com/rds/ha/) include [additional High Availability](../../../1_HLDDesignComponents/0_SystemGlossaries/HighAvailability.md) options. 
 - Even with a single database instance, Amazon Aurora increases availability by [replicating your data six ways across three Availability Zones](). 
 - This means that your [DB cluster can tolerate a failure of an Availability Zone](../../../1_HLDDesignComponents/0_SystemGlossaries/FaultTolerance&DisasterRecovery.md) without any loss of data and only a brief interruption of service.
 - It also automatically backs up data in [Amazon S3](../../7_StorageServices/AmazonS3.md).
 
-## Aurora Compute - High Availability
+## Aurora Compute
 You can choose to run one or more Replicas in an [Amazon Aurora DB cluster](../../../1_HLDDesignComponents/0_SystemGlossaries/ServersCluster.md), through [Multi-AZ deployment](https://aws.amazon.com/rds/features/multi-az/). 
 - If the primary instance in the DB cluster fails, RDS automatically promotes an existing Aurora Replica to be the new primary instance and updates the server endpoint so that your application can continue operation with no manual intervention. 
 - If no Replicas have been provisioned, RDS will automatically create a new replacement DB instance for you when a failure is detected. (but this might take upto 10 minutes)
@@ -50,12 +50,6 @@ You can choose to run one or more Replicas in an [Amazon Aurora DB cluster](../.
 - Multi-master clusters are only available in the certain AWS Regions.
 - A [multi-master cluster doesn't do any load balancing for connections](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/aurora-multi-master.html#aurora-multi-master-connectivity).
   - Application must implement its own connection management logic to distribute read and write operations among multiple DB instance endpoints.
-
-# Security ( similar to RDS )
-- Encryption at rest using KMS
-- Automated backups, snapshots & replicas are also encrypted.
-- Encryption in flight/transmit using SSL
-- Authentication using IAM
 
 # References
 - [Amazon Aurora Global Database Design Patterns for HA and DR | Amazon Web Services](https://www.youtube.com/watch?v=bbiWciJSouY)

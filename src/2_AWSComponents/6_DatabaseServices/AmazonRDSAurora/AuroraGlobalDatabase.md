@@ -22,6 +22,6 @@
 ![img.png](assests/aurora_global_database_img.png)
 
 ## Using write forwarding in an Amazon Aurora global database
-- [Read more](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/aurora-global-database-write-forwarding.html)
-
 ![img.png](assests/aurora_global_write_forwarding.png)
+
+[Read more](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/aurora-global-database-write-forwarding.html)

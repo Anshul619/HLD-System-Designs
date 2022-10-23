@@ -7,5 +7,5 @@
 | :star: [Amazon Dynamo DB](AmazonDynamoDB/Readme.md)  | Fully managed NoSQL service                                                                                |
 | :star: [Amazon Elastic Cache](AmazonElasticCache.md) | Fully Managed [Redis & Memcache](../../1_HLDDesignComponents/3_DatabaseComponents/In-Memory-Cache/Redis/README.md) service |
 
-# Important Links
+# Other Links
 - [Amazon RDS Aurora vs Other RDS DB engines](AmazonAuroraVsRDS.md)

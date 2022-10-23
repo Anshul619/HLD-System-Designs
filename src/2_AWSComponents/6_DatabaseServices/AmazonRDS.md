@@ -24,6 +24,12 @@ For your MySQL, MariaDB, PostgreSQL, Oracle, and SQL Server database (DB) instan
 - The automatic scheduling is done only for patches that are related to security and [durability](../../1_HLDDesignComponents/0_SystemGlossaries/Durability.md).
 - By default, there is a 30-minute value assigned as the maintenance window and the DB instance will still be available during these events though you might observe a minimal effect on performance.
 
+# Security
+- Encryption at rest using KMS
+- Automated backups, snapshots & replicas are also encrypted.
+- Encryption in flight/transmit using SSL
+- Authentication using IAM
+
 # AWS Database Migration Service
 - [AWS DMS](https://aws.amazon.com/dms/) helps to migrate other databases to Amazon RDS.
 

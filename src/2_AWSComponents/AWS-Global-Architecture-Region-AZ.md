@@ -1,4 +1,3 @@
-
 # :earth_americas: Geographic Regions
 - A [region](https://aws.amazon.com/about-aws/global-infrastructure/regions_az/) is a `geographic location` where every data center inside the region is called an `availability zone`, AZ in short.
 - There are `25 geographic regions` available in AWS, around the world.
@@ -7,6 +6,7 @@
   - eu-west-1 (Europe (Ireland))
   - eu-north-1 (Europe (Stockholm))
   - ap-south-1 (Asia Pacific (Mumbai))
+- In AWS, [every region would have its own cluster](../1_HLDDesignComponents/0_SystemGlossaries/ServersCluster.md).
 
 ![img.png](0_AWSDesigns/DesignMultiRegionActiveActiveArchitectureOnAWS/AWS-AZ-Region-HA.drawio.png)
 
