@@ -1,7 +1,7 @@
 
 # Amazon RDS Aurora
 - [Amazon RDS Aurora](https://aws.amazon.com/rds/aurora/) is designed for [unparalleled high performance and availability at global scale](../../../1_HLDDesignComponents/0_SystemGlossaries/LatencyThroughput.md) with full MySQL and PostgreSQL compatibility (that means your drivers will work as if Aurora was a Postgres or MySQL database).
-- Aurora is `AWS Cloud Optimized` and claims `5x performance improvement over MySQL on RDS`, over `3x performance improvement over Postgres on RDS`.
+- Aurora is AWS Cloud Optimized and claims [5x performance improvement over MySQL on RDS, over 3x performance improvement over Postgres on RDS](../../../1_HLDDesignComponents/0_SystemGlossaries/LatencyThroughput.md).
 - [High throughput up to 200K writes/second](../../../1_HLDDesignComponents/0_SystemGlossaries/LatencyThroughput.md), with negligible performance impact.
 - [Amazon RDS Aurora vs Other RDS DB engines](../AmazonAuroraVsRDS.md)
 - Aurora is a proprietary technology from AWS (not open sourced).
@@ -53,6 +53,18 @@ You can choose to run one or more Replicas in an [Amazon Aurora DB cluster](../.
 - Multi-master clusters are only available in the certain AWS Regions.
 - A [multi-master cluster doesn't do any load balancing for connections](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/aurora-multi-master.html#aurora-multi-master-connectivity).
   - Application must implement its own connection management logic to distribute read and write operations among multiple DB instance endpoints.
+
+### RDS - Different Roles
+
+| Role             | Architecture        | Applicable RDS Engine                             | Remarks                                                                                |
+|------------------|---------------------|---------------------------------------------------|----------------------------------------------------------------------------------------|
+| Instance         | -                   | :white_check_mark: All                            | Simple DB instance, without Multi-AZ enabled.                                          |
+| Primary          | Master-Slave        | Non-Aurora                                        | Writer Instance, with Multi-AZ enabled and takes all writes.                           |
+| Replica          | Master-Slave        | Non-Aurora (when Multi-AZ enabled)                | Replica is a standby instance of Primary instance, in the different Availability Zone. |
+| Regional Cluster | Master-Read-Replica | :white_check_mark: Aurora                         | Aurora DB Cluster                                                                      |
+| Writer Instance  | Master-Read-Replica | :white_check_mark: Aurora                         | Takes all writes (& reads if multi-AZ disabled), in regional cluster                   |
+| Reader Instance  | Master-Read-Replica | :white_check_mark: Aurora (when Multi-AZ enabled) | Takes all reads, in regional cluster                                                   |
+| Serverless       | -                   | :white_check_mark: Aurora                         | Serverless compute of Aurora Instance                                                  |
 
 # References
 - [Amazon Aurora Global Database Design Patterns for HA and DR | Amazon Web Services](https://www.youtube.com/watch?v=bbiWciJSouY)
