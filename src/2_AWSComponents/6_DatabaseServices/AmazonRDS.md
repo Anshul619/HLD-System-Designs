@@ -27,6 +27,9 @@ For your MySQL, MariaDB, PostgreSQL, Oracle, and SQL Server database (DB) instan
 # AWS Database Migration Service
 - [AWS DMS](https://aws.amazon.com/dms/) helps to migrate other databases to Amazon RDS.
 
+# Master-Slave vs Read Replica?
+- [Read More](https://www.quora.com/What-does-it-mean-by-read-replica-in-Amazon-RDS-Is-that-similar-to-the-slave-server)
+
 # References
 - [Amazon RDS High Availability](https://aws.amazon.com/rds/ha/)
 - [AWS RDS Max Connections Limit As Per Instance Type](https://sysadminxpert.com/aws-rds-max-connections-limit/)

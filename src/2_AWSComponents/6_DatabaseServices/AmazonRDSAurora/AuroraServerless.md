@@ -6,6 +6,7 @@
 - DB Cluster starts, shutdown and scales automatically based on CPU/connections.
 - Can migrate from [Aurora Cluster](Readme.md) to [Aurora Serverless](Readme.md) & vice-versa.
 - Aurora serverless usage is measured in [ACU (Aurora Capacity Units)](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/aurora-serverless-v1.how-it-works.html).
+- [Only Single-Master Aurora cluster is supported](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/aurora-multi-master.html) in Aurora Serverless i.e. there would be only 1 writer instance and multiple read replicas in different regions.
 
 # How AWS internally handles load in Aurora Serverless?
 

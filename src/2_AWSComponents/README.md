@@ -215,7 +215,7 @@
         </td>
         <td>
             <div class="container" style="background:white">
-                <a href="6_DatabaseServices/AmazonAurora/Readme.md" target="_blank">
+                <a href="6_DatabaseServices/AmazonRDSAurora/Readme.md" target="_blank">
                   <img src="https://ty33w2cevsm2b9jau43ym0n6-wpengine.netdna-ssl.com/wp-content/uploads/2021/10/Amazon-Aurora-logo.png" width="150">
                 </a>
                 <a href="6_DatabaseServices/AmazonRDS.md" target="_blank">
