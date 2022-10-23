@@ -17,11 +17,27 @@
 ## Listener
 - A [listener](https://docs.aws.amazon.com/elasticloadbalancing/latest/network/load-balancer-listeners.html) checks for connection requests from clients, using the protocol and port that you configure, and forwards requests to a target group.
 
+![img.png](assests/elb_listener_setup.png)
+
 ## Target Group
 - [Each target group](https://docs.aws.amazon.com/elasticloadbalancing/latest/network/load-balancer-target-groups.html) routes requests to one or more registered targets, such as [EC2 instances](../../4_ComputeServices/AmazonEC2), using the TCP protocol ( in case of [Network Load Balancer](#network-load-balancer)) and the port number that you specify.
 - You can register a target with multiple target groups.
 - You can [configure health checks on a per target group basis](https://docs.aws.amazon.com/elasticloadbalancing/latest/application/target-group-health-checks.html).
 - Health checks are performed on all targets registered to a target group that is specified in a listener rule for your load balancer.
+
+## Network Mapping - VPC
+- The load balancer routes traffic to the targets in the selected subnets, and in accordance with your IP address settings.
+
+![img.png](assests/elb_network_mapping_setup.png)
+
+## Scheme - Internet-Facing, Internal
+- When you create a load balancer, you must choose whether to make it an internal load balancer or an internet-facing load balancer.
+- The nodes of an internet-facing load balancer have public IP addresses.
+- The nodes of an internal load balancer have only private IP addresses.
+- Both internet-facing and internal load balancers route requests to your targets using private IP addresses. 
+- Therefore, your targets do not need public IP addresses to receive requests from an internal or an internet-facing load balancer.
+
+![img.png](assests/elb_scheme_setup.png)
 
 # Types of ELB Load Balancers
 
@@ -32,12 +48,12 @@ You can select the type of [load balancer](../../../1_HLDDesignComponents/0_Syst
 
 ## Difference b/w Network Load Balancer and Application Load Balancer
 
-| Basis                        | Network Load Balancer                           | Application Load Balancer |
-|------------------------------|-------------------------------------------------|---------------------------|
-| Supported Protocols          | TCP, UDP                                        | HTTP, HTTPs               |
-| Supported Target Group Types | Instance, IP                                    | Instance, IP, Lambda      |
-| Content-Based Routing        | Not-Supported                      | Supported                 |
-| Rough Throughput             | Millions of requests per second                 | -                         |
+| Basis                        | Network Load Balancer                           | Application Load Balancer           |
+|------------------------------|-------------------------------------------------|-------------------------------------|
+| Supported Protocols          | TCP, UDP                                        | HTTP, HTTPs                         |
+| Supported Target Group Types | Instance, IP                                    | Instance, IP, Lambda                |
+| Content-Based Routing        | :x: Not-Supported                               | :white_check_mark: Supported        |
+| Rough Throughput             | Millions of requests per second                 | -                                   |
 | Ideally Use Cases            | Microservices (if API gateway used), other apps | Microservices, Container-based apps |
 
 ## Network Load Balancer
