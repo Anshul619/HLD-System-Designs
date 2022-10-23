@@ -25,3 +25,7 @@
 | HA - Multi-AZ                 | Yes, with at least 1 replica. Optional. On by default                      | Yes. Optional. On by default.                                                                                  |
 | Snapshots (Backups & Restore) | Yes, single .rdb file                                                      | Yes, unique .rdb file for each shard                                                                           |
 
+
+# References
+- [Benefits of Fully Managed Redis](https://aws.amazon.com/elasticache/redis/fully-managed-redis/)
+

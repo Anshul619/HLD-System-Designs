@@ -59,6 +59,10 @@ Each data type falls into one of the three following categories -
 
 ![img.png](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/images/HowItWorksPartitionKey.png)
 
+### Setup Steps - Partition, Sort keys
+
+![img.png](assests/dynamodb_partition_key_setup.png)
+
 ## :thumbsdown: What are disadvantages of DynamoDB?
 - Deployable only on AWS and cannot be installed on individual desktops/servers
 - No server side scripts
