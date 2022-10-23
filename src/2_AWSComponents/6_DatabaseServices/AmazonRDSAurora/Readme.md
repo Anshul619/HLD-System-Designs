@@ -35,10 +35,13 @@ You can choose to run one or more Replicas in an [Amazon Aurora DB cluster](../.
 
 ## :thumbsup: Aurora Single-Master cluster
 - [In Single-Master Aurora cluster](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/AuroraMySQL.Replication.html), there would be only 1 writer instance and multiple read replicas in different AZs/regions.
-- [Use :globe_with_meridians: Aurora Global Database for multiple replicas in different regions.](AuroraGlobalDatabase.md)
 - [Use Aurora Serverless for serverless compute of DB instances](AuroraServerless.md)
 
 ![img.png](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/images/AuroraArch001.png)
+
+[Use :globe_with_meridians: Aurora Global Database for multiple replicas in different regions.](AuroraGlobalDatabase.md)
+
+![img.png](assests/aurora_global_database_img.png)
 
 ## :thumbsdown: Aurora Multi-master cluster
 - [Read more](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/aurora-multi-master.html)
