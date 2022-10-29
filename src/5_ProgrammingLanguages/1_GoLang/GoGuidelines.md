@@ -46,8 +46,9 @@ theme := new(Theme) // Pointer to new Theme object
 ```
 
 Note:
-- A slice is already a reference value. If you pass a slice into a function, the function can modify its contents (*) and the modifications will be visible to the caller once it returns.
+- [A slice is already a reference value](https://stackoverflow.com/questions/52565597/cannot-append-to-slice-inside-a-function). If you pass a slice into a function, the function can modify its contents (*) and the modifications will be visible to the caller once it returns.
 - Alternatively, returning a new slice is also efficient - because again, slices are just references and don't take up much memory.
+- But appending an element to the slice, will not reflect in the caller function. Hence, either pointer needs to be used or new slice would have to be returned.
 
 # Various Go Constructs
 
@@ -318,6 +319,20 @@ func main() { // first calling function
 - [Reference](https://www.geeksforgeeks.org/channel-in-golang/)
 
 ![img.png](https://media.geeksforgeeks.org/wp-content/uploads/20190731140438/Untitled-Diagram46.jpg)
+
+# Recursion/DFS Traversal
+
+Be careful with passing array in recursion (DFS). 
+- Array would have to be initialized new while passing.
+
+````go
+for _, v := range graph[num] {
+    temp1 := []int{}
+    temp1 = append(temp1, *temp...)
+    util(graph, &temp1, out, v, target)
+}
+````
+- [Example Code](https://leetcode.com/problems/all-paths-from-source-to-target/submissions/)
 
 # Go Tutorials
 - [Frequently Asked Questions (FAQ) - Go](https://go.dev/doc/faq#overloading)
