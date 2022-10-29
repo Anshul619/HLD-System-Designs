@@ -1,10 +1,10 @@
 # Amazon CloudFront
 - [Amazon CloudFront](https://aws.amazon.com/cloudfront/) helps to improve website speed and access to cloud-based static data - [Securely deliver content with low latency and high transfer speeds](../../1_HLDDesignComponents/0_SystemGlossaries/LatencyThroughput.md).
 - CloudFront works as a [Global Content Delivery Service (CDN)](../../1_HLDDesignComponents/0_SystemGlossaries/CDNs.md) to deliver the content efficiently to the end users.
-- CloudFront is perfect for `Static content like WebSite, Media, Image, Video, Songs, Documents, Translation Files etc.` ( stored in [Amazon S3 bucket](../7_StorageServices/AmazonS3.md), for example)
+- CloudFront is perfect for [Static Content](../../1_HLDDesignComponents/0_SystemGlossaries/StaticContentWithCDN.md).
 
-# Amazon S3 + Amazon CloudFront: A Match Made in the Cloud
-- Instead of [directly accessing the S3 resource](https://aws.amazon.com/blogs/networking-and-content-delivery/amazon-s3-amazon-cloudfront-a-match-made-in-the-cloud/), we should use [CloudFront distribution](../1_NetworkingAndContentDelivery/AmazonCloudFront.md) in the middle (which acts as a [CDN](../../1_HLDDesignComponents/0_SystemGlossaries/CDNs.md))
+# :star: Amazon S3 + Amazon CloudFront: A Match Made in the Cloud
+- [Instead of directly accessing the S3 resource](https://aws.amazon.com/blogs/networking-and-content-delivery/amazon-s3-amazon-cloudfront-a-match-made-in-the-cloud/), we should use [CloudFront distribution](../1_NetworkingAndContentDelivery/AmazonCloudFront.md) in the middle (which acts as a [CDN](../../1_HLDDesignComponents/0_SystemGlossaries/CDNs.md))
 
 ![img.png](https://d2908q01vomqb2.cloudfront.net/5b384ce32d8cdef02bc3a139d4cac0a22bb029e8/2018/06/27/4-v-2.png)
 
@@ -30,9 +30,9 @@
 
 # Key Features of CloudFront
 - [Cache content for faster delivery (i.e. CDN)](../../1_HLDDesignComponents/0_SystemGlossaries/CDNs.md)
+- [Static Content](../../1_HLDDesignComponents/0_SystemGlossaries/StaticContentWithCDN.md)
+- [Streaming audio or video](../../1_HLDDesignComponents/0_SystemGlossaries/StaticContentWithCDN.md)
 - Lower Load upon origin
-- Static content (like WebSite, Media, Image, Video, Songs, Documents, Translation files etc.)
-- Streaming audio or video
 - Custom SSL certificates
 - Short time-to-live (TTL) (as little as 0 seconds, for dynamic content)
 - Optimized for AWS

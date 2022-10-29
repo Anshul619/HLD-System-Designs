@@ -13,7 +13,7 @@
 
 ## Design Multi-Region Active-Active Architecture On AWS
 
-![img.png](0_AWSDesigns/DesignMultiRegionActiveActiveArchitectureOnAWS/AWS-AZ-Region-HA.drawio.png)
+![img.png](0_AWSDesigns/DesignMultiRegionActiveActiveArchitectureOnAWS/AWS-Multi-Region-AZ-HA.drawio.png)
 
 [Read more](0_AWSDesigns/DesignMultiRegionActiveActiveArchitectureOnAWS/README.md)
 

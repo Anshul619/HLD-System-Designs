@@ -8,7 +8,7 @@
   - ap-south-1 (Asia Pacific (Mumbai))
 - In AWS, [every region would have its own cluster](../1_HLDDesignComponents/0_SystemGlossaries/ServersCluster.md).
 
-![img.png](0_AWSDesigns/DesignMultiRegionActiveActiveArchitectureOnAWS/AWS-AZ-Region-HA.drawio.png)
+![img.png](0_AWSDesigns/DesignMultiRegionActiveActiveArchitectureOnAWS/AWS-Multi-Region-AZ-HA.drawio.png)
 
 # Availability Zones (AZ)
 - [An Availability Zone (AZ)](https://aws.amazon.com/about-aws/global-infrastructure/regions_az/) is `one or more discrete data centers` with redundant power, networking, and connectivity in an AWS Region. 

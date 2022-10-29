@@ -8,7 +8,7 @@ You can use Route 53 to perform three main functions in any combination,
 - DNS routing
 - Health checking
 
-![img.png](../0_AWSDesigns/DesignMultiRegionActiveActiveArchitectureOnAWS/AWS-AZ-Region-HA.drawio.png)
+![img.png](../0_AWSDesigns/DesignMultiRegionActiveActiveArchitectureOnAWS/AWS-Multi-Region-AZ-HA.drawio.png)
 
 # How does Amazon Route 53 provide high availability and low latency?
 

@@ -42,7 +42,7 @@ Each data type falls into one of the three following categories -
 - `Set` - These types represent multiple scalars, and include string sets, number sets, and binary sets.
 
 ## Partitions/Sharding and data distribution
-- Amazon DynamoDB scales horizontally ( using data partition/sharding ) and can seamlessly scale a single table over hundreds of servers.
+- Amazon DynamoDB scales horizontally (using data partition/sharding) and can seamlessly scale a single table over hundreds of servers.
 - [Amazon DynamoDB stores data in partitions](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/HowItWorks.Partitions.html). 
 - A partition is an allocation of storage for a table, backed by `solid state drives (SSDs)` and automatically replicated across multiple Availability Zones within an AWS Region. 
 - `Partition management is handled entirely by DynamoDB` — you never have to manage partitions yourself.

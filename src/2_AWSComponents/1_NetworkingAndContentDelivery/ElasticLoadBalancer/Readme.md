@@ -81,7 +81,7 @@ You can select the type of [load balancer](../../../1_HLDDesignComponents/0_Syst
 
 # ELB Load Balancer setup in Multi-Regions & Multi-AZs
 
-![img.png](../../0_AWSDesigns/DesignMultiRegionActiveActiveArchitectureOnAWS/AWS-AZ-Region-HA.drawio.png)
+![img.png](../../0_AWSDesigns/DesignMultiRegionActiveActiveArchitectureOnAWS/AWS-Multi-Region-AZ-HA.drawio.png)
 
 # How ELB works with AutoScaling?
 
