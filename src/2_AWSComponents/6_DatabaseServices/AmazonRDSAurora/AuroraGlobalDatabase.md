@@ -5,6 +5,8 @@
 
 ![img.png](../../0_AWSDesigns/DesignMultiRegionActiveActiveArchitectureOnAWS/AWS-Multi-Region-AZ-HA.drawio.png)
 
+## Primary vs Secondary DB Cluster
+
 ![img.png](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/images/aurora-global-databases-conceptual-illo.png)
 
 ## How to set up Aurora Global Database?
