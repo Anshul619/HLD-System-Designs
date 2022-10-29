@@ -1,7 +1,7 @@
 # Content Delivery Network (CDN)
 - CDNs are a kind of cache that comes into play for sites serving large amounts of static media.
 - A content delivery network (CDN) is a globally distributed network of proxy servers, serving content from locations closer to the user.
-- Generally, `static files such as site code, HTML/CSS/JS, photos, and videos are served from CDN`, although some CDNs such as [Amazon CloudFront](../../2_AWSComponents/1_NetworkingAndContentDelivery/AmazonCloudFront.md) support dynamic content.
+- Generally, `static files such as site code, HTML/CSS/JS, photos, translation files and videos are served from CDN`, although some CDNs such as [Amazon CloudFront](../../2_AWSComponents/1_NetworkingAndContentDelivery/AmazonCloudFront.md) support dynamic content.
 - If the system we are building is not large enough to have its own CDN, we can ease a future transition by serving the static media off a separate subdomain (e.g., static.yourservice.com) using a lightweight HTTP server like Nginx, and cut-over the DNS from your servers to a CDN later.
 
 # Key Benefits
