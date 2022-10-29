@@ -6,3 +6,5 @@ Following can be the static content, for [CDN](CDNs.md) which can be stored in [
 - Media like Image, Audio, Video, Songs etc.
 - Documents like PDFs, Docx etc.
 - Translation Files etc.
+- Backups
+- Logs

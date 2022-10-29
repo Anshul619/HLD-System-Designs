@@ -7,10 +7,14 @@
 ![img.png](assests/AWS_Elastic_Load_Balancer.png)
 
 # Key Features of ELB
-- [Highly available](../../../1_HLDDesignComponents/0_SystemGlossaries/HighAvailability.md)
-- [Health checks](https://docs.aws.amazon.com/elasticloadbalancing/latest/application/target-group-health-checks.html)
-- [Session stickiness](https://docs.aws.amazon.com/elasticloadbalancing/latest/application/sticky-sessions.html)
-- [Monitoring/logging](https://docs.aws.amazon.com/elasticloadbalancing/latest/application/load-balancer-monitoring.html)
+
+| Feature                                                                                                                 | Remarks                                                                            |
+|-------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------|
+| [Highly available](../../../1_HLDDesignComponents/0_SystemGlossaries/HighAvailability.md)                               | Load balancers balances loads across instances in multiple Availability Zones.     |
+| [Health checks](https://docs.aws.amazon.com/elasticloadbalancing/latest/application/target-group-health-checks.html)    | Automatically checks health of instances and takes them in or out of service.      |
+| [Session stickiness](https://docs.aws.amazon.com/elasticloadbalancing/latest/application/sticky-sessions.html)          | Routes requests to the same instance.                                              |
+| [Monitoring/logging](https://docs.aws.amazon.com/elasticloadbalancing/latest/application/load-balancer-monitoring.html) | Publishes metrics to CloudWatch and can get logs of requests processed.            |
+| Secure Sockets Layer                                                                                                    | Supports SSL offload from web and application servers with flexible cipher support |
 
 # Key Components of ELB
 

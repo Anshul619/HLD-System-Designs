@@ -9,15 +9,20 @@
 - [Twillo - Send Message API Design](../../../3_HLDDesignProblems/TwilloSendMessageAPI)
 
 ## Key Features
-- Provisioned Throughput
-- Fast, predictable performance (`1000s of records per second, single-digit millisecond performance`)
-- [Partitions and data distribution](#partitionssharding-and-data-distribution)
-- [DynamoDB Global tables](DynamoDBGlobalTables.md)
-- [DynamoDB Accelerator (DAX)](DynamoDBAccelerator.md)
-- [PartiQL - a SQL-compatible query language for Amazon DynamoDB](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/ql-reference.html)
-- [Time to Live (TTL) supported for the data](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/TTL.html)
-- JSON Support
-- Items size up to 400 KB
+
+| Feature                                                                                                                                             | Remarks                                                           |
+|-----------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------|
+| Provisioned Throughput                                                                                                                              | Dial up or down provisioned read/write capacity.                  |
+| Fast, predictable performance                                                                                                                       | Avg single-digit millisecond latency, 1000s of records per second |
+| Fault tolerant, Highly Available                                                                                                                    | Data replicated across Availability Zones                         |
+| [Partitions and data distribution](#partitionssharding-and-data-distribution)                                                                       | -                                                                 |
+| [DynamoDB Global tables](DynamoDBGlobalTables.md)                                                                                                   | -                                                                 |
+| [DynamoDB Accelerator (DAX)](DynamoDBAccelerator.md)                                                                                                | -                                                                 |
+| [PartiQL - a SQL-compatible query language for Amazon DynamoDB](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/ql-reference.html) | -                                                                 |
+| [Time to Live (TTL) supported for the data](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/TTL.html)                              | -                                                                 |
+| JSON Support                                                                                                                                        | -                                                                 |
+| Items size up to 400 KB                                                                                                                             | -                                                                 |
+| Monitoring                                                                                                                                          | Integrated with Cloudwatch                                        |
 
 ## Automated Storage Scaling
 - `There is no limit to the amount of data you can store in a DynamoDB table`, and the service automatically allocates more storage, as you store more data using the DynamoDB write APIs.
