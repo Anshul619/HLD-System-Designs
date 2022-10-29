@@ -6,7 +6,7 @@
   - eu-west-1 (Europe (Ireland))
   - eu-north-1 (Europe (Stockholm))
   - ap-south-1 (Asia Pacific (Mumbai))
-- In AWS, [every region would have its own cluster](../1_HLDDesignComponents/0_SystemGlossaries/ServersCluster.md).
+- [In AWS, every region would have its own cluster](../1_HLDDesignComponents/0_SystemGlossaries/ServersCluster.md).
 
 ![img.png](0_AWSDesigns/DesignMultiRegionActiveActiveArchitectureOnAWS/AWS-Multi-Region-AZ-HA.drawio.png)
 

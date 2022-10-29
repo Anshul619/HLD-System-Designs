@@ -47,37 +47,37 @@
 - The values of these HTTP headers are based on characteristics of the viewer request. 
 - The headers can provide information about the viewer's device type, IP address, geographic location, request protocol (HTTP or HTTPS), HTTP version, and TLS connection details.
 
-# CDN Customizations with Edge Functions
+# CDN Customizations
 
-## Customizing at the edge with CloudFront Functions
+## Customizing with CloudFront Functions
 - With [CloudFront Functions in Amazon CloudFront](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/cloudfront-functions.html), lightweight functions can be developed in [JavaScript]() for [high-scale, latency-sensitive CDN customizations](../../1_HLDDesignComponents/0_SystemGlossaries/CDNs.md). 
 - Your functions can manipulate the requests and responses that flow through CloudFront, perform basic authentication and authorization, generate HTTP responses at the edge, and more. 
 - The CloudFront Functions runtime environment offers [submillisecond startup times, scales immediately to handle millions of requests per second](../../1_HLDDesignComponents/0_SystemGlossaries/LatencyThroughput.md), and is highly secure. 
 - CloudFront Functions is a native feature of CloudFront, which means you can build, test, and deploy your code entirely within CloudFront.
 - Generally [CloudFront Functions is more performance and cheaper than Lambda@Edge](https://aws.amazon.com/blogs/aws/introducing-cloudfront-functions-run-your-code-at-the-edge-with-low-latency-at-any-scale/) functions.
 
-Ideal Use Cases
+![img.png](https://d2908q01vomqb2.cloudfront.net/da4b9237bacccdf19c0760cab7aec4a8359010b0/2021/04/08/cloudfront-function-and-lambda-edge-2-1024x454.png)
+
+### Ideal Use Cases of CloudFront functions
 - Cache key normalization
 - HTTP Header manipulation
 - URL redirects or rewrites based on user's IP address, [cloudfront-viewer-country](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/using-cloudfront-headers.html) etc.
 - Request authorization etc.
 
-![img.png](https://d2908q01vomqb2.cloudfront.net/da4b9237bacccdf19c0760cab7aec4a8359010b0/2021/04/08/cloudfront-function-and-lambda-edge-2-1024x454.png)
-
-## Customizing at the edge with Lambda@Edge
+## Customizing with Lambda@Edge
 - [Lambda@Edge](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/lambda-at-the-edge.html) is an extension of [AWS Lambda](../4_ComputeServices/AWSLambda/Readme.md), a compute service that lets you execute functions that customize the content that CloudFront delivers. 
 - You can author Node.js or Python functions in one Region, US East (N. Virginia), and then execute them in AWS locations globally that are closer to the viewer, without provisioning or managing servers. 
 - Lambda@Edge scales automatically, from a few requests per day to thousands per second. 
 - Processing requests at AWS locations closer to the viewer instead of on [origin servers significantly reduces latency and improves the user experience](../../1_HLDDesignComponents/0_SystemGlossaries/LatencyThroughput.md).
 
-Ideal Use Cases
+![img.png](https://d2908q01vomqb2.cloudfront.net/da4b9237bacccdf19c0760cab7aec4a8359010b0/2021/04/08/cloudfront-functions-only-lambda-egde-1024x413.png)
+
+### Ideal Use Cases of Lambda@Edge
 - Inspect Cookies & Rewrite URLs
 - Different Presentation for the Viewer based on `User-Agent header`
 - HTTP Header manipulation
 - [Geo-Targeting - Personalized Ads, Content etc.](https://aws.amazon.com/blogs/networking-and-content-delivery/leverage-amazon-cloudfront-geolocation-headers-for-state-level-geo-targeting/)
 - Additional API Call etc.
-
-![img.png](https://d2908q01vomqb2.cloudfront.net/da4b9237bacccdf19c0760cab7aec4a8359010b0/2021/04/08/cloudfront-functions-only-lambda-egde-1024x413.png)
 
 # References
 - [How do I use CloudFront to serve HTTPS requests for my Amazon S3 bucket?](https://aws.amazon.com/premiumsupport/knowledge-center/cloudfront-https-requests-s3/)
