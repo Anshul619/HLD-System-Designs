@@ -51,6 +51,29 @@ kubectl scale --replicas=5 rc/foo rc/bar rc/baz                   # Scale multip
 - K8s manages its own load balance, service discovery etc.
 - [Read more](https://kubernetes.io/docs/concepts/services-networking/_print/)
 
+## ReplicaSet VS DaemonSet in Kubernetes
+
+### Replica Set
+- [ReplicasSet](https://blog.knoldus.com/opsinit-replicaset-vs-daemonset-in-kubernetes/) will ensure that the number of pods (defined in our config file) is always running in our cluster. 
+- Does not matter in which worker node they are running. 
+- The scheduler will schedule the pods on any node depending upon the free resources. 
+- If one of our nodes goes down then all pods running on the node will be randomly scheduled on different nodes as per the resource availability. 
+- In this way, ReplicaSet ensures that the number of pods of an application is running on the correct scale as specified in the conf file.
+- Example - MicroServices, App Pods etc.
+
+![img.png](https://slathia15472244374.files.wordpress.com/2018/12/replicasset.png?w=810)
+
+### Daemon Set
+- Whereas in the case of [DaemonSet](https://blog.knoldus.com/opsinit-replicaset-vs-daemonset-in-kubernetes/), it will ensure that one copy of pod defined in our configuration will always be available on every worker node.
+- Example - newrelic-infra, newrelic-logging etc.
+
+![img.png](https://slathia15472244374.files.wordpress.com/2018/12/daemonset.png?w=810)
+
+### StatefulSets
+- [StatefulSets]((https://kubernetes.io/docs/concepts/workloads/controllers/statefulset/)) are used when state has to be persisted. 
+- Therefore it uses volumeClaimTemplates / claims on persistent volumes to ensure they can keep the state across component restarts.
+- Example - kube-state-metrics
+
 # Horizontal Pod Autoscaling
 - In Kubernetes, [a Horizontal Pod Autoscaler](https://kubernetes.io/docs/tasks/run-application/horizontal-pod-autoscale/) automatically updates a workload resource (such as a Deployment or StatefulSet), with the aim of automatically scaling the workload to match demand.
 
@@ -160,9 +183,6 @@ spec:
 # Installation Guide
 - [Install and Set Up kubectl on macOS](https://kubernetes.io/docs/tasks/tools/install-kubectl-macos/)
 - [MiniKube Start](https://minikube.sigs.k8s.io/docs/start/)
-
-# StatefulSets
-- [TBD](https://kubernetes.io/docs/concepts/workloads/controllers/statefulset/)
 
 # References
 - [Mesos vs. Kubernetes](https://www.baeldung.com/ops/mesos-kubernetes-comparison)
