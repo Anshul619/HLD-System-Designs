@@ -24,4 +24,3 @@ Log-structured data structures found in Log-structured file systems and database
 
 # References
 - [Building an Append-only Log From Scratch](https://eileen-code4fun.medium.com/building-an-append-only-log-from-scratch-e8712b49c924)
-- 
