@@ -43,7 +43,7 @@ We can specify availability zones of the Auto-Scaling Group (ASG) i.e. in which 
 - It would be difficult to optimise the number of instances around the particular demands of the services. 
 - For example - A whole new EC2 instance could be spun up due to the load on a first instance, but only utilised to 10% CPU.
 - This can be resolved using [AWS Fargate - Serverless container service](../../AWSFargate.md).
-- [During auto-scaling, it may take time ( very roughly 30 mins ) to go from 50 to 200 servers](https://youtu.be/mFpqrVxxwKc).
+- [During auto-scaling, it may take time (very roughly 30 mins) to go from 50 to 200 servers](https://youtu.be/mFpqrVxxwKc).
 
 # References
 - [AWS Autoscaling | AWS Autoscaling And Load Balancing | AWS Tutorial For Beginners | Simplilearn](https://www.youtube.com/watch?v=4EOaAkY4pNE)

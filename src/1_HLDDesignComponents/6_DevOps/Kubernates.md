@@ -1,6 +1,6 @@
 
 # Kubernates
-- [Kubernetes](https://kubernetes.io), also known as K8s, is an `OPEN-SOURCE system for automating deployment, scaling, and management of containerized applications`. 
+- [Kubernetes](https://kubernetes.io), also known as K8s, is an OPEN-SOURCE system for automating deployment, scaling, and management of containerized applications. 
 - Kubernates is a [container orchestration service](../0_SystemGlossaries/ContainerOrchestrationService.md).
 - Kubernetes is a Greek word meaning `captain` in English. 
   - Like the captain is responsible for the safe journey of the ship in the seas, Kubernetes is responsible for carrying and delivering those boxes safely to locations where they can be used.
@@ -17,11 +17,18 @@
 
 ![img.png](https://d33wubrfki0l68.cloudfront.net/2475489eaf20163ec0f54ddc1d92aa8d4c87c96b/e7c81/images/docs/components-of-kubernetes.svg)
 
-## Control Plane (master node)
+## Control Plane (Master node)
 - [The control plane](https://kubernetes.io/docs/concepts/overview/components/) manages the worker nodes and the Pods in the cluster.
 - In production environments, the control plane usually runs across multiple computers and a cluster usually runs multiple nodes, providing fault-tolerance and high availability.
 - Nodes with [controlplane]((https://kubernetes.io/docs/concepts/overview/components/)) role run the K8s master components (excluding `etcd`, as its separate role). 
 - [Read more](https://kubernetes.io/docs/concepts/overview/components/)
+
+| Component                                                                                                             | Remarks                                                                                                                                                                                                                                                                                           |
+|-----------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| etcd                                                                                                                  | Consistent and [highly-available key value store](../0_SystemGlossaries/HighAvailability.md) used as Kubernetes backing store for all cluster data.                                                                                                                                               |
+| [API server](https://kubernetes.io/docs/reference/command-line-tools-reference/kube-apiserver/)                       | The Kubernetes API server validates and configures data for the api objects which include pods, services, replicationcontrollers, and others. <br/>- The API Server services REST operations and provides the frontend to the cluster's shared state through which all other components interact. |
+| [kube-controller-manager](https://kubernetes.io/docs/reference/command-line-tools-reference/kube-controller-manager/) | The Kubernetes controller manager is a daemon that embeds the core control loops shipped with Kubernetes.                                                                                                                                                                                                                                                                                                  |
+| [Scheduler](https://kubernetes.io/docs/concepts/scheduling-eviction/kube-scheduler/)                                  | A scheduler watches for newly created Pods that have no Node assigned. For every Pod that the scheduler discovers, the scheduler becomes responsible for finding the best Node for that Pod to run on.                                                                                                                                                                                                                                                                                                  |
 
 ## Worker Nodes
 - Each docker/Pod container would run the micro-service (golang, java, python service etc.)
@@ -35,10 +42,6 @@
 ```
 kubectl scale --replicas=5 rc/foo rc/bar rc/baz                   # Scale multiple replication controllers i.e. 5 pods for each of the services
 ```
-
-## etcd
-- Consistent and [highly-available key value store](../0_SystemGlossaries/HighAvailability.md) used as Kubernetes' backing store for all cluster data.
-- If your Kubernetes cluster uses etcd as its backing store, make sure you have a back up plan for those data.
 
 ## Labels
 - [Labels](https://kubernetes.io/docs/concepts/overview/working-with-objects/labels/) are key/value pairs that are attached to objects, such as pods. 
