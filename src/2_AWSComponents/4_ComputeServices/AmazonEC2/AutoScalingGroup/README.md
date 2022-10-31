@@ -26,10 +26,17 @@ Also, We can use a [CloudWatch alarm](../../../8_MonitoringServices/AmazonCloudW
 - Terminate an instance in your Auto Scaling group.
 
 ## Network in ASG
-
-We can specify availability zones of the Auto-Scaling Group (ASG) i.e. in which zones, new instances should be created. This helps in [High Availability](../../../../1_HLDDesignComponents/0_SystemGlossaries/HighAvailability.md).
+- We can specify availability zones of the Auto-Scaling Group (ASG) i.e. in which zones, new instances should be created. 
+- This helps in [High Availability](../../../../1_HLDDesignComponents/0_SystemGlossaries/HighAvailability.md).
 
 ![img.png](assets/asg_network_setup.png)
+
+## Tag Auto Scaling groups and instances
+- A tag is a custom attribute label that you assign or that AWS assigns to an AWS resource. 
+
+Each tag has two parts:
+- A tag key (for example, costcenter, environment, or project)
+- An optional field known as a tag value (for example, 111122223333 or production)
 
 # Attach a load balancer to your Auto Scaling group
 - When you attach an [Application Load Balancer, Network Load Balancer, or Gateway Load Balancer](../../../1_NetworkingAndContentDelivery/ElasticLoadBalancer/Readme.md), you attach a [target group](../../../1_NetworkingAndContentDelivery/ElasticLoadBalancer/Readme.md). 

@@ -147,6 +147,7 @@ spec:
 ````
 
 # Kubernates Commands
+- Kubectl is used for communicating with the cluster API server.
 
 ![img.png](https://www.suse.com/c/wp-content/uploads/2021/09/kubectl_communication_flow_hu6704bce3da6ee0f16978a2bb4f755ce5_43859_1000x0_resize_box_2.png)
 
