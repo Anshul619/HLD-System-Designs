@@ -1,25 +1,25 @@
 
-| Basis                                                                                   | Applicable Components              |
-|-----------------------------------------------------------------------------------------|------------------------------------|
-| :star: [Efficiency - Latency, Throughput](LatencyThroughput.md)                         | ALL                                |
-| :star: [Scalability](Scalability.md)                                                    | ALL                                |
-| :star: [High Availability](HighAvailability.md)                                         | ALL                                |
-| :star: [Servers Cluster](ServersCluster.md)                                             | `Data Stores` or `Message Brokers` |
-| :star: [Event Driven Architecture](EventDrivenArchitecture.md)                          | `Message Brokers`                  |
-| :star: [ACID Properties of the Transaction](ACIDPropertyTransaction.md)                 | `Data Stores`                      |
-| :star: [CAP Theorem of the Distributed Systems](CAPTheorem.md)                          | `Data Stores`                      |
-| :star: [Replication & Data Consistency](ReplicationAndDataConsistency.md)               | `Data Stores`                      |
-| [Reliability - Fault Tolerance, Disaster Recovery](FaultTolerance&DisasterRecovery.md)  | ALL                                |
-| [Load Balancer](LoadBalancer.md)                                                        | ALL                                |
-| [Atomicity](Atomicity.md)                                                               | `Data Stores`                      |
-| [Durability](Durability.md)                                                             | `Data Stores`                      |
-| [Content Delivery Network (CDN)](CDNs.md)                                               | `Static Content`                   |
-| [Append Only](Append-Only.md)                                       | `Data Stores`                      |
+| Basis                                                                                  | Applicable Components              |
+|----------------------------------------------------------------------------------------|------------------------------------|
+| :star: [Efficiency - Latency, Throughput](LatencyThroughput.md)                        | ALL                                |
+| :star: [Scalability](Scalability.md)                                                   | ALL                                |
+| :star: [High Availability](HighAvailability.md)                                        | ALL                                |
+| :star: [Servers Cluster](ServersCluster.md)                                            | `Data Stores` or `Message Brokers` |
+| :star: [Event Driven Architecture](EventDrivenArchitecture.md)                         | `Message Brokers`                  |
+| :star: [ACID Properties of the Transaction](ACIDPropertyTransaction.md)                | `Data Stores`                      |
+| :star: [CAP Theorem of the Distributed Systems](CAPTheorem.md)                         | `Data Stores`                      |
+| :star: [Replication & Data Consistency](ReplicationAndDataConsistency.md)              | `Data Stores`                      |
+| [Reliability - Fault Tolerance, Disaster Recovery](FaultTolerance&DisasterRecovery.md) | ALL                                |
+| [Load Balancer](LoadBalancer.md)                                                       | ALL                                |
+| [Atomicity](Atomicity.md)                                                              | `Data Stores`                      |
+| [Durability](Durability.md)                                                            | `Data Stores`                      |
+| [Content Delivery Network (CDN)](CDNs.md)                                              | `Static Content`                   |
+| [Append Only](Append-Only.md)                                                          | `Data Stores`                      |
 
 
-# [Language Agnostic](https://en.wikipedia.org/wiki/Language-agnostic)
+# Language Agnostic
 - We should design the system considering agnostic feature (Language agnostic, AWS agnostic etc.) into the consideration.
-- Language-agnostic programming or scripting (also called language-neutral, language-independent, or cross-language) is a software development paradigm where a particular language is chosen because of its appropriateness for a particular task (taking into consideration all factors, including ecosystem, developer skill-sets, performance, etc.), and not purely because of the skill-set available within a development team.
+- [Language Agnostic](https://en.wikipedia.org/wiki/Language-agnostic) programming or scripting (also called language-neutral, language-independent, or cross-language) is a software development paradigm where a particular language is chosen because of its appropriateness for a particular task (taking into consideration all factors, including ecosystem, developer skill-sets, performance, etc.), and not purely because of the skill-set available within a development team.
 
 # Stateful vs Stateless
 
@@ -32,8 +32,8 @@
 ## Stateful Protocol
 - [Stateful Protocol](https://www.geeksforgeeks.org/difference-between-stateless-and-stateful-protocol/) requires server to save the status and session information.
 
-# [Domain Driven Architecture](https://www.geeksforgeeks.org/domain-driven-design-ddd/)
-- When we are developing software our focus should not be primarily on technology, rather it should be primarily on business/domain.
+# Domain Driven Architecture
+- [Domain Driven Architecture](https://www.geeksforgeeks.org/domain-driven-design-ddd/) - When we are developing software our focus should not be primarily on technology, rather it should be primarily on business/domain.
 - Classes, modals, services, microservices, rest apis etc. should be designed according to the domains.
 ![img.png](assests/domain_driven_design.png)
 
@@ -57,6 +57,18 @@
 - Example - [Amazon S3](../../2_AWSComponents/7_StorageServices/AmazonS3.md)
 
 ![img.png](https://www.ctera.com/wp-content/uploads/2019/02/Ctera-Cool-Medium-Hot-Graphic-051122.jpg)
+
+# Web vs App Server
+
+| Features                | Web Server                                                   | App Server                                                                                |
+|-------------------------|--------------------------------------------------------------|-------------------------------------------------------------------------------------------|
+| Content Type            | Deliver static content.                                      | Delivers dynamic content.                                                                 |
+| Protocol                | Content is delivered using the HTTP protocol only.           | Provides business logic to application programs using several protocols (including HTTP). |
+| App Type                | Serves only web-based applications.                          | Can serve web and enterprise-based applications.                                          |
+| Multi-Threading Support | No support for multi-threading.                              | Uses multi-threading to support multiple requests in parallel.                            |
+| Traffic                 | Facilitates web traffic that is not very resource intensive. | Facilitates longer running processes that are very resource-intensive​.                   |
+
+[Read more](https://www.educative.io/answers/web-server-vs-application-server)
 
 # Source(s) and further reading
 - [How to build a multi-region active-active architecture on AWS](https://acloudguru.com/blog/engineering/why-and-how-do-we-build-a-multi-region-active-active-architecture)

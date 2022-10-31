@@ -9,8 +9,7 @@
 ![img.png](assests/RDS_database_engines.png)
 
 # Amazon RDS - High Availability
-
-For your MySQL, MariaDB, PostgreSQL, Oracle, and SQL Server database (DB) instances, you can use [Amazon RDS Multi-AZ deployments](https://aws.amazon.com/rds/ha/). 
+- For your MySQL, MariaDB, PostgreSQL, Oracle, and SQL Server database (DB) instances, you can use [Amazon RDS Multi-AZ deployments](https://aws.amazon.com/rds/ha/). 
 - When you provision a Multi-AZ DB instance, Amazon RDS automatically creates a primary DB instance and synchronously replicates the data to a standby instance in a different Availability Zone (AZ). 
 - In case of an infrastructure failure, Amazon RDS performs an automatic failover to the standby DB instance. 
 - Since the endpoint for your DB instance remains the same after a failover, your application can resume database operation without the need for manual administrative intervention.
@@ -30,12 +29,12 @@ For your MySQL, MariaDB, PostgreSQL, Oracle, and SQL Server database (DB) instan
 - Encryption in flight/transmit using SSL
 - Authentication using IAM
 
-# AWS Database Migration Service
-- [AWS DMS](https://aws.amazon.com/dms/) helps to migrate other databases to Amazon RDS.
+# Other Links
+- [AWS Database Migration Service](https://aws.amazon.com/dms/) -  helps to migrate other databases to Amazon RDS
+- [DB instance classes](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Concepts.DBInstanceClass.html).
 
-# Master-Slave vs Read Replica?
-- [Read More](https://www.quora.com/What-does-it-mean-by-read-replica-in-Amazon-RDS-Is-that-similar-to-the-slave-server)
 
 # References
 - [Amazon RDS High Availability](https://aws.amazon.com/rds/ha/)
 - [AWS RDS Max Connections Limit As Per Instance Type](https://sysadminxpert.com/aws-rds-max-connections-limit/)
+- [What does it mean by read replica in Amazon RDS? Is that similar to the slave server?](https://www.quora.com/What-does-it-mean-by-read-replica-in-Amazon-RDS-Is-that-similar-to-the-slave-server)
