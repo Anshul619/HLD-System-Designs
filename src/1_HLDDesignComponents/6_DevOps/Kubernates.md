@@ -51,10 +51,16 @@ kubectl scale --replicas=5 rc/foo rc/bar rc/baz                   # Scale multip
 - K8s manages its own load balance, service discovery etc.
 - [Read more](https://kubernetes.io/docs/concepts/services-networking/_print/)
 
-## ReplicaSet VS DaemonSet in Kubernetes
+## Workload Resources
+
+### Deployments
+- [A Deployment](https://kubernetes.io/docs/concepts/workloads/controllers/deployment/) provides declarative updates for Pods and ReplicaSets.
+- You describe a desired state in a Deployment, and the Deployment Controller changes the actual state to the desired state at a controlled rate. 
+- You can define Deployments to create new ReplicaSets, or to remove existing Deployments and adopt all their resources with new Deployments.
+- Every microservice, app component can be a deployment in K8s.
 
 ### Replica Set
-- [ReplicasSet](https://blog.knoldus.com/opsinit-replicaset-vs-daemonset-in-kubernetes/) will ensure that the number of pods (defined in our config file) is always running in our cluster. 
+- [ReplicasSet](https://kubernetes.io/docs/concepts/workloads/controllers/replicaset/) will ensure that the number of pods (defined in our config file) is always running in our cluster. 
 - Does not matter in which worker node they are running. 
 - The scheduler will schedule the pods on any node depending upon the free resources. 
 - If one of our nodes goes down then all pods running on the node will be randomly scheduled on different nodes as per the resource availability. 
@@ -64,15 +70,15 @@ kubectl scale --replicas=5 rc/foo rc/bar rc/baz                   # Scale multip
 ![img.png](https://slathia15472244374.files.wordpress.com/2018/12/replicasset.png?w=810)
 
 ### Daemon Set
-- Whereas in the case of [DaemonSet](https://blog.knoldus.com/opsinit-replicaset-vs-daemonset-in-kubernetes/), it will ensure that one copy of pod defined in our configuration will always be available on every worker node.
-- Example - newrelic-infra, newrelic-logging etc.
+- Whereas in the case of [DaemonSet](https://kubernetes.io/docs/concepts/workloads/controllers/daemonset/), it will ensure that one copy of pod defined in our configuration will always be available on every worker node.
+- Example - [newrelic-infra, newrelic-logging](https://docs.newrelic.com/docs/kubernetes-pixie/kubernetes-integration/get-started/introduction-kubernetes-integration) etc.
 
 ![img.png](https://slathia15472244374.files.wordpress.com/2018/12/daemonset.png?w=810)
 
 ### StatefulSets
 - [StatefulSets]((https://kubernetes.io/docs/concepts/workloads/controllers/statefulset/)) are used when state has to be persisted. 
 - Therefore it uses volumeClaimTemplates / claims on persistent volumes to ensure they can keep the state across component restarts.
-- Example - kube-state-metrics
+- Example - [kube-state-metrics](https://github.com/kubernetes/kube-state-metrics) etc.
 
 # Horizontal Pod Autoscaling
 - In Kubernetes, [a Horizontal Pod Autoscaler](https://kubernetes.io/docs/tasks/run-application/horizontal-pod-autoscale/) automatically updates a workload resource (such as a Deployment or StatefulSet), with the aim of automatically scaling the workload to match demand.
@@ -111,19 +117,55 @@ behavior:
     selectPolicy: Max
 ````
 
-# kubectl - Cheat Sheet
-- `apply` manages applications through files defining Kubernetes resources. It creates and updates resources in a cluster through running `kubectl apply`.
-- [Read more](https://kubernetes.io/docs/reference/kubectl/cheatsheet/)
+# Configure a Pod to Use a ConfigMap
+- [ConfigMaps](https://kubernetes.io/docs/tasks/configure-pod-container/configure-pod-configmap/) are the Kubernetes way to inject application pods with configuration data. 
+- ConfigMaps allow you to decouple configuration artifacts from image content to keep containerized applications portable
+
+````yaml
+apiVersion: v1
+kind: Pod
+metadata:
+  name: dapi-test-pod
+spec:
+  containers:
+    - name: test-container
+      image: registry.k8s.io/busybox
+      command: [ "/bin/sh", "-c", "env" ]
+      env:
+        - name: SPECIAL_LEVEL_KEY
+          valueFrom:
+            configMapKeyRef:
+              name: special-config
+              key: special.how
+  
+        - name: LOG_LEVEL
+          valueFrom:
+            configMapKeyRef:
+              name: env-config
+              key: log_level
+  restartPolicy: Never
+````
+
+# Kubernates Commands
+
+![img.png](https://www.suse.com/c/wp-content/uploads/2021/09/kubectl_communication_flow_hu6704bce3da6ee0f16978a2bb4f755ce5_43859_1000x0_resize_box_2.png)
+
+| Title                             | Command                                       | Remarks                                                                                                                                                                                                          |
+|-----------------------------------|-----------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| View config                       | kubectl config view                           | -                                                                                                                                                                                                                |
+| Set context in config             | kubectl config use-context <clusterName>      | -                                                                                                                                                                                                                |
+| Get all contexts                  | kubectl config get-contexts                   | -                                                                                                                                                                                                                |
+| Get all the events of the cluster | kubectl get events                            | [List Events](https://www.containiq.com/post/kubernetes-events) sorted by timestamp                                                                                                                              |
+| Get all the deployments list      | kubectl get deployments                       | -                                                                                                                                                                                                                |
+| Scale the deployment              | kubectl scale --replicas=10 <deployment_name> | Replicate the deployment (microservice) across the worker-nodes                                                                                                                                                  |
+| Get all pods                      | kubectl get pods --all-namespaces             | List all pods in the namespace, in the default context                                                                                                                                                           |
+| Get pod information               | kubectl get pod my-pod -o yaml                | Get a pod's YAML                                                                                                                                                                                                 |
+| Create resource                   | kubectl apply -f ./my-manifest.yaml           | Create resource (pod etc.) from yaml file <br/>- `apply` manages applications through files defining Kubernetes resources. <br/>- It creates and updates resources in a cluster through running `kubectl apply`. |
+| Update resource                   | kubectl patch                                 | Use kubectl patch to update an API object in place.                                                                                                                                                              |
+
+## Others
 
 ```
-kubectl get pods                              # List all pods in the namespace
-kubectl get pod my-pod -o yaml                # Get a pod's YAML
-
-kubectl apply -f ./my-manifest.yaml            # create resource(s)
-kubectl apply -f ./my1.yaml -f ./my2.yaml      # create from multiple files
-kubectl apply -f ./dir                         # create resource(s) in all manifest files in dir
-kubectl apply -f https://git.io/vPieo          # create resource(s) from url
-
 kubectl autoscale deployment foo --min=2 --max=10                # Auto scale a deployment "foo"
 
 kubectl logs my-pod                                 # dump pod logs (stdout)
@@ -132,57 +174,12 @@ kubectl logs -l name=myLabel                        # dump pod logs, with label 
 kubectl cp /tmp/foo_dir my-pod:/tmp/bar_dir            # Copy /tmp/foo_dir local directory to /tmp/bar_dir in a remote pod in the current namespace
 ```
 
-# Configure a Pod to Use a ConfigMap
-- [ConfigMaps](https://kubernetes.io/docs/tasks/configure-pod-container/configure-pod-configmap/) are the Kubernetes way to inject application pods with configuration data. 
-- ConfigMaps allow you to decouple configuration artifacts from image content to keep containerized applications portable
-
-````yaml
-apiVersion: v1
-  
-kind: Pod
-  
-metadata:
-  
-  name: dapi-test-pod
-  
-spec:
-  
-  containers:
-  
-    - name: test-container
-  
-      image: registry.k8s.io/busybox
-  
-      command: [ "/bin/sh", "-c", "env" ]
-  
-      env:
-  
-        - name: SPECIAL_LEVEL_KEY
-  
-          valueFrom:
-  
-            configMapKeyRef:
-  
-              name: special-config
-  
-              key: special.how
-  
-        - name: LOG_LEVEL
-  
-          valueFrom:
-  
-            configMapKeyRef:
-  
-              name: env-config
-  
-              key: log_level
-  
-  restartPolicy: Never
-````
+- [kubectl - Cheat Sheet](https://kubernetes.io/docs/reference/kubectl/cheatsheet/)
 
 # Installation Guide
 - [Install and Set Up kubectl on macOS](https://kubernetes.io/docs/tasks/tools/install-kubectl-macos/)
 - [MiniKube Start](https://minikube.sigs.k8s.io/docs/start/)
 
 # References
+- [How to Manage Kubernetes With Kubectl?](https://www.suse.com/c/rancher_blog/how-to-manage-kubernetes-with-kubectl/)
 - [Mesos vs. Kubernetes](https://www.baeldung.com/ops/mesos-kubernetes-comparison)
