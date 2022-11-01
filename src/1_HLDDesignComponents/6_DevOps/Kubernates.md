@@ -9,15 +9,17 @@
 
 # Recommendation (Reliably supported)
 
-| Environment | Max Pods Per Node                                                                                                                   | Max Pods Per Cluster   | Max Nodes Per Cluster |
-|-------------|-------------------------------------------------------------------------------------------------------------------------------------|------------------------|-----------------------|
-| Kubernates  | 110                                                                                                                                 | 150000                 | 5000                  |
-| EKS         | Imposes a pod limit depending on the node size. <br/>- For example, t3.small allows only 11 pods, while m5.4xlarge allows 234 pods. | -                      | -                     |
+| Environment | Max Pods Per Node                                                                                                                   | Max Pods Per Cluster   | Max Nodes Per Cluster                                                               |
+|-------------|-------------------------------------------------------------------------------------------------------------------------------------|------------------------|-------------------------------------------------------------------------------------|
+| Kubernates  | 110                                                                                                                                 | 150000                 | 5000 <br/>- Some performance bottlenecks start showing up with more than 500 nodes. |
+| EKS         | Imposes a pod limit depending on the node size. <br/>- For example, t3.small allows only 11 pods, while m5.4xlarge allows 234 pods. | -                      | -                                                                                   |
+
+# Other Links
+- [App Nodes Scalability](../0_SystemGlossaries/Scalability/AppNodesScalability.md)
 
 # Components
 
 ## Cluster
-- When you deploy Kubernetes, you get [a cluster](../0_SystemGlossaries/ServersCluster.md).
 - A [Kubernetes cluster](https://kubernetes.io/docs/concepts/overview/components/) consists of a set of worker machines, called [nodes](), that run containerized applications. 
 - Every cluster has at least one worker node.
 
@@ -90,6 +92,7 @@ Kubernetes agents perform various tasks on every node to manage the containers r
 
 # :star: Horizontal Pod Autoscaling
 - In Kubernetes, [a Horizontal Pod Autoscaler](https://kubernetes.io/docs/tasks/run-application/horizontal-pod-autoscale/) automatically updates a workload resource (such as a [Deployment](#deployments) or [StatefulSet](#statefulsets)), with the aim of automatically scaling the workload to match demand.
+- As an alternative, we can also use [Cluster Autoscaler](https://github.com/kubernetes/autoscaler/tree/master/cluster-autoscaler#cluster-autoscaler) for scaling pods.
 
 ## AutoScaling on Container resource metrics
 
