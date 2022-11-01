@@ -9,10 +9,10 @@
 
 # Recommendation (Reliably supported)
 
-| Environment | Max Pods Per Node                                                                                                                   | Max Pods Per Cluster   | Max Nodes Per Cluster                                                               |
-|-------------|-------------------------------------------------------------------------------------------------------------------------------------|------------------------|-------------------------------------------------------------------------------------|
-| Kubernates  | 110                                                                                                                                 | 150000                 | 5000 <br/>- Some performance bottlenecks start showing up with more than 500 nodes. |
-| EKS         | Imposes a pod limit depending on the node size. <br/>- For example, t3.small allows only 11 pods, while m5.4xlarge allows 234 pods. | -                      | -                                                                                   |
+| Environment | Max Pods Per Node                                                                                                                   | Max Pods Per Cluster    | Max Nodes Per Cluster                                                                                |
+|-------------|-------------------------------------------------------------------------------------------------------------------------------------|-------------------------|------------------------------------------------------------------------------------------------------|
+| Kubernates  | 110 pods per node                                                                                                                   | 150000 pods per cluster | 5000 nodes per cluster<br/>- Some performance bottlenecks start showing up with more than 500 nodes. |
+| EKS         | Imposes a pod limit depending on the node size. <br/>- For example, t3.small allows only 11 pods, while m5.4xlarge allows 234 pods. | -                       | -                                                                                                    |
 
 # Other Links
 - [App Nodes Scalability](../0_SystemGlossaries/Scalability/AppNodesScalability.md)
