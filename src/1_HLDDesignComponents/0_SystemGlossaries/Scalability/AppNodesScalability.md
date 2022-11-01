@@ -19,12 +19,12 @@ Given a desired target capacity (i.e. a combination of CPU cores & RAM) of a clu
 
 ![img.png](https://learnk8s.io/a/9b6d0691337289c039f1a33201e15a3f.svg)
 
-| Feature                                                         | :star: Many small nodes | Few large nodes |
-|-----------------------------------------------------------------|-------------------------|-----------------|
-| [Availability](../HighAvailability.md)                          | :+1: Increases          | :-1: Decreases  |
-| [Kubernates Agents Overhead](../../6_DevOps/Kubernates.md#pods) | :+1: Decreases          | :-1: Increases  |
-| Cost Efficiency (with auto-scaling)                             | :+1: Increases          | :-1: Decreases  |
-| Master Node Overhead                                            | :-1: Increases          | :+1: Decreases  |
+| Feature                                                         | :+1: Many small nodes | Few large nodes |
+|-----------------------------------------------------------------|-----------------------|-----------------|
+| [Availability](../HighAvailability.md)                          | :+1: Increases        | :-1: Decreases  |
+| [Kubernates Agents Overhead](../../6_DevOps/Kubernates.md#pods) | :+1: Decreases        | :-1: Increases  |
+| Cost Efficiency (with auto-scaling)                             | :+1: Increases        | :-1: Decreases  |
+| Master Node Overhead                                            | :-1: Increases        | :+1: Decreases  |
 
 # Reference
 - [Architecting Kubernetes clusters — choosing a worker node size](https://learnk8s.io/kubernetes-node-size)
