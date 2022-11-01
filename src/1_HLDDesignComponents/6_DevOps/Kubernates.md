@@ -90,7 +90,7 @@ Kubernetes agents perform various tasks on every node to manage the containers r
 - Therefore it uses volumeClaimTemplates / claims on persistent volumes to ensure they can keep the state across component restarts.
 - Example - [kube-state-metrics](https://github.com/kubernetes/kube-state-metrics) etc.
 
-# :star: Horizontal Pod Autoscaling
+# :star: Horizontal Pod Autoscaling (HPA)
 - In Kubernetes, [a Horizontal Pod Autoscaler](https://kubernetes.io/docs/tasks/run-application/horizontal-pod-autoscale/) automatically updates a workload resource (such as a [Deployment](#deployments) or [StatefulSet](#statefulsets)), with the aim of automatically scaling the workload to match demand.
 - As an alternative, we can also use [Cluster Autoscaler](https://github.com/kubernetes/autoscaler/tree/master/cluster-autoscaler#cluster-autoscaler) for scaling pods.
 
