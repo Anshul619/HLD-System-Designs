@@ -4,25 +4,26 @@
 
 ## Ball-mark Parameters
 
-| Basis                                             | Module    | Value                             |
-|---------------------------------------------------|-----------|-----------------------------------|
+| Basis                                             | Module    | Value                              |
+|---------------------------------------------------|-----------|------------------------------------|
 | What is the traffic scale that we are looking at? | Traffic   | `500 million active users per day` |
-| What is the storage scale that we are looking at? | Storage   | `5 years`                         |
-| Avg DB shard size                                 | Hard Disk | `4 TB to 10 TB`                   |
-| Avg machine RAM                                   | RAM       | `72 GB`                           |
-| Max CPU utilization                               | CPU       | `80% max utilization`             |
+| What is the storage scale that we are looking at? | Storage   | `5 years`                          |
+| Avg DB shard size                                 | Hard Disk | `4 TB to 10 TB`                    |
+| Avg machine RAM                                   | RAM       | `72 GB`                            |
+| Max CPU utilization, for autoscaling              | CPU       | `80% max utilization`              |
+| App Node Scalability - Avg Machine Size           | -         | 2 VPU, 8GB RAM                     |
 
 ## Latency Comparison Numbers
 
-| Storage                            | [Latency](https://github.com/donnemartin/system-design-primer#latency-numbers-every-programmer-should-know) | Remarks                     |
-|------------------------------------|-------------------------------------------------------------------------------------------------------------|-----------------------------|
+| Storage                                   | [Latency](https://github.com/donnemartin/system-design-primer#latency-numbers-every-programmer-should-know) | Remarks                     |
+|-------------------------------------------|-------------------------------------------------------------------------------------------------------------|-----------------------------|
 | :star: Read 1 MB sequentially from memory | 250 us (`4 GB/sec`)                                                                                           | ~`4 times faster than SSD`  |
 | :star: Read 1 MB sequentially from SSD    | 1 ms (`1 GB/sec`)                                                                                             | ~`30 times faster than HDD` |
-| Read 1 MB sequentially from HDD    | 30 ms (30 MB/sec)                                                                                           | -                           |
-| Mutex lock/unlock                  | 25 ns                                                                                                       | -                           |
-| RAM/Main Memory reference   | 100 ns                                                                                                      |                             |
-| SSD Reference               | 50 us                                                                                                       |                             |
-| HDD seek                    | 10 ms                                                                                                       | -                           |
+| Read 1 MB sequentially from HDD           | 30 ms (30 MB/sec)                                                                                           | -                           |
+| Mutex lock/unlock                         | 25 ns                                                                                                       | -                           |
+| RAM/Main Memory reference                 | 100 ns                                                                                                      |                             |
+| SSD Reference                             | 50 us                                                                                                       |                             |
+| HDD seek                                  | 10 ms                                                                                                       | -                           |
 
 Handy Metrics:
 - `2,000 round trips per second within a data center`.
