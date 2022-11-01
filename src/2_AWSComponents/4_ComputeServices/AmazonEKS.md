@@ -9,6 +9,8 @@
 
 ![img.png](../1_NetworkingAndContentDelivery/ElasticLoadBalancer/assests/AWS_Elastic_Load_Balancer.png)
 
+> In case of Amazon EKS, the master nodes would be managed by AWS.
+
 # Modular and Scalable Amazon EKS Architecture on AWS
 
 ![img.png](assests/eks_architecture.png)

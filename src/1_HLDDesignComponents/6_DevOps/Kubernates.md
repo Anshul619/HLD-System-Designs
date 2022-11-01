@@ -3,9 +3,16 @@
 - Kubernates is a [container orchestration service](../0_SystemGlossaries/Scalability/ContainerOrchestrationService.md).
 - Kubernetes is a Greek word meaning `captain` in English. 
   - Like the captain is responsible for the safe journey of the ship in the seas, Kubernetes is responsible for carrying and delivering those boxes safely to locations where they can be used.
-- We can use kubernates to manage, create containers ( through pods, worker nodes ).
+- We can use kubernates to manage, create containers (through pods, worker nodes).
 
 ![img.png](assests/Kubernates-Architecture.png)
+
+# Recommendation (Reliably supported)
+
+| Environment | Max Pods Per Node                                                                                                                   | Max Pods Per Cluster   | Max Nodes Per Cluster |
+|-------------|-------------------------------------------------------------------------------------------------------------------------------------|------------------------|-----------------------|
+| Kubernates  | 110                                                                                                                                 | 150000                 | 5000                  |
+| EKS         | Imposes a pod limit depending on the node size. <br/>- For example, t3.small allows only 11 pods, while m5.4xlarge allows 234 pods. | -                      | -                     |
 
 # Components
 
@@ -38,24 +45,18 @@
 - [Pods](https://kubernetes.io/docs/concepts/workloads/pods/) are the smallest deployable units of computing that you can create and manage in Kubernetes.
 - A Pod (as in a pod of whales or pea pod) is a group of one or more containers, with shared storage and network resources, and a specification for how to run the containers.
 
-| Environment | Max Pods Per Node (Reliably Supported)                                                                                              | Max Pods Per Cluster (Reliably Supported) | Remarks |
-|-------------|-------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------|---------|
-| Kubernates  | 110                                                                                                                                 | 150000                                    | -       |
-| EKS         | Imposes a pod limit depending on the node size. <br/>- For example, t3.small allows only 11 pods, while m5.4xlarge allows 234 pods. | -                                         | -       |
-
 ## Kubernates Agents
 
 Kubernetes agents perform various tasks on every node to manage the containers running on that node. For example:
 - cAdvisor collects and analyzes the resource usage of all containers on a node.
 - [kubelet](https://kubernetes.io/docs/reference/command-line-tools-reference/kubelet/) runs regular live-ness and readiness probes against each container on a node.
 
-
 ## Labels
 - [Labels](https://kubernetes.io/docs/concepts/overview/working-with-objects/labels/) are key/value pairs that are attached to objects, such as pods. 
 - Labels are intended to be used to specify identifying attributes of objects that are meaningful and relevant to users, but do not directly imply semantics to the core system.
 
 ## K8s Networking
-- K8s manages its own load balance, service discovery etc.
+- K8s manages its own load balancer, service discovery etc.
 - [Read more](https://kubernetes.io/docs/concepts/services-networking/_print/)
 
 ## Workload Resources
@@ -87,8 +88,8 @@ Kubernetes agents perform various tasks on every node to manage the containers r
 - Therefore it uses volumeClaimTemplates / claims on persistent volumes to ensure they can keep the state across component restarts.
 - Example - [kube-state-metrics](https://github.com/kubernetes/kube-state-metrics) etc.
 
-# Horizontal Pod Autoscaling
-- In Kubernetes, [a Horizontal Pod Autoscaler](https://kubernetes.io/docs/tasks/run-application/horizontal-pod-autoscale/) automatically updates a workload resource (such as a Deployment or StatefulSet), with the aim of automatically scaling the workload to match demand.
+# :star: Horizontal Pod Autoscaling
+- In Kubernetes, [a Horizontal Pod Autoscaler](https://kubernetes.io/docs/tasks/run-application/horizontal-pod-autoscale/) automatically updates a workload resource (such as a [Deployment](#deployments) or [StatefulSet](#statefulsets)), with the aim of automatically scaling the workload to match demand.
 
 ## AutoScaling on Container resource metrics
 
@@ -124,8 +125,30 @@ behavior:
     selectPolicy: Max
 ````
 
+# Kubernates Commands
+- Kubectl is used for communicating with the cluster API server.
+
+![img.png](https://www.suse.com/c/wp-content/uploads/2021/09/kubectl_communication_flow_hu6704bce3da6ee0f16978a2bb4f755ce5_43859_1000x0_resize_box_2.png)
+
+| Title                             | Command                                             | Remarks                                                                                                                                                                                                          |
+|-----------------------------------|-----------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| View config                       | kubectl config view                                 | -                                                                                                                                                                                                                |
+| Set context in config             | kubectl config use-context <clusterName>            | -                                                                                                                                                                                                                |
+| Get all contexts                  | kubectl config get-contexts                         | -                                                                                                                                                                                                                |
+| Get all the events of the cluster | kubectl get events                                  | [List Events](https://www.containiq.com/post/kubernetes-events) sorted by timestamp                                                                                                                              |
+| Get all the deployments list      | kubectl get deployments                             | -                                                                                                                                                                                                                |
+| Scale the deployment              | kubectl scale --replicas=10 <deployment_name>       | Replicate the deployment (microservice) across the worker-nodes                                                                                                                                                  |
+| Auto scale the deployment         | kubectl autoscale deployment foo --min=2 --max=10   | Auto scale a deployment "foo"                                                                                                                                                                                    |
+| Get all pods                      | kubectl get pods --all-namespaces                   | List all pods in the namespace, in the default context                                                                                                                                                           |
+| Get pod information               | kubectl get pod my-pod -o yaml                      | Get a pod's YAML                                                                                                                                                                                                 |
+| Create resource                   | kubectl apply -f ./my-manifest.yaml                 | Create resource (pod etc.) from yaml file <br/>- `apply` manages applications through files defining Kubernetes resources. <br/>- It creates and updates resources in a cluster through running `kubectl apply`. |
+| Update resource                   | kubectl patch                                       | Use kubectl patch to update an API object in place.                                                                                                                                                              |
+| Dump pod logs                     | kubectl logs my-pod                                 | dump pod logs (stdout)                                                                                                                                                                                           |
+
+- [kubectl - Cheat Sheet](https://kubernetes.io/docs/reference/kubectl/cheatsheet/)
+
 # Configure a Pod to Use a ConfigMap
-- [ConfigMaps](https://kubernetes.io/docs/tasks/configure-pod-container/configure-pod-configmap/) are the Kubernetes way to inject application pods with configuration data. 
+- [ConfigMaps](https://kubernetes.io/docs/tasks/configure-pod-container/configure-pod-configmap/) are the Kubernetes way to inject application pods with configuration data.
 - ConfigMaps allow you to decouple configuration artifacts from image content to keep containerized applications portable
 
 ````yaml
@@ -153,41 +176,12 @@ spec:
   restartPolicy: Never
 ````
 
-# Kubernates Commands
-- Kubectl is used for communicating with the cluster API server.
-
-![img.png](https://www.suse.com/c/wp-content/uploads/2021/09/kubectl_communication_flow_hu6704bce3da6ee0f16978a2bb4f755ce5_43859_1000x0_resize_box_2.png)
-
-| Title                             | Command                                       | Remarks                                                                                                                                                                                                          |
-|-----------------------------------|-----------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| View config                       | kubectl config view                           | -                                                                                                                                                                                                                |
-| Set context in config             | kubectl config use-context <clusterName>      | -                                                                                                                                                                                                                |
-| Get all contexts                  | kubectl config get-contexts                   | -                                                                                                                                                                                                                |
-| Get all the events of the cluster | kubectl get events                            | [List Events](https://www.containiq.com/post/kubernetes-events) sorted by timestamp                                                                                                                              |
-| Get all the deployments list      | kubectl get deployments                       | -                                                                                                                                                                                                                |
-| Scale the deployment              | kubectl scale --replicas=10 <deployment_name> | Replicate the deployment (microservice) across the worker-nodes                                                                                                                                                  |
-| Get all pods                      | kubectl get pods --all-namespaces             | List all pods in the namespace, in the default context                                                                                                                                                           |
-| Get pod information               | kubectl get pod my-pod -o yaml                | Get a pod's YAML                                                                                                                                                                                                 |
-| Create resource                   | kubectl apply -f ./my-manifest.yaml           | Create resource (pod etc.) from yaml file <br/>- `apply` manages applications through files defining Kubernetes resources. <br/>- It creates and updates resources in a cluster through running `kubectl apply`. |
-| Update resource                   | kubectl patch                                 | Use kubectl patch to update an API object in place.                                                                                                                                                              |
-
-## Others
-
-```
-kubectl autoscale deployment foo --min=2 --max=10                # Auto scale a deployment "foo"
-
-kubectl logs my-pod                                 # dump pod logs (stdout)
-kubectl logs -l name=myLabel                        # dump pod logs, with label name=myLabel (stdout)
-
-kubectl cp /tmp/foo_dir my-pod:/tmp/bar_dir            # Copy /tmp/foo_dir local directory to /tmp/bar_dir in a remote pod in the current namespace
-```
-
-- [kubectl - Cheat Sheet](https://kubernetes.io/docs/reference/kubectl/cheatsheet/)
-
 # Installation Guide
 - [Install and Set Up kubectl on macOS](https://kubernetes.io/docs/tasks/tools/install-kubectl-macos/)
 - [MiniKube Start](https://minikube.sigs.k8s.io/docs/start/)
 
 # References
 - [How to Manage Kubernetes With Kubectl?](https://www.suse.com/c/rancher_blog/how-to-manage-kubernetes-with-kubectl/)
-- [Mesos vs. Kubernetes](https://www.baeldung.com/ops/mesos-kubernetes-comparison)
+- [Mesos vs Kubernetes](https://www.baeldung.com/ops/mesos-kubernetes-comparison)
+- [Choosing an Optimal Kubernetes Worker Node Size for Your Startup](https://blog.devgenius.io/choosing-an-optimal-kubernetes-worker-node-size-e0eacab408c4)
+- [Architecting Kubernetes clusters — choosing the best autoscaling strategy](https://learnk8s.io/kubernetes-autoscaling-strategies)
