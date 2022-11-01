@@ -11,7 +11,7 @@
 
 # General Use Cases
 - [MongoDB]() is more suitable to manage NoSQL data requiring create, read, update and delete (CRUD) operations. 
-- It offers [high scalability, reliability, and performance](../../../0_SystemGlossaries/Scalability.md). 
+- It offers [high scalability, reliability, and performance](../../../0_SystemGlossaries/Scalability/DBScalability.md). 
 - MongoDB also uses text-based indexes for full-text queries, but the search is slow, and the search server does not provide tokenizers and analyzers like [Elasticsearch](../../Search-Engines/ElasticSearch) does.
 
 # :star: Casandra vs MongoDB

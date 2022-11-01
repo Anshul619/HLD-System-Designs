@@ -72,7 +72,7 @@ Large amount of data like,
 - You don’t have to restart the cluster or change queries related to the Cassandra application while scaling up or down.
 
 ## Scales Horizontally & Linearly
-- Apache Cassandra has a [high-scalability architecture](../../0_SystemGlossaries/Scalability.md).
+- Apache Cassandra has a [high-scalability architecture](../../0_SystemGlossaries/Scalability/DBScalability.md).
 - Cassandra [cluster](../../0_SystemGlossaries/ServersCluster.md) can be easily scaled-up or scaled-down.
 - Generally doubling the size of the cluster, would result in the half [latency](../../0_SystemGlossaries/LatencyThroughput.md) (both at the median and 99th percentile).
 

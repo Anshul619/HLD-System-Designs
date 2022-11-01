@@ -1,25 +1,22 @@
 
-| Basis                                                                                  | Applicable Components              |
-|----------------------------------------------------------------------------------------|------------------------------------|
-| :star: [Efficiency - Latency, Throughput](LatencyThroughput.md)                        | ALL                                |
-| :star: [Scalability](Scalability.md)                                                   | ALL                                |
-| :star: [High Availability](HighAvailability.md)                                        | ALL                                |
-| :star: [Servers Cluster](ServersCluster.md)                                            | `Data Stores` or `Message Brokers` |
-| :star: [Event Driven Architecture](EventDrivenArchitecture.md)                         | `Message Brokers`                  |
-| :star: [ACID Properties of the Transaction](ACIDPropertyTransaction.md)                | `Data Stores`                      |
-| :star: [CAP Theorem of the Distributed Systems](CAPTheorem.md)                         | `Data Stores`                      |
-| :star: [Replication & Data Consistency](ReplicationAndDataConsistency.md)              | `Data Stores`                      |
-| [Reliability - Fault Tolerance, Disaster Recovery](FaultTolerance&DisasterRecovery.md) | ALL                                |
-| [Load Balancer](LoadBalancer.md)                                                       | ALL                                |
-| [Atomicity](Atomicity.md)                                                              | `Data Stores`                      |
-| [Durability](Durability.md)                                                            | `Data Stores`                      |
-| [Content Delivery Network (CDN)](CDNs.md)                                              | `Static Content`                   |
-| [Append Only](Append-Only.md)                                                          | `Data Stores`                      |
-
-
-# Language Agnostic
-- We should design the system considering agnostic feature (Language agnostic, AWS agnostic etc.) into the consideration.
-- [Language Agnostic](https://en.wikipedia.org/wiki/Language-agnostic) programming or scripting (also called language-neutral, language-independent, or cross-language) is a software development paradigm where a particular language is chosen because of its appropriateness for a particular task (taking into consideration all factors, including ecosystem, developer skill-sets, performance, etc.), and not purely because of the skill-set available within a development team.
+| Basis                                                                                  | Applicable Components                          |
+|----------------------------------------------------------------------------------------|------------------------------------------------|
+| :star: [Performance - Latency, Throughput](LatencyThroughput.md)                       | ALL                                            |
+| :star: [DB Scalability](Scalability/DBScalability.md)                                  | Data Stores                                    |
+| :star: [App Nodes Scalability](Scalability/AppNodesScalability.md)                     | App Nodes                                      |
+| :star: [Container Orchestration Service](Scalability/ContainerOrchestrationService.md) | App Nodes                                      |
+| :star: [High Availability](HighAvailability.md)                                        | ALL                                            |
+| :star: [Servers Cluster](ServersCluster.md)                                            | ALL                                            |
+| :star: [Event Driven Architecture](EventDrivenArchitecture.md)                         | Message Brokers                                |
+| :star: [ACID Properties of the Transaction](ACIDPropertyTransaction.md)                | Data Stores                                    |
+| :star: [CAP Theorem of the Distributed Systems](CAPTheorem.md)                         | Data Stores                                    |
+| :star: [Replication & Data Consistency](ReplicationAndDataConsistency.md)              | Data Stores                                    |
+| [Reliability - Fault Tolerance, Disaster Recovery](FaultTolerance&DisasterRecovery.md) | ALL                                            |
+| [Load Balancer](LoadBalancer.md)                                                       | ALL                                            |
+| [Atomicity](Atomicity.md)                                                              | Data Stores                                    |
+| [Durability](Durability.md)                                                            | Data Stores                                    |
+| [Content Delivery Network (CDN)](CDNs/CDNs.md)                                         | [Static Content](CDNs/StaticContentWithCDN.md) |
+| [Append Only](Append-Only.md)                                                          | Data Stores                                    |
 
 # Stateful vs Stateless
 
@@ -69,6 +66,10 @@
 | Traffic                 | Facilitates web traffic that is not very resource intensive. | Facilitates longer running processes that are very resource-intensive​.                   |
 
 [Read more](https://www.educative.io/answers/web-server-vs-application-server)
+
+# Language Agnostic
+- We should design the system considering agnostic feature (Language agnostic, AWS agnostic etc.) into the consideration.
+- [Language Agnostic](https://en.wikipedia.org/wiki/Language-agnostic) programming or scripting (also called language-neutral, language-independent, or cross-language) is a software development paradigm where a particular language is chosen because of its appropriateness for a particular task (taking into consideration all factors, including ecosystem, developer skill-sets, performance, etc.), and not purely because of the skill-set available within a development team.
 
 # Source(s) and further reading
 - [How to build a multi-region active-active architecture on AWS](https://acloudguru.com/blog/engineering/why-and-how-do-we-build-a-multi-region-active-active-architecture)

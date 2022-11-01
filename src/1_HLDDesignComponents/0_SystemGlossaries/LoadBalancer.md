@@ -15,8 +15,8 @@
 ## Terminologies/Algorithms
 
 ### Health Checks 
-- Load balancers should only forward traffic to “healthy” backend servers. 
-- To monitor the health of a backend server, “health checks” regularly attempt to connect to backend servers to ensure that servers are listening.
+- Load balancers should only forward traffic to `healthy` backend servers. 
+- To monitor the health of a backend server, `health checks` regularly attempt to connect to backend servers to ensure that servers are listening.
 
 ### Least Connection Method
 - This approach is quite useful when there are a large number of persistent client connections which are unevenly distributed between the servers.

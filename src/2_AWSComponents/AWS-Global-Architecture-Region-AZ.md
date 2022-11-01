@@ -1,3 +1,11 @@
+# AWS Global Architecture
+
+| Component                           | Count |
+|-------------------------------------|-------|
+| :earth_americas: Geographic Regions | 25    |
+| Availability Zones(AZ)              | 69    |
+| Points Of Presence                  | 216   |
+
 # :earth_americas: Geographic Regions
 - A [region](https://aws.amazon.com/about-aws/global-infrastructure/regions_az/) is a `geographic location` where every data center inside the region is called an `availability zone`, AZ in short.
 - There are `25 geographic regions` available in AWS, around the world.
@@ -12,7 +20,7 @@
 
 # Availability Zones (AZ)
 - [An Availability Zone (AZ)](https://aws.amazon.com/about-aws/global-infrastructure/regions_az/) is `one or more discrete data centers` with redundant power, networking, and connectivity in an AWS Region. 
-- AZs give customers the ability to operate production applications and databases that are more [highly available](../1_HLDDesignComponents/0_SystemGlossaries/HighAvailability.md), [fault-tolerant](../1_HLDDesignComponents/0_SystemGlossaries/FaultTolerance&DisasterRecovery.md), and [scalable](../1_HLDDesignComponents/0_SystemGlossaries/Scalability.md) than would be possible from a single data center.
+- AZs give customers the ability to operate production applications and databases that are more [highly available](../1_HLDDesignComponents/0_SystemGlossaries/HighAvailability.md), [fault-tolerant](../1_HLDDesignComponents/0_SystemGlossaries/FaultTolerance&DisasterRecovery.md), and [scalable](../1_HLDDesignComponents/0_SystemGlossaries/Scalability/DBScalability.md) than would be possible from a single data center.
 - [Most Regions]() are home to 2-3 different Availability Zones each, providing adequate redundancy when necessary within a given Region.
 - All Availability Zones within a single Region are connected to one another through [private fiber-optic networking](), allowing each Availability Zone to communicate with one another and transfer data quickly and efficiently as required.
 - There are `69 availability zones` available in AWS, around the world.
@@ -27,14 +35,6 @@ Every AZ is labeled with a letter a, b, c etc.
 - As of April 2020, there are `216 Points of Presence` in 84 cities across 42 countries.
 
 ![img.png](https://d2908q01vomqb2.cloudfront.net/5b384ce32d8cdef02bc3a139d4cac0a22bb029e8/2022/06/17/CloudFront_400-1024x580.png)
-
-# Summary
-
-| Component                           | Count |
-|-------------------------------------|-------|
-| :earth_americas: Geographic Regions | 25    |
-| Availability Zones(AZ)              | 69    |
-| Points Of Presence                  | 216   |
 
 # Global vs Regional vs Availability Zone Resource locations
 

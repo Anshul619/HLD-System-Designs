@@ -13,7 +13,7 @@
 - [Read more](../../../3_HLDDesignProblems/PersonalizationSpotify)
 
 # HDFS vs S3
-- With better [scalability](../../0_SystemGlossaries/Scalability.md), built-in persistence, and lower prices, [S3](../../../2_AWSComponents/7_StorageServices/AmazonS3.md) is the winner!
+- With better [scalability](../../0_SystemGlossaries/Scalability/DBScalability.md), built-in persistence, and lower prices, [S3](../../../2_AWSComponents/7_StorageServices/AmazonS3.md) is the winner!
 - For better [performance](../../0_SystemGlossaries/LatencyThroughput.md) and no limitations on file size or storage format, [HDFS is the way to go](https://www.integrate.io/blog/storing-apache-hadoop-data-cloud-hdfs-vs-s3/).
 
 # References

@@ -1,6 +1,6 @@
 
 # Replication And Data Consistency 
-- Replication is widely used in the [distributed](README.md#key-characteristics-of-distributed-systems) & [highly available](HighAvailability.md) database management systems (DBMS), usually with a [master-slave](Scalability.md#db---horizontal-scaling-techniques) technique.
+- Replication is widely used in the [distributed](README.md#key-characteristics-of-distributed-systems) & [highly available](HighAvailability.md) database management systems (DBMS), usually with a [master-slave](Scalability/DBScalability.md#db---horizontal-scaling-techniques) technique.
 - The master server gets all the updates, which then ripple through to the slave servers.
 - It takes time (known as [Replica Lag](https://cloud.google.com/sql/docs/mysql/replication/replication-lag)) for data to be replicated in [multiple highly available zones ( or regions )](../../2_AWSComponents/AWS-Global-Architecture-Region-AZ.md).
 - Hence `Data Consistency won't be there for those milliseconds`.

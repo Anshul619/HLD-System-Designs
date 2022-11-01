@@ -219,7 +219,7 @@ This repo contains the various system design components info, questions and solu
 | Basis                                                                                                                               | Applicable Components              |
 |-------------------------------------------------------------------------------------------------------------------------------------|------------------------------------|
 | :star: [Efficiency - Latency, Throughput](src/1_HLDDesignComponents/0_SystemGlossaries/LatencyThroughput.md)                        | ALL                                |
-| :star: [Scalability](src/1_HLDDesignComponents/0_SystemGlossaries/Scalability.md)                                                   | ALL                                |
+| :star: [Scalability](src/1_HLDDesignComponents/0_SystemGlossaries/Scalability/DBScalability.md)                                                   | ALL                                |
 | :star: [High Availability](src/1_HLDDesignComponents/0_SystemGlossaries/HighAvailability.md)                                        | ALL                                |
 | :star: [Servers Cluster](src/1_HLDDesignComponents/0_SystemGlossaries/ServersCluster.md)                                            | `Data Stores` or `Message Brokers` |
 | :star: [Event Driven Architecture](src/1_HLDDesignComponents/0_SystemGlossaries/EventDrivenArchitecture.md)                         | `Message Brokers`                  |
@@ -231,7 +231,7 @@ This repo contains the various system design components info, questions and solu
 | [Load Balancer](src/1_HLDDesignComponents/0_SystemGlossaries/LoadBalancer.md)                                                       | ALL                                |
 | [Atomicity](src/1_HLDDesignComponents/0_SystemGlossaries/Atomicity.md)                                                              | `Data Stores`                      |
 | [Durability](src/1_HLDDesignComponents/0_SystemGlossaries/Durability.md)                                                            | `Data Stores`                      |
-| [Content Delivery Network (CDN)](src/1_HLDDesignComponents/0_SystemGlossaries/CDNs.md)                                              | `Static Content`                   |
+| [Content Delivery Network (CDN)](src/1_HLDDesignComponents/0_SystemGlossaries/CDNs/CDNs.md)                                              | `Static Content`                   |
 | [Append Only DB Storages](src/1_HLDDesignComponents/0_SystemGlossaries/Append-Only.md)                                     | `Data Stores`                      |
 
 # OOP Design & Problems (LLD)

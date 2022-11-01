@@ -1,6 +1,6 @@
 
 # Amazon ECS - Containers as a Service
-- [Amazon ECS - Containers as a Service](https://aws.amazon.com/ecs/) is a [highly scalable](../../../1_HLDDesignComponents/0_SystemGlossaries/Scalability.md) and fast [container orchestration/management service](../../../1_HLDDesignComponents/0_SystemGlossaries/ContainerOrchestrationService.md).
+- [Amazon ECS - Containers as a Service](https://aws.amazon.com/ecs/) is a [highly scalable](../../../1_HLDDesignComponents/0_SystemGlossaries/Scalability/DBScalability.md) and fast [container orchestration/management service](../../../1_HLDDesignComponents/0_SystemGlossaries/Scalability/ContainerOrchestrationService.md).
 - You can use it to run, stop, and manage containers on a cluster.
 - Amazon ECS reduces the burden of setting up network, compute and security configurations, and managing scalability. 
 - Up to `5,000 instances per cluster`, can be launched in ECS.

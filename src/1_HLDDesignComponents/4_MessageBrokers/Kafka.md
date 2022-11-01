@@ -44,7 +44,7 @@ Kafka is based on [Log Based Queue](../0_SystemGlossaries/Append-Only.md)
 # Top Features of Kafka
 
 ## Scalability
-- Kafka can be [horizontally scaled](../0_SystemGlossaries/Scalability.md) easily across the cluster.
+- Kafka can be [horizontally scaled](../0_SystemGlossaries/Scalability/DBScalability.md) easily across the cluster.
 - A cluster of brokers is used to partition and streamline the data thereby, scaling up the storage capacity.
 
 ## Performance - High Throughput

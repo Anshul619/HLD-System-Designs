@@ -66,7 +66,7 @@ You can select the type of [load balancer](../../../1_HLDDesignComponents/0_Syst
 
 ## Application Load Balancer
 - Choose an [Application Load Balancer](https://aws.amazon.com/elasticloadbalancing/application-load-balancer/) when you need a flexible feature set for your applications with [HTTP and HTTPS traffic](https://www.izooto.com/blog/understanding-http-https-protocols). 
-- Operating at the request level (HTTP, HTTPs), Application Load Balancers provide advanced routing and visibility features targeted at application architectures, including [microservices](../../../1_HLDDesignComponents/1_MicroServicesSOA) and [containers](../../../1_HLDDesignComponents/0_SystemGlossaries/ContainerOrchestrationService.md).
+- Operating at the request level (HTTP, HTTPs), Application Load Balancers provide advanced routing and visibility features targeted at application architectures, including [microservices](../../../1_HLDDesignComponents/1_MicroServicesSOA) and [containers](../../../1_HLDDesignComponents/0_SystemGlossaries/Scalability/ContainerOrchestrationService.md).
 - Application Load Balancer allows for multiple applications (using [Content-based routing - /FOO, /BAR](https://aws.amazon.com/blogs/aws/new-advanced-request-routing-for-aws-application-load-balancers/) etc.) to be hosted behind a single load balancer.
 
 ### Key Features of ALB

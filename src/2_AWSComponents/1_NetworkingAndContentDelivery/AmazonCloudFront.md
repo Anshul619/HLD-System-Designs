@@ -1,10 +1,10 @@
 # Amazon CloudFront
 - [Amazon CloudFront](https://aws.amazon.com/cloudfront/) helps to improve website speed and access to cloud-based static data - [Securely deliver content with low latency and high transfer speeds](../../1_HLDDesignComponents/0_SystemGlossaries/LatencyThroughput.md).
-- CloudFront works as a [Global Content Delivery Service (CDN)](../../1_HLDDesignComponents/0_SystemGlossaries/CDNs.md) to deliver the content efficiently to the end users.
-- CloudFront is perfect for [Static Content](../../1_HLDDesignComponents/0_SystemGlossaries/StaticContentWithCDN.md).
+- CloudFront works as a [Global Content Delivery Service (CDN)](../../1_HLDDesignComponents/0_SystemGlossaries/CDNs/CDNs.md) to deliver the content efficiently to the end users.
+- CloudFront is perfect for [Static Content](../../1_HLDDesignComponents/0_SystemGlossaries/CDNs/StaticContentWithCDN.md).
 
 # :star: Amazon S3 + Amazon CloudFront: A Match Made in the Cloud
-- [Instead of directly accessing the S3 resource](https://aws.amazon.com/blogs/networking-and-content-delivery/amazon-s3-amazon-cloudfront-a-match-made-in-the-cloud/), we should use [CloudFront distribution](../1_NetworkingAndContentDelivery/AmazonCloudFront.md) in the middle (which acts as a [CDN](../../1_HLDDesignComponents/0_SystemGlossaries/CDNs.md))
+- [Instead of directly accessing the S3 resource](https://aws.amazon.com/blogs/networking-and-content-delivery/amazon-s3-amazon-cloudfront-a-match-made-in-the-cloud/), we should use [CloudFront distribution](../1_NetworkingAndContentDelivery/AmazonCloudFront.md) in the middle (which acts as a [CDN](../../1_HLDDesignComponents/0_SystemGlossaries/CDNs/CDNs.md))
 
 ![img.png](https://d2908q01vomqb2.cloudfront.net/5b384ce32d8cdef02bc3a139d4cac0a22bb029e8/2018/06/27/4-v-2.png)
 
@@ -29,9 +29,9 @@
 [Read more](../0_AWSDesigns/WPSiteCloudFront&S3.md)
 
 # Key Features of CloudFront
-- [Cache content for faster delivery (i.e. CDN)](../../1_HLDDesignComponents/0_SystemGlossaries/CDNs.md)
-- [Static Content](../../1_HLDDesignComponents/0_SystemGlossaries/StaticContentWithCDN.md)
-- [Streaming audio or video](../../1_HLDDesignComponents/0_SystemGlossaries/StaticContentWithCDN.md)
+- [Cache content for faster delivery (i.e. CDN)](../../1_HLDDesignComponents/0_SystemGlossaries/CDNs/CDNs.md)
+- [Static Content](../../1_HLDDesignComponents/0_SystemGlossaries/CDNs/StaticContentWithCDN.md)
+- [Streaming audio or video](../../1_HLDDesignComponents/0_SystemGlossaries/CDNs/StaticContentWithCDN.md)
 - Lower Load upon origin
 - Custom SSL certificates
 - Short time-to-live (TTL) (as little as 0 seconds, for dynamic content)
@@ -50,7 +50,7 @@
 # CDN Customizations
 
 ## Customizing with CloudFront Functions
-- With [CloudFront Functions in Amazon CloudFront](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/cloudfront-functions.html), lightweight functions can be developed in [JavaScript]() for [high-scale, latency-sensitive CDN customizations](../../1_HLDDesignComponents/0_SystemGlossaries/CDNs.md). 
+- With [CloudFront Functions in Amazon CloudFront](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/cloudfront-functions.html), lightweight functions can be developed in [JavaScript]() for [high-scale, latency-sensitive CDN customizations](../../1_HLDDesignComponents/0_SystemGlossaries/CDNs/CDNs.md). 
 - Your functions can manipulate the requests and responses that flow through CloudFront, perform basic authentication and authorization, generate HTTP responses at the edge, and more. 
 - The CloudFront Functions runtime environment offers [submillisecond startup times, scales immediately to handle millions of requests per second](../../1_HLDDesignComponents/0_SystemGlossaries/LatencyThroughput.md), and is highly secure. 
 - CloudFront Functions is a native feature of CloudFront, which means you can build, test, and deploy your code entirely within CloudFront.
