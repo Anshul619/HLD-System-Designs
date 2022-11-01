@@ -23,8 +23,8 @@ Given a desired target capacity (i.e. a combination of CPU cores & RAM) of a clu
 |-----------------------------------------------------------------|-----------------|-----------------------|
 | [Availability](../HighAvailability.md)                          | :-1: Decreases  | :+1: Increases        |
 | [Kubernates Agents Overhead](../../6_DevOps/Kubernates.md#pods) | :-1: Increases  | :+1: Decreases        |
-| Master Node Overhead                                            | :+1: Decreases  | :-1: Increases        |
 | Cost Efficiency (with auto-scaling)                             | :-1: Decreases  | :+1: Increases        |
+| Master Node Overhead                                            | :+1: Decreases  | :-1: Increases        |
 
 # Reference
 - [Architecting Kubernetes clusters — choosing a worker node size](https://learnk8s.io/kubernetes-node-size)
