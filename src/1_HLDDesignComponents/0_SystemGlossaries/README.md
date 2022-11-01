@@ -18,6 +18,27 @@
 | [Content Delivery Network (CDN)](CDNs/CDNs.md)                                         | [Static Content](CDNs/StaticContentWithCDN.md) |
 | [Append Only](Append-Only.md)                                                          | Data Stores                                    |
 
+# Different Storage Types
+
+![img.png](https://www.ctera.com/wp-content/uploads/2019/02/Ctera-Cool-Medium-Hot-Graphic-051122.jpg)
+
+## Hot Storage
+- [Hot storage](https://www.ctera.com/company/blog/differences-hot-warm-cold-file-storage/) is data that is accessed frequently.
+- This could be data that is being actively used by employees or customers.
+- It needs to be stored on fast storage (like `SSD`) so that it can be accessed quickly.
+- Examples - [Amazon Dynamo DB](../../2_AWSComponents/6_DatabaseServices/AmazonDynamoDB/Readme.md), [Amazon Aurora](../../2_AWSComponents/6_DatabaseServices/AmazonRDSAurora)
+
+## Warm Storage
+- [Warm storage](https://www.ctera.com/company/blog/differences-hot-warm-cold-file-storage/) (like `HDD`) is data that is accessed less frequently.
+- This could be data that is used for reporting or analytics.
+- It doesn’t need to be accessed as quickly as hot data, so it can be stored on slightly slower, capacity-optimized.
+
+## Cold Storage
+- [Cold storage](https://www.ctera.com/company/blog/differences-hot-warm-cold-file-storage/) is data that is rarely accessed.
+- This could be data that is archived for compliance reasons.
+- It can be stored on even slower, `cheap and deep` storage. (like `Object Storage`)
+- Example - [Amazon S3](../../2_AWSComponents/7_StorageServices/AmazonS3.md)
+
 # Stateful vs Stateless
 
 ## :star: Stateless Protocol
@@ -32,28 +53,6 @@
 # Domain Driven Architecture
 - [Domain Driven Architecture](https://www.geeksforgeeks.org/domain-driven-design-ddd/) - When we are developing software our focus should not be primarily on technology, rather it should be primarily on business/domain.
 - Classes, modals, services, microservices, rest apis etc. should be designed according to the domains.
-![img.png](assests/domain_driven_design.png)
-
-# Different Storage Types
-
-## Hot Storage
-- [Hot storage](https://www.ctera.com/company/blog/differences-hot-warm-cold-file-storage/) is data that is accessed frequently. 
-- This could be data that is being actively used by employees or customers. 
-- It needs to be stored on fast storage (like `SSD`) so that it can be accessed quickly.
-- Examples - [Amazon Dynamo DB](../../2_AWSComponents/6_DatabaseServices/AmazonDynamoDB/Readme.md), [Amazon Aurora](../../2_AWSComponents/6_DatabaseServices/AmazonRDSAurora)
-
-## Warm Storage
-- [Warm storage](https://www.ctera.com/company/blog/differences-hot-warm-cold-file-storage/) (like `HDD`) is data that is accessed less frequently. 
-- This could be data that is used for reporting or analytics. 
-- It doesn’t need to be accessed as quickly as hot data, so it can be stored on slightly slower, capacity-optimized.
-
-## Cold Storage
-- [Cold storage](https://www.ctera.com/company/blog/differences-hot-warm-cold-file-storage/) is data that is rarely accessed. 
-- This could be data that is archived for compliance reasons. 
-- It can be stored on even slower, `cheap and deep` storage. (like `Object Storage`)
-- Example - [Amazon S3](../../2_AWSComponents/7_StorageServices/AmazonS3.md)
-
-![img.png](https://www.ctera.com/wp-content/uploads/2019/02/Ctera-Cool-Medium-Hot-Graphic-051122.jpg)
 
 # Web vs App Server
 
