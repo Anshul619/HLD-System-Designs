@@ -1,4 +1,3 @@
-
 # Kubernates
 - [Kubernetes](https://kubernetes.io), also known as K8s, is an OPEN-SOURCE system for automating deployment, scaling, and management of containerized applications. 
 - Kubernates is a [container orchestration service](../0_SystemGlossaries/Scalability/ContainerOrchestrationService.md).
@@ -39,9 +38,17 @@
 - [Pods](https://kubernetes.io/docs/concepts/workloads/pods/) are the smallest deployable units of computing that you can create and manage in Kubernetes.
 - A Pod (as in a pod of whales or pea pod) is a group of one or more containers, with shared storage and network resources, and a specification for how to run the containers.
 
-```
-kubectl scale --replicas=5 rc/foo rc/bar rc/baz                   # Scale multiple replication controllers i.e. 5 pods for each of the services
-```
+| Environment | Max Pods Per Node (Reliably Supported)                                                                                              | Max Pods Per Cluster (Reliably Supported) | Remarks |
+|-------------|-------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------|---------|
+| Kubernates  | 110                                                                                                                                 | 150000                                    | -       |
+| EKS         | Imposes a pod limit depending on the node size. <br/>- For example, t3.small allows only 11 pods, while m5.4xlarge allows 234 pods. | -                                         | -       |
+
+## Kubernates Agents
+
+Kubernetes agents perform various tasks on every node to manage the containers running on that node. For example:
+- cAdvisor collects and analyzes the resource usage of all containers on a node.
+- [kubelet](https://kubernetes.io/docs/reference/command-line-tools-reference/kubelet/) runs regular live-ness and readiness probes against each container on a node.
+
 
 ## Labels
 - [Labels](https://kubernetes.io/docs/concepts/overview/working-with-objects/labels/) are key/value pairs that are attached to objects, such as pods. 
