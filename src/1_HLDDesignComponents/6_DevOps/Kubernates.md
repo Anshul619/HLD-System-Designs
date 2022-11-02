@@ -174,16 +174,16 @@ kops create cluster \
 ````
 
 Parameters :
---cloud aws : We are launching cluster in AWS.
---zones us-west-2a,us-west-2b,us-west-2c : This describes availability zones for nodes.
---node-count 5 : The number kubernetes nodes.
---node-size t2.medium : Size of kubernetes nodes.
---dns-zone testikod.in : Hosted zone which we created earlier.
---master-size m3.medium : Size of a Kubernetes master node.
---master-zones us-west-2a,us-west-2b,us-west-2c : This will tell kops to spread masters across those availability zones. Which will give High Availability to KOPS cluster.
---topology private : We define that we want to use a private network topology with kops.
---networking calico : We tell kops to use Calico for our overlay network. Overlay networks are required for this configuration.
--- bastion : Add this flag to tell kops to create a bastion server, so you can SSH into the cluster.
+- --cloud aws : We are launching cluster in AWS.
+- --zones us-west-2a,us-west-2b,us-west-2c : This describes availability zones for nodes.
+- --node-count 5 : The number kubernetes nodes.
+- --node-size t2.medium : Size of kubernetes nodes.
+- --dns-zone testikod.in : Hosted zone which we created earlier.
+- --master-size m3.medium : Size of a Kubernetes master node.
+- --master-zones us-west-2a,us-west-2b,us-west-2c : This will tell kops to spread masters across those availability zones. Which will give High Availability to KOPS cluster.
+- --topology private : We define that we want to use a private network topology with kops.
+- --networking calico : We tell kops to use Calico for our overlay network. Overlay networks are required for this configuration.
+- -- bastion : Add this flag to tell kops to create a bastion server, so you can SSH into the cluster.
 
 Read more
 - [Installing Kubernetes with kOps](https://kubernetes.io/docs/setup/production-environment/tools/kops/)
