@@ -130,6 +130,67 @@ behavior:
 ````
 
 # Kubernates Commands
+
+## kops - Manage production grade k8s cluster
+- [KOPS](https://kops.sigs.k8s.io/) offers a one-stop solution for deploying [Kubernetes cluster]() with [Amazon Web Services](../../2_AWSComponents/).
+- It is an open source tool designed to make installation of secure, [highly available clusters](../0_SystemGlossaries/HighAvailability.md) easy and automatable.
+
+### Step1 - Create Hosted Zone for Cluster
+- We require a hosted zone associated with [Route 53](../../2_AWSComponents/1_NetworkingAndContentDelivery/AmazonRoute53.md) which must be publicly resolvable.
+
+````shell
+aws route53 create-hosted-zone --name testikod.in --caller-reference 2017-02-24-11:12 --hosted-zone-config Comment="Hosted Zone for KOPS"
+````
+
+### Step2 - Create State Store
+- KOPS internally uses Terraform. 
+- So we required external state store for storing states of a cluster. 
+- We are using [Amazon S3](../../2_AWSComponents/7_StorageServices/AmazonS3.md) for storing state.
+
+````shell
+aws s3api create-bucket --bucket testikod-in-state-store --region us-west-2
+````
+
+### Step3 - Create cluster
+- An instance group is a set of instances, which will be registered as kubernetes nodes. [On AWS this is implemented via auto-scaling-groups](../../2_AWSComponents/4_ComputeServices/AmazonEC2/AutoScalingGroup/README.md).
+
+````shell
+
+export NAME=cluster.testikod.in // Setup environment variable for STATE STORE and cluster name.
+export KOPS_STATE_STORE="s3://testikod-in-state-store"
+
+kops create cluster \
+    --cloud aws \
+    --node-count 5 \
+    --node-size t2.medium \
+    --master-size m3.medium \
+    --zones us-west-2a,us-west-2b,us-west-2c \
+    --master-zones us-west-2a,us-west-2b,us-west-2c \
+    --dns-zone testikod.in \
+    --topology private \
+    --networking calico \
+    --bastion \
+    ${NAME}
+````
+
+Parameters :
+--cloud aws : We are launching cluster in AWS.
+--zones us-west-2a,us-west-2b,us-west-2c : This describes availability zones for nodes.
+--node-count 5 : The number kubernetes nodes.
+--node-size t2.medium : Size of kubernetes nodes.
+--dns-zone testikod.in : Hosted zone which we created earlier.
+--master-size m3.medium : Size of a Kubernetes master node.
+--master-zones us-west-2a,us-west-2b,us-west-2c : This will tell kops to spread masters across those availability zones. Which will give High Availability to KOPS cluster.
+--topology private : We define that we want to use a private network topology with kops.
+--networking calico : We tell kops to use Calico for our overlay network. Overlay networks are required for this configuration.
+-- bastion : Add this flag to tell kops to create a bastion server, so you can SSH into the cluster.
+
+Read more
+- [Installing Kubernetes with kOps](https://kubernetes.io/docs/setup/production-environment/tools/kops/)
+- [Creating Kubernetes Clusters on AWS using KOPS](https://www.opcito.com/blogs/creating-kubernetes-clusters-on-aws-using-kops)
+- [An introduction and setting up kubernetes cluster on AWS using KOPS](https://dev.to/aws-builders/an-introduction-and-setting-up-kubernetes-cluster-on-aws-using-kops-50m)
+
+## Kubectl - Communicate with cluster API server
 - Kubectl is used for communicating with the cluster API server.
 
 ![img.png](https://www.suse.com/c/wp-content/uploads/2021/09/kubectl_communication_flow_hu6704bce3da6ee0f16978a2bb4f755ce5_43859_1000x0_resize_box_2.png)

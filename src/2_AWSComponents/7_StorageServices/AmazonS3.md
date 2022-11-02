@@ -59,10 +59,10 @@ By contrast, a dynamic website relies on server-side processing, including serve
 
 # S3 Cli
 
-| Command     | Remarks |
-|-------------|---------|
-| Copy file   |         |
-| Move file   |         |
-| Sync folder |         |
+| Name        | Command                            | Remarks |
+|-------------|------------------------------------|---------|
+| Copy file   | -                                  |         |
+| Move file   | -                                  |         |
+| Sync folder | aws s3 sync <source> <destination> |         |
 
 [Read more](https://docs.aws.amazon.com/cli/latest/reference/s3/)
