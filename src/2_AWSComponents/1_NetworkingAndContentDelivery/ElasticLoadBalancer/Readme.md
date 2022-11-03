@@ -6,20 +6,27 @@
 
 ![img.png](assests/AWS_Elastic_Load_Balancer.png)
 
+# Availability Zones and load balancer nodes
+- [When you enable an Availability Zone for your load balancer, Elastic Load Balancing creates a load balancer node in the Availability Zone](https://docs.aws.amazon.com/elasticloadbalancing/latest/userguide/how-elastic-load-balancing-works.html). 
+- If you register targets in an Availability Zone but do not enable the Availability Zone, these registered targets do not receive traffic. 
+- Your load balancer is most effective when you ensure that each enabled Availability Zone has at least one registered target.
+- With an Application Load Balancer however, it is a requirement that you enable at least two or more Availability Zones. (And recommended for Network Load Balancer also)
+
 # Key Features of ELB
 
-| Feature                                                                                                                 | Remarks                                                                            |
-|-------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------|
-| [Highly available](../../../1_HLDDesignComponents/0_SystemGlossaries/HighAvailability.md)                               | Load balancers balances loads across instances in multiple Availability Zones.     |
-| [Health checks](https://docs.aws.amazon.com/elasticloadbalancing/latest/application/target-group-health-checks.html)    | Automatically checks health of instances and takes them in or out of service.      |
-| [Session stickiness](https://docs.aws.amazon.com/elasticloadbalancing/latest/application/sticky-sessions.html)          | Routes requests to the same instance.                                              |
-| [Monitoring/logging](https://docs.aws.amazon.com/elasticloadbalancing/latest/application/load-balancer-monitoring.html) | Publishes metrics to CloudWatch and can get logs of requests processed.            |
-| Secure Sockets Layer                                                                                                    | Supports SSL offload from web and application servers with flexible cipher support |
+| Feature                                                                                                                              | Remarks                                                                                                                                                                                                                                                                                                                                                   |
+|--------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| [Highly available](../../../1_HLDDesignComponents/0_SystemGlossaries/HighAvailability.md)                                            | Load balancers balances loads across instances in multiple Availability Zones.                                                                                                                                                                                                                                                                            |
+| [Health checks](https://docs.aws.amazon.com/elasticloadbalancing/latest/application/target-group-health-checks.html)                 | Automatically checks health of instances and takes them in or out of service.                                                                                                                                                                                                                                                                             |
+| [Session stickiness](https://docs.aws.amazon.com/elasticloadbalancing/latest/application/sticky-sessions.html)                       | Routes requests to the same instance.                                                                                                                                                                                                                                                                                                                     |
+| [Monitoring/logging](https://docs.aws.amazon.com/elasticloadbalancing/latest/application/load-balancer-monitoring.html)              | Publishes metrics to CloudWatch and can get logs of requests processed.                                                                                                                                                                                                                                                                                   |
+| [Cross-zone load balancing](https://docs.aws.amazon.com/elasticloadbalancing/latest/userguide/how-elastic-load-balancing-works.html) | - When cross-zone load balancing is enabled, each load balancer node distributes traffic across the registered targets in all enabled Availability Zones. This improves speed and scalability.<br/>- When cross-zone load balancing is disabled, each load balancer node distributes traffic only across the registered targets in its Availability Zone. |
+| Secure Sockets Layer                                                                                                                 | Supports SSL offload from web and application servers with flexible cipher support                                                                                                                                                                                                                                                                        |
 
 # Key Components of ELB
 
 ## Listener
-- A [listener](https://docs.aws.amazon.com/elasticloadbalancing/latest/network/load-balancer-listeners.html) checks for connection requests from clients, using the protocol and port that you configure, and forwards requests to a target group.
+- [A listener](https://docs.aws.amazon.com/elasticloadbalancing/latest/network/load-balancer-listeners.html) checks for connection requests from clients, using the protocol and port that you configure, and forwards requests to a target group.
 
 ![img.png](assests/elb_listener_setup.png)
 
@@ -59,6 +66,7 @@ You can select the type of [load balancer](../../../1_HLDDesignComponents/0_Syst
 | Content-Based Routing        | :x: Not-Supported                               | :white_check_mark: Supported        |
 | Rough Throughput             | Millions of requests per second                 | -                                   |
 | Ideally Use Cases            | Microservices (if API gateway used), other apps | Microservices, Container-based apps |
+| Cross-zone Load Balancing    | Disabled by default                             | Enabled by default                  |
 
 ## Network Load Balancer
 - Choose a [Network Load Balancer](https://docs.aws.amazon.com/elasticloadbalancing/latest/network/introduction.html) when you need ultra-high performance, TLS offloading at scale, centralized certificate deployment, support for UDP, and static IP addresses for your applications.
