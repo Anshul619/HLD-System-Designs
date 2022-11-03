@@ -3,6 +3,14 @@
 - CloudFront works as a [Global Content Delivery Service (CDN)](../../1_HLDDesignComponents/0_SystemGlossaries/CDNs/CDNs.md) to deliver the content efficiently to the end users.
 - CloudFront is perfect for [Static Content](../../1_HLDDesignComponents/0_SystemGlossaries/CDNs/StaticContentWithCDN.md).
 
+# Terminologies
+
+| Terminology                                                                                                            | Description                                                                                                                 |
+|------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------|
+| [Origin](https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_Origin.html)                                   | An origin is the location where content is stored, and from which CloudFront gets content to serve to viewers.              |
+| [Origin Types](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/DownloadDistS3AndCustomOrigins.html) | Either S3 or Custom Origin (S3 Website type, EC2 instance or Lambda function URL etc.)                                      |
+| [Price Class](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/PriceClass.html)                      | To reduce cost, we can specify geographic regions for which the CloudFront edge locations should use (to give low-latency). |
+
 # :star: Amazon S3 + Amazon CloudFront: A Match Made in the Cloud
 - [Instead of directly accessing the S3 resource](https://aws.amazon.com/blogs/networking-and-content-delivery/amazon-s3-amazon-cloudfront-a-match-made-in-the-cloud/), we should use [CloudFront distribution](../1_NetworkingAndContentDelivery/AmazonCloudFront.md) in the middle (which acts as a [CDN](../../1_HLDDesignComponents/0_SystemGlossaries/CDNs/CDNs.md))
 
