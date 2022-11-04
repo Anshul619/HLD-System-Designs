@@ -28,6 +28,18 @@
 | Integration with CI Pipeline         | Drift can be painful                      |
 | Large Community Support              | -                                         |
 
+# Intrinsic functions
+
+| Name                                                                                                                         | Description                                                                                                                                                                                                  | Example Code                                                     |
+|------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------|
+| [!Sub](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/intrinsic-function-reference-sub.html)                 | The intrinsic function Fn::Sub substitutes variables in an input string with values that you specify                                                                                                         | `!Sub 'arn:aws:ec2:${AWS::Region}:${AWS::AccountId}:vpc/${vpc}'` |
+| [!Ref](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/intrinsic-function-reference-ref.html)                 | The intrinsic function Ref returns the value of the specified parameter or resource.                                                                                                                         | `!Ref logicalName`                                               |
+| [!Join](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/intrinsic-function-reference-join.html)               | The intrinsic function Fn::Join appends a set of values into a single value, separated by the specified delimiter. If a delimiter is the empty string, the set of values are concatenated with no delimiter. | `!Join [ ":", [ a, b, c ] ]`                                     |
+| [!ImportValue](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/intrinsic-function-reference-importvalue.html) | The intrinsic function Fn::ImportValue returns the value of an output exported by another stack.                                                                                                             | `!ImportValue sharedValueToImport`                               |
+| [!GetAtt](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/intrinsic-function-reference-getatt.html)           | The Fn::GetAtt intrinsic function returns the value of an attribute from a resource in the template.                                                                                                         | `!GetAtt logicalNameOfResource.attributeName`                    |
+
+[Read more](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/intrinsic-function-reference.html)
+
 # Cloudformation Linter
 - [Linter](https://github.com/aws-cloudformation/cfn-lint) can validate [AWS CloudFormation yaml/json templates](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/gettingstarted.templatebasics.html) against the [AWS CloudFormation Resource Specification](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/cfn-resource-specification.html) and additional checks. 
 - Includes checking valid values for resource properties and best practices.
