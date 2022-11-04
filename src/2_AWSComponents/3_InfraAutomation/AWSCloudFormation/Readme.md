@@ -18,14 +18,11 @@
 - Use [AWS CloudFormation]() to call the bucket and [create a stack on your template](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/stacks.html).
 - CloudFormation reads the file and understands the services that are called, their order, the relationship between the services, and provisions the services one after the other.
 
-# :thumbsup: Pros and Cons
-
-| Pros                                 | Cons                                      |
-|--------------------------------------|-------------------------------------------|
-| Makes your life easier               | Steep Learning Curve                      |
-| Coding Review Infrastructure Changes | Innocent Looking changes can be dangerous |
-| Integration with CI Pipeline         | Drift can be painful                      |
-| Large Community Support              | -                                         |
+# Sample Cloudformation templates
+- :star: [AWS CloudFormation Sample Templates](https://github.com/awslabs/aws-cloudformation-templates)
+- [Aurora Serverless](sample_templates/aurora_serverless.yml)
+- [EKS cluster for EC2 instances](sample_templates/EKS_ECS.yml)
+- [AutoScaling of EC2 instances](sample_templates/Auto_Scaling_Group.yml)
 
 # Template anatomy
 - A template is a JSON- or YAML-formatted text file that describes your AWS infrastructure. 
@@ -180,11 +177,14 @@ Outputs:
 
 [Read more](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/intrinsic-function-reference.html)
 
-# Sample Cloudformation templates
-- :star: [Sample Cloudformation templates](https://github.com/awslabs/aws-cloudformation-templates)
-- [Aurora Serverless](sample_templates/aurora_serverless.yml)
-- [EKS cluster for EC2 instances](sample_templates/EKS_ECS.yml)
-- [AutoScaling of EC2 instances](sample_templates/Auto_Scaling_Group.yml)
+# Pros and Cons
+
+| Pros                                 | Cons                                      |
+|--------------------------------------|-------------------------------------------|
+| Makes your life easier               | Steep Learning Curve                      |
+| Coding Review Infrastructure Changes | Innocent Looking changes can be dangerous |
+| Integration with CI Pipeline         | Drift can be painful                      |
+| Large Community Support              | -                                         |
 
 # Cloudformation Linter
 - [Linter](https://github.com/aws-cloudformation/cfn-lint) can validate [AWS CloudFormation yaml/json templates](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/gettingstarted.templatebasics.html) against the [AWS CloudFormation Resource Specification](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/cfn-resource-specification.html) and additional checks. 
