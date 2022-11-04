@@ -18,7 +18,7 @@
 [Read more](https://aws.amazon.com/quickstart/architecture/amazon-eks/)
 
 # Other Links
-- [EKS cluster for EC2 instances - Cloudformation template](../3_InfraAutomation/AWSCloudFormation/templates/EKS_ECS.yml)
+- [EKS cluster for EC2 instances - Cloudformation template](../3_InfraAutomation/AWSCloudFormation/sample_templates/EKS_ECS.yml)
 - [Amazon EKS vs ECS vs Fargate](EKSvsECSvsFargate.md)
 
 # References

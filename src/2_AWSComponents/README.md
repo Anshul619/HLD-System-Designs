@@ -390,6 +390,7 @@
 
 # Source(s) and further reading
 - [AWS Documentation Overview](https://aws.amazon.com/documentation-overview/)
+- [AWS CloudFormation Sample Templates](https://github.com/awslabs/aws-cloudformation-templates)
 - [AWS Interview Questions](https://www.simplilearn.com/tutorials/aws-tutorial/aws-interview-questions)
 - [The Top 10 Most Used AWS Services](https://insider.ssi-net.com/insights/the-top-10-most-used-aws-services)
 - [Is Amazon RDS for PostgreSQL or Amazon Aurora PostgreSQL a better choice for me?](https://aws.amazon.com/blogs/database/is-amazon-rds-for-postgresql-or-amazon-aurora-postgresql-a-better-choice-for-me/)

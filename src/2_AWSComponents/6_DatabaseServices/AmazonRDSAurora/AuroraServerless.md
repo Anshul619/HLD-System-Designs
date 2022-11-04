@@ -13,7 +13,7 @@
 ![img.png](https://d2908q01vomqb2.cloudfront.net/887309d048beef83ad3eabf2a79a64a389ab1c9f/2020/11/27/Amazon-Aurora-Serverless-2.jpg)
 
 # Other Links
-- [Aurora Serverless - Cloudformation template](../../3_InfraAutomation/AWSCloudFormation/templates/aurora_serverless.yml)
+- [Aurora Serverless - Cloudformation template](../../3_InfraAutomation/AWSCloudFormation/sample_templates/aurora_serverless.yml)
 
 # References
 - [Best practices for working with Amazon Aurora Serverless](https://aws.amazon.com/blogs/database/best-practices-for-working-with-amazon-aurora-serverless/)
