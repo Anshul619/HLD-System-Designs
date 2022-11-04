@@ -35,7 +35,6 @@ You can use Route 53 to perform three main functions in any combination,
 ````
 
 // Basic Routing Policy using Terraform
-
 resource "aws_route53_record" "latency-use1" {
   zone_id         = "${data.aws_route53_zone.my_zone.zone_id}"
   name            = "my-application"
@@ -77,6 +76,10 @@ resource "aws_route53_record" "latency-euc1" {
 
 ## Fail-over routing policy
 - Use when you want to configure [active-passive fail over for disaster recovery](../../1_HLDDesignComponents/0_SystemGlossaries/HighAvailability.md#active-passive-policy).
+
+## Weighted routing policy
+- Use when you want to configure [weighted routing i.e. send X% to one target, Y% to another target](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/resource-record-sets-values-weighted.html). 
+- [Read more - Performing Weighted Routing in AWS Route 53](https://virtualizationreview.com/articles/2020/07/30/weighted-routing.aspx)
 
 # References
 - [How to implement the perfect failover strategy using Amazon Route53](https://medium.com/dazn-tech/how-to-implement-the-perfect-failover-strategy-using-amazon-route53-1cc4b19fa9c7)
