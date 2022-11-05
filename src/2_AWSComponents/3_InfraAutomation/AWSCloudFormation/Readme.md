@@ -5,18 +5,18 @@
 
 ![AWS_Cloudformation_Steps.png](assets/AWS_Cloudformation_Steps.drawio.png)
 
-# Template & Stack
+# Steps involved in a CloudFormation Solution
+- [Create or use an existing CloudFormation template](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/gettingstarted.templatebasics.html) using `JSON or YAML format`.
+- Save the code in an [S3 bucket](../../7_StorageServices/AmazonS3.md), which serves as a repository for the code.
+- Use [AWS CloudFormation]() to call the bucket and [create a stack on your template](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/stacks.html).
+- CloudFormation reads the file and understands the services that are called, their order, the relationship between the services, and provisions the services one after the other.
+
+# What is Template?
 - [A CloudFormation template](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/gettingstarted.templatebasics.html) is deployed into the AWS environment as a [STACK](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/stacks.html) (like microservice etc.).
 - You can manage stacks through the AWS Management Console, AWS Command Line Interface, or AWS CloudFormation APIs.
 - If you need to make changes to the running resources in a stack, you update the stack.
 - Before making changes to your resources, [you can generate a change set](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-changesets.html), which is a summary of your proposed changes.
 - [Change sets](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-changesets.html) enable you to see how your changes might impact your running resources, especially for critical resources, before implementing them.
-
-# What are the steps involved in a CloudFormation Solution?
-- [Create or use an existing CloudFormation template](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/gettingstarted.templatebasics.html) using `JSON or YAML format`.
-- Save the code in an [S3 bucket](../../7_StorageServices/AmazonS3.md), which serves as a repository for the code.
-- Use [AWS CloudFormation]() to call the bucket and [create a stack on your template](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/stacks.html).
-- CloudFormation reads the file and understands the services that are called, their order, the relationship between the services, and provisions the services one after the other.
 
 # Sample Cloudformation templates
 - :star: [AWS CloudFormation Sample Templates](https://github.com/awslabs/aws-cloudformation-templates)
