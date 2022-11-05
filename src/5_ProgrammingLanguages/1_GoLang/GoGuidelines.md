@@ -101,8 +101,8 @@ log.Println(reflect.TypeOf(slice).Kind()) // slice
 log.Println(reflect.TypeOf(slice_1).Kind()) //slice
 ```
 
-# [Why does Go have type parameters?](https://go.dev/doc/faq#overloading)
-- Type parameters permit what is known as generic programming, in which functions and data structures are defined in terms of types that are specified later, when those functions and data structures are used.
+# Why does Go have type parameters?
+- Type parameters permit what is known as [generic programming]((https://go.dev/doc/faq#overloading)), in which functions and data structures are defined in terms of types that are specified later, when those functions and data structures are used.
 - For example, they make it possible to write a function that returns the minimum of two values of any ordered type, without having to write a separate version for each possible type.
 
 # How to implement Queue?
