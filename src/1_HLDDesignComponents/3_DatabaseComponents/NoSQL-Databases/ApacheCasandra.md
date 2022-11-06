@@ -45,6 +45,7 @@ Large amount of data like,
 ## Other UCs
 - [Twillo - Send Message API Design](../../../3_HLDDesignProblems/TwilloSendMessageAPI)
 - [Exploring Data @ Netflix](https://netflixtechblog.com/exploring-data-netflix-9d87e20072e3)
+- [Directi uses Casandra to save HeatMaps (UI activities)](https://engineering.zeta.tech/2021/09/15/zeta-tech-stack/)
 
 # Features
 

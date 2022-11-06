@@ -217,6 +217,7 @@ func main() {
 ````
 
 # How to implement Stack?
+
 ````go
 type Stack []string
 
@@ -240,6 +241,32 @@ func (s *Stack) Pop() (string, bool) {
 	}
 }
 ````
+
+# How to implement do-while loop in Go?
+
+- There is no do-while loop in Go. [for loop](https://yourbasic.org/golang/do-while-loop/) can be used.
+
+````go
+for {
+	work()
+	if !condition {
+		break
+	}
+}
+````
+
+# Bitwise Operators
+
+````
+&   bitwise AND
+ |   bitwise OR
+ ^   bitwise XOR
+&^   AND NOT
+<<   left shift
+>>   right shift
+````
+
+[Read more](https://medium.com/learning-the-go-programming-language/bit-hacking-with-go-e0acee258827)
 
 # Multi-Threading
 ````
@@ -340,6 +367,7 @@ for _, v := range graph[num] {
 - [Frequently Asked Questions (FAQ) - Go](https://go.dev/doc/faq#overloading)
 - [How To Use Variables and Constants in Go](https://www.digitalocean.com/community/tutorials/how-to-use-variables-and-constants-in-go)
 - [Practical Go: Real world advice for writing maintainable Go programs](https://dave.cheney.net/practical-go/presentations/qcon-china.html)
+- [Is Go faster than Java in some use cases?](https://www.quora.com/Is-Go-faster-than-Java-in-some-use-cases)
 - https://golangbot.com/learn-golang-series/
 - https://yourbasic.org/golang/implement-fifo-queue/
 - https://dave.cheney.net/2016/08/20/solid-go-design
