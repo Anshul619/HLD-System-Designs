@@ -1,4 +1,3 @@
-
 # Amazon API Gateway
 - [Amazon API Gateway](https://docs.aws.amazon.com/apigateway/latest/developerguide/welcome.html) is an AWS service for creating, publishing, maintaining, monitoring, and securing [REST, HTTP, and WebSocket APIs](../../../1_HLDDesignComponents/2_APITechOptions/REST.md) at any scale.
 - [API Gateway](https://docs.aws.amazon.com/apigateway/latest/developerguide/welcome.html) allows you to [create your APIs programmatically by importing OpenAPI/Swagger specification](../../../1_HLDDesignComponents/2_APITechOptions/API_Dev_Documentation/Swagger/OpenAPISpec.md), using either the AWS API or the AWS Management Console. 
