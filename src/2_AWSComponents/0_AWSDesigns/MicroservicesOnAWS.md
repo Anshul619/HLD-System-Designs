@@ -31,7 +31,7 @@ Message brokers can be used for [asynchronous messaging and event passing in mic
 - [CloudWatch](../8_MonitoringServices/AmazonCloudWatch.md)
 - [CloudTrail](../8_MonitoringServices/AWSCloudTrail.md)
 - [NewRelic](../../1_HLDDesignComponents/7_MonitoringTools/NewRelic.md)
-- [PagerDuty](../../1_HLDDesignComponents/7_MonitoringTools/PagerDuty.md)
+- [PagerDuty](../../1_HLDDesignComponents/7_MonitoringTools/IncidentResponse/PagerDuty.md)
 - [ELK](../../1_HLDDesignComponents/7_MonitoringTools/ELK.md)
 
 ## Others
