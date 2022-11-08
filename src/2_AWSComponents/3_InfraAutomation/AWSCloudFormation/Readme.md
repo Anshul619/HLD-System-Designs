@@ -92,10 +92,23 @@ Ec2Instance:
     ImageId: ami-0ff8a91507f77f867
 ````
 
-General requirements for parameters
+### Parameter Types
+
+| Type                         | Description                                                                                                                                       | Example                 |
+|------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------|
+| String                       | A literal string.                                                                                                                                 | "MyUserName"            |
+| Number                       | An integer or float.                                                                                                                              | "8888"                  |
+| List<Number>                 | An array of integers or floats that are separated by commas.                                                                                      | `["80","20"]`           |
+| CommaDelimitedList           | An array of literal strings that are separated by commas.                                                                                         | `["test","dev","prod"]` |
+| :star: SSM Parameter Types   | Parameters that correspond to existing parameters in [Systems Manager Parameter Store](../../2_SecurityAndIdentityServices/AWSSecretsManager.md). | -                       |
+| AWS-Specific Parameter Types | AWS values such as Amazon EC2 key pair names and VPC IDs.                                                                                         | -                       |
+
+[Read more](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/parameters-section-structure.html)
+
+### General requirements for parameters
 - You can have a maximum of 200 parameters in an AWS CloudFormation template.
 - Each parameter must be given a logical name (also called logical ID), which must be alphanumeric and unique among all logical names within the template.
-- Each parameter must be assigned a [parameter type](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/parameters-section-structure.html#parameters-section-structure-properties-type) that is supported by [AWS CloudFormation]().
+- Each parameter must be assigned a [parameter type](#parameter-types) that is supported by [AWS CloudFormation]().
 - Each parameter must be assigned a value at runtime for [AWS CloudFormation]() to successfully provision the stack. 
 - You can optionally specify a default value for AWS CloudFormation to use unless another value is provided.
 - Parameters must be declared and referenced from within the same template. 
@@ -103,9 +116,10 @@ General requirements for parameters
 
 ## Resources
 - The [required Resources section](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/resources-section-structure.html) declares the AWS resources that you want to include in the stack, such as an [Amazon EC2 instance](../../4_ComputeServices/AmazonEC2/ReadMe.md) or an [Amazon S3 bucket](../../7_StorageServices/AmazonS3.md).
+- Through `AWS::SSM::Parameter` resource, we can create an SSM Parameter in [AWS System Manager Parameter Store](../../2_SecurityAndIdentityServices/AWSSecretsManager.md).
 
 Syntax
-- The Resources section consists of the key name Resources. 
+- The Resource's section consists of the key name Resources. 
 - The following pseudo template outlines the Resources section:
 ````yaml
 Resources:
