@@ -1,5 +1,5 @@
 # :star: Apache Kafka 
-- Apache Kafka is an `open-source` [distributed](../0_SystemGlossaries) `event streaming platform` used by thousands of companies for high-performance data pipelines, streaming analytics, data integration, and mission-critical applications.
+- Apache Kafka is an [open-source distributed event streaming platform](../0_SystemGlossaries/EventDrivenArchitecture.md) used by thousands of companies for high-performance data pipelines, streaming analytics, data integration, and mission-critical applications.
 - Kafka can process a large amount of data in a short amount of time (`1 million messages/sec`).
 - It also has [low latency](../0_SystemGlossaries/LatencyThroughput.md), making it possible to process data in real-time.
 - Kafka is based on [Publish-Subscriber Model](../4_MessageBrokers#publisher-subscriber-model-pubsub). And can be used for [Event-Driven Architecture](../0_SystemGlossaries/EventDrivenArchitecture.md).
@@ -15,12 +15,18 @@
 
 # Why Kafka is so fast?
 - Kafka achieves [low latency](../0_SystemGlossaries/LatencyThroughput.md) message delivery through [Sequential I/O and Zero Copy Principle](https://twitter.com/alexxubyte/status/1506663791961919488/photo/1).
-- Messages (events) in the [Kafka]() are immutable and can't be changed once it's pushed ( due to [log based queue nature](../0_SystemGlossaries/Append-Only.md) ).
+- Messages (events) in the [Kafka]() are immutable and can't be changed once it's pushed (due to [log based queue nature](../0_SystemGlossaries/Append-Only.md)).
 - The same techniques are commonly used in much other messaging/streaming platforms.
 
 Kafka is based on [Log Based Queue](../0_SystemGlossaries/Append-Only.md)
 - :star: Messages are persisted to [append-only log files](../0_SystemGlossaries/Append-Only.md) by the broker.
 - Producers are [appending these log files (sequential write)](../0_SystemGlossaries/Append-Only.md) & consumers are reading a range of these files ( `sequential reads` ).
+
+# :star: Is Kafka a Database?
+- Yes & No.
+- In some way, Kafka supports [ACID properties](../0_SystemGlossaries/ACIDPropertyTransaction.md).
+- [Martin Kleppmann | Kafka Summit London 2019 Keynote | Is Kafka a Database?](https://www.youtube.com/watch?v=BuE6JvQE_CY)
+- [Read More](https://queue.acm.org/detail.cfm?id=3321612)
 
 # Basic Architecture of Kafka Cluster
 
@@ -138,7 +144,7 @@ Kafka is based on [Log Based Queue](../0_SystemGlossaries/Append-Only.md)
 ### ACK levels 
 The `acks` setting is a client (producer) configuration. 
 - It denotes the number of brokers that must receive the record before we consider the write as successful. 
-- It support three values – 0, 1, and all.
+- It supports three values – 0, 1, and all.
 
 The `acks` setting is a good way to configure your preferred trade-off between durability guarantees and performance.
 - If you’d like to be sure your records are nice and safe – configure your acks to all.
@@ -183,9 +189,9 @@ The `acks` setting is a good way to configure your preferred trade-off between d
 ![img.png](assests/Kafka-Partitioning-Layout.drawio.png)
 
 - Partitioning is done using `key` in the record
-- If we want to sequence records execution in Kafka, as per the records input time, we should push those in the same partition ( hence same key should be used for the records ).
+- If we want to sequence records execution in Kafka, as per the records input time, we should push those in the same partition (hence same key should be used for the records).
 - If we push those in different partitions, then we can't guarantee of their execution sequence.
-- Producers can be configured with a custom routing function ( implementing the `Partitioner interface` ).
+- Producers can be configured with a custom routing function (implementing the `Partitioner interface`).
 - Default message routing is `hash-mod`.
 
 Example
@@ -273,17 +279,19 @@ Example
 - The broker responds with a list of partitions in those topics and the leader for each partition. 
 - The producer caches this information and knows where to redirect its produce messages.
 
-# [Estimation - How to decide number of partitions in Kafka?](https://www.confluent.io/blog/how-choose-number-topics-partitions-kafka-cluster/)
+# Estimation - How to decide number of partitions in Kafka?
 
 [Kafka cluster size calculator](https://docs.google.com/spreadsheets/d/1a3uIa8TTRLlN6HTtMzPPqf8p5j5OxflJuAyff-uHLgk/edit?usp=sharing)
 
 Rough formula for picking the number of partitions = `MAX(t/p, t/c)`
 
-Parameter | Title                           | More Description                                                                                |
------------|---------------------------------|-------------------------------------------------------------------------------------------------|
-`t`         | Target Throughput               | Let’s say your target throughput is t. |
-`p`         | Thoughput on a single partition | You measure the throughout that you can achieve on a single partition for production (call it p). |
-`c`         | Consumption Rate                | And consumption (call it c). |
+| Parameter    | Title                             | More Description                                                                                |
+|--------------|-----------------------------------|-------------------------------------------------------------------------------------------------|
+| `t`          | Target Throughput                 | Let’s say your target throughput is t. |
+| `p`          | Thoughput on a single partition   | You measure the throughout that you can achieve on a single partition for production (call it p). |
+| `c`          | Consumption Rate                  | And consumption (call it c). |
+
+[Read more](https://www.confluent.io/blog/how-choose-number-topics-partitions-kafka-cluster/)
 
 ## Other Points
 - More partitions lead to `higher throughput`.
@@ -296,26 +304,27 @@ Parameter | Title                           | More Description                  
     - As a rule of thumb, if you care about latency, it’s probably a good idea to limit the number of partitions per broker to *100 x b x r*, where b is the number of brokers in a Kafka cluster and r is the replication factor.
 - More partitions may require more memory in the client.
 
-## [Kafka Stats in LinkedIn](https://www.slideshare.net/mumrah/kafka-talk-tri-hug)
+## Kafka Stats in LinkedIn
 - Peak writes per second: `460k`
 - Average writes per day: `28 billion`
 - Average reads per second: `2.3 million`
 - `~700 topics`
 - `Thousands of producers`
 - `~1000 consumers`
-- LinkedIn has 4 data centers in US ( texas, virginnia, oregon etc. )
-- LinkedIn has separate kafka clusters in every data center. ( for high scalability, disaster recovery etc. )
+- LinkedIn has 4 data centers in US (texas, virginnia, oregon etc.)
+- LinkedIn has separate kafka clusters in every data center. (for high scalability, disaster recovery etc.)
+- [Read more](https://www.slideshare.net/mumrah/kafka-talk-tri-hug)
 
 ## Kafka Cluster (with min. nodes), for high availability
+
 So, if you wish to design a Kafka cluster that can tolerate one planned and one unplanned failure, you should consider the following requirements:
 - A minimum in-sync replicas of 2.
 - A replication factor of 3 for topics.
 - At least 3 Kafka brokers, each running on different nodes. 
 - Nodes spread across three availability zones.
 
-# [Kafka vs Others](KafkaVsRabbitMQVsSQSVsSNS.md)
-
-# Kafka Sample Apps
+# Other Links
+- [Kafka vs Others](KafkaVsRabbitMQVsSQSVsSNS.md)
 - [Designing and testing a highly available Kafka cluster on Kubernetes (without zookeeper)](https://learnk8s.io/kafka-ha-kubernetes)
 
 # References

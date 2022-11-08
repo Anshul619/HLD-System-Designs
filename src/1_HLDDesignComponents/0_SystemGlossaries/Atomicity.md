@@ -1,6 +1,6 @@
 
-# [Atomicity](https://www.geeksforgeeks.org/acid-properties-in-dbms/)
-- Atomicity is a feature of databases systems dictating where a transaction must be `all-or-nothing`.
+# Atomicity
+- [Atomicity](https://www.geeksforgeeks.org/acid-properties-in-dbms/) is a feature of databases systems dictating where a transaction must be `all-or-nothing`.
 - That is, the transaction must either fully happen, or not happen at all. It must not complete partially.
 - Each transaction is considered as one unit and either runs to completion or is not executed at all.
 - In database systems, atomicity is the [ACID property](ACIDPropertyTransaction.md).

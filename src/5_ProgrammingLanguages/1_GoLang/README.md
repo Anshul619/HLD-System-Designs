@@ -349,5 +349,7 @@ t := i.(T)
 
 # [How to write unit tests in GoLang?](https://blog.alexellis.io/golang-writing-unit-tests/)
 
+# Labels in Go
+- [Read more](https://medium.com/golangspec/labels-in-go-4ffd81932339)
 # References
 - [Golang Interview Questions](https://www.interviewbit.com/golang-interview-questions/)
