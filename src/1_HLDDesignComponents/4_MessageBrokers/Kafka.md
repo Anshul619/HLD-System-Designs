@@ -239,7 +239,7 @@ Example
 ```
 
 ## [Consumer API](https://kafka.apache.org/22/javadoc/org/apache/kafka/clients/consumer/KafkaConsumer.html)
-- A consumer can subscribe ( poll at the given interval ) to one or more topics in the Kafka.
+- A consumer can subscribe (poll at the given interval) to one or more topics in the Kafka.
 
 ```java
 
