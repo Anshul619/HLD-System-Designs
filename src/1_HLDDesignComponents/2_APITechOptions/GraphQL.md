@@ -19,7 +19,7 @@
 
 ![img.png](assests/RESTvsGraphQL.png)
 
-Both [REST](REST.md) and GraphQL are based on following
+Both [REST](REST.md) and [GraphQL]() are based on following,
 - HTTP
 - API URL
 - Can return JSON response

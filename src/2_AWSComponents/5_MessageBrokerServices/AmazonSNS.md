@@ -1,6 +1,6 @@
 # Amazon Simple Notification Service (Amazon SNS)
 - [Amazon SNS (Simple Notification Service)](https://aws.amazon.com/sns) is a fully managed messaging service for both [application-to-application (A2A)](https://docs.aws.amazon.com/sns/latest/dg/sns-system-to-system-messaging.html) and [application-to-person (A2P)](https://docs.aws.amazon.com/sns/latest/dg/sns-user-notifications.html) communication.
-- Using Amazon SNS topics, your publisher systems can fanout messages to a large number of subscriber systems, including [Amazon SQS queues](AmazonSQS.md), [AWS Lambda functions](../4_ComputeServices/AWSLambda/Readme.md), HTTPS endpoints, and [Amazon Kinesis Data Firehose](AmazonKinesis.md), for parallel processing.
+- Using Amazon SNS topics, your publisher systems can fanout messages to a large number of subscriber systems, including [Amazon SQS queues](AmazonSQS.md), [AWS Lambda functions](../4_ComputeServices/AWSLambda/Readme.md), HTTPS endpoints, and [Amazon Kinesis Data Firehose](AmazonKinesis/Readme.md), for parallel processing.
 - The [application-to-person (A2P)](https://docs.aws.amazon.com/sns/latest/dg/sns-user-notifications.html) functionality enables you to send messages to users at scale via SMS, mobile push, and email.
 
 # Application-to-Application (A2A)
@@ -20,7 +20,7 @@
 - Email/Email JSON
 - [SQS](AmazonSQS.md)
 - [Lambda Functions](../4_ComputeServices/AWSLambda/Readme.md)
-- [Amazon Kinesis Data Firehose](AmazonKinesis.md)
+- [Amazon Kinesis Data Firehose](AmazonKinesis/Readme.md)
 
 # General Use Cases
 - Monitoring Apps, 
