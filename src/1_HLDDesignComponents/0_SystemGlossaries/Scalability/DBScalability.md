@@ -21,6 +21,8 @@
 
 ### Multi-Primary-Instances-Multiple-Read-Replicas Technique (Sharding)
 
+- [Read more about consistent hashing](../ConsistentHashing.md)
+
 | Tech                                                                                                                                                     | Remarks                                                                            |
 |----------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------|
 | [Kafka Cluster](../../4_MessageBrokers/Kafka.md)                                                                                                            | Cluster/Sharding of Topics ( High-Throughput MQ)                                   |                     
