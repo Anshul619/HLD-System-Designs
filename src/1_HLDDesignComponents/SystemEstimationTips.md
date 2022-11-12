@@ -4,14 +4,17 @@
 
 ## Ball-mark Parameters
 
-| Basis                                             | Module    | Value                              |
-|---------------------------------------------------|-----------|------------------------------------|
-| What is the traffic scale that we are looking at? | Traffic   | `500 million active users per day` |
-| What is the storage scale that we are looking at? | Storage   | `5 years`                          |
-| Avg DB shard size                                 | Hard Disk | `4 TB to 10 TB`                    |
-| Avg machine RAM                                   | RAM       | `72 GB`                            |
-| Max CPU utilization, for autoscaling              | CPU       | `80% max utilization`              |
-| App Node Scalability - Avg Machine Size           | -         | 2 VPU, 8GB RAM                     |
+| Basis                                                   | Module    | Value                              |
+|---------------------------------------------------------|-----------|------------------------------------|
+| What is the traffic scale that we are looking at?       | Traffic   | `500 million users`                |
+| What is the DAILY traffic scale that we are looking at? | Traffic   | `1 million active users per day`   |
+| What is the storage scale that we are looking at?       | Storage   | `5 years`                          |
+| Avg DB shard size                                       | Hard Disk | `1 TB to 10 TB`                    |
+| Avg machine RAM                                         | RAM       | `72 GB`                            |
+| Max CPU utilization, for autoscaling                    | CPU       | `80% max utilization`              |
+| App Node Scalability - Avg Machine Size                 | -         | 2 VPU, 8GB RAM                     |
+| Web Server - Concurrent Active Connections              | Traffic   | 1000 concurrent active connections |
+| Avg Photo Size                                          | -         | 200 KB                             |
 
 ## Latency Comparison Numbers
 
