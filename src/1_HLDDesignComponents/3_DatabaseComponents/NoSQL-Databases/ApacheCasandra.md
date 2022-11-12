@@ -15,7 +15,7 @@ Large amount of data like,
 - Historical records
 - High-Write, Low-Read
 - Processing server logs
-- Social media posts
+- [Social media posts](../../../3_HLDDesignProblems/InstagramDesign/Readme.md)
 - PDF documents
 - Emails etc.
 
