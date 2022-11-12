@@ -14,13 +14,14 @@ Log-structured data structures found in Log-structured file systems and database
 
 # Supported Databases
 
-| DB                                                                                                                           | Remarks |
-|------------------------------------------------------------------------------------------------------------------------------|---------|
-| [Casandra](../3_DatabaseComponents/NoSQL-Databases/ApacheCasandra.md)                                                        | -       |
-| [Kafka](../4_MessageBrokers/Kafka.md)                                                                                        | -       |
-| [ElasticSearch Data Stream](../3_DatabaseComponents/Search-Engines/ElasticSearch/ElasticSearchDataStreams.md)                | -       |
+| DB                                                                                                                              | Remarks |
+|---------------------------------------------------------------------------------------------------------------------------------|---------|
+| [Casandra](../3_DatabaseComponents/NoSQL-Databases/ApacheCasandra.md)                                                           | -       |
+| [Kafka](../4_MessageBrokers/Kafka.md)                                                                                           | -       |
+| [ElasticSearch Data Stream](../3_DatabaseComponents/Search-Engines/ElasticSearch/ElasticSearchDataStreams.md)                   | -       |
 | [Amazon Aurora Global Database - Replication](../../2_AWSComponents/6_DatabaseServices/AmazonRDSAurora/AuroraGlobalDatabase.md) | -       |
-| [RocksDB](../3_DatabaseComponents/NoSQL-Databases/RocksDB.md)                                                                | -       |
+| [RocksDB](../3_DatabaseComponents/NoSQL-Databases/RocksDB.md)                                                                   | -       |
+| [Amazon Kinesis](../../2_AWSComponents/5_MessageBrokerServices/AmazonKinesis/Readme.md)                                         | -       |
 
 # References
 - [Building an Append-only Log From Scratch](https://eileen-code4fun.medium.com/building-an-append-only-log-from-scratch-e8712b49c924)
