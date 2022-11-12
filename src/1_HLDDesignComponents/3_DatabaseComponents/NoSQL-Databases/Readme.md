@@ -40,8 +40,13 @@
 - High-Write, Low-Read etc.
 
 ## Graph Databases
-- These databases are used to store data whose relations are best represented in a graph ( like parent-child relationship of aadhaar etc.)
+- These databases are used to store data whose relations are best represented in a graph (like parent-child relationship of aadhaar etc.)
 - Data is saved in graph structures with nodes (entities), properties (information about the entities), and lines (connections between the entities).
+- Example - User Activity Relationship like user's feeds, likes, comments etc.
+
+### General Use Cases - Graph Database
+- [Instagram - User Activity Relationship](../../../3_HLDDesignProblems/InstagramDesign/Readme.md)
+- [LinkedIn - User Activity Relationship](https://engineering.linkedin.com/blog/2017/06/building-the-activity-graph--part-i)
 
 # Comparisons
 - :star: [Casandra vs MongoDB](CasandraVsMongoDB.md)

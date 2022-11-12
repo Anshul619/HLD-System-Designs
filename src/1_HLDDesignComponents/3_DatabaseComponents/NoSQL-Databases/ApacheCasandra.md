@@ -23,17 +23,24 @@ Large amount of data like,
 
 ## Personalization at Spotify using Cassandra
 
-![img.png](../../../3_HLDDesignProblems/PersonalizationSpotify/assets/PersonalizationSpotify.drawio.png)
+![](../../../3_HLDDesignProblems/PersonalizationSpotify/assets/PersonalizationSpotify.drawio.png)
 
 - [Read more](../../../3_HLDDesignProblems/PersonalizationSpotify)
 
+## Instagram - User Entities like Posts, Comments etc.
+
+![](../../../3_HLDDesignProblems/InstagramDesign/HLD%20-%20Instagram%20.drawio.png)
+
+- [Read more](../../../3_HLDDesignProblems/InstagramDesign/Readme.md)
+
 ## Search - Flight Booking
 
-![img.png](../../../3_HLDDesignProblems/FlightBookingSearch/assets/MakeMyTripFlightSearch.drawio.png)
+![](../../../3_HLDDesignProblems/FlightBookingSearch/assets/MakeMyTripFlightSearch.drawio.png)
 
 - [Read more](../../../3_HLDDesignProblems/FlightBookingSearch/README.md))
 
 ## How Uber Manages a Million Writes Per Second Using Mesos and Cassandra Across Multiple Datacenters?
+
 - [Read more](../../../3_HLDDesignProblems/UberCasandraMesos)
 
 ## Inbox Search Feature & Instagram Unit at Facebook, using Casandra

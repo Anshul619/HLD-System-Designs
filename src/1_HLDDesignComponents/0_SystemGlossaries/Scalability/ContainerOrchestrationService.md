@@ -7,3 +7,6 @@ It helps to know,
 - When to schedule the next container?
 - If the docker container is crashed and not running anymore? 
 - If replicates need to be removed? How to remove? One by one?
+
+# References
+- [Big Misconceptions about Bare Metal, Virtual Machines, and Containers](https://www.youtube.com/watch?v=Jz8Gs4UHTO8)

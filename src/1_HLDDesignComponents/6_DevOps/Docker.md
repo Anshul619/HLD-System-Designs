@@ -47,3 +47,6 @@ debian:jessie
 - An image can consist of a single layer (that’s often the case when the squash command was used).
 - Each instruction in a Dockerfile results in a layer. (Except for multi-stage builds, where usually only the layers in the final image are pushed, or when an image is squashed to a single layer).
 - Layers are used to avoid transferring redundant information and skip build steps which have not changed (according to the Docker cache).
+
+# References
+- [Big Misconceptions about Bare Metal, Virtual Machines, and Containers](https://www.youtube.com/watch?v=Jz8Gs4UHTO8)
