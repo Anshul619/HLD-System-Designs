@@ -33,7 +33,7 @@
 - It will select the distributed data, create a map and then reduce the values to give proper data.
 
 ## Redis Cache
-- [Redis cache](../../1_HLDDesignComponents/3_DatabaseComponents/In-Memory-Cache/Redis/README.md) can be used, to store the location and segments information of all the restaurants in the city.
+- [Redis cache](../../1_HLDDesignComponents/3_DatabaseComponents/In-Memory-Cache/Redis/Readme.md) can be used, to store the location and segments information of all the restaurants in the city.
 - As this is very frequently read and non-changing data, we had chosen to setup this in Redis to avoid multiple DB calls. 
 - For cart also, we will be storing all the selected items in Redis.
 

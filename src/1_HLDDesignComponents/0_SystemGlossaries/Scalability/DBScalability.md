@@ -13,8 +13,8 @@
 - In this technique, scalability is done through multiple read replicas (with a single primary instance).
 - All writes would go to primary instance, while [all reads are load balanced across read replicas](../LoadBalancer.md).
 
-| Tech                                                                                                                                                                | Remarks                                              |
-|---------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------|
+| Tech                                                                                                                                                                   | Remarks                                              |
+|------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------|
 | [Redis - Master Slave Replication](../../3_DatabaseComponents/In-Memory-Cache/Redis/RedisMasterSlaveReplication.md)                                                    | -                                                    |
 | [Amazon Elastic Cache (Cluster Disabled)](../../../2_AWSComponents/6_DatabaseServices/AmazonElasticCache.md#redis-cluster-mode-disabled-vs-redis-cluster-mode-enabled) | Elastic Cache single-master slave (cluster disabled) |
 | [Amazon Aurora](../../../2_AWSComponents/6_DatabaseServices/AmazonRDSAurora/Readme.md)                                                                                 | Aurora single-master slave cluster                   |
@@ -23,8 +23,8 @@
 
 - [Read more about consistent hashing](../ConsistentHashing.md)
 
-| Tech                                                                                                                                                     | Remarks                                                                            |
-|----------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------|
+| Tech                                                                                                                                                        | Remarks                                                                            |
+|-------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------|
 | [Kafka Cluster](../../4_MessageBrokers/Kafka.md)                                                                                                            | Cluster/Sharding of Topics ( High-Throughput MQ)                                   |                     
 | [Redis Cluster](../../3_DatabaseComponents/In-Memory-Cache/Redis/RedisCluster.md)                                                                           | Cluster/Sharding of Redis Nodes ( In-Memory Cache )                                |
 | [Amazon Elastic Cache Cluster](../../../2_AWSComponents/6_DatabaseServices/AmazonElasticCache.md#redis-cluster-mode-disabled-vs-redis-cluster-mode-enabled) | Cluster of Redis Nodes, across Multi-AZs ( One cluster per region )                |
@@ -40,3 +40,4 @@
 
 # References
 - [Scalability and High Availability](https://dzone.com/refcardz/scalability)
+- [How Sharding Works](https://medium.com/@jeeyoungk/how-sharding-works-b4dec46b3f6)

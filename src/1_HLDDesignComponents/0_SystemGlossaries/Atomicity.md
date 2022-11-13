@@ -13,4 +13,4 @@ It involves the following two operations.
 
 | Tech                                 | Remarks |
 |--------------------------------------|---------|
-| [Redis Transaction Lock](../3_DatabaseComponents/In-Memory-Cache/Redis/README.md#atomicity---redis-transaction-lock) | -       |
+| [Redis Transaction Lock](../3_DatabaseComponents/In-Memory-Cache/Redis/Readme.md#atomicity---redis-transaction-lock) | -       |

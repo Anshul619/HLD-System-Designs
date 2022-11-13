@@ -11,3 +11,4 @@
 
 # References
 - [A Guide to Consistent Hashing](https://www.toptal.com/big-data/consistent-hashing)
+- [Interviewbit - Sharding a database](https://www.interviewbit.com/problems/sharding-a-database/)

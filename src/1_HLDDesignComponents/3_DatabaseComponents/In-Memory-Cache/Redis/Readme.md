@@ -13,9 +13,9 @@
 
 ## Speed - 100K queries per second
 - Since Redis uses in-memory for storage, it is very fast.
-- It can execute `100K queries per second`.
+- It can execute [100K queries per second](https://docs.google.com/spreadsheets/d/15vApko2QrmZmv5qTEIyU_IAWvgY3MD23TR3TuLUiPc8/edit#gid=227251411).
 - Mostly `O(1)` behavior, to get data from redis.
-- Generally, reading data from `Redis` is [5 times faster](../../../SystemEstimationTips.md#latency-comparison-numbers) than reading it from `database`.
+- Generally, [Redis is 5 times faster than database](../../../SystemEstimationTips.md#latency-comparison-numbers).
 
 [![img.png](https://pbs.twimg.com/media/FMx3JZRUYAIWWKq?format=jpg&name=4096x4096)](https://www.youtube.com/watch?v=5TRFpFBccQM)
 
@@ -117,3 +117,4 @@ redis 127.0.0.1:6379> ZRANGEBYSCORE w3resourcelist 0 1000
 - [What are Redis master-slave and Redis clusters and the difference between them?](https://www.learnsteps.com/what-are-redis-master-slave-and-redis-clusters-and-the-difference-between-them/)
 - [Why Migrate a Dynomite Database to a Redis Enterprise Active-Active Database?](https://redis.com/blog/why-migrate-dynomite-database-to-redis-enterprise-active-active-database/)
 - [AWS ElastiCache vs RDS ReadReplica](https://stackoverflow.com/questions/24728634/aws-elasticache-vs-rds-readreplica)
+- [Design Cache](https://www.interviewbit.com/problems/design-cache/)
