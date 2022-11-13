@@ -4,17 +4,17 @@
 
 ## Ball-mark Parameters
 
-| Basis                                                   | Module    | Value                              |
-|---------------------------------------------------------|-----------|------------------------------------|
-| What is the traffic scale that we are looking at?       | Traffic   | `500 million users`                |
-| What is the DAILY traffic scale that we are looking at? | Traffic   | `1 million active users per day`   |
-| What is the storage scale that we are looking at?       | Storage   | `5 years`                          |
-| Avg DB shard size                                       | Hard Disk | `1 TB to 10 TB`                    |
-| Avg machine RAM                                         | RAM       | `72 GB`                            |
-| Max CPU utilization, for autoscaling                    | CPU       | `80% max utilization`              |
-| App Node Scalability - Avg Machine Size                 | -         | 2 VPU, 8GB RAM                     |
-| Web Server - Concurrent Active Connections              | Traffic   | 1000 concurrent active connections |
-| Avg Photo Size                                          | -         | 200 KB                             |
+| Basis                                                                                                                                                                                 | Module    | Value                              |
+|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------|------------------------------------|
+| What is the traffic scale that we are looking at?                                                                                                                                     | Traffic   | `500 million users`                |
+| DAU - What is the DAILY traffic scale that we are looking at?                                                                                                                         | Traffic   | `1 million active users per day`   |
+| What is the storage scale that we are looking at?                                                                                                                                     | Storage   | `5 years`                          |
+| Avg DB shard size                                                                                                                                                                     | Hard Disk | `1 TB to 10 TB`                    |
+| Avg machine RAM                                                                                                                                                                       | RAM       | `72 GB`                            |
+| Max CPU utilization, for autoscaling                                                                                                                                                  | CPU       | `80% max utilization`              |
+| App Node Scalability - Avg Machine Size                                                                                                                                               | -         | 2 VPU, 8GB RAM                     |
+| [Web Server (like Nginx) - Concurrent Active Connections](https://www.linode.com/community/questions/22200/nodebalancers-are-supposed-to-handle-10000-maximum-concurrent-connections) | Traffic   | 1000 concurrent active connections |
+| Avg Photo Size                                                                                                                                                                        | -         | 200 KB                             |
 
 ## Latency Comparison Numbers
 
@@ -84,4 +84,7 @@ where
   - Per machine RAM available.
 
 ## Round the numbers, to simplify the values
+
+# References
+- [Back-Of-The-Envelope Estimation / Capacity Planning](https://www.youtube.com/watch?v=UC5xf8FbdJc)
 

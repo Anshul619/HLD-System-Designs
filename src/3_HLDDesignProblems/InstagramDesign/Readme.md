@@ -13,6 +13,9 @@ The application should be able to support the following requirements.
 - Sending and receiving messages from other users. 
 - Generating machine learning based personalized recommendations to discover new people, photos, videos, and stories relevant one’s interest.
 
+# Ball-mark estimations
+- [Calculator link](https://docs.google.com/spreadsheets/d/15vApko2QrmZmv5qTEIyU_IAWvgY3MD23TR3TuLUiPc8/edit#gid=230262262)
+
 # Tech Decisions
 
 | Feature                              | Decision                                                                                                                                               |
