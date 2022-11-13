@@ -1,7 +1,7 @@
 
 # Introduction
-- Popular in-memory data platform used as a cache that can be deployed on-premises, across clouds, and hybrid environments.
-- LRU is the [default eviction policy](https://docs.redis.com/latest/rs/databases/configure/eviction-policy/) in redis
+- [Redis (REmote DIctionary Server)](https://redis.com/) is a popular in-memory data platform used as a cache that can be deployed on-premises, across clouds, and hybrid environments.
+- [LRU is the default eviction policy](https://docs.redis.com/latest/rs/databases/configure/eviction-policy/) in redis
 
 # :star: Real world use cases of Redis Cache
 - [Rate Limiting in Distributed Systems](../../../../3_HLDDesignProblems/RateLimiterAPI/README.md)
@@ -9,7 +9,7 @@
 - [Twillo - Send Message API Design](../../../../3_HLDDesignProblems/TwilloSendMessageAPI)
 - [AWS - Send-SMS-API design (App Internal Clients, Multiple SMS-Providers, AutoScaling)](../../../../3_HLDDesignProblems/NotificationSystem)
 
-# Key Features of Redis ( REmote DIctionary Server)
+# Key Features of Redis
 
 ## Speed - 100K queries per second
 - Since Redis uses in-memory for storage, it is very fast.
@@ -22,10 +22,11 @@
 ## Redis Transaction lock
 - Using [RedisTransaction](https://redis.io/docs/reference/patterns/distributed-locks/) lock, we can achieve [atomicity](../../../0_SystemGlossaries/Atomicity.md) on the Redis operations (i.e. set/increase the key, add/remove elements from set, increase counter etc.).
 
-## [Multiple data types supported](https://redis.io/docs/manual/data-types/)
+## Multiple data types supported
+- [Multiple data types](https://redis.io/docs/manual/data-types/) are supported in Redis
 
-### [Strings](https://www.w3resource.com/redis/redis-data-types.php)
-- Strings are Redis `most basic data type`.
+### Strings
+- [Strings](https://www.w3resource.com/redis/redis-data-types.php) are Redis `most basic data type`.
 - It is the only data type in Memcached, so it is also very natural for newcomers to use it in Redis.
 - There are two ways to store JSON in Redis.
   - Option1 - `Stringify and then store JSON` in Redis, as string datatype
@@ -90,25 +91,19 @@ redis 127.0.0.1:6379> ZRANGEBYSCORE w3resourcelist 0 1000
 3) "rabitmq"
 ```
 
-### [Redis Graph](https://redis.com/nosql/graph-databases/)
-- Graph database from Redis
-- Use Cases for graph database
-  - Social networks, logistics & spatial data
-  - Fraud detection & analytics
-  - Product-recommendation engine
-  - Identity and access management
-
-## [Master-Slave Replication Supported](RedisMasterSlaveReplication.md)
-
-## [Sharding Supported (using Redis Cluster)](RedisCluster.md)
-
-## [Rich Client-Side library](https://redis.io/docs/libraries/)
+## [Rich Client-Side library]()
 - PHP
 - C/C++
 - Go
 - Java etc.
 
-# [Redis vs Memcache](RedisVsMemCache.md)
+[Read more](https://redis.io/docs/libraries/)
+
+## Other Links
+- [Master-Slave Replication Supported](RedisMasterSlaveReplication.md)
+- [Sharding Supported (using Redis Cluster)](RedisCluster.md)
+- [Redis vs Memcache](RedisVsMemCache.md)
+- [Redis Graph](RedisGraph.md)
 
 # References
 - [Introduction To Redis](https://www.slideshare.net/dvirsky/introduction-to-redis)
