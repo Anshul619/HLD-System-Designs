@@ -138,6 +138,9 @@ Note:
 - Using the consistent data store (like [Redis](../../1_HLDDesignComponents/3_DatabaseComponents/In-Memory-Cache/Redis/Readme.md), [Cassandra](../../1_HLDDesignComponents/3_DatabaseComponents/NoSQL-Databases/ApacheCasandra.md)), we can solve inconsistency problem of current rate limiting in distributed systems.
 - This would add a bit of latency.
 
+# Estimation
+- [Read here](https://docs.google.com/spreadsheets/d/15vApko2QrmZmv5qTEIyU_IAWvgY3MD23TR3TuLUiPc8/edit#gid=695176044)
+
 ## References
 - [Groking the system design - Designing an API Rate Limiter](https://akshay-iyangar.github.io/system-design/grokking-system-design/system-design-problems/api-rate-limiter.html)
 - [System Design Basics: Rate Limiter](https://medium.com/geekculture/system-design-basics-rate-limiter-351c09a57d14)
