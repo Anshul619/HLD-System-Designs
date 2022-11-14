@@ -1,4 +1,4 @@
-# Append-Only
+# Append-Only Data Structure
 - [Append-Only](https://en.wikipedia.org/wiki/Append-only) is a property of computer data storage such that new data can be appended to the storage, but where [existing data is immutable](https://en.wikipedia.org/wiki/Immutable_object).
 - This makes [writes (i.e. throughput) generally very fast](LatencyThroughput.md).
 
@@ -22,6 +22,7 @@ Log-structured data structures found in Log-structured file systems and database
 | [Amazon Aurora Global Database - Replication](../../2_AWSComponents/6_DatabaseServices/AmazonRDSAurora/AuroraGlobalDatabase.md) | -       |
 | [RocksDB](../3_DatabaseComponents/NoSQL-Databases/RocksDB.md)                                                                   | -       |
 | [Amazon Kinesis](../../2_AWSComponents/5_MessageBrokerServices/AmazonKinesis/Readme.md)                                         | -       |
+| [Amazon S3](../../2_AWSComponents/7_StorageServices/AmazonS3.md)                                                                                                                   ||
 
 # References
 - [Building an Append-only Log From Scratch](https://eileen-code4fun.medium.com/building-an-append-only-log-from-scratch-e8712b49c924)

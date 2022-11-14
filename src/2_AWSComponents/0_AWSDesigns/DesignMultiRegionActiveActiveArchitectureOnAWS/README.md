@@ -37,7 +37,7 @@ However the [multi-region](../../AWS-Global-Architecture-Region-AZ.md) backend s
 - [AWS Regions](../../AWS-Global-Architecture-Region-AZ.md) are connected to a private global network backbone, which provides lower cost and more consistent cross-region network latency when compared with the public internet.
 
 ## Build Stateless applications
-- [Read more](../../../1_HLDDesignComponents/0_SystemGlossaries/README.md)
+- [Read more](../../../1_HLDDesignComponents/0_SystemGlossaries/Readme.md)
 
 ## DNS routing using Amazon Route53
 - [Read more](../../1_NetworkingAndContentDelivery/AmazonRoute53.md)

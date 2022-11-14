@@ -2,7 +2,7 @@
 # Apache Casandra
 - [Apache Cassandra](https://cassandra.apache.org/_/index.html) is a free and open-source, distributed & [wide column store](../ReadMe.md#nosql---intro-different-nosql-types).
 - It is a NoSQL database management system designed to handle large amounts of data across many commodity servers, providing [high availability with no single point of failure](../../0_SystemGlossaries/FaultTolerance&DisasterRecovery.md). 
-- Since [Casandra]() is [append-only db storage](../../0_SystemGlossaries/Append-Only.md), it can handle [large amount data with high throughput](../../0_SystemGlossaries/LatencyThroughput.md).
+- Since [Casandra]() is [append-only db storage](../../0_SystemGlossaries/AppendOnlyDataStructure.md), it can handle [large amount data with high throughput](../../0_SystemGlossaries/LatencyThroughput.md).
 - Cassandra offers robust support for [clusters spanning multiple data centers](../../0_SystemGlossaries/ServersCluster.md), with asynchronous masterless replication allowing low latency operations for all clients.
 - Casandra is based modeled after [Amazon DynamoDB](../../../2_AWSComponents/6_DatabaseServices/AmazonDynamoDB/Readme.md) & [BigTable](https://cloud.google.com/bigtable).
 - [Amazon KeySpaces](../../../2_AWSComponents/6_DatabaseServices/AmazonKeySpaces.md) can be used to deploy Casandra on AWS.
@@ -68,7 +68,7 @@ Large amount of data like,
 - Any number of servers/nodes can be added to any Cassandra cluster in any of the data centers.
 
 ## Low-Latency, Faster Writes
-- Since writes in Casandra result in storage in an [append-only structure](../../0_SystemGlossaries/Append-Only.md), writes are generally very fast.
+- Since writes in Casandra result in storage in an [append-only structure](../../0_SystemGlossaries/AppendOnlyDataStructure.md), writes are generally very fast.
 - Casandra provides [low latency](../../0_SystemGlossaries/LatencyThroughput.md), at the cost of [consistency](../../0_SystemGlossaries/ReplicationAndDataConsistency.md). 
   - Refer [PACELC theorem](../../0_SystemGlossaries/CAPTheorem.md#pael-systems---dynamodb--cassandra) for more info.
 - Hence Casandra should be used when transactions aren't performing (i.e. consistency can be compromised).
