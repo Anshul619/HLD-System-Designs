@@ -1,22 +1,23 @@
 
-| Basis                                                                                  | Applicable Components                          |
-|----------------------------------------------------------------------------------------|------------------------------------------------|
-| :star: [Performance - Latency, Throughput](LatencyThroughput.md)                       | ALL                                            |
-| :star: [DB Scalability](Scalability/DBScalability.md)                                  | Data Stores                                    |
-| :star: [App Nodes Scalability](Scalability/AppNodesScalability.md)                     | App Nodes                                      |
-| :star: [Container Orchestration Service](Scalability/ContainerOrchestrationService.md) | App Nodes                                      |
-| :star: [High Availability](HighAvailability.md)                                        | ALL                                            |
-| :star: [Servers Cluster](ServersCluster.md)                                            | ALL                                            |
-| :star: [Event Driven Architecture](EventDrivenArchitecture.md)                         | Message Brokers                                |
-| :star: [ACID Properties of the Transaction](ACIDPropertyTransaction.md)                | Data Stores                                    |
-| :star: [CAP Theorem of the Distributed Systems](CAPTheorem.md)                         | Data Stores                                    |
-| :star: [Replication & Data Consistency](ReplicationAndDataConsistency.md)              | Data Stores                                    |
-| [Reliability - Fault Tolerance, Disaster Recovery](FaultTolerance&DisasterRecovery.md) | ALL                                            |
-| [Load Balancer](LoadBalancer.md)                                                       | ALL                                            |
-| [Atomicity](Atomicity.md)                                                              | Data Stores                                    |
-| [Durability](Durability.md)                                                            | Data Stores                                    |
-| [Content Delivery Network (CDN)](CDNs/CDNs.md)                                         | [Static Content](CDNs/StaticContentWithCDN.md) |
-| [Append Only](Append-Only.md)                                                          | Data Stores                                    |
+| Basis                                                                                    | Applicable Components                          |
+|------------------------------------------------------------------------------------------|------------------------------------------------|
+| :star: [Performance - Latency, Throughput](LatencyThroughput.md)                         | ALL                                            |
+| :star: [App Nodes Scalability](Scalability/AppNodesScalability.md)                       | App Nodes                                      |
+| :star: [DB Scalability](Scalability/DBScalability.md)                                    | Data Stores                                    |
+| :star: [Container Orchestration Service](Scalability/ContainerOrchestrationService.md)   | App Nodes                                      |
+| :star: [High Availability](HighAvailability.md)                                          | ALL                                            |
+| :star: [Servers Cluster](ServersCluster.md)                                              | ALL                                            |
+| :star: [Event Driven Architecture](EventDrivenArchitecture.md)                           | Message Brokers                                |
+| :star: [ACID Properties of the Transaction](ACIDPropertyTransaction.md)                  | Data Stores                                    |
+| :star: [CAP Theorem of the Distributed Systems](CAPTheorem.md)                           | Data Stores                                    |
+| :star: [Replication & Data Consistency](ReplicationAndDataConsistency.md)                | Data Stores                                    |
+| [Reliability - Fault Tolerance, Disaster Recovery](FaultTolerance&DisasterRecovery.md)   | ALL                                            |
+| [Load Balancer](LoadBalancer.md)                                                         | ALL                                            |
+| [Atomicity](Atomicity.md)                                                                | Data Stores                                    |
+| [Durability](Durability.md)                                                              | Data Stores                                    |
+| [Content Delivery Network (CDN)](CDNs/CDNs.md)                                           | [Static Content](CDNs/StaticContentWithCDN.md) |
+| [Append Only](Append-Only.md)                                                            | Data Stores                                    |
+| [Consistent Hashing](ConsistentHashing.md)                                               | Data Stores                                    |
 
 # Different Storage Types
 
