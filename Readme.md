@@ -45,7 +45,7 @@ This repo contains the various system design components info, questions and solu
           <img src="https://logos-download.com/wp-content/uploads/2018/09/Kubernetes_Logo.png">
         </a>
         <br/><br/>
-        <a href="src/1_HLDDesignComponents/6_DevOps/Docker.md">
+        <a href="src/1_HLDDesignComponents/6_DevOps/Docker/Readme.md">
           <img src="https://www.docker.com/wp-content/uploads/2022/03/vertical-logo-monochromatic.png">
         </a>
       </td>

@@ -1,0 +1,18 @@
+version: "3.8"
+services:
+  sample-service:
+    build:
+      context: ./sample-service
+      dockerfile: ./SampleDockerFile
+      target: builder
+    image: sample-service
+    expose:
+      - "8080"
+    ports:
+      - "7000:8080"
+    environment:
+      - PORT=8080
+      - ENVIORNMENT_Key=100
+    command: reflex -r "\.go$$" -s -- sh -c "go run ./cmd/server.go"
+    volumes:
+      - ./sample-service:/go/src/app

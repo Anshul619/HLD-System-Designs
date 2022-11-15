@@ -21,7 +21,7 @@
 
 ## Private integrations with AWS ELB & AWS Cloud Map
 - With API Gateway, you can route requests to private resources in [your VPC](../AmazonVPC.md). 
-- Using HTTP APIs, you can build APIs for services behind [private ALBs, private NLBs](../ElasticLoadBalancer/Readme.md), and IP-based services registered in AWS Cloud Map, such as [ECS tasks](../../4_ComputeServices/AmazonECS/README.md).
+- Using HTTP APIs, you can build APIs for services behind [private ALBs, private NLBs](../ElasticLoadBalancer/Readme.md), and IP-based services registered in AWS Cloud Map, such as [ECS tasks](../../4_ComputeServices/AmazonECS/Readme.md).
   
 ## Resiliency
 - API Gateway helps you manage traffic to your backend systems by allowing you to set [throttling rules](https://docs.aws.amazon.com/apigateway/latest/developerguide/api-gateway-request-throttling.html) based on the number of requests per second for each HTTP method in your APIs.

@@ -1,4 +1,3 @@
-
 # Apache Marathon (A container orchestration platform for Mesos and DC/OS)
 - [Marathon](https://mesosphere.github.io/marathon/) is a [production-grade container orchestration platform](../0_SystemGlossaries/Scalability/ContainerOrchestrationService.md) for Mesosphere’s Datacenter Operating System (DC/OS) and [Apache Mesos](https://mesos.apache.org/).
 
@@ -24,7 +23,7 @@
 - The masters elect the leader, with [Zookeeper](ApacheZookeeper.md) both coordinating the election and handling leader detection by masters, agents, and scheduler drivers
 
 ### Native Support for launching containers 
-- Support different containers like [Docker](Docker.md), [Mesos Container](#mesos-containerization).
+- Support different containers like [Docker](Docker/Readme.md), [Mesos Container](#mesos-containerization).
 
 ### Pluggable resource isolation
 - First class isolation support for CPU, memory, disk, ports, GPU, and modules for custom resource isolation.
@@ -40,6 +39,6 @@
 # Real World Use Cases
 
 ## How Uber Manages a Million Writes Per Second Using Mesos and Cassandra Across Multiple Datacenters?
-- [Read more](../../3_HLDDesignProblems/UberCasandraMesos)
+- [Read more](../../3_HLDDesignProblems/UberCasandraMesos/Readme.md)
 
 ![img.png](../../3_HLDDesignProblems/UberCasandraMesos/assets/uber-casandra-mesos.png)
