@@ -293,29 +293,6 @@ var ErrBadPattern = errors.New("syntax error in pattern")
 # [Panic & Recover](https://golangbot.com/panic-and-recover/)
 - Panic is like exception in GoLang
 
-# [How to run the app server in GoLang?](https://go.dev/doc/articles/wiki/)
-
-````go
-//go:build ignore
-
-package main
-
-import (
-    "fmt"
-    "log"
-    "net/http"
-)
-
-func handler(w http.ResponseWriter, r *http.Request) {
-    fmt.Fprintf(w, "Hi there, I love %s!", r.URL.Path[1:])
-}
-
-func main() {
-	http.HandleFunc("/", handler)
-	log.Fatal(http.ListenAndServe(":8080", nil)) // Run app server on 8080 port
-}
-````
-
 ## Sample Go Code
 
 ```go

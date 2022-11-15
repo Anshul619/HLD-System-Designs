@@ -1,4 +1,3 @@
-
 # Container Orchestration Service
 - [Container orchestration service](https://www.vmware.com/topics/glossary/content/container-orchestration.html) is the container management service.
 

@@ -44,34 +44,18 @@
 # Is Golang case-sensitive or insensitive?
 - Go is a `case-sensitive language`.
 
-# [How to build and install Go Programs?](https://www.digitalocean.com/community/tutorials/how-to-build-and-install-go-programs)
+# How to build and install Go Programs?
 
-## Test Go Program
-```go
-go run <goFileName.go>
-```
+| Title                                   | Command                                                                                                                                         | Remarks |
+|-----------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------|---------|
+| Test Go Program                         | go run <goFileName.go>                                                                                                                          | -       |
+| Test a folder with go programs          | go run .                                                                                                                                        |
+| Create a Go Module to build a Go Binary | go mod init <moduleName>                                                                                                                        | -       |
+| Creating Go Binaries                    | go build // Build with the same name as moduleName in pwd directory<br/><br/>go build -o bin/hello // Build with "hello" name in bin/ directory | -       |
+| Run Go Binaries                         | ./moduleName                                                                                                                                    | -       |
+| Installing Go Programs                  | go install // This will build the binary and place it in $GOPATH/bin.                                                                           | -       |
 
-## Create a Go Module to build a Go Binary
-````go
-go mod init <moduleName>
-````
-
-## Creating Go Binaries
-````go
-go build // Build with the same name as moduleName in pwd directory
-
-go build -o bin/hello // Build with "hello" name in bin/ directory
-````
-
-## Run Go Binaries
-````go
-./moduleName
-````
-
-## Installing Go Programs
-````go
-go install // This will build the binary and place it in $GOPATH/bin.
-````
+[Read more](https://www.digitalocean.com/community/tutorials/how-to-build-and-install-go-programs)
 
 # What is Golang pointers?
 - `*` operator - This operator is called a `dereferencing operator` and is used for accessing the value in the address stored by the pointer.
@@ -296,7 +280,6 @@ func main() {
 ```
 
 # Why is Golang fast compared to other languages?
-
 - Golang is faster than other programming languages because of its `simple and efficient memory management and concurrency model`. 
 - The compilation process to machine code is very fast and efficient. 
 - Additionally, the dependencies are linked to a `single binary file thereby putting off dependencies on servers`.
