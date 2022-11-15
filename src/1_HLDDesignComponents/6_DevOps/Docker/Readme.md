@@ -17,11 +17,11 @@
 | Docker Compose                                                                  | Docker Compose define the services that make up your app in docker-compose.yml so they can be run together in an isolated environment. <br/>- It gets an app running in one command by just running docker-compose up. <br/>- Docker compose uses the Dockerfile if you add the build command to your project’s docker-compose.yml. <br/>- Your Docker workflow should be to build a suitable Dockerfile for each image you wish to create, then use compose to assemble the images using the build command. | [docker-compose.sample-service.yaml](docker-compose.sample-service.yaml) |
 | Docker Image Layers                                                             | [Each layer is an image itself](https://vsupalov.com/docker-image-layers/), just one without a human-assigned tag.<br/>- [Each instruction in a Dockerfile results in a layer]().                                                                                                                                                                                                                                                                                                                            |                                                                          |
 
-![](assets/Docker_Concepts.png)
-
 # Docker Compose
 - In [docker compose](https://docs.docker.com/get-started/08_using_compose/), you can specify image, environment variables etc.
 - It should create the corresponding micro containers for those different microservices.
+
+![](assets/Docker_Concepts.png)
 
 ## Up
 - Start up the application stack using the `docker-compose up` command. 
