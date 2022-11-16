@@ -128,34 +128,6 @@ func main() {
 ## Global variables
 - These are declared outside function or block and is accessible by the whole source file.
 
-# What do you understand by goroutine in Golang?
-
-```go
-package main
-import (
-    "fmt"
-    "time"
-)
-
-func main() { // Main goroutine
-    go sampleRoutine() // Run the goroutine concurrently
-    fmt.Println("Started Main")
-    time.Sleep(1 * time.Second)
-    fmt.Println("Finished Main")
-}
-
-func sampleRoutine() {
-    fmt.Println("Inside Sample Goroutine")
-}
-
-Output:
-
-Started Main
-Inside Sample Goroutine
-Finished Main
-
-```
-
 #  Is it possible to return multiple values from a function in Go?
 
 ```go

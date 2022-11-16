@@ -268,11 +268,6 @@ for {
 
 [Read more](https://medium.com/learning-the-go-programming-language/bit-hacking-with-go-e0acee258827)
 
-# Multi-Threading
-````
-go X() // asynchrnously call X() function
-````
-
 # Error Interface
 ````
 type error interface {  
@@ -284,6 +279,7 @@ type error interface {
 - Asserting the underlying struct type and getting more information from the struct fields.
 - Asserting the underlying struct type and getting more information using methods
 - Direct comparison
+
 ````go
 package main
 
