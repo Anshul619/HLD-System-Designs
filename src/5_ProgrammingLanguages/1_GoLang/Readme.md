@@ -1,6 +1,5 @@
 
 # What is Golang?
-
 - Go is a high level, general-purpose programming language that is `very strongly and statically typed` by providing support for `garbage collection and concurrent programming`. 
 - [Go Coding Helpers & Guidelines](GoGuidelines.md)
 - In Go, the programs are built by using `packages that help in managing the dependencies efficiently`. 
