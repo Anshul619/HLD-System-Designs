@@ -15,7 +15,6 @@ Gotcha: What if two people try to shorten the same URL?
 
 # Estimation
 - [Tiny URL Estimation](https://docs.google.com/spreadsheets/d/15vApko2QrmZmv5qTEIyU_IAWvgY3MD23TR3TuLUiPc8/edit#gid=1712068460)
-- [Tiny URL - Base Case Estimation](https://docs.google.com/spreadsheets/d/15vApko2QrmZmv5qTEIyU_IAWvgY3MD23TR3TuLUiPc8/edit#gid=1230163044)
 
 # Read vs Writes - URL Shortening is a read-heavy
 - [URL Shortening Service]() is a read-heavy system - `100:1` ratio between read and write.
