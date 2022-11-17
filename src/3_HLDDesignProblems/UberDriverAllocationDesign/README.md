@@ -1,29 +1,35 @@
 
 # Uber Driver Allocation - Design Problem
-
 Design driver allocation to riders in an Uber-like system
-- Assume many riders and drivers are using the system in parellel
+- Assume many riders and drivers are using the system in parallel
 - Various solutions and their trade-offs
 - What happens when traffic increases?
 - Components/ services required
 
 # Stats
-- `The goal for Uber’s geospatial index is a million write per second`.
+- The goal for Uber’s geospatial index is a million write per second.
 - Many multiples of that for reading.
-- `The dispatch system has thousands of nodes`.
-
+- The dispatch system has thousands of nodes.
 
 ![img.png](assets/UberDriverAllocation.drawio.png)
 
 # User Actors
+There are two types of users in our system
+- Driver 
 - Rider
-- Driver
+
+# Requirements and Goals of the System
+- Drivers need to regularly notify the service about their current location and their availability to pick passengers.
+- Passengers get to see all the nearby available drivers.
+- Customer can request a ride; nearby drivers are notified that a customer is ready to be picked up.
+- Once a driver and a customer accept a ride, they can constantly see each other’s current location until the trip finishes.
+- Upon reaching the destination, the driver marks the journey complete to become available for the next ride.
 
 # Use Cases
 
 ## Rider - Book Cab
 - Enter Pick the location, destination location & click `Continue`
-- `Search Cab` service would publish message to [Search Driver Kafka topic](../../1_HLDDesignComponents/4_MessageBrokers/Kafka.md).
+- Search Cab service would publish message to [Search Driver Kafka topic](../../1_HLDDesignComponents/4_MessageBrokers/Kafka.md).
 - Consumer would consume from [Allocation Driver Kafka topic](../../1_HLDDesignComponents/4_MessageBrokers/Kafka.md).
 - [Driver Match Algo](#star-driver-match-algo) to find riders for the given `{rider, pickup, drop}` location msg.
 - Match the rider pick location with the corresponding location in `DriverLocationDB`.
