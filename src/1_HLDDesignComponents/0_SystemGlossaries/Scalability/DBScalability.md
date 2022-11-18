@@ -25,7 +25,7 @@
 
 | Tech                                                                                                                                                        | Remarks                                                                            |
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------|
-| [Kafka Cluster](../../4_MessageBrokers/Kafka.md)                                                                                                            | Cluster/Sharding of Topics ( High-Throughput MQ)                                   |                     
+| [Kafka Cluster](../../4_MessageBrokers/Kafka/Readme.md)                                                                                                            | Cluster/Sharding of Topics ( High-Throughput MQ)                                   |                     
 | [Redis Cluster](../../3_DatabaseComponents/In-Memory-Cache/Redis/RedisCluster.md)                                                                           | Cluster/Sharding of Redis Nodes ( In-Memory Cache )                                |
 | [Amazon Elastic Cache Cluster](../../../2_AWSComponents/6_DatabaseServices/AmazonElasticCache.md#redis-cluster-mode-disabled-vs-redis-cluster-mode-enabled) | Cluster of Redis Nodes, across Multi-AZs ( One cluster per region )                |
 | [ElasticSearch Cluster](../../3_DatabaseComponents/Search-Engines/ElasticSearch/ElasticSearchCluster.md)                                                    | Cluster/Sharding of Indexes                                                        |

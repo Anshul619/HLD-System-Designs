@@ -1,41 +1,42 @@
 # :star: Apache Kafka 
-- Apache Kafka is an [open-source distributed event streaming platform](../0_SystemGlossaries/EventDrivenArchitecture.md) used by thousands of companies for high-performance data pipelines, streaming analytics, data integration, and mission-critical applications.
+- Apache Kafka is an [open-source distributed event streaming platform](../../0_SystemGlossaries/EventDrivenArchitecture.md) used by thousands of companies for high-performance data pipelines, streaming analytics, data integration, and mission-critical applications.
 - Kafka can process a large amount of data in a short amount of time (`1 million messages/sec`).
-- It also has [low latency](../0_SystemGlossaries/LatencyThroughput.md), making it possible to process data in real-time.
-- Kafka is based on [Publish-Subscriber Model](../4_MessageBrokers#publisher-subscriber-model-pubsub). And can be used for [Event-Driven Architecture](../0_SystemGlossaries/EventDrivenArchitecture.md).
-- [Amazon Managed Streaming for Apache Kafka (MSK)](../../2_AWSComponents/5_MessageBrokerServices/AmazonMSK.md) can be used to deploy Kafka on [AWS](../../2_AWSComponents).
+- It also has [low latency](../../0_SystemGlossaries/LatencyThroughput.md), making it possible to process data in real-time.
+- Kafka is based on [Publish-Subscriber Model](..#publisher-subscriber-model-pubsub). And can be used for [Event-Driven Architecture](../../0_SystemGlossaries/EventDrivenArchitecture.md).
+- [Amazon Managed Streaming for Apache Kafka (MSK)](../../../2_AWSComponents/5_MessageBrokerServices/AmazonMSK.md) can be used to deploy Kafka on [AWS](../../../2_AWSComponents).
 
 # :star: Real world use cases of Kafka
-- [Personalization at Spotify using Cassandra](../../3_HLDDesignProblems/PersonalizationSpotify)
-- [Zomato - HLD Design](../../3_HLDDesignProblems/ZomatoDesign)
-- [Uber Driver Allocation](../../3_HLDDesignProblems/UberDriverAllocationDesign)
-- [Twillo - Send Message API Design](../../3_HLDDesignProblems/TwilloSendMessageAPI)
-- [Logging Solution in Distributed Systems](../../3_HLDDesignProblems/LoggingSolution)
-- [Flight Booking Search](../../3_HLDDesignProblems/FlightBookingSearch/README.md)
+- [Personalization at Spotify using Cassandra](../../../3_HLDDesignProblems/PersonalizationSpotify)
+- [Zomato - HLD Design](../../../3_HLDDesignProblems/ZomatoDesign)
+- [Uber Driver Allocation](../../../3_HLDDesignProblems/UberDriverAllocationDesign)
+- [Twillo - Send Message API Design](../../../3_HLDDesignProblems/TwilloSendMessageAPI)
+- [Logging Solution in Distributed Systems](../../../3_HLDDesignProblems/LoggingSolution)
+- [Flight Booking Search](../../../3_HLDDesignProblems/FlightBookingSearch/README.md)
+- [Linked In - Kafka](../../../3_HLDDesignProblems/LinkedInDesign/Readme.md)
 
 # Why Kafka is so fast?
-- Kafka achieves [low latency](../0_SystemGlossaries/LatencyThroughput.md) message delivery through [Sequential I/O and Zero Copy Principle](https://twitter.com/alexxubyte/status/1506663791961919488/photo/1).
-- Messages (events) in the [Kafka]() are immutable and can't be changed once it's pushed (due to [log based queue nature](../0_SystemGlossaries/AppendOnlyDataStructure.md)).
+- Kafka achieves [low latency](../../0_SystemGlossaries/LatencyThroughput.md) message delivery through [Sequential I/O and Zero Copy Principle](https://twitter.com/alexxubyte/status/1506663791961919488/photo/1).
+- Messages (events) in the [Kafka]() are immutable and can't be changed once it's pushed (due to [log based queue nature](../../0_SystemGlossaries/AppendOnlyDataStructure.md)).
 - The same techniques are commonly used in much other messaging/streaming platforms.
 
-Kafka is based on [Log Based Queue](../0_SystemGlossaries/AppendOnlyDataStructure.md)
-- :star: Messages are persisted to [append-only log files](../0_SystemGlossaries/AppendOnlyDataStructure.md) by the broker.
-- Producers are [appending these log files (sequential write)](../0_SystemGlossaries/AppendOnlyDataStructure.md) & consumers are reading a range of these files ( `sequential reads` ).
+Kafka is based on [Log Based Queue](../../0_SystemGlossaries/AppendOnlyDataStructure.md)
+- :star: Messages are persisted to [append-only log files](../../0_SystemGlossaries/AppendOnlyDataStructure.md) by the broker.
+- Producers are [appending these log files (sequential write)](../../0_SystemGlossaries/AppendOnlyDataStructure.md) & consumers are reading a range of these files ( `sequential reads` ).
 
 # :star: Is Kafka a Database?
 - Yes & No.
-- In some way, Kafka supports [ACID properties](../0_SystemGlossaries/ACIDPropertyTransaction.md).
+- In some way, Kafka supports [ACID properties](../../0_SystemGlossaries/ACIDPropertyTransaction.md).
 - [Martin Kleppmann | Kafka Summit London 2019 Keynote | Is Kafka a Database?](https://www.youtube.com/watch?v=BuE6JvQE_CY)
 - [Read More](https://queue.acm.org/detail.cfm?id=3321612)
 
 # Basic Architecture of Kafka Cluster
 
-![img.png](assests/Kafka-Architecture.drawio.png)
+![img.png](../assests/Kafka-Architecture.drawio.png)
 
 # General use cases of Kafka
 
 ## As an events/message broker in Event-Driven Architecture
-- Use Kafka when your application has a High Throughput ( around `1 million messages/sec`), i.e. application has to process a large volume of messages, [event driven services](../0_SystemGlossaries/EventDrivenArchitecture.md) etc.
+- Use Kafka when your application has a High Throughput ( around `1 million messages/sec`), i.e. application has to process a large volume of messages, [event driven services](../../0_SystemGlossaries/EventDrivenArchitecture.md) etc.
 
 ## To monitor metrics, logs of the IT infrastructure
 - Various systems in the IT infrastructure can push events/messages/logs in the Kafka. And logstash ( in ELK ) can act as a consumer to the Kafka.
@@ -50,21 +51,21 @@ Kafka is based on [Log Based Queue](../0_SystemGlossaries/AppendOnlyDataStructur
 # Top Features of Kafka
 
 ## Scalability
-- Kafka can be [horizontally scaled](../0_SystemGlossaries/Scalability/DBScalability.md) easily across the cluster.
+- Kafka can be [horizontally scaled](../../0_SystemGlossaries/Scalability/DBScalability.md) easily across the cluster.
 - A cluster of brokers is used to partition and streamline the data thereby, scaling up the storage capacity.
 
 ## Performance - High Throughput
-- Each Kafka broker can serve more than [1 million messages per second](../0_SystemGlossaries/LatencyThroughput.md#Throughput) and can hold TBs of data.
+- Each Kafka broker can serve more than [1 million messages per second](../../0_SystemGlossaries/LatencyThroughput.md#Throughput) and can hold TBs of data.
 - Default configured message size in Kafka is `1MB`.
 
 ## High Volume
 - Large amount of data can be stored in the Kafka pool.
 
 ## Durability
-- The data is kept [persistent (as per retention policy)](../0_SystemGlossaries/Durability.md) and tolerant to any hardware failures by copying the data in the clusters.
+- The data is kept [persistent (as per retention policy)](../../0_SystemGlossaries/Durability.md) and tolerant to any hardware failures by copying the data in the clusters.
 
 ## High Availability, Fault Tolerance
-- The [distributed, partitioned, replicated](../0_SystemGlossaries/HighAvailability.md), and [fault-tolerant](../0_SystemGlossaries/FaultTolerance&DisasterRecovery.md) nature of Kafka makes it very reliable.
+- The [distributed, partitioned, replicated](../../0_SystemGlossaries/HighAvailability.md), and [fault-tolerant](../../0_SystemGlossaries/FaultTolerance&DisasterRecovery.md) nature of Kafka makes it very reliable.
 - Kafka connector can handle failures with three strategies summarised as `fast-fail`, `ignore` and `re-queue` (sends to another topic).
 - [Read more about replication in Kafka](#replication)
 
@@ -100,7 +101,7 @@ Kafka is based on [Log Based Queue](../0_SystemGlossaries/AppendOnlyDataStructur
 - `To scale writes, number of leader partitions per broker can be reduced to spread the writes across more brokers.`
 
 ## ZooKeeper
-- [Zookeeper](../6_DevOps/ApacheZookeeper.md) manages Kafka Cluster ( new broker, new partition etc. ) and brokers coordination.
+- [Zookeeper](../../6_DevOps/ApacheZookeeper.md) manages Kafka Cluster ( new broker, new partition etc. ) and brokers coordination.
 - `Kafka stores basic metadata in Zookeeper ( in-memory ), like info about brokers, topics, partitions, partition lead/followers, consumer offset etc.`
 - Zookeeper is also used in the [Controller election](#controller-election) in the `Kafka Cluster`.
 - Zookeeper notifies consumers and producers of the arrival of new broker or failure of existing broker, as well as routing all requests to partition's leaders.
@@ -186,7 +187,7 @@ The `acks` setting is a good way to configure your preferred trade-off between d
 
 ## What is Partition Key in Kafka?
 
-![img.png](assests/Kafka-Partitioning-Layout.drawio.png)
+![img.png](../assests/Kafka-Partitioning-Layout.drawio.png)
 
 - Partitioning is done using `key` in the record
 - If we want to sequence records execution in Kafka, as per the records input time, we should push those in the same partition (hence same key should be used for the records).
@@ -210,78 +211,7 @@ Example
 - Each tenant will have a separate topic prefix. Eg. User A can only create and access topics with prefix “A.”, user B can only create and access topics with prefix “B.”
 - Define and enforce ACLs for topic creation and access (produce and consume) restricting each user to their own topic prefixes.
 
-# [Core APIs in Kafka](https://github.com/confluentinc/kafka-rest)
-
-[Kafka HTTP APIs](https://www.confluent.io/blog/http-and-rest-api-use-cases-and-architecture-with-apache-kafka/) can be integrated in the client apis, to push the message to the specific topic ( & partition key ).
-
-## [Producer API](https://kafka.apache.org/10/javadoc/org/apache/kafka/clients/producer/KafkaProducer.html)
-- Push the message to a topic (1 or more) in the Kafka.
-
-```java
-
-    Properties props = new Properties();
-    props.put("bootstrap.servers","localhost:9092");
-    props.put("acks","all");
-    props.put("retries",0);
-    props.put("batch.size",16384);
-    props.put("linger.ms",1);
-    props.put("buffer.memory",33554432);
-    props.put("key.serializer","org.apache.kafka.common.serialization.StringSerializer");
-    props.put("value.serializer","org.apache.kafka.common.serialization.StringSerializer");
-    
-    Producer<String, String> producer = new KafkaProducer<>(props);
-    
-    for(int i = 0; i < 100; i++) {
-        producer.send(new ProducerRecord<String, String>("my-topic", Integer.toString(i), Integer.toString(i)));
-    }
-
-    producer.close();
-```
-
-## [Consumer API](https://kafka.apache.org/22/javadoc/org/apache/kafka/clients/consumer/KafkaConsumer.html)
-- A consumer can subscribe (poll at the given interval) to one or more topics in the Kafka.
-
-```java
-
-        Properties props = new Properties();
-        props.setProperty("bootstrap.servers", "localhost:9092");
-        props.setProperty("group.id", "test");
-        props.setProperty("enable.auto.commit", "true");
-        props.setProperty("auto.commit.interval.ms", "1000");
-        props.setProperty("key.deserializer", "org.apache.kafka.common.serialization.StringDeserializer");
-        props.setProperty("value.deserializer", "org.apache.kafka.common.serialization.StringDeserializer");
-        KafkaConsumer<String, String> consumer = new KafkaConsumer<>(props);
-        
-        consumer.subscribe(Arrays.asList("foo-topic", "bar-topic"));
-        
-        while (true) {
-            
-            ConsumerRecords<String, String> records = consumer.poll(Duration.ofMillis(100));
-            
-            for (ConsumerRecord<String, String> record : records)
-                System.out.printf("offset = %d, key = %s, value = %s%n", record.offset(), record.key(), record.value());
-            }
-        
-        }
-```
-
-## [Streams API](https://hevodata.com/learn/kafka-streams/)
-- The Kafka Streams API allows an application to use a stream processing architecture to process data in Kafka.
-- An application can use this API to take input streams from one or more topics, process them using streams operations, and generate output streams to transmit to one or more topics.
-- The Streams API allows you to convert input streams into output streams in this manner.
-
-## Connect API
-- The Kafka Connector API connects Kafka topics to applications.
-- This opens up possibilities for constructing and managing the operations of producers and consumers, as well as establishing reusable links between these solutions. A connector, for example, may capture all database updates and ensure that they are made available in a Kafka topic.
-
-## Metadata Request
-- The producer sends a Metadata request with a list of topics to one of the brokers in the broker-list you supplied when configuring the producer.
-- The broker responds with a list of partitions in those topics and the leader for each partition. 
-- The producer caches this information and knows where to redirect its produce messages.
-
 # Estimation - How to decide number of partitions in Kafka?
-
-[Kafka cluster size calculator](https://docs.google.com/spreadsheets/d/1a3uIa8TTRLlN6HTtMzPPqf8p5j5OxflJuAyff-uHLgk/edit?usp=sharing)
 
 Rough formula for picking the number of partitions = `MAX(t/p, t/c)`
 
@@ -291,7 +221,9 @@ Rough formula for picking the number of partitions = `MAX(t/p, t/c)`
 | `p`          | Thoughput on a single partition   | You measure the throughout that you can achieve on a single partition for production (call it p). |
 | `c`          | Consumption Rate                  | And consumption (call it c). |
 
-[Read more](https://www.confluent.io/blog/how-choose-number-topics-partitions-kafka-cluster/)
+Read more
+- [How to Choose the Number of Topics/Partitions in a Kafka Cluster?](https://www.confluent.io/blog/how-choose-number-topics-partitions-kafka-cluster/)
+- [Kafka cluster size calculator](https://docs.google.com/spreadsheets/d/1a3uIa8TTRLlN6HTtMzPPqf8p5j5OxflJuAyff-uHLgk/edit?usp=sharing)
 
 ## Other Points
 - More partitions lead to `higher throughput`.
@@ -304,18 +236,7 @@ Rough formula for picking the number of partitions = `MAX(t/p, t/c)`
     - As a rule of thumb, if you care about latency, it’s probably a good idea to limit the number of partitions per broker to *100 x b x r*, where b is the number of brokers in a Kafka cluster and r is the replication factor.
 - More partitions may require more memory in the client.
 
-## Kafka Stats in LinkedIn
-- Peak writes per second: `460k`
-- Average writes per day: `28 billion`
-- Average reads per second: `2.3 million`
-- `~700 topics`
-- `Thousands of producers`
-- `~1000 consumers`
-- LinkedIn has 4 data centers in US (texas, virginnia, oregon etc.)
-- LinkedIn has separate kafka clusters in every data center. (for high scalability, disaster recovery etc.)
-- [Read more](https://www.slideshare.net/mumrah/kafka-talk-tri-hug)
-
-## Kafka Cluster (with min. nodes), for high availability
+## Kafka Cluster (with min. nodes) for high availability
 
 So, if you wish to design a Kafka cluster that can tolerate one planned and one unplanned failure, you should consider the following requirements:
 - A minimum in-sync replicas of 2.
@@ -324,7 +245,8 @@ So, if you wish to design a Kafka cluster that can tolerate one planned and one 
 - Nodes spread across three availability zones.
 
 # Other Links
-- [Kafka vs Others](KafkaVsRabbitMQVsSQSVsSNS.md)
+- [Core APIs in Kafka](KafkaAPIs.md)
+- [Kafka vs Others](../KafkaVsRabbitMQVsSQSVsSNS.md)
 - [Designing and testing a highly available Kafka cluster on Kubernetes (without zookeeper)](https://learnk8s.io/kafka-ha-kubernetes)
 
 # References

@@ -4,7 +4,7 @@
 - It also has built-in modules for graph processing, machine learning, streaming, SQL, etc.
 - The spark execution engine supports `in-memory computation` and cyclic data flow.
 - It can run either on [cluster mode](../0_SystemGlossaries/ServersCluster.md) or standalone mode.
-- It can access diverse data sources like [Kafka](../4_MessageBrokers/Kafka.md), [HBase](../3_DatabaseComponents/NoSQL-Databases/ApacheHBase.md), [HDFS](ApacheHadoop/ApacheHDFS.md), [Cassandra](../3_DatabaseComponents/NoSQL-Databases/ApacheCasandra.md) etc.
+- It can access diverse data sources like [Kafka](../4_MessageBrokers/Kafka/Readme.md), [HBase](../3_DatabaseComponents/NoSQL-Databases/ApacheHBase.md), [HDFS](ApacheHadoop/ApacheHDFS.md), [Cassandra](../3_DatabaseComponents/NoSQL-Databases/ApacheCasandra.md) etc.
 
 ![img.png](https://www.altexsoft.com/media/2021/06/word-image-14.png)
 
@@ -13,7 +13,7 @@
 - [Uber Driver Allocation](../../3_HLDDesignProblems/UberDriverAllocationDesign)
 
 # What is Spark Streaming and how is it implemented in Spark?
-- Data from sources like [Kafka](../4_MessageBrokers/Kafka.md), [Kinesis](https://aws.amazon.com/kinesis/) etc. are processed and pushed to various destinations like databases, dashboards, machine learning APIs or as simple as file systems.
+- Data from sources like [Kafka](../4_MessageBrokers/Kafka/Readme.md), [Kinesis](https://aws.amazon.com/kinesis/) etc. are processed and pushed to various destinations like databases, dashboards, machine learning APIs or as simple as file systems.
 - The data is divided into various streams (similar to batches) and is processed accordingly.
 - Spark Streaming supports [highly scalable](../0_SystemGlossaries/Scalability/DBScalability.md), [fault-tolerant](../0_SystemGlossaries/FaultTolerance&DisasterRecovery.md) continuous stream processing which is mostly used in cases like fraud detection, website monitoring, website click baits, IoT (Internet of Things) sensors, etc.
 - Spark Streaming first divides the data from the data stream into `batches of X seconds which are called Dstreams or Discretized Streams`.

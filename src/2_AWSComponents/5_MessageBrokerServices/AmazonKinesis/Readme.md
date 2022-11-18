@@ -10,7 +10,7 @@
 
 # Kinesis vs Kafka
 
-| Parameters          | Amazon Kinesis                                                                                                                            | [Apache Kafka](../../../1_HLDDesignComponents/4_MessageBrokers/Kafka.md)                                                           |
+| Parameters          | Amazon Kinesis                                                                                                                            | [Apache Kafka](../../../1_HLDDesignComponents/4_MessageBrokers/Kafka/Readme.md)                                                           |
 |---------------------|-------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------|
 | Architecture        | The basic architecture consists of Producers, Consumers, and [Kinesis Data Streams](AmazonKinesisDataStreams.md). Messages are pushed into KDS for conversion to shards. | The basic architecture consists of Producers, Consumers, and Topics. Messages are pushed into topics for conversion to partitions. |
 | Event Processing    | Around thousands of events per second                                                                                                     | :sunglasses: More than thousands of events per second                                                                              |

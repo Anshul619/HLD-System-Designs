@@ -26,7 +26,7 @@
 ## Publisher-Subscriber Model (Pub/Sub)
 - Unlike point-to-point model, a message is only removed once it has been consumed by `all category subscribers` or according to `retention policy`.
 - This is `completely asynchronous`. You can't say for sure when this process will happen and in what order.
-- [Kafka](Kafka.md), [Active MQ](ActiveMQ.md), [Amazon SQS](../../2_AWSComponents/5_MessageBrokerServices/AmazonSQS.md) supports `Publisher-Subscriber` Model.
+- [Kafka](Kafka/Readme.md), [Active MQ](ActiveMQ.md), [Amazon SQS](../../2_AWSComponents/5_MessageBrokerServices/AmazonSQS.md) supports `Publisher-Subscriber` Model.
 
 # References
 - [Point-to-Point and Publish/Subscribe Messaging model](https://programmingsharing.com/point-to-point-and-publish-subscribe-messaging-model-2efc4d2b6726)

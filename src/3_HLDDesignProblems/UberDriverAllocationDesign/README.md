@@ -29,8 +29,8 @@ There are two types of users in our system
 
 ## Rider - Book Cab
 - Enter Pick the location, destination location & click `Continue`
-- Search Cab service would publish message to [Search Driver Kafka topic](../../1_HLDDesignComponents/4_MessageBrokers/Kafka.md).
-- Consumer would consume from [Allocation Driver Kafka topic](../../1_HLDDesignComponents/4_MessageBrokers/Kafka.md).
+- Search Cab service would publish message to [Search Driver Kafka topic](../../1_HLDDesignComponents/4_MessageBrokers/Kafka/Readme.md).
+- Consumer would consume from [Allocation Driver Kafka topic](../../1_HLDDesignComponents/4_MessageBrokers/Kafka/Readme.md).
 - [Driver Match Algo](#star-driver-match-algo) to find riders for the given `{rider, pickup, drop}` location msg.
 - Match the rider pick location with the corresponding location in `DriverLocationDB`.
 - Push the notification to the matched drivers.
@@ -38,8 +38,8 @@ There are two types of users in our system
 - And notify the rider through push notification.
 
 ## Driver - Push Location
-- Push the current location via [Driver Location Kafka topic](../../1_HLDDesignComponents/4_MessageBrokers/Kafka.md) ([high throughput](../../1_HLDDesignComponents/0_SystemGlossaries/LatencyThroughput.md)).
-- Consumer would consume from [Kafka](../../1_HLDDesignComponents/4_MessageBrokers/Kafka.md) & then push to [ElasticSearch (Geospatial supported)](../../1_HLDDesignComponents/3_DatabaseComponents/Search-Engines/ElasticSearch#geospatial-support).
+- Push the current location via [Driver Location Kafka topic](../../1_HLDDesignComponents/4_MessageBrokers/Kafka/Readme.md) ([high throughput](../../1_HLDDesignComponents/0_SystemGlossaries/LatencyThroughput.md)).
+- Consumer would consume from [Kafka](../../1_HLDDesignComponents/4_MessageBrokers/Kafka/Readme.md) & then push to [ElasticSearch (Geospatial supported)](../../1_HLDDesignComponents/3_DatabaseComponents/Search-Engines/ElasticSearch#geospatial-support).
 
 ## :star: Driver Match algo
 - Area filter

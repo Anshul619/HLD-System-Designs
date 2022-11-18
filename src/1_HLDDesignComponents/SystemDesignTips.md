@@ -12,7 +12,7 @@
 
 ## Identify Read/Write Ratio of the apis/queries
 - If it's a READ heavy microservice, the best decision would be to use [Redis](3_DatabaseComponents/In-Memory-Cache/Redis) or `multi-read database instances`.
-- If it's a WRITE heavy microservice (`HIGH throughput`), the best decision would be to use either [Kafka](4_MessageBrokers/Kafka.md) ( as message broker ) or [DynamoDB](../2_AWSComponents/6_DatabaseServices/AmazonDynamoDB/Readme.md) ( as data store ).
+- If it's a WRITE heavy microservice (`HIGH throughput`), the best decision would be to use either [Kafka](4_MessageBrokers/Kafka/Readme.md) ( as message broker ) or [DynamoDB](../2_AWSComponents/6_DatabaseServices/AmazonDynamoDB/Readme.md) ( as data store ).
 - [How to choose database in the system design?](3_DatabaseComponents/DecideDatabase.md)
 
 ## Use Redis for caching layer

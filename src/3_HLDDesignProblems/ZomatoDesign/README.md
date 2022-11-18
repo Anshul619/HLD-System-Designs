@@ -22,7 +22,7 @@
 ## Cloud platform - AWS
 
 ## Kafka Streams
-- [Kafka](../../1_HLDDesignComponents/4_MessageBrokers/Kafka.md) is used to achieve high throughput in streaming events between read and write repositories of order management, sending real time or batch events to recommendation engine and publishing approved catalog and products(menu and foods) to elastic search.
+- [Kafka](../../1_HLDDesignComponents/4_MessageBrokers/Kafka/Readme.md) is used to achieve high throughput in streaming events between read and write repositories of order management, sending real time or batch events to recommendation engine and publishing approved catalog and products(menu and foods) to elastic search.
 
 ## RabbitMQ
 - Since we have order work flow, we should use a [RabbitMQ](../../1_HLDDesignComponents/4_MessageBrokers/RabbitMQ.md) to update the transaction status quickly ( like order status etc. ).

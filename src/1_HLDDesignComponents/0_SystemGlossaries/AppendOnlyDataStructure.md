@@ -17,7 +17,7 @@ Log-structured data structures found in Log-structured file systems and database
 | DB                                                                                                                              | Remarks |
 |---------------------------------------------------------------------------------------------------------------------------------|---------|
 | [Casandra](../3_DatabaseComponents/NoSQL-Databases/ApacheCasandra.md)                                                           | -       |
-| [Kafka](../4_MessageBrokers/Kafka.md)                                                                                           | -       |
+| [Kafka](../4_MessageBrokers/Kafka/Readme.md)                                                                                           | -       |
 | [ElasticSearch Data Stream](../3_DatabaseComponents/Search-Engines/ElasticSearch/ElasticSearchDataStreams.md)                   | -       |
 | [Amazon Aurora Global Database - Replication](../../2_AWSComponents/6_DatabaseServices/AmazonRDSAurora/AuroraGlobalDatabase.md) | -       |
 | [RocksDB](../3_DatabaseComponents/NoSQL-Databases/RocksDB.md)                                                                   | -       |
