@@ -209,5 +209,11 @@ Outputs:
 - [Puppet - Open Source](https://puppet.com/)
 - [Ansible by Red Hat](https://www.ansible.com/)
 
+# State Management
+- Since CloudFormation is a managed AWS service, it does state management automatically. 
+- CloudFormation will consistently check infrastructure it has provisioned to detect if it is maintaining that state and configuration.
+- Terraform stores the state of the infrastructure on the provisioning computer, or in a remote site (for team use). This state file is a custom JSON format which serves as a map for Terraform, describing which resources it manages, and how those resources should be configured.
+- [Read more](https://www.missioncloud.com/blog/aws-cloudformation-vs-terraform-which-one-should-you-choose)
+
 # References
 - [What is AWS Cloudformation? Pros and Cons?](https://www.youtube.com/watch?v=0Sh9OySCyb4)

@@ -1,9 +1,9 @@
-
 # AWS Identity and Access Management (IAM)
 - [AWS Identity and Access Management (IAM)](https://aws.amazon.com/iam/) allows an administrator to provide multiple users and groups with granular access.
 - Various user groups and users may require varying levels of access to the various resources that have been developed.
 - We may assign roles to users and create roles with defined access levels using IAM.
 - It further gives us Federated Access, which allows us to grant applications and users access to resources without having to create IAM Roles.
+- [List of various AWS IAM Permissions](https://aws.permissions.cloud/)
 
 # IAM Policy
 - [IAM Policy](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies.html) helps to define user access (through AWS Console or AWS Cli) for the AWS resources.
