@@ -1,7 +1,8 @@
 
 # Introduction
-- [gRPC](https://grpc.io) is a `modern open source high performance Remote Procedure Call` framework that can run in any environment.
+- [gRPC](https://grpc.io) is a modern open source high performance Remote Procedure Call framework that can run in any environment.
 - [gRPC Performance Multi-language Dashboard](https://performance-dot-grpc-testing.appspot.com/explore?dashboard=5180705743044608)
+- [gRPC - Basic Tutorial](https://grpc.io/docs/languages/go/basics/)
 
 gRPC is contract-based, 
 - A Contract needs to be available on both sides of communication to make sense of data going between them. 

@@ -1,4 +1,4 @@
-## :star: Kafka Stats in LinkedIn
+# :star: Kafka Stats in LinkedIn
 
 | Feature                   | Count                                                                                                    |
 |---------------------------|----------------------------------------------------------------------------------------------------------|
@@ -10,4 +10,7 @@
 | Data Centers              | LinkedIn has 4 data centers in US (texas, virginia, oregon etc.)                                         |
 | Kafka Clusters            | LinkedIn has separate kafka clusters in every data center (for high scalability, disaster recovery etc.) |
 
-- [Read more](https://www.slideshare.net/mumrah/kafka-talk-tri-hug)
+# References
+- [Introduction and Overview of Apache Kafka](https://www.slideshare.net/mumrah/kafka-talk-tri-hug)
+- [Did you mean "Galene"?](https://engineering.linkedin.com/search/did-you-mean-galene)
+- [FollowFeed: LinkedIn's Feed Made Faster and Smarter](https://engineering.linkedin.com/blog/2016/03/followfeed--linkedin-s-feed-made-faster-and-smarter)
