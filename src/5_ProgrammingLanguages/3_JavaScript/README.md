@@ -1,6 +1,171 @@
+# Introduction
+- [JavaScript](https://www.w3schools.com/js/) is a single-threaded synchronous programming language.
+
+# JavaScript is asynchronous
+- Asynchronous execution reduces waiting times.
+- Parallel execution reduces wall-clock time.
+- Interleaved execution is done by concurrent threads. Concurrent and interleaved are used (roughly) synonymously.
+- [Introducing asynchronous JavaScript](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Asynchronous/Introducing)
+
+## Asynchronous JavaScript - Callbacks
+
+````
+function myDisplayer(some) {
+  document.getElementById("demo").innerHTML = some;
+}
+
+function myCalculator(num1, num2, myCallback) {
+  let sum = num1 + num2;
+  myCallback(sum);
+}
+
+myCalculator(5, 5, myDisplayer);
+````
+
+[Read more](https://www.w3schools.com/js//js_callback.asp)
+
+## Asynchronous JavaScript - Timeouts
+
+````
+setTimeout(myFunction, 3000);
+
+function myFunction() {
+  document.getElementById("demo").innerHTML = "I love You !!";
+}
+````
+
+[Read more](https://www.w3schools.com/js//js_asynchronous.asp)
+
+## Asynchronous JavaScript - Promises
+
+````
+let myPromise = new Promise(function(myResolve, myReject) {
+// "Producing Code" (May take some time)
+
+  myResolve(); // when successful
+  myReject();  // when error
+});
+
+// "Consuming Code" (Must wait for a fulfilled Promise)
+myPromise.then(
+  function(value) { /* code if successful */ },
+  function(error) { /* code if some error */ }
+);
+````
+
+[Read more](https://www.w3schools.com/js//js_promise.asp)
+
+## Asynchronous JavaScript - Async
+- The keyword [async](https://www.w3schools.com/js//js_async.asp) before a function makes the function return a promise.
+
+````
+async function myFunction() {
+  return "Hello";
+}
+
+is same as 
+
+function myFunction() {
+  return Promise.resolve("Hello");
+}
+````
+
+## Asynchronous JavaScript - Await
+- let value = await promise;
+- The await keyword can only be used inside an async function.
+
+# Web worker - Parallel Processing, Multi-Threading
+- A [web worker](https://www.w3schools.com/js//js_api_web_workers.asp) is a JavaScript that runs in the background, independently of other scripts, without affecting the performance of the page. 
+- You can continue to do whatever you want: clicking, selecting things, etc., while the web worker runs in the background.
+
+````
+let w;
+
+function startWorker() {
+  if (typeof(w) == "undefined") {
+    w = new Worker("demo_workers.js");
+  }
+  w.onmessage = function(event) {
+    document.getElementById("result").innerHTML = event.data;
+  };
+}
+
+function stopWorker() {
+  w.terminate();
+  w = undefined;
+}
+````
+
+# What is Event Loop?
+- An event loop is something that pulls stuff out of the queue and places it onto the function execution stack whenever the function stack becomes empty.
+- The event loop is the secret by which JavaScript gives us an illusion of being multithreaded even though it is single-threaded
+- [What is an event loop in JavaScript ?](https://www.geeksforgeeks.org/what-is-an-event-loop-in-javascript/)
+
+# Memory allocation in JavaScript
+- Heap memory: Data stored randomly and memory allocated.
+- Stack memory: Memory allocated in the form of stacks. Mainly used for functions.
+
+The function stack is a function which keeps track of all other functions executed in run time.
+- Ever seen a stack trace being printed when you ran into an error in JavaScript.
+- That is nothing but a snapshot of the function stack at that point when the error occurred.
+
+
+# How to create object in javascript?
+
+````javascript
+ function getUsers(var username) {        
+        //this.name = username;        
+}
+var k = new getUsers("Anshul");
+````
+
+# How to access static area of a function in javascript?
+
+````
+getUsers.prototype.name = "Anshul";
+````
+
+# When would happen if object change value of a class?
+- [Classes](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes) are a template for creating objects. 
+- They encapsulate data with code to work on that data. 
+- Classes in JS are built on prototypes but also have some syntax and semantics that are not shared with ES5 class-like semantics.
+
+````
+    var k = new getUsers("Anshul");
+    
+    getUsers.prototype.name = "Anshul";
+    //getUsers.prototype.name
+    
+    // k.name =  "Anshul"
+    
+    k.name = "Chitresh";
+    
+    // print k.name = "Chitresh"
+    
+    //delete k.name
+    // print k.name = "Anshul"
+    k.name = "Chitresh";
+    
+    
+    var g = new getUsers("Anshul");
+    
+    //g.name = 
+    // print g.name = "Anshul"
+````
+
+
+# How to create nested promise?
+
+````
+new Promise(function(){
+        //Code to be executed;
+    }).then {
+        // new Promise
+    }
+    .error //
+````
 
 # Hoisting
-
 - In JavaScript, Hoisting is the default behavior of moving all the declarations at the top of the scope before code execution. 
 - Basically, it gives us an advantage that no matter where functions and variables are declared, they are moved to the top of their scope regardless of whether their scope is global or local.
 - To avoid hoisting, you can run javascript in strict mode by using `use strict` on top of the code.
@@ -24,7 +189,6 @@ var y = "2";
 ```
 
 # Difference between var and let keyword in javascript.
-
 - From the very beginning, the 'var' keyword was used in JavaScript programming whereas the keyword 'let' was just added in 2015.
 - The keyword `Var` has function scope. Anywhere in the function, the variable specified using var is accessible 
 - But in `let`, the scope of a variable declared with the 'let' keyword is limited to the block in which it is declared. ( `Block Scope` )
@@ -149,8 +313,9 @@ console.log(person.getName());
 
 
 # References
-- https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures
-- https://www.interviewbit.com/javascript-interview-questions/
+- [Closures](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures)
+- [JavaScript](https://www.interviewbit.com/javascript-interview-questions/)
+- [Understanding Browser Caching](https://www.section.io/engineering-education/understanding-browser-caching/)
 
 
 

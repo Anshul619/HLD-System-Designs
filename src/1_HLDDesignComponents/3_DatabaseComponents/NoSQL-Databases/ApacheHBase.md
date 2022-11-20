@@ -1,7 +1,17 @@
-
 # Apache HBase
-- An open source, non-relational, versioned database that runs on top of [Hadoop Distributed File System (HDFS)](../../5_BigDataComponents/ApacheHadoop/ApacheHDFS.md) or [Amazon S3](../../../2_AWSComponents/7_StorageServices/AmazonS3.md) (using [EMRFS](../../../2_AWSComponents/4_ComputeServices/AmazonEMR.md)) or . 
+- An open source, non-relational, versioned database that runs on top of [Hadoop Distributed File System (HDFS)](../../5_BigDataComponents/ApacheHadoop/ApacheHDFS.md) or [Amazon S3](../../../2_AWSComponents/7_StorageServices/AmazonS3.md) (using [EMRFS](../../../2_AWSComponents/4_ComputeServices/AmazonEMR.md)). 
 - [Apache HBase](https://hbase.apache.org/) is a massively scalable, distributed big data store built for random, [strictly consistent](../../0_SystemGlossaries/ReplicationAndDataConsistency.md), real-time access for tables with `billions of rows and millions of columns`.
+
+# Key Features
+- [Highly scalable, distributed systems](../../0_SystemGlossaries/Scalability/DBScalability.md).
+- [High Read/Writes in Apache HBase](../../0_SystemGlossaries/LatencyThroughput.md)
+- Linear scalability and modularity
+- Aid in exporting metrics through Hadoop metrics subsystem
+- Automated fail-over support and sharding of tables
+- Effortlessly usable Java API for clients
+- Regularity in reads and writes
+- Data storage as key or values
+- Best fit for range-based scan
 
 # :star: Real world use cases of HBase
 
@@ -11,4 +21,6 @@
 
 # References
 - [What is Hadoop?](https://aws.amazon.com/emr/details/hadoop/what-is-hadoop/)
+- [HBase Vs MongoDB – A Thorough Comparison Between NoSQL Databases](https://simpleprogrammer.com/hbase-vs-mongodb/)
+- [AWS DynamoDB VS HBase](https://stackoverflow.com/questions/10908531/aws-dynamodb-vs-hbase#29381684)
 - [Does-Facebook-use-Apache-Cassandra](https://www.quora.com/Does-Facebook-use-Apache-Cassandra)

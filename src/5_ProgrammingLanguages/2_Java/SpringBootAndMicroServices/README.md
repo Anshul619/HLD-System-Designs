@@ -3,7 +3,19 @@
 - Sprint boot is a Java-based spring framework used for Rapid Application Development (to build stand-alone microservices). 
 - It has an extra support of autoconfiguration and *embedded application server like tomcat*, jetty, etc.
 
-<img title="SpringBootArchitecture" alt="Alt text" src="assests/SpringBootArchitecture.drawio.png">
+![](assests/SpringBootArchitecture.drawio.png)
+
+# Spring vs Spring Boot
+
+[Spring](https://spring.io/) is an open-source lightweight framework that allows Java EE 7 developers to build simple, reliable, and scalable enterprise applications. This framework mainly focuses on providing various ways to help you manage your business objects. It made the development of Web applications much easier than compared to classic Java frameworks and Application Programming Interfaces (APIs), such as Java database connectivity (JDBC), JavaServer Pages(JSP), and Java Servlet. This framework uses various new techniques such as Aspect-Oriented Programming (AOP), Plain Old Java Object (POJO), and dependency injection (DI), to develop enterprise applications.
+
+[Spring Boot](https://spring.io/projects/spring-boot) is built on top of the conventional spring framework.
+- So, it provides all the features of spring and is yet easier to use than spring.
+- Spring Boot is a microservice-based framework and making a production-ready application in very less time.
+- In Spring Boot everything is auto-configured.
+- We just need to use proper configuration for utilizing a particular functionality.
+- Spring Boot is very useful if we want to develop REST API.
+- [Read More](https://www.geeksforgeeks.org/difference-between-spring-and-spring-boot/)
 
 # What are the advantages of using Spring Boot?
 - Easy to understand and develop spring applications.
@@ -12,7 +24,7 @@
 - Minimum configuration.
 - We don’t need to write any XML configuration, only a few annotations are required to do the configuration.
 
-<img title="SpringBoot-Features" alt="Alt text" src="assests/SpringBoot-Features.drawio.png">
+![](assests/SpringBoot-Features.drawio.png)
 
 # What are the Spring Boot key components?
 - Spring Boot auto-configuration.
@@ -39,21 +51,21 @@
 
 # Different Annotations
 
-Annotation| Remarks                                                                                                                                                                                                            |
----------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-@SpringBootApplication||
-@EnableAutoConfiguration| @EnableAutoConfiguration annotation enables the auto-configuration of Spring ApplicationContext by scanning the classpath components and registering the beans.                                                    |
-@ComponentScan|Spring Boot automatically scans all the components included in the project by using `@ComponentScan` annotation.|
-@Configuration||
-@RestController| RestController is used for making restful web services with the help of the @RestController annotation. This annotation is used at the class level and allows the class to handle the requests made by the client. |
-@RequestMapping(value = "/activate",  method = RequestMethod.POST, produces = "application/json")||
-@PostMapping("/store")| Post mapping annotation on the method                                                                                                                                                                              |
-@GetMapping("/store")| Get mapping annotation on the method                                                                                                                                                                               |
-X(@RequestBody MeterReadings meterReadings)| HTTP Post body of the API                                                                                                                                                                                          |
-Y(@PathVariable String smartMeterId)| URL Parameter in the API                                                                                                                                                                                           |
-@Bean| @Bean is a method-level annotation. @Bean annotation specifies that a method produces a return value registered as a bean ( data ) with BeanFactory – managed by Spring Container.                                                                                                                                                                               |
-@Primary||
-@Entity| To annotate the database object                                                                                                                                                                                    |
+| Annotation                                                                                        | Remarks                                                                                                                                                                                                            |
+|---------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| @SpringBootApplication                                                                            | -                                                                                                                                                                                                                  |
+| @EnableAutoConfiguration                                                                          | @EnableAutoConfiguration annotation enables the auto-configuration of Spring ApplicationContext by scanning the classpath components and registering the beans.                                                    |
+| @ComponentScan                                                                                    | Spring Boot automatically scans all the components included in the project by using `@ComponentScan` annotation.                                                                                                   |
+| @Configuration                                                                                    | -                                                                                                                                                                                                                  |
+| @RestController                                                                                   | RestController is used for making restful web services with the help of the @RestController annotation. This annotation is used at the class level and allows the class to handle the requests made by the client. |
+| @RequestMapping(value = "/activate",  method = RequestMethod.POST, produces = "application/json") | -                                                                                                                                                                                                                  |
+| @PostMapping("/store")                                                                            | Post mapping annotation on the method                                                                                                                                                                              |
+| @GetMapping("/store")                                                                             | Get mapping annotation on the method                                                                                                                                                                               |
+| X(@RequestBody MeterReadings meterReadings)                                                       | HTTP Post body of the API                                                                                                                                                                                          |
+| Y(@PathVariable String smartMeterId)                                                              | URL Parameter in the API                                                                                                                                                                                           |
+| @Bean                                                                                             | @Bean is a method-level annotation. @Bean annotation specifies that a method produces a return value registered as a bean ( data ) with BeanFactory – managed by Spring Container.                                 |
+| @Primary                                                                                          | -                                                                                                                                                                                                                  |
+| @Entity                                                                                           | To annotate the database object                                                                                                                                                                                    |
 
 # How to disable a specific auto-configuration class?
 You can use exclude attribute of `@EnableAutoConfiguration` if you want auto configuration not to apply to any specific class.

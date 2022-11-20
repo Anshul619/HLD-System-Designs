@@ -46,12 +46,19 @@ Relational databases store data in rows and columns.
 # SQL - Different Databases
 
 ## MySQL vs PostgreSQL
+- [PostgreSQL is twice as fast as MySQL](https://itnext.io/benchmark-databases-in-docker-mysql-postgresql-sql-server-7b129368eed7).
+- In general, PostgreSQL is a more robust, advanced database management system, well-suited for an organization that needs to perform complex queries in a large environment quickly.
+- However, MySQL is an ideal solution for a company more constrained by budget and space.
+- A lot of security features are built in MySQL, and it is highly secure.
+- [PostgreSQL](https://www.ibm.com/cloud/blog/postgresql-vs-mysql-whats-the-difference) is appropriate for use in large systems where data needs to be authenticated and read/write speeds are critical for success. Moreover, it also supports a number of performance enhancers that are only available in proprietary solutions, including concurrency without read locks, SQL server, and Geospatial data support, among many others. In general, PostgreSQL is best suited for systems that require execution of complex queries, or data warehousing and data analysis.
+- MySQL is the first choice for those web-based projects which require a database merely for data transactions and not anything intricate. It works exceptionally well in Online Analytical Processing (OLAP) and Online Transaction Processing (OLTP) systems where only high read speeds are necessary. However, MySQL will start underperforming once it is stressed with heavy loads or complex queries.
+- MySQL is ideal for your project if you require an RDBMS for web applications or custom solutions, but not if you need a fully SQL-compliant RDBMS capable of performing complex tasks swiftly. Conversely, PostgreSQL is ideal for your project if your requirements revolve around complex procedures, integration, intricate designs, and data integrity.
+- MySQL: SQL syntax's and stored procedures, PostgreSQL: Advanced procedures and stored procedures.
 
-[PostgreSQL is twice as fast as MySQL](https://itnext.io/benchmark-databases-in-docker-mysql-postgresql-sql-server-7b129368eed7).
+| Component                                                                 | Strength                                | Component Type                | Very Rough Throughput (QPS)                 | Latency                                                                                                                      | Pricing Model                      |
+|---------------------------------------------------------------------------|-----------------------------------------|-------------------------------|---------------------------------------------|------------------------------------------------------------------------------------------------------------------------------|------------------------------------|
+| [MySQL](src/1_HLDDesignComponents/3_DatabaseComponents)                   | -                                       | SQL DB                        | 1000 concurrent requests ( 100 as default ) | [< 10ms ( to get a row from 1 million records )](https://www.quora.com/How-can-we-calculate-the-throughput-of-MySQL?share=1) | `Open Source` ( [RDS]() on AWS )   |                                                                                       |                                         |                               |                                             |                                                                                                                             |                                                            |
 
-| Component                                                               | Strength                                | Component Type                | Very Rough Throughput (QPS)                 | Latency | Pricing Model                                              |
-|-------------------------------------------------------------------------|-----------------------------------------|-------------------------------|---------------------------------------------|----------------|------------------------------------------------------------|
-| [MySQL](src/1_HLDDesignComponents/3_DatabaseComponents)                                | -                                       | SQL DB                        | 1000 concurrent requests ( 100 as default ) | [< 10ms ( to get a row from 1 million records )](https://www.quora.com/How-can-we-calculate-the-throughput-of-MySQL?share=1)| `Open Source` ( [RDS](src/2_AWSComponents/RDS.md) on AWS ) |
 
 # References
 - [Groking the System Design](https://www.educative.io/courses/grokking-the-system-design-interview/YQlK1mDPgpK)

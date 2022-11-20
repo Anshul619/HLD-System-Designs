@@ -1,6 +1,5 @@
 
 # What are the most prominent features of Angular 8?
-
 - Angular 8 support `Cross-Platform Features`.
   - The Angular 8 platform can be used to develop Progressive Web Apps. By using Angular 8, you can develop an extremely fast website that can provide app-like experiences with zero-step installation and high-quality performance.
 - `Better Speed & Performance`
@@ -10,10 +9,9 @@
 - Provide Full Development Support
 
 # What are the differences between promises and observables in Angular 8?
-
 - Promises can deal with a single asynchronous event at a time.
 - The observables can handle a sequence of asynchronous events over a period of time.
-- Promises are always asynchronous. Observables are both synchronous as well as asynchronous.
+- Promises are always asynchronous. Observables are both synchronous and asynchronous.
 - Promises are not lazy. They can execute immediately after creation.
 - Observables are very lazy. They can't be executed until you subscribe to them using the `subscribe()` method.
 
