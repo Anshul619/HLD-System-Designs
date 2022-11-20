@@ -1,5 +1,5 @@
 # Introduction
-- [NewRelic](https://newrelic.com/) - Monitor, debug, and improve your entire stack.
+- [NewRelic](https://newrelic.com/) helps to monitor, debug, and improve your entire stack.
 - New Relic is where dev, ops, security and business teams solve software–performance problems with data.
 - New Relic uses [Apache Lucene](../3_DatabaseComponents/Search-Engines/ApacheLucene.md).
 
@@ -32,15 +32,6 @@
 
 ## Preintegrations
 ![img.png](https://newrelic.com/themes/custom/erno/assets/images/layout/section/integrations_logocardpattern.svg)
-
-# Alternatives
-
-| Service                                                                                                                                 | Remarks                                                                                            |
-|-----------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------|
-| [Splunk](https://www.quora.com/How-does-New-Relic-and-Splunk-compare-or-differ-Is-there-functionality-that-is-similar-in-both-products) | Splunk is a log aggregator ( like ELK ) while New Relic is a web application performance profiler. |
-| [Cloudwatch](../../2_AWSComponents/8_MonitoringServices/AmazonCloudWatch.md)                                                            |                                                                                                    |
-| [ELK](ELK.md)                                                                                                                           |                                                                                                    |
-| [SumoLogic](https://www.sumologic.com/)                                                                                                 |                                                                                                    |
 
 # Pricing
 

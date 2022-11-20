@@ -18,11 +18,11 @@
 - Dashboard, Visualize data, Metrics etc.
   - Since data aggregation is fast in Lucene, hence data visualization is quick in Lucene.
 
-# Components based on Apache Lucene
+# Services based on Apache Lucene
 
-| Component                                        | Remarks |
+| Service                                          | Remarks |
 |--------------------------------------------------|---------|
-| [ElasticSearch](ElasticSearch/Readme.md)         | -       |
+| [Elastic Search](ElasticSearch/Readme.md)        | -       |
 | [Apache Solr](ApacheSolr.md)                     | -       |
 | [New Relic](../../7_MonitoringTools/NewRelic.md) | -       |
 
@@ -31,10 +31,11 @@
 - It breaks down the text string into tokens where it finds whitespace or other punctuation symbols.
 
 # Inverted indexes and Index Terms
-- Internally, Lucene stores data in inverted indexes ( term and documents mapped to it ).
+- Internally, Lucene stores data in inverted indexes (term and documents mapped to it).
 - The inverted index maps `terms` to `documents` (and possibly positions in the documents) containing the term.
 - Using inverted indexes, lucene internally & efficiently finds documents with given term prefixes.
 - For example - find all documents, starting with `c`.
+
 ![img.png](assets/inverted_indexes.png)
 
 # Reference
