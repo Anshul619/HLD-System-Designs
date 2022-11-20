@@ -8,3 +8,4 @@
 ## :star: Real world use cases
 - [Apache Kafka](../4_MessageBrokers/Kafka/Readme.md)
 - [Apache Marathon & Mesos](ApacheMarathon&Mesos.md)
+- [Twitter Hit Counter](../../3_HLDDesignProblems/TwitterHitCounterDesign/Readme.md)

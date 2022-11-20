@@ -5,8 +5,9 @@
 
 # :star: Real world use cases of Redis Cache
 - [Rate Limiting in Distributed Systems](../../../../3_HLDDesignProblems/RateLimiterAPI/Readme.md)
-- [Zomato - HLD Design](../../../../3_HLDDesignProblems/ZomatoDesign)
+- [Zomato - HLD Design](../../../../3_HLDDesignProblems/ZomatoDesign/README.md)
 - [Twillo - Send Message API Design](../../../../3_HLDDesignProblems/TwilloSendMessageAPI)
+- [Twitter Hit Counter](../../../../3_HLDDesignProblems/TwitterHitCounterDesign/Readme.md)
 - [AWS - Send-SMS-API design (App Internal Clients, Multiple SMS-Providers, AutoScaling)](../../../../3_HLDDesignProblems/NotificationSystem)
 
 # Key Features of Redis

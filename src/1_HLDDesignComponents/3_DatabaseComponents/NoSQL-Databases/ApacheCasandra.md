@@ -1,8 +1,7 @@
-
 # Apache Casandra
 - [Apache Cassandra](https://cassandra.apache.org/_/index.html) is a free and open-source, distributed & [wide column store](../ReadMe.md#nosql---intro-different-nosql-types).
 - It is a NoSQL database management system designed to handle large amounts of data across many commodity servers, providing [high availability with no single point of failure](../../0_SystemGlossaries/FaultTolerance&DisasterRecovery.md). 
-- Since [Casandra]() is [append-only db storage](../../0_SystemGlossaries/AppendOnlyDataStructure.md), it can handle [large amount data with high throughput](../../0_SystemGlossaries/LatencyThroughput.md).
+- Since [Casandra]() is [append-only db storage](../../0_SystemGlossaries/AppendOnlyDataStructure.md), it can handle [large amount data with high throughput with fast writes](../../0_SystemGlossaries/LatencyThroughput.md).
 - Cassandra offers robust support for [clusters spanning multiple data centers](../../0_SystemGlossaries/ServersCluster.md), with asynchronous masterless replication allowing low latency operations for all clients.
 - Casandra is based modeled after [Amazon DynamoDB](../../../2_AWSComponents/6_DatabaseServices/AmazonDynamoDB/Readme.md) & [BigTable](https://cloud.google.com/bigtable).
 - [Amazon KeySpaces](../../../2_AWSComponents/6_DatabaseServices/AmazonKeySpaces.md) can be used to deploy Casandra on AWS.
@@ -13,7 +12,7 @@
 Large amount of data like,
 - [Time Series Data](https://netflixtechblog.com/scaling-time-series-data-storage-part-i-ec2b6d44ba39)
 - Historical records
-- High-Write, Low-Read
+- [High-Write, Low-Read](../../0_SystemGlossaries/LatencyThroughput.md)
 - Processing server logs
 - [Social media posts](../../../3_HLDDesignProblems/InstagramDesign/Readme.md)
 - PDF documents
@@ -50,7 +49,8 @@ Large amount of data like,
 - In 2012, [Facebook began using Apache Cassandra in its Instagram unit](https://www.quora.com/Does-Facebook-use-Apache-Cassandra).
 
 ## Other UCs
-- [Twillo - Send Message API Design](../../../3_HLDDesignProblems/TwilloSendMessageAPI)
+- [Twillo - Send Message API Design](../../../3_HLDDesignProblems/TwilloSendMessageAPI/README.md)
+- [Twitter Hit Counter](../../../3_HLDDesignProblems/TwitterHitCounterDesign/Readme.md)
 - [Exploring Data @ Netflix](https://netflixtechblog.com/exploring-data-netflix-9d87e20072e3)
 - [Directi uses Casandra to save HeatMaps (UI activities)](https://engineering.zeta.tech/2021/09/15/zeta-tech-stack/)
 
@@ -81,7 +81,7 @@ Large amount of data like,
 
 ## Scales Horizontally & Linearly
 - Apache Cassandra has a [high-scalability architecture](../../0_SystemGlossaries/Scalability/DBScalability.md).
-- Cassandra [cluster](../../0_SystemGlossaries/ServersCluster.md) can be easily scaled-up or scaled-down.
+- [Cassandra cluster](../../0_SystemGlossaries/ServersCluster.md) can be easily scaled-up or scaled-down.
 - Generally doubling the size of the cluster, would result in the half [latency](../../0_SystemGlossaries/LatencyThroughput.md) (both at the median and 99th percentile).
 
 ## Support replication - Cross-site, Data-Centers
