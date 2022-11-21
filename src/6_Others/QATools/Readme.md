@@ -1,7 +1,7 @@
 
 # Automated APIs testing
 
-# [Postman with Jenkins](PostmanAPITestingWithJenkins.md)
+# [Postman with Jenkins](Postman.md)
 
 # Load Testing Tools
 

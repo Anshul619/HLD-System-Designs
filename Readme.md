@@ -241,8 +241,8 @@ This repo contains the various system design components info, questions and solu
 - [Angular8](src/5_ProgrammingLanguages/4_FrontEnd/Angular8.md)
 
 # API Dev, Documentation
-- :star: [Swagger](src/1_HLDDesignComponents/2_APITechOptions/API_Dev_Documentation/Swagger/Readme.md)
-- [Open API Spec](src/1_HLDDesignComponents/2_APITechOptions/API_Dev_Documentation/Swagger/OpenAPISpec.md)
+- :star: [Swagger](src/1_HLDDesignComponents/2_APITechOptions/API_Documentation/Swagger/Readme.md)
+- [Open API Spec](src/1_HLDDesignComponents/2_APITechOptions/API_Documentation/Swagger/OpenAPISpec.md)
 
 # Other Services
 - [DevOps](src/1_HLDDesignComponents/6_DevOps/Readme.md)
