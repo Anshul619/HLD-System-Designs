@@ -12,6 +12,11 @@
 
 ![img.png](../1_NetworkingAndContentDelivery/ElasticLoadBalancer/assests/AWS_Elastic_Load_Balancer.png)
 
+# Amazon ECS Availability with Fargate
+- [Fargate](https://aws.amazon.com/blogs/containers/amazon-ecs-availability-best-practices/) ensures [Availability Zone](../AWS-Global-Architecture-Region-AZ.md) spread while removing the complexity of managing [EC2 infrastructure](AmazonEC2/ReadMe.md) and works to ensure that Tasks in a Replica Service are balanced across Availability Zones. 
+- For RunTask launches with a Fargate launch type, Fargate will look to spread Task placement across all available Availability Zones ensuring even distribution of the [Task Definition Family](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/task_definition_parameters.html) that the Task belongs to. 
+- By leveraging Fargate, you are able to sidestep the undifferentiated heavy lifting of owning and managing infrastructure allowing you to focus on delivering applications to delight your customers.
+
 # Source(s) and further reading
 - [How to Setup AWS ECS Fargate with a Load Balancer | Step by Step](https://www.youtube.com/watch?v=o7s-eigrMAI)
 - [Theoretical cost optimization by Amazon ECS launch type: Fargate vs EC2](https://aws.amazon.com/blogs/containers/theoretical-cost-optimization-by-amazon-ecs-launch-type-fargate-vs-ec2/)

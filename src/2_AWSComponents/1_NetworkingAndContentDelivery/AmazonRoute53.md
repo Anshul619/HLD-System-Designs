@@ -1,6 +1,5 @@
 
 # Amazon Route 53
-
 [Amazon Route 53](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/Welcome.html) is a [highly available](../../1_HLDDesignComponents/0_SystemGlossaries/HighAvailability.md) and [scalable](../../1_HLDDesignComponents/0_SystemGlossaries/Scalability/DBScalability.md) [Domain Name System (DNS)](https://www.cloudflare.com/learning/dns/what-is-dns/) web service. 
 
 You can use Route 53 to perform three main functions in any combination,
@@ -26,6 +25,10 @@ You can use Route 53 to perform three main functions in any combination,
 
 ## Simple policy
 - Point a domain to a single, simple resource.
+- Use a [simple routing policy](https://aws.amazon.com/premiumsupport/knowledge-center/multivalue-versus-simple-policies/) for traffic that requires only standard DNS records and that doesn't require special options such as weighted routing or latency routing. 
+- For example, use simple routing when you need to route traffic to a single resource. 
+- You can't use multiple records of the same name and type with simple routing. 
+- However, a single record can contain multiple values (such as IP addresses).
 
 ## :star: Latency Based Routing
 - Latency Based Routing utilizes [latency measurements between networks and AWS data centers](../../1_HLDDesignComponents/0_SystemGlossaries/LatencyThroughput.md).
@@ -33,7 +36,6 @@ You can use Route 53 to perform three main functions in any combination,
 - [This is mostly used multi-region (active-active) routing policy](../AWS-Global-Architecture-Region-AZ.md) (if application has no geographic requirements).
 
 ````
-
 // Basic Routing Policy using Terraform
 resource "aws_route53_record" "latency-use1" {
   zone_id         = "${data.aws_route53_zone.my_zone.zone_id}"
@@ -69,6 +71,12 @@ resource "aws_route53_record" "latency-euc1" {
   }
 }
 ````
+
+## Multivalue answer routing
+- Use a [multivalue answer routing policy](https://aws.amazon.com/premiumsupport/knowledge-center/multivalue-versus-simple-policies/) to help distribute DNS responses across multiple resources. 
+- For example, use multivalue answer routing when you want to associate your routing records with a Route 53 health check. 
+- For example, use multivalue answer routing when you need to return multiple values for a DNS query and route traffic to multiple IP addresses.
+- [ECS/Fargate](../4_ComputeServices/AmazonECS/Readme.md) uses multivalue answer routing in the service-discovery, for load balancing.
 
 ## Geo Based DNS routing
 - The Geo Based DNS routing takes decisions based on the geographic location of the request.

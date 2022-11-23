@@ -17,6 +17,7 @@
 
 # DNS-based service discovery using ECS
 - [Amazon ECS]() now includes [integrated service discovery](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/service-discovery.html) that makes it easy for your containerized services to discover and connect with each other.
+- Services configured to use service discovery have a limit of 1,000 tasks for each service. This is due to a [Route53](../../1_NetworkingAndContentDelivery/AmazonRoute53.md) service quota.
 
 ## Service Discovery Key Concepts
 

@@ -4,6 +4,7 @@
 - [API Gateway serves as a front door to any web application](https://aws.amazon.com/api-gateway/features/) running on [Amazon EC2](../../4_ComputeServices/AmazonEC2), [Amazon ECS](../../4_ComputeServices/AmazonECS), [AWS Lambda](../../4_ComputeServices/AWSLambda/Readme.md), or in any on-premises environment. 
 - [An API gateway](https://aws.amazon.com/premiumsupport/knowledge-center/api-gateway-cloudfront-distribution/) provides a single entry point for all API calls that come into an application, whether the app is hosted in an on-premises data center or on the cloud. 
 - It accepts requests that come in remotely and returns the requested data.
+- [API Gateway only works with HTTPS](https://docs.aws.amazon.com/apigateway/latest/developerguide/setup-http-integrations.html).
 - [API Gateway vs Elastic Load Balancer](../AmazonAPIGatewayVsELB.md)
 
 ![img.png](../../0_AWSDesigns/DesignScalableSystemWithRDMS/assets/DesignScalableSystemWithRelationalDBOnAWS.drawio.png)
@@ -46,6 +47,16 @@
 ## API Lifecycle Management
 - If you're using REST APIs, API Gateway lets you run multiple versions of the same API simultaneously so that applications can continue to call previous API versions even after the latest versions are published. 
 - API Gateway also helps you manage multiple release stages for each API version, such as alpha, beta, and production.
+
+# Custom Domain Names
+- [Custom domain names](https://docs.aws.amazon.com/apigateway/latest/developerguide/how-to-custom-domains.html) are simpler and more intuitive URLs that you can provide to your API users.
+
+## Register a domain name
+- You must have a registered internet domain name in order to set up custom domain names for your APIs. 
+- If needed, you can register an internet domain using [Amazon Route 53](../AmazonRoute53.md) or using a third-party domain registrar of your choice. 
+- An APIs custom domain name can be the name of a subdomain or the root domain (also known as "zone apex") of a registered internet domain.
+- [After a custom domain name is created in API Gateway](https://docs.aws.amazon.com/apigateway/latest/developerguide/how-to-custom-domains.html), you must create or update your DNS provider's resource record to map to your API endpoint. 
+- Without such a mapping, API requests bound for the custom domain name cannot reach API Gateway.
 
 # References
 - [AWS re:Invent - I didn’t know Amazon API Gateway did that](https://www.youtube.com/watch?v=yfJZc3sJZ8E)
