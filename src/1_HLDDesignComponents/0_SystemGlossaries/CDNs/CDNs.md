@@ -5,10 +5,13 @@
 - [Amazon Cloudfront](../../../2_AWSComponents/1_NetworkingAndContentDelivery/AmazonCloudFront.md) is used as CDN in AWS.
 
 # Key Benefits
-- `Performance across regions`: Users in multiple locations receive content at data centers close to them. 
-- `Scalability`: Reduces load on servers by serving static files, which are often a large proportion of the website's data. Helps improve performance particularly during spikes.
-- `Improved SEO rankings`: Based on faster load speeds.
-- `Added security`: Some CDNs can mitigate DDOS attacks.
+
+| Benefit                      | Description                                                                                                                                                      |
+|------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Performance across regions   | Users in multiple locations receive content at data centers close to them.                                                                                       |
+| Scalability                  | Reduces load on servers by [serving static files](StaticContentWithCDN.md), which are often a large proportion of the website's data. Helps improve performance particularly during spikes. |
+| Improved SEO rankings        | Based on faster load speeds.                                                                                                                                     |
+| Added security               | Some CDNs can mitigate DDOS attacks.                                                                                                                             |
 
 ![img.png](https://github.com/jeremyyew/tech-prep-jeremy.io/raw/master/.gitbook/assets/image%20%2814%29.png)
 
