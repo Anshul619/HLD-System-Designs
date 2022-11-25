@@ -4,6 +4,8 @@
 - If the system we are building is not large enough to have its own CDN, we can ease a future transition by serving the static media off a separate subdomain (e.g. static.yourservice.com) using a lightweight HTTP server like Nginx, and cut-over the DNS from your servers to a CDN later.
 - [Amazon Cloudfront](../../../2_AWSComponents/1_NetworkingAndContentDelivery/AmazonCloudFront.md) is used as CDN in AWS.
 
+![img.png](https://github.com/jeremyyew/tech-prep-jeremy.io/raw/master/.gitbook/assets/image%20%2814%29.png)
+
 # Key Benefits
 
 | Benefit                      | Description                                                                                                                                                      |
@@ -13,11 +15,9 @@
 | Improved SEO rankings        | Based on faster load speeds.                                                                                                                                     |
 | Added security               | Some CDNs can mitigate DDOS attacks.                                                                                                                             |
 
-![img.png](https://github.com/jeremyyew/tech-prep-jeremy.io/raw/master/.gitbook/assets/image%20%2814%29.png)
-
 # Terminologies
 
-| Name                                                                                                             | Description                                                                                                                                                                            |
+| Terminology                                                                                                      | Description                                                                                                                                                                            |
 |------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | :star: [A POP (point of presence)](https://www.techtarget.com/searchnetworking/definition/point-of-presence-POP) | [A POP (point of presence)](https://www.techtarget.com/searchnetworking/definition/point-of-presence-POP) is a single physical location that consists of [one or multiple edge servers](https://www.cloudflare.com/learning/cdn/glossary/edge-server/). |
 | [Origin servers](https://www.cdnetworks.com/knowledge-center/what-is-origin-server/)                             | [Origin servers](https://www.cdnetworks.com/knowledge-center/what-is-origin-server/) are the origin of data.                                                                           |
