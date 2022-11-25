@@ -69,7 +69,7 @@ Large amount of data like,
 
 ## Low-Latency, Faster Writes
 - Since writes in Casandra result in storage in an [append-only structure](../../0_SystemGlossaries/AppendOnlyDataStructure.md), writes are generally very fast.
-- Casandra provides [low latency](../../0_SystemGlossaries/LatencyThroughput.md), at the cost of [consistency](../../0_SystemGlossaries/ReplicationAndDataConsistency.md). 
+- Casandra provides [low latency](../../0_SystemGlossaries/LatencyThroughput.md), at the cost of [consistency](../../0_SystemGlossaries/ReplicationLagAndDataConsistency.md). 
   - Refer [PACELC theorem](../../0_SystemGlossaries/CAPTheorem.md#pael-systems---dynamodb--cassandra) for more info.
 - Hence Casandra should be used when transactions aren't performing (i.e. consistency can be compromised).
 
@@ -85,7 +85,7 @@ Large amount of data like,
 - Generally doubling the size of the cluster, would result in the half [latency](../../0_SystemGlossaries/LatencyThroughput.md) (both at the median and 99th percentile).
 
 ## Support replication - Cross-site, Data-Centers
-- `NetworkReplicationStrategy` can be used to [replicate](../../0_SystemGlossaries/ReplicationAndDataConsistency.md) the data between data centers.
+- `NetworkReplicationStrategy` can be used to [replicate](../../0_SystemGlossaries/ReplicationLagAndDataConsistency.md) the data between data centers.
 - This allows users to access data in the data center nearest to them, and provides the redundancy capability.
 
 ## Good Integration with open source softwares (like Hadoop, Spark, Hive, HDFS etc.)
@@ -93,8 +93,8 @@ Large amount of data like,
 - Streaming the tables into the cluster is much simpler, faster and more efficient than sending millions or more of individual INSERT statements for all the data you want to load into Cassandra.
 
 ## Supported Consistency Patterns
-- [Eventual Consistency Model](../../0_SystemGlossaries/ReplicationAndDataConsistency.md#consistency-patterns)
-- [Strong Consistency Model](../../0_SystemGlossaries/ReplicationAndDataConsistency.md#consistency-patterns)
+- [Eventual Consistency Model](../../0_SystemGlossaries/ReplicationLagAndDataConsistency.md#consistency-patterns)
+- [Strong Consistency Model](../../0_SystemGlossaries/ReplicationLagAndDataConsistency.md#consistency-patterns)
 
 ## Casandra Query Language (CGL)
 - By default, Cassandra provides a prompt [Cassandra query language shell (cqlsh)](https://cassandra.apache.org/doc/latest/cassandra/tools/cqlsh.html) that allows users to communicate with it. 

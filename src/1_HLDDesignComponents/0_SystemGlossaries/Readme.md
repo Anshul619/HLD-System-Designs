@@ -14,7 +14,7 @@
 | :star: [DB Scalability](Scalability/DBScalability.md)                                    | Data Stores           |
 | :star: [ACID Properties of the Transaction](ACIDPropertyTransaction.md)                  | Data Stores           |
 | :star: [CAP Theorem of the Distributed Systems](CAPTheorem.md)                           | Data Stores           |
-| :star: [Replication & Data Consistency](ReplicationAndDataConsistency.md)                | Data Stores           |
+| :star: [Replication & Data Consistency](ReplicationLagAndDataConsistency.md)                | Data Stores           |
 | [Atomicity](Atomicity.md)                                                                | Data Stores           |
 | [Durability](Durability.md)                                                              | Data Stores           |
 | [Static Content](CDNs/StaticContentWithCDN.md)                                           | Data Stores           |

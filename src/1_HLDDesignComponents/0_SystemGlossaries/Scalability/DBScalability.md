@@ -1,4 +1,3 @@
-
 # DB Scalability
 - Generally, the app servers can be scaled out by adding another app server.
 - But in case of DB, the horizontal scaling is a bit different, as explained below.
