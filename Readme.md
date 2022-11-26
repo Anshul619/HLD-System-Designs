@@ -121,7 +121,7 @@ This repo contains the various system design components info, questions and solu
                   <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Apache_Storm_logo.svg/1200px-Apache_Storm_logo.svg.png" width="150">
                 </a>
                 <a href="/src/1_HLDDesignComponents/5_BigDataComponents/ApacheHadoop" target="_blank">
-                  <img src="http://viloratech.com/images/course_images_banner/20908.jpg" width="150">
+                  <img src="https://www.clipartmax.com/png/middle/180-1806192_hadoop-apache-hadoop-logo.png" width="150">
                 </a>
             </div>
         </div>
