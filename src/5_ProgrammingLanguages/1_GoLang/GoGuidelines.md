@@ -48,7 +48,7 @@ theme := new(Theme) // Pointer to new Theme object
 Note:
 - [A slice is already a reference value](https://stackoverflow.com/questions/52565597/cannot-append-to-slice-inside-a-function). If you pass a slice into a function, the function can modify its contents (*) and the modifications will be visible to the caller once it returns.
 - Alternatively, returning a new slice is also efficient - because again, slices are just references and don't take up much memory.
-- But appending an element to the slice, will not reflect in the caller function. Hence, either pointer needs to be used or new slice would have to be returned.
+- But [appending an element to the slice, will not reflect in the caller function](https://stackoverflow.com/questions/21035279/why-does-go-slice-append-not-take-a-reference). Hence, either pointer needs to be used or new slice would have to be returned.
 
 # Various Go Constructs
 
