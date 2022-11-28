@@ -3,7 +3,10 @@ package oop
 /**
 A variable of type interface can hold any value which implements the interface.
 - This property of interfaces is used to achieve polymorphism in Go.
-- Reference - https://golangbot.com/polymorphism/
+
+References
+- https://golangbot.com/polymorphism/
+- https://www.geeksforgeeks.org/golang-polymorphism-using-interfaces/?ref=lbp
 */
 import (
 	"fmt"

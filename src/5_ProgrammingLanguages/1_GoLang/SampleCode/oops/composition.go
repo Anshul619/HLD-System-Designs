@@ -1,7 +1,9 @@
 package oop
 
 /**
-Reference - https://golangbot.com/inheritance/
+References
+- https://golangbot.com/inheritance/
+- https://www.geeksforgeeks.org/composition-in-golang/?ref=lbp
 */
 import (
 	"fmt"
