@@ -1,6 +1,6 @@
 # What is Golang?
 - Go is a high level, general-purpose programming language that is [very strongly and statically typed](StaticTypedGo.md) by providing support for garbage collection and [concurrent programming](ConcurrencyGo.md).
-- Go technically is [pass by value](https://stackoverflow.com/questions/47296325/passing-by-reference-and-value-in-go-to-functions)
+- Go technically is [pass by value](https://stackoverflow.com/questions/47296325/passing-by-reference-and-value-in-go-to-functions).
 - Go is a [case-sensitive language](https://en.wikipedia.org/wiki/Case_sensitivity).
 
 # :star: Why is Golang fast compared to other languages?
@@ -14,7 +14,7 @@
 | Title                                                                                                | Remarks                         |
 |------------------------------------------------------------------------------------------------------|---------------------------------|
 | :star: [Go Coding Helpers & Guidelines](CodingHelpers&GuidelinesGo.md)                               | -                               |
-| [Static Typing in Go](StaticTypedGo.md)                                                              | -                               |
+| [Go - Statically Typed](StaticTypedGo.md)                                                            | -                               |
 | [Slices in GoLang](SlicesGo.md)                                                                      | -                               |
 | [Pointers in GoLang](PointersGo.md)                                                                  | -                               |
 | [OOPs in GoLang](OOPsGo.md)                                                                          | -                               |
