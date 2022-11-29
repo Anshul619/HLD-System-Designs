@@ -1,6 +1,5 @@
 # What is Golang?
 - Go is a high level, general-purpose programming language that is [very strongly and statically typed](StaticTypedGo.md) by providing support for garbage collection and [concurrent programming](ConcurrencyGo.md).
-- In Go, the programs are built by using `packages that help in managing the dependencies efficiently`.
 - Go technically is [pass by value](https://stackoverflow.com/questions/47296325/passing-by-reference-and-value-in-go-to-functions)
 - Go is a [case-sensitive language](https://en.wikipedia.org/wiki/Case_sensitivity).
 
@@ -12,19 +11,20 @@
 
 # Key Features
 
-| Title                                                                                        | Remarks                         |
-|----------------------------------------------------------------------------------------------|---------------------------------|
-| :star: [Go Coding Helpers & Guidelines](CodingHelpers&GuidelinesGo.md)                       | -                               |
-| [Static Typing in Go](StaticTypedGo.md)                                                     | -                               |
-| [Slices in GoLang](SlicesGo.md)                                                              | -                               |
-| [Pointers in GoLang](PointersGo.md)                                                          | -                               |
-| [OOPs in GoLang](OOPsGo.md)                                                                  | -                               |
-| [Concurrency in GoLang](ConcurrencyGo.md)                                                    | -                               |
-| [DB Transaction in GoLang](DBTransactionGo.md)                                               | -                               |
-| [Panic](https://golangbot.com/panic-and-recover/)                                            | It is like exception in GoLang. |
-| [How to write unit tests in GoLang?](https://blog.alexellis.io/golang-writing-unit-tests/)   | -                               |
-| [Labels in Go](https://medium.com/golangspec/labels-in-go-4ffd81932339)                      | -                               |
-| [Custom Errors](https://golangbot.com/custom-errors/)                                        | -                               |
+| Title                                                                                                | Remarks                         |
+|------------------------------------------------------------------------------------------------------|---------------------------------|
+| :star: [Go Coding Helpers & Guidelines](CodingHelpers&GuidelinesGo.md)                               | -                               |
+| [Static Typing in Go](StaticTypedGo.md)                                                              | -                               |
+| [Slices in GoLang](SlicesGo.md)                                                                      | -                               |
+| [Pointers in GoLang](PointersGo.md)                                                                  | -                               |
+| [OOPs in GoLang](OOPsGo.md)                                                                          | -                               |
+| [Concurrency in GoLang](ConcurrencyGo.md)                                                            | -                               |
+| [DB Transaction in GoLang](DBTransactionGo.md)                                                       | -                               |
+| [Panic](https://golangbot.com/panic-and-recover/)                                                    | It is like exception in GoLang. |
+| [How to write unit tests in GoLang?](https://blog.alexellis.io/golang-writing-unit-tests/)           | -                               |
+| [Labels in Go](https://medium.com/golangspec/labels-in-go-4ffd81932339)                              | -                               |
+| [Custom Errors](https://golangbot.com/custom-errors/)                                                | -                               |
+| [How to Work With SQL in Go?](https://betterprogramming.pub/how-to-work-with-sql-in-go-ca8bc0b30722) | -                               |
 
 # :+1: What are the advantages of Golang over other languages?
 
@@ -51,6 +51,7 @@
 [Read more](https://www.digitalocean.com/community/tutorials/how-to-build-and-install-go-programs)
 
 # What are Golang packages?
+- In Go, the programs are built by using packages that help in managing the dependencies efficiently.
 - The package is declared at the top of the Go source file as `package <package_name>`.
 - The packages can be imported to our source file by writing: `import <package_name>`.
 
