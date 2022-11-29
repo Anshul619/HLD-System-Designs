@@ -216,4 +216,5 @@ Outputs:
 - [Read more](https://www.missioncloud.com/blog/aws-cloudformation-vs-terraform-which-one-should-you-choose)
 
 # References
+- [AWS CloudFormation Sample Templates](https://github.com/awslabs/aws-cloudformation-templates)
 - [What is AWS Cloudformation? Pros and Cons?](https://www.youtube.com/watch?v=0Sh9OySCyb4)

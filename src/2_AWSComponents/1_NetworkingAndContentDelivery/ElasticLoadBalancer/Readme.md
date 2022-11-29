@@ -101,9 +101,6 @@ You can select the type of [load balancer](../../../1_HLDDesignComponents/0_Syst
 
 - [Read here](../../4_ComputeServices/AmazonEC2/AutoScalingGroup/README.md)
 
-# Other Links
-- [How can I associate an ACM SSL/TLS certificate with a Classic, Application, or Network Load Balancer?](https://aws.amazon.com/premiumsupport/knowledge-center/associate-acm-certificate-alb-nlb/)
-
 # References
 - [Application Load Balancer vs Network Load Balancer vs Classic Load Balancer | AWS CSAA | Whizlabs](https://www.youtube.com/watch?v=WqJDac1H81I)
 - [AWS ELB - Elastic Load Balancer | Why and What is ELB? | What are listeners and target groups?](https://www.youtube.com/watch?v=fMgA3rE0aPY)
