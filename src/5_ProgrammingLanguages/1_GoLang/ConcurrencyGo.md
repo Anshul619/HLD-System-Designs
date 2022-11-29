@@ -1,6 +1,7 @@
 # Concurrency
 - Go provides very good support for concurrency using `Go Routines or channels`.
 - They take advantage of efficient memory management strategies and multicore processor architecture for implementing concurrency.
+- Go has first-class supports for Concurrency having the ability to use [multi-core processor architectures](ConcurrencyGo.md) to the advantage of the developer and utilize memory efficiently.
 
 # Go Routine
 - A Goroutine is a function or method which executes independently and simultaneously in connection with any other Goroutines present in your program.
