@@ -1,7 +1,19 @@
-# OOPs in GoLang
-- There is no [inheritance](https://www.educative.io/blog/java-inheritance-tutorial) in GoLang.
-- However, you can mimic inheritance behavior using composition to use an existing struct object to define a starting behavior of a new object. 
-- Once the new object is created, functionality can be extended beyond the original struct.
+# Is Go an object-oriented language?
+- Yes and no. 
+- Although Go has types and methods and allows an object-oriented style of programming, there is no type hierarchy. 
+- The concept of “interface” in Go provides a different approach that we believe is easy to use and in some ways more general. 
+- There are also ways to embed types in other types to provide something analogous—but not identical—to subclassing
+
+# Why is there no type inheritance in Go?
+- Object-oriented programming, at least in the best-known languages, involves too much discussion of the relationships between types, relationships that often could be derived automatically. Go takes a different approach.
+- Rather than requiring the programmer to declare ahead of time that two types are related, in Go a type automatically satisfies any interface that specifies a subset of its methods. 
+- Besides reducing the bookkeeping, this approach has real advantages. 
+- Types can satisfy many interfaces at once, without the complexities of traditional multiple inheritance. 
+- Interfaces can be very lightweight—an interface with one or even zero methods can express a useful concept. 
+- Interfaces can be added after the fact if a new idea comes along or for testing—without annotating the original types. 
+- Because there are no explicit relationships between types and interfaces, there is no type hierarchy to manage or discuss.
+
+## Example
 
 ````go
 type Animal struct {
@@ -19,7 +31,7 @@ type Dog struct {
 ````
 
 # What are interfaces?
-- Interfaces are a special type in Go that define a set of method signatures but do not provide implementations. 
+- Interfaces are a special type in Go that define a set of method signatures but do not provide implementations.
 - Values of interface type can hold any value that implements those methods.
 - Interfaces essentially act as placeholders for methods that will have multiple implementations based on what object is using it.
 - In Go language, the interface is a collection of method signatures and it is also a type means you can create a variable of an interface type.
@@ -63,7 +75,7 @@ type FinalDetails interface {
 | Interface Segregation                                           | [Interfaces](https://gobyexample.com/interfaces) can be defined in GoLang.                                                                                                                                                                 |
 | Dependency inversion principle                                  | Yes, through interfaces in GoLang.                                                                                                                                                                                                         |
 
-# GoLang - Single Responsibility
+## Single Responsibility
 - CommandFactory and CommandExecutor are loosely coupled via Command module.
 
 ````go
@@ -110,7 +122,7 @@ func (ce CommandExecutor) Execute(command *Command) ([]byte, error) {
 }
 ````
 
-# GoLang - Open/Closed Principle
+## Open/Closed Principle
 - In Golang there is no concept of generalization. 
 - Reusability is available as a form of embedding. 
 - Although a similar pattern could be seen in practice. 
@@ -161,7 +173,7 @@ func (c BarCommand) Execute() ([]byte, error) {
 }
 ````
 
-# GoLang - Liskov substitution principle
+## Liskov substitution principle
 
 ````go
 type Command interface {
@@ -174,7 +186,7 @@ type CommandWithInput interface {
 }
 ````
 
-# GoLang - Interface segregation principle
+## GoLang - Interface segregation principle
 - In Golang interfaces are satisfied implicitly, rather than explicitly, which makes it easier to extend a class behaviour by implementing multiple interface based on needs. 
 - It also encourages to the design of small and reusable interfaces.
 
@@ -198,5 +210,6 @@ type I3 interface { // consumed by C4
 ````
 
 # References
+- [Frequently Asked Questions (FAQ)](https://go.dev/doc/faq)
 - [SOLID principle in GO](https://s8sg.medium.com/solid-principle-in-go-e1a624290346)
 - [SOLID Go Design](https://dave.cheney.net/2016/08/20/solid-go-design)

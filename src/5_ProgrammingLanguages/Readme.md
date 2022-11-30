@@ -1,11 +1,11 @@
 
 # Various Languages
 
-| Language                  | Threading?                        |
-|---------------------------|-----------------------------------|
-| :star: [GoLang](1_GoLang) | Multi-Threaded, through GoRoutine |
-| [Java](2_Java)            | Multi-Threaded                    |
-| Node, Python, PHP         | Single-Threaded                   |
+| Language                  | Threading?                                           | Statically Typed?      |
+|---------------------------|------------------------------------------------------|------------------------|
+| :star: [GoLang](1_GoLang) | :white_check_mark: Multi-Threaded, through GoRoutine | :white_check_mark: Yes |
+| [Java](2_Java)            | :white_check_mark: Multi-Threaded                    | :white_check_mark: Yes |
+| Node, Python, PHP         | Single-Threaded                                      | No                     |
 
 # Node vs Java
 
