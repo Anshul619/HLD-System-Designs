@@ -63,5 +63,18 @@ channel_name <- element // Send data
 element := <-Mychannel // Receive data
 ```
 
+# Why doesn't my program run faster with more CPUs?
+- Whether a program runs faster with more CPUs depends on the problem it is solving. 
+- The Go language provides concurrency primitives, such as goroutines and channels, but concurrency only enables parallelism when the underlying problem is intrinsically parallel. 
+- Problems that are intrinsically sequential cannot be sped up by adding more CPUs, while those that can be broken into pieces that can execute in parallel can be sped up, sometimes dramatically.
+
+Sometimes adding more CPUs can slow a program down. 
+- In practical terms, programs that spend more time synchronizing or communicating than doing useful computation may experience performance degradation when using multiple OS threads. 
+- This is because passing data between threads involves switching contexts, which has significant cost, and that cost can increase with more CPUs.
+
+# How can I control the number of CPUs?
+- The number of CPUs available simultaneously to executing goroutines is controlled by the GOMAXPROCS shell environment variable, whose default value is the number of CPU cores available.
+- Programs with the potential for parallel execution should therefore achieve it by default on a multiple-CPU machine.
+
 # References
 - [Crack the top 50 Golang interview questions](https://www.educative.io/blog/50-golang-interview-questions)

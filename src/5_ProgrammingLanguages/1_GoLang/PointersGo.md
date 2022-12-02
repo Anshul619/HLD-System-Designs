@@ -1,4 +1,9 @@
-# What is Golang pointers?
+# Go - Pass by Value
+- As in all languages in the C family, everything in Go is passed by value.
+- That is, a function always gets a copy of the thing being passed, as if there were an assignment statement assigning the value to the parameter.
+- For instance, passing an int value to a function makes a copy of the int, and passing a pointer value makes a copy of the pointer, but not the data it points to.
+
+# Golang pointers
 
 | Operator     | Remarks                                                                                                                                                                                         |
 |--------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -14,36 +19,42 @@ fmt.Println(*y) // prints x variable
 
 [Read more](https://www.geeksforgeeks.org/pointers-in-golang/)
 
-# What are uses of Pointers?
-- Allowing `function to directly mutate value` passed to it.
-    - That is achieving `pass by reference` functionality.
-- For increasing the performance in the `edge cases in the presence of a large data structure`.
-    - Using pointers help to copy large data efficiently.
-- Helps in signifying the lack of values.
-    - For instance, `while unmarshalling JSON data into a struct`, it is useful to know if the key is present or absent then the key is present with 0 value.
-
-# How to use Pointers?
-- [Pointer](https://www.geeksforgeeks.org/pointers-in-golang/) can be created using `new(int)`.
-- [Pointer](https://www.geeksforgeeks.org/pointers-in-golang/) can be passed using `func x(output [][]*int)`.
-- To access elements of a pointer array, use `(*h)[10]` instead of `*h[10]`.
-- If method needs to modify the receiver, receiver must be pointer.
+# Should I define methods on values or pointers?
+- :star: If method needs to modify the receiver, receiver must be [pointer](https://go.dev/tour/moretypes/1). (as if its pass by reference)
 
 ```
 func (s *MyStruct) pointerMethod() { } // method on pointer. 
 func (s MyStruct)  valueMethod()   { } // method on value
+
+pointer := new(int) // new pointer
+
+func x(output [][]*int){} //pointer passed to the method
+
+(*h)[10] // access elements of a pointer array
 ```
 
-- Unlike new, [make's return type](https://stackoverflow.com/questions/9320862/why-would-i-make-or-new) is the same as the type of its argument, not a pointer to it.
-- The make built-in function allocates and initializes an object of type slice, map, or chan (only).
+# What's the difference between new and make?
+- [Unlike new, make's return type is the same as the type of its argument](https://stackoverflow.com/questions/9320862/why-would-i-make-or-new), not a pointer to it.
+- new allocates memory, while make initializes the slice, map, and channel types.
 
 ```
 themes := make([]*Template, 0)
 theme := new(Theme) // Pointer to new Theme object
 ```
 
-# :star: Slices & Pointers
-- [Slices are passed by reference in the function call](https://stackoverflow.com/questions/38731467/pass-array-by-reference-in-golang), so no need to specify [pointers](https://www.geeksforgeeks.org/pointers-in-golang/).
-- If you pass a slice into a function, the function can modify its contents (*) and the modifications will be visible to the caller once it returns.
-- Alternatively, returning a new slice is also efficient - because again, slices are just references and don't take up much memory.
-- But [appending an element to the slice, will not reflect in the caller function](https://stackoverflow.com/questions/21035279/why-does-go-slice-append-not-take-a-reference). 
+# Map & Slices are like pointers
+ 
+Map and [slice values](SlicesGo.md) behave like pointers: 
+- They are descriptors that contain pointers to the underlying map or slice data.
+- i.e. If you pass a slice into a function, the function can modify its contents (*) and the modifications will be visible to the caller once it returns.
+- i.e. Copying a map or slice value doesn't copy the data it points to. Copying an interface value makes a copy of the thing stored in the interface value.
+
+Note:
+- [Appending an element to the slice, will not reflect in the caller function](https://stackoverflow.com/questions/21035279/why-does-go-slice-append-not-take-a-reference). 
 - Hence, [either pointer needs to be used or new slice would have to be returned](https://stackoverflow.com/questions/52565597/cannot-append-to-slice-inside-a-function).
+
+# When should I use a pointer to an interface?
+- Almost never. 
+- Pointers to interface values arise only in rare, tricky situations involving disguising an interface value's type for delayed evaluation.
+
+

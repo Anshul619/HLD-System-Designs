@@ -1,17 +1,23 @@
 # Is Go an object-oriented language?
 - Yes and no. 
-- Although Go has types and methods and allows an object-oriented style of programming, there is no type hierarchy. 
-- The concept of “interface” in Go provides a different approach that we believe is easy to use and in some ways more general. 
-- There are also ways to embed types in other types to provide something analogous—but not identical—to subclassing
+- Although Go has types and methods and allows an object-oriented style of programming, [there is no type hierarchy](https://staff.fnwi.uva.nl/a.j.p.heck/Courses/JAVAcourse/ch3/s1.html). 
+- The concept of [interface](https://medium.com/@ubale.vikas9/interface-in-oops-6eae3731c242) in Go provides a different approach that we believe is easy to use and in some ways more general. 
+- There are also ways to embed types in other types to provide something analogous—but not identical—to subclassing.
+- Also, the lack of a type hierarchy makes [objects](https://www.techtarget.com/searchapparchitecture/definition/object-oriented-programming-OOP) in Go feel much more lightweight than in languages such as C++ or Java.
+
+# How do I get dynamic dispatch of methods?
+- The only way to have dynamically dispatched methods is through an interface. 
+- Methods on a struct or any other concrete type are always resolved statically.
 
 # Why is there no type inheritance in Go?
 - Object-oriented programming, at least in the best-known languages, involves too much discussion of the relationships between types, relationships that often could be derived automatically. Go takes a different approach.
 - Rather than requiring the programmer to declare ahead of time that two types are related, in Go a type automatically satisfies any interface that specifies a subset of its methods. 
 - Besides reducing the bookkeeping, this approach has real advantages. 
-- Types can satisfy many interfaces at once, without the complexities of traditional multiple inheritance. 
+- [Go types](TypesGo.md) can satisfy many interfaces at once, without the complexities of traditional multiple inheritance. 
 - Interfaces can be very lightweight—an interface with one or even zero methods can express a useful concept. 
 - Interfaces can be added after the fact if a new idea comes along or for testing—without annotating the original types. 
 - Because there are no explicit relationships between types and interfaces, there is no type hierarchy to manage or discuss.
+- It takes some getting used to but this implicit style of type dependency is one of the most productive things about Go.
 
 ## Example
 
@@ -32,7 +38,7 @@ type Dog struct {
 
 # What are interfaces?
 - Interfaces are a special type in Go that define a set of method signatures but do not provide implementations.
-- Values of interface type can hold any value that implements those methods.
+- A [Go type](TypesGo.md) satisfies an interface by implementing the methods of that interface, nothing more.
 - Interfaces essentially act as placeholders for methods that will have multiple implementations based on what object is using it.
 - In Go language, the interface is a collection of method signatures and it is also a type means you can create a variable of an interface type.
 

@@ -63,11 +63,13 @@
 
 [Read more](https://medium.com/learning-the-go-programming-language/bit-hacking-with-go-e0acee258827)
 
-# Go Tutorials
+# References
 - [Frequently Asked Questions (FAQ) - Go](https://go.dev/doc/faq#overloading)
+- [Effective Go](https://go.dev/doc/effective_go)
 - [How To Use Variables and Constants in Go](https://www.digitalocean.com/community/tutorials/how-to-use-variables-and-constants-in-go)
 - [Practical Go: Real world advice for writing maintainable Go programs](https://dave.cheney.net/practical-go/presentations/qcon-china.html)
 - [Is Go faster than Java in some use cases?](https://www.quora.com/Is-Go-faster-than-Java-in-some-use-cases)
 - [Golang tutorial series](https://golangbot.com/learn-golang-series/)
+- [Go Code Review Comments](https://github.com/golang/go/wiki/CodeReviewComments)
 
 

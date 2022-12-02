@@ -1,3 +1,6 @@
+# Why does Go have type parameters?
+- Type parameters permit what is known as [generic programming](https://go.dev/blog/why-generics), in which functions and data structures are defined in terms of types that are specified later, when those functions and data structures are used.
+
 # Static Typing in Go
 - Go is a very strong and statically typed programming language.
 - This ensures that the code is type-safe and all type conversions are handled efficiently.

@@ -1,5 +1,5 @@
 # What is Golang?
-- Go is a high level, general-purpose programming language that is [very strongly and statically typed](StaticTypedGo.md) by providing support for garbage collection and [concurrent programming](GoRoutines.md).
+- [Go](https://go.dev/) is a high level, general-purpose programming language that is [very strongly and statically typed](TypesGo.md) by providing support for garbage collection and [concurrent programming](GoRoutines.md).
 - Go technically is [pass by value](https://stackoverflow.com/questions/47296325/passing-by-reference-and-value-in-go-to-functions).
 - Go is a [case-sensitive language](https://en.wikipedia.org/wiki/Case_sensitivity).
 
@@ -11,19 +11,19 @@
 
 # Key Features
 
-| Title                                                                                                | Remarks |
-|------------------------------------------------------------------------------------------------------|---------|
-| :star: [Go Coding Helpers & Guidelines](CodingHelpers&GuidelinesGo.md)                               | -       |
-| [Go - Statically Typed](StaticTypedGo.md)                                                            | -       |
-| [Slices in GoLang](SlicesGo.md)                                                                      | -       |
-| [Pointers in GoLang](PointersGo.md)                                                                  | -       |
-| [OOPs in GoLang](OOPsGo.md)                                                                          | -       |
-| [Concurrency in GoLang](GoRoutines.md)                                                            | -       |
-| [DB Transaction in GoLang](DBTransactionGo.md)                                                       | -       |
-| [Panic & Recover](Panics&Recover.md)                                                                 | -       |
-| [How to write unit tests in GoLang?](https://blog.alexellis.io/golang-writing-unit-tests/)           | -       |
-| [Labels in Go](https://medium.com/golangspec/labels-in-go-4ffd81932339)                              | -       |
+| Title                                                                                              | Remarks |
+|----------------------------------------------------------------------------------------------------|---------|
+| :star: [Go Coding Helpers & Guidelines](CodingHelpers&GuidelinesGo.md)                             | -       |
+| [Go - Statically Typed](TypesGo.md)                                                                | -       |
+| [Slices in GoLang](SlicesGo.md)                                                                    | -       |
+| [Pointers in GoLang](PointersGo.md)                                                                | -       |
+| [OOPs in GoLang](OOPsGo.md)                                                                        | -       |
+| [Concurrency in GoLang](GoRoutines.md)                                                             | -       |
+| [Panic & Recover](Panics&Recover.md)                                                               | -       |
+| [Unit Testing](UnitTestingGo.md)                                                                                   | -       |
+| [Labels in Go](https://medium.com/golangspec/labels-in-go-4ffd81932339)                            | -       |
 | [How to Work With SQL in Go?](https://betterprogramming.pub/how-to-work-with-sql-in-go-ca8bc0b30722) | -       |
+| [DB Transaction in GoLang](DBTransactionGo.md)                                                     | -       |
 
 # :+1: What are the advantages of Golang over other languages?
 
@@ -32,7 +32,7 @@
 | Simple and Understandable   | Go was developed by keeping simplicity, maintainability and readability in mind.                                                                               |
 | Standard Powerful Library   | Go supports all standard libraries and packages that help in writing code easily and efficiently.                                                              |
 | Support for concurrency     | Go provides very good support for [concurrency using  Go Routines or channels](GoRoutines.md).                                                              |
-| Static Type Checking        | Go is a very strong and [statically typed programming language.](StaticTypedGo.md)<br/>- This ensures that the code is type-safe and all type conversions are handled efficiently. |
+| Static Type Checking        | Go is a very strong and [statically typed programming language.](TypesGo.md)<br/>- This ensures that the code is type-safe and all type conversions are handled efficiently. |
 | Easy to install binaries    | Go provides support for generating binaries for the applications with all required dependencies.                                                                                                                                                             |
 | Good Testing Support        | Go has good support for writing unit test cases along with our code.                                                                                                                                                               |
 
@@ -42,23 +42,23 @@
 - It is important to understand, however, that Go's runtime does not include a virtual machine, such as is provided by the Java runtime. 
 - Go programs are compiled ahead of time to native machine code.
 
-| Title                                | Command                                                                                                                                         | Remarks |
-|--------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------|---------|
-| Run Go Program                       | go run <goFileName.go>                                                                                                                          | -       |
-| Run a folder with go programs        | go run .                                                                                                                                        |
+| Title                                   | Command                                                                                                                                         | Remarks |
+|-----------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------|---------|
+| Run Go Program                          | go run <goFileName.go>                                                                                                                          | -       |
+| Run a folder with go programs           | go run .                                                                                                                                        |
 | Create a Go Module to build a Go Binary | go mod init <moduleName>                                                                                                                        | -       |
-| Creating Go Binaries                 | go build // Build with the same name as moduleName in pwd directory<br/><br/>go build -o bin/hello // Build with "hello" name in bin/ directory | -       |
-| Run Go Binaries                      | ./moduleName                                                                                                                                    | -       |
-| Install Go Programs                  | go install // This will build the binary and place it in $GOPATH/bin.                                                                           | -       |
+| Creating Go Binaries                    | go build // Build with the same name as moduleName in pwd directory<br/><br/>go build -o bin/hello // Build with "hello" name in bin/ directory | -       |
+| Run Go Binaries                         | ./moduleName                                                                                                                                    | -       |
+| Install Go Programs                     | go install // This will build the binary and place it in $GOPATH/bin.                                                                           | -       |
 
 [Read more](https://www.digitalocean.com/community/tutorials/how-to-build-and-install-go-programs)
 
 # Who uses GoLang?
 
-| Title                                                | Remarks |
-|------------------------------------------------------|---------|
-| Docker and Kubernates are developed in GoLang        | -       |
-| Google's download server (dl.google.com), golang.org | -       |
+| Title                                                                                                                                                                           | Remarks |
+|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------|
+| [Docker](../../1_HLDDesignComponents/6_DevOps/Docker/Readme.md) and [Kubernates](../../1_HLDDesignComponents/6_DevOps/Kubernates.md) are developed in [GoLang](https://go.dev/) | -       |
+| Google's download server (dl.google.com), golang.org                                                                                                                            | -       |
 
 # What are Golang packages?
 - In Go, the programs are built by using packages that help in managing the dependencies efficiently.
@@ -66,6 +66,15 @@
 - The packages can be imported to our source file by writing: `import <package_name>`.
 
 ![img.png](assests/gopackages_img.png)
+
+# What are go modules?
+- The Go toolchain has a built-in system for managing versioned sets of related packages, known as [modules](https://go.dev/doc/tutorial/create-module).
+- Similar to a standard Go package, a [module may contain any number of packages and sub-packages](https://www.digitalocean.com/community/tutorials/how-to-use-go-modules), or it may contain none at all.
+
+````go
+go mod init example/project //Create module
+go get golang.org/x/text@v0.3.5 //To add, upgrade, or downgrade a dependency
+````
 
 # What do you understand by Golang string literals?
 - String literals are those variables storing string constants that can be a single character or that can be obtained as a result of the concatenation of a sequence of characters. 
@@ -118,6 +127,33 @@ if val, isExists := map_obj["foo"]; isExists {
 return fmt.Sprintf ("Size: %d MB.", 50)
 ```
 
+# Closures in Golang
+- Go language provides a special feature known as an anonymous function. [An anonymous function can form a closure](https://www.geeksforgeeks.org/closures-in-golang/).
+
+````go
+// Golang program to illustrate how
+// to create a Closure
+package main
+
+import "fmt"
+
+func main() {
+	
+	// Declaring the variable
+	GFG := 0
+
+	// Assigning an anonymous
+	// function to a variable
+	counter := func() int {
+	GFG += 1
+	return GFG
+	}
+
+	fmt.Println(counter())
+	fmt.Println(counter())	
+}
+````
 # References
 - [Frequently Asked Questions (FAQ)](https://go.dev/doc/faq)
 - [Golang Interview Questions](https://www.interviewbit.com/golang-interview-questions/)
+- [Using Modules and Packages in Go](https://levelup.gitconnected.com/using-modules-and-packages-in-go-36a418960556)
