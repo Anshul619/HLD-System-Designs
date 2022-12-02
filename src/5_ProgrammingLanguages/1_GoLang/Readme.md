@@ -11,19 +11,19 @@
 
 # Key Features
 
-| Title                                                                                              | Remarks |
-|----------------------------------------------------------------------------------------------------|---------|
-| :star: [Go Coding Helpers & Guidelines](CodingHelpers&GuidelinesGo.md)                             | -       |
-| [Go - Statically Typed](TypesGo.md)                                                                | -       |
-| [Slices in GoLang](SlicesGo.md)                                                                    | -       |
-| [Pointers in GoLang](PointersGo.md)                                                                | -       |
-| [OOPs in GoLang](OOPsGo.md)                                                                        | -       |
-| [Concurrency in GoLang](GoRoutines.md)                                                             | -       |
-| [Panic & Recover](Panics&Recover.md)                                                               | -       |
-| [Unit Testing](UnitTestingGo.md)                                                                                   | -       |
-| [Labels in Go](https://medium.com/golangspec/labels-in-go-4ffd81932339)                            | -       |
-| [How to Work With SQL in Go?](https://betterprogramming.pub/how-to-work-with-sql-in-go-ca8bc0b30722) | -       |
-| [DB Transaction in GoLang](DBTransactionGo.md)                                                     | -       |
+| Title                                                                                                    | Remarks |
+|----------------------------------------------------------------------------------------------------------|---------|
+| :star: [Coding Helpers & Guidelines in GoLang](CodingHelpers&GuidelinesGo.md)                            | -       |
+| [Types in GoLang](TypesGo.md)                                                                            | -       |
+| [Slices in GoLang](SlicesGo.md)                                                                          | -       |
+| [Pointers in GoLang](PointersGo.md)                                                                      | -       |
+| [OOPs in GoLang](OOPsGo.md)                                                                              | -       |
+| [Concurrency in GoLang](GoRoutines.md)                                                                   | -       |
+| [Panic & Recover in GoLang](Panics&Recover.md)                                                           | -       |
+| [Unit Testing in GoLang](UnitTestingGo.md)                                                               | -       |
+| [Labels in GoLang](https://medium.com/golangspec/labels-in-go-4ffd81932339)                              | -       |
+| [How to Work With SQL in GoLang?](https://betterprogramming.pub/how-to-work-with-sql-in-go-ca8bc0b30722) | -       |
+| [DB Transaction in GoLang](DBTransactionGo.md)                                                           | -       |
 
 # :+1: What are the advantages of Golang over other languages?
 
