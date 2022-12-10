@@ -1,7 +1,12 @@
 # Amazon Simple Notification Service (Amazon SNS)
 - [Amazon SNS (Simple Notification Service)](https://aws.amazon.com/sns) is a fully managed messaging service for both [application-to-application (A2A)](https://docs.aws.amazon.com/sns/latest/dg/sns-system-to-system-messaging.html) and [application-to-person (A2P)](https://docs.aws.amazon.com/sns/latest/dg/sns-user-notifications.html) communication.
-- Using Amazon SNS topics, your publisher systems can fanout messages to a large number of subscriber systems, including [Amazon SQS queues](AmazonSQS.md), [AWS Lambda functions](../4_ComputeServices/AWSLambda/Readme.md), HTTPS endpoints, and [Amazon Kinesis Data Firehose](AmazonKinesis/Readme.md), for parallel processing.
-- The [application-to-person (A2P)](https://docs.aws.amazon.com/sns/latest/dg/sns-user-notifications.html) functionality enables you to send messages to users at scale via SMS, mobile push, and email.
+- [The application-to-person (A2P)](https://docs.aws.amazon.com/sns/latest/dg/sns-user-notifications.html) functionality enables you to send messages to users at scale via SMS, mobile push, and email.
+
+Using Amazon SNS topics, your publisher systems can fanout messages to a large number of subscriber systems for parallel processing, including 
+- [Amazon SQS queues](AmazonSQS.md) (cross-region supported as well)
+- [AWS Lambda functions](../4_ComputeServices/AWSLambda/Readme.md)
+- HTTPS endpoints
+- [Amazon Kinesis Data Firehose](AmazonKinesis/Readme.md)
 
 # Application-to-Application (A2A)
 
@@ -35,7 +40,7 @@
 
 # Amazon SNS message filtering
 - By default, an Amazon SNS topic subscriber receives every message published to the topic. 
-- To receive a subset of the messages, a [subscriber must assign a filter policy to the topic subscription](https://docs.aws.amazon.com/sns/latest/dg/sns-message-filtering.html).
+- To receive a subset of the messages, [a subscriber must assign a filter policy to the topic subscription](https://docs.aws.amazon.com/sns/latest/dg/sns-message-filtering.html).
 
 # :star: Amazon SNS vs Others
 - [Read here](../../1_HLDDesignComponents/4_MessageBrokers/KafkaVsRabbitMQVsSQSVsSNS.md)
