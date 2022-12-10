@@ -1,5 +1,12 @@
 package main
 
+/*
+Package heap provides heap operations for any type that implements heap.Interface.
+- A heap is a tree with the property that each node is the minimum-valued node in its subtree.
+- Reference - https://pkg.go.dev/container/heap
+
+tasksPriorityQueue would have to implement all methods of heap interface like Len(), Less(), Swap(), Push(), Pop() etc.
+*/
 import "container/heap"
 
 type task struct {
@@ -7,7 +14,6 @@ type task struct {
   frequency int
 }
 
-// tasksPriorityQueue would have  to implement all methods of heap interface like Len(), Less(), Swap(), Push() etc.
 type tasksPriorityQueue []task
 
 func (h tasksPriorityQueue) Len() int {

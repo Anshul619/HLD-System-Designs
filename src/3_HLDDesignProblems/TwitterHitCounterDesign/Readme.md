@@ -1,4 +1,3 @@
-
 # Design Hit Counter System (Real-time Analytics & Reporting)
 
 # Requirements
@@ -81,3 +80,4 @@ count = 1
 # References
 - [Rainbird: Realtime Analytics at Twitter](https://www.slideshare.net/kevinweil/rainbird-realtime-analytics-at-twitter-strata-2011)
 - [Microsoft virtual | Design distributed counter](https://leetcode.com/discuss/interview-question/system-design/685310/Microsoft-virtual-or-Design-distributed-counter)
+- [What Web3 could learn from Twitter’s timeline architecture](https://medium.com/zettablock-hq/what-web3-could-learn-from-twitters-timeline-architecture-207e0673ed2d)

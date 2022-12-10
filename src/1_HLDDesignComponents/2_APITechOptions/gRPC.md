@@ -31,5 +31,6 @@
 - However, there’s a gRPC-Web project that enables using browser-to-backend communication over gRPC without creating a REST proxy.
 
 # Reference
+- [What is RPC? gRPC Introduction?](https://www.youtube.com/watch?v=gnchfOojMk4)
 - [GPRC is 7 to 10 times faster than REST](https://blog.dreamfactory.com/grpc-vs-rest-how-does-grpc-compare-with-traditional-rest-apis/)
 - [Is gRPC(HTTP/2) faster than REST with HTTP/2?](https://stackoverflow.com/questions/44877606/is-grpchttp-2-faster-than-rest-with-http-2)
