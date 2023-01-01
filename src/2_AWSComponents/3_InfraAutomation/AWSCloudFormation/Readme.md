@@ -195,7 +195,16 @@ Outputs:
 - Mappings are fixed variables within your Cloudformation template.
 - They are very handy to differentiate b/w different environments (dev or prod), regions (AWS regions), AMI types etc.
 
-![img.png](assets/mappings_cf.png)
+````yaml
+Mappings: 
+  Mapping01: 
+    Key01: 
+      Name: Value01
+    Key02: 
+      Name: Value02
+    Key03: 
+      Name: Value03
+````
 
 # Intrinsic functions
 
@@ -352,6 +361,7 @@ Rules:
                   - "/etc/cfn/cfn-hup.conf"
                   - "/etc/cfn/hooks.d/cfn-auto-reloader.conf"
 ````
+
 # :+1: Pros and Cons of Cloudformation
 
 | Pros                                 | Cons                                      |
@@ -364,17 +374,17 @@ Rules:
 # Cloudformation Drift
 - Performing a [drift detection operation](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/detect-drift-stack.html) on a stack determines whether the stack has drifted from its expected template configuration, and returns detailed information about the drift status of each resource in the stack that supports drift detection.
 
-![img.png](assets/cfn_drift.png)
+![img.png](https://media.amazonwebservices.com/blog/2018/cf_picker_upper_1.png)
 
 # Nested Stacks
 - [Nested stacks](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-nested-stacks.html) are stacks created as part of other stacks. You create a nested stack within another stack by using the `AWS::CloudFormation::Stack` resource.
-- Nested stacks are considered as best practices
+- Nested stacks are considered as best practices.
 - To update a nested stack, always update the parent (root stack).
 - [CloudFormation cross-stack vs nested-stack](https://stackoverflow.com/questions/56157423/cloudformation-cross-stack-vs-nested-stack)
 
 Example
-- Load Balancer configuration that is re-used
-- Security Groups that is re-used
+- Load Balancer configuration that is re-used.
+- Security Groups that is re-used.
 
 ![](https://docs.aws.amazon.com/images/AWSCloudFormation/latest/UserGuide/images/cfn-console-nested-stacks.png)
 
@@ -385,7 +395,7 @@ Example
 ![](https://docs.aws.amazon.com/images/AWSCloudFormation/latest/UserGuide/images/stack_set_conceptual_sv.png)
 
 # Cloudformation Linter
-- [Linter](https://github.com/aws-cloudformation/cfn-lint) can validate [AWS CloudFormation yaml/json templates](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/gettingstarted.templatebasics.html) against the [AWS CloudFormation Resource Specification](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/cfn-resource-specification.html) and additional checks. 
+- [Cloudformation linter](https://github.com/aws-cloudformation/cfn-lint) can validate [AWS CloudFormation yaml/json templates](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/gettingstarted.templatebasics.html) against the [AWS CloudFormation Resource Specification](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/cfn-resource-specification.html) and additional checks. 
 - Includes checking valid values for resource properties and best practices.
 
 # Alternatives to AWS CloudFormation
