@@ -18,12 +18,6 @@
 - Before making changes to your resources, [you can generate a change set](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-changesets.html), which is a summary of your proposed changes.
 - [Change sets](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-changesets.html) enable you to see how your changes might impact your running resources, especially for critical resources, before implementing them.
 
-# Sample Cloudformation templates
-- :star: [AWS CloudFormation Sample Templates](https://github.com/awslabs/aws-cloudformation-templates)
-- [Aurora Serverless](sample_templates/aurora_serverless.yml)
-- [EKS cluster for EC2 instances](sample_templates/EKS_ECS.yml)
-- [AutoScaling of EC2 instances](sample_templates/Auto_Scaling_Group.yml)
-
 # Template anatomy
 - A template is a JSON- or YAML-formatted text file that describes your AWS infrastructure. 
 - The following examples show an [AWS CloudFormation template structure and its sections](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/template-anatomy.html).
@@ -68,6 +62,10 @@ Description: >
   details about
   the template.
 ````
+
+## Metadata
+- You can use the optional [Metadata section](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/metadata-section-structure.html) to include arbitrary JSON or YAML objects that provide details about the template.
+- [AWS::Cloudformation::Designer](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/working-with-templates-cfn-designer.html) key would be automatically generated while creating Cloudformation template in AWS Cloudformation designer.
 
 ## Parameters
 - Use the [optional Parameters section](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/parameters-section-structure.html) to customize & reuse your templates. 
@@ -115,6 +113,57 @@ Ec2Instance:
 - Parameters must be declared and referenced from within the same template. 
 - You can reference parameters from the Resources and Outputs sections of the template.
 
+## Rules
+- The [optional Rules](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/rules-section-structure.html) section validates a parameter or a combination of parameters passed to a template during a stack creation or stack update.
+- To use template rules, explicitly declare Rules in your template followed by an assertion.
+- Use the rules section to validate parameter values before creating or updating resources.
+
+````yaml
+Rules:
+  Rule01:
+    RuleCondition:
+      rule-specific intrinsic function: Value01
+    Assertions:
+      - Assert:
+          rule-specific intrinsic function: Value02
+        AssertDescription: Information about this assert
+      - Assert:
+          rule-specific intrinsic function: Value03
+        AssertDescription: Information about this assert
+  Rule02:
+    Assertions:
+      - Assert:
+          rule-specific intrinsic function: Value04
+        AssertDescription: Information about this assert
+````
+
+## Mappings
+- Mappings are fixed variables within your Cloudformation template.
+- They are very handy to differentiate b/w different environments (dev or prod), regions (AWS regions), AMI types etc.
+
+````yaml
+Mappings: 
+  Mapping01: 
+    Key01: 
+      Name: Value01
+    Key02: 
+      Name: Value02
+    Key03: 
+      Name: Value03
+````
+
+## Conditions
+- You can use [intrinsic functions](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/intrinsic-function-reference-conditions.html), such as Fn::If, Fn::Equals, and Fn::Not, to conditionally create stack resources
+
+````yaml
+Conditions
+   CreateProdResource: !Equals[!Ref EnvType, prod]
+
+Resources
+  ResourceName:
+    Condition: CreateProdResource //only when condition is true, this resource would be created
+````
+
 ## Resources
 - The [required Resources section](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/resources-section-structure.html) declares the AWS resources that you want to include in the stack, such as an [Amazon EC2 instance](../../4_ComputeServices/AmazonEC2/ReadMe.md) or an [Amazon S3 bucket](../../7_StorageServices/AmazonS3.md).
 - Through `AWS::SSM::Parameter` resource, we can create an SSM Parameter in [AWS System Manager Parameter Store](../../2_SecurityAndIdentityServices/AWSSecretsManager.md).
@@ -159,7 +208,7 @@ Resources:
 | DeletionPolicy      | Control what happens when the Cloudformation template is deleted or when a resource is removed directly from a Cloudformation template. |
 | UpdateReplacePolicy | Control what happens to a resource if you update a property whose update behaviour is Replacement.                                      |
 
-# Outputs
+## Outputs
 - The [optional Outputs section](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/outputs-section-structure.html) declares output values that you can import into other stacks (to create cross-stack references), return in response (to describe stack calls), or view on the AWS CloudFormation console. 
 - For example, you can output the [S3 bucket name](../../7_StorageServices/AmazonS3.md) for a stack to make the bucket easier to find.
 - It's the best way to perform some collaborations cross stack, as you let expert handle their own part of the stack.
@@ -191,21 +240,6 @@ Outputs:
     Value: !Ref EC2Instance
 ````
 
-# Mappings
-- Mappings are fixed variables within your Cloudformation template.
-- They are very handy to differentiate b/w different environments (dev or prod), regions (AWS regions), AMI types etc.
-
-````yaml
-Mappings: 
-  Mapping01: 
-    Key01: 
-      Name: Value01
-    Key02: 
-      Name: Value02
-    Key03: 
-      Name: Value03
-````
-
 # Intrinsic functions
 
 | Name                                                                                                                         | Description                                                                                                                                                                                                  | Example Code                                                     |
@@ -219,45 +253,6 @@ Mappings:
 | Fn:Base64                                                                                                                    | Convert a string to Base64                                                                                                                                                                                   |
 
 [Read more](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/intrinsic-function-reference.html)
-
-# Conditions
-- You can use [intrinsic functions](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/intrinsic-function-reference-conditions.html), such as Fn::If, Fn::Equals, and Fn::Not, to conditionally create stack resources
-
-````yaml
-Conditions
-   CreateProdResource: !Equals[!Ref EnvType, prod]
-
-Resources
-  ResourceName:
-    Condition: CreateProdResource //only when condition is true, this resource would be created
-````
-
-# Rules
-- The [optional Rules](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/rules-section-structure.html) section validates a parameter or a combination of parameters passed to a template during a stack creation or stack update. 
-- To use template rules, explicitly declare Rules in your template followed by an assertion. 
-- Use the rules section to validate parameter values before creating or updating resources.
-
-````yaml
-Rules:
-  Rule01:
-    RuleCondition:
-      rule-specific intrinsic function: Value01
-    Assertions:
-      - Assert:
-          rule-specific intrinsic function: Value02
-        AssertDescription: Information about this assert
-      - Assert:
-          rule-specific intrinsic function: Value03
-        AssertDescription: Information about this assert
-  Rule02:
-    Assertions:
-      - Assert:
-          rule-specific intrinsic function: Value04
-        AssertDescription: Information about this assert
-````
-# Metadata
-- You can use the optional [Metadata section](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/metadata-section-structure.html) to include arbitrary JSON or YAML objects that provide details about the template.
-- [AWS::Cloudformation::Designer](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/working-with-templates-cfn-designer.html) key would be automatically generated while creating Cloudformation template in AWS Cloudformation designer.
 
 # CloudFormation Helper Scripts
 
@@ -362,15 +357,6 @@ Rules:
                   - "/etc/cfn/hooks.d/cfn-auto-reloader.conf"
 ````
 
-# :+1: Pros and Cons of Cloudformation
-
-| Pros                                 | Cons                                      |
-|--------------------------------------|-------------------------------------------|
-| Makes your life easier               | Steep Learning Curve                      |
-| Coding Review Infrastructure Changes | Innocent Looking changes can be dangerous |
-| Integration with CI Pipeline         | Drift can be painful                      |
-| Large Community Support              | -                                         |
-
 # Cloudformation Drift
 - Performing a [drift detection operation](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/detect-drift-stack.html) on a stack determines whether the stack has drifted from its expected template configuration, and returns detailed information about the drift status of each resource in the stack that supports drift detection.
 
@@ -394,20 +380,38 @@ Example
 
 ![](https://docs.aws.amazon.com/images/AWSCloudFormation/latest/UserGuide/images/stack_set_conceptual_sv.png)
 
-# Cloudformation Linter
-- [Cloudformation linter](https://github.com/aws-cloudformation/cfn-lint) can validate [AWS CloudFormation yaml/json templates](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/gettingstarted.templatebasics.html) against the [AWS CloudFormation Resource Specification](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/cfn-resource-specification.html) and additional checks. 
-- Includes checking valid values for resource properties and best practices.
-
-# Alternatives to AWS CloudFormation
-- [Terraform - Open Source](https://www.terraform.io/)
-- [Puppet - Open Source](https://puppet.com/)
-- [Ansible by Red Hat](https://www.ansible.com/)
-
 # State Management
 - Since CloudFormation is a managed AWS service, it does state management automatically. 
 - CloudFormation will consistently check infrastructure it has provisioned to detect if it is maintaining that state and configuration.
 - Terraform stores the state of the infrastructure on the provisioning computer, or in a remote site (for team use). This state file is a custom JSON format which serves as a map for Terraform, describing which resources it manages, and how those resources should be configured.
 - [Read more](https://www.missioncloud.com/blog/aws-cloudformation-vs-terraform-which-one-should-you-choose)
+
+# :+1: Pros and Cons of Cloudformation
+
+| Pros                                 | Cons                                      |
+|--------------------------------------|-------------------------------------------|
+| Makes your life easier               | Steep Learning Curve                      |
+| Coding Review Infrastructure Changes | Innocent Looking changes can be dangerous |
+| Integration with CI Pipeline         | Drift can be painful                      |
+| Large Community Support              | -                                         |
+
+# Cloudformation Linter
+- [Cloudformation linter](https://github.com/aws-cloudformation/cfn-lint) can validate [AWS CloudFormation yaml/json templates](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/gettingstarted.templatebasics.html) against the [AWS CloudFormation Resource Specification](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/cfn-resource-specification.html) and additional checks.
+- Includes checking valid values for resource properties and best practices.
+
+# Alternatives to AWS CloudFormation
+
+| Service                                              |
+|------------------------------------------------------|
+| [Terraform - Open Source](https://www.terraform.io/) |
+| [Puppet - Open Source](https://puppet.com/)          |
+| [Ansible by Red Hat](https://www.ansible.com/)       |
+
+# Sample Cloudformation templates
+- :star: [AWS CloudFormation Sample Templates](https://github.com/awslabs/aws-cloudformation-templates)
+- [Aurora Serverless](sample_templates/aurora_serverless.yml)
+- [EKS cluster for EC2 instances](sample_templates/EKS_ECS.yml)
+- [AutoScaling of EC2 instances](sample_templates/Auto_Scaling_Group.yml)
 
 # References
 - [AWS CloudFormation Sample Templates](https://github.com/awslabs/aws-cloudformation-templates)
