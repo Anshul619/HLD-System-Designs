@@ -35,8 +35,9 @@
 
 [Read more](../AWSStepFunctions.md)
 
-## Backup Jobs
-- Lambda can be used to configure backup scripts for the application.
+## Others
+- Backup Jobs - Lambda can be used to configure backup scripts for the application.
+- Automatic Jobs - Shutdown AWS resources at certain time.
 
 # Who can invoke Lambda Functions? (event resources)
 - [Amazon API Gateway](../../1_NetworkingAndContentDelivery/AmazonAPIGateway/Readme.md) - API Gateway can directly call AWS Lambda function.

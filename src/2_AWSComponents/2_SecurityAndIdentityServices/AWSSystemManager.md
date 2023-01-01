@@ -5,5 +5,7 @@
 
 ![](https://td-mainsite-cdn.tutorialsdojo.com/wp-content/uploads/2020/06/image-1-article-june-24.jpg)
 
+Parameter can be either private or AWS public (starting with `/aws`).
+
 # References
 - [AWS Secrets Manager vs Systems Manager Parameter Store](https://tutorialsdojo.com/aws-secrets-manager-vs-systems-manager-parameter-store/)

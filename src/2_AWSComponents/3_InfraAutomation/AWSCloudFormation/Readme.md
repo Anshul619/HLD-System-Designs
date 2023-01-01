@@ -70,8 +70,9 @@ Description: >
 ````
 
 ## Parameters
-- Use the [optional Parameters section](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/parameters-section-structure.html) to customize your templates. 
+- Use the [optional Parameters section](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/parameters-section-structure.html) to customize & reuse your templates. 
 - Parameters enable you to input custom values to your template each time you create or update a stack.
+- Parameters + Template form Cloudformation Stack.
 
 ````yaml
 Parameters:
@@ -94,14 +95,14 @@ Ec2Instance:
 
 ### Parameter Types
 
-| Type                         | Description                                                                                                                                       | Example                 |
-|------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------|
-| String                       | A literal string.                                                                                                                                 | "MyUserName"            |
-| Number                       | An integer or float.                                                                                                                              | "8888"                  |
-| List<Number>                 | An array of integers or floats that are separated by commas.                                                                                      | `["80","20"]`           |
-| CommaDelimitedList           | An array of literal strings that are separated by commas.                                                                                         | `["test","dev","prod"]` |
-| :star: SSM Parameter Types   | Parameters that correspond to existing parameters in [Systems Manager Parameter Store](../../2_SecurityAndIdentityServices/AWSSecretsManager.md). | -                       |
-| AWS-Specific Parameter Types | AWS values such as Amazon EC2 key pair names and VPC IDs.                                                                                         | -                       |
+| Type                         | Description                                                                                                                                      | Example                 |
+|------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------|
+| String                       | A literal string.                                                                                                                                | "MyUserName"            |
+| Number                       | An integer or float.                                                                                                                             | "8888"                  |
+| List<Number>                 | An array of integers or floats that are separated by commas.                                                                                     | `["80","20"]`           |
+| CommaDelimitedList           | An array of literal strings that are separated by commas.                                                                                        | `["test","dev","prod"]` |
+| :star: SSM Parameter Types   | Parameters that correspond to existing parameters in [Systems Manager Parameter Store](../../2_SecurityAndIdentityServices/AWSSystemManager.md). | -                       |
+| AWS-Specific Parameter Types | AWS values such as Amazon EC2 key pair names and VPC IDs.                                                                                        | -                       |
 
 [Read more](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/parameters-section-structure.html)
 
@@ -150,13 +151,23 @@ Resources:
     Properties: {}
 ````
 
+## Resource Attributes
+
+| Name                | Description                                                                                                                             |
+|---------------------|-----------------------------------------------------------------------------------------------------------------------------------------|
+| DependsOn           | Specify that creation of a specific resource follows another.                                                                           |
+| DeletionPolicy      | Control what happens when the Cloudformation template is deleted or when a resource is removed directly from a Cloudformation template. |
+| UpdateReplacePolicy | Control what happens to a resource if you update a property whose update behaviour is Replacement.                                      |
+
 # Outputs
 - The [optional Outputs section](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/outputs-section-structure.html) declares output values that you can import into other stacks (to create cross-stack references), return in response (to describe stack calls), or view on the AWS CloudFormation console. 
 - For example, you can output the [S3 bucket name](../../7_StorageServices/AmazonS3.md) for a stack to make the bucket easier to find.
+- It's the best way to perform some collaborations cross stack, as you let expert handle their own part of the stack.
 
 Syntax
 - The Outputs section consists of the key name Outputs, followed by a space and a single colon. 
 - You can declare a maximum of 200 outputs in a template.
+
 ````yaml
 Outputs:
   Logical ID:
@@ -179,19 +190,169 @@ Outputs:
     Description: The Instance ID
     Value: !Ref EC2Instance
 ````
+
+# Mappings
+- Mappings are fixed variables within your Cloudformation template.
+- They are very handy to differentiate b/w different environments (dev or prod), regions (AWS regions), AMI types etc.
+
+![img.png](assets/mappings_cf.png)
+
 # Intrinsic functions
 
 | Name                                                                                                                         | Description                                                                                                                                                                                                  | Example Code                                                     |
 |------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------|
-| [!Sub](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/intrinsic-function-reference-sub.html)                 | The intrinsic function Fn::Sub substitutes variables in an input string with values that you specify                                                                                                         | `!Sub 'arn:aws:ec2:${AWS::Region}:${AWS::AccountId}:vpc/${vpc}'` |
+| [!Sub](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/intrinsic-function-reference-sub.html)                 | The intrinsic function Fn::Sub substitutes variables in an input string with values that you specify. String must contain ${variableName} for the substitution.                                              | `!Sub 'arn:aws:ec2:${AWS::Region}:${AWS::AccountId}:vpc/${vpc}'` |
 | [!Ref](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/intrinsic-function-reference-ref.html)                 | The intrinsic function Ref returns the value of the specified parameter or resource.                                                                                                                         | `!Ref logicalName`                                               |
-| [!Join](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/intrinsic-function-reference-join.html)               | The intrinsic function Fn::Join appends a set of values into a single value, separated by the specified delimiter. If a delimiter is the empty string, the set of values are concatenated with no delimiter. | `!Join [ ":", [ a, b, c ] ]`                                     |
 | [!ImportValue](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/intrinsic-function-reference-importvalue.html) | The intrinsic function Fn::ImportValue returns the value of an output exported by another stack.                                                                                                             | `!ImportValue sharedValueToImport`                               |
+| [!FindInMap](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/intrinsic-function-reference-findinmap.html)     | Return a named value from a specific key                                                                                                                                                                     | `!FindInMap [ MapName, TopLevelKey, SecondLevelKey ]`                                                                 |
 | [!GetAtt](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/intrinsic-function-reference-getatt.html)           | The Fn::GetAtt intrinsic function returns the value of an attribute from a resource in the template.                                                                                                         | `!GetAtt logicalNameOfResource.attributeName`                    |
+| [!Join](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/intrinsic-function-reference-join.html)               | The intrinsic function Fn::Join appends a set of values into a single value, separated by the specified delimiter. If a delimiter is the empty string, the set of values are concatenated with no delimiter. | `!Join [ ":", [ a, b, c ] ]`                                     |
+| Fn:Base64                                                                                                                    | Convert a string to Base64                                                                                                                                                                                   |
 
 [Read more](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/intrinsic-function-reference.html)
 
-# Pros and Cons
+# Conditions
+- You can use [intrinsic functions](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/intrinsic-function-reference-conditions.html), such as Fn::If, Fn::Equals, and Fn::Not, to conditionally create stack resources
+
+````yaml
+Conditions
+   CreateProdResource: !Equals[!Ref EnvType, prod]
+
+Resources
+  ResourceName:
+    Condition: CreateProdResource //only when condition is true, this resource would be created
+````
+
+# Rules
+- The [optional Rules](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/rules-section-structure.html) section validates a parameter or a combination of parameters passed to a template during a stack creation or stack update. 
+- To use template rules, explicitly declare Rules in your template followed by an assertion. 
+- Use the rules section to validate parameter values before creating or updating resources.
+
+````yaml
+Rules:
+  Rule01:
+    RuleCondition:
+      rule-specific intrinsic function: Value01
+    Assertions:
+      - Assert:
+          rule-specific intrinsic function: Value02
+        AssertDescription: Information about this assert
+      - Assert:
+          rule-specific intrinsic function: Value03
+        AssertDescription: Information about this assert
+  Rule02:
+    Assertions:
+      - Assert:
+          rule-specific intrinsic function: Value04
+        AssertDescription: Information about this assert
+````
+# Metadata
+- You can use the optional [Metadata section](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/metadata-section-structure.html) to include arbitrary JSON or YAML objects that provide details about the template.
+- [AWS::Cloudformation::Designer](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/working-with-templates-cfn-designer.html) key would be automatically generated while creating Cloudformation template in AWS Cloudformation designer.
+
+# CloudFormation Helper Scripts
+
+| Script                                                                                                                 | Description                                                                                                                                                       |
+|------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| [cfn-init](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/cfn-init.html)                               | Use to retrieve and interpret resource metadata, install packages, create files, and start services.                                                              |
+| [cfn-signal](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/cfn-signal.html)                           | Use to signal with a CreationPolicy or WaitCondition, so you can synchronize other resources in the stack when the prerequisite resource or application is ready. |
+| [cfn-get-metadata](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/cfn-helper-scripts-reference.html)   | Use to retrieve metadata for a resource or path to a specific key.                                                                                                |
+| [cfn-hup](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/cfn-hup.html)                                 | Use to check for updates to metadata and execute custom hooks when changes are detected.                                                                                                                                                                  |
+
+[Read more](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/cfn-helper-scripts-reference.html)
+
+# CloudFormation Init
+
+| Title            | Description                                                                                                               |
+|------------------|---------------------------------------------------------------------------------------------------------------------------|
+| Groups and Users | If you want to have multiple users and groups (with an optional gid) in your EC2 instance, you can create users & groups. |
+| Files            | Files are very powerful as you have full control over any content you want.                                               |
+| Sources          | -                                                                                                                         |
+| Packages         | -                                                                                                                         |
+| Services         | -                                                                                                                         |
+
+````yaml
+  AWS::CloudFormation::Init:
+        config:
+          packages:
+            yum:
+              httpd: []
+              php: []
+          groups:
+            apache: {}
+          users:
+            "apache":
+              groups:
+                - "apache"
+          sources:
+            "/home/ec2-user/aws-cli": "https://github.com/aws/aws-cli/tarball/master"
+          files:
+            "/tmp/cwlogs/apacheaccess.conf":
+              content: !Sub |
+                [general]
+                state_file= /var/awslogs/agent-state
+                [/var/log/httpd/access_log]
+                file = /var/log/httpd/access_log
+                log_group_name = ${AWS::StackName}
+                log_stream_name = {instance_id}/apache.log
+                datetime_format = %d/%b/%Y:%H:%M:%S
+              mode: '000400'
+              owner: apache
+              group: apache
+            "/var/www/html/index.php":
+              content: !Sub |
+                <?php
+                echo '<h1>AWS CloudFormation sample PHP application for ${AWS::StackName}</h1>';
+                ?>
+              mode: '000644'
+              owner: apache
+              group: apache
+            "/etc/cfn/cfn-hup.conf":
+              content: !Sub |
+                [main]
+                stack=${AWS::StackId}
+                region=${AWS::Region}
+              mode: "000400"
+              owner: "root"
+              group: "root"
+            "/etc/cfn/hooks.d/cfn-auto-reloader.conf":
+              content: !Sub |
+                [cfn-auto-reloader-hook]
+                triggers=post.update
+                path=Resources.WebServerHost.Metadata.AWS::CloudFormation::Init
+                action=/opt/aws/bin/cfn-init -v --stack ${AWS::StackName} --resource WebServerHost --region ${AWS::Region}
+              mode: "000400"
+              owner: "root"
+              group: "root"
+            # Fetch a webpage from a private S3 bucket
+            "/var/www/html/webpage.html":
+              source: !Sub "https://${MyS3BucketName}.s3.${AWS::Region}.amazonaws.com/webpage.html"
+              mode: '000644'
+              owner: apache
+              group: apache
+              authentication: S3AccessCreds
+          commands:
+            test:
+              command: "echo \"$MAGIC\" > test.txt"
+              env:
+                MAGIC: "I come from the environment!"
+              cwd: "~"
+          services:
+            sysvinit:
+              httpd:
+                enabled: 'true'
+                ensureRunning: 'true'
+              postfix:
+                enabled: 'false'
+                ensureRunning: 'false'
+              cfn-hup:
+                enable: 'true'
+                ensureRunning: 'true'
+                files:
+                  - "/etc/cfn/cfn-hup.conf"
+                  - "/etc/cfn/hooks.d/cfn-auto-reloader.conf"
+````
+# :+1: Pros and Cons of Cloudformation
 
 | Pros                                 | Cons                                      |
 |--------------------------------------|-------------------------------------------|
@@ -199,6 +360,29 @@ Outputs:
 | Coding Review Infrastructure Changes | Innocent Looking changes can be dangerous |
 | Integration with CI Pipeline         | Drift can be painful                      |
 | Large Community Support              | -                                         |
+
+# Cloudformation Drift
+- Performing a [drift detection operation](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/detect-drift-stack.html) on a stack determines whether the stack has drifted from its expected template configuration, and returns detailed information about the drift status of each resource in the stack that supports drift detection.
+
+![img.png](assets/cfn_drift.png)
+
+# Nested Stacks
+- [Nested stacks](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-nested-stacks.html) are stacks created as part of other stacks. You create a nested stack within another stack by using the `AWS::CloudFormation::Stack` resource.
+- Nested stacks are considered as best practices
+- To update a nested stack, always update the parent (root stack).
+- [CloudFormation cross-stack vs nested-stack](https://stackoverflow.com/questions/56157423/cloudformation-cross-stack-vs-nested-stack)
+
+Example
+- Load Balancer configuration that is re-used
+- Security Groups that is re-used
+
+![](https://docs.aws.amazon.com/images/AWSCloudFormation/latest/UserGuide/images/cfn-console-nested-stacks.png)
+
+# Stack Sets
+- [AWS CloudFormation StackSets](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/what-is-cfnstacksets.html) extends the capability of stacks by enabling you to create, update, or delete stacks across multiple accounts and AWS Regions with a single operation. 
+- Using an administrator account, you define and manage an AWS CloudFormation template, and use the template as the basis for provisioning stacks into selected target accounts across specified AWS Regions.
+
+![](https://docs.aws.amazon.com/images/AWSCloudFormation/latest/UserGuide/images/stack_set_conceptual_sv.png)
 
 # Cloudformation Linter
 - [Linter](https://github.com/aws-cloudformation/cfn-lint) can validate [AWS CloudFormation yaml/json templates](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/gettingstarted.templatebasics.html) against the [AWS CloudFormation Resource Specification](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/cfn-resource-specification.html) and additional checks. 
