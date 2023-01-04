@@ -103,6 +103,12 @@ redis 127.0.0.1:6379> ZRANGEBYSCORE w3resourcelist 0 1000
 
 [Read more](https://redis.io/docs/libraries/)
 
+## Data Persistence
+
+It's generally suggested to turn off persistence on the master node, so that you get consistent low latency response time.
+- No forking to disk will be done.
+- No wasted I/O.
+
 ## Other Links
 - [Master-Slave Replication Supported (Leader & Read Replicas)](RedisMasterSlaveReplication.md)
 - [Sharding Supported (using Redis Cluster)](RedisCluster.md)

@@ -5,9 +5,6 @@
 ![img.png](https://i1.wp.com/www.learnsteps.com/wp-content/uploads/2020/07/masterslave.png?w=840&ssl=1)
 
 # Advantages of Master-Slave replication
-- `Turn off persistence on the master node`, so that you get consistent low latency response time.
-    - No forking to disk will be done.
-    - No wasted I/O.
 - Deliver [High availability](../../../0_SystemGlossaries/HighAvailability.md)
     - If master node goes down, the slave can be immediately promoted, so you don't experience any downtime.
 - Increased [throughput](../../../0_SystemGlossaries/LatencyThroughput.md) & improves [Scalability (Read Queries)](../../../0_SystemGlossaries/Scalability/DBScalability.md)
