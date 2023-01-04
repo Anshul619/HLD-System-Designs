@@ -1,4 +1,3 @@
-
 # Introduction
 - [Redis (REmote DIctionary Server)](https://redis.com/) is a popular in-memory data platform used as a cache that can be deployed on-premises, across clouds, and hybrid environments.
 - [LRU is the default eviction policy](https://docs.redis.com/latest/rs/databases/configure/eviction-policy/) in redis
@@ -9,6 +8,10 @@
 - [Twillo - Send Message API Design](../../../../3_HLDDesignProblems/TwilloSendMessageAPI)
 - [Twitter Hit Counter](../../../../3_HLDDesignProblems/TwitterHitCounterDesign/Readme.md)
 - [AWS - Send-SMS-API design (App Internal Clients, Multiple SMS-Providers, AutoScaling)](../../../../3_HLDDesignProblems/NotificationSystem)
+
+![](https://media.licdn.com/dms/image/C4E22AQGeveXEtt0GKQ/feedshare-shrink_1280/0/1672850706175?e=1675900800&v=beta&t=lwY5e9rTKeyd70BTLX56mRtK74Lz_yJwoW5PFaoyeMg)
+
+[Read more about Redis Use Cases](https://www.linkedin.com/posts/alexxubyte_systemdesign-coding-interviewtips-activity-7016444408438923264-_pmB?utm_source=share&utm_medium=member_desktop)
 
 # Key Features of Redis
 
@@ -21,7 +24,7 @@
 [![img.png](https://pbs.twimg.com/media/FMx3JZRUYAIWWKq?format=jpg&name=4096x4096)](https://www.youtube.com/watch?v=5TRFpFBccQM)
 
 ## Redis Transaction lock
-- Using [RedisTransaction](https://redis.io/docs/reference/patterns/distributed-locks/) lock, we can achieve [atomicity](../../../0_SystemGlossaries/Atomicity.md) on the Redis operations (i.e. set/increase the key, add/remove elements from set, increase counter etc.).
+- Using [Redis Transaction lock](https://redis.io/docs/reference/patterns/distributed-locks/), we can achieve [atomicity](../../../0_SystemGlossaries/Atomicity.md) on the Redis operations (i.e. set/increase the key, add/remove elements from set, increase counter etc.).
 
 ## Multiple data types supported
 - [Multiple data types](https://redis.io/docs/manual/data-types/) are supported in Redis
@@ -31,7 +34,7 @@
 - It is the only data type in Memcached, so it is also very natural for newcomers to use it in Redis.
 - There are two ways to store JSON in Redis.
   - Option1 - `Stringify and then store JSON` in Redis, as string datatype
-  - Option2 - Use [RedisJSON](https://redis.io/docs/stack/json/), which supports JSON value in Redis.
+  - Option2 - Use [Redis JSON](https://redis.io/docs/stack/json/), which supports JSON value in Redis.
 - Commands
   - `SET <KEY> <VALUE>`
   - `GET <KEY>`
@@ -92,7 +95,7 @@ redis 127.0.0.1:6379> ZRANGEBYSCORE w3resourcelist 0 1000
 3) "rabitmq"
 ```
 
-## [Rich Client-Side library]()
+## Rich Client-Side library
 - PHP
 - C/C++
 - Go
@@ -101,7 +104,7 @@ redis 127.0.0.1:6379> ZRANGEBYSCORE w3resourcelist 0 1000
 [Read more](https://redis.io/docs/libraries/)
 
 ## Other Links
-- [Master-Slave Replication Supported](RedisMasterSlaveReplication.md)
+- [Master-Slave Replication Supported (Leader & Read Replicas)](RedisMasterSlaveReplication.md)
 - [Sharding Supported (using Redis Cluster)](RedisCluster.md)
 - [Redis vs Memcache](RedisVsMemCache.md)
 - [Redis Graph](RedisGraph.md)

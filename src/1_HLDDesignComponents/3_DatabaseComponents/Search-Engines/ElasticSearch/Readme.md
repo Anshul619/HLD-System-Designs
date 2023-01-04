@@ -1,12 +1,19 @@
 # Introduction
-- A distributed, [RESTful](../../../2_APITechOptions/REST.md) modern search and analytics engine based on [Apache Lucene](../ApacheLucene.md).
-- In ElasticSearch, data is stored in the form of `JSONs`.
-- Data in Elasticsearch is organized into [indices](https://www.elastic.co/guide/en/elasticsearch/guide/2.x/_add_an_index.html). Each index is made up of one or more shards.
+- A distributed, [RESTful modern search](../../../2_APITechOptions/REST.md) and analytics engine based on [Apache Lucene](../ApacheLucene.md).
 - We can only interact with ElasticSearch through [REST APIs](../../../2_APITechOptions/REST.md).
 - ElasticSearch can be deployed using [Amazon OpenSearch](../../../../2_AWSComponents/6_DatabaseServices/AmazonOpenSearch.md) service, on [AWS](../../../../2_AWSComponents).
 - For data analysis, it operates alongside Kibana, and Logstash to form the [ELK stack](../../../7_MonitoringTools/ELK.md).
 - ElasticSearch is [Paid and NOT open-sourced](https://www.elastic.co/pricing/).
 - Since ElasticSearch doesn't provide 100% durability, [it shouldn't be used only primary source of truth](https://bonsai.io/blog/why-elasticsearch-should-not-be-your-primary-data-store).
+
+# What is a document in Elastic Search?
+- In an Elastic search, a document is a basic unit of information that can be indexed.
+- It is expressed in JSON `(key: value) pair. '{"user": "nullcon"}'`.
+- Every single Document is associated with a type and a unique id.
+
+# What is Index in ElasticSearch?
+- Data in Elasticsearch is organized into [indices](https://www.elastic.co/guide/en/elasticsearch/guide/2.x/_add_an_index.html).
+- Each index is made up of one or more shards.
 
 # :star: Real world use cases of ElasticSearch
 - [Zomato - HLD Design](../../../../3_HLDDesignProblems/ZomatoDesign)
@@ -57,6 +64,18 @@
 - In [Apache Lucene](../ApacheLucene.md), data updates are resource-intensive operations, because segments are immutable, and every commit creates a new segment, then segments are merged automatically. 
 - `To avoid this excessive I/O, Elasticsearch creates dedicated transactional index logs, preventing low-level Lucene commits for each indexing procedure`. 
 - These logs can also be used for recovery in case of data corruption.
+
+# What is NRT in Elasticsearch?
+- NRT is a full form of [(Near Real-Time Search) platform](https://www.elastic.co/guide/en/elasticsearch/reference/current/near-real-time.html). 
+- It is a near real-time search platform. 
+- It means there is a slight latency (mostly one second) from when you index a document until it becomes very searchable.
+
+![](https://www.elastic.co/guide/en/elasticsearch/reference/current/images/lucene-written-not-committed.png)
+
+# What is Ingest node?
+- Ingest node is use for pre-process documents before the actual document indexing happens. 
+- It helps you to intercepts bulk and index requests.
+- It also applies transformations, and then it passes the documents back to the bulk API and index.
 
 # Other Points
 - [Installation using Docker ELK](https://github.com/deviantony/docker-elk)

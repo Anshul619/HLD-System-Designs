@@ -166,7 +166,7 @@ Resources
 
 ## Resources
 - The [required Resources section](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/resources-section-structure.html) declares the AWS resources that you want to include in the stack, such as an [Amazon EC2 instance](../../4_ComputeServices/AmazonEC2/ReadMe.md) or an [Amazon S3 bucket](../../7_StorageServices/AmazonS3.md).
-- Through `AWS::SSM::Parameter` resource, we can create an SSM Parameter in [AWS System Manager Parameter Store](../../2_SecurityAndIdentityServices/AWSSecretsManager.md).
+- Through `AWS::SSM::Parameter` resource, we can create an SSM Parameter in [AWS System Manager Parameter Store](../../2_SecurityAndIdentityServices/AWSSystemManager.md).
 
 Syntax
 - The Resource's section consists of the key name Resources. 
@@ -254,12 +254,47 @@ Outputs:
 
 [Read more](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/intrinsic-function-reference.html)
 
+# Dynamic References
+- Dynamically refer to [AWS System Manager](../../2_SecurityAndIdentityServices/AWSSystemManager.md) or [AWS Secret Manager](../../2_SecurityAndIdentityServices/AWSSecretsManager.md) parameter.
+- [Read more](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/dynamic-references.html)
+
+````yaml
+Resources:
+  MyEC2Instance:
+    Type: AWS::EC2::Instance
+    Properties:
+      ImageId: !Ref ImageId
+      KeyName: !Ref KeyName
+      # ssm dynamic reference
+      InstanceType: '{{resolve:ssm:/ec2/instanceType:1}}'
+
+  MyIAMUser:
+    Type: AWS::IAM::User
+    Properties:
+      UserName: 'sample-user'
+      LoginProfile:
+        # ssm-secure dynamic reference (latest version)
+        Password: '{{resolve:ssm-secure:/iam/userPassword}}'
+
+  MyDBInstance:
+    Type: AWS::RDS::DBInstance
+    Properties:
+      DBInstanceClass: db.t2.micro
+      Engine: mysql
+      AllocatedStorage: "20"
+      VPCSecurityGroups:
+      - !GetAtt [DBEC2SecurityGroup, GroupId]
+      # secretsmanager dynamic reference
+      MasterUsername: '{{resolve:secretsmanager:MyRDSSecret:SecretString:username}}'
+      MasterUserPassword: '{{resolve:secretsmanager:MyRDSSecret:SecretString:password}}'
+````
+
 # CloudFormation Helper Scripts
 
 | Script                                                                                                                 | Description                                                                                                                                                       |
 |------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | [cfn-init](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/cfn-init.html)                               | Use to retrieve and interpret resource metadata, install packages, create files, and start services.                                                              |
-| [cfn-signal](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/cfn-signal.html)                           | Use to signal with a CreationPolicy or WaitCondition, so you can synchronize other resources in the stack when the prerequisite resource or application is ready. |
+| [cfn-signal](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/cfn-signal.html)                           | Use to signal with a [CreationPolicy](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-attribute-creationpolicy.html) or [WaitCondition](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-waitcondition.html), so you can synchronize other resources in the stack when the prerequisite resource or application is ready. |
 | [cfn-get-metadata](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/cfn-helper-scripts-reference.html)   | Use to retrieve metadata for a resource or path to a specific key.                                                                                                |
 | [cfn-hup](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/cfn-hup.html)                                 | Use to check for updates to metadata and execute custom hooks when changes are detected.                                                                                                                                                                  |
 

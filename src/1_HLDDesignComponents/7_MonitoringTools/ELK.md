@@ -1,4 +1,3 @@
-
 # ELK stack
 - [Elasticsearch](../3_DatabaseComponents/Search-Engines/ElasticSearch) is a `NoSQL database tool`, which is used to store the unstructured data.
 - [Logstash](https://www.elastic.co/logstash/) is a `log pipeline tool` to perform transformation on data.
@@ -6,7 +5,17 @@
     - At last, it exports the data into various targets.
 - [Kibana](https://www.elastic.co/kibana/) is a `data visualization tool`, which provides an interactive UI (User Interface) to the users for data visualization.
 
-## :star: Real world use cases of ELK
+![](https://www.guru99.com/images/2/elasticsearch-interview-questions-2.png)
+
+# What are the reason for using ELK stack?
+- ELK works best when logs from various Apps of an enterprise converge into a single ELK instance
+- It provides amazing insights for this single instance and also eliminates the need to log into a hundred different log data sources. 
+- Rapid on-premise installation 
+- Easy to deploy Scales vertically and horizontally 
+- Elastic offers a host of language clients, which includes Ruby. Python. PHP, Perl, .NET, Java, and JavaScript, and more 
+- Availability of libraries for different programming and scripting language
+
+# :star: Real world use cases of ELK
 - [Distributed Logging Solution](../../3_HLDDesignProblems/LoggingSolution)
 
 # How filebeat works?
