@@ -254,52 +254,6 @@ Outputs:
 
 [Read more](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/intrinsic-function-reference.html)
 
-# Dynamic References
-- Dynamically refer to [AWS System Manager](../../2_SecurityAndIdentityServices/AWSSystemManager.md) or [AWS Secret Manager](../../2_SecurityAndIdentityServices/AWSSecretsManager.md) parameter.
-- [Read more](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/dynamic-references.html)
-
-````yaml
-Resources:
-  MyEC2Instance:
-    Type: AWS::EC2::Instance
-    Properties:
-      ImageId: !Ref ImageId
-      KeyName: !Ref KeyName
-      # ssm dynamic reference
-      InstanceType: '{{resolve:ssm:/ec2/instanceType:1}}'
-
-  MyIAMUser:
-    Type: AWS::IAM::User
-    Properties:
-      UserName: 'sample-user'
-      LoginProfile:
-        # ssm-secure dynamic reference (latest version)
-        Password: '{{resolve:ssm-secure:/iam/userPassword}}'
-
-  MyDBInstance:
-    Type: AWS::RDS::DBInstance
-    Properties:
-      DBInstanceClass: db.t2.micro
-      Engine: mysql
-      AllocatedStorage: "20"
-      VPCSecurityGroups:
-      - !GetAtt [DBEC2SecurityGroup, GroupId]
-      # secretsmanager dynamic reference
-      MasterUsername: '{{resolve:secretsmanager:MyRDSSecret:SecretString:username}}'
-      MasterUserPassword: '{{resolve:secretsmanager:MyRDSSecret:SecretString:password}}'
-````
-
-# CloudFormation Helper Scripts
-
-| Script                                                                                                                 | Description                                                                                                                                                       |
-|------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [cfn-init](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/cfn-init.html)                               | Use to retrieve and interpret resource metadata, install packages, create files, and start services.                                                              |
-| [cfn-signal](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/cfn-signal.html)                           | Use to signal with a [CreationPolicy](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-attribute-creationpolicy.html) or [WaitCondition](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-waitcondition.html), so you can synchronize other resources in the stack when the prerequisite resource or application is ready. |
-| [cfn-get-metadata](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/cfn-helper-scripts-reference.html)   | Use to retrieve metadata for a resource or path to a specific key.                                                                                                |
-| [cfn-hup](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/cfn-hup.html)                                 | Use to check for updates to metadata and execute custom hooks when changes are detected.                                                                                                                                                                  |
-
-[Read more](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/cfn-helper-scripts-reference.html)
-
 # CloudFormation Init
 
 | Title            | Description                                                                                                               |
@@ -392,6 +346,17 @@ Resources:
                   - "/etc/cfn/hooks.d/cfn-auto-reloader.conf"
 ````
 
+# CloudFormation Helper Scripts
+
+| Script                                                                                                                 | Description                                                                                                                                                       |
+|------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| [cfn-init](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/cfn-init.html)                               | Use to retrieve and interpret resource metadata, install packages, create files, and start services.                                                              |
+| [cfn-signal](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/cfn-signal.html)                           | Use to signal with a [CreationPolicy](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-attribute-creationpolicy.html) or [WaitCondition](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-waitcondition.html), so you can synchronize other resources in the stack when the prerequisite resource or application is ready. |
+| [cfn-get-metadata](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/cfn-helper-scripts-reference.html)   | Use to retrieve metadata for a resource or path to a specific key.                                                                                                |
+| [cfn-hup](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/cfn-hup.html)                                 | Use to check for updates to metadata and execute custom hooks when changes are detected.                                                                                                                                                                  |
+
+[Read more](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/cfn-helper-scripts-reference.html)
+
 # Cloudformation Drift
 - Performing a [drift detection operation](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/detect-drift-stack.html) on a stack determines whether the stack has drifted from its expected template configuration, and returns detailed information about the drift status of each resource in the stack that supports drift detection.
 
@@ -409,18 +374,6 @@ Example
 
 ![](https://docs.aws.amazon.com/images/AWSCloudFormation/latest/UserGuide/images/cfn-console-nested-stacks.png)
 
-# Stack Sets
-- [AWS CloudFormation StackSets](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/what-is-cfnstacksets.html) extends the capability of stacks by enabling you to create, update, or delete stacks across multiple accounts and AWS Regions with a single operation. 
-- Using an administrator account, you define and manage an AWS CloudFormation template, and use the template as the basis for provisioning stacks into selected target accounts across specified AWS Regions.
-
-![](https://docs.aws.amazon.com/images/AWSCloudFormation/latest/UserGuide/images/stack_set_conceptual_sv.png)
-
-# State Management
-- Since CloudFormation is a managed AWS service, it does state management automatically. 
-- CloudFormation will consistently check infrastructure it has provisioned to detect if it is maintaining that state and configuration.
-- Terraform stores the state of the infrastructure on the provisioning computer, or in a remote site (for team use). This state file is a custom JSON format which serves as a map for Terraform, describing which resources it manages, and how those resources should be configured.
-- [Read more](https://www.missioncloud.com/blog/aws-cloudformation-vs-terraform-which-one-should-you-choose)
-
 # :+1: Pros and Cons of Cloudformation
 
 | Pros                                 | Cons                                      |
@@ -430,9 +383,61 @@ Example
 | Integration with CI Pipeline         | Drift can be painful                      |
 | Large Community Support              | -                                         |
 
-# Cloudformation Linter
-- [Cloudformation linter](https://github.com/aws-cloudformation/cfn-lint) can validate [AWS CloudFormation yaml/json templates](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/gettingstarted.templatebasics.html) against the [AWS CloudFormation Resource Specification](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/cfn-resource-specification.html) and additional checks.
-- Includes checking valid values for resource properties and best practices.
+
+# Advanced
+
+| Service                       | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
+|-------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Custom Resources              | CloudFormation supports two types of [custom resources](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/template-custom-resources.html): SNS-backed custom resource and Lambda-backed custom resource.                                                                                                                                                                                                                                                                                                                                                                                                                      |
+| Cloudformation Registry       | - The [CloudFormation registry](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/registry.html) lets you manage extensions, both public and private, such as resources, modules, and hooks that are available for use in your AWS account.<br/>- Currently, you can use the following extension types in the AWS registry: resources types, modules, and hooks.<br/>- The registry makes it easier to discover and provision extensions in your AWS CloudFormation templates in the same manner you use AWS-provided resources. <br/>Register custom resource type in Cloudformation Registry (private or public).           |
+| Template Modules              | [Modules](https://aws.amazon.com/blogs/mt/introducing-aws-cloudformation-modules/) are building blocks that can be reused across multiple CloudFormation templates and is used just like a native CloudFormation resource.                                                                                                                                                                                                                                                                                                                                                                                                                 |
+| Dynamic References            | Dynamically refer to [AWS System Manager](../../2_SecurityAndIdentityServices/AWSSystemManager.md) or [AWS Secret Manager](../../2_SecurityAndIdentityServices/AWSSecretsManager.md) parameter.<br/>- [Read more](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/dynamic-references.html)                                                                                                                                                                                                                                                                                                                                  |
+| Stack Sets                    | [AWS CloudFormation StackSets](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/what-is-cfnstacksets.html) extends the capability of stacks by enabling you to create, update, or delete stacks across multiple accounts and AWS Regions with a single operation.<br/>- Using an administrator account, you define and manage an AWS CloudFormation template, and use the template as the basis for provisioning stacks into selected target accounts across specified AWS Regions.                                                                                                                                          |
+| Cloudformation Linter         | [Cloudformation linter](https://github.com/aws-cloudformation/cfn-lint) can validate [AWS CloudFormation yaml/json templates](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/gettingstarted.templatebasics.html) against the [AWS CloudFormation Resource Specification](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/cfn-resource-specification.html) and additional checks.<br/>- Includes checking valid values for resource properties and best practices.                                                                                                                                           |
+| State Management              | Since CloudFormation is a managed AWS service, it does state management automatically. <br/> - CloudFormation will consistently check infrastructure it has provisioned to detect if it is maintaining that state and configuration.Terraform stores the state of the infrastructure on the provisioning computer, or in a remote site (for team use). <br/>- This state file is a custom JSON format which serves as a map for Terraform, describing which resources it manages, and how those resources should be configured. [Read more](https://www.missioncloud.com/blog/aws-cloudformation-vs-terraform-which-one-should-you-choose) |
+
+## Dynamic References - Sample Template
+
+````yaml
+Resources:
+  MyEC2Instance:
+    Type: AWS::EC2::Instance
+    Properties:
+      ImageId: !Ref ImageId
+      KeyName: !Ref KeyName
+      # ssm dynamic reference
+      InstanceType: '{{resolve:ssm:/ec2/instanceType:1}}'
+
+  MyIAMUser:
+    Type: AWS::IAM::User
+    Properties:
+      UserName: 'sample-user'
+      LoginProfile:
+        # ssm-secure dynamic reference (latest version)
+        Password: '{{resolve:ssm-secure:/iam/userPassword}}'
+
+  MyDBInstance:
+    Type: AWS::RDS::DBInstance
+    Properties:
+      DBInstanceClass: db.t2.micro
+      Engine: mysql
+      AllocatedStorage: "20"
+      VPCSecurityGroups:
+      - !GetAtt [DBEC2SecurityGroup, GroupId]
+      # secretsmanager dynamic reference
+      MasterUsername: '{{resolve:secretsmanager:MyRDSSecret:SecretString:username}}'
+      MasterUserPassword: '{{resolve:secretsmanager:MyRDSSecret:SecretString:password}}'
+````
+
+## Stack Sets
+
+![](https://docs.aws.amazon.com/images/AWSCloudFormation/latest/UserGuide/images/stack_set_conceptual_sv.png)
+
+# Sample Cloudformation templates
+- :star: [AWS CloudFormation Sample Templates](https://github.com/awslabs/aws-cloudformation-templates)
+- [Aurora Serverless](sample_templates/aurora_serverless.yml)
+- [EKS cluster for EC2 instances](sample_templates/EKS_ECS.yml)
+- [AutoScaling of EC2 instances](sample_templates/Auto_Scaling_Group.yml)
 
 # Alternatives to AWS CloudFormation
 
@@ -441,12 +446,6 @@ Example
 | [Terraform - Open Source](https://www.terraform.io/) |
 | [Puppet - Open Source](https://puppet.com/)          |
 | [Ansible by Red Hat](https://www.ansible.com/)       |
-
-# Sample Cloudformation templates
-- :star: [AWS CloudFormation Sample Templates](https://github.com/awslabs/aws-cloudformation-templates)
-- [Aurora Serverless](sample_templates/aurora_serverless.yml)
-- [EKS cluster for EC2 instances](sample_templates/EKS_ECS.yml)
-- [AutoScaling of EC2 instances](sample_templates/Auto_Scaling_Group.yml)
 
 # References
 - [AWS CloudFormation Sample Templates](https://github.com/awslabs/aws-cloudformation-templates)
