@@ -9,6 +9,17 @@
 
 ![img.png](assests/ECS-Tasks.png)
 
+# ECS Objects
+
+| Term                                                                                                 | Description                                                                                                                                                                             |
+|------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| [Container Definition](https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_ContainerDefinition.html)                                                                                 | Nothing but container image & container level settings (like Container Image, Port, Registry, Environment Variables to pass to container etc.)                                          |
+| [Task Definition](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/task_definitions.html) | A blueprint for our application and describes one or more containers through attributes.                                                                                                |
+| :star: [Task](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/task_definitions.html)     | A task is the instantiation of task definition in the cluster. Tasks don't share the underlying kernel, CPU resources, memory resources or elastic network interface with another task. |
+| :star: [Service](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/ecs_services.html)      | A service allows us to run and maintain a specified number (the desired count) of simultaneous tasks (instances of a task definition) in an ECS cluster.                                |
+
+![](https://miro.medium.com/max/1400/0*ima_OYQ74yCg_cSN)
+
 # Integration with ELB
 - ECS seamlessly integrates with [ELB](../../1_NetworkingAndContentDelivery/ElasticLoadBalancer/Readme.md).
 - [How to configure ELB with ECS?](https://docs.aws.amazon.com/AmazonECS/latest/userguide/create-load-balancer.html)
