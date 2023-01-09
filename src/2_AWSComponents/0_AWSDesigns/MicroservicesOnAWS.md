@@ -9,8 +9,8 @@
 
 ## Compute Services
 - [AWS PrivateLink](../1_NetworkingAndContentDelivery/AWSPrivateLink.md)
-- [Amazon ECS](../4_ComputeServices/AmazonECS/Readme.md)
-- [Amazon EKS](../4_ComputeServices/AmazonEKS.md)
+- [Amazon ECS](../4a_ContainerOrchestrationServices/AmazonECS/Readme.md)
+- [Amazon EKS](../4a_ContainerOrchestrationServices/AmazonEKS.md)
 - [AWS Lambda](../4_ComputeServices/AWSLambda/Readme.md)
 - [AWS Fargate](../4_ComputeServices/AWSFargate.md)
 
@@ -35,7 +35,7 @@ Message brokers can be used for [asynchronous messaging and event passing in mic
 - [ELK](../../1_HLDDesignComponents/7_MonitoringTools/ELK.md)
 
 ## Others
-- [DNS-based service discovery using Amazon ECS](../4_ComputeServices/AmazonECS/Readme.md)
+- [DNS-based service discovery using Amazon ECS](../4a_ContainerOrchestrationServices/AmazonECS/Readme.md)
 
 # References
 - [Implementing Microservices on AWS](https://docs.aws.amazon.com/whitepapers/latest/microservices-on-aws/microservices-on-aws.html)

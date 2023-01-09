@@ -1,5 +1,11 @@
 # Load Testing
-- [Jmeter](https://jmeter.apache.org) or [Postman](https://speedscale.com/postman-load-test-tutorial/) can be used to do load testing of the app.
+- Various tools can be used to do load testing of the app.
+
+| Name                                                                   | Description |
+|------------------------------------------------------------------------|-------------|
+| [Jmeter](https://jmeter.apache.org)                                    | -           |
+| [Postman](https://speedscale.com/postman-load-test-tutorial/)          | -           |
+| [Apache Benchmark](https://httpd.apache.org/docs/2.4/programs/ab.html) | -           |
 
 # Sample Load Test for a microservice
 - Total 50 requests

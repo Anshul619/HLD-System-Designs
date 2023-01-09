@@ -9,8 +9,10 @@
 
 ![img.png](assets/Auto-Scaling-ELB.png)
 
-Also, We can use a [CloudWatch alarm](../../../8_MonitoringServices/AmazonCloudWatch.md) with Amazon EC2 Auto Scaling to scale your [Amazon EC2 instances](../ReadMe.md) based on demand.
+## Step Scaling
+- Also, we can use a [CloudWatch alarm](../../../8_MonitoringServices/AmazonCloudWatch.md) with Amazon EC2 Auto Scaling to scale your [Amazon EC2 instances](../ReadMe.md) based on demand.
 - For more information, see [Dynamic Scaling](https://docs.aws.amazon.com/autoscaling/ec2/userguide/as-scale-based-on-demand.html) in the Amazon EC2 Auto Scaling User Guide.
+- [Read more](https://docs.aws.amazon.com/autoscaling/ec2/userguide/as-scaling-simple-step.html)
 
 ## Auto-Scaling based on Amazon SQS
 - Based on the [Amazon SQS](../../../5_MessageBrokerServices/AmazonSQS.md) queue size, the [auto-scaling of the EC2 instances](https://docs.aws.amazon.com/autoscaling/ec2/userguide/as-using-sqs-queue.html) can also be done.

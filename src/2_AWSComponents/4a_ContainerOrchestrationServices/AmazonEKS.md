@@ -13,7 +13,7 @@
 
 # Modular and Scalable Amazon EKS Architecture on AWS
 
-![img.png](assests/eks_architecture.png)
+![img.png](../4_ComputeServices/assests/eks_architecture.png)
 
 [Read more](https://aws.amazon.com/quickstart/architecture/amazon-eks/)
 

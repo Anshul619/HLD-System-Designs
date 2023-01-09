@@ -1,7 +1,7 @@
 # Amazon API Gateway
 - [Amazon API Gateway](https://docs.aws.amazon.com/apigateway/latest/developerguide/welcome.html) is an AWS service for creating, publishing, maintaining, monitoring, and securing [REST, HTTP, and WebSocket APIs](../../../1_HLDDesignComponents/2_APITechOptions/REST.md) at any scale.
 - [API Gateway](https://docs.aws.amazon.com/apigateway/latest/developerguide/welcome.html) allows you to [create your APIs programmatically by importing OpenAPI/Swagger specification](../../../1_HLDDesignComponents/2_APITechOptions/API_Documentation/Swagger/OpenAPISpec.md), using either the AWS API or the AWS Management Console. 
-- [API Gateway serves as a front door to any web application](https://aws.amazon.com/api-gateway/features/) running on [Amazon EC2](../../4_ComputeServices/AmazonEC2), [Amazon ECS](../../4_ComputeServices/AmazonECS), [AWS Lambda](../../4_ComputeServices/AWSLambda/Readme.md), or in any on-premises environment. 
+- [API Gateway serves as a front door to any web application](https://aws.amazon.com/api-gateway/features/) running on [Amazon EC2](../../4_ComputeServices/AmazonEC2), [Amazon ECS](../../4a_ContainerOrchestrationServices/AmazonECS), [AWS Lambda](../../4_ComputeServices/AWSLambda/Readme.md), or in any on-premises environment. 
 - [An API gateway](https://aws.amazon.com/premiumsupport/knowledge-center/api-gateway-cloudfront-distribution/) provides a single entry point for all API calls that come into an application, whether the app is hosted in an on-premises data center or on the cloud. 
 - It accepts requests that come in remotely and returns the requested data.
 - [API Gateway only works with HTTPS](https://docs.aws.amazon.com/apigateway/latest/developerguide/setup-http-integrations.html).
@@ -24,7 +24,7 @@
 
 ## Private integrations with AWS ELB & AWS Cloud Map
 - With API Gateway, you can route requests to private resources in [your VPC](../AmazonVPC.md). 
-- Using HTTP APIs, you can build APIs for services behind [private ALBs, private NLBs](../ElasticLoadBalancer/Readme.md), and IP-based services registered in AWS Cloud Map, such as [ECS tasks](../../4_ComputeServices/AmazonECS/Readme.md).
+- Using HTTP APIs, you can build APIs for services behind [private ALBs, private NLBs](../ElasticLoadBalancer/Readme.md), and IP-based services registered in AWS Cloud Map, such as [ECS tasks](../../4a_ContainerOrchestrationServices/AmazonECS/Readme.md).
   
 ## Resiliency
 - API Gateway helps you manage traffic to your backend systems by allowing you to set [throttling rules](https://docs.aws.amazon.com/apigateway/latest/developerguide/api-gateway-request-throttling.html) based on the number of requests per second for each HTTP method in your APIs.

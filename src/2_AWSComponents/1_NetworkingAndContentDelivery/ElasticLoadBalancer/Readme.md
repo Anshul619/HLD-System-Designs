@@ -1,6 +1,6 @@
 
 # Amazon ELB - Elastic Load Balancer
-- [Amazon ELB - Elastic Load Balancer](https://docs.aws.amazon.com/elasticloadbalancing) automatically distributes your incoming traffic across multiple targets, such as [EC2 instances](../../4_ComputeServices/AmazonEC2), [containers](../../4_ComputeServices/AmazonECS), and IP addresses, in [one or more Availability Zones](../../AWS-Global-Architecture-Region-AZ.md). 
+- [Amazon ELB - Elastic Load Balancer](https://docs.aws.amazon.com/elasticloadbalancing) automatically distributes your incoming traffic across multiple targets, such as [EC2 instances](../../4_ComputeServices/AmazonEC2), [containers](../../4a_ContainerOrchestrationServices/AmazonECS), and IP addresses, in [one or more Availability Zones](../../AWS-Global-Architecture-Region-AZ.md). 
 - [It monitors the health of its registered targets and routes traffic only to the healthy targets](https://aws.amazon.com/builders-library/implementing-health-checks/).
 - [ELB vs API Gateway](../AmazonAPIGatewayVsELB.md)
 
@@ -59,14 +59,14 @@ You can select the type of [load balancer](../../../1_HLDDesignComponents/0_Syst
 
 ## Difference b/w Network Load Balancer and Application Load Balancer
 
-| Basis                        | Network Load Balancer                           | Application Load Balancer           |
-|------------------------------|-------------------------------------------------|-------------------------------------|
-| Supported Protocols          | TCP, UDP                                        | HTTP, HTTPs                         |
-| Supported Target Group Types | Instance, IP                                    | Instance, IP, Lambda                |
-| Content-Based Routing        | :x: Not-Supported                               | :white_check_mark: Supported        |
-| Rough Throughput             | Millions of requests per second                 | -                                   |
-| Ideally Use Cases            | Microservices (if API gateway used), other apps | Microservices, Container-based apps |
-| Cross-zone Load Balancing    | Disabled by default                             | Enabled by default                  |
+| Basis                              | Network Load Balancer                                                                                | Application Load Balancer                                                                                 |
+|------------------------------------|------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------|
+| Supported Protocols                | TCP, UDP                                                                                             | HTTP, HTTPs                                                                                               |
+| Supported Target Group Types       | [Instance](../../4_ComputeServices/AmazonEC2/ReadMe.md), [IP](../../4_ComputeServices/AWSFargate.md) | [Instance](../../4_ComputeServices/AmazonEC2/ReadMe.md), [IP](../../4_ComputeServices/AWSFargate.md), [Lambda](../../4_ComputeServices/AWSLambda/Readme.md)                                                                                      |
+| Path-Based / Content-Based Routing | :x: Not-Supported                                                                                    | :white_check_mark: Supported<br/>- This would help with less number of load balancers and cost reduction. |
+| Rough Throughput                   | Millions of requests per second                                                                      | -                                                                                                         |
+| Ideally Use Cases                  | Microservices (if API gateway used), other apps                                                      | Microservices, Container-based apps                                                                       |
+| Cross-zone Load Balancing          | Disabled by default                                                                                  | Enabled by default                                                                                        |
 
 ## Network Load Balancer
 - Choose a [Network Load Balancer](https://docs.aws.amazon.com/elasticloadbalancing/latest/network/introduction.html) when you need ultra-high performance, TLS offloading at scale, centralized certificate deployment, support for UDP, and static IP addresses for your applications.
