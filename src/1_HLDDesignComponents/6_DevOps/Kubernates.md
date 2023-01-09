@@ -1,32 +1,29 @@
 # Kubernates
-- [Kubernetes](https://kubernetes.io), also known as K8s, is an OPEN-SOURCE system for automating deployment, scaling, and management of containerized applications. 
-- Kubernates is a [container orchestration service](../0_SystemGlossaries/Scalability/ContainerOrchestrationService.md).
-- Kubernetes is a Greek word meaning `captain` in English. 
-  - Like the captain is responsible for the safe journey of the ship in the seas, Kubernetes is responsible for carrying and delivering those boxes safely to locations where they can be used.
-- We can use kubernates to manage, create containers (through pods, worker nodes).
+- [Kubernetes](https://kubernetes.io), also known as K8s, is an OPEN-SOURCE system for automating deployment, [scaling](../0_SystemGlossaries/Scalability/AppNodesScalability.md), and management of containerized applications. 
+- Kubernates is a [battle-tested container orchestration service](../0_SystemGlossaries/Scalability/ContainerOrchestrationService.md) i.e. manage, create containers (through pods, worker nodes).
+
+Kubernetes is a Greek word meaning `captain` in English. 
+- Like the captain is responsible for the safe journey of the ship in the seas, Kubernetes is responsible for carrying and delivering those boxes safely to locations where they can be used.
 
 ![img.png](assests/Kubernates-Architecture.png)
 
-# Recommendation (Reliably supported)
+# Recommendation & Limits (Reliably supported)
 
 | Environment | Max Pods Per Node                                                                                                                   | Max Pods Per Cluster    | Max Nodes Per Cluster                                                                                |
 |-------------|-------------------------------------------------------------------------------------------------------------------------------------|-------------------------|------------------------------------------------------------------------------------------------------|
 | Kubernates  | 110 pods per node                                                                                                                   | 150000 pods per cluster | 5000 nodes per cluster<br/>- Some performance bottlenecks start showing up with more than 500 nodes. |
 | EKS         | Imposes a pod limit depending on the node size. <br/>- For example, t3.small allows only 11 pods, while m5.4xlarge allows 234 pods. | -                       | -                                                                                                    |
 
-# Other Links
-- [App Nodes Scalability](../0_SystemGlossaries/Scalability/AppNodesScalability.md)
-
 # Components
 
 ## Cluster
-- A [Kubernetes cluster](https://kubernetes.io/docs/concepts/overview/components/) consists of a set of worker machines, called [nodes](), that run containerized applications. 
+- [A Kubernetes cluster](https://kubernetes.io/docs/concepts/overview/components/) consists of a set of worker machines, called [nodes](), that run containerized applications. 
 - Every cluster has at least one worker node.
 
 ## Control Plane (Master node)
 - [The control plane](https://kubernetes.io/docs/concepts/overview/components/) manages the worker nodes and the Pods in the cluster.
 - In production environments, the control plane usually runs across multiple computers and a cluster usually runs multiple nodes, providing fault-tolerance and high availability.
-- Nodes with [controlplane]((https://kubernetes.io/docs/concepts/overview/components/)) role run the K8s master components (excluding `etcd`, as its separate role). 
+- [Nodes with controlplane]((https://kubernetes.io/docs/concepts/overview/components/)) role run the K8s master components (excluding `etcd`, as its separate role). 
 - [Read more](https://kubernetes.io/docs/concepts/overview/components/)
 
 | Component                                                                                                             | Remarks                                                                                                                                                                                                                                                                                           |
@@ -87,7 +84,7 @@ Kubernetes agents perform various tasks on every node to manage the containers r
 
 ### StatefulSets
 - [StatefulSets]((https://kubernetes.io/docs/concepts/workloads/controllers/statefulset/)) are used when state has to be persisted. 
-- Therefore it uses volumeClaimTemplates / claims on persistent volumes to ensure they can keep the state across component restarts.
+- Therefore, it uses volumeClaimTemplates / claims on persistent volumes to ensure they can keep the state across component restarts.
 - Example - [kube-state-metrics](https://github.com/kubernetes/kube-state-metrics) etc.
 
 # :star: Horizontal Pod Autoscaling (HPA)
