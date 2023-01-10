@@ -11,7 +11,7 @@
 - Every microservice would have separate git code repo.
 - Define contracts (request/response) between microservices.
 - Use [API Gateway](https://microservices.io/patterns/apigateway.html) to route incoming request between microservices, like [AWS API Gateway](../../2_AWSComponents/1_NetworkingAndContentDelivery/AmazonAPIGateway/Readme.md).
-- Use [Container orchestration service](../0_SystemGlossaries/Scalability/ContainerOrchestrationService.md) for deployments, like [Kubernates](../6a_ContainerOrchestrationServices/Kubernates.md).
+- Use [Container orchestration service](../6a_ContainerOrchestrationServices/Readme.md) for deployments, like [Kubernates](../6a_ContainerOrchestrationServices/Kubernates.md).
 - Logging & monitoring can be done using [New Relic](../7_MonitoringTools/NewRelic.md), [ELK](../7_MonitoringTools/ELK.md) etc.
 
 # Key Features of API Gateway

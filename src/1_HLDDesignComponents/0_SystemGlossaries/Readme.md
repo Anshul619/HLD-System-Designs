@@ -8,7 +8,7 @@
 | [Load Balancer](LoadBalancer.md)                                                         | ALL                   |
 | :star: [App Nodes Scalability](Scalability/AppNodesScalability.md)                       | App Service/Nodes     |
 | [Rate Limiting](../../3_HLDDesignProblems/RateLimiterAPI/Readme.md)                      | App Service/Nodes     |
-| :star: [Container Orchestration Service](Scalability/ContainerOrchestrationService.md)   | App Service/Nodes     |
+| :star: [Container Orchestration Service](../6a_ContainerOrchestrationServices/Readme.md)   | App Service/Nodes     |
 | [Content Delivery Network (CDN)](CDNs/CDNs.md)                                           | App Service/Nodes     |
 | :star: [Event Driven Architecture](EventDrivenArchitecture.md)                           | Message Brokers       |
 | :star: [DB Scalability](Scalability/DBScalability.md)                                    | Data Stores           |
@@ -59,7 +59,7 @@ Statelessness - REST APIs
 - That’s a proven and effective strategy that will take you far.
 
 To name another example, let’s consider containers.
-- [Container technologies](Scalability/ContainerOrchestrationService.md), such as [Docker](../6a_ContainerOrchestrationServices/Docker/Readme.md) and [Kubernetes](../6a_ContainerOrchestrationServices/Kubernates.md), are everywhere.
+- [Container technologies](../6a_ContainerOrchestrationServices/Readme.md), such as [Docker](../6a_ContainerOrchestrationServices/Docker/Readme.md) and [Kubernetes](../6a_ContainerOrchestrationServices/Kubernates.md), are everywhere.
 - Spinning up a ton of containers based on automated triggers is something that [Kubernetes](../6a_ContainerOrchestrationServices/Kubernates.md) excels at, especially if there’s no need to hold state.
 
 ## Stateful Protocol

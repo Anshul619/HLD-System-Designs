@@ -1,11 +1,6 @@
 
-| Component                                            | Strength                                                                    | Type                                                                                                                              | Remarks |
-|------------------------------------------------------|-----------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------|---------|
-| :star: [Kubernates](../6a_ContainerOrchestrationServices/Kubernates.md)                   | Can run 10s of thousands of machines, across multiple clusters              | [Orchestration Container Service](../0_SystemGlossaries/Scalability/ContainerOrchestrationService.md)                             | -       |
-| :star: [Apache Zookeeper](ApacheZookeeper.md)        | Highly reliable distributed coordination                                    | Coordinator                                                                                                                       | -       |
-| :star: [Docker](../6a_ContainerOrchestrationServices/Docker/Readme.md)                    | Mostly used containerization                                                | [Orchestration Container Service](../0_SystemGlossaries/Scalability/ContainerOrchestrationService.md)                             | -       |
-| [Apache Marathon & Mesos](../6a_ContainerOrchestrationServices/ApacheMarathon&Mesos.md)   | Can run 10s of thousands of machines, across multiple clusters              | [Orchestration Container Service](../0_SystemGlossaries/Scalability/ContainerOrchestrationService.md) (with Own Containerization) | -       |
-| [Apache Yarn](../6a_ContainerOrchestrationServices/ApacheYarn.md)                         | Big-Data Processing (part of [Hadoop](../5_BigDataComponents/ApacheHadoop)) | [Orchestration Container Service](../0_SystemGlossaries/Scalability/ContainerOrchestrationService.md)                             | -       |
-
-# Reference
-- [Is Kubernetes going to replace YARN and/or Mesos?](https://www.quora.com/Is-Kubernetes-going-to-replace-YARN-and-or-Mesos)
+| Component                                                                          | Strength                                 | Type        | Remarks |
+|------------------------------------------------------------------------------------|------------------------------------------|-------------|---------|
+| [Container Orchestration Services](../6a_ContainerOrchestrationServices/Readme.md) | -                                        | -           | -       |
+| [CI & CD](CI&CD.md)                                                                | -                                        | -           | -       |
+| :star: [Apache Zookeeper](ApacheZookeeper.md)                                      | Highly reliable distributed coordination | Coordinator | -       |
