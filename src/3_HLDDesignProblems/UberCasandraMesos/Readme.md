@@ -17,8 +17,8 @@
   - One of the clusters was storing the location that was sent out every 30 seconds by both the driver and rider apps.
 
 # App Provisioning
-- Uber use [Docker containers](../../1_HLDDesignComponents/6_DevOps/Docker/Readme.md) on [Mesos](../../1_HLDDesignComponents/6_DevOps/ApacheMarathon&Mesos.md) to run their microservices with consistent configurations scalable, with help from Aurora for long-running services and cron jobs.
-- One of Uber infrastructure teams, Application Platform, produced a template library that builds services into shippable [Docker images](../../1_HLDDesignComponents/6_DevOps/Docker/Readme.md).
+- Uber use [Docker containers](../../1_HLDDesignComponents/6a_ContainerOrchestrationServices/Docker/Readme.md) on [Mesos](../../1_HLDDesignComponents/6a_ContainerOrchestrationServices/ApacheMarathon&Mesos.md) to run their microservices with consistent configurations scalable, with help from Aurora for long-running services and cron jobs.
+- One of Uber infrastructure teams, Application Platform, produced a template library that builds services into shippable [Docker images](../../1_HLDDesignComponents/6a_ContainerOrchestrationServices/Docker/Readme.md).
 
 # References
 - [HighScalability - How Uber Manages a Million Writes Per Second Using Mesos and Cassandra Across Multiple Datacenters?](http://highscalability.com/blog/2016/9/28/how-uber-manages-a-million-writes-per-second-using-mesos-and.html)

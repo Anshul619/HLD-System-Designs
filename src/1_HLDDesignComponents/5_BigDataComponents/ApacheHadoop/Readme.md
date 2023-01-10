@@ -5,7 +5,7 @@
 
 # Modules
 - [Apache HDFS](ApacheHDFS.md)
-- [Apache Yarn](../../6_DevOps/ApacheYarn.md)
+- [Apache Yarn](../../6a_ContainerOrchestrationServices/ApacheYarn.md)
 - [Apache MapReduce](ApacheMapReduce.md)
 - Hadoop Common - it contains packages and libraries which are used for other modules.
 

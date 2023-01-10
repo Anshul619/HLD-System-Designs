@@ -10,6 +10,14 @@
 | Data Centers              | LinkedIn has 4 data centers in US (texas, virginia, oregon etc.)                                         |
 | Kafka Clusters            | LinkedIn has separate kafka clusters in every data center (for high scalability, disaster recovery etc.) |
 
+# MicroServices
+- Start Page, 
+- Recommendation, 
+- Feed, 
+- Search, 
+- Product Details, 
+- Orders etc.
+
 # References
 - [Introduction and Overview of Apache Kafka](https://www.slideshare.net/mumrah/kafka-talk-tri-hug)
 - [Did you mean "Galene"?](https://engineering.linkedin.com/search/did-you-mean-galene)

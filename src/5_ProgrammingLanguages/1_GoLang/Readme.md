@@ -57,7 +57,7 @@
 
 | Title                                                                                                                                                                           | Remarks |
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------|
-| [Docker](../../1_HLDDesignComponents/6_DevOps/Docker/Readme.md) and [Kubernates](../../1_HLDDesignComponents/6_DevOps/Kubernates.md) are developed in [GoLang](https://go.dev/) | -       |
+| [Docker](../../1_HLDDesignComponents/6a_ContainerOrchestrationServices/Docker/Readme.md) and [Kubernates](../../1_HLDDesignComponents/6a_ContainerOrchestrationServices/Kubernates.md) are developed in [GoLang](https://go.dev/) | -       |
 | Google's download server (dl.google.com), golang.org                                                                                                                            | -       |
 
 # What are Golang packages?

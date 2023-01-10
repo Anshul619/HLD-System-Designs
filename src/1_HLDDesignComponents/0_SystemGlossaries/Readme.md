@@ -59,8 +59,8 @@ Statelessness - REST APIs
 - That’s a proven and effective strategy that will take you far.
 
 To name another example, let’s consider containers.
-- [Container technologies](Scalability/ContainerOrchestrationService.md), such as [Docker](../6_DevOps/Docker/Readme.md) and [Kubernetes](../6_DevOps/Kubernates.md), are everywhere.
-- Spinning up a ton of containers based on automated triggers is something that [Kubernetes](../6_DevOps/Kubernates.md) excels at, especially if there’s no need to hold state.
+- [Container technologies](Scalability/ContainerOrchestrationService.md), such as [Docker](../6a_ContainerOrchestrationServices/Docker/Readme.md) and [Kubernetes](../6a_ContainerOrchestrationServices/Kubernates.md), are everywhere.
+- Spinning up a ton of containers based on automated triggers is something that [Kubernetes](../6a_ContainerOrchestrationServices/Kubernates.md) excels at, especially if there’s no need to hold state.
 
 ## Stateful Protocol
 - [Stateful Protocol](https://www.geeksforgeeks.org/difference-between-stateless-and-stateful-protocol/) requires server to save the status and session information.

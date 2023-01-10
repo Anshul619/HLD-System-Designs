@@ -23,9 +23,6 @@
 # Amazon Inspector
 - [Amazon Inspector](https://aws.amazon.com/inspector/) is an automated vulnerability management service that continually scans AWS workloads for software vulnerabilities and unintended network exposure.
 
-# AWS CodePipeline
-- Automate continuous delivery pipelines for fast and reliable updates using [AWS CodePipeline](https://aws.amazon.com/codepipeline/)
-
 # AWS Serverless Application
 - The [AWS Serverless Application Model (AWS SAM)](https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/what-is-sam.html) is an open-source framework that you can use to build serverless applications on AWS.
 - A serverless application is a combination of [Lambda functions](../4_ComputeServices/AWSLambda/Readme.md), [event sources](../5_MessageBrokerServices/AmazonEventBridge.md), and other resources that work together to perform tasks. 
