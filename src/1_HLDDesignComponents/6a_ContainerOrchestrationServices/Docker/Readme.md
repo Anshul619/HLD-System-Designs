@@ -1,5 +1,4 @@
 # Docker
-# Docker
 - [Docker](https://docs.docker.com/get-started/overview/) is an open platform for developing, shipping, and running applications. (Package it once and leverage it across environments)
 - Docker enables you to separate your applications from your infrastructure so you can deliver software quickly. 
 - With Docker, you can manage your infrastructure in the same ways you manage your applications.
