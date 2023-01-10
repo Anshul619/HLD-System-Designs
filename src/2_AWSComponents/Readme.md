@@ -336,8 +336,6 @@
 - [Amazon ECS vs EKS vs Fargate](4a_ContainerOrchestrationServices/EKSvsECSvsFargate.md)
 - [Amazon API Gateway vs ELB](1_NetworkingAndContentDelivery/AmazonAPIGatewayVsELB.md)
 
-[a]()
-
 ## AWS - Services List, Table
 
 | Service                                                                                                                   | Type                                                                        | [Fully Managed?](FullyManagedVsSelfManaged.md)   | [Location - Global vs Regional vs AZ](AWS-Global-Architecture-Region-AZ.md)                                                                     | Description                                                                                                                                                                                                                                                                                                 |
