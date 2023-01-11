@@ -25,7 +25,6 @@
 ## Others
 - [Send-SMS-API design - App Internal Clients, Multiple SMS-Providers, AutoScaling](../3_HLDDesignProblems/NotificationSystem/README.md)
 - [WP Site with Amazon CloudFront & S3](0_AWSDesigns/WPSiteCloudFront&S3.md)
-- [Microservices On AWS](0_AWSDesigns/MicroservicesOnAWS.md)
 - [Dropbox Saves Millions by Building a Scalable Metadata Store on Amazon DynamoDB and Amazon S3](0_AWSDesigns/DropboxAmazonDynamoDB/Readme.md)
 
 # AWS Services - Architecture, Features etc.
@@ -398,3 +397,4 @@
 - [The Top 10 Most Used AWS Services](https://insider.ssi-net.com/insights/the-top-10-most-used-aws-services)
 - [Various AWS Instances Comparisons](https://instances.vantage.sh/)
 - [Introduction to AWS Services](https://www.youtube.com/watch?v=Z3SYDTMP3ME)
+- [Microservices On AWS](https://docs.aws.amazon.com/whitepapers/latest/microservices-on-aws/microservices-on-aws.html)

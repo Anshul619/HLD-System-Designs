@@ -17,7 +17,7 @@
 | Fault tolerant, Highly Available                                                                                                                    | Data replicated across Availability Zones                         |
 | [Partitions and data distribution](#partitionssharding-and-data-distribution)                                                                       | -                                                                 |
 | [DynamoDB Global tables](DynamoDBGlobalTables.md)                                                                                                   | -                                                                 |
-| [DynamoDB Accelerator (DAX)](DynamoDBAccelerator.md)                                                                                                | -                                                                 |
+| [DynamoDB Accelerator (DAX)](DynamoDBAccelerator.md) provides caching capabilities for accessing data.                                                                                               | -                                                                 |
 | [PartiQL - a SQL-compatible query language for Amazon DynamoDB](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/ql-reference.html) | -                                                                 |
 | [Time to Live (TTL) supported for the data](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/TTL.html)                              | -                                                                 |
 | JSON Support                                                                                                                                        | -                                                                 |
@@ -25,7 +25,7 @@
 | Monitoring                                                                                                                                          | Integrated with Cloudwatch                                        |
 
 ## Automated Storage Scaling
-- `There is no limit to the amount of data you can store in a DynamoDB table`, and the service automatically allocates more storage, as you store more data using the DynamoDB write APIs.
+- There is no limit to the amount of data you can store in a DynamoDB table, and the service automatically allocates more storage, as you store more data using the DynamoDB write APIs.
 
 ## Provisioned Throughput
 - When creating a table, simply specify how much request capacity you require? (`OnDemand` or `specific number`)
