@@ -54,7 +54,7 @@
     </tr>
     <tr>
         <td>
-            <a href="2_SecurityAndIdentityServices">Security Services</a>
+            <a href="2_SecurityAndIdentityServices">User Management & Security Services</a>
         </td>
         <td>
             <div class="container" style="background:white">

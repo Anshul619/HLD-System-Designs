@@ -7,24 +7,24 @@
 
 ![img.png](assests/MonolothicToMicroService.drawio.png)
 
+# Microservice Implementation in Spring Boot
+
+![](../../5_ProgrammingLanguages/2_Java/SpringBootAndMicroServices/assests/Spring-Boot-MicroService-OnPerm.drawio.png)
+
+[Read more](../../5_ProgrammingLanguages/2_Java/SpringBootAndMicroServices/README.md)
+
 # Design Principles
-- Every microservice would have separate git code repo.
-- Define contracts (request/response) between microservices.
-- Use [API Gateway](https://microservices.io/patterns/apigateway.html) to route incoming request between microservices, like [AWS API Gateway](../../2_AWSComponents/1_NetworkingAndContentDelivery/AmazonAPIGateway/Readme.md).
-- Use [Container orchestration service](../6a_ContainerOrchestrationServices/Readme.md) for deployments, like [Kubernates](../6a_ContainerOrchestrationServices/Kubernates.md).
-- Logging & monitoring can be done using [New Relic](../7_MonitoringTools/NewRelic.md), [ELK](../7_MonitoringTools/ELK.md) etc.
+
+| Principle                                                                                                 | Description                                                                                                                                                                                                                | Relevant Tech                                                                                                                                   |
+|-----------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------|
+| Separate Git Repo                                                                                         | Every microservice would have separate git code repo.                                                                                                                                                                      | GitHub                                                                                                                                          |
+| Define Contracts                                                                                          | Contracts (request/response) between microservices should be defined                                                                                                                                                       | [gRPC](../2_APITechOptions/gRPC.md), [REST](../2_APITechOptions/REST.md) etc.                                                                   |
+| Use [API Gateway](1_APIGateway) for incoming traffic routing                                              | Route incoming request between microservices.                                                                                                                                                                              | [AWS API Gateway](../../2_AWSComponents/1_NetworkingAndContentDelivery/AmazonAPIGateway/Readme.md), [Zulu](1_APIGateway/ZuluAPIGateway.md) etc. |
+| Use [Container orchestration service](../6a_ContainerOrchestrationServices/Readme.md) for deployments     | -                                                                                                                                                                                                                          | [Kubernates](../6a_ContainerOrchestrationServices/Kubernates.md), AWS ECS etc.                                                                  |
+| [Service Registry & Discovery](2_ServiceRegistry&Discovery/Readme.md)                                     | Some systems such as [Kubernetes](../6a_ContainerOrchestrationServices/Kubernates.md) and [AWS ELB](../../2_AWSComponents/1_NetworkingAndContentDelivery/ElasticLoadBalancer/Readme.md) have an implicit service registry. | [Eureka](Eureka.md), [AWS CloudMap](../../../2_AWSComponents/1_NetworkingAndContentDelivery/AWSCloudMap.md)                                     |
+| [Logging & monitoring](../7_MonitoringTools/Readme.md)                                                    | -                                                                                                                                                                                                                          | [New Relic](../7_MonitoringTools/NewRelic.md), AWS Cloudwatch, [ELK](../7_MonitoringTools/ELK.md) etc.                                          |
 
 # Key Features of API Gateway
-
-![img.png](assests/api_gateway.png)
-
-[Read more](https://www.youtube.com/watch?v=6ULyxuHKxg8)
-
-## About AWS API Gateway
-
-![img.png](../../2_AWSComponents/1_NetworkingAndContentDelivery/AmazonAPIGateway/assets/AmazonAPIGateway_Features.drawio.png)
-
-[Read more about AWS API Gateway](../../2_AWSComponents/1_NetworkingAndContentDelivery/AmazonAPIGateway/Readme.md)
 
 ## How microservices communicate with each other?
 - To get the data from one microservice to another, [gPRC](../2_APITechOptions/gRPC.md) or [REST](../2_APITechOptions/REST.md) api protocols can be used.
@@ -62,6 +62,7 @@
 - :family_man_woman_boy: `Team` - Monolothic is good for small team while Microservice is good for large team.
 - :moneybag: `Increased Budget` - With microservices, the budget increases (deployment, time to make change, team size etc.)
 - `Obviousness` - With large number of services, it would be a bit tricky to find the microservice for the required change.
+- `Increased Complexity` - Wide variety of resources, exponential complexity increase.
 - `Safety` - The contract should be defined properly between microservices.
 - `Resilience` - Client should be able to handle failure scenarios properly.
 - `Dependency` - Micro-services would be dependent to each other. Sometimes, there can be circular dependencies also.

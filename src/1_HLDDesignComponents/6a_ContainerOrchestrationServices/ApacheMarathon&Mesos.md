@@ -15,7 +15,7 @@
 - [Linear Scalability](../0_SystemGlossaries/Scalability/DBScalability.md) - Industry proven to easily scale to 10,000s of nodes.
 
 ### High availability
-- [Fault-tolerant](../0_SystemGlossaries/HighAvailability.md) replicated master and agents using [Zookeeper](../6_DevOps/ApacheZookeeper.md). Non-disruptive upgrades.
+- [Fault-tolerant](../0_SystemGlossaries/HighAvailability.md) replicated master and agents using [Zookeeper](../6_DevOps/ApacheZookeeper.md).
 - It uses [Zookeeper](../6_DevOps/ApacheZookeeper.md) for the leader election.
 - If the Mesos master is unavailable, existing tasks can continue to execute, but new resources cannot be allocated and new tasks cannot be launched. 
 - To reduce the chance of this situation occurring, Mesos has a [high-availability](../0_SystemGlossaries/HighAvailability.md) mode that uses multiple Mesos masters

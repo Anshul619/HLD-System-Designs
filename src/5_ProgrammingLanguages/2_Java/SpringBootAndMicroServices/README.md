@@ -125,21 +125,13 @@ logging.level.org.hibernate: ERROR
 
 # Microservices - How to develop, deploy microservices using Spring Boot?
 
-<img title="Spring-Boot-MicroService-OnPerm.drawio" alt="Alt text" src="assests/Spring-Boot-MicroService-OnPerm.drawio.png">
+![](assests/Spring-Boot-MicroService-OnPerm.drawio.png)
 
-## [Zulu API Gateway](https://stackabuse.com/spring-cloud-routing-with-zuul-and-gateway/)
-- Zulu is an API gateway, for routing microservices properly. ( An alternative to AWS API gateway )
-- Netflix created Zuul server and later open-sourced it.
-- Spring provided a nice wrapper around it for easily incorporating it to the Spring stack.
+## Zulu API Gateway
+- [Read more](../../../1_HLDDesignComponents/1_MicroServicesSOA/1_APIGateway/ZuluAPIGateway.md)
 
-## [Eureka Server - Service Registry](https://www.tutorialspoint.com/spring_boot/spring_boot_eureka_server.htm)
-- Eureka naming server is a REST-based server that is used in the AWS Cloud services for load balancing and fail-over of middle-tier services.
-- Eureka naming server is an application that holds information about all client service applications. 
-- Each microservice registers itself with the Eureka naming server. 
-- The naming server registers the client services with their port numbers and IP addresses. 
-- It is also known as `Discovery Server`.  
-- Eureka naming server comes with the bundle of Spring Cloud. It runs on the default port 8761. 
-- It also comes with a Java-based client component, the eureka client, which makes interactions with the service much easier.
+## Eureka Server for Service Registry and discovery
+- [Read more](../../../1_HLDDesignComponents/1_MicroServicesSOA/2_ServiceRegistry&Discovery/Eureka.md)
 
 ## [Microservices - Testing strategy](https://www.simform.com/blog/microservice-testing-strategies/)
 

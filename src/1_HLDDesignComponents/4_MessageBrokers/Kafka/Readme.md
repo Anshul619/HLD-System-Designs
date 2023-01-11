@@ -98,11 +98,11 @@ Kafka is based on [Log Based Queue](../../0_SystemGlossaries/AppendOnlyDataStruc
 - Multiple brokers in the Kafka cluster, provides load balancing, reliable redundancy & fail-over.
 - Without sacrificing performance, each broker instance can handle read and write volumes of hundreds of thousands per second (and gigabytes of messages).
 - Brokers keep very little state, mostly just open file pointers & connections.
-- `To scale writes, number of leader partitions per broker can be reduced to spread the writes across more brokers.`
+- To scale writes, number of leader partitions per broker can be reduced to spread the writes across more brokers.
 
 ## ZooKeeper
 - [Zookeeper](../../6_DevOps/ApacheZookeeper.md) manages Kafka Cluster ( new broker, new partition etc. ) and brokers coordination.
-- `Kafka stores basic metadata in Zookeeper ( in-memory ), like info about brokers, topics, partitions, partition lead/followers, consumer offset etc.`
+- Kafka stores basic metadata in Zookeeper ( in-memory ), like info about brokers, topics, partitions, partition lead/followers, consumer offset etc.
 - Zookeeper is also used in the [Controller election](#controller-election) in the `Kafka Cluster`.
 - Zookeeper notifies consumers and producers of the arrival of new broker or failure of existing broker, as well as routing all requests to partition's leaders.
 - [Read more about replication in Kafka](#replication)

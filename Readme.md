@@ -107,6 +107,29 @@ This repo contains the various system design components info, questions and solu
     </tr>
     <tr>
       <td>
+        <a href="src/1_HLDDesignComponents/1_MicroServicesSOA/ServiceRegistry&Discovery" target="_blank">MicroServices - Service Registry & Discovery</a>
+      </td>
+      <td>
+        <div class="container" style="background:white">
+            <div class="block two first">
+                <a href="/src/1_HLDDesignComponents/1_MicroServicesSOA/ServiceRegistry&Discovery/Eureka.md" target="_blank">
+                  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsLVq3RUn8c7AWSr_559ISKEpHkgVn5U3NKg&usqp=CAU" width="150">
+                </a>
+                <a href="/src/2_AWSComponents/1_NetworkingAndContentDelivery/AWSCloudMap.md" target="_blank">
+                  <img src="https://landscape.cncf.io/logos/aws-cloud-map.svg" width="150">
+                </a>
+                <a href="/src/1_HLDDesignComponents/6_DevOps/ApacheZookeeper.md" target="_blank">
+                  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Apache_ZooKeeper_logo.svg/1200px-Apache_ZooKeeper_logo.svg.png" width="150">
+                </a>
+                <a href="/src/1_HLDDesignComponents/1_MicroServicesSOA/ServiceRegistry&Discovery/etcd.md" target="_blank">
+                  <img src="https://cdn.freebiesupply.com/logos/large/2x/etcd-logo-png-transparent.png" width="150">
+                </a>
+            </div>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td>
         <a href="src/1_HLDDesignComponents/5_BigDataComponents">BigData Compute Engines</a>
         <br><br>
         <a href="src/1_HLDDesignComponents/5_BigDataComponents/ApacheSparkVsHadoopMapReduce.md">Comparisons</a>
