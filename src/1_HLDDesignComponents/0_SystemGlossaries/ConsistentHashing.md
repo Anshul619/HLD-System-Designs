@@ -1,7 +1,7 @@
 # Introduction
 - This handles data sharding with dynamic number of servers.
 
-![img.png](assests/consistent_sharding.png)
+![img.png](assets/consistent_sharding.png)
 
 [Read more](https://www.youtube.com/watch?v=UF9Iqmg94tk)
 

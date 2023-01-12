@@ -4,7 +4,7 @@
 - Microservice architecture makes it easier and fastest way to build and work on individual parts of an application, and thus the application as a whole.
 - Example - User Management, Order Management, Checkout, Address etc.
 
-![img.png](assests/MonolothicToMicroService.drawio.png)
+![img.png](assets/MonolothicToMicroService.drawio.png)
 
 # Microservice Implementation in Spring Boot
 

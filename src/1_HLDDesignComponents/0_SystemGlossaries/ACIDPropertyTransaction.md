@@ -1,6 +1,6 @@
 # :star: ACID Properties of the Transaction
 
-![img.png](assests/ACID_Property_DBMS.drawio.png)
+![img.png](assets/ACID_Property_DBMS.drawio.png)
 
 [Read more](https://www.geeksforgeeks.org/acid-properties-in-dbms/)
  

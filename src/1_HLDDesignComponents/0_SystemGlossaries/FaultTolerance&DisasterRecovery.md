@@ -10,7 +10,7 @@
 - If an application is said to be fault-tolerant then it is also considered highly available. But vice-verse is not true.
 - In AWS, 100% fault tolerance (zero downtime) can be achieved through [active-active routing policy in Route53](../../2_AWSComponents/1_NetworkingAndContentDelivery/AmazonRoute53.md#routing-policy) with at-least 2 regions (having same components & architecture).
 
-![img.png](assests/ha_vs_fault_tolerant.png)
+![img.png](assets/ha_vs_fault_tolerant.png)
 
 # Disaster Recovery
 - In AWS, [Disaster Recovery](https://en.wikipedia.org/wiki/Disaster_recovery) is done through [active-passive failover policy in Route53](../../2_AWSComponents/1_NetworkingAndContentDelivery/AmazonRoute53.md#failover-routing-policy) with at-least 2 regions (having same components & architecture).

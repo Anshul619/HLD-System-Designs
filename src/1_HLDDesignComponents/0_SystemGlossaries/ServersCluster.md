@@ -18,4 +18,4 @@
 | [Hadoop Cluster](../5_BigDataComponents/ApacheHadoop)                                                 | Cluster of different components             |
 
 
-![img.png](assests/server_cluster_img.png)
+![img.png](assets/server_cluster_img.png)

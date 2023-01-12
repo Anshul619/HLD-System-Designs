@@ -6,7 +6,7 @@
 
 We cannot build a general data store that is [highly available](HighAvailability.md), [sequentially consistent](ReplicationLagAndDataConsistency.md), and tolerant to any partition failures.
 
-![img.png](assests/CAP_Theorem.drawio.png)
+![img.png](assets/CAP_Theorem.drawio.png)
 
 We can only build a system that has `any two of these three properties`.
 - Because, to be consistent, all nodes should see the same set of updates in the same order.
@@ -22,7 +22,7 @@ The PACELC theorem states that in a system that replicates data:
 - If there is a network partition (‘P’), a distributed system can tradeoff between availability and consistency (i.e., ‘A’ and ‘C’);
 - else (‘E’), when the system is running normally in the absence of partitions, the system can trade off between latency (‘L’) and consistency (‘C’).
 
-![img.png](assests/PACELC_Diagram.drawio.png)
+![img.png](assets/PACELC_Diagram.drawio.png)
 
 ## PA/EL systems - DynamoDB & Cassandra
 - [DynamoDB](../../2_AWSComponents/6_DatabaseServices/AmazonDynamoDB/Readme.md) and [Cassandra](../3_DatabaseComponents/NoSQL-Databases/ApacheCasandra.md) choose availability over consistency when a partition occurs; otherwise, they choose lower latency.
