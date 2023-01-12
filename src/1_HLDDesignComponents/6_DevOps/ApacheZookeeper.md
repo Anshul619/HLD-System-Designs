@@ -1,4 +1,3 @@
-
 # Apache Zookeeper
 - [Apache Zookeeper](https://zookeeper.apache.org/) can manage a Cluster (new broker, new partition etc.) and servers coordination.
 - Basic metadata can be stored in Zookeeper (in-memory), like info about brokers, topics, partitions, partition lead/followers, consumer offset etc.

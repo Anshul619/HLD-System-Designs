@@ -73,10 +73,10 @@ resource "aws_route53_record" "latency-euc1" {
 ````
 
 ## Multivalue answer routing
-- Use a [multivalue answer routing policy](https://aws.amazon.com/premiumsupport/knowledge-center/multivalue-versus-simple-policies/) to help distribute DNS responses across multiple resources. 
+- [Use a multivalue answer routing policy](https://aws.amazon.com/premiumsupport/knowledge-center/multivalue-versus-simple-policies/) to help distribute DNS responses across multiple resources. 
 - For example, use multivalue answer routing when you want to associate your routing records with a Route 53 health check. 
 - For example, use multivalue answer routing when you need to return multiple values for a DNS query and route traffic to multiple IP addresses.
-- [ECS/Fargate](../4a_ContainerOrchestrationServices/AmazonECS/Readme.md) uses multivalue answer routing in the service-discovery, for load balancing.
+- [Amazon ECS](../4a_ContainerOrchestrationServices/AmazonECS/Readme.md) uses multivalue answer routing in the [service-discovery](../../1_HLDDesignComponents/1_MicroServicesSOA/2_ServiceRegistry&Discovery/Readme.md), for load balancing.
 
 ## Geo Based DNS routing
 - The Geo Based DNS routing takes decisions based on the geographic location of the request.
