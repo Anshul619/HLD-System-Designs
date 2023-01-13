@@ -25,12 +25,14 @@ Kubernetes is a Greek word meaning `captain` in English.
 - In production environments, the control plane usually runs across multiple computers and a cluster usually runs multiple nodes, providing [fault-tolerance and high availability](../0_SystemGlossaries/HighAvailability.md).
 - [Nodes with controlplane]((https://kubernetes.io/docs/concepts/overview/components/)) role run the K8s master components (excluding [etcd](../1_MicroServicesSOA/2_ServiceRegistry&Discovery/etcd.md), as its separate role). 
 
-| K8s Master Components                                                                                                 | Role                                                                       | Remarks                                                                                                                                                                                                                                                                                           |
-|-----------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [API server](https://kubernetes.io/docs/reference/command-line-tools-reference/kube-apiserver/)                       | API Server                                                                 | The Kubernetes API server validates and configures data for the api objects which include pods, services, replicationcontrollers, and others. <br/>- The API Server services REST operations and provides the frontend to the cluster's shared state through which all other components interact. |
-| [etcd](../1_MicroServicesSOA/2_ServiceRegistry&Discovery/etcd.md)                                                                       | [Configuration Store & Service Discovery](../1_MicroServicesSOA/2_ServiceRegistry&Discovery) | Consistent and [highly-available key value store](../0_SystemGlossaries/HighAvailability.md) used as Kubernetes backing store for all cluster data.                                                                                                                                               |
-| [kube-controller-manager](https://kubernetes.io/docs/reference/command-line-tools-reference/kube-controller-manager/) | -                                                                          | The Kubernetes controller manager is a daemon that embeds the core control loops shipped with Kubernetes.                                                                                                                                                                                         |
-| [Scheduler](https://kubernetes.io/docs/concepts/scheduling-eviction/kube-scheduler/)                                  | -                                                                          | A scheduler watches for newly created Pods that have no Node assigned. For every Pod that the scheduler discovers, the scheduler becomes responsible for finding the best Node for that Pod to run on.                                                                                            |
+| K8s Master Components                                                                                                | Description                                                                                                                                                                                                                                                                                                                                     |
+|----------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| [API server](https://kubernetes.io/docs/reference/command-line-tools-reference/kube-apiserver/)                      | The Kubernetes API server validates and configures data for the api objects which include pods, services, replication controllers, and others. <br/>- The API Server services REST operations and provides the frontend to the cluster's shared state through which all other components interact.                                              |
+| [etcd](../1_MicroServicesSOA/2_ServiceRegistry&Discovery/etcd.md)                                                    | etcd is used for [Configuration Store & Service Discovery](../1_MicroServicesSOA/2_ServiceRegistry&Discovery).<br/>- etcd is a [Consistent](../0_SystemGlossaries/ReplicationLagAndDataConsistency.md) and [highly-available key value store](../0_SystemGlossaries/HighAvailability.md) used as Kubernetes backing store for all cluster data. |
+| [Controller Manager](https://kubernetes.io/docs/reference/command-line-tools-reference/kube-controller-manager/)     | The Kubernetes controller manager is a daemon that embeds the core control loops (like ReplicationController, DeploymentController etc.) shipped with Kubernetes.                                                                                                                                                                               |
+| [Scheduler](https://kubernetes.io/docs/concepts/scheduling-eviction/kube-scheduler/)                                 | A scheduler is responsible for scheduling pods on the cluster. <br/>- It watches for newly created Pods that have no Node assigned. <br/>- For every Pod that the scheduler discovers, the scheduler becomes responsible for finding the best Node for that Pod to run on.                                                                      |
+| [ReplicationController](https://kubernetes.io/docs/concepts/workloads/controllers/replicationcontroller/)            | A ReplicationController ensures that a specified number of pod replicas are running at any one time. In other words, a ReplicationController makes sure that a pod or a homogeneous set of pods is always up and available.                                                                                                                     |
+| [DeploymentController](https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_DeploymentController.html)                                                                                                 | Deployment Controller manages the rolling update and rollback of deployments (docker containers etc.)                                                                                                                                                                                                                                           |
 
 - [Read more](https://kubernetes.io/docs/concepts/overview/components/)
 
@@ -56,7 +58,7 @@ Kubernetes agents perform various tasks on every node to manage the containers r
 - Labels are intended to be used to specify identifying attributes of objects that are meaningful and relevant to users, but do not directly imply semantics to the core system.
 
 ## K8s Networking
-- K8s manages its own load balancer, service discovery etc.
+- K8s manages its own load balancer, service discovery (through [etcd](../1_MicroServicesSOA/2_ServiceRegistry&Discovery/etcd.md)) etc.
 - [Read more](https://kubernetes.io/docs/concepts/services-networking/_print/)
 
 ## Workload Resources
@@ -241,6 +243,16 @@ spec:
 # Installation Guide
 - [Install and Set Up kubectl on macOS](https://kubernetes.io/docs/tasks/tools/install-kubectl-macos/)
 - [MiniKube Start](https://minikube.sigs.k8s.io/docs/start/)
+
+# :+1: Advantages of K8s
+- Self-healing
+- Automated Rollbacks
+- Horizontal Scaling
+- It helps us deploy and manage applications in consistent and reliable way regardless of underlying architecture.
+
+# :-1: Disadvantages of K8s
+- Complex to set up and operate
+- High cost to run minimum resources for K8s
 
 # References
 - [How to Manage Kubernetes With Kubectl?](https://www.suse.com/c/rancher_blog/how-to-manage-kubernetes-with-kubectl/)

@@ -1,4 +1,3 @@
-
 # Replication Lag And Data Consistency 
 - Replication is widely used in the [distributed](Readme.md) & [highly available](HighAvailability.md) database management systems (DBMS), usually with a [master-slave or Single-Primary-Instance-Multiple-Read-Replicas technique](Scalability/DBScalability.md).
 - The master server gets all the updates, which then ripple through to the slave servers.
