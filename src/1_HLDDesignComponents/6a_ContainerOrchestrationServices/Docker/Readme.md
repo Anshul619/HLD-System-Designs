@@ -2,7 +2,7 @@
 - [Docker](https://docs.docker.com/get-started/overview/) is an open platform for developing, shipping, and running applications. (Package it once and leverage it across environments)
 - Docker enables you to separate your applications from your infrastructure so you can deliver software quickly. 
 - With Docker, you can manage your infrastructure in the same ways you manage your applications.
-- [Amazon Elastic Container Registry (Amazon ECR)](../../../2_AWSComponents/4a_ContainerOrchestrationServices/AmazonECR.md) can be used to store, manage & deploy docker container images. (An alternative to [Docker Hub](https://hub.docker.com/))
+- [Amazon Elastic Container Registry (Amazon ECR)](../../../2_AWSComponents/4_ContainerOrchestrationServices/AmazonECR.md) can be used to store, manage & deploy docker container images. (An alternative to [Docker Hub](https://hub.docker.com/))
 
 ![](https://docs.docker.com/engine/images/architecture.svg)
 

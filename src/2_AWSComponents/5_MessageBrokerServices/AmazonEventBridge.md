@@ -14,10 +14,10 @@
 ![img.png](assests/eventbridge/EventBridge.png)
 
 # Available Target Services
-- [AWS Lambda](../4_ComputeServices/AWSLambda/Readme.md)
+- [AWS Lambda](../3_ComputeServices/AWSLambda/Readme.md)
 - [Amazon SQS](AmazonSQS.md)
 - [Amazon SNS](AmazonSNS.md)
-- [AWS Step Functions](../4_ComputeServices/AWSStepFunctions.md)
+- [AWS Step Functions](../3_ComputeServices/AWSStepFunctions.md)
 - [Amazon Kinesis Data Streams](AmazonKinesis/Readme.md)
 - [Amazon Kinesis Data Firehouse](AmazonKinesis/Readme.md)
 - [API Gateway](../1_NetworkingAndContentDelivery/AmazonAPIGateway/Readme.md)

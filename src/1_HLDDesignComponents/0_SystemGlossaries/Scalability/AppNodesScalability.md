@@ -4,11 +4,11 @@
 
 # :star: Recommendation for a startup with less than 10 microservices
 - For [high-availability](../HighAvailability.md), have a minimum of 3 worker nodes (i.e. 3-fold replication). As a startup, 3–5 worker nodes is sufficient.
-- Set up [horizontal auto-scaling](../../../2_AWSComponents/4_ComputeServices/AmazonEC2/AutoScalingGroup/README.md) to spawn a maximum of 5 worker nodes.
+- Set up [horizontal auto-scaling](../../../2_AWSComponents/3_ComputeServices/AmazonEC2/AutoScalingGroup/README.md) to spawn a maximum of 5 worker nodes.
 - If you have a [stateless application](../Readme.md#star-stateless-protocol), turn on [horizontal pod auto scaling (HPA)](../../6a_ContainerOrchestrationServices/Kubernates.md#star-horizontal-pod-autoscaling).
-- For the development environment, use nodes of one of the following sizes [t3.medium, t3.large, m5.medium, or m5.large](../../../2_AWSComponents/4_ComputeServices/AmazonEC2/ReadMe.md).
+- For the development environment, use nodes of one of the following sizes [t3.medium, t3.large, m5.medium, or m5.large](../../../2_AWSComponents/3_ComputeServices/AmazonEC2/ReadMe.md).
 - For a production environment, it’s traffic-dependent. 
-- But, if you don’t know better right now, you can start with [an m5 series (1x-4x large)](../../../2_AWSComponents/4_ComputeServices/AmazonEC2/ReadMe.md) in production.
+- But, if you don’t know better right now, you can start with [an m5 series (1x-4x large)](../../../2_AWSComponents/3_ComputeServices/AmazonEC2/ReadMe.md) in production.
 
 # Different Node Sizing Strategies
 

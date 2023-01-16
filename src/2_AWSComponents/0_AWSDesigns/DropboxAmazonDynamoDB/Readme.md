@@ -12,5 +12,5 @@
 - We could scale `100–1,000 times on AWS` without designing the system ahead of time.
 
 ## Continuing to Create a Superior User Storage Experience
-- The Alki team is exploring how it might use [Amazon EMR](../../4_ComputeServices/AmazonEMR.md) to `more efficiently offload the data from Amazon DynamoDB to Amazon S3`, a process that is currently handled by Dropbox’s own batch processing system. 
+- The Alki team is exploring how it might use [Amazon EMR](../../3_ComputeServices/AmazonEMR.md) to `more efficiently offload the data from Amazon DynamoDB to Amazon S3`, a process that is currently handled by Dropbox’s own batch processing system. 
 

@@ -7,15 +7,15 @@
 # Default VPC
 - If your account was created after 2013-12-04, it comes with a default VPC in each Region.
 - A default VPC is configured and ready for you to use.
-- For example, it has [a default subnet in each Availability Zone in the Region](../AWS-Global-Architecture-Region-AZ.md), an attached internet gateway, a route in the main route table that sends all traffic to the internet gateway, and DNS settings that provide [EC2 instances](../4_ComputeServices/AmazonEC2/ReadMe.md) with public IP addresses and DNS hostnames.
-- Therefore, an [EC2 instance](../4_ComputeServices/AmazonEC2/ReadMe.md) that is launched in a default subnet automatically has access to the internet.
+- For example, it has [a default subnet in each Availability Zone in the Region](../AWS-Global-Architecture-Region-AZ.md), an attached internet gateway, a route in the main route table that sends all traffic to the internet gateway, and DNS settings that provide [EC2 instances](../3_ComputeServices/AmazonEC2/ReadMe.md) with public IP addresses and DNS hostnames.
+- Therefore, an [EC2 instance](../3_ComputeServices/AmazonEC2/ReadMe.md) that is launched in a default subnet automatically has access to the internet.
 - If you have a default VPC in a Region and you don't specify a subnet when you launch an EC2 instance into that Region, we choose one of the default subnets and launch the instance into that subnet.
 
 # Main Components
 
 ## Subnets
 - [A subnet](https://docs.aws.amazon.com/vpc/latest/userguide/configure-subnets.html) is a range of IP addresses in your VPC. 
-- You can launch AWS resources, such as [Amazon EC2 instances](../4_ComputeServices/AmazonEC2/ReadMe.md), into a specified subnet. 
+- You can launch AWS resources, such as [Amazon EC2 instances](../3_ComputeServices/AmazonEC2/ReadMe.md), into a specified subnet. 
 - You can connect a subnet to the internet, other VPCs, and your own data centers, and route traffic to and from your subnets using route tables.
 - Use a public subnet for resources that must be connected to the internet, and a private subnet for resources that won't be connected to the internet.
 
@@ -35,7 +35,7 @@
 
 ### Security Groups
 - [Security groups](https://docs.aws.amazon.com/vpc/latest/userguide/VPC_SecurityGroups.html)
-- This acts as a firewall for the [EC2 instances](../4_ComputeServices/AmazonEC2), controlling inbound and outbound traffic at the instance level. 
+- This acts as a firewall for the [EC2 instances](../3_ComputeServices/AmazonEC2), controlling inbound and outbound traffic at the instance level. 
 - Includes [Route Tables](#route-tables), [Subnets](#subnets), `IP Ranges` etc.
 
 ### Network Access Control Lists

@@ -76,7 +76,7 @@ resource "aws_route53_record" "latency-euc1" {
 - [Use a multivalue answer routing policy](https://aws.amazon.com/premiumsupport/knowledge-center/multivalue-versus-simple-policies/) to help distribute DNS responses across multiple resources. 
 - For example, use multivalue answer routing when you want to associate your routing records with a Route 53 health check. 
 - For example, use multivalue answer routing when you need to return multiple values for a DNS query and route traffic to multiple IP addresses.
-- [Amazon ECS](../4a_ContainerOrchestrationServices/AmazonECS/Readme.md) uses multivalue answer routing in the [service-discovery](../../1_HLDDesignComponents/1_MicroServicesSOA/2_ServiceRegistry&Discovery/Readme.md), for load balancing.
+- [Amazon ECS](../4_ContainerOrchestrationServices/AmazonECS/Readme.md) uses multivalue answer routing in the [service-discovery](../../1_HLDDesignComponents/1_MicroServicesSOA/2_ServiceRegistry&Discovery/Readme.md), for load balancing.
 
 Note: 
 - Multivalue answer routing is not a substitute for [Elastic Load Balancing (ELB)](ElasticLoadBalancer/Readme.md). 

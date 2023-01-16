@@ -13,12 +13,12 @@
 
 # Modular and Scalable Amazon EKS Architecture on AWS
 
-![img.png](../4_ComputeServices/assests/eks_architecture.png)
+![img.png](../3_ComputeServices/assests/eks_architecture.png)
 
 [Read more](https://aws.amazon.com/quickstart/architecture/amazon-eks/)
 
 # Other Links
-- [EKS cluster for EC2 instances - Cloudformation template](../3_InfraAutomation/AWSCloudFormation/sample_templates/EKS_ECS.yml)
+- [EKS cluster for EC2 instances - Cloudformation template](../9_InfrastructureAsCode/AWSCloudFormation/sample_templates/EKS_ECS.yml)
 - [Amazon EKS vs ECS vs Fargate](EKSvsECSvsFargate.md)
 
 # References

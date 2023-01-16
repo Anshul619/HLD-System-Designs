@@ -1,6 +1,6 @@
 
 # Amazon ELB - Elastic Load Balancer
-- [Amazon ELB - Elastic Load Balancer](https://docs.aws.amazon.com/elasticloadbalancing) automatically distributes your incoming traffic across multiple targets, such as [EC2 instances](../../4_ComputeServices/AmazonEC2), [containers](../../4a_ContainerOrchestrationServices/AmazonECS), and IP addresses, in [one or more Availability Zones](../../AWS-Global-Architecture-Region-AZ.md). 
+- [Amazon ELB - Elastic Load Balancer](https://docs.aws.amazon.com/elasticloadbalancing) automatically distributes your incoming traffic across multiple targets, such as [EC2 instances](../../3_ComputeServices/AmazonEC2), [containers](../../4_ContainerOrchestrationServices/AmazonECS), and IP addresses, in [one or more Availability Zones](../../AWS-Global-Architecture-Region-AZ.md). 
 - [It monitors the health of its registered targets and routes traffic only to the healthy targets](https://aws.amazon.com/builders-library/implementing-health-checks/).
 - [ELB vs API Gateway](../AmazonAPIGatewayVsELB.md)
 
@@ -31,7 +31,7 @@
 ![img.png](assests/elb_listener_setup.png)
 
 ## Target Group
-- [Each target group](https://docs.aws.amazon.com/elasticloadbalancing/latest/network/load-balancer-target-groups.html) routes requests to one or more registered targets, such as [EC2 instances](../../4_ComputeServices/AmazonEC2), using the TCP protocol ( in case of [Network Load Balancer](#network-load-balancer)) and the port number that you specify.
+- [Each target group](https://docs.aws.amazon.com/elasticloadbalancing/latest/network/load-balancer-target-groups.html) routes requests to one or more registered targets, such as [EC2 instances](../../3_ComputeServices/AmazonEC2), using the TCP protocol ( in case of [Network Load Balancer](#network-load-balancer)) and the port number that you specify.
 - You can register a target with multiple target groups.
 - You can [configure health checks on a per target group basis](https://docs.aws.amazon.com/elasticloadbalancing/latest/application/target-group-health-checks.html).
 - Health checks are performed on all targets registered to a target group that is specified in a listener rule for your load balancer.
@@ -62,7 +62,7 @@ You can select the type of [load balancer](../../../1_HLDDesignComponents/0_Syst
 | Basis                              | Network Load Balancer                                                                                | Application Load Balancer                                                                                 |
 |------------------------------------|------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------|
 | Supported Protocols                | TCP, UDP                                                                                             | HTTP, HTTPs                                                                                               |
-| Supported Target Group Types       | [Instance](../../4_ComputeServices/AmazonEC2/ReadMe.md), [IP](../../4_ComputeServices/AWSFargate.md) | [Instance](../../4_ComputeServices/AmazonEC2/ReadMe.md), [IP](../../4_ComputeServices/AWSFargate.md), [Lambda](../../4_ComputeServices/AWSLambda/Readme.md)                                                                                      |
+| Supported Target Group Types       | [Instance](../../3_ComputeServices/AmazonEC2/ReadMe.md), [IP](../../3_ComputeServices/AWSFargate.md) | [Instance](../../3_ComputeServices/AmazonEC2/ReadMe.md), [IP](../../3_ComputeServices/AWSFargate.md), [Lambda](../../3_ComputeServices/AWSLambda/Readme.md)                                                                                      |
 | Path-Based / Content-Based Routing | :x: Not-Supported                                                                                    | :white_check_mark: Supported<br/>- This would help with less number of load balancers and cost reduction. |
 | Rough Throughput                   | Millions of requests per second                                                                      | -                                                                                                         |
 | Ideally Use Cases                  | Microservices (if API gateway used), other apps                                                      | Microservices, Container-based apps                                                                       |
@@ -97,9 +97,9 @@ You can select the type of [load balancer](../../../1_HLDDesignComponents/0_Syst
 
 # How ELB works with AutoScaling?
 
-![img.png](../../4_ComputeServices/AmazonEC2/AutoScalingGroup/assets/Auto-Scaling-ELB.png)
+![img.png](../../3_ComputeServices/AmazonEC2/AutoScalingGroup/assets/Auto-Scaling-ELB.png)
 
-- [Read here](../../4_ComputeServices/AmazonEC2/AutoScalingGroup/README.md)
+- [Read here](../../3_ComputeServices/AmazonEC2/AutoScalingGroup/README.md)
 
 # References
 - [Application Load Balancer vs Network Load Balancer vs Classic Load Balancer | AWS CSAA | Whizlabs](https://www.youtube.com/watch?v=WqJDac1H81I)
