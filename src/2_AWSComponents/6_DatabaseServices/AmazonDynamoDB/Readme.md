@@ -34,8 +34,8 @@
 - You are still able to achieve your prior throughput levels while scaling is underway.
 
 ## Consistency Models
-- [Eventual Consistency Model](../../../1_HLDDesignComponents/0_SystemGlossaries/ReplicationLagAndDataConsistency.md#consistency-patterns)
-- [Strong Consistency Model](../../../1_HLDDesignComponents/0_SystemGlossaries/ReplicationLagAndDataConsistency.md#consistency-patterns)
+- [Eventual Consistency Model](../../../1_HLDDesignComponents/0_SystemGlossaries/Reliability/ReplicationLagAndDataConsistency.md#consistency-patterns)
+- [Strong Consistency Model](../../../1_HLDDesignComponents/0_SystemGlossaries/Reliability/ReplicationLagAndDataConsistency.md#consistency-patterns)
 
 ## Data types supported in DynamoDB
 

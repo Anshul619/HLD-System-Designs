@@ -4,7 +4,7 @@
 
 # Data structures
 - Many data structures and databases implement [immutable objects](https://en.wikipedia.org/wiki/Immutable_object), effectively making their data structures append-only. 
-- Implementing an append-only data structure has many benefits, such as [ensuring data consistency](ReplicationLagAndDataConsistency.md), [improving performance](Scalability/DBScalability.md), and permitting rollbacks.
+- Implementing an append-only data structure has many benefits, such as [ensuring data consistency](Reliability/ReplicationLagAndDataConsistency.md), [improving performance](Scalability/DBScalability.md), and permitting rollbacks.
 
 The prototypical append-only data structure is the log file. 
 

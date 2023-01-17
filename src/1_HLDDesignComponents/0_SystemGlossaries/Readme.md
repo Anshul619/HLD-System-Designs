@@ -1,24 +1,24 @@
 
-| Basis                                                                                                | Applicable Tech   | System Concern |
-|------------------------------------------------------------------------------------------------------|-------------------|----------------|
-| :star: [Performance - Latency, Throughput](Scalability/LatencyThroughput.md)                         | ALL               | [Scalability](Scalability/Readme.md)    |
-| :star: [High Availability](Reliability/HighAvailability.md)                                          | ALL               | [Reliability](Reliability)    |
-| :star: [Servers Cluster](Scalability/ServersCluster.md)                                              | ALL               | [Scalability](Scalability/Readme.md)    |
-| [Fault Tolerance, Disaster Recovery](Reliability/FaultTolerance&DisasterRecovery.md)                 | ALL               | [Reliability](Reliability)    |
-| [Load Balancer](Scalability/LoadBalancer.md)                                                         | ALL               | [Scalability](Scalability/Readme.md)    |
-| :star: [App Nodes Scalability](Scalability/AppNodesScalability.md)                                   | App Service/Nodes | [Scalability](Scalability/Readme.md)    |
-| [Rate Limiting](../../3_HLDDesignProblems/RateLimiterAPI/Readme.md)                                  | App Service/Nodes | Others         |
-| [Content Delivery Network (CDN)](CDNs/CDNs.md)                                                       | App Service/Nodes | Others         |
-| :star: [Event Driven Architecture](EventDrivenArchitecture.md)                                       | Message Brokers   | Others         |
-| :star: [DB Scalability](Scalability/DBScalability.md)                                                | Data Stores       | [Scalability](Scalability/Readme.md)    |
-| :star: [ACID Properties of the Transaction](ACIDPropertyTransaction.md)                              | Data Stores       | Others         |
-| :star: [CAP Theorem of the Distributed Systems](CAPTheorem.md)                                       | Data Stores       | Others         |
-| :star: [Replication & Data Consistency](ReplicationLagAndDataConsistency.md)                         | Data Stores       | Others         |
-| [Atomicity](Atomicity.md)                                                                            | Data Stores       | Others         |
-| [Durability](Durability.md)                                                                          | Data Stores       | Others         |
-| [Static Content](CDNs/StaticContentWithCDN.md)                                                       | Data Stores       | Others         |
-| [Append Only Data Structure](AppendOnlyDataStructure.md)                                             | Data Stores       | Others         |
-| [Consistent Hashing](ConsistentHashing.md)                                                           | Data Stores       | Others         |
+| Basis                                                                                                  | System Concern                                     | Applicable Tech   |
+|--------------------------------------------------------------------------------------------------------|----------------------------------------------------|-------------------|
+| :star: [Performance - Latency, Throughput](Scalability/LatencyThroughput.md)                           | :rocket: [Scalability](Scalability/Readme.md)      | ALL               |
+| :star: [High Availability](Reliability/HighAvailability.md)                                            | :handshake: [Reliability](Reliability/Readme.md)   | ALL               |
+| :star: [Servers Cluster](Scalability/ServersCluster.md)                                                | :rocket: [Scalability](Scalability/Readme.md)      | ALL               |
+| [Fault Tolerance, Disaster Recovery](Reliability/FaultTolerance&DisasterRecovery.md)                   | :handshake: [Reliability](Reliability/Readme.md)   | ALL               |
+| [Load Balancer](Scalability/LoadBalancer.md)                                                           | :rocket: [Scalability](Scalability/Readme.md)      | ALL               |
+| :star: [App Nodes Scalability](Scalability/AppNodesScalability.md)                                     | :rocket: [Scalability](Scalability/Readme.md)      | App Service/Nodes |
+| [Rate Limiting](../../3_HLDDesignProblems/RateLimiterAPI/Readme.md)                                    | Others                                             | App Service/Nodes |
+| [Content Delivery Network (CDN)](CDNs/CDNs.md)                                                         | Others                                             | App Service/Nodes |
+| :star: [Event Driven Architecture](EventDrivenArchitecture.md)                                         | Others                                             | Message Brokers   |
+| :star: [DB Scalability](Scalability/DBScalability.md)                                                  | :rocket: [Scalability](Scalability/Readme.md)      | Data Stores       |
+| :star: [ACID Properties of the Transaction](ACIDPropertyTransaction.md)                                | Others                                             | Data Stores       |
+| :star: [CAP Theorem of the Distributed Systems](CAPTheorem.md)                                         | Others                                             | Data Stores       |
+| :star: [Replication & Data Consistency](Reliability/ReplicationLagAndDataConsistency.md)               | :handshake: [Reliability](Reliability/Readme.md)   | Data Stores       |
+| [Atomicity](Atomicity.md)                                                                              | Others                                             | Data Stores       |
+| [Durability](Durability.md)                                                                            | Others                                             | Data Stores       |
+| [Static Content](CDNs/StaticContentWithCDN.md)                                                         | Others                                             | Data Stores       |
+| [Append Only Data Structure](AppendOnlyDataStructure.md)                                               | Others                                             | Data Stores       |
+| [Consistent Hashing](ConsistentHashing.md)                                                             | Others                                             | Data Stores       |
 
 # Why System Reliability is so important?
 
