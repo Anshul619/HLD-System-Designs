@@ -1,10 +1,10 @@
 ## :star: CAP Theorem of the Distributed Systems
 
 - [Consistency](ReplicationLagAndDataConsistency.md)
-- [Availability](HighAvailability.md)
+- [Availability](Reliability/HighAvailability.md)
 - Partition Tolerance
 
-We cannot build a general data store that is [highly available](HighAvailability.md), [sequentially consistent](ReplicationLagAndDataConsistency.md), and tolerant to any partition failures.
+We cannot build a general data store that is [highly available](Reliability/HighAvailability.md), [sequentially consistent](ReplicationLagAndDataConsistency.md), and tolerant to any partition failures.
 
 ![img.png](assets/CAP_Theorem.drawio.png)
 

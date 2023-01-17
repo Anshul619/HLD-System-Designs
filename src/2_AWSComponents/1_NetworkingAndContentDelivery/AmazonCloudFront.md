@@ -1,5 +1,5 @@
 # Amazon CloudFront
-- [Amazon CloudFront](https://aws.amazon.com/cloudfront/) helps to improve website speed and access to cloud-based static data - [Securely deliver content with low latency and high transfer speeds](../../1_HLDDesignComponents/0_SystemGlossaries/LatencyThroughput.md).
+- [Amazon CloudFront](https://aws.amazon.com/cloudfront/) helps to improve website speed and access to cloud-based static data - [Securely deliver content with low latency and high transfer speeds](../../1_HLDDesignComponents/0_SystemGlossaries/Scalability/LatencyThroughput.md).
 - CloudFront works as a [Global Content Delivery Service (CDN)](../../1_HLDDesignComponents/0_SystemGlossaries/CDNs/CDNs.md) to deliver the content efficiently to the end users.
 - CloudFront is perfect for [Static Content](../../1_HLDDesignComponents/0_SystemGlossaries/CDNs/StaticContentWithCDN.md).
 
@@ -60,7 +60,7 @@
 ## Customizing with CloudFront Functions
 - With [CloudFront Functions in Amazon CloudFront](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/cloudfront-functions.html), lightweight functions can be developed in [JavaScript]() for [high-scale, latency-sensitive CDN customizations](../../1_HLDDesignComponents/0_SystemGlossaries/CDNs/CDNs.md). 
 - Your functions can manipulate the requests and responses that flow through CloudFront, perform basic authentication and authorization, generate HTTP responses at the edge, and more. 
-- The CloudFront Functions runtime environment offers [submillisecond startup times, scales immediately to handle millions of requests per second](../../1_HLDDesignComponents/0_SystemGlossaries/LatencyThroughput.md), and is highly secure. 
+- The CloudFront Functions runtime environment offers [submillisecond startup times, scales immediately to handle millions of requests per second](../../1_HLDDesignComponents/0_SystemGlossaries/Scalability/LatencyThroughput.md), and is highly secure. 
 - CloudFront Functions is a native feature of CloudFront, which means you can build, test, and deploy your code entirely within CloudFront.
 - Generally [CloudFront Functions is more performance and cheaper than Lambda@Edge](https://aws.amazon.com/blogs/aws/introducing-cloudfront-functions-run-your-code-at-the-edge-with-low-latency-at-any-scale/) functions.
 
@@ -76,7 +76,7 @@
 - [Lambda@Edge](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/lambda-at-the-edge.html) is an extension of [AWS Lambda](../3_ComputeServices/AWSLambda/Readme.md), a compute service that lets you execute functions that customize the content that CloudFront delivers. 
 - You can author Node.js or Python functions in one Region, US East (N. Virginia), and then execute them in AWS locations globally that are closer to the viewer, without provisioning or managing servers. 
 - Lambda@Edge scales automatically, from a few requests per day to thousands per second. 
-- Processing requests at AWS locations closer to the viewer instead of on [origin servers significantly reduces latency and improves the user experience](../../1_HLDDesignComponents/0_SystemGlossaries/LatencyThroughput.md).
+- Processing requests at AWS locations closer to the viewer instead of on [origin servers significantly reduces latency and improves the user experience](../../1_HLDDesignComponents/0_SystemGlossaries/Scalability/LatencyThroughput.md).
 
 ![img.png](https://d2908q01vomqb2.cloudfront.net/da4b9237bacccdf19c0760cab7aec4a8359010b0/2021/04/08/cloudfront-functions-only-lambda-egde-1024x413.png)
 

@@ -1,8 +1,8 @@
 # Apache Casandra
 - [Apache Cassandra](https://cassandra.apache.org/_/index.html) is a free and open-source, distributed & [wide column store](../ReadMe.md#nosql---intro-different-nosql-types).
-- It is a NoSQL database management system designed to handle large amounts of data across many commodity servers, providing [high availability with no single point of failure](../../0_SystemGlossaries/FaultTolerance&DisasterRecovery.md). 
-- Since [Casandra]() is [append-only db storage](../../0_SystemGlossaries/AppendOnlyDataStructure.md), it can handle [large amount data with high throughput with fast writes](../../0_SystemGlossaries/LatencyThroughput.md).
-- Cassandra offers robust support for [clusters spanning multiple data centers](../../0_SystemGlossaries/ServersCluster.md), with asynchronous masterless replication allowing low latency operations for all clients.
+- It is a NoSQL database management system designed to handle large amounts of data across many commodity servers, providing [high availability with no single point of failure](../../0_SystemGlossaries/Reliability/FaultTolerance&DisasterRecovery.md). 
+- Since [Casandra]() is [append-only db storage](../../0_SystemGlossaries/AppendOnlyDataStructure.md), it can handle [large amount data with high throughput with fast writes](../../0_SystemGlossaries/Scalability/LatencyThroughput.md).
+- Cassandra offers robust support for [clusters spanning multiple data centers](../../0_SystemGlossaries/Scalability/ServersCluster.md), with asynchronous masterless replication allowing low latency operations for all clients.
 - Casandra is based modeled after [Amazon DynamoDB](../../../2_AWSComponents/6_DatabaseServices/AmazonDynamoDB/Readme.md) & [BigTable](https://cloud.google.com/bigtable).
 - [Amazon KeySpaces](../../../2_AWSComponents/6_DatabaseServices/AmazonKeySpaces.md) can be used to deploy Casandra on AWS.
 - :star: [Casandra vs MongoDB](CasandraVsMongoDB.md)
@@ -12,7 +12,7 @@
 Large amount of data like,
 - [Time Series Data](https://netflixtechblog.com/scaling-time-series-data-storage-part-i-ec2b6d44ba39)
 - Historical records
-- [High-Write, Low-Read](../../0_SystemGlossaries/LatencyThroughput.md)
+- [High-Write, Low-Read](../../0_SystemGlossaries/Scalability/LatencyThroughput.md)
 - Processing server logs
 - [Social media posts](../../../3_HLDDesignProblems/InstagramDesign/Readme.md)
 - PDF documents
@@ -69,20 +69,20 @@ Large amount of data like,
 
 ## Low-Latency, Faster Writes
 - Since writes in Casandra result in storage in an [append-only structure](../../0_SystemGlossaries/AppendOnlyDataStructure.md), writes are generally very fast.
-- Casandra provides [low latency](../../0_SystemGlossaries/LatencyThroughput.md), at the cost of [consistency](../../0_SystemGlossaries/ReplicationLagAndDataConsistency.md). 
+- Casandra provides [low latency](../../0_SystemGlossaries/Scalability/LatencyThroughput.md), at the cost of [consistency](../../0_SystemGlossaries/ReplicationLagAndDataConsistency.md). 
   - Refer [PACELC theorem](../../0_SystemGlossaries/CAPTheorem.md#pael-systems---dynamodb--cassandra) for more info.
 - Hence Casandra should be used when transactions aren't performing (i.e. consistency can be compromised).
 
 ## High Availability, Fault-Tolerance
-- Apache Casandra provides [high-availability](../../0_SystemGlossaries/HighAvailability.md) & [fault-tolerance](../../0_SystemGlossaries/FaultTolerance&DisasterRecovery.md) with tunable consistency levels.
+- Apache Casandra provides [high-availability](../../0_SystemGlossaries/Reliability/HighAvailability.md) & [fault-tolerance](../../0_SystemGlossaries/Reliability/FaultTolerance&DisasterRecovery.md) with tunable consistency levels.
 - Any number of nodes can be added or deleted in the Cassandra cluster without much disturbance.
-- As scaling happens, [read and write throughput](../../0_SystemGlossaries/LatencyThroughput.md) both increase simultaneously with zero downtime or any pause to the applications.
+- As scaling happens, [read and write throughput](../../0_SystemGlossaries/Scalability/LatencyThroughput.md) both increase simultaneously with zero downtime or any pause to the applications.
 - You don’t have to restart the cluster or change queries related to the Cassandra application while scaling up or down.
 
 ## Scales Horizontally & Linearly
 - Apache Cassandra has a [high-scalability architecture](../../0_SystemGlossaries/Scalability/DBScalability.md).
-- [Cassandra cluster](../../0_SystemGlossaries/ServersCluster.md) can be easily scaled-up or scaled-down.
-- Generally doubling the size of the cluster, would result in the half [latency](../../0_SystemGlossaries/LatencyThroughput.md) (both at the median and 99th percentile).
+- [Cassandra cluster](../../0_SystemGlossaries/Scalability/ServersCluster.md) can be easily scaled-up or scaled-down.
+- Generally doubling the size of the cluster, would result in the half [latency](../../0_SystemGlossaries/Scalability/LatencyThroughput.md) (both at the median and 99th percentile).
 
 ## Support replication - Cross-site, Data-Centers
 - `NetworkReplicationStrategy` can be used to [replicate](../../0_SystemGlossaries/ReplicationLagAndDataConsistency.md) the data between data centers.

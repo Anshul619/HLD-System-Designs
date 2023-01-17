@@ -20,7 +20,7 @@
 - [Amazon SQS]() is a message queueing service, meaning that [it exposes an API to publish and consume messages](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/sqs-working-with-apis.html).
 
 ## Highly Available
-- [Amazon SQS]() is [highly available](../../1_HLDDesignComponents/0_SystemGlossaries/HighAvailability.md), by default.
+- [Amazon SQS]() is [highly available](../../1_HLDDesignComponents/0_SystemGlossaries/Reliability/HighAvailability.md), by default.
 
 ## Inflight Messages Limit
 
@@ -38,10 +38,10 @@ Amazon SQS offers two types of message queues - Standard & FIFO queues.
 
 ### :star: Standard Queues (Out-Of-Order, Recommended, Mostly-Used)
 
-[Standard queues (Recommended, Mostly-Used)](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/standard-queues.html) offer [maximum throughput](../../1_HLDDesignComponents/0_SystemGlossaries/LatencyThroughput.md), best-effort ordering, and at-least-once delivery.
+[Standard queues (Recommended, Mostly-Used)](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/standard-queues.html) offer [maximum throughput](../../1_HLDDesignComponents/0_SystemGlossaries/Scalability/LatencyThroughput.md), best-effort ordering, and at-least-once delivery.
  
 #### Unlimited Throughput
-- Standard queues support a nearly [unlimited number of transactions per second (TPS)](../../1_HLDDesignComponents/0_SystemGlossaries/LatencyThroughput.md) per API action.
+- Standard queues support a nearly [unlimited number of transactions per second (TPS)](../../1_HLDDesignComponents/0_SystemGlossaries/Scalability/LatencyThroughput.md) per API action.
 
 #### At-Least-Once Delivery
 - A message is delivered at least once, but occasionally more than one copy of a message is delivered.
@@ -65,7 +65,7 @@ For example:
 [SQS FIFO queues](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/FIFO-queues.html) are designed to guarantee that messages are processed exactly once, in the exact order that they are sent.
 
 #### High Throughput
-- By default, FIFO queues support up to [300 messages per second](../../1_HLDDesignComponents/0_SystemGlossaries/LatencyThroughput.md) (300 send, receive, or delete operations per second). 
+- By default, FIFO queues support up to [300 messages per second](../../1_HLDDesignComponents/0_SystemGlossaries/Scalability/LatencyThroughput.md) (300 send, receive, or delete operations per second). 
 - When you batch 10 messages per operation (maximum), FIFO queues can support up to 3,000 messages per second. 
 - If you require higher throughput, you can enable high throughput mode for FIFO on the Amazon SQS console.
 - This will support up to `30,000 messages per second` with batching, or up to `3,000 messages per second without batching`.

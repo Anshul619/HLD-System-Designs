@@ -1,6 +1,6 @@
 
 # Amazon Route 53
-[Amazon Route 53](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/Welcome.html) is a [highly available](../../1_HLDDesignComponents/0_SystemGlossaries/HighAvailability.md) and [scalable](../../1_HLDDesignComponents/0_SystemGlossaries/Scalability/DBScalability.md) [Domain Name System (DNS)](https://www.cloudflare.com/learning/dns/what-is-dns/) web service. 
+[Amazon Route 53](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/Welcome.html) is a [highly available](../../1_HLDDesignComponents/0_SystemGlossaries/Reliability/HighAvailability.md) and [scalable](../../1_HLDDesignComponents/0_SystemGlossaries/Scalability/DBScalability.md) [Domain Name System (DNS)](https://www.cloudflare.com/learning/dns/what-is-dns/) web service. 
 
 You can use Route 53 to perform three main functions in any combination,
 - Domain registration
@@ -31,7 +31,7 @@ You can use Route 53 to perform three main functions in any combination,
 - However, a single record can contain multiple values (such as IP addresses).
 
 ## :star: Latency Based Routing
-- Latency Based Routing utilizes [latency measurements between networks and AWS data centers](../../1_HLDDesignComponents/0_SystemGlossaries/LatencyThroughput.md).
+- Latency Based Routing utilizes [latency measurements between networks and AWS data centers](../../1_HLDDesignComponents/0_SystemGlossaries/Scalability/LatencyThroughput.md).
 - Latency Based Routing is used when you want to give your customers the lowest latency possible.
 - [This is mostly used multi-region (active-active) routing policy](../AWS-Global-Architecture-Region-AZ.md) (if application has no geographic requirements).
 
@@ -92,7 +92,7 @@ Note:
 - Geo Based routing is used when you want to direct the customer to different websites based on the country or region they are browsing from.
 
 ## Fail-over routing policy
-- Use when you want to configure [active-passive fail over for disaster recovery](../../1_HLDDesignComponents/0_SystemGlossaries/HighAvailability.md#active-passive-policy).
+- Use when you want to configure [active-passive fail over for disaster recovery](../../1_HLDDesignComponents/0_SystemGlossaries/Reliability/HighAvailability.md#active-passive-policy).
 
 ## Weighted routing policy
 - Use when you want to configure [weighted routing i.e. send X% to one target, Y% to another target](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/resource-record-sets-values-weighted.html), for example [Canary Deployments](../../1_HLDDesignComponents/6_DevOps/CanaryDeployments.md).

@@ -38,8 +38,8 @@ There are two types of users in our system
 - And notify the rider through push notification.
 
 ## Driver - Push Location
-- Push the current location via [Driver Location Kafka topic](../../1_HLDDesignComponents/4_MessageBrokers/Kafka/Readme.md) ([high throughput](../../1_HLDDesignComponents/0_SystemGlossaries/LatencyThroughput.md)).
-- Consumer would consume from [Kafka](../../1_HLDDesignComponents/4_MessageBrokers/Kafka/Readme.md) & then push to [ElasticSearch (Geospatial supported)](../../1_HLDDesignComponents/3_DatabaseComponents/Search-Engines/ElasticSearch#geospatial-support).
+- Push the current location via [Driver Location Kafka topic](../../1_HLDDesignComponents/4_MessageBrokers/Kafka/Readme.md) ([high throughput](../../1_HLDDesignComponents/0_SystemGlossaries/Scalability/LatencyThroughput.md)).
+- Consumer would consume from [Kafka](../../1_HLDDesignComponents/4_MessageBrokers/Kafka/Readme.md) & then push to [ElasticSearch (Geospatial supported)](../../1_HLDDesignComponents/3_DatabaseComponents/Search-Indexes/ElasticSearch#geospatial-support).
 
 ## :star: Driver Match algo
 - Area filter

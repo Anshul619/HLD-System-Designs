@@ -3,7 +3,7 @@
 - The total compute capacity (in terms of CPU and memory) of this super node is the sum of all the constituent nodes' capacities.
 
 # :star: Recommendation for a startup with less than 10 microservices
-- For [high-availability](../HighAvailability.md), have a minimum of 3 worker nodes (i.e. 3-fold replication). As a startup, 3–5 worker nodes is sufficient.
+- For [high-availability](../Reliability/HighAvailability.md), have a minimum of 3 worker nodes (i.e. 3-fold replication). As a startup, 3–5 worker nodes is sufficient.
 - Set up [horizontal auto-scaling](../../../2_AWSComponents/3_ComputeServices/AmazonEC2/AutoScalingGroup/README.md) to spawn a maximum of 5 worker nodes.
 - If you have a [stateless application](../Readme.md#star-stateless-protocol), turn on [horizontal pod auto scaling (HPA)](../../6a_ContainerOrchestrationServices/Kubernates.md#star-horizontal-pod-autoscaling).
 - For the development environment, use nodes of one of the following sizes [t3.medium, t3.large, m5.medium, or m5.large](../../../2_AWSComponents/3_ComputeServices/AmazonEC2/ReadMe.md).
@@ -18,12 +18,12 @@ Given a desired target capacity (i.e. a combination of CPU cores & RAM) of a clu
 
 ![img.png](https://learnk8s.io/a/9b6d0691337289c039f1a33201e15a3f.svg)
 
-| Feature                                                         | :+1: Many small nodes                            | Few large nodes |
-|-----------------------------------------------------------------|--------------------------------------------------|-----------------|
-| [Availability](../HighAvailability.md)                          | :+1: Increases                                   | :-1: Decreases  |
+| Feature                                                                                  | :+1: Many small nodes                            | Few large nodes |
+|------------------------------------------------------------------------------------------|--------------------------------------------------|-----------------|
+| [Availability](../Reliability/HighAvailability.md)                                       | :+1: Increases                                   | :-1: Decreases  |
 | [Kubernates Agents Overhead](../../6a_ContainerOrchestrationServices/Kubernates.md#pods) | :+1: Decreases                                   | :-1: Increases  |
-| Cost Efficiency (with auto-scaling)                             | :+1: Increases                                   | :-1: Decreases  |
-| Kubernates Master Node Overhead                                 | :-1: Increases (hence bigger master node needed) | :+1: Decreases  |
+| Cost Efficiency (with auto-scaling)                                                      | :+1: Increases                                   | :-1: Decreases  |
+| Kubernates Master Node Overhead                                                          | :-1: Increases (hence bigger master node needed) | :+1: Decreases  |
 
 # Reference
 - [Architecting Kubernetes clusters — choosing a worker node size](https://learnk8s.io/kubernetes-node-size)

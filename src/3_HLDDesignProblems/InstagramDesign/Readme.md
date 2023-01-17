@@ -29,7 +29,7 @@ The application should be able to support the following requirements.
 | App Servers                          | Separate app servers for READ and WRITE. (Since read-write ratio is 100:1)                                                                 |
 
 # Reliability and Redundancy
-- If we want to have [high availability](../../1_HLDDesignComponents/0_SystemGlossaries/HighAvailability.md) of the system, we need to have multiple replicas of services running in the system so that even if a few services die down, the system remains available and running. 
+- If we want to have [high availability](../../1_HLDDesignComponents/0_SystemGlossaries/Reliability/HighAvailability.md) of the system, we need to have multiple replicas of services running in the system so that even if a few services die down, the system remains available and running. 
 - Redundancy removes the single point of failure in the system.
 
 # Tech Stack (on AWS)

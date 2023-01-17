@@ -3,7 +3,7 @@
 
 # What is Apache Mesos? 
 - [Apache Mesos](https://mesos.apache.org/) is built using the same principles as the Linux kernel, only at a different level of abstraction. 
-- The Mesos kernel runs on every machine and provides applications (e.g., [Hadoop](../5_BigDataComponents/ApacheHadoop), [Spark](../5_BigDataComponents/ApacheSpark.md), [Kafka](../4_MessageBrokers/Kafka/Readme.md), [Elasticsearch](../3_DatabaseComponents/Search-Engines/ElasticSearch)) with API’s for resource management and scheduling across entire datacenter and cloud environments.
+- The Mesos kernel runs on every machine and provides applications (e.g., [Hadoop](../5_BigDataComponents/ApacheHadoop), [Spark](../5_BigDataComponents/ApacheSpark.md), [Kafka](../4_MessageBrokers/Kafka/Readme.md), [Elasticsearch](../3_DatabaseComponents/Search-Indexes/ElasticSearch)) with API’s for resource management and scheduling across entire datacenter and cloud environments.
 
 ## Features
 
@@ -15,10 +15,10 @@
 - [Linear Scalability](../0_SystemGlossaries/Scalability/DBScalability.md) - Industry proven to easily scale to 10,000s of nodes.
 
 ### High availability
-- [Fault-tolerant](../0_SystemGlossaries/HighAvailability.md) replicated master and agents using [Zookeeper](../6_DevOps/ApacheZookeeper.md).
+- [Fault-tolerant](../0_SystemGlossaries/Reliability/HighAvailability.md) replicated master and agents using [Zookeeper](../6_DevOps/ApacheZookeeper.md).
 - It uses [Zookeeper](../6_DevOps/ApacheZookeeper.md) for the leader election.
 - If the Mesos master is unavailable, existing tasks can continue to execute, but new resources cannot be allocated and new tasks cannot be launched. 
-- To reduce the chance of this situation occurring, Mesos has a [high-availability](../0_SystemGlossaries/HighAvailability.md) mode that uses multiple Mesos masters
+- To reduce the chance of this situation occurring, Mesos has a [high-availability](../0_SystemGlossaries/Reliability/HighAvailability.md) mode that uses multiple Mesos masters
   - One active master (called the leader or leading master) and several backups in case it fails. 
 - The masters elect the leader, with [Zookeeper](../6_DevOps/ApacheZookeeper.md) both coordinating the election and handling leader detection by masters, agents, and scheduler drivers
 

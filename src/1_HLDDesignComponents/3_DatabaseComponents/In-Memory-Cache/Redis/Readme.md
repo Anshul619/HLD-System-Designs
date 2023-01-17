@@ -1,5 +1,6 @@
 # Introduction
 - [Redis (REmote DIctionary Server)](https://redis.com/) is a popular in-memory data platform used as a cache that can be deployed on-premises, across clouds, and hybrid environments.
+- One of the advantage of cache is to remember the result of an expensive operation, to speed uo the reads.
 - [LRU is the default eviction policy](https://docs.redis.com/latest/rs/databases/configure/eviction-policy/) in redis
 
 # :star: Real world use cases of Redis Cache

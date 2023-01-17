@@ -11,7 +11,7 @@ Using Amazon SNS topics, your publisher systems can fanout messages to a large n
 # Application-to-Application (A2A)
 
 [The application-to-application (A2A) pub/sub functionality](https://docs.aws.amazon.com/sns/latest/dg/sns-system-to-system-messaging.html) provides topics which are helpful in,
-- [High-throughput, push-based, many-to-many messaging between distributed systems](../../1_HLDDesignComponents/0_SystemGlossaries/LatencyThroughput.md)
+- [High-throughput, push-based, many-to-many messaging between distributed systems](../../1_HLDDesignComponents/0_SystemGlossaries/Scalability/LatencyThroughput.md)
 - [Microservices, and event-driven serverless](../../1_HLDDesignComponents/1_MicroServicesSOA/Readme.md) applications.
 
 ![img.png](assests/sns/FanOutPatternSQSSNS.png)

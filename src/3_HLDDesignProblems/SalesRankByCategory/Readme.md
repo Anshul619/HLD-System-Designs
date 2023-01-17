@@ -4,7 +4,7 @@
 # Use Cases
 - Service calculates the past week's most popular products by category.
 - User views the past week's most popular products by category.
-- Service has [high availability](../../1_HLDDesignComponents/0_SystemGlossaries/HighAvailability.md).
+- Service has [high availability](../../1_HLDDesignComponents/0_SystemGlossaries/Reliability/HighAvailability.md).
 
 # Estimation
 - [Sales Rank estimation](https://docs.google.com/spreadsheets/d/15vApko2QrmZmv5qTEIyU_IAWvgY3MD23TR3TuLUiPc8/edit#gid=1814606830)

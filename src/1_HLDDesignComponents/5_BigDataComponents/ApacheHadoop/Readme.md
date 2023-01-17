@@ -1,7 +1,7 @@
 
 # Intro
 - [Apache Hadoop](https://hadoop.apache.org/) is an open source framework that is used to efficiently store and process `large datasets ranging in size from gigabytes to petabytes of data`. 
-- Instead of using one large computer to store and process the data, Hadoop allows [clustering multiple computers to analyze massive datasets](../../0_SystemGlossaries/ServersCluster.md) in parallel more quickly.
+- Instead of using one large computer to store and process the data, Hadoop allows [clustering multiple computers to analyze massive datasets](../../0_SystemGlossaries/Scalability/ServersCluster.md) in parallel more quickly.
 
 # Modules
 - [Apache HDFS](ApacheHDFS.md)

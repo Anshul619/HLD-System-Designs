@@ -16,7 +16,7 @@
 
 | Feature                                                                                                                              | Remarks                                                                                                                                                                                                                                                                                                                                                   |
 |--------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Highly available](../../../1_HLDDesignComponents/0_SystemGlossaries/HighAvailability.md)                                            | Load balancers balances loads across instances in multiple Availability Zones.                                                                                                                                                                                                                                                                            |
+| [Highly available](../../../1_HLDDesignComponents/0_SystemGlossaries/Reliability/HighAvailability.md)                                            | Load balancers balances loads across instances in multiple Availability Zones.                                                                                                                                                                                                                                                                            |
 | [Health checks](https://docs.aws.amazon.com/elasticloadbalancing/latest/application/target-group-health-checks.html)                 | Automatically checks health of instances and takes them in or out of service.                                                                                                                                                                                                                                                                             |
 | [Session stickiness](https://docs.aws.amazon.com/elasticloadbalancing/latest/application/sticky-sessions.html)                       | Routes requests to the same instance.                                                                                                                                                                                                                                                                                                                     |
 | [Monitoring/logging](https://docs.aws.amazon.com/elasticloadbalancing/latest/application/load-balancer-monitoring.html)              | Publishes metrics to CloudWatch and can get logs of requests processed.                                                                                                                                                                                                                                                                                   |
@@ -52,7 +52,7 @@
 
 # Types of ELB Load Balancers
 
-You can select the type of [load balancer](../../../1_HLDDesignComponents/0_SystemGlossaries/LoadBalancer.md) that best suits your needs.
+You can select the type of [load balancer](../../../1_HLDDesignComponents/0_SystemGlossaries/Scalability/LoadBalancer.md) that best suits your needs.
 - [Network Load Balancer](#network-load-balancer)
 - [Application Load Balancer](#application-load-balancer)
 - [Gateway Load Balancer](#gateway-load-balancer)
@@ -70,7 +70,7 @@ You can select the type of [load balancer](../../../1_HLDDesignComponents/0_Syst
 
 ## Network Load Balancer
 - Choose a [Network Load Balancer](https://docs.aws.amazon.com/elasticloadbalancing/latest/network/introduction.html) when you need ultra-high performance, TLS offloading at scale, centralized certificate deployment, support for UDP, and static IP addresses for your applications.
-- Operating at the [connection level (TCD, UDP)](https://www.diffen.com/difference/TCP_vs_UDP), Network Load Balancers are capable of handling [millions of requests per second securely](../../../1_HLDDesignComponents/0_SystemGlossaries/LatencyThroughput.md) while maintaining [ultra-low latencies](../../../1_HLDDesignComponents/0_SystemGlossaries/LatencyThroughput.md).
+- Operating at the [connection level (TCD, UDP)](https://www.diffen.com/difference/TCP_vs_UDP), Network Load Balancers are capable of handling [millions of requests per second securely](../../../1_HLDDesignComponents/0_SystemGlossaries/Scalability/LatencyThroughput.md) while maintaining [ultra-low latencies](../../../1_HLDDesignComponents/0_SystemGlossaries/Scalability/LatencyThroughput.md).
 
 ## Application Load Balancer
 - Choose an [Application Load Balancer](https://aws.amazon.com/elasticloadbalancing/application-load-balancer/) when you need a flexible feature set for your applications with [HTTP and HTTPS traffic](https://www.izooto.com/blog/understanding-http-https-protocols). 
@@ -78,7 +78,7 @@ You can select the type of [load balancer](../../../1_HLDDesignComponents/0_Syst
 - Application Load Balancer allows for multiple applications (using [Content-based routing - /FOO, /BAR](https://aws.amazon.com/blogs/aws/new-advanced-request-routing-for-aws-application-load-balancers/) etc.) to be hosted behind a single load balancer.
 
 ### Key Features of ALB
-- [Highly available](../../../1_HLDDesignComponents/0_SystemGlossaries/HighAvailability.md)
+- [Highly available](../../../1_HLDDesignComponents/0_SystemGlossaries/Reliability/HighAvailability.md)
 - [Health checks](https://aws.amazon.com/builders-library/implementing-health-checks/)
 - [Session stickiness](https://docs.aws.amazon.com/elasticloadbalancing/latest/application/sticky-sessions.html)
 - [Content-based routing](https://aws.amazon.com/blogs/aws/new-advanced-request-routing-for-aws-application-load-balancers/)

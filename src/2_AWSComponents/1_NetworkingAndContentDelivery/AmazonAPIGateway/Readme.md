@@ -12,7 +12,7 @@
 [Read more](../../0_AWSDesigns/DesignScalableSystemWithRDMS/README.md)
 
 # How does API Gateway scale according to load?
-- By default, [API Gateway]() can handle up to [10,000 requests per second](../../../1_HLDDesignComponents/0_SystemGlossaries/LatencyThroughput.md).
+- By default, [API Gateway]() can handle up to [10,000 requests per second](../../../1_HLDDesignComponents/0_SystemGlossaries/Scalability/LatencyThroughput.md).
 - When integrated with [AWS Lambda](../../3_ComputeServices/AWSLambda/Readme.md), the API Gateway handles the network scaling in a seamless way.
 - [AWS Lambda](../../3_ComputeServices/AWSLambda/Readme.md) will scale to match the demand of invocations coming from the API clients.
 

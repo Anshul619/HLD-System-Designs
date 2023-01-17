@@ -29,7 +29,7 @@
 
 ## Network in ASG
 - We can specify availability zones of the Auto-Scaling Group (ASG) i.e. in which zones, new instances should be created. 
-- This helps in [High Availability](../../../../1_HLDDesignComponents/0_SystemGlossaries/HighAvailability.md).
+- This helps in [High Availability](../../../../1_HLDDesignComponents/0_SystemGlossaries/Reliability/HighAvailability.md).
 
 ![img.png](assets/asg_network_setup.png)
 

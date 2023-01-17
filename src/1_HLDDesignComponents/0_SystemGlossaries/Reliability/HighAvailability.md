@@ -2,7 +2,7 @@
 - High Availability (HA) describes systems that are dependable enough to operate continuously without failing.
 - They are well-tested and sometimes equipped with redundant components.
 - :star: `99.99% uptime means that website is down only for 52 mins in the complete year`. This means it is `highly available`.
-- In AWS, high availability is achieved through multiple deployments of the app in [different availability zones](../../2_AWSComponents/AWS-Global-Architecture-Region-AZ.md).
+- In AWS, high availability is achieved through multiple deployments of the app in [different availability zones](../../../2_AWSComponents/AWS-Global-Architecture-Region-AZ.md).
 - [High Availability vs Fault Tolerance](FaultTolerance&DisasterRecovery.md#fault-tolerance-vs-high-availabilityhighavailabilitymd)
 
 ![img.png](https://acg-wordpress-content-production.s3.us-west-2.amazonaws.com/app/uploads/2021/01/1_W7cR3GIoIafVXw1qjJdw1A.png)
@@ -36,14 +36,14 @@
 - If the heartbeat is interrupted, the passive server takes over the active's IP address and resumes service.
 - The length of downtime is determined by whether the passive server is already running in 'hot' standby or whether it needs to start up from 'cold' standby. 
 - `Active-Passive` policy is generally used for the [disaster recovery](FaultTolerance&DisasterRecovery.md#disaster-recoveryhttpsenwikipediaorgwikidisaster_recovery).
-- In AWS, active-passive policy can be configured in the [fail-over routing policy](../../2_AWSComponents/1_NetworkingAndContentDelivery/AmazonRoute53.md#failover-routing-policy) in [Route53](../../2_AWSComponents/1_NetworkingAndContentDelivery/AmazonRoute53.md).
+- In AWS, active-passive policy can be configured in the [fail-over routing policy](../../../2_AWSComponents/1_NetworkingAndContentDelivery/AmazonRoute53.md#failover-routing-policy) in [Route53](../../../2_AWSComponents/1_NetworkingAndContentDelivery/AmazonRoute53.md).
 
 #### :thumbsdown: Disadvantages of fail over policies
 - Fail-over adds more hardware and additional complexity.
 - There is a potential for loss of data if the active system fails before any newly written data can be replicated to the passive.
 
 ### Replication & Data Consistency
-- [Read here about replication & data consistency](ReplicationLagAndDataConsistency.md)
+- [Read here about replication & data consistency](../ReplicationLagAndDataConsistency.md)
 
 # Source(s) and further reading
 - [The quest for availability in the cloud](https://acloudguru.com/blog/engineering/the-quest-for-availability?utm_source=medium_blog&utm_medium=redirect&utm_campaign=medium_blog)

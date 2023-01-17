@@ -1,7 +1,7 @@
 # :star: Apache Kafka 
 - Apache Kafka is an [open-source distributed event streaming platform](../../0_SystemGlossaries/EventDrivenArchitecture.md) used by thousands of companies for high-performance data pipelines, streaming analytics, data integration, and mission-critical applications.
 - Kafka can process a large amount of data in a short amount of time (`1 million messages/sec`).
-- It also has [low latency](../../0_SystemGlossaries/LatencyThroughput.md), making it possible to process data in real-time.
+- It also has [low latency](../../0_SystemGlossaries/Scalability/LatencyThroughput.md), making it possible to process data in real-time.
 - Kafka is based on [Publish-Subscriber Model](..#publisher-subscriber-model-pubsub). And can be used for [Event-Driven Architecture](../../0_SystemGlossaries/EventDrivenArchitecture.md).
 - [Amazon Managed Streaming for Apache Kafka (MSK)](../../../2_AWSComponents/5_MessageBrokerServices/AmazonMSK.md) can be used to deploy Kafka on [AWS](../../../2_AWSComponents).
 
@@ -15,7 +15,7 @@
 - [Linked In - Kafka](../../../3_HLDDesignProblems/LinkedInDesign/Readme.md)
 
 # Why Kafka is so fast?
-- Kafka achieves [low latency](../../0_SystemGlossaries/LatencyThroughput.md) message delivery through [Sequential I/O and Zero Copy Principle](https://twitter.com/alexxubyte/status/1506663791961919488/photo/1).
+- Kafka achieves [low latency](../../0_SystemGlossaries/Scalability/LatencyThroughput.md) message delivery through [Sequential I/O and Zero Copy Principle](https://twitter.com/alexxubyte/status/1506663791961919488/photo/1).
 - Messages (events) in the [Kafka]() are immutable and can't be changed once it's pushed (due to [log based queue nature](../../0_SystemGlossaries/AppendOnlyDataStructure.md)).
 - The same techniques are commonly used in much other messaging/streaming platforms.
 
@@ -55,7 +55,7 @@ Kafka is based on [Log Based Queue](../../0_SystemGlossaries/AppendOnlyDataStruc
 - A cluster of brokers is used to partition and streamline the data thereby, scaling up the storage capacity.
 
 ## Performance - High Throughput
-- Each Kafka broker can serve more than [1 million messages per second](../../0_SystemGlossaries/LatencyThroughput.md#Throughput) and can hold TBs of data.
+- Each Kafka broker can serve more than [1 million messages per second](../../0_SystemGlossaries/Scalability/LatencyThroughput.md#Throughput) and can hold TBs of data.
 - Default configured message size in Kafka is `1MB`.
 
 ## High Volume
@@ -65,7 +65,7 @@ Kafka is based on [Log Based Queue](../../0_SystemGlossaries/AppendOnlyDataStruc
 - The data is kept [persistent (as per retention policy)](../../0_SystemGlossaries/Durability.md) and tolerant to any hardware failures by copying the data in the clusters.
 
 ## High Availability, Fault Tolerance
-- The [distributed, partitioned, replicated](../../0_SystemGlossaries/HighAvailability.md), and [fault-tolerant](../../0_SystemGlossaries/FaultTolerance&DisasterRecovery.md) nature of Kafka makes it very reliable.
+- The [distributed, partitioned, replicated](../../0_SystemGlossaries/Reliability/HighAvailability.md), and [fault-tolerant](../../0_SystemGlossaries/Reliability/FaultTolerance&DisasterRecovery.md) nature of Kafka makes it very reliable.
 - Kafka connector can handle failures with three strategies summarised as `fast-fail`, `ignore` and `re-queue` (sends to another topic).
 - [Read more about replication in Kafka](#replication)
 

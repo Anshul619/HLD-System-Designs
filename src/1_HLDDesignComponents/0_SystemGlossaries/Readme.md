@@ -1,25 +1,37 @@
 
-| Basis                                                                                    | Applicable Components |
-|------------------------------------------------------------------------------------------|-----------------------|
-| :star: [Performance - Latency, Throughput](LatencyThroughput.md)                         | ALL                   |
-| :star: [High Availability](HighAvailability.md)                                          | ALL                   |
-| :star: [Servers Cluster](ServersCluster.md)                                              | ALL                   |
-| [Reliability - Fault Tolerance, Disaster Recovery](FaultTolerance&DisasterRecovery.md)   | ALL                   |
-| [Load Balancer](LoadBalancer.md)                                                         | ALL                   |
-| :star: [App Nodes Scalability](Scalability/AppNodesScalability.md)                       | App Service/Nodes     |
-| [Rate Limiting](../../3_HLDDesignProblems/RateLimiterAPI/Readme.md)                      | App Service/Nodes     |
-| :star: [Container Orchestration Service](../6a_ContainerOrchestrationServices/Readme.md)   | App Service/Nodes     |
-| [Content Delivery Network (CDN)](CDNs/CDNs.md)                                           | App Service/Nodes     |
-| :star: [Event Driven Architecture](EventDrivenArchitecture.md)                           | Message Brokers       |
-| :star: [DB Scalability](Scalability/DBScalability.md)                                    | Data Stores           |
-| :star: [ACID Properties of the Transaction](ACIDPropertyTransaction.md)                  | Data Stores           |
-| :star: [CAP Theorem of the Distributed Systems](CAPTheorem.md)                           | Data Stores           |
-| :star: [Replication & Data Consistency](ReplicationLagAndDataConsistency.md)                | Data Stores           |
-| [Atomicity](Atomicity.md)                                                                | Data Stores           |
-| [Durability](Durability.md)                                                              | Data Stores           |
-| [Static Content](CDNs/StaticContentWithCDN.md)                                           | Data Stores           |
-| [Append Only Data Structure](AppendOnlyDataStructure.md)                                 | Data Stores           |
-| [Consistent Hashing](ConsistentHashing.md)                                               | Data Stores           |
+| Basis                                                                                                | Applicable Tech   | System Concern |
+|------------------------------------------------------------------------------------------------------|-------------------|----------------|
+| :star: [Performance - Latency, Throughput](Scalability/LatencyThroughput.md)                         | ALL               | [Scalability](Scalability/Readme.md)    |
+| :star: [High Availability](Reliability/HighAvailability.md)                                          | ALL               | [Reliability](Reliability)    |
+| :star: [Servers Cluster](Scalability/ServersCluster.md)                                              | ALL               | [Scalability](Scalability/Readme.md)    |
+| [Fault Tolerance, Disaster Recovery](Reliability/FaultTolerance&DisasterRecovery.md)                 | ALL               | [Reliability](Reliability)    |
+| [Load Balancer](Scalability/LoadBalancer.md)                                                         | ALL               | [Scalability](Scalability/Readme.md)    |
+| :star: [App Nodes Scalability](Scalability/AppNodesScalability.md)                                   | App Service/Nodes | [Scalability](Scalability/Readme.md)    |
+| [Rate Limiting](../../3_HLDDesignProblems/RateLimiterAPI/Readme.md)                                  | App Service/Nodes | Others         |
+| [Content Delivery Network (CDN)](CDNs/CDNs.md)                                                       | App Service/Nodes | Others         |
+| :star: [Event Driven Architecture](EventDrivenArchitecture.md)                                       | Message Brokers   | Others         |
+| :star: [DB Scalability](Scalability/DBScalability.md)                                                | Data Stores       | [Scalability](Scalability/Readme.md)    |
+| :star: [ACID Properties of the Transaction](ACIDPropertyTransaction.md)                              | Data Stores       | Others         |
+| :star: [CAP Theorem of the Distributed Systems](CAPTheorem.md)                                       | Data Stores       | Others         |
+| :star: [Replication & Data Consistency](ReplicationLagAndDataConsistency.md)                         | Data Stores       | Others         |
+| [Atomicity](Atomicity.md)                                                                            | Data Stores       | Others         |
+| [Durability](Durability.md)                                                                          | Data Stores       | Others         |
+| [Static Content](CDNs/StaticContentWithCDN.md)                                                       | Data Stores       | Others         |
+| [Append Only Data Structure](AppendOnlyDataStructure.md)                                             | Data Stores       | Others         |
+| [Consistent Hashing](ConsistentHashing.md)                                                           | Data Stores       | Others         |
+
+# Why System Reliability is so important?
+
+In some cloud platforms such as [Amazon Web Services (AWS)](../../2_AWSComponents/Readme.md),
+- It is fairly common for virtual machine instances to become unavailable without warning, as the platforms are designed to prioritize flexibility and elasticity over single-machine reliability.
+- Hence, [Fault-Tolerance](Reliability/FaultTolerance&DisasterRecovery.md), [High Availability](Reliability/HighAvailability.md) plays an important role.
+
+# Other Key Terminologies
+
+| Term                        | Description                                                                                                                                             |
+|-----------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------|
+| [Shared-nothing architecture](https://en.wikipedia.org/wiki/Shared-nothing_architecture) | Distributing load across multiple machines is also known as a [shared-nothing architecture](https://en.wikipedia.org/wiki/Shared-nothing_architecture). |
+| [Elastic](https://www.merriam-webster.com/dictionary/elastic)                     | Elastic means that they can automatically add computing resources when they detect a load increase.                                                     |
 
 # Different Storage Types
 
@@ -55,7 +67,7 @@ Statelessness - REST APIs
 - Imagine you have a web server serving requests.
 - If you follow [RESTful principles](../2_APITechOptions/REST.md), these servers will be stateless.
 - That means that you scale up horizontally by adding extra instances.
-- You send traffic to each by putting a [load balancer](LoadBalancer.md) in front.
+- You send traffic to each by putting a [load balancer](Scalability/LoadBalancer.md) in front.
 - That’s a proven and effective strategy that will take you far.
 
 To name another example, let’s consider containers.
@@ -77,7 +89,7 @@ To name another example, let’s consider containers.
 | Protocol                | Content is delivered using the HTTP protocol only.           | Provides business logic to application programs using several protocols (including HTTP). |
 | App Type                | Serves only web-based applications.                          | Can serve web and enterprise-based applications.                                          |
 | Multi-Threading Support | No support for multi-threading.                              | Uses multi-threading to support multiple requests in parallel.                            |
-| Traffic                 | Facilitates web traffic that is not very resource intensive. | Facilitates longer running processes that are very resource-intensive​.                   |
+| Traffic                 | Facilitates web traffic that is not very resource intensive. | Facilitates longer running processes that are very resource-intensive.                    |
 
 [Read more](https://www.educative.io/answers/web-server-vs-application-server)
 

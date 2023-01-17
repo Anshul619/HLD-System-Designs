@@ -1,10 +1,8 @@
 
 # Load Balancers
-- [Load Balancers](https://github.com/ema2159/Grokking-System-Design-Interview-Quizzes/blob/master/Quizzes/Load%20Balancer.org) are used for the horizontal scalability & high availability/fault-tolerance.
+- [Load Balancers](https://github.com/ema2159/Grokking-System-Design-Interview-Quizzes/blob/master/Quizzes/Load%20Balancer.org) are used for the [horizontal scalability](Readme.md) & [high availability/fault-tolerance](../Reliability/HighAvailability.md).
 - LB helps to spread the traffic across a cluster of servers to improve responsiveness and availability of applications, websites or databases.
-- LB also keeps track of the status of all the resources while distributing requests.
-- If a server is not available to take new requests or is NOT responding or has elevated error rate, LB will stop sending traffic to such a server.
-- In AWS, [Elastic Load Balancer](../../2_AWSComponents/1_NetworkingAndContentDelivery/ElasticLoadBalancer/Readme.md) is used for the load balancing.
+- In AWS, [Elastic Load Balancer](../../../2_AWSComponents/1_NetworkingAndContentDelivery/ElasticLoadBalancer/Readme.md) is used for the load balancing.
 
 ## Benefits of Load Balancing
 - Users experience faster, uninterrupted service.
@@ -15,7 +13,7 @@
 ## Terminologies/Algorithms
 
 ### Health Checks 
-- Load balancers should only forward traffic to `healthy` backend servers. 
+- Load balancers only forwards traffic to `healthy` backend servers i.e. if a server is not available to take new requests or is NOT responding or has elevated error rate, LB will stop sending traffic to such a server. 
 - To monitor the health of a backend server, `health checks` regularly attempt to connect to backend servers to ensure that servers are listening.
 
 ### Least Connection Method

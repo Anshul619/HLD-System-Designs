@@ -38,7 +38,7 @@
 - For cart also, we will be storing all the selected items in Redis.
 
 ## ElasticSearch
-- [ElasticSearch](../../1_HLDDesignComponents/3_DatabaseComponents/Search-Engines/ElasticSearch/Readme.md) are used to store all published catalogs and products along with recommended items and placed order queries `to achieve the targeted SLA for search and browse requests`. 
+- [ElasticSearch](../../1_HLDDesignComponents/3_DatabaseComponents/Search-Indexes/ElasticSearch/Readme.md) are used to store all published catalogs and products along with recommended items and placed order queries `to achieve the targeted SLA for search and browse requests`. 
 - ElasticSearch will also be used for indexing customer calls records and metadata for the transcription.
 
 ## PostgresDB

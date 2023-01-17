@@ -1,5 +1,5 @@
 # ElasticSearch Cluster
-- In [Elasticsearch](https://www.elastic.co/guide/en/elasticsearch/reference/current/add-elasticsearch-nodes.html), a [cluster](../../../0_SystemGlossaries/ServersCluster.md) is a collection of nodes.
+- In [Elasticsearch](https://www.elastic.co/guide/en/elasticsearch/reference/current/add-elasticsearch-nodes.html), a [cluster](../../../0_SystemGlossaries/Scalability/ServersCluster.md) is a collection of nodes.
 - Cluster and nodes work together and hold the data, where node is an instance of Elasticsearch.
 - A cluster provides joined indexing as well as search capabilities to Elasticsearch users.
 

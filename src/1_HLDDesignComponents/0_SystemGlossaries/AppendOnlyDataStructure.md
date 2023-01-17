@@ -1,6 +1,6 @@
 # Append-Only Data Structure
 - [Append-Only](https://en.wikipedia.org/wiki/Append-only) is a property of computer data storage such that new data can be appended to the storage, but where [existing data is immutable](https://en.wikipedia.org/wiki/Immutable_object).
-- This makes [writes (i.e. throughput) generally very fast](LatencyThroughput.md).
+- This makes [writes (i.e. throughput) generally very fast](Scalability/LatencyThroughput.md).
 
 # Data structures
 - Many data structures and databases implement [immutable objects](https://en.wikipedia.org/wiki/Immutable_object), effectively making their data structures append-only. 
@@ -18,7 +18,7 @@ Log-structured data structures found in Log-structured file systems and database
 |---------------------------------------------------------------------------------------------------------------------------------|---------|
 | [Casandra](../3_DatabaseComponents/NoSQL-Databases/ApacheCasandra.md)                                                           | -       |
 | [Kafka](../4_MessageBrokers/Kafka/Readme.md)                                                                                           | -       |
-| [ElasticSearch Data Stream](../3_DatabaseComponents/Search-Engines/ElasticSearch/ElasticSearchDataStreams.md)                   | -       |
+| [ElasticSearch Data Stream](../3_DatabaseComponents/Search-Indexes/ElasticSearch/ElasticSearchDataStreams.md)                   | -       |
 | [Amazon Aurora Global Database - Replication](../../2_AWSComponents/6_DatabaseServices/AmazonRDSAurora/AuroraGlobalDatabase.md) | -       |
 | [RocksDB](../3_DatabaseComponents/NoSQL-Databases/RocksDB.md)                                                                   | -       |
 | [Amazon Kinesis](../../2_AWSComponents/5_MessageBrokerServices/AmazonKinesis/Readme.md)                                         | -       |

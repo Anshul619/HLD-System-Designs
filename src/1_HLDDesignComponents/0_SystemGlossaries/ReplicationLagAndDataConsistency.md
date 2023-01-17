@@ -1,5 +1,5 @@
 # Replication Lag And Data Consistency 
-- Replication is widely used in the [distributed](Readme.md) & [highly available](HighAvailability.md) database management systems (DBMS), usually with a [master-slave or Single-Primary-Instance-Multiple-Read-Replicas technique](Scalability/DBScalability.md).
+- Replication is widely used in the [distributed](Readme.md) & [highly available](Reliability/HighAvailability.md) database management systems (DBMS), usually with a [master-slave or Single-Primary-Instance-Multiple-Read-Replicas technique](Scalability/DBScalability.md).
 - The master server gets all the updates, which then ripple through to the slave servers.
 - It takes time (known as [Replica Lag](https://cloud.google.com/sql/docs/mysql/replication/replication-lag)) for data to be replicated in [multiple highly available zones (or regions)](../../2_AWSComponents/AWS-Global-Architecture-Region-AZ.md).
 - Hence Data Consistency won't be there for those milliseconds, which is known as [replica lag](https://cloud.google.com/sql/docs/mysql/replication/replication-lag).
@@ -9,7 +9,7 @@
 # Consistency patterns
 
 ## :star: Eventual Consistency (async replication)
-- Eventual Consistency Model [maximizes the read throughput](../../1_HLDDesignComponents/0_SystemGlossaries/LatencyThroughput.md).
+- Eventual Consistency Model [maximizes the read throughput](Scalability/LatencyThroughput.md).
 - However, it might not reflect the results of a recently completed write. Data is replicated asynchronously.
 - Fortunately, all the copies of data usually reach consistency within milliseconds.
 

@@ -54,8 +54,8 @@
         }
 ```
 
-## [Streams API](https://hevodata.com/learn/kafka-streams/)
-- The Kafka Streams API allows an application to use a stream processing architecture to process data in Kafka.
+## Streams API
+- The [Kafka Streams API](https://hevodata.com/learn/kafka-streams/) allows an application to use a stream processing architecture to process data in Kafka.
 - An application can use this API to take input streams from one or more topics, process them using streams operations, and generate output streams to transmit to one or more topics.
 - The Streams API allows you to convert input streams into output streams in this manner.
 
