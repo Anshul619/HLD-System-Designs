@@ -1,6 +1,6 @@
-
 # Introduction
 - [gRPC](https://grpc.io) is a modern open source high performance [Remote Procedure Call](https://www.geeksforgeeks.org/remote-procedure-call-rpc-in-operating-system/) framework that can run in any environment.
+- [gRPC](https://grpc.io) supports streams, where a call consists of not just one request and one response, but a series of requests and responses over time.
 
 # Key Links
 
@@ -11,7 +11,7 @@
 
 # gRPC is contract-based (Protobuf)
 - A Contract needs to be available on both sides of communication to make sense of data going between them. 
-- To define the contracts, gRPC uses a declarative language called [Protocol Buffers (Protobuf)](https://developers.google.com/protocol-buffers/).
+- To define the contracts, gRPC uses a declarative language called [Protocol Buffers (Protobuf)](EncodingLibraries/ProtocolBuffers.md).
 
 ![img.png](assests/protobuf_img.png)
 
