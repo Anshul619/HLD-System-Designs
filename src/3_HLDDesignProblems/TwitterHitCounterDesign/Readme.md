@@ -17,7 +17,7 @@
 # Tech Stack
 - [Casandra](../../1_HLDDesignComponents/3_DatabaseComponents/NoSQL-Databases/ApacheCasandra.md) or AWS DynamoDB.
 - [Redis Cache](../../1_HLDDesignComponents/3_DatabaseComponents/In-Memory-Cache/Redis/Readme.md) (with Cluster enabled)
-- [Zookeeper](../../1_HLDDesignComponents/6_DevOps/ApacheZookeeper.md) for servers coordination.
+- [Zookeeper](../../1_HLDDesignComponents/6b_ClusterCoordinationService/ApacheZookeeper.md) for servers coordination.
 
 # Rainbird design
 - Aggregators buffer for 1 min (configurable).

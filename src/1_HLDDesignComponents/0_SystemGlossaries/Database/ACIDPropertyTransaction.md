@@ -14,7 +14,8 @@
 # Isolation
 - [Isolation or Serializable](https://www.geeksforgeeks.org/acid-properties-in-dbms/) property ensures that multiple transactions can occur concurrently without leading to the inconsistency of the database state.
 - Transactions occur independently without interference. (assuming there is no concurrency but in real world, there would be concurrency)
-- Changes occurring in a particular transaction will not be visible to any other transaction until that particular change in that transaction is written to memory or has been committed
+- Changes occurring in a particular transaction will not be visible to any other transaction until that particular change in that transaction is written to memory or has been committed.
+- Generally, [concurrency control or transaction locks](https://medium.com/inspiredbrilliance/what-are-database-locks-1aff9117c290) are helpful to achieve isolation.
 
 # [Durability](Durability.md)
 

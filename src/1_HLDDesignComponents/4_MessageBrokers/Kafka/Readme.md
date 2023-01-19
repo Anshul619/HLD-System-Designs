@@ -94,14 +94,14 @@ Kafka is based on [Log Based Queue](../../0_SystemGlossaries/Database/AppendOnly
     - This method uses `sendFile` system call which allows for very efficient transfer of data from a file to another file ( including sockets ).
 
 ## Broker ( i.e. Server )
-- `A Kafka broker` is a server that works as part of a Kafka cluster (in other words, a Kafka cluster is made up of a number of brokers)
+- A Kafka broker is a server that works as part of a Kafka cluster (in other words, a Kafka cluster is made up of a number of brokers)
 - Multiple brokers in the Kafka cluster, provides load balancing, reliable redundancy & fail-over.
 - Without sacrificing performance, each broker instance can handle read and write volumes of hundreds of thousands per second (and gigabytes of messages).
 - Brokers keep very little state, mostly just open file pointers & connections.
 - To scale writes, number of leader partitions per broker can be reduced to spread the writes across more brokers.
 
 ## ZooKeeper
-- [Zookeeper](../../6_DevOps/ApacheZookeeper.md) manages Kafka Cluster ( new broker, new partition etc. ) and brokers coordination.
+- [Zookeeper](../../6b_ClusterCoordinationService/ApacheZookeeper.md) manages Kafka Cluster ( new broker, new partition etc. ) and brokers coordination.
 - Kafka stores basic metadata in Zookeeper ( in-memory ), like info about brokers, topics, partitions, partition lead/followers, consumer offset etc.
 - Zookeeper is also used in the [Controller election](#controller-election) in the `Kafka Cluster`.
 - Zookeeper notifies consumers and producers of the arrival of new broker or failure of existing broker, as well as routing all requests to partition's leaders.

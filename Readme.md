@@ -118,10 +118,24 @@ This repo contains the various system design components info, questions and solu
                 <a href="/src/2_AWSComponents/1_NetworkingAndContentDelivery/AWSCloudMap.md" target="_blank">
                   <img src="https://landscape.cncf.io/logos/aws-cloud-map.svg" width="150">
                 </a>
-                <a href="/src/1_HLDDesignComponents/6_DevOps/ApacheZookeeper.md" target="_blank">
+                <a href="/src/1_HLDDesignComponents/6b_CoordinationService/etcd.md" target="_blank">
+                  <img src="https://cdn.freebiesupply.com/logos/large/2x/etcd-logo-png-transparent.png" width="150">
+                </a>
+            </div>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <a href="src/1_HLDDesignComponents/6b_CoordinationService" target="_blank">Cluster Coordination Service & Config store</a>
+      </td>
+      <td>
+        <div class="container" style="background:white">
+            <div class="block two first">
+                <a href="/src/1_HLDDesignComponents/6b_ClusterCoordinationService/ApacheZookeeper.md" target="_blank">
                   <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Apache_ZooKeeper_logo.svg/1200px-Apache_ZooKeeper_logo.svg.png" width="150">
                 </a>
-                <a href="/src/1_HLDDesignComponents/1_MicroServicesSOA/ServiceRegistry&Discovery/etcd.md" target="_blank">
+                <a href="/src/1_HLDDesignComponents/6b_ClusterCoordinationService/etcd.md" target="_blank">
                   <img src="https://cdn.freebiesupply.com/logos/large/2x/etcd-logo-png-transparent.png" width="150">
                 </a>
             </div>
@@ -220,7 +234,7 @@ This repo contains the various system design components info, questions and solu
 | :star: [AWS - Design a system that scales to a million of users on AWS](src/2_AWSComponents/0_AWSDesigns/DesignScalableSystemWithRDMS/README.md)                                            | [Amazon S3](src/2_AWSComponents/7_StorageServices/AmazonS3.md), [Amazon Cloudfront](src/2_AWSComponents/1_NetworkingAndContentDelivery/AmazonCloudFront.md), [Redis](src/1_HLDDesignComponents/3_DatabaseComponents/In-Memory-Cache/Redis/Readme.md), [Amazon Load Balancer](src/2_AWSComponents/1_NetworkingAndContentDelivery/ElasticLoadBalancer/Readme.md), [Amazon CloudWatch](src/2_AWSComponents/8_MonitoringServices/AmazonCloudWatch.md)                                                                                                                              |
 | :star: [Personalization at Spotify using Casandra](src/3_HLDDesignProblems/PersonalizationSpotify/Readme.md)                                                                                | [Casandra](src/1_HLDDesignComponents/3_DatabaseComponents/NoSQL-Databases/ApacheCasandra.md), [Kafka](src/1_HLDDesignComponents/4_MessageBrokers/Kafka/Readme.md), [HDFS](src/1_HLDDesignComponents/5_BigDataComponents/ApacheHadoop/ApacheHDFS.md), [Apache Storm](/src/1_HLDDesignComponents/5_BigDataComponents/ApacheStorm.md)                                                                                                                                                                                                                                             |
 | :star: [Rate Limiting in Distributed Systems](src/3_HLDDesignProblems/RateLimiterAPI/Readme.md)                                                                                             | [Redis](src/1_HLDDesignComponents/3_DatabaseComponents/In-Memory-Cache/Redis/Readme.md)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
-| [Twitter - Hit Counter](src/3_HLDDesignProblems/TwitterHitCounterDesign/Readme.md)                                                                                                          | [Casandra](src/1_HLDDesignComponents/3_DatabaseComponents/NoSQL-Databases/ApacheCasandra.md), [Redis](src/1_HLDDesignComponents/3_DatabaseComponents/In-Memory-Cache/Redis/Readme.md), [Apache Zookeeper](src/1_HLDDesignComponents/6_DevOps/ApacheZookeeper.md),                                                                                                                                                                                                                                                                                                              |
+| [Twitter - Hit Counter](src/3_HLDDesignProblems/TwitterHitCounterDesign/Readme.md)                                                                                                          | [Casandra](src/1_HLDDesignComponents/3_DatabaseComponents/NoSQL-Databases/ApacheCasandra.md), [Redis](src/1_HLDDesignComponents/3_DatabaseComponents/In-Memory-Cache/Redis/Readme.md), [Apache Zookeeper](src/1_HLDDesignComponents/6b_ClusterCoordinationService/ApacheZookeeper.md),                                                                                                                                                                                                                                                                                                              |
 | [AWS - Design Multi-Region Active-Active Architecture On AWS](src/2_AWSComponents/0_AWSDesigns/DesignMultiRegionActiveActiveArchitectureOnAWS/README.md)                                    | [AWS Global Architecture - Region, AZ, Point-2-Point](src/2_AWSComponents/AWS-Global-Architecture-Region-AZ.md), [Amazon Aurora](src/2_AWSComponents/6_DatabaseServices/AmazonRDSAurora/Readme.md)                                                                                                                                                                                                                                                                                                                                                                             |
 | [Logging Solution in Distributed Systems](src/3_HLDDesignProblems/LoggingSolution)                                                                                                          | [Kafka](src/1_HLDDesignComponents/4_MessageBrokers/Kafka/Readme.md), [Elastic Search](src/1_HLDDesignComponents/3_DatabaseComponents/Search-Indexes/ElasticSearch/Readme.md), [ELK](src/1_HLDDesignComponents/7_MonitoringTools/ELK.md)                                                                                                                                                                                                                                                                                                                                        |
 | [Search - Flight Booking](src/3_HLDDesignProblems/FlightBookingSearch/README.md)                                                                                                            | [Kafka](src/1_HLDDesignComponents/4_MessageBrokers/Kafka/Readme.md), [Elastic Search](src/1_HLDDesignComponents/3_DatabaseComponents/Search-Indexes/ElasticSearch/Readme.md), [Casandra](src/1_HLDDesignComponents/3_DatabaseComponents/NoSQL-Databases/ApacheCasandra.md)                                                                                                                                                                                                                                                                                                     |
@@ -269,7 +283,7 @@ This repo contains the various system design components info, questions and solu
 # Other Services
 - [DevOps](src/1_HLDDesignComponents/6_DevOps/Readme.md)
 - [Monitoring](src/1_HLDDesignComponents/7_MonitoringTools/Readme.md)
-- :star: [Apache Zookeeper](src/1_HLDDesignComponents/6_DevOps/ApacheZookeeper.md)
+- :star: [Apache Zookeeper](src/1_HLDDesignComponents/6b_ClusterCoordinationService/ApacheZookeeper.md)
 - :star: [Open Source Contributions](src/1_HLDDesignComponents/OpenSourceContributions.md)
 - [Apache Marathon & Mesos](src/1_HLDDesignComponents/6a_ContainerOrchestrationServices/ApacheMarathon&Mesos.md)
 - [Apache Yarn](src/1_HLDDesignComponents/6a_ContainerOrchestrationServices/ApacheYarn.md)
