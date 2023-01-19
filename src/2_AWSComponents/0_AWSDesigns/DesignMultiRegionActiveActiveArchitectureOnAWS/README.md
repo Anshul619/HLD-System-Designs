@@ -1,4 +1,3 @@
-
 # Design Multi-Region Active-Active Architecture On AWS
 
 ![img.png](AWS-Multi-Region-AZ-HA.drawio.png)
@@ -30,8 +29,8 @@ However the [multi-region](../../AWS-Global-Architecture-Region-AZ.md) backend s
 # How to build multi-region active-active architecture in AWS?
 
 ## Reliable data replication
-- Since we need to maintain [high availability and partition tolerance in CAP theorem](../../../1_HLDDesignComponents/0_SystemGlossaries/CAPTheorem.md), we have to compromise consistency.
-- [Eventual consistency](../../../1_HLDDesignComponents/0_SystemGlossaries/Reliability/ReplicationLagAndDataConsistency.md#eventual-consistency-async-replication) would have to be done, as databases are spread across multi-regions.
+- Since we need to maintain [high availability and partition tolerance in CAP theorem](../../../1_HLDDesignComponents/0_SystemGlossaries/Database/CAPTheorem.md), we have to compromise consistency.
+- [Eventual consistency](../../../1_HLDDesignComponents/0_SystemGlossaries/Database/ReplicationAndDataConsistency.md#eventual-consistency-async-replication) would have to be done, as databases are spread across multi-regions.
 
 ## Global network infrastructure
 - [AWS Regions](../../AWS-Global-Architecture-Region-AZ.md) are connected to a private global network backbone, which provides lower cost and more consistent cross-region network latency when compared with the public internet.

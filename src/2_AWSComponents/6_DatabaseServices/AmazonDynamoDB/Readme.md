@@ -2,8 +2,11 @@
 - [DynamoDB](https://aws.amazon.com/dynamodb/) is a fully managed [NoSQL](../../../1_HLDDesignComponents/3_DatabaseComponents) database service. 
 - DynamoDB is a key-value and document database. 
 - Every record in a DynamoDB database can be considered as a map of attributes and values with a primary key to retrieve the record.
-- All data items are stored on `Solid State Drives (SSDs)`, and are replicated across [3 Availability Zones](../../AWS-Global-Architecture-Region-AZ.md) for [high availability](../../../1_HLDDesignComponents/0_SystemGlossaries/Reliability/HighAvailability.md) and [durability](../../../1_HLDDesignComponents/0_SystemGlossaries/Durability.md). 
-- With DynamoDB, `you can offload the administrative burden of operating and scaling a highly available distributed database cluster`, while paying a low price for only what you use.
+- All data items are stored on [Solid State Drives (SSDs)](https://www.techtarget.com/searchstorage/definition/SSD-solid-state-drive), and are replicated across [3 Availability Zones](../../AWS-Global-Architecture-Region-AZ.md) for [high availability](../../../1_HLDDesignComponents/0_SystemGlossaries/Reliability/HighAvailability.md) and [durability](../../../1_HLDDesignComponents/0_SystemGlossaries/Database/Durability.md). 
+- With DynamoDB, you can offload the administrative burden of operating and scaling a highly available distributed database cluster, while paying a low price for only what you use.
+
+Amazon DynamoDB is built on the principles of [Dynamo](../../../1_HLDDesignComponents/3_DatabaseComponents/NoSQL-Databases/DynamoStyleDatabases.md)) and is a hosted service within the AWS infrastructure. 
+- However, while [Dynamo](../../../1_HLDDesignComponents/3_DatabaseComponents/NoSQL-Databases/DynamoStyleDatabases.md) is based on [leaderless replication](../../../1_HLDDesignComponents/0_SystemGlossaries/Database/ReplicationAndDataConsistency.md), DynamoDB uses [single-leader replication](../../../1_HLDDesignComponents/0_SystemGlossaries/Database/ReplicationAndDataConsistency.md).
 
 ## :star: Real world use cases of DynamoDB
 - [Twillo - Send Message API Design](../../../3_HLDDesignProblems/TwilloSendMessageAPI)
@@ -34,8 +37,8 @@
 - You are still able to achieve your prior throughput levels while scaling is underway.
 
 ## Consistency Models
-- [Eventual Consistency Model](../../../1_HLDDesignComponents/0_SystemGlossaries/Reliability/ReplicationLagAndDataConsistency.md#consistency-patterns)
-- [Strong Consistency Model](../../../1_HLDDesignComponents/0_SystemGlossaries/Reliability/ReplicationLagAndDataConsistency.md#consistency-patterns)
+- [Eventual Consistency Model](../../../1_HLDDesignComponents/0_SystemGlossaries/Database/ReplicationAndDataConsistency.md#consistency-patterns)
+- [Strong Consistency Model](../../../1_HLDDesignComponents/0_SystemGlossaries/Database/ReplicationAndDataConsistency.md#consistency-patterns)
 
 ## Data types supported in DynamoDB
 

@@ -1,4 +1,3 @@
-
 # Amazon RDS Aurora
 - [Amazon RDS Aurora](https://aws.amazon.com/rds/aurora/) is designed for [unparalleled high performance and availability at global scale](../../../1_HLDDesignComponents/0_SystemGlossaries/Scalability/LatencyThroughput.md) with full MySQL and PostgreSQL compatibility (that means your drivers will work as if Aurora was a Postgres or MySQL database).
 - Aurora is AWS Cloud Optimized and claims [5x performance improvement over MySQL on RDS, over 3x performance improvement over Postgres on RDS](../../../1_HLDDesignComponents/0_SystemGlossaries/Scalability/LatencyThroughput.md).
@@ -51,7 +50,7 @@
 - [All DB instances in a multi-master cluster must be in the same AWS Region](../../AWS-Global-Architecture-Region-AZ.md).
 - [You can't enable cross-Region replicas from multi-master clusters]().
 - Multi-master clusters are only available in the certain AWS Regions.
-- A [multi-master cluster doesn't do any load balancing for connections](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/aurora-multi-master.html#aurora-multi-master-connectivity).
+- [A multi-master cluster doesn't do any load balancing for connections](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/aurora-multi-master.html#aurora-multi-master-connectivity).
   - Application must implement its own connection management logic to distribute read and write operations among multiple DB instance endpoints.
 
 ### RDS - Different Roles

@@ -1,7 +1,7 @@
 
 # Amazon Simple Storage Service (S3)
 - [Amazon S3](https://aws.amazon.com/s3/) is an object store, meaning it is a `higher layer data storage system`, essentially [it is a database "blob" storage](https://www.techopedia.com/definition/32166/blob-storage), storing data in an underlying simple database as an object.
-- It's designed for [WRITE once READ many access i.e. append-only data structure](../../1_HLDDesignComponents/0_SystemGlossaries/AppendOnlyDataStructure.md), perfect for [Static content](../../1_HLDDesignComponents/0_SystemGlossaries/CDNs/StaticContentWithCDN.md).
+- It's designed for [WRITE once READ many access i.e. append-only data structure](../../1_HLDDesignComponents/0_SystemGlossaries/Database/AppendOnlyDataStructure.md), perfect for [Static content](../../1_HLDDesignComponents/0_SystemGlossaries/CDNs/StaticContentWithCDN.md).
 - It's distributed and offers a very high level of redundancy i.e. [data is stored in 3 AZs within a specific region](../AWS-Global-Architecture-Region-AZ.md).
 - [Amazon S3]() also offers integrations to help prevent breaches by way of `PCI-DSS, HIPAA/HITECH, and FedRAMP`.
 
@@ -37,7 +37,7 @@ By contrast, a dynamic website relies on server-side processing, including serve
 [Read more](../0_AWSDesigns/DesignUploadImageAWSLambdaS3/README.md)
 
 # Key Features of S3
-- [Highly durable](../../1_HLDDesignComponents/0_SystemGlossaries/Durability.md)
+- [Highly durable](../../1_HLDDesignComponents/0_SystemGlossaries/Database/Durability.md)
 - [Great for static assets](../../1_HLDDesignComponents/0_SystemGlossaries/CDNs/StaticContentWithCDN.md)
 - [Infinitely scalable](../../1_HLDDesignComponents/0_SystemGlossaries/Scalability/DBScalability.md)
 - Object-based storage

@@ -131,7 +131,7 @@ Note:
 
 ### Race Conditions
 - To solve the race condition while updating the counter in [Redis](../../1_HLDDesignComponents/3_DatabaseComponents/In-Memory-Cache/Redis/Readme.md), we would have to apply [transaction locks on the read-write operation](../../1_HLDDesignComponents/3_DatabaseComponents/In-Memory-Cache/Redis/Readme.md#redis-transaction-lock).
-- This would make the [counter update as atomic](../../1_HLDDesignComponents/0_SystemGlossaries/Atomicity.md) in Redis.
+- This would make the [counter update as atomic](../../1_HLDDesignComponents/0_SystemGlossaries/Database/Atomicity.md) in Redis.
 - But this comes at a performance cost ( as latency would increase ).
 
 ### Inconsistency

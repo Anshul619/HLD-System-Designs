@@ -12,13 +12,13 @@
 | [Static Content](CDNs/StaticContentWithCDN.md)                                            | Others                                             | App Service/Nodes   |
 | :star: [Event Driven Architecture](EventDrivenArchitecture.md)                            | Others                                             | Message Brokers     |
 | :star: [DB Scalability](Scalability/DBScalability.md)                                     | :rocket: [Scalability](Scalability/Readme.md)      | Data Stores         |
-| :star: [ACID Properties of the Transaction](ACIDPropertyTransaction.md)                   | Others                                             | Data Stores         |
-| :star: [CAP Theorem of the Distributed Systems](CAPTheorem.md)                            | Others                                             | Data Stores         |
-| :star: [Replication & Data Consistency](Reliability/ReplicationLagAndDataConsistency.md)  | :handshake: [Reliability](Reliability/Readme.md)   | Data Stores         |
-| [Atomicity](Atomicity.md)                                                                 | Others                                             | Data Stores         |
-| [Durability](Durability.md)                                                               | Others                                             | Data Stores         |
-| [Append Only Data Structure](AppendOnlyDataStructure.md)                                  | Others                                             | Data Stores         |
-| [Consistent Hashing](ConsistentHashing.md)                                                | Others                                             | Data Stores         |
+| :star: [ACID Properties of the Transaction](Database/ACIDPropertyTransaction.md)                   | Others                                             | Data Stores         |
+| :star: [CAP Theorem of the Distributed Systems](Database/CAPTheorem.md)                            | Others                                             | Data Stores         |
+| :star: [Replication & Data Consistency](Database/ReplicationAndDataConsistency.md)  | :handshake: [Reliability](Reliability/Readme.md)   | Data Stores         |
+| [Atomicity](Database/Atomicity.md)                                                                 | Others                                             | Data Stores         |
+| [Durability](Database/Durability.md)                                                               | Others                                             | Data Stores         |
+| [Append Only Data Structure](Database/AppendOnlyDataStructure.md)                                  | Others                                             | Data Stores         |
+| [Consistent Hashing](Database/ConsistentHashing.md)                                                | Others                                             | Data Stores         |
 
 # Why System Reliability is so important?
 

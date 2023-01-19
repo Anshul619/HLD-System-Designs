@@ -16,16 +16,16 @@
 
 # Why Kafka is so fast?
 - Kafka achieves [low latency](../../0_SystemGlossaries/Scalability/LatencyThroughput.md) message delivery through [Sequential I/O and Zero Copy Principle](https://twitter.com/alexxubyte/status/1506663791961919488/photo/1).
-- Messages (events) in the [Kafka]() are immutable and can't be changed once it's pushed (due to [log based queue nature](../../0_SystemGlossaries/AppendOnlyDataStructure.md)).
+- Messages (events) in the [Kafka]() are immutable and can't be changed once it's pushed (due to [log based queue nature](../../0_SystemGlossaries/Database/AppendOnlyDataStructure.md)).
 - The same techniques are commonly used in much other messaging/streaming platforms.
 
-Kafka is based on [Log Based Queue](../../0_SystemGlossaries/AppendOnlyDataStructure.md)
-- :star: Messages are persisted to [append-only log files](../../0_SystemGlossaries/AppendOnlyDataStructure.md) by the broker.
-- Producers are [appending these log files (sequential write)](../../0_SystemGlossaries/AppendOnlyDataStructure.md) & consumers are reading a range of these files ( `sequential reads` ).
+Kafka is based on [Log Based Queue](../../0_SystemGlossaries/Database/AppendOnlyDataStructure.md)
+- :star: Messages are persisted to [append-only log files](../../0_SystemGlossaries/Database/AppendOnlyDataStructure.md) by the broker.
+- Producers are [appending these log files (sequential write)](../../0_SystemGlossaries/Database/AppendOnlyDataStructure.md) & consumers are reading a range of these files ( `sequential reads` ).
 
 # :star: Is Kafka a Database?
 - Yes & No.
-- In some way, Kafka supports [ACID properties](../../0_SystemGlossaries/ACIDPropertyTransaction.md).
+- In some way, Kafka supports [ACID properties](../../0_SystemGlossaries/Database/ACIDPropertyTransaction.md).
 - [Martin Kleppmann | Kafka Summit London 2019 Keynote | Is Kafka a Database?](https://www.youtube.com/watch?v=BuE6JvQE_CY)
 - [Read More](https://queue.acm.org/detail.cfm?id=3321612)
 
@@ -62,15 +62,15 @@ Kafka is based on [Log Based Queue](../../0_SystemGlossaries/AppendOnlyDataStruc
 - Large amount of data can be stored in the Kafka pool.
 
 ## Durability
-- The data is kept [persistent (as per retention policy)](../../0_SystemGlossaries/Durability.md) and tolerant to any hardware failures by copying the data in the clusters.
+- The data is kept [persistent (as per retention policy)](../../0_SystemGlossaries/Database/Durability.md) and tolerant to any hardware failures by copying the data in the clusters.
 
 ## High Availability, Fault Tolerance
-- The [distributed, partitioned, replicated](../../0_SystemGlossaries/Reliability/HighAvailability.md), and [fault-tolerant](../../0_SystemGlossaries/Reliability/FaultTolerance&DisasterRecovery.md) nature of Kafka makes it very reliable.
+- The [distributed, partitioned, replicated](../../0_SystemGlossaries/Database/ReplicationAndDataConsistency.md), and [fault-tolerant](../../0_SystemGlossaries/Reliability/FaultTolerance&DisasterRecovery.md) nature of Kafka makes it very reliable.
 - Kafka connector can handle failures with three strategies summarised as `fast-fail`, `ignore` and `re-queue` (sends to another topic).
 - [Read more about replication in Kafka](#replication)
 
 ## Extensibility
-- `Allows multiple ways for applications to plugin and make use of Kafka`.
+- Allows multiple ways for applications to plugin and make use of Kafka.
 - Also, it has provisions for new connectors that you can write as needed.
 
 ## Data Transformation
@@ -78,7 +78,7 @@ Kafka is based on [Log Based Queue](../../0_SystemGlossaries/AppendOnlyDataStruc
 
 # Major Components of Kafka
 
-## Topic ( i.e. Category or Queue )
+## Topic (i.e. Category or Queue)
 - Topic is a category or feed where messages ( or events ) would be saved and published.
 - Topics are logically collections of partitions (the physical files).
 - A broker contains some partitions for a topic.
@@ -119,23 +119,23 @@ Kafka is based on [Log Based Queue](../../0_SystemGlossaries/AppendOnlyDataStruc
 - The `-group` command must be used to consume messages from a consumer group.
 
 ## Replication
-- Each partition would be replicated across the brokers/servers in the cluster ( as per configured replication factor ).
+- Each partition would be replicated across the brokers/servers in the cluster (as per configured replication factor).
 
 ### Leader
 - Only one partition (of the topic) would be active at the time, called `Leader`.
-- `Write requests on the partition, would be handled by Leader`
+- Write requests on the partition, would be handled by Leader
 
 ### Follower
-- Other partitions ( of the topic ) would only replicate message, called `Followers`.
-- Based on configured replication factor (`replication.factor`), the number of followers would be decided.
+- Other partitions (of the topic) would only replicate message, called `Followers`.
+- Based on configured replication factor ([replication.factor](https://kafka.apache.org/documentation/#replication)), the number of followers would be decided.
 - Example - 3 replication factor means there would be 1 leader and 2 followers.
 
 ### In-Sync Replicas (ISR)
-- An in-sync replica (ISR) is a broker that has the latest data for a given partition. 
+- An [in-sync replica (ISR)](https://www.conduktor.io/blog/how-replication-and-isr-work-in-kafka) is a broker that has the latest data for a given partition. 
   - A leader is always an in-sync replica. 
   - A follower is an in-sync replica only if it has fully caught up to the partition it’s following. 
   - In other words, it can't be behind on the latest records for a given partition.
-- `Read requests on the partition, would be handled by in-sync replicas`.
+- Read requests on the partition, would be handled by in-sync replicas.
 - The message is considered committed to the log only when all in-sync replicas have the message. 
   - Accordingly, ack is sent to the producer.
 - The number of [brokers](#broker--ie-server-) should be greater than the `minimum in-sync replica size` (i.e. at least 3).
@@ -181,8 +181,8 @@ The `acks` setting is a good way to configure your preferred trade-off between d
 ### Controller Election
 - The first broker that starts in the cluster will become the Kafka Controller by creating an `ephemeral node called "/controller"` in [Zookeeper](#zookeeper)
 - When other brokers starts they also try to create this node in Zookeeper, but will receive an "node already exists" exception, by which they understand that there is already a Controller elected in the cluster.
-- `When the Zookeeper doesn't receive heartbeat messages from the Controller, the ephemeral node in Zookeeper will get deleted.`
-- `It then notifies all the other brokers in the cluster that the Controller is gone via Zookeeper watcher, which starts a new election for new Controller again.` 
+- When the Zookeeper doesn't receive heartbeat messages from the Controller, the ephemeral node in Zookeeper will get deleted.`
+- It then notifies all the other brokers in the cluster that the Controller is gone via Zookeeper watcher, which starts a new election for new Controller again. 
 - All the other brokers will again try to create a ephemeral node "/controller" and the first one to succeed will be elected as the new Controller.
 
 ## What is Partition Key in Kafka?
