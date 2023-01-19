@@ -118,7 +118,7 @@ This repo contains the various system design components info, questions and solu
                 <a href="/src/2_AWSComponents/1_NetworkingAndContentDelivery/AWSCloudMap.md" target="_blank">
                   <img src="https://landscape.cncf.io/logos/aws-cloud-map.svg" width="150">
                 </a>
-                <a href="/src/1_HLDDesignComponents/6b_CoordinationService/etcd.md" target="_blank">
+                <a href="/src/1_HLDDesignComponents/6b_ClusterCoordinationService/etcd.md" target="_blank">
                   <img src="https://cdn.freebiesupply.com/logos/large/2x/etcd-logo-png-transparent.png" width="150">
                 </a>
             </div>
