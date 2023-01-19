@@ -5,7 +5,8 @@
 - All data items are stored on [Solid State Drives (SSDs)](https://www.techtarget.com/searchstorage/definition/SSD-solid-state-drive), and are replicated across [3 Availability Zones](../../AWS-Global-Architecture-Region-AZ.md) for [high availability](../../../1_HLDDesignComponents/0_SystemGlossaries/Reliability/HighAvailability.md) and [durability](../../../1_HLDDesignComponents/0_SystemGlossaries/Database/Durability.md). 
 - With DynamoDB, you can offload the administrative burden of operating and scaling a highly available distributed database cluster, while paying a low price for only what you use.
 
-Amazon DynamoDB is built on the principles of [Dynamo](../../../1_HLDDesignComponents/3_DatabaseComponents/NoSQL-Databases/DynamoStyleDatabases.md)) and is a hosted service within the AWS infrastructure. 
+# Amazon DynamoDB & Dynamo Systems
+- Amazon DynamoDB is built on the principles of [Dynamo](../../../1_HLDDesignComponents/3_DatabaseComponents/NoSQL-Databases/DynamoStyleDatabases.md)) and is a hosted service within the AWS infrastructure. 
 - However, while [Dynamo](../../../1_HLDDesignComponents/3_DatabaseComponents/NoSQL-Databases/DynamoStyleDatabases.md) is based on [leaderless replication](../../../1_HLDDesignComponents/0_SystemGlossaries/Database/ReplicationAndDataConsistency.md), DynamoDB uses [single-leader replication](../../../1_HLDDesignComponents/0_SystemGlossaries/Database/ReplicationAndDataConsistency.md).
 
 ## :star: Real world use cases of DynamoDB
@@ -13,19 +14,20 @@ Amazon DynamoDB is built on the principles of [Dynamo](../../../1_HLDDesignCompo
 
 ## Key Features
 
-| Feature                                                                                                                                             | Remarks                                                           |
-|-----------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------|
-| Provisioned Throughput                                                                                                                              | Dial up or down provisioned read/write capacity.                  |
-| Fast, predictable performance                                                                                                                       | Avg single-digit millisecond latency, 1000s of records per second |
-| Fault tolerant, Highly Available                                                                                                                    | Data replicated across Availability Zones                         |
-| [Partitions and data distribution](#partitionssharding-and-data-distribution)                                                                       | -                                                                 |
-| [DynamoDB Global tables](DynamoDBGlobalTables.md)                                                                                                   | -                                                                 |
-| [DynamoDB Accelerator (DAX)](DynamoDBAccelerator.md) provides caching capabilities for accessing data.                                                                                               | -                                                                 |
-| [PartiQL - a SQL-compatible query language for Amazon DynamoDB](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/ql-reference.html) | -                                                                 |
-| [Time to Live (TTL) supported for the data](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/TTL.html)                              | -                                                                 |
-| JSON Support                                                                                                                                        | -                                                                 |
-| Items size up to 400 KB                                                                                                                             | -                                                                 |
-| Monitoring                                                                                                                                          | Integrated with Cloudwatch                                        |
+| Feature                                                                                                                                               | Remarks                                                           |
+|-------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------|
+| Provisioned Throughput                                                                                                                                | Dial up or down provisioned read/write capacity.                  |
+| Fast, predictable performance                                                                                                                         | Avg single-digit millisecond latency, 1000s of records per second |
+| Fault tolerant, Highly Available                                                                                                                      | Data replicated across Availability Zones                         |
+| [Partitions and data distribution](#partitionssharding-and-data-distribution)                                                                         | -                                                                 |
+| [DynamoDB Global tables](DynamoDBGlobalTables.md)                                                                                                     | -                                                                 |
+| [DynamoDB Accelerator (DAX)](DynamoDBAccelerator.md) provides caching capabilities for accessing data.                                                | -                                                                 |
+| [PartiQL - a SQL-compatible query language for Amazon DynamoDB](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/ql-reference.html)   | -                                                                 |
+| [Time to Live (TTL) supported for the data](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/TTL.html)                                | -                                                                 |
+| JSON Support                                                                                                                                          | -                                                                 |
+| Items size up to 400 KB                                                                                                                               | -                                                                 |
+| Monitoring                                                                                                                                            | Integrated with Cloudwatch                                        |
+| Both [Local & Global Secondary Indexing](../../../1_HLDDesignComponents/0_SystemGlossaries/Database/Indexing.md) supported                            | -                                                                 |
 
 ## Automated Storage Scaling
 - There is no limit to the amount of data you can store in a DynamoDB table, and the service automatically allocates more storage, as you store more data using the DynamoDB write APIs.
@@ -50,19 +52,19 @@ Each data type falls into one of the three following categories -
 - `Set` - These types represent multiple scalars, and include string sets, number sets, and binary sets.
 
 ## Partitions/Sharding and data distribution
-- Amazon DynamoDB scales horizontally (using data partition/sharding) and can seamlessly scale a single table over hundreds of servers.
+- Amazon DynamoDB scales [horizontally (using data partition/sharding)](../../../1_HLDDesignComponents/0_SystemGlossaries/Database/PartioningSharding.md) and can seamlessly scale a single table over hundreds of servers.
 - [Amazon DynamoDB stores data in partitions](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/HowItWorks.Partitions.html). 
 - A partition is an allocation of storage for a table, backed by `solid state drives (SSDs)` and automatically replicated across multiple Availability Zones within an AWS Region. 
-- `Partition management is handled entirely by DynamoDB` — you never have to manage partitions yourself.
+- Partition management is handled entirely by DynamoDB — you never have to manage partitions yourself.
 - Partition management occurs automatically in the background and is transparent to your applications. 
 - Your table remains available throughout and fully supports your provisioned throughput requirements.
 
 ### Data distribution: Partition key
 - To write an item to the table
-  - DynamoDB uses the value of the partition key as input to an internal hash function. 
+  - DynamoDB uses the value of the [partition key](../../../1_HLDDesignComponents/0_SystemGlossaries/Database/PartioningSharding.md) as input to an internal hash function. 
   - The output value from the hash function determines the partition in which the item will be stored.
 - To read an item from the table
-  - You must specify the `partition key value` for the item. 
+  - You must specify the [partition key value](../../../1_HLDDesignComponents/0_SystemGlossaries/Database/PartioningSharding.md) for the item. 
   - DynamoDB uses this value as input to its hash function, yielding the partition in which the item can be found.
 
 ![img.png](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/images/HowItWorksPartitionKey.png)

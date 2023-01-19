@@ -3,7 +3,7 @@
 - Instead of one shard for writes, we partition/shard the database based on a partition key. 
 - This would increase query throughput and overall system write throughput.
 
-Note - This partitioning is nothing related to network partition (in [CAP Theorem](CAPTheorem.md)).
+> Note - This partitioning is nothing related to network partition (in [CAP Theorem](CAPTheorem.md)).
 
 # Key Terminologies
 
@@ -11,8 +11,9 @@ Note - This partitioning is nothing related to network partition (in [CAP Theore
 |---------------|------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------|
 | Partition Key | Partitioning would be done based on a partition key. <br/>- We need to carefully choose this key to distribute the data evenly b/w partitions. | User ID, Location ID, Photo ID etc.            |
 | Hash Function | Hash function helps to determine the paritition for a given key.                                                                               | [Casandra](../../3_DatabaseComponents/NoSQL-Databases/ApacheCasandra.md), [MongoDB](../../3_DatabaseComponents/NoSQL-Databases/MongoDB/Readme.md) uses MD5 as a hash function. |
-|               |                                                                                                                                                |                                                |
-|               |                                                                                                                                                |                                                |
+
+# Key Links
+- [Types of Secondary Indexes, in case of Partitioning/Sharding](Indexing.md)
 
 # Supported Clusters
 - [Kafka Cluster](../../4_MessageBrokers/Kafka/Readme.md)

@@ -6,7 +6,7 @@
 ![img.png](assests/ElasticSearch-Cluster.png)
 
 # Sharding in ES Cluster
-- The data stored in an index can be divided into [multiple partitions/shards](../../../0_SystemGlossaries/Database/DBPartioning.md).
+- The data stored in an index can be divided into [multiple partitions/shards](../../../0_SystemGlossaries/Database/PartioningSharding.md).
 - An Elasticsearch index has five shards by default.
 - Each shard is an instance of a [Lucene index](../ApacheLucene.md), which you can think of as a self-contained search engine that indexes and handles queries for a subset of the data in an Elasticsearch cluster.
 
