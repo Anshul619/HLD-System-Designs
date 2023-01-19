@@ -28,10 +28,7 @@
 - Sometimes, we must have to consider `cloud-agnostic approach` ( & onPerm customer approach ) while designing the solution.
 
 ## SQL Queries - Performance Techniques
-- [Index the columns](https://www.geeksforgeeks.org/indexing-in-databases-set-1/) which are used in `where`, `join` etc. clauses. 
-  - This will increase performance of SQL queries.
-  - Since indexes lead to increase to write performance, hence we should create only required indexes.
-  - Indexes can be created using one or more columns of a database table, providing the basis for both rapid random lookups and efficient access of ordered records.
+- [Index the columns](0_SystemGlossaries/Database/Indexing.md) which are used in `where`, `join` etc. clauses.
 - `Minimize use of JOINS` in the `SQL queries`.
 - `Minimize select columns` in the `SQL Queries`.
 - Observe [MySQL Slow Queries logs](https://severalnines.com/blog/how-identify-mysql-performance-issues-slow-queries/) and find out SLOW Queries in it.

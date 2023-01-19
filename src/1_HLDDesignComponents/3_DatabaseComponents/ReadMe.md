@@ -24,17 +24,9 @@
 
 Relational databases store data in rows and columns.
 - Each row contains all the information about one entity and each column contains all the separate data points.
-- Some of the most popular relational databases are [AWS Aurora](../../2_AWSComponents/6_DatabaseServices/AmazonRDSAurora/Readme.md), `Postgres`, `MySQL`, `Oracle`, `MS SQL Server`, `SQLite` and `MariaDB`.
+- Some of the most popular relational databases are [AWS Aurora](../../2_AWSComponents/6_DatabaseServices/AmazonRDSAurora/Readme.md), `Postgres`, `MySQL`, `Oracle`, `MS SQL Server` etc.
 - [Read more about sharding in MySQL Cluster](https://www.mysql.com/products/cluster/scalability.html)
-
-## What is Indexing in SQL?
-- Columns that you are querying (SELECT, GROUP BY, ORDER BY, JOIN) could be faster with indices.
-- Indexes are used to speed up lookups (log-time instead of scanning the entire table) and to keep the data in memory.
-- Indices are usually represented as self-balancing B-tree that keeps data sorted and allows searches, sequential access, insertions, and deletions in logarithmic time.
-- Placing an index can keep the data in memory, requiring more space.
-- Writes could also be slower since the index also needs to be updated.
-- When loading large amounts of data, it might be faster to disable indices, load the data, then rebuild the indices.
-- [Read more](https://github.com/donnemartin/system-design-primer#use-good-indices)
+- Columns that you are querying (SELECT, GROUP BY, ORDER BY, JOIN) could be faster with [indices](../0_SystemGlossaries/Database/Indexing.md).
 
 # NoSQL - Intro, Different NoSQL types
 
