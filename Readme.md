@@ -127,7 +127,7 @@ This repo contains the various system design components info, questions and solu
     </tr>
     <tr>
       <td>
-        <a href="src/1_HLDDesignComponents/6b_CoordinationService" target="_blank">Cluster Coordination Service & Config store</a>
+        <a href="src/1_HLDDesignComponents/6b_ClusterCoordinationService" target="_blank">Cluster Coordination Service & Config store</a>
       </td>
       <td>
         <div class="container" style="background:white">
