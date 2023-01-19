@@ -1,5 +1,5 @@
 # Replication & Data Consistency
-- [Replication](https://www.geeksforgeeks.org/data-replication-in-dbms/) is widely used in the [distributed](../Readme.md) & [highly available](../Reliability/HighAvailability.md) database management systems (DBMS), usually with a [master-slave or Single-Primary-Instance-Multiple-Read-Replicas technique](../Scalability/DBScalability.md).
+- [Replication](https://www.geeksforgeeks.org/data-replication-in-dbms/) is widely used in the [distributed](../Readme.md) & [highly available](../Reliability/HighAvailability.md) database management systems (DBMS).
 
 # :+1: Advantages of Replication
 
