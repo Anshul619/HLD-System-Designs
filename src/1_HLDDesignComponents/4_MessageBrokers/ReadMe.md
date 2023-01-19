@@ -1,14 +1,14 @@
 
 # Introduction
 - Message brokers are used to decouple & enable [Event Driven Architectures](../0_SystemGlossaries/EventDrivenArchitecture.md) i.e. communicate the events & pass the data between [microservices](../1_MicroServicesSOA).
-- In modern software architecture, the application needs to be decoupled, high scalability, serving high performance. 
-- Messaging service come in allows us to build that kind of application.
+- In modern software architecture, the application needs to be decoupled, high scalability, serving high performance. And message brokers helps in this.
+- Most message brokers are designed for small messages.
 
 # :star: [Comparison between Various Message Brokers](KafkaVsRabbitMQVsSQSVsSNS.md)
 
 # Methods of Message Transfer
 
-<img title="Message-Transfer-Model" alt="Alt text" src="assests/Traditional-Message-Patterns.drawio.png">
+![](assests/Traditional-Message-Patterns.drawio.png)
 
 ## Point-To-Point Model (Message Queuing)
 - Once the message is delivered to the one consumer, it would be removed from Queue.

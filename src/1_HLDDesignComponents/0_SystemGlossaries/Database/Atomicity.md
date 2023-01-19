@@ -10,6 +10,10 @@ It involves the following two operations.
 - [Abort](https://www.geeksforgeeks.org/acid-properties-in-dbms/): If a transaction aborts, changes made to t he database are not visible.
 - [Commit](https://www.geeksforgeeks.org/acid-properties-in-dbms/): If a transaction commits, changes made are visible.
 
+# Two Phase Commit
+
+![img.png](assets/2_phase_commit.png)
+
 ## Examples
 
 | Tech                                                                                                                    | Remarks |

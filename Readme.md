@@ -121,6 +121,9 @@ This repo contains the various system design components info, questions and solu
                 <a href="/src/1_HLDDesignComponents/6b_ClusterCoordinationService/etcd.md" target="_blank">
                   <img src="https://cdn.freebiesupply.com/logos/large/2x/etcd-logo-png-transparent.png" width="150">
                 </a>
+                <a href="/src/1_HLDDesignComponents/6b_ClusterCoordinationService/ApacheZookeeper.md" target="_blank">
+                  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Apache_ZooKeeper_logo.svg/1200px-Apache_ZooKeeper_logo.svg.png" width="150">
+                </a>
             </div>
         </div>
       </td>
