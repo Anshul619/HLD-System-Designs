@@ -28,7 +28,7 @@
 - Since we have order work flow, we should use a [RabbitMQ](../../1_HLDDesignComponents/4_MessageBrokers/RabbitMQ.md) to update the transaction status quickly ( like order status etc. ).
 
 ## Apache Spark
-- [Apache Spark](../../1_HLDDesignComponents/5_BigDataComponents/ApacheSpark.md) is the computing engine.
+- [Apache Spark](../../1_HLDDesignComponents/5_BigDataComponents/StreamProcessing/ApacheSpark.md) is the computing engine.
 - For running map-reduce jobs to `select driver for efficient delivery` and generate recommendations based on continuous streams of user activity, order activity, pricing and promo changes, etc.
 - It will select the distributed data, create a map and then reduce the values to give proper data.
 

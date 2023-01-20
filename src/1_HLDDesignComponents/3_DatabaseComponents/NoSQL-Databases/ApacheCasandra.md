@@ -89,7 +89,7 @@ Large amount of data like,
 - This allows users to access data in the data center nearest to them, and provides the redundancy capability.
 
 ## Good Integration with open source softwares (like Hadoop, Spark, Hive, HDFS etc.)
-- Cassandra offers options for bulk importing data from other data sources (such as [HDFS](../../5_BigDataComponents/ApacheHadoop/ApacheHDFS.md)) into the Cassandra cluster by building entire `SSTables` and then streaming the tables into the cluster. 
+- Cassandra offers options for bulk importing data from other data sources (such as [HDFS](../../5_BigDataComponents/BatchProcessing/ApacheHadoop/ApacheHDFS.md)) into the Cassandra cluster by building entire `SSTables` and then streaming the tables into the cluster. 
 - Streaming the tables into the cluster is much simpler, faster and more efficient than sending millions or more of individual INSERT statements for all the data you want to load into Cassandra.
 
 ## Supported Consistency Patterns

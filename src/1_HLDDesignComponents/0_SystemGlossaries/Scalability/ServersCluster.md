@@ -15,7 +15,7 @@
 | [ElasticSearch Cluster](../../3_DatabaseComponents/Search-Indexes/ElasticSearch/ElasticSearchCluster.md) | Cluster of JSON Data, Indexes etc.          |
 | [OpenSearch Cluster](../../../2_AWSComponents/6_DatabaseServices/AmazonOpenSearch.md)                    | Cluster of JSON Data, Indexes etc.          |
 | [Casandra Cluster](../../3_DatabaseComponents/NoSQL-Databases/ApacheCasandra.md)                         | Cluster of wide-columns DBs                 |
-| [Hadoop Cluster](../../5_BigDataComponents/ApacheHadoop)                                                 | Cluster of different components             |
+| [Hadoop Cluster](../../5_BigDataComponents/BatchProcessing/ApacheHadoop)                                                 | Cluster of different components             |
 
 
 ![img.png](../assets/server_cluster_img.png)
