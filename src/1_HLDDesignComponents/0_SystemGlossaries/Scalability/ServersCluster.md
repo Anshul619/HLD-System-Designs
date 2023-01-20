@@ -1,6 +1,6 @@
 # Server Cluster
 - A [Server Cluster](https://www.racksolutions.com/news/blog/server-cluster-how-it-works/) consists of a group of servers working simultaneously under a `single IP address`.
-- Server clustering also ensures [Higher Availability](../Reliability/HighAvailability.md) (through replications), [proper Load Balancing](LoadBalancer.md) and [System Scalability](DBScalability.md) (through sharding & read replicas).
+- Server clustering also ensures [Higher Availability](../Reliability/HighAvailability.md) (through [replications](../Database/ReplicationAndDataConsistency.md)), [proper Load Balancing](LoadBalancer.md) and [System Scalability](DBScalability.md) (through sharding & read replicas).
 - Generally, every region would have its own cluster.
 
 # Few Examples
@@ -17,5 +17,8 @@
 | [Casandra Cluster](../../3_DatabaseComponents/NoSQL-Databases/ApacheCasandra.md)                         | Cluster of wide-columns DBs                 |
 | [Hadoop Cluster](../../5_BigDataComponents/BatchProcessing/ApacheHadoop)                                                 | Cluster of different components             |
 
+# What is Cluster capacity?
+- In general, a cluster (for ex. [Kubernates cluster](../../6a_ContainerOrchestrationServices/Kubernates.md)) can be seen as abstracting a set of individual nodes as a big "super node".
+- The total compute capacity (in terms of CPU and memory) of this super node is the sum of all the constituent nodes' capacities.
 
 ![img.png](../assets/server_cluster_img.png)
