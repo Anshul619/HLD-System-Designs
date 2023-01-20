@@ -13,3 +13,14 @@
 | [ApacheSpark](../StreamProcessing/ApacheSpark.md) | -                                                                                                                                                                                                                                                                            |
 
 [Read more](https://www.geeksforgeeks.org/difference-between-hadoop-and-mapreduce/)
+
+# :star: General Use Cases of Batch Processing
+
+| UC                                          | Remarks                                                                         |
+|---------------------------------------------|---------------------------------------------------------------------------------|
+| Recommendation System                       | 50-100 MapReduce jobs                                                           |
+| Ranking System                              | -                                                                               |
+| Google's Search Indexing (later moved away) | 5-10 MapReduce jobs                                                             |
+| Building indexes for Lucene/Solr            | [ApacheHadoop](ApacheHadoop/Readme.md) is used                                  |
+| Machine learning systems                    | Example - Classifiers (spam filters, anomaly detection, image recognition etc.) |
+| Implement ETL Process                       | -                                                                               |

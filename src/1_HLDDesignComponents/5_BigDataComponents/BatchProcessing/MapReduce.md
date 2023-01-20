@@ -17,17 +17,6 @@
 - It is very common for MapReduce jobs to be chained together into workflows, such that the output of one job becomes the input to the next job.
 - To handle these dependencies between job executions, various workflow schedulers for Hadoop have been developed like [Airflow](https://airflow.apache.org/) etc.
 
-## :star: General Use Cases of MapReduce
-
-| UC                                          | Remarks                                                                         |
-|---------------------------------------------|---------------------------------------------------------------------------------|
-| Recommendation System                       | 50-100 MapReduce jobs                                                           |
-| Ranking System                              |                                                                                 |
-| Google's Search Indexing (later moved away) | 5-10 MapReduce jobs                                                             |
-| Building indexes for Lucene/Solr            | [ApacheHadoop](ApacheHadoop/Readme.md) is used                                  |
-| Machine learning systems                    | Example - Classifiers (spam filters, anomaly detection, image recognition etc.) |
-| Implement ETL Process                       | -                                                                               |
-
 # Beyond MapReduce
 - In response to the difficulty of using MapReduce directly, various higher-level programming models (Pig, Hive, Cascading, Crunch etc.) were created as abstractions on top of MapReduce.
 
