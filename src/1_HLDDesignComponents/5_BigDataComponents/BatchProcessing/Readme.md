@@ -4,6 +4,8 @@
 - Instead, data systems process such tasks in batches, often in off-peak times when computing resources are more commonly available, such as at the end of the day or overnight.
 - For example, consider an ecommerce system that receives orders throughout the day. Instead of processing every order as it occurs, the system might collect all orders at the end of each day and share them in one batch with the order fulfillment team.
 
+![](![](https://www.upsolver.com/wp-content/uploads/2019/09/Slide1.png))
+
 # Key Tech
 
 | Tech                                              | Description                                                                                                                                                                                                                                                                  |
