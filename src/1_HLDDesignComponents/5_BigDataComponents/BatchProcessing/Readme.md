@@ -18,11 +18,11 @@
 
 # :star: General Use Cases of Batch Processing
 
-| UC                                          | Remarks                                                                         |
-|---------------------------------------------|---------------------------------------------------------------------------------|
-| Recommendation System                       | 50-100 MapReduce jobs                                                           |
-| Ranking System                              | -                                                                               |
-| Google's Search Indexing (later moved away) | 5-10 MapReduce jobs                                                             |
-| Building indexes for Lucene/Solr            | [ApacheHadoop](ApacheHadoop/Readme.md) is used                                  |
-| Machine learning systems                    | Example - Classifiers (spam filters, anomaly detection, image recognition etc.) |
-| Implement ETL Process                       | -                                                                               |
+| UC                                                                                            | Remarks                                                                            |
+|-----------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------|
+| Recommendation System                                                                         | [50-100 MapReduce jobs](MapReduce.md) used for recommendation system               |
+| Ranking System                                                                                | -                                                                                  |
+| Google's Search Indexing                                                                      | [5-10 MapReduce jobs](MapReduce.md) used to build google search indexes            |
+| Building indexes for [Lucene/Solr](../../3_DatabaseComponents/Search-Indexes/ApacheLucene.md) | [ApacheHadoop](ApacheHadoop/Readme.md) can be used to build indexes for Lucene/Sor. |
+| Machine learning systems                                                                      | Example - Classifiers (spam filters, anomaly detection, image recognition etc.)    |
+| Implement [ETL Process](../../3_DatabaseComponents/DataWarehouses.md)                         | -                                                                                  |
