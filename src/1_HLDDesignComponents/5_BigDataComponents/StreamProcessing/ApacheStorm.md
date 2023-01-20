@@ -1,4 +1,3 @@
-
 # :star: Real world use cases of Storm
 
 ## Personalization at Spotify using Storm, Cassandra, HDFS

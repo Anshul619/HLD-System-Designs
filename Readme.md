@@ -1,4 +1,3 @@
-
 # Introduction
 
 This repo contains the various system design components info, questions and solutions.
@@ -147,21 +146,33 @@ This repo contains the various system design components info, questions and solu
     </tr>
     <tr>
       <td>
-        <a href="src/1_HLDDesignComponents/5_BigDataComponents">BigData Compute Engines</a>
-        <br><br>
-        <a href="src/1_HLDDesignComponents/5_BigDataComponents/ApacheSparkVsHadoopMapReduce.md">Comparisons</a>
+        <a href="src/1_HLDDesignComponents/5_BigDataComponents/BatchProcessing/Readme.md">Batch Processing</a>
       </td>
       <td>
         <div class="container" style="background:white">
             <div class="block two first">
-                <a href="/src/1_HLDDesignComponents/5_BigDataComponents/ApacheSpark.md" target="_blank">
+                <a href="/src/1_HLDDesignComponents/5_BigDataComponents/BatchProcessing/ApacheHadoop" target="_blank">
+                  <img src="https://www.clipartmax.com/png/middle/180-1806192_hadoop-apache-hadoop-logo.png" width="150">
+                </a>
+                <a href="/src/1_HLDDesignComponents/5_BigDataComponents/StreamProcessing/ApacheSpark.md" target="_blank">
                   <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Apache_Spark_logo.svg/1200px-Apache_Spark_logo.svg.png" width="150">
                 </a>
-                <a href="/src/1_HLDDesignComponents/5_BigDataComponents/ApacheStorm.md" target="_blank">
-                  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Apache_Storm_logo.svg/1200px-Apache_Storm_logo.svg.png" width="150">
+            </div>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <a href="src/1_HLDDesignComponents/5_BigDataComponents/StreamProcessing/Readme.md">Stream Processing</a>
+      </td>
+      <td>
+        <div class="container" style="background:white">
+            <div class="block two first">
+                <a href="/src/1_HLDDesignComponents/5_BigDataComponents/StreamProcessing/ApacheSpark.md" target="_blank">
+                  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Apache_Spark_logo.svg/1200px-Apache_Spark_logo.svg.png" width="150">
                 </a>
-                <a href="/src/1_HLDDesignComponents/5_BigDataComponents/ApacheHadoop" target="_blank">
-                  <img src="https://www.clipartmax.com/png/middle/180-1806192_hadoop-apache-hadoop-logo.png" width="150">
+                <a href="/src/1_HLDDesignComponents/5_BigDataComponents/StreamProcessing/ApacheStorm.md" target="_blank">
+                  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Apache_Storm_logo.svg/1200px-Apache_Storm_logo.svg.png" width="150">
                 </a>
             </div>
         </div>
@@ -191,8 +202,8 @@ This repo contains the various system design components info, questions and solu
     </tr>
     <tr>
       <td>
-        <a href="src/1_HLDDesignComponents/5_BigDataComponents/ApacheHadoop/ApacheHDFS.md" target="_blank">
-          Storage Services (Files, Images etc.)
+        <a href="src/1_HLDDesignComponents/5_BigDataComponents/BatchProcessing/ApacheHadoop/ApacheHDFS.md" target="_blank">
+          Distributed Storage Services (Files, Images etc.)
         </a>
       </td>
       <td>
@@ -201,7 +212,7 @@ This repo contains the various system design components info, questions and solu
                 <a href="src/2_AWSComponents/7_StorageServices/AmazonS3.md" target="_blank">
                   <img src="https://miro.medium.com/max/580/1*DHe24MbDHtbkOeIJzxrfdA.png" width="150">
                 </a>
-                <a href="/src/1_HLDDesignComponents/5_BigDataComponents/ApacheHadoop/ApacheHDFS.md" target="_blank">
+                <a href="/src/1_HLDDesignComponents/5_BigDataComponents/BatchProcessing/ApacheHadoop/ApacheHDFS.md" target="_blank">
                   <img src="https://intellipaat.com/mediaFiles/2015/07/hadoop-hdfs.png" width="150">
                 </a>
             </div>
