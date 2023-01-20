@@ -5,8 +5,8 @@
 # Modules
 - :star: [Apache MapReduce](../MapReduce.md)
 - :star: [Apache HDFS](ApacheHDFS.md)
-- [Apache Yarn](../../../6a_ContainerOrchestrationServices/ApacheYarn.md)
-- [ApacheZookeeper](../../../6b_ClusterCoordinationService/ApacheZookeeper.md)
+- [Apache Yarn](../../../6_ContainerOrchestrationServices/ApacheYarn.md)
+- [ApacheZookeeper](../../../7_ClusterCoordinationService/ApacheZookeeper.md)
 - Hadoop Common - it contains packages and libraries which are used for other modules.
 
 ![img.png](assests/HadoopStack.drawio.png)

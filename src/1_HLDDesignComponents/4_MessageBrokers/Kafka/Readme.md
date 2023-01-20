@@ -101,7 +101,7 @@ Kafka is based on [Log Based Queue](../../0_SystemGlossaries/Database/AppendOnly
 - To scale writes, number of leader partitions per broker can be reduced to spread the writes across more brokers.
 
 ## ZooKeeper
-- [Zookeeper](../../6b_ClusterCoordinationService/ApacheZookeeper.md) manages Kafka Cluster ( new broker, new partition etc. ) and brokers coordination.
+- [Zookeeper](../../7_ClusterCoordinationService/ApacheZookeeper.md) manages Kafka Cluster ( new broker, new partition etc. ) and brokers coordination.
 - Kafka stores basic metadata in Zookeeper ( in-memory ), like info about brokers, topics, partitions, partition lead/followers, consumer offset etc.
 - Zookeeper is also used in the [Controller election](#controller-election) in the `Kafka Cluster`.
 - Zookeeper notifies consumers and producers of the arrival of new broker or failure of existing broker, as well as routing all requests to partition's leaders.

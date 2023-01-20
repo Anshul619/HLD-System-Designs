@@ -15,12 +15,12 @@
 - [Linear Scalability](../0_SystemGlossaries/Scalability/DBScalability.md) - Industry proven to easily scale to 10,000s of nodes.
 
 ### High availability
-- [Fault-tolerant](../0_SystemGlossaries/Reliability/HighAvailability.md) replicated master and agents using [Zookeeper](../6b_ClusterCoordinationService/ApacheZookeeper.md).
-- It uses [Zookeeper](../6b_ClusterCoordinationService/ApacheZookeeper.md) for the leader election.
+- [Fault-tolerant](../0_SystemGlossaries/Reliability/HighAvailability.md) replicated master and agents using [Zookeeper](../7_ClusterCoordinationService/ApacheZookeeper.md).
+- It uses [Zookeeper](../7_ClusterCoordinationService/ApacheZookeeper.md) for the leader election.
 - If the Mesos master is unavailable, existing tasks can continue to execute, but new resources cannot be allocated and new tasks cannot be launched. 
 - To reduce the chance of this situation occurring, Mesos has a [high-availability](../0_SystemGlossaries/Reliability/HighAvailability.md) mode that uses multiple Mesos masters
   - One active master (called the leader or leading master) and several backups in case it fails. 
-- The masters elect the leader, with [Zookeeper](../6b_ClusterCoordinationService/ApacheZookeeper.md) both coordinating the election and handling leader detection by masters, agents, and scheduler drivers
+- The masters elect the leader, with [Zookeeper](../7_ClusterCoordinationService/ApacheZookeeper.md) both coordinating the election and handling leader detection by masters, agents, and scheduler drivers
 
 ### Native Support for launching containers 
 - Support different containers like [Docker](Docker/Readme.md), [Mesos Container](#mesos-containerization).

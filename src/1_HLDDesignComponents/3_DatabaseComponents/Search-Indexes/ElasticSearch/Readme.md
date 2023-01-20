@@ -2,7 +2,7 @@
 - A distributed, [RESTful modern search](../../../2_APITechOptions/REST.md) and analytics engine based on [Apache Lucene](../ApacheLucene.md).
 - We can only interact with ElasticSearch through [REST APIs](../../../2_APITechOptions/REST.md).
 - ElasticSearch can be deployed using [Amazon OpenSearch](../../../../2_AWSComponents/6_DatabaseServices/AmazonOpenSearch.md) service, on [AWS](../../../../2_AWSComponents).
-- For data analysis, it operates alongside Kibana, and Logstash to form the [ELK stack](../../../7_MonitoringTools/ELK.md).
+- For data analysis, it operates alongside Kibana, and Logstash to form the [ELK stack](../../../8_MonitoringTools/ELK.md).
 - ElasticSearch is [Paid and NOT open-sourced](https://www.elastic.co/pricing/).
 - Since ElasticSearch doesn't provide 100% durability, [it shouldn't be used only primary source of truth](https://bonsai.io/blog/why-elasticsearch-should-not-be-your-primary-data-store).
 
@@ -25,9 +25,9 @@
 ## :star: General Use Cases of ElasticSearch
 - [Search - Full-text, Partial etc.](https://www.elastic.co/guide/en/elasticsearch/reference/current/full-text-queries.html)
 - [Search - Fuzzy Query](https://www.elastic.co/guide/en/elasticsearch/reference/current/query-dsl-fuzzy-query.html)
-- [Logs-analysis with ELK](../../../7_MonitoringTools/ELK.md)
-- [Dashboard, Visualize data, Metrics etc. with ELK](../../../7_MonitoringTools/ELK.md)
-- [Security, SIEM with ELK](../../../7_MonitoringTools/ELK.md)
+- [Logs-analysis with ELK](../../../8_MonitoringTools/ELK.md)
+- [Dashboard, Visualize data, Metrics etc. with ELK](../../../8_MonitoringTools/ELK.md)
+- [Security, SIEM with ELK](../../../8_MonitoringTools/ELK.md)
 - [Read more about usages of Lucene](../ApacheLucene.md#star-real-world-usages-of-apache-lucene)
 
 # Key Features of ElasticSearch

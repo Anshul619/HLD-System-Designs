@@ -11,7 +11,7 @@
 
 # Possible Design Options
 - Delayed/Eventual Aggregation (followed in the current design)
-- [FileBeat & ELK Stack](../../1_HLDDesignComponents/7_MonitoringTools/ELK.md)
+- [FileBeat & ELK Stack](../../1_HLDDesignComponents/8_MonitoringTools/ELK.md)
 - Live Aggregation (might lead to performance issues)
 
 # Design Steps

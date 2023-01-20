@@ -41,7 +41,7 @@ Leader Based Replication is available as a built-in-feature in various technolog
 
 # Leader Election Process
 - In case of failed leader, new leader would be chosen through an election process (where the leader is chosen by a majority of the remaining replicas), or by a previously [elected controller node](../ControllerNode.md).
-- Technologies like [Zookeeper](../../6b_ClusterCoordinationService/ApacheZookeeper.md) service is helpful for coordinating the election process.
+- Technologies like [Zookeeper](../../7_ClusterCoordinationService/ApacheZookeeper.md) service is helpful for coordinating the election process.
 
 # Replica Lag - Major Problem  
 - It takes time (known as [Replica Lag](https://cloud.google.com/sql/docs/mysql/replication/replication-lag)) for data to be replicated b/w replicas in [multiple highly available zones (or regions)](../../../2_AWSComponents/AWS-Global-Architecture-Region-AZ.md).

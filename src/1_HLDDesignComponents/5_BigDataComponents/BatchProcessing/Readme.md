@@ -18,11 +18,12 @@
 
 # :star: General Use Cases of Batch Processing
 
-| UC                                                                                            | Remarks                                                                            |
-|-----------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------|
-| Recommendation System                                                                         | [50-100 MapReduce jobs](MapReduce.md) used for recommendation system               |
-| Ranking System                                                                                | -                                                                                  |
-| Google's Search Indexing                                                                      | [5-10 MapReduce jobs](MapReduce.md) used to build google search indexes            |
-| Building indexes for [Lucene/Solr](../../3_DatabaseComponents/Search-Indexes/ApacheLucene.md) | [ApacheHadoop](ApacheHadoop/Readme.md) can be used to build indexes for Lucene/Sor. |
-| Machine learning systems                                                                      | Example - Classifiers (spam filters, anomaly detection, image recognition etc.)    |
-| Implement [ETL Process](../../3_DatabaseComponents/DataWarehouses.md)                         | -                                                                                  |
+| UC                                                                                            | Remarks                                                                                                                                   |
+|-----------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------|
+| Recommendation System                                                                         | [50-100 MapReduce jobs](MapReduce.md) used for recommendation system                                                                      |
+| Ranking System                                                                                | -                                                                                                                                         |
+| Google's Search Indexing                                                                      | [5-10 MapReduce jobs](MapReduce.md) used to build google search indexes                                                                   |
+| Google's data analytics platform                                                              | Google used [MapReduce](MapReduce.md) for its data analytics platform<br/>- But it moved from [MapReduce](MapReduce.md) due to [scale issues (more than petabyte of data)](https://www.datacenterknowledge.com/archives/2014/06/25/google-dumps-mapreduce-favor-new-hyper-scale-analytics-system). |
+| Building indexes for [Lucene/Solr](../../3_DatabaseComponents/Search-Indexes/ApacheLucene.md) | [ApacheHadoop](ApacheHadoop/Readme.md) can be used to build indexes for Lucene/Sor.                                                       |
+| Machine learning systems                                                                      | Example - Classifiers (spam filters, anomaly detection, image recognition etc.)                                                           |
+| Implement [ETL Process](../../3_DatabaseComponents/DataWarehouses.md)                         | -                                                                                                                                         |
