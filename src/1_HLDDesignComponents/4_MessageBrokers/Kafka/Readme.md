@@ -26,7 +26,6 @@ Kafka is based on [Log Based Queue](../../0_SystemGlossaries/Database/AppendOnly
 # :star: Is Kafka a Database?
 - Yes & No.
 - In some way, Kafka supports [ACID properties](../../0_SystemGlossaries/Database/ACIDPropertyTransaction.md).
-- [Martin Kleppmann | Kafka Summit London 2019 Keynote | Is Kafka a Database?](https://www.youtube.com/watch?v=BuE6JvQE_CY)
 - [Read More](https://queue.acm.org/detail.cfm?id=3321612)
 
 # Basic Architecture of Kafka Cluster
@@ -35,46 +34,24 @@ Kafka is based on [Log Based Queue](../../0_SystemGlossaries/Database/AppendOnly
 
 # General use cases of Kafka
 
-## As an events/message broker in Event-Driven Architecture
-- Use Kafka when your application has a High Throughput ( around `1 million messages/sec`), i.e. application has to process a large volume of messages, [event driven services](../../0_SystemGlossaries/EventDrivenArchitecture.md) etc.
-
-## To monitor metrics, logs of the IT infrastructure
-- Various systems in the IT infrastructure can push events/messages/logs in the Kafka. And logstash ( in ELK ) can act as a consumer to the Kafka.
-
-## For Analytics
-- If we want to build our own Google Analytics ( to track app activities, events etc.), we can use Kafka as a broker.
-
-## Stream Processing
-- Use Kafka when the event stream needs to process data in multi-stage pipelines, the pipelines can generate graphs of the real-time data flows, thus providing real-time monitoring of traffic in the pipelines. 
-- Example - Video streaming in YouTube etc.
+| Use Case                                                                  | Description                                                                                                                                                                                                                                                                |
+|---------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| As an events/message broker in Event-Driven Architecture                  | Use Kafka when your application has a High Throughput ( around `1 million messages/sec`), i.e. application has to process a large volume of messages, [event driven services](../../0_SystemGlossaries/EventDrivenArchitecture.md) etc.                                    |
+| To monitor metrics, logs of the IT infrastructure                         | Various systems in the IT infrastructure can push events/messages/logs in the Kafka. And [logstash (in ELK)](../../8_MonitoringTools/ELK.md) can act as a consumer to the Kafka.                                                                                           |
+| For Analytics                                                             | If we want to build our own Google Analytics (to track app activities, events etc.), we can use Kafka as a broker.                                                                                                                                                         |
+| [Stream Processing](../../5_BigDataComponents/StreamProcessing/Readme.md) | Use [Kafka Stream API](KafkaStreamAPI.md) when the event stream needs to process data in multi-stage pipelines, the pipelines can generate graphs of the real-time data flows, thus providing real-time monitoring of traffic in the pipelines.<br/>- Example - Video streaming in YouTube etc. |
 
 # Top Features of Kafka
 
-## Scalability
-- Kafka can be [horizontally scaled](../../0_SystemGlossaries/Scalability/DBScalability.md) easily across the cluster.
-- A cluster of brokers is used to partition and streamline the data thereby, scaling up the storage capacity.
-
-## Performance - High Throughput
-- Each Kafka broker can serve more than [1 million messages per second](../../0_SystemGlossaries/Scalability/LatencyThroughput.md#Throughput) and can hold TBs of data.
-- Default configured message size in Kafka is `1MB`.
-
-## High Volume
-- Large amount of data can be stored in the Kafka pool.
-
-## Durability
-- The data is kept [persistent (as per retention policy)](../../0_SystemGlossaries/Database/Durability.md) and tolerant to any hardware failures by copying the data in the clusters.
-
-## High Availability, Fault Tolerance
-- The [distributed, partitioned, replicated](../../0_SystemGlossaries/Database/ReplicationAndDataConsistency.md), and [fault-tolerant](../../0_SystemGlossaries/Reliability/FaultTolerance&DisasterRecovery.md) nature of Kafka makes it very reliable.
-- Kafka connector can handle failures with three strategies summarised as `fast-fail`, `ignore` and `re-queue` (sends to another topic).
-- [Read more about replication in Kafka](#replication)
-
-## Extensibility
-- Allows multiple ways for applications to plugin and make use of Kafka.
-- Also, it has provisions for new connectors that you can write as needed.
-
-## Data Transformation
-- Kafka allows for deriving new data streams using the existing data streams from producers.
+| Feature                                | Description                                                                                                                                                                                                                                                                                                                                                                                        |
+|----------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Scalability                            | Kafka can be [horizontally scaled](../../0_SystemGlossaries/Scalability/DBScalability.md) easily across the cluster.<br/>- A cluster of brokers is used to partition and streamline the data thereby, scaling up the storage capacity.                                                                                                                                                             |
+| Performance - High Throughput          | Each Kafka broker can serve more than [1 million messages per second](../../0_SystemGlossaries/Scalability/LatencyThroughput.md#Throughput) and can hold TBs of data.<br/>- Default configured message size in Kafka is `1MB`.                                                                                                                                                                     |
+| High Volume                            | Large amount of data can be stored in the Kafka pool.                                                                                                                                                                                                                                                                                                                                              |
+| Durability                             | The data is kept [persistent (as per retention policy)](../../0_SystemGlossaries/Database/Durability.md) and tolerant to any hardware failures by copying the data in the clusters.                                                                                                                                                                                                                |
+| High Availability, Fault Tolerance     | The [distributed, partitioned, replicated](../../0_SystemGlossaries/Database/ReplicationAndDataConsistency.md), and [fault-tolerant](../../0_SystemGlossaries/Reliability/FaultTolerance&DisasterRecovery.md) nature of Kafka makes it very reliable.<br/>- Kafka connector can handle failures with three strategies summarised as `fast-fail`, `ignore` and `re-queue` (sends to another topic). |
+| Extensibility                          | Allows multiple ways for applications to plugin and make use of Kafka.<br/>- Also, it has provisions for new connectors that you can write as needed.                                                                                                                                                                                                                                              |
+| Data Transformation                    | Using [Kafka Stream API](KafkaStreamAPI.md), Kafka allows for deriving new data streams using the existing data streams from producers.                                                                                                                                                                                                                                                            |
 
 # Major Components of Kafka
 
@@ -101,11 +78,7 @@ Kafka is based on [Log Based Queue](../../0_SystemGlossaries/Database/AppendOnly
 - To scale writes, number of leader partitions per broker can be reduced to spread the writes across more brokers.
 
 ## ZooKeeper
-- [Zookeeper](../../7_ClusterCoordinationService/ApacheZookeeper.md) manages Kafka Cluster ( new broker, new partition etc. ) and brokers coordination.
-- Kafka stores basic metadata in Zookeeper ( in-memory ), like info about brokers, topics, partitions, partition lead/followers, consumer offset etc.
-- Zookeeper is also used in the [Controller election](#controller-election) in the `Kafka Cluster`.
-- Zookeeper notifies consumers and producers of the arrival of new broker or failure of existing broker, as well as routing all requests to partition's leaders.
-- [Read more about replication in Kafka](#replication)
+- [Zookeeper](../../7_ClusterCoordinationService/ApacheZookeeper.md) manages Kafka Cluster (new broker, new partition etc.), brokers coordination & election process (leader, [Controller election](#controller-election) etc.)
 
 ## Sharding/Partitioning
 - Partitioning allows Kafka producers to serialize, compress, and load balance data among brokers.

@@ -1,4 +1,3 @@
-
 # Amazon EMR
 
 [Amazon EMR](https://aws.amazon.com/emr/) is a managed service that lets you process and analyze large datasets using the latest versions of big data processing frameworks such as [Apache Hadoop](../../1_HLDDesignComponents/5_BigDataComponents/BatchProcessing/ApacheHadoop), [Apache Spark](../../1_HLDDesignComponents/5_BigDataComponents/StreamProcessing/ApacheSpark.md), [HBase](../../1_HLDDesignComponents/3_DatabaseComponents/NoSQL-Databases/ApacheHBase.md), and Presto on fully customizable clusters.

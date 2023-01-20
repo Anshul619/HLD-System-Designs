@@ -1,8 +1,17 @@
 # Stream processing systems (near-real-time systems)
-- Like a [batch processing system](../BatchProcessing/Readme.md), a [stream processor](https://hevodata.com/learn/stream-processing/) consumes inputs and produces outputs (rather than responding to request).
-- However, a stream job operates on events shortly after they happen, whereas a batch job operates on a fixed set of input data.
+- [Stream processing](https://www.techtarget.com/searchdatamanagement/definition/stream-processing) is a data management technique that involves ingesting a continuous data stream to quickly analyze, filter, transform or enhance the data in real time.
+- Once processed, the data is passed off to an application, data store or another stream processing engine.
 
 ![](![](https://www.upsolver.com/wp-content/uploads/2019/09/Screen-Shot-2020-05-25-at-17.05.22.png))
+
+# Key tech
+
+| Tech                                                                                    |
+|-----------------------------------------------------------------------------------------|
+| [Apache Spark](ApacheSpark.md)                                                          |
+| [Kafka Streams](../../4_MessageBrokers/Kafka/KafkaStreamAPI.md)                         |
+| [AWS Kinesis](../../../2_AWSComponents/5_MessageBrokerServices/AmazonKinesis/Readme.md) |
+| [Apache Storm](ApacheStorm.md)                                                          |
 
 # Generate Use Cases
 
