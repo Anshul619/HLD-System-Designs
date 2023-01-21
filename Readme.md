@@ -168,11 +168,14 @@ This repo contains the various system design components info, questions and solu
       <td>
         <div class="container" style="background:white">
             <div class="block two first">
+                <a href="/src/2_AWSComponents/5_MessageBrokerServices/AmazonKinesis/Readme.md" target="_blank">
+                  <img src="https://miro.medium.com/max/1190/0*UQBKjEff1uIsXH8W" width="150">
+                </a>
                 <a href="/src/1_HLDDesignComponents/5_BigDataComponents/StreamProcessing/ApacheSpark.md" target="_blank">
                   <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Apache_Spark_logo.svg/1200px-Apache_Spark_logo.svg.png" width="150">
                 </a>
-                <a href="/src/1_HLDDesignComponents/5_BigDataComponents/StreamProcessing/ApacheStorm.md" target="_blank">
-                  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Apache_Storm_logo.svg/1200px-Apache_Storm_logo.svg.png" width="150">
+                <a href="/src/1_HLDDesignComponents/4_MessageBrokers/Kafka/Readme.md" target="_blank">
+                  <img src="http://i1.wp.com/airisdata.com/wp-content/uploads/2016/01/kafka-logo-600x390.jpg?resize=600%2C390" width="150">
                 </a>
             </div>
         </div>
@@ -238,6 +241,8 @@ This repo contains the various system design components info, questions and solu
     </tr>
   </tbody>
 </table>
+
+[]()
 
 # HLD - Design Problems
 

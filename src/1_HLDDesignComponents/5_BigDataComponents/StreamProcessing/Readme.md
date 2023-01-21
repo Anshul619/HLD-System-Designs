@@ -19,4 +19,5 @@
 |-----------------------------|-------------|
 | Data from IoT sensors       | -           |
 | Payment Processing Systems  | -           |
+| Fraud Detection             | -           |
 | Server and Application Logs | -           |
