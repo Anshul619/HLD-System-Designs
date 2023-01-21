@@ -13,12 +13,12 @@
 - [Route 53](../1_NetworkingAndContentDelivery/AmazonRoute53.md) etc.
 
 # Supported Subscription Filter Services
-- [Kinesis](../5_MessageBrokerServices/AmazonKinesis/Readme.md)
-- [Amazon Kinesis Firehouse](../5_MessageBrokerServices/AmazonKinesis/AmazonKinesisDataFirehouse.md)
+- [Kinesis](../10_BigDataComponents/StreamProcessing/AmazonKinesis/Readme.md)
+- [Amazon Kinesis Firehouse](../10_BigDataComponents/StreamProcessing/AmazonKinesis/AmazonKinesisDataFirehouse.md)
 - [AWS Lambda](../3_ComputeServices/AWSLambda/Readme.md)
 - [Amazon OpenSearch](../6_DatabaseServices/AmazonOpenSearch.md)
 
 # Example Use Case
 - [ECS-Fargate](../3_ComputeServices/AWSFargate.md) can add logs to a [Cloudwatch log group]().
-- [Amazon Kinesis Data Firehouse](../5_MessageBrokerServices/AmazonKinesis/AmazonKinesisDataFirehouse.md) can subscribe to the [Cloudwatch Log Group]().
-- And then [Amazon Kinesis Data Firehouse](../5_MessageBrokerServices/AmazonKinesis/AmazonKinesisDataFirehouse.md) can be integrated with [NewRelic for APM, Monitoring & debugging purpose](https://docs.newrelic.com/docs/logs/forward-logs/stream-logs-using-kinesis-data-firehose/).
+- [Amazon Kinesis Data Firehouse](../10_BigDataComponents/StreamProcessing/AmazonKinesis/AmazonKinesisDataFirehouse.md) can subscribe to the [Cloudwatch Log Group]().
+- And then [Amazon Kinesis Data Firehouse](../10_BigDataComponents/StreamProcessing/AmazonKinesis/AmazonKinesisDataFirehouse.md) can be integrated with [NewRelic for APM, Monitoring & debugging purpose](https://docs.newrelic.com/docs/logs/forward-logs/stream-logs-using-kinesis-data-firehose/).

@@ -20,7 +20,7 @@ Log-structured data structures found in Log-structured file systems and database
 | [ElasticSearch Data Stream](../../3_DatabaseComponents/Search-Indexes/ElasticSearch/ElasticSearchDataStreams.md)                   | -       |
 | [Amazon Aurora Global Database - Replication](../../../2_AWSComponents/6_DatabaseServices/AmazonRDSAurora/AuroraGlobalDatabase.md) | -       |
 | [RocksDB](../../3_DatabaseComponents/NoSQL-Databases/RocksDB.md)                                                                   | -       |
-| [Amazon Kinesis](../../../2_AWSComponents/5_MessageBrokerServices/AmazonKinesis/Readme.md)                                         | -       |
+| [Amazon Kinesis](../../../2_AWSComponents/10_BigDataComponents/StreamProcessing/AmazonKinesis/Readme.md)                                         | -       |
 | [Amazon S3](../../../2_AWSComponents/7_StorageServices/AmazonS3.md)                                                                | -       |
 | [Lucene](../../3_DatabaseComponents/Search-Indexes/ApacheLucene.md)                                                                                                                      |
 

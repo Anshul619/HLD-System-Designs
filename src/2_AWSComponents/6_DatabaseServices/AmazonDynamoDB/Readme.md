@@ -6,7 +6,7 @@
 - With DynamoDB, you can offload the administrative burden of operating and scaling a highly available distributed database cluster, while paying a low price for only what you use.
 
 # Amazon DynamoDB & Dynamo Systems
-- Amazon DynamoDB is built on the principles of [Dynamo](../../../1_HLDDesignComponents/3_DatabaseComponents/NoSQL-Databases/DynamoStyleDatabases.md)) and is a hosted service within the AWS infrastructure. 
+- Amazon DynamoDB is built on the principles of [Dynamo](../../../1_HLDDesignComponents/3_DatabaseComponents/NoSQL-Databases/DynamoStyleDatabases.md) and is a hosted service within the AWS infrastructure. 
 - However, while [Dynamo](../../../1_HLDDesignComponents/3_DatabaseComponents/NoSQL-Databases/DynamoStyleDatabases.md) is based on [leaderless replication](../../../1_HLDDesignComponents/0_SystemGlossaries/Database/ReplicationAndDataConsistency.md), DynamoDB uses [single-leader replication](../../../1_HLDDesignComponents/0_SystemGlossaries/Database/ReplicationAndDataConsistency.md).
 
 ## :star: Real world use cases of DynamoDB

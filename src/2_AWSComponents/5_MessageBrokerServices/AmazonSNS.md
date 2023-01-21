@@ -6,7 +6,7 @@ Using Amazon SNS topics, your publisher systems can fanout messages to a large n
 - [Amazon SQS queues](AmazonSQS.md) (cross-region supported as well)
 - [AWS Lambda functions](../3_ComputeServices/AWSLambda/Readme.md)
 - HTTPS endpoints
-- [Amazon Kinesis Data Firehose](AmazonKinesis/Readme.md)
+- [Amazon Kinesis Data Firehose](../10_BigDataComponents/StreamProcessing/AmazonKinesis/Readme.md)
 
 # Application-to-Application (A2A)
 
@@ -25,7 +25,7 @@ Using Amazon SNS topics, your publisher systems can fanout messages to a large n
 - Email/Email JSON
 - [SQS](AmazonSQS.md)
 - [Lambda Functions](../3_ComputeServices/AWSLambda/Readme.md)
-- [Amazon Kinesis Data Firehose](AmazonKinesis/Readme.md)
+- [Amazon Kinesis Data Firehose](../10_BigDataComponents/StreamProcessing/AmazonKinesis/Readme.md)
 
 # General Use Cases
 - Monitoring Apps, 
