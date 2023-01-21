@@ -11,7 +11,7 @@
 
 # Multi-AZ deployments for increased high availability
 
-![img.png](ElasticCache_Multi-AZ_setup.png)
+![img.png](assests/ElasticCache_Multi-AZ_setup.png)
 
 [Read more](https://docs.aws.amazon.com/AmazonElastiCache/latest/red-ug/FaultTolerance.html).
  
