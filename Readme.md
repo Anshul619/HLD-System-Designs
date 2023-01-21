@@ -168,7 +168,7 @@ This repo contains the various system design components info, questions and solu
       <td>
         <div class="container" style="background:white">
             <div class="block two first">
-                <a href="/src/2_AWSComponents/5_MessageBrokerServices/AmazonKinesis/Readme.md" target="_blank">
+                <a href="/src/2_AWSComponents/10_BigDataComponents/StreamProcessing/AmazonKinesis/Readme.md" target="_blank">
                   <img src="https://miro.medium.com/max/1190/0*UQBKjEff1uIsXH8W" width="150">
                 </a>
                 <a href="/src/1_HLDDesignComponents/5_BigDataComponents/StreamProcessing/ApacheSpark.md" target="_blank">
