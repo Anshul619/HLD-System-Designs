@@ -6,12 +6,23 @@
 
 # Key tech
 
-| Tech                                                                                    |
-|-----------------------------------------------------------------------------------------|
-| [Apache Spark](ApacheSpark.md)                                                          |
-| [Kafka Streams](../../4_MessageBrokers/Kafka/KafkaStreamAPI.md)                         |
+| Tech                                                                                                  |
+|-------------------------------------------------------------------------------------------------------|
+| [Apache Spark](ApacheSpark.md)                                                                        |
+| [Kafka Streams](../../4_MessageBrokers/Kafka/KafkaStreamAPI.md)                                       |
 | [AWS Kinesis](../../../2_AWSComponents/10_BigDataComponents/StreamProcessing/AmazonKinesis/Readme.md) |
-| [Apache Storm](ApacheStorm.md)                                                          |
+| [Apache Storm](ApacheStorm.md)                                                                        |
+
+# Keywords
+
+| Keyword                                          | Description                                                                                                                                                                                                                                                                                                                                            | Examples                                                                                                                                                                                                                                        |
+|--------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Stream                                           | Continuous data that is incrementally made available over time                                                                                                                                                                                                                                                                                         | Logs, User activity etc.                                                                                                                                                                                                                        |
+| Event                                            | In a stream processing context, a record (mostly in JSON) is more commonly known as an [event](https://tanzu.vmware.com/event-streaming), <br/>- but it is essentially the same thing: [a small, self- contained, immutable object](https://tanzu.vmware.com/event-streaming) containing the details of something that happened at some point in time. | The thing that happened might be an action that a user took, such as viewing a page or making a purchase.<br/>-  It might also originate from a machine, such as a periodic measurement from a temperature sensor, or a CPU utilization metric. |
+| Producer (also known as a publisher or sender)   | In streaming terminology, an event is generated once by a producer.                                                                                                                                                                                                                                                                                    | -                                                                                                                                                                                                                                               |
+| Consumers (subscribers or recipients)            | Event processed by consumer                                                                                                                                                                                                                                                                                                                            | -                                                                                                                                                                                                                                               |
+| Topic or stream                                  | In a streaming system, related events are usually grouped together into a topic or stream                                                                                                                                                                                                                                                              |                                                                                                                                                                                                                                                 |
+| [Message Brokers](../../4_MessageBrokers)        | Producer writes messages to the broker & consumer receives them by reading from broker.                                                                                                                                                                                                                                                                |                                                                                                                                                                                                                                                 |
 
 # Generate Use Cases
 
@@ -22,4 +33,4 @@
 | Fraud Detection             | -                                                                      |
 | Server and Application Logs | Log files generated by server or application                           |
 | Financial stock market data | -                                                                      |
-| UI Events                   | Customer interaction data from a web application or mobile application |
+| User Events on app          | Customer interaction data from a web application or mobile application |

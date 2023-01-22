@@ -1,4 +1,3 @@
-
 # [RabbitMQ vs Others](KafkaVsRabbitMQVsSQSVsSNS.md)
 
 # :star: Real world use cases of RabbitMQ

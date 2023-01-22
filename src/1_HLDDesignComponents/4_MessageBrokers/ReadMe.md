@@ -1,4 +1,3 @@
-
 # Introduction
 - Message brokers are used to decouple & enable [Event Driven Architectures](../0_SystemGlossaries/EventDrivenArchitecture.md) i.e. communicate the events & pass the data between [microservices](../1_MicroServicesSOA).
 - In modern software architecture, the application needs to be decoupled, high scalability, serving high performance. And message brokers helps in this.
@@ -28,6 +27,15 @@
 - This is `completely asynchronous`. 
 - You can't say for sure when this process will happen and in what order.
 - [Kafka](Kafka/Readme.md), [Active MQ](ActiveMQ.md), [Amazon SQS](../../2_AWSComponents/5_MessageBrokerServices/AmazonSQS.md) supports [Publisher-Subscriber](https://docs.aws.amazon.com/prescriptive-guidance/latest/modernization-integrating-microservices/pub-sub.html) Model.
+
+# Message brokers compared to databases
+
+| Feature                                                    | Message Broker                                                                          | Database                                                                                                   |
+|------------------------------------------------------------|-----------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------|
+| Core Design                                                | Designed to handle [message streams](../5_BigDataComponents/StreamProcessing/Readme.md) | Designed for [long-term durability](../0_SystemGlossaries/Database/Durability.md), data search & querying. |
+| [Durability](../0_SystemGlossaries/Database/Durability.md) | Data is deleted once its consumed or retained for a certain period.                     | Long-term storage<br/>- Data is stored until its explicitly deleted.                                       |
+| [Indexing](../0_SystemGlossaries/Database/Indexing.md)     | :x: Not supported                                                                       | :white_check_mark: Support Primary & Secondary indexes for fast search.                                    |
+| Querying                                                   | :x: Not supported                                                                       | :white_check_mark: Supported                                                                               |
 
 # References
 - [Point-to-Point and Publish/Subscribe Messaging model](https://programmingsharing.com/point-to-point-and-publish-subscribe-messaging-model-2efc4d2b6726)
