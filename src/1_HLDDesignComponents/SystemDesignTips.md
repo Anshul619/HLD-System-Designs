@@ -8,7 +8,7 @@
 ## Identify Key Components in the system
 - Identify key components in the required architecture like `Data Chunking`, `Data Aggregation` etc.
 
-## [Design Microservice Based architecture](1_MicroServicesSOA) ([Event Driven Architecture](0_SystemGlossaries/EventDrivenArchitecture.md), loosely coupled architecture)
+## [Design Microservice Based architecture](1_MicroServicesSOA) ([Event Driven Architecture](0_SystemGlossaries/MessageBrokers/EventDrivenArchitecture.md), loosely coupled architecture)
 
 ## Identify Read/Write Ratio of the apis/queries
 - If it's a READ heavy microservice, the best decision would be to use [Redis](3_DatabaseComponents/In-Memory-Cache/Redis) or `multi-read database instances`.

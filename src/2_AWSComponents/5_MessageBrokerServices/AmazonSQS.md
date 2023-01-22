@@ -8,7 +8,7 @@
 ![img.png](assests/sqs/SQS-DLD-More-Info.png)
 
 ## At-least-Once delivery ( using Visibility Timeout)
-- Unlike a [publish-subscribe system](../../1_HLDDesignComponents/4_MessageBrokers/ReadMe.md), a single message should be delivered to a single consumer, even when there are a lot of consumers running concurrently (also known as the [competing consumers pattern](https://www.conceptdraw.com/examples/message-queue)).
+- Unlike a [publish-subscribe system](../../1_HLDDesignComponents/4_MessageBrokers/Readme.md), a single message should be delivered to a single consumer, even when there are a lot of consumers running concurrently (also known as the [competing consumers pattern](https://www.conceptdraw.com/examples/message-queue)).
 - When a message is being received by a consumer/worker, it is blocked from being visible to other consumers for a given period of time (known as [Visibility Timeout](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/sqs-visibility-timeout.html)). 
 - If the message isn't deleted before this timeout elapses, it will be visible again to all consumers. 
 

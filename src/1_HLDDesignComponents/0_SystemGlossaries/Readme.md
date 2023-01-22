@@ -10,7 +10,7 @@
 | [Rate Limiting](../../3_HLDDesignProblems/RateLimiterAPI/Readme.md)                         | Others                                               | App Service/Nodes   |
 | [Content Delivery Network (CDN)](CDNs/CDNs.md)                                              | Others                                               | App Service/Nodes   |
 | [Static Content](CDNs/StaticContentWithCDN.md)                                              | Others                                               | App Service/Nodes   |
-| :star: [Event Driven Architecture](EventDrivenArchitecture.md)                              | Others                                               | Message Brokers     |
+| :star: [Event Driven Architecture](MessageBrokers/EventDrivenArchitecture.md)                              | Others                                               | Message Brokers     |
 | :star: [DB Scalability](Scalability/DBScalability.md)                                       | :rocket: [Scalability](Scalability/Readme.md)        | Data Stores         |
 | :star: [ACID Properties of the Transaction](Database/ACIDPropertyTransaction.md)            | Others                                               | Data Stores         |
 | :star: [CAP Theorem of the Distributed Systems](Database/CAPTheorem.md)                     | Others                                               | Data Stores         |

@@ -51,7 +51,7 @@ Leader Based Replication is available as a built-in-feature in various technolog
 # Consistency patterns
 
 ## :star: Eventual Consistency (async replication)
-- In case of asynchronous replication, leader sends the message, but doesn’t wait for a response from the follower.
+- In case of asynchronous replication, leader sends the message, but does not wait for a response from the follower.
 - Hence, Asynchronous Replication/Eventual Consistency Model maximizes [the read & write throughput](../Scalability/LatencyThroughput.md).
 - Since the replication is asynchronous, changes might not reflect the results of a recently completed write.
 - Fortunately, all the copies of data usually reach consistency within milliseconds/seconds.

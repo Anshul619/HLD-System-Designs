@@ -1,8 +1,8 @@
 # :star: Apache Kafka 
-- Apache Kafka is an [open-source distributed event streaming platform](../../0_SystemGlossaries/EventDrivenArchitecture.md) used by thousands of companies for high-performance data pipelines, streaming analytics, data integration, and mission-critical applications.
+- Apache Kafka is an [open-source distributed event streaming platform](../../0_SystemGlossaries/MessageBrokers/EventDrivenArchitecture.md) used by thousands of companies for high-performance data pipelines, streaming analytics, data integration, and mission-critical applications.
 - Kafka can process a large amount of data in a short amount of time (`1 million messages/sec`).
 - It also has [low latency](../../0_SystemGlossaries/Scalability/LatencyThroughput.md), making it possible to process data in real-time.
-- Kafka is based on [Publish-Subscriber Model](..#publisher-subscriber-model-pubsub). And can be used for [Event-Driven Architecture](../../0_SystemGlossaries/EventDrivenArchitecture.md).
+- Kafka is based on [Publish-Subscriber Model](..#publisher-subscriber-model-pubsub). And can be used for [Event-Driven Architecture](../../0_SystemGlossaries/MessageBrokers/EventDrivenArchitecture.md).
 - [Amazon Managed Streaming for Apache Kafka (MSK)](../../../2_AWSComponents/5_MessageBrokerServices/AmazonMSK.md) can be used to deploy Kafka on [AWS](../../../2_AWSComponents).
 
 # :star: Real world use cases of Kafka
@@ -36,7 +36,7 @@ Kafka is based on [Log Based Queue](../../0_SystemGlossaries/Database/AppendOnly
 
 | Use Case                                                                  | Description                                                                                                                                                                                                                                                                |
 |---------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| As an events/message broker in Event-Driven Architecture                  | Use Kafka when your application has a High Throughput ( around `1 million messages/sec`), i.e. application has to process a large volume of messages, [event driven services](../../0_SystemGlossaries/EventDrivenArchitecture.md) etc.                                    |
+| As an events/message broker in Event-Driven Architecture                  | Use Kafka when your application has a High Throughput ( around `1 million messages/sec`), i.e. application has to process a large volume of messages, [event driven services](../../0_SystemGlossaries/MessageBrokers/EventDrivenArchitecture.md) etc.                                    |
 | To monitor metrics, logs of the IT infrastructure                         | Various systems in the IT infrastructure can push events/messages/logs in the Kafka. And [logstash (in ELK)](../../8_MonitoringTools/ELK.md) can act as a consumer to the Kafka.                                                                                           |
 | For Analytics                                                             | If we want to build our own Google Analytics (to track app activities, events etc.), we can use Kafka as a broker.                                                                                                                                                         |
 | [Stream Processing](../../5_BigDataComponents/StreamProcessing/Readme.md) | Use [Kafka Stream API](KafkaStreamAPI.md) when the event stream needs to process data in multi-stage pipelines, the pipelines can generate graphs of the real-time data flows, thus providing real-time monitoring of traffic in the pipelines.<br/>- Example - Video streaming in YouTube etc. |
@@ -55,20 +55,12 @@ Kafka is based on [Log Based Queue](../../0_SystemGlossaries/Database/AppendOnly
 
 # Major Components of Kafka
 
-## Topic (i.e. Category or Queue)
-- Topic is a category or feed where messages ( or events ) would be saved and published.
-- Topics are logically collections of partitions (the physical files).
-- A broker contains some partitions for a topic.
-
-## Producer
-- Producer writes data into the topics ( 1 or more ) in the Kafka.
-- [Read about ACK levels in Kafka](#ack-levels)
-
-## Consumer
-- A consumer can subscribe ( listen ) to the topics ( 1 or more ) and read data from those in the Kafka.
-- Each consumer in a consumer group will be responsible for reading a subset of the partitions of each subject to which they have subscribed.
-- Reading data out of Kafka is very fast thanks to `java.nio.channels.FileChannel#transferTo`.
-    - This method uses `sendFile` system call which allows for very efficient transfer of data from a file to another file ( including sockets ).
+| Component                                                                                       | Description                                                                                                                                                                                                                                                                                                                                                 |
+|-------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| [Topic (i.e. Stream or Category or Queue)](../../0_SystemGlossaries/MessageBrokers/Readme.md)   | Topic is a category or feed where messages (or events) would be saved and published.                                                                                                                                                                                                                                                                        |
+| [Producer](../../0_SystemGlossaries/MessageBrokers/Readme.md)                                   | Producer writes data into the topics (1 or more) in the Kafka.                                                                                                                                                                                                                                                                                              |
+| Consumer                                                                                        | A consumer can subscribe ( listen ) to the topics ( 1 or more ) and read data from those in the Kafka.<br/>- Reading data out of Kafka is very fast thanks to `java.nio.channels.FileChannel#transferTo`.<br/>- This method uses `sendFile` system call which allows for very efficient transfer of data from a file to another file ( including sockets ). |
+| [Zookeeper](../../7_ClusterCoordinationService/ApacheZookeeper.md)                              | [Zookeeper](../../7_ClusterCoordinationService/ApacheZookeeper.md) manages Kafka Cluster (new broker, new partition etc.), brokers coordination & election process (leader, [Controller election](#controller-election) etc.)                                                                                                                               |
 
 ## Broker ( i.e. Server )
 - A Kafka broker is a server that works as part of a Kafka cluster (in other words, a Kafka cluster is made up of a number of brokers)
@@ -76,9 +68,6 @@ Kafka is based on [Log Based Queue](../../0_SystemGlossaries/Database/AppendOnly
 - Without sacrificing performance, each broker instance can handle read and write volumes of hundreds of thousands per second (and gigabytes of messages).
 - Brokers keep very little state, mostly just open file pointers & connections.
 - To scale writes, number of leader partitions per broker can be reduced to spread the writes across more brokers.
-
-## ZooKeeper
-- [Zookeeper](../../7_ClusterCoordinationService/ApacheZookeeper.md) manages Kafka Cluster (new broker, new partition etc.), brokers coordination & election process (leader, [Controller election](#controller-election) etc.)
 
 ## Sharding/Partitioning
 - Partitioning allows Kafka producers to serialize, compress, and load balance data among brokers.
