@@ -4,11 +4,13 @@
 - With [Amazon Kinesis](), you can ingest real-time data such as video, audio, application logs, website clickstreams, and IoT telemetry data for machine learning, analytics, and other applications. 
 - [Amazon Kinesis]() enables you to process and analyze data as it arrives and respond instantly instead of having to wait until all your data is collected before the processing can begin.
 
+![](https://k21academy.com/wp-content/uploads/2020/12/2020-12-12-13_15_47-AWS-Certified-Solutions-Architect-Slides-v3.5.pdf-Personal-Microsoft%E2%80%8B-Edge.png)
+
 # Amazon Kinesis Components
 
 | Component                                                                | Description                                                                                                                                                                     |
 |--------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| :star: [Amazon Kinesis Data Streams](AmazonKinesisDataStreams.md)        | Used to collect and process large streams of data records in real time                                                                                                          |
+| :star: [Amazon Kinesis Data Streams](../../../5_MessageBrokerServices/AmazonKinesisDataStreams.md)        | Used to collect and process large streams of data records in real time                                                                                                          |
 | :star: [Amazon Kinesis Data Firehouse](AmazonKinesisDataFirehouse.md)    | Used to deliver real-time streaming data to destinations such as [Amazon S3](../../../7_StorageServices/AmazonS3.md), [Redshift](../../../6_DatabaseServices/AmazonRedshift.md) etc.. |
 | [Kineses Data Analytics](https://aws.amazon.com/kinesis/data-analytics/) | Used to process and analyze streaming data using standard SQL                                                                                                                   |
 | [Kinesis Video Streams](https://aws.amazon.com/kinesis/video-streams)    | Used to fully manage services that use to stream live video from devices                                                                                                        |
