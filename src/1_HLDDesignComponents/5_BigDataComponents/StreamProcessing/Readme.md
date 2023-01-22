@@ -7,12 +7,12 @@
 
 # Key tech
 
-| Tech                                                                                                  |
-|-------------------------------------------------------------------------------------------------------|
-| [Apache Spark](ApacheSpark.md)                                                                        |
-| [Kafka Streams](../../4_MessageBrokers/Kafka/KafkaStreamAPI.md)                                       |
-| [AWS Kinesis](../../../2_AWSComponents/10_BigDataComponents/StreamProcessing/AmazonKinesis/Readme.md) |
-| [Apache Storm](ApacheStorm.md)                                                                        |
+| Tech                                                                                                  | Description |
+|-------------------------------------------------------------------------------------------------------|-------------|
+| [Apache Spark](ApacheSpark.md)                                                                        | -           |
+| [Kafka Streams](../../4_MessageBrokers/Kafka/KafkaStreamAPI.md)                                       | -           |
+| [AWS Kinesis](../../../2_AWSComponents/10_BigDataComponents/StreamProcessing/AmazonKinesis/Readme.md) | -           |
+| [Apache Storm](ApacheStorm.md)                                                                        | -           |
 
 # Generate Use Cases
 

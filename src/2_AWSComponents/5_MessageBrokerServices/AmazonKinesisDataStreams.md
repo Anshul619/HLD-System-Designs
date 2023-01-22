@@ -3,11 +3,12 @@
 - It can help in continuously capturing multiple gigabytes of data every second from multiple sources.
 - The higher customizable with [Kinesis Data Streams]() is also one of the profound highlights.
 - [Amazon DynamoDB](../6_DatabaseServices/AmazonDynamoDB/Readme.md) is used as a Configuration store in Amazon Kinesis data stream.
+- :star: [Comparison between Various Message Brokers](../../1_HLDDesignComponents/4_MessageBrokers/KafkaVsRabbitMQVsSQSVsSNS.md)
 
 ![](https://docs.aws.amazon.com/images/streams/latest/dev/images/architecture.png)
 
+![](https://images.ctfassets.net/ee3ypdtck0rk/3Nj7dlXrWjY6QGLJ2WlLQy/37e85ae7a0581d31792dd05dd0830e50/Screen_Shot_2021-08-27_at_16.31.30.png?w=1853&h=1059&q=50&fm=webp)
+
 # Amazon Kinesis Data Streams - Managed alternative to Apache Kafka
 - [Amazon Kinesis Data Steams](https://shastri-shankar9.medium.com/apache-kafka-vs-amazon-kinesis-b55821c7f51f) is a managed alternative to [Apache Kafka](../../1_HLDDesignComponents/4_MessageBrokers/Kafka/Readme.md).
-- [Comparison between Various Message Brokers](../../1_HLDDesignComponents/4_MessageBrokers/KafkaVsRabbitMQVsSQSVsSNS.md)
-
 

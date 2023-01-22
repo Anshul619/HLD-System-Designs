@@ -8,12 +8,12 @@
 
 # Amazon Kinesis Components
 
-| Component                                                                | Description                                                                                                                                                                     |
-|--------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| :star: [Amazon Kinesis Data Streams](../../../5_MessageBrokerServices/AmazonKinesisDataStreams.md)        | Used to collect and process large streams of data records in real time                                                                                                          |
-| :star: [Amazon Kinesis Data Firehouse](AmazonKinesisDataFirehouse.md)    | Used to deliver real-time streaming data to destinations such as [Amazon S3](../../../7_StorageServices/AmazonS3.md), [Redshift](../../../6_DatabaseServices/AmazonRedshift.md) etc.. |
-| [Kineses Data Analytics](https://aws.amazon.com/kinesis/data-analytics/) | Used to process and analyze streaming data using standard SQL                                                                                                                   |
-| [Kinesis Video Streams](https://aws.amazon.com/kinesis/video-streams)    | Used to fully manage services that use to stream live video from devices                                                                                                        |
+| Component                                                                                          | Description                                                                                                                                                                          |
+|----------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| :star: [Amazon Kinesis Data Streams](../../../5_MessageBrokerServices/AmazonKinesisDataStreams.md) | Used to collect and process large streams of data records in real time.                                                                                                              |
+| :star: [Amazon Kinesis Data Firehouse](AmazonKinesisDataFirehouse.md)                              | Used to deliver real-time streaming data to destinations such as [Amazon S3](../../../7_StorageServices/AmazonS3.md), [Redshift](../../../6_DatabaseServices/AmazonRedshift.md) etc. |
+| [Kineses Data Analytics](https://aws.amazon.com/kinesis/data-analytics/)                           | Used to process and analyze streaming data using standard SQL.                                                                                                                       |
+| [Kinesis Video Streams](https://aws.amazon.com/kinesis/video-streams)                              | Used to fully manage services that use to stream live video from devices.                                                                                                            |
 
 # References
 - [AWS Kinesis Data Streams vs AWS Kinesis Data Firehose](https://www.whizlabs.com/blog/aws-kinesis-data-streams-vs-aws-kinesis-data-firehose/)

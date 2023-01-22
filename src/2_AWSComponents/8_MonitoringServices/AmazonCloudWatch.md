@@ -12,6 +12,8 @@
 
 # What AWS resources can be monitored in CloudWatch?
 
+Mostly all AWS resources can be monitored in [AWS Cloudwatch](https://images.ctfassets.net/ee3ypdtck0rk/3Nj7dlXrWjY6QGLJ2WlLQy/37e85ae7a0581d31792dd05dd0830e50/Screen_Shot_2021-08-27_at_16.31.30.png?w=1853&h=1059&q=50&fm=webp).
+
 | AWS Service          | Remarks                                                                 |
 |----------------------|-------------------------------------------------------------------------|
 | EC2                  | CPU, Memory utilization, NetworkIn / Out, DiskReadOps/DiskWriteOps etc. |
@@ -24,12 +26,12 @@
 
 ![img.png](assests/cloudwatch_img.png)
 
-## CloudWatch's metrics for the Elastic Load Balancer
+# CloudWatch's metrics for the Elastic Load Balancer
 
 ![img.png](https://www.splunk.com/content/dam/splunk-blogs/signalfx-assets/blog-images/ELB-CloudWatch-1024x457.png)
 
 [Read more](https://docs.aws.amazon.com/elasticloadbalancing/latest/application/load-balancer-cloudwatch-metrics.html)
 
-## CloudWatch's metrics for Elastic Cache
+# CloudWatch's metrics for Elastic Cache
 
 ![img.png](https://d2908q01vomqb2.cloudfront.net/887309d048beef83ad3eabf2a79a64a389ab1c9f/2019/07/26/ClusterModeElasticache10.png)
