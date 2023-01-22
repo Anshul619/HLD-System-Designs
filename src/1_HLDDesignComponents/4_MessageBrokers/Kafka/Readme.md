@@ -55,12 +55,16 @@ Kafka is based on [Log Based Queue](../../0_SystemGlossaries/Database/AppendOnly
 
 # Major Components of Kafka
 
-| Component                                                                                       | Description                                                                                                                                                                                                                                                                                                                                                 |
-|-------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Topic (i.e. Stream or Category or Queue)](../../0_SystemGlossaries/MessageBrokers/Readme.md)   | Topic is a category or feed where messages (or events) would be saved and published.                                                                                                                                                                                                                                                                        |
-| [Producer](../../0_SystemGlossaries/MessageBrokers/Readme.md)                                   | Producer writes data into the topics (1 or more) in the Kafka.                                                                                                                                                                                                                                                                                              |
-| Consumer                                                                                        | A consumer can subscribe ( listen ) to the topics ( 1 or more ) and read data from those in the Kafka.<br/>- Reading data out of Kafka is very fast thanks to `java.nio.channels.FileChannel#transferTo`.<br/>- This method uses `sendFile` system call which allows for very efficient transfer of data from a file to another file ( including sockets ). |
-| [Zookeeper](../../7_ClusterCoordinationService/ApacheZookeeper.md)                              | [Zookeeper](../../7_ClusterCoordinationService/ApacheZookeeper.md) manages Kafka Cluster (new broker, new partition etc.), brokers coordination & election process (leader, [Controller election](#controller-election) etc.)                                                                                                                               |
+| Component                                                                                       | Description                                                                                                                                                                                                                                                                                                                                                |
+|-------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| [Topic (i.e. Stream or Category or Queue)](../../0_SystemGlossaries/MessageBrokers/Readme.md)   | Topic is a category or feed where messages (or events) would be saved and published.                                                                                                                                                                                                                                                                       |
+| [Producer](../../0_SystemGlossaries/MessageBrokers/Readme.md)                                   | Producer writes data into the topics (1 or more) in the Kafka.                                                                                                                                                                                                                                                                                             |
+| [Consumer](../../0_SystemGlossaries/MessageBrokers/Readme.md)                                   | A consumer can subscribe ( listen ) to the topics ( 1 or more ) and read data from those in the Kafka.<br/>- Reading data out of Kafka is very fast thanks to `java.nio.channels.FileChannel#transferTo`.<br/>- This method uses `sendFile` system call which allows for very efficient transfer of data from a file to another file ( including sockets ). |
+| [Partitioning/Sharding](../../0_SystemGlossaries/MessageBrokers/Readme.md)                      | Topics can be parallelized via partitions, which split data into a single topic among numerous brokers.                                                                                                                                                                                                                                                    |
+| [Partition Key](../../0_SystemGlossaries/MessageBrokers/Readme.md)                              | Partition key helps in maintaining the order of the messages.                                                                                                                                                                                                                                                                                              |
+| [Zookeeper](../../7_ClusterCoordinationService/ApacheZookeeper.md)                              | [Zookeeper](../../7_ClusterCoordinationService/ApacheZookeeper.md) manages Kafka Cluster (new broker, new partition etc.), brokers coordination & election process (leader, [Controller election](#controller-election) etc.)                                                                                                                              |
+
+![img.png](../assests/Kafka-Partitioning-Layout.drawio.png)
 
 ## Broker ( i.e. Server )
 - A Kafka broker is a server that works as part of a Kafka cluster (in other words, a Kafka cluster is made up of a number of brokers)
@@ -68,11 +72,6 @@ Kafka is based on [Log Based Queue](../../0_SystemGlossaries/Database/AppendOnly
 - Without sacrificing performance, each broker instance can handle read and write volumes of hundreds of thousands per second (and gigabytes of messages).
 - Brokers keep very little state, mostly just open file pointers & connections.
 - To scale writes, number of leader partitions per broker can be reduced to spread the writes across more brokers.
-
-## Sharding/Partitioning
-- Partitioning allows Kafka producers to serialize, compress, and load balance data among brokers.
-- Topics can be parallelized via partitions, which split data into a single topic among numerous brokers.
-- [More partitions](https://www.confluent.io/blog/how-choose-number-topics-partitions-kafka-cluster/) lead to higher throughput.
 
 ## Consumer Group
 - The name of an application is essentially represented by a consumer group
@@ -147,22 +146,8 @@ The `acks` setting is a good way to configure your preferred trade-off between d
 - It then notifies all the other brokers in the cluster that the Controller is gone via Zookeeper watcher, which starts a new election for new Controller again. 
 - All the other brokers will again try to create a ephemeral node "/controller" and the first one to succeed will be elected as the new Controller.
 
-## What is Partition Key in Kafka?
 
-![img.png](../assests/Kafka-Partitioning-Layout.drawio.png)
 
-- Partitioning is done using `key` in the record
-- If we want to sequence records execution in Kafka, as per the records input time, we should push those in the same partition (hence same key should be used for the records).
-- If we push those in different partitions, then we can't guarantee of their execution sequence.
-- Producers can be configured with a custom routing function (implementing the `Partitioner interface`).
-- Default message routing is `hash-mod`.
-
-Example
-- This is important because we may have to deliver records to customers in the same order that they were made.
-- You want these events to come in the order they were created when a consumer purchases an eBook from your webshop and subsequently cancels the transaction.
-- If you receive a cancellation event before a buy event, the cancellation will be rejected as invalid (since the purchase has not yet been registered in the system), and the system will then record the purchase and send the product to the client (and lose you money).
-- You might use a customer id as the key of these Kafka records to solve this problem and assure ordering.
-- This will ensure that all of a customer's purchase events are grouped together in the same partition.
 
 ## Security
 - All components ( brokers, zookeeper, producers, consumers etc. ) should authenticate each other and setup an encrypted channel for communication. 

@@ -5,7 +5,7 @@
 - Implementing an append-only data structure has many benefits, such as [ensuring data consistency](ReplicationAndDataConsistency.md), [improving performance](../Scalability/DBScalability.md), and permitting rollbacks.
 
 # Log file
-The prototypical append-only data structure is the log file. 
+- The prototypical append-only data structure is the log file. 
 
 Log-structured data structures found in Log-structured file systems and databases work in a similar way: 
 - Every change (transaction) that happens to the data is logged by the program, 
