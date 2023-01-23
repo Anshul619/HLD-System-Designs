@@ -69,8 +69,6 @@ This repo contains the various system design components info, questions and solu
     <tr>
       <td>
         <a href="src/1_HLDDesignComponents/4_MessageBrokers">Message brokers</a>
-        <br><br>
-        <a href="src/1_HLDDesignComponents/4_MessageBrokers/KafkaVsRabbitMQVsSQSVsSNS.md">Comparisons</a>
       </td>
       <td>
         <div class="container" style="background:white">
