@@ -1,5 +1,5 @@
 # Introduction
-- AWS manages its [global architecture through region and availability zones](AWS-Global-Architecture-Region-AZ.md).
+- [AWS](https://docs.aws.amazon.com) manages its [global architecture through region and availability zones](AWS-Global-Architecture-Region-AZ.md).
 - [Amazon Resouce Name (ARN)](https://docs.aws.amazon.com/general/latest/gr/aws-arns-and-namespaces.html) uniquely identify AWS resources.
 
 # System Designs
