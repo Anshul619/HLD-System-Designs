@@ -33,13 +33,16 @@
   <tbody>
      <tr>
       <td>
-        <a href="1_NetworkingAndContentDelivery">DNS Service</a>
+        <a href="1_NetworkingAndContentDelivery">DNS Service, Service Discovery</a>
       </td>
       <td>
         <div class="container" style="background:white">
             <div>
                 <a href="1_NetworkingAndContentDelivery/AmazonRoute53.md" target="_blank">
                   <img src="https://storage.googleapis.com/yama-blog.appspot.com/1/2018/08/eyecatch-route53.png" width="150">
+                </a>
+                <a href="1_NetworkingAndContentDelivery/AWSCloudMap.md" target="_blank">
+                  <img src="https://landscape.cncf.io/logos/aws-cloud-map.svg" width="150">
                 </a>
             </div>
         </div>
@@ -67,6 +70,9 @@
                 </a>
                 <a href="2_SecurityAndIdentityServices/AmazonCognito.md" target="_blank">
                   <img src="https://quintagroup.com/blog/amazon-cognito/@@download/image/Amazon%20Cognito.jpg" width="150">
+                </a>
+                <a href="2_SecurityAndIdentityServices/AWSSystemManager.md" target="_blank">
+                  <img src="https://digitalcloud.training/wp-content/uploads/2022/01/AWS-Systems-Manager.jpg" width="150">
                 </a>
                 <a href="2_SecurityAndIdentityServices/AWSSecretsManager.md" target="_blank">
                   <img src="https://miro.medium.com/max/1400/0*T_pIoQrYM4cHypvr.png" width="150">
@@ -137,6 +143,9 @@
                 <a href="3_ComputeServices/AWSLambda/Readme.md" target="_blank">
                   <img src="https://www.brcline.com/wp-content/uploads/2021/09/aws-lambda-logo.png" width="150">
                 </a>
+                <a href="3_ComputeServices/AWSStepFunctions.md" target="_blank">
+                  <img src="https://miro.medium.com/max/1280/1*vHv5ARJ-CP89si8-FBsFnw.webp" width="150">
+                </a>
             </div>
         </td>
     </tr>
@@ -151,6 +160,9 @@
                 </a>
                 <a href="4_ContainerOrchestrationServices/AmazonEKS.md" target="_blank">
                   <img src="https://www.turbonomic.com/wp-content/uploads/2020/11/AWS-EKS-logo-no-background.png" width="150">
+                </a>
+                <a href="4_ContainerOrchestrationServices/AmazonECS/AmazonECR.md" target="_blank">
+                  <img src="https://speedmedia.jfrog.com/08612fe1-9391-4cf3-ac1a-6dd49c36b276/https://media.jfrog.com/wp-content/uploads/2022/11/23145958/6053d4dc2f6c53160a53d407_linux-container-updates-iot.png/mxw_2256,s_webp,f_auto" width="150">
                 </a>
             </div>
         </td>
@@ -286,6 +298,9 @@
             <div class="container" style="background:white">
                 <a href="8_MonitoringServices/AmazonCloudWatch.md" target="_blank">
                   <img src="https://miro.medium.com/max/800/1*ffbynFsxn43lPdne2kaHMQ.png" width="150">
+                </a>
+                <a href="8_MonitoringServices/AWSXRay.md" target="_blank">
+                  <img src="https://miro.medium.com/max/960/1*kHVLIuXPyE0HAEO0HZ6kwg.webp" width="150">
                 </a>
                 <a href="8_MonitoringServices/AWSCloudTrail.md" target="_blank">
                   <img src="https://i0.wp.com/blog.knoldus.com/wp-content/uploads/2022/02/feature.png?w=360&ssl=1" width="150">
