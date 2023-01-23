@@ -10,7 +10,7 @@
 | Tech                                                                                                  | Description |
 |-------------------------------------------------------------------------------------------------------|-------------|
 | [Apache Spark](ApacheSpark.md)                                                                        | -           |
-| [Kafka Streams](../../4_MessageBrokers/Kafka/KafkaStreamAPI.md)                                       | -           |
+| [Kafka Streams](KafkaStreamsAPI.md)                                       | -           |
 | [AWS Kinesis](../../../2_AWSComponents/10_BigDataComponents/StreamProcessing/AmazonKinesis/Readme.md) | -           |
 | [Apache Storm](ApacheStorm.md)                                                                        | -           |
 

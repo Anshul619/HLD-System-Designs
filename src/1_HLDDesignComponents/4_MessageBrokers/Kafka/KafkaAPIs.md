@@ -55,7 +55,7 @@
 ```
 
 # Streams API
-- [Read more](KafkaStreamAPI.md)
+- [Read more](../../5_BigDataComponents/StreamProcessing/KafkaStreamsAPI.md)
 
 # Connect API
 - [Read more](KafkaConnect.md)

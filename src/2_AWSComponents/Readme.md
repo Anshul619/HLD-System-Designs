@@ -48,7 +48,6 @@
             <a href="9_InfrastructureAsCode/AWSCloudFormation/Readme.md" target="_blank">
               <img src="https://i0.wp.com/www.australtech.net/wp-content/uploads/2019/05/cloudformation-logo.png" width="400">
             </a>
-            <br/><br/>
         </td>
     </tr>
     <tr>
@@ -91,7 +90,7 @@
     </tr>
     <tr>
       <td>
-        <a href="1_NetworkingAndContentDelivery">CDN - Static Content (Image, Video)</a>
+        <a href="1_NetworkingAndContentDelivery">CDN - Static Content (Image, Videos etc.)</a>
       </td>
       <td>
         <div class="container" style="background:white">
@@ -183,14 +182,14 @@
                 <a href="5_MessageBrokerServices/AmazonSNS.md" target="_blank">
                   <img src="https://miro.medium.com/max/720/0*QjKNs9dEShlQ39VI.png" width="150">
                 </a>
-                <a href="5_MessageBrokerServices/AmazonMQ.md" target="_blank">
-                  <img src="https://res.cloudinary.com/practicaldev/image/fetch/s--UbYwdyFm--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/n1uck9jt481r6rcezx57.png" width="150">
-                </a>
                 <a href="5_MessageBrokerServices/AmazonMSK.md" target="_blank">
                   <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcjocd4vh1S29xvfJ_bjgJWb-SR5SzW2Dz2A&usqp=CAU" width="100">
                 </a>
                 <a href="5_MessageBrokerServices/AmazonKinesisDataStreams.md" target="_blank">
                   <img src="https://intellipaat.com/blog/wp-content/uploads/2022/08/image-75.png" width="100">
+                </a>
+                <a href="5_MessageBrokerServices/AmazonMQ.md" target="_blank">
+                  <img src="https://res.cloudinary.com/practicaldev/image/fetch/s--UbYwdyFm--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/n1uck9jt481r6rcezx57.png" width="150">
                 </a>
             </div>
         </td>
