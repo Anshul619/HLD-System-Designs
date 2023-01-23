@@ -288,7 +288,7 @@ This repo contains the various system design components info, questions and solu
   - [Insurance Agent Flow](src/4_ObjectOrientedDesign/OOPDesignProblems/Others/InsuranceAgentFlow.md)
 
 # Programming Languages
-- :star: [GoLang](src/5_ProgrammingLanguages/1_GoLang/Readme.md)
+- :star: [GoLang](https://github.com/Anshul619/golang)
 - [Spring Boot & Microservices](src/5_ProgrammingLanguages/2_Java/SpringBootAndMicroServices)
 - [Java](src/5_ProgrammingLanguages/2_Java)
 - [Hibernate](src/5_ProgrammingLanguages/2_Java/Hibernate.md)
