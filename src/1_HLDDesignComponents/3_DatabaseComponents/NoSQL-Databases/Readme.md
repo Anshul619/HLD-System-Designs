@@ -77,7 +77,7 @@ In the following example, a JSON-like document describes a book.
 
 Example Use Case - Social Network in Facebook
 - vertices represent people, locations, events, checkins, and comments made by users
-- edges indicate which people are friends with each other, which checkin hap‐ pened in which location, who commented on which post, who attended which event, and so on
+- edges indicate which people are friends with each other, which check-in happened in which location, who commented on which post, who attended which event, and so on
 
 ### General Use Cases - Graph Database
 - [Instagram - User Activity Relationship](../../../3_HLDDesignProblems/InstagramDesign/Readme.md)
@@ -87,6 +87,10 @@ Example Use Case - Social Network in Facebook
 - Fraud detection & analytics
 - Product-recommendation engine
 - Identity and access management
+
+## Time-Series DB
+- [InfluxDB](https://en.wikipedia.org/wiki/InfluxDB) is an open-source time series database (TSDB) developed by the company [InfluxData](https://www.influxdata.com/).
+- It is written in the [Go programming language](https://github.com/Anshul619/golang) for storage and retrieval of time series data in fields such as operations monitoring, application metrics, Internet of Things sensor data, and real-time analytics.
 
 # Comparisons
 - :star: [Casandra vs MongoDB](CasandraVsMongoDB.md)

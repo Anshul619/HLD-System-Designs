@@ -1,9 +1,12 @@
 # Container Orchestration Service
 - [Container orchestration service](https://www.vmware.com/topics/glossary/content/container-orchestration.html) is the container management service.
+- They are also responsible for the allocation of resources/servers to tasks/services. 
+- Every task/service needs to specify its required resources (e.g., 3 CPU cores, 2 GiB of RAM). 
+- Using the list of requirements for all tasks/services, Orchestrator can bin-pack the tasks over the machines in an optimal way that [also accounts for failure domains](../0_SystemGlossaries/Reliability/FaultTolerance&DisasterRecovery.md).
 
 # Benefits 
 
-It helps to know,
+There are a lot of benefits with Container Orchestration
 - How many resources are still available on the different machines?
 - When to schedule the next container?
 - If the docker container is crashed and not running anymore? 

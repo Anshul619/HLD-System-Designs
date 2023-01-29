@@ -1,6 +1,5 @@
 # Map Reduce
 - [MapReduce](https://en.wikipedia.org/wiki/MapReduce) is a programming model for processing large amounts parallel of data in bulk across many machines.
-- While [Unix tools](https://dasher.wustl.edu/chem478/software/unix-tools/) use stdin and stdout as input and output, MapReduce jobs read and write files on a distributed filesystem like [HDFS](ApacheHadoop/ApacheHDFS.md), [S3](../../../2_AWSComponents/7_StorageServices/AmazonS3.md) etc.
 
 ![img.png](../assests/map_reduce.png)
 
@@ -12,6 +11,7 @@
 
 # MapReduce vs Unix Tools
 - The main difference from pipelines of Unix commands is that MapReduce can parallelize a computation across many machines, without you having to write code to explicitly handle the parallelism.
+- While [Unix tools](https://dasher.wustl.edu/chem478/software/unix-tools/) use stdin and stdout as input and output, MapReduce jobs read and write files on a distributed filesystem like [HDFS](ApacheHadoop/ApacheHDFS.md), [S3](../../../2_AWSComponents/7_StorageServices/AmazonS3.md) etc.
 
 # MapReduce workflows
 - It is very common for MapReduce jobs to be chained together into workflows, such that the output of one job becomes the input to the next job.

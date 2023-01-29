@@ -8,7 +8,13 @@ Java language was developed in such a way that it does not depend on any hardwar
 # What is Garbage Collection?
 - The main objective of this process is to free up the memory space occupied by the unnecessary and unreachable objects during the Java program execution by deleting those unreachable objects.
 - This ensures that the memory resource is used efficiently, but it provides no guarantee that there would be sufficient memory for the program execution.
-- `Heap memory` would be cleared on garbage collection.
+- [Heap memory](https://opendsa-server.cs.vt.edu/ODSA/Books/CS2/html/HeapMem.html) would be cleared on garbage collection.
+
+# Garbage collection impacts to Java performance
+- The most common performance problem associated with Java™ relates to the [garbage collection mechanism](https://www.ibm.com/docs/no/aix/7.2?topic=monitoring-garbage-collection-impacts-java-performance).
+- If the size of the Java heap is too large, the heap must reside outside main memory. This causes increased paging activity, which affects Java performance.
+- Also, a large heap can take several seconds to fill up. This means that even if garbage collection occurs less frequently, pause times associated with garbage collection increase.
+- To tune the Java Virtual Machine (JVM) heap, use the java command with the -ms or -mx option. Use the garbage collection statistics to help determine optimal settings.
 
 # How is Java different from C++?
 
