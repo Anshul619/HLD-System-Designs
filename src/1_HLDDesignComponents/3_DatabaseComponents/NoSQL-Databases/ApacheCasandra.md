@@ -1,5 +1,5 @@
 # Apache Casandra
-- [Apache Cassandra](https://cassandra.apache.org/_/index.html) is a free and open-source, distributed & [wide column store](../ReadMe.md#nosql---intro-different-nosql-types).
+- [Apache Cassandra](https://cassandra.apache.org/_/index.html) is a free and open-source, distributed & [wide column store](../Readme.md#nosql---intro-different-nosql-types).
 - It is a NoSQL database management system designed to handle large amounts of data across many commodity servers, providing [high availability with no single point of failure](../../0_SystemGlossaries/Reliability/FaultTolerance&DisasterRecovery.md). 
 - Since [Casandra]() is [append-only db storage](../../0_SystemGlossaries/Database/AppendOnlyDataStructure.md), it can handle [large amount data with high throughput with fast writes](../../0_SystemGlossaries/Scalability/LatencyThroughput.md).
 - Cassandra offers robust support for [clusters spanning multiple data centers](../../0_SystemGlossaries/Scalability/ServersCluster.md), with asynchronous masterless replication allowing low latency operations for all clients.
@@ -57,7 +57,7 @@ Large amount of data like,
 # Features
 
 ## Rich data model
-- [This is column-oriented](../ReadMe.md#nosql---intro-different-nosql-types).
+- [This is column-oriented](../Readme.md#nosql---intro-different-nosql-types).
 - It means, Cassandra stores columns based on the column names, leading to very quick slicing.
 - Unlike traditional databases, where column names only consist of metadata, in `Cassandra column names can also consist of the actual data`.
 

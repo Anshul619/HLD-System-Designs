@@ -7,22 +7,22 @@
 # Log file
 - The prototypical append-only data structure is the log file. 
 
-Log-structured data structures found in Log-structured file systems and databases work in a similar way: 
+[Log-structured data structures](../../3_DatabaseComponents/DataStructuresInDBs.md) found in Log-structured file systems and databases work in a similar way: 
 - Every change (transaction) that happens to the data is logged by the program, 
 - And on retrieval the program must combine the pieces of data found in this log file.
 
 # Supported Databases
 
-| DB                                                                                                                              | Remarks |
-|---------------------------------------------------------------------------------------------------------------------------------|---------|
+| DB                                                                                                                                 | Remarks |
+|------------------------------------------------------------------------------------------------------------------------------------|---------|
 | [Casandra](../../3_DatabaseComponents/NoSQL-Databases/ApacheCasandra.md)                                                           | -       |
 | [Kafka](../../4_MessageBrokers/Kafka/Readme.md)                                                                                    | -       |
 | [ElasticSearch Data Stream](../../3_DatabaseComponents/Search-Indexes/ElasticSearch/ElasticSearchDataStreams.md)                   | -       |
 | [Amazon Aurora Global Database - Replication](../../../2_AWSComponents/6_DatabaseServices/AmazonRDSAurora/AuroraGlobalDatabase.md) | -       |
 | [RocksDB](../../3_DatabaseComponents/NoSQL-Databases/RocksDB.md)                                                                   | -       |
-| [Amazon Kinesis](../../../2_AWSComponents/10_BigDataComponents/StreamProcessing/AmazonKinesis/Readme.md)                                         | -       |
+| [Amazon Kinesis](../../../2_AWSComponents/10_BigDataComponents/StreamProcessing/AmazonKinesis/Readme.md)                           | -       |
 | [Amazon S3](../../../2_AWSComponents/7_StorageServices/AmazonS3.md)                                                                | -       |
-| [Lucene](../../3_DatabaseComponents/Search-Indexes/ApacheLucene.md)                                                                                                                      |
+| [Lucene](../../3_DatabaseComponents/Search-Indexes/ApacheLucene.md)                                                                | -       |
 
 # References
 - [Building an Append-only Log From Scratch](https://eileen-code4fun.medium.com/building-an-append-only-log-from-scratch-e8712b49c924)

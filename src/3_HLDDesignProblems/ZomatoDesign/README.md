@@ -42,7 +42,7 @@
 - ElasticSearch will also be used for indexing customer calls records and metadata for the transcription.
 
 ## PostgresDB
-- To store all transactional data ( like orders, shipment, restaurants, delivery, shipment etc.), we have chosen [PostgresDB](../../1_HLDDesignComponents/3_DatabaseComponents/ReadMe.md) to support native cloud approach but other options like public cloud managed storages can also be considered to achieve high scalability.
+- To store all transactional data ( like orders, shipment, restaurants, delivery, shipment etc.), we have chosen [PostgresDB](../../1_HLDDesignComponents/3_DatabaseComponents/Readme.md) to support native cloud approach but other options like public cloud managed storages can also be considered to achieve high scalability.
 - Data sharding/segmentation can be done based on different params like region etc.
 
 ## GraphQL

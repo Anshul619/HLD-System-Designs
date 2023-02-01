@@ -14,20 +14,20 @@
 
 ## Key Features
 
-| Feature                                                                                                                                                                                                                   | Remarks                                                           |
-|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------|
-| Provisioned Throughput                                                                                                                                                                                                    | Dial up or down provisioned read/write capacity.                  |
-| Fast, predictable performance                                                                                                                                                                                             | Avg single-digit millisecond latency, 1000s of records per second |
-| [Fault tolerant](../../../1_HLDDesignComponents/0_SystemGlossaries/Reliability/FaultTolerance&DisasterRecovery.md), [Highly Available](../../../1_HLDDesignComponents/0_SystemGlossaries/Reliability/HighAvailability.md) | Data replicated across Availability Zones                         |
-| [Partitions and data distribution](#partitionssharding-and-data-distribution)                                                                                                                                             | -                                                                 |
-| [DynamoDB Global tables](DynamoDBGlobalTables.md)                                                                                                                                                                         | -                                                                 |
-| [DynamoDB Accelerator (DAX)](DynamoDBAccelerator.md) provides caching capabilities for accessing data.                                                                                                                    | -                                                                 |
-| [PartiQL - a SQL-compatible query language for Amazon DynamoDB](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/ql-reference.html)                                                                       | -                                                                 |
-| [Time to Live (TTL) supported for the data](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/TTL.html)                                                                                                    | -                                                                 |
-| JSON Support                                                                                                                                                                                                              | -                                                                 |
-| Items size up to 400 KB                                                                                                                                                                                                   | -                                                                 |
-| Monitoring                                                                                                                                                                                                                | Integrated with Cloudwatch                                        |
-| Both [Local & Global Secondary Indexing](../../../1_HLDDesignComponents/0_SystemGlossaries/Database/Indexing.md) supported                                                                                                | -                                                                 |
+| Feature                                                                                                                                                                                                                     | Remarks                                                           |
+|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------|
+| Provisioned Throughput                                                                                                                                                                                                      | Dial up or down provisioned read/write capacity.                  |
+| Fast, predictable performance                                                                                                                                                                                               | Avg single-digit millisecond latency, 1000s of records per second |
+| [Fault tolerant](../../../1_HLDDesignComponents/0_SystemGlossaries/Reliability/FaultTolerance&DisasterRecovery.md), [Highly Available](../../../1_HLDDesignComponents/0_SystemGlossaries/Reliability/HighAvailability.md)   | Data replicated across Availability Zones                         |
+| [Partitions and data distribution](PartitionKeyAndSortKey.md)                                                                                                                                                               | -                                                                 |
+| [DynamoDB Global tables](DynamoDBGlobalTables.md)                                                                                                                                                                           | -                                                                 |
+| [DynamoDB Accelerator (DAX)](DynamoDBAccelerator.md) provides caching capabilities for accessing data.                                                                                                                      | -                                                                 |
+| [PartiQL - a SQL-compatible query language for Amazon DynamoDB](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/ql-reference.html)                                                                         | -                                                                 |
+| [Time to Live (TTL) supported for the data](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/TTL.html)                                                                                                      | -                                                                 |
+| JSON Support                                                                                                                                                                                                                | -                                                                 |
+| Items size up to 400 KB                                                                                                                                                                                                     | -                                                                 |
+| Monitoring                                                                                                                                                                                                                  | Integrated with Cloudwatch                                        |
+| Both [Local & Global Secondary Indexing](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/GSI.html) supported                                                                                               | -                                                                 |
 
 ## Automated Storage Scaling
 - There is no limit to the amount of data you can store in a DynamoDB table, and the service automatically allocates more storage, as you store more data using the DynamoDB write APIs.
@@ -51,37 +51,6 @@ DynamoDB supports a large set of data types for table attributes.
 | Scalar      | These types represent a single value, and include number, string, binary, Boolean, and null.        |
 | Document    | These types represent a complex structure possessing nested attributes, and include lists and maps. |
 | Set         | These types represent multiple scalars, and include string sets, number sets, and binary sets.      |
-
-## Partitions/Sharding and data distribution
-- Amazon DynamoDB scales [horizontally (using data partition/sharding)](../../../1_HLDDesignComponents/0_SystemGlossaries/Database/PartioningSharding.md) and can seamlessly scale a single table over hundreds of servers.
-- [Amazon DynamoDB stores data in partitions](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/HowItWorks.Partitions.html). 
-- A partition is an allocation of storage for a table, backed by [solid state drives (SSDs)](https://www.techtarget.com/searchstorage/definition/SSD-solid-state-drive) and automatically replicated across multiple Availability Zones within an AWS Region. 
-- Partition management is handled entirely by DynamoDB — you never have to manage partitions yourself.
-- Partition management occurs automatically in the background and is transparent to your applications. 
-- Your table remains available throughout and fully supports your provisioned throughput requirements.
-
-### Data distribution: Partition key
-- To write an item to the table
-  - DynamoDB uses the value of the [partition key](../../../1_HLDDesignComponents/0_SystemGlossaries/Database/PartioningSharding.md) as input to an internal hash function. 
-  - The output value from the hash function determines the partition in which the item will be stored.
-- To read an item from the table
-  - You must specify the [partition key value](../../../1_HLDDesignComponents/0_SystemGlossaries/Database/PartioningSharding.md) for the item. 
-  - DynamoDB uses this value as input to its hash function, yielding the partition in which the item can be found.
-
-![img.png](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/images/HowItWorksPartitionKey.png)
-
-### Partition key and sort key
-- Referred to as a [composite primary key](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/HowItWorks.CoreComponents.html), this type of key is composed of two attributes. The first attribute is the partition key, and the second attribute is the sort key.
-- All items with the same partition key value are stored together, in sorted order by sort key value.
-- A composite primary key gives you additional flexibility when querying data. 
-
-For example, 
-- if you provide only the value for Artist, DynamoDB retrieves all of the songs by that artist. 
-- To retrieve only a subset of songs by a particular artist, you can provide a value for Artist along with a range of values for SongTitle.
-
-### Setup Steps - Partition, Sort keys
-
-![img.png](assests/dynamodb_partition_key_setup.png)
 
 ## :thumbsdown: What are disadvantages of DynamoDB?
 - Deployable only on AWS and cannot be installed on individual desktops/servers

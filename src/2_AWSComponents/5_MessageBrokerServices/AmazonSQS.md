@@ -33,8 +33,7 @@ However, there is a quota of inflight messages
 **Note** - [Messages are inflight](https://aws.amazon.com/premiumsupport/knowledge-center/sqs-message-backlog/) after they have been received from the queue by a consuming component, but have not yet been deleted from the queue.
 
 ## Queue types
-
-Amazon SQS offers two types of message queues - Standard & FIFO queues.
+- Amazon SQS offers two types of message queues - Standard & FIFO queues.
 
 ### :star: Standard Queues (Out-Of-Order, Recommended, Mostly-Used)
 
@@ -87,6 +86,14 @@ For example:
 - Ensure that user-entered commands are executed in the right order.
 - Display the correct product price by sending price modifications in the right order.
 - Prevent a student from enrolling in a course before registering for an account.
+
+## Amazon SQS delay queues
+- [Delay queues](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/sqs-delay-queues.html) let you postpone the delivery of new messages to consumers for a number of seconds, for example, when your consumer application needs additional time to process messages.
+- If you create a delay queue, any messages that you send to the queue remain invisible to consumers for the duration of the delay period.
+- The default (minimum) delay for a queue is 0 seconds.
+- The maximum is 15 minutes.
+
+![](https://docs.aws.amazon.com/images/AWSSimpleQueueService/latest/SQSDeveloperGuide/images/sqs-delay-queues-diagram.png)
 
 # Other Links 
 - :star: [Amazon SQS vs others](../../1_HLDDesignComponents/4_MessageBrokers/KafkaVsRabbitMQVsSQSVsSNS.md)
