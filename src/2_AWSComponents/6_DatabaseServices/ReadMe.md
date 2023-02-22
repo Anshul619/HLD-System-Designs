@@ -1,5 +1,4 @@
 
-
 | Database                                             | Remarks                                                                                                    |
 |------------------------------------------------------|------------------------------------------------------------------------------------------------------------|
 | :star: [Amazon RDS Aurora](AmazonRDSAurora)          | DB management service for Postgres and MySQL ( faster & more reliable than RDS )                           |

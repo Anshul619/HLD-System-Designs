@@ -1,4 +1,3 @@
-
 # Amazon RDS
 - [Amazon RDS](https://aws.amazon.com/rds/) is a database management service for relational databases.
 - It manages patching, upgrading, and data backups automatically. 
@@ -7,6 +6,18 @@
 - [Why Amazon Aurora engine is better than Amazon RDS, for MySQL/Postgres DB engines?](AmazonAuroraVsRDS.md)
 
 ![img.png](assests/RDS_database_engines.png)
+
+# :star: RDS - Different Roles
+
+| Role             | Architecture        | Applicable RDS Engine                                                          | Remarks                                                                                |
+|------------------|---------------------|--------------------------------------------------------------------------------|----------------------------------------------------------------------------------------|
+| Instance         | -                   | :white_check_mark: All                                                         | Simple DB instance, without Multi-AZ enabled.                                          |
+| Primary          | Master-Slave        | Non-Aurora                                                                     | Writer Instance, with Multi-AZ enabled and takes all writes.                           |
+| Replica          | Master-Slave        | Non-Aurora (when Multi-AZ enabled)                                             | Replica is a standby instance of Primary instance, in the different Availability Zone. |
+| Regional Cluster | Master-Read-Replica | :white_check_mark: [Aurora](AmazonRDSAurora/Readme.md)                         | Aurora DB Cluster                                                                      |
+| Writer Instance  | Master-Read-Replica | :white_check_mark: [Aurora](AmazonRDSAurora/Readme.md)                         | Takes all writes (& reads if multi-AZ disabled), in regional cluster                   |
+| Reader Instance  | Master-Read-Replica | :white_check_mark: [Aurora (when Multi-AZ enabled)](AmazonRDSAurora/Readme.md) | Takes all reads, in regional cluster                                                   |
+| Serverless       | -                   | :white_check_mark: [Aurora](AmazonRDSAurora/Readme.md)                         | Serverless compute of Aurora Instance                                                  |
 
 # Amazon RDS - High Availability
 - For your MySQL, MariaDB, PostgreSQL, Oracle, and SQL Server database (DB) instances, you can use [Amazon RDS Multi-AZ deployments](https://aws.amazon.com/rds/ha/). 

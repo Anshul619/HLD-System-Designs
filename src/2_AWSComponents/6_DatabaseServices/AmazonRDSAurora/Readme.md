@@ -52,19 +52,7 @@
 - Multi-master clusters are only available in the certain AWS Regions.
 - [A multi-master cluster doesn't do any load balancing for connections](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/aurora-multi-master.html#aurora-multi-master-connectivity).
   - Application must implement its own connection management logic to distribute read and write operations among multiple DB instance endpoints.
-
-### RDS - Different Roles
-
-| Role             | Architecture        | Applicable RDS Engine                             | Remarks                                                                                |
-|------------------|---------------------|---------------------------------------------------|----------------------------------------------------------------------------------------|
-| Instance         | -                   | :white_check_mark: All                            | Simple DB instance, without Multi-AZ enabled.                                          |
-| Primary          | Master-Slave        | Non-Aurora                                        | Writer Instance, with Multi-AZ enabled and takes all writes.                           |
-| Replica          | Master-Slave        | Non-Aurora (when Multi-AZ enabled)                | Replica is a standby instance of Primary instance, in the different Availability Zone. |
-| Regional Cluster | Master-Read-Replica | :white_check_mark: Aurora                         | Aurora DB Cluster                                                                      |
-| Writer Instance  | Master-Read-Replica | :white_check_mark: Aurora                         | Takes all writes (& reads if multi-AZ disabled), in regional cluster                   |
-| Reader Instance  | Master-Read-Replica | :white_check_mark: Aurora (when Multi-AZ enabled) | Takes all reads, in regional cluster                                                   |
-| Serverless       | -                   | :white_check_mark: Aurora                         | Serverless compute of Aurora Instance                                                  |
-
+  
 # References
 - [Amazon Aurora Global Database Design Patterns for HA and DR | Amazon Web Services](https://www.youtube.com/watch?v=bbiWciJSouY)
 - [Amazon RDS High Availability](https://aws.amazon.com/rds/ha/)
