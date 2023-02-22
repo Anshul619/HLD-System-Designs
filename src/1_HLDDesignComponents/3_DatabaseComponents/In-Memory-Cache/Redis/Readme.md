@@ -3,14 +3,22 @@
 - One of the advantage of cache is to remember the result of an expensive operation, to speed uo the reads.
 - [LRU is the default eviction policy](https://docs.redis.com/latest/rs/databases/configure/eviction-policy/) in redis
 
-# :star: Real world use cases of Redis Cache
-- [Rate Limiting in Distributed Systems](../../../../3_HLDDesignProblems/RateLimiterAPI/Readme.md)
-- [Zomato - HLD Design](../../../../3_HLDDesignProblems/ZomatoDesign/README.md)
-- [Twillo - Send Message API Design](../../../../3_HLDDesignProblems/TwilloSendMessageAPI)
-- [Twitter Hit Counter](../../../../3_HLDDesignProblems/TwitterHitCounterDesign/Readme.md)
-- [AWS - Send-SMS-API design (App Internal Clients, Multiple SMS-Providers, AutoScaling)](../../../../3_HLDDesignProblems/NotificationSystem)
+# Top Redis Use Cases
 
-![](https://media.licdn.com/dms/image/C4E22AQGeveXEtt0GKQ/feedshare-shrink_1280/0/1672850706175?e=1675900800&v=beta&t=lwY5e9rTKeyd70BTLX56mRtK74Lz_yJwoW5PFaoyeMg)
+| Use Case                                                                                | Remarks                                                                                           |
+|-----------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------|
+| [Caching](https://redis.com/solutions/use-cases/caching/)                               | -                                                                                                 |
+| [Session Storage](https://redis.com/solutions/use-cases/session-management/)            | -                                                                                                 |
+| [Distributed Locks](https://redis.io/docs/manual/patterns/distributed-locks/)           | [Twitter Hit Counter](../../../../3_HLDDesignProblems/TwitterHitCounterDesign/Readme.md)          |
+| [Rate Limiting](https://redis.com/redis-best-practices/basic-rate-limiting/)            | [Rate Limiting in Distributed Systems](../../../../3_HLDDesignProblems/RateLimiterAPI/Readme.md)  |
+| [Rank/Leaderboard using SortedSet](https://redis.com/solutions/use-cases/leaderboards/) | -                                                                                                 |
+
+[Read more](https://www.youtube.com/watch?v=a4yX7RUgTxI)
+
+# :star: Real world use cases of Redis Cache
+- [Zomato - HLD Design](../../../../3_HLDDesignProblems/ZomatoDesign/README.md)
+- [Twillo - Send Message API Design](../../../../3_HLDDesignProblems/TwilloSendMessageAPI/README.md)
+- [AWS - Send-SMS-API design (App Internal Clients, Multiple SMS-Providers, AutoScaling)](../../../../3_HLDDesignProblems/NotificationSystem/README.md)
 
 [Read more about Redis Use Cases](https://www.linkedin.com/posts/alexxubyte_systemdesign-coding-interviewtips-activity-7016444408438923264-_pmB?utm_source=share&utm_medium=member_desktop)
 

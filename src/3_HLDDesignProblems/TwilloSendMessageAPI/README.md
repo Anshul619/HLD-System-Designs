@@ -1,4 +1,3 @@
-
 # Introduction
 - Design Twillo API - Message platform for business.
 - Different plans - Basic, Paid etc.
@@ -13,7 +12,7 @@
 
 # Tech Specs
 - [Kafka](../../1_HLDDesignComponents/4_MessageBrokers/Kafka/Readme.md) can be used as a message broker, to store & process the messages.
-- There would be 2 different topics ( in [Kafka](../../1_HLDDesignComponents/4_MessageBrokers/Kafka/Readme.md) ) for SMS, WhatsApp message types etc.
+- There would be 2 different topics (in [Kafka](../../1_HLDDesignComponents/4_MessageBrokers/Kafka/Readme.md)) for SMS, WhatsApp message types etc.
 - [How to decide number of partitions in Kafka?](../../1_HLDDesignComponents/4_MessageBrokers/Kafka/Readme.md#estimation---how-to-decide-number-of-partitions-in-kafkahttpswwwconfluentiobloghow-choose-number-topics-partitions-kafka-cluster)
 - [To understand more about Rate Limiting, check here](../RateLimiterAPI)
 - [Casandra](../../1_HLDDesignComponents/3_DatabaseComponents/NoSQL-Databases/ApacheCasandra.md) or [Amazon DynamoDB](../../2_AWSComponents/6_DatabaseServices/AmazonDynamoDB/Readme.md) can be used, to store messages (from logging, auditing perspective).

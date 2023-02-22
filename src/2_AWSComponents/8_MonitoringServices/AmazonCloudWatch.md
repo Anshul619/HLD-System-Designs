@@ -22,7 +22,7 @@ Mostly all AWS resources can be monitored in [AWS Cloudwatch](https://images.ctf
 | CloudFront Metrics   | Origin Latency, Error Rates etc.                                        |
 | Amazon SQS           | -                                                                       |
 | S3                   | -                                                                       |
-| SNS                  | -                                                                       |
+| [SNS](https://docs.aws.amazon.com/sns/latest/dg/sns-monitoring-using-cloudwatch.html)                  | -                                                                       |
 
 ![img.png](assests/cloudwatch_img.png)
 
