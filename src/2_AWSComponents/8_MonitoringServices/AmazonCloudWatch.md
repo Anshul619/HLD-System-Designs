@@ -14,15 +14,17 @@
 
 Mostly all AWS resources can be monitored in [AWS Cloudwatch](https://images.ctfassets.net/ee3ypdtck0rk/3Nj7dlXrWjY6QGLJ2WlLQy/37e85ae7a0581d31792dd05dd0830e50/Screen_Shot_2021-08-27_at_16.31.30.png?w=1853&h=1059&q=50&fm=webp).
 
-| AWS Service          | Remarks                                                                 |
-|----------------------|-------------------------------------------------------------------------|
-| EC2                  | CPU, Memory utilization, NetworkIn / Out, DiskReadOps/DiskWriteOps etc. |
-| Amazon RDS           | Instances, Slow SQL Queries etc.                                        |
-| Load Balancer        | Various HTTP Errors, Error Rates etc.                                   |
-| CloudFront Metrics   | Origin Latency, Error Rates etc.                                        |
-| Amazon SQS           | -                                                                       |
-| S3                   | -                                                                       |
-| [SNS](https://docs.aws.amazon.com/sns/latest/dg/sns-monitoring-using-cloudwatch.html)                  | -                                                                       |
+| AWS Service                                                                                                                                                                       | Remarks                                                                 |
+|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------|
+| EC2                                                                                                                                                                               | CPU, Memory utilization, NetworkIn / Out, DiskReadOps/DiskWriteOps etc. |
+| Amazon RDS                                                                                                                                                                        | Instances, Slow SQL Queries etc.                                        |
+| Load Balancer                                                                                                                                                                     | Various HTTP Errors, Error Rates etc.                                   |
+| CloudFront Metrics                                                                                                                                                                | Origin Latency, Error Rates etc.                                        |
+| Amazon SQS                                                                                                                                                                        | -                                                                       |
+| S3                                                                                                                                                                                | -                                                                       |
+| [SNS](https://docs.aws.amazon.com/sns/latest/dg/sns-monitoring-using-cloudwatch.html)                                                                                             | -                                                                       |
+| [Creating a billing alarm to monitor your estimated AWS charges](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/monitor_estimated_charges_with_cloudwatch.html)   | -                                                                       |
+| [How can I set up a CloudWatch alarm to automatically recover my EC2 instance?z](https://aws.amazon.com/premiumsupport/knowledge-center/automatic-recovery-ec2-cloudwatch/)       | -                                                                       |
 
 ![img.png](assests/cloudwatch_img.png)
 

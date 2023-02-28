@@ -151,7 +151,7 @@ aws s3api create-bucket --bucket testikod-in-state-store --region us-west-2
 ````
 
 ### Step3 - Create cluster
-- An instance group is a set of instances, which will be registered as kubernetes nodes. [On AWS this is implemented via auto-scaling-groups](../../2_AWSComponents/3_ComputeServices/AmazonEC2/AutoScalingGroup/README.md).
+- An instance group is a set of instances, which will be registered as kubernetes nodes. [On AWS this is implemented via auto-scaling-groups](../../2_AWSComponents/3_ComputeServices/AmazonEC2/AutoScalingGroup/Readme.md).
 
 ````shell
 

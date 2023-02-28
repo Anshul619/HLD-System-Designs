@@ -1,9 +1,9 @@
-
 # AWS Lambda
 - [AWS Lambda](https://aws.amazon.com/lambda/) is a compute service that lets you run code without provisioning or managing servers. 
 - AWS Lambda runs your code on a [high-availability compute infrastructure](../../../1_HLDDesignComponents/0_SystemGlossaries/Reliability/HighAvailability.md) and performs all the administration of compute resources, including server and operating system maintenance, capacity provisioning and automatic scaling, code monitoring and logging. 
 - With Lambda, you can run code for virtually any type of application or backend service. 
 - All you need to do is [supply your code in one of the languages that Lambda supports](#supported-code-upload-options--languages).
+- [Lambda is stateless](https://github.com/Ebazhanov/linkedin-skill-assessments-quizzes/blob/main/aws/aws-quiz.md), so it won't remember who a user is in between requests.
 
 # Supported Code Upload Options & Languages
 

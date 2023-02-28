@@ -1,7 +1,7 @@
 # AWS Fargate
 - [AWS Fargate - Serverless compute for containers](https://aws.amazon.com/fargate/) is a serverless compute engine used in conjunction with [Amazon Elastic Container Service (ECS)](../4_ContainerOrchestrationServices/AmazonECS/Readme.md). 
-- Compatible with both [EKS](../4_ContainerOrchestrationServices/AmazonEKS.md) & [ECS](../4_ContainerOrchestrationServices/AmazonECS/Readme.md) i.e. these services can run with Fargate as deployment option, instead of [Amazon EC2 instances](AmazonEC2/ReadMe.md).
-- You can use it to run containers without managing servers or clusters of [Amazon EC2 instances](AmazonEC2/ReadMe.md). 
+- Compatible with both [EKS](../4_ContainerOrchestrationServices/AmazonEKS.md) & [ECS](../4_ContainerOrchestrationServices/AmazonECS/Readme.md) i.e. these services can run with Fargate as deployment option, instead of [Amazon EC2 instances](AmazonEC2/Readme.md).
+- You can use it to run containers without managing servers or clusters of [Amazon EC2 instances](AmazonEC2/Readme.md). 
 - [Fargate has a flexible computing model](https://aws.amazon.com/fargate/faqs/?nc=sn&loc=4), which does not require you to select an instance type or directly configure your cluster. 
 - It scales up transparently & you pay according to the CPU and memory resources you actually use.
 
@@ -12,7 +12,7 @@
 ![img.png](../1_NetworkingAndContentDelivery/ElasticLoadBalancer/assests/AWS_Elastic_Load_Balancer.png)
 
 # Amazon ECS Availability with Fargate
-- [Fargate](https://aws.amazon.com/blogs/containers/amazon-ecs-availability-best-practices/) ensures [Availability Zone](../AWS-Global-Architecture-Region-AZ.md) spread while removing the complexity of managing [EC2 infrastructure](AmazonEC2/ReadMe.md) and works to ensure that Tasks in a Replica Service are balanced across Availability Zones. 
+- [Fargate](https://aws.amazon.com/blogs/containers/amazon-ecs-availability-best-practices/) ensures [Availability Zone](../AWS-Global-Architecture-Region-AZ.md) spread while removing the complexity of managing [EC2 infrastructure](AmazonEC2/Readme.md) and works to ensure that Tasks in a Replica Service are balanced across Availability Zones. 
 - For RunTask launches with a Fargate launch type, Fargate will look to spread Task placement across all available Availability Zones ensuring even distribution of the [Task Definition Family](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/task_definition_parameters.html) that the Task belongs to. 
 - By leveraging Fargate, you are able to sidestep the undifferentiated heavy lifting of owning and managing infrastructure allowing you to focus on delivering applications to delight your customers.
 

@@ -1,2 +1,1 @@
-
 # [S3 vs EFS vs EBS](S3vsEFSvsEBS.md)

@@ -1,22 +1,24 @@
 # AWS Auto-Scaling
-- [AWS Auto-scaling Group (ASG)](https://aws.amazon.com/autoscaling/) is a function that allows you to [provision and launch new instances](../ReadMe.md) whenever there is a incoming demand. 
+- [AWS Auto-scaling Group (ASG)](https://aws.amazon.com/autoscaling/) is a function that allows you to [provision and launch new instances](../Readme.md) whenever there is a incoming demand. 
 - It allows you to automatically increase or decrease resource capacity in relation to the demand.
-- [AWS EC2 Auto Scaling](https://aws.amazon.com/getting-started/hands-on/ec2-auto-scaling-spot-instances/) enables you to automatically launch or terminate [Amazon EC2 instances](../ReadMe.md) based on user-defined policies, health status checks, and schedules.
+- [AWS EC2 Auto Scaling](https://aws.amazon.com/getting-started/hands-on/ec2-auto-scaling-spot-instances/) enables you to automatically launch or terminate [Amazon EC2 instances](../Readme.md) based on user-defined policies, health status checks, and schedules.
 
 # How Auto-Scaling works?
-- [Amazon CloudWatch](../../../8_MonitoringServices/AmazonCloudWatch.md) detects that an [EC2 instance](../ReadMe.md) is not healthy and sends the message to [Auto-Scaling service](README.md).
-- [Auto Scaling service](README.md) would then inform [ELB](../../../1_NetworkingAndContentDelivery/ElasticLoadBalancer/Readme.md) to add [another EC2 instance](../ReadMe.md)
+- [Amazon CloudWatch](../../../8_MonitoringServices/AmazonCloudWatch.md) detects that an [EC2 instance](../Readme.md) is not healthy and sends the message to [Auto-Scaling service](Readme.md).
+- [Auto Scaling service](Readme.md) would then inform [ELB](../../../1_NetworkingAndContentDelivery/ElasticLoadBalancer/Readme.md) to add [another EC2 instance](../Readme.md)
 
 ![img.png](assets/Auto-Scaling-ELB.png)
 
-## Step Scaling
-- Also, we can use a [CloudWatch alarm](../../../8_MonitoringServices/AmazonCloudWatch.md) with Amazon EC2 Auto Scaling to scale your [Amazon EC2 instances](../ReadMe.md) based on demand.
-- For more information, see [Dynamic Scaling](https://docs.aws.amazon.com/autoscaling/ec2/userguide/as-scale-based-on-demand.html) in the Amazon EC2 Auto Scaling User Guide.
-- [Read more](https://docs.aws.amazon.com/autoscaling/ec2/userguide/as-scaling-simple-step.html)
+# Types of Scaling
+
+| Type of Scaling                  | Remarks                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
+|----------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Step Scaling                     | We can use a [CloudWatch alarm](../../../8_MonitoringServices/AmazonCloudWatch.md) with Amazon EC2 Auto Scaling to scale your [Amazon EC2 instances](../Readme.md) based on demand.<br/>- For more information, see [Dynamic Scaling](https://docs.aws.amazon.com/autoscaling/ec2/userguide/as-scale-based-on-demand.html) in the Amazon EC2 Auto Scaling User Guide.<br/>- [Read more](https://docs.aws.amazon.com/autoscaling/ec2/userguide/as-scaling-simple-step.html) |
+| Auto-Scaling based on Amazon SQS | Based on the [Amazon SQS](../../../5_MessageBrokerServices/AmazonSQS.md) queue size, the [auto-scaling of the EC2 instances](https://docs.aws.amazon.com/autoscaling/ec2/userguide/as-using-sqs-queue.html) can also be done.<br/>- Example Design - [Send-SMS-API design (App Internal Clients, Multiple SMS-Providers, AutoScaling)](../../../../3_HLDDesignProblems/NotificationSystem)                                                                                 |
+| Scaling based on demand          | Autoscaling based on memory, CPU used. <br/>- For example - Auto scale for CPU usage on a single instance rise above 80% for 5 mins.                                                                                                                                                                                                                                                                                                                                       |
+| Scaling based on a schedule      | Best for Auto Scaling your EC2 instances for predictable traffic patterns                                                                                                                                                                                                                                                                                                                                                                                                  |
 
 ## Auto-Scaling based on Amazon SQS
-- Based on the [Amazon SQS](../../../5_MessageBrokerServices/AmazonSQS.md) queue size, the [auto-scaling of the EC2 instances](https://docs.aws.amazon.com/autoscaling/ec2/userguide/as-using-sqs-queue.html) can also be done.
-- Example Design - [Send-SMS-API design (App Internal Clients, Multiple SMS-Providers, AutoScaling)](../../../../3_HLDDesignProblems/NotificationSystem)
 
 ![img.png](https://docs.aws.amazon.com/autoscaling/ec2/userguide/images/sqs-as-custom-metric-diagram.png)
 

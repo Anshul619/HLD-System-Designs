@@ -1,0 +1,2 @@
+# Amazon Lightsail
+- [Amazon Lightsail](https://aws.amazon.com/lightsail/) offers easy-to-use virtual private server (VPS) instances, containers, storage, databases, and more at a cost-effective monthly price.

@@ -39,7 +39,7 @@ Using Amazon SNS topics, your publisher systems can fanout messages to a large n
 - Send Emails etc.
 
 # Amazon SNS message filtering
-- By default, an Amazon SNS topic subscriber receives every message published to the topic. 
+- By default, an [Amazon SNS topic]() subscriber receives every message published to the topic. 
 - To receive a subset of the messages, [a subscriber must assign a filter policy to the topic subscription](https://docs.aws.amazon.com/sns/latest/dg/sns-message-filtering.html).
 
 # :star: Amazon SNS vs Others

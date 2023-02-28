@@ -1,4 +1,3 @@
-
 # AWS Web Application Firewall (WAF)
 - [AWS Web Application Firewall (WAF)](https://aws.amazon.com/waf/) is a web application firewall service that lets you monitor web requests (& protect from web exploitations) that are forwarded to an [Amazon API Gateway API](../1_NetworkingAndContentDelivery/AmazonAPIGateway), an [Amazon CloudFront distribution](../1_NetworkingAndContentDelivery), or an [Application Load Balancer](../1_NetworkingAndContentDelivery/ElasticLoadBalancer). 
 - You can protect those resources based on conditions that you specify, such as the IP addresses that the requests originate from.

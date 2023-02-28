@@ -1,7 +1,6 @@
-# :star: [High Availability](https://avinetworks.com/glossary/high-availability/)
-- High Availability (HA) describes systems that are dependable enough to operate continuously without failing.
+# High Availability
+- [High Availability (HA)](https://avinetworks.com/glossary/high-availability/) describes systems that are dependable enough to operate continuously without failing.
 - They are well-tested and sometimes equipped with redundant components.
-- :star: `99.99% uptime means that website is down only for 52 mins in the complete year`. This means it is `highly available`.
 - In AWS, high availability is achieved through multiple deployments of the app in [different availability zones](../../../2_AWSComponents/AWS-Global-Architecture-Region-AZ.md).
 - [High Availability vs Fault Tolerance](FaultTolerance&DisasterRecovery.md#fault-tolerance-vs-high-availabilityhighavailabilitymd)
 
@@ -15,12 +14,12 @@
 
 ## Power of 9s
 
-| Availability               | 9s       | Downtime per year | Categories/Domains                       |
-|----------------------------|----------|-------------------|------------------------------------------|
-| 99% availability           | Two 9s   | 8 hours 45 mins   | Internal tools, projects tracking        |
-| :star: 99.9% availability  | Three 9s | 8 hr 45 mins      | Online Commerce                          |
-| :star: 99.99% availability | Four 9s  | 52 mins           | Video Delivery, Broadcast systems        |
-| 99.999% availability       | Five 9s  | 5 mins            | Telecom Industry, Bank, ATM Transactions |
+| Availability               | 9s       | Error budget/Downtime per year | Categories/Domains                       |
+|----------------------------|----------|--------------------------------|------------------------------------------|
+| 99% availability           | Two 9s   | 8 hours 45 mins                | Internal tools, projects tracking        |
+| :star: 99.9% availability  | Three 9s | 8 hr 45 mins                   | Online Commerce                          |
+| :star: 99.99% availability | Four 9s  | 52 mins                        | Video Delivery, Broadcast systems        |
+| 99.999% availability       | Five 9s  | 5 mins                         | Telecom Industry, Bank, ATM Transactions |
 
 ## Availability Patterns
 

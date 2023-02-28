@@ -12,4 +12,4 @@
 
 # Why separate distributed key-value store?
 - As an application developer, you will rarely need to use [ZooKeeper](ApacheZookeeper.md) or [etcd](etcd.md) directly, because it is actually not well suited as a general-purpose database.
-- It is more likely that you will end up relying on it indirectly via some other project - [Kafka (uses Zookeeper)](../4_MessageBrokers/Kafka/Readme.md#zookeeper), [Kubernates (uses etcd)](../6_ContainerOrchestrationServices/Kubernates.md) etc.
+- It is more likely that you will end up relying on it indirectly via some other project - [Kafka (uses Zookeeper)](../4_MessageBrokers/Kafka/Readme.md), [Kubernates (uses etcd)](../6_ContainerOrchestrationServices/Kubernates.md) etc.

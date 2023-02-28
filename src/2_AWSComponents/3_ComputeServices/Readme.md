@@ -1,6 +1,6 @@
 
 # Amazon Compute Services
-- [Amazon EC2](AmazonEC2/ReadMe.md)
+- [Amazon EC2](AmazonEC2/Readme.md)
 - [Amazon ECS](../4_ContainerOrchestrationServices/AmazonECS/Readme.md)
 - [Amazon EKS](../4_ContainerOrchestrationServices/AmazonEKS.md)
 - [Amazon EMR](../10_BigDataComponents/BatchProcessing/AmazonEMR.md)

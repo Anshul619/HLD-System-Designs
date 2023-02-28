@@ -4,6 +4,7 @@
 - We may assign roles to users and create roles with defined access levels using IAM.
 - It further gives us Federated Access, which allows us to grant applications and users access to resources without having to create IAM Roles.
 - [List of various AWS IAM Permissions](https://aws.permissions.cloud/)
+- Note only AWS root account has the permission to delete the account.
 
 # IAM Policy
 - [IAM Policy](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies.html) helps to define user access (through AWS Console or AWS Cli) for the AWS resources.

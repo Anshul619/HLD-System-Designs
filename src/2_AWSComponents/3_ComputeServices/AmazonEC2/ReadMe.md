@@ -1,4 +1,3 @@
-
 # Amazon EC2 - Elastic Compute Cloud
 - [Amazon EC2 - Elastic Compute Cloud](https://aws.amazon.com/ec2/) offers the broadest and deepest compute platform, with over 500 instances and choice of the latest processor, storage, networking, operating system, and purchase model to help you best match the needs of your workload.
 - So, you don’t have to invest in costly physical services. 
@@ -16,7 +15,7 @@
 
 ![img.png](AutoScalingGroup/assets/Auto-Scaling-ELB.png)
 
-- [Read here](AutoScalingGroup/README.md)
+- [Read here](AutoScalingGroup/Readme.md)
 
 # Instance Types
 

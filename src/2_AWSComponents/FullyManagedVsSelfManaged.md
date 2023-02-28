@@ -10,8 +10,8 @@
 - You’re entirely responsible for patches, fixes, backups, [high availability](../1_HLDDesignComponents/0_SystemGlossaries/Reliability/HighAvailability.md), software versions, dependencies, network infrastructure, security, and so on.
 
 Examples
-- [Amazon EC2](3_ComputeServices/AmazonEC2/ReadMe.md)
-- [Amazon RDS](6_DatabaseServices/AmazonRDS.md) - AZ, [Instance details](3_ComputeServices/AmazonEC2/ReadMe.md) need to be specified when launching a new database instance.
+- [Amazon EC2](3_ComputeServices/AmazonEC2/Readme.md)
+- [Amazon RDS](6_DatabaseServices/AmazonRDS.md) - AZ, [Instance details](3_ComputeServices/AmazonEC2/Readme.md) need to be specified when launching a new database instance.
 - [Amazon VPC](1_NetworkingAndContentDelivery/AmazonVPC.md)
 
 # References
