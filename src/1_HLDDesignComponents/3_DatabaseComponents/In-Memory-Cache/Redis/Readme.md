@@ -85,7 +85,7 @@ RPUSH mylist c   # now the list is "b","a","c" (RPUSH was used this time)
 ```
 
 ### Sorted sets
-- Every member of a Sorted Set is associated with a score, that is used to keep the Sorted Set in order, from the smallest to the greatest score. 
+- Every member of a [Sorted Set](https://redis.io/docs/data-types/sorted-sets/) is associated with a score, that is used to keep the Sorted Set in order, from the smallest to the greatest score. 
 - While members are unique, scores may be repeated.
 
 ```

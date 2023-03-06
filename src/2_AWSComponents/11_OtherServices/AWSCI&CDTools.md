@@ -1,6 +1,6 @@
 # AWS CodePipeline
-- [Automate continuous delivery pipelines](../../1_HLDDesignComponents/0_SystemGlossaries/DevOps/CI&CD.md) for fast and reliable updates using [AWS CodePipeline](https://aws.amazon.com/codepipeline/)
-- It's an alternative to [GitHub Actions](https://github.com/features/actions)
+- [Automate continuous delivery pipelines](../../1_HLDDesignComponents/0_SystemGlossaries/DevOps/CI&CD.md) for fast and reliable updates using [AWS CodePipeline](https://aws.amazon.com/codepipeline/).
+- It's an alternative to [GitHub Actions](https://github.com/features/actions).
 
 ![](https://k21academy.com/wp-content/uploads/2021/03/php-project-release-pipeline-1536x758.png)
 

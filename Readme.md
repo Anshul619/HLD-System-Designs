@@ -272,12 +272,11 @@ This repo contains the various system design components info, questions and solu
 | [AWS - Send-SMS-API design (App Internal Clients, Multiple SMS-Providers, AutoScaling)](src/3_HLDDesignProblems/NotificationSystem/README.md)                                               | [Amazon SQS](src/2_AWSComponents/5_MessageBrokerServices/AmazonSQS.md), [Auto Scaling](src/2_AWSComponents/3_ComputeServices/AmazonEC2/AutoScalingGroup/Readme.md), [Redis](src/1_HLDDesignComponents/3_DatabaseComponents/In-Memory-Cache/Redis/Readme.md), [Amazon DynamoDB](src/2_AWSComponents/6_DatabaseServices/AmazonDynamoDB/Readme.md), [Amazon Load Balancer](src/2_AWSComponents/1_NetworkingAndContentDelivery/ElasticLoadBalancer/Readme.md), [Amazon WAF](src/2_AWSComponents/2_SecurityAndIdentityServices/AWSWAF.md)                                           |
 | [AWS - Deploy WordPress Site with Amazon Cloudfront & S3](src/2_AWSComponents/0_AWSDesigns/WPSiteCloudFront&S3.md)                                                                          | [Amazon S3](src/2_AWSComponents/7_StorageServices/AmazonS3.md), [Amazon Cloudfront](src/2_AWSComponents/1_NetworkingAndContentDelivery/AmazonCloudFront.md)                                                                                                                                                                                                                                                                                                                                                                                                                    |
 
-# OOP Design & Problems (LLD)
+# Programming & OOP Design & Problems (LLD)
 - :star: [OOP Design](src/4_ObjectOrientedDesign/OOP.md)
 - :star: [SOLID Principles](src/4_ObjectOrientedDesign/SOLID.md)
 - :star: [Design Tips & Techniques](src/4_ObjectOrientedDesign/TipsAndTechniques.md)
 - :star: [Design Patterns](src/4_ObjectOrientedDesign/DesignPatterns)
-- [DRY Principle](src/4_ObjectOrientedDesign/DRY.md)
 - [Design Problems](src/4_ObjectOrientedDesign/OOPDesignProblems)
   - [Chess Game](src/4_ObjectOrientedDesign/OOPDesignProblems/ChessGame)
   - [Parking Lot](src/4_ObjectOrientedDesign/OOPDesignProblems/ParkingLot)

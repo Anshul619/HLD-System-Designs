@@ -4,3 +4,12 @@
 
 # Real world use cases
 - [User activity relationship store at Instagram](../../../3_HLDDesignProblems/InstagramDesign/Readme.md)
+
+# Terminologies
+
+| Term          | Description                                                                                                                                        |
+|---------------|----------------------------------------------------------------------------------------------------------------------------------------------------|
+| Nodes         | Nodes describe entities (discrete objects) of a domain.<br/>- Nodes can have zero or more labels to define (classify) what kind of nodes they are. |
+| Relationships | Relationships describes a connection between a source node and a target node.<br/>- Relationships always has a direction (one direction).<br/>- Relationships must have a type (one type) to define (classify) what type of relationship they are.   |
+
+![](https://neo4j.com/docs/getting-started/current/_images/graph_simple.svg)

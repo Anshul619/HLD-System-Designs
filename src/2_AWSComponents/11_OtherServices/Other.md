@@ -25,3 +25,6 @@
 
 # Amazon DevOps Guru
 - [Amazon DevOps Guru](https://aws.amazon.com/devops-guru/) uses ML to detect abnormal operating patterns so you can identify operational issues before they impact your customers.
+
+# AWS Amplify
+- [AWS Amplify](https://aws.amazon.com/amplify/) is a complete solution that lets frontend web and mobile developers easily build, ship, and host full-stack applications on AWS, with the flexibility to leverage the breadth of AWS services as use cases evolve.

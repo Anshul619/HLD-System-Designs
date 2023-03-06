@@ -1,4 +1,3 @@
-
 # SOLID Principles
 
 ![](https://www.dereuromark.de/wp-content/uploads/2016/01/SOLID.jpg)

@@ -22,5 +22,8 @@
 - It supports a wide variety of modern native drivers as well as a shell.
 - MongoDB supports [fully ACID compliant transactions](../../../0_SystemGlossaries/Database/ACIDPropertyTransaction.md).
 
+# Other links
+- [Split Chunks in a Sharded Cluster](https://www.mongodb.com/docs/manual/tutorial/split-chunks-in-sharded-cluster/)
+
 # References
 - [MongoDB Interview Questions](https://www.interviewbit.com/mongodb-interview-questions/)
