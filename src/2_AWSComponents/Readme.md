@@ -159,7 +159,7 @@
                   <img src="https://i0.wp.com/miro.medium.com/max/626/1*RmiGt6GAWf4pkO9ohOnRaQ.png?w=810&ssl=1" width="150">
                 </a>
                 <a href="4_ContainerOrchestrationServices/AmazonEKS.md" target="_blank">
-                  <img src="https://www.turbonomic.com/wp-content/uploads/2020/11/AWS-EKS-logo-no-background.png" width="150">
+                  <img src="https://d2908q01vomqb2.cloudfront.net/fc074d501302eb2b93e2554793fcaf50b3bf7291/2020/10/15/Kubernetes-control-plane.png" width="150">
                 </a>
                 <a href="4_ContainerOrchestrationServices/AmazonECS/AmazonECR.md" target="_blank">
                   <img src="https://speedmedia.jfrog.com/08612fe1-9391-4cf3-ac1a-6dd49c36b276/https://media.jfrog.com/wp-content/uploads/2022/11/23145958/6053d4dc2f6c53160a53d407_linux-container-updates-iot.png/mxw_2256,s_webp,f_auto" width="150">

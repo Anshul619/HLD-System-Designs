@@ -99,5 +99,6 @@ To name another example, let’s consider containers.
 
 # Source(s) and further reading
 - [How to build a multi-region active-active architecture on AWS](https://acloudguru.com/blog/engineering/why-and-how-do-we-build-a-multi-region-active-active-architecture)
+- [Dealing with Modern Distributed Systems: A Primer](https://thinkingoutcloud.org/2021/01/19/dealing-with-modern-distributed-systems-a-primer/)
 
 
