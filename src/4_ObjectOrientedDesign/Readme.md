@@ -29,3 +29,4 @@
 # Reference
 - [Grokking the Object Oriented Design Interview](https://www.educative.io/courses/grokking-the-object-oriented-design-interview)
 - [Low Level Design Problems](https://github.com/prasadgujar/low-level-design-primer/blob/master/solutions.md)
+- [Clean Architecture in Go](https://pkritiotis.io/clean-architecture-in-golang/)
