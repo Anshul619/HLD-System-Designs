@@ -13,7 +13,7 @@
 - The [Amazon Aurora PostgreSQL and Amazon Aurora MySQL engines](https://aws.amazon.com/rds/ha/) include [additional High Availability](../../../1_HLDDesignComponents/0_SystemGlossaries/Reliability/HighAvailability.md) options. 
 - Even with a single database instance, Amazon Aurora increases availability by [replicating your data six ways across three Availability Zones](). 
 - This means that your [DB cluster can tolerate a failure of an Availability Zone](../../../1_HLDDesignComponents/0_SystemGlossaries/Reliability/FaultTolerance&DisasterRecovery.md) without any loss of data and only a brief interruption of service.
-- It also automatically backs up data in [Amazon S3](../../7_StorageServices/AmazonS3.md).
+- It also automatically backs up data in [Amazon S3](../../7_StorageServices/AmazonS3/Readme.md).
 
 ## Aurora Compute
 - You can choose to run one or more Replicas in an [Amazon Aurora DB cluster](../../../1_HLDDesignComponents/0_SystemGlossaries/Scalability/ServersCluster.md), through [Multi-AZ deployment](https://aws.amazon.com/rds/features/multi-az/). 

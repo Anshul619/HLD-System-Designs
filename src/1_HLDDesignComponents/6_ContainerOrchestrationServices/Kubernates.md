@@ -144,7 +144,7 @@ aws route53 create-hosted-zone --name testikod.in --caller-reference 2017-02-24-
 ### Step2 - Create State Store
 - KOPS internally uses Terraform. 
 - So we required external state store for storing states of a cluster. 
-- We are using [Amazon S3](../../2_AWSComponents/7_StorageServices/AmazonS3.md) for storing state.
+- We are using [Amazon S3](../../2_AWSComponents/7_StorageServices/AmazonS3/Readme.md) for storing state.
 
 ````shell
 aws s3api create-bucket --bucket testikod-in-state-store --region us-west-2

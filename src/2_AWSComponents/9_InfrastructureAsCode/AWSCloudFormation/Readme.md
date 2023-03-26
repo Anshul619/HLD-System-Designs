@@ -7,7 +7,7 @@
 
 # Steps involved in a CloudFormation Solution
 - [Create or use an existing CloudFormation template](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/gettingstarted.templatebasics.html) using `JSON or YAML format`.
-- Save the code in an [S3 bucket](../../7_StorageServices/AmazonS3.md), which serves as a repository for the code.
+- Save the code in an [S3 bucket](../../7_StorageServices/AmazonS3/Readme.md), which serves as a repository for the code.
 - Use [AWS CloudFormation]() to call the bucket and [create a stack on your template](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/stacks.html).
 - CloudFormation reads the file and understands the services that are called, their order, the relationship between the services, and provisions the services one after the other.
 
@@ -166,7 +166,7 @@ Resources
 ````
 
 ## Resources
-- The [required Resources section](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/resources-section-structure.html) declares the AWS resources that you want to include in the stack, such as an [Amazon EC2 instance](../../3_ComputeServices/AmazonEC2/Readme.md) or an [Amazon S3 bucket](../../7_StorageServices/AmazonS3.md).
+- The [required Resources section](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/resources-section-structure.html) declares the AWS resources that you want to include in the stack, such as an [Amazon EC2 instance](../../3_ComputeServices/AmazonEC2/Readme.md) or an [Amazon S3 bucket](../../7_StorageServices/AmazonS3/Readme.md).
 - Through `AWS::SSM::Parameter` resource, we can create an SSM Parameter in [AWS System Manager Parameter Store](../../2_SecurityAndIdentityServices/AWSSystemManager.md).
 
 Syntax
@@ -211,7 +211,7 @@ Resources:
 
 ## Outputs
 - The [optional Outputs section](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/outputs-section-structure.html) declares output values that you can import into other stacks (to create cross-stack references), return in response (to describe stack calls), or view on the [AWS CloudFormation console](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/cfn-using-console.html). 
-- For example, you can output the [S3 bucket name](../../7_StorageServices/AmazonS3.md) for a stack to make the bucket easier to find. It would then be shown in [Outputs](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/outputs-section-structure.html) section in Cloudformation Stack details page.
+- For example, you can output the [S3 bucket name](../../7_StorageServices/AmazonS3/Readme.md) for a stack to make the bucket easier to find. It would then be shown in [Outputs](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/outputs-section-structure.html) section in Cloudformation Stack details page.
 - You can also [export the output resource](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-stack-exports.html), which other stack can import.
 - It's the best way to perform some collaborations cross stack, as you let expert handle their own part of the stack.
 

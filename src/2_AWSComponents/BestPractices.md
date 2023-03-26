@@ -16,10 +16,23 @@ Every definition of [serverless](https://aws.amazon.com/what-is/cloud-native/) m
 
 With serverless, you can spend time on the things that differentiate your application, rather than spend time on ensuring availability, scaling, and managing servers.
 
-| Serverless Service                                             | Remarks |
-|----------------------------------------------------------------|---------|
-| [AWS Lambda](3_ComputeServices/AWSLambda/Readme.md)            | -       |
-| [AWS Fargate](3_ComputeServices/AWSFargate.md)                 | -       |
-| [Amazon DynamoDB](6_DatabaseServices/AmazonDynamoDB/Readme.md) | -       |
+| Serverless Service                                                 | Service Type | Remarks |
+|--------------------------------------------------------------------|--------------|---------|
+| [AWS Lambda](3_ComputeServices/AWSLambda/Readme.md)                | Compute      | -       |
+| [AWS Fargate](3_ComputeServices/AWSFargate.md)                     | Compute      | -       |
+| [Amazon DynamoDB](6_DatabaseServices/AmazonDynamoDB/Readme.md)     | Database     | -       |
+| [AWS Step Functions](3_ComputeServices/AWSStepFunctions.md)        | Compute      | -       |
+| [AWS Batch](10_BigDataComponents/BatchProcessing/AWSBatch.md)      | Batch        | -       |
 
 ![](https://explore.skillbuilder.aws/files/a/w/aws_prod1_docebosaas_com/1679760000/JYmGMwB20J8gK2ybFtJ0GQ/tincan/674187_1676990596_p1gpq6pq781l3ntaa1fcbps6c0t4_zip/assets/EeOATVB6y1r_v8u__1kby3aQeiuXnYa4X-section1-services-in-AWS-serverless-platform_NOPROCESS_.jpg)
+
+## Considerations for serverless applications
+- Are you building, testing, and deploying applications frequently and want to focus only on your code and not on infrastructure?
+- Are your applications less compute intensive?
+- Are the applications that you are running or building small, simple, or modular?
+  - Simple applications, such as chatbots or to-do lists that people can use to modify a list of things that they need to do, are good choices to move to serverless.
+- Will you be using multiple AWS services where one service might need to call another service? 
+  - For example, if someone uploads a file to Amazon Simple Storage Service (Amazon S3), will you then need to invoke other workflows to log the update or convert the file to HTML? Serverless is a very appropriate fit when you need one action to invoke other workflows within AWS.
+- Do your applications finish quickly? 
+  - Serverless is most suitable for applications that don't run longer than 15 minutes. 
+  - Large, long-running, workloads, are expensive to run on serverless and not an optimal fit for this compute type.

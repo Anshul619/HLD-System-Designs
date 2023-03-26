@@ -20,7 +20,7 @@ However the [multi-region](../../AWS-Global-Architecture-Region-AZ.md) backend s
 ## :star: Use local resources and avoid cross-regional calls
 
 [Amazon Services with Cross-Region support](../../AWS-Global-Architecture-Region-AZ.md), should be used like,
-- [Amazon S3](../../7_StorageServices/AmazonS3.md#cross-region-supported)
+- [Amazon S3](../../7_StorageServices/AmazonS3/Readme.md#cross-region-supported)
 - [Amazon Aurora Global Database](../../6_DatabaseServices/AmazonRDSAurora/AuroraGlobalDatabase.md)
 - [Amazon Dynamo DB Global Tables](../../6_DatabaseServices/AmazonDynamoDB/Readme.md)
 

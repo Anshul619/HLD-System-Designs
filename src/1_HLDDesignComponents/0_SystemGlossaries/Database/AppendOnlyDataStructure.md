@@ -21,7 +21,7 @@
 | [Amazon Aurora Global Database - Replication](../../../2_AWSComponents/6_DatabaseServices/AmazonRDSAurora/AuroraGlobalDatabase.md) | -       |
 | [RocksDB](../../3_DatabaseComponents/NoSQL-Databases/RocksDB.md)                                                                   | -       |
 | [Amazon Kinesis](../../../2_AWSComponents/10_BigDataComponents/StreamProcessing/AmazonKinesis/Readme.md)                           | -       |
-| [Amazon S3](../../../2_AWSComponents/7_StorageServices/AmazonS3.md)                                                                | -       |
+| [Amazon S3](../../../2_AWSComponents/7_StorageServices/AmazonS3/Readme.md)                                                                | -       |
 | [Lucene](../../3_DatabaseComponents/Search-Indexes/ApacheLucene.md)                                                                | -       |
 
 # References

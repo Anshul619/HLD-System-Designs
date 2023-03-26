@@ -13,6 +13,12 @@
 
 ![](https://explore.skillbuilder.aws/files/a/w/aws_prod1_docebosaas_com/1679641200/e3b8x-vNw5aXnG1DYUfTwg/tincan/d03722b85f9d2b3a05e4c74bd586ea9b1f52f81a/assets/XkRO9PIy-4njgJWl_dCQbrVwmpaNKxmTs.jpg)
 
+# When not to use containers?
+
+| Use Case                                                                      | Description                                                                                                                                                                                                                                                |
+|-------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| When applications need persistent data storage                                | Persistent storage requirements increase the security and storage complexity and also make the containers less portable. <br/>- If the container is moved, the storage needs to be reconfigured and secured.                                               |
+| When applications have complex networking, routing, or security requirements? | Containers are portable and can be moved through different environments (testing, staging, production). If the application requires a complex configuration for networking, routing, storage, and so on, the containers are much more challenging to move. |
 
 # Various Components
 
