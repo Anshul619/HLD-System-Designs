@@ -7,6 +7,8 @@
 - [Amazon KeySpaces](../../../2_AWSComponents/6_DatabaseServices/AmazonKeySpaces.md) can be used to deploy Casandra on AWS.
 - :star: [Casandra vs MongoDB](CasandraVsMongoDB.md)
 
+![img.png](https://www.scylladb.com/wp-content/uploads/Wide-column-Database-diagram.png)
+
 # :star: Ideal Use Cases
 
 Large amount of data like,
@@ -56,54 +58,21 @@ Large amount of data like,
 
 # Features
 
-## Rich data model
-- [This is column-oriented](../Readme.md#nosql---intro-different-nosql-types).
-- It means, Cassandra stores columns based on the column names, leading to very quick slicing.
-- Unlike traditional databases, where column names only consist of metadata, in `Cassandra column names can also consist of the actual data`.
-
-![img.png](https://www.scylladb.com/wp-content/uploads/Wide-column-Database-diagram.png)
-
-## Peer to Peer Architecture 
-- There is no single point of failure in Cassandra, since it uses a P2P architecture, instead of master-slave architecture. 
-- Any number of servers/nodes can be added to any Cassandra cluster in any of the data centers.
-
-## Low-Latency, Faster Writes
-- Since writes in Casandra result in storage in an [append-only structure](../../0_SystemGlossaries/Database/AppendOnlyDataStructure.md), writes are generally very fast.
-- Casandra provides [low latency](../../0_SystemGlossaries/Scalability/LatencyThroughput.md), at the cost of [consistency](../../0_SystemGlossaries/Database/ReplicationAndDataConsistency.md). 
-  - Refer [PACELC theorem](../../0_SystemGlossaries/Database/CAPTheorem.md#pael-systems---dynamodb--cassandra) for more info.
-- Hence Casandra should be used when transactions aren't performing (i.e. consistency can be compromised).
-
-## High Availability, Fault-Tolerance
-- Apache Casandra provides [high-availability](../../0_SystemGlossaries/Reliability/HighAvailability.md) & [fault-tolerance](../../0_SystemGlossaries/Reliability/FaultTolerance&DisasterRecovery.md) with tunable consistency levels.
-- Any number of nodes can be added or deleted in the Cassandra cluster without much disturbance.
-- As scaling happens, [read and write throughput](../../0_SystemGlossaries/Scalability/LatencyThroughput.md) both increase simultaneously with zero downtime or any pause to the applications.
-- You don’t have to restart the cluster or change queries related to the Cassandra application while scaling up or down.
-
-## Scales Horizontally & Linearly
-- Apache Cassandra has a [high-scalability architecture](../../0_SystemGlossaries/Scalability/DBScalability.md).
-- [Cassandra cluster](../../0_SystemGlossaries/Scalability/ServersCluster.md) can be easily scaled-up or scaled-down.
-- Generally doubling the size of the cluster, would result in the half [latency](../../0_SystemGlossaries/Scalability/LatencyThroughput.md) (both at the median and 99th percentile).
-
-## Support replication - Cross-site, Data-Centers
-- `NetworkReplicationStrategy` can be used to [replicate](../../0_SystemGlossaries/Database/ReplicationAndDataConsistency.md) the data between data centers.
-- This allows users to access data in the data center nearest to them, and provides the redundancy capability.
-
-## Good Integration with open source softwares (like Hadoop, Spark, Hive, HDFS etc.)
-- Cassandra offers options for bulk importing data from other data sources (such as [HDFS](../../5_BigDataComponents/BatchProcessing/ApacheHadoop/ApacheHDFS.md)) into the Cassandra cluster by building entire `SSTables` and then streaming the tables into the cluster. 
-- Streaming the tables into the cluster is much simpler, faster and more efficient than sending millions or more of individual INSERT statements for all the data you want to load into Cassandra.
-
-## Supported Consistency Patterns
-- [Eventual Consistency Model](../../0_SystemGlossaries/Database/ReplicationAndDataConsistency.md#consistency-patterns)
-- [Strong Consistency Model](../../0_SystemGlossaries/Database/ReplicationAndDataConsistency.md#consistency-patterns)
-
-## Casandra Query Language (CGL)
-- By default, Cassandra provides a prompt [Cassandra query language shell (cqlsh)](https://cassandra.apache.org/doc/latest/cassandra/tools/cqlsh.html) that allows users to communicate with it. 
-- Using this shell, you can execute [Cassandra Query Language (CQL)](https://cassandra.apache.org/doc/latest/cassandra/cql/). 
-- Using cqlsh, you can define a schema, insert data, and execute a query.
-- `Cassandra does not support joins or subqueries` and therefore requires a developer to denormalize the data or duplicate data for efficient access.
+| Feature                                                                           | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
+|-----------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Rich data model                                                                   | [This is column-oriented](../Readme.md#nosql---intro-different-nosql-types).<br/>- It means, Cassandra stores columns based on the column names, leading to very quick slicing.<br/>- Unlike traditional databases, where column names only consist of metadata, in `Cassandra column names can also consist of the actual data`.                                                                                                                                                                                                                                                                                                                                         |
+| Peer to Peer Architecture                                                         | There is no single point of failure in Cassandra, since it uses a P2P architecture, instead of master-slave architecture.<br/>- Any number of servers/nodes can be added to any Cassandra cluster in any of the data centers.                                                                                                                                                                                                                                                                                                                                                                                                                                             |
+| Low-Latency, Faster Writes                                                        | Since writes in Casandra result in storage in an [append-only structure](../../0_SystemGlossaries/Database/AppendOnlyDataStructure.md), writes are generally very fast.<br/>- Casandra provides [low latency](../../0_SystemGlossaries/Scalability/LatencyThroughput.md), at the cost of [consistency](../../0_SystemGlossaries/Database/ReplicationAndDataConsistency.md).<br/>- Refer [PACELC theorem](../../0_SystemGlossaries/Database/CAPTheorem.md#pael-systems---dynamodb--cassandra) for more info.<br/>- Hence Casandra should be used when transactions aren't performing (i.e. consistency can be compromised).                                                |
+| High Availability, Fault-Tolerance                                                | Apache Casandra provides [high-availability](../../0_SystemGlossaries/Reliability/HighAvailability.md) & [fault-tolerance](../../0_SystemGlossaries/Reliability/FaultTolerance&DisasterRecovery.md) with tunable consistency levels.<br/>- Any number of nodes can be added or deleted in the Cassandra cluster without much disturbance.<br/>- As scaling happens, [read and write throughput](../../0_SystemGlossaries/Scalability/LatencyThroughput.md) both increase simultaneously with zero downtime or any pause to the applications.<br/>- You don’t have to restart the cluster or change queries related to the Cassandra application while scaling up or down. |
+| Scales Horizontally & Linearly                                                    | Apache Cassandra has a [high-scalability architecture](../../0_SystemGlossaries/Scalability/DBScalability.md).<br/>- [Cassandra cluster](../../0_SystemGlossaries/Scalability/ServersCluster.md) can be easily scaled-up or scaled-down.<br/>- Generally doubling the size of the cluster, would result in the half [latency](../../0_SystemGlossaries/Scalability/LatencyThroughput.md) (both at the median and 99th percentile).                                                                                                                                                                                                                                        |
+| Support replication - Cross-site, Data-Centers                                    | `NetworkReplicationStrategy` can be used to [replicate](../../0_SystemGlossaries/Database/ReplicationAndDataConsistency.md) the data between data centers.<br/>- This allows users to access data in the data center nearest to them, and provides the redundancy capability.                                                                                                                                                                                                                                                                                                                                                                                             |
+| Good Integration with open source softwares (like Hadoop, Spark, Hive, HDFS etc.) | Cassandra offers options for bulk importing data from other data sources (such as [HDFS](../../5_BigDataComponents/BatchProcessing/ApacheHadoop/ApacheHDFS.md)) into the Cassandra cluster by building entire `SSTables` and then streaming the tables into the cluster.<br/>- Streaming the tables into the cluster is much simpler, faster and more efficient than sending millions or more of individual INSERT statements for all the data you want to load into Cassandra.                                                                                                                                                                                           |
+| Supported Consistency Patterns                                                    | [Eventual Consistency Model](../../0_SystemGlossaries/Database/ReplicationAndDataConsistency.md#consistency-patterns)<br/>- [Strong Consistency Model](../../0_SystemGlossaries/Database/ReplicationAndDataConsistency.md#consistency-patterns)                                                                                                                                                                                                                                                                                                                                                                                                                           |
+| Casandra Query Language (CGL)                                                     | By default, Cassandra provides a prompt [Cassandra query language shell (cqlsh)](https://cassandra.apache.org/doc/latest/cassandra/tools/cqlsh.html) that allows users to communicate with it.<br/>- Using this shell, you can execute [Cassandra Query Language (CQL)](https://cassandra.apache.org/doc/latest/cassandra/cql/).<br/>- Using cqlsh, you can define a schema, insert data, and execute a query.<br/>- `Cassandra does not support joins or subqueries` and therefore requires a developer to denormalize the data or duplicate data for efficient access.                                                                                                  |
 
 # Who created Casandra?
-- Released in 2008 by Facebook and developed initially by Indians Avinash Lakshman and Prashant Malik, Cassandra was initially used in [Facebook’s inbox search feature](https://m.facebook.com/nt/screen/?params=%7B%22note_id%22%3A10158772759272200%7D&path=%2Fnotes%2Fnote%2F&paipv=0&eav=AfYuSXXQPZ5fvm0_ScPdSlfj5BEFhRVT3iy_6Rsz7NZDbQ2vfq9opnedmTLSjG1aZBA&_rdr).
+- Released in 2008 by Facebook and developed initially by Indians Avinash Lakshman and Prashant Malik.
+- Cassandra was initially used in [Facebook’s inbox search feature](https://m.facebook.com/nt/screen/?params=%7B%22note_id%22%3A10158772759272200%7D&path=%2Fnotes%2Fnote%2F&paipv=0&eav=AfYuSXXQPZ5fvm0_ScPdSlfj5BEFhRVT3iy_6Rsz7NZDbQ2vfq9opnedmTLSjG1aZBA&_rdr).
 
 # Sample Apps
 - [Example: Deploying Cassandra with a StatefulSet](https://kubernetes.io/docs/tutorials/stateful-application/cassandra/)

@@ -6,6 +6,14 @@
 
 ![](https://docs.docker.com/engine/images/architecture.svg)
 
+# Difference between containers and virtual machines (VMs)
+- Containers share the same operating system and kernel as the host they exist on, whereas virtual machines contain their own operating system. Each virtual machine must maintain a copy of an operating system, which results in a degree of wasted resources.
+- A container is more lightweight. They spin up quicker, almost instantly. This difference in startup time becomes instrumental when designing applications that need to scale quickly during input/output (I/O) bursts.
+- While containers can provide speed, virtual machines offer the full strength of an operating system and more resources, like package installation, dedicated kernel, and more.
+
+![](https://explore.skillbuilder.aws/files/a/w/aws_prod1_docebosaas_com/1679641200/e3b8x-vNw5aXnG1DYUfTwg/tincan/d03722b85f9d2b3a05e4c74bd586ea9b1f52f81a/assets/XkRO9PIy-4njgJWl_dCQbrVwmpaNKxmTs.jpg)
+
+
 # Various Components
 
 | Component                                                                              | Category          | Description                                                                                                                                                                                                                                                                                                                                                            |

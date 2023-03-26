@@ -6,10 +6,13 @@
 - [List of various AWS IAM Permissions](https://aws.permissions.cloud/)
 - Note only AWS root account has the permission to delete the account.
 
-# IAM Policy
-- [IAM Policy](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies.html) helps to define user access (through AWS Console or AWS Cli) for the AWS resources.
+| Feature    | Description                                                                                                                                                                                                                                                                                                                                 |
+|------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| IAM Policy | [IAM Policy](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies.html) helps to define user access (through AWS Console or AWS Cli) for the AWS resources.                                                                                                                                                                     |
+| IAM Group  | [An IAM user groups](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_groups.html) is a collection of IAM users.<br/>- User groups let you specify permissions for multiple users, which can make it easier to manage the permissions for those users.                                                                                   |
+| IAM Roles  | [An IAM Roles](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles.html) is an IAM identity that you can create in your account that has specific permissions. <br/>- An IAM role is similar to an IAM user, in that it is an AWS identity with permission policies that determine what the identity can and cannot do in AWS.<br/>- When you assume a role, IAM dynamically provides temporary credentials that expire after a defined period of time, between 15 minutes and 36 hours. |
 
-## User Policy - Example1
+# User Policy - Example1
 
 ````json
 {
@@ -57,7 +60,7 @@
 }
 ````
 
-## User Policy - Example2
+# User Policy - Example2
 
 ````json
 {
@@ -95,14 +98,8 @@
 ````
 
 # IAM Group
-- [An IAM user groups](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_groups.html) is a collection of IAM users. 
-- User groups let you specify permissions for multiple users, which can make it easier to manage the permissions for those users.
 
 ![img.png](https://docs.aws.amazon.com/IAM/latest/UserGuide/images/Relationship_Between_Entities_Example.diagram.png)
-
-# IAM Roles
-- [An IAM Roles](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles.html) is an IAM identity that you can create in your account that has specific permissions.
-- An IAM role is similar to an IAM user, in that it is an AWS identity with permission policies that determine what the identity can and cannot do in AWS.
 
 # Security Practices
 - [Apply least-privilege permissions](https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html#grant-least-privilege)

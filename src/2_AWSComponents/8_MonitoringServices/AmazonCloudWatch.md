@@ -4,11 +4,14 @@
 - Depending on multiple metrics, it participates in triggering alarms and gives actionable insights.
 
 # Key Features
-- [Collect - Metrics & Logs](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/viewing_metrics_with_cloudwatch.html#ec2-cloudwatch-metrics)
-- Monitor - Alarms & dashboards
-- Act - Auto Scaling & events
-- Analyse - Trends & metric math
-- Compliance & security
+
+| Feature                                                                                                                                     | Remarks                                     |
+|---------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------|
+| [Collect - Metrics & Logs](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/viewing_metrics_with_cloudwatch.html#ec2-cloudwatch-metrics) | -                                           |
+| Monitor - Alarms & dashboards                                                                                                               | Alarm States - OK, ALARM, INSUFFICIENT_DATA |
+| Act - Auto Scaling & events                                                                                                                 | -                                           |
+| Analyse - Trends & metric math                                                                                                              | -                                           |
+| Compliance & security                                                                                                                       | -                                           |
 
 # What AWS resources can be monitored in CloudWatch?
 

@@ -18,6 +18,17 @@
 
 ![img.png](0_AWSDesigns/DesignMultiRegionActiveActiveArchitectureOnAWS/AWS-Multi-Region-AZ-HA.drawio.png)
 
+## :star: AWS Region Consideration
+
+| Aspect               | Remarks                                                                                                                                                                                                                                                                                                                                                             |
+|----------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Data Compliance      | Enterprise companies often must comply with regulations that require customer data to be stored in a specific geographic territory. <br/>- If applicable, choose a Region that meets your compliance requirements.                                                                                                                                                  |
+| Latency              | If your application is sensitive to latency (the delay between a request for data and the response), choose a Region that is close to your user base.                                                                                                                                                                                                               |
+| Pricing              | Due to the local economy and the physical nature of operating data centers, prices vary from one Region to another. <br/>- Internet connectivity, imported equipment costs, customs, real estate, and other factors impact a Region's pricing. <br/>- Instead of charging a flat rate worldwide, AWS charges based on the financial factors specific to each Region. |
+| Service Availability | Some services might not be available in some Regions. The AWS documentation provides a table that shows the services available in each Region.                                                                                                                                                                                                                                                                                                                                                                    |
+
+[Read more](https://explore.skillbuilder.aws/learn/course/1851/play/45289/aws-technical-essentials-104;lp=1044)
+
 # Availability Zones (AZ)
 - [An Availability Zone (AZ)](https://aws.amazon.com/about-aws/global-infrastructure/regions_az/) is `one or more discrete data centers` with redundant power, networking, and connectivity in an AWS Region. 
 - AZs give customers the ability to operate production applications and databases that are more [highly available](../1_HLDDesignComponents/0_SystemGlossaries/Reliability/HighAvailability.md), [fault-tolerant](../1_HLDDesignComponents/0_SystemGlossaries/Reliability/FaultTolerance&DisasterRecovery.md), and [scalable](../1_HLDDesignComponents/0_SystemGlossaries/Scalability/DBScalability.md) than would be possible from a single data center.

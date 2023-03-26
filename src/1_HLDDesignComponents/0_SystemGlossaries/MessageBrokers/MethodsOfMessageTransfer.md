@@ -2,20 +2,17 @@
 
 ![](../../4_MessageBrokers/assests/Traditional-Message-Patterns.drawio.png)
 
-## Point-To-Point Model (Message Queuing)
+# Point-To-Point Model (Message Queuing)
 - Once the message is delivered to the one consumer, it would be removed from Queue.
 - The main goal is to distribute messages individually and promptly, ensuring that work is parallelized equitably and messages are handled roughly in the order they came in the queue.
 - [RabbitMQ](../../4_MessageBrokers/RabbitMQ.md), [Amazon SNS](../../../2_AWSComponents/5_MessageBrokerServices/AmazonSNS.md) support [Point-To-Point]() technique.
 
-### Two types of point-to-point messaging
+| Type                          | Description                                                                                            |
+|-------------------------------|--------------------------------------------------------------------------------------------------------|
+| Fire-And-Forgot               | After pushing the message to the queue, producer doesn't wait for the response from the message queue. |
+| Request-Reply messaging model | After pushing the message to the queue, producer waits for the reply from the consumer (through message queue ).|
 
-#### Fire-And-Forgot
-- After pushing the message to the queue, producer doesn't wait for the response from the message queue.
-
-#### Request-Reply messaging model
-- After pushing the message to the queue, producer waits for the reply from the consumer (through message queue ).
-
-## Publisher-Subscriber Model (Pub/Sub)
+# Publisher-Subscriber Model (Pub/Sub)
 - Unlike point-to-point model, a message is only removed once it has been consumed by `all category subscribers` or according to `retention policy`.
 - This is completely asynchronous.
 - You can't say for sure when this process will happen and in what order.

@@ -12,6 +12,15 @@ There are a lot of benefits with Container Orchestration
 - If the docker container is crashed and not running anymore? 
 - If replicates need to be removed? How to remove? One by one?
 
+If you’re trying to manage your compute at a large scale, you must know the following:
+- How to place your containers on your instances? 
+- What happens if your container fails?
+- What happens if your instance fails?
+- How to monitor deployments of your containers?
+
+This coordination is handled by a container orchestration service. 
+- AWS offers two container orchestration services – [Amazon Elastic Container Service (ECS)](../../2_AWSComponents/4_ContainerOrchestrationServices/AmazonECS/Readme.md) and [Amazon Elastic Kubernetes Service (EKS)](../../2_AWSComponents/4_ContainerOrchestrationServices/AmazonEKS.md).
+
 # Popular Container Orchestration Services
 
 | Component                                                                                        | Strength                                                                              | Type                                                                     | Remarks |

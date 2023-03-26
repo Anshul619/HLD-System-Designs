@@ -1,6 +1,5 @@
 # Amazon RDS
 - [Amazon RDS](https://aws.amazon.com/rds/) is a database management service for relational databases.
-- It manages patching, upgrading, and data backups automatically. 
 - It's a database management service for structured data only (database engines like MySQL, PostgresSQL, SQL Server etc.).
 - Amazon RDS can be scaled either through [Vertical Scaling](../../1_HLDDesignComponents/0_SystemGlossaries/Scalability/DBScalability.md) or [Horizontal Scaling (master-slave)](../../1_HLDDesignComponents/0_SystemGlossaries/Scalability/DBScalability.md).
 - [Why Amazon Aurora engine is better than Amazon RDS, for MySQL/Postgres DB engines?](AmazonAuroraVsRDS.md)
@@ -12,36 +11,25 @@
 | Role             | Architecture        | Applicable RDS Engine                                                          | Remarks                                                                                |
 |------------------|---------------------|--------------------------------------------------------------------------------|----------------------------------------------------------------------------------------|
 | Instance         | -                   | :white_check_mark: All                                                         | Simple DB instance, without Multi-AZ enabled.                                          |
-| Primary          | Master-Slave        | Non-Aurora                                                                     | Writer Instance, with Multi-AZ enabled and takes all writes.                           |
-| Replica          | Master-Slave        | Non-Aurora (when Multi-AZ enabled)                                             | Replica is a standby instance of Primary instance, in the different Availability Zone. |
 | Regional Cluster | Master-Read-Replica | :white_check_mark: [Aurora](AmazonRDSAurora/Readme.md)                         | Aurora DB Cluster                                                                      |
 | Writer Instance  | Master-Read-Replica | :white_check_mark: [Aurora](AmazonRDSAurora/Readme.md)                         | Takes all writes (& reads if multi-AZ disabled), in regional cluster                   |
 | Reader Instance  | Master-Read-Replica | :white_check_mark: [Aurora (when Multi-AZ enabled)](AmazonRDSAurora/Readme.md) | Takes all reads, in regional cluster                                                   |
 | Serverless       | -                   | :white_check_mark: [Aurora](AmazonRDSAurora/Readme.md)                         | Serverless compute of Aurora Instance                                                  |
+| Primary          | Master-Slave        | Non-Aurora                                                                     | Writer Instance, with Multi-AZ enabled and takes all writes.                           |
+| Replica          | Master-Slave        | Non-Aurora (when Multi-AZ enabled)                                             | Replica is a standby instance of Primary instance, in the different Availability Zone. |
 
-# Amazon RDS - High Availability
-- For your MySQL, MariaDB, PostgreSQL, Oracle, and SQL Server database (DB) instances, you can use [Amazon RDS Multi-AZ deployments](https://aws.amazon.com/rds/ha/). 
-- When [you provision a Multi-AZ DB instance](https://aws.amazon.com/rds/features/multi-az/), Amazon RDS automatically creates a primary DB instance and synchronously replicates the data to a standby instance in a different Availability Zone (AZ). 
-- In case of an infrastructure failure, Amazon RDS performs an automatic failover to the standby DB instance. 
-- Since the endpoint for your DB instance remains the same after a failover, your application can resume database operation without the need for manual administrative intervention.
-- [High availability in Aurora - Read here](AmazonRDSAurora/Readme.md#high-availability)
+# Features
+
+| Feature                                                                                                     | Remarks                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
+|-------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| High Availability using [Amazon RDS Multi-AZ deployments](https://aws.amazon.com/rds/ha/)                   | When [you provision a Multi-AZ DB instance](https://aws.amazon.com/rds/features/multi-az/), Amazon RDS automatically creates a primary DB instance and synchronously replicates the data to a standby instance in a different Availability Zone (AZ).<br/>- In case of an infrastructure failure, Amazon RDS performs an automatic failover to the standby DB instance.<br/>- Since the endpoint for your DB instance remains the same after a failover, your application can resume database operation without the need for manual administrative intervention. |
+| Security                                                                                                    | Encryption at rest using [AWS KMS](../2_SecurityAndIdentityServices/AWSKMS.md).<br/>- Authentication using [AWS IAM](../2_SecurityAndIdentityServices/AWSUsers&AccessMgmt/AWSIAM.md).<br/>- Automated backups, snapshots & replicas are also encrypted.<br/>- Encryption in flight/transmit using SSL.                                                                                                                                                                                                                                                          |
+| Automatic Upgrade                                                                                           | It manages patching, upgrading, and data backups automatically.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
+| [DB instance classes](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Concepts.DBInstanceClass.html) | -                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
+| [AWS Database Migration Service](https://aws.amazon.com/dms/)                                               | [AWS Database Migration Service](https://aws.amazon.com/dms/) helps to migrate other databases to Amazon RDS.                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
+| Maintenance window                                                                                          | RDS maintenance window lets you decide when DB instance modifications, database engine version upgrades, and software patching have to occur.<br/>- The automatic scheduling is done only for patches that are related to security and [durability](../../1_HLDDesignComponents/0_SystemGlossaries/Database/Durability.md).<br/>- By default, there is a 30-minute value assigned as the maintenance window and the DB instance will still be available during these events though you might observe a minimal effect on performance.|
 
 ![img.png](assests/rds_ha_setup_steps.png)
-
-# Security
-- Encryption at rest using [AWS KMS](../2_SecurityAndIdentityServices/AWSKMS.md).
-- Authentication using [AWS IAM](../2_SecurityAndIdentityServices/AWSUsers&AccessMgmt/AWSIAM.md).
-- Automated backups, snapshots & replicas are also encrypted.
-- Encryption in flight/transmit using SSL.
-
-# Other Links
-- [DB instance classes](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Concepts.DBInstanceClass.html).
-- [AWS Database Migration Service](https://aws.amazon.com/dms/) helps to migrate other databases to Amazon RDS.
-
-# What is a maintenance window in Amazon RDS? Will your DB instance be available during maintenance events?
-- RDS maintenance window lets you decide when DB instance modifications, database engine version upgrades, and software patching have to occur.
-- The automatic scheduling is done only for patches that are related to security and [durability](../../1_HLDDesignComponents/0_SystemGlossaries/Database/Durability.md).
-- By default, there is a 30-minute value assigned as the maintenance window and the DB instance will still be available during these events though you might observe a minimal effect on performance.
 
 # References
 - [Amazon RDS High Availability](https://aws.amazon.com/rds/ha/)
