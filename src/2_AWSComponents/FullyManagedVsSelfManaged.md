@@ -11,7 +11,7 @@
 
 Examples
 - [Amazon EC2](3_ComputeServices/AmazonEC2/Readme.md)
-- [Amazon RDS](6_DatabaseServices/AmazonRDS.md) - AZ, [Instance details](3_ComputeServices/AmazonEC2/Readme.md) need to be specified when launching a new database instance.
+- [Amazon RDS](6_DatabaseServices/AmazonRDS/Readme.md) - AZ, [Instance details](3_ComputeServices/AmazonEC2/Readme.md) need to be specified when launching a new database instance.
 - [Amazon VPC](1_NetworkingAndContentDelivery/AmazonVPC.md)
 
 # References

@@ -4,7 +4,10 @@
 
 # :+1: Advantages of Indexes
 - Indexes are used to speed up lookups (log-time instead of scanning the entire table) and to keep the data in memory. This will increase performance of SQL queries.
+- Tables should be indexed to allow a query to quickly find the data needed to produce a result.
+- Indexes can also help control the way data is physically stored on disk.
 - Indices are usually represented as self-balancing B-tree that keeps data sorted and allows searches, sequential access, insertions, and deletions in logarithmic time.
+- This plays a huge part in the speed and efficiency of queries.
 - [Read more](https://github.com/donnemartin/system-design-primer#use-good-indices)
 
 # :-1: Disadvantages of Indexes

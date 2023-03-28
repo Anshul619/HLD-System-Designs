@@ -16,13 +16,14 @@ Every definition of [serverless](https://aws.amazon.com/what-is/cloud-native/) m
 
 With serverless, you can spend time on the things that differentiate your application, rather than spend time on ensuring availability, scaling, and managing servers.
 
-| Serverless Service                                                 | Service Type | Remarks |
-|--------------------------------------------------------------------|--------------|---------|
-| [AWS Lambda](3_ComputeServices/AWSLambda/Readme.md)                | Compute      | -       |
-| [AWS Fargate](3_ComputeServices/AWSFargate.md)                     | Compute      | -       |
-| [Amazon DynamoDB](6_DatabaseServices/AmazonDynamoDB/Readme.md)     | Database     | -       |
-| [AWS Step Functions](3_ComputeServices/AWSStepFunctions.md)        | Compute      | -       |
-| [AWS Batch](10_BigDataComponents/BatchProcessing/AWSBatch.md)      | Batch        | -       |
+| Serverless Service                                             | Service Type   | Remarks |
+|----------------------------------------------------------------|----------------|---------|
+| [AWS Lambda](3_ComputeServices/AWSLambda/Readme.md)            | Compute        | -       |
+| [AWS Fargate](3_ComputeServices/AWSFargate.md)                 | Compute        | -       |
+| [Amazon DynamoDB](6_DatabaseServices/AmazonDynamoDB/Readme.md) | Database       | -       |
+| [AWS Step Functions](3_ComputeServices/AWSStepFunctions.md)    | Compute        | -       |
+| [AWS Batch](10_BigDataComponents/BatchProcessing/AWSBatch.md)  | Batch          | -       |
+| [Amazon RDS](6_DatabaseServices/AmazonRDS/Readme.md)           | Database       | -       |
 
 ![](https://explore.skillbuilder.aws/files/a/w/aws_prod1_docebosaas_com/1679760000/JYmGMwB20J8gK2ybFtJ0GQ/tincan/674187_1676990596_p1gpq6pq781l3ntaa1fcbps6c0t4_zip/assets/EeOATVB6y1r_v8u__1kby3aQeiuXnYa4X-section1-services-in-AWS-serverless-platform_NOPROCESS_.jpg)
 

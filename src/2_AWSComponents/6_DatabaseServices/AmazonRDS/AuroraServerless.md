@@ -1,10 +1,10 @@
 
 # Aurora Serverless
 - With [Aurora Serverless](https://aws.amazon.com/rds/aurora/serverless/), there is no need to choose an instance size. 
-- It is helpful when you can't predict the workload (low/normal base load, but spiky peaks ).
-- Available for the Amazon Aurora MySQL-Compatible Edition and PostgreSQL-Compatible Edition.
+- It is helpful when you can't predict the workload (low/normal base load, but spiky peaks).
+- Available for the [Amazon Aurora MySQL-Compatible Edition](AmazonAurora.md) and [PostgreSQL-Compatible](AmazonAurora.md) Edition.
 - DB Cluster starts, shutdown and scales automatically based on CPU/connections.
-- Can migrate from [Aurora Cluster](Readme.md) to [Aurora Serverless](Readme.md) & vice-versa.
+- Can migrate from [Aurora Cluster](AmazonAurora.md) to [Aurora Serverless]() & vice-versa.
 - Aurora serverless usage is measured in [ACU (Aurora Capacity Units)](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/aurora-serverless-v1.how-it-works.html).
 - [Only Single-Master Aurora cluster is supported](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/aurora-multi-master.html) in Aurora Serverless i.e. there would be only 1 writer instance and multiple read replicas in different regions.
 

@@ -1,24 +1,24 @@
 
-| Basis                                                                                       | System Concern                                       | Applicable Tech     |
-|---------------------------------------------------------------------------------------------|------------------------------------------------------|---------------------|
-| :star: [Performance - Latency, Throughput](Scalability/LatencyThroughput.md)                | :rocket: [Scalability](Scalability/Readme.md)        | ALL                 |
-| :star: [High Availability](Reliability/HighAvailability.md)                                 | :handshake: [Reliability](Reliability/Readme.md)     | ALL                 |
-| [Fault Tolerance, Disaster Recovery](Reliability/FaultTolerance&DisasterRecovery.md)        | :handshake: [Reliability](Reliability/Readme.md)     | ALL                 |
-| :star: [Load Balancer](Scalability/LoadBalancer.md)                                         | :rocket: [Scalability](Scalability/Readme.md)        | ALL                 |
-| :star: [Servers Cluster](Scalability/ServersCluster.md)                                     | :rocket: [Scalability](Scalability/Readme.md)        | ALL                 |
-| :star: [App Nodes Scalability](Scalability/AppNodesScalability.md)                          | :rocket: [Scalability](Scalability/Readme.md)        | App Service/Nodes   |
-| [Rate Limiting](../../3_HLDDesignProblems/RateLimiterAPI/Readme.md)                         | Others                                               | App Service/Nodes   |
-| [Content Delivery Network (CDN)](CDNs/CDNs.md)                                              | Others                                               | App Service/Nodes   |
-| [Static Content](CDNs/StaticContentWithCDN.md)                                              | Others                                               | App Service/Nodes   |
-| :star: [Event Driven Architecture](MessageBrokers/EventDrivenArchitecture.md)                              | Others                                               | Message Brokers     |
-| :star: [DB Scalability](Scalability/DBScalability.md)                                       | :rocket: [Scalability](Scalability/Readme.md)        | Data Stores         |
-| :star: [ACID Properties of the Transaction](Database/ACIDPropertyTransaction.md)            | Others                                               | Data Stores         |
-| :star: [CAP Theorem of the Distributed Systems](Database/CAPTheorem.md)                     | Others                                               | Data Stores         |
-| :star: [Replication & Data Consistency](Database/ReplicationAndDataConsistency.md)          | :handshake: [Reliability](Reliability/Readme.md)     | Data Stores         |
-| [Atomicity](Database/Atomicity.md)                                                          | Others                                               | Data Stores         |
-| [Durability](Database/Durability.md)                                                        | Others                                               | Data Stores         |
-| [Append Only Data Structure](Database/AppendOnlyDataStructure.md)                           | Others                                               | Data Stores         |
-| [Consistent Hashing](Database/ConsistentHashing.md)                                         | Others                                               | Data Stores         |
+| Basis                                                                                  | System Concern                                     | Service Type      |
+|----------------------------------------------------------------------------------------|----------------------------------------------------|-------------------|
+| :star: [Performance - Latency, Throughput](Scalability/LatencyThroughput.md)           | :rocket: [Scalability](Scalability/Readme.md)      | ALL               |
+| :star: [High Availability](Reliability/HighAvailability.md)                            | :handshake: [Reliability](Reliability/Readme.md)   | ALL               |
+| [Fault Tolerance, Disaster Recovery](Reliability/FaultTolerance&DisasterRecovery.md)   | :handshake: [Reliability](Reliability/Readme.md)   | ALL               |
+| :star: [Load Balancer](Scalability/LoadBalancer.md)                                    | :rocket: [Scalability](Scalability/Readme.md)      | ALL               |
+| :star: [Servers Cluster](Scalability/ServersCluster.md)                                | :rocket: [Scalability](Scalability/Readme.md)      | ALL               |
+| :star: [App Nodes Scalability](Scalability/AppNodesScalability.md)                     | :rocket: [Scalability](Scalability/Readme.md)      | App Service/Nodes |
+| [Rate Limiting](../../3_HLDDesignProblems/RateLimiterAPI/Readme.md)                    | Others                                             | App Service/Nodes |
+| [Content Delivery Network (CDN)](CDNs/CDNs.md)                                         | Others                                             | App Service/Nodes |
+| [Static Content](CDNs/StaticContentWithCDN.md)                                         | Others                                             | App Service/Nodes |
+| :star: [Event Driven Architecture](MessageBrokers/EventDrivenArchitecture.md)          | Others                                             | Message Brokers   |
+| :star: [DB Scalability](Scalability/DBScalability.md)                                  | :rocket: [Scalability](Scalability/Readme.md)      | Data Stores       |
+| :star: [ACID Properties of the Transaction](Database/ACIDPropertyTransaction.md)       | Others                                             | Data Stores       |
+| :star: [CAP Theorem of the Distributed Systems](Database/CAPTheorem.md)                | Others                                             | Data Stores       |
+| :star: [Replication & Data Consistency](Database/ReplicationAndDataConsistency.md)     | :handshake: [Reliability](Reliability/Readme.md)   | Data Stores       |
+| [Atomicity](Database/Atomicity.md)                                                     | Others                                             | Data Stores       |
+| [Durability](Database/Durability.md)                                                   | Others                                             | Data Stores       |
+| [Append Only Data Structure](Database/AppendOnlyDataStructure.md)                      | Others                                             | Data Stores       |
+| [Consistent Hashing](Database/ConsistentHashing.md)                                    | Others                                             | Data Stores       |
 
 # Why System Reliability is so important?
 
@@ -41,7 +41,7 @@ In some cloud platforms such as [Amazon Web Services (AWS)](../../2_AWSComponent
 - [Hot storage](https://www.ctera.com/company/blog/differences-hot-warm-cold-file-storage/) is data that is accessed frequently.
 - This could be data that is being actively used by employees or customers.
 - It needs to be stored on fast storage (like `SSD`) so that it can be accessed quickly.
-- Examples - [Amazon Dynamo DB](../../2_AWSComponents/6_DatabaseServices/AmazonDynamoDB/Readme.md), [Amazon Aurora](../../2_AWSComponents/6_DatabaseServices/AmazonRDSAurora)
+- Examples - [Amazon Dynamo DB](../../2_AWSComponents/6_DatabaseServices/AmazonDynamoDB/Readme.md), [Amazon Aurora](../../2_AWSComponents/6_DatabaseServices/AmazonRDS)
 
 ## Warm Storage
 - [Warm storage](https://www.ctera.com/company/blog/differences-hot-warm-cold-file-storage/) (like `HDD`) is data that is accessed less frequently.

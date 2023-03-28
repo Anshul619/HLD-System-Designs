@@ -1,5 +1,5 @@
 # Data Warehouses
-- Data warehouse (also known as [Online analytical processing - OLAP](https://en.wikipedia.org/wiki/Online_analytical_processing)) are used for data analytics (real-time) & insights.
+- Data warehouse (also known as [Online analytical processing - OLAP](../0_SystemGlossaries/Database/DBProcessingTypes.md)) are used for data analytics (real-time) & insights.
 - The process of getting data in Data Warehouse is called [Extract-Transform-Load (ETL)](#extract-transform-load-etl).
 - Data model of a data warehouse is most commonly relational, because [SQL](Readme.md) is generally a good fit for analytic queries.
 - [Amazon Redshift](../../2_AWSComponents/6_DatabaseServices/AmazonRedshift.md) is most commonly used data warehouse on AWS.

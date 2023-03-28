@@ -16,7 +16,7 @@
 # Disaster Recovery
 - In AWS, [Disaster Recovery](https://en.wikipedia.org/wiki/Disaster_recovery) is done through [active-passive failover policy in Route53](../../../2_AWSComponents/1_NetworkingAndContentDelivery/AmazonRoute53.md#failover-routing-policy) with at-least 2 regions (having same components & architecture).
 
-![img.png](../../../2_AWSComponents/6_DatabaseServices/AmazonRDSAurora/assests/aurora_global_database_img.png)
+![img.png](../../../2_AWSComponents/6_DatabaseServices/AmazonRDS/assests/aurora_global_database_img.png)
 
 ## Recovery Point Objective (RPO)
 - [Recovery Point Objective (RPO)](https://docs.aws.amazon.com/whitepapers/latest/microservices-on-aws/disaster-recovery.html) is the maximum acceptable delay between the interruption of service and restoration of service. 

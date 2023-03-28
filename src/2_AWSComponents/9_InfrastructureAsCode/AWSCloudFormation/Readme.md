@@ -1,6 +1,6 @@
 # AWS CloudFormation - Infrastructure as a CODE
 - [AWS CloudFormation](https://aws.amazon.com/cloudformation/) is a service that helps you model and set up your AWS resources so that you can spend less time managing those resources and more time focusing on your applications that run in AWS.
-- [You can create a template](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/gettingstarted.templatebasics.html) that describes all the AWS resources that you want (like [Amazon EC2 instances](../../3_ComputeServices/AmazonEC2) or [Amazon RDS DB instances](../../6_DatabaseServices/AmazonRDS.md)), and CloudFormation takes care of provisioning and configuring those resources for you.
+- [You can create a template](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/gettingstarted.templatebasics.html) that describes all the AWS resources that you want (like [Amazon EC2 instances](../../3_ComputeServices/AmazonEC2) or [Amazon RDS DB instances](../../6_DatabaseServices/AmazonRDS/Readme.md)), and CloudFormation takes care of provisioning and configuring those resources for you.
 - You don't need to individually create and configure AWS resources and figure out what's dependent on what - CloudFormation handles that.
 
 ![AWS_Cloudformation_Steps.png](assets/AWS_Cloudformation_Steps.drawio.png)

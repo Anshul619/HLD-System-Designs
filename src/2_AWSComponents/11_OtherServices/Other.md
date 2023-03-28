@@ -29,6 +29,3 @@
 
 # AWS Amplify
 - [AWS Amplify](https://aws.amazon.com/amplify/) is a complete solution that lets frontend web and mobile developers easily build, ship, and host full-stack applications on AWS, with the flexibility to leverage the breadth of AWS services as use cases evolve.
-
-# Amazon Athena
-- [Amazon Athena](https://aws.amazon.com/athena/) is an interactive query service that makes it easy for you to analyze data directly in Amazon S3, using standard SQL.

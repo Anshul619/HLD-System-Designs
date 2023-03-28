@@ -16,7 +16,7 @@
 
 ![img.png](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/images/HowItWorksPartitionKey.png)
 
-## Partition key and sort key
+# Partition key and sort key
 - Referred to as a [composite primary key](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/HowItWorks.CoreComponents.html), this type of key is composed of two attributes. The first attribute is the partition key, and the second attribute is the sort key.
 - All items with the same partition key value are stored together, in sorted order by sort key value.
 - A composite primary key gives you additional flexibility when querying data.
@@ -27,7 +27,7 @@ For example,
 
 ![](https://d2908q01vomqb2.cloudfront.net/887309d048beef83ad3eabf2a79a64a389ab1c9f/2018/09/10/dynamodb-partition-key-1.gif)
 
-## Setup Steps - Partition, Sort keys
+# Setup Steps - Partition, Sort keys
 
 ![img.png](assests/dynamodb_partition_key_setup.png)
 
