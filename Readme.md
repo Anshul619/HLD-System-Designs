@@ -184,7 +184,7 @@ This repo contains the various system design components info, questions and solu
     </tr>
     <tr>
       <td>
-        <a href="src/1_HLDDesignComponents/3_DatabaseComponents/ReadMe.md" target="_blank">Databases</a>
+        <a href="src/1_HLDDesignComponents/3_DatabaseComponents/Readme.md" target="_blank">Databases</a>
       </td>
       <td>
         <div class="container" style="background:white">
