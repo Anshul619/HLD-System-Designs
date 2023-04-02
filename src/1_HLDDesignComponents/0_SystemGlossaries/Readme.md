@@ -3,7 +3,7 @@
 |----------------------------------------------------------------------------------------|----------------------------------------------------|-------------------|
 | :star: [Performance - Latency, Throughput](Scalability/LatencyThroughput.md)           | :rocket: [Scalability](Scalability/Readme.md)      | ALL               |
 | :star: [High Availability](Reliability/HighAvailability.md)                            | :handshake: [Reliability](Reliability/Readme.md)   | ALL               |
-| [Fault Tolerance, Disaster Recovery](Reliability/FaultTolerance&DisasterRecovery.md)   | :handshake: [Reliability](Reliability/Readme.md)   | ALL               |
+| [Fault Tolerance, Disaster Recovery](Reliability/FaultTolerance.md)   | :handshake: [Reliability](Reliability/Readme.md)   | ALL               |
 | :star: [Load Balancer](Scalability/LoadBalancer.md)                                    | :rocket: [Scalability](Scalability/Readme.md)      | ALL               |
 | :star: [Servers Cluster](Scalability/ServersCluster.md)                                | :rocket: [Scalability](Scalability/Readme.md)      | ALL               |
 | :star: [App Nodes Scalability](Scalability/AppNodesScalability.md)                     | :rocket: [Scalability](Scalability/Readme.md)      | App Service/Nodes |
@@ -24,7 +24,7 @@
 
 In some cloud platforms such as [Amazon Web Services (AWS)](../../2_AWSComponents/Readme.md),
 - It is fairly common for virtual machine instances to become unavailable without warning, as the platforms are designed to prioritize flexibility and elasticity over single-machine reliability.
-- Hence, [Fault-Tolerance](Reliability/FaultTolerance&DisasterRecovery.md), [High Availability](Reliability/HighAvailability.md) plays an important role.
+- Hence, [Fault-Tolerance](Reliability/FaultTolerance.md), [High Availability](Reliability/HighAvailability.md) plays an important role.
 
 # Other Key Terminologies
 

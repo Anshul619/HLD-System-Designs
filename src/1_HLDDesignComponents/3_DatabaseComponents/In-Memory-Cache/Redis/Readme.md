@@ -5,13 +5,13 @@
 
 # Top Redis Use Cases
 
-| Use Case                                                                                | Remarks                                                                                           |
-|-----------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------|
-| [Caching](https://redis.com/solutions/use-cases/caching/)                               | -                                                                                                 |
-| [Session Storage](https://redis.com/solutions/use-cases/session-management/)            | -                                                                                                 |
-| [Distributed Locks](https://redis.io/docs/manual/patterns/distributed-locks/)           | [Twitter Hit Counter](../../../../3_HLDDesignProblems/TwitterHitCounterDesign/Readme.md)          |
-| [Rate Limiting](https://redis.com/redis-best-practices/basic-rate-limiting/)            | [Rate Limiting in Distributed Systems](../../../../3_HLDDesignProblems/RateLimiterAPI/Readme.md)  |
-| [Rank/Leaderboard using SortedSet](https://redis.com/solutions/use-cases/leaderboards/) | -                                                                                                 |
+| Use Case                                                                                | Remarks                                                                                          |
+|-----------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------|
+| [Caching](https://redis.com/solutions/use-cases/caching/)                               | -                                                                                                |
+| [Session Storage](https://redis.com/solutions/use-cases/session-management/)            | -                                                                                                |
+| [Distributed Locks](https://redis.io/docs/manual/patterns/distributed-locks/)           | [Twitter Hit Counter](../../../../3_HLDDesignProblems/TwitterHitCounterDesign/Readme.md)         |
+| [Rate Limiting](https://redis.com/redis-best-practices/basic-rate-limiting/)            | [Rate Limiting in Distributed Systems](../../../../3_HLDDesignProblems/RateLimiterAPI/Readme.md) |
+| [Rank/Leaderboard using SortedSet](https://redis.com/solutions/use-cases/leaderboards/) | Example - Best sellers, ranking etc.                                                             |
 
 [Read more](https://www.youtube.com/watch?v=a4yX7RUgTxI)
 

@@ -6,12 +6,12 @@ Given a desired target capacity (i.e. a combination of CPU cores & RAM) of a clu
 
 ![img.png](https://learnk8s.io/a/9b6d0691337289c039f1a33201e15a3f.svg)
 
-| Feature                                                                                     | :+1: Many small nodes                            | Few large nodes |
-|---------------------------------------------------------------------------------------------|--------------------------------------------------|-----------------|
-| [Availability](../Reliability/HighAvailability.md)                                          | :+1: Increases                                   | :-1: Decreases  |
-| [Agents Overhead i.e. with K8s](../../6_ContainerOrchestrationServices/Kubernates.md#pods) | :+1: Decreases                                   | :-1: Increases  |
-| Cost Efficiency (with auto-scaling)                                                         | :+1: Increases                                   | :-1: Decreases  |
-| [Master Node Overhead i.e. K8s](../../6_ContainerOrchestrationServices/Kubernates.md#pods)                                                               | :-1: Increases (hence bigger master node needed) | :+1: Decreases  |
+| Feature                                                                                      | :+1: Many small nodes                            | Few large nodes |
+|----------------------------------------------------------------------------------------------|--------------------------------------------------|-----------------|
+| [Availability](../Reliability/HighAvailability.md)                                           | :+1: Increases                                   | :-1: Decreases  |
+| [Agents Overhead i.e. with K8s](../../6_ContainerOrchestrationServices/Kubernates.md#pods)   | :+1: Decreases                                   | :-1: Increases  |
+| Cost Efficiency (with auto-scaling)                                                          | :+1: Increases                                   | :-1: Decreases  |
+| [Master Node Overhead i.e. K8s](../../6_ContainerOrchestrationServices/Kubernates.md#pods)   | :-1: Increases (hence bigger master node needed) | :+1: Decreases  |
 
 # :star: Recommendation for a startup with less than 10 microservices (in K8s deployment)
 - For [high-availability](../Reliability/HighAvailability.md), have a minimum of 3 worker nodes (i.e. 3-fold replication). As a startup, 3–5 worker nodes is sufficient.

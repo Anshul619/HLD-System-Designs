@@ -15,7 +15,7 @@ However the [multi-region](../../AWS-Global-Architecture-Region-AZ.md) backend s
 ![img.png](https://acg-wordpress-content-production.s3.us-west-2.amazonaws.com/app/uploads/2021/01/1_-rGhWmNF23-Hfx4uQWR5LA.png)
 
 ## Disaster Recovery
-- [Multi-region](../../AWS-Global-Architecture-Region-AZ.md) setup helps in the [disaster recovery](../../../1_HLDDesignComponents/0_SystemGlossaries/Reliability/FaultTolerance&DisasterRecovery.md#disaster-recoveryhttpsenwikipediaorgwikidisaster_recovery).
+- [Multi-region](../../AWS-Global-Architecture-Region-AZ.md) setup helps in the [disaster recovery](../../../1_HLDDesignComponents/0_SystemGlossaries/Reliability/FaultTolerance.md#disaster-recoveryhttpsenwikipediaorgwikidisaster_recovery).
 
 ## :star: Use local resources and avoid cross-regional calls
 

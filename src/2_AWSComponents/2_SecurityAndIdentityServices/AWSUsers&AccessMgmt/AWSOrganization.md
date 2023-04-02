@@ -1,6 +1,7 @@
 
 # AWS Organizations
-- [AWS Organizations](https://aws.amazon.com/organizations/) lets you create new AWS accounts at no additional charge. More easily allocate resources, group accounts, and apply governance policies to accounts or groups.
+- [AWS Organizations](https://aws.amazon.com/organizations/) lets you create new AWS accounts at no additional charge.
+- More easily allocate resources, group accounts, and apply governance policies to accounts or groups.
 
 ![img.png](assets/AWS-Multiple-Accounts.png)
 

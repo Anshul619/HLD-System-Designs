@@ -7,7 +7,7 @@
 | Advantage                                                                   | Description                                                                                                       |
 |-----------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------|
 | [High availability](../Reliability/HighAvailability.md)                     | Keeping the system running, even when one machine (or several machines, or an entire datacenter) goes down.       |
-| [Disconnected operation](../Reliability/FaultTolerance&DisasterRecovery.md) | Allowing an application to continue working when there is a network interruption.                                 |
+| [Disconnected operation](../Reliability/FaultTolerance.md) | Allowing an application to continue working when there is a network interruption.                                 |
 | [Latency](../Scalability/LatencyThroughput.md)                              | Placing data geographically close to users, so that users can interact with it faster                             |
 | [Scalability](../Scalability/Readme.md)                                     | Being able to handle a higher volume of reads than a single machine could handle, by performing reads on replicas |
 

@@ -2,7 +2,7 @@
 - [High Availability (HA)](https://avinetworks.com/glossary/high-availability/) describes systems that are dependable enough to operate continuously without failing.
 - They are well-tested and sometimes equipped with redundant components.
 - In AWS, high availability is achieved through multiple deployments of the app in [different availability zones](../../../2_AWSComponents/AWS-Global-Architecture-Region-AZ.md).
-- [High Availability vs Fault Tolerance](FaultTolerance&DisasterRecovery.md#fault-tolerance-vs-high-availabilityhighavailabilitymd)
+- [High Availability vs Fault Tolerance](FaultTolerance.md#fault-tolerance-vs-high-availabilityhighavailabilitymd)
 
 ![img.png](https://acg-wordpress-content-production.s3.us-west-2.amazonaws.com/app/uploads/2021/01/1_W7cR3GIoIafVXw1qjJdw1A.png)
 
@@ -28,13 +28,13 @@
 #### Active-Active policy
 - An active-active cluster is typically made up of at least two nodes, both actively running the same kind of service simultaneously.
 - In active-active, both servers are managing traffic, spreading the load between them.
-- This would enable application to be [fault-tolerant](FaultTolerance&DisasterRecovery.md).
+- This would enable application to be [fault-tolerant](FaultTolerance.md).
 
 #### Active-Passive policy
 - With active-passive fail-over, only the active server handles traffic & `heartbeats` are sent between the active and the passive server on standby. 
 - If the heartbeat is interrupted, the passive server takes over the active's IP address and resumes service.
 - The length of downtime is determined by whether the passive server is already running in 'hot' standby or whether it needs to start up from 'cold' standby. 
-- `Active-Passive` policy is generally used for the [disaster recovery](FaultTolerance&DisasterRecovery.md#disaster-recoveryhttpsenwikipediaorgwikidisaster_recovery).
+- `Active-Passive` policy is generally used for the [disaster recovery](FaultTolerance.md#disaster-recoveryhttpsenwikipediaorgwikidisaster_recovery).
 - In AWS, active-passive policy can be configured in the [fail-over routing policy](../../../2_AWSComponents/1_NetworkingAndContentDelivery/AmazonRoute53.md#failover-routing-policy) in [Route53](../../../2_AWSComponents/1_NetworkingAndContentDelivery/AmazonRoute53.md).
 
 #### :thumbsdown: Disadvantages of fail over policies

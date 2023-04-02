@@ -3,8 +3,7 @@
 - Various user groups and users may require varying levels of access to the various resources that have been developed.
 - We may assign roles to users and create roles with defined access levels using IAM.
 - It further gives us Federated Access, which allows us to grant applications and users access to resources without having to create IAM Roles.
-- [List of various AWS IAM Permissions](https://aws.permissions.cloud/)
-- Note only AWS root account has the permission to delete the account.
+- Note - Only AWS root account has the permission to delete the account.
 
 | Feature    | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
 |------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -12,7 +11,18 @@
 | IAM Group  | [An IAM user groups](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_groups.html) is a collection of IAM users.<br/>- User groups let you specify permissions for multiple users, which can make it easier to manage the permissions for those users.                                                                                                                                                                                                                                      |
 | IAM Roles  | [An IAM Roles](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles.html) is an IAM identity that you can create in your account that has specific permissions. <br/>- An IAM role is similar to an IAM user, in that it is an AWS identity with permission policies that determine what the identity can and cannot do in AWS.<br/>- When you assume a role, IAM dynamically provides temporary credentials that expire after a defined period of time, between 15 minutes and 36 hours. |
 
-# User Policy - Example1
+# IAM Policy
+
+## Policy Types
+
+| Type                                                                                                                     | Remarks                                                                                                                                                         |
+|--------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| [Identity-based policies](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies.html#policies_id-based)       | Attach managed and inline policies to IAM identities (users, groups to which users belong, or roles). Identity-based policies grant permissions to an identity. |
+| [Resource-based policies](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies.html#policies_resource-based) | Attach inline policies to resources.<br/>- Resource-based policies grant permissions to the principal that is specified in the policy. Principals can be in the same account as the resource or in other accounts.                                                                                                                     |
+
+## Examples
+
+### User Policy - Example1
 
 ````json
 {
@@ -60,7 +70,7 @@
 }
 ````
 
-# User Policy - Example2
+### User Policy - Example2
 
 ````json
 {
@@ -101,8 +111,8 @@
 
 ![img.png](https://docs.aws.amazon.com/IAM/latest/UserGuide/images/Relationship_Between_Entities_Example.diagram.png)
 
-# Security Practices
-- [Apply least-privilege permissions](https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html#grant-least-privilege)
+# Other links
+- [List of various AWS IAM Permissions](https://aws.permissions.cloud/)
 
 # References
 - [AWS IAM Identity Center (Successor to AWS SSO) Overview Demo | Amazon Web Services](https://www.youtube.com/watch?v=4yJp5-jGGNk)

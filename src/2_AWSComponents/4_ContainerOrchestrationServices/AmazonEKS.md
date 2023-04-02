@@ -19,7 +19,6 @@
 
 # Other Links
 - [EKS cluster for EC2 instances - Cloudformation template](../9_InfrastructureAsCode/AWSCloudFormation/sample_templates/EKS_ECS.yml)
-- [Amazon EKS vs ECS vs Fargate](EKSvsECSvsFargate.md)
 
 # References
 - [Containers on AWS Overview: ECS | EKS | Fargate | ECR](https://www.youtube.com/watch?v=AYAh6YDXuho)

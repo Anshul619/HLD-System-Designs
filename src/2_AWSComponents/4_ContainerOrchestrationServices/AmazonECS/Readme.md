@@ -121,7 +121,6 @@
 
 # Other Links
 - [Amazon ECR](../AmazonECR.md)
-- [Amazon EKS vs ECS vs Fargate](../EKSvsECSvsFargate.md)
 
 # References
 - [Containers on AWS Overview: ECS | EKS | Fargate | ECR](https://www.youtube.com/watch?v=AYAh6YDXuho)
