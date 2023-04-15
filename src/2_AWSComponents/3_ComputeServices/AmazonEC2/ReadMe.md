@@ -9,7 +9,7 @@
 
 # EC2 with ELB
 
-![img.png](../../1_NetworkingAndContentDelivery/ElasticLoadBalancer/assests/AWS_Elastic_Load_Balancer.png)
+![img.png](../../1_NetworkingAndContentDelivery/ApplicationNetworking/ElasticLoadBalancer/assests/AWS_Elastic_Load_Balancer.png)
 
 # How EC2 Auto-Scaling works?
 
@@ -32,14 +32,15 @@ Follow these best practices to get the maximum benefit from burstable performanc
 - Ensure that the instance size you choose passes the minimum memory requirements of your operating system and applications. 
 - Operating systems with graphical user interfaces that consume significant memory and CPU resources (for example, Windows) might require a t3.micro or larger instance size for many use cases. As the memory and CPU requirements of your workload grow over time, you have the flexibility with the T instances to scale to larger instance sizes of the same instance type, or to select another instance type.
 - Enable [AWS Compute Optimizer](https://aws.amazon.com/compute-optimizer/getting-started/) for your account and review the Compute Optimizer recommendations for your workload. Compute Optimizer can help assess whether instances should be upsized to improve performance or downsized for cost savings.
+- Enable [Instance Scheduler on AWS](https://aws.amazon.com/solutions/implementations/instance-scheduler-on-aws/) to configure start and stop schedules for your Amazon EC2 and [Amazon RDS instances](../../6_DatabaseServices/AmazonRDS/Readme.md) to manage costs.
 
 # Pricing Options
 
-| Option           | Description                                                                                                                                                                                                                                                                                   |
-|------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| :star: On-Demand | With On-Demand Instances, you pay for compute capacity with no long-term commitments. <br/>- Billing begins whenever the instance is running, and billing stops when the instance is in a stopped or terminated state. <br/>- The price per second for a running On-Demand Instance is fixed. |
-| Reserved         | RIs provide you with a significant discount compared to On-Demand Instance pricing. RIs provide a discounted hourly rate and an optional capacity reservation for EC2 instances.                                                                                                              |
-| Spot Instances   | Another way to pay for EC2 instances is by using Spot Instances. <br/>- Amazon EC2 Spot Instances allow you to take advantage of unused EC2 capacity in the AWS Cloud. <br/>- They are available at up to a 90% discount compared to On-Demand prices.                                        |
+| Option                                                                                          | Description                                                                                                                                                                                                                                                                                   |
+|-------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| :star: On-Demand                                                                                | With On-Demand Instances, you pay for compute capacity with no long-term commitments. <br/>- Billing begins whenever the instance is running, and billing stops when the instance is in a stopped or terminated state. <br/>- The price per second for a running On-Demand Instance is fixed. |
+| Reserved                                                                                        | RIs provide you with a significant discount compared to On-Demand Instance pricing. RIs provide a discounted hourly rate and an optional capacity reservation for EC2 instances.                                                                                                              |
+| [Spot Instances](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-spot-instances.html) | Another way to pay for EC2 instances is by using Spot Instances. <br/>- Amazon EC2 Spot Instances allow you to take advantage of unused EC2 capacity in the AWS Cloud. <br/>- They are available at up to a 90% discount compared to On-Demand prices.                                        |
 
 # References
 - [Getting Started with AWS Compute Optimizer](https://aws.amazon.com/compute-optimizer/getting-started/)

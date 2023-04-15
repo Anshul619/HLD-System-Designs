@@ -9,7 +9,7 @@
 
 # ECS-Fargate with ELB
 
-![img.png](../1_NetworkingAndContentDelivery/ElasticLoadBalancer/assests/AWS_Elastic_Load_Balancer.png)
+![img.png](../1_NetworkingAndContentDelivery/ApplicationNetworking/ElasticLoadBalancer/assests/AWS_Elastic_Load_Balancer.png)
 
 # Amazon ECS Availability with Fargate
 - [Fargate](https://aws.amazon.com/blogs/containers/amazon-ecs-availability-best-practices/) ensures [Availability Zone](../AWS-Global-Architecture-Region-AZ.md) spread while removing the complexity of managing [EC2 infrastructure](AmazonEC2/Readme.md) and works to ensure that Tasks in a Replica Service are balanced across Availability Zones. 

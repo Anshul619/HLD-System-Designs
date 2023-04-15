@@ -26,6 +26,11 @@ These metrics set expectations for clients of the service and allow customers to
 | TPS (Transactions per Second)                                                                                                    | App/Service   | The TPS includes a message entry and a message, plus a user database access. <br/>- A transaction might have multiple requests.<br/>- Hence, RPS is the subset of TPS. |
 | [QPS (Queries per Second)](https://support.huaweicloud.com/intl/en-us/waf_faq/waf_01_0179.html#waf_01_0179__table48681616133812) | Database      | The number of queries, a database server can handle in 1 sec.                                                                                                          |
 
+# Others
+
+| Terminology                                                                             | Description                                                                                                                                                                                                                                |
+|-----------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| [IOPS](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ebs-io-characteristics.html) | IOPS are a unit of measure representing input/output operations per second.<br/>- The operations are measured in KiB, and the underlying drive technology determines the maximum amount of data that a volume type counts as a single I/O. |
 
 # References
 - [What is TPS, what is QPS, and what is the difference?](https://topic.alibabacloud.com/a/what-is-tps-what-is-qps-and-what-is-the-difference-_-internet_2_60_20293740.html)

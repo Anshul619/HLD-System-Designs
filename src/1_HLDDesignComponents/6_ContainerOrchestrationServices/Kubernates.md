@@ -135,7 +135,7 @@ behavior:
 - It is an open source tool designed to make installation of secure, [highly available clusters](../0_SystemGlossaries/Reliability/HighAvailability.md) easy and automatable.
 
 ### Step1 - Create Hosted Zone for Cluster
-- We require a hosted zone associated with [Route 53](../../2_AWSComponents/1_NetworkingAndContentDelivery/AmazonRoute53.md) which must be publicly resolvable.
+- We require a hosted zone associated with [Route 53](../../2_AWSComponents/1_NetworkingAndContentDelivery/EdgeNetworking/AmazonRoute53.md) which must be publicly resolvable.
 
 ````shell
 aws route53 create-hosted-zone --name testikod.in --caller-reference 2017-02-24-11:12 --hosted-zone-config Comment="Hosted Zone for KOPS"

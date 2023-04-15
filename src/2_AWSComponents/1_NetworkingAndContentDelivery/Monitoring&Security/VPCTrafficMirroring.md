@@ -1,0 +1,5 @@
+# VPC Traffic Mirroring
+- Traffic Mirroring is an Amazon VPC feature that you can use to copy network traffic from an elastic network interface of type interface.
+- [VPC Traffic Mirroring](https://docs.aws.amazon.com/vpc/latest/mirroring/what-is-traffic-mirroring.html) gives you direct access to the network packets flowing through your VPC to help analyze network traffic and compare it to VPC Flow Logs to ensure the right technique for a given operations task is chosen.
+- VPC Traffic Mirroring duplicates inbound and outbound traffic for Amazon EC2 instances within an Amazon VPC without the need to install anything on the instances themselves.  You are able to send the duplicated traffic to the destination of your choice for analysis.
+- VPC Traffic Mirroring collects the full packet, allowing payload analysis, while other tools collect information of protocol, source, and destination. This lets you analyze for both active and passive attacks.

@@ -1,0 +1,5 @@
+# AWS Global Accelerator
+- [AWS Global Accelerator](https://aws.amazon.com/global-accelerator/) is a networking service that helps you improve the availability, performance, and security of your public applications. 
+- Global Accelerator provides two global static public IPs that act as a fixed entry point to your application endpoints, such as [Application Load Balancers](../ApplicationNetworking/ElasticLoadBalancer/Readme.md), [Network Load Balancers](../ApplicationNetworking/ElasticLoadBalancer/Readme.md), [Amazon Elastic Compute Cloud (EC2) instances](../../3_ComputeServices/AmazonEC2/Readme.md), and [elastic IPs](../../3_ComputeServices/AmazonEC2/ElasticIP.md).
+
+![](https://d1.awsstatic.com/product-page-diagram_AWS-Global-Accelerator%402x.dd86ff5885ab5035037ad065d54120f8c44183fa.png)

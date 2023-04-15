@@ -20,7 +20,7 @@
 - [AWS Step Functions](../3_ComputeServices/AWSStepFunctions.md)
 - [Amazon Kinesis Data Streams](../10_BigDataComponents/StreamProcessing/AmazonKinesis/Readme.md)
 - [Amazon Kinesis Data Firehouse](../10_BigDataComponents/StreamProcessing/AmazonKinesis/Readme.md)
-- [API Gateway](../1_NetworkingAndContentDelivery/AmazonAPIGateway/Readme.md)
+- [API Gateway](../1_NetworkingAndContentDelivery/ApplicationNetworking/AmazonAPIGateway/Readme.md)
 - [Amazon Redshift Clusters](../6_DatabaseServices/AmazonRedshift.md)
 - [SAAS Integrations - Partner Sources](https://aws.amazon.com/eventbridge/integrations/)
 

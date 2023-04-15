@@ -5,7 +5,7 @@
 
 # How Auto-Scaling works?
 - [Amazon CloudWatch](../../../8_MonitoringServices/AmazonCloudWatch.md) detects that an [EC2 instance](../Readme.md) is not healthy and sends the message to [Auto-Scaling service](Readme.md).
-- [Auto Scaling service](Readme.md) would then inform [ELB](../../../1_NetworkingAndContentDelivery/ElasticLoadBalancer/Readme.md) to add [another EC2 instance](../Readme.md)
+- [Auto Scaling service](Readme.md) would then inform [ELB](../../../1_NetworkingAndContentDelivery/ApplicationNetworking/ElasticLoadBalancer/Readme.md) to add [another EC2 instance](../Readme.md)
 
 ![img.png](assets/Auto-Scaling-ELB.png)
 
@@ -30,7 +30,7 @@
 | Create [Auto Scaling group](https://docs.aws.amazon.com/autoscaling/ec2/userguide/auto-scaling-groups.html)                              | Specify Desired, Max & Min Nodes in the ASG group.                                                                                                                                                                                                                                                                                                                                                                                                                                             |
 | Specify Network in ASG                                                                                                                   | We can specify availability zones of the Auto-Scaling Group (ASG) i.e. in which zones, new instances should be created.- This helps in [High Availability](../../../../1_HLDDesignComponents/0_SystemGlossaries/Reliability/HighAvailability.md).                                                                                                                                                                                                                                              |
 | Tag Auto Scaling groups and instances                                                                                                    | A tag is a custom attribute label that you assign or that AWS assigns to an AWS resource. <br/>Each tag has two parts:- A tag key (for example, costcenter, environment, or project)- An optional field known as a tag value (for example, 111122223333 or production)                                                                                                                                                                                                                         |
-| [Attach a load balancer to your Auto Scaling group](https://docs.aws.amazon.com/autoscaling/ec2/userguide/attach-load-balancer-asg.html) | When you attach an [Application Load Balancer, Network Load Balancer, or Gateway Load Balancer](../../../1_NetworkingAndContentDelivery/ElasticLoadBalancer/Readme.md), you attach a [target group](../../../1_NetworkingAndContentDelivery/ElasticLoadBalancer/Readme.md).<br/>- [Amazon EC2 Auto Scaling]() adds instances to the attached target group when they are launched.<br/>- You can attach one or multiple target groups, and configure health checks on a per target group basis. |
+| [Attach a load balancer to your Auto Scaling group](https://docs.aws.amazon.com/autoscaling/ec2/userguide/attach-load-balancer-asg.html) | When you attach an [Application Load Balancer, Network Load Balancer, or Gateway Load Balancer](../../../1_NetworkingAndContentDelivery/ApplicationNetworking/ElasticLoadBalancer/Readme.md), you attach a [target group](../../../1_NetworkingAndContentDelivery/ApplicationNetworking/ElasticLoadBalancer/Readme.md).<br/>- [Amazon EC2 Auto Scaling]() adds instances to the attached target group when they are launched.<br/>- You can attach one or multiple target groups, and configure health checks on a per target group basis. |
 
 ## Network in ASG 
 
@@ -38,7 +38,7 @@
 
 ## ELB and ASG
 
-![img.png](../../../1_NetworkingAndContentDelivery/ElasticLoadBalancer/assests/AWS_Elastic_Load_Balancer.png)
+![img.png](../../../1_NetworkingAndContentDelivery/ApplicationNetworking/ElasticLoadBalancer/assests/AWS_Elastic_Load_Balancer.png)
 
 # :thumbsdown: Disadvantages of AutoScaling
 - It would be difficult to optimise the number of instances around the particular demands of the services. 

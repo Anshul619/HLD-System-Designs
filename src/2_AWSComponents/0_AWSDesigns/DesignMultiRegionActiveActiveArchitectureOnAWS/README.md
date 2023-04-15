@@ -39,7 +39,7 @@ However the [multi-region](../../AWS-Global-Architecture-Region-AZ.md) backend s
 - [Read more](../../../1_HLDDesignComponents/0_SystemGlossaries/Readme.md)
 
 ## DNS routing using Amazon Route53
-- [Read more](../../1_NetworkingAndContentDelivery/AmazonRoute53.md)
+- [Read more](../../1_NetworkingAndContentDelivery/EdgeNetworking/AmazonRoute53.md)
 
 # Source(s) and further reading
 - [How to build a multi-region active-active architecture on AWS?](https://acloudguru.com/blog/engineering/why-and-how-do-we-build-a-multi-region-active-active-architecture)

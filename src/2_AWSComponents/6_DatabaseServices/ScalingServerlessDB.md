@@ -7,6 +7,5 @@
 | Throttling Behavior | Requests may be throttled if new peak is more than double previous within 30 minutes                                                    | Requests throttled if provisioned capacity is exceeded                                                       | Very short bursts may be throttled. Scales in response to changes in load testing in few mins. |
 | Cost Consideration  | Set amount for each read and write. Able to evaluate cost per transaction.                                                              | Set rate for provisioned capacity. <br/>- Overall costs may be lower if you have steady, consistent traffic. | Same as Provisioned.                                                                           |
 
-
 # References
 - [Amazon DynamoDB pricing](https://aws.amazon.com/dynamodb/pricing/)

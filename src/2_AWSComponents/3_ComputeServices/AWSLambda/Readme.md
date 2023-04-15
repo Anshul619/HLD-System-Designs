@@ -67,7 +67,7 @@
 | Number of default pollers (batches returned at one time)                            | General              | 5           | -                                                                                                                                                           |
 | [Lambda Handler](AWSLambdaFunctionHandler.md)                                       | Code                 | -           | -                                                                                                                                                           |
 | [Lambda layer](https://docs.aws.amazon.com/lambda/latest/dg/invocation-layers.html) | Code                 | -           | A Lambda layer is a .zip file archive that can contain additional code or other content, like libraries, config files etc.                                  |
-| [AWS KMS key](../../2_SecurityAndIdentityServices/AWSKMS.md)                        | Environment Variable | -           | -                                                                                                                                                           |
+| [AWS KMS key](../../2_SecurityAndIdentityServices/DataProtection/AWSKMS.md)                        | Environment Variable | -           | -                                                                                                                                                           |
 
 # Monitoring & Troubleshooting
 
