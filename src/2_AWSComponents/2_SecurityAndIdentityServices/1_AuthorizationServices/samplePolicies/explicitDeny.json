@@ -1,0 +1,39 @@
+{
+  "Version": "2012-10-17",
+  "Statement": [{
+    "Sid": "ViewS3bucketsInConsole",
+    "Effect": "Allow",
+    "Action": [
+      "s3:ListAllMyBuckets"
+    ],
+    "Resource": "arn:aws:s3:::*"
+  },
+    {
+      "Sid": "ExplictDenyAccessToPrivateFolderToEveryoneInTheGroup",
+      "Action": [
+        "s3:*"
+      ],
+      "Effect": "Deny",
+      "Resource": [
+        "arn:aws:s3:::healthcare-sales1/private/*"
+      ]
+    },
+    {
+      "Sid": "DenyListBucketOnPrivateFolder",
+      "Action": [
+        "s3:ListBucket"
+      ],
+      "Effect": "Deny",
+      "Resource": [
+        "arn:aws:s3:::healthcare-sales1"
+      ],
+      "Condition": {
+        "StringLike": {
+          "s3:prefix": [
+            "private/"
+          ]
+        }
+      }
+    }
+  ]
+}

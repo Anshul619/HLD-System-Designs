@@ -52,7 +52,7 @@ In some cloud platforms such as [Amazon Web Services (AWS)](../../2_AWSComponent
 - [Cold storage](https://www.ctera.com/company/blog/differences-hot-warm-cold-file-storage/) is data that is rarely accessed.
 - This could be data that is archived for compliance reasons.
 - It can be stored on even slower, `cheap and deep` storage. (like `Object Storage`)
-- Example - [Amazon S3](../../2_AWSComponents/7_StorageServices/AmazonS3/Readme.md)
+- Example - [Amazon S3](../../2_AWSComponents/7_StorageServices/3_ObjectStorageTypes/AmazonS3/Readme.md)
 
 # Stateful vs Stateless
 

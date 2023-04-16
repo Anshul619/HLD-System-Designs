@@ -15,5 +15,5 @@
 - Performs NAT for instances that have been assigned addresses from your customer-owned IP pool.
 
 # Available Storages in AWS Outposts
-- [Amazon EBS](../7_StorageServices/BlockStorageTypes/AmazonEBS.md)
-- [Amazon S3](../7_StorageServices/AmazonS3/Readme.md)
+- [Amazon EBS](../7_StorageServices/1_BlockStorageTypes/AmazonEBS.md)
+- [Amazon S3](../7_StorageServices/3_ObjectStorageTypes/AmazonS3/Readme.md)

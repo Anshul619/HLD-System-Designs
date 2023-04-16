@@ -1,0 +1,43 @@
+{
+  "Version": "2022-10-09",
+  "Statement": [
+    {
+      "Sid": "CreateFunction",
+      "Effect": "Allow",
+      "Action": [
+        "lambda:CreateFunction"
+      ],
+      "Resource": "*"
+    },
+    {
+      "Sid": "CreateS3Function",
+      "Effect": "Deny",
+      "Action": [
+        "S3:CreateBucket"
+      ],
+      "Resource": "*"
+    },
+    {
+      "Sid": "ReadOnlyAccess",
+      "Effect": "Allow",
+      "Action": [
+        "dynamodb:BatchGet",
+        "dynamodb:GetItem",
+        "dynamodb:Query",
+        "dynamodb:Scan"
+      ],
+      "Resource": "arn:aws:dynamodb:*:*:table/MyTable",
+      "Condition": {
+        "ForAllValues:StringEquals": {
+          "dynamodb:Attributes": [
+            "column-name-1",
+            "column-name-2",
+            "column-name-3"
+          ]
+        },
+        "StringEqualsIfEffects": {"dynamodb:Select": "SPECIFIC_ATTRIBUTES"}
+      }
+
+    }
+  ]
+}

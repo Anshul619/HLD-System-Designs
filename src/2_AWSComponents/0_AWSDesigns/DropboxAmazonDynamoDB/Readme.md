@@ -8,7 +8,7 @@
 ## Building Hot and Cold Metadata Stores Using AWS Solutions
 - [Amazon DynamoDB](../../6_DatabaseServices/AmazonDynamoDB/Readme.md) acts as the [hot storage layer](../../../1_HLDDesignComponents/0_SystemGlossaries/Readme.md#hot-storage), `ingesting audit logging data to six DynamoDB tables at 4,000–6,000 writes per second per table`. 
 - Then each of these tables stores `50–80 GB daily`. 
-- At the end of each day, the team offloads the metadata from these tables into [Amazon S3](../../7_StorageServices/AmazonS3/Readme.md) for permanent storage, after which the tables in [Amazon DynamoDB](../../6_DatabaseServices/AmazonDynamoDB/Readme.md) are deleted.
+- At the end of each day, the team offloads the metadata from these tables into [Amazon S3](../../7_StorageServices/3_ObjectStorageTypes/AmazonS3/Readme.md) for permanent storage, after which the tables in [Amazon DynamoDB](../../6_DatabaseServices/AmazonDynamoDB/Readme.md) are deleted.
 - We could scale `100–1,000 times on AWS` without designing the system ahead of time.
 
 ## Continuing to Create a Superior User Storage Experience

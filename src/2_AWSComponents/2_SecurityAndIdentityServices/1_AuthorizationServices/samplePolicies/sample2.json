@@ -1,0 +1,32 @@
+{
+  "Id":"ID1",
+  "Version":"2012-10-17",
+  "Statement":[
+    {
+      "Sid":"SID1",
+      "Action":[
+        "s3:AbortMultipartUpload",
+        "s3:DeleteObject",
+        "s3:GetObject",
+        "s3:ListBucket",
+        "s3:GetBucketLocation",
+        "s3:PutObject"
+      ],
+      "Effect":"Allow",
+      "Resource":[
+        "arn:aws:s3:::bucket1",
+        "arn:aws:s3:::bucket2/*"
+      ],
+      "Condition": {
+        "StringEquals":{
+          "aws:sourceVpce":"vpce-1"
+        }
+      },
+      "Principal":{
+        "AWS":[
+          "arn:aws:iam::123:root"
+        ]
+      }
+    }
+  ]
+}

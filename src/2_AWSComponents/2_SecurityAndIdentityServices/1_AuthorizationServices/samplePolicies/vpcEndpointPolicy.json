@@ -1,0 +1,15 @@
+{
+  "Statement": [
+    {
+      "Sid": "Access-to-specific-bucket-only",
+      "Principal": "*",
+      "Action": [
+        "s3:GetObject",
+        "s3:PutObject"
+      ],
+      "Effect": "Allow",
+      "Resource": ["arn:aws:s3:::my_secure_bucket",
+        "arn:aws:s3:::my_secure_bucket/*"]
+    }
+  ]
+}

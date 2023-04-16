@@ -1,5 +1,5 @@
 # API Gateway
-- Use [API Gateway](https://microservices.io/patterns/apigateway.html) to route incoming request between microservices, like [AWS API Gateway](../../../2_AWSComponents/1_NetworkingAndContentDelivery/ApplicationNetworking/AmazonAPIGateway/Readme.md).
+- Use [API Gateway](https://microservices.io/patterns/apigateway.html) to route incoming request between microservices, like [AWS API Gateway](../../../2_AWSComponents/1_NetworkingAndContentDelivery/2_ApplicationNetworking/AmazonAPIGateway/Readme.md).
 
 ![img.png](../assets/api_gateway.png)
 
@@ -14,6 +14,6 @@
 
 # AWS API Gateway
 
-![img.png](../../../2_AWSComponents/1_NetworkingAndContentDelivery/ApplicationNetworking/AmazonAPIGateway/assets/AmazonAPIGateway_Features.drawio.png)
+![img.png](../../../2_AWSComponents/1_NetworkingAndContentDelivery/2_ApplicationNetworking/AmazonAPIGateway/assets/AmazonAPIGateway_Features.drawio.png)
 
-[Read more about AWS API Gateway](../../../2_AWSComponents/1_NetworkingAndContentDelivery/ApplicationNetworking/AmazonAPIGateway/Readme.md)
+[Read more about AWS API Gateway](../../../2_AWSComponents/1_NetworkingAndContentDelivery/2_ApplicationNetworking/AmazonAPIGateway/Readme.md)

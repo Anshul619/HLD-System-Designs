@@ -20,7 +20,7 @@ The application should be able to support the following requirements.
 
 | Feature                              | Decision                                                                                                                                               |
 |--------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Images Storage                       | [Amazon S3](../../2_AWSComponents/7_StorageServices/AmazonS3/Readme.md) or [HDFS](../../1_HLDDesignComponents/5_BigDataComponents/BatchProcessing/ApacheHadoop/ApacheHDFS.md) |
+| Images Storage                       | [Amazon S3](../../2_AWSComponents/7_StorageServices/3_ObjectStorageTypes/AmazonS3/Readme.md) or [HDFS](../../1_HLDDesignComponents/5_BigDataComponents/BatchProcessing/ApacheHadoop/ApacheHDFS.md) |
 | [Images MetaData]()                  | Postgres (since we need joins)                                                                                                                         |
 | Partitioning Key for images metadata | PhotoID                                                                                                                                                |
 | User Activity - Data Entities Store  | [Cassandra](../../1_HLDDesignComponents/3_DatabaseComponents/NoSQL-Databases/ApacheCasandra.md)                                                        |

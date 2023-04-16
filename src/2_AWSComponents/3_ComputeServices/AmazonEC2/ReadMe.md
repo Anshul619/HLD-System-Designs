@@ -9,7 +9,7 @@
 
 # EC2 with ELB
 
-![img.png](../../1_NetworkingAndContentDelivery/ApplicationNetworking/ElasticLoadBalancer/assests/AWS_Elastic_Load_Balancer.png)
+![img.png](../../1_NetworkingAndContentDelivery/2_ApplicationNetworking/ElasticLoadBalancer/assests/AWS_Elastic_Load_Balancer.png)
 
 # How EC2 Auto-Scaling works?
 

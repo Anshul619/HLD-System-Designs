@@ -2,7 +2,7 @@
 # Load Balancers
 - [Load Balancers](https://github.com/ema2159/Grokking-System-Design-Interview-Quizzes/blob/master/Quizzes/Load%20Balancer.org) are used for the [horizontal scalability](Readme.md) & [high availability/fault-tolerance](../Reliability/HighAvailability.md).
 - LB helps to spread the traffic across a cluster of servers to improve responsiveness and availability of applications, websites or databases.
-- In AWS, [Elastic Load Balancer](../../../2_AWSComponents/1_NetworkingAndContentDelivery/ApplicationNetworking/ElasticLoadBalancer/Readme.md) is used for the load balancing.
+- In AWS, [Elastic Load Balancer](../../../2_AWSComponents/1_NetworkingAndContentDelivery/2_ApplicationNetworking/ElasticLoadBalancer/Readme.md) is used for the load balancing.
 
 ## Benefits of Load Balancing
 - Users experience faster, uninterrupted service.

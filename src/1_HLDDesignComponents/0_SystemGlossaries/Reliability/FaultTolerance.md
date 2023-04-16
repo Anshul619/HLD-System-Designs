@@ -9,6 +9,6 @@
 - Higher redundancy.
 - Higher cost.
 - If an application is said to be fault-tolerant then it is also considered highly available. But vice-verse is not true.
-- In AWS, 100% fault tolerance (zero downtime) can be achieved through [active-active routing policy in Route53](../../../2_AWSComponents/1_NetworkingAndContentDelivery/EdgeNetworking/AmazonRoute53.md#routing-policy) with at-least 2 regions (having same components & architecture).
+- In AWS, 100% fault tolerance (zero downtime) can be achieved through [active-active routing policy in Route53](../../../2_AWSComponents/1_NetworkingAndContentDelivery/1_EdgeNetworking/AmazonRoute53.md#routing-policy) with at-least 2 regions (having same components & architecture).
 
 ![img.png](../assets/ha_vs_fault_tolerant.png)

@@ -61,7 +61,7 @@ DynamoDB supports a large set of data types for table attributes.
 
 # Logging DynamoDB operations using CloudTrail
 DynamoDB is integrated with [CloudTrail](../../8_MonitoringServices/AWSCloudTrail.md), a service that provides a record of actions taken by a user, role, or an AWS service in DynamoDB. CloudTrail captures all API calls for DynamoDB as events. The calls captured include calls from the DynamoDB console and code calls to the DynamoDB API operations.
-- If you create a trail, you can set up continuous delivery of [CloudTrail events](../../8_MonitoringServices/AWSCloudTrail.md) to an [S3 bucket](../../7_StorageServices/AmazonS3/Readme.md), including events for DynamoDB. 
+- If you create a trail, you can set up continuous delivery of [CloudTrail events](../../8_MonitoringServices/AWSCloudTrail.md) to an [S3 bucket](../../7_StorageServices/3_ObjectStorageTypes/AmazonS3/Readme.md), including events for DynamoDB. 
 - If you don't configure a trail, you can still view the most recent events in the CloudTrail console in Event history. 
 
 # :thumbsdown: What are disadvantages of DynamoDB?

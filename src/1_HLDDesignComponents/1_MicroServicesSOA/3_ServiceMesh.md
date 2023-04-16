@@ -5,7 +5,7 @@
 
 | Tech                                                                               | Description |
 |------------------------------------------------------------------------------------|-------------|
-| [AWS App Mesh](../../2_AWSComponents/1_NetworkingAndContentDelivery/ApplicationNetworking/AWSAppMesh.md) | -           |
+| [AWS App Mesh](../../2_AWSComponents/1_NetworkingAndContentDelivery/2_ApplicationNetworking/AWSAppMesh.md) | -           |
 
 # Common Issues with Microservices
 - Uniformity of logs, metrics and traces

@@ -15,6 +15,6 @@
 - Amazon Redshift and [PostgreSQL](../../1_HLDDesignComponents/3_DatabaseComponents/Readme.md) have a number of important differences that you must be aware of as you design and develop your data warehouse applications.
 
 # Amazon Redshift Spectrum
-- A second way to perform in-place querying of data assets in an [Amazon S3-based data lake](../7_StorageServices/AmazonS3/Readme.md) is to use Amazon Redshift Spectrum. 
-- Amazon Redshift is a large-scale, managed data warehouse service used with data assets in [Amazon S3](../7_StorageServices/AmazonS3/Readme.md). 
+- A second way to perform in-place querying of data assets in an [Amazon S3-based data lake](../7_StorageServices/3_ObjectStorageTypes/AmazonS3/Readme.md) is to use Amazon Redshift Spectrum. 
+- Amazon Redshift is a large-scale, managed data warehouse service used with data assets in [Amazon S3](../7_StorageServices/3_ObjectStorageTypes/AmazonS3/Readme.md). 
 - However, data assets must be loaded into Amazon Redshift before queries run. 
