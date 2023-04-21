@@ -9,21 +9,24 @@ Kubernetes is a Greek word meaning `captain` in English.
 
 # Recommendation & Limits (Reliably supported)
 
-| Environment | Max Pods Per Node                                                                                                                   | Max Pods Per Cluster    | Max Nodes Per Cluster                                                                                |
-|-------------|-------------------------------------------------------------------------------------------------------------------------------------|-------------------------|------------------------------------------------------------------------------------------------------|
-| Kubernates  | 110 pods per node                                                                                                                   | 150000 pods per cluster | 5000 nodes per cluster<br/>- Some performance bottlenecks start showing up with more than 500 nodes. |
-| EKS         | Imposes a pod limit depending on the node size. <br/>- For example, t3.small allows only 11 pods, while m5.4xlarge allows 234 pods. | -                       | -                                                                                                    |
+| Environment                                                                | Max Pods Per Node                                                                                                                   | Max Pods Per Cluster    | Max Nodes Per Cluster                                                                                |
+|----------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------|-------------------------|------------------------------------------------------------------------------------------------------|
+| Kubernates                                                                 | 110 pods per node                                                                                                                   | 150000 pods per cluster | 5000 nodes per cluster<br/>- Some performance bottlenecks start showing up with more than 500 nodes. |
+| [EKS](../../2_AWSComponents/4_ContainerOrchestrationServices/AmazonEKS.md) | Imposes a pod limit depending on the node size. <br/>- For example, t3.small allows only 11 pods, while m5.4xlarge allows 234 pods. | -                       | -                                                                                                    |
 
 # Components
 
-## Cluster
-- [A Kubernetes cluster](https://kubernetes.io/docs/concepts/overview/components/) consists of a set of worker machines, called [nodes](), that run containerized applications. 
-- Every cluster has at least one worker node.
+| Component                                                                                      | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
+|------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| :star: [Control Plane (Master node)](https://kubernetes.io/docs/concepts/overview/components/) | [The control plane](https://kubernetes.io/docs/concepts/overview/components/) manages the worker nodes and the Pods in the cluster.<br/>- In production environments, the control plane usually runs across multiple computers and a cluster usually runs multiple nodes, providing [fault-tolerance and high availability](../0_SystemGlossaries/Reliability/HighAvailability.md).<br/>- [Nodes with controlplane]((https://kubernetes.io/docs/concepts/overview/components/)) role run the K8s master components (excluding [etcd](../7_ClusterCoordinationService/etcd.md), as its separate role).     |
+| Worker Nodes                                                                                   | Each docker/Pod container would run the micro-service (golang, java, python service etc.)<br/>- And a [worker node can have one or multiple pods](https://kubernetes.io/docs/concepts/architecture/nodes/).<br/>- Kubernates would manage the [worker nodes](https://kubernetes.io/docs/concepts/architecture/nodes/) i.e. Create, Update, Delete, Auto-Scale based on the configuration and params.                                                                                                                                                                                                      |
+| Pods                                                                                           | [Pods](https://kubernetes.io/docs/concepts/workloads/pods/) are the smallest deployable units of computing that you can create and manage in Kubernetes.<br/>- A Pod (as in a pod of whales or pea pod) is a group of one or more containers, with shared storage and network resources, and a specification for how to run the containers.<br/>- A pod can contain one or multiple containers (but generally one container).<br/>- [Configure Minimum and Maximum Memory Constraints for a Namespace](https://kubernetes.io/docs/tasks/administer-cluster/manage-resources/memory-constraint-namespace/) |
+| [Networking](https://kubernetes.io/docs/concepts/services-networking/_print/)                  | K8s manages its own load balancer, service discovery (through [etcd](../7_ClusterCoordinationService/etcd.md)) etc.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
+| Cluster                                                                                        | [A Kubernetes cluster](https://kubernetes.io/docs/concepts/overview/components/) consists of a set of worker machines, called [nodes](), that run containerized applications. <br/>- Every cluster has at least one worker node.                                                                                                                                                                                                                                                                                                                                                                          |
+| Kubernates Agents                                                                              | Kubernetes agents perform various tasks on every node to manage the containers running on that node. For example:<br/>- cAdvisor collects and analyzes the resource usage of all containers on a node.<br/>- [kubelet](https://kubernetes.io/docs/reference/command-line-tools-reference/kubelet/) runs regular live-ness and readiness probes against each container on a node.                                                                                                                                                                                                                          |
+| Labels                                                                                         | [Labels](https://kubernetes.io/docs/concepts/overview/working-with-objects/labels/) are key/value pairs that are attached to objects, such as pods.<br/>- Labels are intended to be used to specify identifying attributes of objects that are meaningful and relevant to users, but do not directly imply semantics to the core system.                                                                                                                                                                                                                                                                  |
 
-## Control Plane (Master node)
-- [The control plane](https://kubernetes.io/docs/concepts/overview/components/) manages the worker nodes and the Pods in the cluster.
-- In production environments, the control plane usually runs across multiple computers and a cluster usually runs multiple nodes, providing [fault-tolerance and high availability](../0_SystemGlossaries/Reliability/HighAvailability.md).
-- [Nodes with controlplane]((https://kubernetes.io/docs/concepts/overview/components/)) role run the K8s master components (excluding [etcd](../7_ClusterCoordinationService/etcd.md), as its separate role). 
+## Control Plan (Master node) Components
 
 | K8s Master Components                                                                                                | Description                                                                                                                                                                                                                                                                                                                                     |
 |----------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -33,33 +36,6 @@ Kubernetes is a Greek word meaning `captain` in English.
 | [Scheduler](https://kubernetes.io/docs/concepts/scheduling-eviction/kube-scheduler/)                                 | A scheduler is responsible for scheduling pods on the cluster. <br/>- It watches for newly created Pods that have no Node assigned. <br/>- For every Pod that the scheduler discovers, the scheduler becomes responsible for finding the best Node for that Pod to run on.                                                                      |
 | [ReplicationController](https://kubernetes.io/docs/concepts/workloads/controllers/replicationcontroller/)            | A ReplicationController ensures that a specified number of pod replicas are running at any one time. In other words, a ReplicationController makes sure that a pod or a homogeneous set of pods is always up and available.                                                                                                                     |
 | [DeploymentController](https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_DeploymentController.html)                                                                                                 | Deployment Controller manages the rolling update and rollback of deployments (docker containers etc.)                                                                                                                                                                                                                                           |
-
-- [Read more](https://kubernetes.io/docs/concepts/overview/components/)
-
-## Worker Nodes
-- Each docker/Pod container would run the micro-service (golang, java, python service etc.)
-- And a [worker node can have one or multiple pods](https://kubernetes.io/docs/concepts/architecture/nodes/).
-- Kubernates would manage the [worker nodes](https://kubernetes.io/docs/concepts/architecture/nodes/) i.e. Create, Update, Delete, Auto-Scale based on the configuration and params.
-
-## Pods
-- [Pods](https://kubernetes.io/docs/concepts/workloads/pods/) are the smallest deployable units of computing that you can create and manage in Kubernetes.
-- A Pod (as in a pod of whales or pea pod) is a group of one or more containers, with shared storage and network resources, and a specification for how to run the containers.
-- [Configure Minimum and Maximum Memory Constraints for a Namespace](https://kubernetes.io/docs/tasks/administer-cluster/manage-resources/memory-constraint-namespace/)
-- A pod can contain one or multiple containers (but generally one container).
-
-## Kubernates Agents
-
-Kubernetes agents perform various tasks on every node to manage the containers running on that node. For example:
-- cAdvisor collects and analyzes the resource usage of all containers on a node.
-- [kubelet](https://kubernetes.io/docs/reference/command-line-tools-reference/kubelet/) runs regular live-ness and readiness probes against each container on a node.
-
-## Labels
-- [Labels](https://kubernetes.io/docs/concepts/overview/working-with-objects/labels/) are key/value pairs that are attached to objects, such as pods. 
-- Labels are intended to be used to specify identifying attributes of objects that are meaningful and relevant to users, but do not directly imply semantics to the core system.
-
-## K8s Networking
-- K8s manages its own load balancer, service discovery (through [etcd](../7_ClusterCoordinationService/etcd.md)) etc.
-- [Read more](https://kubernetes.io/docs/concepts/services-networking/_print/)
 
 ## Workload Resources
 
@@ -253,6 +229,10 @@ spec:
 # :-1: Disadvantages of K8s
 - Complex to set up and operate
 - High cost to run minimum resources for K8s
+
+# kubectl drain
+- You can use [kubectl drain](https://kubernetes.io/docs/tasks/administer-cluster/safely-drain-node/) to safely evict all of your pods from a node before you perform maintenance on the node (e.g. kernel upgrade, hardware maintenance, etc.)
+- Safe evictions allow the pod's containers to gracefully terminate and will respect the PodDisruptionBudgets you have specified.
 
 # References
 - [How to Manage Kubernetes With Kubectl?](https://www.suse.com/c/rancher_blog/how-to-manage-kubernetes-with-kubectl/)

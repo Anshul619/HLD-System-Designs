@@ -3,11 +3,11 @@
 
 | Service                                                               | Type                    | Remarks                                                                                                |
 |-----------------------------------------------------------------------|-------------------------|--------------------------------------------------------------------------------------------------------|
-| [Amazon EC2](AmazonEC2/Readme.md)                                     | Compute/Virtual Machine |                                                                                                        |
-| [Amazon ECS](../4_ContainerOrchestrationServices/AmazonECS/Readme.md) | Container Services      |                                                                                                        |
-| [Amazon EKS](../4_ContainerOrchestrationServices/AmazonEKS.md)        | Container Services      |                                                                                                        |
+| [Amazon EC2](AmazonEC2/Readme.md)                                     | Compute/Virtual Machine | -                                                                                                      |
+| [Amazon ECS](../4_ContainerOrchestrationServices/AmazonECS/Readme.md) | Container Services      | -                                                                                                      |
+| [Amazon EKS](../4_ContainerOrchestrationServices/AmazonEKS.md)        | Container Services      | -                                                                                                      |
 | [AWS Lambda](AWSLambda/Readme.md)                                     | Serverless Services     | It best fits for tasks which don't need to run all the time, like Inventory Update, Printing jobs etc. |
-| [AWS Fargate](AWSFargate.md)                                          | Serverless Services     |                                                                                                        |
+| [AWS Fargate](AWSFargate.md)                                          | Serverless Services     | -                                                                                                      |
 | [AWS Fargate vs Lambda](AWSFargateVsLambda.md)                        | Serverless Services     | -                                                                                                      |
 
 # Defining compute

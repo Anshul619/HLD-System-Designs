@@ -7,3 +7,5 @@
 | Network fluctuation | Connected with shared & public networks, so the bandwidth and latency fluctuate | Network is not fluctuating & provides a consistent experience. |
 | Time to establish   | Easy                                                                            | Requires experienced team                                      |
 | Security            | Connection is encrypted via IPSec                                               | No encryption by default                                       |
+
+Note - In some cases, both VPN and Direct Connect can be used.

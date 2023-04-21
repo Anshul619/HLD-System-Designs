@@ -8,7 +8,13 @@
 | [One Zone-Infrequent Access](https://aws.amazon.com/about-aws/whats-new/2018/04/announcing-s3-one-zone-infrequent-access-a-new-amazon-s3-storage-class/)   | S3 One Zone-Infrequent Access (S3 One Zone-IA; Z-IA) is a new storage class designed for customers who want a lower-cost option for infrequently accessed data, but do not require the multiple Availability Zone data resilience model of the S3 Standard and S3 Standard-Infrequent Access (S3 Standard-IA; S-IA) storage classes. |
 | [Glacier Storage Classes](S3Glacier.md)                                                                                                                    | -                                                                                                                                                                                                                                                                                                                                    |
 
+![](https://res.cloudinary.com/acloud-guru/image/fetch/c_thumb,f_auto,q_auto,w_965/https://acg-wordpress-content-production.s3.us-west-2.amazonaws.com/app/uploads/2021/12/Which-S3-Storage-Class-is-right-for-me-Infograhic.png)
+
 # Amazon S3 Lifecycle
 - [Transitioning objects using Amazon S3 Lifecycle](https://docs.aws.amazon.com/AmazonS3/latest/userguide/lifecycle-transition-general-considerations.html)
 
 ![](https://docs.aws.amazon.com/images/AmazonS3/latest/userguide/images/lifecycle-transitions-v3.png)
+
+# Read more
+- [S3 Glacier Instant Retrieval deep dive: Which S3 Storage Class is right for me?](https://acloudguru.com/blog/engineering/s3-glacier-instant-retrieval-deep-dive-which-s3-storage-class-is-right-for-me)
+

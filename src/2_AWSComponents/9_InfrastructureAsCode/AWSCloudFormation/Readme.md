@@ -216,11 +216,11 @@ Resources:
 
 ## Resource Attributes
 
-| Name                | Description                                                                                                                             |
-|---------------------|-----------------------------------------------------------------------------------------------------------------------------------------|
-| DependsOn           | Specify that creation of a specific resource follows another.                                                                           |
-| DeletionPolicy      | Control what happens when the Cloudformation template is deleted or when a resource is removed directly from a Cloudformation template. |
-| UpdateReplacePolicy | Control what happens to a resource if you update a property whose update behaviour is Replacement.                                      |
+| Name                                                                                                               | Description                                                                                                                                                                  |
+|--------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| DependsOn                                                                                                          | Specify that creation of a specific resource follows another.                                                                                                                |
+| [DeletionPolicy](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-attribute-deletionpolicy.html) | Control what happens when the Cloudformation template is deleted or when a resource is removed directly from a Cloudformation template. For example - Take Snapshots of RDS. |
+| UpdateReplacePolicy                                                                                                | Control what happens to a resource if you update a property whose update behaviour is Replacement.                                                                           |
 
 ## Outputs
 - The [optional Outputs section](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/outputs-section-structure.html) declares output values that you can import into other stacks (to create cross-stack references), return in response (to describe stack calls), or view on the [AWS CloudFormation console](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/cfn-using-console.html). 

@@ -10,6 +10,7 @@
 | [Origin](https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_Origin.html)                                   | An origin is the location where content is stored, and from which CloudFront gets content to serve to viewers.              |
 | [Origin Types](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/DownloadDistS3AndCustomOrigins.html) | Either S3 or Custom Origin (S3 Website type, EC2 instance or Lambda function URL etc.)                                      |
 | [Price Class](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/PriceClass.html)                      | To reduce cost, we can specify geographic regions for which the CloudFront edge locations should use (to give low-latency). |
+|                                                                                                                        |                                                                                                                             |
 
 # :star: Amazon S3 + Amazon CloudFront: A Match Made in the Cloud
 - [Instead of directly accessing the S3 resource](https://aws.amazon.com/blogs/networking-and-content-delivery/amazon-s3-amazon-cloudfront-a-match-made-in-the-cloud/), we should use [CloudFront distribution](AmazonCloudFront.md) in the middle (which acts as a [CDN](../../../1_HLDDesignComponents/0_SystemGlossaries/CDNs/CDNs.md))
@@ -54,6 +55,15 @@
 - You can [configure CloudFront to add specific HTTP headers](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/using-cloudfront-headers.html) to the requests that CloudFront receives from viewers. 
 - The values of these HTTP headers are based on characteristics of the viewer request. 
 - The headers can provide information about the viewer's device type, IP address, geographic location, request protocol (HTTP or HTTPS), HTTP version, and TLS connection details.
+
+# Serving private content with signed URLs and signed cookies
+To securely serve this [private content by using CloudFront](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/private-content-overview.html), you can do the following:
+- Require that your users access your private content by using special CloudFront signed URLs or signed cookies.
+- Require that your users access your content by using CloudFront URLs, not URLs that access content directly on the origin server (for example, Amazon S3 or a private HTTP server).
+- Requiring CloudFront URLs isn't necessary, but we recommend it to prevent users from bypassing the restrictions that you specify in signed URLs or signed cookies.
+- [Restricting access to an Amazon S3 origin](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/private-content-restricting-access-to-s3.html)
+
+![](https://jasonstitt.com/images/s3-cloudfront-lambda.png)
 
 # CDN Customizations
 

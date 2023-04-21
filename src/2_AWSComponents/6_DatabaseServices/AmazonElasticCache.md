@@ -14,6 +14,13 @@
 ![img.png](assests/ElasticCache_Multi-AZ_setup.png)
 
 [Read more](https://docs.aws.amazon.com/AmazonElastiCache/latest/red-ug/FaultTolerance.html).
+
+# Caching strategies
+
+| Strategy                                                                                            | Description                                                                                                 | Read-Performance           |
+|-----------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------|----------------------------|
+| :star: [Write-through](https://docs.aws.amazon.com/AmazonElastiCache/latest/mem-ug/Strategies.html) | The write-through strategy adds data or updates data in the cache whenever data is written to the database. | Better than "lazy-loading" |
+| [Lazy loading](https://docs.aws.amazon.com/AmazonElastiCache/latest/mem-ug/Strategies.html)         | lazy loading is a caching strategy that loads data into the cache only when necessary.                      | -                          |
  
 # Redis (Cluster Mode Disabled) vs. Redis (Cluster Mode Enabled)
 

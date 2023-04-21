@@ -2,10 +2,10 @@
 
 | Service                                                                                  | Description                                                                                                    |
 |------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------|
-| [AWS IAM](1_AuthorizationServices/AWSIAM.md)                                             | Who can do what in AWS?<br/>- Grant least privileges.                                                          |
-| [AWS Identity Center](1_AuthorizationServices/AWSIAMIdentityCenter.md)                   | Single-sign-on for users, Centralized identity provider.                                                       |
+| [AWS IAM](1_IdentityServices/AWSIAM.md)                                             | Who can do what in AWS?<br/>- Grant least privileges.                                                          |
+| [AWS Identity Center](1_IdentityServices/AWSIAMIdentityCenter.md)                   | Single-sign-on for users, Centralized identity provider.                                                       |
 | [AWS Secrets Manager](2_DataProtectionServices/AWSSecretsManager.md)                     | Secure and rotating secrets                                                                                    |
-| [Amazon Cognito](1_AuthorizationServices/AmazonCognito.md)                               | User signup/login as a service.                                                                                |
+| [Amazon Cognito](1_IdentityServices/AmazonCognito.md)                               | User signup/login as a service.                                                                                |
 | [AWS Config](4_Monitoring&DetectionServices/AWSConfig.md)                                | Detect any user changes in AWS account and automate remediation.                                               |
 | [AWS WAF](3_InfraProtectionServices/AWSWAF.md)                                           | Apply rate limiting in AWS account                                                                             |
 | [Amazon VPC](../1_NetworkingAndContentDelivery/3_NetworkFoundations/AmazonVPC/Readme.md) | Secure network                                                                                                 |

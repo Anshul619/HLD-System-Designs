@@ -10,7 +10,7 @@ It can be used for three cases:
 
 ![img.png](https://d1.awsstatic.com/Product-Page-Diagram_AWS-Web-Application-Firewall%402x.5f24d1b519ed1a88b7278c5d4cf7e4eeaf9b75cf.png)
 
-# Configurable AWS Services
+# :star: Configurable AWS Services
 
 | AWS Service                                                                                                 |
 |-------------------------------------------------------------------------------------------------------------|
@@ -29,7 +29,11 @@ It can be used for three cases:
 | Cross-site scripting            |
 
 # WAF Rules
-- [Rate-based rule statement](https://docs.aws.amazon.com/waf/latest/developerguide/waf-rule-statement-type-rate-based.html)
-- [AND rule statement](https://docs.aws.amazon.com/waf/latest/developerguide/waf-rule-statement-type-and.html)
+
+| Rule                                                                                                                       |
+|----------------------------------------------------------------------------------------------------------------------------|
+| [Rate-based rule statement](https://docs.aws.amazon.com/waf/latest/developerguide/waf-rule-statement-type-rate-based.html) |
+| [AND rule statement](https://docs.aws.amazon.com/waf/latest/developerguide/waf-rule-statement-type-and.html)               |
+
 - [Read more](https://docs.aws.amazon.com/waf/latest/developerguide/waf-rules.html)
 
