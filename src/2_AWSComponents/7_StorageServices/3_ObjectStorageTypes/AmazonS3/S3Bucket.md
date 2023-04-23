@@ -48,4 +48,4 @@ Amazon S3 considers a bucket or object public if it grants any permissions to th
 # Bucket Policy
 - To grant other AWS accounts or IAM users access to the bucket and the objects in it, you must attach a bucket policy. 
 - Because you are granting access to a user or account, a bucket policy must define a PRINCIPAL (which is an account, user, role, or service) entity within the policy.
-- [Example bucket policy](../../../2_SecurityAndIdentityServices/1_IdentityServices/samplePolicies/buckeyPolicy.md)
+- [Example bucket policy](../../../2_SecurityAndIdentityServices/1_IdentityServices/samplePolicies/buckeyPolicy.json)

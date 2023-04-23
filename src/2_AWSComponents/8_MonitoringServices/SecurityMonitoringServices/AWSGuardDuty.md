@@ -10,7 +10,7 @@
 |-------------------------------------------------------------------------------------------------------|
 | [Amazon S3](../../7_StorageServices/3_ObjectStorageTypes/AmazonS3/Readme.md)                          |
 | [Amazon VPC Flow Logs](../../1_NetworkingAndContentDelivery/3_NetworkFoundations/AmazonVPC/Readme.md) |
-| [AWS CloudTrail events](../../8_MonitoringServices/AWSCloudTrail.md)                                  |
+| [AWS CloudTrail events](../AWSCloudTrail.md)                                  |
 | [DNS logs](../../1_NetworkingAndContentDelivery/1_EdgeNetworking/AmazonRoute53.md)                    |
 
 # Features

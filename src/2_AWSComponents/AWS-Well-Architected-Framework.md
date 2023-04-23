@@ -51,7 +51,12 @@ Lenses provide additional guidance tailored to specific industry and technology 
 - Automated Governance — Human working with runbooks and checklists often lead to delays and inaccurate results.
 
 # Tools
-- [Stack.New](https://stack.new/) lets you post new snippets for Cloud Stack Configurations (Terraform YAML, Kubernetes, Helm, etc), and share easily. Type your config below and then click 'Create'. You'll get a shortlink that you can send through Slack or emails!
-- [AWS Well-Architected Partner Program](https://aws.amazon.com/partners/programs/well-architected/)
+
+| Tool                                                                                               | Remarks                                                                                                                                                                                                                       |
+|----------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| [Stack.New](https://stack.new/)                                                                    | Post new snippets for Cloud Stack Configurations (Terraform YAML, Kubernetes, Helm, etc), and share easily. Type your config below and then click 'Create'. You'll get a shortlink that you can send through Slack or emails! |
+| [AWS Well-Architected Partner Program](https://aws.amazon.com/partners/programs/well-architected/) | -                                                                                                                                                                                                                             |
+| [AWS Well-Architected Labs](https://wellarchitectedlabs.com/)                                      | -                                                                                                                                                                                                                             |
+
 
 

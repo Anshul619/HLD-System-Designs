@@ -14,12 +14,12 @@
 
 # Offerings
 
-| Offering                                                                     | Description                                                                                                                                                                                                                                                                                   |
-|------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Amazon S3 File Gateway](https://aws.amazon.com/storagegateway/file/s3/)     | Amazon S3 File Gateway connects on-premises NFS and SMB file shares to customer-managed [Amazon S3 object storage](../3_ObjectStorageTypes/AmazonS3/Readme.md), through file-based interface.                                                                                                 |
-| [Amazon FSx File Gateway](https://aws.amazon.com/storagegateway/file/fsx/)   | Amazon FSx File Gateway is used to work with your Windows-based applications and workflows.<br/>- Fsx provides native Microsoft Windows file system.                                                                                                                                          |
-| [Volume Gateway](https://aws.amazon.com/storagegateway/volume/)              | Provides [cloud-backed iSCSI block storage volumes](../1_BlockStorageTypes/AmazonEBS.md) to your on-premises applications.<br/>- Volume Gateway makes copies of your local block volumes and stores them in a service-managed [Amazon S3 bucket](../3_ObjectStorageTypes/AmazonS3/Readme.md). |
-| [Tape Gateway](https://aws.amazon.com/storagegateway/vtl/)                   | Replaces using physical tapes on premises with virtual tapes in AWS without changing existing backup workflows.                                                                                                                                                                               |
+| Offering                                                                            | Key Strength                                                                                                   | Description                                                                                                                                                                                                                                                                                   |
+|-------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| [File Gateway (or S3 file gateway)](https://aws.amazon.com/storagegateway/file/s3/) | NFS/SMB file shares to customer-managed [Amazon S3 object storage](../3_ObjectStorageTypes/AmazonS3/Readme.md) | Amazon S3 File Gateway connects on-premises NFS and SMB file shares to customer-managed [Amazon S3 object storage](../3_ObjectStorageTypes/AmazonS3/Readme.md), through file-based interface.                                                                                                 |
+| [FSx File Gateway](https://aws.amazon.com/storagegateway/file/fsx/)                 | Windows-based application's files                                                                              | Amazon FSx File Gateway is used to work with your Windows-based applications and workflows.<br/>- Fsx provides native Microsoft Windows file system.                                                                                                                                          |
+| [Volume Gateway](https://aws.amazon.com/storagegateway/volume/)                     | Provides [cloud-backed iSCSI block storage volumes](../1_BlockStorageTypes/AmazonEBS.md)                       | Provides [cloud-backed iSCSI block storage volumes](../1_BlockStorageTypes/AmazonEBS.md) to your on-premises applications.<br/>- Volume Gateway makes copies of your local block volumes and stores them in a service-managed [Amazon S3 bucket](../3_ObjectStorageTypes/AmazonS3/Readme.md). |
+| [Tape Gateway](https://aws.amazon.com/storagegateway/vtl/)                          | -                                                                                                              | Replaces using physical tapes on premises with virtual tapes in AWS without changing existing backup workflows.                                                                                                                                                                               |
 
 # Amazon S3 File Gateway
 - [S3 File Gateway](https://aws.amazon.com/storagegateway/file/s3/) presents a file-based interface to [Amazon S3](../3_ObjectStorageTypes/AmazonS3/Readme.md), which appears as a network file share. 
@@ -45,6 +45,16 @@ When multiple gateways or file shares write to the same S3 bucket, unpredictable
 - Conﬁgure a separate, unique object preﬁx for each ﬁle share.
 - Multiple clients can mount to the same file share as long as they are using the same file protocol.
 
+# Amazon FSx File Gateway
+- [FSx File Gateway](https://aws.amazon.com/storagegateway/file/fsx/) optimizes on-premises access to Windows file shares on Amazon FSx, helping you access FSx for Windows File Server data with low latency and conserving shared bandwidth.
+- A local cache of frequently used data that you can access is stored, providing faster performance and reduced data transfer traffic.
+- FSx File Gateway stores your data natively as files rather than as objects.
+- FSx File Gateway is a solution for replacing on-premises NAS, such as end-user home directories and departmental or group servers, with cloud storage.
+- It facilitates user or team file shares and file-based application migration shares in Amazon FSx for Windows File Server, using the SMB protocol.
+- Files written through FSx File Gateway can be directly accessed in FSx for Windows File Server
+
+![](https://d1.awsstatic.com/cloud-storage/Amazon%20FSx%20File%20Gateway%20How%20It%20Works%20Diagram.edbf58e4917d47d04e5a5c22132d44bd92733bf5.png)
+
 # Volume Gateway
 - [Volume Gateway](https://aws.amazon.com/storagegateway/volume/) provides an iSCSI target, with which you can create block storage volumes and mount them as iSCSI devices from your on-premises or EC2 application servers.
 
@@ -63,15 +73,6 @@ When multiple gateways or file shares write to the same S3 bucket, unpredictable
 | [Dirty data](https://docs.aws.amazon.com/storagegateway/latest/vgw/Main_monitoring-gateways-common.html) | Data that is written to the Storage Gateway cache, but has not been uploaded to AWS, is referred to as [dirty](https://docs.aws.amazon.com/storagegateway/latest/vgw/Main_monitoring-gateways-common.html). |
 | Supported host platform for Volume Gateway appliance                                                     | [Amazon EC2](../../3_ComputeServices/AmazonEC2/Readme.md), VMware ESXi VM, A physical hardware appliance.                                                                                                   |
 
-# Amazon FSx File Gateway
-- [FSx File Gateway](https://aws.amazon.com/storagegateway/file/fsx/) optimizes on-premises access to Windows file shares on Amazon FSx, helping you access FSx for Windows File Server data with low latency and conserving shared bandwidth. 
-- A local cache of frequently used data that you can access is stored, providing faster performance and reduced data transfer traffic. 
-- FSx File Gateway stores your data natively as files rather than as objects.
-- FSx File Gateway is a solution for replacing on-premises NAS, such as end-user home directories and departmental or group servers, with cloud storage. 
-- It facilitates user or team file shares and file-based application migration shares in Amazon FSx for Windows File Server, using the SMB protocol. 
-- Files written through FSx File Gateway can be directly accessed in FSx for Windows File Server
-
-![](https://d1.awsstatic.com/cloud-storage/Amazon%20FSx%20File%20Gateway%20How%20It%20Works%20Diagram.edbf58e4917d47d04e5a5c22132d44bd92733bf5.png)
 
 # Pricing
 

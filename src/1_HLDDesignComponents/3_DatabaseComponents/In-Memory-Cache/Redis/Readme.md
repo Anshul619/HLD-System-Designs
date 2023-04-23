@@ -5,13 +5,15 @@
 
 # Top Redis Use Cases
 
-| Use Case                                                                                | Remarks                                                                                          |
-|-----------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------|
-| [Caching](https://redis.com/solutions/use-cases/caching/)                               | -                                                                                                |
-| [Session Storage](https://redis.com/solutions/use-cases/session-management/)            | -                                                                                                |
-| [Distributed Locks](https://redis.io/docs/manual/patterns/distributed-locks/)           | [Twitter Hit Counter](../../../../3_HLDDesignProblems/TwitterHitCounterDesign/Readme.md)         |
-| [Rate Limiting](https://redis.com/redis-best-practices/basic-rate-limiting/)            | [Rate Limiting in Distributed Systems](../../../../3_HLDDesignProblems/RateLimiterAPI/Readme.md) |
-| [Rank/Leaderboard using SortedSet](https://redis.com/solutions/use-cases/leaderboards/) | Example - Best sellers, ranking etc.                                                             |
+| Use Case                                                                                | Remarks                                                                                                                                                                |
+|-----------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| [Caching](https://redis.com/solutions/use-cases/caching/)                               | -                                                                                                                                                                      |
+| [Session Storage](https://redis.com/solutions/use-cases/session-management/)            | -                                                                                                                                                                      |
+| [Distributed Locks](https://redis.io/docs/manual/patterns/distributed-locks/)           | [Twitter Hit Counter](../../../../3_HLDDesignProblems/TwitterHitCounterDesign/Readme.md)                                                                               |
+| [Rate Limiting](https://redis.com/redis-best-practices/basic-rate-limiting/)            | [Rate Limiting in Distributed Systems](../../../../3_HLDDesignProblems/RateLimiterAPI/Readme.md)                                                                       |
+| [Rank/Leaderboard using SortedSet](https://redis.com/solutions/use-cases/leaderboards/) | Example - Best sellers, ranking etc.                                                                                                                                   |
+| [GeoSpatial](https://redis.io/docs/data-types/geospatial/)                              | Redis geospatial indexes let you store coordinates and search for them. This data structure is useful for finding nearby points within a given radius or bounding box. |
+| [Queues](https://redis.com/solutions/use-cases/messaging/)                              | -                                                                                                                                                                      |
 
 [Read more](https://www.youtube.com/watch?v=a4yX7RUgTxI)
 
@@ -27,7 +29,7 @@
 ## Speed - 100K queries per second
 - Since Redis uses in-memory for storage, it is very fast.
 - It can execute [100K queries per second](https://docs.google.com/spreadsheets/d/15vApko2QrmZmv5qTEIyU_IAWvgY3MD23TR3TuLUiPc8/edit#gid=227251411).
-- Mostly `O(1)` behavior, to get data from redis.
+- Mostly O(1) behavior, to get data from redis.
 - Generally, [Redis is 5 times faster than database](../../../SystemEstimationTips.md#latency-comparison-numbers).
 
 [![img.png](https://pbs.twimg.com/media/FMx3JZRUYAIWWKq?format=jpg&name=4096x4096)](https://www.youtube.com/watch?v=5TRFpFBccQM)

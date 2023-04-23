@@ -1,9 +1,7 @@
 # Amazon EC2 - Elastic Compute Cloud
 - [Amazon EC2 - Elastic Compute Cloud](https://aws.amazon.com/ec2/) offers the broadest and deepest compute platform, with over 500 instances and choice of the latest processor, storage, networking, operating system, and purchase model to help you best match the needs of your workload.
-- So, you don’t have to invest in costly physical services. 
 - Instead, you can create virtual machines with [Amazon EC2 - Elastic Compute Cloud](https://aws.amazon.com/ec2/) while managing other server features such as ports, security, and storage. 
-- Spend less time maintaining your servers and more time on your strategic projects. 
-- Invariably, Amazon EC2 is one of the most popular and fastest-growing of the many AWS services.
+- Spend less time maintaining your own costly physical servers and more time on your strategic projects.
 
 ![img.png](../../0_AWSDesigns/DesignScalableSystemWithRDMS/assets/DesignScalableSystemWithRelationalDBOnAWS.drawio.png)
 
@@ -15,7 +13,25 @@
 
 ![img.png](AutoScalingGroup/assets/Auto-Scaling-ELB.png)
 
-- [Read here](AutoScalingGroup/Readme.md)
+[Read here](AutoScalingGroup/Readme.md)
+
+# Features
+
+| Feature                                                                                                                              | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
+|--------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| [Amazon Machine Images (AMI)](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/AMIs.html)                                         | An Amazon Machine Image (AMI) is a supported and maintained image provided by AWS that provides the information required to launch an instance. <br/>- You must specify an AMI when you launch an instance. <br/>- You can launch multiple instances from a single AMI when you require multiple instances with the same configuration.<br/>- Since AMIs are based on the underlying EBS snapshots, hence when you copy AMI, snapshot is copied automatically. |
+| [State change events for your instances](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/monitoring-instance-state-changes.html) | Amazon EC2 sends an [EC2 Instance State-change Notification event](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/monitoring-instance-state-changes.html) to [Amazon EventBridge](../../5_MessageBrokerServices/AmazonEventBridge.md) when the state of an instance changes.                                                                                                                                                                              |
+| [EC2 Auto Scaling](AutoScalingGroup/Readme.md)                                                                                       | -                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
+
+
+# Pricing Options
+
+| Option                                                                                          | Price Comparison                                   | Ideal Use Cases            | Description                                                                                                                                                                                                            |
+|-------------------------------------------------------------------------------------------------|----------------------------------------------------|----------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| :star: [On-Demand](https://aws.amazon.com/ec2/pricing/)                                         | Fixed per hour                                     | -                          | With On-Demand Instances, you pay for compute capacity with no long-term commitments. <br/>- Billing begins whenever the instance is running, and billing stops when the instance is in a stopped or terminated state. |
+| [Reserved](https://aws.amazon.com/ec2/pricing/)                                                 | Up to 72% compared to On-Demand pricing            | Long term business plans.  | Amazon EC2 Reserved Instances (RI) provide a significant discount (up to 72%) compared to On-Demand pricing and provide a capacity reservation when used in a specific Availability Zone.                              |
+| [Spot Instances](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-spot-instances.html) | Up to a 90% discount compared to On-Demand prices. | Disruptions are tolerable. | Amazon EC2 Spot Instances allow you to take advantage of unused EC2 capacity in the AWS Cloud. <br/>Note - Spot instances can be taken back by AWS with two minutes of notice.                                         |
+| [Saving Plans](https://aws.amazon.com/savingsplans/)                                            | -                                                  | -                          | Savings Plans is a flexible pricing model that offers low prices on EC2, Lambda, and Fargate usage, in exchange for a commitment to a consistent amount of usage (measured in $/hour) for a 1 or 3 year term.          |
 
 # Instance Types
 
@@ -28,40 +44,19 @@
 | [Accelerated Computing](https://aws.amazon.com/ec2/instance-types/)                                                                                   | Accelerated computing instances use hardware accelerators, or co-processors, to perform functions, such as floating point number calculations, graphics processing, or data pattern matching, more efficiently than is possible in software running on CPUs.                                                                                                                                                                               | p4d.24xlarge 	   | Machine learning, high performance computing, computational fluid dynamics, computational finance, seismic analysis, speech recognition, autonomous vehicles, and drug discovery.                                                                                   |
 | Storage Optimized                                                                                                                                     | Designed for workloads that require high, sequential read and write access to large datasets on local storage. <br/>- They are optimized to deliver tens of thousands of low-latency random I/O operations per second (IOPS) to applications that replicate their data across different instances.                                                                                                                                         | -                | NoSQL databases, such as Cassandra, MongoDB, and Redis, in-memory databases, scale-out transactional databases, data warehousing, Elasticsearch, and analytics.                                                                                                     |
 
-Follow these best practices to get the maximum benefit from burstable performance instances.
+## Best Practices with burstable performance instances
 - Ensure that the instance size you choose passes the minimum memory requirements of your operating system and applications. 
 - Operating systems with graphical user interfaces that consume significant memory and CPU resources (for example, Windows) might require a t3.micro or larger instance size for many use cases. As the memory and CPU requirements of your workload grow over time, you have the flexibility with the T instances to scale to larger instance sizes of the same instance type, or to select another instance type.
 - Enable [AWS Compute Optimizer](https://aws.amazon.com/compute-optimizer/getting-started/) for your account and review the Compute Optimizer recommendations for your workload. Compute Optimizer can help assess whether instances should be upsized to improve performance or downsized for cost savings.
 - Enable [Instance Scheduler on AWS](https://aws.amazon.com/solutions/implementations/instance-scheduler-on-aws/) to configure start and stop schedules for your Amazon EC2 and [Amazon RDS instances](../../6_DatabaseServices/AmazonRDS/Readme.md) to manage costs.
 
-# Pricing Options
+# Placement groups
 
-| Option                                                                                          | Description                                                                                                                                                                                                                                                                                   |
-|-------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| :star: [On-Demand](https://aws.amazon.com/ec2/pricing/)                                         | With On-Demand Instances, you pay for compute capacity with no long-term commitments. <br/>- Billing begins whenever the instance is running, and billing stops when the instance is in a stopped or terminated state. <br/>- The price per second for a running On-Demand Instance is fixed. |
-| [Reserved](https://aws.amazon.com/ec2/pricing/)                                                 | Amazon EC2 Reserved Instances (RI) provide a significant discount (up to 72%) compared to On-Demand pricing and provide a capacity reservation when used in a specific Availability Zone.                                                                                                     |
-| [Spot Instances](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-spot-instances.html) | Amazon EC2 Spot Instances allow you to take advantage of unused EC2 capacity in the AWS Cloud. <br/>- They are available at up to a 90% discount compared to On-Demand prices.<br/>- Spot instances can be taken back by AWS with two minutes of notice, so spot instances cannot be reliably used for running the dev application (which can be up and running for up to 8 hours).                                                                                                          |
-
-# State change events for your instances
-- Amazon EC2 sends an [EC2 Instance State-change Notification event](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/monitoring-instance-state-changes.html) to [Amazon EventBridge](../../5_MessageBrokerServices/AmazonEventBridge.md) when the state of an instance changes.
-
-````json
-{
-   "id":"7bf73129-1428-4cd3-a780-95db273d1602",
-   "detail-type":"EC2 Instance State-change Notification",
-   "source":"aws.ec2",
-   "account":"123456789012",
-   "time":"2021-11-11T21:29:54Z",
-   "region":"us-east-1",
-   "resources":[
-      "arn:aws:ec2:us-east-1:123456789012:instance/i-abcd1111"
-   ],
-   "detail":{
-      "instance-id":"i-abcd1111",
-      "state":"pending"
-   }
-}
-````
+| Group                                                                                  | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
+|----------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| [Cluster](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/placement-groups.html)   | Packs instances close together inside an Availability Zone. This strategy enables workloads to achieve the low-latency network performance necessary for tightly-coupled node-to-node communication that is typical of high-performance computing (HPC) applications.                                                                                                                                                                                                                                                                                                       |
+| [Partition](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/placement-groups.html) | Spreads your instances across logical partitions such that groups of instances in one partition do not share the underlying hardware with groups of instances in different partitions. <br/>- This strategy is typically used by large distributed and replicated workloads, such as [Hadoop](../../../1_HLDDesignComponents/5_BigDataComponents/BatchProcessing/ApacheHadoop/Readme.md), [Cassandra](../../../1_HLDDesignComponents/3_DatabaseComponents/NoSQL-Databases/ApacheCasandra.md), and [Kafka](../../../1_HLDDesignComponents/4_MessageBrokers/Kafka/Readme.md). |
+| [Spread](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/placement-groups.html)    | Strictly places a small group of instances across distinct underlying hardware to reduce correlated failures.                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
 
 # References
 - [Getting Started with AWS Compute Optimizer](https://aws.amazon.com/compute-optimizer/getting-started/)

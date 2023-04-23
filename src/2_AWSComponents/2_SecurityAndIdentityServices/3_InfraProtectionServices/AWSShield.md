@@ -5,3 +5,7 @@
 There are two tiers of AWS Shield 
 - AWS Shield Standard (enabled by default and comes with no additional cost)
 - [AWS Shield Advanced](https://aws.amazon.com/shield/features/)
+
+# Pricing - Consolidated Accounts
+- If your organization has multiple AWS accounts, then you can subscribe multiple AWS Accounts to [AWS Shield Advanced]() by individually enabling it on each account using the AWS Management Console or API. 
+- You will pay the monthly fee once as long as the AWS accounts are all under a single consolidated billing, and you own all the AWS accounts and resources in those accounts.

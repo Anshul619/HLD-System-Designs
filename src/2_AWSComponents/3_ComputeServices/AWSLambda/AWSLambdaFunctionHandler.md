@@ -4,7 +4,7 @@
 
 # Supported Code Upload Options & Languages
 
-![img.png](assets/Lambda-Code-Upload-Options.png)
+![img.png](assets/Lambda-Architecture.png)
 
 # Handler function syntax
 

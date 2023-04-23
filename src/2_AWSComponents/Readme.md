@@ -29,6 +29,14 @@
 
 [Read more](0_AWSDesigns/DesignUploadImageAWSLambdaS3/README.md)
 
+## IoT sensor data capture architecture
+
+![](7_StorageServices/assets/AWS-IOT-Data-Capture.png)
+
+## Real-time data analytics architecture
+
+![](7_StorageServices/assets/AWS-RDS-Stored-Procedures.png)
+
 ## Others
 - [Send-SMS-API design - App Internal Clients, Multiple SMS-Providers, AutoScaling](../3_HLDDesignProblems/NotificationSystem/README.md)
 - [WP Site with Amazon CloudFront & S3](0_AWSDesigns/WPSiteCloudFront&S3.md)
@@ -333,6 +341,12 @@
 
 [Read more](1_NetworkingAndContentDelivery/2_ApplicationNetworking/ElasticLoadBalancer/Readme.md)
 
+## Amazon Global Accelerator
+
+![img.png](1_NetworkingAndContentDelivery/assets/AWSGlobalAccelerator.drawio.png)
+
+[Read more](1_NetworkingAndContentDelivery/1_EdgeNetworking/AWSGlobalAccelerator.md)
+
 ## Amazon ECS - Tasks, Fargate etc.
 
 ![img.png](4_ContainerOrchestrationServices/AmazonECS/assests/ECS-Tasks.png)
@@ -359,7 +373,7 @@
 
 ## AWS Lambda
 
-![img.png](3_ComputeServices/AWSLambda/assets/Lambda-Code-Upload-Options.png)
+![img.png](3_ComputeServices/AWSLambda/assets/Lambda-Architecture.png)
 
 [Read more](3_ComputeServices/AWSLambda/Readme.md)
 
@@ -380,6 +394,12 @@
 ![img.png](1_NetworkingAndContentDelivery/assets/AWS_VPC.png)
 
 [Read more](1_NetworkingAndContentDelivery/3_NetworkFoundations/AmazonVPC/Readme.md)
+
+## Amazon Storage Services
+
+![](7_StorageServices/assets/AWS-Storage-Services.png)
+
+[Read more](7_StorageServices/Readme.md)
 
 ## Amazon Organization, Identity Center
 
