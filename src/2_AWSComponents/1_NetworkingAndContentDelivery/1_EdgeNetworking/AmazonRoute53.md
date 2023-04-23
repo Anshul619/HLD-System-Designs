@@ -91,7 +91,7 @@ Note:
 ![img.png](../assets/route53-multi-value-routing.png)
 
 ## Geo Based DNS routing
-- The Geo Based DNS routing takes decisions based on the geographic location of the request.
+- The [Geo Based DNS routing](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/routing-policy-geo.html) takes decisions based on the geographic location of the request.
 - Geo Based routing is used when you want to direct the customer to different websites based on the country or region they are browsing from.
 
 ## Fail-over routing policy

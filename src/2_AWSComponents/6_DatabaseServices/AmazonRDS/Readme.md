@@ -8,15 +8,17 @@
 
 # :star: RDS - Different Roles
 
-| Role             | Architecture        | Applicable RDS Engine                                                     | Remarks                                                                                |
-|------------------|---------------------|---------------------------------------------------------------------------|----------------------------------------------------------------------------------------|
-| Instance         | -                   | :white_check_mark: All                                                    | Simple DB instance, without Multi-AZ enabled.                                          |
-| Regional Cluster | Master-Read-Replica | :white_check_mark: [Aurora](AmazonAurora.md)                           | Aurora DB Cluster                                                                      |
-| Writer Instance  | Master-Read-Replica | :white_check_mark: [Aurora](AmazonAurora.md)                           | Takes all writes (& reads if multi-AZ disabled), in regional cluster                   |
-| Reader Instance  | Master-Read-Replica | :white_check_mark: [Aurora (when Multi-AZ enabled)](AmazonAurora.md)   | Takes all reads, in regional cluster                                                   |
-| Serverless       | -                   | :white_check_mark: [Aurora](AmazonAurora.md)                           | Serverless compute of Aurora Instance                                                  |
-| Primary          | Master-Slave        | Non-Aurora                                                                | Writer Instance, with Multi-AZ enabled and takes all writes.                           |
-| Replica          | Master-Slave        | Non-Aurora (when Multi-AZ enabled)                                        | Replica is a standby instance of Primary instance, in the different Availability Zone. |
+| Role             | Architecture        | Applicable RDS Engine                                                | Remarks                                                                                |
+|------------------|---------------------|----------------------------------------------------------------------|----------------------------------------------------------------------------------------|
+| Instance         | -                   | :white_check_mark: All                                               | Simple DB instance, without Multi-AZ enabled.                                          |
+| Regional Cluster | Master-Read-Replica | :white_check_mark: [Aurora](AmazonAurora.md)                         | Aurora DB Cluster                                                                      |
+| Writer Instance  | Master-Read-Replica | :white_check_mark: [Aurora](AmazonAurora.md)                         | Takes all writes (& reads if multi-AZ disabled), in regional cluster                   |
+| Reader Instance  | Master-Read-Replica | :white_check_mark: [Aurora (when Multi-AZ enabled)](AmazonAurora.md) | Takes all reads, in regional cluster                                                   |
+| Serverless       | -                   | :white_check_mark: [Aurora](AmazonAurora.md)                         | Serverless compute of Aurora Instance                                                  |
+| Primary          | Master-Slave        | Non-Aurora                                                           | Writer Instance, with Multi-AZ enabled and takes all writes.                           |
+| Replica          | Master-Slave        | Non-Aurora (when Multi-AZ enabled)                                   | Replica is a standby instance of Primary instance, in the different Availability Zone. |
+
+![](https://assets-pt.media.datacumulus.com/aws-saa-pt/assets/pt1-q52-i1.jpg)
 
 # Features
 
@@ -38,9 +40,6 @@
 - Many applications, including those built on modern serverless architectures, can have a large number of open connections to the database server and may open and close database connections at a high rate, exhausting database memory and compute resources.
 
 # Real-time data analytics architecture
-- Amazon RDS databases are busy places. 
-- When real-time data analytics are run directly against the Amazon RDS database, it can cause latency. 
-- One solution is to create an architecture that moves these records off the database for analysis.
 
 ![](../../7_StorageServices/assets/AWS-RDS-Stored-Procedures.png)
 

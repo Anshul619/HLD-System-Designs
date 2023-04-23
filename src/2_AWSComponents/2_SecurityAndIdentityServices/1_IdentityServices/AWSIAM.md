@@ -73,6 +73,14 @@
 | [iam:PassedToService](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_iam-condition-keys.html)       | Condition keys for passing roles | Specifies the service principal of the service to which a role can be passed.                         |
 | [iam:AssociatedResourceArn](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_iam-condition-keys.html) | Condition keys for passing roles | Specifies the ARN of the resource to which this role will be associated at the destination service    |
 
+## Permission Boundary
+- A [permissions boundary](https://aws.amazon.com/blogs/security/delegate-permission-management-to-developers-using-iam-permissions-boundaries/) is an advanced feature that allows you to limit the maximum permissions that a principal can have.
+- As the IAM administrator, you can define one or more permissions boundaries using managed policies and allow your employee to create a principal with this boundary.
+- The employee can then attach a permissions policy to this principal. 
+- However, the effective permissions of the principal are the intersection of the permissions boundary and permissions policy.
+
+![](https://d2908q01vomqb2.cloudfront.net/22d200f8670dbdb3e253a90eee5098477c95c23d/2018/07/02/delegated-admin-01.png)
+
 # Tools
 
 | Tool                                                                                                                                        | Description                                                                                                                                                     |

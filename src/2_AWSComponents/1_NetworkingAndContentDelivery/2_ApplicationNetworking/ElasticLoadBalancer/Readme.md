@@ -55,6 +55,9 @@
 
 - [Read here](../../../3_ComputeServices/AmazonEC2/AutoScalingGroup/Readme.md)
 
+# Other points
+- Elastic Load Balancer cannot throttle requests.
+
 # References
 - [Application Load Balancer vs Network Load Balancer vs Classic Load Balancer | AWS CSAA | Whizlabs](https://www.youtube.com/watch?v=WqJDac1H81I)
 - [AWS ELB - Elastic Load Balancer | Why and What is ELB? | What are listeners and target groups?](https://www.youtube.com/watch?v=fMgA3rE0aPY)

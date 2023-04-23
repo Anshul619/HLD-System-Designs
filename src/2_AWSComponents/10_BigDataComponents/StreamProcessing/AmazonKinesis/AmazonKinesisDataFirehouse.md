@@ -1,11 +1,19 @@
 # Amazon Kinesis Data Firehouse
-- [Amazon Kinesis Data Firehose](https://aws.amazon.com/kinesis/data-firehose/) is the easiest way to capture, transform, and load data streams into AWS data stores (like [Amazon S3](../../../7_StorageServices/3_ObjectStorageTypes/AmazonS3/Readme.md), [Amazon Redshift](../../../6_DatabaseServices/AmazonRedshift.md)) for near real-time analytics with existing business intelligence tools.
+- [Amazon Kinesis Data Firehose](https://aws.amazon.com/kinesis/data-firehose/) is the easiest way to capture, transform, and load data streams into AWS data stores (like [Amazon S3](../../../7_StorageServices/3_ObjectStorageTypes/AmazonS3/Readme.md), [Amazon Redshift](../../../6_DatabaseServices/AmazonRedshift.md) etc.) for near real-time analytics with existing business intelligence tools.
+- It is a fully managed service that automatically scales to match the throughput of your data and requires no ongoing administration. 
+- It can also batch, compress, and encrypt the data before loading it, minimizing the amount of storage used at the destination and increasing security.
 
-![](https://miro.medium.com/max/1380/0*5O8Lfq-M3xxfQuZI.webp)
+![](https://d1.awsstatic.com/pdp-how-it-works-assets/product-page-diagram_Amazon-KDF_HIW-V2-Updated-Diagram@2x.6e531854393eabf782f5a6d6d3b63f2e74de0db4.png)
 
 # Amazon Kinesis Data Firehouse & Event Bridge
 
 ![img.png](../../../5_MessageBrokerServices/assests/eventbridge/EventBridge.png)
+
+# Data Flow
+- For [Amazon S3 destinations](https://docs.aws.amazon.com/firehose/latest/dev/what-is-this-service.html), streaming data is delivered to your S3 bucket. 
+- If data transformation is enabled, you can optionally back up source data to another Amazon S3 bucket.
+
+![](https://docs.aws.amazon.com/images/firehose/latest/dev/images/fh-flow-s3.png)
 
 # References
 - [Delivering Real-time Streaming Data to Amazon S3 Using Amazon Kinesis Data Firehose](https://towardsdatascience.com/delivering-real-time-streaming-data-to-amazon-s3-using-amazon-kinesis-data-firehose-2cda5c4d1efe)

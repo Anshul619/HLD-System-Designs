@@ -15,7 +15,7 @@
 
 ![img.png](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/images/AuroraArch001.png)
 
-### How to set up Multi-AZ deployment in Aurora?
+# How to set up Multi-AZ deployment in Aurora?
 
 ![img_1.png](assests/aurora_ha_setup_steps.png)
 
@@ -46,6 +46,14 @@
 - [A multi-master cluster doesn't do any load balancing for connections](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/aurora-multi-master.html#aurora-multi-master-connectivity).
 - Application must implement its own connection management logic to distribute read and write operations among multiple DB instance endpoints.
   
+# Aurora Read-Replica Priority Tiers
+- For Amazon Aurora, each Read Replica is associated with a [priority tier (0-15)](https://aws.amazon.com/blogs/aws/additional-failover-control-for-amazon-aurora/). 
+- In the event of a failover, Amazon Aurora will promote the Read Replica that has the highest priority (the lowest numbered tier). 
+- If two or more Aurora Replicas share the same priority, then Amazon RDS promotes the replica that is largest in size. 
+- If two or more Aurora Replicas share the same priority and size, then Amazon Aurora promotes an arbitrary replica in the same promotion tier.
+
+![](https://media.amazonwebservices.com/blog/2016/aurora_set_failover_priority_1.png)
+
 # References
 - [Amazon Aurora Global Database Design Patterns for HA and DR | Amazon Web Services](https://www.youtube.com/watch?v=bbiWciJSouY)
 - [Amazon RDS High Availability](https://aws.amazon.com/rds/ha/)

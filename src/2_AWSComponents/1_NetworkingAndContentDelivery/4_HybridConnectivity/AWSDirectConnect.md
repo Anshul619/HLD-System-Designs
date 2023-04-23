@@ -2,6 +2,7 @@
 - [AWS Direct Connect](https://aws.amazon.com/directconnect/) provides a dedicated, private connection between an on-premises data center and an AWS region over a high-speed, low-latency connection, which is facilitated by a direct physical link between the two locations.
 
 # Facts
+- Direct connect takes significant time (several months) to be provisioned.
 - All connections must be dedicated connections and have a port speed of 1 Gbps, 10 Gbps, or 100 Gbps.
 - All connections in the LAG must use the same bandwidth.
 - You can have a maximum of two 100-Gbps connections in a LAG, or four connections with a port speed less than 100 Gbps. Each connection in the LAG counts toward your overall connection limit for the Region.
