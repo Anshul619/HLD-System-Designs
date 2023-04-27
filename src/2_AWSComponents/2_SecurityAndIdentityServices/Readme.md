@@ -2,8 +2,8 @@
 
 | Service                                                                                  | Description                                                                                                    |
 |------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------|
-| [AWS IAM](1_IdentityServices/AWSIAM.md)                                                  | Who can do what in AWS?<br/>- Grant least privileges.                                                          |
-| [AWS Identity Center](1_IdentityServices/AWSIAMIdentityCenter.md)                        | Single-sign-on for users, Centralized identity provider.                                                       |
+| [AWS IAM](1_IdentityServices/AWSIAM/Readme.md)                                                  | Who can do what in AWS?<br/>- Grant least privileges.                                                          |
+| [AWS Identity Center](1_IdentityServices/AWSIAM/AWSIAMIdentityCenter.md)                        | Single-sign-on for users, Centralized identity provider.                                                       |
 | [AWS Secrets Manager](2_DataProtectionServices/AWSSecretsManager.md)                     | Secure and rotating secrets                                                                                    |
 | [Amazon Cognito](1_IdentityServices/AmazonCognito.md)                                    | User signup/login as a service.                                                                                |
 | [AWS Config](../8_MonitoringServices/SecurityMonitoringServices/AWSConfig.md)            | Detect any user changes in AWS account and automate remediation.                                               |

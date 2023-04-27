@@ -1,0 +1,26 @@
+//- The Principal is the `Amazon S3 "s3.amazonaws.com" service`.
+//- This policy is allowing the Amazon S3 service to perform an action.
+//- The Action that S3 is allowed to perform is the ability to invoke a `Lambda function "lambda:InvokeFunction" called "my-s3-function"`.
+
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "lambda-123",
+      "Effect": "Allow",
+      "Principal": {
+        "Service": "s3.amazonaws.com"
+      },
+      "Action": "lambda.InvokeFunction",
+      "Resource": "aws:lambda:function:my-s3-function",
+      "Condition": {
+        "StringEquals": {
+          "AWS:SourceAccount": ".."
+        },
+        "ArnLike": {
+          "AWS.SourceArn": "arn...lambda"
+        }
+      }
+    }
+  ]
+}

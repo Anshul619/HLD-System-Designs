@@ -6,7 +6,7 @@
 - Use a public subnet for resources that must be connected to the internet, and a private subnet for resources that won't be connected to the internet.
 - Subnets cannot span more than one Availability Zone.
 
-![img.png](../../assets/AWS_VPC.png)
+![img.png](assets/AWS_VPC.png)
 
 # Public vs Private Subnets
 - The only architectural difference between a public and private subnet is that a public subnet has a route to an internet gateway.

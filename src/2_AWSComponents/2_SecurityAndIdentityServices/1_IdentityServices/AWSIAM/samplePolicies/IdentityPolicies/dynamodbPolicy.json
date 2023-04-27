@@ -1,0 +1,11 @@
+// This IAM policy allows the function to perform the `"Action": "dynamodb:PutItem"` action against a DynamoDB table called `"test"` in the us-west-2 region.
+
+{
+  "Version": "2012-10-17",
+  "Statement": [{
+    "Sid": "Allow PutItem in table/test",
+    "Effect": "Allow",
+    "Resource": "arn.aws.dynamodb:us-west-2:###:table/test",
+    "Action": "dyanomodb.PutItem"
+  }]
+}

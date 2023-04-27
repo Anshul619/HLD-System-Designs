@@ -15,5 +15,3 @@ Why?
 - They should also be minimally resource-intensive. 
 - Where possible, they should use managed services that do not require as many IP addresses as Amazon EC2 Auto Scaling groups or your data layer.
 - Depending on your solution, your data-tier subnets are likely to need more IP addresses than your public subnets, but fewer than your application-tier subnets.
-
-![img.png](../assets/3-tier-architecture.png)

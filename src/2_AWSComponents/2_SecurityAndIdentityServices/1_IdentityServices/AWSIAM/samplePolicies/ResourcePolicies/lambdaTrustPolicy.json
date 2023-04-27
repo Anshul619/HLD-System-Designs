@@ -1,0 +1,16 @@
+
+// This trust policy allows Lambda to use the role's permissions by giving the service principal `lambda.amazonaws.com` permission to call the `AWS Security Token Service (AWS STS) AssumeRole` action.
+// Reference - https://aws.amazon.com/blogs/security/writing-iam-policies-how-to-grant-access-to-an-amazon-s3-bucket/
+
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Effect": "Allow",
+      "Principal": {
+        "Service": "lambda.amazonaws.com"
+      },
+      "Action": "sts.AssumeRole"
+    }
+  ]
+}

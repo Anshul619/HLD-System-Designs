@@ -4,22 +4,22 @@
 - You can specify an IP address range for the VPC, [add subnets](Subnets.md), [add gateways](InternetGateway.md), and associate security groups.
 - All traffic between two points in the same Amazon VPC is forwarded directly.
 
-![img.png](../../assets/AWS_VPC.png)
+![img.png](assets/AWS_VPC.png)
 
 # Main Components
 
-| Component                                                      | Remarks                                                        |
-|----------------------------------------------------------------|----------------------------------------------------------------|
-| [Subnets](Subnets.md)                                          | -                                                              |
-| [Route Tables](RouteTables.md)                                 | -                                                              |
-| [Internet Gateway](InternetGateway.md)                         | VPC specific service                                           |
-| [Network Access Control Lists (ACL)](NetworkACL.md)            | -                                                              |
-| :star: [Transit Gateway](../VPCConnection/TransitGateway.md)   | -                                                              |
-| [VPC Peering](../VPCConnection/VPCPeering.md)                  | -                                                              |
-| [Security Groups](SecurityGroup.md)                            | -                                                              |
-| [Network Gateway](NetworkGateway.md)                           | NAT provides Public IP of the whole network, to outside world. |
-| [Flow Logs](../../5_Monitoring&Security/VPCFlowLogs.md)                                       | -                                                              |
-| [VPC Enpoints](VPCEndpoints.md)                                | -                                                              |
+| Component                                                                                                            | Remarks                                                        |
+|----------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------|
+| [Subnets](Subnets.md)                                                                                                | -                                                              |
+| [Route Tables](RouteTables.md)                                                                                       | -                                                              |
+| [Internet Gateway](InternetGateway.md)                                                                               | VPC specific service                                           |
+| [Network Access Control Lists (ACL)](../../../2_SecurityAndIdentityServices/3_InfraProtectionServices/VPCNetworkACL.md) | -                                                              |
+| :star: [Transit Gateway](../VPCConnection/TransitGateway.md)                                                         | -                                                              |
+| [VPC Peering](../VPCConnection/VPCPeering.md)                                                                        | -                                                              |
+| [Security Groups](../../../2_SecurityAndIdentityServices/3_InfraProtectionServices/VPCSecurityGroup.md)                 | -                                                              |
+| [Network Gateway](NetworkGateway.md)                                                                                 | NAT provides Public IP of the whole network, to outside world. |
+| [Flow Logs](../../5_Monitoring&Security/VPCFlowLogs.md)                                                              | -                                                              |
+| [VPC Enpoints](VPCEndpoints.md)                                                                                      | -                                                              |
 
 # Features
 

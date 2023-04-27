@@ -4,7 +4,7 @@
 - It supports IPv4 and IPv6 traffic.
 - It does not cause availability risks or bandwidth constraints on your network traffic.
 
-![img.png](../../assets/AWS_VPC.png)
+![img.png](assets/AWS_VPC.png)
 
 # Features
 

@@ -391,7 +391,7 @@
 
 ## Amazon VPC, Subnet etc.
 
-![img.png](1_NetworkingAndContentDelivery/assets/AWS_VPC.png)
+![img.png](1_NetworkingAndContentDelivery/3_NetworkFoundations/AmazonVPC/assets/AWS_VPC.png)
 
 [Read more](1_NetworkingAndContentDelivery/3_NetworkFoundations/AmazonVPC/Readme.md)
 
