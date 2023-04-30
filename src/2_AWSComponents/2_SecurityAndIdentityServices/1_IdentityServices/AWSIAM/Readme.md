@@ -21,6 +21,12 @@
 | [Follow least privilege principle](https://aws.amazon.com/blogs/security/techniques-for-writing-least-privilege-iam-policies/) | We may create roles with defined access levels/permissions/policies using IAM & assign roles to users.                                                                                                                                                                          |
 | [Cross-Account access](https://docs.aws.amazon.com/config/latest/developerguide/s3-bucket-policy.html)                                                                                                           | By default, [all Amazon S3 resources are private](https://docs.aws.amazon.com/config/latest/developerguide/s3-bucket-policy.html), so only the AWS account that created the resources can access them.<br/>- Using IAM roles, it is possible to access cross-account resources. |
 
+## Assume Role - EC2, S3
+
+![](assets/IAM-Main-Principles-Policies.png)
+
+[Read more](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_use_switch-role-ec2.html)
+
 ## Cross-Account access - Redshift & S3
 
 ![](assets/IAM-Cross-Account-UseCase-Redshift-S3.drawio.png)

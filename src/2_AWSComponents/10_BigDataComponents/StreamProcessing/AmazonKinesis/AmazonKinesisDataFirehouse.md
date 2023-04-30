@@ -1,5 +1,5 @@
 # Amazon Kinesis Data Firehouse
-- [Amazon Kinesis Data Firehose](https://aws.amazon.com/kinesis/data-firehose/) is the easiest way to capture, transform, and load data streams into various AWS data stores (like [Amazon S3](../../../7_StorageServices/3_ObjectStorageTypes/AmazonS3/Readme.md), [Amazon Redshift](../../../6_DatabaseServices/AmazonRedshift.md) etc.) for near real-time analytics with existing business intelligence tools.
+- [Amazon Kinesis Data Firehose](https://aws.amazon.com/kinesis/data-firehose/) is the easiest way to capture, transform, and load data streams into various [AWS data stores](../../../6_DatabaseServices/Readme.md), data lakes & analytics tools, for near real-time analytics with existing business intelligence tools.
 - It is a fully managed service that automatically scales to match the throughput of your data and requires no ongoing administration. 
 - It can also batch, compress, and encrypt the data before loading it, minimizing the amount of storage used at the destination and increasing security.
 
@@ -11,7 +11,7 @@
 |-----------------------------------------------------------------------------------------------|
 | [Amazon S3](../../../7_StorageServices/3_ObjectStorageTypes/AmazonS3/Readme.md)               |
 | [Amazon Redshift](../../../6_DatabaseServices/AmazonRedshift.md)                              |
-| Amazon OpenSearch Service                                                                     |
+| [Amazon OpenSearch Service](../../../6_DatabaseServices/AmazonOpenSearch.md)                  |
 | [NewRelic](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/SubscriptionFilters.html) |
 | Splunk, Datadog, Dynatrace, Sumo Logic, LogicMonitor etc.                                     |
 | MongoDB                                                                                       |

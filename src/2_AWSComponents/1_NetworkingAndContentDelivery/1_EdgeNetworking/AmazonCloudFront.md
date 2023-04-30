@@ -15,6 +15,7 @@
 | [Cache content for faster delivery (i.e. CDN)](../../../1_HLDDesignComponents/0_SystemGlossaries/CDNs/CDNs.md)         | Even though origin server is in another region, users can get low-latency experience using edge locations & regional cache.                                                                                                                                                                                                                                                                                          |
 | [Streaming audio or video](../../../1_HLDDesignComponents/0_SystemGlossaries/CDNs/StaticContentWithCDN.md)             | -                                                                                                                                                                                                                                                                                                                                                                                                                    |
 | [Manage time-to-live (TTL)](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/Expiration.html)        | You can control how long your files stay in a CloudFront cache before CloudFront forwards another request to your origin. <br/>- Reducing the duration allows you to serve dynamic content. <br/>- Increasing the duration means that your users get better performance because your files are more likely to be served directly from the edge cache. <br/>- A longer duration also reduces the load on your origin. | 
+| [Adding the CloudFront HTTP headers](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/using-cloudfront-headers.html)                                                                                                                       | You can [configure CloudFront to add specific HTTP headers](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/using-cloudfront-headers.html) to the requests that CloudFront receives from viewers. The values of these HTTP headers are based on characteristics of the viewer request. The headers can provide information about the viewer's device type, IP address, geographic location, request protocol (HTTP or HTTPS), HTTP version, and TLS connection details.|
 
 # :star: Amazon S3 + Amazon CloudFront: A Match Made in the Cloud
 - [Instead of directly accessing the S3 resource](https://aws.amazon.com/blogs/networking-and-content-delivery/amazon-s3-amazon-cloudfront-a-match-made-in-the-cloud/), we should use [CloudFront distribution](AmazonCloudFront.md) in the middle (which acts as a [CDN](../../../1_HLDDesignComponents/0_SystemGlossaries/CDNs/CDNs.md))
@@ -47,11 +48,6 @@
 
 [Read more about Point of presence](../../AWS-Global-Architecture-Region-AZ.md#points-of-presence)
 
-# Adding the CloudFront HTTP headers
-- You can [configure CloudFront to add specific HTTP headers](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/using-cloudfront-headers.html) to the requests that CloudFront receives from viewers. 
-- The values of these HTTP headers are based on characteristics of the viewer request. 
-- The headers can provide information about the viewer's device type, IP address, geographic location, request protocol (HTTP or HTTPS), HTTP version, and TLS connection details.
-
 # Serving private content with signed URLs and signed cookies
 To securely serve this [private content by using CloudFront](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/private-content-overview.html), you can do the following:
 - Require that your users access your private content by using special CloudFront signed URLs or signed cookies.
@@ -59,9 +55,9 @@ To securely serve this [private content by using CloudFront](https://docs.aws.am
 - Requiring CloudFront URLs isn't necessary, but we recommend it to prevent users from bypassing the restrictions that you specify in signed URLs or signed cookies.
 - [Restricting access to an Amazon S3 origin](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/private-content-restricting-access-to-s3.html)
 
-![](https://jasonstitt.com/images/s3-cloudfront-lambda.png)
-
 # CDN Customizations
+
+![](https://jasonstitt.com/images/s3-cloudfront-lambda.png)
 
 ## Customizing with CloudFront Functions
 - With [CloudFront Functions in Amazon CloudFront](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/cloudfront-functions.html), lightweight functions can be developed in [JavaScript]() for [high-scale, latency-sensitive CDN customizations](../../../1_HLDDesignComponents/0_SystemGlossaries/CDNs/CDNs.md). 

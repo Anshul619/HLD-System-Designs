@@ -343,7 +343,7 @@
 
 ## Amazon Global Accelerator
 
-![img.png](1_NetworkingAndContentDelivery/assets/AWSGlobalAccelerator.drawio.png)
+![img.png](1_NetworkingAndContentDelivery/1_EdgeNetworking/assets/AWSGlobalAccelerator.png)
 
 [Read more](1_NetworkingAndContentDelivery/1_EdgeNetworking/AWSGlobalAccelerator.md)
 
@@ -352,6 +352,12 @@
 ![img.png](4_ContainerOrchestrationServices/AmazonECS/assests/ECS-Tasks.png)
 
 [Read more](4_ContainerOrchestrationServices/AmazonECS/Readme.md)
+
+## Amazon EC2, AMI, EBS, Instance Store
+
+[](3_ComputeServices/assests/AMI_EC2_Root_Volume.drawio.png)
+
+[Read more](3_ComputeServices/AmazonEC2/Readme.md)
 
 ## Amazon SQS - Queue, Consumers etc.
 
@@ -405,7 +411,7 @@
 
 ![](2_SecurityAndIdentityServices/1_IdentityServices/assets/AWS-Multiple-Accounts.png)
 
-[Read more](2_SecurityAndIdentityServices/1_IdentityServices/AWSOrganization.md)
+[Read more](2_SecurityAndIdentityServices/4_MultipleAccounts/AWSOrganization.md)
 
 # Terminologies
 - [Utility services](https://stackoverflow.com/questions/33125790/why-some-services-are-called-aws-xxx-and-the-others-amazon-xxx) are prefixed with `AWS`, while standalone services are prefixed by `Amazon`.

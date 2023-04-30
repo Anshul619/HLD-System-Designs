@@ -45,7 +45,7 @@ Leader Based Replication is available as a built-in-feature in various technolog
 # Replica Lag - Major Problem  
 - It takes time (known as [Replica Lag](https://cloud.google.com/sql/docs/mysql/replication/replication-lag)) for data to be replicated b/w replicas in [multiple highly available zones (or regions)](../../../2_AWSComponents/AWS-Global-Architecture-Region-AZ.md).
 - Hence, [data consistency](https://en.wikipedia.org/wiki/Data_consistency) won't be there for those milliseconds, which is known as [replica lag](https://cloud.google.com/sql/docs/mysql/replication/replication-lag).
-- [Replication lag - Amazon Aurora vs RDS](../../../2_AWSComponents/6_DatabaseServices/AmazonRDS/AmazonAuroraVsRDS.md).
+- [Replication lag - Amazon Aurora vs RDS](../../../2_AWSComponents/6_DatabaseServices/AmazonRDS/AmazonAuroraVsOtherDBEngines.md).
 
 # Consistency patterns
 

@@ -1,10 +1,13 @@
 # Amazon Elastic Block Store (EBS)
 - [Amazon Elastic Block Store (Amazon EBS)](https://aws.amazon.com/ebs/) is an easy-to-use, scalable, high-performance block-storage service designed for [Amazon Elastic Compute Cloud (Amazon EC2)](../../3_ComputeServices/AmazonEC2/Readme.md).
 
-![](../assets/EBS-Use%20Cases.png)
+[](../../3_ComputeServices/assests/AMI_EC2_Root_Volume.drawio.png)
 
 # Amazon EBS use cases
+
 Amazon EBS is useful when you must retrieve data quickly and have data persist long-term. Volumes are commonly used in the following scenarios.
+
+![](../assets/EBS-Use%20Cases.png)
 
 | Use Case                          | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
 |-----------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -23,7 +26,7 @@ Amazon EBS is useful when you must retrieve data quickly and have data persist l
 | Data persistence                    | The storage persists even when your instance doesnt.                                                                                                                   |
 | Data encryption                     | All EBS volumes support encryption.                                                                                                                                    |
 | Flexibility                         | EBS volumes support on-the-fly changes. You can modify volume type, volume size, and input/output operations per second (IOPS) capacity without stopping your instance. |
-| Backups                             | Amazon EBS provides the ability to create backups of any EBS volume, through snapshots.                                                                                |
+| Backups through EBS Snapshots       | Amazon EBS provides the ability to create backups of any EBS volume, through snapshots.                                                                                |
 
 # Features
 

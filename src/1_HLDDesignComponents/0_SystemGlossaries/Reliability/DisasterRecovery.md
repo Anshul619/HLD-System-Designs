@@ -13,4 +13,4 @@
 
 # Global Architecture
 
-![img.png](../../../2_AWSComponents/6_DatabaseServices/AmazonRDS/assests/aurora_global_database_img.png)
+![img.png](../../../2_AWSComponents/6_DatabaseServices/AmazonRDS/assests/AuroraGlobalDB/aurora_global_database_img.png)

@@ -14,7 +14,7 @@
 
 # AWS Global Accelerator & ELB
 
-![](../assets/AWSGlobalAccelerator.drawio.png)
+![](assets/AWSGlobalAccelerator.png)
 
 |       | AWS Global Accelerator        | ELB                       |
 |-------|-------------------------------|---------------------------|

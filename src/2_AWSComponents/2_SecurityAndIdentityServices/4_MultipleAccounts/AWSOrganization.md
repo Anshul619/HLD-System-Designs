@@ -3,7 +3,7 @@
 - [AWS Organizations](https://aws.amazon.com/organizations/) lets you create new AWS accounts at no additional charge.
 - More easily allocate resources, group accounts, and apply governance policies to accounts or groups.
 
-![img.png](assets/AWS-Multiple-Accounts.png)
+![img.png](../1_IdentityServices/assets/AWS-Multiple-Accounts.png)
 
 # Why do I need multiple AWS accounts?
 - [AWS accounts](https://docs.aws.amazon.com/accounts/latest/reference/welcome-multiple-accounts.html) serve as the fundamental security boundary in AWS. 
@@ -27,5 +27,10 @@ Separating your resources into separate AWS accounts helps you to support the fo
 
 All the recommendations and procedures described in this document are in compliance with the [AWS Well-Architected Framework](../../AWS-Well-Architected-Framework.md).
 
-# AWS Resource Access Manager
-- [AWS RAM](https://aws.amazon.com/ram/) helps you securely share your resources across AWS accounts, within your organization or organizational units (OUs), and with IAM roles and users for supported resource types.
+# Steps to move AWS account from one org to another
+
+| Step                                                                                                                                                                                                         |
+|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| [Remove the member account from the old organization](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_accounts_remove.html#orgs_manage_accounts_remove-from-master)                   |
+| [Send an invite to the member account from the new organization](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_accounts_invites.html)                                               |
+| [Accept the invite to the new organization from the member account](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_accounts_invites.html#orgs_manage_accounts_accept-decline-invite) |
