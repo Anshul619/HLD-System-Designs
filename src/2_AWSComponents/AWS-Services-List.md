@@ -2,7 +2,7 @@
 
 | Comparison                                                                                                                      | Type                                                                    |
 |---------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------|
-| [Amazon RDS Aurora vs Other RDS DB engines](6_DatabaseServices/AmazonRDS/AmazonAuroraVsOtherDBEngines.md)                                  | [Database Service](6_DatabaseServices)                                  |
+| :star: [Amazon RDS Aurora vs Other RDS DB engines](6_DatabaseServices/AmazonRDS/AmazonAuroraVsOtherDBEngines.md)                | [Database Service](6_DatabaseServices)                                  |
 | [Amazon SQS vs SNS vs Kinesis Data Streams](../1_HLDDesignComponents/4_MessageBrokers/KafkaVsRabbitMQVsSQSVsSNS.md)             | [Message Broker Service](5_MessageBrokerServices)                       |
 | [Amazon Kinesis Data Stream vs Data Firehouse](10_BigDataComponents/StreamProcessing/AmazonKinesis/Readme.md)                   | [Stream Processing](10_BigDataComponents/StreamProcessing/)             |
 | [Amazon S3 vs EBS vs EFS](7_StorageServices/S3vsEBSvsEFS.md)                                                                    | [Storage Service](7_StorageServices)                                    |
@@ -10,7 +10,7 @@
 | [AWS Secret Manager vs Parameter Store](2_SecurityAndIdentityServices/2_DataProtectionServices/AWSSecretManagerVsParamStore.md) | [Security Service](2_SecurityAndIdentityServices)                       |
 | [AWS VPN vs Direct Connect](1_NetworkingAndContentDelivery/4_HybridConnectivity/VPNVsDirectConnect.md)                          | [Networking & Content Delivery Service](1_NetworkingAndContentDelivery) |
 | [AWS VPC Gateway vs Interface endpoints](1_NetworkingAndContentDelivery/3_NetworkFoundations/AmazonVPC/VPCEndpoints.md)         | [Networking & Content Delivery Service](1_NetworkingAndContentDelivery) |
-| [Amazon Security Group vs Network ACL](2_SecurityAndIdentityServices/3_InfraProtectionServices/VPCSecurityGroupVsNetworkACL.md)    | [Security Service](2_SecurityAndIdentityServices)                       |
+| [Amazon Security Group vs Network ACL](2_SecurityAndIdentityServices/3_InfraProtectionServices/VPCSecurityGroupVsNetworkACL.md) | [Security Service](2_SecurityAndIdentityServices)                       |
 
 # AWS - Services List, Table
 
