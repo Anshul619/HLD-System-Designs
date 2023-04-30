@@ -2,18 +2,18 @@
 - When [you provision a Multi-AZ DB instance](https://aws.amazon.com/rds/features/multi-az/), Amazon RDS automatically creates a primary DB instance and synchronously replicates the data to an [invisible standby instance in a different Availability Zone](https://stackoverflow.com/questions/58779115/difference-between-multi-az-deployment-and-read-replica-verison-multi-az-depl).
 - In case of an infrastructure failure, Amazon RDS performs an automatic failover to the standby DB instance.
 - Since the endpoint for your DB instance remains the same after a failover, your application can resume database operation without the need for manual administrative intervention.
-- :star: [Amazon RDS Aurora vs Other RDS DB engines](AmazonAuroraVsOtherDBEngines.md)
 
 ![img.png](assests/Multi-AZ/RDS-Multi-AZ-Replica.drawio.png)
 
 # Features
 
-| Feature                      | Description                                                                                                                                                             |
-|------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Automatic fail over          | Support high availability for your application with automatic database failover that completes as quickly as 60 seconds with zero data loss and no manual intervention. |
-| Protect database performance | Avoid suspending I/O activity on your primary during backup by backing up from your standby instance.                                                                   |
-| Enhance durability           | Use Amazon RDS Multi-AZ synchronous replication technologies to keep data on your standby database instance up to date with the primary.                                |
-| Increase availability        | Enhance availability by deploying a standby instance in a second AZ, and achieve fault tolerance in the event of an AZ or database instance failure.                    |
+| Feature                                                                             | Description                                                                                                                                                             |
+|-------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| :star: [Amazon RDS Aurora vs Other RDS DB engines](AmazonAuroraVsOtherDBEngines.md) | -                                                                                                                                                                       |
+| Automatic fail over                                                                 | Support high availability for your application with automatic database failover that completes as quickly as 60 seconds with zero data loss and no manual intervention. |
+| Protect database performance                                                        | Avoid suspending I/O activity on your primary during backup by backing up from your standby instance.                                                                   |
+| Enhance durability                                                                  | Use Amazon RDS Multi-AZ synchronous replication technologies to keep data on your standby database instance up to date with the primary.                                |
+| Increase availability                                                               | Enhance availability by deploying a standby instance in a second AZ, and achieve fault tolerance in the event of an AZ or database instance failure.                    |
 
 # RDS Aurora - Multi-AZ Deployment
 
