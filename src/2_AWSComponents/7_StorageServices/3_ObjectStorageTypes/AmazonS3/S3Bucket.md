@@ -1,7 +1,15 @@
 
-# S3 Bucket
-- An [S3 Bucket](https://docs.aws.amazon.com/AmazonS3/latest/userguide/UsingBucket.html) are permanent containers that hold objects.
+# Amazon S3 Bucket
+- An [Amazon S3 Bucket](https://docs.aws.amazon.com/AmazonS3/latest/userguide/UsingBucket.html) are permanent containers that hold objects.
 - An [Amazon S3 bucket](https://docs.aws.amazon.com/AmazonS3/latest/userguide/UsingBucket.html) is a versatile storage option with the ability to: host a static web site, retain version information on objects, and employ life-cycle management policies to balance version retention with bucket size and cost.
+
+# Types of Access Control
+
+| Types of Access Control | Policy Type           | AWS Account Level Control | User Level Control     |
+|-------------------------|-----------------------|---------------------------|------------------------|
+| IAM Policies            | Identity Policy       | :x: No                    | :white_check_mark: Yes |
+| Bucket Policies         | Resource-Based Policy | :white_check_mark: Yes    | :white_check_mark: Yes |
+| ACL (legacy)            | -                     | :white_check_mark: Yes    | :x: No                 |
 
 # Bucket Policy
 - A [bucket policy](https://docs.aws.amazon.com/AmazonS3/latest/userguide/bucket-policies.html) is a resource-based policy that you can use to grant access permissions to your Amazon S3 bucket and the objects in it.
@@ -14,13 +22,13 @@
 | [Allow access to only your organization](https://docs.aws.amazon.com/AmazonS3/latest/userguide/bucket-policies.html)                                                                                                           | -                                                                                                                                                                                                                                                            |
 | [Grant IAM users access to the bucket and the objects in it](https://repost.aws/knowledge-center/lambda-execution-role-s3-bucket)                                                                                              | [Example bucket policy](../../../2_SecurityAndIdentityServices/1_IdentityServices/AWSIAM/samplePolicies/ResourcePolicies/buckeyPolicy.json)                                                                                                                  |
 
-# Limitations with Bucket
+# Features
 
-| Limitation                                                                                               | Description                                                                                                                                                                                                                                                                     |
+| Feature                                                                                                  | Description                                                                                                                                                                                                                                                                     |
 |----------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | :star: [Bucket Owner](https://docs.aws.amazon.com/AmazonS3/latest/userguide/bucket-owner-condition.html) | [Amazon S3 buckets](https://docs.aws.amazon.com/AmazonS3/latest/userguide/bucket-owner-condition.html) are owned by the account that creates them and cannot be transferred to other accounts.                                                                                  |
 | :star: Object Ownership                                                                                  | By default, an S3 object is owned by the AWS account that uploaded it (Even if bucket is owned by another account).                                                                                                                                                             |
-| :star: [Bucket names](https://repost.aws/knowledge-center/s3-access-denied-redshift-unload)                                                                                      | Bucket names are globally unique. <br/>- There can be no duplicate names within the entire S3 infrastructure.                                                                                                                                                                   |
+| :star: [Bucket names](https://repost.aws/knowledge-center/s3-access-denied-redshift-unload)              | Bucket names are globally unique. <br/>- There can be no duplicate names within the entire S3 infrastructure.                                                                                                                                                                   |
 | Bucket renaming                                                                                          | Once created, you cannot change a bucket name.                                                                                                                                                                                                                                  |
 | Permanent Entities                                                                                       | Buckets are permanent storage entities and only removable when they are empty. <br/>- After deleting a bucket, the name becomes available for reuse by any account after 24 hours if not taken by another account.                                                              |
 | Object storage limits                                                                                    | There’s no limit to the number of objects you can store in a bucket. <br/>- You can store all of your objects in a single bucket, or organize them across several buckets. <br/>- However, you can't create a bucket from within another bucket, also known as nesting buckets. |

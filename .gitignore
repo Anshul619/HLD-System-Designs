@@ -1,3 +1,5 @@
 .idea/
 out
 System-Designs.iml
+*.dtmp
+*.bkp

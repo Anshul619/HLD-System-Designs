@@ -18,7 +18,7 @@
 | [Casandra](../../3_DatabaseComponents/NoSQL-Databases/ApacheCasandra.md)                                                           | -       |
 | [Kafka](../../4_MessageBrokers/Kafka/Readme.md)                                                                                    | -       |
 | [ElasticSearch Data Stream](../../3_DatabaseComponents/Search-Indexes/ElasticSearch/ElasticSearchDataStreams.md)                   | -       |
-| [Amazon Aurora Global Database - Replication](../../../2_AWSComponents/6_DatabaseServices/AmazonRDS/AuroraGlobalDatabase.md) | -       |
+| [Amazon Aurora Global Database - Replication](../../../2_AWSComponents/6_DatabaseServices/AmazonRDS/AmazonAurora/AuroraGlobalDatabase.md) | -       |
 | [RocksDB](../../3_DatabaseComponents/NoSQL-Databases/RocksDB.md)                                                                   | -       |
 | [Amazon Kinesis](../../../2_AWSComponents/10_BigDataComponents/StreamProcessing/AmazonKinesis/Readme.md)                           | -       |
 | [Amazon S3](../../../2_AWSComponents/7_StorageServices/3_ObjectStorageTypes/AmazonS3/Readme.md)                                                                | -       |

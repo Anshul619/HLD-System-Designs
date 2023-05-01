@@ -1,10 +1,10 @@
 # Security Group vs Network ACL
 
-|               | [Security Group](VPCSecurityGroup.md)                                                                                           | [Network ACL](VPCNetworkACL.md) |
-|---------------|------------------------------------------------------------------------------------------------------------------------------|------------------------------|
-| Stateliness   | Stateful<br/>- If traffic is allowed in, the outbound response to that traffic is allowed out automatically.                 | Stateless                    |
-| Resources     | Applies on [EC2](../../3_ComputeServices/AmazonEC2/Readme.md), [RDS instances](../../6_DatabaseServices/AmazonRDS/Readme.md) | Applies on Subnet            |
-| Explicit Deny | Security groups have a hidden explicit deny, which means that anything that is not explicitly allowed is denied.             | -                            |
+| Feature       | [Security Group](VPCSecurityGroup.md)                                                                                                                   | [Network ACL](VPCNetworkACL.md)                                                                                                                                                                   |
+|---------------|---------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Stateliness   | [Stateful](https://en.wiktionary.org/wiki/stateful)<br/>- If traffic is allowed in, the outbound response to that traffic is allowed out automatically. | [Stateless](https://en.wiktionary.org/wiki/stateless#English)<br/>- [Both inbound & outbound traffic needs to be allowed](https://repost.aws/knowledge-center/resolve-connection-sg-acl-inbound). |
+| Resources     | Applies on [EC2](../../3_ComputeServices/AmazonEC2/Readme.md), [RDS instances](../../6_DatabaseServices/AmazonRDS/Readme.md)                            | Applies on [Subnet](../../1_NetworkingAndContentDelivery/3_NetworkFoundations/AmazonVPC/Subnets.md)                                                                                               |
+| Explicit Deny | [Security groups](VPCSecurityGroup.md) have a hidden explicit deny, which means that anything that is not explicitly allowed is denied.                 | By default, network ACLs allow all inbound and outbound traffic.                                                                                                                                  |
 
 # References
 - [Compare security groups and network ACLs](https://docs.aws.amazon.com/vpc/latest/userguide/infrastructure-security.html#VPC_Security_Comparison)

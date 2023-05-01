@@ -1,7 +1,7 @@
 # Amazon Elastic Block Store (EBS)
 - [Amazon Elastic Block Store (Amazon EBS)](https://aws.amazon.com/ebs/) is an easy-to-use, scalable, high-performance block-storage service designed for [Amazon Elastic Compute Cloud (Amazon EC2)](../../3_ComputeServices/AmazonEC2/Readme.md).
 
-[](../../3_ComputeServices/assests/AMI_EC2_Root_Volume.drawio.png)
+[](../../3_ComputeServices/AmazonEC2/assets/AMI_EC2_Root_Volume.drawio.png)
 
 # Amazon EBS use cases
 

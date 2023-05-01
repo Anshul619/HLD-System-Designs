@@ -1,9 +1,14 @@
 # Security Group
 - [Security groups](https://docs.aws.amazon.com/vpc/latest/userguide/VPC_SecurityGroups.html) as a firewall for the [EC2 instances](../../3_ComputeServices/AmazonEC2), controlling inbound and outbound traffic at the instance level.
 
-# Applicable Resources
-- [Amazon EC2 Instance](../../3_ComputeServices/AmazonEC2/Readme.md)
-- [Amazon RDS Instance](../../6_DatabaseServices/AmazonRDS/Readme.md)
+# Supported AWS Services
+
+| AWS Service                                                                                                         |
+|---------------------------------------------------------------------------------------------------------------------|
+| [Amazon EC2 Instance](../../3_ComputeServices/AmazonEC2/Readme.md)                                                  |
+| [Amazon RDS Instance](../../6_DatabaseServices/AmazonRDS/Readme.md)                                                 |
+| [Elastic Load Balancer](../../1_NetworkingAndContentDelivery/2_ApplicationNetworking/ElasticLoadBalancer/Readme.md) |
+
 
 # Example Security rules (Chaining security groups together)
 

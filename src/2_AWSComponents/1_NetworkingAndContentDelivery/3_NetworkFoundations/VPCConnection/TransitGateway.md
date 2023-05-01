@@ -5,17 +5,17 @@
 - Transit gateway allows one-to-many network connections as opposed to other AWS connectivity types which allow only on-to-one connections.
 - A transit gateway by itself cannot establish a low latency and high throughput connection between a data center and AWS Cloud.
 
-  ![img.png](assets/AWS_Transit_Gateway.png)
+![img.png](assets/AWS_Transit_Gateway.png)
 
-# Attachment
+# Attachments
 
-| Attachments (connection from)                                    |
-|------------------------------------------------------------------|
-| [Amazon VPC](../AmazonVPC/Readme.md)                             |
-| [VPN](../../4_HybridConnectivity/AWSSiteToSiteVPN.md)            |
+| Attachment (connection from)                                    |
+|-----------------------------------------------------------------|
+| [Amazon VPC](../AmazonVPC/Readme.md)                            |
+| [VPN](../../4_HybridConnectivity/AWSSiteToSiteVPN.md)           |
 | [Direct Connect](../../4_HybridConnectivity/AWSDirectConnect.md) |
-| Transit Gateway Connect attachments                              |
-| Transit Gateway Peering connections                              |
+| Transit Gateway Connect attachments                             |
+| Transit Gateway Peering connections                             |
 
 # Key concepts
 

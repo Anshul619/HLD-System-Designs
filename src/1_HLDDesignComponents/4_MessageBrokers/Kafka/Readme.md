@@ -5,6 +5,10 @@
 - Kafka is based on [Publish-Subscriber Model](..#publisher-subscriber-model-pubsub). And can be used for [Event-Driven Architecture](../../0_SystemGlossaries/MessageBrokers/EventDrivenArchitecture.md).
 - [Amazon Managed Streaming for Apache Kafka (MSK)](../../../2_AWSComponents/5_MessageBrokerServices/AmazonMSK.md) can be used to deploy Kafka on [AWS](../../../2_AWSComponents).
 
+# Basic Architecture of Kafka Cluster
+
+![img.png](../assests/Kafka-Architecture.drawio.png)
+
 # :star: Real world use cases of Kafka
 - [Personalization at Spotify using Cassandra](../../../3_HLDDesignProblems/PersonalizationSpotify)
 - [Zomato - HLD Design](../../../3_HLDDesignProblems/ZomatoDesign)
@@ -12,7 +16,7 @@
 - [Twillo - Send Message API Design](../../../3_HLDDesignProblems/TwilloSendMessageAPI)
 - [Logging Solution in Distributed Systems](../../../3_HLDDesignProblems/LoggingSolution)
 - [Flight Booking Search](../../../3_HLDDesignProblems/FlightBookingSearch/README.md)
-- [Linked In - Kafka](../../../3_HLDDesignProblems/LinkedInDesign/Readme.md)
+- [LinkedIn - Kafka](../../../3_HLDDesignProblems/LinkedInDesign/Readme.md)
 
 # Why Kafka is so fast?
 - Kafka achieves [low latency](../../0_SystemGlossaries/Scalability/LatencyThroughput.md) message delivery through [Sequential I/O and Zero Copy Principle](https://twitter.com/alexxubyte/status/1506663791961919488/photo/1).
@@ -27,10 +31,6 @@ Kafka is based on [Log Based Queue](../../0_SystemGlossaries/Database/AppendOnly
 - Yes & No.
 - In some way, Kafka supports [ACID properties](../../0_SystemGlossaries/Database/ACIDPropertyTransaction.md).
 - [Read More](https://queue.acm.org/detail.cfm?id=3321612)
-
-# Basic Architecture of Kafka Cluster
-
-![img.png](../assests/Kafka-Architecture.drawio.png)
 
 # General use cases of Kafka
 

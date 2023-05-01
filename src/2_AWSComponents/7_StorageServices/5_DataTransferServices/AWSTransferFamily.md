@@ -3,4 +3,4 @@
 - AWS Transfer Family is designed to move your on-premises SFTP, FTPS, and FTP workflows to the AWS Cloud. 
 - NFS protocol is not supported in AWS Transfer family.
 
-[](../assets/AWS-Transfer-Family.md.png)
+[](assets/AWS-Transfer-Family.png)

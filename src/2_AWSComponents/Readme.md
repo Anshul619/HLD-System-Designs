@@ -5,7 +5,7 @@
 | Practice                                                            | Description                                                                                                                                                                                                                                                                                                                             |
 |---------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | [AWS Services List](AWS-Services-List.md)                           | List of all services in AWS.                                                                                                                                                                                                                                                                                                            |
-| Maintain resiliency                                                 | A well-known best practice for cloud architecture is to use [Region-scoped, managed services](AWS-Global-Architecture-Region-AZ.md)<br/>- At a minimum, you should use two AZs.<br/>- [AWS](https://docs.aws.amazon.com) manages its [global architecture through region and availability zones](AWS-Global-Architecture-Region-AZ.md). |
+| [Maintain resiliency](AWS-Global-Architecture-Region-AZ.md)         | A well-known best practice for cloud architecture is to use [Region-scoped, managed services](AWS-Global-Architecture-Region-AZ.md)<br/>- At a minimum, you should use two AZs.<br/>- [AWS](https://docs.aws.amazon.com) manages its [global architecture through region and availability zones](AWS-Global-Architecture-Region-AZ.md). |
 | [Go serverless/Cloud Native](AWS-Serverless-Architecture.md)        | AWS provides easily managed [serverless architecture](AWS-Serverless-Architecture.md).                                                                                                                                                                                                                                                  |
 | [AWS Well-Architected Framework](AWS-Well-Architected-Framework.md) | [AWS Well-Architected](https://aws.amazon.com/architecture/well-architected) helps cloud architects build secure, high-performing, resilient, and efficient infrastructure for a variety of applications and workloads.                                                                                                                 |
 
@@ -31,11 +31,11 @@
 
 ## IoT sensor data capture architecture
 
-![](7_StorageServices/assets/AWS-IOT-Data-Capture.png)
+![](10_BigDataComponents/DataLakes/assets/AWS-IOT-Data-Capture.png)
 
 ## Real-time data analytics architecture
 
-![](7_StorageServices/assets/AWS-RDS-Stored-Procedures.png)
+![](7_StorageServices/3_ObjectStorageTypes/AmazonS3/assets/AWS-RDS-Stored-Procedures.png)
 
 ## Others
 - [Send-SMS-API design - App Internal Clients, Multiple SMS-Providers, AutoScaling](../3_HLDDesignProblems/NotificationSystem/README.md)
@@ -239,7 +239,7 @@
         </td>
         <td>
             <div class="container" style="background:white">
-                <a href="6_DatabaseServices/AmazonRDS/AmazonRDSAurora.md" target="_blank">
+                <a href="6_DatabaseServices/AmazonRDS/AmazonAurora/Readme.md" target="_blank">
                   <img src="https://allcode.com/wp-content/uploads/2022/12/Amazon-Aurora.jpg" width="150">
                 </a>
                 <a href="6_DatabaseServices/AmazonRDS/Readme.md" target="_blank">
@@ -328,90 +328,6 @@
     </tr>
   </tbody>
 </table>
-
-## Amazon API Gateway - Features
-
-![img.png](1_NetworkingAndContentDelivery/2_ApplicationNetworking/AmazonAPIGateway/assets/AmazonAPIGateway_Features.drawio.png)
-
-[Read more](1_NetworkingAndContentDelivery/2_ApplicationNetworking/AmazonAPIGateway/Readme.md)
-
-## Amazon Elastic Load Balancer
-
-![img.png](1_NetworkingAndContentDelivery/2_ApplicationNetworking/ElasticLoadBalancer/assests/AWS_Elastic_Load_Balancer.png)
-
-[Read more](1_NetworkingAndContentDelivery/2_ApplicationNetworking/ElasticLoadBalancer/Readme.md)
-
-## Amazon Global Accelerator
-
-![img.png](1_NetworkingAndContentDelivery/1_EdgeNetworking/assets/AWSGlobalAccelerator.png)
-
-[Read more](1_NetworkingAndContentDelivery/1_EdgeNetworking/AWSGlobalAccelerator.md)
-
-## Amazon ECS - Tasks, Fargate etc.
-
-![img.png](4_ContainerOrchestrationServices/AmazonECS/assests/ECS-Tasks.png)
-
-[Read more](4_ContainerOrchestrationServices/AmazonECS/Readme.md)
-
-## Amazon EC2, AMI, EBS, Instance Store
-
-[](3_ComputeServices/assests/AMI_EC2_Root_Volume.drawio.png)
-
-[Read more](3_ComputeServices/AmazonEC2/Readme.md)
-
-## Amazon SQS - Queue, Consumers etc.
-
-![img.png](5_MessageBrokerServices/assests/sqs/SQS-DLD-More-Info.png)
-
-[Read more](5_MessageBrokerServices/AmazonSQS.md)
-
-## Amazon EventBridge - Targets, Rules etc.
-
-![img.png](5_MessageBrokerServices/assests/eventbridge/EventBridge.png)
-
-[Read more](5_MessageBrokerServices/AmazonEventBridge.md)
-
-## Amazon SNS - Pub/Sub, Push etc.
-
-![img.png](5_MessageBrokerServices/assests/sns/FanOutPatternSQSSNS.png)
-
-[Read more](5_MessageBrokerServices/AmazonSNS.md)
-
-## AWS Lambda
-
-![img.png](3_ComputeServices/AWSLambda/assets/Lambda-Architecture.png)
-
-[Read more](3_ComputeServices/AWSLambda/Readme.md)
-
-## Auto-Scaling - How it works?
-
-![img.png](3_ComputeServices/AmazonEC2/AutoScalingGroup/assets/Auto-Scaling-ELB.png)
-
-[Read more](3_ComputeServices/AmazonEC2/AutoScalingGroup/Readme.md)
-
-## AWS Step Functions - Lambda
-
-![img.png](3_ComputeServices/assests/AWSStepFunctions.png)
-
-[Read more](3_ComputeServices/AWSStepFunctions.md)
-
-## Amazon VPC, Subnet etc.
-
-![img.png](1_NetworkingAndContentDelivery/3_NetworkFoundations/AmazonVPC/assets/AWS_VPC.png)
-
-[Read more](1_NetworkingAndContentDelivery/3_NetworkFoundations/AmazonVPC/Readme.md)
-
-## Amazon Storage Services
-
-![](7_StorageServices/assets/AWS-Storage-Services.png)
-
-[Read more](7_StorageServices/Readme.md)
-
-## Amazon Organization, Identity Center
-
-![](2_SecurityAndIdentityServices/1_IdentityServices/assets/AWS-Multiple-Accounts.png)
-
-[Read more](2_SecurityAndIdentityServices/4_MultipleAccounts/AWSOrganization.md)
 
 # Terminologies
 - [Utility services](https://stackoverflow.com/questions/33125790/why-some-services-are-called-aws-xxx-and-the-others-amazon-xxx) are prefixed with `AWS`, while standalone services are prefixed by `Amazon`.

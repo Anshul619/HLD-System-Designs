@@ -123,7 +123,7 @@ It's generally suggested to turn off persistence on the master node, so that you
 ## Other Links
 - [Master-Slave Replication Supported (Leader & Read Replicas)](RedisMasterSlaveReplication.md)
 - [Sharding Supported (using Redis Cluster)](RedisCluster.md)
-- [Redis vs Memcache](RedisVsMemCache.md)
+- [Redis vs Memcache](../RedisVsMemcache.md)
 - [Redis Graph](RedisGraph.md)
 
 # References

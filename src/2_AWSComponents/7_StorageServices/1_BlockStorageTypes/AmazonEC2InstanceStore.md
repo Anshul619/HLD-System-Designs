@@ -1,7 +1,7 @@
 # Amazon EC2 instance store
 - [Amazon EC2 instance store](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/InstanceStorage.html) provides temporary block-level storage for an instance.
 
-[](../../3_ComputeServices/assests/AMI_EC2_Root_Volume.drawio.png)
+[](../../3_ComputeServices/AmazonEC2/assets/AMI_EC2_Root_Volume.drawio.png)
 
 # Features
 

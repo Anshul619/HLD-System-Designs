@@ -21,6 +21,6 @@ Kinesis Data Analytics enables you to easily and quickly build queries and sophi
 | Internet of Things (IoT), ad tech, gaming etc. |
 
 # Supported Data Sources
-- [Kinesis Data Streams](../../../5_MessageBrokerServices/AmazonKinesisDataStreams.md)
-- [Kinesis Data Firehose](AmazonKinesisDataFirehouse.md)
-- [API Gateway](../../../1_NetworkingAndContentDelivery/2_ApplicationNetworking/ElasticLoadBalancer/Readme.md)
+- [Kinesis Data Streams](../../5_MessageBrokerServices/AmazonKinesisDataStreams.md)
+- [Kinesis Data Firehose](../StreamProcessing/AmazonKinesis/AmazonKinesisDataFirehouse.md)
+- [API Gateway](../../1_NetworkingAndContentDelivery/2_ApplicationNetworking/ElasticLoadBalancer/Readme.md)

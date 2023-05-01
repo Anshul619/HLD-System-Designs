@@ -5,7 +5,7 @@
 
 # Common migration use case examples
 - [MongoDB](../../1_HLDDesignComponents/3_DatabaseComponents/NoSQL-Databases/MongoDB/Readme.md) to [Amazon DocumentDB](AmazonDocumentDB.md)
-- Oracle and SQL Server to [Amazon Relational Database Service (Amazon RDS)](AmazonRDS/Readme.md) and [Amazon Aurora](AmazonRDS/AmazonAurora.md).
+- Oracle and SQL Server to [Amazon Relational Database Service (Amazon RDS)](AmazonRDS/Readme.md) and [Amazon Aurora](AmazonRDS/AmazonAurora/Readme.md).
 - [Cassandra](../../1_HLDDesignComponents/3_DatabaseComponents/NoSQL-Databases/ApacheCasandra.md) to [Amazon DynamoDB](AmazonDynamoDB/Readme.md)
 - Terraform to [Amazon Redshift](AmazonRedshift.md).
 

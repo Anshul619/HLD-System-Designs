@@ -4,7 +4,7 @@
 - AWS Backup also helps you support your regulatory compliance or business policies for data protection.
 - AWS Backup and native snapshots are stored in [AWS managed Amazon S3 buckets](../3_ObjectStorageTypes/AmazonS3/Readme.md).
 
-[](../assets/AWS-Backup.jpg)
+[](../5_DataTransferServices/assets/AWS-Backup.jpg)
 
 # Benefits
 - AWS Backup provides additional data durability by creating additional copies of your data. 

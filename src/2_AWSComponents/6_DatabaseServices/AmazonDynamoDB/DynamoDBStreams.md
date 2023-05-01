@@ -11,7 +11,7 @@ Each stream record also contains the name of the table, event timestamp, and oth
 
 # Best practice - Architecture diagram
 
-![](../../7_StorageServices/assets/AWS-IOT-Data-Capture.png)
+![](../../10_BigDataComponents/DataLakes/assets/AWS-IOT-Data-Capture.png)
 
 # DynamoDB Streams and AWS Lambda triggers
 - [Amazon DynamoDB](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Streams.Lambda.html) is integrated with [AWS Lambda](../../3_ComputeServices/AWSLambda/Readme.md) so that you can create triggers—pieces of code that automatically respond to events in DynamoDB Streams. 

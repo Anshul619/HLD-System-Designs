@@ -26,7 +26,7 @@
 
 Relational databases store data in rows and columns.
 - Each row contains all the information about one entity and each column contains all the separate data points.
-- Some of the most popular relational databases are [AWS Aurora](../../2_AWSComponents/6_DatabaseServices/AmazonRDS/AmazonAurora.md), `Postgres`, `MySQL`, `Oracle`, `MS SQL Server` etc.
+- Some of the most popular relational databases are [AWS Aurora](../../2_AWSComponents/6_DatabaseServices/AmazonRDS/AmazonAurora/Readme.md), `Postgres`, `MySQL`, `Oracle`, `MS SQL Server` etc.
 - [Read more about sharding in MySQL Cluster](https://www.mysql.com/products/cluster/scalability.html)
 - Columns that you are querying (SELECT, GROUP BY, ORDER BY, JOIN) could be faster with [indices](../0_SystemGlossaries/Database/Indexing.md).
 

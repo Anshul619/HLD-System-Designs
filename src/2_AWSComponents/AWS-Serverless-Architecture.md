@@ -13,7 +13,7 @@ With serverless, you can spend time on the things that differentiate your applic
 | [AWS Fargate](3_ComputeServices/AWSFargate.md)                                                   | Compute      | [AWS Fargate vs Lambda](3_ComputeServices/AWSFargateVsLambda.md)   |
 | [AWS Step Functions](3_ComputeServices/AWSStepFunctions.md)                                      | Compute      | -                                                                  |
 | [Amazon DynamoDB](6_DatabaseServices/AmazonDynamoDB/Readme.md)                                   | Database     | [Scaling Serverless DB](6_DatabaseServices/ScalingServerlessDB.md) |
-| [Amazon Aurora](6_DatabaseServices/AmazonRDS/AmazonAurora.md)                                    | Database     | -                                                                  |
+| [Amazon Aurora](6_DatabaseServices/AmazonRDS/AmazonAurora/Readme.md)                                    | Database     | -                                                                  |
 | [AWS Batch](10_BigDataComponents/BatchProcessing/AWSBatch.md)                                    | Batch        | -                                                                  |
 | [API Gateway](1_NetworkingAndContentDelivery/2_ApplicationNetworking/AmazonAPIGateway/Readme.md) | API Gateway  | -                                                                  |
 
@@ -52,7 +52,7 @@ With serverless, you can spend time on the things that differentiate your applic
 | Cost                     | The cost of hiring backend infrastructure engineers goes down, along with operational costs.                                                                                                    |
 | Customer obsession       | Abstraction from servers allows companies to dedicate more time and resources to developing and improving customer experience.                                                                  |
 | Startup friendly         | The serverless architecture pay-as-you-go model allows you to build an environment nearly for free and ease into the market without dealing with huge bills for minimum traffic.                |
-| Example AWS Services     | [Amazon Aurora Serverless](6_DatabaseServices/AmazonRDS/AuroraServerless.md)<br/>- [Amazon DynamoDB](6_DatabaseServices/AmazonDynamoDB/Readme.md)                                               |
+| Example AWS Services     | [Amazon Aurora Serverless](6_DatabaseServices/AmazonRDS/AmazonAurora/AuroraServerless.md)<br/>- [Amazon DynamoDB](6_DatabaseServices/AmazonDynamoDB/Readme.md)                                               |
 
 # Fully-managed vs Self-Managed services
 
