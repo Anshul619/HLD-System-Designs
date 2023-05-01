@@ -9,12 +9,12 @@
 - [Amazon Redshift]() and [PostgreSQL](../../1_HLDDesignComponents/3_DatabaseComponents/Readme.md) have a number of important differences that you must be aware of as you design and develop your data warehouse applications.
 
 # General Use Cases
-| Use Case                               | Remarks |
-|----------------------------------------|---------|
-| Improve financial and demand forecasts | -       |
-| Collaborate and share data             | -       |
-| Optimize your business intelligence    | -       |
-| Increase developer productivity        | -       |
+| Use Case                               |
+|----------------------------------------|
+| Improve financial and demand forecasts |
+| Collaborate and share data             |
+| Optimize your business intelligence    |
+| Increase developer productivity        |
 
 # Data Analytics on Redshift
 
