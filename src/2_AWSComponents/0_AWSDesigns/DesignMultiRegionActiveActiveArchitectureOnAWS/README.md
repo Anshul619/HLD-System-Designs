@@ -20,7 +20,7 @@ However the [multi-region](../../AWS-Global-Architecture-Region-AZ.md) backend s
 ## :star: Use local resources and avoid cross-regional calls
 
 [Amazon Services with Cross-Region support](../../AWS-Global-Architecture-Region-AZ.md), should be used like,
-- [Amazon S3](../../7_StorageServices/3_ObjectStorageTypes/AmazonS3/Readme.md#cross-region-supported)
+- [Amazon S3](../../7_StorageServices/3_ObjectStorageS3/Readme.md#cross-region-supported)
 - [Amazon Aurora Global Database](../../6_DatabaseServices/AmazonRDS/AmazonAurora/AuroraGlobalDatabase.md)
 - [Amazon Dynamo DB Global Tables](../../6_DatabaseServices/AmazonDynamoDB/Readme.md)
 
@@ -39,7 +39,7 @@ However the [multi-region](../../AWS-Global-Architecture-Region-AZ.md) backend s
 - [Read more](../../../1_HLDDesignComponents/0_SystemGlossaries/Readme.md)
 
 ## DNS routing using Amazon Route53
-- [Read more](../../1_NetworkingAndContentDelivery/1_EdgeNetworking/AmazonRoute53.md)
+- [Read more](../../1_NetworkingAndContentDelivery/1_EdgeNetworking/AmazonRoute53/Readme.md)
 
 # Source(s) and further reading
 - [How to build a multi-region active-active architecture on AWS?](https://acloudguru.com/blog/engineering/why-and-how-do-we-build-a-multi-region-active-active-architecture)

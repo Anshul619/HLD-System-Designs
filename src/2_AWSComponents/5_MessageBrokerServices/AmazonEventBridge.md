@@ -2,7 +2,7 @@
 # Amazon EventBridge (formerly called Cloudwatch Events)
 - [Amazon EventBridge](https://aws.amazon.com/eventbridge/) is a serverless event bus that lets you receive, filter, transform, route, and deliver events. 
 - Using [Amazon EventBridge](), we can build [event-driven applications at scale](../../1_HLDDesignComponents/1_MicroServicesSOA) across AWS, existing systems, or SaaS applications.
-- It uses the [Amazon CloudWatch Events API](../8_MonitoringServices/AmazonCloudWatch.md), but also includes more functionality, like the ability to ingest events from SaaS apps.
+- It uses the [Amazon CloudWatch Events API](../8_MonitoringServices/AmazonCloudwatch/Readme.md), but also includes more functionality, like the ability to ingest events from SaaS apps.
 
 # Amazon EventBridge rules
 - [An event bridge rule](https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-rules.html) matches incoming events and sends them to targets for processing. 
@@ -21,7 +21,7 @@
 - [Amazon Kinesis Data Streams](../10_BigDataComponents/StreamProcessing/AmazonKinesis/Readme.md)
 - [Amazon Kinesis Data Firehouse](../10_BigDataComponents/StreamProcessing/AmazonKinesis/Readme.md)
 - [API Gateway](../1_NetworkingAndContentDelivery/2_ApplicationNetworking/AmazonAPIGateway/Readme.md)
-- [Amazon Redshift Clusters](../6_DatabaseServices/AmazonRedshift.md)
+- [Amazon Redshift Clusters](../10_BigDataComponents/DataWarehouse/AmazonRedshift.md)
 - [SAAS Integrations - Partner Sources](https://aws.amazon.com/eventbridge/integrations/)
 
 # Archives

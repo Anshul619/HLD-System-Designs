@@ -3,6 +3,8 @@
 - [AWS Config](https://aws.amazon.com/config/) records point-in-time configuration details for your AWS resources as Configuration Items (CIs).
 - AWS Config is a service that enables you to assess, audit, and evaluate the configurations of your AWS resources. 
 
+![](https://d1.awsstatic.com/Products/product-name/diagrams/product-page-diagram-Config_how-it-works.bd28728a9066c55d7ee69c0a655109001462e25b.png)
+
 # Use Cases
 
 | Use Case                                                                                                                                  |

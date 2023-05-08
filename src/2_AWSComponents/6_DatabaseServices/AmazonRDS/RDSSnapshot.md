@@ -1,5 +1,5 @@
 # RDS Snapshots
-- [RDS](Readme.md) stores the DB snapshots in the [Amazon S3 bucket](../../7_StorageServices/3_ObjectStorageTypes/AmazonS3/Readme.md) belonging to the [same AWS region](../../AWS-Global-Architecture-Region-AZ.md) where the [RDS instance](Readme.md) is located.
+- [RDS](Readme.md) stores the DB snapshots in the [Amazon S3 bucket](../../7_StorageServices/3_ObjectStorageS3/Readme.md) belonging to the [same AWS region](../../AWS-Global-Architecture-Region-AZ.md) where the [RDS instance](Readme.md) is located.
 
 # Use Cases
 

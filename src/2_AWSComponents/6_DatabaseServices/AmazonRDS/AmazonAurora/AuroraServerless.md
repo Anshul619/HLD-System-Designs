@@ -2,7 +2,7 @@
 # Aurora Serverless
 - With [Aurora Serverless](https://aws.amazon.com/rds/aurora/serverless/), there is no need to choose an instance size.
 
-![img.png](../assests/Multi-AZ/RDS-Multi-AZ-Replica.drawio.png)
+![img.png](../assets/Multi-AZ/RDS-Multi-AZ-Replica.drawio.png)
 
 # Features
 

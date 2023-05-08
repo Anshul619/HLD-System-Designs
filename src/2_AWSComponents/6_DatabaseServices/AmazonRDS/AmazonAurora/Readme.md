@@ -3,7 +3,7 @@
 - Aurora is [AWS Cloud Optimized (proprietary technology](https://aws.amazon.com/rds/aurora/) from AWS, not open-source and claims [5x performance improvement over MySQL on RDS, over 3x performance improvement over Postgres on RDS](../../../../1_HLDDesignComponents/0_SystemGlossaries/Scalability/LatencyThroughput.md).
 - [High throughput up to 200K writes/second](../../../../1_HLDDesignComponents/0_SystemGlossaries/Scalability/LatencyThroughput.md), with negligible performance impact.
 
-![img.png](../assests/Multi-AZ/RDS-Multi-AZ-Replica.drawio.png)
+![img.png](../assets/Multi-AZ/RDS-Multi-AZ-Replica.drawio.png)
 
 # Features
 

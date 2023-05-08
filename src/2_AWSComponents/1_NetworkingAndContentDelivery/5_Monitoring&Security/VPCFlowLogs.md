@@ -41,7 +41,7 @@ The following are examples of default [flow log records](https://docs.aws.amazon
 - Network interfaces for EC2-Classic instances are not supported. This includes instances linked to your VPC through ClassicLink.
 
 # Publish Flow Logs to S3 bucket 
-Using [Amazon S3](../../7_StorageServices/3_ObjectStorageTypes/AmazonS3/Readme.md) for the storage of your flow logs provides:
+Using [Amazon S3](../../7_StorageServices/3_ObjectStorageS3/Readme.md) for the storage of your flow logs provides:
 - Scalability and log consolidation using Amazon Athena to query the data for analysis. 
 - Ingestion from pipelines using S3 bucket notifications, Amazon SQS, and AWS Lambda to provide events to Amazon Elasticsearch Service for real-time monitoring using Kibana.
 - For cost optimization and archival storage.

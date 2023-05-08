@@ -1,7 +1,7 @@
 # RDS Read-Replicas
 - [Read replicas](https://aws.amazon.com/rds/features/read-replicas/) helps in handling read traffic on RDS.
 
-![img.png](assests/Multi-AZ/RDS-Multi-AZ-Replica.drawio.png)
+![img.png](assets/Multi-AZ/RDS-Multi-AZ-Replica.drawio.png)
 
 # Features
 

@@ -1,0 +1,11 @@
+# S3 Transfer Acceleration
+- [Amazon S3 Transfer Acceleration](https://aws.amazon.com/s3/transfer-acceleration/) can speed up content transfers to and from [Amazon S3](../../7_StorageServices/3_ObjectStorageS3/Readme.md) by as much as 50-500% for long-distance transfer of larger objects.
+
+# Features
+
+| Feature                                                                             | Remarks                                                                                                                                                                                                                                                                                                           |
+|-------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| [S3 Transfer Acceleration vs Others](AmazonCloudfrontVsGlobalAccelerator.md)        | -                                                                                                                                                                                                                                                                                                                 |
+| Uses [Amazon CloudFront's globally distributed edge locations](AmazonCloudFront.md) | [Transfer Acceleration](AmazonCloudFront.md) takes advantage of [Amazon CloudFront’s globally distributed edge locations](AmazonCloudFront.md).<br/>- As the data arrives at an edge location, data is routed to [Amazon S3](../../7_StorageServices/3_ObjectStorageS3/Readme.md) over an optimized network path. |
+| Pricing                                                                             | With S3TA, [you pay only for transfers that are accelerated](https://aws.amazon.com/s3/transfer-acceleration/)                                                                                                                                                                                                    |
+

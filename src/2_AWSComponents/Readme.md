@@ -4,7 +4,8 @@
 
 | Practice                                                            | Description                                                                                                                                                                                                                                                                                                                             |
 |---------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [AWS Services List](AWS-Services-List.md)                           | List of all services in AWS.                                                                                                                                                                                                                                                                                                            |
+| [AWS - Comparision b/w Services](AWS-All-Comparisons.md)            | -                                                                                                                                                                                                                                                                                                                                       |                                                                                                                                                                                                                                                                                                                                         |
+| [AWS - All Services List](AWS-All-Services-List.md)                 | List of all services in AWS.                                                                                                                                                                                                                                                                                                            |
 | [Maintain resiliency](AWS-Global-Architecture-Region-AZ.md)         | A well-known best practice for cloud architecture is to use [Region-scoped, managed services](AWS-Global-Architecture-Region-AZ.md)<br/>- At a minimum, you should use two AZs.<br/>- [AWS](https://docs.aws.amazon.com) manages its [global architecture through region and availability zones](AWS-Global-Architecture-Region-AZ.md). |
 | [Go serverless/Cloud Native](AWS-Serverless-Architecture.md)        | AWS provides easily managed [serverless architecture](AWS-Serverless-Architecture.md).                                                                                                                                                                                                                                                  |
 | [AWS Well-Architected Framework](AWS-Well-Architected-Framework.md) | [AWS Well-Architected](https://aws.amazon.com/architecture/well-architected) helps cloud architects build secure, high-performing, resilient, and efficient infrastructure for a variety of applications and workloads.                                                                                                                 |
@@ -35,7 +36,7 @@
 
 ## Real-time data analytics architecture
 
-![](7_StorageServices/3_ObjectStorageTypes/AmazonS3/assets/AWS-RDS-Stored-Procedures.png)
+![](6_DatabaseServices/AmazonRDS/assets/AWS-RDS-Stored-Procedures.png)
 
 ## Others
 - [Send-SMS-API design - App Internal Clients, Multiple SMS-Providers, AutoScaling](../3_HLDDesignProblems/NotificationSystem/README.md)
@@ -53,7 +54,7 @@
       <td>
         <div class="container" style="background:white">
             <div>
-                <a href="1_NetworkingAndContentDelivery/1_EdgeNetworking/AmazonRoute53.md" target="_blank">
+                <a href="1_NetworkingAndContentDelivery/1_EdgeNetworking/AmazonRoute53/Readme.md" target="_blank">
                   <img src="https://storage.googleapis.com/yama-blog.appspot.com/1/2018/08/eyecatch-route53.png" width="150">
                 </a>
                 <a href="1_NetworkingAndContentDelivery/2_ApplicationNetworking/AWSCloudMap.md" target="_blank">
@@ -74,7 +75,7 @@
         </td>
         <td>
             <div class="container" style="background:white">
-                <a href="2_SecurityAndIdentityServices/1_IdentityServices/AWSIAM.md" target="_blank">
+                <a href="2_SecurityAndIdentityServices/1_IdentityServices/AWSIAM/Readme.md" target="_blank">
                   <img src="https://i0.wp.com/sra.io/wp-content/uploads/2020/01/AWS-IAM-Exploitation.png?fit=1102%2C620&ssl=1" width="150">
                 </a>
                 <a href="2_SecurityAndIdentityServices/3_InfraProtectionServices/AWSShield.md" target="_blank">
@@ -83,7 +84,7 @@
                 <a href="2_SecurityAndIdentityServices/3_InfraProtectionServices/AWSWAF.md" target="_blank">
                   <img src="https://www.trinimbus.com/wp-content/uploads/2016/12/Get-The-Last-WAF-with-AWS-Web-Application-Firewall.jpg" width="150">
                 </a>
-                <a href="2_SecurityAndIdentityServices/1_IdentityServices/AmazonCognito.md" target="_blank">
+                <a href="2_SecurityAndIdentityServices/1_IdentityServices/AWSDirectory/AmazonCognito.md" target="_blank">
                   <img src="https://quintagroup.com/blog/amazon-cognito/@@download/image/Amazon%20Cognito.jpg" width="150">
                 </a>
                 <a href="2_SecurityAndIdentityServices/2_DataProtectionServices/AWSSystemManager.md" target="_blank">
@@ -102,7 +103,7 @@
       <td>
         <div class="container" style="background:white">
             <div class="block two first">
-                <a href="1_NetworkingAndContentDelivery/3_NetworkFoundations/AmazonVPC/Readme.md" target="_blank">
+                <a href="1_NetworkingAndContentDelivery/3_NetworkFoundationsVPC/AmazonVPC/Readme.md" target="_blank">
                   <img src="https://www.kamprasad.com/wp-content/uploads/2019/08/aws-vpc.png" width="150">
                 </a>
             </div>
@@ -119,7 +120,7 @@
                 <a href="1_NetworkingAndContentDelivery/1_EdgeNetworking/AmazonCloudFront.md" target="_blank">
                   <img src="https://ericknavarro.io/images/thumbnails/12.png" width="400">
                 </a>
-                <a href="7_StorageServices/AmazonS3/Readme.md" target="_blank">
+                <a href="7_StorageServices/3_ObjectStorageS3/Readme.md" target="_blank">
                   <img src="https://miro.medium.com/max/580/1*DHe24MbDHtbkOeIJzxrfdA.png" width="150">
                 </a>
             </div>
@@ -260,7 +261,7 @@
         </td>
         <td>
             <div class="container" style="background:white">
-                <a href="7_StorageServices/3_ObjectStorageTypes/AmazonS3/Readme.md" target="_blank">
+                <a href="7_StorageServices/3_ObjectStorageS3/Readme.md" target="_blank">
                   <img src="https://miro.medium.com/max/580/1*DHe24MbDHtbkOeIJzxrfdA.png" width="150">
                 </a>
                 <a href="7_StorageServices/1_BlockStorageTypes/AmazonEBS.md" target="_blank">
@@ -278,7 +279,7 @@
         </td>
         <td>
             <div class="container" style="background:white">
-                <a href="6_DatabaseServices/AmazonRedshift.md" target="_blank">
+                <a href="10_BigDataComponents/DataWarehouse/AmazonRedshift.md" target="_blank">
                   <img src="https://w7.pngwing.com/pngs/404/507/png-transparent-amazon-com-amazon-redshift-amazon-web-services-amazon-relational-database-service-amazon-elasticache-amazon-redshift-blue-angle-text.png" width="150">
                 </a>
             </div>
@@ -314,7 +315,7 @@
         </td>
         <td>
             <div class="container" style="background:white">
-                <a href="8_MonitoringServices/AmazonCloudWatch.md" target="_blank">
+                <a href="8_MonitoringServices/AmazonCloudWatch/Readme.md" target="_blank">
                   <img src="https://miro.medium.com/max/800/1*ffbynFsxn43lPdne2kaHMQ.png" width="150">
                 </a>
                 <a href="8_MonitoringServices/AWSXRay.md" target="_blank">
@@ -331,7 +332,7 @@
 
 # Terminologies
 - [Utility services](https://stackoverflow.com/questions/33125790/why-some-services-are-called-aws-xxx-and-the-others-amazon-xxx) are prefixed with `AWS`, while standalone services are prefixed by `Amazon`.
-- [Amazon Resouce Name (ARN)](https://docs.aws.amazon.com/general/latest/gr/aws-arns-and-namespaces.html) uniquely identify AWS resources.
+- [Amazon Resouce Name (ARN)](https://docs.aws.amazon.com/general/latest/gr/aws-arns-and-namespaces.html) uniquely identify AWS resources and publicly accessible.
 
 # Source(s) and further reading
 - [AWS Documentation Overview](https://aws.amazon.com/documentation-overview/)

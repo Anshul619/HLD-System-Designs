@@ -19,7 +19,7 @@
 
 | Service                                                                                         |
 |-------------------------------------------------------------------------------------------------|
-| [Amazon S3](../../../../2_AWSComponents/7_StorageServices/3_ObjectStorageTypes/AmazonS3/Readme.md) |
+| [Amazon S3](../../../../2_AWSComponents/7_StorageServices/3_ObjectStorageS3/Readme.md) |
 | [AWS lake formation](../../../../2_AWSComponents/10_BigDataComponents/DataLakes/AWSLakeFormation.md)         |
 
 # Types of zones

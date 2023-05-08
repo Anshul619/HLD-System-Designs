@@ -1,5 +1,5 @@
 # VPC Reachability Analyzer
-- [Reachability Analyzer](https://docs.aws.amazon.com/vpc/latest/reachability/what-is-reachability-analyzer.html) is a configuration analysis tool that enables you to perform connectivity testing between a source resource and a destination resource in your [virtual private clouds (VPCs)](../3_NetworkFoundations/AmazonVPC/Readme.md).
+- [Reachability Analyzer](https://docs.aws.amazon.com/vpc/latest/reachability/what-is-reachability-analyzer.html) is a configuration analysis tool that enables you to perform connectivity testing between a source resource and a destination resource in your [virtual private clouds (VPCs)](../3_NetworkFoundationsVPC/Readme.md).
 - It is a network diagnostics tool that troubleshoots reachability between two endpoints in a VPC, or within multiple VPCs.
 - It helps you to test connectivity and jump from an initial connection point on your network and iteratively test the connections between that point and a target.
 

@@ -17,7 +17,7 @@
 | [ECS Service Instances](https://docs.aws.amazon.com/cloud-map/latest/dg/working-with-instances.html) | A service instance (of the ECS Service) contains information about how to locate a resource, such as a web server, for an application. <br/>- After you register instances, you locate them by using DNS queries or the AWS Cloud Map DiscoverInstances API action.                                                            | -                    |
 
 # AWS Cloud Map & Route53
-- Service load balancing happens using [Route53 multivalue routing policy](../1_EdgeNetworking/AmazonRoute53.md#multivalue-answer-routing).
+- Service load balancing happens using [Route53 multivalue routing policy](../1_EdgeNetworking/AmazonRoute53/Readme.md#multivalue-answer-routing).
 - One service will call other service with service name and those service names are DNS registered in private DNS hosted zone with record set.
 - There is no special proxy like [load balancer](ElasticLoadBalancer/Readme.md) in between [two microservices](../../../1_HLDDesignComponents/1_MicroServicesSOA/Readme.md), so no additional network hop which means very good performance improvement using [Service Discovery](../../../1_HLDDesignComponents/1_MicroServicesSOA/2_ServiceRegistry&Discovery/Readme.md).
 
@@ -25,4 +25,4 @@ Example - If we have 3 notification service containers
 - 3 private IP addresses we will have for those 3 containers
 - 3 recordsets (A Records) will be created in Route53 with name "notification.microservices.local"
 
-This is achieved using [Route53 Multivalue Routing Policy](../1_EdgeNetworking/AmazonRoute53.md#multivalue-answer-routing).
+This is achieved using [Route53 Multivalue Routing Policy](../1_EdgeNetworking/AmazonRoute53/Readme.md#multivalue-answer-routing).

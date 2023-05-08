@@ -9,8 +9,8 @@
 
 | Data Destinations                                                                             | Destination Type                                                |
 |-----------------------------------------------------------------------------------------------|-----------------------------------------------------------------|
-| [Amazon S3](../../../7_StorageServices/3_ObjectStorageTypes/AmazonS3/Readme.md)               | [AWS data stores](../../../6_DatabaseServices/Readme.md)        |
-| [Amazon Redshift](../../../6_DatabaseServices/AmazonRedshift.md)                              | [AWS data stores](../../../6_DatabaseServices/Readme.md)        |
+| [Amazon S3](../../../7_StorageServices/3_ObjectStorageS3/Readme.md)               | [AWS data stores](../../../6_DatabaseServices/Readme.md)        |
+| [Amazon Redshift](../../DataWarehouse/AmazonRedshift.md)                              | [AWS data stores](../../../6_DatabaseServices/Readme.md)        |
 | [Amazon OpenSearch Service](../../../6_DatabaseServices/AmazonOpenSearch.md)                  | [AWS data stores](../../../6_DatabaseServices/Readme.md)        |
 | [Data Lakes like S3 Data Lake etc.](../../DataLakes)                                          | Data Lakes                                                      |
 | [NewRelic](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/SubscriptionFilters.html) | Logs/Analytics Tools                                            |

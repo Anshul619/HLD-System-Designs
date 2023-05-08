@@ -35,7 +35,7 @@ Lenses provide additional guidance tailored to specific industry and technology 
 | Design Operation Priorities                             | [AWS Trust Advisor](https://aws.amazon.com/premiumsupport/technology/trusted-advisor/)           |
 | Design for Operations                                   | [AWS Cloudformation](9_InfrastructureAsCode/AWSCloudFormation/Readme.md)<br/>- Different environments for dev, staging and production.                  |
 | Operational Readiness                                   | [AWS System Manager](2_SecurityAndIdentityServices/2_DataProtectionServices/AWSSystemManager.md) |
-| Operational Health                                      | [AWS CloudWatch](8_MonitoringServices/AmazonCloudWatch.md)                                       |
+| Operational Health                                      | [AWS CloudWatch](8_MonitoringServices/AmazonCloudwatch/Readme.md)                                       |
 | Event Response                                          | [AWS Lambda](3_ComputeServices/AWSLambda/Readme.md)                                              |
 | Use analytics to learn from experience                  | [Amazon OpenSearch](6_DatabaseServices/AmazonOpenSearch.md)                                      |
 | Share learnings with libraries, scripts & documentation | [AWS CodeCommit](9_InfrastructureAsCode/AWSCodePipeline.md)                                              |

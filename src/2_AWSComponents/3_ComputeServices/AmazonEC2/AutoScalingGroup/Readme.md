@@ -1,40 +1,16 @@
 # AWS Auto-Scaling
 - [AWS Auto-scaling Group (ASG)](https://aws.amazon.com/autoscaling/) is a function that allows you to [provision and launch new instances](../Readme.md) whenever there is a incoming demand.
-- [Scaling Policies](ScalingPolicies.md)
 
-# How Auto-Scaling works?
+![](assets/ASG-Creation-Steps.png)
 
-![img.png](assets/Auto-Scaling-ELB.png)
+# Features
 
-# Steps to configure AutoScaling
-
-| Step                                                                                                                                     | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
-|------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Create a Launch template/configuration](https://docs.aws.amazon.com/autoscaling/ec2/userguide/create-launch-template.html)              | [Launch template/configuration](https://docs.aws.amazon.com/autoscaling/ec2/userguide/create-launch-template.html) includes the [ID of the Amazon Machine Image (AMI)](../AmazonMachineImages.md), the instance type, a key pair, security groups, and other parameters used to launch [EC2 instances](../Readme.md). <br/>- However, [defining a launch template instead of a launch configuration](https://docs.aws.amazon.com/autoscaling/ec2/userguide/create-launch-template.html) allows you to have multiple instance types or multiple versions of a launch template. |
-| [Create Auto Scaling group](https://docs.aws.amazon.com/autoscaling/ec2/userguide/auto-scaling-groups.html)                              | Specify Desired, Max & Min Capacity in the ASG group.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
-| Specify Availability Zone, Network                                                                                                       | We can specify availability zones of the Auto-Scaling Group (ASG) i.e. in which zones, new instances should be created.                                                                                                                                                                                                                                                                                                                        |
-| [Attach a load balancer to your Auto Scaling group](https://docs.aws.amazon.com/autoscaling/ec2/userguide/attach-load-balancer-asg.html) | When you attach an [Application Load Balancer, Network Load Balancer, or Gateway Load Balancer](../../../1_NetworkingAndContentDelivery/2_ApplicationNetworking/ElasticLoadBalancer/Readme.md), you attach a [target group](../../../1_NetworkingAndContentDelivery/2_ApplicationNetworking/ElasticLoadBalancer/Readme.md).<br/>- [Amazon EC2 Auto Scaling]() adds instances to the attached target group when they are launched.<br/>- You can attach one or multiple target groups, and configure health checks on a per target group basis.                                |
-| Tag Auto Scaling groups and instances                                                                                                    | A tag is a custom attribute label that you assign or that AWS assigns to an AWS resource. <br/>Each tag has two parts:- A tag key (for example, costcenter, environment, or project)<br/>- An optional field known as a tag value (for example, 111122223333 or production)                                                                                                                                                                                                                                                                                                   |
-
-# Health check types
-
-| Health check type                                       | What it checks                                                                                                                      |
-|---------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------|
-| Amazon EC2 status checks and scheduled events (Default) | Check if [instance is running](../Readme.md)<br/>- Check for underlying hardware or software issues that might impair the instance. |
-| ELB Health checks                                       | Checks whether the load balancer reports the instance as healthy.                                                                   |
-| Custom Health Checks                                    | Checks for any other problems that might indicate instance health issues, according to the custom health checks.                    |
-
-[Read more](https://docs.aws.amazon.com/autoscaling/ec2/userguide/ec2-auto-scaling-health-checks.html)
-
-# Instance Lifecycles
-
-![img.png](assets/ASG-Instance-LifeCycle.png)
-
-[Read more](https://docs.aws.amazon.com/autoscaling/ec2/userguide/ec2-auto-scaling-lifecycle.html)
-
-# ELB and ASG
-
-![img.png](../../../1_NetworkingAndContentDelivery/2_ApplicationNetworking/ElasticLoadBalancer/assests/AWS_Elastic_Load_Balancer.png)
+| Feature                                                                                                           | Remarks                                                                                                                                                                                                                                  |
+|-------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| [LaunchTemplate.md](LaunchTemplate&Config.md)                                                                     | -                                                                                                                                                                                                                                        |
+| [ELB & Health Checks](ELBAndHealthChecks.md)                                                                      | -                                                                                                                                                                                                                                        |
+| [Scaling Policies](ScalingPolicies.md)                                                                            | -                                                                                                                                                                                                                                        |
+| [Cooldown periods](https://docs.aws.amazon.com/autoscaling/ec2/userguide/ec2-auto-scaling-scaling-cooldowns.html) | [Cooldown periods](https://docs.aws.amazon.com/autoscaling/ec2/userguide/ec2-auto-scaling-scaling-cooldowns.html) help to prevent the initiation of additional scaling activities before the effects of previous activities are visible. |
 
 # :thumbsdown: Disadvantages of AutoScaling
 

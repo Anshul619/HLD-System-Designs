@@ -1,6 +1,8 @@
 # AWS Direct Connect
 - [AWS Direct Connect](https://aws.amazon.com/directconnect/) provides a dedicated, private connection between an on-premises data center and an AWS region over a high-speed, low-latency connection, which is facilitated by a direct physical link between the two locations.
 
+![img.png](../3_NetworkFoundationsVPC/assets/AWS_VPC.png)
+
 # Facts
 - Direct connect takes significant time (several months) to be provisioned.
 - All connections must be dedicated connections and have a port speed of 1 Gbps, 10 Gbps, or 100 Gbps.

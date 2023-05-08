@@ -1,6 +1,12 @@
 # AWS Site to Site VPN
-- [AWS Site-to-Site VPN](https://docs.aws.amazon.com/vpn/latest/s2svpn/VPC_VPN.html) enables you to securely connect your on-premises network to [Amazon VPC](../3_NetworkFoundations/AmazonVPC/Readme.md), for example your branch office site.
+- [AWS Site-to-Site VPN](https://docs.aws.amazon.com/vpn/latest/s2svpn/VPC_VPN.html) enables you to securely connect your on-premises network to [Amazon VPC](../3_NetworkFoundationsVPC/Readme.md), for example your branch office site.
 
-# Virtual Private Gateway
-- A virtual private gateway is the VPN endpoint on the Amazon side of your Site-to-Site VPN connection that can be attached to a single VPC.
-- Exactly one virtual private gateway can be attached to a VPC.
+![img.png](../3_NetworkFoundationsVPC/assets/AWS_VPC.png)
+
+# Components
+
+| Component                                                                                                               | Description                                                                                                                                                                                                                                                                  |
+|-------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| [Virtual Private Gateway (VPN gateway)](https://docs.aws.amazon.com/vpn/latest/s2svpn/VPC_VPN.html)                     | A [virtual private gateway](https://docs.aws.amazon.com/vpn/latest/s2svpn/VPC_VPN.html) is the VPN endpoint on the Amazon side of your Site-to-Site VPN connection that can be attached to a single VPC.<br/>- Exactly one virtual private gateway can be attached to a VPC. |
+| [VPN CloudHub](https://docs.aws.amazon.com/vpn/latest/s2svpn/VPN_CloudHub.html)                                         | If you have multiple AWS Site-to-Site VPN connections, you can provide secure communication between sites using the [AWS VPN CloudHub](https://docs.aws.amazon.com/vpn/latest/s2svpn/VPN_CloudHub.html).                                                                     |
+| [Site-to-Site VPN single and multiple connection examples](https://docs.aws.amazon.com/vpn/latest/s2svpn/Examples.html) | -                                                                                                                                                                                                                                                                            |

@@ -3,7 +3,7 @@
 - [AWS Organizations](https://aws.amazon.com/organizations/) lets you create new AWS accounts at no additional charge.
 - More easily allocate resources, group accounts, and apply governance policies to accounts or groups.
 
-![img.png](../1_IdentityServices/assets/AWS-Multiple-Accounts.png)
+![img.png](assets/AWS-Multiple-Accounts.png)
 
 # Why do I need multiple AWS accounts?
 - [AWS accounts](https://docs.aws.amazon.com/accounts/latest/reference/welcome-multiple-accounts.html) serve as the fundamental security boundary in AWS. 

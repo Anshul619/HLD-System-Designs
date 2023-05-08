@@ -1,10 +1,11 @@
 # AWS STS
 - AWS provides [AWS Security Token Service (AWS STS)](https://docs.aws.amazon.com/STS/latest/APIReference/welcome.html) as a web service that enables you to request temporary, limited-privilege credentials for users.
-- You can use the AWS STS to create and provide trusted users with temporary security credentials that can control access to your AWS resources. 
+- You can use the [AWS STS]() to create and provide trusted users with temporary security credentials that can control access to your AWS resources. 
 - Temporary security credentials are short-term, as the name implies. 
 - They can be configured to last for from a few minutes to several hours. 
 - After the credentials expire, AWS no longer recognizes them or allows any kind of access from API requests made with them.
 
+# Terms
 
 | Term                                                                                                      | Description                                                                                            |
 |-----------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------|

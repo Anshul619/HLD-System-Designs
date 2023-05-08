@@ -12,9 +12,9 @@
 # How to set up Aurora Global Database?
 - Select Aurora DB Cluster and click on [Add Region](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/aurora-global-database-getting-started.html#aurora-global-database-attaching).
 
-![img.png](../assests/AuroraGlobalDB/aurora_global_db_steps_1.png)
+![img.png](../assets/AuroraGlobalDB/aurora_global_db_steps_1.png)
 
-![img.png](../assests/AuroraGlobalDB/aurora_global_db_steps_2.png)
+![img.png](../assets/AuroraGlobalDB/aurora_global_db_steps_2.png)
 
 # :thumbsup: Advantages of Aurora Global Database
 
@@ -24,10 +24,10 @@
 | [Cross-Region Replication with low replica lag (in less than 1 second)](../../../AWS-Global-Architecture-Region-AZ.md) | [Aurora uses physical, log-based asynchronous replication](../../../../1_HLDDesignComponents/0_SystemGlossaries/Database/AppendOnlyDataStructure.md)                                                                                                                |
 | [Cross-Region Disaster Recovery](https://aws.amazon.com/rds/aurora/global-database/)                                                                                                   | [Disaster Recovery](../../../../1_HLDDesignComponents/0_SystemGlossaries/Reliability/FaultTolerance.md) promotes remote databases to a primary for faster recovery ( in less than 1 min ) in the event of a disaster. For industries like `Financial Services` etc. |
 
-![img.png](../assests/AuroraGlobalDB/aurora_global_database_img.png)
+![img.png](../assets/AuroraGlobalDB/aurora_global_database_img.png)
 
 # Using write forwarding in an Amazon Aurora global database
 
-![img.png](../assests/AuroraGlobalDB/aurora_global_write_forwarding.png)
+![img.png](../assets/AuroraGlobalDB/aurora_global_write_forwarding.png)
 
 [Read more](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/aurora-global-database-write-forwarding.html)

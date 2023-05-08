@@ -3,7 +3,7 @@
 - In case of an infrastructure failure, Amazon RDS performs an automatic failover to the standby DB instance.
 - Since the endpoint for your DB instance remains the same after a failover, your application can resume database operation without the need for manual administrative intervention.
 
-![img.png](assests/Multi-AZ/RDS-Multi-AZ-Replica.drawio.png)
+![img.png](assets/Multi-AZ/RDS-Multi-AZ-Replica.drawio.png)
 
 # Features
 
@@ -17,11 +17,11 @@
 
 # RDS Aurora - Multi-AZ Deployment
 
-![img_1.png](assests/Multi-AZ/aurora_ha_setup_steps.png)
+![img_1.png](assets/Multi-AZ/aurora_ha_setup_steps.png)
 
 # RDS Non-Aurora - Multi-AZ Deployment
 
-![img.png](assests/Multi-AZ/rds_ha_setup_steps.png)
+![img.png](assets/Multi-AZ/rds_ha_setup_steps.png)
 
 # References
 - [Amazon RDS High Availability](https://aws.amazon.com/rds/ha/)

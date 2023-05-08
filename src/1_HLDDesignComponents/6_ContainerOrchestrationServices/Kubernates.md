@@ -111,7 +111,7 @@ behavior:
 - It is an open source tool designed to make installation of secure, [highly available clusters](../0_SystemGlossaries/Reliability/HighAvailability.md) easy and automatable.
 
 ### Step1 - Create Hosted Zone for Cluster
-- We require a hosted zone associated with [Route 53](../../2_AWSComponents/1_NetworkingAndContentDelivery/1_EdgeNetworking/AmazonRoute53.md) which must be publicly resolvable.
+- We require a hosted zone associated with [Route 53](../../2_AWSComponents/1_NetworkingAndContentDelivery/1_EdgeNetworking/AmazonRoute53/Readme.md) which must be publicly resolvable.
 
 ````shell
 aws route53 create-hosted-zone --name testikod.in --caller-reference 2017-02-24-11:12 --hosted-zone-config Comment="Hosted Zone for KOPS"
@@ -120,7 +120,7 @@ aws route53 create-hosted-zone --name testikod.in --caller-reference 2017-02-24-
 ### Step2 - Create State Store
 - KOPS internally uses Terraform. 
 - So we required external state store for storing states of a cluster. 
-- We are using [Amazon S3](../../2_AWSComponents/7_StorageServices/3_ObjectStorageTypes/AmazonS3/Readme.md) for storing state.
+- We are using [Amazon S3](../../2_AWSComponents/7_StorageServices/3_ObjectStorageS3/Readme.md) for storing state.
 
 ````shell
 aws s3api create-bucket --bucket testikod-in-state-store --region us-west-2

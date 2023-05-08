@@ -1,5 +1,5 @@
 
-# VPN vs Direct Connect
+# Site-to-Site VPN vs Direct Connect
 
 | Feature             | [AWS Site-to-Site VPN](AWSSiteToSiteVPN.md)                                     | [AWS Direct Connect](AWSDirectConnect.md)                                         |
 |---------------------|---------------------------------------------------------------------------------|-----------------------------------------------------------------------------------|
@@ -9,7 +9,7 @@
 | Security            | :white_check_mark: Connection is encrypted via IPSec                            | :x: No encryption by default                                                      |
 
 # AWS Direct Connect plus VPN
-- With [AWS Direct Connect](AWSDirectConnect.md) plus VPN, you can combine [one or more AWS Direct Connect](AWSDirectConnect.md) dedicated network connections with the [Amazon VPC VPN](AWSSiteToSiteVPN.md).
+- With [AWS Direct Connect](AWSDirectConnect.md) plus [VPN](AWSSiteToSiteVPN.md), you can combine [one or more AWS Direct Connect](AWSDirectConnect.md) dedicated network connections with the [Amazon VPC VPN](AWSSiteToSiteVPN.md).
 - This combination provides an IPsec-encrypted private connection that also reduces network costs, increases bandwidth throughput, and provides a more consistent network experience than internet-based VPN connections.
 - This solution combines the AWS managed benefits of the [VPN solution](AWSSiteToSiteVPN.md) with low latency, increased bandwidth, more consistent benefits of the [AWS Direct Connect solution](AWSDirectConnect.md), and an end-to-end, secure IPsec connection.
 - [Read more](https://docs.aws.amazon.com/whitepapers/latest/aws-vpc-connectivity-options/aws-direct-connect-site-to-site-vpn.html)
