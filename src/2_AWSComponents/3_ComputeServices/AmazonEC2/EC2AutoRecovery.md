@@ -9,7 +9,7 @@
 | Instance State                                                          | Retained in Recovery?  |
 |-------------------------------------------------------------------------|------------------------|
 | Original Instance ([AMI](AmazonMachineImages.md), InstanceID, Metadata) | :white_check_mark: Yes |
-| Private, Public, [Elastic IP address](ElasticIP.md)                     | :white_check_mark: Yes |
+| Private, Public, [Elastic IP address](Networking/ElasticIP.md)                     | :white_check_mark: Yes |
 | Placement Group                                                         | :white_check_mark: Yes |
 | In-Memory data                                                          | :x: No                 |
 
@@ -17,7 +17,7 @@
 
 | :x: Limitation                                                                                              | Remarks                                                                                                                                                                    |
 |-------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Instance store based EC2 instances](../../7_StorageServices/1_BlockStorageTypes/AmazonEC2InstanceStore.md) | EC2 auto-recovery happens only when EC2 volume is [EBS](../../7_StorageServices/1_BlockStorageTypes/AmazonEBS.md).                                                         |
+| [Instance store based EC2 instances](../../7_StorageServices/1_BlockStorageTypes/AmazonEC2InstanceStore.md) | EC2 auto-recovery happens only when EC2 volume is [EBS](../../7_StorageServices/1_BlockStorageTypes/AmazonEBS/Readme.md).                                                         |
 | [Instance in terminated state](EC2StateLifeCycle.md)                                                        | -                                                                                                                                                                          |
 | [Instance in ASG](AutoScalingGroup/Readme.md)                                                               | If your instance is part of an [Auto Scaling group with health checks enabled](AutoScalingGroup/Readme.md), then the instance is replaced by ASG when it becomes impaired. |
 | [System Status Check Failed](EC2StatusChecks.md)                                                            | EC2 auto-recovery happens only when system status check is failed.                                                                                                         |

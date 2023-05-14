@@ -3,7 +3,7 @@
 - KDS can continuously capture gigabytes of data per second from hundreds of thousands of sources & then provide a concurrent feed of the data stream to the downstream applications.
 - The data collected is available in milliseconds, enabling real-time analytics.
 
-![](https://docs.aws.amazon.com/images/streams/latest/dev/images/architecture.png)
+![](assests/AmazonKinesisDataStream.drawio.png)
 
 # Use Cases
 

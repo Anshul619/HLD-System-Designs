@@ -28,11 +28,11 @@
 
 # Action keys
 
-| Action Key                                                                                      | Type          | Description                                                                                                                    |
-|-------------------------------------------------------------------------------------------------|---------------|--------------------------------------------------------------------------------------------------------------------------------|
-| [sts:AssumeRole](https://docs.aws.amazon.com/STS/latest/APIReference/API_AssumeRole.html)       | STS action    | Specify whether to allow/deny principal assuming another role (specified as Resource)                                          |
-| [s3:ListBucket](https://tomgregory.com/s3-bucket-access-from-the-same-and-another-aws-account/) | Bucket action | Must be applied on bucket resource such as `arn:aws:s3:::mountain-pics`.                                                       |
-| [s3:GetObject](https://tomgregory.com/s3-bucket-access-from-the-same-and-another-aws-account/)  | Object action | Must be applied on objects within bucket such as `arn:aws:s3:::mountain-pics/mountains1.jpg` or `arn:aws:s3:::mountain-pics/*` |
+| Action Key                                                                                      | Type          | Description                                                                                                               |
+|-------------------------------------------------------------------------------------------------|---------------|---------------------------------------------------------------------------------------------------------------------------|
+| [sts:AssumeRole](https://docs.aws.amazon.com/STS/latest/APIReference/API_AssumeRole.html)       | STS action    | Specify whether to allow/deny principal assuming another role (specified as Resource)                                     |
+| [s3:ListBucket](https://tomgregory.com/s3-bucket-access-from-the-same-and-another-aws-account/) | Bucket action | Must be applied on bucket resource such as `arn:aws:s3:::examplebucket`.                                                  |
+| [s3:GetObject](https://tomgregory.com/s3-bucket-access-from-the-same-and-another-aws-account/)  | Object action | Must be applied on objects within bucket such as `arn:aws:s3:::examplebucket/image.jpg` or `arn:aws:s3:::examplebucket/*` |
 
 # Explicit and implicit denies
 

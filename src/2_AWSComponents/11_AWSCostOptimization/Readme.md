@@ -1,13 +1,13 @@
 # AWS - Cost Exploration Services
 
-| Service                                                                                                                | Description                                                                |
-|------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------|
-| [AWS Cost Explorer](https://aws.amazon.com/aws-cost-management/aws-cost-explorer/)                                     | -                                                                          |
-| [AWS Budgets](https://aws.amazon.com/aws-cost-management/aws-budgets/)                                                 | Improve planning and cost control with flexible budgeting and forecasting. |
-| [Cost Allocation Tags](CostAllocationTags.md)                                                                          | -                                                                          |
-| [AWS Cloud Tower](https://aws.amazon.com/blogs/aws/aws-control-tower-set-up-govern-a-multi-account-aws-environment/)   | -                                                                          |
-| [AWS Cost Categories](https://aws.amazon.com/aws-cost-management/aws-cost-categories/)                                 | -                                                                          |
-| [AWS pricing calculator](https://calculator.aws/#/)                                                                    | Configure a cost estimate that fits your unique business or personal needs with AWS products and services.                                                                           |
+| Service                                                                                                              | Description                                                                                                |
+|----------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------|
+| [AWS Cost Explorer](AWSCostExplorer.md)                                                                              | -                                                                                                          |
+| [AWS Budgets](https://aws.amazon.com/aws-cost-management/aws-budgets/)                                               | Improve planning and cost control with flexible budgeting and forecasting.                                 |
+| [Cost Allocation Tags](CostAllocationTags.md)                                                                        | -                                                                                                          |
+| [AWS Cloud Tower](https://aws.amazon.com/blogs/aws/aws-control-tower-set-up-govern-a-multi-account-aws-environment/) | -                                                                                                          |
+| [AWS Cost Categories](https://aws.amazon.com/aws-cost-management/aws-cost-categories/)                               | -                                                                                                          |
+| [AWS pricing calculator](https://calculator.aws/#/)                                                                  | Configure a cost estimate that fits your unique business or personal needs with AWS products and services. |
 
 # Cost Allocation
 

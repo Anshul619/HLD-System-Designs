@@ -26,4 +26,4 @@
 
 # Amazon Redshift Spectrum
 - [Amazon Redshift Spectrum](https://docs.aws.amazon.com/redshift/latest/dg/c-getting-started-using-spectrum.html) can be used to perform in-place querying of data assets in an [Amazon S3-based data lake](../../7_StorageServices/3_ObjectStorageS3/Readme.md). 
-- However, data assets must be loaded into Amazon Redshift before queries run. 
+- However, data assets must be loaded into [Amazon Redshift]() before queries run. 

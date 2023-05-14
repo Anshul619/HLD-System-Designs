@@ -1,9 +1,9 @@
 # Cross-Zone Load Balancing
 
-| State    | Remarks                                                                                                                                                                                      |
-|----------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Enabled  | When cross-zone load balancing is enabled, each load balancer node distributes traffic across the registered targets in all enabled Availability Zones. This improves speed and scalability. |
-| Disabled | When cross-zone load balancing is disabled, each load balancer node distributes traffic only across the registered targets in its Availability Zone.                                         |
+| State                      | Remarks                                                                                                                                                                                      |
+|----------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| :white_check_mark: Enabled | When cross-zone load balancing is enabled, each load balancer node distributes traffic across the registered targets in all enabled Availability Zones. This improves speed and scalability. |
+| Disabled                   | When cross-zone load balancing is disabled, each load balancer node distributes traffic only across the registered targets in its Availability Zone.                                         |
 
 [Read more](https://docs.aws.amazon.com/elasticloadbalancing/latest/userguide/how-elastic-load-balancing-works.html)
 

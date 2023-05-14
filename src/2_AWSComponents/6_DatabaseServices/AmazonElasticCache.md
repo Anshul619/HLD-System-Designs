@@ -8,6 +8,12 @@
 
 [Read more](https://docs.aws.amazon.com/AmazonElastiCache/latest/red-ug/Replication.Redis-RedisCluster.html)
 
+# Features
+
+| Feature                                                                                                             | Remarks                                                                                                                                                                                                 |
+|---------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| [Authenticating with the Redis AUTH command](https://docs.aws.amazon.com/AmazonElastiCache/latest/red-ug/auth.html) | Redis authentication tokens, or passwords, enable Redis to require a password before allowing clients to run commands, thereby improving data security.<br/>- IAM Auth is not supported by ElastiCache. |
+
 # Multi-AZ deployments for increased high availability
 
 ![img.png](assests/ElasticCache_Multi-AZ_setup.png)
@@ -16,21 +22,21 @@
 
 # Caching strategies
 
-| Strategy                                                                                            | Description                                                                                                 | Read-Performance           |
-|-----------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------|----------------------------|
-| :star: [Write-through](https://docs.aws.amazon.com/AmazonElastiCache/latest/mem-ug/Strategies.html) | The write-through strategy adds data or updates data in the cache whenever data is written to the database. | Better than "lazy-loading" |
-| [Lazy loading](https://docs.aws.amazon.com/AmazonElastiCache/latest/mem-ug/Strategies.html)         | Lazy loading is a caching strategy that loads data into the cache only when necessary.                      | -                          |
+| Strategy                                                                                            | Description                                                                                                                                                                                | Read-Performance           |
+|-----------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------|
+| :star: [Write-through](https://docs.aws.amazon.com/AmazonElastiCache/latest/mem-ug/Strategies.html) | The [write-through strategy](https://docs.aws.amazon.com/AmazonElastiCache/latest/mem-ug/Strategies.html) adds data or updates data in the cache whenever data is written to the database. | Better than "lazy-loading" |
+| [Lazy loading](https://docs.aws.amazon.com/AmazonElastiCache/latest/mem-ug/Strategies.html)         | [Lazy loading](https://docs.aws.amazon.com/AmazonElastiCache/latest/mem-ug/Strategies.html) is a caching strategy that loads data into the cache only when necessary.                      | -                          |
  
 # Redis (Cluster Mode Disabled) vs. Redis (Cluster Mode Enabled)
 
-| Feature                       | [Redis (cluster mode disabled)](../../1_HLDDesignComponents/3_DatabaseComponents/In-Memory-Cache/Redis/RedisMasterSlaveReplication.md) | [Redis (cluster mode enabled)](../../1_HLDDesignComponents/3_DatabaseComponents/In-Memory-Cache/Redis/RedisCluster.md) |
-|-------------------------------|----------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------|
-| Modifiable                    | :white_check_mark: Yes. Supports adding and deleting replica nodes, and scaling up node type.                                          | [Limited](https://docs.aws.amazon.com/AmazonElastiCache/latest/red-ug/scaling-redis-cluster-mode-enabled.html)         |
-| Data Sharding                 | :x: No                                                                                                                                 | :white_check_mark: Yes                                                                                                 |
-| Shards                        | 1                                                                                                                                      | 1 to 500                                                                                                               |
-| Read Replicas                 | 0 to 5                                                                                                                                 | 0 to 5 per shard                                                                                                       |
-| HA - Multi-AZ                 | :white_check_mark: Yes, with at least 1 replica. <br/>- "Multi-AZ" is on by default                                                    | :white_check_mark: Yes. <br/>- "Multi-AZ" is on by default.                                                            |
-| Snapshots (Backups & Restore) | :white_check_mark: Yes, single .rdb file                                                                                               | :white_check_mark: Yes, unique .rdb file for each shard                                                                |
+| Feature                                                                                          | [Redis (cluster mode disabled)](../../1_HLDDesignComponents/3_DatabaseComponents/In-Memory-Cache/Redis/RedisMasterSlaveReplication.md) | [Redis (cluster mode enabled)](../../1_HLDDesignComponents/3_DatabaseComponents/In-Memory-Cache/Redis/RedisCluster.md) |
+|--------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------|
+| Modifiable                                                                                       | :white_check_mark: Yes. Supports adding and deleting replica nodes, and scaling up node type.                                          | [Limited](https://docs.aws.amazon.com/AmazonElastiCache/latest/red-ug/scaling-redis-cluster-mode-enabled.html)         |
+| Data Sharding                                                                                    | :x: No                                                                                                                                 | :white_check_mark: Yes                                                                                                 |
+| Shards                                                                                           | 1                                                                                                                                      | 1 to 500                                                                                                               |
+| Read Replicas                                                                                    | 0 to 5                                                                                                                                 | 0 to 5 per shard                                                                                                       |
+| [HA - Multi-AZ](https://docs.aws.amazon.com/AmazonElastiCache/latest/red-ug/FaultTolerance.html) | :white_check_mark: Yes, with at least 1 replica.                                                                                       | :white_check_mark: Yes, Multi-AZ is ON by default.                                                                     |
+| Snapshots (Backups & Restore)                                                                    | :white_check_mark: Yes, single .rdb file                                                                                               | :white_check_mark: Yes, unique .rdb file for each shard                                                                |
 
 # References
 - [Benefits of Fully Managed Redis](https://aws.amazon.com/elasticache/redis/fully-managed-redis/)

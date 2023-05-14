@@ -1,6 +1,5 @@
 # Amazon ELB - Elastic Load Balancer
 - [Amazon ELB - Elastic Load Balancer](https://docs.aws.amazon.com/elasticloadbalancing) automatically distributes your incoming traffic across multiple targets, such as [EC2 instances](../../../3_ComputeServices/AmazonEC2), [containers](../../../4_ContainerOrchestrationServices/AmazonECS), and IP addresses, in [one or more Availability Zones](../../../AWS-Global-Architecture-Region-AZ.md) in the same region.
-- Note - Elastic Load Balancer cannot throttle requests.
 
 ![img.png](assets/AWS_Elastic_Load_Balancer.png)
 
@@ -20,6 +19,14 @@
 | [Monitoring/logging](https://docs.aws.amazon.com/elasticloadbalancing/latest/application/load-balancer-monitoring.html)    | Publishes metrics to CloudWatch and can get logs of requests processed.                                                                                                                                                                                                                                                                                                                                                                                            |
 | [Access logs](https://docs.aws.amazon.com/elasticloadbalancing/latest/application/load-balancer-access-logs.html)          | Elastic Load Balancing provides access logs that capture detailed information about requests sent to your load balancer. <br/>- Each log contains information such as the time the request was received, the client's IP address, latencies, request paths, and server responses.                                                                                                                                                                                  |
 
+# Types of ELB Load Balancers
+
+| ELB Type                                                                                    | Remarks                                                                                                                                                                                                                                                                                                        |
+|---------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| [Application Load Balancer](ALBvsNLB.md)                                                    | -                                                                                                                                                                                                                                                                                                              |
+| [Network Load Balancer](ALBvsNLB.md)                                                        | -                                                                                                                                                                                                                                                                                                              |
+| [Gateway Load Balancer](https://aws.amazon.com/elasticloadbalancing/gateway-load-balancer/) | Choose a [Gateway Load Balancer](https://docs.aws.amazon.com/elasticloadbalancing/latest/gateway/introduction.html) when you need to deploy and manage a fleet of third-party virtual appliances that support GENEVE. <br/>- These appliances enable you to improve security, compliance, and policy controls. |
+
 # Key Components of ELB
 
 | Component                                                                                                        | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
@@ -29,12 +36,18 @@
 | Network Mapping - VPC                                                                                            | The load balancer routes traffic to the targets in the selected subnets, and in accordance with your IP address settings.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
 | Scheme - Internet-Facing or Internal                                                                             | When you create a load balancer, you must choose whether to make it an internal load balancer or an internet-facing load balancer.<br/>- The nodes of an internet-facing load balancer have public IP addresses.<br/>- The nodes of an internal load balancer have only private IP addresses.<br/>- Both internet-facing and internal load balancers route requests to your targets using private IP addresses.<br/>- Therefore, your targets do not need public IP addresses to receive requests from an internal or an internet-facing load balancer.                                                                                                                                                                        |
 
+## Security groups for your Application Load Balancer
+
+![](https://assets-pt.media.datacumulus.com/aws-saa-pt/assets/pt3-q26-i1.jpg)
+
+[Read more](https://docs.aws.amazon.com/elasticloadbalancing/latest/application/load-balancer-update-security-groups.html)
+
 ## Request Routing and IP Addresses - NLB
 
-| Routing                            | Remarks                                                                                                                                                                       |
-|------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Targets specified using Instance ID | If you specify targets using an instance ID, traffic is routed to instances using the primary private IP address specified in the primary network interface for the instance. |
-| Targets specified using IP address | If you specify targets using IP addresses, you can route traffic to an instance using any private IP address from one or more network interfaces. This enables multiple applications on an instance to use the same port.                                                                                                                                                                               |
+| Routing                             | Remarks                                                                                                                                                                                                                   |
+|-------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Targets specified using Instance ID | If you specify targets using an instance ID, traffic is routed to instances using the primary private IP address specified in the primary network interface for the instance.                                             |
+| Targets specified using IP address  | If you specify targets using IP addresses, you can route traffic to an instance using any private IP address from one or more network interfaces. This enables multiple applications on an instance to use the same port. |
 
 [Read more](https://docs.aws.amazon.com/elasticloadbalancing/latest/network/load-balancer-target-groups.html)
 

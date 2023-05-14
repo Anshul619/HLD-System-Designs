@@ -13,15 +13,15 @@
 | Type            | Description                                                                                                                                                                  | Formula                                                     |
 |-----------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------|
 | Fleet Scaling   | Maintain desired number of instances across AZs (for [high availability](../../../../1_HLDDesignComponents/0_SystemGlossaries/Reliability/HighAvailability.md)) at all time. | Desired-Capacity = Min-Capacity = Max-Capacity = Fleet-Size |
-| Dynamic Scaling | Automatically increase or decrease resource capacity in relation to the demand                                                                                               | Based on demand                                             |
+| Dynamic Scaling | Automatically increase or decrease resource capacity in relation to the demand.                                                                                              | Based on demand                                             |
 
 # Scaling Metrics
 
-| Metric                                              | Description                                                                            |
-|-----------------------------------------------------|----------------------------------------------------------------------------------------|
-| CPUUtilization                                      | For example - Auto scale for CPU usage on a single instance rise above 80% for 5 mins. |
-| Memory                                              | -                                                                                      |
-| [Amazon SQS queue size](SQSBasedScalingPolicy.md)   | -                                                                                      |
+| Metric                                            | Description                                                                                                                                                                                                                   |
+|---------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| CPUUtilization                                    | For example - Auto scale for CPU usage on a single instance rise above 80% for 5 mins.                                                                                                                                        |
+| Memory                                            | -                                                                                                                                                                                                                             |
+| [Amazon SQS queue size](SQSBasedScalingPolicy.md) | Based on the [Amazon SQS queue size](../../../5_MessageBrokerServices/AmazonSQS.md), the [auto-scaling of the EC2 instances](https://docs.aws.amazon.com/autoscaling/ec2/userguide/as-using-sqs-queue.html) can also be done. |
 
 # Termination policy for Scale-In event
 

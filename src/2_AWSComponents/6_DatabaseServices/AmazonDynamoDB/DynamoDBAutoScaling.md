@@ -5,5 +5,9 @@
 | Automated Storage Scaling                                                                                                                | There is no limit to the amount of data you can store in a DynamoDB table, and the service automatically allocates more storage, as you store more data using the DynamoDB write APIs.                                                                                                                                                                                                                                                                                                                                                                            |
 | [Application Auto Scaling](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/AutoScaling.html)                            | Application Auto Scaling requires consecutive data points with higher target utilization values to scale up the provisioned capacity of the DynamoDB table. <br/>- Application Auto Scaling automatically scales the provisioned capacity only when the consumed capacity is higher than target utilization for 2 consistent minutes. <br/>- During this period, any requests that exceed the provisioned capacity of the table are throttled. <br/>- Therefore, it's not a best practice to use Application Auto Scaling to handle spiked workloads in DynamoDB. |
 
+# How dynamoDB autoscaling works?
+
+![](https://assets-pt.media.datacumulus.com/aws-saa-pt/assets/pt3-q62-i1.jpg)
+
 # Remarks
 - [Running spiky workloads and optimizing costs by more than 90% using Amazon DynamoDB on-demand capacity mode](https://aws.amazon.com/blogs/database/running-spiky-workloads-and-optimizing-costs-by-more-than-90-using-amazon-dynamodb-on-demand-capacity-mode/)

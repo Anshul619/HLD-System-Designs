@@ -7,6 +7,6 @@
 | Built-In password generator       | :white_check_mark: Yes                 | :x: No                                                                                           |
 | Automatic rotation                | :white_check_mark: Yes                 | :x: No                                                                                           |
 | Cross-Account Access              | :white_check_mark: Yes                 | :x: No                                                                                           |
-| Pricing                           | Yes                                    | :+1: Free for standard params<br/>- Advanced parameters are charged per param & API transaction. |
+| Pricing                           | Not-Free                               | :+1: Free for standard params<br/>- Advanced parameters are charged per param & API transaction. |
 
 [Read more](https://tutorialsdojo.com/aws-secrets-manager-vs-systems-manager-parameter-store/)

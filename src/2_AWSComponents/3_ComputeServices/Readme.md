@@ -20,5 +20,5 @@
 | Memory           | Measured in bytes                     | -                                                                                                                        |
 
 # Other links
-- [Amazon EMR](../10_BigDataComponents/BatchProcessing/AmazonEMR.md)
+- [Amazon EMR](../10_BigDataComponents/BatchProcessing/ETL/AmazonEMR.md)
 - [AWS Step Functions](AWSStepFunctions.md)
