@@ -1,13 +1,13 @@
 
 # Site-to-Site VPN vs Direct Connect
 
-| Feature             | [AWS Direct Connect](AWSDirectConnect.md)                                         | [AWS Site-to-Site VPN](AWSSiteToSiteVPN.md)                                     |
-|---------------------|-----------------------------------------------------------------------------------|---------------------------------------------------------------------------------|
-| Network bandwidth   | :white_check_mark: Starts from 50 Mbps and expands to 100 Gbps                    | Can reach 4 Gbps or less (low throughput)                                       |
-| Network fluctuation | :white_check_mark: Network is not fluctuating & provides a consistent experience. | Connected with shared & public networks, so the bandwidth and latency fluctuate |
-| Time to establish   | Requires experienced team, takes months to setup                                  | :white_check_mark: Easy                                                         |
-| Connection type     | Private                                                                           | Encrypted connection over internet                                              |
-| Security            | :x: No encryption by default                                                      | :white_check_mark: Connection is encrypted via IPSec                            |
+| Feature             | [AWS Site-to-Site VPN](AWSSiteToSiteVPN.md)                                      | [AWS Direct Connect](AWSDirectConnect.md)                                         |
+|---------------------|----------------------------------------------------------------------------------|-----------------------------------------------------------------------------------|
+| Network bandwidth   | Can reach 4 Gbps or less (low throughput)                                        | :white_check_mark: Starts from 50 Mbps and expands to 100 Gbps                    |
+| Network fluctuation | Connected with shared & public networks, so the bandwidth and latency fluctuate. | :white_check_mark: Network is not fluctuating & provides a consistent experience. |
+| Time to establish   | :white_check_mark: Easy                                                          | Requires experienced team, takes months to setup                                  |
+| Connection type     | Encrypted connection over internet                                               | Private                                                                           |
+| Security            | :white_check_mark: Connection is encrypted via IPSec                             | :x: No encryption by default                                                      |
 
 # AWS Direct Connect plus VPN
 - With [AWS Direct Connect](AWSDirectConnect.md) plus [VPN](AWSSiteToSiteVPN.md), you can combine [one or more AWS Direct Connect](AWSDirectConnect.md) dedicated network connections with the [Amazon VPC VPN](AWSSiteToSiteVPN.md).

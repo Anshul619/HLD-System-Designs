@@ -1,0 +1,6 @@
+# Best security practices
+- Enforce the use of MFA for the root user logins.
+- Enforce the use of complex passwords for member account root user logins.
+- Don't use Access Key ID and Secret Access Key, for root user logins. These are used to programmatically give access to the resources.
+- [Apply least-privilege permissions](https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html#grant-least-privilege).
+- Note - Only AWS root account has the permission to delete the account.

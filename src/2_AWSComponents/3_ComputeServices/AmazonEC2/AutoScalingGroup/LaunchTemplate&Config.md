@@ -9,10 +9,11 @@
 | Multiple Instance Types?   | :white_check_mark: Yes                                                                                    | :x: No               |
 | Multiple Versions?         | :white_check_mark: Yes                                                                                    | :x: No               |
 | Dedicated Host (host)      | :white_check_mark: Yes                                                                                    | :x: No               |
+| Modifiable?                | :x: No                                                                                                    | :x: No               |
 
 # Instance Placement Tenancy
 
-| Tenancy                        | Applicable Config?                    | Description                                                                                                                                                                                                                                        |
+| Tenancy                        | Supported Config?                     | Remarks                                                                                                                                                                                                                                            |
 |--------------------------------|---------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Shared (default)               | Both launch template or configuration | Multiple AWS accounts may share the same physical hardware.<br/>- When you create a launch configuration, the default value for the instance placement tenancy is null and the instance tenancy is controlled by the tenancy attribute of the VPC. |
 | Dedicated Instance (dedicated) | Both launch template or configuration | Your instance runs on single-tenant hardware.                                                                                                                                                                                                      |

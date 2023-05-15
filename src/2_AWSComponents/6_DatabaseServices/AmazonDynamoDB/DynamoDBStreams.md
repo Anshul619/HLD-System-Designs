@@ -26,6 +26,6 @@
 
 # DynamoDB Streams and AWS Lambda triggers
 
-![](../../10_BigDataComponents/DataLakes/assets/AWS-IOT-Data-Capture.png)
+![](../../0_AWSDesigns/IOTDataCapture/assets/AWS-IOT-Data-Capture.png)
 
 

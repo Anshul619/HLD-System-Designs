@@ -1,28 +1,29 @@
 # Amazon Kinesis Data Firehouse
-- [Amazon Kinesis Data Firehose](https://aws.amazon.com/kinesis/data-firehose/) is the easiest way to extract, transform, and load data streams (ETL) into various [data stores](../../../6_DatabaseServices/Readme.md), [data lakes](../../DataLakes) & [analytics services](../../DataAnalytics), for near real-time analytics with existing business intelligence tools.
+- [Amazon Kinesis Data Firehose](https://aws.amazon.com/kinesis/data-firehose/) is the easiest way to extract, transform, and load data streams (ETL) into various [data stores](../../../6_DatabaseServices), [data lakes](../../DataLakes) & [analytics services](../../DataAnalytics), for near real-time analytics with existing business intelligence tools.
 - It is a fully managed service that automatically scales to match the throughput of your data and requires no ongoing administration. 
 - It can also batch, compress, and encrypt the data before loading it, minimizing the amount of storage used at the destination and increasing security.
+- You cannot set up multiple consumers for Kinesis Data Firehose delivery streams as it can dump data in a single data repository at a time.
 
 ![](https://d1.awsstatic.com/pdp-how-it-works-assets/product-page-diagram_Amazon-KDF_HIW-V2-Updated-Diagram@2x.6e531854393eabf782f5a6d6d3b63f2e74de0db4.png)
 
 # Supported Data Destinations
 
-| Data Destinations                                                                             | Destination Type                                                |
-|-----------------------------------------------------------------------------------------------|-----------------------------------------------------------------|
-| [Amazon S3](../../../7_StorageServices/3_ObjectStorageS3/Readme.md)                           | [AWS data stores](../../../6_DatabaseServices/Readme.md)        |
-| [Amazon Redshift](../../DataWarehouse/AmazonRedshift.md)                                      | [AWS data stores](../../../6_DatabaseServices/Readme.md)        |
-| [Amazon OpenSearch Service](../../../6_DatabaseServices/AmazonOpenSearch.md)                  | [AWS data stores](../../../6_DatabaseServices/Readme.md)        |
-| [Data Lakes like S3 Data Lake etc.](../../DataLakes)                                          | Data Lakes                                                      |
-| [NewRelic](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/SubscriptionFilters.html) | Logs/Analytics Tools                                            |
-| Splunk, Datadog, Dynatrace, Sumo Logic, LogicMonitor etc.                                     | Logs/Analytics Tools                                            |
-| MongoDB                                                                                       | [Open Source data store](../../../6_DatabaseServices/Readme.md) |
-| HTTP End Point as destination                                                                 | Custom                                                          |
+| Data Destinations                                                                             | Destination Type                                      |
+|-----------------------------------------------------------------------------------------------|-------------------------------------------------------|
+| [Amazon S3](../../../7_StorageServices/3_ObjectStorageS3/Readme.md)                           | [AWS data stores](../../../6_DatabaseServices)        |
+| [Amazon Redshift](../../DataWarehouse/AmazonRedshift.md)                                      | [AWS data stores](../../../6_DatabaseServices)        |
+| [Amazon OpenSearch Service](../../../6_DatabaseServices/AmazonOpenSearch.md)                  | [AWS data stores](../../../6_DatabaseServices)        |
+| [Data Lakes like S3 Data Lake etc.](../../DataLakes)                                          | Data Lakes                                            |
+| [NewRelic](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/SubscriptionFilters.html) | Logs/Analytics Tools                                  |
+| Splunk, Datadog, Dynatrace, Sumo Logic, LogicMonitor etc.                                     | Logs/Analytics Tools                                  |
+| MongoDB                                                                                       | [Open Source data store](../../../6_DatabaseServices) |
+| HTTP End Point as destination                                                                 | Custom                                                |
 
 [Read more](https://aws.amazon.com/kinesis/data-firehose/faqs/)
 
 # Amazon Kinesis Data Stream & Data firehouse
 
-![](../../DataLakes/assets/AWS-IOT-Data-Capture.png)
+![](../../../0_AWSDesigns/IOTDataCapture/assets/AWS-IOT-Data-Capture.png)
 
 Note
 - When a [Kinesis data stream](../../../5_MessageBrokerServices/AmazonKinesisDataStreams.md) is configured as the source of a Firehose delivery stream, [Firehose’s PutRecord and PutRecordBatch operations](../../../5_MessageBrokerServices/AmazonKinesisDataStreams.md) are disabled and Kinesis Agent cannot write to Firehose delivery stream directly. 

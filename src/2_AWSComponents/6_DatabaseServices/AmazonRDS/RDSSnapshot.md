@@ -13,7 +13,7 @@
 
 | Steps                                                                                                                                                                                                    |
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Share the [AWS KMS key](../../2_SecurityAndIdentityServices/2_DataProtectionServices/AWSKMS.md) that was used to encrypt the snapshot with any accounts that you want to be able to access the snapshot. |
+| Share the [AWS KMS key](../../2c_SecurityServices/1_DataProtectionServices/AWSKMS.md) that was used to encrypt the snapshot with any accounts that you want to be able to access the snapshot. |
 | Use the AWS Management Console, AWS CLI, or [Amazon RDS API](Readme.md) to share the encrypted snapshot with the other accounts.                                                                                      |
 
 [Read more](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_ShareSnapshot.html)

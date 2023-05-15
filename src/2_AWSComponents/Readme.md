@@ -1,8 +1,8 @@
 # Amazon Web Services
 
-# Best Practices
+# Services, Best Practice
 
-| Practice                                                            | Description                                                                                                                                                                                                                                                                                                                             |
+| List                                                                | Description                                                                                                                                                                                                                                                                                                                             |
 |---------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | [AWS - All comparisons list b/w Services](AWS-All-Comparisons.md)   | Comparisons between different services in AWS.                                                                                                                                                                                                                                                                                          |                                                                                                                                                                                                                                                                                                                                         |
 | [AWS - All Services List](AWS-All-Services-List.md)                 | List of all services in AWS.                                                                                                                                                                                                                                                                                                            |
@@ -32,7 +32,7 @@
 
 ## IoT sensor data capture architecture
 
-![](10_BigDataComponents/DataLakes/assets/AWS-IOT-Data-Capture.png)
+![](0_AWSDesigns/IOTDataCapture/assets/AWS-IOT-Data-Capture.png)
 
 ## Real-time data analytics architecture
 
@@ -75,22 +75,22 @@
         </td>
         <td>
             <div class="container" style="background:white">
-                <a href="2_SecurityAndIdentityServices/1_IdentityServices/AWSIAM/Readme.md" target="_blank">
+                <a href="2a_IdentityServices/AWSIAM/Readme.md" target="_blank">
                   <img src="https://i0.wp.com/sra.io/wp-content/uploads/2020/01/AWS-IAM-Exploitation.png?fit=1102%2C620&ssl=1" width="150">
                 </a>
-                <a href="2_SecurityAndIdentityServices/3_InfraProtectionServices/AWSShield.md" target="_blank">
+                <a href="2c_SecurityAndIdentityServices/3_InfraProtectionServices/AWSShield.md" target="_blank">
                   <img src="https://d33wubrfki0l68.cloudfront.net/de9af514e658d43b6f0b24dc5f063c67df7b394c/82078/images/aws/00-icons/shield.png" width="150">
                 </a>
-                <a href="2_SecurityAndIdentityServices/3_InfraProtectionServices/AWSWAF.md" target="_blank">
+                <a href="2c_SecurityAndIdentityServices/3_InfraProtectionServices/AWSWAF.md" target="_blank">
                   <img src="https://www.trinimbus.com/wp-content/uploads/2016/12/Get-The-Last-WAF-with-AWS-Web-Application-Firewall.jpg" width="150">
                 </a>
-                <a href="2_SecurityAndIdentityServices/1_IdentityServices/AWSDirectory/AmazonCognito.md" target="_blank">
+                <a href="2a_IdentityServices/AWSDirectory/AmazonCognito.md" target="_blank">
                   <img src="https://quintagroup.com/blog/amazon-cognito/@@download/image/Amazon%20Cognito.jpg" width="150">
                 </a>
-                <a href="2_SecurityAndIdentityServices/2_DataProtectionServices/AWSSystemManager.md" target="_blank">
+                <a href="2c_SecurityAndIdentityServices/2_DataProtectionServices/AWSSystemManager.md" target="_blank">
                   <img src="https://digitalcloud.training/wp-content/uploads/2022/01/AWS-Systems-Manager.jpg" width="150">
                 </a>
-                <a href="2_SecurityAndIdentityServices/2_DataProtectionServices/AWSSecretsManager.md" target="_blank">
+                <a href="2c_SecurityAndIdentityServices/2_DataProtectionServices/AWSSecretsManager.md" target="_blank">
                   <img src="https://miro.medium.com/max/1400/0*T_pIoQrYM4cHypvr.png" width="150">
                 </a>
             </div>
@@ -103,7 +103,7 @@
       <td>
         <div class="container" style="background:white">
             <div class="block two first">
-                <a href="1_NetworkingAndContentDelivery/3_NetworkFoundationsVPC/AmazonVPC/Readme.md" target="_blank">
+                <a href="1_NetworkingAndContentDelivery/3_NetworkFoundationsVPC/Readme.md" target="_blank">
                   <img src="https://www.kamprasad.com/wp-content/uploads/2019/08/aws-vpc.png" width="150">
                 </a>
             </div>
@@ -197,7 +197,7 @@
     </tr>
     <tr>
         <td>
-            <a href="5_MessageBrokerServices/Readme.md">Message Broker Services</a>
+            <a href="5_MessageBrokerServices">Message Broker Services</a>
         </td>
         <td>
             <div class="container" style="background:white">

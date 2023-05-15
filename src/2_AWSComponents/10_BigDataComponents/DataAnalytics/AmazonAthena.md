@@ -7,4 +7,4 @@
 
 # IoT sensor data capture architecture
 
-![](../DataLakes/assets/AWS-IOT-Data-Capture.png)
+![](../../0_AWSDesigns/IOTDataCapture/assets/AWS-IOT-Data-Capture.png)

@@ -8,4 +8,4 @@
 - Capturing data from thousands of Internet of Things (IoT) sensors can be a challenge.
 - This architecture represents one solution to this challenge.
 
-![](assets/AWS-IOT-Data-Capture.png)
+![](../../0_AWSDesigns/IOTDataCapture/assets/AWS-IOT-Data-Capture.png)

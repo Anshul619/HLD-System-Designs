@@ -1,6 +1,6 @@
 
 # AWS CloudTrail
-- [AWS Cloudtrail](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-user-guide.html) is a service that [logs AWS account activity](../2_SecurityAndIdentityServices/1_IdentityServices) and [Amazon Route 53 API](../1_NetworkingAndContentDelivery/1_EdgeNetworking/AmazonRoute53/Readme.md) usage for risk auditing, compliance and monitoring.
+- [AWS Cloudtrail](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-user-guide.html) is a service that [logs AWS account activity](../2c_SecurityServices/1_IdentityServices) and [Amazon Route 53 API](../1_NetworkingAndContentDelivery/1_EdgeNetworking/AmazonRoute53/Readme.md) usage for risk auditing, compliance and monitoring.
 - CloudTrail records user API activity on your account and allows you to access information about the activity.
 - Using CloudTrail, you can get full details about API actions such as the identity of the caller, time of the call, request parameters, and response elements.
 - You can use information in the CloudTrail log files to determine which requests were sent to [Amazon Route 53](../1_NetworkingAndContentDelivery/1_EdgeNetworking/AmazonRoute53/Readme.md), the IP address that the request was sent from, who sent the request, when it was sent, and more.

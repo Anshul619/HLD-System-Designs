@@ -4,7 +4,7 @@
 [Rate limiting](https://medium.com/geekculture/system-design-basics-rate-limiter-351c09a57d14) refers to preventing the frequency of an operation from exceeding a defined limit. 
 - In large-scale systems, rate limiting is commonly used to protect underlying services and resources. 
 - Rate limiting is generally used as a defensive mechanism in distributed systems, so that shared resources can maintain availability.
-- [AWS WAF](../../2_AWSComponents/2_SecurityAndIdentityServices/3_InfraProtectionServices/AWSWAF.md) can be used to rate limit the APIs in AWS.
+- [AWS WAF](../../2_AWSComponents/2c_SecurityServices/2_InfraProtectionServices/AWSWAF.md) can be used to rate limit the APIs in AWS.
 
 ![img.png](assets/what-is-rate-limiting.png)
 

@@ -1,7 +1,7 @@
 # Amazon Kinesis Data Analytics
 - [Amazon Kinesis Data Analytics](https://aws.amazon.com/kinesis/data-analytics/) is the easiest way to analyze streaming data in real-time.
-- You can use Kinesis Data Analytics to transform and analyze streaming data in real-time with [Apache Flink](https://flink.apache.org/). 
-- Kinesis Data Analytics for Apache Flink applications provides your application 50 GB of running application storage per [Kinesis Processing Unit (KPU)](https://docs.aws.amazon.com/kinesisanalytics/latest/java/how-scaling.html).
+- You can use [Kinesis Data Analytics]() to transform and analyze streaming data in real-time with [Apache Flink](https://flink.apache.org/). 
+- [Kinesis Data Analytics]() for Apache Flink applications provides your application 50 GB of running application storage per [Kinesis Processing Unit (KPU)](https://docs.aws.amazon.com/kinesisanalytics/latest/java/how-scaling.html).
 
 Kinesis Data Analytics enables you to easily and quickly build queries and sophisticated streaming applications in three simple steps: 
 - Setup your streaming data sources

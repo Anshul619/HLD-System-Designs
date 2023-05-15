@@ -27,8 +27,8 @@
 
 | Concept     | Description                                                                                                                                                                                                                           |
 |-------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Association | The [route table](../../2_SecurityAndIdentityServices/3_InfraProtectionServices/VPC/RouteTables.md) used to route packets coming from an attachment (from [Amazon VPC]() to [VPN](../4_HybridConnectivity/AWSSiteToSiteVPN.md)) |
-| Propagation | The [route table](../../2_SecurityAndIdentityServices/3_InfraProtectionServices/VPC/RouteTables.md) where the attachment's routes are installed.                                                                                   |
+| Association | The [route table](../../2c_SecurityServices/2_InfraProtectionServices/VPC/RouteTables.md) used to route packets coming from an attachment (from [Amazon VPC]() to [VPN](../4_HybridConnectivity/AWSSiteToSiteVPN.md)) |
+| Propagation | The [route table](../../2c_SecurityServices/2_InfraProtectionServices/VPC/RouteTables.md) where the attachment's routes are installed.                                                                                   |
 
 # Path Selection Behaviour
 - Most specific route (the longest prefix match)

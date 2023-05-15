@@ -1,2 +1,0 @@
-# AWS Firewall Manager
-- [AWS Firewall Manager](https://docs.aws.amazon.com/waf/latest/developerguide/fms-chapter.html) simplifies your administration and maintenance tasks across multiple accounts and resources for a variety of protections, including [AWS WAF](AWSWAF.md), [AWS Shield Advanced](AWSShield.md), Amazon VPC security groups, AWS Network Firewall, and [Amazon Route 53 Resolver DNS Firewall](../../1_NetworkingAndContentDelivery/1_EdgeNetworking/AmazonRoute53/Readme.md). 

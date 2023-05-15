@@ -1,0 +1,21 @@
+# AWS STS
+- AWS provides [AWS Security Token Service (AWS STS)](https://docs.aws.amazon.com/STS/latest/APIReference/welcome.html) as a web service that enables you to request temporary, limited-privilege credentials for users.
+- You can use the [AWS STS]() to create and provide trusted users with temporary security credentials that can control access to your AWS resources. 
+- Temporary security credentials are short-term, as the name implies. (with mins to hrs expiry)
+
+# Terms
+
+| Term                                                                                                      | Description                                                                                            |
+|-----------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------|
+| [Session tags](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_session-tags.html)                     | The tags implicitly passed when you assume the role or federate the user using the AWS CLI or AWS API. |
+| [Incoming transitive session tags](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_session-tags.html) | The tags inherited from a previous session in a role chain.                                            |
+| [Role chaining](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_terms-and-concepts.html)        | Role chaining is when you use a role to assume a second role through the AWS CLI or API.               |
+
+# Actions
+
+| Action                                                                                                              | Description                                                                                                                                                                                                                                                                                                                                    |
+|---------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| [AssumeRoleWithSAML](https://docs.aws.amazon.com/STS/latest/APIReference/API_AssumeRoleWithSAML.html)               | Returns a set of temporary security credentials for users who have been authenticated via a SAML authentication response. <br/>- This operation provides a mechanism for tying an enterprise identity store or directory to role-based AWS access without user-specific credentials or configuration.                                          |
+| [AssumeRoleWithWebIdentity](https://docs.aws.amazon.com/STS/latest/APIReference/API_AssumeRoleWithWebIdentity.html) | Returns a set of temporary security credentials for users who have been authenticated in a mobile or web application with a web identity provider. Example providers include the OAuth 2.0 providers Login with Amazon and Facebook, or any OpenID Connect-compatible identity provider such as Google or Amazon Cognito federated identities. |
+| [GetCallerIdentity](https://docs.aws.amazon.com/STS/latest/APIReference/API_GetCallerIdentity.html)                 | Returns details about the IAM user or role whose credentials are used to call the operation.                                                                                                                                                                                                                                                   |
+| [GetFederationToken](https://docs.aws.amazon.com/STS/latest/APIReference/API_GetFederationToken.html)               | Returns a set of temporary security credentials (consisting of an access key ID, a secret access key, and a security token) for a user.                                                                                                                                                                                                        |
