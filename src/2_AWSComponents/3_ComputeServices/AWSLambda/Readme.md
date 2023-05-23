@@ -24,16 +24,16 @@
 
 ![](https://explore.skillbuilder.aws/files/a/w/aws_prod1_docebosaas_com/1679778000/8FKtVG5bi16yMwGJwknY-Q/tincan/674187_1676990596_p1gpq6pq781l3ntaa1fcbps6c0t4_zip/assets/y70oVlPffJPs8K1E_Me1eX79-DAnkJS3O-section5-memory-timeout-concurency_NOPROCESS_.png)
 
-| Config                                                                                | Type                 | Limit       | Remarks                                                                                                                                                                               |
-|---------------------------------------------------------------------------------------|----------------------|-------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| :star: Memory                                                                         | General              | -           | Example - 512 MB <br/>- Over provision memory to run your functions faster and reduce your costs (since cost is calculated based on compute time).                                    |
-| :star: Timeout                                                                        | General              | Max 15 mins | Example - 20 sec <br/>- Do not over-provision your function timeout settings.<br/>- If its greater than 15 mins, [AWS Step Functions](../AWSStepFunctions.md) might be better choice. |
-| Ephemeral storage                                                                     | General              | -           | Example - 512 MB                                                                                                                                                                      |
-| Batch Size                                                                            | General              | 1 to 10     | Number of messages that can be in a batch                                                                                                                                             |
-| Number of default pollers (batches returned at one time)                              | General              | 5           | -                                                                                                                                                                                     |
-| [Lambda Handler](AWSLambdaFunctionHandler.md)                                         | Code                 | No limit    | -                                                                                                                                                                                     |
-| [Lambda layer](https://docs.aws.amazon.com/lambda/latest/dg/invocation-layers.html)   | Code                 | No limit    | A Lambda layer is a .zip file archive that can contain additional code or other content, like libraries, config files etc.                                                            |
-| [AWS KMS key](../../2c_SecurityServices/1_DataProtectionServices/AWSKMS.md) | Environment Variable | -           | -                                                                                                                                                                                     |
+| Config                                                                              | Type                 | Limit       | Remarks                                                                                                                                                                               |
+|-------------------------------------------------------------------------------------|----------------------|-------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| :star: Memory                                                                       | General              | -           | Example - 512 MB <br/>- Over provision memory to run your functions faster and reduce your costs (since cost is calculated based on compute time).                                    |
+| :star: Timeout                                                                      | General              | Max 15 mins | Example - 20 sec <br/>- Do not over-provision your function timeout settings.<br/>- If its greater than 15 mins, [AWS Step Functions](../AWSStepFunctions.md) might be better choice. |
+| Ephemeral storage                                                                   | General              | -           | Example - 512 MB                                                                                                                                                                      |
+| Batch Size                                                                          | General              | 1 to 10     | Number of messages that can be in a batch                                                                                                                                             |
+| Number of default pollers (batches returned at one time)                            | General              | 5           | -                                                                                                                                                                                     |
+| [Lambda Handler](AWSLambdaFunctionHandler.md)                                       | Code                 | No limit    | -                                                                                                                                                                                     |
+| [Lambda layer](https://docs.aws.amazon.com/lambda/latest/dg/invocation-layers.html) | Code                 | No limit    | A Lambda layer is a .zip file archive that can contain additional code or other content, like libraries, config files etc.                                                            |
+| [AWS KMS key](../../2c_SecurityServices/1_DataProtectionServices/AWSKMS.md)         | Environment Variable | -           | -                                                                                                                                                                                     |
 
 # :star: Real world use cases of AWS Lambda
 
@@ -81,16 +81,6 @@
 
 ![](https://explore.skillbuilder.aws/files/a/w/aws_prod1_docebosaas_com/1679778000/8FKtVG5bi16yMwGJwknY-Q/tincan/674187_1676990596_p1gpq6pq781l3ntaa1fcbps6c0t4_zip/assets/J0D4ybJVxPmbg2cQ_gkYnVRT5uH_n1p7f-section6-lambdaInsightDashboard_NOPROCESS_.jpg)
 
-## Tracing using AWS X-Ray
-
-[](https://explore.skillbuilder.aws/files/a/w/aws_prod1_docebosaas_com/1679778000/8FKtVG5bi16yMwGJwknY-Q/tincan/674187_1676990596_p1gpq6pq781l3ntaa1fcbps6c0t4_zip/assets/bF5I4tGniaVKZVky_QqSePg_IOBQ61jm4.jpg)
-
-# Networking
-
-![](https://d2908q01vomqb2.cloudfront.net/fc074d501302eb2b93e2554793fcaf50b3bf7291/2019/07/02/lambda-develope-mao-1024x484.jpg)
-
-[](https://aws.amazon.com/blogs/architecture/best-practices-for-developing-on-aws-lambda/)
-
 # Tools
 
 | Tool                                                                                | Description                                                                                                                                                              |
@@ -106,5 +96,4 @@
 - [Invoking Lambda functions](https://docs.aws.amazon.com/lambda/latest/dg/lambda-invocation.html)
 - [AWS Fargate vs. Lambda: Comparing Two Serverless Solutions and their Use Cases](https://www.simform.com/blog/aws-fargate-vs-lambda/)
 - [Operating Lambda: Understanding event-driven architecture – Part 1](https://aws.amazon.com/blogs/compute/operating-lambda-understanding-event-driven-architecture-part-1/)
-
-
+- [Best Practices for Developing on AWS Lambda](https://aws.amazon.com/blogs/architecture/best-practices-for-developing-on-aws-lambda/)
