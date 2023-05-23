@@ -78,19 +78,19 @@
                 <a href="2a_IdentityServices/AWSIAM/Readme.md" target="_blank">
                   <img src="https://i0.wp.com/sra.io/wp-content/uploads/2020/01/AWS-IAM-Exploitation.png?fit=1102%2C620&ssl=1" width="150">
                 </a>
-                <a href="2c_SecurityAndIdentityServices/3_InfraProtectionServices/AWSShield.md" target="_blank">
+                <a href="2c_SecurityServices/2_InfraProtectionServices/AWSShield.md" target="_blank">
                   <img src="https://d33wubrfki0l68.cloudfront.net/de9af514e658d43b6f0b24dc5f063c67df7b394c/82078/images/aws/00-icons/shield.png" width="150">
                 </a>
-                <a href="2c_SecurityAndIdentityServices/3_InfraProtectionServices/AWSWAF.md" target="_blank">
+                <a href="2c_SecurityServices/2_InfraProtectionServices/AWSWAF.md" target="_blank">
                   <img src="https://www.trinimbus.com/wp-content/uploads/2016/12/Get-The-Last-WAF-with-AWS-Web-Application-Firewall.jpg" width="150">
                 </a>
                 <a href="2a_IdentityServices/AWSDirectory/AmazonCognito.md" target="_blank">
                   <img src="https://quintagroup.com/blog/amazon-cognito/@@download/image/Amazon%20Cognito.jpg" width="150">
                 </a>
-                <a href="2c_SecurityAndIdentityServices/2_DataProtectionServices/AWSSystemManager.md" target="_blank">
+                <a href="2c_SecurityServices/1_DataProtectionServices/AWSSystemManager.md" target="_blank">
                   <img src="https://digitalcloud.training/wp-content/uploads/2022/01/AWS-Systems-Manager.jpg" width="150">
                 </a>
-                <a href="2c_SecurityAndIdentityServices/2_DataProtectionServices/AWSSecretsManager.md" target="_blank">
+                <a href="2c_SecurityServices/1_DataProtectionServices/AWSSecretsManager.md" target="_blank">
                   <img src="https://miro.medium.com/max/1400/0*T_pIoQrYM4cHypvr.png" width="150">
                 </a>
             </div>

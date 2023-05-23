@@ -2,7 +2,6 @@
 
 This repo contains the various system design components info, questions and solutions.
 - :star: [System Estimation Tips](src/1_HLDDesignComponents/SystemEstimationTips.md)
-- [System Design Tips](src/1_HLDDesignComponents/SystemDesignTips.md)
 - [Key Components of Distributed Systems](src/1_HLDDesignComponents/0_SystemGlossaries/Readme.md)
 
 # System Design - Tech Stack
@@ -305,6 +304,7 @@ This repo contains the various system design components info, questions and solu
 - [Apache Yarn](src/1_HLDDesignComponents/6_ContainerOrchestrationServices/ApacheYarn.md)
 - [Apache Web Server](https://apache.org/)
 - [Testing](src/6_Others/QATools/Readme.md)
+- [System Design Tips](src/1_HLDDesignComponents/SystemDesignTips.md)
 
 # Source(s) and further reading
 - [System Design Primer](https://github.com/donnemartin/system-design-primer)
