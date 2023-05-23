@@ -1,3 +1,3 @@
 # Centralized Logging Solution in AWS
-- The essential services that can be used is [Amazon CloudWatch](../8_MonitoringServices/AmazonCloudwatch/Readme.md) logs, store them in [Amazon S3](../7_StorageServices/3_ObjectStorageS3/Readme.md), and then use [Amazon OpenSearch service](https://aws.amazon.com/opensearch-service/) to visualize them.
+- The essential services that can be used is [Amazon CloudWatch](../8_MonitoringServices/AmazonCloudWatch/Readme.md) logs, store them in [Amazon S3](../7_StorageServices/3_ObjectStorageS3/Readme.md), and then use [Amazon OpenSearch service](https://aws.amazon.com/opensearch-service/) to visualize them.
 - [Amazon Kinesis Firehose](https://aws.amazon.com/kinesis/data-firehose/) can also be used to move the data from Amazon S3 to Amazon ElasticSearch.

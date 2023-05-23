@@ -201,7 +201,7 @@
         </td>
         <td>
             <div class="container" style="background:white">
-                <a href="5_MessageBrokerServices/AmazonSQS.md" target="_blank">
+                <a href="5_MessageBrokerServices/AmazonSQS/Readme.md" target="_blank">
                   <img src="https://i0.wp.com/blog.knoldus.com/wp-content/uploads/2021/09/sqs.png?w=711&ssl=1" width="150">
                 </a>
                 <a href="5_MessageBrokerServices/AmazonEventBridge.md" target="_blank">
