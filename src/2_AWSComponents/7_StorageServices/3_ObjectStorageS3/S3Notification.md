@@ -3,9 +3,9 @@
 
 # Supported AWS Services
 
-| AWS Service                                                               |
-|---------------------------------------------------------------------------|
-| [Amazon SNS topic](../../5_MessageBrokerServices/AmazonSNS.md)            |
-| [Amazon SQS - Standard Queue](../../5_MessageBrokerServices/AmazonSQS.md) |
-| [AWS Lambda ](../../3_ComputeServices/AWSLambda)                          |
+| AWS Service                                                                      |
+|----------------------------------------------------------------------------------|
+| [Amazon SNS topic](../../5_MessageBrokerServices/AmazonSNS.md)                   |
+| [Amazon SQS - Standard Queue](../../5_MessageBrokerServices/AmazonSQS/Readme.md) |
+| [AWS Lambda ](../../3_ComputeServices/AWSLambda)                                 |
 

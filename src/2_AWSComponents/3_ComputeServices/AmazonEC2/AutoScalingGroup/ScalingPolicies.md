@@ -27,11 +27,20 @@
 
 # Scaling Metrics
 
-| Metric                                            | Description                                                                                                                                                                                                                   |
-|---------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| CPUUtilization                                    | For example - Auto scale for CPU usage on a single instance rise above 80% for 5 mins.                                                                                                                                        |
-| Memory                                            | -                                                                                                                                                                                                                             |
-| [Amazon SQS queue size](SQSBasedScalingPolicy.md) | Based on the [Amazon SQS queue size](../../../5_MessageBrokerServices/AmazonSQS.md), the [auto-scaling of the EC2 instances](https://docs.aws.amazon.com/autoscaling/ec2/userguide/as-using-sqs-queue.html) can also be done. |
+| Metric                                            | Description                                                                                                                                                                                                                          |
+|---------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| CPUUtilization                                    | For example - Auto scale for CPU usage on a single instance rise above 80% for 5 mins.                                                                                                                                               |
+| Memory                                            | -                                                                                                                                                                                                                                    |
+| [Amazon SQS queue size](SQSBasedScalingPolicy.md) | Based on the [Amazon SQS queue size](../../../5_MessageBrokerServices/AmazonSQS/Readme.md), the [auto-scaling of the EC2 instances](https://docs.aws.amazon.com/autoscaling/ec2/userguide/as-using-sqs-queue.html) can also be done. |
+
+# Scaling Activities
+
+| Activity                | Remarks                                                                                                                                                                                        |
+|-------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Re-balancing Activities | When rebalancing, Amazon EC2 Auto Scaling launches new instances before terminating the old ones, so that rebalancing does not compromise the performance or availability of your application. |
+| Scaling activity        | Auto Scaling creates a new scaling activity for terminating the unhealthy instance and then terminates it. Later, another scaling activity launches a new instance to replace the terminated instance.                                                                                                                                                                                               |
+
+[Amazon EC2 Auto Scaling benefits](https://docs.aws.amazon.com/autoscaling/ec2/userguide/auto-scaling-benefits.html)
 
 # Termination policy for Scale-In event
 

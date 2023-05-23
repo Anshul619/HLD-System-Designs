@@ -16,5 +16,12 @@
 | High performance computing (HPC) |
 | Rendering workloads              |
 
+# Features
+
+| Feature                                                                                          | Remarks                                                                                                                                                                                                                                         |
+|--------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| [Spot blocks](https://docs.amazonaws.cn/en_us/AWSEC2/latest/UserGuide/how-spot-fleet-works.html) | [Spot blocks](https://docs.amazonaws.cn/en_us/AWSEC2/latest/UserGuide/how-spot-fleet-works.html) are designed not to be interrupted and will run continuously for the duration you select (1 to 6 hours), independent of the Spot market price. |
+
+
 # Reference
 - [Work with Spot Instances](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/spot-requests.html)

@@ -9,7 +9,7 @@
 | Instance State                                                          | Retained in Recovery?  |
 |-------------------------------------------------------------------------|------------------------|
 | Original Instance ([AMI](AmazonMachineImages.md), InstanceID, Metadata) | :white_check_mark: Yes |
-| Private, Public, [Elastic IP address](Networking/ElasticIP.md)                     | :white_check_mark: Yes |
+| Private, Public, [Elastic IP address](Networking/ElasticIP.md)          | :white_check_mark: Yes |
 | Placement Group                                                         | :white_check_mark: Yes |
 | In-Memory data                                                          | :x: No                 |
 

@@ -14,7 +14,7 @@
 - Or we can implement our own auto-scaling (i.e. delete/add another app server), based on app server's memory usage/CPU usage, heart beat etc.
 
 ## AutoScaling of "Notification queue" workers
-- [Based on number of messages in the "Notifications" queue](https://docs.aws.amazon.com/autoscaling/ec2/userguide/as-using-sqs-queue.html) (like [Amazon SQS](../../2_AWSComponents/5_MessageBrokerServices/AmazonSQS.md)), the workers can keep on scaling up & scaling down ( with min, max configuration ).
+- [Based on number of messages in the "Notifications" queue](https://docs.aws.amazon.com/autoscaling/ec2/userguide/as-using-sqs-queue.html) (like [Amazon SQS](../../2_AWSComponents/5_MessageBrokerServices/AmazonSQS/Readme.md)), the workers can keep on scaling up & scaling down ( with min, max configuration ).
 
 # How would we implement rate limiting of the 3rd party SMS providers? ( & follow their SLA )
 - We would need to rate limit on our end, before calling 3rd-party API (like [Twillo API](../TwilloSendMessageAPI) which might have a `limit of 5000 SMS per second in the SLA`)

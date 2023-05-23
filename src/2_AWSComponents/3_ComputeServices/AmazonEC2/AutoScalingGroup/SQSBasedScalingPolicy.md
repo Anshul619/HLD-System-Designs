@@ -1,5 +1,5 @@
 # Scaling based on Amazon SQS
-- Based on the [Amazon SQS queue size](../../../5_MessageBrokerServices/AmazonSQS.md), the [auto-scaling of the EC2 instances](https://docs.aws.amazon.com/autoscaling/ec2/userguide/as-using-sqs-queue.html) can also be done.
+- Based on the [Amazon SQS queue size](../../../5_MessageBrokerServices/AmazonSQS/Readme.md), the [auto-scaling of the EC2 instances](https://docs.aws.amazon.com/autoscaling/ec2/userguide/as-using-sqs-queue.html) can also be done.
 
 ![](https://docs.aws.amazon.com/images/autoscaling/ec2/userguide/images/sqs-as-custom-metric-diagram.png)
 

@@ -8,6 +8,7 @@
 | [Amazon EC2 Instance](../../../3_ComputeServices/AmazonEC2/Readme.md)                                                  |
 | [Amazon RDS Instance](../../../6_DatabaseServices/AmazonRDS/Readme.md)                                                 |
 | [Elastic Load Balancer](../../../1_NetworkingAndContentDelivery/2_ApplicationNetworking/ElasticLoadBalancer/Readme.md) |
+| [Elastic File System](../../../7_StorageServices/2_FileStorageTypes/AmazonEFS.md)                                      |
 
 # Source/Destination 
 - The [source (inbound rules) or destination (outbound rules)](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/security-group-rules.html) for the traffic to allow.
@@ -18,7 +19,7 @@
 | A single IPv6 address                             | 2001:db8:1234:1a00::123/128 | You must use the /128 prefix length.                                                                                                                                                                                                                                                                                                                                     |
 | A range of IPv4 addresses, in CIDR block notation | 203.0.113.0/24              | -                                                                                                                                                                                                                                                                                                                                                                        |
 | A range of IPv6 addresses, in CIDR block notation | 2001:db8:1234:1a00::/64     | -                                                                                                                                                                                                                                                                                                                                                                        |
-| ID of a security group                            | -                           | Specified security group. For example, the current security group, a security group from the same VPC, or a security group for a peered VPC. <br/>- This allows traffic based on the private IP addresses of the resources associated with the specified security group. <br/>- This does not add rules from the specified security group to the current security group. |
+| ID of a security group                            | ec2-security-group          | Specified security group. For example, the current security group, a security group from the same VPC, or a security group for a peered VPC. <br/>- This allows traffic based on the private IP addresses of the resources associated with the specified security group. <br/>- This does not add rules from the specified security group to the current security group. |
 
 [Read more about IP Address Ranges](../../../../1_HLDDesignComponents/0_SystemGlossaries/IPAddressRanges.md)
 

@@ -3,7 +3,7 @@
 - [The application-to-person (A2P)](https://docs.aws.amazon.com/sns/latest/dg/sns-user-notifications.html) functionality enables you to send messages to users at scale via SMS, mobile push, and email.
 
 Using Amazon SNS topics, your publisher systems can fanout messages to a large number of subscriber systems for parallel processing, including 
-- [Amazon SQS queues](AmazonSQS.md) (cross-region supported as well)
+- [Amazon SQS queues](AmazonSQS/Readme.md) (cross-region supported as well)
 - [AWS Lambda functions](../3_ComputeServices/AWSLambda/Readme.md)
 - HTTPS endpoints
 - [Amazon Kinesis Data Firehose](../10_BigDataComponents/StreamProcessing/AmazonKinesis/Readme.md)
@@ -23,7 +23,7 @@ Using Amazon SNS topics, your publisher systems can fanout messages to a large n
 - SMS
 - SNS Mobile Push
 - Email/Email JSON
-- [SQS](AmazonSQS.md)
+- [SQS](AmazonSQS/Readme.md)
 - [Lambda Functions](../3_ComputeServices/AWSLambda/Readme.md)
 - [Amazon Kinesis Data Firehose](../10_BigDataComponents/StreamProcessing/AmazonKinesis/Readme.md)
 

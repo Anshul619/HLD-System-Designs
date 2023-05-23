@@ -15,7 +15,7 @@
 
 # Available Target Services
 - [AWS Lambda](../3_ComputeServices/AWSLambda/Readme.md)
-- [Amazon SQS](AmazonSQS.md)
+- [Amazon SQS](AmazonSQS/Readme.md)
 - [Amazon SNS](AmazonSNS.md)
 - [AWS Step Functions](../3_ComputeServices/AWSStepFunctions.md)
 - [Amazon Kinesis Data Streams](../10_BigDataComponents/StreamProcessing/AmazonKinesis/Readme.md)
