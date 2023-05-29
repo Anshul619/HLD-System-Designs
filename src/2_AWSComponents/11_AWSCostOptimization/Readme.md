@@ -2,8 +2,8 @@
 
 | Service                                                                                                              | Description                                                                                                |
 |----------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------|
-| [AWS Cost Explorer](AWSCostExplorer.md)                                                                              | -                                                                                                          |
-| [AWS Budgets](https://aws.amazon.com/aws-cost-management/aws-budgets/)                                               | Improve planning and cost control with flexible budgeting and forecasting.                                 |
+| :star: [AWS Cost Explorer](AWSCostExplorer.md)                                                                       | -                                                                                                          |
+| :star: [AWS Budgets](AWSBudgets.md)                                                                                  | Improve planning and cost control with flexible budgeting and forecasting.                                 |
 | [Cost Allocation Tags](CostAllocationTags.md)                                                                        | -                                                                                                          |
 | [AWS Cloud Tower](https://aws.amazon.com/blogs/aws/aws-control-tower-set-up-govern-a-multi-account-aws-environment/) | -                                                                                                          |
 | [AWS Cost Categories](https://aws.amazon.com/aws-cost-management/aws-cost-categories/)                               | -                                                                                                          |
@@ -41,10 +41,5 @@
 | Implement data lifecycle rules (with S3 storage classes, object lifecycles etc.)                                                                                                                                                                | -                                                                                           |
 | Select best scaling strategy                                                                                                                                                                                                                    | -                                                                                           |
 
-# Types of Cost Allocation Tags
-
-| Type                                                                                          | Remarks                                                                                                                                                                                                                               |
-|-----------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [AWS Generated](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/aws-tags.html)   | The AWS-generated tag createdBy is a tag that AWS defines and applies to supported AWS resources for cost allocation purpose.                                                                                                         |
-| [User-defined](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/custom-tags.html) | User-defined tags are tags that you define, create, and apply to resources. After you have created and applied the user-defined tags, you can activate by using the Billing and Cost Management console for cost allocation tracking. |
-
+# References
+- [Drilldown: AWS Budgets vs Cost Explorer](https://www.densify.com/finops/aws-budgets-vs-cost-explorer/)

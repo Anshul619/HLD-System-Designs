@@ -28,6 +28,15 @@
 - You are working with a Direct Connect Partner.
 - You are working with an independent service provider to connect to [Direct Connect]().
 
+# Direct Connect gateways
+- Use AWS Direct Connect gateway to connect your VPCs. 
+- You associate an AWS Direct Connect gateway with either of the following gateways:
+
+| Gateway                                                                                                                             |
+|-------------------------------------------------------------------------------------------------------------------------------------|
+| A [transit gateway](../3_NetworkFoundationsVPC/ConnectBetweenVPCs/TransitGateway.md) when you have multiple VPCs in the same Region |
+| A [virtual private gateway](../3_NetworkFoundationsVPC/VirtualPrivateGateway.md)                                                    |
+
 # Pricing
 
 | Pricing Component                                                        | Definition                                                                                                                               | Pricing Params                     |

@@ -1,5 +1,5 @@
 # Security Group
-- [Security groups](https://docs.aws.amazon.com/vpc/latest/userguide/VPC_SecurityGroups.html) as a firewall for the [EC2 instances](../../../3_ComputeServices/AmazonEC2), controlling inbound and outbound traffic at the instance level.
+- [Security groups](https://docs.aws.amazon.com/vpc/latest/userguide/VPC_SecurityGroups.html) as a firewall at instance level ([EC2 instances](../../../3_ComputeServices/AmazonEC2) etc.), controlling inbound and outbound traffic at the instance level.
 
 # Supported AWS Services
 
@@ -21,9 +21,9 @@
 | A range of IPv6 addresses, in CIDR block notation | 2001:db8:1234:1a00::/64     | -                                                                                                                                                                                                                                                                                                                                                                        |
 | ID of a security group                            | ec2-security-group          | Specified security group. For example, the current security group, a security group from the same VPC, or a security group for a peered VPC. <br/>- This allows traffic based on the private IP addresses of the resources associated with the specified security group. <br/>- This does not add rules from the specified security group to the current security group. |
 
-[Read more about IP Address Ranges](../../../../1_HLDDesignComponents/0_SystemGlossaries/IPAddressRanges.md)
+[Read more about IP Address Ranges](../../../../1_HLDDesignComponents/0_SystemGlossaries/Networking/IPAddressRanges.md)
 
-# Example Security rules (Chaining security groups together)
+# Example Security rules
 
 ## Web servers
 - The following are example rules for a security group for your web servers. 
@@ -42,11 +42,6 @@
 |---------------------------------------------------------------------|----------|------------|---------------------------------------------|
 | ID of the security group for instances running Microsoft SQL Server | TCP      | 1433       | Allows outbound Microsoft SQL Server access |
 | ID of the security group for instances running MySQL                | TCP      | 3306       | Allows outbound MySQL access                |
-
-## Database servers
-- Database servers require rules that allow inbound specific protocols, such as MySQL or Microsoft SQL Server. 
-- For examples, see [Database server rules](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/security-group-rules-reference.html#sg-rules-db-server) in the Amazon EC2 User Guide. 
-- For more information about security groups for Amazon RDS DB instances, see [Controlling access with security groups](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Overview.RDSSecurityGroups.html) in the Amazon RDS User Guide.
 
 # References
 - [Security group rules](https://docs.aws.amazon.com/vpc/latest/userguide/security-group-rules.html)

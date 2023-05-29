@@ -13,8 +13,8 @@
 | [Subnets](Subnets.md)                                                                                                       | -                                                              |
 | [Route Tables](../../2c_SecurityServices/2_InfraProtectionServices/VPC/RouteTables.md)                            | -                                                              |
 | [Internet Gateway](InternetGateway.md)                                                                                      | VPC specific service                                           |
-| [Network Access Control Lists (ACL)](../../2c_SecurityServices/2_InfraProtectionServices/VPC/SubnetNetworkACL.md) | -                                                              |
-| :star: [Transit Gateway](TransitGateway.md)                                                              | -                                                              |
+| [Network Access Control Lists (ACL)](../../2c_SecurityServices/2_InfraProtectionServices/VPC/NetworkACL.md) | -                                                              |
+| :star: [Transit Gateway](ConnectBetweenVPCs/TransitGateway.md)                                                              | -                                                              |
 | [VPC Peering](ConnectBetweenVPCs/VPCPeering.md)                                                                             | -                                                              |
 | [Security Groups](../../2c_SecurityServices/2_InfraProtectionServices/VPC/SecurityGroup.md)                       | -                                                              |
 | [Network Gateway](ConnectFromVPC/NATDevices/NATGateway.md)                                                                  | NAT provides Public IP of the whole network, to outside world. |

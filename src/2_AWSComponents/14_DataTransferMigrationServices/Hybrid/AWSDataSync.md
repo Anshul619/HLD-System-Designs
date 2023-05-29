@@ -1,21 +1,21 @@
 # AWS Data Sync
 - [AWS DataSync](https://aws.amazon.com/datasync/) provides data copy services between on-premises storage and [AWS Cloud storage](#supported-aws-destinations).
 
-[](assets/AWS-Data-Sync.png)
+[](../assets/AWS-Data-Sync.png)
 
 # Supported AWS Destinations
 
 | AWS Service                                                                                     |
 |-------------------------------------------------------------------------------------------------|
-| [Amazon S3](../../3_ObjectStorageS3/Readme.md)                                                  |
-| [Amazon EFS](../../2_FileStorageTypes/AmazonEFS.md)                                             |
-| [Amazon FSx for Windows File Server](../../2_FileStorageTypes/AmazonFsXForWindowsFileServer.md) |
+| [Amazon S3](../../7_StorageServices/3_ObjectStorageS3/Readme.md)                                                  |
+| [Amazon EFS](../../7_StorageServices/2_FileStorageTypes/AmazonEFS.md)                                             |
+| [Amazon FSx for Windows File Server](../../7_StorageServices/2_FileStorageTypes/AmazonFsXForWindowsFileServer.md) |
 
 # Features
 
 | Feature                     | Remarks                                                                                                                                                                                         |
 |-----------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Supported Protocols         | Data and file systems include [NFS file shares](../../Network-Protocol-Support.md), [SMB file shares](../../Network-Protocol-Support.md), and [self-managed object storage]().                  |
+| Supported Protocols         | Data and file systems include [NFS file shares](../../7_StorageServices/Network-Protocol-Support.md), [SMB file shares](../../7_StorageServices/Network-Protocol-Support.md), and [self-managed object storage]().                  |
 | Asynchronous data transfers | [AWS DataSync]() supports asynchronous or one-direction at a time transfers between on-premises file systems to [supported AWS Storage services](#supported-aws-destinations) in the AWS Cloud. |
 
 # Transferring files from on premises to AWS and back without leaving your VPC using AWS DataSync

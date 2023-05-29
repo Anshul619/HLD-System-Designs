@@ -18,8 +18,8 @@
 |-------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------|
 | Create a path                                         | The first step is to specify the path of communication for the traffic from a source to a destination for any of the endpoint types. |
 | Analyze the path                                      | After you create the path, Reachability Analyzer analyzes the path once.                                                             |
-| View the results of the path analysis                 | Reachable & Not reachable                                                                                                                         |
-| Change the network configuration and analyze the path | If the reachability status does not match your intent, you can change your network configuration.                                                                                                                                                   |
+| View the results of the path analysis                 | Reachable & Not reachable                                                                                                            |
+| Change the network configuration and analyze the path | If the reachability status does not match your intent, you can change your network configuration.                                    |
 
 ## Example status page
 

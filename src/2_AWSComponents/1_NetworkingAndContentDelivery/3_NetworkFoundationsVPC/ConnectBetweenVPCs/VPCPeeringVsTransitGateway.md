@@ -1,5 +1,5 @@
 
-|                       | [Transit Gateway](../TransitGateway.md)                        | [VPC Peering](VPCPeering.md)                                            |
+|                       | [Transit Gateway](TransitGateway.md)                        | [VPC Peering](VPCPeering.md)                                            |
 |-----------------------|-------------------------------------------------------------|-------------------------------------------------------------------------|
 | Allowed connection    | 1-to-many VPC connection                                    | 1-to-1 VPC connection                                                   |
 | Topology              | Hub-&-Spot network                                          | Full mesh network                                                       |

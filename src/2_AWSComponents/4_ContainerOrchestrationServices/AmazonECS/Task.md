@@ -1,6 +1,6 @@
 # Task Definition
 - A blueprint for our application and describes one or more containers through attributes.
-- To prepare your application to run on Amazon ECS, you create a task definition.
+- To prepare your application to run on [Amazon ECS](Readme.md), you create a task definition.
 - The task definition is a text file, in JSON format, that describes one or more containers.
 - A task definition is similar to a blueprint that describes the resources you need to run a container, such as CPU, memory, ports, images, storage, and networking information.
 

@@ -6,4 +6,4 @@
 # Health Check Configurations
 - [AWS Trusted Advisor](https://aws.amazon.com/premiumsupport/technology/trusted-advisor/) examines the health check configuration for Auto Scaling groups. 
 - If Elastic Load Balancing is being used for an Auto Scaling group, the recommended configuration is to enable an Elastic Load Balancing health check. 
-- Trusted Advisor recommends certain configuration changes by comparing your system configurations to AWS Best practices. 
+- Trusted Advisor recommends certain configuration changes by comparing your system configurations to AWS Best practices.

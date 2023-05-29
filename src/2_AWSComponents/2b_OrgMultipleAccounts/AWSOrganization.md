@@ -21,7 +21,7 @@
 
 | AWS Service                                                                                    |
 |------------------------------------------------------------------------------------------------|
-| [AWS Firewall Manager](../2c_SecurityServices/2_InfraProtectionServices/AWSFirewallManager.md) |
+| [AWS Firewall Manager](AWSFirewallManager.md) |
 | [AWS Resource Access Manager](AWSResourceAccessManager.md)                                     |
 | [IAM Service Control Policy](../2a_IdentityServices/AWSIAM/IAMPolicyTypes.md)                  |
 

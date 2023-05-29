@@ -23,6 +23,14 @@
 
 [Read more](https://aws.amazon.com/quickstart/architecture/amazon-eks/)
 
+# Amazon EKS Types
+
+|                  | EKS                                                                                      | EKS-Anywhere                                                                                                                                         | EKS-Distro |
+|------------------|------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------|------------|
+| Description      | EKS is a fully managed Kubernetes service that is designed to run on AWS infrastructure. | EKS-A, on the other hand, is a hybrid offering that enables users to run EKS-managed Kubernetes clusters on-premises or in other cloud environments. | EKS-Distro is an open-source Kubernetes distribution that can be run on any infrastructure, including on-premises or in other cloud environments.           |
+
+[Read more](https://www.upnxtblog.com/index.php/2023/04/24/understanding-the-differences-between-amazon-eks-eks-anywhere-and-eks-distro-which-solution-is-right-for-your-business/)
+
 # References
 - [Containers on AWS Overview: ECS | EKS | Fargate | ECR](https://www.youtube.com/watch?v=AYAh6YDXuho)
 - [Implementing Microservices on AWS](https://docs.aws.amazon.com/whitepapers/latest/microservices-on-aws/microservices.html)

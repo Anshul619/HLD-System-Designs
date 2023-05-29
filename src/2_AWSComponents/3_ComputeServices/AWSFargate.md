@@ -1,11 +1,17 @@
 # AWS Fargate
 - [AWS Fargate - Serverless compute for containers](https://aws.amazon.com/fargate/) is a serverless compute engine used in conjunction with [Amazon Elastic Container Service (ECS)](../4_ContainerOrchestrationServices/AmazonECS/Readme.md). 
-- Compatible with both [EKS](../4_ContainerOrchestrationServices/AmazonEKS.md) & [ECS](../4_ContainerOrchestrationServices/AmazonECS/Readme.md) i.e. these services can run with Fargate as deployment option, instead of [Amazon EC2 instances](AmazonEC2/Readme.md).
-- You can use it to run containers without managing servers or clusters of [Amazon EC2 instances](AmazonEC2/Readme.md). 
 - [Fargate has a flexible computing model](https://aws.amazon.com/fargate/faqs/?nc=sn&loc=4), which does not require you to select an instance type or directly configure your cluster. 
 - It scales up transparently & you pay according to the CPU and memory resources you actually use.
 
 ![img.png](../4_ContainerOrchestrationServices/AmazonECS/assests/ECS-Tasks.png)
+
+# Features
+
+| Feature                                                                                                                                       | Remarks                                                                                                                                                 |
+|-----------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Supports both Linux, Windows containers                                                                                                       | AWS Fargate now supports [Amazon ECS Windows containers](https://aws.amazon.com/about-aws/whats-new/2021/10/aws-fargate-amazon-ecs-windows-containers/) |
+| Compatible with both [EKS](../4_ContainerOrchestrationServices/AmazonEKS.md) & [ECS](../4_ContainerOrchestrationServices/AmazonECS/Readme.md) | These services can run with Fargate as deployment option, instead of [Amazon EC2 instances](AmazonEC2/Readme.md).                                       |
+| Serverless                                                                                                                                    | You can use it to run containers without managing servers or clusters of [Amazon EC2 instances](AmazonEC2/Readme.md).                                                                                                                                                         |
 
 # ECS-Fargate with ELB
 
