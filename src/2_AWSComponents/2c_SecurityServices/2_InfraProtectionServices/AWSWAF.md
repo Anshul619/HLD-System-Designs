@@ -25,14 +25,14 @@
 
 # Configurable Conditions
 
-| Condition                       | Remarks                                                                                        |
-|---------------------------------|------------------------------------------------------------------------------------------------|
-| IP Address & Ranges             | Use WAF IP set statement that specifies the IP addresses that you want to allow/block through. |
-| Geo match statement             | Use WAF geo match statement listing the countries that you want to block/allow.                |
-| Patterns in HTTP Headers & body | -                                                                                              |
-| URL String Patterns             | -                                                                                              |
-| SQL Injection                   | -                                                                                              |
-| Cross-site scripting            | -                                                                                              |
+| Condition                                                                                                        | Remarks                                                                                        |
+|------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------|
+| IP Address & Ranges                                                                                              | Use WAF IP set statement that specifies the IP addresses that you want to allow/block through. |
+| [Geo match statement](https://aws.amazon.com/about-aws/whats-new/2017/10/aws-waf-now-supports-geographic-match/) | Use WAF geo match statement listing the countries that you want to block/allow.                |
+| Patterns in HTTP Headers & body                                                                                  | -                                                                                              |
+| URL String Patterns                                                                                              | -                                                                                              |
+| SQL Injection                                                                                                    | -                                                                                              |
+| Cross-site scripting                                                                                             | -                                                                                              |
 
 # WAF Rules
 

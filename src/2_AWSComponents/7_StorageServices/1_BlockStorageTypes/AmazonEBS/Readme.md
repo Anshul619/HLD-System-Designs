@@ -17,14 +17,14 @@
 
 # Amazon EBS benefits
 
-| Benefit                                          | Description                                                                                                                                                                    |
-|--------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| :star: Performance for any workload              | Amazon EBS architecture is built for mission critical applications. <br/>- It delivers the right performance for the most demanding workloads.                                 |
-| High availability                                | When you create an EBS volume, it is automatically replicated in its Availability Zone to prevent data loss from single points of failure.                                     |
-| Data persistence                                 | The storage persists even when your instance doesn't.                                                                                                                          |
-| Data encryption                                  | All EBS volumes support encryption.                                                                                                                                            |
-| Flexibility                                      | EBS volumes support on-the-fly changes. <br/>- You can modify volume type, volume size, and input/output operations per second (IOPS) capacity without stopping your instance. |
-| Backups through [EBS Snapshots](../../../12_Backup&DR/EBSSnapshots.md) | Amazon EBS provides the ability to create backups of any EBS volume, through [snapshots](../../../12_Backup&DR/EBSSnapshots.md).                                                                     |
+| Benefit                                                                | Description                                                                                                                                                                    |
+|------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| :star: Performance for any workload                                    | Amazon EBS architecture is built for mission critical applications. <br/>- It delivers the right performance for the most demanding workloads.                                 |
+| High availability                                                      | When you create an EBS volume, it is automatically replicated in its Availability Zone to prevent data loss from single points of failure.                                     |
+| Data persistence                                                       | The storage persists even when your instance doesn't.                                                                                                                          |
+| Data encryption                                                        | All EBS volumes support encryption.                                                                                                                                            |
+| Flexibility                                                            | EBS volumes support on-the-fly changes. <br/>- You can modify volume type, volume size, and input/output operations per second (IOPS) capacity without stopping your instance. |
+| Backups through [EBS Snapshots](../../../12_Backup&DR/EBSSnapshots.md) | Amazon EBS provides the ability to create backups of any EBS volume, through [snapshots](../../../12_Backup&DR/EBSSnapshots.md).                                               |
 
 # Features
 

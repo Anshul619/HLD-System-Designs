@@ -8,13 +8,13 @@
 | [Scheduled scaling](https://docs.aws.amazon.com/autoscaling/ec2/userguide/ec2-auto-scaling-scheduled-scaling.html)                       | Fleet Scaling   | Best for Auto Scaling your EC2 instances for predictable traffic patterns.<br/>- To use scheduled scaling, you create scheduled actions which are performed automatically as a function of date and time.                                                                                                                                                                                                                                                                                                                                                 |
 | [Simple Scaling](https://docs.aws.amazon.com/autoscaling/ec2/userguide/as-scaling-simple-step.html)                                      | Dynamic Scaling | With [simple scaling](https://docs.aws.amazon.com/autoscaling/ec2/userguide/as-scaling-simple-step.html), you choose scaling metrics and threshold values for the CloudWatch alarms that trigger the scaling process. <br/>- The main issue is that after a scaling activity is started, the policy must wait for the scaling activity or health check replacement to complete and the [cooldown period](https://docs.aws.amazon.com/autoscaling/ec2/userguide/ec2-auto-scaling-scaling-cooldowns.html) to expire before responding to additional alarms. |
 
-# Parameters
+# Capacity Parameters
 
-| Parameter        | Required?              |
-|------------------|------------------------|
-| Min-Capacity     | :white_check_mark: Yes |
-| Max-Capacity     | :white_check_mark: Yes |
-| Desired-Capacity | :x: No                 |
+| Parameter        | Use Case                             | Remarks                                                              |
+|------------------|--------------------------------------|----------------------------------------------------------------------|
+| Min-Capacity     | Dynamic Scaling - Range of instances | Min is how many EC2 instances should at least be running.            |
+| Max-Capacity     | Dynamic Scaling - Range of instances | Max is the number of EC2 instances allowed to run.                   |
+| Desired-Capacity | Fleet Scaling - Specific Instances   | Desired capacity is how many EC2 instances, you want to run ideally. |
 
 ![](https://docs.aws.amazon.com/autoscaling/ec2/userguide/images/as-basic-diagram.png)
 
