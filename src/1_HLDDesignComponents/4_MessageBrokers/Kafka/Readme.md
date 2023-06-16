@@ -1,8 +1,8 @@
 # :star: Apache Kafka 
 - Apache Kafka is an [open-source distributed event streaming platform](../../0_SystemGlossaries/MessageBrokers/EventDrivenArchitecture.md) used by thousands of companies for high-performance data pipelines, streaming analytics, data integration, and mission-critical applications.
+- Kafka is based on [Publish-Subscriber Model](../../0_SystemGlossaries/MessageBrokers/PubSubModel.md). And can be used for [Event-Driven Architecture](../../0_SystemGlossaries/MessageBrokers/EventDrivenArchitecture.md).
 - Kafka can process a large amount of data in a short amount of time (1 million messages/sec).
 - It also has [low latency](../../0_SystemGlossaries/Scalability/LatencyThroughput.md), making it possible to process data in real-time.
-- Kafka is based on [Publish-Subscriber Model](..#publisher-subscriber-model-pubsub). And can be used for [Event-Driven Architecture](../../0_SystemGlossaries/MessageBrokers/EventDrivenArchitecture.md).
 - [Amazon Managed Streaming for Apache Kafka (MSK)](../../../2_AWSComponents/5_MessageBrokerServices/AmazonMSK.md) can be used to deploy Kafka on [AWS](../../../2_AWSComponents).
 
 # Basic Architecture of Kafka Cluster
@@ -18,28 +18,14 @@
 - [Flight Booking Search](../../../3_HLDDesignProblems/FlightBookingSearch/README.md)
 - [LinkedIn - Kafka](../../../3_HLDDesignProblems/LinkedInDesign/Readme.md)
 
-# Why Kafka is so fast?
-- Kafka achieves [low latency](../../0_SystemGlossaries/Scalability/LatencyThroughput.md) message delivery through [Sequential I/O and Zero Copy Principle](https://twitter.com/alexxubyte/status/1506663791961919488/photo/1).
-- Messages (events) in the [Kafka]() are immutable and can't be changed once it's pushed (due to [log based queue nature](../../0_SystemGlossaries/Database/AppendOnlyDataStructure.md)).
-- The same techniques are commonly used in much other messaging/streaming platforms.
-
-Kafka is based on [Log Based Queue](../../0_SystemGlossaries/Database/AppendOnlyDataStructure.md)
-- :star: Messages are persisted to [append-only log files](../../0_SystemGlossaries/Database/AppendOnlyDataStructure.md) by the broker.
-- Producers are [appending these log files (sequential write)](../../0_SystemGlossaries/Database/AppendOnlyDataStructure.md) & consumers are reading a range of these files ( `sequential reads` ).
-
-# :star: Is Kafka a Database?
-- Yes & No.
-- In some way, Kafka supports [ACID properties](../../0_SystemGlossaries/Database/ACIDPropertyTransaction.md).
-- [Read More](https://queue.acm.org/detail.cfm?id=3321612)
-
 # General use cases of Kafka
 
-| Use Case                                                                  | Description                                                                                                                                                                                                                                                                |
-|---------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| As an events/message broker in Event-Driven Architecture                  | Use Kafka when your application has a High Throughput ( around `1 million messages/sec`), i.e. application has to process a large volume of messages, [event driven services](../../0_SystemGlossaries/MessageBrokers/EventDrivenArchitecture.md) etc.                                    |
-| To monitor metrics, logs of the IT infrastructure                         | Various systems in the IT infrastructure can push events/messages/logs in the Kafka. And [logstash (in ELK)](../../8_MonitoringTools/ELK.md) can act as a consumer to the Kafka.                                                                                           |
-| For Analytics                                                             | If we want to build our own Google Analytics (to track app activities, events etc.), we can use Kafka as a broker.                                                                                                                                                         |
-| [Stream Processing](../../5_BigDataComponents/StreamProcessing/Readme.md) | Use [Kafka Stream API](../../5_BigDataComponents/StreamProcessing/KafkaStreamsAPI.md) when the event stream needs to process data in multi-stage pipelines, the pipelines can generate graphs of the real-time data flows, thus providing real-time monitoring of traffic in the pipelines.<br/>- Example - Video streaming in YouTube etc. |
+| Use Case                                                                                                                       | Description                                                                                                                                                                                                                                                                                                                                |
+|--------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| As an events/message broker in [Event-Driven Architecture](../../0_SystemGlossaries/MessageBrokers/EventDrivenArchitecture.md) | Use Kafka when your application has a High Throughput (around `1 million messages/sec`), i.e. application has to process a large volume of messages, [event driven services](../../0_SystemGlossaries/MessageBrokers/EventDrivenArchitecture.md) etc.                                                                                      |
+| To monitor metrics, logs of the IT infrastructure                                                                              | Various systems in the IT infrastructure can push events/messages/logs in the Kafka. And [logstash (in ELK)](../../8_MonitoringTools/ELK.md) can act as a consumer to the Kafka.                                                                                                                                                           |
+| For Analytics                                                                                                                  | If we want to build our own Google Analytics (to track app activities, events etc.), we can use Kafka as a broker.                                                                                                                                                                                                                         |
+| [Stream Processing](../../5_BigDataComponents/StreamProcessing/Readme.md)                                                      | Use [Kafka Stream API](../../5_BigDataComponents/StreamProcessing/KafkaStreamsAPI.md) when the event stream needs to process data in multi-stage pipelines, the pipelines can generate graphs of the real-time data flows, thus providing real-time monitoring of traffic in the pipelines.<br/>- Example - Video streaming in YouTube etc. |
 
 # Top Features of Kafka
 
@@ -55,142 +41,78 @@ Kafka is based on [Log Based Queue](../../0_SystemGlossaries/Database/AppendOnly
 
 # Major Components of Kafka
 
-| Component                                                                                         | Description                                                                                                                                                                                                                                                                                                                                                 |
-|---------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Topic (i.e. Stream or Category or Queue)](../../0_SystemGlossaries/MessageBrokers/Readme.md)     | Topic is a category or feed where messages (or events) would be saved and published.                                                                                                                                                                                                                                                                        |
-| [Producer](../../0_SystemGlossaries/MessageBrokers/Readme.md)                                     | Producer writes data into the topics (1 or more) in the Kafka.                                                                                                                                                                                                                                                                                              |
-| [Consumer](../../0_SystemGlossaries/MessageBrokers/Readme.md)                                     | A consumer can subscribe ( listen ) to the topics ( 1 or more ) and read data from those in the Kafka.<br/>- Reading data out of Kafka is very fast thanks to `java.nio.channels.FileChannel#transferTo`.<br/>- This method uses `sendFile` system call which allows for very efficient transfer of data from a file to another file ( including sockets ). |
-| [Partitioning/Sharding](../../0_SystemGlossaries/MessageBrokers/Readme.md)                        | Topics can be parallelized via partitions, which split data into a single topic among numerous brokers.                                                                                                                                                                                                                                                     |
-| [Partition Key](../../0_SystemGlossaries/MessageBrokers/Readme.md)                                | Partition key helps in maintaining the order of the messages.                                                                                                                                                                                                                                                                                               |
-| [Zookeeper](../../7_ClusterCoordinationService/ApacheZookeeper.md)                                | [Zookeeper](../../7_ClusterCoordinationService/ApacheZookeeper.md) manages Kafka Cluster (new broker, new partition etc.), brokers coordination & election process (leader, [Controller election](#controller-election) etc.)                                                                                                                               |
-| [Log Compaction](../../0_SystemGlossaries/MessageBrokers/Readme.md)                               | [Read more](https://medium.com/swlh/introduction-to-topic-log-compaction-in-apache-kafka-3e4d4afd2262)                                                                                                                                                                                                                                                      |
-| [Core APIs in Kafka](KafkaAPIs.md)                                                                | -                                                                                                                                                                                                                                                                                                                                                           |
+| Component                                                                                     | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
+|-----------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| [Topic (i.e. Stream or Category or Queue)](../../0_SystemGlossaries/MessageBrokers/Readme.md) | Topic is a category or feed where messages (or events) would be saved and published.                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
+| [Producer](../../0_SystemGlossaries/MessageBrokers/Readme.md)                                 | Producer writes data into the topics (1 or more) in the Kafka.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
+| [Consumer](../../0_SystemGlossaries/MessageBrokers/Readme.md)                                 | A consumer can subscribe ( listen ) to the topics ( 1 or more ) and read data from those in the Kafka.<br/>- Reading data out of Kafka is very fast thanks to `java.nio.channels.FileChannel#transferTo`.<br/>- This method uses `sendFile` system call which allows for very efficient transfer of data from a file to another file ( including sockets ).                                                                                                                                                                                     |
+| Consumer Group                                                                                | A consumer group in Kafka is a collection of consumers who work together to ingest data from the same topic or range of topics.<br/>-                                                                                                                                                                                                                                                                                                                                                                                                           |
+| Broker (i.e. Server)                                                                          | A Kafka cluster is made up of a number of brokers (servers), which provides load balancing, reliable redundancy & fail-over.<br/>- Without sacrificing performance, each broker instance can handle read and write volumes of hundreds of thousands per second (and gigabytes of messages).                                                                                                                                                                                                                                                     |
+| [Partitioning](../../0_SystemGlossaries/MessageBrokers/Readme.md)                             | Topics can be parallelized via partitions, which split data into a single topic among numerous brokers.                                                                                                                                                                                                                                                                                                                                                                                                                                         |
+| [Partition Key](../../0_SystemGlossaries/MessageBrokers/Readme.md)                            | Partition key helps in maintaining the order of the messages.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
+| Partition - Replication                                                                       | Each partition would be replicated across the brokers/servers in the cluster (as per configured replication factor).                                                                                                                                                                                                                                                                                                                                                                                                                            |
+| Partition - Leader                                                                            | Only one partition (of the topic) would be active at the time, called `Leader`.<br/>- Write requests on the partition, would be handled by Leader.                                                                                                                                                                                                                                                                                                                                                                                              |
+| Partition - Follower                                                                          | Other partitions (of the topic) would only replicate message, called `Followers`.<br/>- Based on configured replication factor ([replication.factor](https://kafka.apache.org/documentation/#replication)), the number of followers would be decided.<br/>- Example - 3 replication factor means there would be 1 leader and 2 followers.                                                                                                                                                                                                       |
+| [Zookeeper](../../7_ClusterCoordinationService/ApacheZookeeper.md)                            | [Zookeeper](../../7_ClusterCoordinationService/ApacheZookeeper.md) manages Kafka Cluster (new broker, new partition etc.), brokers coordination & election process (leader, Controller election etc.)                                                                                                                                                                                                                                                                                                                                           |
+| [Log Compaction](../../0_SystemGlossaries/MessageBrokers/Readme.md)                           | [Read more](https://medium.com/swlh/introduction-to-topic-log-compaction-in-apache-kafka-3e4d4afd2262)                                                                                                                                                                                                                                                                                                                                                                                                                                          |
+| [Core APIs in Kafka](KafkaAPIs.md)                                                            | [Kafka HTTP APIs](https://www.confluent.io/blog/http-and-rest-api-use-cases-and-architecture-with-apache-kafka/) can be integrated in the client apis, to push the message to the specific topic (& partition key).                                                                                                                                                                                                                                                                                                                             |
+| In-Sync Replicas (ISR)                                                                        | An [in-sync replica (ISR)](https://www.conduktor.io/blog/how-replication-and-isr-work-in-kafka) is a broker that has the latest data for a given partition.<br/>- A leader is always an in-sync replica.<br/>- A follower is an in-sync replica only if it has fully caught up to the partition it’s following.<br/>- Read requests on the partition, would be handled by in-sync replicas.                                                                                                                                                     |
+| ACK levels                                                                                    | `acks` denotes the number of brokers that must receive the record before we consider the write as successful.                                                                                                                                                                                                                                                                                                                                                                                                                                   |
+| ACK level - acks=0                                                                            | With a value of 0, the producer won’t even wait for a response from the broker.                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
+| ACK level - acks=1                                                                            | With a setting of 1, the producer will consider the write successful when the leader receives the record.<br/>- The leader broker will know to immediately respond the moment it receives the record and not wait any longer.                                                                                                                                                                                                                                                                                                                   |
+| ACK level - acks=all                                                                          | When set to all, the producer will consider the write successful when all of the in-sync replicas receive the record.<br/>- This is achieved by the leader broker being smart as to when it responds to the request – it’ll send back a response once all the in-sync replicas receive the record themselves.                                                                                                                                                                                                                                   |
+| Schema Registry                                                                               | Schema Registry holds Avro schemas & ensures that schema used by producer and consumer, are identical.<br/>- Producer sends schema id while pushing the data and consumer look for schema id to get schema.                                                                                                                                                                                                                                                                                                                                     |
+| Kafka Controller                                                                              | [The Kafka controller is brain of the Kafka cluster](https://stackoverflow.com/questions/49525141/how-many-kafka-controllers-are-there-in-a-cluster-and-what-is-the-purpose-of-a-c).<br/>- It monitors the liveliness of the brokers and acts on broker failures.<br/>- [Kafka Controller does leader election for the topic & in-charge of partition leaders and replication](https://stackoverflow.com/questions/49525141/how-many-kafka-controllers-are-there-in-a-cluster-and-what-is-the-purpose-of-a-c) ( if existing leader goes down ). |
+| Security                                                                                      | All components ( brokers, zookeeper, producers, consumers etc. ) should authenticate each other and setup an encrypted (SSL) channel for communication.<br/>- `Authorization` - ACLs should be defined and enforced to control which users can perform what action?                                                                                                                                                                                                                                                                             |
+| Kafka Cluster for high availability                                                           | A minimum in-sync replicas of 2.<br/>- A replication factor of 3 for topics.<br/>- At least 3 Kafka brokers, each running on different nodes.<br/>- Nodes spread across three availability zones.                                                                                                                                                                                                                                                                                                                                               |
 
-## Partition Diagram
+# Partition Diagram
 
 ![img.png](../assests/Kafka-Partitioning-Layout.drawio.png)
 
-## Broker ( i.e. Server )
-- A Kafka broker is a server that works as part of a Kafka cluster (in other words, a Kafka cluster is made up of a number of brokers)
-- Multiple brokers in the Kafka cluster, provides load balancing, reliable redundancy & fail-over.
-- Without sacrificing performance, each broker instance can handle read and write volumes of hundreds of thousands per second (and gigabytes of messages).
-- Brokers keep very little state, mostly just open file pointers & connections.
-- To scale writes, number of leader partitions per broker can be reduced to spread the writes across more brokers.
-
-## Consumer Group
-- The name of an application is essentially represented by a consumer group
-- A consumer in Kafka can be part of one or more consumer groups.
-- A consumer group in Kafka is a collection of consumers who work together to ingest data from the same topic or range of topics.
-- The `-group` command must be used to consume messages from a consumer group.
-
-## Replication
-- Each partition would be replicated across the brokers/servers in the cluster (as per configured replication factor).
-
-### Leader
-- Only one partition (of the topic) would be active at the time, called `Leader`.
-- Write requests on the partition, would be handled by Leader
-
-### Follower
-- Other partitions (of the topic) would only replicate message, called `Followers`.
-- Based on configured replication factor ([replication.factor](https://kafka.apache.org/documentation/#replication)), the number of followers would be decided.
-- Example - 3 replication factor means there would be 1 leader and 2 followers.
-
-### In-Sync Replicas (ISR)
-- An [in-sync replica (ISR)](https://www.conduktor.io/blog/how-replication-and-isr-work-in-kafka) is a broker that has the latest data for a given partition. 
-  - A leader is always an in-sync replica. 
-  - A follower is an in-sync replica only if it has fully caught up to the partition it’s following. 
-  - In other words, it can't be behind on the latest records for a given partition.
-- Read requests on the partition, would be handled by in-sync replicas.
-- The message is considered committed to the log only when all in-sync replicas have the message. 
-  - Accordingly, ack is sent to the producer.
-- The number of [brokers](#broker--ie-server-) should be greater than the `minimum in-sync replica size` (i.e. at least 3).
+# In-Sync Replicas (ISR)
 
 ![img.png](https://accu.org/journals/overload/28/159/kozlovski/2.png)
 
-### ACK levels 
-The `acks` setting is a client (producer) configuration. 
-- It denotes the number of brokers that must receive the record before we consider the write as successful. 
-- It supports three values – 0, 1, and all.
-
-The `acks` setting is a good way to configure your preferred trade-off between durability guarantees and performance.
-- If you’d like to be sure your records are nice and safe – configure your acks to all.
-- If you value latency and throughput over sleeping well at night, set a low threshold of 0. You may have a greater chance of losing messages, but you inherently have better latency and throughput.
-
-#### acks=0
-- With a value of 0, the producer won’t even wait for a response from the broker. 
-- It immediately considers the write successful the moment the record is sent out.
-
-#### acks=1
-- With a setting of 1, the producer will consider the write successful when the leader receives the record. 
-- The leader broker will know to immediately respond the moment it receives the record and not wait any longer.
+# ACK level - acks=1
 
 ![img.png](https://accu.org/journals/overload/28/159/kozlovski/4.png)
 
-#### acks=all
-- When set to all, the producer will consider the write successful when all of the in-sync replicas receive the record. 
-- This is achieved by the leader broker being smart as to when it responds to the request – it’ll send back a response once all the in-sync replicas receive the record themselves.
+# ACK level - acks=all
 
 ![img.png](https://accu.org/journals/overload/28/159/kozlovski/6.png)
-  
-## Schema Registry
-- Schema Registry holds Avro schemas & ensures that schema used by producer and consumer, are identical.
-- Producer sends schema id while pushing the data and consumer look for schema id to get schema.
-
-## Kafka Controller
-- In a Kafka cluster, one of the brokers serves as the controller, which is responsible for managing the states of partitions and replicas and for performing administrative tasks like reassigning partitions. 
-- At any given time there is only one controller broker in your cluster.
-- The Kafka controller in a Kafka cluster is in charge of managing partition leaders and replication.
-- [Kafka Controller does leader election for the topic](https://stackoverflow.com/questions/49525141/how-many-kafka-controllers-are-there-in-a-cluster-and-what-is-the-purpose-of-a-c) ( if existing leader goes down ).
-- [The Kafka controller is brain of the Kafka cluster](https://stackoverflow.com/questions/49525141/how-many-kafka-controllers-are-there-in-a-cluster-and-what-is-the-purpose-of-a-c). It monitors the liveliness of the brokers and acts on broker failures.
-
-### Controller Election
-- The first broker that starts in the cluster will become the Kafka Controller by creating an `ephemeral node called "/controller"` in [Zookeeper](#zookeeper)
-- When other brokers starts they also try to create this node in Zookeeper, but will receive an "node already exists" exception, by which they understand that there is already a Controller elected in the cluster.
-- When the Zookeeper doesn't receive heartbeat messages from the Controller, the ephemeral node in Zookeeper will get deleted.`
-- It then notifies all the other brokers in the cluster that the Controller is gone via Zookeeper watcher, which starts a new election for new Controller again. 
-- All the other brokers will again try to create a ephemeral node "/controller" and the first one to succeed will be elected as the new Controller.
-
-## Security
-- All components ( brokers, zookeeper, producers, consumers etc. ) should authenticate each other and setup an encrypted channel for communication. 
-  - Kafka supports SSL based authentication and encryption.
-- `Authorization` - ACLs should be defined and enforced to control which users can perform what action? 
-
-### Multiple Tenants Isolation
-- Each tenant will have a separate topic prefix. Eg. User A can only create and access topics with prefix “A.”, user B can only create and access topics with prefix “B.”
-- Define and enforce ACLs for topic creation and access (produce and consume) restricting each user to their own topic prefixes.
 
 # Estimation - How to decide number of partitions in Kafka?
 
 Rough formula for picking the number of partitions = `MAX(t/p, t/c)`
 
-| Parameter    | Title                             | More Description                                                                                |
-|--------------|-----------------------------------|-------------------------------------------------------------------------------------------------|
-| `t`          | Target Throughput                 | Let’s say your target throughput is t. |
-| `p`          | Thoughput on a single partition   | You measure the throughout that you can achieve on a single partition for production (call it p). |
-| `c`          | Consumption Rate                  | And consumption (call it c). |
+| Parameter | Title                            | More Description                                                                                  |
+|-----------|----------------------------------|---------------------------------------------------------------------------------------------------|
+| `t`       | Target Throughput                | Let’s say your target throughput is t.                                                            |
+| `p`       | Throughput on a single partition | You measure the throughout that you can achieve on a single partition for production (call it p). |
+| `c`       | Consumption Rate                 | And consumption (call it c).                                                                      |
 
 Read more
 - [How to Choose the Number of Topics/Partitions in a Kafka Cluster?](https://www.confluent.io/blog/how-choose-number-topics-partitions-kafka-cluster/)
 - [Kafka cluster size calculator](https://docs.google.com/spreadsheets/d/1a3uIa8TTRLlN6HTtMzPPqf8p5j5OxflJuAyff-uHLgk/edit?usp=sharing)
 
-## Other Points
-- More partitions lead to `higher throughput`.
-- More partitions requires `more open file handles`
-    - This is mostly just a configuration issue.
-    - We have seen production Kafka clusters running with more than 30 thousand open file handles per broker.
-- More partitions may `increase unavailability`.
-    - It’s probably better to limit the number of partitions per broker to two to four thousand and the total number of partitions in the cluster to low tens of thousand.
-- More partitions may increase end-to-end latency.
-    - As a rule of thumb, if you care about latency, it’s probably a good idea to limit the number of partitions per broker to *100 x b x r*, where b is the number of brokers in a Kafka cluster and r is the replication factor.
-- More partitions may require more memory in the client.
+# Partitions - Considerations
 
-## Kafka Cluster (with min. nodes) for high availability
+| Consideration                                     | Remarks                                                                                                                                                              |
+|---------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| More partitions lead to `higher throughput`       | -                                                                                                                                                                    |
+| More partitions requires `more open file handles` | We have seen production Kafka clusters running with more than 30 thousand open file handles per broker.                                                              |
+| More partitions may `increase unavailability`     | It’s probably better to limit the number of partitions per broker to two to four thousand and the total number of partitions in the cluster to low tens of thousand. |
+| More partitions may increase end-to-end latency.  | As a rule of thumb, if you care about latency, it’s probably a good idea to limit the number of partitions per broker to *100 x b x r*, where b is the number of brokers in a Kafka cluster and r is the replication factor.                                                                                                                                                                     |
 
-So, if you wish to design a Kafka cluster that can tolerate one planned and one unplanned failure, you should consider the following requirements:
-- A minimum in-sync replicas of 2.
-- A replication factor of 3 for topics.
-- At least 3 Kafka brokers, each running on different nodes. 
-- Nodes spread across three availability zones.
+# Why Kafka is so fast?
+- Kafka achieves [low latency](../../0_SystemGlossaries/Scalability/LatencyThroughput.md) message delivery through [Sequential I/O and Zero Copy Principle](https://twitter.com/alexxubyte/status/1506663791961919488/photo/1).
+- Messages (events) in the [Kafka]() are immutable and can't be changed once it's pushed (due to [log based queue nature](../../0_SystemGlossaries/Database/AppendOnlyDataStructure.md)).
+- The same techniques are commonly used in much other messaging/streaming platforms.
+
+Kafka is based on [Log Based Queue](../../0_SystemGlossaries/Database/AppendOnlyDataStructure.md)
+- :star: Messages are persisted to [append-only log files](../../0_SystemGlossaries/Database/AppendOnlyDataStructure.md) by the broker.
+- Producers are [appending these log files (sequential write)](../../0_SystemGlossaries/Database/AppendOnlyDataStructure.md) & consumers are reading a range of these files ( `sequential reads` ).
 
 # Other Links
 - [Kafka vs Others](../KafkaVsRabbitMQVsSQSVsSNS.md)
@@ -205,3 +127,4 @@ So, if you wish to design a Kafka cluster that can tolerate one planned and one 
 - [Role of ZooKeeper in Kafka](https://www.youtube.com/watch?v=bnHWrSwPvig)
 - [Replication in Kafka](https://medium.com/@_amanarora/replication-in-kafka-58b39e91b64e)
 - [Kafka Acks Explained](https://accu.org/journals/overload/28/159/kozlovski/)
+- [Is Kafka a database?](https://queue.acm.org/detail.cfm?id=3321612)
