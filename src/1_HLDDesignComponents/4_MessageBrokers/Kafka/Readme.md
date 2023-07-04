@@ -1,6 +1,6 @@
 # :star: Apache Kafka 
-- Apache Kafka is an [open-source distributed event streaming platform](../../0_SystemGlossaries/MessageBrokers/EventDrivenArchitecture.md) used by thousands of companies for high-performance data pipelines, streaming analytics, data integration, and mission-critical applications.
-- Kafka is based on [Publish-Subscriber Model](../../0_SystemGlossaries/MessageBrokers/PubSubModel.md). And can be used for [Event-Driven Architecture](../../0_SystemGlossaries/MessageBrokers/EventDrivenArchitecture.md).
+- [Apache Kafka](https://kafka.apache.org/) is an [open-source distributed event streaming platform](../../0_SystemGlossaries/MessageBrokers/EventDrivenArchitecture.md) used by thousands of companies for high-performance data pipelines, streaming analytics, data integration, and mission-critical applications.
+- [Kafka](https://kafka.apache.org/) is based on [Publish-Subscriber Model](../../0_SystemGlossaries/MessageBrokers/PubSubModel.md). And can be used for [Event-Driven Architecture](../../0_SystemGlossaries/MessageBrokers/EventDrivenArchitecture.md).
 - Kafka can process a large amount of data in a short amount of time (1 million messages/sec).
 - It also has [low latency](../../0_SystemGlossaries/Scalability/LatencyThroughput.md), making it possible to process data in real-time.
 - [Amazon Managed Streaming for Apache Kafka (MSK)](../../../2_AWSComponents/5_MessageBrokerServices/AmazonMSK.md) can be used to deploy Kafka on [AWS](../../../2_AWSComponents).
@@ -17,6 +17,7 @@
 - [Logging Solution in Distributed Systems](../../../3_HLDDesignProblems/LoggingSolution)
 - [Flight Booking Search](../../../3_HLDDesignProblems/FlightBookingSearch/README.md)
 - [LinkedIn - Kafka](../../../3_HLDDesignProblems/LinkedInDesign/Readme.md)
+- [Amplitude - Reducing costs with AZ-awareness for Kafka](https://amplitude.engineering/reducing-costs-with-az-awareness-efc92bc7113a)
 
 # General use cases of Kafka
 
