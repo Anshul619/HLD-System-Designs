@@ -1,6 +1,8 @@
 # Run commands on your Linux instance at launch
 - When you launch an instance in [Amazon EC2](Readme.md), you have the option of passing user data to the instance that can be used to perform common automated configuration tasks and even [run scripts after the instance starts](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/user-data.html).
 
+# Features
+
 | Features                                                                                                              | Description                                                                                                                            |
 |-----------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------|
 | [Types of User Data](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/instancedata-add-user-data.html)             | When you launch an instance in [Amazon EC2](Readme.md), you can pass two types of user data - shell scripts and cloud-init directives. |

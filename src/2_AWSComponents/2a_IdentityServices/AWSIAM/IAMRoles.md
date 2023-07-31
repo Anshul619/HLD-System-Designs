@@ -22,7 +22,7 @@
 
 # Service role for an EC2 instance
 
-![](assets/IAMRole/IAM-Service-Role-EC2-S3-DynamoDB-Permissions.drawio.png)
+![](assets/IAM-Service-Role-EC2-S3-DynamoDB-Permissions.drawio.png)
 
 [Read more](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_use_switch-role-ec2.html)
 
@@ -40,7 +40,7 @@
 ## Cross-Account account - S3, Redshift
 - In this example, the bucket owner, Account A, uses an IAM role to temporarily delegate object access cross-account to users in another AWS account, Account C.
 
-![](assets/IAMRole/IAM-Cross-Account-UseCase-Redshift-S3.drawio.png)
+![](assets/IAM-Cross-Account-UseCase-Redshift-S3.drawio.png)
 
 [Read more](https://repost.aws/knowledge-center/s3-access-denied-redshift-unload)
 

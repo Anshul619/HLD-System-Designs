@@ -6,4 +6,4 @@
 |--------------|-----------------------------------------|--------------------------------------------------------------------------------------------------------|
 | Default      | :white_check_mark: Yes                  | No                                                                                                     |
 | SQS Response | Instant even if query found no messages | Wait until it collects at least 1 available message<br/>- On wait time expiry, it sends empty message. |
-| Pricing      | Normal                                  | Cheaper than short poling                                                                              |
+| Pricing      | Normal                                  | :+1: Cheaper than short poling                                                                         |

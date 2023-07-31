@@ -13,7 +13,7 @@
 
 # Instance Placement Tenancy
 
-| Tenancy                        | Supported Config?                     | Remarks                                                                                                                                                                                                                                            |
+| Tenancy                        | Supported Config                      | Remarks                                                                                                                                                                                                                                            |
 |--------------------------------|---------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Shared (default)               | Both launch template or configuration | Multiple AWS accounts may share the same physical hardware.<br/>- When you create a launch configuration, the default value for the instance placement tenancy is null and the instance tenancy is controlled by the tenancy attribute of the VPC. |
 | Dedicated Instance (dedicated) | Both launch template or configuration | Your instance runs on single-tenant hardware.                                                                                                                                                                                                      |

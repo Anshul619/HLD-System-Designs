@@ -3,3 +3,6 @@
 - :star: To set this up, the account that owns the VPC (owner) shares [one or more subnets](../Subnets.md) with other accounts (participants) that belong to the same organization from AWS Organizations.
 
 ![](../../../2b_OrgMultipleAccounts/assets/AWS-Multiple-Accounts.png)
+
+# References
+- [Reduce Cost and Increase Security with Amazon VPC Endpoints](https://aws.amazon.com/blogs/architecture/reduce-cost-and-increase-security-with-amazon-vpc-endpoints/)

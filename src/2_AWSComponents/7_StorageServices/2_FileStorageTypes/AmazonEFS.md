@@ -29,6 +29,13 @@
 | Default  | :white_check_mark: Yes     | :x: No                                            | :x: No  |
 | Use Case | Spiky file-based workloads | High throughput to storage (MiB/s per TiB) ratios | -       |
 
+# Performance Modes
+
+|         | General                                                                                                                                                                           | Max-IO                                                                                                                                                                                                               |
+|---------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Default | :white_check_mark: Yes                                                                                                                                                            | :x: No                                                                                                                                                                                                               |
+| Remarks | General Purpose performance mode is ideal for latency-sensitive use cases, like web serving environments, content management systems, home directories, and general file serving. | Max I/O performance mode is used to scale to higher levels of aggregate throughput and operations per second. <br/>- This scaling is done with a tradeoff of slightly higher latencies for file metadata operations. |
+
 
 # References
 - [Is EFS a substitute of HDFS for distributed storage?](https://stackoverflow.com/questions/60698924/is-efs-a-substitute-of-hdfs-for-distributed-storage)

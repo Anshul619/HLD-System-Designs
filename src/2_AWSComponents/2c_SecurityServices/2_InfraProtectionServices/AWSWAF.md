@@ -19,7 +19,7 @@
 |--------------------------------------------------------------------------------------------------------------------------------|
 | :star: [Amazon CloudFront distribution](../../1_NetworkingAndContentDelivery/1_EdgeNetworking/AmazonCloudFront.md)             |
 | :star: [Application Load Balancer](../../1_NetworkingAndContentDelivery/2_ApplicationNetworking/ElasticLoadBalancer/Readme.md) |
-| [Amazon API Gateway API](../../1_NetworkingAndContentDelivery/2_ApplicationNetworking/AmazonAPIGateway/Readme.md)              |
+| :star: [Amazon API Gateway API](../../1_NetworkingAndContentDelivery/2_ApplicationNetworking/AmazonAPIGateway/Readme.md)       |
 | [AWS AppSync GraphQL API](../../1_NetworkingAndContentDelivery/2_ApplicationNetworking/AWSAppSync.md)                          |
 | [Amazon Cognito user pool](../../2a_IdentityServices/AWSDirectoryServices/AmazonCognito.md)                                    |
 
