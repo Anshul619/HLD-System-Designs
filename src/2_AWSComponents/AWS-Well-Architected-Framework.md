@@ -32,7 +32,7 @@ Lenses provide additional guidance tailored to specific industry and technology 
 
 | Principal                                               | AWS Service                                                                            |
 |---------------------------------------------------------|----------------------------------------------------------------------------------------|
-| Design Operation Priorities                             | [AWS Trust Advisor](13_OtherServices/TrustedAdvisor.md)                                |
+| Design Operation Priorities                             | [AWS Trust Advisor](11_AWSCostOptimization/TrustedAdvisor.md)                                |
 | Design for Operations                                   | [AWS Cloudformation](9_InfrastructureAsCode/AWSCloudFormation/Readme.md)               |
 | Operational Readiness                                   | [AWS System Manager](2c_SecurityServices/1_DataProtectionServices/AWSSystemManager.md) |
 | Operational Health                                      | [AWS CloudWatch](8_MonitoringServices/AmazonCloudWatch/Readme.md)                      |

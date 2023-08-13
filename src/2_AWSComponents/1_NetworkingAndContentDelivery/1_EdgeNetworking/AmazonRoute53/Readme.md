@@ -63,3 +63,4 @@ Read more
 - [A Case Study in Global Fault Isolation](https://aws.amazon.com/blogs/architecture/a-case-study-in-global-fault-isolation/) 
 - [Amazon Route 53 : Private Hosted Zone](https://www.bogotobogo.com/DevOps/AWS/aws-Route53-DNS-Private-Hosted-Zone.php)
 - [Routing traffic to an Amazon CloudFront distribution by using your domain name](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/routing-to-cloudfront-distribution.html)
+- [Geoproximity vs Geolocation](https://www.abstractapi.com/guides/geoproximity-vs-geolocation)

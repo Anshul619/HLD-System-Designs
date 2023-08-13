@@ -4,8 +4,12 @@
 
 ![](https://lucyinthecloud.com/app/uploads/2021/07/amazon-redshift.png)
 
-# Amazon Redshift & PostgresQL
-- [Amazon Redshift]() and [PostgreSQL](../../../1_HLDDesignComponents/3_DatabaseComponents/Readme.md) have a number of important differences that you must be aware of as you design and develop your data warehouse applications.
+# Features
+
+| Feature                      | Remarks                                                                                                                                                                                                                                                          |
+|------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Amazon Redshift & PostgresQL | [Amazon Redshift]() and [PostgreSQL](../../../1_HLDDesignComponents/3_DatabaseComponents/Readme.md) have a number of important differences that you must be aware of as you design and develop your data warehouse applications.                                 |
+| Redshift Spectrum            | [Amazon Redshift Spectrum](AmazonRedshiftSpectrum.md) can be used to perform in-place querying of data assets in an [Amazon S3-based data lake](../../7_StorageServices/3_ObjectStorageS3/Readme.md). |
 
 # General Use Cases
 
