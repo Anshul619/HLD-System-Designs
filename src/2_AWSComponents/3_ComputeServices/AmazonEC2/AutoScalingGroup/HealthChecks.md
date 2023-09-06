@@ -1,10 +1,10 @@
 # Health check types
 
-| Health check type                                                                                                         | What it checks                                                                                                                     |
-|---------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------|
-| :star: [ELB Health checks](../../../1_NetworkingAndContentDelivery/2_ApplicationNetworking/ElasticLoadBalancer/Readme.md) | Checks whether the load balancer reports the instance as healthy.                                                                  |
-| [EC2 status checks and scheduled events (Default)](../EC2StatusChecks.md)                                                 | Check if [instance is running](../Readme.md) or there is an underlying hardware or software issues that might impair the instance. |
-| Custom Health Checks                                                                                                      | Checks for any other problems that might indicate instance health issues, according to the custom health checks.                   |
+| Health check type                                                                                                         | Default                | What it checks?                                                                                                                    |
+|---------------------------------------------------------------------------------------------------------------------------|------------------------|------------------------------------------------------------------------------------------------------------------------------------|
+| :star: [ELB Health checks](../../../1_NetworkingAndContentDelivery/2_ApplicationNetworking/ElasticLoadBalancer/Readme.md) | No                     | Checks whether the load balancer reports the instance as healthy.                                                                  |
+| [EC2 status checks and scheduled events](../EC2StatusChecks.md)                                                           | :white_check_mark: Yes | Check if [instance is running](../Readme.md) or there is an underlying hardware or software issues that might impair the instance. |
+| Custom Health Checks                                                                                                      | No                     | Checks for any other problems that might indicate instance health issues, according to the custom health checks.                   |
 
 [Read more](https://docs.aws.amazon.com/autoscaling/ec2/userguide/ec2-auto-scaling-health-checks.html)
 

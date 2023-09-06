@@ -5,12 +5,12 @@
 
 # Supported Big Data Frameworks
 
-| Tool                                                                                                       |
-|------------------------------------------------------------------------------------------------------------|
+| Tool                                                                                                          |
+|---------------------------------------------------------------------------------------------------------------|
 | [Apache Spark](../../../../1_HLDDesignComponents/5_BigDataComponents/StreamProcessing/ApacheSpark.md)         |
 | [Apache Hadoop](../../../../1_HLDDesignComponents/5_BigDataComponents/BatchProcessing/ApacheHadoop/Readme.md) |
 | [HBase](../../../../1_HLDDesignComponents/3_DatabaseComponents/NoSQL-Databases/ApacheHBase.md)                |
-| Hive, Presto, and other big data workloads.                                                                |
+| Hive, Presto, and other big data workloads.                                                                   |
 
 # EMR File System (EMRFS)
 - The [EMR File System (EMRFS)](https://docs.aws.amazon.com/emr/latest/ReleaseGuide/emr-fs.html) is an implementation of [HDFS](../../../../1_HLDDesignComponents/5_BigDataComponents/BatchProcessing/ApacheHadoop/ApacheHDFS.md) that all Amazon EMR clusters use for reading and writing regular files from [Amazon EMR]() directly to [Amazon S3](../../../7_StorageServices/3_ObjectStorageS3/Readme.md). 
