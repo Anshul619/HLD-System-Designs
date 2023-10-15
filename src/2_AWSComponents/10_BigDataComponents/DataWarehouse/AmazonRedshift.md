@@ -1,5 +1,5 @@
 # Amazon RedShift
-- [Amazon RedShift](https://aws.amazon.com/redshift/) is a [data warehouse service](../../../1_HLDDesignComponents/0_SystemGlossaries/BigData/DataWarehouses.md) in AWS.
+- [Amazon RedShift](https://aws.amazon.com/redshift/) is a [data warehouse service](../../../1_HLDDesignComponents/5_BigDataComponents/BigData/DataWarehouses.md) in AWS.
 - [Amazon Redshift]() is not designed for continuous ingestion of data in real time.
 
 ![](https://lucyinthecloud.com/app/uploads/2021/07/amazon-redshift.png)

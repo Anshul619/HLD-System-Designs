@@ -1,24 +1,24 @@
 
 # Send-SMS-API design (App Internal Clients, Multiple SMS-Providers, AutoScaling)
-- Consider there is a `Send-SMS-API` which sends SMS to the client (like OTP) 
+- Consider there is a `Send-SMS-API` which sends SMS to the client (like OTP). 
 - In Send-SMS-API, there is a `OTP service A`, which client calls to get the OTP on SMS.
 - `Service A` calls `Service B`, to send the notification to the user using multiple SMS providers like Airtel, Twillo etc.
-- To store SMS Messages for auditing perspective, [Amazon DynamoDB](../../2_AWSComponents/6_DatabaseServices/AmazonDynamoDB/Readme.md) can be used.
+- To store SMS Messages for auditing perspective, [Casandra](../../1_HLDDesignComponents/3_DatabaseComponents/NoSQL-Databases/ApacheCasandra.md) can be used.
 
 ![Send-SMS-Queuing.drawio.png](assets/Send-SMS-Queuing.drawio.png)
 
 # AutoScaling
 
 ## AutoScaling of "Service A" App Servers
-- Use [Elastic Load Balancing](../../2_AWSComponents/1_NetworkingAndContentDelivery/2_ApplicationNetworking/ElasticLoadBalancer/Readme.md) ( with [AWS AutoScaling](../../2_AWSComponents/3_ComputeServices/AmazonEC2/AutoScalingGroup/Readme.md) configured )
+- Use [Elastic Load Balancing](../../2_AWSComponents/1_NetworkingAndContentDelivery/2_ApplicationNetworking/ElasticLoadBalancer/Readme.md) (with [AWS AutoScaling](../../2_AWSComponents/3_ComputeServices/AmazonEC2/AutoScalingGroup/Readme.md) configured)
 - Or we can implement our own auto-scaling (i.e. delete/add another app server), based on app server's memory usage/CPU usage, heart beat etc.
 
 ## AutoScaling of "Notification queue" workers
-- [Based on number of messages in the "Notifications" queue](https://docs.aws.amazon.com/autoscaling/ec2/userguide/as-using-sqs-queue.html) (like [Amazon SQS](../../2_AWSComponents/5_MessageBrokerServices/AmazonSQS/Readme.md)), the workers can keep on scaling up & scaling down ( with min, max configuration ).
+- [Based on number of messages in the "Notifications" queue](https://docs.aws.amazon.com/autoscaling/ec2/userguide/as-using-sqs-queue.html) (like [Amazon SQS](../../2_AWSComponents/5_MessageBrokerServices/AmazonSQS/Readme.md)), the workers can keep on scaling up & scaling down (with min, max configuration).
 
 # How would we implement rate limiting of the 3rd party SMS providers? ( & follow their SLA )
-- We would need to rate limit on our end, before calling 3rd-party API (like [Twillo API](../TwilloSendMessageAPI) which might have a `limit of 5000 SMS per second in the SLA`)
-- We can achieve this either by using [Redis](../../1_HLDDesignComponents/3_DatabaseComponents/In-Memory-Cache/Redis/Readme.md) ( for distributed system ) or we check the current processing queue size to handle this.
+- We would need to rate limit on our end, before calling 3rd-party API (which might have a limit in their SLA).
+- We can achieve this either by using [Redis](../../1_HLDDesignComponents/3_DatabaseComponents/In-Memory-Cache/Redis/Readme.md) (for distributed system) or we check the current processing queue size to handle this.
 - [To understand more about Rate Limiting, check here](../RateLimiterAPI)
 
 # References

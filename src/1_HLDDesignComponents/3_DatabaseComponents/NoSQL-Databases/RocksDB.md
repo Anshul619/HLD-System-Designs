@@ -1,8 +1,8 @@
 
 # Introduction
-- [RocksDB](http://rocksdb.org/) uses a [log structured database engine](../../0_SystemGlossaries/Database/AppendOnlyDataStructure.md), written entirely in C++, for maximum performance. 
+- [RocksDB](http://rocksdb.org/) uses a [log structured database engine](../2_DataStructuresDB/AppendOnlyDataStructure.md), written entirely in C++, for maximum performance. 
 - Keys and values are just arbitrarily-sized byte streams.
-- Writes in RocksDB, are [append-only](../../0_SystemGlossaries/Database/AppendOnlyDataStructure.md)
+- Writes in RocksDB, are [append-only](../2_DataStructuresDB/AppendOnlyDataStructure.md)
 - RocksDB is [optimized for fast, low latency storage](../../0_SystemGlossaries/Scalability/LatencyThroughput.md) such as flash drives and high-speed disk drives. 
 - RocksDB exploits the full potential of high read/write rates offered by flash or RAM.
 

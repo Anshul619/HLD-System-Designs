@@ -118,3 +118,4 @@ The result would be the following sorted list, which we could insert into the sa
 
 # References
 - [Design Amazon's sales rank by category feature](https://github.com/donnemartin/system-design-primer/blob/master/solutions/system_design/sales_rank/README.md)
+- [Create a Redis Leaderboard with Golang](https://www.vultr.com/docs/create-a-redis-leaderboard-with-golang/)

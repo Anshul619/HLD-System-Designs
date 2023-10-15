@@ -1,4 +1,3 @@
-
 # Load Balancers
 - [Load Balancers](https://github.com/ema2159/Grokking-System-Design-Interview-Quizzes/blob/master/Quizzes/Load%20Balancer.org) are used for the [horizontal scalability](Readme.md) & [high availability/fault-tolerance](../Reliability/HighAvailability.md).
 - LB helps to spread the traffic across a cluster of servers to improve responsiveness and availability of applications, websites or databases.

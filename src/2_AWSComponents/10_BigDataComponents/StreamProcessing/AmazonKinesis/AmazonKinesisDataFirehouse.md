@@ -1,5 +1,5 @@
 # Amazon Kinesis Data Firehouse
-- [Amazon Kinesis Data Firehose](https://aws.amazon.com/kinesis/data-firehose/) is the easiest way to [extract, transform, and load data streams (ETL)](../../../../1_HLDDesignComponents/0_SystemGlossaries/BigData/ETL.md) into various [data stores](../../../6_DatabaseServices), [data lakes](../../DataLakes) & [analytics services](../../DataAnalytics), for near real-time analytics with existing business intelligence tools.
+- [Amazon Kinesis Data Firehose](https://aws.amazon.com/kinesis/data-firehose/) is the easiest way to [extract, transform, and load data streams (ETL)](../../../../1_HLDDesignComponents/5_BigDataComponents/BigData/ETL.md) into various [data stores](../../../6_DatabaseServices), [data lakes](../../DataLakes) & [analytics services](../../DataAnalytics), for near real-time analytics with existing business intelligence tools.
 - It is a fully managed service that automatically scales to match the throughput of your data and requires no ongoing administration. 
 - It can also batch, compress, and encrypt the data before loading it, minimizing the amount of storage used at the destination and increasing security.
 - You cannot set up multiple consumers for Kinesis Data Firehose delivery streams as it can dump data in a single data repository at a time.
@@ -23,7 +23,7 @@
 
 # Amazon Kinesis Data Stream & Data firehouse
 
-![](../../../0_AWSDesigns/IOTDataCapture/assets/AWS-IOT-Data-Capture.png)
+![](../../../../3_HLDDesignProblems/IOTDataCapture/assets/AWS-IOT-Data-Capture.png)
 
 Note
 - When a [Kinesis data stream](../../../5_MessageBrokerServices/AmazonKinesisDataStreams.md) is configured as the source of a Firehose delivery stream, [Firehose’s PutRecord and PutRecordBatch operations](../../../5_MessageBrokerServices/AmazonKinesisDataStreams.md) are disabled and Kinesis Agent cannot write to Firehose delivery stream directly. 

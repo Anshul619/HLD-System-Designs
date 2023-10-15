@@ -7,15 +7,17 @@ Every definition of [serverless](https://aws.amazon.com/what-is/cloud-native/) m
 
 With serverless, you can spend time on the things that differentiate your application, rather than spend time on ensuring availability, scaling, and managing servers.
 
-| Serverless Service                                                                               | Service Type | Remarks                                                            |
-|--------------------------------------------------------------------------------------------------|--------------|--------------------------------------------------------------------|
-| :star: [AWS Lambda](3_ComputeServices/AWSLambda/Readme.md)                                       | Compute      | -                                                                  |
-| [AWS Fargate](3_ComputeServices/AWSFargate.md)                                                   | Compute      | [AWS Fargate vs Lambda](3_ComputeServices/AWSFargateVsLambda.md)   |
-| [AWS Step Functions](3_ComputeServices/AWSStepFunctions.md)                                      | Compute      | -                                                                  |
-| [Amazon DynamoDB](6_DatabaseServices/AmazonDynamoDB/Readme.md)                                   | Database     | [Scaling Serverless DB](6_DatabaseServices/ScalingServerlessDB.md) |
-| [Amazon Aurora](6_DatabaseServices/AmazonRDS/AmazonAurora/Readme.md)                             | Database     | -                                                                  |
-| [AWS Batch](10_BigDataComponents/BatchProcessing/AWSBatch.md)                                    | Batch        | -                                                                  |
-| [API Gateway](1_NetworkingAndContentDelivery/2_ApplicationNetworking/AmazonAPIGateway/Readme.md) | API Gateway  | -                                                                  |
+# Serverless Services
+
+| Serverless Service                                                                               | Service Type | Remarks                                                                         |
+|--------------------------------------------------------------------------------------------------|--------------|---------------------------------------------------------------------------------|
+| :star: [AWS Lambda](3_ComputeServices/AWSLambda/Readme.md)                                       | Compute      | -                                                                               |
+| [AWS Fargate](3_ComputeServices/AWSFargate.md)                                                   | Compute      | [AWS Fargate vs Lambda](3_ComputeServices/AWSFargateVsLambda.md)                |
+| [AWS Step Functions](3_ComputeServices/AWSStepFunctions.md)                                      | Compute      | -                                                                               |
+| [Amazon DynamoDB](6_DatabaseServices/AmazonDynamoDB/Readme.md)                                   | Database     | [DynamoDB - Capacity Modes](6_DatabaseServices/AmazonDynamoDB/CapacityModes.md) |
+| [Amazon Aurora](6_DatabaseServices/AmazonRDS/AmazonAurora/Readme.md)                             | Database     | -                                                                               |
+| [AWS Batch](10_BigDataComponents/BatchProcessing/AWSBatch.md)                                    | Batch        | -                                                                               |
+| [API Gateway](1_NetworkingAndContentDelivery/2_ApplicationNetworking/AmazonAPIGateway/Readme.md) | API Gateway  | -                                                                               |
 
 # Considerations for serverless applications
 

@@ -3,7 +3,7 @@
 - [Amazon Route 53](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/Welcome.html) is a [highly available](../../../../1_HLDDesignComponents/0_SystemGlossaries/Reliability/HighAvailability.md) and [scalable Domain Name System (DNS)](https://www.cloudflare.com/learning/dns/what-is-dns/) web service. 
 - [Amazon Route 53]() can transfer or manage only [second-level domains](https://developer.mozilla.org/en-US/docs/Glossary/Second-level_Domain).
 
-![img.png](../../../0_AWSDesigns/DesignMultiRegionActiveActiveArchitectureOnAWS/AWS-Multi-Region-AZ-HA.drawio.png)
+![img.png](../../../../3_HLDDesignProblems/DesignMultiRegionActiveActiveArchitectureOnAWS/AWS-Multi-Region-AZ-HA.drawio.png)
 
 # Features
 

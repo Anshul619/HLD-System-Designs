@@ -10,10 +10,10 @@
 
 # Primary Use Cases
 
-| Use Case                                  | Description                                                                                                                                                                                                                   |
-|-------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Use Case                                  | Description                                                                                                                                                                                                                |
+|-------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Backing up data to the cloud              | Back up on-premises file data as objects in [Amazon S3](../3_ObjectStorageS3/Readme.md) (including Microsoft SQL Server and Oracle databases and logs).                                                                    |
-| Archiving long-term, retention-based data | There is an ever-growing amount of data, and S3 File Gateway provides an efficient way of archiving this long-term retention-based data to AWS.                                                                               |
+| Archiving long-term, retention-based data | There is an ever-growing amount of data, and S3 File Gateway provides an efficient way of archiving this long-term retention-based data to AWS.                                                                            |
 | Building data lakes                       | Using S3 File Gateway, you can ingest and centralize data into the highly available, scalable [Amazon S3 storage service](../3_ObjectStorageS3/Readme.md) to build data lakes and centralize data processing capabilities. |
 
 # Read-Write

@@ -39,15 +39,15 @@
 
 ## Upload Image using Amazon S3 and Lambda
 
-![img.png](../../0_AWSDesigns/DesignUploadImageAWSLambdaS3/assets/UploadImage-Lambda.drawio.png)
+![img.png](../../../3_HLDDesignProblems/DesignUploadImageAWSLambdaS3/assets/UploadImage-Lambda.drawio.png)
 
-[Read more](../../0_AWSDesigns/DesignUploadImageAWSLambdaS3/README.md)
+[Read more](../../../3_HLDDesignProblems/DesignUploadImageAWSLambdaS3/README.md)
 
 ## Design Scalable System on AWS
 
-![img.png](../../0_AWSDesigns/DesignScalableSystemWithRDMS/assets/DesignScalableSystemWithRelationalDBOnAWS.drawio.png)
+![img.png](../../../3_HLDDesignProblems/DesignScalableSystemWithRDMS/assets/DesignScalableSystemWithRelationalDBOnAWS.drawio.png)
 
-[Read more](../../0_AWSDesigns/DesignScalableSystemWithRDMS/README.md)
+[Read more](../../../3_HLDDesignProblems/DesignScalableSystemWithRDMS/README.md)
 
 ## Amazon SNS with Lambda
 
@@ -62,7 +62,7 @@
 [Read more](../AWSStepFunctions.md)
 
 ## Event Driven Architecture
-- [AWS Lambda]() is an example of an [event-driven architecture](../../../1_HLDDesignComponents/0_SystemGlossaries/MessageBrokers/EventDrivenArchitecture.md).
+- [AWS Lambda]() is an example of an [event-driven architecture](../../../1_HLDDesignComponents/4_MessageBrokers/MessageBrokers/EventDrivenArchitecture.md).
 - Most AWS services generate events and act as an event source for Lambda.
 - Lambda runs custom code (functions) in response to events.
 - Lambda functions are designed to process these events and, once invoked, may initiate other actions or subsequent events.

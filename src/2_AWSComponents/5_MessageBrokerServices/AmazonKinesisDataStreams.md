@@ -36,7 +36,7 @@
 
 # Amazon Kinesis Data Streams and AWS DynamoDB
     
-[](../0_AWSDesigns/IOTDataCapture/assets/AWS-IOT-Data-Capture.png)
+[](../../3_HLDDesignProblems/IOTDataCapture/assets/AWS-IOT-Data-Capture.png)
 
 [Read more](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/kds.html)
 

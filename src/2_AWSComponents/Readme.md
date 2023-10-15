@@ -14,25 +14,25 @@
 
 ## Design Scalable System on AWS
 
-![img.png](0_AWSDesigns/DesignScalableSystemWithRDMS/assets/DesignScalableSystemWithRelationalDBOnAWS.drawio.png)
+![img.png](../3_HLDDesignProblems/DesignScalableSystemWithRDMS/assets/DesignScalableSystemWithRelationalDBOnAWS.drawio.png)
 
-[Read more](0_AWSDesigns/DesignScalableSystemWithRDMS/README.md)
+[Read more](../3_HLDDesignProblems/DesignScalableSystemWithRDMS/README.md)
 
 ## Design Multi-Region Active-Active Architecture On AWS
 
-![img.png](0_AWSDesigns/DesignMultiRegionActiveActiveArchitectureOnAWS/AWS-Multi-Region-AZ-HA.drawio.png)
+![img.png](../3_HLDDesignProblems/DesignMultiRegionActiveActiveArchitectureOnAWS/AWS-Multi-Region-AZ-HA.drawio.png)
 
-[Read more](0_AWSDesigns/DesignMultiRegionActiveActiveArchitectureOnAWS/README.md)
+[Read more](../3_HLDDesignProblems/DesignMultiRegionActiveActiveArchitectureOnAWS/README.md)
 
 ## Upload Image using Amazon S3 and Lambda
 
-![img.png](0_AWSDesigns/DesignUploadImageAWSLambdaS3/assets/UploadImage-Lambda.drawio.png)
+![img.png](../3_HLDDesignProblems/DesignUploadImageAWSLambdaS3/assets/UploadImage-Lambda.drawio.png)
 
-[Read more](0_AWSDesigns/DesignUploadImageAWSLambdaS3/README.md)
+[Read more](../3_HLDDesignProblems/DesignUploadImageAWSLambdaS3/README.md)
 
 ## IoT sensor data capture architecture
 
-![](0_AWSDesigns/IOTDataCapture/assets/AWS-IOT-Data-Capture.png)
+![](../3_HLDDesignProblems/IOTDataCapture/assets/AWS-IOT-Data-Capture.png)
 
 ## Real-time data analytics architecture
 
@@ -40,8 +40,8 @@
 
 ## Others
 - [Send-SMS-API design - App Internal Clients, Multiple SMS-Providers, AutoScaling](../3_HLDDesignProblems/NotificationSystem/README.md)
-- [WP Site with Amazon CloudFront & S3](0_AWSDesigns/WPSiteCloudFront&S3.md)
-- [Dropbox Saves Millions by Building a Scalable Metadata Store on Amazon DynamoDB and Amazon S3](0_AWSDesigns/DropboxAmazonDynamoDB/Readme.md)
+- [WP Site with Amazon CloudFront & S3](../3_HLDDesignProblems/WebsiteSiteUsingCloudFront&S3.md)
+- [Dropbox Saves Millions by Building a Scalable Metadata Store on Amazon DynamoDB and Amazon S3](../3_HLDDesignProblems/DropboxHLDDesign/DropboxMetaDataStore.md)
 
 # AWS Services - Architecture, Features etc.
 
@@ -189,7 +189,7 @@
         </td>
         <td>
             <div class="container" style="background:white">
-                <a href="6_DatabaseServices/AmazonElasticCache.md" target="_blank">
+                <a href="6_DatabaseServices/AmazonElasticCache/Readme.md" target="_blank">
                   <img src="https://www.devopsschool.com/blog/wp-content/uploads/2022/03/amazone_elasticache-740x414.png" width="150">
                 </a>
             </div>

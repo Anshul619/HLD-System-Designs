@@ -7,7 +7,7 @@
 # Relationship to DynamoDB
 [Amazon DynamoDB](../../../2_AWSComponents/6_DatabaseServices/AmazonDynamoDB/Readme.md) is built on the principles of [Dynamo]() and is a hosted service within the AWS infrastructure.
 
-However, while [Dynamo](https://en.wikipedia.org/wiki/Dynamo_(storage_system)) is based on [leaderless replication](../../0_SystemGlossaries/Database/ReplicationAndDataConsistency.md), DynamoDB uses single-leader replication.
+However, while [Dynamo](https://en.wikipedia.org/wiki/Dynamo_(storage_system)) is based on [leaderless replication](../1_Glossaries/Replication&Consistency/Replication.md), DynamoDB uses single-leader replication.
 
 # Implementations
 - Amazon published the paper on Dynamo, but never released its implementation. 

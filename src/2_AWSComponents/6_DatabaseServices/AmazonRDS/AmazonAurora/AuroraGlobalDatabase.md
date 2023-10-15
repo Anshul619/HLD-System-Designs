@@ -3,7 +3,7 @@
 - [An Aurora global database]() has a primary [Aurora DB cluster](Readme.md) in one Region, and [up to five secondary Aurora DB clusters](Readme.md) in different Regions.
 - [Only Single-Master Aurora cluster is supported](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/aurora-multi-master.html) in Aurora Global Database i.e. there would be only 1 writer instance and multiple read replicas in different regions.
 
-![img.png](../../../0_AWSDesigns/DesignMultiRegionActiveActiveArchitectureOnAWS/AWS-Multi-Region-AZ-HA.drawio.png)
+![img.png](../../../../3_HLDDesignProblems/DesignMultiRegionActiveActiveArchitectureOnAWS/AWS-Multi-Region-AZ-HA.drawio.png)
 
 # Primary vs Secondary DB Cluster
 
@@ -21,7 +21,7 @@
 | Advantage                                                                                                              | Description                                                                                                                                                                                                                                                       |
 |------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | [Sub-Second Data Access in Any Region](https://aws.amazon.com/rds/aurora/global-database/)                             | [Data Locality]() brings data closer to users in different regions to enable faster reads.                                                                                                                                                                        |
-| [Cross-Region Replication with low replica lag (in less than 1 second)](../../../AWS-Global-Architecture-Region-AZ.md) | [Aurora uses physical, log-based asynchronous replication](../../../../1_HLDDesignComponents/0_SystemGlossaries/Database/AppendOnlyDataStructure.md)                                                                                                              |
+| [Cross-Region Replication with low replica lag (in less than 1 second)](../../../AWS-Global-Architecture-Region-AZ.md) | [Aurora uses physical, log-based asynchronous replication](../../../../1_HLDDesignComponents/3_DatabaseComponents/2_DataStructuresDB/AppendOnlyDataStructure.md)                                                                                                              |
 | [Cross-Region Disaster Recovery](https://aws.amazon.com/rds/aurora/global-database/)                                   | [Disaster Recovery](../../../../1_HLDDesignComponents/0_SystemGlossaries/Reliability/FaultTolerance.md) promotes remote databases to a primary for faster recovery (in less than 1 min) in the event of a disaster. For industries like `Financial Services` etc. |
 
 ![img.png](../assets/AuroraGlobalDB/aurora_global_database_img.png)

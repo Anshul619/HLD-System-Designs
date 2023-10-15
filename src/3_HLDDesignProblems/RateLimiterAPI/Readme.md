@@ -131,7 +131,7 @@ Note:
 
 ### Race Conditions
 - To solve the race condition while updating the counter in [Redis](../../1_HLDDesignComponents/3_DatabaseComponents/In-Memory-Cache/Redis/Readme.md), we would have to apply [transaction locks on the read-write operation](../../1_HLDDesignComponents/3_DatabaseComponents/In-Memory-Cache/Redis/Readme.md#redis-transaction-lock).
-- This would make the [counter update as atomic](../../1_HLDDesignComponents/0_SystemGlossaries/Database/Atomicity.md) in Redis.
+- This would make the [counter update as atomic](../../1_HLDDesignComponents/3_DatabaseComponents/1_Glossaries/ACID/Atomicity.md) in Redis.
 - But this comes at a performance cost ( as latency would increase ).
 
 ### Inconsistency
@@ -145,3 +145,4 @@ Note:
 - [Groking the system design - Designing an API Rate Limiter](https://akshay-iyangar.github.io/system-design/grokking-system-design/system-design-problems/api-rate-limiter.html)
 - [System Design Basics: Rate Limiter](https://medium.com/geekculture/system-design-basics-rate-limiter-351c09a57d14)
 - [How Redis can work for Rate Limit](https://github.com/jwerre/rate-limit-redis)
+- [Stripe - Scaling your API with rate limiters](https://stripe.com/blog/rate-limiters)

@@ -18,7 +18,7 @@
 
 # Amazon Kinesis Data Stream & Data firehouse
 
-![](../../../0_AWSDesigns/IOTDataCapture/assets/AWS-IOT-Data-Capture.png)
+![](../../../../3_HLDDesignProblems/IOTDataCapture/assets/AWS-IOT-Data-Capture.png)
 
 # References
 - [AWS Kinesis Data Streams vs AWS Kinesis Data Firehose](https://www.whizlabs.com/blog/aws-kinesis-data-streams-vs-aws-kinesis-data-firehose/)

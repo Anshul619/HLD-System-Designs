@@ -1,22 +1,17 @@
 # Design Hit Counter System (Real-time Analytics & Reporting)
 
 # Requirements
-- Extremely high write volume
-  - Needs to scale to 100,000 of WPS
-- High read volume
-  - Needs to scale to 10,000 of RPS
-- Horizontally scalable (reads, storage etc.)
-  - Needs to scale to 100+ TB
-- Low Latency
-  - Most reads < 100ms
 
-# Related Coding Problems
-- [Design a Hit Counter - GFG](https://www.geeksforgeeks.org/design-a-hit-counter/?ref=lbp)
-- [Design Hit Counter](https://leetcode.com/problems/design-hit-counter/)
+| Requirement                                 | Description                      |
+|---------------------------------------------|----------------------------------|
+| Extremely high write volume                 | Needs to scale to 100,000 of WPS |
+| High read volume                            | Needs to scale to 10,000 of RPS  |
+| Horizontally scalable (reads, storage etc.) | Needs to scale to 100+ TB        |
+| Low Latency                                 | Most reads < 100ms               |
 
 # Tech Stack
-- [Casandra](../../1_HLDDesignComponents/3_DatabaseComponents/NoSQL-Databases/ApacheCasandra.md) or AWS DynamoDB.
-- [Redis Cache](../../1_HLDDesignComponents/3_DatabaseComponents/In-Memory-Cache/Redis/Readme.md) (with Cluster enabled)
+- [Casandra](../../1_HLDDesignComponents/3_DatabaseComponents/NoSQL-Databases/ApacheCasandra.md).
+- [Redis Cache](../../1_HLDDesignComponents/3_DatabaseComponents/In-Memory-Cache/Redis/Readme.md) (with Cluster enabled).
 - [Zookeeper](../../1_HLDDesignComponents/7_ClusterCoordinationService/ApacheZookeeper.md) for servers coordination.
 
 # Rainbird design
@@ -78,6 +73,8 @@ count = 1
 - Crash Recovery, Audit Log
 
 # References
+- [Design a Hit Counter - GFG](https://www.geeksforgeeks.org/design-a-hit-counter/?ref=lbp)
+- [Design Hit Counter](https://leetcode.com/problems/design-hit-counter/)
 - [Rainbird: Realtime Analytics at Twitter](https://www.slideshare.net/kevinweil/rainbird-realtime-analytics-at-twitter-strata-2011)
 - [Microsoft virtual | Design distributed counter](https://leetcode.com/discuss/interview-question/system-design/685310/Microsoft-virtual-or-Design-distributed-counter)
 - [What Web3 could learn from Twitter’s timeline architecture](https://medium.com/zettablock-hq/what-web3-could-learn-from-twitters-timeline-architecture-207e0673ed2d)

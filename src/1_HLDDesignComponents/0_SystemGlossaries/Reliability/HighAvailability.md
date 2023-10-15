@@ -41,8 +41,8 @@
 - Fail-over adds more hardware and additional complexity.
 - There is a potential for loss of data if the active system fails before any newly written data can be replicated to the passive.
 
-### Replication & Data Consistency
-- [Read here about replication & data consistency](../Database/ReplicationAndDataConsistency.md)
+### Replication
+- [Read here about replication](../../3_DatabaseComponents/1_Glossaries/Replication&Consistency/Replication.md)
 
 # Source(s) and further reading
 - [The quest for availability in the cloud](https://acloudguru.com/blog/engineering/the-quest-for-availability?utm_source=medium_blog&utm_medium=redirect&utm_campaign=medium_blog)

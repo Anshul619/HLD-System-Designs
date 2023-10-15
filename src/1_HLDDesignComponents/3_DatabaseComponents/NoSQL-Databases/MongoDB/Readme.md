@@ -11,19 +11,69 @@
 
 # General Use Cases
 - [MongoDB]() is more suitable to manage NoSQL data requiring create, read, update and delete (CRUD) operations. 
-- It offers [high scalability, reliability, and performance](../../../0_SystemGlossaries/Scalability/DBScalability.md). 
+- It offers [high scalability, reliability, and performance](../../1_Glossaries/DBScalability.md). 
 - MongoDB also uses text-based indexes for full-text queries, but the search is slow, and the search server does not provide tokenizers and analyzers like [Elasticsearch](../../Search-Indexes/ElasticSearch) does.
 
+## Use Case, Apps
+
+| UC                         |
+|----------------------------|
+| E-commerce                 |
+| Content Management         |
+| IoT & time-series data     |
+| Trading and Payments       |
+| Gaming                     |
+| Mobile Apps                |
+| Real-time analytics and AI |
+
 # :star: Casandra vs MongoDB
-- [Read more](../CasandraVsMongoDB.md)
+- [Read more](../../3_DecideDatabase/DynamoDBVsMongoDBVsCasandra.md)
 
 # MQL (Mongo Query Language)
 - [MongoDB]() has a rich query language called [Mongo Query Language (MQL)](https://www.mongodb.com/developer/products/atlas/getting-started-atlas-mongodb-query-language-mql/). 
 - It supports a wide variety of modern native drivers as well as a shell.
-- MongoDB supports [fully ACID compliant transactions](../../../0_SystemGlossaries/Database/ACIDPropertyTransaction.md).
+- MongoDB supports [fully ACID compliant transactions](../../1_Glossaries/ACID/Readme.md).
 
-# Other links
-- [Split Chunks in a Sharded Cluster](https://www.mongodb.com/docs/manual/tutorial/split-chunks-in-sharded-cluster/)
+# Relational vs Document DB
+
+The following table compares terminology used by document databases with terminology used by relational databases.
+
+| Relational          | Document          |
+|---------------------|-------------------|
+| Table               | Collection        |
+| Row                 | Document          |
+| Column              | Field             |
+| Primary key         | Object ID         |
+| Nested table/object | Embedded document |
+
+# Book example - JSON-like document
+
+````json
+[
+    {
+        "year" : 2013,
+        "title" : "Turn It Down, Or Else!",
+        "info" : {
+            "directors" : [ "Alice Smith", "Bob Jones"],
+            "release_date" : "2013-01-18T00:00:00Z",
+            "rating" : 6.2,
+            "genres" : ["Comedy", "Drama"],
+            "image_url" : "http://ia.media-imdb.com/images/N/O9ERWAU7FS797AJ7LU8HN09AMUP908RLlo5JF90EWR7LJKQ7@@._V1_SX400_.jpg",
+            "plot" : "A rock band plays their music at high volumes, annoying the neighbors.",
+            "actors" : ["David Matthewman", "Jonathan G. Neff"]
+        }
+    },
+    {
+        "year": 2015,
+        "title": "The Big New Movie",
+        "info": {
+            "plot": "Nothing happens at all.",
+            "rating": 0
+        }
+    }
+]
+````
 
 # References
 - [MongoDB Interview Questions](https://www.interviewbit.com/mongodb-interview-questions/)
+- [Split Chunks in a Sharded Cluster](https://www.mongodb.com/docs/manual/tutorial/split-chunks-in-sharded-cluster/)

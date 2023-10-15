@@ -10,20 +10,21 @@
     - There is no storage of json formatted data on the file system level.
     - The files contain `optimized binary data` and `you need to pass through the elastic API to get a JSON representation of a document`.
 
+# Services based on Apache Lucene
+
+| Service                                          |
+|--------------------------------------------------|
+| [Elastic Search](ElasticSearch/Readme.md)        |
+| [Apache Solr](ApacheSolr.md)                     |
+| [New Relic](../../8_MonitoringTools/NewRelic.md) |
+| [MongoDB Atlas Search](MongoAtlasSearch.md)      |
+
 # :star: Real world usages of Apache Lucene
 - Search - Full-text, Partial etc.
 - Logs-analysis
   - Since data is indexed in Lucene, hence logs analysis is fast in Lucene.
 - Dashboard, Visualize data, Metrics etc.
   - Since data aggregation is fast in Lucene, hence data visualization is quick in Lucene.
-
-# Services based on Apache Lucene
-
-| Service                                          | Remarks |
-|--------------------------------------------------|---------|
-| [Elastic Search](ElasticSearch/Readme.md)        | -       |
-| [Apache Solr](ApacheSolr.md)                     | -       |
-| [New Relic](../../8_MonitoringTools/NewRelic.md) | -       |
 
 # What is tokenizer?
 - [Tokenizers](https://lucene.apache.org/core/7_3_1/core/org/apache/lucene/analysis/Tokenizer.html) are used to generate the tokens from a text string/document.

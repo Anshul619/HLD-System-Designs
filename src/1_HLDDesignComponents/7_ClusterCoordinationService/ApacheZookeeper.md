@@ -6,7 +6,7 @@
 
 # :star: Real world use cases
 - [Apache Kafka](../4_MessageBrokers/Kafka/Readme.md#zookeeper)
-- [Apache Marathon & Mesos](../6_ContainerOrchestrationServices/ApacheMarathon&Mesos.md)
 - [Apache HBase](../3_DatabaseComponents/NoSQL-Databases/ApacheHBase.md)
+- [Apache Marathon & Mesos](../6_ContainerOrchestrationServices/ApacheMarathon&Mesos.md)
 - [Apache SolrCloud](../3_DatabaseComponents/Search-Indexes/ApacheSolr.md)
 - [Twitter Hit Counter](../../3_HLDDesignProblems/TwitterHitCounterDesign/Readme.md)

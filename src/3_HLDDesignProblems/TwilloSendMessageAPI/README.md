@@ -2,7 +2,7 @@
 - Design Twillo API - Message platform for business.
 - Different plans - Basic, Paid etc.
 
-## Requirements - Basic Plan
+# Requirements - Basic Plan
 - 1000 free messages
 - X amount per whatsapp
 - Y amount per sms
@@ -10,12 +10,15 @@
 
 ![img.png](assets/TwilloAPIDesign.drawio.png)
 
-# Tech Specs
-- [Kafka](../../1_HLDDesignComponents/4_MessageBrokers/Kafka/Readme.md) can be used as a message broker, to store & process the messages.
-- There would be 2 different topics (in [Kafka](../../1_HLDDesignComponents/4_MessageBrokers/Kafka/Readme.md)) for SMS, WhatsApp message types etc.
-- [How to decide number of partitions in Kafka?](../../1_HLDDesignComponents/4_MessageBrokers/Kafka/Readme.md#estimation---how-to-decide-number-of-partitions-in-kafkahttpswwwconfluentiobloghow-choose-number-topics-partitions-kafka-cluster)
-- [To understand more about Rate Limiting, check here](../RateLimiterAPI)
-- [Casandra](../../1_HLDDesignComponents/3_DatabaseComponents/NoSQL-Databases/ApacheCasandra.md) or [Amazon DynamoDB](../../2_AWSComponents/6_DatabaseServices/AmazonDynamoDB/Readme.md) can be used, to store messages (from logging, auditing perspective).
+# Tech Stack
+
+| Service                       | Remarks                                                                                                                                                            |
+|-------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Kafka - Data Streaming        | [Kafka](../../1_HLDDesignComponents/4_MessageBrokers/Kafka/Readme.md) can be used for the data streaming, to store & process the messages.                         |
+| Kafka - Topics                | There would be 2 different topics (in [Kafka](../../1_HLDDesignComponents/4_MessageBrokers/Kafka/Readme.md)) for SMS, WhatsApp message types etc.                  |
+| Kafka - Estimation            | [How to decide number of partitions in Kafka?](../../1_HLDDesignComponents/4_MessageBrokers/Kafka/KafkaEstimations.md)                                             |
+| Redis - Rate Limiting         | [To understand more about Rate Limiting, check here](../RateLimiterAPI)                                                                                            |
+| Casandra - Messages Datastore | [Casandra](../../1_HLDDesignComponents/3_DatabaseComponents/NoSQL-Databases/ApacheCasandra.md) can be used to store messages (from logging, auditing perspective). |
 
 # DB Design
 
@@ -49,3 +52,4 @@
     
 # References
 - [Messaging Architecture for Independent Software Vendors (ISVs)](https://www.twilio.com/blog/messaging-architecture-independent-software-vendors)
+- [Stripe - Scaling your API with rate limiters](https://stripe.com/blog/rate-limiters)

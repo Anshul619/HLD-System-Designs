@@ -7,12 +7,14 @@
 
 # Features
 
-| Feature                                                                                   | Description                                                                                                                                                                                                                                                      |
-|-------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Stateless nature](../0_SystemGlossaries/Readme.md#stateful-vs-stateless)                 | Server never stores the client’s state (i.e. No Shared Context or Cookies).<br/>- When the client makes a request, it includes all information necessary for the server to process that request, and resends the information with subsequent requests if needed. |
-| Cacheable                                                                                 | REST requires requests to be cacheable whenever possible, and caching is implemented using HTTP’s native caching headers.                                                                                                                                        |
-| [Link relation](https://restful-api-design.readthedocs.io/en/latest/relationships.html)   | To link two resources together i.e. specify relationship between resources.                                                                                                                                                                                      |
-| Idempotent API                                                                            | In the context of REST APIs, when making multiple identical requests has the same effect as making a single request – then that REST API is called idempotent.                                                                                                                                                                                                                                                                 |
+| Feature                                                                                 | Description                                                                                                                                                                                                                                                                           |
+|-----------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| [Stateless nature](../0_SystemGlossaries/Readme.md#stateful-vs-stateless)               | Server never stores the client’s state (i.e. No Shared Context or Cookies).<br/>- When the client makes a request, it includes all information necessary for the server to process that request, and resends the information with subsequent requests if needed.                      |
+| Cacheable                                                                               | REST requires requests to be cacheable whenever possible, and caching is implemented using HTTP’s native caching headers.                                                                                                                                                             |
+| [Link relation](https://restful-api-design.readthedocs.io/en/latest/relationships.html) | To link two resources together i.e. specify relationship between resources.                                                                                                                                                                                                           |
+| Idempotent API                                                                          | In the context of REST APIs, when making multiple identical requests has the same effect as making a single request – then that REST API is called idempotent.                                                                                                                        |
+| [Speed is a feature](https://www.enchant.com/speed-is-a-feature)                        | -                                                                                                                                                                                                                                                                                     |
+| Versioning                                                                              | Academically speaking, it should probably be in a header. However, the version needs to be in the URL to ensure browser explorability of the resources across versions (remember the API requirements specified at the top of this post?) and to have a simpler developer experience. |
 
 # HTTP Headers
 
@@ -44,5 +46,15 @@
 | GET /users/{id}                               | To retrieve a specific user                             |
 | /companies/{id} and /companies                | Collection of resources                                 |
 | /companies/{companyId}/employees/{employeeId} | To access a subresource attached to a specific resource |
+
+# Design Effective & Safe APIs
+
+![](https://media.licdn.com/dms/image/D4E22AQGH_QbG8Jb2TA/feedshare-shrink_2048_1536/0/1696914794100?e=1700092800&v=beta&t=4CvXpMUISwFg4uc8d2Hr4YHr2PyGJ3WpTyGAVyeceK8)
+
+[Read more](https://www.linkedin.com/posts/bytebytego_systemdesign-coding-interviewtips-activity-7117376511090774016-PjMg?utm_source=share&utm_medium=member_desktop)
+
+# Reference
+- [Best Practices for Designing a Pragmatic RESTful API](https://www.vinaysahni.com/best-practices-for-a-pragmatic-restful-api)
+
 
 

@@ -19,7 +19,7 @@
   - ap-south-1 (Asia Pacific (Mumbai))
 - [In AWS, every region would have its own cluster](../1_HLDDesignComponents/0_SystemGlossaries/Scalability/ServersCluster.md).
 
-![img.png](0_AWSDesigns/DesignMultiRegionActiveActiveArchitectureOnAWS/AWS-Multi-Region-AZ-HA.drawio.png)
+![img.png](../3_HLDDesignProblems/DesignMultiRegionActiveActiveArchitectureOnAWS/AWS-Multi-Region-AZ-HA.drawio.png)
 
 ## :star: AWS Region Consideration
 
@@ -32,7 +32,7 @@
 
 # Availability Zones (AZ)
 - [An Availability Zone (AZ)](https://aws.amazon.com/about-aws/global-infrastructure/regions_az/) is one or more discrete data centers with redundant power, networking, and connectivity in an AWS Region. 
-- AZs give customers the ability to operate production applications and databases that are more [highly available](../1_HLDDesignComponents/0_SystemGlossaries/Reliability/HighAvailability.md), [fault-tolerant](../1_HLDDesignComponents/0_SystemGlossaries/Reliability/FaultTolerance.md), and [scalable](../1_HLDDesignComponents/0_SystemGlossaries/Scalability/DBScalability.md) than would be possible from a single data center.
+- AZs give customers the ability to operate production applications and databases that are more [highly available](../1_HLDDesignComponents/0_SystemGlossaries/Reliability/HighAvailability.md), [fault-tolerant](../1_HLDDesignComponents/0_SystemGlossaries/Reliability/FaultTolerance.md), and [scalable](../1_HLDDesignComponents/3_DatabaseComponents/1_Glossaries/DBScalability.md) than would be possible from a single data center.
 
 | Concept                                                                                                   | Remarks                                                                                                                                                                                                                                                                                                                                                                                                                      |
 |-----------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|

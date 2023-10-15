@@ -8,4 +8,4 @@
 
 # Use Cases
 
-![](../../0_AWSDesigns/IOTDataCapture/assets/AWS-IOT-Data-Capture.png)
+![](../../../3_HLDDesignProblems/IOTDataCapture/assets/AWS-IOT-Data-Capture.png)

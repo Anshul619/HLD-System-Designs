@@ -5,7 +5,7 @@
 
 ![img.png](https://d2908q01vomqb2.cloudfront.net/cb4e5208b4cd87268b208e49452ed6e89a68e0b8/2017/11/06/1-1024x576.png)
 
-[Read more](../../0_AWSDesigns/WPSiteCloudFront&S3.md)
+[Read more](../../../3_HLDDesignProblems/WebsiteSiteUsingCloudFront&S3.md)
 
 # Site endpoints
 

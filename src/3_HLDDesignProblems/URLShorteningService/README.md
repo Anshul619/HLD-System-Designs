@@ -86,7 +86,7 @@ In this scheme, we take a hash of the object we are storing.
 - We then calculate which partition to use based upon the hash.
 - In our case, we can take the hash of the ‘key’ or the short link to determine the partition in which we store the data object.
 
-This approach can still lead to overloaded partitions, which can be solved using [Consistent Hashing](../../1_HLDDesignComponents/0_SystemGlossaries/Database/ConsistentHashing.md).
+This approach can still lead to overloaded partitions, which can be solved using [Consistent Hashing](../../1_HLDDesignComponents/3_DatabaseComponents/1_Glossaries/PartioningSharding.md).
 
 # Open Question
 - How to improve latency of write operation? 

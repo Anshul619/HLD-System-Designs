@@ -1,6 +1,6 @@
 # Basic Storage Calculation Parameters
 
-## Ball-mark Parameters
+# Ball-mark Parameters
 
 | Basis                                                                                                                                                                                 | Module                         | Value                                                                                                               |
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------|---------------------------------------------------------------------------------------------------------------------|
@@ -21,7 +21,7 @@
 | Avg Id size (bytes)                                                                                                                                                                   | DB Scalability                 | 8 bytes. [Bytes Calculator](https://mothereff.in/byte-counter)                                                      |
 | Ideal Latency Time (for an API/microservice)                                                                                                                                          | Traffic                        | Less than 100 ms                                                                                                    |
 
-## Latency Comparison Numbers
+# Latency Comparison Numbers
 
 | Storage                                   | [Latency](https://github.com/donnemartin/system-design-primer#latency-numbers-every-programmer-should-know) | Remarks                     |
 |-------------------------------------------|------------------------------------------------------------------------------------------------------------|-----------------------------|
