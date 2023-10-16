@@ -1,6 +1,6 @@
 # Server Cluster
 - A [Server Cluster](https://www.racksolutions.com/news/blog/server-cluster-how-it-works/) consists of a group of servers working simultaneously under a `single IP address`.
-- Server clustering also ensures [Higher Availability](../Reliability/HighAvailability.md) (through [replications](../../3_DatabaseComponents/1_Glossaries/Replication&Consistency/Replication.md)), [proper Load Balancing](LoadBalancer.md) and [System Scalability](../../3_DatabaseComponents/1_Glossaries/DBScalability.md) (through sharding & read replicas).
+- Server clustering also ensures [Higher Availability](../Reliability/HighAvailability.md) (through [replications](../../3_DatabaseComponents/1_Glossaries/Consistency&Replication/Replication.md)), [proper Load Balancing](LoadBalancer.md) and [System Scalability](../../3_DatabaseComponents/1_Glossaries/DBScalability.md) (through sharding & read replicas).
 - Generally, every region would have its own cluster.
 
 # Few Examples

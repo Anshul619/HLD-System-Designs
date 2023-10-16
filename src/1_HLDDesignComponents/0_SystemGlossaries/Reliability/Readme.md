@@ -3,7 +3,7 @@
 | [High Availability](HighAvailability.md)                                                   |
 | [Fault Tolerance](FaultTolerance.md)                                                       |
 | [Disaster Recovery](DisasterRecovery.md)                                                   |
-| [Replication & Consistency](../../3_DatabaseComponents/1_Glossaries/Replication&Consistency) |
+| [Replication & Consistency](../../3_DatabaseComponents/1_Glossaries/Consistency&Replication) |
 
 # Service Level Objectives
 

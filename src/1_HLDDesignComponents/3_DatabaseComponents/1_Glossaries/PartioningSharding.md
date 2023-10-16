@@ -3,7 +3,7 @@
 - Instead of one shard for writes, we partition/shard the database based on a partition key. 
 - This would increase query throughput and overall system write throughput.
 
-> Note - This partitioning is nothing related to network partition (in [CAP Theorem](CAPTheorem/CAPTheorem.md)).
+> Note - This partitioning is nothing related to network partition (in [CAP Theorem](CAPTheorem/Readme.md)).
 
 # Key Terminologies
 

@@ -16,9 +16,9 @@
 | :star: [Indexing](../3_DatabaseComponents/1_Glossaries/Indexing.md)                                          | Data Stores       | :rocket: [Scalability](Scalability/Readme.md)    |
 | :star: [DB Scalability](../3_DatabaseComponents/1_Glossaries/DBScalability.md)                               | Data Stores       | :rocket: [Scalability](Scalability/Readme.md)    |
 | :star: [ACID Properties of the Transaction](../3_DatabaseComponents/1_Glossaries/ACIDTransactions/Readme.md) | Data Stores       | Others                                           |
-| :star: [CAP Theorem of the Distributed Systems](../3_DatabaseComponents/1_Glossaries/CAPTheorem/CAPTheorem.md)          | Data Stores       | Others                                           |
-| :star: [Replication](../3_DatabaseComponents/1_Glossaries/Replication&Consistency/Replication.md)            | Data Stores       | :handshake: [Reliability](Reliability/Readme.md) |
-| :star: [Consistency Patterns](../3_DatabaseComponents/1_Glossaries/Replication&Consistency/Consistency.md)   | Data Stores       | :handshake: [Reliability](Reliability/Readme.md) |
+| :star: [CAP Theorem of the Distributed Systems](../3_DatabaseComponents/1_Glossaries/CAPTheorem/Readme.md)          | Data Stores       | Others                                           |
+| :star: [Replication](../3_DatabaseComponents/1_Glossaries/Consistency&Replication/Replication.md)            | Data Stores       | :handshake: [Reliability](Reliability/Readme.md) |
+| :star: [Consistency Patterns](../3_DatabaseComponents/1_Glossaries/Consistency&Replication/Readme.md)   | Data Stores       | :handshake: [Reliability](Reliability/Readme.md) |
 | [Atomicity](../3_DatabaseComponents/1_Glossaries/ACIDTransactions/Atomicity.md)                                               | Data Stores       | Others                                           |
 | [Durability](../3_DatabaseComponents/1_Glossaries/ACIDTransactions/Durability.md)                                             | Data Stores       | Others                                           |
 | [Append Only Data Structure](../3_DatabaseComponents/2_DataStructuresDB/AppendOnlyDataStructure.md)                | Data Stores       | :rocket: [Scalability](Scalability/Readme.md)    |

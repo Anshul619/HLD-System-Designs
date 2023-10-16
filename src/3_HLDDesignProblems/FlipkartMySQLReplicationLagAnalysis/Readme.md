@@ -6,7 +6,7 @@
 - Altair (Flipkart’s DBaaS) manages around 700 clusters as of today and out of these, 450 odd clusters are running on MySQL v5.7 and 250 odd clusters are still running on MySQL v.5.6.
 - These clusters run different workloads, for example, Order, Shipment and Warehouse management systems, Accounting systems etc.
 - As for the data size, these clusters range from 500GB to 3TB.
-- [Read about replication lag](../../1_HLDDesignComponents/3_DatabaseComponents/1_Glossaries/Replication&Consistency/Replication.md).
+- [Read about replication lag](../../1_HLDDesignComponents/3_DatabaseComponents/1_Glossaries/Consistency&Replication/Replication.md).
 
 | Deployed Cluster   | Total Count  | High Replication Lag Clusters   |
 |--------------------|--------------|---------------------------------|

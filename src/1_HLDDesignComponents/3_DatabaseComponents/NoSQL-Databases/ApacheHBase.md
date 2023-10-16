@@ -1,6 +1,6 @@
 # Apache HBase
 - An open source, non-relational, versioned database that runs on top of [Hadoop Distributed File System (HDFS)](../../5_BigDataComponents/BatchProcessing/ApacheHadoop/ApacheHDFS.md) or [Amazon S3](../../../2_AWSComponents/7_StorageServices/3_ObjectStorageS3/Readme.md) (using [EMRFS](../../../2_AWSComponents/10_BigDataComponents/BatchProcessing/ETL/AmazonEMR.md)). 
-- [Apache HBase](https://hbase.apache.org/) is a massively scalable, distributed big data store built for random, [strictly consistent](../1_Glossaries/Replication&Consistency/Consistency.md), real-time access for tables with `billions of rows and millions of columns`.
+- [Apache HBase](https://hbase.apache.org/) is a massively scalable, distributed big data store built for random, [strongly consistent](../1_Glossaries/Consistency&Replication/Readme.md), real-time access for tables with `billions of rows and millions of columns`.
 
 # Key Features
 - [Highly scalable, distributed systems](../1_Glossaries/DBScalability.md).
@@ -22,5 +22,5 @@
 # References
 - [What is Hadoop?](https://aws.amazon.com/emr/details/hadoop/what-is-hadoop/)
 - [HBase Vs MongoDB – A Thorough Comparison Between NoSQL Databases](https://simpleprogrammer.com/hbase-vs-mongodb/)
-- [AWS DynamoDB VS HBase](https://stackoverflow.com/questions/10908531/aws-dynamodb-vs-hbase#29381684)
-- [Does-Facebook-use-Apache-Cassandra](https://www.quora.com/Does-Facebook-use-Apache-Cassandra)
+- [Amazon DynamoDB VS HBase](https://stackoverflow.com/questions/10908531/aws-dynamodb-vs-hbase#29381684)
+- [Does-Facebook-use-Apache-Cassandra?](https://www.quora.com/Does-Facebook-use-Apache-Cassandra)
