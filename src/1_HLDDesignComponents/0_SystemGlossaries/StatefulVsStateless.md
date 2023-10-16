@@ -1,4 +1,3 @@
-
 # :star: Stateless Protocol
 - [Stateless Protocol](https://www.geeksforgeeks.org/difference-between-stateless-and-stateful-protocol/) does not require the server to retain the server information or session details.
 - In a stateless architecture, the server must treat all client requests independently of prior requests or sessions, and should not store any session information locally.

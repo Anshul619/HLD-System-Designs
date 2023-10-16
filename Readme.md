@@ -15,9 +15,12 @@ This repo contains the various system design components info, questions and solu
       <td>
         <div class="container" style="background:white">
             <div class="block two first">
-                <a href="/src/1_HLDDesignComponents/2_APITechOptions/REST.md" target="_blank">
-                  <img src="https://www.snmpcenter.com/wp-content/uploads/2016/10/RESTful-API-logo-for-light-bg-600x205.png" width="150">
-                </a>
+
+[//]: # (                <a href="/src/1_HLDDesignComponents/2_APITechOptions/REST.md" target="_blank">)
+
+[//]: # (                  <img src="https://www.snmpcenter.com/wp-content/uploads/2016/10/RESTful-API-logo-for-light-bg-600x205.png" width="150">)
+
+[//]: # (                </a>)
                 <a href="/src/1_HLDDesignComponents/2_APITechOptions/gRPC.md" target="_blank">
                   <img src="https://res.cloudinary.com/practicaldev/image/fetch/s--TNgs2Fd7--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/8susytd9w6lxe9sreqvd.jpg" width="150">
                 </a>

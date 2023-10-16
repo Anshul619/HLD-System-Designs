@@ -1,6 +1,6 @@
 # :star: ACID Properties of the Transaction
 
-![img.png](../../../0_SystemGlossaries/assets/ACID_Property_DBMS.drawio.png)
+![img.png](../assets/ACID_Property_DBMS.drawio.png)
 
 # [Atomicity](Atomicity.md)
 

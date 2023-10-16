@@ -5,7 +5,7 @@
   - If not create a file
   - Append data to file
 - Users can call this api concurrently
-- [Ensure durability](../../1_HLDDesignComponents/3_DatabaseComponents/1_Glossaries/ACID/Durability.md) ( file must be saved, before return true to the API )
+- [Ensure durability](../../1_HLDDesignComponents/3_DatabaseComponents/1_Glossaries/ACIDTransactions/Durability.md) ( file must be saved, before return true to the API )
 
 ![img.png](assets/Logging-File-Aggregation.drawio.png)
 

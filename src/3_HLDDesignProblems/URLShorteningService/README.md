@@ -51,8 +51,8 @@ Gotcha: What if two people try to shorten the same URL?
 - LastLogin
 
 # Which database to use? - SQL vs NoSQL
-- [NoSQL](../../1_HLDDesignComponents/3_DatabaseComponents/Readme.md) can be used here since we are anticipating a billion of rows & no relationship is needed between rows.
-- Read more about [NoSQL vs SQL](../../1_HLDDesignComponents/3_DatabaseComponents/Readme.md).
+- [NoSQL](../../1_HLDDesignComponents/3_DatabaseComponents/NoSQL-Databases/Readme.md) can be used here since we are anticipating a billion of rows & no relationship is needed between rows.
+- Read more about [NoSQL vs SQL](../../1_HLDDesignComponents/3_DatabaseComponents/3_DecideDatabase/SQLvsNoSQL.md).
 
 # Cache frequently accessed URLs
 - We can cache URLs that are frequently accessed. (with `LRU - Least Recently Used` policy)

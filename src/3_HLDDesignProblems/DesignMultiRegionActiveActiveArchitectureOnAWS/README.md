@@ -29,7 +29,7 @@ However the [multi-region](../../2_AWSComponents/AWS-Global-Architecture-Region-
 # How to build multi-region active-active architecture in AWS?
 
 ## Reliable data replication
-- Since we need to maintain [high availability and partition tolerance in CAP theorem](../../1_HLDDesignComponents/3_DatabaseComponents/1_Glossaries/CAPTheorem.md), we have to compromise consistency.
+- Since we need to maintain [high availability and partition tolerance in CAP theorem](../../1_HLDDesignComponents/3_DatabaseComponents/1_Glossaries/CAPTheorem/CAPTheorem.md), we have to compromise consistency.
 - [Eventual consistency](../../1_HLDDesignComponents/3_DatabaseComponents/1_Glossaries/Replication&Consistency/Consistency.md) would have to be done, as databases are spread across multi-regions.
 
 ## Global network infrastructure

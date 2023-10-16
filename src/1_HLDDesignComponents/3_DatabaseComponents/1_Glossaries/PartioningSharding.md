@@ -3,7 +3,7 @@
 - Instead of one shard for writes, we partition/shard the database based on a partition key. 
 - This would increase query throughput and overall system write throughput.
 
-> Note - This partitioning is nothing related to network partition (in [CAP Theorem](CAPTheorem.md)).
+> Note - This partitioning is nothing related to network partition (in [CAP Theorem](CAPTheorem/CAPTheorem.md)).
 
 # Key Terminologies
 
@@ -35,7 +35,7 @@
 
 # Consistent Hashing
 
-![img.png](../../0_SystemGlossaries/assets/consistent_sharding.png)
+![img.png](assets/consistent_sharding.png)
 
 # References
 - [A Guide to Consistent Hashing](https://www.toptal.com/big-data/consistent-hashing)
