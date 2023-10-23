@@ -4,3 +4,6 @@
 - A [log-based message broker like Kafka](../../4_MessageBrokers/Readme.md) is well suited for transporting the change events from the source database, since it preserves the ordering of messages (avoiding the reordering issue).
 
 ![img.png](assets/cdc.png)
+
+# References
+- [Swiggy - Architecture of CDC System](https://bytes.swiggy.com/architecture-of-cdc-system-a975a081691f)

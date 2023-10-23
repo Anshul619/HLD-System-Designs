@@ -9,13 +9,13 @@
 |---------------------------------------------------------------------------------------------------------------|-------------------------------------------|
 | [Kubernates Cluster](../../6_ContainerOrchestrationServices/Kubernates.md)                                    | Cluster of Containers                     |
 | [Kafka Cluster](../../4_MessageBrokers/Kafka/Readme.md)                                                       | Cluster of Topics (High-Throughput MQ)    |                     
-| [Amazon Aurora Clusters](../../../2_AWSComponents/6_DatabaseServices/AmazonRDS/AmazonAurora/Readme.md)        | Cluster of DB instances, across Multi-AZs |
+| [Amazon RDS Clusters](../../../2_AWSComponents/6_DatabaseServices/AmazonRDS/MultiAZDeployment.md)             | Cluster of DB instances, across Multi-AZs |
 | [Redis Cluster](../../3_DatabaseComponents/In-Memory-Cache/Redis/RedisCluster.md)                             | Cluster of Redis Nodes (In-Memory Cache)  |
 | [Amazon Elastic Cache Cluster](../../../2_AWSComponents/6_DatabaseServices/AmazonElasticCache/ClusterMode.md) | Cluster of Redis Nodes, across Multi-AZs  |
-| [ElasticSearch Cluster](../../3_DatabaseComponents/Search-Indexes/ElasticSearch/ElasticSearchCluster.md)      | Cluster of JSON Data, Indexes etc.        |
+| [ElasticSearch Cluster](../../3_DatabaseComponents/Search-DBs/ElasticSearch/ElasticSearchCluster.md)      | Cluster of JSON Data, Indexes etc.        |
 | [OpenSearch Cluster](../../../2_AWSComponents/6_DatabaseServices/AmazonOpenSearch.md)                         | Cluster of JSON Data, Indexes etc.        |
 | [Casandra Cluster](../../3_DatabaseComponents/NoSQL-Databases/ApacheCasandra.md)                              | Cluster of wide-columns DBs               |
-| [Hadoop Cluster](../../5_BigDataComponents/BatchProcessing/ApacheHadoop)                                      | Cluster of different components           |
+| [Hadoop Cluster](../../5_BigDataComponents/ETLServices/BatchProcessing/ApacheHadoop)                                      | Cluster of different components           |
 
 # What is Cluster capacity?
 - In general, a cluster (for ex. [Kubernates cluster](../../6_ContainerOrchestrationServices/Kubernates.md)) can be seen as abstracting a set of individual nodes as a big "super node".

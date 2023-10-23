@@ -7,7 +7,7 @@
 - You can also enable rotation for other secrets using [AWS Lambda functions](../../3_ComputeServices/AWSLambda/Readme.md). 
 - To retrieve secrets, you simply replace hard-coded secrets in applications with a call to Secrets Manager APIs, eliminating the need to expose plaintext secrets.
 
-![img.png](../../../3_HLDDesignProblems/DesignUploadImageAWSLambdaS3/assets/UploadImage-Lambda.drawio.png)
+![img.png](../../../3_HLDDesignProblems/AWSDesignUploadImageLambdaS3/assets/UploadImage-Lambda.drawio.png)
 
 # Attach a policy
 - In a resource-based policy, [you specify who can access the secret and the actions](https://docs.aws.amazon.com/secretsmanager/latest/userguide/auth-and-access_resource-policies.html) they can perform on the secret.

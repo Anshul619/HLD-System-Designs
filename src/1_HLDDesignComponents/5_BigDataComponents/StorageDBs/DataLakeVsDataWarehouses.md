@@ -1,0 +1,10 @@
+# Data Lake vs Data Warehouses
+
+|                   | Data Warehouse                                                                                   | Data Lake                                                                                                         |
+|-------------------|--------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------|
+| Data              | Relational from transactional systems, operational databases, and line of business applications. | Non-relational and relational from IoT devices, web sites, mobile apps, social media, and corporate applications. |
+| Schema            | `schema-on-write`                                                                                | schema-on-read - written at the time of analysis                                                                  |
+| Price/Performance | Fastest query results using higher cost storage                                                  | Query results getting faster using low-cost storage                                                               |
+| Data Quality      | Highly curated data that serves as the central version of the truth.                             | Any data that may or may not be curated (ie. raw data)                                                            |
+| Users             | Business analysts                                                                                | Data scientists, Data developers, and Business analysts (using curated data)                                      |
+| Analytics         | Batch reporting, BI and visualizations                                                           | Machine Learning, Predictive analytics, data discovery and profiling.                                             |

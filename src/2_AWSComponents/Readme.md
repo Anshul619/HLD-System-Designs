@@ -14,33 +14,39 @@
 
 ## Design Scalable System on AWS
 
-![img.png](../3_HLDDesignProblems/DesignScalableSystemWithRDMS/assets/DesignScalableSystemWithRelationalDBOnAWS.drawio.png)
+![img.png](../3_HLDDesignProblems/AWSDesignScalableSystemWithRDMS/assets/DesignScalableSystemWithRelationalDBOnAWS.drawio.png)
 
-[Read more](../3_HLDDesignProblems/DesignScalableSystemWithRDMS/README.md)
+[Read more](../3_HLDDesignProblems/AWSDesignScalableSystemWithRDMS/Readme.md)
 
 ## Design Multi-Region Active-Active Architecture On AWS
 
-![img.png](../3_HLDDesignProblems/DesignMultiRegionActiveActiveArchitectureOnAWS/AWS-Multi-Region-AZ-HA.drawio.png)
+![img.png](../3_HLDDesignProblems/AWSDesignMultiRegionActiveActiveArchitecture/AWS-Multi-Region-AZ-HA.drawio.png)
 
-[Read more](../3_HLDDesignProblems/DesignMultiRegionActiveActiveArchitectureOnAWS/README.md)
+[Read more](../3_HLDDesignProblems/AWSDesignMultiRegionActiveActiveArchitecture/Readme.md)
 
 ## Upload Image using Amazon S3 and Lambda
 
-![img.png](../3_HLDDesignProblems/DesignUploadImageAWSLambdaS3/assets/UploadImage-Lambda.drawio.png)
+![img.png](../3_HLDDesignProblems/AWSDesignUploadImageLambdaS3/assets/UploadImage-Lambda.drawio.png)
 
-[Read more](../3_HLDDesignProblems/DesignUploadImageAWSLambdaS3/README.md)
+[Read more](../3_HLDDesignProblems/AWSDesignUploadImageLambdaS3/Readme.md)
 
-## IoT sensor data capture architecture
+## Bookstore app on AWS
 
-![](../3_HLDDesignProblems/IOTDataCapture/assets/AWS-IOT-Data-Capture.png)
+![](../3_HLDDesignProblems/AWSBookStoreSampleApp/assets/AWS-Bookstore-Demo-App.png)
+
+[Read more](../3_HLDDesignProblems/AWSBookStoreSampleApp/Readme.md)
+
+## AWS - Stream-Processing Using Glue & S3
+
+![](../3_HLDDesignProblems/AWSStreamProcessingUsingGlueAndS3/assets/AWS-Stream-Processing-Using-Glue-&-S3.png)
 
 ## Real-time data analytics architecture
 
-![](6_DatabaseServices/AmazonRDS/assets/AWS-RDS-Stored-Procedures.png)
+![](6_DatabaseServices/AmazonRDS/assets/RDS-Stored-Procedures.png)
 
 ## Others
 - [Send-SMS-API design - App Internal Clients, Multiple SMS-Providers, AutoScaling](../3_HLDDesignProblems/NotificationSystem/README.md)
-- [WP Site with Amazon CloudFront & S3](../3_HLDDesignProblems/WebsiteSiteUsingCloudFront&S3.md)
+- [WP Site with Amazon CloudFront & S3](../3_HLDDesignProblems/AWSWebsiteSiteUsingCloudFront&S3.md)
 - [Dropbox Saves Millions by Building a Scalable Metadata Store on Amazon DynamoDB and Amazon S3](../3_HLDDesignProblems/DropboxHLDDesign/DropboxMetaDataStore.md)
 
 # AWS Services - Architecture, Features etc.
@@ -275,11 +281,11 @@
     </tr>
     <tr>
         <td>
-            <a href="6_DatabaseServices">Data Warehousing</a>
+            <a href="10_BigDataComponents/StorageDBs">Data Warehousing</a>
         </td>
         <td>
             <div class="container" style="background:white">
-                <a href="10_BigDataComponents/DataWarehouse/AmazonRedshift.md" target="_blank">
+                <a href="10_BigDataComponents/StorageDBs/DataWarehouse/AmazonRedshift.md" target="_blank">
                   <img src="https://w7.pngwing.com/pngs/404/507/png-transparent-amazon-com-amazon-redshift-amazon-web-services-amazon-relational-database-service-amazon-elasticache-amazon-redshift-blue-angle-text.png" width="150">
                 </a>
             </div>
@@ -287,11 +293,11 @@
     </tr>
     <tr>
         <td>
-            <a href="10_BigDataComponents/BatchProcessing">Batch Processing</a>
+            <a href="10_BigDataComponents/ETLServices/BatchProcessing">Batch Processing</a>
         </td>
         <td>
             <div class="container" style="background:white">
-                <a href="10_BigDataComponents/BatchProcessing/AmazonEMR.md" target="_blank">
+                <a href="10_BigDataComponents/ETLServices/BatchProcessing/AmazonEMR.md" target="_blank">
                   <img src="https://www.clipartmax.com/png/small/70-700800_amazon-emr.png" width="80">
                 </a>
             </div>
@@ -299,11 +305,11 @@
     </tr>
     <tr>
         <td>
-            <a href="10_BigDataComponents/StreamProcessing">Stream Processing</a>
+            <a href="10_BigDataComponents/ETLServices/StreamProcessing">Stream Processing</a>
         </td>
         <td>
             <div class="container" style="background:white">
-                <a href="10_BigDataComponents/StreamProcessing/AmazonKinesis/Readme.md" target="_blank">
+                <a href="10_BigDataComponents/ETLServices/StreamProcessing/AmazonKinesis/Readme.md" target="_blank">
                   <img src="https://miro.medium.com/max/1190/0*UQBKjEff1uIsXH8W" width="80">
                 </a>
             </div>

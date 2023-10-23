@@ -14,3 +14,6 @@
 - If your application is really read heavy and requires even lower latency than [DynamoDB](Readme.md) offers, you can add Amazon DynamoDB Accelerator, called DAX. 
 - DAX is an in-memory cache. 
 - Things like real-time bidding, social gaming, and trading applications are good candidates for using DAX.
+
+# References
+- [Swiggy - Degraded Performance using DAX](https://bytes.swiggy.com/segmentation-at-swiggy-part-3-final-part-b740f7a3697d)

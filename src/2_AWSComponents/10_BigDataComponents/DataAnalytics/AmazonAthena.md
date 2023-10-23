@@ -1,10 +1,10 @@
 # Amazon Athena
 - [Amazon Athena](https://aws.amazon.com/athena/) is an interactive query service that makes it easy for you to analyze data directly in [Amazon S3](../../7_StorageServices/3_ObjectStorageS3/Readme.md), using standard SQL.
 - [Athena](https://aws.amazon.com/athena/) provides a simplified, flexible way to analyze petabytes of data where it lives.
-- Analyze data or build applications from an [Amazon Simple Storage Service (S3) data lake](../../10_BigDataComponents/DataLakes/S3DataLake.md) and 25-plus data sources, including on-premises data sources or other cloud systems using SQL or Python.
+- Analyze data or build applications from an [Amazon Simple Storage Service (S3) data lake](../StorageDBs/DataLakes/S3DataLake.md) and 25-plus data sources, including on-premises data sources or other cloud systems using SQL or Python.
 
-![](../DataLakes/assets/Data-Lake-AWS.drawio.png)
+![](../StorageDBs/DataLakes/assets/Data-Lake-AWS.drawio.png)
 
-# IoT sensor data capture architecture
+# AWS - Stream-Processing Using Glue & S3
 
-![](../../../3_HLDDesignProblems/IOTDataCapture/assets/AWS-IOT-Data-Capture.png)
+![](../../../3_HLDDesignProblems/AWSStreamProcessingUsingGlueAndS3/assets/AWS-Stream-Processing-Using-Glue-&-S3.png)

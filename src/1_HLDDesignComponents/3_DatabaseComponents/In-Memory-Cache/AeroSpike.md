@@ -9,7 +9,7 @@
 - When using a persistent SSD, the index is kept in memory while the data is stored on the disc and then retrieved from the drive, as opposed to when using a non-persistent SSD.
 
 # :star: Real world use cases of AeroSpike
-- [Zomato - HLD Design](../../../3_HLDDesignProblems/ZomatoDesign)
+- [Zomato - HLD Design](../../../3_HLDDesignProblems/ZomatoSwiggyDesign)
 
 # References
 - [Who is using Aerospike and for what?](https://www.quora.com/Who-is-using-Aerospike-and-for-what)

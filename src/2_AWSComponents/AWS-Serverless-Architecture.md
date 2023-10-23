@@ -16,7 +16,7 @@ With serverless, you can spend time on the things that differentiate your applic
 | [AWS Step Functions](3_ComputeServices/AWSStepFunctions.md)                                      | Compute      | -                                                                               |
 | [Amazon DynamoDB](6_DatabaseServices/AmazonDynamoDB/Readme.md)                                   | Database     | [DynamoDB - Capacity Modes](6_DatabaseServices/AmazonDynamoDB/CapacityModes.md) |
 | [Amazon Aurora](6_DatabaseServices/AmazonRDS/AmazonAurora/Readme.md)                             | Database     | -                                                                               |
-| [AWS Batch](10_BigDataComponents/BatchProcessing/AWSBatch.md)                                    | Batch        | -                                                                               |
+| [AWS Batch](10_BigDataComponents/ETLServices/BatchProcessing/AWSBatch.md)                                    | Batch        | -                                                                               |
 | [API Gateway](1_NetworkingAndContentDelivery/2_ApplicationNetworking/AmazonAPIGateway/Readme.md) | API Gateway  | -                                                                               |
 
 # Considerations for serverless applications

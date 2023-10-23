@@ -20,7 +20,7 @@
 [Read more](https://www.youtube.com/watch?v=a4yX7RUgTxI)
 
 # :star: Real world use cases of Redis Cache
-- [Zomato - HLD Design](../../../../3_HLDDesignProblems/ZomatoDesign/README.md)
+- [Zomato - HLD Design](../../../../3_HLDDesignProblems/ZomatoSwiggyDesign/Readme.md)
 - [Twillo - Send Message API Design](../../../../3_HLDDesignProblems/TwilloSendMessageAPI/Readme.md)
 - [AWS - Send-SMS-API design (App Internal Clients, Multiple SMS-Providers, AutoScaling)](../../../../3_HLDDesignProblems/NotificationSystem/README.md)
 
@@ -48,7 +48,7 @@
 | [Lists](https://redis.io/docs/data-types/lists/)                    | Redis Lists are simply lists of strings, sorted by `insertion order`.<br/>- The main features of Redis Lists from the point of view of time complexity are the `support for constant time ( O(1) ) insertion and deletion of elements near the head and tail`, even with many millions of inserted items.<br/>- Accessing elements is very fast near the extremes of the list but is slow if you try accessing the middle of a very big list, as it is an O(N) operation. |
 | [GeoSpatial Indexes](https://redis.io/docs/data-types/geospatial/)  | Redis geospatial indexes let you store coordinates and search for them. This data structure is useful for finding nearby points within a given radius or bounding box.                                                                                                                                                                                                                                                                                                    |
 | [BitMaps](https://redis.io/docs/data-types/bitmaps/)                | Redis bitfields let you set, increment, and get integer values of arbitrary bit length.                                                                                                                                                                                                                                                                                                                                                                                   |
-| [Streams](https://redis.io/docs/data-types/streams/)                | A Redis stream is a data structure that acts like an [append-only log](../../2_DataStructuresDB/AppendOnlyDataStructure.md) but also implements several operations to overcome some of the limits of a typical append-only log.                                                                                                                                                                                                                                                   |
+| [Streams](https://redis.io/docs/data-types/streams/)                | A Redis stream is a data structure that acts like an [append-only log](../../1_Glossaries/AppendOnlyProperty.md) but also implements several operations to overcome some of the limits of a typical append-only log.                                                                                                                                                                                                                                                   |
 
 # References
 - [Redis - Glossary Terms](https://redis.com/glossary/)

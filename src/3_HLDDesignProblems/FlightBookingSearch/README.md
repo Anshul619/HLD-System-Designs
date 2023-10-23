@@ -31,4 +31,5 @@
 # References
 - [Flight booking Website System Design](https://ankita4priya.medium.com/flight-booking-website-app-system-design-899c626a6ee6)
 - [Design Backend System of an online Hotel booking application using Java Microservices](https://www.nexsoftsys.com/articles/how-to-design-backend-system-of-an-online-hotel-booking-app-using-java.html)
+- [AWS Serverless Airline Booking](https://github.com/aws-samples/aws-serverless-airline-booking)
 - Asked in Amazon System Design Interview, 15June2022

@@ -18,10 +18,10 @@
 - [Amazon SQS](AmazonSQS/Readme.md)
 - [Amazon SNS](AmazonSNS.md)
 - [AWS Step Functions](../3_ComputeServices/AWSStepFunctions.md)
-- [Amazon Kinesis Data Streams](../10_BigDataComponents/StreamProcessing/AmazonKinesis/Readme.md)
-- [Amazon Kinesis Data Firehouse](../10_BigDataComponents/StreamProcessing/AmazonKinesis/Readme.md)
+- [Amazon Kinesis Data Streams](../10_BigDataComponents/ETLServices/StreamProcessing/AmazonKinesis/Readme.md)
+- [Amazon Kinesis Data Firehouse](../10_BigDataComponents/ETLServices/StreamProcessing/AmazonKinesis/Readme.md)
 - [API Gateway](../1_NetworkingAndContentDelivery/2_ApplicationNetworking/AmazonAPIGateway/Readme.md)
-- [Amazon Redshift Clusters](../10_BigDataComponents/DataWarehouse/AmazonRedshift.md)
+- [Amazon Redshift Clusters](../10_BigDataComponents/StorageDBs/DataWarehouse/AmazonRedshift.md)
 - [SAAS Integrations - Partner Sources](https://aws.amazon.com/eventbridge/integrations/)
 
 # Archives

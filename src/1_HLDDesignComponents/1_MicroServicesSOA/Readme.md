@@ -68,7 +68,7 @@
 
 # Examples of MicroServices
 - Start Page, Recommendation, Feed, Search, Product Details, Orders etc. services in [LinkedIn](../../3_HLDDesignProblems/LinkedInDesign/Readme.md).
-- [Zomoto Design](../../3_HLDDesignProblems/ZomatoDesign)
+- [Zomoto Design](../../3_HLDDesignProblems/ZomatoSwiggyDesign)
 
 # References
 - [What Are Microservices Really All About? (And When Not To Use It)](https://www.youtube.com/watch?v=lTAcCNbJ7KE)

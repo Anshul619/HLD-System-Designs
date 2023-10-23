@@ -4,6 +4,14 @@
 
 ![](https://docs.aws.amazon.com/images/amazondynamodb/latest/developerguide/images/HowItWorksStreams.png)
 
+# Use Cases
+
+## Bookstore app
+
+![](../../../3_HLDDesignProblems/AWSBookStoreSampleApp/assets/AWS-Bookstore-Demo-App.png)
+
+[Read more](../../../3_HLDDesignProblems/AWSBookStoreSampleApp/Readme.md)
+
 # Supported events in DynamoDB
 
 | Event                             | Description                                                                                      |
@@ -24,8 +32,6 @@
 
 ![img.png](assests/dynamo_strems.png)
 
-# DynamoDB Streams and AWS Lambda triggers
 
-![](../../../3_HLDDesignProblems/IOTDataCapture/assets/AWS-IOT-Data-Capture.png)
 
 

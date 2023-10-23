@@ -4,10 +4,12 @@
 # Use Cases
 - Service calculates the past week's most popular products by category.
 - User views the past week's most popular products by category.
-- Service has [high availability](../../1_HLDDesignComponents/0_SystemGlossaries/Reliability/HighAvailability.md).
+- Service should have [high availability](../../1_HLDDesignComponents/0_SystemGlossaries/Reliability/HighAvailability.md).
 
 # Estimation
 - [Sales Rank estimation](https://docs.google.com/spreadsheets/d/15vApko2QrmZmv5qTEIyU_IAWvgY3MD23TR3TuLUiPc8/edit#gid=1814606830)
+
+# System Design
 
 ![](https://camo.githubusercontent.com/9998bc0bfdd975524dc971f539306dfa53fccd5ae74f2559729bfd8b37cd475e/687474703a2f2f692e696d6775722e636f6d2f4d7a45785030362e706e67)
 
@@ -24,10 +26,10 @@
 | t4        | product3     | category2   | 7   | 2.00        | 4         | 5        |
 | t5        | product4     | category1   | 1   | 5.00        | 5         | 6        |
 
-`id`, `category_id`, `product_id` columns should be [indexed](../../1_HLDDesignComponents/3_DatabaseComponents/1_Glossaries/Indexing.md), for faster performance.
+> Note - `id`, `category_id`, `product_id` columns should be [indexed](../../1_HLDDesignComponents/3_DatabaseComponents/2_DataStructuresDB/Indexing.md), for faster performance.
 
 # How to populate Sales Rank table?
-- SalesRank service would get the sales data from sales table, apply [Map Reduce](../../1_HLDDesignComponents/5_BigDataComponents/StreamProcessing/ApacheSpark.md) and populate `sales_rank` table. 
+- SalesRank service would get the sales data from sales table, then apply [Map Reduce](../../1_HLDDesignComponents/5_BigDataComponents/ETLServices/StreamProcessing/ApacheSpark.md) and populate `sales_rank` table. 
 - And then sort those records.
 - A nightly job to update Sales Rank for last week.
 
@@ -114,7 +116,8 @@ The result would be the following sorted list, which we could insert into the sa
 
 # Scaling the design
 - To address the 40,000 average read requests per second (higher at peak), traffic for popular content (and their sales rank) should be handled by the [Redis Cache](../../1_HLDDesignComponents/3_DatabaseComponents/In-Memory-Cache/Redis/Readme.md) instead of the database.
-- With the large volume of reads, the SQL Read Replicas might not be able to handle the cache misses. We'll probably need to employ additional SQL scaling patterns (like Federation, Sharding, Renormalization, SQL Tuning etc.)
+- With the large volume of reads, the SQL Read Replicas might not be able to handle the cache misses. 
+- We'll probably need to employ additional SQL scaling patterns (like Federation, Sharding, Renormalization, SQL Tuning etc.).
 
 # References
 - [Design Amazon's sales rank by category feature](https://github.com/donnemartin/system-design-primer/blob/master/solutions/system_design/sales_rank/README.md)

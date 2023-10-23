@@ -20,12 +20,12 @@ The application should be able to support the following requirements.
 
 | Feature                              | Decision                                                                                                                                               |
 |--------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Images Storage                       | [Amazon S3](../../2_AWSComponents/7_StorageServices/3_ObjectStorageS3/Readme.md) or [HDFS](../../1_HLDDesignComponents/5_BigDataComponents/BatchProcessing/ApacheHadoop/ApacheHDFS.md) |
+| Images Storage                       | [Amazon S3](../../2_AWSComponents/7_StorageServices/3_ObjectStorageS3/Readme.md) or [HDFS](../../1_HLDDesignComponents/5_BigDataComponents/ETLServices/BatchProcessing/ApacheHadoop/ApacheHDFS.md) |
 | [Images MetaData]()                  | Postgres (since we need joins)                                                                                                                         |
 | Partitioning Key for images metadata | PhotoID                                                                                                                                                |
 | User Activity - Data Entities Store  | [Cassandra](../../1_HLDDesignComponents/3_DatabaseComponents/NoSQL-Databases/ApacheCasandra.md)                                                        |
 | User Activity - RelationShip Store   | [Neo4j](../../1_HLDDesignComponents/3_DatabaseComponents/NoSQL-Databases/Neo4j.md)                                                                                                                            |
-| User Activity - Data Streaming       | [Amazon Kinesis](../../2_AWSComponents/10_BigDataComponents/StreamProcessing/AmazonKinesis/Readme.md)                                                                |
+| User Activity - Data Streaming       | [Amazon Kinesis](../../2_AWSComponents/10_BigDataComponents/ETLServices/StreamProcessing/AmazonKinesis/Readme.md)                                                                |
 | App Servers                          | Separate app servers for READ and WRITE. (Since read-write ratio is 100:1)                                                                 |
 
 # Reliability and Redundancy
@@ -46,7 +46,7 @@ The application should be able to support the following requirements.
 | Apache Solr                                                                             | Go-Search API                                                                                                                                                                                                                                                                 |
 | PagerDuty                                                                               | Incident Response Management                                                                                                                                                                                                                                                  |
 | Pingdom                                                                                 | External monitoring of the service                                                                                                                                                                                                                                            |
-| [Amazon Kinesis](../../2_AWSComponents/10_BigDataComponents/StreamProcessing/AmazonKinesis/Readme.md) | Data Streaming                                                                                                                                                                                                                                                                |
+| [Amazon Kinesis](../../2_AWSComponents/10_BigDataComponents/ETLServices/StreamProcessing/AmazonKinesis/Readme.md) | Data Streaming                                                                                                                                                                                                                                                                |
 
 Read more
 - [What Powers Instagram: Hundreds of Instances, Dozens of Technologies?](https://instagram-engineering.com/what-powers-instagram-hundreds-of-instances-dozens-of-technologies-adf2e22da2ad)
@@ -135,7 +135,7 @@ User_id -> List
 ![](https://live.staticflickr.com/65535/51813632951_0f0f673287_w.jpg)
 
 ## Streaming Data Model
-- We can use cloud technologies such as [Amazon Kinesis](../../2_AWSComponents/10_BigDataComponents/StreamProcessing/AmazonKinesis/Readme.md) or Azure Stream Analytics for collecting, processing, and analyzing real-time, streaming data to get timely insights and react quickly to new information (e.g. a new like, comment, etc.).
+- We can use cloud technologies such as [Amazon Kinesis](../../2_AWSComponents/10_BigDataComponents/ETLServices/StreamProcessing/AmazonKinesis/Readme.md) or Azure Stream Analytics for collecting, processing, and analyzing real-time, streaming data to get timely insights and react quickly to new information (e.g. a new like, comment, etc.).
 
 ![](https://live.staticflickr.com/65535/51814358575_69266135f8_z.jpg)
 

@@ -4,16 +4,23 @@
 
 ![img.png](assets/DecideDatabase.drawio.png)
 
-# Other Comparisons
+# PACLEC Theorem
 
-| Comparison                                                        |
-|-------------------------------------------------------------------|
-| [SQL vs NoSQL](SQLvsNoSQL.md)                                     |
-| [DynamoDB vs MongoDB vs Casandra](DynamoDBVsMongoDBVsCasandra.md) |
+![img.png](../1_Glossaries/PACELCTheorem/assets/PACELC_Diagram.drawio.png)
+
+[Read more](../1_Glossaries/PACELCTheorem/Readme.md)
+
+# Other Points
+
+| Point                                                                                |
+|--------------------------------------------------------------------------------------|
+| [SQL vs NoSQL](../SQLvsNoSQL.md)                                                     |
+| [Different NoSQL DB types](../NoSQL-Databases/Readme.md)                             |
+| [DynamoDB vs MongoDB vs Casandra](../NoSQL-Databases/DynamoDBVsMongoDBVsCasandra.md) |
 
 # References
 - :star: [AWS re:Invent 2021 - Which NoSQL database is right for you?](https://www.youtube.com/watch?v=ivBaro-8PhI)
 - :star: [Database Design Tips | Choosing the Best Database in a System Design Interview](https://www.youtube.com/watch?v=cODCpXtPHbQ)
 - [How To Choose The Right Database?](https://www.youtube.com/watch?v=kkeFE6iRfMM)
-- [Linkedin uses document DB, to save user's activities like posts, ratings etc.](https://engineering.linkedin.com/espresso/introducing-espresso-linkedins-hot-new-distributed-document-store)
 - [AWS re:Invent 2022 - From RDBMS to NoSQL (PRT314)](https://www.youtube.com/watch?v=eEENrNKxCdw)
+- [Databases on AWS: The Right Tool for the Right Job](https://www.youtube.com/watch?v=WE8N5BU5MeI&t=3710s)

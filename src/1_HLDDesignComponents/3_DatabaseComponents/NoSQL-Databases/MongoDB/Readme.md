@@ -8,7 +8,7 @@
 ![img.png](assests/MongoDB_JSON.png)
 
 # :star: Real world use cases of MongoDB
-- [Zomato - HLD Design](../../../../3_HLDDesignProblems/ZomatoDesign/README.md)
+- [Zomato - HLD Design](../../../../3_HLDDesignProblems/ZomatoSwiggyDesign/Readme.md)
 
 # General Use Cases
 
@@ -23,7 +23,7 @@
 | Real-time analytics and AI |
 
 # :star: Casandra vs MongoDB
-- [Read more](../../3_DecideDatabase/DynamoDBVsMongoDBVsCasandra.md)
+- [Read more](../DynamoDBVsMongoDBVsCasandra.md)
 
 # MQL (Mongo Query Language)
 - [MongoDB]() has a rich query language called [Mongo Query Language (MQL)](https://www.mongodb.com/developer/products/atlas/getting-started-atlas-mongodb-query-language-mql/). 

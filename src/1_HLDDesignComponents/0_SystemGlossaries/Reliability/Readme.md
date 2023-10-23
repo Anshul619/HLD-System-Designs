@@ -18,3 +18,5 @@ In some cloud platforms such as [Amazon Web Services (AWS)](../../../2_AWSCompon
 - It is fairly common for virtual machine instances to become unavailable without warning, as the platforms are designed to prioritize flexibility and elasticity over single-machine reliability.
 - Hence, [Fault-Tolerance](FaultTolerance.md), [High Availability](HighAvailability.md) plays an important role.
 
+# References
+- [High Availability Architecture - By Success in Tech](https://www.youtube.com/watch?v=o9cgjeYJhJQ)

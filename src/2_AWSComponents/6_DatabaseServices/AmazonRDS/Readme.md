@@ -38,7 +38,7 @@
 
 # Real-time data analytics architecture - Using stored procedure of RDS
 
-![](assets/AWS-RDS-Stored-Procedures.png)
+![](assets/RDS-Stored-Procedures.png)
 
 # References
 - [AWS RDS Max Connections Limit As Per Instance Type](https://sysadminxpert.com/aws-rds-max-connections-limit/)

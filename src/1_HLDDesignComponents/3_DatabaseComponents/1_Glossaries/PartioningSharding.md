@@ -3,16 +3,23 @@
 - Instead of one shard for writes, we partition/shard the database based on a partition key. 
 - This would increase query throughput and overall system write throughput.
 
-> Note - This partitioning is nothing related to network partition (in [CAP Theorem](CAPTheorem/Readme.md)).
+> Note - This partitioning is nothing related to network partition (in [CAP Theorem](PACELCTheorem/CAPTheorem.md)).
 
 # Key Terminologies
 
-| Terminology        | Examples                                                                                                                                        | Description                                                                                                                                          |
-|--------------------|-------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Partition Key      | [Partition key in DynamoDB](../../../2_AWSComponents/6_DatabaseServices/AmazonDynamoDB/Partioning.md)<br/>- User ID, Location ID, Photo ID etc. | Partitioning would be done based on a partition key. <br/>- Hence we need to carefully choose this key to distribute the data evenly b/w partitions. |
-| Hash Function      | MD5 as a hash function used in [Casandra](../NoSQL-Databases/ApacheCasandra.md), [MongoDB](../NoSQL-Databases/MongoDB/Readme.md).               | Hash function helps to determine the partition for a given key.                                                                                      |
-| Secondary Indexes  | [Global Secondary Indexes in DynamoDB](../../../2_AWSComponents/6_DatabaseServices/AmazonDynamoDB/Readme.md)                                    | [Read more](Indexing.md)                                                                                                                             |
-| Consistent Hashing | -                                                                                                                                               | This handles data sharding with dynamic number of servers.<br/>- [Read more](https://www.youtube.com/watch?v=UF9Iqmg94tk)                            |
+| Terminology        | Examples                                                                                                                          | Description                                                                                                                                          |
+|--------------------|-----------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Partition Key      | User ID, Location ID, Photo ID etc.                                                                                               | Partitioning would be done based on a partition key. <br/>- Hence we need to carefully choose this key to distribute the data evenly b/w partitions. |
+| Hash Function      | MD5 as a hash function used in [Casandra](../NoSQL-Databases/ApacheCasandra.md), [MongoDB](../NoSQL-Databases/MongoDB/Readme.md). | Hash function helps to determine the partition for a given key.                                                                                      |
+| Secondary Indexes  | [Global Secondary Indexes in DynamoDB](../../../2_AWSComponents/6_DatabaseServices/AmazonDynamoDB/Readme.md)                      | [Read more](../2_DataStructuresDB/Indexing.md)                                                                                                       |
+| Consistent Hashing |                                                                                                                                   | This handles data sharding with dynamic number of servers.<br/>- [Read more](https://www.youtube.com/watch?v=UF9Iqmg94tk)                            |
+
+# Partition Examples
+
+| Example                                                                                                                                     |
+|---------------------------------------------------------------------------------------------------------------------------------------------|
+| [Partition key in DynamoDB](../../../2_AWSComponents/6_DatabaseServices/AmazonDynamoDB/Partioning.md)                                       |
+| [Sharding with Amazon Relational Database Service](https://aws.amazon.com/blogs/database/sharding-with-amazon-relational-database-service/) |
 
 # Supported Clusters
 
@@ -22,9 +29,9 @@
 
 ## ElasticSearch Cluster
 
-![](../Search-Indexes/ElasticSearch/assests/ElasticSearch-Cluster.png)
+![](../Search-DBs/ElasticSearch/assests/ElasticSearch-Cluster.png)
 
-## Elastic Cache Cluster
+## Redis Cluster
 
 ![](../../../2_AWSComponents/6_DatabaseServices/AmazonElasticCache/assets/ElasticCache-Multi-AZ.drawio.png)
 
