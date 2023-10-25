@@ -1,7 +1,7 @@
 
 # Extract-Transform-Load (ETL)
 
-![](../assets/BigData-ETL-OLTP-OLAP-DataLake.png)
+![](../BigData-ETL-OLTP-OLAP-DataLake.png)
 
 |           | Remarks                                                                                                                                                 |
 |-----------|---------------------------------------------------------------------------------------------------------------------------------------------------------|

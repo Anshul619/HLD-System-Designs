@@ -23,7 +23,7 @@ Gotcha: What if two people try to shorten the same URL?
 
 # High Level Design
 
-![](assets/URLShortener.drawio.png)
+![](URLShortener.drawio.png)
 
 # REST APIs
 - `createURL(api_dev_key, original_url, custom_alias=None, user_name=None, expire_date=None)`

@@ -5,7 +5,7 @@
 - [An API gateway](https://aws.amazon.com/premiumsupport/knowledge-center/api-gateway-cloudfront-distribution/) provides a single entry point for all API calls that come into an application, whether the app is hosted in an on-premises data center or on the cloud. 
 - It accepts requests that come in remotely and returns the requested data.
 
-![img.png](../../../../3_HLDDesignProblems/AWSDesignScalableSystemWithRDMS/assets/DesignScalableSystemWithRelationalDBOnAWS.drawio.png)
+![img.png](../../../../3_HLDDesignProblems/AWSDesignScalableSystemWithRDMS/DesignScalableSystemWithRelationalDBOnAWS.drawio.png)
 
 [Read more](../../../../3_HLDDesignProblems/AWSDesignScalableSystemWithRDMS/Readme.md)
 

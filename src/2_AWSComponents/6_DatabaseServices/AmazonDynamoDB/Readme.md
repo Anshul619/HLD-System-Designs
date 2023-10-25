@@ -17,7 +17,7 @@
 
 ## Bookstore app on AWS
 
-![](../../../3_HLDDesignProblems/AWSBookStoreSampleApp/assets/AWS-Bookstore-Demo-App.png)
+![](../../../3_HLDDesignProblems/AWSBookStoreSampleApp/AWS-Bookstore-Demo-App.png)
 
 [Read more](../../../3_HLDDesignProblems/AWSBookStoreSampleApp/Readme.md)
 

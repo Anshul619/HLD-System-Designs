@@ -10,7 +10,7 @@ Design driver allocation to riders in an Uber-like system
 - Many multiples of that for reading.
 - The dispatch system has thousands of nodes.
 
-![img.png](assets/UberDriverAllocation.drawio.png)
+![img.png](UberDriverAllocation.drawio.png)
 
 # User Actors
 There are two types of users in our system

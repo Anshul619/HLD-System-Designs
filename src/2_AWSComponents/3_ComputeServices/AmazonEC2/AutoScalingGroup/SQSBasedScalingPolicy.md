@@ -1,35 +1,19 @@
 # Scaling based on Amazon SQS
-- Based on the [Amazon SQS queue size](../../../5_MessageBrokerServices/AmazonSQS/Readme.md), the [auto-scaling of the EC2 instances](https://docs.aws.amazon.com/autoscaling/ec2/userguide/as-using-sqs-queue.html) can also be done.
+- Based on the [Amazon SQS queue size](../../../5_MessageBrokerServices/AmazonSQS/Readme.md), the [auto-scaling of the EC2 instances](Readme.md) can also be done.
+- [Read more](https://docs.aws.amazon.com/autoscaling/ec2/userguide/ec2-auto-scaling-target-tracking-metric-math.html)
 
 ![](https://docs.aws.amazon.com/images/autoscaling/ec2/userguide/images/sqs-as-custom-metric-diagram.png)
 
 # Use Cases
 
-| Use Case                                                                                                                              | Remarks                                                                                                                                                                                                                                                                                                  |
-|---------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Image Upload](https://docs.aws.amazon.com/autoscaling/ec2/userguide/as-using-sqs-queue.html)                                         | Consider a scenario where the image upload app runs on EC2 instances (in ASG) which push the raw bitmap data to SQS for downstream processing.<br/>- In case of spike in the image uploads, we should scale EC2 instances based on SQS queue size.                                                       |
-| [Send-SMS-API design (App Internal Clients, Multiple SMS-Providers, AutoScaling)](../../../../3_HLDDesignProblems/NotificationSystem) | -                                                                                                                                                                                                                                                                                                        |
-| Orders Placement                                                                                                                      | Consider a scenario where an e-commerce company runs its web application on EC2 instances (in ASG) and it's configured to handle consumer orders in an SQS queue for downstream processing. <br/>- To handle the sudden spike in orders received, we should scale EC2 instances based on SQS queue size. |
+| Use Case                                                                                                                                                | Remarks                                                                                                                                                                                                                                                                                                  |
+|---------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| [Send-SMS-API design - Workers (EC instances) autoscaling using SQS queue](../../../../3_HLDDesignProblems/TransactionSMSDesign/Readme.md)                |                                                                                                                                                                                                                                                                                                          |
+| [Image Upload using SQS, EC2](https://aws.amazon.com/blogs/compute/running-cost-effective-queue-workers-with-amazon-sqs-and-amazon-ec2-spot-instances/) | Consider a scenario where the image upload app runs on EC2 instances (in ASG) which push the raw bitmap data to SQS for downstream processing.<br/>- In case of spike in the image uploads, we should scale EC2 instances based on SQS queue size.                                                       |
+| Orders Placement                                                                                                                                        | Consider a scenario where an e-commerce company runs its web application on EC2 instances (in ASG) and it's configured to handle consumer orders in an SQS queue for downstream processing. <br/>- To handle the sudden spike in orders received, we should scale EC2 instances based on SQS queue size. |
 
-# Create a target tracking scaling policy for Amazon EC2 Auto Scaling using metric math
-- [Read more](https://docs.aws.amazon.com/autoscaling/ec2/userguide/as-using-sqs-queue.html)
-
-## Metrics
-
-| ID  | CloudWatch metric                  | Statistic | Period   | Remarks                                                                             |
-|-----|------------------------------------|-----------|----------|-------------------------------------------------------------------------------------|
-| m1  | ApproximateNumberOfMessagesVisible | Sum       | 1 minute | Length of the SQS queue (number of messages available for retrieval from the queue) |
-| m2  | GroupInServiceInstances            | Average   | 1 minute | Number of instances in the InService state in ASG group                             |
-
-## Calculation
-
-| Parameter                              | Formula                                                                                   | Remarks                                                                            |
-|----------------------------------------|-------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------|
-| Acceptable/Target backlog per instance | Acceptable-Latency/Avg-Time-EC2-Takes-To-Process-Message = 10 secs/0.1 sec = 100 messages | This is target value for target tracking policy.                                   |
-| Example - Current Backlog per instance | m1/m2 = 1500 messages/10 instances = 150 messages                                         | Scale-out event will happen by 5 instances to reach target (=1500/15=100 messages) |
-
-## Target Tracking Scaling Policy using metric-math
-- [Read more](https://docs.aws.amazon.com/autoscaling/ec2/userguide/ec2-auto-scaling-target-tracking-metric-math.html)
+# Target Tracking Scaling Policy
+- [Calculator - ASG using SQS](https://docs.google.com/spreadsheets/d/15vApko2QrmZmv5qTEIyU_IAWvgY3MD23TR3TuLUiPc8/edit#gid=1238283914)
 
 ````json
 {
@@ -82,3 +66,5 @@
     "TargetValue": 100
 }
 ````
+
+[Read more](https://docs.aws.amazon.com/autoscaling/ec2/userguide/ec2-auto-scaling-target-tracking-metric-math.html)

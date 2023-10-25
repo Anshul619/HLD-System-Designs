@@ -36,7 +36,7 @@
 
 ## Personalization at Spotify using Cassandra
 
-![](../../../3_HLDDesignProblems/PersonalizationSpotify/assets/PersonalizationSpotify.drawio.png)
+![](../../../3_HLDDesignProblems/PersonalizationSpotify/PersonalizationSpotify.drawio.png)
 
 - [Read more](../../../3_HLDDesignProblems/PersonalizationSpotify)
 
@@ -48,9 +48,9 @@
 
 ## Search - Flight Booking
 
-![](../../../3_HLDDesignProblems/FlightBookingSearch/assets/MakeMyTripFlightSearch.drawio.png)
+![](../../../3_HLDDesignProblems/FlightBookingSearch/MakeMyTripFlightSearch.drawio.png)
 
-- [Read more](../../../3_HLDDesignProblems/FlightBookingSearch/README.md))
+- [Read more](../../../3_HLDDesignProblems/FlightBookingSearch/Readme.md))
 
 ## How Uber Manages a Million Writes Per Second Using Mesos and Cassandra Across Multiple Datacenters?
 

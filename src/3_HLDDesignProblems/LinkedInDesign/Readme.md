@@ -1,3 +1,17 @@
+# Tech Stack
+
+| Purpose                                                            | Service                                                                                                                                                                                                                                  |
+|--------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Cloud Platform                                                     | [Azure](https://engineering.linkedin.com/blog/2023/costwiz--saving-cost-for-linkedin-enterprise-on-azure)                                                                                                                                |
+| Document DB - Profiles, feed, recommendations, posts, ratings etc. | [Espresso (inhouse built-in, on top of MySQL)](https://engineering.linkedin.com/espresso/introducing-espresso-linkedins-hot-new-distributed-document-store)                                                                              |
+| Relationed Database, OLAP                                          | [MySQL](https://engineering.linkedin.com/blog/topic/mysql)                                                                                                                                                                               |
+| Data Streaming                                                     | [Kafka](../../1_HLDDesignComponents/4_MessageBrokers/Kafka/Readme.md)                                                                                                                                                                    |
+| Search-DB (derived data)                                           | [Galene (inhouse built-in)](https://engineering.linkedin.com/search/did-you-mean-galene)                                                                                                                                                 |
+| Container Orchestration                                            | [Kubernates](../../1_HLDDesignComponents/6_ContainerOrchestrationServices/Kubernates.md)                                                                                                                                                 |
+| Batch Processing                                                   | [Hadoop (HDFS, Yarn), Apache Spark](https://engineering.linkedin.com/blog/2023/reducing-apache-spark-application-dependencies-upload-by-99-)                                                                                             |
+| Graph Database                                                     | [Skills Graph](https://engineering.linkedin.com/blog/2022/building-linkedin-s-skills-graph-to-power-a-skills-first-world)                                                                                                                |
+| API Tech                                                           | [HTTP 2.0](https://engineering.linkedin.com/blog/2021/http-2-in-infrastructure--ambry-network-stack-refactoring), [GraphQL](https://engineering.linkedin.com/blog/2023/how-linkedin-adopted-a-graphql-architecture-for-product-developm) |
+
 # Kafka Stats in LinkedIn
 
 | Feature                   | Number                                                                                                    |
@@ -19,7 +33,5 @@
 - Orders etc.
 
 # References
-- [Linkedin uses document DB, to save user's activities like posts, ratings etc.](https://engineering.linkedin.com/espresso/introducing-espresso-linkedins-hot-new-distributed-document-store)
 - [Introduction and Overview of Apache Kafka](https://www.slideshare.net/mumrah/kafka-talk-tri-hug)
-- [Did you mean "Galene"?](https://engineering.linkedin.com/search/did-you-mean-galene)
 - [FollowFeed: LinkedIn's Feed Made Faster and Smarter](https://engineering.linkedin.com/blog/2016/03/followfeed--linkedin-s-feed-made-faster-and-smarter)

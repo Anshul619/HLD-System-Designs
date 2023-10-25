@@ -1,6 +1,6 @@
 # AWS Stream Processing using Glue & S3
 
-![](assets/AWS-Stream-Processing-Using-Glue-&-S3.png)   
+![](AWS-Stream-Processing-Using-Glue-&-S3.png)   
 
 # Read more
 - [AWS serverless etl and streaming demo](https://github.com/liangruibupt/glue-streaming-etl-demo)

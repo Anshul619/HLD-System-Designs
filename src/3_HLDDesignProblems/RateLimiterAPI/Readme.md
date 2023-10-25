@@ -1,4 +1,3 @@
-
 # Rate Limiting in Distributed Systems
 
 [Rate limiting](https://medium.com/geekculture/system-design-basics-rate-limiter-351c09a57d14) refers to preventing the frequency of an operation from exceeding a defined limit. 
@@ -146,3 +145,4 @@ Note:
 - [System Design Basics: Rate Limiter](https://medium.com/geekculture/system-design-basics-rate-limiter-351c09a57d14)
 - [How Redis can work for Rate Limit](https://github.com/jwerre/rate-limit-redis)
 - [Stripe - Scaling your API with rate limiters](https://stripe.com/blog/rate-limiters)
+- [API Throttling and Rate Limiting](https://mytechblogs.medium.com/api-throttling-and-rate-limiting-4835ce901857)

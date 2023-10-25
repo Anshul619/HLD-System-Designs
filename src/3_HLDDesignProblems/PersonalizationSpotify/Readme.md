@@ -1,7 +1,7 @@
 
 # Personalization at Spotify using Cassandra & HDFS
 
-![img.png](assets/PersonalizationSpotify.drawio.png)
+![img.png](PersonalizationSpotify.drawio.png)
 
 # Casandra Column Families
 

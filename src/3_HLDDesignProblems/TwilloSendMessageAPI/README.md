@@ -8,7 +8,7 @@
 - Y amount per sms
 - 1000 transactions limit per second per team
 
-![img.png](assets/TwilloAPIDesign.drawio.png)
+![img.png](TwilloAPIDesign.drawio.png)
 
 # Tech Stack
 

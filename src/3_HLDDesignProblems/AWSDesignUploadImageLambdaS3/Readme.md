@@ -1,7 +1,6 @@
-
 # Upload Image using Amazon S3 and Lambda
 
-![img.png](assets/UploadImage-Lambda.drawio.png)
+![img.png](UploadImage-Lambda.drawio.png)
 
 ## References
 - [AWS - Serverless Image Handler](https://aws.amazon.com/solutions/implementations/serverless-image-handler/)

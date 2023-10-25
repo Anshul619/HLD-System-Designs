@@ -23,7 +23,7 @@
 
 # Amazon Kinesis Data Stream & Data firehouse
 
-![](../../../../../3_HLDDesignProblems/AWSStreamProcessingUsingGlueAndS3/assets/AWS-Stream-Processing-Using-Glue-&-S3.png)
+![](../../../../../3_HLDDesignProblems/AWSStreamProcessingUsingGlueAndS3/AWS-Stream-Processing-Using-Glue-&-S3.png)
 
 > Note
 > - When a [Kinesis data stream](../../../../5_MessageBrokerServices/AmazonKinesisDataStreams.md) is configured as the source of a Firehose delivery stream, [Firehose’s PutRecord and PutRecordBatch operations](../../../../5_MessageBrokerServices/AmazonKinesisDataStreams.md) are disabled and Kinesis Agent cannot write to Firehose delivery stream directly. 
@@ -31,7 +31,7 @@
 
 # Big Data - Concepts, TechStack
 
-![](../../../../../1_HLDDesignComponents/5_BigDataComponents/assets/BigData-ETL-OLTP-OLAP-DataLake.png)
+![](../../../../../1_HLDDesignComponents/5_BigDataComponents/BigData-ETL-OLTP-OLAP-DataLake.png)
 
 # Amazon Kinesis Data Firehouse & Event Bridge
 

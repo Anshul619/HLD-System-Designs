@@ -2,7 +2,7 @@
 - [Amazon RedShift](https://aws.amazon.com/redshift/) is a [data warehouse service](../../../../1_HLDDesignComponents/5_BigDataComponents/StorageDBs/DataWarehouses.md) in AWS.
 - [Amazon Redshift]() is not designed for continuous ingestion of data in real time.
 
-![](../../../../1_HLDDesignComponents/5_BigDataComponents/assets/BigData-ETL-OLTP-OLAP-DataLake.png)
+![](../../../../1_HLDDesignComponents/5_BigDataComponents/BigData-ETL-OLTP-OLAP-DataLake.png)
 
 # Features
 

@@ -4,7 +4,7 @@
 - The spark execution engine supports in-memory computation and cyclic data flow.
 - It can run either on [cluster mode](../../../0_SystemGlossaries/Scalability/ServersCluster.md) or standalone mode.
 
-![](../../assets/BigData-ETL-OLTP-OLAP-DataLake.png)
+![](../../BigData-ETL-OLTP-OLAP-DataLake.png)
 
 > Example 
 > - For running map-reduce jobs to select driver for efficient delivery and generate recommendations based on continuous streams of user activity, order activity, pricing and promo changes, etc.

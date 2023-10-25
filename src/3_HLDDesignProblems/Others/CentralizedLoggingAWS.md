@@ -1,8 +1,0 @@
-# Centralized Logging Solution on AWS
-
-| UseCase & Service                                             | Remarks                                                                                                                                                                                       |
-|---------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|                                                               |                                                                                                                                                                                               |
-| Centralized Store - Amazon S3                                 | Store all [Amazon CloudWatch](../../2_AWSComponents/8_MonitoringServices/AmazonCloudWatch/Readme.md) logs in [Amazon S3](../../2_AWSComponents/7_StorageServices/3_ObjectStorageS3/Readme.md) |
-| Data Pipeline - Move logs from Amazon S3 to Amazon OpenSearch | [Amazon Kinesis Firehose](https://aws.amazon.com/kinesis/data-firehose/) can also be used to move the data from Amazon S3 to Amazon ElasticSearch                                             |
-| Visualize Logs - Amazon OpenSearch                            | Use [Amazon OpenSearch service](https://aws.amazon.com/opensearch-service/) to visualize them                                                                                                 |

@@ -14,7 +14,7 @@
 
 ## Design Scalable System on AWS
 
-![img.png](../3_HLDDesignProblems/AWSDesignScalableSystemWithRDMS/assets/DesignScalableSystemWithRelationalDBOnAWS.drawio.png)
+![img.png](../3_HLDDesignProblems/AWSDesignScalableSystemWithRDMS/DesignScalableSystemWithRelationalDBOnAWS.drawio.png)
 
 [Read more](../3_HLDDesignProblems/AWSDesignScalableSystemWithRDMS/Readme.md)
 
@@ -26,26 +26,26 @@
 
 ## Upload Image using Amazon S3 and Lambda
 
-![img.png](../3_HLDDesignProblems/AWSDesignUploadImageLambdaS3/assets/UploadImage-Lambda.drawio.png)
+![img.png](../3_HLDDesignProblems/AWSDesignUploadImageLambdaS3/UploadImage-Lambda.drawio.png)
 
 [Read more](../3_HLDDesignProblems/AWSDesignUploadImageLambdaS3/Readme.md)
 
 ## Bookstore app on AWS
 
-![](../3_HLDDesignProblems/AWSBookStoreSampleApp/assets/AWS-Bookstore-Demo-App.png)
+![](../3_HLDDesignProblems/AWSBookStoreSampleApp/AWS-Bookstore-Demo-App.png)
 
 [Read more](../3_HLDDesignProblems/AWSBookStoreSampleApp/Readme.md)
 
 ## AWS - Stream-Processing Using Glue & S3
 
-![](../3_HLDDesignProblems/AWSStreamProcessingUsingGlueAndS3/assets/AWS-Stream-Processing-Using-Glue-&-S3.png)
+![](../3_HLDDesignProblems/AWSStreamProcessingUsingGlueAndS3/AWS-Stream-Processing-Using-Glue-&-S3.png)
 
 ## Real-time data analytics architecture
 
 ![](6_DatabaseServices/AmazonRDS/assets/RDS-Stored-Procedures.png)
 
 ## Others
-- [Send-SMS-API design - App Internal Clients, Multiple SMS-Providers, AutoScaling](../3_HLDDesignProblems/NotificationSystem/README.md)
+- [Send-SMS-API design - App Internal Clients, Multiple SMS-Providers, AutoScaling](../3_HLDDesignProblems/TransactionSMSDesign/Readme.md)
 - [WP Site with Amazon CloudFront & S3](../3_HLDDesignProblems/AWSWebsiteSiteUsingCloudFront&S3.md)
 - [Dropbox Saves Millions by Building a Scalable Metadata Store on Amazon DynamoDB and Amazon S3](../3_HLDDesignProblems/DropboxHLDDesign/DropboxMetaDataStore.md)
 

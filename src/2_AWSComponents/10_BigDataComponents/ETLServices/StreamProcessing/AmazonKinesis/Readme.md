@@ -18,11 +18,11 @@
 
 # Amazon Kinesis Data Stream & Data firehouse
 
-![](../../../../../3_HLDDesignProblems/AWSStreamProcessingUsingGlueAndS3/assets/AWS-Stream-Processing-Using-Glue-&-S3.png)
+![](../../../../../3_HLDDesignProblems/AWSStreamProcessingUsingGlueAndS3/AWS-Stream-Processing-Using-Glue-&-S3.png)
 
 # Big Data - Concepts, TechStack
 
-![](../../../../../1_HLDDesignComponents/5_BigDataComponents/assets/BigData-ETL-OLTP-OLAP-DataLake.png)
+![](../../../../../1_HLDDesignComponents/5_BigDataComponents/BigData-ETL-OLTP-OLAP-DataLake.png)
 
 # References
 - [AWS Kinesis Data Streams vs AWS Kinesis Data Firehose](https://www.whizlabs.com/blog/aws-kinesis-data-streams-vs-aws-kinesis-data-firehose/)

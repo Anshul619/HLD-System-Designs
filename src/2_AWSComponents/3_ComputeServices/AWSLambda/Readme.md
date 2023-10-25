@@ -39,19 +39,19 @@
 
 ## Upload Image using Amazon S3 and Lambda
 
-![img.png](../../../3_HLDDesignProblems/AWSDesignUploadImageLambdaS3/assets/UploadImage-Lambda.drawio.png)
+![img.png](../../../3_HLDDesignProblems/AWSDesignUploadImageLambdaS3/UploadImage-Lambda.drawio.png)
 
 [Read more](../../../3_HLDDesignProblems/AWSDesignUploadImageLambdaS3/Readme.md)
 
 ## Design Scalable System on AWS
 
-![img.png](../../../3_HLDDesignProblems/AWSDesignScalableSystemWithRDMS/assets/DesignScalableSystemWithRelationalDBOnAWS.drawio.png)
+![img.png](../../../3_HLDDesignProblems/AWSDesignScalableSystemWithRDMS/DesignScalableSystemWithRelationalDBOnAWS.drawio.png)
 
 [Read more](../../../3_HLDDesignProblems/AWSDesignScalableSystemWithRDMS/Readme.md)
 
 ## Bookstore app on AWS
 
-![](../../../3_HLDDesignProblems/AWSBookStoreSampleApp/assets/AWS-Bookstore-Demo-App.png)
+![](../../../3_HLDDesignProblems/AWSBookStoreSampleApp/AWS-Bookstore-Demo-App.png)
 
 [Read more](../../../3_HLDDesignProblems/AWSBookStoreSampleApp/Readme.md)
 
