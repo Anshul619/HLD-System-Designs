@@ -6,7 +6,7 @@
 
 # System Design
 
-![](AWSClickStreamAnalytics.png)
+![](AWSClickStreamAnalytic.png)
 
 # Tech Stack
 

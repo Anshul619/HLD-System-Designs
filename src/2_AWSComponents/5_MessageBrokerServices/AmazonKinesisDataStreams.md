@@ -36,4 +36,10 @@
 
 [Read more](../../3_HLDDesignProblems/AWSStreamProcessingUsingGlueAndS3/Readme.md)
 
+# AWS - Stream-Processing Using Glue & S3
+
+![](../../3_HLDDesignProblems/AWSStreamProcessingUsingGlueAndS3/AWS-Stream-Processing-Using-Glue-&-S3.png)
+
+[Read more](../../3_HLDDesignProblems/AWSStreamProcessingUsingGlueAndS3/Readme.md)
+
 

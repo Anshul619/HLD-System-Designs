@@ -9,5 +9,5 @@
 | [Spotify](https://engineering.atspotify.com/)                       | [Spotify - Personalization](src/3_HLDDesignProblems/PersonalizationSpotify/Readme.md) |
 | [Paypal](https://medium.com/paypal-tech)                            | [Paypal - Kafka](src/3_HLDDesignProblems/PaypalKafka/Readme.md)                       |
 | [LinkedIn](https://engineering.linkedin.com/)                       | [Linkedin - System Design](src/3_HLDDesignProblems/LinkedInDesign/Readme.md)          |
-| [Stripe](https://stripe.com/blog/engineering)                       |                                                                                       |
+| [Stripe](https://stripe.com/blog/engineering)                       | [Stripe - System Design](src/3_HLDDesignProblems/StripeSystemDesign/Readme.md)        |
 

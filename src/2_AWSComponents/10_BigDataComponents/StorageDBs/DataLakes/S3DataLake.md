@@ -10,7 +10,7 @@
 
 # ClickStream analytics using S3 on AWS
 
-![](../../../../3_HLDDesignProblems/AWSClickStreamAnalytics/AWSClickStreamAnalytics.png)
+![](../../../../3_HLDDesignProblems/AWSClickStreamAnalytics/AWSClickStreamAnalytic.png)
 
 [Read more](../../../../3_HLDDesignProblems/AWSClickStreamAnalytics/Readme.md)
 
