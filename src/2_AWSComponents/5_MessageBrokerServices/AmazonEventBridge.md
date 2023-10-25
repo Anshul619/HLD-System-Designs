@@ -11,7 +11,7 @@
 - [An event pattern](https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-event-patterns.html) defines the event structure and the fields that a rule matches. 
 - [Rules that are based on a schedule](https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-create-rule-schedule.html) perform an action at regular intervals.
 
-![img.png](assests/eventbridge/EventBridge.png)
+![](assests/eventbridge/EventBridge.png)
 
 # Available Target Services
 - [AWS Lambda](../3_ComputeServices/AWSLambda/Readme.md)

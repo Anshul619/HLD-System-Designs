@@ -14,7 +14,7 @@ Using Amazon SNS topics, your publisher systems can fanout messages to a large n
 - [High-throughput, push-based, many-to-many messaging between distributed systems](../../1_HLDDesignComponents/0_SystemGlossaries/Scalability/LatencyThroughput.md)
 - [Microservices, and event-driven serverless](../../1_HLDDesignComponents/1_MicroServicesSOA/Readme.md) applications.
 
-![img.png](assests/sns/FanOutPatternSQSSNS.png)
+![](assests/sns/FanOutPatternSQSSNS.png)
 
 - This pattern also known as [Fanout-pattern](https://aws.amazon.com/getting-started/hands-on/send-fanout-event-notifications/)
 

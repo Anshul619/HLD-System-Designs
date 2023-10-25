@@ -1,7 +1,7 @@
 # Amazon SQS (Simple Queue Service)
 - [Amazon SQS (Simple Queue Service)](https://aws.amazon.com/sqs/) is a fully managed message queuing service that enables you to [decouple and scale microservices](../../../1_HLDDesignComponents/1_MicroServicesSOA/Readme.md), [distributed systems](../../../1_HLDDesignComponents/0_SystemGlossaries/Readme.md), and [serverless applications](../../AWS-Serverless-Architecture.md).
 
-![img.png](../assests/sns/FanOutPatternSQSSNS.png)
+![](../assests/sns/FanOutPatternSQSSNS.png)
 
 # Key Features
 
@@ -37,7 +37,7 @@ Note
 
 # Amazon SQS Dead-letter queue
 
-![img.png](../assests/sqs/SQS-DLD-More-Info.png)
+![](../assests/sqs/SQS-DLD-More-Info.png)
 
 # Amazon SQS delay queues
 
