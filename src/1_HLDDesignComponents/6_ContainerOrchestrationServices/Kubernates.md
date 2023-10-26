@@ -2,8 +2,8 @@
 - [Kubernetes](https://kubernetes.io), also known as K8s, is an OPEN-SOURCE system for automating deployment, [scaling](../0_SystemGlossaries/Scalability/AppNodesScalability.md), and management of containerized applications. 
 - Kubernates is a [battle-tested container orchestration service](Readme.md) i.e. manage, create containers (through pods, worker nodes).
 
-Kubernetes is a Greek word meaning `captain` in English. 
-- Like the captain is responsible for the safe journey of the ship in the seas, Kubernetes is responsible for carrying and delivering those boxes safely to locations where they can be used.
+> Kubernetes is a Greek word meaning `captain` in English. 
+> - Like the captain is responsible for the safe journey of the ship in the seas, Kubernetes is responsible for carrying and delivering those boxes safely to locations where they can be used.
 
 ![img.png](assests/Kubernates-Architecture.png)
 
