@@ -116,3 +116,4 @@ Kafka is based on [Log Based Queue](../../3_DatabaseComponents/1_Glossaries/Appe
 - [Kafka Acks Explained](https://accu.org/journals/overload/28/159/kozlovski/)
 - [Is Kafka a database?](https://queue.acm.org/detail.cfm?id=3321612)
 - [Swiggy - BehindTheBug — Kafka Under The Water](https://bytes.swiggy.com/behindthebug-kafka-under-the-water-288c3d05b202)
+- [Benchmarking Apache Kafka, Apache Pulsar, and RabbitMQ: Which is the Fastest?](https://www.confluent.io/blog/kafka-fastest-messaging-system/)
