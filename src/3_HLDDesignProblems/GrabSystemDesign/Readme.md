@@ -6,7 +6,7 @@
 | OLTP - Transaction-DB (like orders etc.)            | [DynamoDB](../../2_AWSComponents/6_DatabaseServices/AmazonDynamoDB/Readme.md)                        |
 | OLAP - Analytical-Queries (like order history etc.) | [MySQL - Amazon RDS](../../1_HLDDesignComponents/3_DatabaseComponents/SQL-DBs.md)                    |
 | Data Streaming                                      | [Kafka](../../1_HLDDesignComponents/4_MessageBrokers/Kafka/Readme.md)                                |
-| Search-DB (derived data)                            | [ElasticSearch](../../1_HLDDesignComponents/3_DatabaseComponents/Search-DBs/ElasticSearch/Readme.md) |
+| Search-DB (derived data)                            | [ElasticSearch](../../1_HLDDesignComponents/3_DatabaseComponents/Search-Databases/ElasticSearch/Readme.md) |
 | Backend Language - GoLang                           | [GoLang](GoLangBackend.md)                                                                           |
 | Container Orchestration                             | [Kubernates](../../1_HLDDesignComponents/6_ContainerOrchestrationServices/Kubernates.md)             |
 | Object Store, Data Lake                             | [Amazon S3](../../2_AWSComponents/7_StorageServices/3_ObjectStorageS3/Readme.md)                     |

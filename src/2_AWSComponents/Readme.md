@@ -309,7 +309,7 @@
         </td>
         <td>
             <div class="container" style="background:white">
-                <a href="10_BigDataComponents/ETLServices/StreamProcessing/AmazonKinesis/Readme.md" target="_blank">
+                <a href="10_BigDataComponents/ETLServices/StreamProcessing/AmazonKinesis.md" target="_blank">
                   <img src="https://miro.medium.com/max/1190/0*UQBKjEff1uIsXH8W" width="80">
                 </a>
             </div>

@@ -8,5 +8,5 @@
 - [Apache Kafka](../4_MessageBrokers/Kafka/Readme.md#zookeeper)
 - [Apache HBase](../3_DatabaseComponents/NoSQL-Databases/ApacheHBase.md)
 - [Apache Marathon & Mesos](../6_ContainerOrchestrationServices/ApacheMarathon&Mesos.md)
-- [Apache SolrCloud](../3_DatabaseComponents/Search-DBs/ApacheSolr.md)
+- [Apache SolrCloud](../3_DatabaseComponents/Search-Databases/ApacheSolr.md)
 - [Twitter Hit Counter](../../3_HLDDesignProblems/TwitterHitCounterDesign/Readme.md)

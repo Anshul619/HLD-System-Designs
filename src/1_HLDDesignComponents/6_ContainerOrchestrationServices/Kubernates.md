@@ -2,25 +2,29 @@
 - [Kubernetes](https://kubernetes.io), also known as K8s, is an OPEN-SOURCE system for automating deployment, [scaling](../0_SystemGlossaries/Scalability/AppNodesScalability.md), and management of containerized applications. 
 - Kubernates is a [battle-tested container orchestration service](Readme.md) i.e. manage, create containers (through pods, worker nodes).
 
-> Kubernetes is a Greek word meaning `captain` in English. 
-> - Like the captain is responsible for the safe journey of the ship in the seas, Kubernetes is responsible for carrying and delivering those boxes safely to locations where they can be used.
-
 ![img.png](assests/Kubernates-Architecture.png)
+
+> Kubernetes is a Greek word meaning `captain` in English.
+> - Like the captain is responsible for the safe journey of the ship in the seas, Kubernetes is responsible for carrying and delivering those boxes safely to locations where they can be used.
 
 # Real-world use cases
 
-| Use Case                                                                                                                        |
-|---------------------------------------------------------------------------------------------------------------------------------|
-| [Zomato](../../3_HLDDesignProblems/ZomatoSwiggyDesign/Readme.md)                                                                |
-| [Swiggy (using EKS)](https://bytes.swiggy.com/how-swiggy-migrated-its-k8s-workload-to-graviton-d2643bbc7871)                    |
-| [Spotify](https://engineering.atspotify.com/2023/05/fleet-management-at-spotify-part-2-the-path-to-declarative-infrastructure/) |
+| Use Case                                                                  |
+|---------------------------------------------------------------------------|
+| [Zomato](../../3_HLDDesignProblems/ZomatoSwiggyDesign/Readme.md)          |
+| [Swiggy](../../3_HLDDesignProblems/ZomatoSwiggyDesign/SwiggyTechStack.md) |
+| [Spotify](../../3_HLDDesignProblems/PersonalizationSpotify/Readme.md)     |
+| [Grab](../../3_HLDDesignProblems/GrabSystemDesign/Readme.md)              |
+| [LinkedIn](../../3_HLDDesignProblems/LinkedInDesign/Readme.md)            |
+| [Split.io](../../3_HLDDesignProblems/SplitSystemDesign/Readme.md)         |
+| [Stripe](../../3_HLDDesignProblems/StripeSystemDesign/Readme.md)          |
 
 # Resources and Limits
 
 | Environment                                                                | Max Pods Per Node                                                                                                                   | Max Pods Per Cluster    | Max Nodes Per Cluster                                                                                |
 |----------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------|-------------------------|------------------------------------------------------------------------------------------------------|
 | Kubernates                                                                 | 110 pods per node                                                                                                                   | 150000 pods per cluster | 5000 nodes per cluster<br/>- Some performance bottlenecks start showing up with more than 500 nodes. |
-| [EKS](../../2_AWSComponents/4_ContainerOrchestrationServices/AmazonEKS.md) | Imposes a pod limit depending on the node size. <br/>- For example, t3.small allows only 11 pods, while m5.4xlarge allows 234 pods. | -                       | -                                                                                                    |
+| [EKS](../../2_AWSComponents/4_ContainerOrchestrationServices/AmazonEKS.md) | Imposes a pod limit depending on the node size. <br/>- For example, t3.small allows only 11 pods, while m5.4xlarge allows 234 pods. |                         |                                                                                                      |
 
 # Components
 

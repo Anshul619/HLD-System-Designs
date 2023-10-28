@@ -12,8 +12,11 @@
 
 > Tips
 > - Avoid having [very large shards as this can negatively affect the cluster's ability](https://www.elastic.co/blog/how-many-shards-should-i-have-in-my-elasticsearch-cluster) to recover from failure. 
-> - There is no fixed limit on how large shards can be, but a shard size of 50GB is often quoted as a limit that has been seen to work for a variety of use-cases.
+> - There is no fixed limit on how large shards can be, but a `shard size of 50GB` is often quoted as a limit that has been seen to work for a variety of use-cases.
 
-# How to increase ElasticSearch throughput and concurrency capacity
+# How to increase ElasticSearch throughput and concurrency capacity?
 - If you have an Elasticsearch cluster & you want to maximize the QPS and concurrency, its recommended to run the benchmark test that includes increasing and decreasing the number of shards per index / read replicas/indexes.
 - [Reference - How to dramatically increase your Elasticsearch throughput and concurrency capacity](https://medium.com/explorium-ai/how-to-dramatically-increase-your-elasticsearch-throughput-and-concurrency-capacity-c32d7bb02ac2)
+
+# Read more
+- [Size your shards](https://www.elastic.co/guide/en/elasticsearch/reference/current/size-your-shards.html)

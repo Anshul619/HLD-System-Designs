@@ -29,7 +29,7 @@
 
 ## ElasticSearch Cluster
 
-![](../Search-DBs/ElasticSearch/assests/ElasticSearch-Cluster.png)
+![](../Search-Databases/ElasticSearch/assests/ElasticSearch-Cluster.png)
 
 ## Redis Cluster
 
@@ -47,3 +47,4 @@
 # References
 - [A Guide to Consistent Hashing](https://www.toptal.com/big-data/consistent-hashing)
 - [Interviewbit - Sharding a database](https://www.interviewbit.com/problems/sharding-a-database/)
+- [What is database sharding?](https://aws.amazon.com/what-is/database-sharding/)

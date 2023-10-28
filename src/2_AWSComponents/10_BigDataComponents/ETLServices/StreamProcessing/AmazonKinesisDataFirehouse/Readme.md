@@ -4,7 +4,7 @@
 - It can also batch, compress, and encrypt the data before loading it, minimizing the amount of storage used at the destination and increasing security.
 - You cannot set up multiple consumers for Kinesis Data Firehose delivery streams as it can dump data in a single data repository at a time.
 
-![](assets/AWS-Kinesis-Firehouse.drawio.png)
+![](AWS-Kinesis-Firehouse.drawio.png)
 
 # Supported Data Destinations
 

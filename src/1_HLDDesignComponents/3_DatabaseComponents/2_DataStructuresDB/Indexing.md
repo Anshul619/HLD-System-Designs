@@ -25,6 +25,8 @@
 
 [Read more](https://github.com/donnemartin/system-design-primer#use-good-indices)
 
+> Note - SQL indexes stop working after a certain data threshold (like after 1 billion records).
+
 # :-1: Disadvantages of Indexes
 
 | Title                                          | Remarks                                                                                                               |

@@ -1,5 +1,5 @@
 # LSM-Tree
-- [LSM-Tree (Log-Structured Merge Tree)](https://en.wikipedia.org/wiki/Log-structured_merge-tree) is widely used by many NoSQL databases, such as [Cassandra](../NoSQL-Databases/ApacheCasandra.md), [RocksDB](../NoSQL-Databases/RocksDB.md), [ElasticSearch](../Search-DBs/ElasticSearch/Readme.md), LevelDB etc.
+- [LSM-Tree (Log-Structured Merge Tree)](https://en.wikipedia.org/wiki/Log-structured_merge-tree) is widely used by many NoSQL databases, such as [Cassandra](../NoSQL-Databases/ApacheCasandra.md), [RocksDB](../NoSQL-Databases/RocksDB.md), [ElasticSearch](../Search-Databases/ElasticSearch/Readme.md), LevelDB etc.
 - LSM-trees maintain key-value pairs and are persisted to disk using a [Sorted Strings Table (SSTable)](https://docs.datastax.com/en/archived/cassandra/3.0/cassandra/dml/dmlHowDataWritten.html), in which the keys are sorted.
 
 ![](https://www.scylladb.com/wp-content/uploads/sstable-diagram.png)

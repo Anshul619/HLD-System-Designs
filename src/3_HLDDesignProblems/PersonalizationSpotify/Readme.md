@@ -29,3 +29,4 @@ CREATE TABLE playlisttag (
 
 # Reference
 - [Personalization at Spotify using Cassandra](https://engineering.atspotify.com/2015/01/personalization-at-spotify-using-cassandra/)
+- [Fleet Management at Spotify](https://engineering.atspotify.com/2023/05/fleet-management-at-spotify-part-2-the-path-to-declarative-infrastructure/)

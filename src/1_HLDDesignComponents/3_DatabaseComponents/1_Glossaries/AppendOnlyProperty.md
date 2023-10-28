@@ -11,12 +11,12 @@
 | :star: [Kafka](../../4_MessageBrokers/Kafka/Readme.md)                                                                                    |
 | :star: [Amazon S3](../../../2_AWSComponents/7_StorageServices/3_ObjectStorageS3/Readme.md)                                                |
 | [Casandra](../NoSQL-Databases/ApacheCasandra.md)                                                                                          |
-| [ElasticSearch Data Stream](../Search-DBs/ElasticSearch/ElasticSearchDataStreams.md)                                                  |
+| [ElasticSearch Data Stream](../Search-Databases/ElasticSearch/ElasticSearchDataStreams.md)                                                  |
 | [Redis Streams](../In-Memory-Cache/Redis/Readme.md)                                                                                       |
 | [Amazon Aurora Global Database - Replication](../../../2_AWSComponents/6_DatabaseServices/AmazonRDS/AmazonAurora/AuroraGlobalDatabase.md) |
 | [RocksDB](../NoSQL-Databases/RocksDB.md)                                                                                                  |
-| [Amazon Kinesis](../../../2_AWSComponents/10_BigDataComponents/ETLServices/StreamProcessing/AmazonKinesis/Readme.md)                                  |
-| [Apache Lucene](../Search-DBs/Readme.md)                                                                                        |
+| [Amazon Kinesis](../../../2_AWSComponents/10_BigDataComponents/ETLServices/StreamProcessing/AmazonKinesis.md)                                  |
+| [Apache Lucene](../Search-Databases/Readme.md)                                                                                        |
 
 # References
 - [Building an Append-only Log From Scratch](https://eileen-code4fun.medium.com/building-an-append-only-log-from-scratch-e8712b49c924)

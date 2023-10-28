@@ -94,15 +94,15 @@ This repo contains the various system design components info, questions and solu
     </tr>
     <tr>
       <td>
-        <a href="src/1_HLDDesignComponents/3_DatabaseComponents/Search-Indexes" target="_blank">Search Engines</a>
+        <a href="src/1_HLDDesignComponents/3_DatabaseComponents/Search-Databases" target="_blank">Search Engines</a>
       </td>
       <td>
         <div class="container" style="background:white">
             <div class="block two first">
-                <a href="/src/1_HLDDesignComponents/3_DatabaseComponents/Search-Indexes/ElasticSearch/Readme.md" target="_blank">
+                <a href="/src/1_HLDDesignComponents/3_DatabaseComponents/Search-Databases/ElasticSearch/Readme.md" target="_blank">
                   <img src="https://miro.medium.com/max/1200/1*20yTn7K6c6vcmEdgwAgjSA.png" width="150">
                 </a>
-                <a href="/src/1_HLDDesignComponents/3_DatabaseComponents/Search-Indexes/ApacheSolr.md" target="_blank">
+                <a href="/src/1_HLDDesignComponents/3_DatabaseComponents/Search-Databases/ApacheSolr.md" target="_blank">
                   <img src="https://solr.apache.org/theme/images/identity/Solr_Logo_on_white.png" width="150">
                 </a>
             </div>
@@ -173,7 +173,7 @@ This repo contains the various system design components info, questions and solu
       <td>
         <div class="container" style="background:white">
             <div class="block two first">
-                <a href="/src/2_AWSComponents/10_BigDataComponents/ETLServices/StreamProcessing/AmazonKinesis/Readme.md" target="_blank">
+                <a href="/src/2_AWSComponents/10_BigDataComponents/ETLServices/StreamProcessing/AmazonKinesis.md" target="_blank">
                   <img src="https://miro.medium.com/max/1190/0*UQBKjEff1uIsXH8W" width="150">
                 </a>
                 <a href="/src/1_HLDDesignComponents/5_BigDataComponents/ETLServices/StreamProcessing/ApacheSpark.md" target="_blank">

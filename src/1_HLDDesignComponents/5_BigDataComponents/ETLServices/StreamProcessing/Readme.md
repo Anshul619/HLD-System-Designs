@@ -11,7 +11,7 @@
 |----------------------------------------------------------------------------------------------------------------------|
 | [Apache Spark](ApacheSpark.md)                                                                                       |
 | [Kafka Streams](KafkaStreamsAPI.md)                                                                                  |
-| [AWS Kinesis](../../../../2_AWSComponents/10_BigDataComponents/ETLServices/StreamProcessing/AmazonKinesis/Readme.md) |
+| [AWS Kinesis](../../../../2_AWSComponents/10_BigDataComponents/ETLServices/StreamProcessing/AmazonKinesis.md) |
 | [Apache Storm](ApacheStorm.md)                                                                                       |
 
 # Generate Use Cases
