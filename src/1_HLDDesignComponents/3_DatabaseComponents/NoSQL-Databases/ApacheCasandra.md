@@ -22,15 +22,15 @@
 
 # :star: Ideal Use Cases
 
-| Use Case                                                                                       |
-|------------------------------------------------------------------------------------------------|
+| Use Case                                                                                             |
+|------------------------------------------------------------------------------------------------------|
 | [Time Series Data](https://netflixtechblog.com/scaling-time-series-data-storage-part-i-ec2b6d44ba39) |
-| Historical records                                                                             |
-| [High-Write, Low-Read](../../0_SystemGlossaries/Scalability/LatencyThroughput.md)              |
-| Processing server logs                                                                         |
-| [Social media posts](../../../3_HLDDesignProblems/InstagramDesign/Readme.md)                   |
-| PDF documents                                                                                  |
-| Emails etc.                                                                                    |
+| Historical records                                                                                   |
+| [High-Write, Low-Read](../../0_SystemGlossaries/Scalability/LatencyThroughput.md)                    |
+| Processing server logs                                                                               |
+| [Social media posts](../../../3_HLDDesignProblems/SocialNetworkFacebookInstagramDesign/Readme.md)    |
+| PDF documents                                                                                        |
+| Emails etc.                                                                                          |
 
 # :star: Real world use cases of Casandra
 
@@ -40,11 +40,11 @@
 
 - [Read more](../../../3_HLDDesignProblems/PersonalizationSpotify)
 
-## Instagram - User Entities like Posts, Comments etc.
+## Social Network - User Entities like Posts, Comments etc.
 
-![](../../../3_HLDDesignProblems/InstagramDesign/HLD%20-%20Instagram%20.drawio.png)
+![](../../../3_HLDDesignProblems/SocialNetworkFacebookInstagramDesign/SocialNetworkDesignProblemHLD.png)
 
-- [Read more](../../../3_HLDDesignProblems/InstagramDesign/Readme.md)
+- [Read more](../../../3_HLDDesignProblems/SocialNetworkFacebookInstagramDesign/Readme.md)
 
 ## Search - Flight Booking
 

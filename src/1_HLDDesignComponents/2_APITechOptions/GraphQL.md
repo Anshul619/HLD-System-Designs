@@ -42,3 +42,4 @@ Both [REST](REST.md) and [GraphQL]() are based on following,
 # References
 - [What is GraphQL and why Facebook felt the need to build it?](https://buddy.works/tutorials/what-is-graphql-and-why-facebook-felt-the-need-to-build-it#why-facebook-built-graphql)
 - [GraphQL vs REST APIs | What's the Best Kind of API?](https://www.youtube.com/watch?v=F0_pkxQMZnc)
+- [Using GraphQL with Microservices in Go](https://outcrawl.com/go-graphql-gateway-microservices)

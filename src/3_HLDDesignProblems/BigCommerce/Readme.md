@@ -12,7 +12,7 @@
 
 # Stats
 
-| Feature         | Stat                        |
+| Feature         | Number                      |
 |-----------------|-----------------------------|
 | Kafka Brokers   | 20 Kafka Brokers            |
 | Zookeeper nodes | 6 Zookeeper nodes           |

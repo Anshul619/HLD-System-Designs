@@ -219,7 +219,7 @@
                 <a href="5_MessageBrokerServices/AmazonMSK.md" target="_blank">
                   <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcjocd4vh1S29xvfJ_bjgJWb-SR5SzW2Dz2A&usqp=CAU" width="100">
                 </a>
-                <a href="5_MessageBrokerServices/AmazonKinesisDataStreams.md" target="_blank">
+                <a href="5_MessageBrokerServices/AmazonKinesis/AmazonKinesisDataStreams.md" target="_blank">
                   <img src="https://intellipaat.com/blog/wp-content/uploads/2022/08/image-75.png" width="100">
                 </a>
                 <a href="5_MessageBrokerServices/AmazonMQ.md" target="_blank">

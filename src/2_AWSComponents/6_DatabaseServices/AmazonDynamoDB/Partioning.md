@@ -24,7 +24,7 @@
 | Stat                     | Value              |
 |--------------------------|--------------------|
 | Partition size limit     | 10 GB              |
-| Partition capacity limit | 3000 RCU, 1000 RCU |
+| Partition capacity limit | 3000 RCU, 1000 WCU |
 
 # Choosing the Right DynamoDB Partition Key
 

@@ -25,4 +25,3 @@
 
 # References
 - [Scalability and High Availability](https://dzone.com/refcardz/scalability)
-- [How Sharding Works?](https://medium.com/@jeeyoungk/how-sharding-works-b4dec46b3f6)

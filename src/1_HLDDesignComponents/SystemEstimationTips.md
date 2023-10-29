@@ -76,4 +76,3 @@ Handy Metrics:
 - [NgInx - 1000 concurrent sessions](https://www.linode.com/community/questions/22200/nodebalancers-are-supposed-to-handle-10000-maximum-concurrent-connections)
 - [Bytes Calculator](https://mothereff.in/byte-counter)
 - [Latency](https://github.com/donnemartin/system-design-primer#latency-numbers-every-programmer-should-know)
-

@@ -15,7 +15,7 @@
 | [Redis Streams](../In-Memory-Cache/Redis/Readme.md)                                                                                       |
 | [Amazon Aurora Global Database - Replication](../../../2_AWSComponents/6_DatabaseServices/AmazonRDS/AmazonAurora/AuroraGlobalDatabase.md) |
 | [RocksDB](../NoSQL-Databases/RocksDB.md)                                                                                                  |
-| [Amazon Kinesis](../../../2_AWSComponents/10_BigDataComponents/ETLServices/StreamProcessing/AmazonKinesis.md)                                  |
+| [Amazon Kinesis](../../../2_AWSComponents/5_MessageBrokerServices/AmazonKinesis/Readme.md)                                  |
 | [Apache Lucene](../Search-Databases/Readme.md)                                                                                        |
 
 # References

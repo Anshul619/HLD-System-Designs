@@ -17,7 +17,7 @@
 
 | AWS Service                                                                                            | Source | Destination (for processed data) |
 |--------------------------------------------------------------------------------------------------------|--------|----------------------------------|
-| [Kinesis Data Streams](../../5_MessageBrokerServices/AmazonKinesisDataStreams.md)                      | Yes    | Yes                              |
+| [Kinesis Data Streams](../../5_MessageBrokerServices/AmazonKinesis/AmazonKinesisDataStreams.md)                      | Yes    | Yes                              |
 | [Amazon MSK (Managed service for Kafka)](../../5_MessageBrokerServices/AmazonMSK.md)                   | Yes    | Yes                              |
 | [Amazon S3](../../7_StorageServices/3_ObjectStorageS3/Readme.md)                                       | Yes    | Yes                              |
 | [API Gateway](../../1_NetworkingAndContentDelivery/2_ApplicationNetworking/AmazonAPIGateway/Readme.md) | Yes    | NO                               |

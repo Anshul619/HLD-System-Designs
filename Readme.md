@@ -80,7 +80,7 @@ This repo contains the various system design components info, questions and solu
                 <a href="/src/1_HLDDesignComponents/4_MessageBrokers/Kafka/Readme.md" target="_blank">
                   <img src="http://i1.wp.com/airisdata.com/wp-content/uploads/2016/01/kafka-logo-600x390.jpg?resize=600%2C390" width="150">
                 </a>
-                <a href="/src/2_AWSComponents/5_MessageBrokerServices/AmazonKinesisDataStreams.md" target="_blank">
+                <a href="/src/2_AWSComponents/5_MessageBrokerServices/AmazonKinesis/AmazonKinesisDataStreams.md" target="_blank">
                   <img src="https://intellipaat.com/blog/wp-content/uploads/2022/08/image-75.png" width="150">
                 </a>
                 <a href="/src/2_AWSComponents/5_MessageBrokerServices/AmazonSQS/Readme.md" target="_blank"><img src="https://i0.wp.com/blog.knoldus.com/wp-content/uploads/2021/09/sqs.png?w=711&ssl=1" width="150"></a>
@@ -173,7 +173,7 @@ This repo contains the various system design components info, questions and solu
       <td>
         <div class="container" style="background:white">
             <div class="block two first">
-                <a href="/src/2_AWSComponents/10_BigDataComponents/ETLServices/StreamProcessing/AmazonKinesis.md" target="_blank">
+                <a href="/src/2_AWSComponents/10_BigDataComponents/ETLServices/StreamProcessing/AmazonKinesisDataFirehouse/Readme.md" target="_blank">
                   <img src="https://miro.medium.com/max/1190/0*UQBKjEff1uIsXH8W" width="150">
                 </a>
                 <a href="/src/1_HLDDesignComponents/5_BigDataComponents/ETLServices/StreamProcessing/ApacheSpark.md" target="_blank">
