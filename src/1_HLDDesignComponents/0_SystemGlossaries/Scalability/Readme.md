@@ -4,7 +4,7 @@
 | Term                                                                     |
 |--------------------------------------------------------------------------|
 | [App Nodes Scalability](AppNodesScalability.md)                          |
-| [DB Scalability](../../3_DatabaseComponents/1_Glossaries/DBScalability.md) |
+| [DB Scalability](../../3_DatabaseComponents/1_Glossaries/ScalabilityDB.md) |
 | [Servers Cluster](ServersCluster.md)                                     |
 | [Load Balancer](LoadBalancer.md)                                         |
 | [Latency Throughput](LatencyThroughput.md)                               |

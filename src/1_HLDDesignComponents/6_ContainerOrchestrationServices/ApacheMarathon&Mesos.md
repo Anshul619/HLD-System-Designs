@@ -12,7 +12,7 @@
 - Program like it's a single of resources.
 
 ### Linear Scalability
-- [Linear Scalability](../3_DatabaseComponents/1_Glossaries/DBScalability.md) - Industry proven to easily scale to 10,000s of nodes.
+- [Linear Scalability](../3_DatabaseComponents/1_Glossaries/ScalabilityDB.md) - Industry proven to easily scale to 10,000s of nodes.
 
 ### High availability
 - [Fault-tolerant](../0_SystemGlossaries/Reliability/HighAvailability.md) replicated master and agents using [Zookeeper](../7_ClusterCoordinationService/ApacheZookeeper.md).

@@ -1,6 +1,6 @@
 # Redis (Cluster Mode Disabled) vs. Redis (Cluster Mode Enabled)
 
-| Feature                       | [Redis (cluster mode disabled)](../../../1_HLDDesignComponents/3_DatabaseComponents/In-Memory-Cache/Redis/RedisLeaderFollowReplication.md) | [Redis (cluster mode enabled)](../../../1_HLDDesignComponents/3_DatabaseComponents/In-Memory-Cache/Redis/RedisCluster.md) |
+| Feature                       | [Redis (cluster mode disabled)](../../../1_HLDDesignComponents/3_DatabaseComponents/In-Memory-DB/Redis/RedisLeaderFollowReplication.md) | [Redis (cluster mode enabled)](../../../1_HLDDesignComponents/3_DatabaseComponents/In-Memory-DB/Redis/RedisCluster.md) |
 |-------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------|
 | Modifiable                    | :white_check_mark: Yes. Supports adding and deleting replica nodes, and scaling up node type.                                             | [Limited](https://docs.aws.amazon.com/AmazonElastiCache/latest/red-ug/scaling-redis-cluster-mode-enabled.html)            |
 | Data Sharding                 | :x: No                                                                                                                                    | :white_check_mark: Yes                                                                                                    |

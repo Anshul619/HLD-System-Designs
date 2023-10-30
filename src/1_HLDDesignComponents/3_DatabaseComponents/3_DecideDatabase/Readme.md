@@ -2,7 +2,7 @@
 
 > With modern application design such as [microservice architectures](../../1_MicroServicesSOA/Readme.md), it is easier to scale and faster to develop applications with a denormalized schema because each service stores and processes data related to a single business function.
 
-![img.png](assets/DecideDatabase.drawio.png)
+![img.png](DecideDatabase.drawio.png)
 
 # PACLEC Theorem
 

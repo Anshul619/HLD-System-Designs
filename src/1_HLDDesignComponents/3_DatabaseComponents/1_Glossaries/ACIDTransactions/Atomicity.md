@@ -18,5 +18,5 @@ It involves the following two operations.
 
 | Example                                                         |
 |-----------------------------------------------------------------|
-| [Redis Transaction Lock](../../In-Memory-Cache/Redis/Readme.md) |
+| [Redis Transaction Lock](../../In-Memory-DB/Redis/Readme.md) |
 

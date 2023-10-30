@@ -11,7 +11,7 @@
 
 | Stat                  | Remarks                                                                                                                                                                         |
 |-----------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 20 Cassandra clusters | As in 2016, Uber had about [20 Cassandra clusters](../../1_HLDDesignComponents/3_DatabaseComponents/NoSQL-Databases/ApacheCasandra.md) and planned on having 100 in the future. |
+| 20 Cassandra clusters | As in 2016, Uber had about [20 Cassandra clusters](../../1_HLDDesignComponents/3_DatabaseComponents/NoSQL-Databases/WideColumnDB/ApacheCasandra.md) and planned on having 100 in the future. |
 | Nodes                 | ~300 machine across two data centers.                                                                                                                                           |
 | Largest 2 clusters    | One of the clusters was storing the location that was sent out every 30 seconds by both the driver and rider apps.                                                              |
 | Throughput            | More than a million writes/sec and ~100k reads/sec`                                                                                                                             |

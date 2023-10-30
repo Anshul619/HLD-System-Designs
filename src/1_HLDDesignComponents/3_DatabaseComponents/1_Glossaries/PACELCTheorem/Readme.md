@@ -12,10 +12,10 @@
 | DB                                                                                  | P+A                | P+C                | E+L                | E+C                |
 |-------------------------------------------------------------------------------------|--------------------|--------------------|--------------------|--------------------|
 | [DynamoDB](../../../../2_AWSComponents/6_DatabaseServices/AmazonDynamoDB/Readme.md) |                    | :white_check_mark: | :white_check_mark: | :white_check_mark: |
-| [PostgresSQL](../../SQL-DBs.md)                                                     | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: |
+| [PostgresSQL](../../SQL-Databases/Readme.md)                                                     | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: |
 | [MongoDB](../../NoSQL-Databases/MongoDB)                                            | :white_check_mark: |                    | :white_check_mark: |                    |
-| [Cassandra](../../NoSQL-Databases/ApacheCasandra.md)                                | :white_check_mark: | :white_check_mark: |                    |                    |
-| [HBase](../../NoSQL-Databases/ApacheHBase.md)                                       |                    | :white_check_mark: |                    | :white_check_mark: |
+| [Cassandra](../../NoSQL-Databases/WideColumnDB/ApacheCasandra.md)                                | :white_check_mark: | :white_check_mark: |                    |                    |
+| [HBase](../../NoSQL-Databases/WideColumnDB/ApacheHBase.md)                                       |                    | :white_check_mark: |                    | :white_check_mark: |
 
 # CAP Theorem
 - [Read more](CAPTheorem.md)

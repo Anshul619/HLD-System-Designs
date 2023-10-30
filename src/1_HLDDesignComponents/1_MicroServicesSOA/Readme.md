@@ -24,7 +24,7 @@
 | [Service Registry & Discovery](2_ServiceRegistry&Discovery/Readme.md)                                             | [Eureka](2_ServiceRegistry&Discovery/Eureka.md), [AWS CloudMap](../../2_AWSComponents/1_NetworkingAndContentDelivery/2_ApplicationNetworking/AWSCloudMap.md)<br/>- Some systems such as [Kubernetes](../6_ContainerOrchestrationServices/Kubernates.md) etc. have an implicit service registry.<br/>- Hence service registry and discovery is not needed in these cases. |
 | [Service Mesh](3_ServiceMesh.md)                                                                                  | [AWS AppMesh](../../2_AWSComponents/1_NetworkingAndContentDelivery/2_ApplicationNetworking/AWSAppMesh.md) can be used as service mesh for distributed tracing.                                                                                                                                                                                                            |
 | [Logging & monitoring](../8_MonitoringTools/Readme.md)                                                            | [New Relic](../8_MonitoringTools/NewRelic.md), AWS Cloudwatch, [ELK](../8_MonitoringTools/ELK.md) etc.                                                                                                                                                                                                                                            |
-| Data Store - Session                                                                                              | [Redis](../3_DatabaseComponents/In-Memory-Cache/Redis) can be used to share the session data between microservices.                                                                                                                                                                                                                               |
+| Data Store - Session                                                                                              | [Redis](../3_DatabaseComponents/In-Memory-DB/Redis) can be used to share the session data between microservices.                                                                                                                                                                                                                               |
 | Separate database for every microservice                                                                          | [SQL or NoSQL](../3_DatabaseComponents)                                                                                                                                                                                                                                                                                                           |
 
 # Key Features of API Gateway
@@ -65,10 +65,6 @@
 - `Safety` - The contract should be defined properly between microservices.
 - `Resilience` - Client should be able to handle failure scenarios properly.
 - `Dependency` - Micro-services would be dependent to each other. Sometimes, there can be circular dependencies also.
-
-# Examples of MicroServices
-- Start Page, Recommendation, Feed, Search, Product Details, Orders etc. services in [LinkedIn](../../3_HLDDesignProblems/LinkedInDesign/Readme.md).
-- [Zomoto Design](../../3_HLDDesignProblems/ZomatoSwiggyDesign)
 
 # References
 - [What Are Microservices Really All About? (And When Not To Use It)](https://www.youtube.com/watch?v=lTAcCNbJ7KE)

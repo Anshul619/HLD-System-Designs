@@ -25,7 +25,7 @@ This replication is available as a built-in-feature in various technologies.
 | Type                     | Tech                                                                                                                                                                                                                                                 |
 |--------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | SQL/Relational Databases | [Amazon Aurora](../../../../2_AWSComponents/6_DatabaseServices/AmazonRDS/AmazonAurora/Readme.md), PostgresSQL, MySQL etc.                                                                                                                            |
-| NoSQL Databases          | [Amazon Elastic Cache (Cluster Disabled)](../../../../2_AWSComponents/6_DatabaseServices/AmazonElasticCache/ClusterMode.md), [Redis - Master Slave Replication](../../In-Memory-Cache/Redis/RedisLeaderFollowReplication.md), MongoDB, DynamoDB etc. |
+| NoSQL Databases          | [Amazon Elastic Cache (Cluster Disabled)](../../../../2_AWSComponents/6_DatabaseServices/AmazonElasticCache/ClusterMode.md), [Redis - Master Slave Replication](../../In-Memory-DB/Redis/RedisLeaderFollowReplication.md), MongoDB, DynamoDB etc. |
 | Message Brokers          | [Kafka Cluster](../../../4_MessageBrokers/Kafka/Readme.md), RabbitMQ                                                                                                                                                                                 |
 
 # Leader Election Process

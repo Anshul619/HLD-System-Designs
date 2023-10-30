@@ -18,7 +18,7 @@
 | Kafka - Topics                | There would be 2 different topics (in [Kafka](../../1_HLDDesignComponents/4_MessageBrokers/Kafka/Readme.md)) for SMS, WhatsApp message types etc.                  |
 | Kafka - Estimation            | [How to decide number of partitions in Kafka?](../../1_HLDDesignComponents/4_MessageBrokers/Kafka/KafkaEstimations.md)                                             |
 | Redis - Rate Limiting         | [To understand more about Rate Limiting, check here](../RateLimiterAPI)                                                                                            |
-| Casandra - Messages Datastore | [Casandra](../../1_HLDDesignComponents/3_DatabaseComponents/NoSQL-Databases/ApacheCasandra.md) can be used to store messages (from logging, auditing perspective). |
+| Casandra - Messages Datastore | [Casandra](../../1_HLDDesignComponents/3_DatabaseComponents/NoSQL-Databases/WideColumnDB/ApacheCasandra.md) can be used to store messages (from logging, auditing perspective). |
 
 # DB Design
 

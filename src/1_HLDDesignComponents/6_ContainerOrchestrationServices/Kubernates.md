@@ -11,11 +11,11 @@
 
 | Use Case                                                                  |
 |---------------------------------------------------------------------------|
-| [Zomato](../../3_HLDDesignProblems/ZomatoSwiggyDesign/Readme.md)          |
-| [Swiggy](../../3_HLDDesignProblems/ZomatoSwiggyDesign/SwiggyTechStack.md) |
+| [Zomato](../../3_HLDDesignProblems/FoodOrderingZomatoSwiggyDesign/Readme.md)          |
+| [Swiggy](../../3_HLDDesignProblems/FoodOrderingZomatoSwiggyDesign/SwiggyTechStack.md) |
 | [Spotify](../../3_HLDDesignProblems/PersonalizationSpotify/Readme.md)     |
-| [Grab](../../3_HLDDesignProblems/GrabSystemDesign/Readme.md)              |
-| [LinkedIn](../../3_HLDDesignProblems/LinkedInDesign/Readme.md)            |
+| [Grab](../../3_HLDDesignProblems/FoodOrderingZomatoSwiggyDesign/GrabTechStack/Readme.md)              |
+| [LinkedIn](../../3_HLDDesignProblems/SocialNetworkFacebookInstagramDesign/LinkedInTechStack.md)            |
 | [Split.io](../../3_HLDDesignProblems/SplitSystemDesign/Readme.md)         |
 | [Stripe](../../3_HLDDesignProblems/StripeSystemDesign/Readme.md)          |
 

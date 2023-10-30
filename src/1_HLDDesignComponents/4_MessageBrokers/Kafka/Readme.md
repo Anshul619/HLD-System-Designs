@@ -23,25 +23,25 @@
 
 | Use Case                                                                                                               |
 |------------------------------------------------------------------------------------------------------------------------|
-| [LinkedIn - Kafka](../../../3_HLDDesignProblems/LinkedInDesign/Readme.md)                                              |
+| [LinkedIn - Kafka](../../../3_HLDDesignProblems/SocialNetworkFacebookInstagramDesign/LinkedInTechStack.md)                                              |
 | [Personalization at Spotify using Cassandra & Kafka](../../../3_HLDDesignProblems/PersonalizationSpotify/Readme.md)    |
-| [Zomato - HLD Design](../../../3_HLDDesignProblems/ZomatoSwiggyDesign/Readme.md)                                       |
+| [Zomato - HLD Design](../../../3_HLDDesignProblems/FoodOrderingZomatoSwiggyDesign/Readme.md)                                       |
 | [Uber Driver Allocation](../../../3_HLDDesignProblems/UberDriverAllocationDesign/Readme.md)                            |
 | [Twillo - Send Message API Design](../../../3_HLDDesignProblems/TwilloSendMessageAPI/Readme.md)                                 |
 | [Logging Solution in Distributed Systems](../../../3_HLDDesignProblems/LoggingSolution/Readme.md)                      |
 | [Flight Booking Search](../../../3_HLDDesignProblems/FlightBookingSearch/Readme.md)                                    |
 | [Amplitude - Reducing costs with AZ-awareness for Kafka](../../../3_HLDDesignProblems/AmplitudeSystemDesign/Readme.md) |
 | [BigCommerce - Real-time events](../../../3_HLDDesignProblems/BigCommerce/Readme.md)                                   |
-| [Paypal - Kafka](../../../3_HLDDesignProblems/PaypalKafka/Readme.md)                                                   |
-| [Grab - Orders Processing](../../../3_HLDDesignProblems/GrabSystemDesign/OrdersProcessing.md)                          |
-| [Swiggy (through Confluent)](../../../3_HLDDesignProblems/ZomatoSwiggyDesign/SwiggyTechStack.md)                       |
+| [Paypal - Kafka](../../../3_HLDDesignProblems/PaypalSystemDesign/Readme.md)                                                   |
+| [Grab - Orders Processing](../../../3_HLDDesignProblems/FoodOrderingZomatoSwiggyDesign/GrabTechStack/OrdersProcessing.md)                          |
+| [Swiggy (through Confluent)](../../../3_HLDDesignProblems/FoodOrderingZomatoSwiggyDesign/SwiggyTechStack.md)                       |
 | [Split.io](../../../3_HLDDesignProblems/SplitSystemDesign/Readme.md)                                                   |
 
 # Top Features of Kafka
 
 | Feature                               | Description                                                                                                                                                                                                                                                                                                                                                                                        |
 |---------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Scalability - Horrizontal scalability | Kafka can be [horizontally scaled](../../3_DatabaseComponents/1_Glossaries/DBScalability.md) easily across the cluster.<br/>- A cluster of brokers is used to partition and streamline the data thereby, scaling up the storage capacity.                                                                                                                                                             |
+| Scalability - Horrizontal scalability | Kafka can be [horizontally scaled](../../3_DatabaseComponents/1_Glossaries/ScalabilityDB.md) easily across the cluster.<br/>- A cluster of brokers is used to partition and streamline the data thereby, scaling up the storage capacity.                                                                                                                                                             |
 | Performance - High Throughput         | Each Kafka broker can serve more than [1 million messages per second](../../0_SystemGlossaries/Scalability/LatencyThroughput.md#Throughput) and can hold TBs of data.<br/>- Default configured message size in Kafka is `1MB`.                                                                                                                                                                     |
 | High Volume                           | Large amount of data can be stored in the Kafka pool.                                                                                                                                                                                                                                                                                                                                              |
 | Durability                            | The data is kept [persistent (as per retention policy)](../../3_DatabaseComponents/1_Glossaries/ACIDTransactions/Durability.md) and tolerant to any hardware failures by copying the data in the clusters.                                                                                                                                                                                                                |
@@ -96,12 +96,12 @@
 
 # Why Kafka is so fast?
 - Kafka achieves [low latency](../../0_SystemGlossaries/Scalability/LatencyThroughput.md) message delivery through [Sequential I/O and Zero Copy Principle](https://twitter.com/alexxubyte/status/1506663791961919488/photo/1).
-- Messages (events) in the [Kafka]() are immutable and can't be changed once it's pushed (due to [log based queue nature](../../3_DatabaseComponents/1_Glossaries/AppendOnlyProperty.md)).
+- Messages (events) in the [Kafka]() are immutable and can't be changed once it's pushed (due to [log based queue nature](../../3_DatabaseComponents/2_DataStructuresDB/AppendOnlyProperty.md)).
 - The same techniques are commonly used in much other messaging/streaming platforms.
 
-Kafka is based on [Log Based Queue](../../3_DatabaseComponents/1_Glossaries/AppendOnlyProperty.md)
-- :star: Messages are persisted to [append-only log files](../../3_DatabaseComponents/1_Glossaries/AppendOnlyProperty.md) by the broker.
-- Producers are [appending these log files (sequential write)](../../3_DatabaseComponents/1_Glossaries/AppendOnlyProperty.md) & consumers are reading a range of these files ( `sequential reads` ).
+Kafka is based on [Log Based Queue](../../3_DatabaseComponents/2_DataStructuresDB/AppendOnlyProperty.md)
+- :star: Messages are persisted to [append-only log files](../../3_DatabaseComponents/2_DataStructuresDB/AppendOnlyProperty.md) by the broker.
+- Producers are [appending these log files (sequential write)](../../3_DatabaseComponents/2_DataStructuresDB/AppendOnlyProperty.md) & consumers are reading a range of these files ( `sequential reads` ).
 
 # References
 - [Kafka official documentation](https://kafka.apache.org/documentation/#theproducer)

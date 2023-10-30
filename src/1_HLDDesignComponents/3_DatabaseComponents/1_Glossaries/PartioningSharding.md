@@ -10,8 +10,8 @@
 | Terminology                                                             | Examples                                                                                                                          | Description                                                                                                                                                                                            |
 |-------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Partition Key                                                           | User ID, Location ID, Photo ID etc.                                                                                               | Partitioning would be done based on a partition key. <br/>- Hence we need to carefully choose this key to distribute the data evenly b/w partitions.                                                   |
-| Hash Function                                                           | MD5 as a hash function used in [Casandra](../NoSQL-Databases/ApacheCasandra.md), [MongoDB](../NoSQL-Databases/MongoDB/Readme.md). | Hash function helps to determine the partition for a given key.                                                                                                                                        |
-| Secondary Indexes                                                       | [Global Secondary Indexes in DynamoDB](../../../2_AWSComponents/6_DatabaseServices/AmazonDynamoDB/Readme.md)                      | [Read more](../2_DataStructuresDB/Indexing.md)                                                                                                                                                         |
+| Hash Function                                                           | MD5 as a hash function used in [Casandra](../NoSQL-Databases/WideColumnDB/ApacheCasandra.md), [MongoDB](../NoSQL-Databases/MongoDB/Readme.md). | Hash function helps to determine the partition for a given key.                                                                                                                                        |
+| Secondary Indexes                                                       | [Global Secondary Indexes in DynamoDB](../../../2_AWSComponents/6_DatabaseServices/AmazonDynamoDB/Readme.md)                      | [Read more](../2_DataStructuresDB/Indexing/Readme.md)                                                                                                                                                         |
 | Consistent Hashing                                                      |                                                                                                                                   | This handles data sharding with dynamic number of servers.<br/>- [Read more](https://www.youtube.com/watch?v=UF9Iqmg94tk)                                                                              |
 | Record-Unique-ID-Generator (for non-sharding-builtin-DBs like Postgres) | DB Ticket Servers, which generates unique UUIDs.                                                                                  | Since data is being inserted into many databases at the same time, we would have generate unique ID on the application side.<br/>- [Read more](../../../3_HLDDesignProblems/SocialNetworkFacebookInstagramDesign/Readme.md) |
 
@@ -33,7 +33,7 @@
 
 ## Others
 - [Amazon DynamoDB Cluster](../../../2_AWSComponents/6_DatabaseServices/AmazonDynamoDB/Partioning.md)
-- [Apache Casandra](../NoSQL-Databases/ApacheCasandra.md) etc.
+- [Apache Casandra](../NoSQL-Databases/WideColumnDB/ApacheCasandra.md) etc.
 - [Instagram - Postgres Sharding](../../../3_HLDDesignProblems/SocialNetworkFacebookInstagramDesign/Readme.md)
 
 # Consistent Hashing
@@ -46,3 +46,4 @@
 - [How Sharding Works?](https://medium.com/@jeeyoungk/how-sharding-works-b4dec46b3f6)
 - [Sharding with Amazon Relational Database Service](https://aws.amazon.com/blogs/database/sharding-with-amazon-relational-database-service/)
 - [Interviewbit - Sharding a database](https://www.interviewbit.com/problems/sharding-a-database/)
+- [Sharding in MySQL Cluster](https://www.mysql.com/products/cluster/scalability.html)

@@ -2,13 +2,13 @@
 # MongoDB
 - [MongoDB](https://www.mongodb.com/) is better suited for [high write and update throughput operations](../../../0_SystemGlossaries/Scalability/LatencyThroughput.md) without draining CPU resources and/or causing disk I/O issues. 
 - It organizes data using a doubly linked data structure: documents contain linked lists to one another and to the `BSON-encoded` data behind the scenes.
-- It offers [high scalability, reliability, and performance](../../1_Glossaries/DBScalability.md).
+- It offers [high scalability, reliability, and performance](../../1_Glossaries/ScalabilityDB.md).
 - [MongoDB]() is more suitable to manage NoSQL data requiring create, read, update and delete (CRUD) operations.
 
 ![img.png](assests/MongoDB_JSON.png)
 
 # :star: Real world use cases of MongoDB
-- [Zomato - HLD Design](../../../../3_HLDDesignProblems/ZomatoSwiggyDesign/Readme.md)
+- [Zomato - HLD Design](../../../../3_HLDDesignProblems/FoodOrderingZomatoSwiggyDesign/Readme.md)
 
 # General Use Cases
 

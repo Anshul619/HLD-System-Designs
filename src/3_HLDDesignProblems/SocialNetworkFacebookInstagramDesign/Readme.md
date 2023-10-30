@@ -1,8 +1,18 @@
-# Social Network Design like Facebook, Instagram etc.
+# Social Network Design like Facebook, Instagram, Twitter etc.
+- [Social Network - System Design Problem](SocialNetworkDesignProblem.md)
 
 ![](SocialNetworkDesignProblemHLD.png)
 
-# Key Links
-- [Social Network - System Design Problem](SocialNetworkDesignProblem.md)
-- [Instagram Tech Stack on AWS](InstagramTechStack.md)
+# Real-world systems
+
+|           | Remarks                             |
+|-----------|-------------------------------------|
+| LinkedIn  | [Tech Stack](LinkedInTechStack.md)  |
+| Instagram | [Tech Stack](InstagramTechStack.md) |
+| Facebook  | [Tech Stack](FacebookTechStack.md)  |
+| Twitter   |                                     |
+
+
+
+
 

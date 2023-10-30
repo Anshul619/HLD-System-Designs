@@ -11,12 +11,27 @@ The application should be able to support the following requirements.
 - Sending and receiving messages from other users.
 - Generating machine learning based personalized recommendations to discover new people, photos, videos, and stories relevant one’s interest.
 
+## NFR
+- Read heavy system (100x more reads than writes)
+- Lag is okay in some cases
+
 # Ball-mark estimations
 - [Calculator link](https://docs.google.com/spreadsheets/d/15vApko2QrmZmv5qTEIyU_IAWvgY3MD23TR3TuLUiPc8/edit#gid=230262262)
 
 # Tech Architecture
 
 ![](SocialNetworkDesignProblemHLD.png)
+
+# User Categories
+
+|          | Remarks                                                         |
+|----------|-----------------------------------------------------------------|
+| Famous   | Users with huge number of followers                             |
+| Active   | Users accessing the system, within last few days (3 to 30 days) |
+| Live     | Users actually accessing the system right now                   |
+| Passive  | None of above categories                                        |
+| Inactive | Users who have deleted their account                            |
+
 
 # Tech Decisions
 
@@ -26,8 +41,8 @@ The application should be able to support the following requirements.
 | Images Storage                       | [Amazon S3](../../2_AWSComponents/7_StorageServices/3_ObjectStorageS3/Readme.md) or [HDFS](../../1_HLDDesignComponents/5_BigDataComponents/ETLServices/BatchProcessing/ApacheHadoop/ApacheHDFS.md) |
 | Images MetaData                      | [Amazon DynamoDB](../../2_AWSComponents/6_DatabaseServices/AmazonDynamoDB/Readme.md)                                                                                                               |
 | Partitioning Key for images metadata | PhotoID                                                                                                                                                                                            |
-| User Activity - Data Entities Store  | [Amazon DynamoDB](../../2_AWSComponents/6_DatabaseServices/AmazonDynamoDB/Readme.md) or [Cassandra](../../1_HLDDesignComponents/3_DatabaseComponents/NoSQL-Databases/ApacheCasandra.md)            |
-| User Activity - Relationship Store   | Graph Databases like [Neo4j](../../1_HLDDesignComponents/3_DatabaseComponents/NoSQL-Databases/Neo4j.md) or Amazon Neptune                                                                          |
+| User Activity - Data Entities Store  | [Amazon DynamoDB](../../2_AWSComponents/6_DatabaseServices/AmazonDynamoDB/Readme.md) or [Cassandra](../../1_HLDDesignComponents/3_DatabaseComponents/NoSQL-Databases/WideColumnDB/ApacheCasandra.md)            |
+| User Activity - Relationship Store   | Graph Databases like [Neo4j](../../1_HLDDesignComponents/3_DatabaseComponents/NoSQL-Databases/GraphDB/Neo4j.md) or Amazon Neptune                                                                          |
 | Data Streaming                       | [Kafka](../../1_HLDDesignComponents/4_MessageBrokers/Kafka/Readme.md) or [Amazon Kinesis](../../2_AWSComponents/5_MessageBrokerServices/AmazonKinesis/Readme.md)                                   |
 | App Servers                          | Separate app servers for READ and WRITE (Since read-write ratio is 100:1).                                                                                                                         |
 
@@ -92,13 +107,13 @@ What are the different issues with "Partitioning based on UserID"?
 # User Activity Service
 
 ## Graph Data Models
-- The reason we have chosen a [Neo4j](../../1_HLDDesignComponents/3_DatabaseComponents/NoSQL-Databases/Neo4j.md) graph data-model is that our data will contain complex relationships between data entities such as users, posts, and comments as nodes of the graph.
+- The reason we have chosen a [Neo4j](../../1_HLDDesignComponents/3_DatabaseComponents/NoSQL-Databases/GraphDB/Neo4j.md) graph data-model is that our data will contain complex relationships between data entities such as users, posts, and comments as nodes of the graph.
 - After that, we will use edges of the graph to store relationships such as follows, likes, comments, and so forth.
 
 ![](https://live.staticflickr.com/65535/51813972019_ddfbe16c97_z.jpg)
 
-## Wide-column Data Models
-- We will use NoSQL databases like [Amazon DynamoDB](../../2_AWSComponents/6_DatabaseServices/AmazonDynamoDB/Readme.md) or [Cassandra](../../1_HLDDesignComponents/3_DatabaseComponents/NoSQL-Databases/ApacheCasandra.md) to store information like user feeds, activities, and counters.
+## NoSQL Data Models
+- We will use NoSQL databases like [Amazon DynamoDB](../../2_AWSComponents/6_DatabaseServices/AmazonDynamoDB/Readme.md) or [Cassandra](../../1_HLDDesignComponents/3_DatabaseComponents/NoSQL-Databases/WideColumnDB/ApacheCasandra.md) to store information like user feeds, activities, and counters.
 - Each row will contain feed/activity information of the user.
 - We can also have a TTL based functionality to evict older posts.
 
@@ -108,16 +123,11 @@ User_id -> List
 
 ![](https://live.staticflickr.com/65535/51813632951_0f0f673287_w.jpg)
 
-## Streaming Data Model
-- We can use cloud technologies such as [Amazon Kinesis](../../2_AWSComponents/5_MessageBrokerServices/AmazonKinesis/Readme.md) or Azure Stream Analytics for collecting, processing, and analyzing real-time, streaming data to get timely insights and react quickly to new information (e.g. a new like, comment etc.).
-
-![](https://live.staticflickr.com/65535/51814358575_69266135f8_z.jpg)
-
 # References
-- :star: [Designing Instagram](http://highscalability.com/blog/2022/1/11/designing-instagram.html)
+- :star: [HighScalability - Designing Instagram](http://highscalability.com/blog/2022/1/11/designing-instagram.html)
 - :star: [CodeKarle - Facebook System Design | Instagram System Design | System Design Interview Question](https://www.youtube.com/watch?v=9-hjBGxuiEs)
-- [Cassandra at Instagram 2016 (Dikang Gu, Facebook) | Cassandra Summit 2016](https://www.youtube.com/watch?v=_BfMH4GQWnk)
+- :star: [CodeKarle - Twitter System Design | System Design Interview Question](https://www.youtube.com/watch?v=EkudBdvbDhs)
 - [Facebook - Serving a Billion Personalized News Feeds](https://www.youtube.com/watch?v=Xpx5RYNTQvg)
-- [Design Instagram](https://www.enjoyalgorithms.com/blog/design-instagram)
+- [Enjoyalgorithms - Design Instagram](https://www.enjoyalgorithms.com/blog/design-instagram)
 - [Instagram System Architecture](https://medium.com/interviewnoodle/instagram-system-architecture-fdbec22e48ee)
-- [System Design: Instagram](https://www.educative.io/courses/grokking-the-system-design-interview/m2yDVZnQ8lG)
+- [Educative - System Design: Instagram](https://www.educative.io/courses/grokking-the-system-design-interview/m2yDVZnQ8lG)

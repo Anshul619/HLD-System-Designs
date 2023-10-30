@@ -18,5 +18,5 @@
 
 | Use Case                                                                                                           |
 |--------------------------------------------------------------------------------------------------------------------|
-| [Swiggy - Capturing CDC using S3 data lake](../../../../3_HLDDesignProblems/ZomatoSwiggyDesign/SwiggyTechStack.md) |
+| [Swiggy - Capturing CDC using S3 data lake](../../../../3_HLDDesignProblems/FoodOrderingZomatoSwiggyDesign/SwiggyTechStack.md) |
 

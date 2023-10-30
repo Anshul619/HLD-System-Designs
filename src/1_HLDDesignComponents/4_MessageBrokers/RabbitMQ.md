@@ -1,7 +1,7 @@
 # [RabbitMQ vs Others](KafkaVsRabbitMQVsSQSVsSNS.md)
 
 # :star: Real world use cases of RabbitMQ
-- [Zomato - HLD Design](../../3_HLDDesignProblems/ZomatoSwiggyDesign)
+- [Zomato - HLD Design](../../3_HLDDesignProblems/FoodOrderingZomatoSwiggyDesign)
 
 # References
 - [RabbitMQ vs Kafka - InterviewBit](https://www.interviewbit.com/blog/rabbitmq-vs-kafka/)

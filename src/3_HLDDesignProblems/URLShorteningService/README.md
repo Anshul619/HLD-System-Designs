@@ -56,7 +56,7 @@ Gotcha: What if two people try to shorten the same URL?
 
 # Cache frequently accessed URLs
 - We can cache URLs that are frequently accessed. (with `LRU - Least Recently Used` policy)
-- We can use any off-the-shelf solution like [Redis](../../1_HLDDesignComponents/3_DatabaseComponents/In-Memory-Cache/Redis/Readme.md), which can store full URLs with their respective hashes.
+- We can use any off-the-shelf solution like [Redis](../../1_HLDDesignComponents/3_DatabaseComponents/In-Memory-DB/Redis/Readme.md), which can store full URLs with their respective hashes.
 - Thus, the application servers, before hitting the backend storage, can quickly check if the cache has the desired URL.
 
 # Key Generation Service
@@ -69,7 +69,7 @@ KGS can use two tables to store keys:
 - `Used keys` - One for all the used keys
 
 ## Cache Memory - Redis
-- `KGS` can always keep some keys in memory ([Redis](../../1_HLDDesignComponents/3_DatabaseComponents/In-Memory-Cache/Redis/Readme.md)) to quickly provide them whenever a server needs them.
+- `KGS` can always keep some keys in memory ([Redis](../../1_HLDDesignComponents/3_DatabaseComponents/In-Memory-DB/Redis/Readme.md)) to quickly provide them whenever a server needs them.
 - As soon as `KGS` loads some keys in memory, those would be marked it can move them to the `used keys` table.
 
 ## Concurrency Issues

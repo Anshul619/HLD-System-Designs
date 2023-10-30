@@ -9,7 +9,7 @@
 
 | Use Case                                                                                          | Remarks                                                                                                                                       |
 |---------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------|
-| [Grab - Order processing/OLTP](../../../3_HLDDesignProblems/GrabSystemDesign/OrdersProcessing.md) | DynamoDB used as OLTP system for orders processing (with 3 months TTL).                                                                       |
+| [Grab - Order processing/OLTP](../../../3_HLDDesignProblems/FoodOrderingZomatoSwiggyDesign/GrabTechStack/OrdersProcessing.md) | DynamoDB used as OLTP system for orders processing (with 3 months TTL).                                                                       |
 | [Dropbox - Metadata store](../../../3_HLDDesignProblems/DropboxHLDDesign/DropboxMetaDataStore.md) | DynamoDB used as OLTP/hot-storage system, for metadata ingestion.                                                                             |
 | [Image URLs & Metadata](../../../3_HLDDesignProblems/AWSDesignUploadImageLambdaS3/Readme.md)      |                                                                                                                                               |
 | [Amazon Kinesis - Config Store](../../5_MessageBrokerServices/AmazonKinesis/AmazonKinesisDataStreams.md)        |                                                                                                                                               |
