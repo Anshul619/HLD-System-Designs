@@ -2,20 +2,25 @@
 
 > With modern application design such as [microservice architectures](../../1_MicroServicesSOA/Readme.md), it is easier to scale and faster to develop applications with a denormalized schema because each service stores and processes data related to a single business function.
 
-![img.png](DecideDatabase.drawio.png)
+![](DecideDatabase.drawio.png)
 
 # PACLEC Theorem
 
-![img.png](../1_Glossaries/PACELCTheorem/assets/PACELC_Diagram.drawio.png)
+![](../1_Glossaries/PACELCTheorem/assets/PACELC_Diagram.drawio.png)
 
 [Read more](../1_Glossaries/PACELCTheorem/Readme.md)
+
+# Different NoSQL DB types
+
+![](../NoSQL-Databases/NoSQL-DifferentDBtypes.drawio.png)
+
+[Read more](../NoSQL-Databases/Readme.md)
 
 # Other Points
 
 | Point                                                                                |
 |--------------------------------------------------------------------------------------|
 | [SQL vs NoSQL](../SQLvsNoSQL.md)                                                     |
-| [Different NoSQL DB types](../NoSQL-Databases/Readme.md)                             |
 | [DynamoDB vs MongoDB vs Casandra](../NoSQL-Databases/DynamoDBVsMongoDBVsCasandra.md) |
 
 # References

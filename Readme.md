@@ -3,6 +3,7 @@
 This repo contains the various system design components info, questions and solutions.
 - :star: [System Estimation Tips](src/1_HLDDesignComponents/SystemEstimationTips.md)
 - [Key Components of Distributed Systems](src/1_HLDDesignComponents/0_SystemGlossaries/Readme.md)
+- [Decide Database](src/1_HLDDesignComponents/3_DatabaseComponents/3_DecideDatabase/Readme.md)
 - [HLD Design Problems](src/3_HLDDesignProblems)
 - [LLD Design Problems](src/4_ObjectOrientedDesign/OOPDesignProblems)
 
@@ -193,7 +194,7 @@ This repo contains the various system design components info, questions and solu
       <td>
         <div class="container" style="background:white">
             <div class="block two first">
-                <a href="src/1_HLDDesignComponents/3_DatabaseComponents/NoSQL-Databases/ApacheCasandra.md" target="_blank">
+                <a href="src/1_HLDDesignComponents/3_DatabaseComponents/NoSQL-Databases/WideColumnDB/ApacheCasandra.md" target="_blank">
                   <img src="https://fontslogo.com/wp-content/uploads/2018/12/Apache-Cassandra-Logo-Font.jpg" width="150">
                 </a>
                 <a href="src/2_AWSComponents/6_DatabaseServices/AmazonDynamoDB/Readme.md">
@@ -202,7 +203,7 @@ This repo contains the various system design components info, questions and solu
                 <a href="/src/1_HLDDesignComponents/3_DatabaseComponents/NoSQL-Databases/MongoDB" target="_blank">
                   <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/MongoDB_Logo.svg/2560px-MongoDB_Logo.svg.png" width="150">
                 </a>
-                <a href="/src/1_HLDDesignComponents/3_DatabaseComponents/NoSQL-Databases/ApacheHBase.md" target="_blank">
+                <a href="/src/1_HLDDesignComponents/3_DatabaseComponents/NoSQL-Databases/WideColumnDB/ApacheHBase.md" target="_blank">
                   <img src="https://hbase.apache.org/images/hbase_logo_with_orca_large.png" width="150">
                 </a>
             </div>

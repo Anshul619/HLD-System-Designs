@@ -8,15 +8,14 @@
 
 | DB                                                                                                                                        |
 |-------------------------------------------------------------------------------------------------------------------------------------------|
+| :star: [LSM-Tree based NoSQL DBs like Casandra, RocksDB etc.](../2_DataStructuresDB/LSMTree.md)                                           |
 | :star: [Kafka](../../4_MessageBrokers/Kafka/Readme.md)                                                                                    |
 | :star: [Amazon S3](../../../2_AWSComponents/7_StorageServices/3_ObjectStorageS3/Readme.md)                                                |
-| [Casandra](../NoSQL-Databases/WideColumnDB/ApacheCasandra.md)                                                                             |
+| [Apache Lucene](../Search-Databases/Readme.md)                                                                                            |
 | [ElasticSearch Data Stream](../Search-Databases/ElasticSearch/ElasticSearchDataStreams.md)                                                |
+| [Amazon Kinesis](../../../2_AWSComponents/5_MessageBrokerServices/AmazonKinesis/Readme.md)                                                |
 | [Redis Streams](../In-Memory-DB/Redis/Readme.md)                                                                                          |
 | [Amazon Aurora Global Database - Replication](../../../2_AWSComponents/6_DatabaseServices/AmazonRDS/AmazonAurora/AuroraGlobalDatabase.md) |
-| [RocksDB](../NoSQL-Databases/EmbededKeyValueDB/RocksDB.md)                                                                                |
-| [Amazon Kinesis](../../../2_AWSComponents/5_MessageBrokerServices/AmazonKinesis/Readme.md)                                                |
-| [Apache Lucene](../Search-Databases/Readme.md)                                                                                            |
 
 # References
 - [Building an Append-only Log From Scratch](https://eileen-code4fun.medium.com/building-an-append-only-log-from-scratch-e8712b49c924)

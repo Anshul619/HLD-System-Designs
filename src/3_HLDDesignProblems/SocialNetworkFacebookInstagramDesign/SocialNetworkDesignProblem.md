@@ -35,16 +35,17 @@ The application should be able to support the following requirements.
 
 # Tech Decisions
 
-| Feature                              | Decision                                                                                                                                                                                           |
-|--------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Users DB                             | Postgres                                                                                                                                                                                           |
-| Images Storage                       | [Amazon S3](../../2_AWSComponents/7_StorageServices/3_ObjectStorageS3/Readme.md) or [HDFS](../../1_HLDDesignComponents/5_BigDataComponents/ETLServices/BatchProcessing/ApacheHadoop/ApacheHDFS.md) |
-| Images MetaData                      | [Amazon DynamoDB](../../2_AWSComponents/6_DatabaseServices/AmazonDynamoDB/Readme.md)                                                                                                               |
-| Partitioning Key for images metadata | PhotoID                                                                                                                                                                                            |
-| User Activity - Data Entities Store  | [Amazon DynamoDB](../../2_AWSComponents/6_DatabaseServices/AmazonDynamoDB/Readme.md) or [Cassandra](../../1_HLDDesignComponents/3_DatabaseComponents/NoSQL-Databases/WideColumnDB/ApacheCasandra.md)            |
-| User Activity - Relationship Store   | Graph Databases like [Neo4j](../../1_HLDDesignComponents/3_DatabaseComponents/NoSQL-Databases/GraphDB/Neo4j.md) or Amazon Neptune                                                                          |
-| Data Streaming                       | [Kafka](../../1_HLDDesignComponents/4_MessageBrokers/Kafka/Readme.md) or [Amazon Kinesis](../../2_AWSComponents/5_MessageBrokerServices/AmazonKinesis/Readme.md)                                   |
-| App Servers                          | Separate app servers for READ and WRITE (Since read-write ratio is 100:1).                                                                                                                         |
+| Feature                              | Decision                                                                                                                                                                                             |
+|--------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Users DB                             | Postgres                                                                                                                                                                                             |
+| Images Storage                       | [Amazon S3](../../2_AWSComponents/7_StorageServices/3_ObjectStorageS3/Readme.md) or [HDFS](../../1_HLDDesignComponents/5_BigDataComponents/ETLServices/BatchProcessing/ApacheHadoop/ApacheHDFS.md)   |
+| Images MetaData                      | [Amazon DynamoDB](../../2_AWSComponents/6_DatabaseServices/AmazonDynamoDB/Readme.md)                                                                                                                 |
+| Partitioning Key for images metadata | PhotoID                                                                                                                                                                                              |
+| User Activity - Data Entities Store  | [Amazon DynamoDB](../../2_AWSComponents/6_DatabaseServices/AmazonDynamoDB/Readme.md) or [Cassandra](../../1_HLDDesignComponents/3_DatabaseComponents/NoSQL-Databases/WideColumnDB/ApacheCasandra.md) |
+| User Activity - Relationship Store   | Graph Databases like [Neo4j](../../1_HLDDesignComponents/3_DatabaseComponents/NoSQL-Databases/GraphDB/Neo4j.md) or Amazon Neptune                                                                    |
+| Data Streaming                       | [Kafka](../../1_HLDDesignComponents/4_MessageBrokers/Kafka/Readme.md) or [Amazon Kinesis](../../2_AWSComponents/5_MessageBrokerServices/AmazonKinesis/Readme.md)                                     |
+| App Servers                          | Separate app servers for READ and WRITE (Since read-write ratio is 100:1).                                                                                                                           |
+| Home Feed DB                         | [Redis](../../1_HLDDesignComponents/3_DatabaseComponents/In-Memory-DB/Redis/Readme.md)                                                                                                               |
 
 # Reliability and Redundancy
 - If we want to have [high availability](../../1_HLDDesignComponents/0_SystemGlossaries/Reliability/HighAvailability.md) of the system, we need to have multiple replicas of services running in the system so that even if a few services die down, the system remains available and running.
