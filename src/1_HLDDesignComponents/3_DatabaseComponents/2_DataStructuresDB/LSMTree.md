@@ -5,18 +5,19 @@
 
 # How write operations handled in LSM tree?
 
-|                            | Remarks                                                                                                                                                                                                                                         |
-|----------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Append to Log-file in disk | It first inserts and updates in memory, and at intervals, sequentially writes the data [to log-file in disk in-append mode](AppendOnlyProperty.md).<br/>- Once written to disk, the data is immutable and is never overwritten. |
-| Append data in Memtables   | We also push that data in an in-memory sorted data structure known as MemTables.                                                                                                                                                                |
-| Periodic flush to SSTables | Periodically, we flush all the data from MemTables to on-disk storage known as SSTables.                                                                                                                                                        |
-| Indexing in SSTables       | SSTables also maintain in-memory data structures known as Bloom filters which helps us to speed up the search while reading the data.                                                                                                           |
+|                            | Sub Data Structure | Target   | Remarks                                                                                                                                                                        |
+|----------------------------|--------------------|----------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Append to Log-file in disk | Commit Log         | Disk     | It first sequentially writes the data [to log-file in disk in-append mode](AppendOnlyProperty.md).<br/>- Once written to disk, the data is immutable and is never overwritten. |
+| Append data in Memtables   | Memtables          | InMemory | Data is also pushed in an in-memory sorted data structure known as MemTables.                                                                                                  |
+| Periodic flush to SSTables | SStables           | Disk     | Periodically, all the data is flushed from MemTables to on-disk storage known as SSTables.                                                                                     |
+| Indexing in SSTables       | Bloom filters      | InMemory | SSTables also maintain in-memory data structures known as Bloom filters which helps us to speed up the search while reading the data.                                          |
 
 # How searching will work?
-- When we are searching for a particular key, we search the MemTables first. 
-- As the Memtables are located on memory, the look-up is fast and if we found any data on the Memtables, we return that result to the client. 
-- If the key is not available on the Memtables, then we search for the key on the SStables and we are helped here by the Bloom filters which narrow down our scope of search. 
-- If the records are found on the SStables, then we return that row to the client else we return the record not found.
+
+|                         | Storage         | Remarks                                                                                                                                                                                                                                                                                                |
+|-------------------------|-----------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| First search - MemTable | InMemory        | When we are searching for a particular key, we search the MemTables first.                                                                                                                                                                                                                             |
+| 1st Fallback - SSTable  | InMemory + Disk | If the key is not available on the Memtables, then we search for the key on the SStables and we are helped here by the Bloom filters which narrow down our scope of search.<br/>- If the records are found on the SStables, then we return that row to the client else we return the record not found. |
 
 # Supported Databases
 - It is mostly used in NoSQL databases.
@@ -32,5 +33,6 @@
 # Read more
 - [Understanding How Databases Store our Data: Introduction to LSM trees](https://javascript.plainenglish.io/understanding-how-databases-store-our-data-introduction-to-lsm-trees-ec1c46096570)
 - [Power of the Log: LSM & Append Only Data Structures](https://www.slideshare.net/ConfluentInc/power-of-the-loglsm-append-only-data-structures)
-- [Storage engine](https://docs.datastax.com/en/cassandra-oss/3.x/cassandra/dml/dmlManageOndisk.html)
-- [SSTable](https://www.scylladb.com/glossary/sstable/)
+- [Casandra - Storage engine](https://docs.datastax.com/en/cassandra-oss/3.x/cassandra/dml/dmlManageOndisk.html)
+- [Scylladb - SSTable](https://www.scylladb.com/glossary/sstable/)
+- [BytesBytesGo - The Secret Sauce Behind NoSQL: LSM Tree](https://www.youtube.com/watch?v=I6jB0nM9SKU)
