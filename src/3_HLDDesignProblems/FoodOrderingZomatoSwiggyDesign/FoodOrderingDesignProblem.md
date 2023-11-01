@@ -38,7 +38,7 @@
 | Map-Reduce Jobs (like select driver, generate recommendations etc.)                          | [Apache Spark](../../1_HLDDesignComponents/5_BigDataComponents/ETLServices/StreamProcessing/ApacheSpark.md)                                                                                                                                                                                                                                | For running map-reduce jobs to `select driver for efficient delivery` and generate recommendations based on continuous streams of user activity, order activity, pricing and promo changes, etc. It will select the distributed data, create a map and then reduce the values to give proper data.                                                                                                                                                                                                                                                                                                                                               |
 
 # Related designs
-- [Uber Driver Allocation](../UberDriverAllocationDesign/Readme.md)
+- [Uber Driver Allocation](../UberSystemDesign/UberDriverAllocationDesignProblem/Readme.md)
 
 # Reference
 - [System Design of food delivery app (Zomato/Swiggy)](https://www.linkedin.com/pulse/system-design-food-delivery-app-zomatoswiggy-saral-saxena/)

@@ -1,7 +1,13 @@
-# [RabbitMQ vs Others](KafkaVsRabbitMQVsSQSVsSNS.md)
+# RabbitMQ
+- [RabbitMQ](https://www.rabbitmq.com/) is lightweight and easy to deploy on premises and in the cloud. 
+- It supports multiple messaging protocols and streaming. 
+- [RabbitMQ](https://www.rabbitmq.com/) can be deployed in distributed and federated configurations to meet high-scale, high-availability requirements.
 
 # :star: Real world use cases of RabbitMQ
-- [Zomato - HLD Design](../../3_HLDDesignProblems/FoodOrderingZomatoSwiggyDesign)
+- [Zomato - HLD Design](../../3_HLDDesignProblems/FoodOrderingZomatoSwiggyDesign/Readme.md)
+
+# Other Links
+- [RabbitMQ vs Others](KafkaVsRabbitMQVsSQSVsSNS.md)
 
 # References
 - [RabbitMQ vs Kafka - InterviewBit](https://www.interviewbit.com/blog/rabbitmq-vs-kafka/)

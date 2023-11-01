@@ -1,9 +1,11 @@
 # Introduction
 
 This repo contains the various system design components info, questions and solutions.
-- :star: [System Estimation Tips](src/1_HLDDesignComponents/SystemEstimationTips.md)
 - [Key Components of Distributed Systems](src/1_HLDDesignComponents/0_SystemGlossaries/Readme.md)
 - [Decide Database](src/1_HLDDesignComponents/3_DatabaseComponents/3_DecideDatabase/Readme.md)
+- [System Estimation Tips](src/1_HLDDesignComponents/SystemEstimationTips.md)
+- [Benchmarking](Benchmarking.md)
+- [System Design Tips](src/1_HLDDesignComponents/SystemDesignTips.md)
 - [HLD Design Problems](src/3_HLDDesignProblems)
 - [LLD Design Problems](src/4_ObjectOrientedDesign/OOPDesignProblems)
 

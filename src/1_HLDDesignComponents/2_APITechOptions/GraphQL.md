@@ -36,7 +36,7 @@ Both [REST](REST.md) and [GraphQL]() are based on following,
 
 # :star: Real world use cases of GraphQL
 - [Zomato - HLD Design](../../3_HLDDesignProblems/FoodOrderingZomatoSwiggyDesign/Readme.md#GraphQL)
-- [Uber Driver Allocation](../../3_HLDDesignProblems/UberDriverAllocationDesign)
+- [Uber Driver Allocation](../../3_HLDDesignProblems/UberSystemDesign/UberDriverAllocationDesignProblem)
 - [GraphQL with ElasticSearch](../3_DatabaseComponents/Search-Databases/ElasticSearch/ElasticSearchWithGraphQL.md)
 
 # References

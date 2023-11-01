@@ -24,11 +24,11 @@
 
 | Use Case                                                                                             |
 |------------------------------------------------------------------------------------------------------|
-| [Time Series Data](https://netflixtechblog.com/scaling-time-series-data-storage-part-i-ec2b6d44ba39) |
+| [Time Series Data](../../../../3_HLDDesignProblems/NetflixSystemDesign/Readme.md)                    |
 | Historical records                                                                                   |
-| [High-Write, Low-Read](../../../0_SystemGlossaries/Scalability/LatencyThroughput.md)                    |
+| [High-Write, Low-Read](../../../0_SystemGlossaries/Scalability/LatencyThroughput.md)                 |
 | Processing server logs                                                                               |
-| [Social media posts](../../../../3_HLDDesignProblems/SocialNetworkFacebookInstagramDesign/Readme.md)    |
+| [Social media posts](../../../../3_HLDDesignProblems/SocialNetworkFacebookInstagramDesign/Readme.md) |
 | PDF documents                                                                                        |
 | Emails etc.                                                                                          |
 
@@ -38,23 +38,23 @@
 
 ![](../../../../3_HLDDesignProblems/PersonalizationSpotify/PersonalizationSpotify.drawio.png)
 
-- [Read more](../../../../3_HLDDesignProblems/PersonalizationSpotify)
+[Read more](../../../../3_HLDDesignProblems/PersonalizationSpotify)
 
 ## Social Network - User Entities like Posts, Comments etc.
 
 ![](../../../../3_HLDDesignProblems/SocialNetworkFacebookInstagramDesign/SocialNetworkDesignProblemHLD.png)
 
-- [Read more](../../../../3_HLDDesignProblems/SocialNetworkFacebookInstagramDesign/Readme.md)
+[Read more](../../../../3_HLDDesignProblems/SocialNetworkFacebookInstagramDesign/Readme.md)
 
 ## Search - Flight Booking
 
 ![](../../../../3_HLDDesignProblems/FlightBookingSearch/MakeMyTripFlightSearch.drawio.png)
 
-- [Read more](../../../../3_HLDDesignProblems/FlightBookingSearch/Readme.md))
+[Read more](../../../../3_HLDDesignProblems/FlightBookingSearch/Readme.md))
 
 ## How Uber Manages a Million Writes Per Second Using Mesos and Cassandra Across Multiple Datacenters?
 
-- [Read more](../../../../3_HLDDesignProblems/UberCasandraMesos)
+[Read more](../../../../3_HLDDesignProblems/UberSystemDesign/UberCasandraMesos)
 
 ## Inbox Search Feature & Instagram Unit at Facebook, using Casandra
 - Facebook originally built Cassandra to power its [Inbox search feature](https://m.facebook.com/nt/screen/?params=%7B%22note_id%22%3A10158772759272200%7D&path=%2Fnotes%2Fnote%2F&paipv=0&eav=AfYuSXXQPZ5fvm0_ScPdSlfj5BEFhRVT3iy_6Rsz7NZDbQ2vfq9opnedmTLSjG1aZBA&_rdr), with over 200 nodes deployed.
@@ -65,8 +65,8 @@
 ## Other UCs
 - [Twillo - Send Message API Design](../../../../3_HLDDesignProblems/TwilloSendMessageAPI/Readme.md)
 - [Twitter Hit Counter](../../../../3_HLDDesignProblems/TwitterHitCounterDesign/Readme.md)
-- [Exploring Data @ Netflix](https://netflixtechblog.com/exploring-data-netflix-9d87e20072e3)
-- [Directi uses Casandra to save HeatMaps (UI activities)](https://engineering.zeta.tech/2021/09/15/zeta-tech-stack/)
+- [Netflix - Casandra](../../../../3_HLDDesignProblems/NetflixSystemDesign/Readme.md)
+- [Directi uses Casandra to save HeatMaps (UI activities)](../../../../3_HLDDesignProblems/ZetaSystemDesign/Readme.md)
 
 # Sample Apps
 - [Example: Deploying Cassandra with a StatefulSet](https://kubernetes.io/docs/tutorials/stateful-application/cassandra/)

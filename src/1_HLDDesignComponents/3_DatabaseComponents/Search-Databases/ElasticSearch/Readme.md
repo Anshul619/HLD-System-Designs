@@ -7,7 +7,7 @@
 
 # :star: Real world use cases of ElasticSearch
 - [Zomato - HLD Design](../../../../3_HLDDesignProblems/FoodOrderingZomatoSwiggyDesign/Readme.md)
-- [Uber Driver Allocation](../../../../3_HLDDesignProblems/UberDriverAllocationDesign/Readme.md)
+- [Uber Driver Allocation](../../../../3_HLDDesignProblems/UberSystemDesign/UberDriverAllocationDesignProblem/Readme.md)
 - [Logging Solution in Distributed Systems](../../../../3_HLDDesignProblems/LoggingSolution/Readme.md)
 - [Flight Booking Search](../../../../3_HLDDesignProblems/FlightBookingSearch/Readme.md)
 - [Grab - Search Index Optimization](../../../../3_HLDDesignProblems/FoodOrderingZomatoSwiggyDesign/GrabTechStack/SearchIndexing.md)

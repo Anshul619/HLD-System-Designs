@@ -22,7 +22,7 @@
 
 # :star: Real world use cases of Apache Spark
 - [Zomato - HLD Design](../../../../3_HLDDesignProblems/FoodOrderingZomatoSwiggyDesign/Readme.md)
-- [Uber Driver Allocation](../../../../3_HLDDesignProblems/UberDriverAllocationDesign/Readme.md)
+- [Uber Driver Allocation](../../../../3_HLDDesignProblems/UberSystemDesign/UberDriverAllocationDesignProblem/Readme.md)
 
 # What is Spark Streaming and how is it implemented in Spark?
 - Data from sources like [Kafka](../../../4_MessageBrokers/Kafka/Readme.md), [Kinesis](../../../../2_AWSComponents/5_MessageBrokerServices/AmazonKinesis/Readme.md) etc. are processed and pushed to various destinations like databases, dashboards, machine learning APIs or as simple as file systems.
