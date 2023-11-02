@@ -60,7 +60,7 @@
 - [Twillo - Send Message API Design Problem](../../../../3_HLDDesignProblems/TwilloSendMessageAPI/Readme.md)
 - [Twitter Hit Counter](../../../../3_HLDDesignProblems/TwitterHitCounterDesign/Readme.md)
 
-> Casandra's invention history - Facebook
+# Casandra's invention history - Facebook
 - Facebook originally built Cassandra to power its [Inbox search feature](https://m.facebook.com/nt/screen/?params=%7B%22note_id%22%3A10158772759272200%7D&path=%2Fnotes%2Fnote%2F&paipv=0&eav=AfYuSXXQPZ5fvm0_ScPdSlfj5BEFhRVT3iy_6Rsz7NZDbQ2vfq9opnedmTLSjG1aZBA&_rdr), with over 200 nodes deployed.
 - This was abandoned in late 2010 when they built Facebook Messaging platform on [Apache HBase](ApacheHBase.md) as they [found Cassandra's eventual consistency model to be a difficult pattern](../../1_Glossaries/Consistency&Replication/Readme.md).
 - [Read more](https://www.quora.com/Does-Facebook-use-Apache-Cassandra).
