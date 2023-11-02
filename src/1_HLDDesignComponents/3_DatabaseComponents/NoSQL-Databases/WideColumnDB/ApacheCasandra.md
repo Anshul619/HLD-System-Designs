@@ -4,7 +4,7 @@
 - [Amazon KeySpaces](../../../../2_AWSComponents/6_DatabaseServices/AmazonKeySpaces.md) can be used to deploy Casandra on AWS.
 - :star: [Casandra vs MongoDB](../DynamoDBVsMongoDBVsCasandra.md)
 
-![img.png](https://www.scylladb.com/wp-content/uploads/Wide-column-Database-diagram.png)
+![](https://www.scylladb.com/wp-content/uploads/Wide-column-Database-diagram.png)
 
 # Features
 
@@ -22,15 +22,15 @@
 
 # :star: Ideal Use Cases
 
-| Use Case                                                                                             |
-|------------------------------------------------------------------------------------------------------|
-| [Time Series Data](../../../../3_HLDDesignProblems/NetflixSystemDesign/Readme.md)                    |
-| Historical records                                                                                   |
-| [High-Write, Low-Read](../../../0_SystemGlossaries/Scalability/LatencyThroughput.md)                 |
-| Processing server logs                                                                               |
-| [Social media posts](../../../../3_HLDDesignProblems/SocialNetworkFacebookInstagramDesign/Readme.md) |
-| PDF documents                                                                                        |
-| Emails etc.                                                                                          |
+| Use Case                                                                             |
+|--------------------------------------------------------------------------------------|
+| Historical records                                                                   |
+| [High-Write, Low-Read](../../../0_SystemGlossaries/Scalability/LatencyThroughput.md) |
+| Processing server logs                                                               |
+| Social media posts                                                                   |
+| PDF documents                                                                        |
+| Emails etc.                                                                          |
+| Time Series Data                                                                     |
 
 # :star: Real world use cases of Casandra
 
@@ -40,33 +40,30 @@
 
 [Read more](../../../../3_HLDDesignProblems/PersonalizationSpotify)
 
-## Social Network - User Entities like Posts, Comments etc.
+## Social Network Design Problem - User Entities like Posts, Comments etc.
 
 ![](../../../../3_HLDDesignProblems/SocialNetworkFacebookInstagramDesign/SocialNetworkDesignProblemHLD.png)
 
-[Read more](../../../../3_HLDDesignProblems/SocialNetworkFacebookInstagramDesign/Readme.md)
+[Read more](../../../../3_HLDDesignProblems/SocialNetworkFacebookInstagramDesign/SocialNetworkDesignProblem.md)
 
-## Search - Flight Booking
+## Flight Booking design problem - Search
 
 ![](../../../../3_HLDDesignProblems/FlightBookingSearch/MakeMyTripFlightSearch.drawio.png)
 
 [Read more](../../../../3_HLDDesignProblems/FlightBookingSearch/Readme.md))
 
-## How Uber Manages a Million Writes Per Second Using Mesos and Cassandra Across Multiple Datacenters?
+## Other UCs
+- [How Uber Manages a Million Writes Per Second Using Mesos and Cassandra Across Multiple Datacenters?](../../../../3_HLDDesignProblems/UberSystemDesign/UberCasandraMesos)
+- [Netflix - Casandra - Time Series Data](../../../../3_HLDDesignProblems/NetflixSystemDesign/Readme.md)
+- [Directi uses Casandra to save HeatMaps (UI activities)](../../../../3_HLDDesignProblems/ZetaSystemDesign/Readme.md)
+- [Instagram - Casandra - Social Media Posts](../../../../3_HLDDesignProblems/SocialNetworkFacebookInstagramDesign/InstagramTechStack.md)
+- [Twillo - Send Message API Design Problem](../../../../3_HLDDesignProblems/TwilloSendMessageAPI/Readme.md)
+- [Twitter Hit Counter](../../../../3_HLDDesignProblems/TwitterHitCounterDesign/Readme.md)
 
-[Read more](../../../../3_HLDDesignProblems/UberSystemDesign/UberCasandraMesos)
-
-## Inbox Search Feature & Instagram Unit at Facebook, using Casandra
+> Casandra's invention history - Facebook
 - Facebook originally built Cassandra to power its [Inbox search feature](https://m.facebook.com/nt/screen/?params=%7B%22note_id%22%3A10158772759272200%7D&path=%2Fnotes%2Fnote%2F&paipv=0&eav=AfYuSXXQPZ5fvm0_ScPdSlfj5BEFhRVT3iy_6Rsz7NZDbQ2vfq9opnedmTLSjG1aZBA&_rdr), with over 200 nodes deployed.
 - This was abandoned in late 2010 when they built Facebook Messaging platform on [Apache HBase](ApacheHBase.md) as they [found Cassandra's eventual consistency model to be a difficult pattern](../../1_Glossaries/Consistency&Replication/Readme.md).
-- Facebook moved off its pre-Apache Cassandra deployment in late 2010 when they replaced Inbox Search with the Facebook Messaging platform.
-- In 2012, [Facebook began using Apache Cassandra in its Instagram unit](https://www.quora.com/Does-Facebook-use-Apache-Cassandra).
-
-## Other UCs
-- [Twillo - Send Message API Design](../../../../3_HLDDesignProblems/TwilloSendMessageAPI/Readme.md)
-- [Twitter Hit Counter](../../../../3_HLDDesignProblems/TwitterHitCounterDesign/Readme.md)
-- [Netflix - Casandra](../../../../3_HLDDesignProblems/NetflixSystemDesign/Readme.md)
-- [Directi uses Casandra to save HeatMaps (UI activities)](../../../../3_HLDDesignProblems/ZetaSystemDesign/Readme.md)
+- [Read more](https://www.quora.com/Does-Facebook-use-Apache-Cassandra).
 
 # Sample Apps
 - [Example: Deploying Cassandra with a StatefulSet](https://kubernetes.io/docs/tutorials/stateful-application/cassandra/)

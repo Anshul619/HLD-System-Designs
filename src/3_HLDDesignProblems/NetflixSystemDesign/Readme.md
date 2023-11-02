@@ -10,6 +10,9 @@
 | NoSQL DB             | [Casandra](../../1_HLDDesignComponents/3_DatabaseComponents/NoSQL-Databases/WideColumnDB/ApacheCasandra.md) - [Read more](https://netflixtechblog.com/exploring-data-netflix-9d87e20072e3)                                     |
 | Time series DB       | [Casandra](../../1_HLDDesignComponents/3_DatabaseComponents/NoSQL-Databases/WideColumnDB/ApacheCasandra.md) - [Read more](https://netflixtechblog.com/scaling-time-series-data-storage-part-i-ec2b6d44ba39)                    |
 
+# Benchmarking
+- [Casandra](../../../Benchmarking.md)
+
 # Read more
 - [Mastering Chaos - A Netflix Guide to Microservices](https://www.youtube.com/watch?v=CZ3wIuvmHeM)
 - [Scaling Time Series Data Storage — Part I](https://netflixtechblog.com/scaling-time-series-data-storage-part-i-ec2b6d44ba39)
