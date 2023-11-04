@@ -16,3 +16,4 @@
 | [Instagram](https://medium.com/@InstagramEng)                              | Social Network | [Instagram - System Design](src/3_HLDDesignProblems/SocialNetworkFacebookInstagramDesign/InstagramTechStack.md) |
 | [Netflix](https://netflixtechblog.com/)                                    |                | [Netflix - System Design](src/3_HLDDesignProblems/NetflixSystemDesign/Readme.md)                                |
 | [Directi - Zeta](https://engineering.zeta.tech)                            |                | [Zeta - System Design](src/3_HLDDesignProblems/ZetaSystemDesign/Readme.md)                                      |
+| [ShareChat](https://sharechat.com/team/engineering)                        |                |                                                                                                                 |

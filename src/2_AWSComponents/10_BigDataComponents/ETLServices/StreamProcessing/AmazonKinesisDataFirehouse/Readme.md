@@ -21,17 +21,13 @@
 
 [Read more](https://aws.amazon.com/kinesis/data-firehose/faqs/)
 
-# Amazon Kinesis Data Stream & Data firehouse
-
-![](../../../../../3_HLDDesignProblems/AWSStreamProcessingUsingGlueAndS3/AWS-Stream-Processing-Using-Glue-&-S3.png)
-
-> Note
-> - When a [Kinesis data stream](../../../../5_MessageBrokerServices/AmazonKinesis/AmazonKinesisDataStreams.md) is configured as the source of a Firehose delivery stream, [Firehose’s PutRecord and PutRecordBatch operations](../../../../5_MessageBrokerServices/AmazonKinesis/AmazonKinesisDataStreams.md) are disabled and Kinesis Agent cannot write to Firehose delivery stream directly. 
-> - Data needs to be added to the [Kinesis data stream](../../../../5_MessageBrokerServices/AmazonKinesis/AmazonKinesisDataStreams.md) through the [Kinesis Data Streams PutRecord and PutRecords operations](../../../../5_MessageBrokerServices/AmazonKinesis/AmazonKinesisDataStreams.md) instead.
-
 # Big Data - Concepts, TechStack
 
-![](../../../../../1_HLDDesignComponents/5_BigDataComponents/BigData-ETL-OLTP-OLAP-DataLake.png)
+![](../../../../AWS-Data-Architecture-ETL-OLTP-OLAP-DataLake.png)
+
+> Note
+> - When a [Kinesis data stream](../../../../5_MessageBrokerServices/AmazonKinesis/AmazonKinesisDataStreams.md) is configured as the source of a Firehose delivery stream, [Firehose’s PutRecord and PutRecordBatch operations](../../../../5_MessageBrokerServices/AmazonKinesis/AmazonKinesisDataStreams.md) are disabled and Kinesis Agent cannot write to Firehose delivery stream directly.
+> - Data needs to be added to the [Kinesis data stream](../../../../5_MessageBrokerServices/AmazonKinesis/AmazonKinesisDataStreams.md) through the [Kinesis Data Streams PutRecord and PutRecords operations](../../../../5_MessageBrokerServices/AmazonKinesis/AmazonKinesisDataStreams.md) instead.
 
 # Amazon Kinesis Data Firehouse & Event Bridge
 

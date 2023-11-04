@@ -1,7 +1,7 @@
 
 # Extract-Transform-Load (ETL)
 
-![](../BigData-ETL-OLTP-OLAP-DataLake.png)
+![](../../../2_AWSComponents/AWS-Data-Architecture-ETL-OLTP-OLAP-DataLake.png)
 
 |           | Remarks                                                                                                                                                 |
 |-----------|---------------------------------------------------------------------------------------------------------------------------------------------------------|

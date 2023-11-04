@@ -1,6 +1,5 @@
 # Core APIs in Kafka
-
-[Kafka HTTP APIs](https://www.confluent.io/blog/http-and-rest-api-use-cases-and-architecture-with-apache-kafka/) can be integrated in the client apis, to push the message to the specific topic (& partition key).
+- [Kafka HTTP APIs](https://www.confluent.io/blog/http-and-rest-api-use-cases-and-architecture-with-apache-kafka/) can be integrated in the client apis, to push the message to the specific topic (& partition key).
 - [Read more](https://github.com/confluentinc/kafka-rest)
 
 # Producer API

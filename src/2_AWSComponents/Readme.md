@@ -36,9 +36,9 @@
 
 [Read more](../3_HLDDesignProblems/AWSBookStoreSampleApp/Readme.md)
 
-## AWS - Stream-Processing Using Glue & S3
+## AWS - Modern Data Architecture
 
-![](../3_HLDDesignProblems/AWSStreamProcessingUsingGlueAndS3/AWS-Stream-Processing-Using-Glue-&-S3.png)
+![](AWS-Data-Architecture-ETL-OLTP-OLAP-DataLake.png)
 
 ## Real-time data analytics architecture
 

@@ -3,4 +3,4 @@
 - [Athena](https://aws.amazon.com/athena/) provides a simplified, flexible way to analyze petabytes of data where it lives.
 - Analyze data or build applications from an [Amazon Simple Storage Service (S3) data lake](../StorageDBs/DataLakes/S3DataLake.md) and 25-plus data sources, including on-premises data sources or other cloud systems using SQL or Python.
 
-![](../../../3_HLDDesignProblems/AWSStreamProcessingUsingGlueAndS3/AWS-Stream-Processing-Using-Glue-&-S3.png)
+![](../../AWS-Data-Architecture-ETL-OLTP-OLAP-DataLake.png)

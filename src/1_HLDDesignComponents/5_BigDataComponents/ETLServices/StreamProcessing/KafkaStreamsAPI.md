@@ -3,7 +3,7 @@
 - It combines the simplicity of writing and deploying standard Java and Scala applications on the client side with the benefits of [Kafka's server-side cluster technology](../../../4_MessageBrokers/Kafka/Readme.md).
 - An application can use this API to take input streams from one or more topics, process them using streams operations, and generate output streams to transmit to one or more topics.
 
-![](../../BigData-ETL-OLTP-OLAP-DataLake.png)
+![](../../../../2_AWSComponents/AWS-Data-Architecture-ETL-OLTP-OLAP-DataLake.png)
 
 # References
 - [What is Kafka Streams: A Comprehensive Guide 101](https://hevodata.com/learn/kafka-streams/)

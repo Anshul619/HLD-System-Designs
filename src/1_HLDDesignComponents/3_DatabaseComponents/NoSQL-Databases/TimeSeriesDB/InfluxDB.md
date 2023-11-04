@@ -6,7 +6,7 @@
 # Sample Query
 - With a time range, for name xyz, find all the book title for which # of page < 400.
 
-````
+````json
 [ 
   { "timestamp": "2021-09-06T12:51:00Z",
     "name": "Name1",
