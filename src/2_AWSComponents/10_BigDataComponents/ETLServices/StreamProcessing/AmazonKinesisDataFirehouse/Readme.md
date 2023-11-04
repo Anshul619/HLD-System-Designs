@@ -23,7 +23,7 @@
 
 # Big Data - Concepts, TechStack
 
-![](../../../../AWS-Data-Architecture-ETL-OLTP-OLAP-DataLake.png)
+![](../../../../../3_HLDDesignProblems/AWSModernDataArchitecture/AWS-Data-Architecture-ETL-OLTP-OLAP-DataLake.png)
 
 > Note
 > - When a [Kinesis data stream](../../../../5_MessageBrokerServices/AmazonKinesis/AmazonKinesisDataStreams.md) is configured as the source of a Firehose delivery stream, [Firehose’s PutRecord and PutRecordBatch operations](../../../../5_MessageBrokerServices/AmazonKinesis/AmazonKinesisDataStreams.md) are disabled and Kinesis Agent cannot write to Firehose delivery stream directly.

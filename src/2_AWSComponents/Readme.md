@@ -38,7 +38,7 @@
 
 ## AWS - Modern Data Architecture
 
-![](AWS-Data-Architecture-ETL-OLTP-OLAP-DataLake.png)
+![](../3_HLDDesignProblems/AWSModernDataArchitecture/AWS-Data-Architecture-ETL-OLTP-OLAP-DataLake.png)
 
 ## Real-time data analytics architecture
 

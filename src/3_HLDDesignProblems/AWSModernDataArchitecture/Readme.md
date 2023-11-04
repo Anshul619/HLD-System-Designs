@@ -1,7 +1,3 @@
-# Big Data Architecture
-
-![](../../2_AWSComponents/AWS-Data-Architecture-ETL-OLTP-OLAP-DataLake.png)
-
 # Building modern data architecture
 
 | Layer                   | Description                                                                 |

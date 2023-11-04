@@ -33,4 +33,4 @@
 
 # AWS - Stream-Processing Using Glue & S3
     
-![](../../AWS-Data-Architecture-ETL-OLTP-OLAP-DataLake.png)
+![](../../../3_HLDDesignProblems/AWSModernDataArchitecture/AWS-Data-Architecture-ETL-OLTP-OLAP-DataLake.png)
