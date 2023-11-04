@@ -1,5 +1,9 @@
 # Building modern data architecture
 
+![](AWS-Data-Architecture-ETL-OLTP-OLAP-DataLake.png)
+
+# Layers in modern data architecture
+
 | Layer                   | Description                                                                 |
 |-------------------------|-----------------------------------------------------------------------------|
 | Data Ingestion          | Bring your data into your data platform.                                    |
