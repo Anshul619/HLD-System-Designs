@@ -7,7 +7,7 @@
 | [AWS - All comparisons list b/w Services](AWS-All-Comparisons.md)   | Comparisons between different services in AWS.                                                                                                                                                                                                                                                                                          |                                                                                                                                                                                                                                                                                                                                         |
 | [AWS - All Services List](AWS-All-Services-List.md)                 | List of all services in AWS.                                                                                                                                                                                                                                                                                                            |
 | [Maintain resiliency](AWS-Global-Architecture-Region-AZ.md)         | A well-known best practice for cloud architecture is to use [Region-scoped, managed services](AWS-Global-Architecture-Region-AZ.md)<br/>- At a minimum, you should use two AZs.<br/>- [AWS](https://docs.aws.amazon.com) manages its [global architecture through region and availability zones](AWS-Global-Architecture-Region-AZ.md). |
-| [Go serverless/Cloud Native](AWS-Serverless-Architecture.md)        | AWS provides easily managed [serverless architecture](AWS-Serverless-Architecture.md).                                                                                                                                                                                                                                                  |
+| [Serverless/Cloud Native](AWS-Serverless-Architecture.md)           | AWS provides easily managed [serverless architecture](AWS-Serverless-Architecture.md).                                                                                                                                                                                                                                                  |
 | [AWS Well-Architected Framework](AWS-Well-Architected-Framework.md) | [AWS Well-Architected](https://aws.amazon.com/architecture/well-architected) helps cloud architects build secure, high-performing, resilient, and efficient infrastructure for a variety of applications and workloads.                                                                                                                 |
 
 # System Designs
@@ -24,25 +24,29 @@
 
 [Read more](../3_HLDDesignProblems/AWSDesignMultiRegionActiveActiveArchitecture/Readme.md)
 
-## Upload Image using Amazon S3 and Lambda
-
-![img.png](../3_HLDDesignProblems/AWSDesignUploadImageLambdaS3/UploadImage-Lambda.drawio.png)
-
-[Read more](../3_HLDDesignProblems/AWSDesignUploadImageLambdaS3/Readme.md)
-
 ## Bookstore app on AWS
 
 ![](../3_HLDDesignProblems/AWSBookStoreSampleApp/AWS-Bookstore-Demo-App.png)
 
 [Read more](../3_HLDDesignProblems/AWSBookStoreSampleApp/Readme.md)
 
-## AWS - Modern Data Architecture
+## Modern Data Architecture on AWS
 
 ![](../3_HLDDesignProblems/AWSModernDataArchitecture/AWS-Data-Architecture-ETL-OLTP-OLAP-DataLake.png)
 
-## Real-time data analytics architecture
+[Read more](../3_HLDDesignProblems/AWSModernDataArchitecture/Readme.md)
 
-![](6_DatabaseServices/AmazonRDS/assets/RDS-Stored-Procedures.png)
+## Click Stream Analytics on AWS
+
+![](../3_HLDDesignProblems/AWSClickStreamAnalytics/AWSClickStreamAnalytic.png)
+
+[Read more](../3_HLDDesignProblems/AWSClickStreamAnalytics/Readme.md)
+
+## Upload Image using Amazon S3 and Lambda
+
+![](../3_HLDDesignProblems/AWSDesignUploadImageLambdaS3/UploadImage-Lambda.drawio.png)
+
+[Read more](../3_HLDDesignProblems/AWSDesignUploadImageLambdaS3/Readme.md)
 
 ## Others
 - [Send-SMS-API design - App Internal Clients, Multiple SMS-Providers, AutoScaling](../3_HLDDesignProblems/TransactionSMSDesign/Readme.md)
@@ -110,7 +114,7 @@
         <div class="container" style="background:white">
             <div class="block two first">
                 <a href="1_NetworkingAndContentDelivery/3_NetworkFoundationsVPC/Readme.md" target="_blank">
-                  <img src="https://www.kamprasad.com/wp-content/uploads/2019/08/aws-vpc.png" width="150">
+                  <img src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/aws-vpc-icon.png" width="150">
                 </a>
             </div>
         </div>
@@ -160,7 +164,7 @@
                   <img src="https://miro.medium.com/max/750/1*q6F0j8HFHd8jeYXyQBqrCQ.jpeg" width="150">
                 </a>
                 <a href="3_ComputeServices/AWSFargate.md" target="_blank">
-                  <img src="https://www.nclouds.com/img/services/toolkit/fargate.png" width="150">
+                  <img src="https://miro.medium.com/v2/resize:fit:786/format:webp/1*BCgeXMygZAH_xXzKG8vvQQ.png" width="150">
                 </a>
                 <a href="3_ComputeServices/AWSLambda/Readme.md" target="_blank">
                   <img src="https://www.brcline.com/wp-content/uploads/2021/09/aws-lambda-logo.png" width="150">
@@ -250,7 +254,7 @@
                   <img src="https://allcode.com/wp-content/uploads/2022/12/Amazon-Aurora.jpg" width="150">
                 </a>
                 <a href="6_DatabaseServices/AmazonRDS/Readme.md" target="_blank">
-                  <img src="https://secpigeon.com/media/2022/04/RDS.png" width="150">
+                  <img src="https://imgs.search.brave.com/I-r9RUsyB0nINGezC2IqUtOkzG21nqHgAFbJOP2tqXU/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9icmFu/ZHNsb2dvcy5jb20v/d3AtY29udGVudC91/cGxvYWRzL2ltYWdl/cy9hd3MtcmRzLWxv/Z28ucG5n" width="150">
                 </a>
                 <a href="6_DatabaseServices/AmazonDynamoDB/Readme.md" target="_blank">
                   <img src="https://user-images.githubusercontent.com/6509926/70553550-f033b980-1b40-11ea-9192-759b3b1053b3.png" width="150">

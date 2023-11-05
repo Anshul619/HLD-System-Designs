@@ -5,17 +5,17 @@
 
 # Use cases
 
-| Use Case                                                                                                        | Description                                                                                                                                                                                                                                                                                     |
-|-----------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Static websites](StaticWebsiteHosting.md)                                                                      | You can configure your S3 bucket to host a static website of HTML, CSS, and client-side scripts.                                                                                                                                                                                                |
-| [Static content](../../../1_HLDDesignComponents/0_SystemGlossaries/CDNs/StaticContentWithCDN.md)                | Because of the limitless scaling, the support for large files, and the fact that you access any object over the web at any time, Amazon S3 is the perfect place to store static content.                                                                                                        |
-| [Backup and storage](../../12_Backup&DR)                                                                        | [Amazon S3]() is a natural place to back up files (example [RDS Snapshots](../../12_Backup&DR/RDSSnapshot.md), [EBS snapshots](../../12_Backup&DR/EBSSnapshots.md) etc.) because it is highly redundant.                                                                                        |
-| Media hosting                                                                                                   | Because you can store unlimited objects, and each individual object can be up to 5 TBs, Amazon S3 is an ideal location to host video, photo, and music uploads.                                                                                                                                 |
-| [Data lakes](../../10_BigDataComponents/StorageDBs/DataLakes/S3DataLake.md)                                     | [Amazon S3](https://docs.aws.amazon.com/whitepapers/latest/building-data-lakes/amazon-s3-data-lake-storage-platform.html) is an optimal foundation for a [data lake](../../../1_HLDDesignComponents/5_BigDataComponents/StorageDBs/DataLake.md) because of its virtually unlimited scalability. |
-| [Data Catalog](https://docs.aws.amazon.com/whitepapers/latest/building-data-lakes/data-cataloging.html)         | [Amazon S3]() can be used for the data catalog use case.                                                                                                                                                                                                                                        |
-| Software delivery                                                                                               | You can use Amazon S3 to host your software applications that customers can download.                                                                                                                                                                                                           |
+| Use Case                                                                                                                    | Description                                                                                                                                                                                                                                                                                     |
+|-----------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| [Static websites](StaticWebsiteHosting.md)                                                                                  | You can configure your S3 bucket to host a static website of HTML, CSS, and client-side scripts.                                                                                                                                                                                                |
+| [Static content](../../../1_HLDDesignComponents/0_SystemGlossaries/CDNs/StaticContentWithCDN.md)                            | Because of the limitless scaling, the support for large files, and the fact that you access any object over the web at any time, Amazon S3 is the perfect place to store static content.                                                                                                        |
+| [Backup and storage](../../12_Backup&DR)                                                                                    | [Amazon S3]() is a natural place to back up files (example [RDS Snapshots](../../12_Backup&DR/RDSSnapshot.md), [EBS snapshots](../../12_Backup&DR/EBSSnapshots.md) etc.) because it is highly redundant.                                                                                        |
+| Media hosting                                                                                                               | Because you can store unlimited objects, and each individual object can be up to 5 TBs, Amazon S3 is an ideal location to host video, photo, and music uploads.                                                                                                                                 |
+| [Data lakes](../../10_BigDataComponents/StorageDBs/DataLakes/S3DataLake.md)                                                 | [Amazon S3](https://docs.aws.amazon.com/whitepapers/latest/building-data-lakes/amazon-s3-data-lake-storage-platform.html) is an optimal foundation for a [data lake](../../../1_HLDDesignComponents/5_BigDataComponents/StorageDBs/DataLake.md) because of its virtually unlimited scalability. |
+| [Data Catalog](https://docs.aws.amazon.com/whitepapers/latest/building-data-lakes/data-cataloging.html)                     | [Amazon S3]() can be used for the data catalog use case.                                                                                                                                                                                                                                        |
+| Software delivery                                                                                                           | You can use Amazon S3 to host your software applications that customers can download.                                                                                                                                                                                                           |
 | [Swiggy - Capturing CDC using S3 data lake](../../../3_HLDDesignProblems/FoodOrderingZomatoSwiggyDesign/SwiggyTechStack.md) |
-| [ClickStream analytics using S3 on AWS](../../../3_HLDDesignProblems/AWSClickStreamAnalytics/Readme.md)         |                                                                                                                                                                                                                                                                                                 |
+| [ClickStream analytics using S3 on AWS](../../../3_HLDDesignProblems/AWSClickStreamAnalytics/Readme.md)                     |                                                                                                                                                                                                                                                                                                 |
 
 # Key Features of S3
 
@@ -48,6 +48,12 @@
 
 # :star: Real world use cases of Amazon S3
 
+## :star: Modern Data Architecture 
+
+![](../../../3_HLDDesignProblems/AWSModernDataArchitecture/AWS-Data-Architecture-ETL-OLTP-OLAP-DataLake.png)
+
+[Read more](../../../3_HLDDesignProblems/AWSModernDataArchitecture/Readme.md)
+
 ## :star: Amazon S3 + Amazon CloudFront: A Match Made in the Cloud
 - Instead of [directly accessing the S3 resource](https://aws.amazon.com/blogs/networking-and-content-delivery/amazon-s3-amazon-cloudfront-a-match-made-in-the-cloud/), we should use [CloudFront distribution](../../1_NetworkingAndContentDelivery/1_EdgeNetworking/AmazonCloudFront.md) in the middle (which acts as a [CDN](../../../1_HLDDesignComponents/0_SystemGlossaries/CDNs/CDNs.md))
 
@@ -58,10 +64,6 @@
 ![img.png](../../../3_HLDDesignProblems/AWSDesignUploadImageLambdaS3/UploadImage-Lambda.drawio.png)
 
 [Read more](../../../3_HLDDesignProblems/AWSDesignUploadImageLambdaS3/Readme.md)
-
-## Real-time data analytics architecture
-
-![](../../6_DatabaseServices/AmazonRDS/assets/RDS-Stored-Procedures.png)
 
 # Useful Tools
 
