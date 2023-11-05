@@ -8,16 +8,16 @@
 
 # Supported Data Destinations
 
-| Data Destinations                                                                                      | Destination Type                                         |
-|--------------------------------------------------------------------------------------------------------|----------------------------------------------------------|
-| [Amazon S3](../../../../7_StorageServices/3_ObjectStorageS3/Readme.md)                                 | [AWS data stores](../../../../6_DatabaseServices)        |
-| [Amazon Redshift](../../../StorageDBs/DataWarehouse/AmazonRedshift.md)                                 | [AWS data stores](../../../../6_DatabaseServices)        |
-| [Amazon OpenSearch Service](../../../../6_DatabaseServices/AmazonOpenSearch.md)                        | [AWS data stores](../../../../6_DatabaseServices)        |
-| [Data Lakes like S3 Data Lake etc.](../../../StorageDBs/DataLakes)                                     | Data Lakes                                               |
-| [NewRelic](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/SubscriptionFilters.html)          | Logs/Analytics Tools                                     |
+| Data Destinations                                                                                     | Destination Type                                         |
+|-------------------------------------------------------------------------------------------------------|----------------------------------------------------------|
+| [Amazon S3](../../../../7_StorageServices/3_ObjectStorageS3/Readme.md)                                | [AWS data stores](../../../../6_DatabaseServices)        |
+| [Amazon Redshift](../../../StorageDBs/DataWarehouse/AmazonRedshift.md)                                | [AWS data stores](../../../../6_DatabaseServices)        |
+| [Amazon OpenSearch](../../../../6_DatabaseServices/AmazonOpenSearch.md)                        | [AWS data stores](../../../../6_DatabaseServices)        |
+| [Data Lakes like S3 Data Lake etc.](../../../StorageDBs/DataLakes)                                    | Data Lakes                                               |
+| [NewRelic](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/SubscriptionFilters.html)         | Logs/Analytics Tools                                     |
 | [MongoDB](../../../../../1_HLDDesignComponents/3_DatabaseComponents/NoSQL-Databases/MongoDB/Readme.md) | [Open Source data store](../../../../6_DatabaseServices) |
-| Splunk, Datadog, Dynatrace, Sumo Logic, LogicMonitor etc.                                              | Logs/Analytics Tools                                     |
-| HTTP End Point as destination                                                                          | Custom                                                   |
+| Splunk, Datadog, Dynatrace, Sumo Logic, LogicMonitor etc.                                             | Logs/Analytics Tools                                     |
+| HTTP End Point as destination                                                                         | Custom                                                   |
 
 [Read more](https://aws.amazon.com/kinesis/data-firehose/faqs/)
 

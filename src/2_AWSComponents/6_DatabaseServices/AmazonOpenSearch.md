@@ -6,7 +6,7 @@
 
 ![img.png](https://d1.awsstatic.com/product-marketing/Elasticsearch/product-page-diagram_Amazon-OpenSearch-Service_HIW%402x.f20d73b8aa110b5fb6ca1d9ebb439066a5e31ef5.png)
 
-# OpenSearch
+# OpenSearch - Open Source
 - [OpenSearch](https://opensearch.org/docs/latest/) is a community-driven, Apache 2.0-licensed open source search and analytics suite that makes it easy to ingest, search, visualize, and analyze data.
 - OpenSearch is an open source, distributed search and analytics suite derived from Elasticsearch.
 - Common use cases of OpenSearch such as application search, log analytics, data observability, data ingestion, and more.

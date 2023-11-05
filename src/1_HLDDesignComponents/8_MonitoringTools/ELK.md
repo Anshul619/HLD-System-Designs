@@ -24,7 +24,7 @@
 # Deployment on AWS
 - ELK can be deployed using [Amazon OpenSearch](../../2_AWSComponents/6_DatabaseServices/AmazonOpenSearch.md), on [AWS](../../2_AWSComponents).
 
-![open_search.png](https://d1.awsstatic.com/product-page-diagram_HIW_Amazon-OpenSearch.bccd42c9b855877a40e4eb3c55511a8aae1002a4.png)
+![](https://d1.awsstatic.com/product-page-diagram_HIW_Amazon-OpenSearch.bccd42c9b855877a40e4eb3c55511a8aae1002a4.png)
 
 # Other Notes
 - [Installation using Docker ELK](https://github.com/deviantony/docker-elk)
