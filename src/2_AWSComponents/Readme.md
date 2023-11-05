@@ -164,7 +164,7 @@
                   <img src="https://miro.medium.com/max/750/1*q6F0j8HFHd8jeYXyQBqrCQ.jpeg" width="150">
                 </a>
                 <a href="3_ComputeServices/AWSFargate.md" target="_blank">
-                  <img src="https://miro.medium.com/v2/resize:fit:786/format:webp/1*BCgeXMygZAH_xXzKG8vvQQ.png" width="150">
+                  <img src="https://miro.medium.com/v2/resize:fit:786/format:webp/1*BCgeXMygZAH_xXzKG8vvQQ.png" width="100">
                 </a>
                 <a href="3_ComputeServices/AWSLambda/Readme.md" target="_blank">
                   <img src="https://www.brcline.com/wp-content/uploads/2021/09/aws-lambda-logo.png" width="150">
@@ -254,7 +254,7 @@
                   <img src="https://allcode.com/wp-content/uploads/2022/12/Amazon-Aurora.jpg" width="150">
                 </a>
                 <a href="6_DatabaseServices/AmazonRDS/Readme.md" target="_blank">
-                  <img src="https://imgs.search.brave.com/I-r9RUsyB0nINGezC2IqUtOkzG21nqHgAFbJOP2tqXU/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9icmFu/ZHNsb2dvcy5jb20v/d3AtY29udGVudC91/cGxvYWRzL2ltYWdl/cy9hd3MtcmRzLWxv/Z28ucG5n" width="150">
+                  <img src="https://imgs.search.brave.com/I-r9RUsyB0nINGezC2IqUtOkzG21nqHgAFbJOP2tqXU/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9icmFu/ZHNsb2dvcy5jb20v/d3AtY29udGVudC91/cGxvYWRzL2ltYWdl/cy9hd3MtcmRzLWxv/Z28ucG5n" width="50">
                 </a>
                 <a href="6_DatabaseServices/AmazonDynamoDB/Readme.md" target="_blank">
                   <img src="https://user-images.githubusercontent.com/6509926/70553550-f033b980-1b40-11ea-9192-759b3b1053b3.png" width="150">
