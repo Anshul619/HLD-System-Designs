@@ -58,15 +58,15 @@ This repo contains the various system design components info, questions and solu
     </tr>
     <tr>
       <td>
-        <a href="src/1_HLDDesignComponents/3_DatabaseComponents/In-Memory-Cache">In-Memory Cache/DBs</a>
+        <a href="src/1_HLDDesignComponents/3_DatabaseComponents/In-Memory-DB">In-Memory Cache/DBs</a>
       </td>
       <td>
         <div class="container" style="background:white">
             <div class="block two first">
-                <a href="/src/1_HLDDesignComponents/3_DatabaseComponents/In-Memory-Cache/Redis/Readme.md" target="_blank">
+                <a href="/src/1_HLDDesignComponents/3_DatabaseComponents/In-Memory-DB/Redis/Readme.md" target="_blank">
                   <img src="https://upload.wikimedia.org/wikipedia/en/6/6b/Redis_Logo.svg" width="150">
                 </a>
-                <a href="/src/1_HLDDesignComponents/3_DatabaseComponents/In-Memory-Cache/AeroSpike.md" target="_blank">
+                <a href="/src/1_HLDDesignComponents/3_DatabaseComponents/In-Memory-DB/AeroSpike.md" target="_blank">
                   <img src="https://aerospike.com/wp-content/uploads/2021/03/logo-4.png" width="150">
                 </a>
             </div>
