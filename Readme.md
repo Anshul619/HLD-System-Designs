@@ -159,10 +159,10 @@ This repo contains the various system design components info, questions and solu
       <td>
         <div class="container" style="background:white">
             <div class="block two first">
-                <a href="/src/1_HLDDesignComponents/5_BigDataComponents/ETLServices/BatchProcessing/ApacheHadoop" target="_blank">
+                <a href="/src/1_HLDDesignComponents/5_BigDataComponents/ETLServices/BatchProcessing/ApacheHadoop/Readme.md" target="_blank">
                   <img src="https://www.clipartmax.com/png/middle/180-1806192_hadoop-apache-hadoop-logo.png" width="150">
                 </a>
-                <a href="/src/1_HLDDesignComponents/5_BigDataComponents/ETLServices/StreamProcessing/ApacheSpark.md" target="_blank">
+                <a href="/src/1_HLDDesignComponents/5_BigDataComponents/ETLServices/ApacheSpark.md" target="_blank">
                   <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Apache_Spark_logo.svg/1200px-Apache_Spark_logo.svg.png" width="150">
                 </a>
             </div>
@@ -176,14 +176,14 @@ This repo contains the various system design components info, questions and solu
       <td>
         <div class="container" style="background:white">
             <div class="block two first">
-                <a href="/src/2_AWSComponents/10_BigDataComponents/ETLServices/StreamProcessing/AmazonKinesisDataFirehouse/Readme.md" target="_blank">
-                  <img src="https://miro.medium.com/max/1190/0*UQBKjEff1uIsXH8W" width="150">
-                </a>
-                <a href="/src/1_HLDDesignComponents/5_BigDataComponents/ETLServices/StreamProcessing/ApacheSpark.md" target="_blank">
+                <a href="/src/1_HLDDesignComponents/5_BigDataComponents/ETLServices/StreamProcessing/SparkStreaming.md" target="_blank">
                   <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Apache_Spark_logo.svg/1200px-Apache_Spark_logo.svg.png" width="150">
                 </a>
                 <a href="/src/1_HLDDesignComponents/5_BigDataComponents/ETLServices/StreamProcessing/KafkaStreamsAPI.md" target="_blank">
                   <img src="https://1.bp.blogspot.com/-LIHoqo96Dos/X7wKY2u124I/AAAAAAAAp88/SrC8E6Y-5l4Xil7UPrDRp-RuEx2GioXkQCLcBGAsYHQ/s435/kafka-streams.png" width="150">
+                </a>
+                <a href="/src/2_AWSComponents/10_BigDataComponents/ETLServices/StreamProcessing/AmazonKinesisDataFirehouse/Readme.md" target="_blank">
+                  <img src="https://miro.medium.com/max/1190/0*UQBKjEff1uIsXH8W" width="150">
                 </a>
             </div>
         </div>
@@ -202,7 +202,7 @@ This repo contains the various system design components info, questions and solu
                 <a href="src/2_AWSComponents/6_DatabaseServices/AmazonDynamoDB/Readme.md">
                   <img src="https://user-images.githubusercontent.com/6509926/70553550-f033b980-1b40-11ea-9192-759b3b1053b3.png" width="150">
                 </a>
-                <a href="/src/1_HLDDesignComponents/3_DatabaseComponents/NoSQL-Databases/MongoDB" target="_blank">
+                <a href="/src/1_HLDDesignComponents/3_DatabaseComponents/NoSQL-Databases/MongoDB/Readme.md" target="_blank">
                   <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/MongoDB_Logo.svg/2560px-MongoDB_Logo.svg.png" width="150">
                 </a>
                 <a href="/src/1_HLDDesignComponents/3_DatabaseComponents/NoSQL-Databases/WideColumnDB/ApacheHBase.md" target="_blank">
@@ -214,8 +214,8 @@ This repo contains the various system design components info, questions and solu
     </tr>
     <tr>
       <td>
-        <a href="src/1_HLDDesignComponents/5_BigDataComponents/ETLServices/BatchProcessing/ApacheHadoop/ApacheHDFS.md" target="_blank">
-          Distributed Storage Services (Files, Images etc.)
+        <a href="src/1_HLDDesignComponents/9_FileStorage" target="_blank">
+          Distributed File Storage Services ( for Files, Images etc.)
         </a>
       </td>
       <td>
@@ -224,7 +224,7 @@ This repo contains the various system design components info, questions and solu
                 <a href="src/2_AWSComponents/7_StorageServices/3_ObjectStorageS3/Readme.md" target="_blank">
                   <img src="https://miro.medium.com/max/580/1*DHe24MbDHtbkOeIJzxrfdA.png" width="150">
                 </a>
-                <a href="/src/1_HLDDesignComponents/5_BigDataComponents/ETLServices/BatchProcessing/ApacheHadoop/ApacheHDFS.md" target="_blank">
+                <a href="/src/1_HLDDesignComponents/9_FileStorage/ApacheHDFS.md" target="_blank">
                   <img src="https://intellipaat.com/mediaFiles/2015/07/hadoop-hdfs.png" width="150">
                 </a>
             </div>

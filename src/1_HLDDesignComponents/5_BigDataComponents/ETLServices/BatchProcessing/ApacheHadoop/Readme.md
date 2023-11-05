@@ -2,21 +2,23 @@
 - [Apache Hadoop](https://hadoop.apache.org/) is an open source framework that is used to efficiently store and process `large datasets ranging in size from gigabytes to petabytes of data`. 
 - Instead of using one large computer to store and process the data, Hadoop allows [clustering multiple computers to analyze massive datasets](../../../../0_SystemGlossaries/Scalability/ServersCluster.md) in parallel more quickly.
 
-# Modules
-- :star: [Apache MapReduce](../MapReduce.md)
-- :star: [Apache HDFS](ApacheHDFS.md)
-- [Apache Yarn](../../../../6_ContainerOrchestrationServices/ApacheYarn.md)
-- [ApacheZookeeper](../../../../7_ClusterCoordinationService/ApacheZookeeper.md)
-- Hadoop Common - it contains packages and libraries which are used for other modules.
+![img.png](HadoopStack.drawio.png)
 
-![img.png](assests/HadoopStack.drawio.png)
+| Module                                                                         | Remarks                                                              |
+|--------------------------------------------------------------------------------|----------------------------------------------------------------------|
+| [Apache MapReduce](../../../0_Glossaries/MapReduce.md)                                            | Data Processing                                                      |
+| [Apache HDFS](../../../../9_FileStorage/ApacheHDFS.md)                         | Distributed file storage                                             |
+| [Apache Yarn](../../../../6_ContainerOrchestrationServices/ApacheYarn.md)      | Cluster Management                                                   |
+| [ApacheZookeeper](../../../../7_ClusterCoordinationService/ApacheZookeeper.md) | Cluster coordination                                                 |
+| Hadoop Common                                                                  | It contains packages and libraries which are used for other modules. |
+
 
 # How Hadoop works?
 - Hadoop makes it easier to use all the storage and processing capacity in cluster servers, and to execute distributed processes against huge amounts of data. 
 - Hadoop provides the building blocks on which other services and applications can be built.
 - Applications that collect data in various formats can place data into the Hadoop cluster by using an API operation to connect to the NameNode. 
 - The NameNode tracks the file directory structure and placement of `chunks` for each file, replicated across DataNodes. 
-- To run a job to query the data, provide a [MapReduce job](../MapReduce.md) made up of many map and reduce tasks that run against the data in [HDFS](ApacheHDFS.md) spread across the DataNodes.
+- To run a job to query the data, provide a [MapReduce job](../../../0_Glossaries/MapReduce.md) made up of many map and reduce tasks that run against the data in [HDFS](../../../../9_FileStorage/ApacheHDFS.md) spread across the DataNodes.
 - Map tasks run on each node against the input files supplied, and reducers run to aggregate and organize the final output.
 
 # :thumbsup: Advantages
@@ -32,10 +34,6 @@
 - Hard cluster management.
 - Has stability issues.
 - Security concerns.
-
-# Hadoop Ecosystem
-
-![img.png](https://media.geeksforgeeks.org/wp-content/cdn-uploads/HadoopEcosystem-min.png)
 
 # References
 - [What is Hadoop?](https://aws.amazon.com/emr/details/hadoop/what-is-hadoop/)

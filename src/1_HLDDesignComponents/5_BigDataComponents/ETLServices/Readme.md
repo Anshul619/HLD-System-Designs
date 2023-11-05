@@ -15,7 +15,7 @@
 
 | Processing Type                                 | Stream    | Description                                                                                                         |
 |-------------------------------------------------|-----------|---------------------------------------------------------------------------------------------------------------------|
-| [Batch Processing](BatchProcessing/Readme.md)   | Bounded   | It involves [MapReduce jobs](BatchProcessing/MapReduce.md) which runs at certain frequency to transform the data.   |
+| [Batch Processing](BatchProcessing/Readme.md)   | Bounded   | It involves [MapReduce jobs](../0_Glossaries/MapReduce.md) which runs at certain frequency to transform the data.   |
 | [Stream Processing](StreamProcessing/Readme.md) | Unbounded | It involves processing data in near-real time.                                                                      |
 
 # References

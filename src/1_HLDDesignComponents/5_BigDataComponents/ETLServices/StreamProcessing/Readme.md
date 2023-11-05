@@ -9,7 +9,7 @@
 
 | Tech                                                                                                                 |
 |----------------------------------------------------------------------------------------------------------------------|
-| [Apache Spark](ApacheSpark.md)                                                                                       |
+| [Apache Spark](../ApacheSpark.md)                                                                                       |
 | [Kafka Streams](KafkaStreamsAPI.md)                                                                                  |
 | [AWS Kinesis](../../../../2_AWSComponents/5_MessageBrokerServices/AmazonKinesis/Readme.md) |
 | [Apache Storm](ApacheStorm.md)                                                                                       |
