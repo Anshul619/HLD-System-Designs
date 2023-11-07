@@ -11,13 +11,13 @@
 
 | Use Case                                                                                        |
 |-------------------------------------------------------------------------------------------------|
-| [Zomato](../../3_HLDDesignProblems/FoodOrderingZomatoSwiggyDesign/Readme.md)                    |
-| [Swiggy](../../3_HLDDesignProblems/FoodOrderingZomatoSwiggyDesign/SwiggyTechStack.md)           |
-| [Spotify](../../3_HLDDesignProblems/PersonalizationSpotify/Readme.md)                           |
-| [Grab](../../3_HLDDesignProblems/FoodOrderingZomatoSwiggyDesign/GrabTechStack/Readme.md)        |
-| [LinkedIn](../../3_HLDDesignProblems/SocialNetworkFacebookInstagramDesign/LinkedInTechStack.md) |
-| [Split.io](../../3_HLDDesignProblems/SplitSystemDesign/Readme.md)                               |
-| [Stripe](../../3_HLDDesignProblems/StripeSystemDesign/Readme.md)                                |
+| [Zomato](../../3_HLDDesignProblemsUC/HLD_FoodOrderingZomatoSwiggy/Readme.md)                    |
+| [Swiggy](../../4_TechStacksRealWorld/SwiggyTechStack.md)           |
+| [Spotify](../../4_TechStacksRealWorld/PersonalizationSpotify/Readme.md)                           |
+| [Grab](../../4_TechStacksRealWorld/GrabTechStack/Readme.md)        |
+| [LinkedIn](../../4_TechStacksRealWorld/LinkedInTechStack.md) |
+| [Split.io](../../4_TechStacksRealWorld/SplitIOTechStack.md)                               |
+| [Stripe](../../4_TechStacksRealWorld/StripeTechStack.md)                                |
 
 # Resources and Limits
 

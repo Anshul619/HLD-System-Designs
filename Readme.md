@@ -6,8 +6,8 @@ This repo contains the various system design components info, questions and solu
 - [System Estimation Tips](src/1_HLDDesignComponents/SystemEstimationTips.md)
 - [Benchmarking](Benchmarking.md)
 - [System Design Tips](src/1_HLDDesignComponents/SystemDesignTips.md)
-- [HLD Design Problems](src/3_HLDDesignProblems)
-- [LLD Design Problems](src/4_ObjectOrientedDesign/OOPDesignProblems)
+- [HLD Design Problems](src/3_HLDDesignProblemsUC)
+- [LLD Design Problems](src/5_ObjectOrientedDesign/OOPDesignProblems)
 
 # System Design - Tech Stack
 
@@ -252,19 +252,19 @@ This repo contains the various system design components info, questions and solu
 </table>
 
 # Programming & OOP Design & Problems (LLD)
-- :star: [OOP Design](src/4_ObjectOrientedDesign/OOP.md)
-- :star: [SOLID Principles](src/4_ObjectOrientedDesign/SOLID.md)
-- :star: [Design Tips & Techniques](src/4_ObjectOrientedDesign/TipsAndTechniques.md)
-- :star: [Design Patterns](src/4_ObjectOrientedDesign/DesignPatterns)
+- :star: [OOP Design](src/5_ObjectOrientedDesign/OOP.md)
+- :star: [SOLID Principles](src/5_ObjectOrientedDesign/SOLID.md)
+- :star: [Design Tips & Techniques](src/5_ObjectOrientedDesign/TipsAndTechniques.md)
+- :star: [Design Patterns](src/5_ObjectOrientedDesign/DesignPatterns)
 
 # Programming Languages
 - :star: [GoLang](https://github.com/Anshul619/golang)
-- [Spring Boot & Microservices](src/5_ProgrammingLanguages/2_Java/SpringBootAndMicroServices)
-- [Java](src/5_ProgrammingLanguages/2_Java)
-- [Hibernate](src/5_ProgrammingLanguages/2_Java/Hibernate.md)
-- [JavaScript](src/5_ProgrammingLanguages/3_JavaScript)
-- [TypeScript](src/5_ProgrammingLanguages/4_FrontEnd/TypeScript.md)
-- [Angular8](src/5_ProgrammingLanguages/4_FrontEnd/Angular8.md)
+- [Spring Boot & Microservices](src/6_ProgrammingLanguages/2_Java/SpringBootAndMicroServices)
+- [Java](src/6_ProgrammingLanguages/2_Java)
+- [Hibernate](src/6_ProgrammingLanguages/2_Java/Hibernate.md)
+- [JavaScript](src/6_ProgrammingLanguages/3_JavaScript)
+- [TypeScript](src/6_ProgrammingLanguages/4_FrontEnd/TypeScript.md)
+- [Angular8](src/6_ProgrammingLanguages/4_FrontEnd/Angular8.md)
 
 # API Dev, Documentation
 - :star: [Swagger](src/1_HLDDesignComponents/2_APITechOptions/API_Documentation/Swagger/Readme.md)
@@ -275,7 +275,7 @@ This repo contains the various system design components info, questions and solu
 - [Monitoring](src/1_HLDDesignComponents/8_MonitoringTools/Readme.md)
 - [Apache Marathon & Mesos](src/1_HLDDesignComponents/6_ContainerOrchestrationServices/ApacheMarathon&Mesos.md)
 - [Apache Yarn](src/1_HLDDesignComponents/6_ContainerOrchestrationServices/ApacheYarn.md)
-- [Testing](src/QATools/Readme.md)
+- [Testing](src/7_QATools/Readme.md)
 - [System Design Tips](src/1_HLDDesignComponents/SystemDesignTips.md)
 - [Engineering Blogs](EngineeringBlogs.md)
 

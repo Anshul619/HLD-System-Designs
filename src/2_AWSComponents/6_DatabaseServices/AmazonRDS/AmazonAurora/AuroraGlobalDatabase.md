@@ -3,7 +3,7 @@
 - [An Aurora global database]() has a primary [Aurora DB cluster](Readme.md) in one Region, and [up to five secondary Aurora DB clusters](Readme.md) in different Regions.
 - [Only Single-Master Aurora cluster is supported](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/aurora-multi-master.html) in Aurora Global Database i.e. there would be only 1 writer instance and multiple read replicas in different regions.
 
-![img.png](../../../../3_HLDDesignProblems/AWSDesignMultiRegionActiveActiveArchitecture/AWS-Multi-Region-AZ-HA.drawio.png)
+![img.png](../../../../3_HLDDesignProblemsUC/AWS_DesignMultiRegionActiveActiveArchitecture/AWS-Multi-Region-AZ-HA.drawio.png)
 
 # Primary vs Secondary DB Cluster
 

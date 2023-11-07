@@ -36,29 +36,29 @@
 
 ## Personalization at Spotify using Cassandra
 
-![](../../../../3_HLDDesignProblems/PersonalizationSpotify/PersonalizationSpotify.drawio.png)
+![](../../../../4_TechStacksRealWorld/PersonalizationSpotify/PersonalizationSpotify.drawio.png)
 
-[Read more](../../../../3_HLDDesignProblems/PersonalizationSpotify)
+[Read more](../../../../4_TechStacksRealWorld/PersonalizationSpotify)
 
 ## Social Network Design Problem - User Entities like Posts, Comments etc.
 
-![](../../../../3_HLDDesignProblems/SocialNetworkFacebookInstagramDesign/SocialNetworkDesignProblemHLD.png)
+![](../../../../3_HLDDesignProblemsUC/HLD_SocialNetworkFacebookInstagram/SocialNetworkDesignProblemHLD.png)
 
-[Read more](../../../../3_HLDDesignProblems/SocialNetworkFacebookInstagramDesign/SocialNetworkDesignProblem.md)
+[Read more](../../../../3_HLDDesignProblemsUC/HLD_SocialNetworkFacebookInstagram/SocialNetworkDesignProblem.md)
 
 ## Flight Booking design problem - Search
 
-![](../../../../3_HLDDesignProblems/FlightBookingSearch/MakeMyTripFlightSearch.drawio.png)
+![](../../../../3_HLDDesignProblemsUC/HLD_FlightBookingSearchMakeMyTrip/MakeMyTripFlightSearch.drawio.png)
 
-[Read more](../../../../3_HLDDesignProblems/FlightBookingSearch/Readme.md))
+[Read more](../../../../3_HLDDesignProblemsUC/HLD_FlightBookingSearchMakeMyTrip/Readme.md))
 
 ## Other UCs
-- [How Uber Manages a Million Writes Per Second Using Mesos and Cassandra Across Multiple Datacenters?](../../../../3_HLDDesignProblems/UberSystemDesign/UberCasandraMesos)
-- [Netflix - Casandra - Time Series Data](../../../../3_HLDDesignProblems/NetflixSystemDesign/Readme.md)
-- [Directi uses Casandra to save HeatMaps (UI activities)](../../../../3_HLDDesignProblems/ZetaSystemDesign/Readme.md)
-- [Instagram - Casandra - Social Media Posts](../../../../3_HLDDesignProblems/SocialNetworkFacebookInstagramDesign/InstagramTechStack.md)
-- [Twillo - Send Message API Design Problem](../../../../3_HLDDesignProblems/TwilloSendMessageAPI/Readme.md)
-- [Twitter Hit Counter](../../../../3_HLDDesignProblems/TwitterHitCounterDesign/Readme.md)
+- [How Uber Manages a Million Writes Per Second Using Mesos and Cassandra Across Multiple Datacenters?](../../../../4_TechStacksRealWorld/Uber/UberCasandraMesos)
+- [Netflix - Casandra - Time Series Data](../../../../4_TechStacksRealWorld/NetflixTechStack.md)
+- [Directi uses Casandra to save HeatMaps (UI activities)](../../../../4_TechStacksRealWorld/DirectITechStack.md)
+- [Instagram - Casandra - Social Media Posts](../../../../4_TechStacksRealWorld/InstagramTechStack.md)
+- [Twillo - Send Message API Design Problem](../../../../3_HLDDesignProblemsUC/TwilloSendMessageAPI/Readme.md)
+- [Twitter Hit Counter](../../../../3_HLDDesignProblemsUC/TwitterHitCounterDesign/Readme.md)
 
 # Casandra's invention history - Facebook
 - Facebook originally built Cassandra to power its [Inbox search feature](https://m.facebook.com/nt/screen/?params=%7B%22note_id%22%3A10158772759272200%7D&path=%2Fnotes%2Fnote%2F&paipv=0&eav=AfYuSXXQPZ5fvm0_ScPdSlfj5BEFhRVT3iy_6Rsz7NZDbQ2vfq9opnedmTLSjG1aZBA&_rdr), with over 200 nodes deployed.

@@ -8,9 +8,9 @@
 
 ## Bookstore app
 
-![](../../../3_HLDDesignProblems/AWSBookStoreSampleApp/AWS-Bookstore-Demo-App.png)
+![](../../../3_HLDDesignProblemsUC/AWS_BookStoreSampleApp/AWS-Bookstore-Demo-App.png)
 
-[Read more](../../../3_HLDDesignProblems/AWSBookStoreSampleApp/Readme.md)
+[Read more](../../../3_HLDDesignProblemsUC/AWS_BookStoreSampleApp/Readme.md)
 
 # Supported events in DynamoDB
 

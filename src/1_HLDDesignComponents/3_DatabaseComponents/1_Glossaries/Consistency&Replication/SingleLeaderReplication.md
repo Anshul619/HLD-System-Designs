@@ -16,7 +16,7 @@
 | Application                                                                                                                        |
 |------------------------------------------------------------------------------------------------------------------------------------|
 | [Replication lag - Amazon Aurora vs RDS](../../../../2_AWSComponents/6_DatabaseServices/AmazonRDS/AmazonAuroraVsOtherDBEngines.md) |
-| [Flipkart - MySQL Replication Lag Analysis](../../../../3_HLDDesignProblems/Others/FlipkartMySQLReplicationLagAnalysis/Readme.md)  |
+| [Flipkart - MySQL Replication Lag Analysis](../../../../4_TechStacksRealWorld/FlipkartMySQLReplicationLagAnalysis/Readme.md)  |
 
 # Supported services
 

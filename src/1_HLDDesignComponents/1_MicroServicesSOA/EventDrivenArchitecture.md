@@ -2,7 +2,7 @@
 - An [event-driven architecture](https://aws.amazon.com/event-driven-architecture/) uses events to trigger and communicate between loosely coupled services and is common in modern applications built with [microservices]().
 - [Message brokers](../4_MessageBrokers) like [Kafka](../4_MessageBrokers/Kafka/Readme.md), [RabbitMQ](../4_MessageBrokers/RabbitMQ.md) etc., can be used in the event-driven architecture.
 
-![img.png](https://media.licdn.com/dms/image/D4D12AQGLyf5FI5Pe5w/article-cover_image-shrink_600_2000/0/1681869579145?e=2147483647&v=beta&t=OJtyUfrpaHb8q6i1pczaVmL-pkuIf79yvkM5cHwelI4)
+![](https://miro.medium.com/max/1400/1*CZYfnIHSHKE7XiP-zvhAvA.webp)
 
 # Examples of an event
 - An update like an item being placed in a shopping cart on an e-commerce website.

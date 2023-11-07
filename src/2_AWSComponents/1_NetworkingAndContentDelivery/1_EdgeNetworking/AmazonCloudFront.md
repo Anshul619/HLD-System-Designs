@@ -32,21 +32,21 @@
 
 ## Design Scalable System on AWS
 
-![img.png](../../../3_HLDDesignProblems/AWSDesignScalableSystemWithRDMS/DesignScalableSystemWithRelationalDBOnAWS.drawio.png)
+![img.png](../../../3_HLDDesignProblemsUC/AWS_DesignScalableSystemWithRDMS/DesignScalableSystemWithRelationalDBOnAWS.drawio.png)
 
-[Read more](../../../3_HLDDesignProblems/AWSDesignScalableSystemWithRDMS/Readme.md)
+[Read more](../../../3_HLDDesignProblemsUC/AWS_DesignScalableSystemWithRDMS/Readme.md)
 
 ## Upload Image using Amazon S3 and Lambda
 
-![img.png](../../../3_HLDDesignProblems/AWSDesignUploadImageLambdaS3/UploadImage-Lambda.drawio.png)
+![img.png](../../../3_HLDDesignProblemsUC/AWS_DesignUploadImageLambdaS3/UploadImage-Lambda.drawio.png)
 
-[Read more](../../../3_HLDDesignProblems/AWSDesignUploadImageLambdaS3/Readme.md)
+[Read more](../../../3_HLDDesignProblemsUC/AWS_DesignUploadImageLambdaS3/Readme.md)
 
 ## Deploy WordPress Site with Amazon CloudFront & S3
 
 ![img.png](https://d2908q01vomqb2.cloudfront.net/cb4e5208b4cd87268b208e49452ed6e89a68e0b8/2017/11/06/1-1024x576.png)
 
-[Read more](../../../3_HLDDesignProblems/AWSWebsiteSiteUsingCloudFront&S3.md)
+[Read more](../../../3_HLDDesignProblemsUC/AWSWebsiteSiteUsingCloudFront&S3.md)
 
 # Point-Of-Presence/Edges Footprint in CloudFront
 

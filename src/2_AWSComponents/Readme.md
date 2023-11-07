@@ -7,51 +7,52 @@
 | [AWS - All comparisons list b/w Services](AWS-All-Comparisons.md)   | Comparisons between different services in AWS.                                                                                                                                                                                                                                                                                          |                                                                                                                                                                                                                                                                                                                                         |
 | [AWS - All Services List](AWS-All-Services-List.md)                 | List of all services in AWS.                                                                                                                                                                                                                                                                                                            |
 | [Maintain resiliency](AWS-Global-Architecture-Region-AZ.md)         | A well-known best practice for cloud architecture is to use [Region-scoped, managed services](AWS-Global-Architecture-Region-AZ.md)<br/>- At a minimum, you should use two AZs.<br/>- [AWS](https://docs.aws.amazon.com) manages its [global architecture through region and availability zones](AWS-Global-Architecture-Region-AZ.md). |
-| [Serverless/Cloud Native](AWS-Serverless-Architecture.md)           | AWS provides easily managed [serverless architecture](AWS-Serverless-Architecture.md).                                                                                                                                                                                                                                                  |
 | [AWS Well-Architected Framework](AWS-Well-Architected-Framework.md) | [AWS Well-Architected](https://aws.amazon.com/architecture/well-architected) helps cloud architects build secure, high-performing, resilient, and efficient infrastructure for a variety of applications and workloads.                                                                                                                 |
+| [Serverless Architecture](AWS-Serverless-Architecture.md)           | AWS provides easily managed [serverless architecture](AWS-Serverless-Architecture.md).                                                                                                                                                                                                                                                  |
+| [Fully Managed Services](AWS-Fully-Managed-Services.md)             |                                                                                                                                                                                                                                                                                                                                         |
 
 # System Designs
 
 ## Design Scalable System on AWS
 
-![img.png](../3_HLDDesignProblems/AWSDesignScalableSystemWithRDMS/DesignScalableSystemWithRelationalDBOnAWS.drawio.png)
+![img.png](../3_HLDDesignProblemsUC/AWS_DesignScalableSystemWithRDMS/DesignScalableSystemWithRelationalDBOnAWS.drawio.png)
 
-[Read more](../3_HLDDesignProblems/AWSDesignScalableSystemWithRDMS/Readme.md)
+[Read more](../3_HLDDesignProblemsUC/AWS_DesignScalableSystemWithRDMS/Readme.md)
 
 ## Design Multi-Region Active-Active Architecture On AWS
 
-![img.png](../3_HLDDesignProblems/AWSDesignMultiRegionActiveActiveArchitecture/AWS-Multi-Region-AZ-HA.drawio.png)
+![img.png](../3_HLDDesignProblemsUC/AWS_DesignMultiRegionActiveActiveArchitecture/AWS-Multi-Region-AZ-HA.drawio.png)
 
-[Read more](../3_HLDDesignProblems/AWSDesignMultiRegionActiveActiveArchitecture/Readme.md)
+[Read more](../3_HLDDesignProblemsUC/AWS_DesignMultiRegionActiveActiveArchitecture/Readme.md)
 
 ## Bookstore app on AWS
 
-![](../3_HLDDesignProblems/AWSBookStoreSampleApp/AWS-Bookstore-Demo-App.png)
+![](../3_HLDDesignProblemsUC/AWS_BookStoreSampleApp/AWS-Bookstore-Demo-App.png)
 
-[Read more](../3_HLDDesignProblems/AWSBookStoreSampleApp/Readme.md)
+[Read more](../3_HLDDesignProblemsUC/AWS_BookStoreSampleApp/Readme.md)
 
 ## Modern Data Architecture on AWS
 
-![](../3_HLDDesignProblems/AWSModernDataArchitecture/AWS-Data-Architecture-ETL-OLTP-OLAP-DataLake.png)
+![](../3_HLDDesignProblemsUC/AWS_ModernDataArchitecture/AWS-Data-Architecture-ETL-OLTP-OLAP-DataLake.png)
 
-[Read more](../3_HLDDesignProblems/AWSModernDataArchitecture/Readme.md)
+[Read more](../3_HLDDesignProblemsUC/AWS_ModernDataArchitecture/Readme.md)
 
 ## Click Stream Analytics on AWS
 
-![](../3_HLDDesignProblems/AWSClickStreamAnalytics/AWSClickStreamAnalytic.png)
+![](../3_HLDDesignProblemsUC/AWS_ClickStreamAnalytics/AWSClickStreamAnalytic.png)
 
-[Read more](../3_HLDDesignProblems/AWSClickStreamAnalytics/Readme.md)
+[Read more](../3_HLDDesignProblemsUC/AWS_ClickStreamAnalytics/Readme.md)
 
 ## Upload Image using Amazon S3 and Lambda
 
-![](../3_HLDDesignProblems/AWSDesignUploadImageLambdaS3/UploadImage-Lambda.drawio.png)
+![](../3_HLDDesignProblemsUC/AWS_DesignUploadImageLambdaS3/UploadImage-Lambda.drawio.png)
 
-[Read more](../3_HLDDesignProblems/AWSDesignUploadImageLambdaS3/Readme.md)
+[Read more](../3_HLDDesignProblemsUC/AWS_DesignUploadImageLambdaS3/Readme.md)
 
 ## Others
-- [Send-SMS-API design - App Internal Clients, Multiple SMS-Providers, AutoScaling](../3_HLDDesignProblems/TransactionSMSDesign/Readme.md)
-- [WP Site with Amazon CloudFront & S3](../3_HLDDesignProblems/AWSWebsiteSiteUsingCloudFront&S3.md)
-- [Dropbox Saves Millions by Building a Scalable Metadata Store on Amazon DynamoDB and Amazon S3](../3_HLDDesignProblems/DropboxHLDDesign/DropboxMetaDataStore.md)
+- [Send-SMS-API design - App Internal Clients, Multiple SMS-Providers, AutoScaling](../3_HLDDesignProblemsUC/TransactionSMSDesign/Readme.md)
+- [WP Site with Amazon CloudFront & S3](../3_HLDDesignProblemsUC/AWSWebsiteSiteUsingCloudFront&S3.md)
+- [Dropbox Saves Millions by Building a Scalable Metadata Store on Amazon DynamoDB and Amazon S3](../3_HLDDesignProblemsUC/DropboxHLDDesign/DropboxMetaDataStore.md)
 
 # AWS Services - Architecture, Features etc.
 

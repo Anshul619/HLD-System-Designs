@@ -23,19 +23,19 @@
 
 | Use Case                                                                                                                  |
 |---------------------------------------------------------------------------------------------------------------------------|
-| [LinkedIn - Kafka](../../../3_HLDDesignProblems/SocialNetworkFacebookInstagramDesign/LinkedInTechStack.md)                |
-| [Personalization at Spotify using Cassandra & Kafka](../../../3_HLDDesignProblems/PersonalizationSpotify/Readme.md)       |
-| [Zomato - HLD Design](../../../3_HLDDesignProblems/FoodOrderingZomatoSwiggyDesign/Readme.md)                              |
-| [Uber Driver Allocation](../../../3_HLDDesignProblems/UberSystemDesign/UberDriverAllocationDesignProblem/Readme.md)       |
-| [Twillo - Send Message API Design](../../../3_HLDDesignProblems/TwilloSendMessageAPI/Readme.md)                           |
-| [Logging Solution in Distributed Systems](../../../3_HLDDesignProblems/LoggingSolution/Readme.md)                         |
-| [Flight Booking Search](../../../3_HLDDesignProblems/FlightBookingSearch/Readme.md)                                       |
-| [Amplitude - Reducing costs with AZ-awareness for Kafka](../../../3_HLDDesignProblems/AmplitudeSystemDesign/Readme.md)    |
-| [BigCommerce - Real-time events](../../../3_HLDDesignProblems/BigCommerce/Readme.md)                                      |
-| [Paypal - Kafka](../../../3_HLDDesignProblems/PaypalSystemDesign/Readme.md)                                               |
-| [Grab - Orders Processing](../../../3_HLDDesignProblems/FoodOrderingZomatoSwiggyDesign/GrabTechStack/OrdersProcessing.md) |
-| [Swiggy (through Confluent)](../../../3_HLDDesignProblems/FoodOrderingZomatoSwiggyDesign/SwiggyTechStack.md)              |
-| [Split.io](../../../3_HLDDesignProblems/SplitSystemDesign/Readme.md)                                                      |
+| [LinkedIn - Kafka](../../../4_TechStacksRealWorld/LinkedInTechStack.md)                |
+| [Personalization at Spotify using Cassandra & Kafka](../../../4_TechStacksRealWorld/PersonalizationSpotify/Readme.md)       |
+| [Zomato - HLD Design](../../../3_HLDDesignProblemsUC/HLD_FoodOrderingZomatoSwiggy/Readme.md)                              |
+| [Uber Driver Allocation](../../../3_HLDDesignProblemsUC/HLD_DriverAllocationUberGoJek/DriverAllocationDesignProblem.md)       |
+| [Twillo - Send Message API Design](../../../3_HLDDesignProblemsUC/TwilloSendMessageAPI/Readme.md)                           |
+| [Logging Solution in Distributed Systems](../../../3_HLDDesignProblemsUC/HLD_ObervabilityLoggingSolution/LoggingFileAggregation.md)                         |
+| [Flight Booking Search](../../../3_HLDDesignProblemsUC/HLD_FlightBookingSearchMakeMyTrip/Readme.md)                                       |
+| [Amplitude - Reducing costs with AZ-awareness for Kafka](../../../4_TechStacksRealWorld/AmplitudeSystemDesign/Readme.md)    |
+| [BigCommerce - Real-time events](../../../4_TechStacksRealWorld/BigCommerce/Readme.md)                                      |
+| [Paypal - Kafka](../../../4_TechStacksRealWorld/PayPalTechStack.md)                                               |
+| [Grab - Orders Processing](../../../4_TechStacksRealWorld/GrabTechStack/OrdersProcessing.md) |
+| [Swiggy (through Confluent)](../../../4_TechStacksRealWorld/SwiggyTechStack.md)              |
+| [Split.io](../../../4_TechStacksRealWorld/SplitIOTechStack.md)                                                      |
 
 # Top Features of Kafka
 

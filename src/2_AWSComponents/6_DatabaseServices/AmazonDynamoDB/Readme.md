@@ -9,18 +9,18 @@
 
 | Use Case                                                                                                                      | Remarks                                                                                                                                       |
 |-------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------|
-| [Grab - Order processing/OLTP](../../../3_HLDDesignProblems/FoodOrderingZomatoSwiggyDesign/GrabTechStack/OrdersProcessing.md) | DynamoDB used as OLTP system for orders processing (with 3 months TTL).                                                                       |
-| [Dropbox - Metadata store](../../../3_HLDDesignProblems/DropboxHLDDesign/DropboxMetaDataStore.md)                             | DynamoDB used as OLTP/hot-storage system, for metadata ingestion.                                                                             |
-| [Image URLs & Metadata](../../../3_HLDDesignProblems/AWSDesignUploadImageLambdaS3/Readme.md)                                  |                                                                                                                                               |
+| [Grab - Order processing/OLTP](../../../4_TechStacksRealWorld/GrabTechStack/OrdersProcessing.md) | DynamoDB used as OLTP system for orders processing (with 3 months TTL).                                                                       |
+| [Dropbox - Metadata store](../../../3_HLDDesignProblemsUC/DropboxHLDDesign/DropboxMetaDataStore.md)                             | DynamoDB used as OLTP/hot-storage system, for metadata ingestion.                                                                             |
+| [Image URLs & Metadata](../../../3_HLDDesignProblemsUC/AWS_DesignUploadImageLambdaS3/Readme.md)                                  |                                                                                                                                               |
 | [Amazon Kinesis - Config Store](../../5_MessageBrokerServices/AmazonKinesis/AmazonKinesisDataStreams.md)                      |                                                                                                                                               |
-| [Amplitude - Metadata Store](../../../3_HLDDesignProblems/AmplitudeSystemDesign/Readme.md)                                    |                                                                                                                                               |
+| [Amplitude - Metadata Store](../../../4_TechStacksRealWorld/AmplitudeSystemDesign/Readme.md)                                    |                                                                                                                                               |
 | [NGM - Mcafee](https://aws.amazon.com/solutions/case-studies/mcafee-dynamodb-case-study/)                                     | DynamoDB used as a reliable system to deliver tailored marketing campaign messages to its growing subscriber base of millions of subscribers. |
 
 ## Bookstore app on AWS
 
-![](../../../3_HLDDesignProblems/AWSBookStoreSampleApp/AWS-Bookstore-Demo-App.png)
+![](../../../3_HLDDesignProblemsUC/AWS_BookStoreSampleApp/AWS-Bookstore-Demo-App.png)
 
-[Read more](../../../3_HLDDesignProblems/AWSBookStoreSampleApp/Readme.md)
+[Read more](../../../3_HLDDesignProblemsUC/AWS_BookStoreSampleApp/Readme.md)
 
 # Key Features
 

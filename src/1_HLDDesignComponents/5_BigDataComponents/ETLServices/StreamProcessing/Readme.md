@@ -3,7 +3,7 @@
 - Once processed, the data is passed off to an application, data store or another stream processing engine.
 - To transmit event stream from different Producers to Stream Processor, [message brokers](../../../4_MessageBrokers/Readme.md) are used.
 
-![](../../../../3_HLDDesignProblems/AWSModernDataArchitecture/AWS-Data-Architecture-ETL-OLTP-OLAP-DataLake.png)
+![](../../../../3_HLDDesignProblemsUC/AWS_ModernDataArchitecture/AWS-Data-Architecture-ETL-OLTP-OLAP-DataLake.png)
 
 # Key tech
 

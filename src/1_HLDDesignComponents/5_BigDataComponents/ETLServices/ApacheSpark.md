@@ -4,15 +4,15 @@
 - The spark execution engine supports in-memory computation and cyclic data flow.
 - It can run either on [cluster mode](../../0_SystemGlossaries/Scalability/ServersCluster.md) or standalone mode.
 
-![](../../../3_HLDDesignProblems/AWSModernDataArchitecture/AWS-Data-Architecture-ETL-OLTP-OLAP-DataLake.png)
+![](../../../3_HLDDesignProblemsUC/AWS_ModernDataArchitecture/AWS-Data-Architecture-ETL-OLTP-OLAP-DataLake.png)
 
 # Example Use Cases
 - For running map-reduce jobs to select driver for efficient delivery and generate recommendations based on continuous streams of user activity, order activity, pricing and promo changes, etc.
 - It will select the distributed data, create a map and then reduce the values to give proper data.
 
 # :star: Real world use cases of Apache Spark
-- [Zomato - HLD Design](../../../3_HLDDesignProblems/FoodOrderingZomatoSwiggyDesign/Readme.md)
-- [Uber Driver Allocation](../../../3_HLDDesignProblems/UberSystemDesign/UberDriverAllocationDesignProblem/Readme.md)
+- [Zomato - HLD Design](../../../3_HLDDesignProblemsUC/HLD_FoodOrderingZomatoSwiggy/Readme.md)
+- [Uber Driver Allocation](../../../3_HLDDesignProblemsUC/HLD_DriverAllocationUberGoJek/DriverAllocationDesignProblem.md)
 
 # Tech Stack
 

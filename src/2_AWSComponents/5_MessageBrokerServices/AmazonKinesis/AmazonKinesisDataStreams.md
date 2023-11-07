@@ -9,7 +9,7 @@
 
 | Use Case                                                                                   | Examples                                                                                                                                                                                                                                                                      |
 |--------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Streaming/Real-time data](../../../3_HLDDesignProblems/AWSClickStreamAnalytics/Readme.md) | Website clickstreams, database event streams, financial transactions, social media feeds, IT logs, and location-tracking events etc.                                                                                                                                          |
+| [Streaming/Real-time data](../../../3_HLDDesignProblemsUC/AWS_ClickStreamAnalytics/Readme.md) | Website clickstreams, database event streams, financial transactions, social media feeds, IT logs, and location-tracking events etc.                                                                                                                                          |
 | Routing related records to the same record processor (as in streaming MapReduce)           | Counting and aggregation are simpler when all records for a given key are routed to the same record processor.                                                                                                                                                                |
 | Ordering of records.                                                                       | You want to transfer log data from the application host to the processing/archival host while maintaining the order of log statements.                                                                                                                                        |
 | Ability for multiple applications to consume the same stream concurrently.                 | You have one application that updates a real-time dashboard and another that archives data to [Amazon Redshift]().<br/>- You want both applications to consume data from the same stream concurrently and independently.                                                      |
@@ -33,4 +33,4 @@
 
 # AWS - Stream-Processing Using Glue & S3
     
-![](../../../3_HLDDesignProblems/AWSModernDataArchitecture/AWS-Data-Architecture-ETL-OLTP-OLAP-DataLake.png)
+![](../../../3_HLDDesignProblemsUC/AWS_ModernDataArchitecture/AWS-Data-Architecture-ETL-OLTP-OLAP-DataLake.png)

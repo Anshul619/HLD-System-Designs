@@ -39,21 +39,21 @@
 
 ## Upload Image using Amazon S3 and Lambda
 
-![img.png](../../../3_HLDDesignProblems/AWSDesignUploadImageLambdaS3/UploadImage-Lambda.drawio.png)
+![img.png](../../../3_HLDDesignProblemsUC/AWS_DesignUploadImageLambdaS3/UploadImage-Lambda.drawio.png)
 
-[Read more](../../../3_HLDDesignProblems/AWSDesignUploadImageLambdaS3/Readme.md)
+[Read more](../../../3_HLDDesignProblemsUC/AWS_DesignUploadImageLambdaS3/Readme.md)
 
 ## Design Scalable System on AWS
 
-![img.png](../../../3_HLDDesignProblems/AWSDesignScalableSystemWithRDMS/DesignScalableSystemWithRelationalDBOnAWS.drawio.png)
+![img.png](../../../3_HLDDesignProblemsUC/AWS_DesignScalableSystemWithRDMS/DesignScalableSystemWithRelationalDBOnAWS.drawio.png)
 
-[Read more](../../../3_HLDDesignProblems/AWSDesignScalableSystemWithRDMS/Readme.md)
+[Read more](../../../3_HLDDesignProblemsUC/AWS_DesignScalableSystemWithRDMS/Readme.md)
 
 ## Bookstore app on AWS
 
-![](../../../3_HLDDesignProblems/AWSBookStoreSampleApp/AWS-Bookstore-Demo-App.png)
+![](../../../3_HLDDesignProblemsUC/AWS_BookStoreSampleApp/AWS-Bookstore-Demo-App.png)
 
-[Read more](../../../3_HLDDesignProblems/AWSBookStoreSampleApp/Readme.md)
+[Read more](../../../3_HLDDesignProblemsUC/AWS_BookStoreSampleApp/Readme.md)
 
 ## Amazon SNS with Lambda
 

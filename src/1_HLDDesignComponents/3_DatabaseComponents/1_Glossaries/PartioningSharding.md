@@ -13,7 +13,7 @@
 | Hash Function                                                           | MD5 as a hash function used in [Casandra](../NoSQL-Databases/WideColumnDB/ApacheCasandra.md), [MongoDB](../NoSQL-Databases/MongoDB/Readme.md). | Hash function helps to determine the partition for a given key.                                                                                                                                        |
 | Secondary Indexes                                                       | [Global Secondary Indexes in DynamoDB](../../../2_AWSComponents/6_DatabaseServices/AmazonDynamoDB/Readme.md)                      | [Read more](../2_DataStructuresDB/Indexing/Readme.md)                                                                                                                                                         |
 | Consistent Hashing                                                      |                                                                                                                                   | This handles data sharding with dynamic number of servers.<br/>- [Read more](https://www.youtube.com/watch?v=UF9Iqmg94tk)                                                                              |
-| Record-Unique-ID-Generator (for non-sharding-builtin-DBs like Postgres) | DB Ticket Servers, which generates unique UUIDs.                                                                                  | Since data is being inserted into many databases at the same time, we would have generate unique ID on the application side.<br/>- [Read more](../../../3_HLDDesignProblems/SocialNetworkFacebookInstagramDesign/Readme.md) |
+| Record-Unique-ID-Generator (for non-sharding-builtin-DBs like Postgres) | DB Ticket Servers, which generates unique UUIDs.                                                                                  | Since data is being inserted into many databases at the same time, we would have generate unique ID on the application side.<br/>- [Read more](../../../3_HLDDesignProblemsUC/HLD_SocialNetworkFacebookInstagram/Readme.md) |
 
 # Supported Clusters
 
@@ -34,7 +34,7 @@
 ## Others
 - [Amazon DynamoDB Cluster](../../../2_AWSComponents/6_DatabaseServices/AmazonDynamoDB/Partioning.md)
 - [Apache Casandra](../NoSQL-Databases/WideColumnDB/ApacheCasandra.md) etc.
-- [Instagram - Postgres Sharding](../../../3_HLDDesignProblems/SocialNetworkFacebookInstagramDesign/Readme.md)
+- [Instagram - Postgres Sharding](../../../3_HLDDesignProblemsUC/HLD_SocialNetworkFacebookInstagram/Readme.md)
 
 # Consistent Hashing
 

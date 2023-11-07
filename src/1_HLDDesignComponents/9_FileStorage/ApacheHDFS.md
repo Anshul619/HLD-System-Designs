@@ -10,9 +10,9 @@
 
 ## Personalization at Spotify using Cassandra & HDFS
 
-![](../../3_HLDDesignProblems/PersonalizationSpotify/PersonalizationSpotify.drawio.png)
+![](../../4_TechStacksRealWorld/PersonalizationSpotify/PersonalizationSpotify.drawio.png)
 
-[Read more](../../3_HLDDesignProblems/PersonalizationSpotify/Readme.md)
+[Read more](../../4_TechStacksRealWorld/PersonalizationSpotify/Readme.md)
 
 # References
 - [What is Hadoop?](https://aws.amazon.com/emr/details/hadoop/what-is-hadoop/)

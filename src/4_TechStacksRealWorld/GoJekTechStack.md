@@ -1,0 +1,14 @@
+# GoJek Tech Stack
+
+| Purpose                            | Service                                                                                                                                                                                           |
+|------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Cloud Platform                     | Google Cloud Service                                                                                                                                                                              |
+| Container Orchestration            | [Kubernates with Docker](../1_HLDDesignComponents/6_ContainerOrchestrationServices/Readme.md) - [Read more](https://www.gojek.io/blog/how-to-set-up-a-gke-private-k8s-cluster-part-2)          |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
+| Backend Language - GoLang          | [GoLang](https://github.com/Anshul619/golang), [Java](../6_ProgrammingLanguages/2_Java/Readme.md)                                                                                              |
+| GeoSearch                          | [Redis](../1_HLDDesignComponents/3_DatabaseComponents/In-Memory-DB/Redis/Readme.md) - [Read more](https://www.gojek.io/blog/scaling-our-geo-search-service-for-10x-load)                       |
+| Data Ingestion - Click Stream, CDC | [Kafka](../1_HLDDesignComponents/4_MessageBrokers/Kafka/Readme.md) - [Read more](https://www.gojek.io/blog/introducing-clickstream)                                                            |
+| Data Warehouse                     | [ClickHouse](../1_HLDDesignComponents/5_BigDataComponents/StorageDBs/ClickHouse.md) - [Read more](https://www.gojek.io/blog/sink-kafka-messages-to-clickhouse-using-clickhouse-kafka-ingestor) |
+
+# Others
+- [Acing 1 Million Concurrent MQTT Connections](https://www.gojek.io/blog/acing-1-million-concurrent-mqtt-connections)
+- [The Case(s) Of Postgres Not Using Index](https://www.gojek.io/blog/the-case-s-of-postgres-not-using-index)

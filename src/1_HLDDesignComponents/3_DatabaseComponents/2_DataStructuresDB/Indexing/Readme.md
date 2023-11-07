@@ -51,3 +51,4 @@
 - [Difference between Primary and Secondary](https://pediaa.com/what-is-the-difference-between-primary-and-secondary-index/)
 - [DynamoDB - Types of Secondary Indexes](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/SecondaryIndexes.html)
 - [Database Index: usage of B+ tree in the practical database system](https://www.callibrity.com/blog/database-index-usage-of-b-tree-in-the-practical-database-system)
+- [Gojek - The Case(s) Of Postgres Not Using Index](https://www.gojek.io/blog/the-case-s-of-postgres-not-using-index)

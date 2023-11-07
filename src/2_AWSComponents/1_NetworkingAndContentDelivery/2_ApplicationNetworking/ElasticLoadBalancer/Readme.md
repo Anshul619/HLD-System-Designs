@@ -65,7 +65,7 @@
 
 # ELB Load Balancer setup in Multi-Regions & Multi-AZs
 
-![img.png](../../../../3_HLDDesignProblems/AWSDesignMultiRegionActiveActiveArchitecture/AWS-Multi-Region-AZ-HA.drawio.png)
+![img.png](../../../../3_HLDDesignProblemsUC/AWS_DesignMultiRegionActiveActiveArchitecture/AWS-Multi-Region-AZ-HA.drawio.png)
 
 # How ELB works with AutoScaling?
 

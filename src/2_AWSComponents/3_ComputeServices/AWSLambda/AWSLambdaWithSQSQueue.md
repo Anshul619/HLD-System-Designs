@@ -7,6 +7,6 @@
 
 # Design Scalable System on AWS
 
-![img.png](../../../3_HLDDesignProblems/AWSDesignScalableSystemWithRDMS/DesignScalableSystemWithRelationalDBOnAWS.drawio.png)
+![img.png](../../../3_HLDDesignProblemsUC/AWS_DesignScalableSystemWithRDMS/DesignScalableSystemWithRelationalDBOnAWS.drawio.png)
 
-[Read more](../../../3_HLDDesignProblems/AWSDesignScalableSystemWithRDMS/Readme.md)
+[Read more](../../../3_HLDDesignProblemsUC/AWS_DesignScalableSystemWithRDMS/Readme.md)

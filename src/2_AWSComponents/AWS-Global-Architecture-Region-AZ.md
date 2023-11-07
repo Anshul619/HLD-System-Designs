@@ -19,7 +19,7 @@
   - ap-south-1 (Asia Pacific (Mumbai))
 - [In AWS, every region would have its own cluster](../1_HLDDesignComponents/0_SystemGlossaries/Scalability/ServersCluster.md).
 
-![img.png](../3_HLDDesignProblems/AWSDesignMultiRegionActiveActiveArchitecture/AWS-Multi-Region-AZ-HA.drawio.png)
+![img.png](../3_HLDDesignProblemsUC/AWS_DesignMultiRegionActiveActiveArchitecture/AWS-Multi-Region-AZ-HA.drawio.png)
 
 ## :star: AWS Region Consideration
 

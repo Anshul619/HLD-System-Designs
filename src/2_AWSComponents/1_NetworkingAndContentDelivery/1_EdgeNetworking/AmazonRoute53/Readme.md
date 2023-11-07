@@ -3,7 +3,7 @@
 - [Amazon Route 53](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/Welcome.html) is a [highly available](../../../../1_HLDDesignComponents/0_SystemGlossaries/Reliability/HighAvailability.md) and [scalable Domain Name System (DNS)](https://www.cloudflare.com/learning/dns/what-is-dns/) web service. 
 - [Amazon Route 53]() can transfer or manage only [second-level domains](https://developer.mozilla.org/en-US/docs/Glossary/Second-level_Domain).
 
-![img.png](../../../../3_HLDDesignProblems/AWSDesignMultiRegionActiveActiveArchitecture/AWS-Multi-Region-AZ-HA.drawio.png)
+![img.png](../../../../3_HLDDesignProblemsUC/AWS_DesignMultiRegionActiveActiveArchitecture/AWS-Multi-Region-AZ-HA.drawio.png)
 
 # Features
 
@@ -28,7 +28,7 @@
 | [Geolocation routing](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/routing-policy-geo.html)                               | Use when you want to direct the customer to different websites based on the country or region they are browsing from.<br/>- You can also use geolocation routing to restrict the distribution of content to only the locations in which you have distribution rights.<br/>- You cannot use geolocation routing to reduce latency, |
 | [Geoproximity routing (traffic flow only)](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/routing-policy-geoproximity.html) | Geoproximity routing lets Amazon Route 53 route traffic to your resources based on the geographic location of your users and your resources.<br/>- You can also optionally choose to route more traffic or less to a given resource by specifying a value, known as a bias.                                                       |
 | [Multivalue answer routing](https://aws.amazon.com/premiumsupport/knowledge-center/multivalue-versus-simple-policies/)                 | Use to help distribute DNS responses across multiple resources. <br/>- [Amazon ECS](../../../4_ContainerOrchestrationServices/AmazonECS/Readme.md) uses multivalue answer routing in the [service-discovery](../../../../1_HLDDesignComponents/1_MicroServicesSOA/2_ServiceRegistry&Discovery/Readme.md), for load balancing.     |
-| [Weighted routing policy](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/resource-record-sets-values-weighted.html)         | Use when you want to configure [weighted routing i.e. send X% to one target, Y% to another target](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/resource-record-sets-values-weighted.html), for example [Canary Deployments](../../../../1_HLDDesignComponents/0_SystemGlossaries/DevOps/DeploymentTechniques.md).   |
+| [Weighted routing policy](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/resource-record-sets-values-weighted.html)         | Use when you want to configure [weighted routing i.e. send X% to one target, Y% to another target](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/resource-record-sets-values-weighted.html), for example [Canary Deployments](../../../../1_HLDDesignComponents/10_DevOps/Glossaries/DeploymentTechniques.md).   |
 | [Fail-over routing policy](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/routing-policy.html)                              | Use when you want to configure [active-passive fail over for disaster recovery](../../../../1_HLDDesignComponents/0_SystemGlossaries/Reliability/HighAvailability.md#active-passive-policy) based on [Route53 health checks](Route53HealthChecks.md).                                                                             |
 
 # :star: Multivalue answer routing

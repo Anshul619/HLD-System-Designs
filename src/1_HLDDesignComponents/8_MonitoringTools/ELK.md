@@ -19,12 +19,12 @@
 
 ## Observability System Design
 
-![](../../3_HLDDesignProblems/ServersHealthSystemDesign/Servers-Health-Obervability-HLD.png)
+![](../../3_HLDDesignProblemsUC/HLD_ObervabilityLoggingSolution/ServersHealthObervabilityHLD.png)
 
-[Read more](../../3_HLDDesignProblems/ServersHealthSystemDesign/Readme.md)
+[Read more](../../3_HLDDesignProblemsUC/HLD_ObervabilityLoggingSolution/ServersHealthObervabilityHLD.md)
 
 ## Others
-- [Distributed Logging Solution](../../3_HLDDesignProblems/LoggingSolution/Readme.md)
+- [Distributed Logging Solution](../../3_HLDDesignProblemsUC/HLD_ObervabilityLoggingSolution/LoggingFileAggregation.md)
 
 # How filebeat works?
 - [Read here](https://www.elastic.co/guide/en/beats/filebeat/current/how-filebeat-works.html)

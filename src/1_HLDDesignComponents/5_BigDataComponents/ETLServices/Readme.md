@@ -1,13 +1,13 @@
 
 # Extract-Transform-Load (ETL)
 
-![](../../../3_HLDDesignProblems/AWSModernDataArchitecture/AWS-Data-Architecture-ETL-OLTP-OLAP-DataLake.png)
+![](../../../3_HLDDesignProblemsUC/AWS_ModernDataArchitecture/AWS-Data-Architecture-ETL-OLTP-OLAP-DataLake.png)
 
 |           | Remarks                                                                                                                                                 |
 |-----------|---------------------------------------------------------------------------------------------------------------------------------------------------------|
 | EXTRACT   | EXTRACT data from multiple different data sources ([OLTP-DBs](../../3_DatabaseComponents/1_Glossaries/OLTPvsOTAP.md), third-party-sources etc.).        |
 | TRANSFORM | TRANSFORM data by de-duplicating it, combining it, ensuring quality & best suited for analytics.                                                        |
-| LOAD      | LOAD data into one, centralized database ([OLAP db](../../3_DatabaseComponents/1_Glossaries/OLTPvsOTAP.md) like [data warehousing](../StorageDBs/DataWarehouses.md)). |
+| LOAD      | LOAD data into one, centralized database ([OLAP db](../../3_DatabaseComponents/1_Glossaries/OLTPvsOTAP.md) like [data warehousing](../0_Glossaries/DataStorage/DataWarehouses.md)). |
 
 [Read more](https://aws.amazon.com/what-is/etl/)
 
