@@ -5,7 +5,7 @@
 - Customer can then select the flight.
 - System should be scalable with high performance.
 
-![img.png](MakeMyTripFlightSearch.drawio.png)
+![](MakeMyTripFlightSearch.drawio.png)
 
 # Different Events to update the search index
 - Price Update

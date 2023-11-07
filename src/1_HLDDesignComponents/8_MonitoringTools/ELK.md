@@ -16,13 +16,21 @@
 - Availability of libraries for different programming and scripting language
 
 # :star: Real world use cases of ELK
-- [Distributed Logging Solution](../../3_HLDDesignProblems/LoggingSolution)
+
+## Observability System Design
+
+![](../../3_HLDDesignProblems/ServersHealthSystemDesign/Servers-Health-Obervability-HLD.png)
+
+[Read more](../../3_HLDDesignProblems/ServersHealthSystemDesign/Readme.md)
+
+## Others
+- [Distributed Logging Solution](../../3_HLDDesignProblems/LoggingSolution/Readme.md)
 
 # How filebeat works?
 - [Read here](https://www.elastic.co/guide/en/beats/filebeat/current/how-filebeat-works.html)
 
 # Deployment on AWS
-- ELK can be deployed using [Amazon OpenSearch](../../2_AWSComponents/6_DatabaseServices/AmazonOpenSearch.md), on [AWS](../../2_AWSComponents).
+- [ELK]() can be deployed using [Amazon OpenSearch](../../2_AWSComponents/6_DatabaseServices/AmazonOpenSearch.md), on [AWS](../../2_AWSComponents).
 
 ![](https://d1.awsstatic.com/product-page-diagram_HIW_Amazon-OpenSearch.bccd42c9b855877a40e4eb3c55511a8aae1002a4.png)
 

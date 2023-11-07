@@ -2,10 +2,10 @@
 
 | Component                           | Count | Remarks                                |
 |-------------------------------------|-------|----------------------------------------|
-| :earth_americas: Geographic Regions | 25    | -                                      |
-| Availability Zones(AZ)              | 69    | -                                      |
-| Points Of Presence                  | 216   | -                                      |
-| Local Zones                         | -     | AWS data centers are located globally. |
+| :earth_americas: Geographic Regions | 25    |                                        |
+| Availability Zones(AZ)              | 69    |                                        |
+| Points Of Presence                  | 216   |                                        |
+| Local Zones                         |       | AWS data centers are located globally. |
 
 ![img.png](https://d0.awsstatic.com/global-infrastructure/maps/Global_Infrastructure_5.13.png)
 
