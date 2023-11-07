@@ -8,7 +8,7 @@
 
 | DB                                                                                                                                        |
 |-------------------------------------------------------------------------------------------------------------------------------------------|
-| :star: [LSM-Tree based NoSQL DBs like Casandra, RocksDB etc.](../2_DataStructuresDB/LSMTree.md)                                           |
+| :star: [LSM-Tree based NoSQL DBs like Casandra, RocksDB etc.](LSMTree.md)                                           |
 | :star: [Kafka](../../4_MessageBrokers/Kafka/Readme.md)                                                                                    |
 | :star: [Amazon S3](../../../2_AWSComponents/7_StorageServices/3_ObjectStorageS3/Readme.md)                                                |
 | [Apache Lucene](../Search-Databases/Readme.md)                                                                                            |

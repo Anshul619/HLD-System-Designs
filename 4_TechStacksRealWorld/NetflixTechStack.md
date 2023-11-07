@@ -9,7 +9,7 @@
 | Microservice Pattern            | [Request-Response pattern](../1_HLDDesignComponents/1_MicroServicesSOA/Readme.md)                                                                                                                                                                   |
 | NoSQL DB                        | [Casandra](../1_HLDDesignComponents/3_DatabaseComponents/NoSQL-Databases/WideColumnDB/ApacheCasandra.md) - [Read more](https://netflixtechblog.com/exploring-data-netflix-9d87e20072e3)                                                             |
 | Time series DB                  | [Casandra](../1_HLDDesignComponents/3_DatabaseComponents/NoSQL-Databases/WideColumnDB/ApacheCasandra.md) - [Read more](https://netflixtechblog.com/scaling-time-series-data-storage-part-i-ec2b6d44ba39)                                            |
-| Benchmarking - Casandra         | [Read more](../../Benchmarking.md)                                                                                                                                                                                                                  |
+| Benchmarking - Casandra         | [Read more](../Benchmarking.md)                                                                                                                                                                                                                  |
 | Microservice - Dependency Graph | [How Netflix works: the (hugely simplified) complex stuff that happens every time you hit Play](https://medium.com/refraction-tech-everything/how-netflix-works-the-hugely-simplified-complex-stuff-that-happens-every-time-you-hit-play-3a40c9be254b) |
 
 # Read more

@@ -26,7 +26,7 @@
 | Kafka Clusters            | LinkedIn has separate kafka clusters in every data center (for high scalability, disaster recovery etc.) |
 
 # Benchmarking
-- [Apache Kafka](../../Benchmarking.md)
+- [Apache Kafka](../Benchmarking.md)
 
 # References
 - [Introduction and Overview of Apache Kafka](https://www.slideshare.net/mumrah/kafka-talk-tri-hug)
