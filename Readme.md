@@ -234,13 +234,13 @@ This repo contains the various system design components info, questions and solu
     </tr>
     <tr>
       <td>
-        <a href="1_HLDDesignComponents/7_MonitoringTools/">Monitoring Services</a>
+        <a href="1_HLDDesignComponents/8_MonitoringTools/">Monitoring Services</a>
       </td>
       <td>
-        <a href="1_HLDDesignComponents/7_MonitoringTools/NewRelic.md">
+        <a href="1_HLDDesignComponents/8_MonitoringTools/NewRelic.md">
           <img src="https://www.vectorlogo.zone/logos/newrelic/newrelic-ar21.svg" width="150">
         </a>
-        <a href="1_HLDDesignComponents/7_MonitoringTools/ELK.md">
+        <a href="1_HLDDesignComponents/8_MonitoringTools/ELK.md">
           <img src="https://miro.medium.com/max/746/1*DbdVXy9_6uJVe8q1NOYVfg.png" width="150">
         </a>
         <br/><br/>
