@@ -252,12 +252,18 @@ This repo contains the various system design components info, questions and solu
   </tbody>
 </table>
 
+# Other HLD Services
+- [Open Source Contributions](OpenSourceContributions.md)
+- [Observability & Monitoring](1_HLDDesignComponents/8_MonitoringTools/Readme.md)
+- [Apache Marathon & Mesos](1_HLDDesignComponents/6_ContainerOrchestrationServices/ApacheMarathon&Mesos.md)
+- [Apache Yarn](1_HLDDesignComponents/6_ContainerOrchestrationServices/ApacheYarn.md)
+
 # Programming & OOP Design & Problems (LLD)
 - :star: [OOP Design](https://github.com/Anshul619/OOPs-Design-Patterns-LLD/blob/main/OOP.md)
 - :star: [SOLID Principles](https://github.com/Anshul619/OOPs-Design-Patterns-LLD/blob/main/SOLID.md)
 - :star: [Design Tips & Techniques](https://github.com/Anshul619/OOPs-Design-Patterns-LLD/blob/main/TipsAndTechniques.md)
 - :star: [Design Patterns](https://github.com/Anshul619/OOPs-Design-Patterns-LLD/blob/main/DesignPatterns.md)
-
+  
 # Programming Languages
 - :star: [GoLang](https://github.com/Anshul619/golang)
 - [Spring Boot & Microservices](6_ProgrammingLanguages/2_Java/SpringBootAndMicroServices)
@@ -267,15 +273,9 @@ This repo contains the various system design components info, questions and solu
 - [TypeScript](6_ProgrammingLanguages/4_FrontEnd/TypeScript.md)
 - [Angular8](6_ProgrammingLanguages/4_FrontEnd/Angular8.md)
 
-# API Dev, Documentation
+# API Dev, Documentation, Testing
 - :star: [Swagger](1_HLDDesignComponents/2_APITechOptions/API_Documentation/Swagger/Readme.md)
 - [Open API Spec](1_HLDDesignComponents/2_APITechOptions/API_Documentation/Swagger/OpenAPISpec.md)
-
-# Other Services
-- :star: [Open Source Contributions](OpenSourceContributions.md)
-- [Monitoring](1_HLDDesignComponents/8_MonitoringTools/Readme.md)
-- [Apache Marathon & Mesos](1_HLDDesignComponents/6_ContainerOrchestrationServices/ApacheMarathon&Mesos.md)
-- [Apache Yarn](1_HLDDesignComponents/6_ContainerOrchestrationServices/ApacheYarn.md)
 - [Testing](7_QATools/Readme.md)
 
 # Source(s) and further reading
