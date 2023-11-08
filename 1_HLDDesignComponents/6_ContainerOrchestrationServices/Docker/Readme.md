@@ -61,7 +61,7 @@
 - Layers are used to avoid transferring redundant information and skip build steps which have not changed (according to the Docker cache).
 
 # The underlying technology
-- Docker is written in the [Go programming language](../../../6_ProgrammingLanguages/1_GoLang) and takes advantage of several features of the Linux kernel to deliver its functionality. 
+- Docker is written in the [Go programming language](../../../5_ProgrammingLanguages/1_GoLang) and takes advantage of several features of the Linux kernel to deliver its functionality. 
 - Docker uses a technology called namespaces to provide the isolated workspace called the container. 
 - When you run a container, Docker creates a set of namespaces for that container.
 

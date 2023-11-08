@@ -3,9 +3,9 @@
 - [Netflix](../../../4_TechStacksRealWorld/NetflixTechStack.md) created [Zuul server]() and later open-sourced it.
 - Spring provided a nice wrapper around it for easily incorporating it to the Spring stack.
 
-![](../../../6_ProgrammingLanguages/2_Java/SpringBootAndMicroServices/assests/Spring-Boot-MicroService-OnPerm.drawio.png)
+![](../../../5_ProgrammingLanguages/2_Java/SpringBootAndMicroServices/assests/Spring-Boot-MicroService-OnPerm.drawio.png)
 
-[Read more](../../../6_ProgrammingLanguages/2_Java/SpringBootAndMicroServices/README.md)
+[Read more](../../../5_ProgrammingLanguages/2_Java/SpringBootAndMicroServices/README.md)
 
 # High Level Architecture
 

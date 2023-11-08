@@ -8,9 +8,9 @@
 
 # OnPerm - Microservice Implementation in Spring Boot
 
-![](../../6_ProgrammingLanguages/2_Java/SpringBootAndMicroServices/assests/Spring-Boot-MicroService-OnPerm.drawio.png)
+![](../../5_ProgrammingLanguages/2_Java/SpringBootAndMicroServices/assests/Spring-Boot-MicroService-OnPerm.drawio.png)
 
-[Read more](../../6_ProgrammingLanguages/2_Java/SpringBootAndMicroServices/README.md)
+[Read more](../../5_ProgrammingLanguages/2_Java/SpringBootAndMicroServices/README.md)
 
 # Design Patterns
 
