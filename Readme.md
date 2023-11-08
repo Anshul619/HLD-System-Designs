@@ -8,7 +8,7 @@ This repo contains the various system design components info, questions and solu
 - [HLD Design Problems](3_HLDDesignProblemsUC)
 - [Real-world tech stacks](4_TechStacksRealWorld)
 - [Benchmarking](Benchmarking.md)
-- [LLD Design Problems](5_ObjectOrientedDesign/OOPDesignProblems)
+- [Engineering Blogs](EngineeringBlogs.md)
 
 # System Design - Tech Stack
 
@@ -253,10 +253,10 @@ This repo contains the various system design components info, questions and solu
 </table>
 
 # Programming & OOP Design & Problems (LLD)
-- :star: [OOP Design](5_ObjectOrientedDesign/OOP.md)
-- :star: [SOLID Principles](5_ObjectOrientedDesign/SOLID.md)
-- :star: [Design Tips & Techniques](5_ObjectOrientedDesign/TipsAndTechniques.md)
-- :star: [Design Patterns](5_ObjectOrientedDesign/DesignPatterns)
+- :star: [OOP Design](https://github.com/Anshul619/OOPs-Design-Patterns-LLD/blob/main/OOP.md)
+- :star: [SOLID Principles](https://github.com/Anshul619/OOPs-Design-Patterns-LLD/blob/main/SOLID.md)
+- :star: [Design Tips & Techniques](https://github.com/Anshul619/OOPs-Design-Patterns-LLD/blob/main/TipsAndTechniques.md)
+- :star: [Design Patterns](https://github.com/Anshul619/OOPs-Design-Patterns-LLD/blob/main/DesignPatterns.md)
 
 # Programming Languages
 - :star: [GoLang](https://github.com/Anshul619/golang)
@@ -277,8 +277,6 @@ This repo contains the various system design components info, questions and solu
 - [Apache Marathon & Mesos](1_HLDDesignComponents/6_ContainerOrchestrationServices/ApacheMarathon&Mesos.md)
 - [Apache Yarn](1_HLDDesignComponents/6_ContainerOrchestrationServices/ApacheYarn.md)
 - [Testing](7_QATools/Readme.md)
-- [System Design Tips](1_HLDDesignComponents/SystemDesignTips.md)
-- [Engineering Blogs](EngineeringBlogs.md)
 
 # Source(s) and further reading
 - [System Design Primer](https://github.com/donnemartin/system-design-primer)
