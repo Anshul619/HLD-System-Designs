@@ -266,17 +266,17 @@ This repo contains the various system design components info, questions and solu
   
 # Programming Languages
 - :star: [GoLang](https://github.com/Anshul619/golang)
-- [Spring Boot & Microservices](5_ProgrammingLanguages/2_Java/SpringBootAndMicroServices)
-- [Java](5_ProgrammingLanguages/2_Java)
-- [Hibernate](5_ProgrammingLanguages/2_Java/Hibernate.md)
-- [JavaScript](5_ProgrammingLanguages/3_JavaScript)
-- [TypeScript](5_ProgrammingLanguages/4_FrontEnd/TypeScript.md)
-- [Angular8](5_ProgrammingLanguages/4_FrontEnd/Angular8.md)
+- [Spring Boot & Microservices](https://github.com/Anshul619/LLD-OOPs-Design-Patterns/tree/main/ProgrammingLanguages/1_Java/SpringBootAndMicroServices)
+- [Java](https://github.com/Anshul619/LLD-OOPs-Design-Patterns/tree/main/ProgrammingLanguages/1_Java)
+- [Hibernate](https://github.com/Anshul619/LLD-OOPs-Design-Patterns/blob/main/ProgrammingLanguages/1_Java/Hibernate.md)
+- [JavaScript](https://github.com/Anshul619/LLD-OOPs-Design-Patterns/tree/main/ProgrammingLanguages/2_JavaScript)
+- [TypeScript](https://github.com/Anshul619/LLD-OOPs-Design-Patterns/blob/main/ProgrammingLanguages/3_FrontEnd/TypeScript.md)
+- [Angular8](https://github.com/Anshul619/LLD-OOPs-Design-Patterns/blob/main/ProgrammingLanguages/3_FrontEnd/Angular8.md)
 
 # API Dev, Documentation, Testing
 - :star: [Swagger](1_HLDDesignComponents/2_APITechOptions/API_Documentation/Swagger/Readme.md)
 - [Open API Spec](1_HLDDesignComponents/2_APITechOptions/API_Documentation/Swagger/OpenAPISpec.md)
-- [Testing](6_QATools/Readme.md)
+- [Testing](https://github.com/Anshul619/LLD-OOPs-Design-Patterns/blob/main/QATools/Readme.md)
 
 # Source(s) and further reading
 - [System Design Primer](https://github.com/donnemartin/system-design-primer)
