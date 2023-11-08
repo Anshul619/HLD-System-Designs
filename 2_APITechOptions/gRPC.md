@@ -4,10 +4,10 @@
 
 # Key Links
 
-| Links                                                                                                                              | Remarks |
-|------------------------------------------------------------------------------------------------------------------------------------|---------|
-| [gRPC - Performance Multi-language Dashboard](https://performance-dot-grpc-testing.appspot.com/explore?dashboard=5180705743044608) | -       |
-| [gRPC in Go - Basic Tutorial](https://grpc.io/docs/languages/go/basics/)                                                           | -       |
+| Links                                                                                                                              |
+|------------------------------------------------------------------------------------------------------------------------------------|
+| [gRPC - Performance Multi-language Dashboard](https://performance-dot-grpc-testing.appspot.com/explore?dashboard=5180705743044608) |
+| [gRPC in Go - Basic Tutorial](https://grpc.io/docs/languages/go/basics/)                                                           |
 
 # gRPC is contract-based (Protobuf)
 - A Contract needs to be available on both sides of communication to make sense of data going between them. 

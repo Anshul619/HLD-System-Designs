@@ -115,12 +115,12 @@ This repo contains the various system design components info, questions and solu
     </tr>
     <tr>
       <td>
-        <a href="1_MicroServicesSOA/ServiceRegistry&Discovery" target="_blank">MicroServices - Service Registry & Discovery</a>
+        <a href="1_MicroServicesSOA/2_ServiceRegistry&Discovery" target="_blank">MicroServices - Service Registry & Discovery</a>
       </td>
       <td>
         <div class="container" style="background:white">
             <div class="block two first">
-                <a href="1_MicroServicesSOA/ServiceRegistry&Discovery/Eureka.md" target="_blank">
+                <a href="1_MicroServicesSOA/2_ServiceRegistry&Discovery/Eureka.md" target="_blank">
                   <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsLVq3RUn8c7AWSr_559ISKEpHkgVn5U3NKg&usqp=CAU" width="150">
                 </a>
                 <a href="11_AWSServices/1_NetworkingAndContentDelivery/2_ApplicationNetworking/AWSCloudMap.md" target="_blank">
@@ -273,7 +273,7 @@ This repo contains the various system design components info, questions and solu
 - [TypeScript](https://github.com/Anshul619/Programming-Languages/tree/main/3_FrontEnd/TypeScript.md)
 - [Angular8](https://github.com/Anshul619/Programming-Languages/tree/main/3_FrontEnd/Angular8.md)
 
-# API Dev, Documentation, Testing
+# API Documentation, Testing
 - :star: [Swagger](2_APITechOptions/API_Documentation/Swagger/Readme.md)
 - [Open API Spec](2_APITechOptions/API_Documentation/Swagger/OpenAPISpec.md)
 - [Testing](https://github.com/Anshul619/Programming-Languages/tree/main/5_QATools/Readme.md)
