@@ -18,9 +18,19 @@ The application should be able to support the following requirements.
 # Ball-mark estimations
 - [Calculator link](https://docs.google.com/spreadsheets/d/15vApko2QrmZmv5qTEIyU_IAWvgY3MD23TR3TuLUiPc8/edit#gid=230262262)
 
-# Tech Architecture
+# System Design
 
 ![](SocialNetworkDesignProblemHLD.png)
+
+# Real-world systems
+
+|           | Remarks                                                         |
+|-----------|-----------------------------------------------------------------|
+| LinkedIn  | [Tech Stack](../../4_TechStacksRealWorld/LinkedInTechStack.md)  |
+| Instagram | [Tech Stack](../../4_TechStacksRealWorld/InstagramTechStack.md) |
+| Facebook  | [Tech Stack](../../4_TechStacksRealWorld/FacebookTechStack.md)  |
+| Twitter   |                                                                 |
+
 
 # User Categories
 
@@ -31,7 +41,6 @@ The application should be able to support the following requirements.
 | Live     | Users actually accessing the system right now                   |
 | Passive  | None of above categories                                        |
 | Inactive | Users who have deleted their account                            |
-
 
 # Tech Decisions
 
@@ -94,7 +103,7 @@ What are the different issues with "Partitioning based on UserID"?
 - If we can generate unique PhotoIDs first and then find a shard number through `PhotoID % 10`, the above problems will have been solved.
 
 # PhotoID-Server
-- We dedicate a separate database instance to generate auto-incrementing IDs. 
+- We dedicate a separate database instance to generate auto-incrementing IDs.
 - If our PhotoID can fit into 64 bits, we can define a table containing only a 64 bit ID field.
 - Whenever we would like to add a photo in our system, we can insert a new row in this table and take that ID to be our PhotoID of the new photo.
 

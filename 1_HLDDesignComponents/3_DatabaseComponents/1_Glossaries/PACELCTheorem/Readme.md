@@ -5,7 +5,7 @@
 | If there is a `network partition (P)`                                             | System can trade off between `availability and consistency (i.e. A and C)` |
 | else E - when the system is running normally in the absence of partition failures | System can trade off `between latency (L) and consistency (C)`            |
 
-![img.png](assets/PACELC_Diagram.drawio.png)
+![img.png](PACELC_Diagram.drawio.png)
 
 # Database PACELC ratings
 

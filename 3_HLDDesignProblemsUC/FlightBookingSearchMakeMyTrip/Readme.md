@@ -10,7 +10,7 @@
 # Different Events to update the search index
 - Price Update
 - Flight booking
-- New flight onboarding ( admin )
+- New flight onboarding (admin)
 
 [//]: # (# Estimation)
 

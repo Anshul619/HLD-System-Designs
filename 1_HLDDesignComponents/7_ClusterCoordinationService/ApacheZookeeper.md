@@ -9,4 +9,4 @@
 - [Apache HBase](../3_DatabaseComponents/NoSQL-Databases/WideColumnDB/ApacheHBase.md)
 - [Apache Marathon & Mesos](../6_ContainerOrchestrationServices/ApacheMarathon&Mesos.md)
 - [Apache SolrCloud](../3_DatabaseComponents/Search-Databases/ApacheSolr.md)
-- [Twitter Hit Counter](../../3_HLDDesignProblemsUC/TwitterHitCounterDesign/Readme.md)
+- [Twitter Hit Counter](../../3_HLDDesignProblemsUC/HitCounterDesignTwitter/Readme.md)

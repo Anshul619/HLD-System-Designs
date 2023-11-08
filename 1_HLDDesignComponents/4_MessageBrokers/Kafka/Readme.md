@@ -25,11 +25,11 @@
 |---------------------------------------------------------------------------------------------------------------------------|
 | [LinkedIn - Kafka](../../../4_TechStacksRealWorld/LinkedInTechStack.md)                |
 | [Personalization at Spotify using Cassandra & Kafka](../../../4_TechStacksRealWorld/PersonalizationSpotify/Readme.md)       |
-| [Zomato - HLD Design](../../../3_HLDDesignProblemsUC/HLD_FoodOrderingZomatoSwiggy/Readme.md)                              |
-| [Uber Driver Allocation](../../../3_HLDDesignProblemsUC/HLD_DriverAllocationUberGoJek/DriverAllocationDesignProblem.md)       |
-| [Twillo - Send Message API Design](../../../3_HLDDesignProblemsUC/TwilloSendMessageAPI/Readme.md)                           |
-| [Logging Solution in Distributed Systems](../../../3_HLDDesignProblemsUC/HLD_ObervabilityLoggingSolution/LoggingFileAggregation.md)                         |
-| [Flight Booking Search](../../../3_HLDDesignProblemsUC/HLD_FlightBookingSearchMakeMyTrip/Readme.md)                                       |
+| [Zomato - HLD Design](../../../3_HLDDesignProblemsUC/FoodOrderingZomatoSwiggy/Readme.md)                              |
+| [Uber Driver Allocation](../../../3_HLDDesignProblemsUC/DriverAllocationUberGoJek/Readme.md)       |
+| [Twillo - Send Message API Design](../../../3_HLDDesignProblemsUC/SendSMSMessageAPITwillo/Readme.md)                           |
+| [Logging Solution in Distributed Systems](../../../3_HLDDesignProblemsUC/ObervabilityLoggingSolution/LoggingFileAggregation/Readme.md)                         |
+| [Flight Booking Search](../../../3_HLDDesignProblemsUC/FlightBookingSearchMakeMyTrip/Readme.md)                                       |
 | [Amplitude - Reducing costs with AZ-awareness for Kafka](../../../4_TechStacksRealWorld/AmplitudeSystemDesign/Readme.md)    |
 | [BigCommerce - Real-time events](../../../4_TechStacksRealWorld/BigCommerce/Readme.md)                                      |
 | [Paypal - Kafka](../../../4_TechStacksRealWorld/PayPalTechStack.md)                                               |

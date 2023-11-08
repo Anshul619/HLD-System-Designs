@@ -6,7 +6,7 @@
 
 # PACLEC Theorem
 
-![](../1_Glossaries/PACELCTheorem/assets/PACELC_Diagram.drawio.png)
+![](../1_Glossaries/PACELCTheorem/PACELC_Diagram.drawio.png)
 
 [Read more](../1_Glossaries/PACELCTheorem/Readme.md)
 

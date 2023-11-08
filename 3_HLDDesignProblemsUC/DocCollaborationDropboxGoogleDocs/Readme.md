@@ -4,7 +4,7 @@
 
 # Client Components
 
-![](assets/DropboxHLDDropbox.drawio.png)
+![](DropboxHLDDropbox.drawio.png)
 
 ## Watcher
 - Watcher is responsible for monitoring the sync folder for all the activities performed by the user such as create, update or delete files/folders. 

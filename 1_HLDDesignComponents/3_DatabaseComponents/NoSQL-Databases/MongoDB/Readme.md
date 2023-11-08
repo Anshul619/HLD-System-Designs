@@ -8,7 +8,7 @@
 ![img.png](assests/MongoDB_JSON.png)
 
 # :star: Real world use cases of MongoDB
-- [Zomato - HLD Design](../../../../3_HLDDesignProblemsUC/HLD_FoodOrderingZomatoSwiggy/Readme.md)
+- [Zomato - HLD Design](../../../../3_HLDDesignProblemsUC/FoodOrderingZomatoSwiggy/Readme.md)
 
 # General Use Cases
 

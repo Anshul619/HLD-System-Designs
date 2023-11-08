@@ -5,16 +5,16 @@
   - If not create a file
   - Append data to file
 - Users can call this api concurrently
-- Ensure [durability](../../1_HLDDesignComponents/3_DatabaseComponents/1_Glossaries/ACIDTransactions/Durability.md) - file must be saved, before return true to the API.
+- Ensure [durability](../../../1_HLDDesignComponents/3_DatabaseComponents/1_Glossaries/ACIDTransactions/Durability.md) - file must be saved, before return true to the API.
 
 ![img.png](LoggingFileAggregation.drawio.png)
 
 # Possible Design Options
-- Delayed/Eventual Aggregation, using [FileBeat & ELK Stack](../../1_HLDDesignComponents/8_MonitoringTools/ELK.md).
+- Delayed/Eventual Aggregation, using [FileBeat & ELK Stack](../../../1_HLDDesignComponents/8_MonitoringTools/ELK.md).
 
 # Design Steps
 - Recently opened file handles should be stored in the local app server cache.
-- [Kafka topic name](../../1_HLDDesignComponents/4_MessageBrokers/Kafka/Readme.md) can be log file name.
+- [Kafka topic name](../../../1_HLDDesignComponents/4_MessageBrokers/Kafka/Readme.md) can be log file name.
 - We would keep [rotating the log files at 10KB file size](https://www.mezmo.com/learn-log-management/what-is-log-rotation-how-does-it-work). (for best memory optimization)
 
 # What is the purpose of log rotation?

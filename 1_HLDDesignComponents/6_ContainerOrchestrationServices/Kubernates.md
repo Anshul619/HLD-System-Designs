@@ -11,7 +11,7 @@
 
 | Use Case                                                                                        |
 |-------------------------------------------------------------------------------------------------|
-| [Zomato](../../3_HLDDesignProblemsUC/HLD_FoodOrderingZomatoSwiggy/Readme.md)                    |
+| [Zomato](../../3_HLDDesignProblemsUC/FoodOrderingZomatoSwiggy/Readme.md)                    |
 | [Swiggy](../../4_TechStacksRealWorld/SwiggyTechStack.md)           |
 | [Spotify](../../4_TechStacksRealWorld/PersonalizationSpotify/Readme.md)                           |
 | [Grab](../../4_TechStacksRealWorld/GrabTechStack/Readme.md)        |

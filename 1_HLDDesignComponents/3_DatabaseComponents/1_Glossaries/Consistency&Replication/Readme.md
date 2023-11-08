@@ -10,7 +10,7 @@
 
 # PACELC Theorem
 
-![img.png](../PACELCTheorem/assets/PACELC_Diagram.drawio.png)
+![img.png](../PACELCTheorem/PACELC_Diagram.drawio.png)
 
 [Read more](../PACELCTheorem/Readme.md)
 

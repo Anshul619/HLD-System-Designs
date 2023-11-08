@@ -4,7 +4,7 @@
 |----------------------------------------------------------------------------|----------------|-----------------------------------------------------------------------------------------------------------------|
 | :star: [AWS Architecture Blog](https://aws.amazon.com/blogs/architecture/) |                | [AWS - Components, System Design](2_AWSComponents/Readme.md)                                                |
 | :star: [Grab](https://engineering.grab.com/)                               | Food Ordering  | [Grab - Order Processing](4_TechStacksRealWorld/GrabTechStack/Readme.md)       |
-| [Zomato](https://blog.zomato.com/author/engineering)                       | Food Ordering  | [Zomato - System Design](3_HLDDesignProblemsUC/HLD_FoodOrderingZomatoSwiggy/Readme.md)                      |
+| [Zomato](https://blog.zomato.com/author/engineering)                       | Food Ordering  | [Zomato - System Design](3_HLDDesignProblemsUC/FoodOrderingZomatoSwiggy/Readme.md)                      |
 | [Swiggy](https://bytes.swiggy.com/)                                        | Food Ordering  | [Swiggy - TechStack](4_TechStacksRealWorld/SwiggyTechStack.md)                 |
 | [LinkedIn](https://engineering.linkedin.com/)                              | Social Network | [Linkedin - System Design](4_TechStacksRealWorld/LinkedInTechStack.md)   |
 | [Instagram](https://medium.com/@InstagramEng)                              | Social Network | [Instagram - System Design](4_TechStacksRealWorld/InstagramTechStack.md) |

@@ -1,10 +1,10 @@
 # Tech Stack
 
-| Purpose           | Service                                                                                    |
-|-------------------|--------------------------------------------------------------------------------------------|
-| Data Streaming    | [Apache Kafka](../1_HLDDesignComponents/4_MessageBrokers/Kafka/Readme.md)               |
+| Purpose           | Service                                                                              |
+|-------------------|--------------------------------------------------------------------------------------|
+| Data Streaming    | [Apache Kafka](../1_HLDDesignComponents/4_MessageBrokers/Kafka/Readme.md)            |
 | NoSQL InMemory DB | [Aerospike](../1_HLDDesignComponents/3_DatabaseComponents/In-Memory-DB/AeroSpike.md) |
-| SQL DB            | PostgreSQL                                                                                 |
+| SQL DB            | PostgreSQL                                                                           |
 
 # Scaling Kafka to Support PayPal’s Data Growth
 

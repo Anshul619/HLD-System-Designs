@@ -11,8 +11,8 @@
 - It will select the distributed data, create a map and then reduce the values to give proper data.
 
 # :star: Real world use cases of Apache Spark
-- [Zomato - HLD Design](../../../3_HLDDesignProblemsUC/HLD_FoodOrderingZomatoSwiggy/Readme.md)
-- [Uber Driver Allocation](../../../3_HLDDesignProblemsUC/HLD_DriverAllocationUberGoJek/DriverAllocationDesignProblem.md)
+- [Zomato - HLD Design](../../../3_HLDDesignProblemsUC/FoodOrderingZomatoSwiggy/Readme.md)
+- [Uber Driver Allocation](../../../3_HLDDesignProblemsUC/DriverAllocationUberGoJek/Readme.md)
 
 # Tech Stack
 

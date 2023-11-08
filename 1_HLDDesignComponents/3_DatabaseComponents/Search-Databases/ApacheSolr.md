@@ -5,8 +5,8 @@
 
 | Use Case                                                                                                                                        |
 |-------------------------------------------------------------------------------------------------------------------------------------------------|
-| [How Zomato Handles 100 Million Daily Search Queries using Apache Solr & SolrCloud?](../../../3_HLDDesignProblemsUC/HLD_FoodOrderingZomatoSwiggy/Readme.md) |
-| [Instagram](../../../3_HLDDesignProblemsUC/HLD_SocialNetworkFacebookInstagram/Readme.md)                                                                             |
+| [How Zomato Handles 100 Million Daily Search Queries using Apache Solr & SolrCloud?](../../../3_HLDDesignProblemsUC/FoodOrderingZomatoSwiggy/Readme.md) |
+| [Instagram](../../../3_HLDDesignProblemsUC/SocialNetworkFacebookInstagram/Readme.md)                                                                             |
 
 # Features
 

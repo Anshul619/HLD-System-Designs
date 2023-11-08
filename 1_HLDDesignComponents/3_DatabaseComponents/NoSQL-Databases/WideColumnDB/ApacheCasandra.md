@@ -42,23 +42,23 @@
 
 ## Social Network Design Problem - User Entities like Posts, Comments etc.
 
-![](../../../../3_HLDDesignProblemsUC/HLD_SocialNetworkFacebookInstagram/SocialNetworkDesignProblemHLD.png)
+![](../../../../3_HLDDesignProblemsUC/SocialNetworkFacebookInstagram/SocialNetworkDesignProblemHLD.png)
 
-[Read more](../../../../3_HLDDesignProblemsUC/HLD_SocialNetworkFacebookInstagram/SocialNetworkDesignProblem.md)
+[Read more](../../../../3_HLDDesignProblemsUC/SocialNetworkFacebookInstagram/Readme.md)
 
 ## Flight Booking design problem - Search
 
-![](../../../../3_HLDDesignProblemsUC/HLD_FlightBookingSearchMakeMyTrip/MakeMyTripFlightSearch.drawio.png)
+![](../../../../3_HLDDesignProblemsUC/FlightBookingSearchMakeMyTrip/MakeMyTripFlightSearch.drawio.png)
 
-[Read more](../../../../3_HLDDesignProblemsUC/HLD_FlightBookingSearchMakeMyTrip/Readme.md))
+[Read more](../../../../3_HLDDesignProblemsUC/FlightBookingSearchMakeMyTrip/Readme.md))
 
 ## Other UCs
 - [How Uber Manages a Million Writes Per Second Using Mesos and Cassandra Across Multiple Datacenters?](../../../../4_TechStacksRealWorld/Uber/UberCasandraMesos)
 - [Netflix - Casandra - Time Series Data](../../../../4_TechStacksRealWorld/NetflixTechStack.md)
 - [Directi uses Casandra to save HeatMaps (UI activities)](../../../../4_TechStacksRealWorld/DirectITechStack.md)
 - [Instagram - Casandra - Social Media Posts](../../../../4_TechStacksRealWorld/InstagramTechStack.md)
-- [Twillo - Send Message API Design Problem](../../../../3_HLDDesignProblemsUC/TwilloSendMessageAPI/Readme.md)
-- [Twitter Hit Counter](../../../../3_HLDDesignProblemsUC/TwitterHitCounterDesign/Readme.md)
+- [Twillo - Send Message API Design Problem](../../../../3_HLDDesignProblemsUC/SendSMSMessageAPITwillo/Readme.md)
+- [Twitter Hit Counter](../../../../3_HLDDesignProblemsUC/HitCounterDesignTwitter/Readme.md)
 
 # Casandra's invention history - Facebook
 - Facebook originally built Cassandra to power its [Inbox search feature](https://m.facebook.com/nt/screen/?params=%7B%22note_id%22%3A10158772759272200%7D&path=%2Fnotes%2Fnote%2F&paipv=0&eav=AfYuSXXQPZ5fvm0_ScPdSlfj5BEFhRVT3iy_6Rsz7NZDbQ2vfq9opnedmTLSjG1aZBA&_rdr), with over 200 nodes deployed.

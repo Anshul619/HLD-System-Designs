@@ -52,7 +52,7 @@
 ## Others
 - [Send-SMS-API design - App Internal Clients, Multiple SMS-Providers, AutoScaling](../3_HLDDesignProblemsUC/TransactionSMSDesign/Readme.md)
 - [WP Site with Amazon CloudFront & S3](../3_HLDDesignProblemsUC/AWSWebsiteSiteUsingCloudFront&S3.md)
-- [Dropbox Saves Millions by Building a Scalable Metadata Store on Amazon DynamoDB and Amazon S3](../3_HLDDesignProblemsUC/DropboxHLDDesign/DropboxMetaDataStore.md)
+- [Dropbox Saves Millions by Building a Scalable Metadata Store on Amazon DynamoDB and Amazon S3](../4_TechStacksRealWorld/Dropbox/DropboxMetaDataStore.md)
 
 # AWS Services - Architecture, Features etc.
 

@@ -1,6 +1,6 @@
 # Dropbox Saves Millions by Building a Scalable Metadata Store (for AuditLog Data) on Amazon DynamoDB and Amazon S3
 
-![img.png](assets/DropboxAmazonDynamoDB.drawio.png)
+![img.png](DropboxAmazonDynamoDB.drawio.png)
 
 [Read more](https://aws.amazon.com/solutions/case-studies/dropbox-dynamodb-case-study/?pg=dynamodb&sec=cs#dropbox)
 
