@@ -1,0 +1,19 @@
+# Data Consistency (Read) patterns
+
+|                   | :star: Semi-synchronous consistency (replication)                                                                                                                 | :star: Eventual Consistency (async replication)                                                                    | Strong Consistency (fully-sync replication)                                                                                                                                                               |
+|-------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Description       | To decrease delay in writes in fully-sync replication, we can have one of the follower replication as synchronous while others as asynchronous.                   | In case of asynchronous replication, leader sends the message, but does not wait for a response from the follower. | In case of synchronous replication, the leader waits until follower1 has confirmed that it received the write before reporting success to the user, and before making the write visible to other clients. |
+| Writes Throughput | :rocket: Normal                                                                                                                                                   | :rocket: Very High                                                                                                 | Comparatively low                                                                                                                                                                                         |
+| Replication Lag   | Usually milliseconds/seconds                                                                                                                                      | Usually milliseconds/seconds                                                                                       | No replication lag                                                                                                                                                                                        |
+| Replication Algo  | [Single-Leader replication](SingleLeaderReplication.md)                                                                                                           | [Single-Leader replication](SingleLeaderReplication.md) & [Leaderless replication](Replication.md)                 | [Single-Leader replication](SingleLeaderReplication.md)                                                                                                                                                   |
+| Used by           | [Kafka Cluster](../../../7_MessageBrokers/Kafka/Readme.md), [Amazon Aurora](../../../2_AWSServices/6_DatabaseServices/AmazonRDS/AmazonAurora/Readme.md) etc. | [No-SQL DBs like Casandra, Dynamodb, MongoDB etc.](../../NoSQL-Databases/Readme.md)                                | [SQL-DBs](../../SQL-Databases/Readme.md), [Apache HBase](../../NoSQL-Databases/WideColumnDB/ApacheHBase.md), Amazon DynamoDB, MongoDB etc.                                                                                          |
+
+# PACELC Theorem
+
+![img.png](../PACELCTheorem/PACELC_Diagram.drawio.png)
+
+[Read more](../PACELCTheorem/Readme.md)
+
+# References
+- [Data consistency](https://en.wikipedia.org/wiki/Data_consistency)
+- [Consistency Patterns](https://github.com/donnemartin/system-design-primer#consistency-patterns)
