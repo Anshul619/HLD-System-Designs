@@ -7,7 +7,7 @@
 | Title                                              | Remarks                                                                                                                                                                                           |
 |----------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Improve latency for end-users                      | [Multi-region](../../2_AWSServices/AWS-Global-Architecture-Region-AZ.md) backend setup might be needed for dynamic API calls, to improve latency (roughly 150-400 ms).                          |
-| Disaster Recovery                                  | [Multi-region](../../2_AWSServices/AWS-Global-Architecture-Region-AZ.md) setup helps in the [disaster recovery](../../3_SystemGlossaries/Reliability/DisasterRecovery.md) |
+| Disaster Recovery                                  | [Multi-region](../../2_AWSServices/AWS-Global-Architecture-Region-AZ.md) setup helps in the [disaster recovery](../../7_SystemGlossaries/Reliability/DisasterRecovery.md) |
 | Business Requirements like GDPR, Localization etc. |                                                                                                                                                                                                   |
 
 # AWS Global Services
@@ -22,9 +22,9 @@
 
 | Title                            | Remarks                                                                                                                                                                                                                                          |
 |----------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Reliable data replication        | [Eventual consistency](../../6_DatabaseServices/Glossaries/Consistency&Replication/Readme.md) would have to be done, as databases are spread across multi-regions.                                                     |
+| Reliable data replication        | [Eventual consistency](../../3_DatabaseServices/Glossaries/Consistency&Replication/Readme.md) would have to be done, as databases are spread across multi-regions.                                                     |
 | Global network infrastructure    | [AWS Regions](../../2_AWSServices/AWS-Global-Architecture-Region-AZ.md) are connected to a private global network backbone, which provides lower cost and more consistent cross-region network latency when compared with the public internet. |
-| Build Stateless applications     | [Read more](../../3_SystemGlossaries/StatefulVsStateless.md)                                                                                                                                                               |
+| Build Stateless applications     | [Read more](../../7_SystemGlossaries/StatefulVsStateless.md)                                                                                                                                                               |
 | DNS routing using Amazon Route53 | [Read more](../../2_AWSServices/1_NetworkingAndContentDelivery/1_EdgeNetworking/AmazonRoute53/Readme.md)                                                                                                                                       |
 
 # Source(s) and further reading

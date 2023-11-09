@@ -1,7 +1,7 @@
 # Amazon Elastic Cache
-- [Amazon Elastic Cache](https://aws.amazon.com/elasticache/) is a [fully Managed Memcached or Redis](../../../6_DatabaseServices/In-Memory-DB/Redis/Readme.md).
-- Scale from one to many nodes, using [Cluster](../../../3_SystemGlossaries/Scalability/ServersCluster.md) and self-heal (automatically replaces dead instance).
-- It provides [single-digit millisecond speed (usually)](../../../3_SystemGlossaries/Scalability/LatencyThroughput.md).
+- [Amazon Elastic Cache](https://aws.amazon.com/elasticache/) is a [fully Managed Memcached or Redis](../../../3_DatabaseServices/In-Memory-DB/Redis/Readme.md).
+- Scale from one to many nodes, using [Cluster](../../../7_SystemGlossaries/Scalability/ServersCluster.md) and self-heal (automatically replaces dead instance).
+- It provides [single-digit millisecond speed (usually)](../../../7_SystemGlossaries/Scalability/LatencyThroughput.md).
 
 ![img.png](assets/ElasticCache-Multi-AZ.drawio.png)
 

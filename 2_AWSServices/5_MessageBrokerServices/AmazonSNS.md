@@ -11,8 +11,8 @@ Using Amazon SNS topics, your publisher systems can fanout messages to a large n
 # Application-to-Application (A2A)
 
 [The application-to-application (A2A) pub/sub functionality](https://docs.aws.amazon.com/sns/latest/dg/sns-system-to-system-messaging.html) provides topics which are helpful in,
-- [High-throughput, push-based, many-to-many messaging between distributed systems](../../3_SystemGlossaries/Scalability/LatencyThroughput.md)
-- [Microservices, and event-driven serverless](../../5_MicroServicesSOA/Readme.md) applications.
+- [High-throughput, push-based, many-to-many messaging between distributed systems](../../7_SystemGlossaries/Scalability/LatencyThroughput.md)
+- [Microservices, and event-driven serverless](../../4_MicroServicesSOA/Readme.md) applications.
 
 ![](assests/sns/FanOutPatternSQSSNS.png)
 
@@ -43,7 +43,7 @@ Using Amazon SNS topics, your publisher systems can fanout messages to a large n
 - To receive a subset of the messages, [a subscriber must assign a filter policy to the topic subscription](https://docs.aws.amazon.com/sns/latest/dg/sns-message-filtering.html).
 
 # :star: Amazon SNS vs Others
-- [Read here](../../7_MessageBrokers/KafkaVsRabbitMQVsSQSVsSNS.md)
+- [Read here](../../5_MessageBrokers/KafkaVsRabbitMQVsSQSVsSNS.md)
 
 # References
 - [SQS vs SNS vs Amazon MQ - Comparison - AWS Certification Cheat Sheet](https://cloud.in28minutes.com/aws-certification-sqs-vs-sns-vs-amazon-mq)

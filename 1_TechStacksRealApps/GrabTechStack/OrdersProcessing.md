@@ -12,7 +12,7 @@
 | Title                                                                                                          | Remarks                                                                                          |
 |----------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------|
 | Traffic                                                                                                        | A million of orders per day                                                                      |
-| [Consistency](../../6_DatabaseServices/Glossaries/Consistency&Replication/Readme.md) | Strong consistency for transactional queries, and eventually consistency for analytical queries. |
+| [Consistency](../../3_DatabaseServices/Glossaries/Consistency&Replication/Readme.md) | Strong consistency for transactional queries, and eventually consistency for analytical queries. |
 
 # Requirements
 
@@ -22,8 +22,8 @@
 | Update an order                                              | Write      | OLTP/Transactional                                                                           |
 | Get order by id                                              | Read       | OLTP/Transactional                                                                           |
 | Get ongoing orders by passenger id.                          | Read       | OLTP/Transactional                                                                           |
-| Get historical orders by various conditions.                 | Read       | [OLAP/Analytical](../../8_BigDataServices/Glossaries/DataStorage/DataWarehouses.md) |
-| Get order statistics (for example, get the number of orders) | Read       | [OLAP/Analytical](../../8_BigDataServices/Glossaries/DataStorage/DataWarehouses.md) |
+| Get historical orders by various conditions.                 | Read       | [OLAP/Analytical](../../6_BigDataServices/Glossaries/DataStorage/DataWarehouses.md) |
+| Get order statistics (for example, get the number of orders) | Read       | [OLAP/Analytical](../../6_BigDataServices/Glossaries/DataStorage/DataWarehouses.md) |
 
 # OLTP database - DynamoDB
 - The retention period of our [DynamoDB data](../../2_AWSServices/6_DatabaseServices/AmazonDynamoDB/Readme.md) is three months.
@@ -43,7 +43,7 @@
 - Partitions older than six months are dropped at the beginning of each month.
 
 # Data Stream
-- A [Kafka stream](../../7_MessageBrokers/Kafka/Readme.md) is used to process data in the data ingestion pipeline. 
+- A [Kafka stream](../../5_MessageBrokers/Kafka/Readme.md) is used to process data in the data ingestion pipeline. 
 - We choose the Kafka stream, because it has 99.95% SLA.
 - On the stream consumer side, we use back-off retry at both stream and database levels to ensure consistency. 
 - In a worst-case scenario, we can rewind the stream events from Kafka.

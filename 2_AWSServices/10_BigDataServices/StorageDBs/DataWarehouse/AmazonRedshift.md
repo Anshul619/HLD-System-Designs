@@ -1,5 +1,5 @@
 # Amazon RedShift
-- [Amazon RedShift](https://aws.amazon.com/redshift/) is a [data warehouse service](../../../../8_BigDataServices/Glossaries/DataStorage/DataWarehouses.md) in AWS.
+- [Amazon RedShift](https://aws.amazon.com/redshift/) is a [data warehouse service](../../../../6_BigDataServices/Glossaries/DataStorage/DataWarehouses.md) in AWS.
 - [Amazon Redshift]() is not designed for continuous ingestion of data in real time.
 
 ![](../../../../0_HLDUseCasesProblems/AWS_ModernDataArchitecture/AWS-Data-Architecture-ETL-OLTP-OLAP-DataLake.png)
@@ -8,7 +8,7 @@
 
 | Feature                      | Remarks                                                                                                                                                                                                                           |
 |------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Amazon Redshift & PostgresQL | [Amazon Redshift]() and [PostgreSQL](../../../../6_DatabaseServices/SQL-Databases/Readme.md) have a number of important differences that you must be aware of as you design and develop your data warehouse applications. |
+| Amazon Redshift & PostgresQL | [Amazon Redshift]() and [PostgreSQL](../../../../3_DatabaseServices/SQL-Databases/Readme.md) have a number of important differences that you must be aware of as you design and develop your data warehouse applications. |
 | Redshift Spectrum            | [Amazon Redshift Spectrum](AmazonRedshiftSpectrum.md) can be used to perform in-place querying of data assets in an [Amazon S3-based data lake](../DataLakes/S3DataLake.md).                             |
 
 # General Use Cases

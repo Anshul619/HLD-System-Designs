@@ -2,7 +2,7 @@
 - [Container orchestration service](https://www.vmware.com/topics/glossary/content/container-orchestration.html) is the container management service.
 - They are also responsible for the allocation of resources/servers to tasks/services. 
 - Every task/service needs to specify its required resources (e.g., 3 CPU cores, 2 GiB of RAM). 
-- Using the list of requirements for all tasks/services, Orchestrator can bin-pack the tasks over the machines in an optimal way that [also accounts for failure domains](../3_SystemGlossaries/Reliability/FaultTolerance.md).
+- Using the list of requirements for all tasks/services, Orchestrator can bin-pack the tasks over the machines in an optimal way that [also accounts for failure domains](../7_SystemGlossaries/Reliability/FaultTolerance.md).
 
 # Benefits 
 
@@ -29,7 +29,7 @@ This coordination is handled by a container orchestration service.
 | :star: [Docker](Docker/Readme.md)                                                               | Mostly used containerization                                                                          | [Container Orchestration Service](Readme.md)                             |
 | :star: [Amazon ECS](../2_AWSServices/4_ContainerOrchestrationServices/AmazonECS/Readme.md) | Flexible, AWS managed service                                                                         | [Container Orchestration Service](Readme.md)                             |
 | [Apache Marathon & Mesos](ApacheMarathon&Mesos.md)                                              | Can run 10s of thousands of machines, across multiple clusters                                        | [Container Orchestration Service](Readme.md) (with own Containerization) |
-| [Apache Yarn](ApacheYarn.md)                                                                    | Big-Data Processing (part of [Hadoop](../8_BigDataServices/ETLServices/BatchProcessing/ApacheHadoop/Readme.md)) | [Container Orchestration Service](Readme.md)                             |
+| [Apache Yarn](ApacheYarn.md)                                                                    | Big-Data Processing (part of [Hadoop](../6_BigDataServices/ETLServices/BatchProcessing/ApacheHadoop/Readme.md)) | [Container Orchestration Service](Readme.md)                             |
 | [Red Hat OpenShift](https://www.redhat.com/en/technologies/cloud-computing/openshift)           | -                                                                                                     | [Container Orchestration Service](Readme.md)                             |
 
 # References

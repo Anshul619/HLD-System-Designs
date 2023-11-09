@@ -51,12 +51,12 @@ Gotcha: What if two people try to shorten the same URL?
 - LastLogin
 
 # Which database to use? - SQL vs NoSQL
-- [NoSQL](../../6_DatabaseServices/NoSQL-Databases/Readme.md) can be used here since we are anticipating a billion of rows & no relationship is needed between rows.
-- Read more about [NoSQL vs SQL](../../6_DatabaseServices/SQLvsNoSQL.md).
+- [NoSQL](../../3_DatabaseServices/NoSQL-Databases/Readme.md) can be used here since we are anticipating a billion of rows & no relationship is needed between rows.
+- Read more about [NoSQL vs SQL](../../3_DatabaseServices/SQLvsNoSQL.md).
 
 # Cache frequently accessed URLs
 - We can cache URLs that are frequently accessed. (with `LRU - Least Recently Used` policy)
-- We can use any off-the-shelf solution like [Redis](../../6_DatabaseServices/In-Memory-DB/Redis/Readme.md), which can store full URLs with their respective hashes.
+- We can use any off-the-shelf solution like [Redis](../../3_DatabaseServices/In-Memory-DB/Redis/Readme.md), which can store full URLs with their respective hashes.
 - Thus, the application servers, before hitting the backend storage, can quickly check if the cache has the desired URL.
 
 # Key Generation Service
@@ -69,7 +69,7 @@ KGS can use two tables to store keys:
 - `Used keys` - One for all the used keys
 
 ## Cache Memory - Redis
-- `KGS` can always keep some keys in memory ([Redis](../../6_DatabaseServices/In-Memory-DB/Redis/Readme.md)) to quickly provide them whenever a server needs them.
+- `KGS` can always keep some keys in memory ([Redis](../../3_DatabaseServices/In-Memory-DB/Redis/Readme.md)) to quickly provide them whenever a server needs them.
 - As soon as `KGS` loads some keys in memory, those would be marked it can move them to the `used keys` table.
 
 ## Concurrency Issues
@@ -86,7 +86,7 @@ In this scheme, we take a hash of the object we are storing.
 - We then calculate which partition to use based upon the hash.
 - In our case, we can take the hash of the ‘key’ or the short link to determine the partition in which we store the data object.
 
-This approach can still lead to overloaded partitions, which can be solved using [Consistent Hashing](../../6_DatabaseServices/Glossaries/PartioningSharding.md).
+This approach can still lead to overloaded partitions, which can be solved using [Consistent Hashing](../../3_DatabaseServices/Glossaries/PartioningSharding.md).
 
 # Open Question
 - How to improve latency of write operation? 

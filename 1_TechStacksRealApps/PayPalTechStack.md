@@ -2,8 +2,8 @@
 
 | Purpose           | Service                                                                              |
 |-------------------|--------------------------------------------------------------------------------------|
-| Data Streaming    | [Apache Kafka](../7_MessageBrokers/Kafka/Readme.md)            |
-| NoSQL InMemory DB | [Aerospike](../6_DatabaseServices/In-Memory-DB/AeroSpike.md) |
+| Data Streaming    | [Apache Kafka](../5_MessageBrokers/Kafka/Readme.md)            |
+| NoSQL InMemory DB | [Aerospike](../3_DatabaseServices/In-Memory-DB/AeroSpike.md) |
 | SQL DB            | PostgreSQL                                                                           |
 
 # Scaling Kafka to Support PayPal’s Data Growth

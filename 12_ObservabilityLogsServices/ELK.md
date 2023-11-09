@@ -1,5 +1,5 @@
 # ELK stack
-- [Elasticsearch](../6_DatabaseServices/Search-Databases/ElasticSearch) is a `NoSQL database tool`, which is used to store the unstructured data.
+- [Elasticsearch](../3_DatabaseServices/Search-Databases/ElasticSearch) is a `NoSQL database tool`, which is used to store the unstructured data.
 - [Logstash](https://www.elastic.co/logstash/) is a `log pipeline tool` to perform transformation on data.
     - It takes input from different sources and performs various transformations on it.
     - At last, it exports the data into various targets.

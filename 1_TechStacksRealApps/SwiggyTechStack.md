@@ -4,9 +4,9 @@
 |--------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------|
 | Cloud platform                                                                 | [AWS - EC2, Lambda, S3, DynamoDB, CodePipeline etc.](../2_AWSServices/Readme.md)           |
 | Container Orchestration                                                        | [Kubernates with Docker](../9_ContainerOrchestrationServices/Readme.md) |
-| InMemory-Cache                                                                 | [Redis cache](../6_DatabaseServices/In-Memory-DB/Redis/Readme.md) |
-| Message Broker - Pub/Sub                                                       | [Apache Kafka (using confluent)](../7_MessageBrokers/Kafka/Readme.md)  |
-| Map-Reduce Jobs (like select driver, generate recommendations etc.)            | [Apache Spark](../8_BigDataServices/ETLServices/ApacheSpark.md) |
+| InMemory-Cache                                                                 | [Redis cache](../3_DatabaseServices/In-Memory-DB/Redis/Readme.md) |
+| Message Broker - Pub/Sub                                                       | [Apache Kafka (using confluent)](../5_MessageBrokers/Kafka/Readme.md)  |
+| Map-Reduce Jobs (like select driver, generate recommendations etc.)            | [Apache Spark](../6_BigDataServices/ETLServices/ApacheSpark.md) |
 | Socket Connection                                                              | Web Sockets                                                                                     |
 | OLTP-DB (like pickers, orders, shipment, restaurants, delivery, shipment etc.) | MySQL, [DynamoDB]()                                                                             |
 | Key-Value-DB (high throughput/read/writes)                                     | [DynamoDB]()                                                                                    |

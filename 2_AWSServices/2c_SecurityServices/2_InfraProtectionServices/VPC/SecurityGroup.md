@@ -22,7 +22,7 @@
 | A range of IPv6 addresses, in CIDR block notation | 2001:db8:1234:1a00::/64     | -                                                                                                                                                                                                                                                                                                                                                                        |
 | ID of a security group                            | ec2-security-group          | Specified security group. For example, the current security group, a security group from the same VPC, or a security group for a peered VPC. <br/>- This allows traffic based on the private IP addresses of the resources associated with the specified security group. <br/>- This does not add rules from the specified security group to the current security group. |
 
-[Read more about IP Address Ranges](../../../../3_SystemGlossaries/Networking/IPAddressRanges.md)
+[Read more about IP Address Ranges](../../../../7_SystemGlossaries/Networking/IPAddressRanges.md)
 
 # Example Security rules
 
