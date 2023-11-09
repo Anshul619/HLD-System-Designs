@@ -126,10 +126,10 @@ This repo contains the various system design components info, questions and solu
                 <a href="2_AWSServices/1_NetworkingAndContentDelivery/2_ApplicationNetworking/AWSCloudMap.md" target="_blank">
                   <img src="https://landscape.cncf.io/logos/aws-cloud-map.svg" width="150">
                 </a>
-                <a href="10_ClusterCoordinationService/etcd.md" target="_blank">
+                <a href="10_ClusterCoordinationServices/etcd.md" target="_blank">
                   <img src="https://cdn.freebiesupply.com/logos/large/2x/etcd-logo-png-transparent.png" width="150">
                 </a>
-                <a href="10_ClusterCoordinationService/ApacheZookeeper.md" target="_blank">
+                <a href="10_ClusterCoordinationServices/ApacheZookeeper.md" target="_blank">
                   <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Apache_ZooKeeper_logo.svg/1200px-Apache_ZooKeeper_logo.svg.png" width="150">
                 </a>
             </div>
@@ -138,15 +138,15 @@ This repo contains the various system design components info, questions and solu
     </tr>
     <tr>
       <td>
-        <a href="10_ClusterCoordinationService/Readme.md" target="_blank">Cluster Coordination Service & Config store</a>
+        <a href="10_ClusterCoordinationServices/Readme.md" target="_blank">Cluster Coordination Service & Config store</a>
       </td>
       <td>
         <div class="container" style="background:white">
             <div class="block two first">
-                <a href="10_ClusterCoordinationService/ApacheZookeeper.md" target="_blank">
+                <a href="10_ClusterCoordinationServices/ApacheZookeeper.md" target="_blank">
                   <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Apache_ZooKeeper_logo.svg/1200px-Apache_ZooKeeper_logo.svg.png" width="150">
                 </a>
-                <a href="10_ClusterCoordinationService/etcd.md" target="_blank">
+                <a href="10_ClusterCoordinationServices/etcd.md" target="_blank">
                   <img src="https://cdn.freebiesupply.com/logos/large/2x/etcd-logo-png-transparent.png" width="150">
                 </a>
             </div>
