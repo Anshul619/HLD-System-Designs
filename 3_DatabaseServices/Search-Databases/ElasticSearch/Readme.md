@@ -6,12 +6,12 @@
 - ElasticSearch is [Paid and NOT open-sourced](https://www.elastic.co/pricing/).
 
 # :star: Real world use cases of ElasticSearch
-- [Zomato - HLD Design](../../../0_HLDUseCasesProblems/FoodOrderingZomatoSwiggy/Readme.md)
-- [Uber Driver Allocation](../../../0_HLDUseCasesProblems/DriverAllocationUberGoJek/Readme.md)
-- [Logging Solution in Distributed Systems](../../../0_HLDUseCasesProblems/ObervabilityLoggingSolution/LoggingFileAggregation/Readme.md)
-- [Flight Booking Search](../../../0_HLDUseCasesProblems/FlightBookingSearchMakeMyTrip/Readme.md)
+- [Food Ordering - HLD Design](../../../0_HLDUseCasesProblems/FoodOrderingZomatoSwiggy/Readme.md)
+- [Uber Driver Allocation - HLD Design](../../../0_HLDUseCasesProblems/DriverAllocationUberGoJek/Readme.md)
+- [Logging Solution in Distributed Systems - HLD Design](../../../0_HLDUseCasesProblems/ObervabilityLoggingSolution/LoggingFileAggregation/Readme.md)
+- [Flight Booking Search - HLD Design](../../../0_HLDUseCasesProblems/FlightBookingSearchMakeMyTrip/Readme.md)
 - [Grab - Search Index Optimization](../../../1_TechStacksRealApps/GrabTechStack/SearchIndexing.md)
-- [Shopify: Powering the search for better help documentation using Elastic Site Search](https://www.elastic.co/customers/shopify)
+- [Shopify: Powering the search for better help documentation using Elastic Site Search](../../../1_TechStacksRealApps/ShopifyTechStack.md)
 
 # :star: General Use Cases of Search-Indexes
 - [Search - Full-text, Partial etc.](https://www.elastic.co/guide/en/elasticsearch/reference/current/full-text-queries.html)

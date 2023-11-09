@@ -21,21 +21,21 @@
 
 # :star: Real world use cases of Kafka
 
-| Use Case                                                                                                                  |
-|---------------------------------------------------------------------------------------------------------------------------|
-| [LinkedIn - Kafka](../../1_TechStacksRealApps/LinkedInTechStack.md)                |
-| [Personalization at Spotify using Cassandra & Kafka](../../1_TechStacksRealApps/PersonalizationSpotify/Readme.md)       |
-| [Zomato - HLD Design](../../0_HLDUseCasesProblems/FoodOrderingZomatoSwiggy/Readme.md)                              |
-| [Uber Driver Allocation](../../0_HLDUseCasesProblems/DriverAllocationUberGoJek/Readme.md)       |
-| [Twillo - Send Message API Design](../../0_HLDUseCasesProblems/SendSMSMessageAPITwillo/Readme.md)                           |
-| [Logging Solution in Distributed Systems](../../0_HLDUseCasesProblems/ObervabilityLoggingSolution/LoggingFileAggregation/Readme.md)                         |
-| [Flight Booking Search](../../0_HLDUseCasesProblems/FlightBookingSearchMakeMyTrip/Readme.md)                                       |
-| [Amplitude - Reducing costs with AZ-awareness for Kafka](../../1_TechStacksRealApps/AmplitudeSystemDesign/Readme.md)    |
-| [BigCommerce - Real-time events](../../1_TechStacksRealApps/BigCommerce/Readme.md)                                      |
-| [Paypal - Kafka](../../1_TechStacksRealApps/PayPalTechStack.md)                                               |
-| [Grab - Orders Processing](../../1_TechStacksRealApps/GrabTechStack/OrdersProcessing.md) |
-| [Swiggy (through Confluent)](../../1_TechStacksRealApps/SwiggyTechStack.md)              |
-| [Split.io](../../1_TechStacksRealApps/SplitIOTechStack.md)                                                      |
+| Use Case                                                                                                                                         |
+|--------------------------------------------------------------------------------------------------------------------------------------------------|
+| [LinkedIn](../../1_TechStacksRealApps/LinkedInTechStack.md)                                                                                      |
+| [Personalization at Spotify using Cassandra & Kafka](../../1_TechStacksRealApps/PersonalizationSpotify/Readme.md)                                |
+| [Zomato - HLD Design](../../0_HLDUseCasesProblems/FoodOrderingZomatoSwiggy/Readme.md)                                                            |
+| [Uber Driver Allocation - HLD Design](../../0_HLDUseCasesProblems/DriverAllocationUberGoJek/Readme.md)                                           |
+| [Twillo Send Message API Design - HLD Design](../../0_HLDUseCasesProblems/SendSMSMessageAPITwillo/Readme.md)                                     |
+| [Logging Solution in Distributed Systems - HLD Design](../../0_HLDUseCasesProblems/ObervabilityLoggingSolution/LoggingFileAggregation/Readme.md) |
+| [Flight Booking Search - HLD Design](../../0_HLDUseCasesProblems/FlightBookingSearchMakeMyTrip/Readme.md)                                        |
+| [Amplitude - Reducing costs with AZ-awareness for Kafka](../../1_TechStacksRealApps/AmplitudeSystemDesign/Readme.md)                             |
+| [BigCommerce - Real-time events](../../1_TechStacksRealApps/BigCommerce/Readme.md)                                                               |
+| [Paypal - Kafka](../../1_TechStacksRealApps/PayPalTechStack.md)                                                                                  |
+| [Grab - Orders Processing](../../1_TechStacksRealApps/GrabTechStack/OrdersProcessing.md)                                                         |
+| [Swiggy (through Confluent)](../../1_TechStacksRealApps/SwiggyTechStack.md)                                                                      |
+| [Split.io - Messsage Broker](../../1_TechStacksRealApps/SplitIOTechStack.md)                                                                     |
 
 # Top Features of Kafka
 

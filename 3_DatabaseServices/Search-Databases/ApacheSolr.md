@@ -3,10 +3,10 @@
 
 # Real-world Use Cases
 
-| Use Case                                                                                                                                        |
-|-------------------------------------------------------------------------------------------------------------------------------------------------|
-| [How Zomato Handles 100 Million Daily Search Queries using Apache Solr & SolrCloud?](../../0_HLDUseCasesProblems/FoodOrderingZomatoSwiggy/Readme.md) |
-| [Instagram](../../0_HLDUseCasesProblems/SocialNetworkFacebookInstagram/Readme.md)                                                                             |
+| Use Case                                                                                                                            |
+|-------------------------------------------------------------------------------------------------------------------------------------|
+| [How Zomato Handles 100 Million Daily Search Queries using Apache Solr & SolrCloud?](../../1_TechStacksRealApps/ZomatoTechStack.md) |
+| [Instagram - Search](../../1_TechStacksRealApps/InstagramTechStack.md)                                                              |
 
 # Features
 

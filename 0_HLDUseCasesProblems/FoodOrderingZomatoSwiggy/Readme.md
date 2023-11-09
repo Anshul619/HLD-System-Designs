@@ -21,9 +21,9 @@
 
 # Real-world Systems
 
-|        | Remarks                                                                  |
-|--------|--------------------------------------------------------------------------|
-| Zomato |                                                                          |
+|        | Remarks                                                                 |
+|--------|-------------------------------------------------------------------------|
+| Zomato | [Swiggy - Tech Stack](../../1_TechStacksRealApps/ZomatoTechStack.md)    |
 | Swiggy | [Swiggy - Tech Stack](../../1_TechStacksRealApps/SwiggyTechStack.md)    |
 | Grab   | [Grab - Tech Stack](../../1_TechStacksRealApps/GrabTechStack/Readme.md) |
 
@@ -49,8 +49,4 @@
 
 # Reference
 - [System Design of food delivery app (Zomato/Swiggy)](https://www.linkedin.com/pulse/system-design-food-delivery-app-zomatoswiggy-saral-saxena/)
-- [Explained: How Zomato Handles 100 Million Daily Search Queries! (Part One)](https://blog.zomato.com/explained-how-zomato-handles-100-million-daily-search-queries-p1)
-- [The Deep Tech Behind Estimating Food Preparation Time](https://blog.zomato.com/food-preparation-time)
-- [The accurate ETA to customer satisfaction (Part Two)](https://blog.zomato.com/the-accurate-eta-to-customer-satisfaction-part-two)
-- [How we moved our Food Feed from Redis to Cassandra?](https://blog.zomato.com/how-we-moved-our-food-feed-from-redis-to-cassandra)
 - HLD System Design Interview question asked in Blackbuck, 2ndJune2022

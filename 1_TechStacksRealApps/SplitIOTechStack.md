@@ -6,7 +6,7 @@
 | Application Networking  | [API Gateway](../2_AWSServices/1_NetworkingAndContentDelivery/2_ApplicationNetworking/AmazonAPIGateway/Readme.md) |
 | Serverless Compute      | [AWS Lambda](../2_AWSServices/3_ComputeServices/AWSLambda/Readme.md)                                              |
 | Message Broker          | [Kafka](../5_MessageBrokers/Kafka/Readme.md)                                                  |
-| Observability           | Prometheus                                                                                                             |
+| Observability           | [Prometheus](../12_ObservabilityLogsServices/Prometheus.md)                                                                                                             |
 | Distributed Tracing     | Jaeger                                                                                                                 |
 
 # Read more
