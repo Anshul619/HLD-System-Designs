@@ -18,8 +18,8 @@
 
 # Other Points
 
-| Point                                                                                |
-|--------------------------------------------------------------------------------------|
+| Point                                                                             |
+|-----------------------------------------------------------------------------------|
 | [SQL vs NoSQL](SQLvsNoSQL.md)                                                     |
 | [DynamoDB vs MongoDB vs Casandra](NoSQL-Databases/DynamoDBVsMongoDBVsCasandra.md) |
 

@@ -13,10 +13,10 @@
 
 # Features
 
-| Feature            | Remarks                                               |
-|--------------------|-------------------------------------------------------|
+| Feature            | Remarks                                             |
+|--------------------|-----------------------------------------------------|
 | Sharding in SQL DB | [Read more](../Glossaries/PartioningSharding.md)    |
-| SQL Tuning         | [Read more](SQLTuning.md)                             |
+| SQL Tuning         | [Read more](SQLTuning.md)                           |
 | Indexing           | [Read more](../DataStructuresDB/Indexing/Readme.md) |
 
 # Postgres vs MySQL

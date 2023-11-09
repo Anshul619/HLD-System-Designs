@@ -9,15 +9,15 @@
 
 # Real-world use cases
 
-| Use Case                                                                                        |
-|-------------------------------------------------------------------------------------------------|
-| [Zomato](../0_HLDUseCasesProblems/FoodOrderingZomatoSwiggy/Readme.md)                    |
-| [Swiggy](../1_TechStacksRealApps/SwiggyTechStack.md)           |
-| [Spotify](../1_TechStacksRealApps/PersonalizationSpotify/Readme.md)                           |
-| [Grab](../1_TechStacksRealApps/GrabTechStack/Readme.md)        |
-| [LinkedIn](../1_TechStacksRealApps/LinkedInTechStack.md) |
-| [Split.io](../1_TechStacksRealApps/SplitIOTechStack.md)                               |
-| [Stripe](../1_TechStacksRealApps/StripeTechStack.md)                                |
+| Use Case                                                              |
+|-----------------------------------------------------------------------|
+| [Zomato](../0_HLDUseCasesProblems/FoodOrderingZomatoSwiggy/Readme.md) |
+| [Swiggy](../1_TechStacksRealApps/SwiggyTechStack.md)                  |
+| [Spotify](../1_TechStacksRealApps/PersonalizationSpotify/Readme.md)   |
+| [Grab](../1_TechStacksRealApps/GrabTechStack/Readme.md)               |
+| [LinkedIn](../1_TechStacksRealApps/LinkedInTechStack.md)              |
+| [Split.io](../1_TechStacksRealApps/SplitIOTechStack.md)               |
+| [Stripe](../1_TechStacksRealApps/StripeTechStack.md)                  |
 
 # Resources and Limits
 
