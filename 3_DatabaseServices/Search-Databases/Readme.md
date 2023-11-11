@@ -6,7 +6,7 @@
 | Used for derived data        | Search-DBs don't provide 100% durability, hence [it should be used for derived data and not as primary source of truth](https://bonsai.io/blog/why-elasticsearch-should-not-be-your-primary-data-store)                                                                 |
 | Tokenizer                    | [Tokenizers](https://lucene.apache.org/core/7_3_1/core/org/apache/lucene/analysis/Tokenizer.html) are used to generate the tokens from a text string/document.<br/>- It breaks down the text string into tokens where it finds whitespace or other punctuation symbols. |
 | Indices containing documents | Indices is like tables, documents like rows in Search-DBs.                                                                                                                                                                                                              |
-| Inverted Index               | [Read more](../DataStructuresDB/InvertedIndex.md)                                                                                                                                                                                                                     |
+| Inverted Index               | [Read more](../Glossaries/DataStructuresDB/InvertedIndex.md)                                                                                                                                                                                                                     |
 
 # Various Search-DBs
 

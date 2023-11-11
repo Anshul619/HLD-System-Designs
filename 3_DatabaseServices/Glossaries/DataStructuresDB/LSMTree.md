@@ -24,11 +24,11 @@
 
 | DB                                                            |
 |---------------------------------------------------------------|
-| [MongoDB](../NoSQL-Databases/MongoDB/Readme.md)               |
-| [Casandra](../NoSQL-Databases/WideColumnDB/ApacheCasandra.md) |
-| [ElasticSearch](../Search-Databases/ElasticSearch/Readme.md)  |
-| [RocksDB](../NoSQL-Databases/EmbededKeyValueDB/RocksDB.md)    |
-| [InfluxDB](../NoSQL-Databases/TimeSeriesDB/InfluxDB.md)       |
+| [MongoDB](../../NoSQL-Databases/MongoDB/Readme.md)               |
+| [Casandra](../../NoSQL-Databases/WideColumnDB/ApacheCasandra.md) |
+| [ElasticSearch](../../Search-Databases/ElasticSearch/Readme.md)  |
+| [RocksDB](../../NoSQL-Databases/EmbededKeyValueDB/RocksDB.md)    |
+| [InfluxDB](../../NoSQL-Databases/TimeSeriesDB/InfluxDB.md)       |
 
 # Read more
 - [Understanding How Databases Store our Data: Introduction to LSM trees](https://javascript.plainenglish.io/understanding-how-databases-store-our-data-introduction-to-lsm-trees-ec1c46096570)

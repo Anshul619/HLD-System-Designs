@@ -13,7 +13,7 @@
 | :star: [Event Driven Architecture](../4_MicroServicesSOA/EventDrivenArchitecture.md)                              | Message Brokers   | Others                                          |
 | :star: [Point to Point Model](../5_MessageBrokers/Glossaries/PointToPointModel.md)                                | Message Brokers   | Others                                          |
 | :star: [Publish Subscriber Model](../5_MessageBrokers/Glossaries/PubSubModel.md)                                  | Message Brokers   | Others                                          |
-| :star: [Indexing](../3_DatabaseServices/DataStructuresDB/Indexing/Readme.md)                                  | Data Stores       | :rocket: [Scalability](Scalability)   |
+| :star: [Indexing](../3_DatabaseServices/Glossaries/DataStructuresDB/Indexing/Readme.md)                                  | Data Stores       | :rocket: [Scalability](Scalability)   |
 | :star: [DB Scalability](../3_DatabaseServices/Glossaries/ScalabilityDB.md)                                    | Data Stores       | :rocket: [Scalability](Scalability)   |
 | :star: [ACID Properties of the Transaction](../3_DatabaseServices/Glossaries/ACIDTransactions/Readme.md)      | Data Stores       | Others                                          |
 | :star: [CAP Theorem of the Distributed Systems](../3_DatabaseServices/Glossaries/PACELCTheorem/CAPTheorem.md) | Data Stores       | Others                                          |
@@ -21,9 +21,9 @@
 | :star: [Consistency Patterns](../3_DatabaseServices/Glossaries/Consistency&Replication/Readme.md)             | Data Stores       | :handshake: [Reliability](Reliability) |
 | [Atomicity](../3_DatabaseServices/Glossaries/ACIDTransactions/Atomicity.md)                                   | Data Stores       | Others                                          |
 | [Durability](../3_DatabaseServices/Glossaries/ACIDTransactions/Durability.md)                                 | Data Stores       | Others                                          |
-| [Append Only Data Structure](../3_DatabaseServices/DataStructuresDB/AppendOnlyProperty.md)                    | Data Stores       | :rocket: [Scalability](Scalability)   |
-| [Partitioning/Sharding](../3_DatabaseServices/Glossaries/PartioningSharding.md)                               | Data Stores       | Others                                          |
-| [Storage Options](../3_DatabaseServices/Glossaries/StorageOptions.md)                                         | Data Stores       | :rocket: [Scalability](Scalability)   |
+| [Append Only Data Structure](../3_DatabaseServices/Glossaries/DataStructuresDB/AppendOnlyProperty.md)                    | Data Stores       | :rocket: [Scalability](Scalability)   |
+| [Partitioning/Sharding](../3_DatabaseServices/Glossaries/PartitioningSharding/PartioningSharding.md)                               | Data Stores       | Others                                          |
+| [Storage Options](../11_FileStorageServicesHDFS/StorageOptions.md)                                         | Data Stores       | :rocket: [Scalability](Scalability)   |
 | [OLTP vs OTAP](../3_DatabaseServices/Glossaries/OLTPvsOTAP.md)                                                | Data Stores       | Others                                          |
 | [Change Data Capture](../3_DatabaseServices/Glossaries/ChangeDataCapture.md)                                  | Data Stores       | Others                                          |
 

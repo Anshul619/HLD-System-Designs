@@ -2,7 +2,7 @@
 
 ![img.png](../assets/DecideDatabase.drawio.png)
 
-[Read more](../DecideDatabase.md)
+[Read more](../../DatabaseDesignTips.md)
 
 # NoSQL-DB types
 

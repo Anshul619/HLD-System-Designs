@@ -5,4 +5,4 @@
 
 # Other Links
 - [Comparison between Various Message Brokers](KafkaVsRabbitMQVsSQSVsSNS.md)
-- [Message Broker vs DB](MessageBrokerVsDBs.md)
+- [Message Broker vs DB](MessageBrokerVsDB.md)

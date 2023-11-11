@@ -96,12 +96,12 @@
 
 # Why Kafka is so fast?
 - Kafka achieves [low latency](../../7_SystemGlossaries/Scalability/LatencyThroughput.md) message delivery through [Sequential I/O and Zero Copy Principle](https://twitter.com/alexxubyte/status/1506663791961919488/photo/1).
-- Messages (events) in the [Kafka]() are immutable and can't be changed once it's pushed (due to [log based queue nature](../../3_DatabaseServices/DataStructuresDB/AppendOnlyProperty.md)).
+- Messages (events) in the [Kafka]() are immutable and can't be changed once it's pushed (due to [log based queue nature](../../3_DatabaseServices/Glossaries/DataStructuresDB/AppendOnlyProperty.md)).
 - The same techniques are commonly used in much other messaging/streaming platforms.
 
-Kafka is based on [Log Based Queue](../../3_DatabaseServices/DataStructuresDB/AppendOnlyProperty.md)
-- :star: Messages are persisted to [append-only log files](../../3_DatabaseServices/DataStructuresDB/AppendOnlyProperty.md) by the broker.
-- Producers are [appending these log files (sequential write)](../../3_DatabaseServices/DataStructuresDB/AppendOnlyProperty.md) & consumers are reading a range of these files ( `sequential reads` ).
+Kafka is based on [Log Based Queue](../../3_DatabaseServices/Glossaries/DataStructuresDB/AppendOnlyProperty.md)
+- :star: Messages are persisted to [append-only log files](../../3_DatabaseServices/Glossaries/DataStructuresDB/AppendOnlyProperty.md) by the broker.
+- Producers are [appending these log files (sequential write)](../../3_DatabaseServices/Glossaries/DataStructuresDB/AppendOnlyProperty.md) & consumers are reading a range of these files ( `sequential reads` ).
 
 # References
 - [Kafka official documentation](https://kafka.apache.org/documentation/#theproducer)

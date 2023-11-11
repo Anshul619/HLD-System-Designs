@@ -6,16 +6,16 @@
 
 | Feature                                                                        | Remarks                                                                 |
 |--------------------------------------------------------------------------------|-------------------------------------------------------------------------|
-| [Leaderless replication](../Glossaries/Consistency&Replication/Replication.md) | Dynamo is based on leaderless replication.                              |
+| [Leaderless replication](../Consistency&Replication/Replication.md) | Dynamo is based on leaderless replication.                              |
 | Both database and distributed hashTable                                        | It has properties of both databases and distributed hash tables (DHTs). |
 
 # Supported Services
 
 | Service                                                                            | Remarks                                                                                                                                                                                                                  |
 |------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Amazon DynamoDB](../../2_AWSServices/6_DatabaseServices/AmazonDynamoDB/Readme.md) | [Amazon DynamoDB](../../2_AWSServices/6_DatabaseServices/AmazonDynamoDB/Readme.md) is built on the principles of [Dynamo](), but with [Single-leader replication](../Glossaries/Consistency&Replication/Replication.md). |
-| [Amazon S3](../../2_AWSServices/7_StorageServices/3_ObjectStorageS3/Readme.md)     | The index layer of [Amazon S3](../../2_AWSServices/7_StorageServices/3_ObjectStorageS3/Readme.md) implements and extends many core features of Dynamo.                                                                   |
-| [Apache Cassandra](../NoSQL-Databases/WideColumnDB/ApacheCasandra.md)              |                                                                                                                                                                                                                          |
+| [Amazon DynamoDB](../../../2_AWSServices/6_DatabaseServices/AmazonDynamoDB/Readme.md) | [Amazon DynamoDB](../../../2_AWSServices/6_DatabaseServices/AmazonDynamoDB/Readme.md) is built on the principles of [Dynamo](), but with [Single-leader replication](../Consistency&Replication/Replication.md). |
+| [Amazon S3](../../../2_AWSServices/7_StorageServices/3_ObjectStorageS3/Readme.md)     | The index layer of [Amazon S3](../../../2_AWSServices/7_StorageServices/3_ObjectStorageS3/Readme.md) implements and extends many core features of Dynamo.                                                                   |
+| [Apache Cassandra](../../NoSQL-Databases/WideColumnDB/ApacheCasandra.md)              |                                                                                                                                                                                                                          |
 | Others NoSQL-DBs like Project Voldemort and Riak etc.                              |                                                                                                                                                                                                                          |
 
 # References

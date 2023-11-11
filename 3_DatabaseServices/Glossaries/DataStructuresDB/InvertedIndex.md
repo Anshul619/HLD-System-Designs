@@ -1,6 +1,6 @@
 # Inverted Index
 - The inverted index maps `terms` to `documents` (and possibly positions in the documents) containing the term.
-- Using inverted indexes, [Search-DBs](../Search-Databases/Readme.md) internally & efficiently finds documents with given term prefixes.
+- Using inverted indexes, [Search-DBs](../../Search-Databases/Readme.md) internally & efficiently finds documents with given term prefixes.
 
 # Example
 - Find all documents, starting with `c`.

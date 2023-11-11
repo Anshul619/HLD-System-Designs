@@ -4,7 +4,7 @@ This repo contains the various system design components info, questions and solu
 - [HLD Design Problems](0_HLDUseCasesProblems)
 - [Real-world tech stacks](1_TechStacksRealApps)
 - [Key Components of Distributed Systems](7_SystemGlossaries/Readme.md)
-- [Decide Database](3_DatabaseServices/DecideDatabase.md)
+- [Decide Database](DatabaseDesignTips.md)
 - [System Estimation Tips](SystemEstimationTips.md)
 - [System Design Tips](SystemDesignTips.md)
 - [Benchmarking](Benchmarking.md)
