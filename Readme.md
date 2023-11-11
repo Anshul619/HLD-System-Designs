@@ -59,23 +59,6 @@ This repo contains the various system design components info, questions and solu
     </tr>
     <tr>
       <td>
-        <a href="3_DatabaseServices/In-Memory-DB">In-Memory Cache/DBs</a>
-      </td>
-      <td>
-        <div class="container" style="background:white">
-            <div class="block two first">
-                <a href="3_DatabaseServices/In-Memory-DB/Redis/Readme.md" target="_blank">
-                  <img src="https://upload.wikimedia.org/wikipedia/en/6/6b/Redis_Logo.svg" width="150">
-                </a>
-                <a href="3_DatabaseServices/In-Memory-DB/AeroSpike.md" target="_blank">
-                  <img src="https://aerospike.com/wp-content/uploads/2021/03/logo-4.png" width="150">
-                </a>
-            </div>
-        </div>
-      </td>
-    </tr>
-    <tr>
-      <td>
         <a href="5_MessageBrokers">Message brokers</a>
       </td>
       <td>
@@ -92,6 +75,46 @@ This repo contains the various system design components info, questions and solu
                 <a href="2_AWSServices/5_MessageBrokerServices/AmazonSNS.md" target="_blank"><img src="https://miro.medium.com/max/720/0*QjKNs9dEShlQ39VI.png" width="150"></a>
                 <a href="5_MessageBrokers/RabbitMQ.md" target="_blank"><img src="https://www.logo.wine/a/logo/RabbitMQ/RabbitMQ-Logo.wine.svg" width="150"></a>
                 <a href="5_MessageBrokers/ActiveMQ.md" target="_blank"><img src="https://cdn.icon-icons.com/icons2/2699/PNG/512/apache_activemq_logo_icon_168628.png" width="150"></a>
+            </div>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <a href="4_MicroServicesSOA/2_ServiceRegistry&Discovery" target="_blank">MicroServices - Service Registry & Discovery</a>
+      </td>
+      <td>
+        <div class="container" style="background:white">
+            <div class="block two first">
+                <a href="4_MicroServicesSOA/2_ServiceRegistry&Discovery/Eureka.md" target="_blank">
+                  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsLVq3RUn8c7AWSr_559ISKEpHkgVn5U3NKg&usqp=CAU" width="150">
+                </a>
+                <a href="2_AWSServices/1_NetworkingAndContentDelivery/2_ApplicationNetworking/AWSCloudMap.md" target="_blank">
+                  <img src="https://landscape.cncf.io/logos/aws-cloud-map.svg" width="150">
+                </a>
+                <a href="10_ClusterCoordinationServices/etcd.md" target="_blank">
+                  <img src="https://cdn.freebiesupply.com/logos/large/2x/etcd-logo-png-transparent.png" width="150">
+                </a>
+                <a href="10_ClusterCoordinationServices/ApacheZookeeper.md" target="_blank">
+                  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Apache_ZooKeeper_logo.svg/1200px-Apache_ZooKeeper_logo.svg.png" width="150">
+                </a>
+            </div>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <a href="3_DatabaseServices/In-Memory-DB">In-Memory Cache/DBs</a>
+      </td>
+      <td>
+        <div class="container" style="background:white">
+            <div class="block two first">
+                <a href="3_DatabaseServices/In-Memory-DB/Redis/Readme.md" target="_blank">
+                  <img src="https://upload.wikimedia.org/wikipedia/en/6/6b/Redis_Logo.svg" width="150">
+                </a>
+                <a href="3_DatabaseServices/In-Memory-DB/AeroSpike.md" target="_blank">
+                  <img src="https://aerospike.com/wp-content/uploads/2021/03/logo-4.png" width="150">
+                </a>
             </div>
         </div>
       </td>
@@ -115,22 +138,22 @@ This repo contains the various system design components info, questions and solu
     </tr>
     <tr>
       <td>
-        <a href="4_MicroServicesSOA/2_ServiceRegistry&Discovery" target="_blank">MicroServices - Service Registry & Discovery</a>
+        <a href="3_DatabaseServices" target="_blank">Databases</a>
       </td>
       <td>
         <div class="container" style="background:white">
             <div class="block two first">
-                <a href="4_MicroServicesSOA/2_ServiceRegistry&Discovery/Eureka.md" target="_blank">
-                  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsLVq3RUn8c7AWSr_559ISKEpHkgVn5U3NKg&usqp=CAU" width="150">
+                <a href="3_DatabaseServices/NoSQL-Databases/WideColumnDB/ApacheCasandra.md" target="_blank">
+                  <img src="https://fontslogo.com/wp-content/uploads/2018/12/Apache-Cassandra-Logo-Font.jpg" width="150">
                 </a>
-                <a href="2_AWSServices/1_NetworkingAndContentDelivery/2_ApplicationNetworking/AWSCloudMap.md" target="_blank">
-                  <img src="https://landscape.cncf.io/logos/aws-cloud-map.svg" width="150">
+                <a href="2_AWSServices/6_DatabaseServices/AmazonDynamoDB/Readme.md">
+                  <img src="https://user-images.githubusercontent.com/6509926/70553550-f033b980-1b40-11ea-9192-759b3b1053b3.png" width="150">
                 </a>
-                <a href="10_ClusterCoordinationServices/etcd.md" target="_blank">
-                  <img src="https://cdn.freebiesupply.com/logos/large/2x/etcd-logo-png-transparent.png" width="150">
+                <a href="3_DatabaseServices/NoSQL-Databases/MongoDB/Readme.md" target="_blank">
+                  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/MongoDB_Logo.svg/2560px-MongoDB_Logo.svg.png" width="150">
                 </a>
-                <a href="10_ClusterCoordinationServices/ApacheZookeeper.md" target="_blank">
-                  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Apache_ZooKeeper_logo.svg/1200px-Apache_ZooKeeper_logo.svg.png" width="150">
+                <a href="3_DatabaseServices/NoSQL-Databases/WideColumnDB/ApacheHBase.md" target="_blank">
+                  <img src="https://hbase.apache.org/images/hbase_logo_with_orca_large.png" width="150">
                 </a>
             </div>
         </div>
@@ -192,31 +215,8 @@ This repo contains the various system design components info, questions and solu
     </tr>
     <tr>
       <td>
-        <a href="3_DatabaseServices/Readme.md" target="_blank">Databases</a>
-      </td>
-      <td>
-        <div class="container" style="background:white">
-            <div class="block two first">
-                <a href="3_DatabaseServices/NoSQL-Databases/WideColumnDB/ApacheCasandra.md" target="_blank">
-                  <img src="https://fontslogo.com/wp-content/uploads/2018/12/Apache-Cassandra-Logo-Font.jpg" width="150">
-                </a>
-                <a href="2_AWSServices/6_DatabaseServices/AmazonDynamoDB/Readme.md">
-                  <img src="https://user-images.githubusercontent.com/6509926/70553550-f033b980-1b40-11ea-9192-759b3b1053b3.png" width="150">
-                </a>
-                <a href="3_DatabaseServices/NoSQL-Databases/MongoDB/Readme.md" target="_blank">
-                  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/MongoDB_Logo.svg/2560px-MongoDB_Logo.svg.png" width="150">
-                </a>
-                <a href="3_DatabaseServices/NoSQL-Databases/WideColumnDB/ApacheHBase.md" target="_blank">
-                  <img src="https://hbase.apache.org/images/hbase_logo_with_orca_large.png" width="150">
-                </a>
-            </div>
-        </div>
-      </td>
-    </tr>
-    <tr>
-      <td>
         <a href="11_FileStorageServicesHDFS" target="_blank">
-          Distributed File Storage Services ( for Files, Images etc.)
+          Distributed File Storage Services (for Files, Images etc.)
         </a>
       </td>
       <td>

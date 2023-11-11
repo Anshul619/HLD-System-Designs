@@ -2,8 +2,6 @@
 - Relational databases store data in rows and columns.
 - Each row contains all the information about one entity and each column contains all the separate data points.
 
-![img.png](../assets/SQL-DifferentDBtypes.drawio.png)
-
 # Most Popular Relational Databases 
 - [Amazon Aurora](../../2_AWSServices/6_DatabaseServices/AmazonRDS/AmazonAurora/Readme.md)
 - Postgres
@@ -13,11 +11,11 @@
 
 # Features
 
-| Feature            | Remarks                                             |
-|--------------------|-----------------------------------------------------|
-| Sharding in SQL DB | [Read more](../Glossaries/PartitioningSharding/PartioningSharding.md)    |
-| SQL Tuning         | [Read more](SQLTuning.md)                           |
-| Indexing           | [Read more](../Glossaries/DataStructuresDB/Indexing/Readme.md) |
+| Feature            | Remarks                                                               |
+|--------------------|-----------------------------------------------------------------------|
+| Sharding in SQL DB | [Read more](../Glossaries/PartitioningSharding/PartioningSharding.md) |
+| SQL Tuning         | [Read more](SQLTuning.md)                                             |
+| Indexing           | [Read more](../Glossaries/DataStructuresDB/Indexing/Readme.md)        |
 
 # Postgres vs MySQL
 

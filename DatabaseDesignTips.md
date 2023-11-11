@@ -1,7 +1,5 @@
 # Database Design Tips | Choosing the Best Database in a System Design
 
-> With modern application design such as [microservice architectures](4_MicroServicesSOA/Readme.md), it is easier to scale and faster to develop applications with a denormalized schema because each service stores and processes data related to a single business function.
-
 ![](3_DatabaseServices/assets/DecideDatabase.drawio.png)
 
 # Key Parameters
@@ -13,11 +11,7 @@
 | Storage Capacity       | How much storage capacity is needed?                                                                                                                           |
 | Performance            | What is the needed throughput and latency?                                                                                                                     |
 
-# Different NoSQL DB types
-
-![](3_DatabaseServices/NoSQL-Databases/NoSQL-DifferentDBtypes.drawio.png)
-
-[Read more](3_DatabaseServices/NoSQL-Databases/Readme.md)
+> With modern application design such as [microservice architectures](4_MicroServicesSOA/Readme.md), it is easier to scale and faster to develop applications with a denormalized schema because each service stores and processes data related to a single business function.
 
 # PACLEC Theorem
 
@@ -25,11 +19,11 @@
 
 [Read more](3_DatabaseServices/Glossaries/PACELCTheorem/Readme.md)
 
-# Other Considerations
+# Other Points
 
-| Point                                                                                                |
 |------------------------------------------------------------------------------------------------------|
 | [SQL vs NoSQL](3_DatabaseServices/SQLvsNoSQL.md)                                                     |
+| [NoSQL DBs](3_DatabaseServices/NoSQL-Databases/Readme.md)                                            |
 | [DynamoDB vs MongoDB vs Casandra](3_DatabaseServices/NoSQL-Databases/DynamoDBVsMongoDBVsCasandra.md) |
 | [Partitioning Key Tip](3_DatabaseServices/Glossaries/PartitioningSharding/PartitionKeyTips.md)       |
 
