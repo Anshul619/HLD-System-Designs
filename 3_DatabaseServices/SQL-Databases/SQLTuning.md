@@ -1,12 +1,13 @@
 # SQL Tuning
 
-| Title                   | Remarks                                                                                                                                                        |
-|-------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Avoid Expensive Joins   | Everytime you do a join, you kill a CPU cycle. Hence minimise joins.<br/>- Badly written queries with bad joins, logic etc. that take a lot of CPU and memory. |
-| :star: Indexing         | [Index the columns](../Glossaries/DataStructuresDB/Indexing/Readme.md), to improve READ queries performance.                                                              |
-| Minimize select columns | Minimize select columns in the SQL Queries.                                                                                                                    |
-| Profile Slow Query logs | Observe [Slow Queries logs](https://severalnines.com/blog/how-identify-mysql-performance-issues-slow-queries/) and find out low performing queries.            |
-| Connection Pooling      | No connection pooling in place, which cause applications to make huge number of connections in an uncontrollable manner.                                       |
+| Title                       | Remarks                                                                                                                                                                    |
+|-----------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Avoid Expensive Joins       | Everytime you do a join, you kill a CPU cycle. Hence minimise joins.<br/>- Badly written queries with bad joins, logic etc. that take a lot of CPU and memory.             |
+| :star: Indexing             | [Index the columns](../Glossaries/DataStructuresDB/Indexing/Readme.md), to improve READ queries performance.                                                               |
+| Minimize select columns     | Minimize select columns in the SQL Queries.                                                                                                                                |
+| Profile Slow Query logs     | Observe [Slow Queries logs](https://severalnines.com/blog/how-identify-mysql-performance-issues-slow-queries/) and find out low performing queries.                        |
+| Connection Pooling          | No connection pooling in place, which cause applications to make huge number of connections in an uncontrollable manner.                                                   |
+| Prevent having JSON columns | Selecting JSON columns degrades SQL query performance. [Read more](https://stackoverflow.com/questions/71086258/query-on-json-jsonb-column-super-slow-can-i-use-an-index). |
 
 # SQL - Which columns should be indexed?
 

@@ -6,13 +6,13 @@
 
 # Supported Services
 
-| Service                                                                                                     |
-|-------------------------------------------------------------------------------------------------------------|
-| [Kafka](../Kafka/Readme.md)                                                             |
+| Service                                                                                                              |
+|----------------------------------------------------------------------------------------------------------------------|
+| [Kafka](../Kafka/Readme.md)                                                                                          |
 | [Amazon Kinesis Data Streams](../../2_AWSServices/5_MessageBrokerServices/AmazonKinesis/AmazonKinesisDataStreams.md) |
-| [Amazon EventBridge](../../2_AWSServices/5_MessageBrokerServices/AmazonEventBridge.md)                 |
-| [Amazon SNS](../../2_AWSServices/5_MessageBrokerServices/AmazonSNS.md)                                 |
-| [Active MQ](../ActiveMQ.md)                                                             |
+| [Amazon EventBridge](../../2_AWSServices/5_MessageBrokerServices/AmazonEventBridge.md)                               |
+| [Amazon SNS](../../2_AWSServices/5_MessageBrokerServices/AmazonSNS.md)                                               |
+| [Active MQ](../ActiveMQ.md)                                                                                          |
 
 # References
 - [Pub/sub pattern](https://docs.aws.amazon.com/prescriptive-guidance/latest/modernization-integrating-microservices/pub-sub.html)

@@ -10,7 +10,7 @@
 | [Rate Limiting](../0_HLDUseCasesProblems/RateLimiterAPI/Readme.md)                                               | App Service/Nodes | Others                                          |
 | [Content Delivery Network (CDN)](CDNs/CDNs.md)                                                                    | App Service/Nodes | Others                                          |
 | [Static Content](CDNs/StaticContentWithCDN.md)                                                                    | App Service/Nodes | Others                                          |
-| :star: [Event Driven Architecture](../4_MicroServicesSOA/EventDrivenArchitecture.md)                              | Message Brokers   | Others                                          |
+| :star: [Event Driven Architecture](../5_MessageBrokers/Glossaries/EventDrivenArchitecture.md)                              | Message Brokers   | Others                                          |
 | :star: [Point to Point Model](../5_MessageBrokers/Glossaries/PointToPointModel.md)                                | Message Brokers   | Others                                          |
 | :star: [Publish Subscriber Model](../5_MessageBrokers/Glossaries/PubSubModel.md)                                  | Message Brokers   | Others                                          |
 | :star: [Indexing](../3_DatabaseServices/Glossaries/DataStructuresDB/Indexing/Readme.md)                                  | Data Stores       | :rocket: [Scalability](Scalability)   |

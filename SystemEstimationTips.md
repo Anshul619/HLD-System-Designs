@@ -3,10 +3,10 @@
 
 # Ball-mark Parameters
 
-| Basis                                                         | Value                                                           | Module                |
+| Basis                                                         | Value                                                           | Category              |
 |---------------------------------------------------------------|-----------------------------------------------------------------|-----------------------|
 | What is the traffic scale that we are looking at? (5 years)   | 500 million users                                               | Traffic               |
-| DAU - What is the DAILY traffic scale that we are looking at? | 1 million active users per day (DAU)                            | Traffic               |
+| DAU - What is the daily traffic scale that we are looking at? | 1 million active users per day (DAU)                            | Traffic               |
 | Max CPU utilization, for autoscaling                          | 80% max CPU utilization                                         | Traffic - AutoScaling |
 | Avg Machine Capacity                                          | 2 VPU, 8GB RAM                                                  | Traffic               |
 | App Server (like Nginx) - Concurrent Active Connections       | 1000 concurrent active connections                              | Traffic               |
@@ -48,12 +48,12 @@
 | Milli-Second  | 1 sec = `10^3 ms` |
 
 # Estimation Tips
-- Round the numbers, to simplify the values
+- Round the numbers to simplify the values.
 
-|                                       | Formula                                                            |
-|---------------------------------------|--------------------------------------------------------------------|
-| No. of shards ( for scaling purpose ) | `Total storage needed for 5 years`/`Per machine storage available` |
-| No. of cache machines                 | `Max Cache at any time`/`Per machine RAM available`                |
+|                                     | Formula                                                            |
+|-------------------------------------|--------------------------------------------------------------------|
+| No. of shards (for scaling purpose) | `Total storage needed for 5 years`/`Per machine storage available` |
+| No. of cache machines               | `Max Cache at any time`/`Per machine RAM available`                |
 
 # Latency Comparison Numbers
 
