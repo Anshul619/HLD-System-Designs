@@ -8,9 +8,7 @@ This repo contains the various system design components info, questions and solu
 - [System Design Tips](SystemDesignTips.md)
 - [System Estimation Tips](SystemEstimationTips.md)
 - [All Comparisons](All-Comparisons.md)
-- [Architecture Patters](ArchitecturePatterns.md)
-- [Benchmarking](Benchmarking.md)
-- [Engineering Blogs](EngineeringBlogs.md)
+- [Architecture Patterns](ArchitecturePatterns.md)
 
 # System Design - Tech Stack
 
@@ -256,6 +254,8 @@ This repo contains the various system design components info, questions and solu
 
 # Other HLD Services
 - [Open Source Contributions](OpenSourceContributions.md)
+- [Benchmarking](Benchmarking.md)
+- [Engineering Blogs](EngineeringBlogs.md)
 - [Observability & Monitoring](12_ObservabilityLogsServices/Readme.md)
 - [Apache Marathon & Mesos](9_ContainerOrchestrationServices/ApacheMarathon&Mesos.md)
 - [Apache Yarn](9_ContainerOrchestrationServices/ApacheYarn.md)
