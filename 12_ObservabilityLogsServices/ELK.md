@@ -8,13 +8,14 @@
 
 ![](https://www.guru99.com/images/2/elasticsearch-interview-questions-2.png)
 
-# What are the reason for using ELK stack?
-- ELK works best when logs from various Apps of an enterprise converge into a single ELK instance
-- It provides amazing insights for this single instance and also eliminates the need to log into a hundred different log data sources. 
-- Rapid on-premise installation 
-- Easy to deploy Scales vertically and horizontally 
-- Elastic offers a host of language clients, which includes Ruby. Python. PHP, Perl, .NET, Java, and JavaScript, and more 
-- Availability of libraries for different programming and scripting language
+# Features
+
+| Feature                    | Remarks                                                                                                                                                                                                                                     |
+|----------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Logs Aggregation           | ELK works best when logs from various Apps of an enterprise converge into a single ELK instance.<br/>- It provides amazing insights for this single instance and also eliminates the need to log into a hundred different log data sources. |
+| Installation               | Rapid on-premise installation                                                                                                                                                                                                               |
+| Scalability                | Easy to deploy Scales vertically and horizontally                                                                                                                                                                                           |
+| Supported Client Libraries | Elastic offers a host of language clients, which includes Ruby. Python. PHP, Perl, .NET, Java, and JavaScript, and more                                                                                                                     |
 
 # :star: Real world use cases of ELK
 
