@@ -22,7 +22,7 @@
 
 | Data Structure                                           | Service                                                                                                                        |
 |----------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------|
-| [B-Tree](BTree.md)                                       | [SQL-DBs like Postgres, MySQL etc.](../../../SQL-Databases/Readme.md)<br/>-www [MongoDB](../../../NoSQL-Databases/MongoDB/Readme.md) |
+| [B-Tree](BTree.md)                                       | [SQL-DBs like Postgres, MySQL etc.](../../../SQL-Databases/Readme.md)<br/>-www [MongoDB](../../../NoSQL-Databases/DocumentDB/MongoDB/Readme.md) |
 | [MemTables and Bloom Filters in LMS-Tree](../LSMTree.md) | [NoSQL-DBs like Casandra, HBase](../../../NoSQL-Databases/Readme.md)                                                              |
 
 # Types of Indexes

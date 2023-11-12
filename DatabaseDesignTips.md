@@ -13,20 +13,29 @@
 
 > With modern application design such as [microservice architectures](4_MicroServicesSOA/Readme.md), it is easier to scale and faster to develop applications with a denormalized schema because each service stores and processes data related to a single business function.
 
+# Key Considerations
+
+| Title                                                                                                | Category   | Remarks                                                                                                                                                                                                                                                 |
+|------------------------------------------------------------------------------------------------------|------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| [SQL vs NoSQL](3_DatabaseServices/SQLvsNoSQL.md)                                                     | Comparison |                                                                                                                                                                                                                                                         |
+| [DynamoDB vs MongoDB vs Casandra](3_DatabaseServices/NoSQL-Databases/DynamoDBVsMongoDBVsCasandra.md) | Comparison |                                                                                                                                                                                                                                                         |
+| [NoSQL DB Types](3_DatabaseServices/NoSQL-Databases/Readme.md)                                       | NoSQL DB   |                                                                                                                                                                                                                                                         |
+| [Sharding of the database](3_DatabaseServices/Glossaries/PartitioningSharding/Readme.md)             | Sharding   | To scale the data store horizontally (& improve write scalability), shard the databases using [consistent hashing technique](3_DatabaseServices/Glossaries/PartitioningSharding/ConsistentHashing.md).                                                  |
+| [Partitioning Key Tip](3_DatabaseServices/Glossaries/PartitioningSharding/PartitionKeyTips.md)       | Sharding   | Decide partition key carefully (to prevent hot partition problem).                                                                                                                                                                                      |
+| [SQL Tunning](3_DatabaseServices/SQL-Databases/SQLTuning.md)                                         | SQL DB     | Tune queries, to improve performance of SQL Queries.                                                                                                                                                                                                    |
+| SQL - Read scalability                                                                               | SQL DB     | To improve read scalability of SQL queries, use [Redis](3_DatabaseServices/In-Memory-DB/Redis) or [single-leader technique](3_DatabaseServices/Glossaries/Consistency&Replication/SingleLeaderReplication.md) (in case dynamic input params like time). |
+
 # PACLEC Theorem
 
 ![](3_DatabaseServices/Glossaries/PACELCTheorem/PACELC_Diagram.drawio.png)
 
 [Read more](3_DatabaseServices/Glossaries/PACELCTheorem/Readme.md)
 
-# Other Points
+# ACID Transactions
 
-| Title                                                                                                |
-|------------------------------------------------------------------------------------------------------|
-| [SQL vs NoSQL](3_DatabaseServices/SQLvsNoSQL.md)                                                     |
-| [NoSQL DBs](3_DatabaseServices/NoSQL-Databases/Readme.md)                                            |
-| [DynamoDB vs MongoDB vs Casandra](3_DatabaseServices/NoSQL-Databases/DynamoDBVsMongoDBVsCasandra.md) |
-| [Partitioning Key Tip](3_DatabaseServices/Glossaries/PartitioningSharding/PartitionKeyTips.md)       |
+![](3_DatabaseServices/Glossaries/ACIDTransactions/assets/ACID_Property_DBMS.drawio.png)
+
+[Read more](3_DatabaseServices/Glossaries/ACIDTransactions/Readme.md)
 
 # References
 - :star: [AWS re:Invent 2021 - Which NoSQL database is right for you?](https://www.youtube.com/watch?v=ivBaro-8PhI)

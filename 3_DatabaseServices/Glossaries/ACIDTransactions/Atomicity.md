@@ -14,9 +14,9 @@ It involves the following two operations.
 
 ![img.png](assets/2_phase_commit.png)
 
-# Examples
+# Examples Use Cases
 
-| Example                                                         |
-|-----------------------------------------------------------------|
+| Use Case                                                    |
+|-------------------------------------------------------------|
 | [Redis Transaction Lock](../../In-Memory-DB/Redis/Readme.md) |
 

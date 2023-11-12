@@ -13,7 +13,7 @@
 
 | Feature            | Remarks                                                               |
 |--------------------|-----------------------------------------------------------------------|
-| Sharding in SQL DB | [Read more](../Glossaries/PartitioningSharding/PartioningSharding.md) |
+| Sharding in SQL DB | [Read more](../Glossaries/PartitioningSharding/Readme.md) |
 | SQL Tuning         | [Read more](SQLTuning.md)                                             |
 | Indexing           | [Read more](../Glossaries/DataStructuresDB/Indexing/Readme.md)        |
 

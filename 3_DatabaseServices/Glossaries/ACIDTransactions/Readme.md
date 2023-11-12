@@ -2,7 +2,8 @@
 
 ![img.png](assets/ACID_Property_DBMS.drawio.png)
 
-# [Atomicity](Atomicity.md)
+# Atomicity
+- [Read more](Atomicity.md)
 
 # Consistency
 - [Consistency (or Correctness)](https://www.geeksforgeeks.org/acid-properties-in-dbms/) in database systems refers to the requirement that any given database transaction [must change affected data only](https://en.wikipedia.org/wiki/Consistency_(database_systems)) in allowed ways.
@@ -15,7 +16,8 @@
 - Changes occurring in a particular transaction will not be visible to any other transaction until that particular change in that transaction is written to memory or has been committed.
 - Generally, [concurrency control or transaction locks](https://medium.com/inspiredbrilliance/what-are-database-locks-1aff9117c290) are helpful to achieve isolation.
 
-# [Durability](Durability.md)
+# Durability
+- [Read more](Durability.md)
 
 # References
 - [Martin Kleppmann | Kafka Summit London 2019 Keynote | Is Kafka a Database?](https://youtu.be/BuE6JvQE_CY)

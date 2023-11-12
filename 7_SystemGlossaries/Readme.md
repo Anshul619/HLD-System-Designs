@@ -22,7 +22,7 @@
 | [Atomicity](../3_DatabaseServices/Glossaries/ACIDTransactions/Atomicity.md)                                   | Data Stores       | Others                                          |
 | [Durability](../3_DatabaseServices/Glossaries/ACIDTransactions/Durability.md)                                 | Data Stores       | Others                                          |
 | [Append Only Data Structure](../3_DatabaseServices/Glossaries/DataStructuresDB/AppendOnlyProperty.md)                    | Data Stores       | :rocket: [Scalability](Scalability)   |
-| [Partitioning/Sharding](../3_DatabaseServices/Glossaries/PartitioningSharding/PartioningSharding.md)                               | Data Stores       | Others                                          |
+| [Partitioning/Sharding](../3_DatabaseServices/Glossaries/PartitioningSharding/Readme.md)                               | Data Stores       | Others                                          |
 | [Storage Options](../11_FileStorageServicesHDFS/StorageOptions.md)                                         | Data Stores       | :rocket: [Scalability](Scalability)   |
 | [OLTP vs OTAP](../3_DatabaseServices/Glossaries/OLTPvsOTAP.md)                                                | Data Stores       | Others                                          |
 | [Change Data Capture](../3_DatabaseServices/Glossaries/ChangeDataCapture.md)                                  | Data Stores       | Others                                          |

@@ -12,6 +12,7 @@
 | [REST vs GraphQL vs gRPC](8_APITechOptions/Readme.md)                                                      | [API Tech Options](8_APITechOptions/Readme.md)            |
 | [AWS - All Comparisons](2_AWSServices/AWS-All-Comparisons.md)                                              |                                                           |
 | [Fault Tolerance vs High Availability](7_SystemGlossaries/Reliability/FaultToleranceVsHighAvailability.md) |                                                           |
-| [Stateful vs Stateless](7_SystemGlossaries/StatefulVsStateless.md)                                         |                                                           |
+| [Stateful vs Stateless](7_SystemGlossaries/StatefulVsStateless.md)                                         | [MicroServices](4_MicroServicesSOA)                       |
 | [Event Driven vs Request Response Pattern](4_MicroServicesSOA/EventDrivenVsRequestResponsePattern.md)      | [MicroServices](4_MicroServicesSOA)                       |
 | [Message Broker vs DB](5_MessageBrokers/MessageBrokerVsDB.md)                                              | [Message Broker Services](5_MessageBrokers)               |
+| [OLTP vs OLAP](3_DatabaseServices/Glossaries/OLTPvsOTAP.md)                                                | [Database Services](3_DatabaseServices)                   |

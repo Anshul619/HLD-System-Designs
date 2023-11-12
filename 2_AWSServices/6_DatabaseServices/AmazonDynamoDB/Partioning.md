@@ -1,5 +1,5 @@
 # Partitions and data distribution
-- [Amazon DynamoDB](https://aws.amazon.com/blogs/database/choosing-the-right-dynamodb-partition-key/) scales [horizontally (using data partition/sharding)](../../../3_DatabaseServices/Glossaries/PartitioningSharding/PartioningSharding.md) and can seamlessly scale a single table over hundreds of servers.
+- [Amazon DynamoDB](https://aws.amazon.com/blogs/database/choosing-the-right-dynamodb-partition-key/) scales [horizontally (using data partition/sharding)](../../../3_DatabaseServices/Glossaries/PartitioningSharding/Readme.md) and can seamlessly scale a single table over hundreds of servers.
 - DynamoDB is [schemaless](https://aws.amazon.com/blogs/database/should-your-dynamodb-table-be-normalized-or-denormalized/): When you create a table in DynamoDB, you specify only the primary key attributes, such as partition key or partition key and sort key. You do not define any other attributes in advance.
 
 ![](assests/dynamodb_partition_key_setup.png)

@@ -13,7 +13,7 @@
 |-------------------------------------------------------------------------------------|--------------------|--------------------|--------------------|--------------------|
 | [DynamoDB](../../../2_AWSServices/6_DatabaseServices/AmazonDynamoDB/Readme.md) |                    | :white_check_mark: | :white_check_mark: | :white_check_mark: |
 | [PostgresSQL](../../SQL-Databases/Readme.md)                                                     | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: |
-| [MongoDB](../../NoSQL-Databases/MongoDB)                                            | :white_check_mark: |                    | :white_check_mark: |                    |
+| [MongoDB](../../NoSQL-Databases/DocumentDB/MongoDB)                                            | :white_check_mark: |                    | :white_check_mark: |                    |
 | [Cassandra](../../NoSQL-Databases/WideColumnDB/ApacheCasandra.md)                                | :white_check_mark: | :white_check_mark: |                    |                    |
 | [HBase](../../NoSQL-Databases/WideColumnDB/ApacheHBase.md)                                       |                    | :white_check_mark: |                    | :white_check_mark: |
 

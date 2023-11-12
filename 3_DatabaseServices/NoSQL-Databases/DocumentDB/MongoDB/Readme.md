@@ -1,14 +1,14 @@
 
 # MongoDB
-- [MongoDB](https://www.mongodb.com/) is better suited for [high write and update throughput operations](../../../7_SystemGlossaries/Scalability/LatencyThroughput.md) without draining CPU resources and/or causing disk I/O issues. 
+- [MongoDB](https://www.mongodb.com/) is better suited for [high write and update throughput operations](../../../../7_SystemGlossaries/Scalability/LatencyThroughput.md) without draining CPU resources and/or causing disk I/O issues. 
 - It organizes data using a doubly linked data structure: documents contain linked lists to one another and to the `BSON-encoded` data behind the scenes.
-- It offers [high scalability, reliability, and performance](../../Glossaries/ScalabilityDB.md).
+- It offers [high scalability, reliability, and performance](../../../Glossaries/ScalabilityDB.md).
 - [MongoDB]() is more suitable to manage NoSQL data requiring create, read, update and delete (CRUD) operations.
 
 ![img.png](assests/MongoDB_JSON.png)
 
 # :star: Real world use cases of MongoDB
-- [Zomato - HLD Design](../../../0_HLDUseCasesProblems/FoodOrderingZomatoSwiggy/Readme.md)
+- [Zomato - HLD Design](../../../../0_HLDUseCasesProblems/FoodOrderingZomatoSwiggy/Readme.md)
 
 # General Use Cases
 
@@ -23,12 +23,12 @@
 | Real-time analytics and AI |
 
 # :star: Casandra vs MongoDB
-- [Read more](../DynamoDBVsMongoDBVsCasandra.md)
+- [Read more](../../DynamoDBVsMongoDBVsCasandra.md)
 
 # MQL (Mongo Query Language)
 - [MongoDB]() has a rich query language called [Mongo Query Language (MQL)](https://www.mongodb.com/developer/products/atlas/getting-started-atlas-mongodb-query-language-mql/). 
 - It supports a wide variety of modern native drivers as well as a shell.
-- MongoDB supports [fully ACID compliant transactions](../../Glossaries/ACIDTransactions/Readme.md).
+- MongoDB supports [fully ACID compliant transactions](../../../Glossaries/ACIDTransactions/Readme.md).
 
 # Book example - JSON-like document
 

@@ -149,7 +149,7 @@ This repo contains the various system design components info, questions and solu
                 <a href="2_AWSServices/6_DatabaseServices/AmazonDynamoDB/Readme.md">
                   <img src="https://user-images.githubusercontent.com/6509926/70553550-f033b980-1b40-11ea-9192-759b3b1053b3.png" width="150">
                 </a>
-                <a href="3_DatabaseServices/NoSQL-Databases/MongoDB/Readme.md" target="_blank">
+                <a href="3_DatabaseServices/NoSQL-Databases/DocumentDB/MongoDB/Readme.md" target="_blank">
                   <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/MongoDB_Logo.svg/2560px-MongoDB_Logo.svg.png" width="150">
                 </a>
                 <a href="3_DatabaseServices/NoSQL-Databases/WideColumnDB/ApacheHBase.md" target="_blank">
