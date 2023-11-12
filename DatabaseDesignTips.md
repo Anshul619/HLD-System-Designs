@@ -21,6 +21,7 @@
 
 # Other Points
 
+| Title                                                                                                |
 |------------------------------------------------------------------------------------------------------|
 | [SQL vs NoSQL](3_DatabaseServices/SQLvsNoSQL.md)                                                     |
 | [NoSQL DBs](3_DatabaseServices/NoSQL-Databases/Readme.md)                                            |

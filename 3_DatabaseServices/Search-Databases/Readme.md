@@ -10,12 +10,12 @@
 
 # Various Search-DBs
 
-| Service                                                          |
-|------------------------------------------------------------------|
-| [Elastic Search](ElasticSearch/Readme.md)                        |
-| [Apache Solr](ApacheSolr.md)                                     |
+| Service                                                                     |
+|-----------------------------------------------------------------------------|
+| [Elastic Search](ElasticSearch/Readme.md)                                   |
+| [Apache Solr](ApacheSolr.md)                                                |
 | [New Relic - Logs Analysis](../../12_ObservabilityLogsServices/NewRelic.md) |
-| [MongoDB Atlas Search](MongoAtlasSearch.md)                      |
+| [MongoDB Atlas Search](MongoAtlasSearch.md)                                 |
 
 # :star: Real world usages of Search-DBs
 
