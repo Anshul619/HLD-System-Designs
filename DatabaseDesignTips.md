@@ -2,6 +2,8 @@
 
 ![](3_DatabaseServices/assets/DecideDatabase.drawio.png)
 
+[Read more](https://www.youtube.com/watch?v=cODCpXtPHbQ)
+
 # Key Parameters
 
 | Title                  | Remarks                                                                                                                                                        |
@@ -11,19 +13,18 @@
 | Storage Capacity       | How much storage capacity is needed?                                                                                                                           |
 | Performance            | What is the needed throughput and latency?                                                                                                                     |
 
-> With modern application design such as [microservice architectures](4_MicroServicesSOA/Readme.md), it is easier to scale and faster to develop applications with a denormalized schema because each service stores and processes data related to a single business function.
-
 # Key Considerations
 
-| Title                                                                                                | Category   | Remarks                                                                                                                                                                                                                                                 |
-|------------------------------------------------------------------------------------------------------|------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [SQL vs NoSQL](3_DatabaseServices/SQLvsNoSQL.md)                                                     | Comparison |                                                                                                                                                                                                                                                         |
-| [DynamoDB vs MongoDB vs Casandra](3_DatabaseServices/NoSQL-Databases/DynamoDBVsMongoDBVsCasandra.md) | Comparison |                                                                                                                                                                                                                                                         |
-| [NoSQL DB Types](3_DatabaseServices/NoSQL-Databases/Readme.md)                                       | NoSQL DB   |                                                                                                                                                                                                                                                         |
-| [Sharding of the database](3_DatabaseServices/Glossaries/PartitioningSharding/Readme.md)             | Sharding   | To scale the data store horizontally (& improve write scalability), shard the databases using [consistent hashing technique](3_DatabaseServices/Glossaries/PartitioningSharding/ConsistentHashing.md).                                                  |
-| [Partitioning Key Tip](3_DatabaseServices/Glossaries/PartitioningSharding/PartitionKeyTips.md)       | Sharding   | Decide partition key carefully (to prevent hot partition problem).                                                                                                                                                                                      |
-| [SQL Tunning](3_DatabaseServices/SQL-Databases/SQLTuning.md)                                         | SQL DB     | Tune queries, to improve performance of SQL Queries.                                                                                                                                                                                                    |
-| SQL - Read scalability                                                                               | SQL DB     | To improve read scalability of SQL queries, use [Redis](3_DatabaseServices/In-Memory-DB/Redis) or [single-leader technique](3_DatabaseServices/Glossaries/Consistency&Replication/SingleLeaderReplication.md) (in case dynamic input params like time). |
+| Title                                                                                                | Category      | Remarks                                                                                                                                                                                                                                                                      |
+|------------------------------------------------------------------------------------------------------|---------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| [SQL vs NoSQL](3_DatabaseServices/SQLvsNoSQL.md)                                                     | Comparison    |                                                                                                                                                                                                                                                                              |
+| [DynamoDB vs MongoDB vs Casandra](3_DatabaseServices/NoSQL-Databases/DynamoDBVsMongoDBVsCasandra.md) | Comparison    |                                                                                                                                                                                                                                                                              |
+| [NoSQL DB Types](3_DatabaseServices/NoSQL-Databases/Readme.md)                                       | NoSQL DB      |                                                                                                                                                                                                                                                                              |
+| [Sharding of the database](3_DatabaseServices/Glossaries/PartitioningSharding/Readme.md)             | Sharding      | To scale the data store horizontally (& improve write scalability), shard the databases using [consistent hashing technique](3_DatabaseServices/Glossaries/PartitioningSharding/ConsistentHashing.md).                                                                       |
+| [Partitioning Key Tip](3_DatabaseServices/Glossaries/PartitioningSharding/PartitionKeyTips.md)       | Sharding      | Decide partition key carefully (to prevent hot partition problem).                                                                                                                                                                                                           |
+| [SQL Tunning](3_DatabaseServices/SQL-Databases/SQLTuning.md)                                         | SQL DB        | Tune queries, to improve performance of SQL Queries.                                                                                                                                                                                                                         |
+| SQL - Read scalability                                                                               | SQL DB        | To improve read scalability of SQL queries, use [Redis](3_DatabaseServices/In-Memory-DB/Redis) or [single-leader technique](3_DatabaseServices/Glossaries/Consistency&Replication/SingleLeaderReplication.md) (in case dynamic input params like time).                      |
+| Microservices - Purpose built DB for each microservice                                               | Microservices | With modern application design such as [microservice architectures](4_MicroServicesSOA/Readme.md), it is easier to scale and faster to develop applications with a denormalized schema because each service stores and processes data related to a single business function. |
 
 # PACLEC Theorem
 
@@ -39,7 +40,6 @@
 
 # References
 - :star: [AWS re:Invent 2021 - Which NoSQL database is right for you?](https://www.youtube.com/watch?v=ivBaro-8PhI)
-- :star: [Database Design Tips | Choosing the Best Database in a System Design Interview](https://www.youtube.com/watch?v=cODCpXtPHbQ)
 - [How To Choose The Right Database?](https://www.youtube.com/watch?v=kkeFE6iRfMM)
 - [AWS re:Invent 2022 - From RDBMS to NoSQL (PRT314)](https://www.youtube.com/watch?v=eEENrNKxCdw)
 - [Databases on AWS: The Right Tool for the Right Job](https://www.youtube.com/watch?v=WE8N5BU5MeI&t=3710s)

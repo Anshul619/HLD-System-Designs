@@ -7,3 +7,6 @@
 | [Indexing](../3_DatabaseServices/Glossaries/DataStructuresDB/Indexing/Readme.md) | :x: Not supported                                                                                 | :white_check_mark: Support Primary & Secondary indexes for fast search.                                                       |
 | Querying                                                                         | :x: Not supported                                                                                 | :white_check_mark: Supported                                                                                                  |
 | Data Mutability                                                                  | Data is immutable in message brokers i.e. it can't be changed once inserted.                      | Data is mutable i.e. data can be changed.                                                                                     |
+
+# Read more
+- [Martin Kleppmann | Kafka Summit London 2019 Keynote | Is Kafka a Database?](https://youtu.be/BuE6JvQE_CY)
