@@ -13,6 +13,8 @@
 | Storage Capacity       | How much storage capacity is needed?                                                                                                                           |
 | Performance            | What is the needed throughput and latency?                                                                                                                     |
 
+[Read more](https://medium.com/wix-engineering/how-to-choose-the-right-database-for-your-service-97b1670c5632)
+
 # Key Considerations
 
 | Title                                                                                                | Category      | Remarks                                                                                                                                                                                                                                                                      |
