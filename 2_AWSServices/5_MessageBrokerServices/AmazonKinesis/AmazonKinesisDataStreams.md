@@ -34,3 +34,11 @@
 # AWS - Stream-Processing Using Glue & S3
     
 ![](../../../0_HLDUseCasesProblems/AWS_ModernDataArchitecture/AWS-Data-Architecture-ETL-OLTP-OLAP-DataLake.png)
+
+# Terminologies Comparison with Kafka
+
+| Purpose                           | :star: [Kafka](../../../5_MessageBrokers/Kafka/Readme.md) | [Amazon Kinesis Data Streams]() |
+|-----------------------------------|-----------------------------------------------------------|---------------------------------|
+| Categorize events streams         | Topics                                                    | Streams                         |
+| Increase scalability of streaming | Partitions                                                | Shards                          |
+| To sequence the records           | Partition Key                                             | Partition Key/ID                |

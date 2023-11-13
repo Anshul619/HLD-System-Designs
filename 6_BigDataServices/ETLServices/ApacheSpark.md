@@ -31,3 +31,4 @@
 # References
 - [Top Spark Interview Questions](https://www.interviewbit.com/spark-interview-questions/)
 - [Spark vs Hadoop MapReduce](https://www.integrate.io/blog/apache-spark-vs-hadoop-mapreduce/)
+- [Playing with 80 Million Amazon Product Review Ratings Using Apache Spark](https://minimaxir.com/2017/01/amazon-spark/)

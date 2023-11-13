@@ -16,8 +16,8 @@ Every definition of [serverless](https://aws.amazon.com/serverless/) mentions th
 | [AWS Step Functions](3_ComputeServices/AWSStepFunctions.md)                                      | Compute             |                                                                                 |
 | [Amazon DynamoDB](6_DatabaseServices/AmazonDynamoDB/Readme.md)                                   | Database            | [DynamoDB - Capacity Modes](6_DatabaseServices/AmazonDynamoDB/CapacityModes.md) |
 | [Amazon Aurora](6_DatabaseServices/AmazonRDS/AmazonAurora/Readme.md)                             | Database            |                                                                                 |
-| [AWS Batch](10_BigDataServices/ETLServices/BatchProcessing/AWSBatch.md)                        | Big Data Processing |                                                                                 |
-| [AWS Glue](10_BigDataServices/ETLServices/StreamProcessing/AWSGlue.md)                         | Big Data Processing |                                                                                 |
+| [AWS Batch](10_BigDataServices/ETLServices/BatchProcessing/AWSBatch.md)                          | Big Data Processing |                                                                                 |
+| [AWS Glue](10_BigDataServices/ETLServices/StreamProcessing/AWSGlue.md)                           | Big Data Processing |                                                                                 |
 | [API Gateway](1_NetworkingAndContentDelivery/2_ApplicationNetworking/AmazonAPIGateway/Readme.md) | API Gateway         |                                                                                 |
 | [Amazon SQS](5_MessageBrokerServices/AmazonSQS/Readme.md)                                        | Message Broker      |                                                                                 |
 
@@ -43,19 +43,19 @@ Every definition of [serverless](https://aws.amazon.com/serverless/) mentions th
 | Cost                    | The cost of hiring backend infrastructure engineers goes down, along with operational costs.                                                                                                    |
 | Customer obsession      | Abstraction from servers allows companies to dedicate more time and resources to developing and improving customer experience.                                                                  |
 | Startup friendly        | The serverless architecture pay-as-you-go model allows you to build an environment nearly for free and ease into the market without dealing with huge bills for minimum traffic.                |
-| Example AWS Services    | [Amazon Aurora Serverless](6_DatabaseServices/AmazonRDS/AmazonAurora/AuroraServerless.md)<br/>- [Amazon DynamoDB](6_DatabaseServices/AmazonDynamoDB/Readme.md)                                  |
+| Example AWS Services    | [Amazon Aurora Serverless](6_DatabaseServices/AmazonRDS/AmazonAurora/AuroraServerless.md), [Amazon DynamoDB](6_DatabaseServices/AmazonDynamoDB/Readme.md) etc.                                  |
 
 # Benefits of a server-based architecture
 
-| Benefit                    | Description                                                                                                                                                                                       |
-|----------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Predictive tasks           | For tasks that use constant or predictive compute, it may be more cost-effective to use server-based billing.                                                                                     |
-| Testing and debugging      | Debugging is less complicated because there is visibility into backend processes and the application is not broken up into separate, smaller functions.                                           |
+| Benefit                    | Description                                                                                                                                                                                             |
+|----------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Predictive tasks           | For tasks that use constant or predictive compute, it may be more cost-effective to use server-based billing.                                                                                           |
+| Testing and debugging      | Debugging is less complicated because there is visibility into backend processes and the application is not broken up into separate, smaller functions.                                                 |
 | Fewer units of integration | Serverless architectures have lots of smaller components than with server-based architectures. <br/>- This requires extra time to go into organizing the functions so they work in line with your data. |
-| Overall control            | The company owns and manages the infrastructure, which provides full control over all aspects of the application.                                                                                 |
-| Compliance and security    | Having full control over the infrastructure allows for full visibility, which may be required for compliance and security standards.                                                              |
-| Legacy applications        | Existing applications may not have the flexibility of decoupling individual parts and may be better suited to migrate to a server-based architecture.                                             |
-| Example AWS Services       | [Amazon RDS](6_DatabaseServices/AmazonRDS/Readme.md)<br/>- [Amazon EC2](3_ComputeServices/AmazonEC2/Readme.md)                                                                                    |
+| Overall control            | The company owns and manages the infrastructure, which provides full control over all aspects of the application.                                                                                       |
+| Compliance and security    | Having full control over the infrastructure allows for full visibility, which may be required for compliance and security standards.                                                                    |
+| Legacy applications        | Existing applications may not have the flexibility of decoupling individual parts and may be better suited to migrate to a server-based architecture.                                                   |
+| Example AWS Services       | [Amazon RDS](6_DatabaseServices/AmazonRDS/Readme.md), [Amazon EC2](3_ComputeServices/AmazonEC2/Readme.md) etc.                                                                                          |
 
 # References
 - [Building well-architected serverless applications: Optimizing application costs](https://aws.amazon.com/blogs/compute/building-well-architected-serverless-applications-optimizing-application-costs/)
