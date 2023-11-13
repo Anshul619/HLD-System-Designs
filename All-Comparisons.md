@@ -10,7 +10,7 @@
 | [DynamoDB vs MongoDB vs Casandra](3_DatabaseServices/NoSQL-Databases/DynamoDBVsMongoDBVsCasandra.md)                  | [Database Services](3_DatabaseServices)                   |
 | [Redis vs MemCache](3_DatabaseServices/In-Memory-DB/RedisVsMemcache.md)                                               | [Database Services](3_DatabaseServices)                   |
 | [OLTP vs OLAP](3_DatabaseServices/Glossaries/OLTPvsOTAP.md)                                                           | [Database Services](3_DatabaseServices)                   |
-| [Data Lake vs Data Warehouse](6_BigDataServices/Glossaries/DataStorage/DataLakeVsDataWarehouses.md)                   | [Database Services](3_DatabaseServices)                   |
+| [Data Warehouse vs Data Lake](6_BigDataServices/StorageDBs/Glossaries/DataWarehousesVsLake.md)                        | [Database Services](3_DatabaseServices)                   |
 | [Fault Tolerance vs High Availability](7_SystemGlossaries/Reliability/FaultToleranceVsHighAvailability.md)            | [Database Services](3_DatabaseServices)                   |
 | [Strong vs Semi vs Eventual Consistency/Replication](3_DatabaseServices/Glossaries/Consistency&Replication/Readme.md) | [Database Services](3_DatabaseServices)                   |
 | [Amazon S3 vs Apache HDFS](11_FileStorageServicesHDFS/HDFSVsS3.md)                                                    | [File Storage Services](11_FileStorageServicesHDFS)       |

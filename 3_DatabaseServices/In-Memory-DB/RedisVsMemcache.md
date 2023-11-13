@@ -10,7 +10,7 @@
 | Scalability                                              | :+1: Horizontally        | :-1: Vertically                    |
 | Supported Data-types                                     | :+1: Multiple datatypes  | :-1: String datatype only          |
 
-- [Read more](https://www.devdude.com/memcached-vs-redis/))
+[Read more](https://www.devdude.com/memcached-vs-redis/))
 
 # References
 - [Comparing Redis and Memcached](https://aws.amazon.com/elasticache/redis-vs-memcached/)

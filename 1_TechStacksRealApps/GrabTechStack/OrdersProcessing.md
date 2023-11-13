@@ -22,8 +22,8 @@
 | Update an order                                              | Write      | OLTP/Transactional                                                                           |
 | Get order by id                                              | Read       | OLTP/Transactional                                                                           |
 | Get ongoing orders by passenger id.                          | Read       | OLTP/Transactional                                                                           |
-| Get historical orders by various conditions.                 | Read       | [OLAP/Analytical](../../6_BigDataServices/Glossaries/DataStorage/DataWarehouses.md) |
-| Get order statistics (for example, get the number of orders) | Read       | [OLAP/Analytical](../../6_BigDataServices/Glossaries/DataStorage/DataWarehouses.md) |
+| Get historical orders by various conditions.                 | Read       | [OLAP/Analytical](../../6_BigDataServices/StorageDBs/Glossaries/DataWarehouses.md) |
+| Get order statistics (for example, get the number of orders) | Read       | [OLAP/Analytical](../../6_BigDataServices/StorageDBs/Glossaries/DataWarehouses.md) |
 
 # OLTP database - DynamoDB
 - The retention period of our [DynamoDB data](../../2_AWSServices/6_DatabaseServices/AmazonDynamoDB/Readme.md) is three months.

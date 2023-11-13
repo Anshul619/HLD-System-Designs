@@ -1,7 +1,8 @@
-# Choosing the Right Partition Key
-- [Read more](https://aws.amazon.com/blogs/database/choosing-the-right-dynamodb-partition-key/)
+# Partitioning Key Tips
 
 ![](https://d2908q01vomqb2.cloudfront.net/887309d048beef83ad3eabf2a79a64a389ab1c9f/2018/09/10/dynamodb-partition-key-1.gif)
+
+[Read more](https://aws.amazon.com/blogs/database/choosing-the-right-dynamodb-partition-key/)
 
 # Recommendations for partition keys
 
@@ -11,7 +12,7 @@
 | Use composite attributes        | Try to combine more than one attribute to form a unique key, if that meets your access pattern. <br/>- For example, consider an orders table with `customerid#productid#countrycode` as the partition key and `order_date` as the sort key, where the symbol # is used to split different field.       |
 | Add random numbers or digits    | A [randomizing strategy](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/bp-partition-key-sharding.html) in partition key, can greatly improve write throughput. But it’s difficult to read a specific item because you don’t know which suffix value was used when writing the item. |
 | Keep related data together      | Instead of distributing related data items across multiple tables, you should keep related items in your NoSQL system as close together as possible.                                                                                                                                                   |
-| Cache the popular items         | Cache the popular items when there is a high volume of read traffic using [Redis](../../In-Memory-DB/Redis/Readme.md) or [Amazon DynamoDB Accelerator (DAX)](../../../2_AWSServices/6_DatabaseServices/AmazonDynamoDB/DynamoDBAccelerator.md)                                                                       |
+| Cache the popular items         | Cache the popular items when there is a high volume of read traffic using [Redis](../../In-Memory-DB/Redis/Readme.md) or [Amazon DynamoDB Accelerator (DAX)](../../../2_AWSServices/6_DatabaseServices/AmazonDynamoDB/DynamoDBAccelerator.md).                                                         |
 
 # Anti-patterns for partition keys
 

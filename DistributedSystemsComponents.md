@@ -22,7 +22,7 @@
 | :star: [Replication](3_DatabaseServices/Glossaries/Consistency&Replication/Replication.md)                | Databases         | :handshake: [Reliability](7_SystemGlossaries/Reliability) |
 | :star: [Consistency Patterns](3_DatabaseServices/Glossaries/Consistency&Replication/Readme.md)            | Databases         | :handshake: [Reliability](7_SystemGlossaries/Reliability) |
 | [Data Structures in DB](3_DatabaseServices/Glossaries/DataStructuresDB/Readme.md)                         | Databases         | :rocket: [Scalability](7_SystemGlossaries/Scalability)    |
-| [Partitioning/Sharding](3_DatabaseServices/Glossaries/PartitioningSharding/Readme.md)                     | Databases         | Others                                                    |
+| [Partitioning/Sharding](3_DatabaseServices/Glossaries/PartitioningSharding/Readme.md)                     | Databases         | :rocket: [Scalability](7_SystemGlossaries/Scalability)                                                    |
 | [Storage Options](11_FileStorageServicesHDFS/StorageOptions.md)                                           | Databases         | :rocket: [Scalability](7_SystemGlossaries/Scalability)    |
 | [Change Data Capture](3_DatabaseServices/Glossaries/ChangeDataCapture.md)                                 | Databases         | Others                                                    |
 

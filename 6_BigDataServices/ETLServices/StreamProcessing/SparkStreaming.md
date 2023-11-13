@@ -6,4 +6,4 @@
     - They are internally nothing but a sequence of multiple RDDs.
     - The Spark application does the task of processing these RDDs using various Spark APIs and the results of this processing are again returned as batches.
 
-![img.png](../assets/apache_spark_spark_streaming.png)
+![img.png](assets/apache_spark_spark_streaming.png)
