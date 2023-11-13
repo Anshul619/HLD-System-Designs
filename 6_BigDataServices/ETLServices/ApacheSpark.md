@@ -16,7 +16,7 @@
 
 # Tech Stack
 
-![img.png](https://www.altexsoft.com/media/2021/06/word-image-14.png)
+![](https://www.altexsoft.com/media/2021/06/word-image-14.png)
 
 # Data Sources
 - [Kafka](../../5_MessageBrokers/Kafka/Readme.md)

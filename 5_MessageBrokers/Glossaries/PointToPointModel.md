@@ -2,7 +2,7 @@
 - Once the message is delivered to the one consumer, it would be removed from Queue.
 - The main goal is to distribute messages individually and promptly, ensuring that work is parallelized equitably and messages are handled roughly in the order they came in the queue.
 
-![](assets/Traditional-Message-Patterns.drawio.png)
+![](Message-Patterns.drawio.png)
 
 # Types of messaging
 

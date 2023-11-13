@@ -8,4 +8,4 @@
 | Redundancy | Higher redundancy.   |                   |
 | Cost       | Higher cost.         |                   |
 
-![img.png](../assets/ha_vs_fault_tolerant.png)
+![img.png](assets/ha_vs_fault_tolerant.png)

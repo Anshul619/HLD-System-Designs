@@ -1,6 +1,6 @@
 # Database Design Tips | Choosing the Best Database in a System Design
 
-![](3_DatabaseServices/assets/DecideDatabase.drawio.png)
+![](3_DatabaseServices/DecideDatabase.drawio.png)
 
 [Read more](https://www.youtube.com/watch?v=cODCpXtPHbQ)
 
@@ -19,7 +19,7 @@
 
 | Title                                                                                                | Category      | Remarks                                                                                                                                                                                                                                                                      |
 |------------------------------------------------------------------------------------------------------|---------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [SQL vs NoSQL](3_DatabaseServices/SQLvsNoSQL.md)                                                     | Comparison    |                                                                                                                                                                                                                                                                              |
+| [SQL vs NoSQL](3_DatabaseServices/SQLvsNoSQL/Readme.md)                                                     | Comparison    |                                                                                                                                                                                                                                                                              |
 | [DynamoDB vs MongoDB vs Casandra](3_DatabaseServices/NoSQL-Databases/DynamoDBVsMongoDBVsCasandra.md) | Comparison    |                                                                                                                                                                                                                                                                              |
 | [NoSQL DB Types](3_DatabaseServices/NoSQL-Databases/Readme.md)                                       | NoSQL DB      |                                                                                                                                                                                                                                                                              |
 | [Sharding of the database](3_DatabaseServices/Glossaries/PartitioningSharding/Readme.md)             | Sharding      | To scale the data store horizontally (& improve write scalability), shard the databases using [consistent hashing technique](3_DatabaseServices/Glossaries/PartitioningSharding/ConsistentHashing.md).                                                                       |

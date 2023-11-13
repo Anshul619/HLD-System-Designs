@@ -5,8 +5,6 @@
 - Using the list of requirements for all tasks/services, Orchestrator can bin-pack the tasks over the machines in an optimal way that [also accounts for failure domains](../7_SystemGlossaries/Reliability/FaultTolerance.md).
 
 # Benefits 
-
-There are a lot of benefits with Container Orchestration
 - How many resources are still available on the different machines?
 - When to schedule the next container?
 - If the docker container is crashed and not running anymore? 
@@ -18,19 +16,18 @@ If you’re trying to manage your compute at a large scale, you must know the fo
 - What happens if your instance fails?
 - How to monitor deployments of your containers?
 
-This coordination is handled by a container orchestration service. 
-- AWS offers two container orchestration services – [Amazon Elastic Container Service (ECS)](../2_AWSServices/4_ContainerOrchestrationServices/AmazonECS/Readme.md) and [Amazon Elastic Kubernetes Service (EKS)](../2_AWSServices/4_ContainerOrchestrationServices/AmazonEKS.md).
+This coordination is handled by a [container orchestration services](). 
 
 # Popular Container Orchestration Services
 
-| Component                                                                                  | Strength                                                                                                      | Type                                                                     |
-|--------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------|
-| :star: [Kubernates](Kubernates.md)                                                         | Can run 10s of thousands of machines, across multiple clusters                                                | [Container Orchestration Service](Readme.md)                             |
-| :star: [Docker](Docker/Readme.md)                                                          | Mostly used containerization                                                                                  | [Container Orchestration Service](Readme.md)                             |
-| :star: [Amazon ECS](../2_AWSServices/4_ContainerOrchestrationServices/AmazonECS/Readme.md) | Flexible, AWS managed service                                                                                 | [Container Orchestration Service](Readme.md)                             |
-| [Apache Marathon & Mesos](ApacheMarathon&Mesos.md)                                         | Can run 10s of thousands of machines, across multiple clusters                                                | [Container Orchestration Service](Readme.md) (with own Containerization) |
+| Component                                                                                  | Strength                                                                                                        | Type                                                                     |
+|--------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------|
+| :star: [Kubernates](Kubernates.md)                                                         | Can run 10s of thousands of machines, across multiple clusters                                                  | [Container Orchestration Service](Readme.md)                             |
+| :star: [Docker](Docker/Readme.md)                                                          | Mostly used containerization                                                                                    | [Container Orchestration Service](Readme.md)                             |
+| :star: [Amazon ECS](../2_AWSServices/4_ContainerOrchestrationServices/AmazonECS/Readme.md) | Flexible, AWS managed service                                                                                   | [Container Orchestration Service](Readme.md)                             |
+| [Apache Marathon & Mesos](ApacheMarathon&Mesos.md)                                         | Can run 10s of thousands of machines, across multiple clusters                                                  | [Container Orchestration Service](Readme.md) (with own Containerization) |
 | [Apache Yarn](ApacheYarn.md)                                                               | Big-Data Processing (part of [Hadoop](../6_BigDataServices/ETLServices/BatchProcessing/ApacheHadoop/Readme.md)) | [Container Orchestration Service](Readme.md)                             |
-| [Red Hat OpenShift](https://www.redhat.com/en/technologies/cloud-computing/openshift)      |                                                                                                               | [Container Orchestration Service](Readme.md)                             |
+| [Red Hat OpenShift](https://www.redhat.com/en/technologies/cloud-computing/openshift)      |                                                                                                                 | [Container Orchestration Service](Readme.md)                             |
 
 # References
 - [Big Misconceptions about Bare Metal, Virtual Machines, and Containers](https://www.youtube.com/watch?v=Jz8Gs4UHTO8)

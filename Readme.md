@@ -3,7 +3,7 @@
 This repo contains the various system design components info, questions and solutions.
 - [HLD Design Problems](0_HLDUseCasesProblems)
 - [Real-world tech stacks](1_TechStacksRealApps)
-- [Key Components of Distributed Systems](7_SystemGlossaries/Readme.md)
+- [Key Components of Distributed Systems](DistributedSystemsComponents.md)
 - [Database Design tips](DatabaseDesignTips.md)
 - [System Design Tips](SystemDesignTips.md)
 - [System Estimation Tips](SystemEstimationTips.md)
@@ -253,12 +253,10 @@ This repo contains the various system design components info, questions and solu
 </table>
 
 # Other HLD Services
-- [Open Source Contributions](OpenSourceContributions.md)
+- [Observability & Monitoring](12_ObservabilityLogsServices/Readme.md)
 - [Benchmarking](Benchmarking.md)
 - [Engineering Blogs](EngineeringBlogs.md)
-- [Observability & Monitoring](12_ObservabilityLogsServices/Readme.md)
-- [Apache Marathon & Mesos](9_ContainerOrchestrationServices/ApacheMarathon&Mesos.md)
-- [Apache Yarn](9_ContainerOrchestrationServices/ApacheYarn.md)
+- [Open Source Contributions](OpenSourceContributions.md)
 
 # Programming & OOP Design & Problems (LLD)
 - :star: [OOP Design](https://github.com/Anshul619/OOPs-Design-Patterns-LLD/blob/main/OOP.md)

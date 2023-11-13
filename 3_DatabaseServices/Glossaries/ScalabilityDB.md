@@ -13,7 +13,7 @@
 
 # Kafka Cluster
 
-![](../../5_MessageBrokers/assets/Kafka-Architecture.drawio.png)
+![](../../5_MessageBrokers/Kafka/assets/Kafka-Architecture.drawio.png)
 
 # ElasticSearch Cluster
 

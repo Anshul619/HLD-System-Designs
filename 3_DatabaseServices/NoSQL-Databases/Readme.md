@@ -8,7 +8,7 @@
 
 # Database design tips - How to choose database in the system design?
 
-![](../assets/DecideDatabase.drawio.png)
+![](../DecideDatabase.drawio.png)
 
 [Read more](../../DatabaseDesignTips.md)
 
