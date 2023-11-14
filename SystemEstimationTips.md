@@ -24,29 +24,29 @@
 
 # Size Calculation (Storage, RAM etc.)
 
-| Base             | Value        | 
-|------------------|--------------|
-| Single Character | `1 byte`     |
-| 1 KB             | `1000 bytes` |
-| 1 MB             | `1000 KB`    |
-| 1 GB             | `1000 MB`    |
-| 1 TB             | `1000 GB`    |
-| 1 PB             | `1000 TB`    |
+| Base             | Value      | 
+|------------------|------------|
+| Single Character | 1 byte     |
+| 1 KB             | 1000 bytes |
+| 1 MB             | 1000 KB    |
+| 1 GB             | 1000 MB    |
+| 1 TB             | 1000 GB    |
+| 1 PB             | 1000 TB    |
 
 # Numbers Calculation (User counts etc.)
 
-| Base      | Value                         | 
-|-----------|-------------------------------|
-| 1 Million | `10^6 units`                  |
-| 1 Billion | `10^3 million` = `10^9 units` |
+| Base      | Value                     | 
+|-----------|---------------------------|
+| 1 Million | 10^6 units                |
+| 1 Billion | 10^3 million = 10^9 units |
 
 # Time Calculation
 
-| Base          | Value             | 
-|---------------|-------------------|
-| Nano-Seconds  | 1 sec = `10^9 ns` |
-| Micro-Seconds | 1 sec = `10^6 us` |
-| Milli-Second  | 1 sec = `10^3 ms` |
+| Base          | Value           | 
+|---------------|-----------------|
+| Nano-Seconds  | 1 sec = 10^9 ns |
+| Micro-Seconds | 1 sec = 10^6 us |
+| Milli-Second  | 1 sec = 10^3 ms |
 
 # Estimation Tips
 - Round the numbers to simplify the values.
@@ -58,19 +58,19 @@
 
 # Latency Comparison Numbers
 
-| Storage                                   | Latency             | Remarks                     |
-|-------------------------------------------|---------------------|-----------------------------|
-| :star: Read 1 MB sequentially from memory | 250 us (`4 GB/sec`) | ~`4 times faster than SSD`  |
-| :star: Read 1 MB sequentially from SSD    | 1 ms (`1 GB/sec`)   | ~`30 times faster than HDD` |
-| Read 1 MB sequentially from HDD           | 30 ms (30 MB/sec)   |                             |
-| Mutex lock/unlock                         | 25 ns               |                             |
-| RAM/Main Memory reference                 | 100 ns              |                             |
-| SSD Reference                             | 50 us               |                             |
-| HDD seek                                  | 10 ms               |                             |
+| Storage                                   | Latency           | Remarks                     |
+|-------------------------------------------|-------------------|-----------------------------|
+| :star: Read 1 MB sequentially from memory | 250 us (4 GB/sec) | ~`4 times faster than SSD`  |
+| :star: Read 1 MB sequentially from SSD    | 1 ms (1 GB/sec)   | ~`30 times faster than HDD` |
+| Read 1 MB sequentially from HDD           | 30 ms (30 MB/sec) |                             |
+| Mutex lock/unlock                         | 25 ns             |                             |
+| RAM/Main Memory reference                 | 100 ns            |                             |
+| SSD Reference                             | 50 us             |                             |
+| HDD seek                                  | 10 ms             |                             |
 
-Handy Metrics:
-- `2,000 round trips per second within a data center`.
-- `6-7 world-wide round trips per second`.
+> Handy Metrics:
+> - 2,000 round trips per second within a data center.
+> - 6-7 world-wide round trips per second.
 
 # References
 - [Back-Of-The-Envelope Estimation / Capacity Planning](https://www.youtube.com/watch?v=UC5xf8FbdJc)
