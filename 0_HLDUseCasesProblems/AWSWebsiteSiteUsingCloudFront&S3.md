@@ -8,7 +8,7 @@
 # Hosting a static website using Amazon S3 & CloudFront
 
 We can use [Amazon S3 to host a static website](https://docs.aws.amazon.com/AmazonS3/latest/userguide/WebsiteHosting.html).
-- [On a static website, individual webpages include static content](../7_SystemGlossaries/CDNs/StaticContent.md). 
+- [On a static website, individual webpages include static content](../7_PropertiesDistributedSystem/CDNs/StaticContent.md). 
 - They might also contain client-side scripts.
 
 By contrast, a dynamic website relies on server-side processing, including server-side scripts, such as PHP, JSP, or ASP.NET.

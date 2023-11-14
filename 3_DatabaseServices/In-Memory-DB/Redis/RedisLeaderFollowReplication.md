@@ -9,7 +9,7 @@
 
 | Advantage                                                                        | Description                                                                                                                                                                                                           |
 |----------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [High availability](../../../7_SystemGlossaries/Reliability/HighAvailability.md) | If leader node goes down, the follower can be immediately promoted, so you don't experience any downtime.                                                                                                             |
+| [High availability](../../../7_PropertiesDistributedSystem/Reliability/HighAvailability.md) | If leader node goes down, the follower can be immediately promoted, so you don't experience any downtime.                                                                                                             |
 | [Scalability (Read Queries)](../../Glossaries/ScalabilityDB.md)                  | Under extremely high read load, you could balance the `reads between the master and follower`.<br/>- Although it would be recommended to setup up additional `no persistence, memory only` follower for that purpose. |
 
 # How to configure replication in Redis?

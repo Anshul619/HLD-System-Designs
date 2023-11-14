@@ -1,5 +1,6 @@
 # Basic Storage Calculation Parameters
-- The best way to do estimations is to have `BASE ballmark parameters` (a bit realistic).
+
+> The best way to do estimations is to have **BASE ballmark parameters** (a bit realistic).
 
 # Ball-mark Parameters
 

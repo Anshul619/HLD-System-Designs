@@ -25,7 +25,7 @@
 - [SAAS Integrations - Partner Sources](https://aws.amazon.com/eventbridge/integrations/)
 
 # Archives
-- For [disaster recovery](../../7_SystemGlossaries/Reliability/FaultTolerance.md) and auditing purposes event are also set up to be archived. 
+- For [disaster recovery](../../7_PropertiesDistributedSystem/Reliability/FaultTolerance.md) and auditing purposes event are also set up to be archived. 
 - This is very helpful for replaying these events.
 - [Guide to archive Amazon EventBridge events & replay those later.](https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-archive-event.html)
 

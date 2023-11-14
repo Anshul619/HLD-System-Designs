@@ -15,10 +15,10 @@
 - [Linear Scalability](../3_DatabaseServices/Glossaries/ScalabilityDB.md) - Industry proven to easily scale to 10,000s of nodes.
 
 ### High availability
-- [Fault-tolerant](../7_SystemGlossaries/Reliability/HighAvailability.md) replicated master and agents using [Zookeeper](../10_ClusterCoordinationServices/ApacheZookeeper.md).
+- [Fault-tolerant](../7_PropertiesDistributedSystem/Reliability/HighAvailability.md) replicated master and agents using [Zookeeper](../10_ClusterCoordinationServices/ApacheZookeeper.md).
 - It uses [Zookeeper](../10_ClusterCoordinationServices/ApacheZookeeper.md) for the leader election.
 - If the Mesos master is unavailable, existing tasks can continue to execute, but new resources cannot be allocated and new tasks cannot be launched. 
-- To reduce the chance of this situation occurring, Mesos has a [high-availability](../7_SystemGlossaries/Reliability/HighAvailability.md) mode that uses multiple Mesos masters
+- To reduce the chance of this situation occurring, Mesos has a [high-availability](../7_PropertiesDistributedSystem/Reliability/HighAvailability.md) mode that uses multiple Mesos masters
   - One active master (called the leader or leading master) and several backups in case it fails. 
 - The masters elect the leader, with [Zookeeper](../10_ClusterCoordinationServices/ApacheZookeeper.md) both coordinating the election and handling leader detection by masters, agents, and scheduler drivers
 

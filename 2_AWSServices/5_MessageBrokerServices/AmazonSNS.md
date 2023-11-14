@@ -3,7 +3,7 @@
 - [Amazon SNS vs other message brokers](../../5_MessageBrokers/KafkaVsRabbitMQVsSQSVsSNS.md)
 
 # Application-to-Person (A2P)
-- It enables you to send messages to users at scale via SMS, mobile push, and email.
+- It enables applications to send messages to users at scale via SMS, mobile push, and email.
 - [Read more](https://docs.aws.amazon.com/sns/latest/dg/sns-user-notifications.html)
 
 # Application-to-Application (A2A)

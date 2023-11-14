@@ -57,7 +57,7 @@ The application should be able to support the following requirements.
 | Home Feed DB                         | [Redis](../../3_DatabaseServices/In-Memory-DB/Redis/Readme.md)                                                                                                               |
 
 # Reliability and Redundancy
-- If we want to have [high availability](../../7_SystemGlossaries/Reliability/HighAvailability.md) of the system, we need to have multiple replicas of services running in the system so that even if a few services die down, the system remains available and running.
+- If we want to have [high availability](../../7_PropertiesDistributedSystem/Reliability/HighAvailability.md) of the system, we need to have multiple replicas of services running in the system so that even if a few services die down, the system remains available and running.
 - Redundancy removes the single point of failure in the system.
 
 # Images MetaData - DB Schema

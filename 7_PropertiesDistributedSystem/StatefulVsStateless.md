@@ -4,7 +4,7 @@
 - Stateless applications can scale horizontally, since any request can be handled by any available computing resources (e.g. instances, containers or functions).
 - Sharing state with any instances, containers, or functions is possible by using in-memory object caching systems like [Redis](../3_DatabaseServices/In-Memory-DB/Redis) or distributed databases like [Cassandra](../3_DatabaseServices/NoSQL-Databases/WideColumnDB/ApacheCasandra.md) or [Amazon DynamoDB](../2_AWSServices/6_DatabaseServices/AmazonDynamoDB/Readme.md), depending on the structure of the object and the requirements in terms of performances.
 
-Statelessness - REST APIs
+## Statelessness - REST APIs
 - A system without state is much easier to scale.
 - Imagine you have a web server serving requests.
 - If you follow [RESTful principles](../8_APITechOptions/REST.md), these servers will be stateless.

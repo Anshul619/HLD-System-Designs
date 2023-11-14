@@ -1,7 +1,7 @@
 # Amazon RDS Aurora
-- [Amazon RDS Aurora](https://aws.amazon.com/rds/aurora/) is designed for [unparalleled high performance and availability at global scale](../../../../7_SystemGlossaries/Scalability/LatencyThroughput.md) with full MySQL and PostgreSQL compatibility (that means your drivers will work as if Aurora was a Postgres or MySQL database).
-- Aurora is [AWS Cloud Optimized (proprietary technology](https://aws.amazon.com/rds/aurora/) from AWS, not open-source and claims [5x performance improvement over MySQL on RDS, over 3x performance improvement over Postgres on RDS](../../../../7_SystemGlossaries/Scalability/LatencyThroughput.md).
-- [High throughput up to 200K writes/second](../../../../7_SystemGlossaries/Scalability/LatencyThroughput.md), with negligible performance impact.
+- [Amazon RDS Aurora](https://aws.amazon.com/rds/aurora/) is designed for [unparalleled high performance and availability at global scale](../../../../7_PropertiesDistributedSystem/Scalability/LatencyThroughput.md) with full MySQL and PostgreSQL compatibility (that means your drivers will work as if Aurora was a Postgres or MySQL database).
+- Aurora is [AWS Cloud Optimized (proprietary technology](https://aws.amazon.com/rds/aurora/) from AWS, not open-source and claims [5x performance improvement over MySQL on RDS, over 3x performance improvement over Postgres on RDS](../../../../7_PropertiesDistributedSystem/Scalability/LatencyThroughput.md).
+- [High throughput up to 200K writes/second](../../../../7_PropertiesDistributedSystem/Scalability/LatencyThroughput.md), with negligible performance impact.
 
 ![img.png](../assets/Multi-AZ/RDS-Multi-AZ-Replica.drawio.png)
 

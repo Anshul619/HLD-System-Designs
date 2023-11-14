@@ -3,7 +3,7 @@
 - Server clustering also ensures [Higher Availability](../Reliability/HighAvailability.md) (through [replications](../../3_DatabaseServices/Glossaries/Consistency&Replication/Replication.md)), [proper Load Balancing](LoadBalancer.md) and [System Scalability](../../3_DatabaseServices/Glossaries/ScalabilityDB.md) (through sharding & read replicas).
 - Generally, every region would have its own cluster.
 
-# Few Examples
+# Examples
 
 | Tech                                                                                                     | Remarks                                   |
 |----------------------------------------------------------------------------------------------------------|-------------------------------------------|
@@ -20,5 +20,3 @@
 # What is Cluster capacity?
 - In general, a cluster (for ex. [Kubernates cluster](../../9_ContainerOrchestrationServices/Kubernates.md)) can be seen as abstracting a set of individual nodes as a big "super node".
 - The total compute capacity (in terms of CPU and memory) of this super node is the sum of all the constituent nodes' capacities.
-
-![img.png](assets/server_cluster_img.png)

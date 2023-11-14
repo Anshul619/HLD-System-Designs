@@ -2,7 +2,7 @@
 - [Apache Spark](https://spark.apache.org) is an open-source framework & compute engine that is known for its speed, easy-to-use nature in the field of `big data processing` and `analysis`.
 - It also has built-in modules for graph processing, machine learning, streaming, SQL etc.
 - The spark execution engine supports in-memory computation and cyclic data flow.
-- It can run either on [cluster mode](../../7_SystemGlossaries/Scalability/ServersCluster.md) or standalone mode.
+- It can run either on [cluster mode](../../7_PropertiesDistributedSystem/Scalability/ServersCluster.md) or standalone mode.
 
 ![](../../0_HLDUseCasesProblems/AWS_ModernDataArchitecture/AWS-Data-Architecture-ETL-OLTP-OLAP-DataLake.png)
 
