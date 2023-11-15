@@ -73,7 +73,7 @@
 > - 6-7 world-wide round trips per second.
 
 # References
-- [Byte byte go - Back-Of-The-Envelope Estimation / Capacity Planning](https://www.youtube.com/watch?v=UC5xf8FbdJc)
+- [ByteByteGo - Back-Of-The-Envelope Estimation / Capacity Planning](https://www.youtube.com/watch?v=UC5xf8FbdJc)
 - [NgInx - 1000 concurrent sessions](https://www.linode.com/community/questions/22200/nodebalancers-are-supposed-to-handle-10000-maximum-concurrent-connections)
 - [Bytes Calculator](https://mothereff.in/byte-counter)
 - [Donnemartin - Latency](https://github.com/donnemartin/system-design-primer#latency-numbers-every-programmer-should-know)

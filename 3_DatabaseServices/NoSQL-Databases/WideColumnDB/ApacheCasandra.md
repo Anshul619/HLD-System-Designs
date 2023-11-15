@@ -36,9 +36,9 @@
 
 ## Personalization at Spotify using Cassandra
 
-![](../../../1_TechStacksRealApps/PersonalizationSpotify/PersonalizationSpotify.drawio.png)
+![](../../../1_TechStacks/PersonalizationSpotify/PersonalizationSpotify.drawio.png)
 
-[Read more](../../../1_TechStacksRealApps/PersonalizationSpotify)
+[Read more](../../../1_TechStacks/PersonalizationSpotify)
 
 ## Social Network Design Problem - User Entities like Posts, Comments etc.
 
@@ -53,10 +53,10 @@
 [Read more](../../../0_HLDUseCasesProblems/FlightBookingSearchMakeMyTrip/Readme.md))
 
 ## Other UCs
-- [How Uber Manages a Million Writes Per Second Using Mesos and Cassandra Across Multiple Datacenters?](../../../1_TechStacksRealApps/Uber/UberCasandraMesos)
-- [Netflix - Casandra - Time Series Data](../../../1_TechStacksRealApps/NetflixTechStack.md)
-- [Directi uses Casandra to save HeatMaps (UI activities)](../../../1_TechStacksRealApps/DirectITechStack.md)
-- [Instagram - Casandra - Social Media Posts](../../../1_TechStacksRealApps/InstagramTechStack.md)
+- [How Uber Manages a Million Writes Per Second Using Mesos and Cassandra Across Multiple Datacenters?](../../../1_TechStacks/Uber/UberCasandraMesos)
+- [Netflix - Casandra - Time Series Data](../../../1_TechStacks/NetflixTechStack.md)
+- [Directi uses Casandra to save HeatMaps (UI activities)](../../../1_TechStacks/DirectITechStack.md)
+- [Instagram - Casandra - Social Media Posts](../../../1_TechStacks/InstagramTechStack.md)
 - [Twillo - Send Message API Design Problem](../../../0_HLDUseCasesProblems/SendSMSMessageAPITwillo/Readme.md)
 - [Twitter Hit Counter](../../../0_HLDUseCasesProblems/HitCounterDesignTwitter/Readme.md)
 

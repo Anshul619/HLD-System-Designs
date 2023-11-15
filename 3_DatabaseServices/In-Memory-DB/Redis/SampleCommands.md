@@ -1,4 +1,4 @@
-# String Data type - Commands
+# String data type
 
 ```
 SET newkey "the redis string"
@@ -10,7 +10,16 @@ MGET foo bar
 > 2. "b"
 ```
 
-# Hashes Data type - Commands
+# JSON data type
+
+```
+JSON.SET example $ '[ true, { "answer": 42 }, null ]'
+> OK
+JSON.GET example $
+"[[true,{\"answer\":42},null]]"
+```
+
+# Hashes data type
 
 ```
 HSET user:1000 username antirez password P1pp0 age 34
@@ -19,7 +28,7 @@ HSET user:1000 password 12345
 HGETALL user:1000
 ```
 
-# Lists Data Type - Commands
+# Lists data Type
 
 ```
 LPUSH mylist a   # now the list is "a"

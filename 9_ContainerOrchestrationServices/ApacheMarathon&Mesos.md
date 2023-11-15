@@ -40,6 +40,6 @@
 
 ## How Uber Manages a Million Writes Per Second Using Mesos and Cassandra Across Multiple Datacenters?
 
-![](../1_TechStacksRealApps/Uber/UberCasandraMesos/assets/uber-casandra-mesos.png)
+![](../1_TechStacks/Uber/UberCasandraMesos/assets/uber-casandra-mesos.png)
 
-[Read more](../1_TechStacksRealApps/Uber/UberCasandraMesos/Readme.md)
+[Read more](../1_TechStacks/Uber/UberCasandraMesos/Readme.md)

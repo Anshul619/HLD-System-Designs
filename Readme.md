@@ -2,7 +2,7 @@
 
 This repo contains the various system design components info, questions and solutions.
 - [HLD Design Problems](0_HLDUseCasesProblems)
-- [Real-world tech stacks](1_TechStacksRealApps)
+- [Real-world tech stacks](1_TechStacks)
 - [Key Properties of Distributed Systems](PropertiesDistributedSystems.md)
 - [Database Design tips](DatabaseDesignTips.md)
 - [System Design Tips](SystemDesignTips.md)
@@ -282,5 +282,6 @@ This repo contains the various system design components info, questions and solu
 - [System Design Primer](https://github.com/donnemartin/system-design-primer)
 - [Grokking the System Design](https://www.educative.io/courses/grokking-the-system-design-interview/39RwZr5PBwn)
 - [System Design by Gaurav Sen](https://www.youtube.com/watch?v=xpDnVSmNFX0&list=PLMCXHnjXnTnvo6alSjVkgxV-VH6EPyvoX)
-- [Byte byte go - System Design](https://github.com/ByteByteGoHq/system-design-101/Readme.md)
+- [ByteByteGo - System Design](https://github.com/ByteByteGoHq/system-design-101/Readme.md)
 - [System Design - Interview Questions](https://leetcode.com/discuss/interview-question/system-design?currentPage=1&orderBy=hot&query=)
+- [Tech Stacks](https://techstacks.io/stacks/)

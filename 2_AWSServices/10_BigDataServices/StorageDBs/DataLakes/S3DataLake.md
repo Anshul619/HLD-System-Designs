@@ -14,5 +14,5 @@
 
 | Use Case                                                                                                           |
 |--------------------------------------------------------------------------------------------------------------------|
-| [Swiggy - Capturing CDC using S3 data lake](../../../../1_TechStacksRealApps/SwiggyTechStack.md) |
+| [Swiggy - Capturing CDC using S3 data lake](../../../../1_TechStacks/SwiggyTechStack.md) |
 
