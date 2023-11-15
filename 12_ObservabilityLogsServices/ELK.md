@@ -1,5 +1,4 @@
 # ELK stack
-- [ELK]() can be deployed using [Amazon OpenSearch](../2_AWSServices/6_DatabaseServices/AmazonOpenSearch.md) on [AWS](../2_AWSServices).
 
 | Service                                                               | Category                | Remarks                                                                         |
 |-----------------------------------------------------------------------|-------------------------|---------------------------------------------------------------------------------|
@@ -13,6 +12,8 @@
 
 [Read more](../0_HLDUseCasesProblems/ObervabilityLoggingSolution/Readme.md)
 
+> [ELK]() can be deployed using [Amazon OpenSearch](../2_AWSServices/6_DatabaseServices/AmazonOpenSearch.md) on [AWS](../2_AWSServices).
+
 # Features
 
 | Feature                    | Remarks                                                                                                                                                                                                                                     |
@@ -22,7 +23,7 @@
 | Scalability                | Easy to deploy Scales vertically and horizontally                                                                                                                                                                                           |
 | Supported Client Libraries | Elastic offers a host of language clients, which includes Ruby. Python. PHP, Perl, .NET, Java, and JavaScript, and more                                                                                                                     |
 
-# Others
-- [Distributed Logging Solution](../0_HLDUseCasesProblems/ObervabilityLoggingSolution/LoggingFileAggregation/Readme.md)
+# Other Points
+- [Distributed Logging Solution using ELK](../0_HLDUseCasesProblems/ObervabilityLoggingSolution/LoggingFileAggregation/Readme.md)
 - [How filebeat works?](https://www.elastic.co/guide/en/beats/filebeat/current/how-filebeat-works.html)
 - [Installation using Docker ELK](https://github.com/deviantony/docker-elk)
