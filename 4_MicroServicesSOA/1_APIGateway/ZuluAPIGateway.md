@@ -1,11 +1,11 @@
 # Zulu API Gateway
-- [Zulu](https://stackabuse.com/spring-cloud-routing-with-zuul-and-gateway/) is an API gateway, for routing microservices properly. (An alternative to AWS API gateway)
+- [Zulu](https://stackabuse.com/spring-cloud-routing-with-zuul-and-gateway/) is an API gateway, for routing microservices properly. 
 - [Netflix](../../1_TechStacks/NetflixTechStack.md) created [Zuul server]() and later open-sourced it.
 - Spring provided a nice wrapper around it for easily incorporating it to the Spring stack.
 
-![](../../../5_ProgrammingLanguages/2_Java/SpringBootAndMicroServices/assests/Spring-Boot-MicroService-OnPerm.drawio.png)
+![](https://github.com/Anshul619/Programming-Languages/tree/main/1_Java/SpringBootAndMicroServices/assests/Spring-Boot-MicroService-OnPerm.drawio.png)
 
-[Read more](../../../5_ProgrammingLanguages/2_Java/SpringBootAndMicroServices/README.md)
+[Read more](https://github.com/Anshul619/Programming-Languages/tree/main/1_Java/SpringBootAndMicroServices/README.md)
 
 # High Level Architecture
 

@@ -34,7 +34,7 @@
 - [Replaying archived Amazon EventBridge events](https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-replay-archived-event.html)
 
 # Other Links
-- :star: [Amazon EventBridge vs others](../../5_MessageBrokers/KafkaVsRabbitMQVsSQSVsSNS.md)
+- :star: [Amazon EventBridge vs others](../../5_MessageBrokersEDA/KafkaVsRabbitMQVsSQSVsSNS.md)
 
 # References
 - [Reducing custom code by using advanced rules in Amazon EventBridge](https://aws.amazon.com/blogs/compute/reducing-custom-code-by-using-advanced-rules-in-amazon-eventbridge/)

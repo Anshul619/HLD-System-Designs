@@ -4,11 +4,11 @@ This repo contains the various system design components info, questions and solu
 - [HLD Design Problems](0_HLDUseCasesProblems)
 - [Real-world tech stacks](1_TechStacks)
 - [Key Properties of Distributed Systems](7_PropertiesDistributedSystem/Readme.md)
-- [Database Design tips](3_DatabaseServices/DatabaseDesignTips.md)
+- [Database Design tips](3_DatabaseServices/Readme.md)
 - [System Design Tips](SystemDesignTips.md)
 - [System Estimation Tips](SystemEstimationTips.md)
 - [All Comparisons](All-Comparisons.md)
-- [Architecture Patterns](7_PropertiesDistributedSystem/ArchitecturePatterns/Readme.md)
+- [Architecture Patterns](ArchitecturePatterns/Readme.md)
 
 # System Design - Tech Stack
 
@@ -59,12 +59,12 @@ This repo contains the various system design components info, questions and solu
     </tr>
     <tr>
       <td>
-        <a href="5_MessageBrokers">Message brokers</a>
+        <a href="5_MessageBrokersEDA">Message brokers</a>
       </td>
       <td>
         <div class="container" style="background:white">
             <div class="block two first">
-                <a href="5_MessageBrokers/Kafka/Readme.md" target="_blank">
+                <a href="5_MessageBrokersEDA/Kafka/Readme.md" target="_blank">
                   <img src="http://i1.wp.com/airisdata.com/wp-content/uploads/2016/01/kafka-logo-600x390.jpg?resize=600%2C390" width="150">
                 </a>
                 <a href="2_AWSServices/5_MessageBrokerServices/AmazonKinesis/AmazonKinesisDataStreams.md" target="_blank">
@@ -73,8 +73,8 @@ This repo contains the various system design components info, questions and solu
                 <a href="2_AWSServices/5_MessageBrokerServices/AmazonSQS/Readme.md" target="_blank"><img src="https://i0.wp.com/blog.knoldus.com/wp-content/uploads/2021/09/sqs.png?w=711&ssl=1" width="150"></a>
                 <a href="2_AWSServices/5_MessageBrokerServices/AmazonEventBridge.md" target="_blank"><img src="https://user-images.githubusercontent.com/3268013/149550617-d92fa8ff-f95d-499c-8515-0ed0be976fbf.png" width="150"></a>
                 <a href="2_AWSServices/5_MessageBrokerServices/AmazonSNS.md" target="_blank"><img src="https://miro.medium.com/max/720/0*QjKNs9dEShlQ39VI.png" width="150"></a>
-                <a href="5_MessageBrokers/RabbitMQ.md" target="_blank"><img src="https://www.logo.wine/a/logo/RabbitMQ/RabbitMQ-Logo.wine.svg" width="150"></a>
-                <a href="5_MessageBrokers/ActiveMQ.md" target="_blank"><img src="https://cdn.icon-icons.com/icons2/2699/PNG/512/apache_activemq_logo_icon_168628.png" width="150"></a>
+                <a href="5_MessageBrokersEDA/RabbitMQ.md" target="_blank"><img src="https://www.logo.wine/a/logo/RabbitMQ/RabbitMQ-Logo.wine.svg" width="150"></a>
+                <a href="5_MessageBrokersEDA/ActiveMQ.md" target="_blank"><img src="https://cdn.icon-icons.com/icons2/2699/PNG/512/apache_activemq_logo_icon_168628.png" width="150"></a>
             </div>
         </div>
       </td>

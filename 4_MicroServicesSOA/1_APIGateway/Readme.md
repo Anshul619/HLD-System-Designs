@@ -7,10 +7,10 @@
 
 # Various Technologies
 
-| Tech                                                                                                                          |
-|-------------------------------------------------------------------------------------------------------------------------------|
+| Tech                                                                                                                     |
+|--------------------------------------------------------------------------------------------------------------------------|
 | [AWS API Gateway](../../2_AWSServices/1_NetworkingAndContentDelivery/2_ApplicationNetworking/AmazonAPIGateway/Readme.md) |
-| [Zulu](ZuluAPIGateway.md)                                                                                                     |
+| [Zulu](ZuluAPIGateway.md)                                                                                                |
 
 # Read more
 - [Mastering Chaos - A Netflix Guide to Microservices](https://www.youtube.com/watch?v=CZ3wIuvmHeM)

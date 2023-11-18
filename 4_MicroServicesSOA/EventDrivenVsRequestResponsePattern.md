@@ -1,13 +1,13 @@
 # EventDriven vs Request-Response Microservices Communication Pattern
 
-|                | [Event-Driven](../5_MessageBrokers/EventDrivenArchitecture.md) | Request-Response Pattern |
-|----------------|---------------------------------------------------------------------------|--------------------------|
-| Sync vs Async? | Asynchronous                                                              | Synchronous              |
-| Behavior       | Immutable Fact                                                            | Intent                   |
-| Complexity     | High                                                                      | Medium                   |
-| Debugging      | Hard                                                                      | Easy                     |
-| Latency        | :rocket: Low                                                              | High                     |
-| Format         | JSON                                                                      | Any                      |
+|                | [Event-Driven](../5_MessageBrokersEDA/EventDrivenArchitecture/Readme.md) | Request-Response Pattern |
+|----------------|-----------------------------------------------------------------------------|--------------------------|
+| Sync vs Async? | Asynchronous                                                                | Synchronous              |
+| Behavior       | Immutable Fact                                                              | Intent                   |
+| Complexity     | High                                                                        | Medium                   |
+| Debugging      | Hard                                                                        | Easy                     |
+| Latency        | :rocket: Low                                                                | High                     |
+| Format         | JSON                                                                        | Any                      |
 
 # References
 - [AWS - Getting Started with Event-Driven Architecture | Amazon Web Services](https://www.youtube.com/watch?v=UCt7GlGsLTQ)

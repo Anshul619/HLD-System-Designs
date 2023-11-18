@@ -3,8 +3,8 @@
 | Comparison                                                                                                            | Service Type                                              |
 |-----------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------|
 | :star: [AWS - All Comparisons](2_AWSServices/AWS-All-Comparisons.md)                                                  |                                                           |
-| :star: [Message Broker vs DB](5_MessageBrokers/MessageBrokerVsDB.md)                                                  | [Message Broker Services](5_MessageBrokers)               |
-| :star: [Message Brokers - Kafka vs Others](5_MessageBrokers/KafkaVsRabbitMQVsSQSVsSNS.md)                             | [Message Broker Services](5_MessageBrokers)               |
+| :star: [Message Broker vs DB](5_MessageBrokersEDA/MessageBrokerVsDB.md)                                                  | [Message Broker Services](5_MessageBrokersEDA)               |
+| :star: [Message Brokers - Kafka vs Others](5_MessageBrokersEDA/KafkaVsRabbitMQVsSQSVsSNS.md)                             | [Message Broker Services](5_MessageBrokersEDA)               |
 | :star: [SQL vs NoSQL](3_DatabaseServices/SQLvsNoSQL/Readme.md)                                                        | [Database Services](3_DatabaseServices)                   |
 | [Terminologies - SQL vs Document vs Search DBs](3_DatabaseServices/SQLvsNoSQL/TermsComparisons.md)                    | [Database Services](3_DatabaseServices)                   |
 | [DynamoDB vs MongoDB vs Casandra](3_DatabaseServices/NoSQL-Databases/DynamoDBVsMongoDBVsCasandra.md)                  | [Database Services](3_DatabaseServices)                   |

@@ -1,6 +1,6 @@
 # Kafka Streams API
-- [Kafka Streams](https://kafka.apache.org/documentation/streams/) is a client library for building applications and microservices, where the input and output data are stored in [Kafka clusters](../../../5_MessageBrokers/Kafka/Readme.md). 
-- It combines the simplicity of writing and deploying standard Java and Scala applications on the client side with the benefits of [Kafka's server-side cluster technology](../../../5_MessageBrokers/Kafka/Readme.md).
+- [Kafka Streams](https://kafka.apache.org/documentation/streams/) is a client library for building applications and microservices, where the input and output data are stored in [Kafka clusters](../../../5_MessageBrokersEDA/Kafka/Readme.md). 
+- It combines the simplicity of writing and deploying standard Java and Scala applications on the client side with the benefits of [Kafka's server-side cluster technology](../../../5_MessageBrokersEDA/Kafka/Readme.md).
 - An application can use this API to take input streams from one or more topics, process them using streams operations, and generate output streams to transmit to one or more topics.
 
 ![](../../../0_HLDUseCasesProblems/AWS_ModernDataArchitecture/AWS-Data-Architecture-ETL-OLTP-OLAP-DataLake.png)

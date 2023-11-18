@@ -33,7 +33,7 @@
 |-------------------------|------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------|
 | OLTP Database           | [Amazon DynamoDB](../../2_AWSServices/6_DatabaseServices/AmazonDynamoDB/Readme.md) | An OLTP database serves queries critical to online order processing. <br/>- This table keeps data for only a short period of time.               |
 | OLAP database           | Amazon MySQL RDS                                                                   | an OLAP database has the same set of data, but serves our historical and statistical queries. <br/>- This database keeps data for a longer time. |
-| Data Ingestion Pipeline | [Kafka](../../5_MessageBrokers/Kafka/Readme.md)                                    | The data ingestion pipeline ensures that the OLAP database data is eventually consistent.                                                        |
+| Data Ingestion Pipeline | [Kafka](../../5_MessageBrokersEDA/Kafka/Readme.md)                                    | The data ingestion pipeline ensures that the OLAP database data is eventually consistent.                                                        |
 
 # OLTP database - DynamoDB
 - The retention period of the [DynamoDB data](../../2_AWSServices/6_DatabaseServices/AmazonDynamoDB/Readme.md) is three months.
@@ -54,7 +54,7 @@
 - Partitions older than six months are dropped at the beginning of each month.
 
 # Data Stream
-- A [Kafka](../../5_MessageBrokers/Kafka/Readme.md) is used to process data in the data ingestion pipeline. 
+- A [Kafka](../../5_MessageBrokersEDA/Kafka/Readme.md) is used to process data in the data ingestion pipeline. 
 - We choose the Kafka, because it has 99.95% SLA.
 - On the stream consumer side, we use back-off retry at both stream and database levels to ensure consistency. 
 - In a worst-case scenario, we can rewind the stream events from Kafka.

@@ -1,6 +1,6 @@
 # Amazon SNS (Amazon Simple Notification Service)
 - [Amazon SNS (Simple Notification Service)](https://aws.amazon.com/sns) is a fully managed messaging service for both **application-to-application (A2A)** and **application-to-person (A2P)** communication.
-- [Amazon SNS vs other message brokers](../../5_MessageBrokers/KafkaVsRabbitMQVsSQSVsSNS.md)
+- [Amazon SNS vs other message brokers](../../5_MessageBrokersEDA/KafkaVsRabbitMQVsSQSVsSNS.md)
 
 # Application-to-Person (A2P)
 - It enables applications to send messages to users at scale via SMS, mobile push, and email.

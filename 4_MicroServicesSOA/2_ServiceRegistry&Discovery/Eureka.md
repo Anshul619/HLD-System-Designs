@@ -3,13 +3,13 @@
 - Eureka naming server is an application that holds information about all client service applications.
 - Each microservice registers itself with the Eureka naming server.
 - The naming server registers the client services with their port numbers and IP addresses.
-- It is also known as `Discovery Server`.
+- It is also known as **Discovery Server**.
 - Eureka naming server comes with the bundle of Spring Cloud. It runs on the default port 8761.
 - It also comes with a Java-based client component, the eureka client, which makes interactions with the service much easier.
 
-![](../../../5_ProgrammingLanguages/2_Java/SpringBootAndMicroServices/assests/Spring-Boot-MicroService-OnPerm.drawio.png)
+![](https://github.com/Anshul619/Programming-Languages/tree/main/1_Java/SpringBootAndMicroServices/assests/Spring-Boot-MicroService-OnPerm.drawio.png)
 
-[Read more](../../../5_ProgrammingLanguages/2_Java/SpringBootAndMicroServices/README.md)
+[Read more](https://github.com/Anshul619/Programming-Languages/tree/main/1_Java/SpringBootAndMicroServices/README.md)
 
 # High Level Architecture
 

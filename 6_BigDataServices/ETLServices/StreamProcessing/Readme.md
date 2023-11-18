@@ -1,7 +1,7 @@
 # Stream processing systems (near-real-time systems)
 - [Stream processing](https://www.techtarget.com/searchdatamanagement/definition/stream-processing) is a data management technique that involves ingesting a continuous data stream to quickly analyze, filter, transform or enhance the data in real time.
 - Once processed, the data is passed off to an application, data store or another stream processing engine.
-- To transmit event stream from different Producers to Stream Processor, [message brokers](../../../5_MessageBrokers/Readme.md) are used.
+- To transmit event stream from different Producers to Stream Processor, [message brokers](../../../5_MessageBrokersEDA/Readme.md) are used.
 
 ![](../../../0_HLDUseCasesProblems/AWS_ModernDataArchitecture/AWS-Data-Architecture-ETL-OLTP-OLAP-DataLake.png)
 

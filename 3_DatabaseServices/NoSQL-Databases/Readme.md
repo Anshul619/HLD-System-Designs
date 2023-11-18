@@ -10,7 +10,7 @@
 
 ![](../DatabaseDesign.png)
 
-[Read more](../DatabaseDesignTips.md)
+[Read more](../Readme.md)
 
 # PACLEC Theorem
 

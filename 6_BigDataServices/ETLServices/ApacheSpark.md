@@ -19,7 +19,7 @@
 ![](https://www.altexsoft.com/media/2021/06/word-image-14.png)
 
 # Data Sources
-- [Kafka](../../5_MessageBrokers/Kafka/Readme.md)
+- [Kafka](../../5_MessageBrokersEDA/Kafka/Readme.md)
 - [HBase](../../3_DatabaseServices/NoSQL-Databases/WideColumnDB/ApacheHBase.md)
 - [HDFS](../../11_FileStorageServicesHDFS/ApacheHDFS.md) 
 - [Cassandra](../../3_DatabaseServices/NoSQL-Databases/WideColumnDB/ApacheCasandra.md) etc.

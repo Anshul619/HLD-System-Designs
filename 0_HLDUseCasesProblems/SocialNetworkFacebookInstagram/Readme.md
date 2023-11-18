@@ -52,7 +52,7 @@ The application should be able to support the following requirements.
 | Partitioning Key for images metadata | PhotoID                                                                                                                                                                                              |
 | User Activity - Data Entities Store  | [Amazon DynamoDB](../../2_AWSServices/6_DatabaseServices/AmazonDynamoDB/Readme.md) or [Cassandra](../../3_DatabaseServices/NoSQL-Databases/WideColumnDB/ApacheCasandra.md) |
 | User Activity - Relationship Store   | Graph Databases like [Neo4j](../../3_DatabaseServices/NoSQL-Databases/GraphDB/Neo4j.md) or Amazon Neptune                                                                    |
-| Data Streaming                       | [Kafka](../../5_MessageBrokers/Kafka/Readme.md) or [Amazon Kinesis](../../2_AWSServices/5_MessageBrokerServices/AmazonKinesis/Readme.md)                                     |
+| Data Streaming                       | [Kafka](../../5_MessageBrokersEDA/Kafka/Readme.md) or [Amazon Kinesis](../../2_AWSServices/5_MessageBrokerServices/AmazonKinesis/Readme.md)                                     |
 | App Servers                          | Separate app servers for READ and WRITE (Since read-write ratio is 100:1).                                                                                                                           |
 | Home Feed DB                         | [Redis](../../3_DatabaseServices/In-Memory-Databases/Redis/Readme.md)                                                                                                               |
 

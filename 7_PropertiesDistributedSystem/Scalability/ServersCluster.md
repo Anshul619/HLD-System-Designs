@@ -8,7 +8,7 @@
 | Tech                                                                                                     | Remarks                                   |
 |----------------------------------------------------------------------------------------------------------|-------------------------------------------|
 | [Kubernates Cluster](../../9_ContainerOrchestrationServices/Kubernates.md)                               | Cluster of Containers                     |
-| [Kafka Cluster](../../5_MessageBrokers/Kafka/Readme.md)                                                  | Cluster of Topics (High-Throughput MQ)    |                     
+| [Kafka Cluster](../../5_MessageBrokersEDA/Kafka/Readme.md)                                                  | Cluster of Topics (High-Throughput MQ)    |                     
 | [Amazon RDS Clusters](../../2_AWSServices/6_DatabaseServices/AmazonRDS/MultiAZDeployment.md)             | Cluster of DB instances, across Multi-AZs |
 | [Redis Cluster](../../3_DatabaseServices/In-Memory-Databases/Redis/RedisCluster.md)                             | Cluster of Redis Nodes (In-Memory Cache)  |
 | [Amazon Elastic Cache Cluster](../../2_AWSServices/6_DatabaseServices/AmazonElasticCache/ClusterMode.md) | Cluster of Redis Nodes, across Multi-AZs  |

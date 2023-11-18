@@ -39,8 +39,8 @@ There are two types of users in our system
 
 ## Rider - Book Cab
 - Enter Pick the location, destination location & click `Continue`
-- Search Cab service would publish message to [Allocate Driver Kafka topic](../../5_MessageBrokers/Kafka/Readme.md).
-- Consumer would consume from [Allocate Driver Kafka topic](../../5_MessageBrokers/Kafka/Readme.md).
+- Search Cab service would publish message to [Allocate Driver Kafka topic](../../5_MessageBrokersEDA/Kafka/Readme.md).
+- Consumer would consume from [Allocate Driver Kafka topic](../../5_MessageBrokersEDA/Kafka/Readme.md).
 - [Driver Match Algo](#star-driver-match-algo) to find riders for the given `{rider, pickup, drop}` location msg.
 - Match the rider pick location with the corresponding location in [DriverLocation DB (like ElasticSearch/Redis)](../../3_DatabaseServices/Search-Databases/ElasticSearch/Readme.md).
 - Push the notification to the matched drivers.
@@ -48,8 +48,8 @@ There are two types of users in our system
 - And notify the rider through push notification.
 
 ## Driver - Push Location
-- Push the current location via [Location Kafka topic](../../5_MessageBrokers/Kafka/Readme.md).
-- Consumer would consume from [Kafka](../../5_MessageBrokers/Kafka/Readme.md) & then push latest location to [DriverLocation DB (like ElasticSearch/Redis)](../../3_DatabaseServices/Search-Databases/ElasticSearch/Readme.md).
+- Push the current location via [Location Kafka topic](../../5_MessageBrokersEDA/Kafka/Readme.md).
+- Consumer would consume from [Kafka](../../5_MessageBrokersEDA/Kafka/Readme.md) & then push latest location to [DriverLocation DB (like ElasticSearch/Redis)](../../3_DatabaseServices/Search-Databases/ElasticSearch/Readme.md).
 
 ## :star: Driver Match algo
 - Area filter

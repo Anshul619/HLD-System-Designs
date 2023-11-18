@@ -11,9 +11,9 @@
 | [Rate Limiting](../0_HLDUseCasesProblems/RateLimiterAPI/Readme.md)                                            | App Service/Nodes | Others                                                               |
 | [Content Delivery Network (CDN)](CDNs/CDNs.md)                               | App Service/Nodes | Others                                                               |
 | [Static Content](CDNs/StaticContent.md)                                      | App Service/Nodes | Others                                                               |
-| :star: [Event Driven Architecture](../5_MessageBrokers/EventDrivenArchitecture.md)                            | Message Brokers   | Others                                                               |
-| :star: [Point to Point Model](../5_MessageBrokers/PatternsModels.md/PointToPointModel.md)                     | Message Brokers   | Others                                                               |
-| :star: [Publish Subscriber Model](../5_MessageBrokers/PatternsModels.md/PubSubModel.md)                       | Message Brokers   | Others                                                               |
+| :star: [Event Driven Architecture](../5_MessageBrokersEDA/EventDrivenArchitecture/Readme.md)                            | Message Brokers   | Others                                                               |
+| :star: [Point to Point Model](../5_MessageBrokersEDA/EventDrivenArchitecture/PointToPointModel.md)                     | Message Brokers   | Others                                                               |
+| :star: [Publish Subscriber Model](../5_MessageBrokersEDA/EventDrivenArchitecture/PubSubModel.md)                       | Message Brokers   | Others                                                               |
 | :star: [Indexing](../3_DatabaseServices/DataStructuresUsedInDB/Indexing/Readme.md)                            | Databases         | :rocket: [Scalability](Scalability)    |
 | :star: [DB Scalability](../3_DatabaseServices/ScalabilityDB.md)                                               | Databases         | :rocket: [Scalability](Scalability)    |
 | :star: [ACID Properties of the Transaction](../3_DatabaseServices/ACIDTransactions/Readme.md)                 | Databases         | Others                                                               |
