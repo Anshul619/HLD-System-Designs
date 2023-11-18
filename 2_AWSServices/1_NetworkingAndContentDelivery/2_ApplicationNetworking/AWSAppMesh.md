@@ -1,7 +1,7 @@
 # AWS AppMesh
 - [AWS App Mesh](https://aws.amazon.com/app-mesh/) provides application-level networking so your services can communicate across multiple types of compute infrastructure.
 - Internally, it uses [AWS Cloud Map](AWSCloudMap.md) for the service discovery.
-- Once AWS AppMesh is configured, the service map can be analysed in [AWS X-Ray](../../8_MonitoringServices/AWSXRay.md).
+- Once AWS AppMesh is configured, the service map can be analysed in [AWS X-Ray](../../8_ObservabilityLogsServices/AWSXRay.md).
 
 ![](https://miro.medium.com/max/1160/1*GiaSew6ulJAg7Ap9GWOd-w.webp)
 

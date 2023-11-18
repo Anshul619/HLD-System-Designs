@@ -1,23 +1,23 @@
 # Kubernates
-- [Kubernetes](https://kubernetes.io), also known as K8s, is an OPEN-SOURCE system for automating deployment, [scaling](../7_PropertiesDistributedSystem/Scalability), and management of containerized applications. 
-- Kubernates is a [battle-tested container orchestration service](Readme.md) i.e. manage, create containers (through pods, worker nodes).
+- [Kubernetes](https://kubernetes.io), also known as K8s, is an OPEN-SOURCE system for automating deployment, [scaling](../../7_PropertiesDistributedSystem/Scalability), and management of containerized applications. 
+- [Kubernates]() is a [battle-tested container orchestration service](../Readme.md) i.e. manage, create containers (through pods, worker nodes).
 
-![img.png](assets/Kubernates-Architecture.png)
+![img.png](../assets/Kubernates-Architecture.png)
 
 > Kubernetes is a Greek word meaning `captain` in English.
 > - Like the captain is responsible for the safe journey of the ship in the seas, Kubernetes is responsible for carrying and delivering those boxes safely to locations where they can be used.
 
 # Real-world use cases
 
-| Use Case                                                              |
-|-----------------------------------------------------------------------|
-| [Zomato](../0_HLDUseCasesProblems/FoodOrderingZomatoSwiggy/Readme.md) |
-| [Swiggy](../1_TechStacks/SwiggyTechStack.md)                  |
-| [Spotify](../1_TechStacks/PersonalizationSpotify/Readme.md)   |
-| [Grab](../1_TechStacks/GrabTechStack/Readme.md)               |
-| [LinkedIn](../1_TechStacks/LinkedInTechStack.md)              |
-| [Split.io](../1_TechStacks/SplitIOTechStack.md)               |
-| [Stripe](../1_TechStacks/StripeTechStack.md)                  |
+| Use Case                                                                 |
+|--------------------------------------------------------------------------|
+| [Zomato](../../0_HLDUseCasesProblems/FoodOrderingZomatoSwiggy/Readme.md) |
+| [Swiggy](../../1_TechStacks/SwiggyTechStack.md)                          |
+| [Spotify](../../1_TechStacks/PersonalizationSpotify/Readme.md)           |
+| [Grab](../../1_TechStacks/GrabTechStack/Readme.md)                       |
+| [LinkedIn](../../1_TechStacks/LinkedInTechStack.md)                      |
+| [Split.io](../../1_TechStacks/SplitIOTechStack.md)                       |
+| [Stripe](../../1_TechStacks/StripeTechStack.md)                          |
 
 # Resources and Limits
 
@@ -31,10 +31,10 @@
 
 | Component                                                                                      | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
 |------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| :star: [Control Plane (Master node)](https://kubernetes.io/docs/concepts/overview/components/) | [The control plane](https://kubernetes.io/docs/concepts/overview/components/) manages the worker nodes and the Pods in the cluster.<br/>- In production environments, the control plane usually runs across multiple computers and a cluster usually runs multiple nodes, providing [fault-tolerance and high availability](../7_PropertiesDistributedSystem/Reliability/HighAvailability.md).<br/>- [Nodes with controlplane]((https://kubernetes.io/docs/concepts/overview/components/)) role run the K8s master components (excluding [etcd](../10_ClusterCoordinationServices/etcd.md), as its separate role).                              |
+| :star: [Control Plane (Master node)](https://kubernetes.io/docs/concepts/overview/components/) | [The control plane](https://kubernetes.io/docs/concepts/overview/components/) manages the worker nodes and the Pods in the cluster.<br/>- In production environments, the control plane usually runs across multiple computers and a cluster usually runs multiple nodes, providing [fault-tolerance and high availability](../../7_PropertiesDistributedSystem/Reliability/HighAvailability.md).<br/>- [Nodes with controlplane]((https://kubernetes.io/docs/concepts/overview/components/)) role run the K8s master components (excluding [etcd](../../10_ClusterCoordinationServices/etcd.md), as its separate role).                              |
 | Worker Nodes                                                                                   | Each docker/Pod container would run the micro-service (golang, java, python service etc.)<br/>- And a [worker node can have one or multiple pods](https://kubernetes.io/docs/concepts/architecture/nodes/).<br/>- Kubernates would manage the [worker nodes](https://kubernetes.io/docs/concepts/architecture/nodes/) i.e. Create, Update, Delete, Auto-Scale based on the configuration and params.                                                                                                                                                                                                                               |
 | Pods                                                                                           | [Pods](https://kubernetes.io/docs/concepts/workloads/pods/) are the smallest deployable units of computing that you can create and manage in Kubernetes.<br/>- A Pod (as in a pod of whales or pea pod) is a group of one or more containers, with shared storage and network resources, and a specification for how to run the containers.<br/>- A pod can contain one or multiple containers (but generally one container).<br/>- [Minimum and Maximum Memory Constraints for a Namespace needs to be configured for the pod](https://kubernetes.io/docs/tasks/administer-cluster/manage-resources/memory-constraint-namespace/) |
-| [Networking](https://kubernetes.io/docs/concepts/services-networking/_print/)                  | K8s manages its own load balancer, service discovery (through [etcd](../10_ClusterCoordinationServices/etcd.md)) etc.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
+| [Networking](https://kubernetes.io/docs/concepts/services-networking/_print/)                  | K8s manages its own load balancer, service discovery (through [etcd](../../10_ClusterCoordinationServices/etcd.md)) etc.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
 | Cluster                                                                                        | [A Kubernetes cluster](https://kubernetes.io/docs/concepts/overview/components/) consists of a set of worker machines, called [nodes](), that run containerized applications. <br/>- Every cluster has at least one worker node.                                                                                                                                                                                                                                                                                                                                                                                                   |
 | Kubernates Agents                                                                              | Kubernetes agents perform various tasks on every node to manage the containers running on that node. For example:<br/>- cAdvisor collects and analyzes the resource usage of all containers on a node.<br/>- [kubelet](https://kubernetes.io/docs/reference/command-line-tools-reference/kubelet/) runs regular live-ness and readiness probes against each container on a node.                                                                                                                                                                                                                                                   |
 | Labels                                                                                         | [Labels](https://kubernetes.io/docs/concepts/overview/working-with-objects/labels/) are key/value pairs that are attached to objects, such as pods.<br/>- Labels are intended to be used to specify identifying attributes of objects that are meaningful and relevant to users, but do not directly imply semantics to the core system.                                                                                                                                                                                                                                                                                           |
@@ -44,7 +44,7 @@
 | K8s Master Components                                                                                            | Description                                                                                                                                                                                                                                                                                                                                                              |
 |------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | [API server](https://kubernetes.io/docs/reference/command-line-tools-reference/kube-apiserver/)                  | The Kubernetes API server validates and configures data for the api objects which include pods, services, replication controllers, and others. <br/>- The API Server services REST operations and provides the frontend to the cluster's shared state through which all other components interact.                                                                       |
-| [etcd](../10_ClusterCoordinationServices/etcd.md)                                                                  | etcd is used for [Configuration Store & Service Discovery](../4_MicroServicesSOA/2_ServiceRegistry&Discovery).<br/>- etcd is a [Consistent](../3_DatabaseServices/Consistency&Replication/Readme.md) and [highly-available key value store](../7_PropertiesDistributedSystem/Reliability/HighAvailability.md) used as Kubernetes backing store for all cluster data. |
+| [etcd](../../10_ClusterCoordinationServices/etcd.md)                                                                  | etcd is used for [Configuration Store & Service Discovery](../../4_MicroServicesSOA/2_ServiceRegistry&Discovery).<br/>- etcd is a [Consistent](../../3_DatabaseServices/Consistency&Replication/Readme.md) and [highly-available key value store](../../7_PropertiesDistributedSystem/Reliability/HighAvailability.md) used as Kubernetes backing store for all cluster data. |
 | [Controller Manager](https://kubernetes.io/docs/reference/command-line-tools-reference/kube-controller-manager/) | The Kubernetes controller manager is a daemon that embeds the core control loops (like ReplicationController, DeploymentController etc.) shipped with Kubernetes.                                                                                                                                                                                                        |
 | [Scheduler](https://kubernetes.io/docs/concepts/scheduling-eviction/kube-scheduler/)                             | A scheduler is responsible for scheduling pods on the cluster. <br/>- It watches for newly created Pods that have no Node assigned. <br/>- For every Pod that the scheduler discovers, the scheduler becomes responsible for finding the best Node for that Pod to run on.                                                                                               |
 | [ReplicationController](https://kubernetes.io/docs/concepts/workloads/controllers/replicationcontroller/)        | A ReplicationController ensures that a specified number of pod replicas are running at any one time. In other words, a ReplicationController makes sure that a pod or a homogeneous set of pods is always up and available.                                                                                                                                              |
@@ -121,10 +121,10 @@ behavior:
 
 ## kops - Manage production grade k8s cluster
 - [KOPS](https://kops.sigs.k8s.io/) offers a one-stop solution for deploying [Kubernetes cluster]() with [Amazon Web Services](../../2_AWSComponents/).
-- It is an open source tool designed to make installation of secure, [highly available clusters](../7_PropertiesDistributedSystem/Reliability/HighAvailability.md) easy and automatable.
+- It is an open source tool designed to make installation of secure, [highly available clusters](../../7_PropertiesDistributedSystem/Reliability/HighAvailability.md) easy and automatable.
 
 ### Step1 - Create Hosted Zone for Cluster
-- We require a hosted zone associated with [Route 53](../2_AWSServices/1_NetworkingAndContentDelivery/1_EdgeNetworking/AmazonRoute53/Readme.md) which must be publicly resolvable.
+- We require a hosted zone associated with [Route 53](../../2_AWSServices/1_NetworkingAndContentDelivery/1_EdgeNetworking/AmazonRoute53/Readme.md) which must be publicly resolvable.
 
 ````shell
 aws route53 create-hosted-zone --name testikod.in --caller-reference 2017-02-24-11:12 --hosted-zone-config Comment="Hosted Zone for KOPS"
@@ -133,14 +133,14 @@ aws route53 create-hosted-zone --name testikod.in --caller-reference 2017-02-24-
 ### Step2 - Create State Store
 - KOPS internally uses Terraform. 
 - So we required external state store for storing states of a cluster. 
-- We are using [Amazon S3](../2_AWSServices/7_StorageServices/3_ObjectStorageS3/Readme.md) for storing state.
+- We are using [Amazon S3](../../2_AWSServices/7_StorageServices/3_ObjectStorageS3/Readme.md) for storing state.
 
 ````shell
 aws s3api create-bucket --bucket testikod-in-state-store --region us-west-2
 ````
 
 ### Step3 - Create cluster
-- An instance group is a set of instances, which will be registered as kubernetes nodes. [On AWS this is implemented via auto-scaling-groups](../2_AWSServices/3_ComputeServices/AmazonEC2/AutoScalingGroup/Readme.md).
+- An instance group is a set of instances, which will be registered as kubernetes nodes. [On AWS this is implemented via auto-scaling-groups](../../2_AWSServices/3_ComputeServices/AmazonEC2/AutoScalingGroup/Readme.md).
 
 ````shell
 
@@ -161,7 +161,7 @@ kops create cluster \
     ${NAME}
 ````
 
-Parameters :
+Parameters:
 - --cloud aws : We are launching cluster in AWS.
 - --zones us-west-2a,us-west-2b,us-west-2c : This describes availability zones for nodes.
 - --node-count 5 : The number kubernetes nodes.
@@ -183,51 +183,22 @@ Read more
 
 ![img.png](https://www.suse.com/c/wp-content/uploads/2021/09/kubectl_communication_flow_hu6704bce3da6ee0f16978a2bb4f755ce5_43859_1000x0_resize_box_2.png)
 
-| Title                             | Command                                             | Remarks                                                                                                                                                                                                          |
-|-----------------------------------|-----------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| View config                       | kubectl config view                                 | -                                                                                                                                                                                                                |
-| Set context in config             | kubectl config use-context <clusterName>            | -                                                                                                                                                                                                                |
-| Get all contexts                  | kubectl config get-contexts                         | -                                                                                                                                                                                                                |
-| Get all the events of the cluster | kubectl get events                                  | [List Events](https://www.containiq.com/post/kubernetes-events) sorted by timestamp                                                                                                                              |
-| Get all the deployments list      | kubectl get deployments                             | -                                                                                                                                                                                                                |
-| Scale the deployment              | kubectl scale --replicas=10 <deployment_name>       | Replicate the deployment (microservice) across the worker-nodes                                                                                                                                                  |
-| Auto scale the deployment         | kubectl autoscale deployment foo --min=2 --max=10   | Auto scale a deployment "foo"                                                                                                                                                                                    |
-| Get all pods                      | kubectl get pods --all-namespaces                   | List all pods in the namespace, in the default context                                                                                                                                                           |
-| Get pod information               | kubectl get pod my-pod -o yaml                      | Get a pod's YAML                                                                                                                                                                                                 |
-| Create resource                   | kubectl apply -f ./my-manifest.yaml                 | Create resource (pod etc.) from yaml file <br/>- `apply` manages applications through files defining Kubernetes resources. <br/>- It creates and updates resources in a cluster through running `kubectl apply`. |
-| Update resource                   | kubectl patch                                       | Use kubectl patch to update an API object in place.                                                                                                                                                              |
-| Dump pod logs                     | kubectl logs my-pod                                 | dump pod logs (stdout)                                                                                                                                                                                           |
+| Title                             | Command                                           | Remarks                                                                                                                                                                                                          |
+|-----------------------------------|---------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| View config                       | kubectl config view                               |                                                                                                                                                                                                                  |
+| Set context in config             | kubectl config use-context <clusterName>          |                                                                                                                                                                                                                  |
+| Get all contexts                  | kubectl config get-contexts                       |                                                                                                                                                                                                                  |
+| Get all the events of the cluster | kubectl get events                                | [List Events](https://www.containiq.com/post/kubernetes-events) sorted by timestamp                                                                                                                              |
+| Get all the deployments list      | kubectl get deployments                           |                                                                                                                                                                                                                  |
+| Scale the deployment              | kubectl scale --replicas=10 <deployment_name>     | Replicate the deployment (microservice) across the worker-nodes                                                                                                                                                  |
+| Auto scale the deployment         | kubectl autoscale deployment foo --min=2 --max=10 | Auto scale a deployment "foo"                                                                                                                                                                                    |
+| Get all pods                      | kubectl get pods --all-namespaces                 | List all pods in the namespace, in the default context                                                                                                                                                           |
+| Get pod information               | kubectl get pod my-pod -o yaml                    | Get a pod's YAML                                                                                                                                                                                                 |
+| Create resource                   | kubectl apply -f ./my-manifest.yaml               | Create resource (pod etc.) from yaml file <br/>- `apply` manages applications through files defining Kubernetes resources. <br/>- It creates and updates resources in a cluster through running `kubectl apply`. |
+| Update resource                   | kubectl patch                                     | Use kubectl patch to update an API object in place.                                                                                                                                                              |
+| Dump pod logs                     | kubectl logs my-pod                               | dump pod logs (stdout)                                                                                                                                                                                           |
 
-- [kubectl - Cheat Sheet](https://kubernetes.io/docs/reference/kubectl/cheatsheet/)
-
-# Configure a Pod to Use a ConfigMap
-- [ConfigMaps](https://kubernetes.io/docs/tasks/configure-pod-container/configure-pod-configmap/) are the Kubernetes way to inject application pods with configuration data.
-- ConfigMaps allow you to decouple configuration artifacts from image content to keep containerized applications portable
-
-````yaml
-apiVersion: v1
-kind: Pod
-metadata:
-  name: dapi-test-pod
-spec:
-  containers:
-    - name: test-container
-      image: registry.k8s.io/busybox
-      command: [ "/bin/sh", "-c", "env" ]
-      env:
-        - name: SPECIAL_LEVEL_KEY
-          valueFrom:
-            configMapKeyRef:
-              name: special-config
-              key: special.how
-  
-        - name: LOG_LEVEL
-          valueFrom:
-            configMapKeyRef:
-              name: env-config
-              key: log_level
-  restartPolicy: Never
-````
+[kubectl - Cheat Sheet](https://kubernetes.io/docs/reference/kubectl/cheatsheet/)
 
 # Installation Guide
 - [Install and Set Up kubectl on macOS](https://kubernetes.io/docs/tasks/tools/install-kubectl-macos/)

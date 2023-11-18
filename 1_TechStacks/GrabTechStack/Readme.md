@@ -8,7 +8,7 @@
 | Data Streaming                                      | [Kafka](../../5_MessageBrokersEDA/Kafka/Readme.md)                                      |
 | Search-DB (derived data)                            | [ElasticSearch](../../3_DatabaseServices/Search-Databases/ElasticSearch/Readme.md) |
 | Backend Language - GoLang                           | [GoLang](GoLangBackend.md)                                                                                 |
-| Container Orchestration                             | [Kubernates](../../9_ContainerOrchestrationServices/Kubernates.md)                   |
+| Container Orchestration                             | [Kubernates](../../9_ContainerOrchestrationServices/Kubernates/Readme.md)                   |
 | Object Store, Data Lake                             | [Amazon S3](../../2_AWSServices/7_StorageServices/3_ObjectStorageS3/Readme.md)                           |
 | Graph Database                                      | [Amazon Neptune](../../2_AWSServices/6_DatabaseServices/AmazonNeptune.md)                                |
 | InMemory Cache                                      | [Redis](../../3_DatabaseServices/In-Memory-Databases/Redis/Readme.md)                  |

@@ -3,8 +3,8 @@
 
 # Various Technologies
 
-| Tech                                                                                                       |
-|------------------------------------------------------------------------------------------------------------|
+| Tech                                                                                                  |
+|-------------------------------------------------------------------------------------------------------|
 | [AWS App Mesh](../2_AWSServices/1_NetworkingAndContentDelivery/2_ApplicationNetworking/AWSAppMesh.md) |
 
 # Why service mesh? 

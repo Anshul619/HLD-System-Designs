@@ -7,7 +7,7 @@
 
 | Tech                                                                                                     | Remarks                                   |
 |----------------------------------------------------------------------------------------------------------|-------------------------------------------|
-| [Kubernates Cluster](../../9_ContainerOrchestrationServices/Kubernates.md)                               | Cluster of Containers                     |
+| [Kubernates Cluster](../../9_ContainerOrchestrationServices/Kubernates/Readme.md)                               | Cluster of Containers                     |
 | [Kafka Cluster](../../5_MessageBrokersEDA/Kafka/Readme.md)                                                  | Cluster of Topics (High-Throughput MQ)    |                     
 | [Amazon RDS Clusters](../../2_AWSServices/6_DatabaseServices/AmazonRDS/MultiAZDeployment.md)             | Cluster of DB instances, across Multi-AZs |
 | [Redis Cluster](../../3_DatabaseServices/In-Memory-Databases/Redis/RedisCluster.md)                             | Cluster of Redis Nodes (In-Memory Cache)  |
@@ -18,5 +18,5 @@
 | [Hadoop Cluster](../../6_BigDataServices/ETLServices/BatchProcessing/ApacheHadoop)                       | Cluster of different components           |
 
 # What is Cluster capacity?
-- In general, a cluster (for ex. [Kubernates cluster](../../9_ContainerOrchestrationServices/Kubernates.md)) can be seen as abstracting a set of individual nodes as a big "super node".
+- In general, a cluster (for ex. [Kubernates cluster](../../9_ContainerOrchestrationServices/Kubernates/Readme.md)) can be seen as abstracting a set of individual nodes as a big "super node".
 - The total compute capacity (in terms of CPU and memory) of this super node is the sum of all the constituent nodes' capacities.

@@ -1,6 +1,6 @@
 # Introduction
-- [ElasticSearch](https://www.elastic.co/elasticsearch/) is a distributed, [RESTful modern search](../../../8_APITechOptions/REST.md) and analytics engine based on [Apache Lucene](../Readme.md).
-- We can only interact with ElasticSearch through [REST APIs](../../../8_APITechOptions/REST.md).
+- [ElasticSearch](https://www.elastic.co/elasticsearch/) is a distributed, [RESTful modern search](../../../8_APIProtocols/REST.md) and analytics engine based on [Apache Lucene](../Readme.md).
+- We can only interact with ElasticSearch through [REST APIs](../../../8_APIProtocols/REST.md).
 - ElasticSearch can be deployed using [Amazon OpenSearch](../../../2_AWSServices/6_DatabaseServices/AmazonOpenSearch.md) service, on [AWS](../../../2_AWSServices).
 - For data analysis, it operates alongside Kibana, and Logstash to form the [ELK stack](../../../12_ObservabilityLogsServices/ELK.md).
 - ElasticSearch is [Paid and NOT open-sourced](https://www.elastic.co/pricing/).

@@ -322,17 +322,17 @@
     </tr>
     <tr>
         <td>
-            <a href="8_MonitoringServices">Monitoring Services</a>
+            <a href="8_ObservabilityLogsServices">Monitoring Services</a>
         </td>
         <td>
             <div class="container" style="background:white">
-                <a href="8_MonitoringServices/AmazonCloudWatch/Readme.md" target="_blank">
+                <a href="8_ObservabilityLogsServices/AmazonCloudWatch/Readme.md" target="_blank">
                   <img src="https://miro.medium.com/max/800/1*ffbynFsxn43lPdne2kaHMQ.png" width="150">
                 </a>
                 <a href="8_MonitoringServices/AWSXRay.md" target="_blank">
                   <img src="https://miro.medium.com/max/960/1*kHVLIuXPyE0HAEO0HZ6kwg.webp" width="150">
                 </a>
-                <a href="8_MonitoringServices/AWSCloudTrail.md" target="_blank">
+                <a href="8_ObservabilityLogsServices/AWSCloudTrail.md" target="_blank">
                   <img src="https://i0.wp.com/blog.knoldus.com/wp-content/uploads/2022/02/feature.png?w=360&ssl=1" width="150">
                 </a>
             </div>

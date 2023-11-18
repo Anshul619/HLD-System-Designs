@@ -16,7 +16,7 @@ This repo contains the various system design components info, questions and solu
   <tbody>
     <tr>
       <td>
-        <a href="8_APITechOptions/README.md">API Tech Options (or CDN)</a>
+        <a href="8_APIProtocols/README.md">API Protocols</a>
       </td>
       <td>
         <div class="container" style="background:white">
@@ -27,13 +27,13 @@ This repo contains the various system design components info, questions and solu
 [//]: # (                  <img src="https://www.snmpcenter.com/wp-content/uploads/2016/10/RESTful-API-logo-for-light-bg-600x205.png" width="150">)
 
 [//]: # (                </a>)
-                <a href="8_APITechOptions/gRPC.md" target="_blank">
+                <a href="8_APIProtocols/gRPC.md" target="_blank">
                   <img src="https://res.cloudinary.com/practicaldev/image/fetch/s--TNgs2Fd7--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/8susytd9w6lxe9sreqvd.jpg" width="150">
                 </a>
-                <a href="8_APITechOptions/GraphQL.md" target="_blank">
+                <a href="8_APIProtocols/GraphQL.md" target="_blank">
                   <img src="https://marmelab.com/images/blog/graphql/logo.png" width="150">
                 </a>
-                <a href="8_APITechOptions/1_NetworkingAndContentDelivery/1_EdgeNetworking/AmazonCloudFront.md" target="_blank">
+                <a href="8_APIProtocols/1_NetworkingAndContentDelivery/1_EdgeNetworking/AmazonCloudFront.md" target="_blank">
                   <img src="https://ericknavarro.io/images/thumbnails/12.png" width="150">
                 </a>
             </div>
@@ -48,7 +48,7 @@ This repo contains the various system design components info, questions and solu
           <img src="https://i0.wp.com/www.australtech.net/wp-content/uploads/2019/05/cloudformation-logo.png" width="150">
         </a>
         <br/><br/>
-        <a href="9_ContainerOrchestrationServices/Kubernates.md">
+        <a href="9_ContainerOrchestrationServices/Kubernates/Readme.md">
           <img src="https://logos-download.com/wp-content/uploads/2018/09/Kubernetes_Logo.png">
         </a>
         <br/><br/>
@@ -274,8 +274,8 @@ This repo contains the various system design components info, questions and solu
 - [Angular8](https://github.com/Anshul619/Programming-Languages/tree/main/3_FrontEnd/Angular8.md)
 
 # API Documentation, Testing
-- :star: [Swagger](8_APITechOptions/API_Documentation/Swagger/Readme.md)
-- [Open API Spec](8_APITechOptions/API_Documentation/Swagger/OpenAPISpec.md)
+- :star: [Swagger](8_APIProtocols/API_Documentation/Swagger/Readme.md)
+- [Open API Spec](8_APIProtocols/API_Documentation/Swagger/OpenAPISpec.md)
 - [Testing](https://github.com/Anshul619/Programming-Languages/tree/main/5_QATools/Readme.md)
 
 # Source(s) and further reading

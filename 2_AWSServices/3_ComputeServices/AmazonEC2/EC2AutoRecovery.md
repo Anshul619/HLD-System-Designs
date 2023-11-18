@@ -1,5 +1,5 @@
 # Automatic Recovery
-- To [automatically recover an instance when a system status check failure occurs](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-instance-recover.html), you can use the default configuration of the instance (i.e.Simplified automatic recovery) or create an [Amazon CloudWatch alarm](../../8_MonitoringServices/AmazonCloudWatch/CloudwatchAlarms.md).
+- To [automatically recover an instance when a system status check failure occurs](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-instance-recover.html), you can use the default configuration of the instance (i.e.Simplified automatic recovery) or create an [Amazon CloudWatch alarm](../../8_ObservabilityLogsServices/AmazonCloudWatch/CloudwatchAlarms.md).
 - If an instance becomes unreachable because of an underlying hardware failure or a problem that requires AWS involvement to repair, the instance is automatically recovered.
 - The automatic recovery process attempts to recover your instance for up to three separate failures per day. 
 - Your instance may subsequently be retired if automatic recovery fails and a hardware degradation is determined to be the root cause for the original system status check failure.
