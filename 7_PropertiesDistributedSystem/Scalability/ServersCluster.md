@@ -1,6 +1,6 @@
 # Server Cluster
 - A [Server Cluster](https://www.racksolutions.com/news/blog/server-cluster-how-it-works/) consists of a group of servers working simultaneously under a `single IP address`.
-- Server clustering also ensures [Higher Availability](../Reliability/HighAvailability.md) (through [replications](../../3_DatabaseServices/Glossaries/Consistency&Replication/Replication.md)), [proper Load Balancing](LoadBalancer.md) and [System Scalability](../../3_DatabaseServices/Glossaries/ScalabilityDB.md) (through sharding & read replicas).
+- Server clustering also ensures [Higher Availability](../Reliability/HighAvailability.md) (through [replications](../../3_DatabaseServices/Consistency&Replication/Replication.md)), [proper Load Balancing](LoadBalancer.md) and [System Scalability](../../3_DatabaseServices/ScalabilityDB.md) (through sharding & read replicas).
 - Generally, every region would have its own cluster.
 
 # Examples
@@ -10,7 +10,7 @@
 | [Kubernates Cluster](../../9_ContainerOrchestrationServices/Kubernates.md)                               | Cluster of Containers                     |
 | [Kafka Cluster](../../5_MessageBrokers/Kafka/Readme.md)                                                  | Cluster of Topics (High-Throughput MQ)    |                     
 | [Amazon RDS Clusters](../../2_AWSServices/6_DatabaseServices/AmazonRDS/MultiAZDeployment.md)             | Cluster of DB instances, across Multi-AZs |
-| [Redis Cluster](../../3_DatabaseServices/In-Memory-DB/Redis/RedisCluster.md)                             | Cluster of Redis Nodes (In-Memory Cache)  |
+| [Redis Cluster](../../3_DatabaseServices/In-Memory-Databases/Redis/RedisCluster.md)                             | Cluster of Redis Nodes (In-Memory Cache)  |
 | [Amazon Elastic Cache Cluster](../../2_AWSServices/6_DatabaseServices/AmazonElasticCache/ClusterMode.md) | Cluster of Redis Nodes, across Multi-AZs  |
 | [ElasticSearch Cluster](../../3_DatabaseServices/Search-Databases/ElasticSearch/ElasticSearchCluster.md) | Cluster of JSON Data, Indexes etc.        |
 | [OpenSearch Cluster](../../2_AWSServices/6_DatabaseServices/AmazonOpenSearch.md)                         | Cluster of JSON Data, Indexes etc.        |

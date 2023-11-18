@@ -3,12 +3,12 @@
 This repo contains the various system design components info, questions and solutions.
 - [HLD Design Problems](0_HLDUseCasesProblems)
 - [Real-world tech stacks](1_TechStacks)
-- [Key Properties of Distributed Systems](PropertiesDistributedSystems.md)
-- [Database Design tips](DatabaseDesignTips.md)
+- [Key Properties of Distributed Systems](7_PropertiesDistributedSystem/Readme.md)
+- [Database Design tips](3_DatabaseServices/DatabaseDesignTips.md)
 - [System Design Tips](SystemDesignTips.md)
 - [System Estimation Tips](SystemEstimationTips.md)
 - [All Comparisons](All-Comparisons.md)
-- [Architecture Patterns](ArchitecturePatterns.md)
+- [Architecture Patterns](7_PropertiesDistributedSystem/ArchitecturePatterns/Readme.md)
 
 # System Design - Tech Stack
 
@@ -255,7 +255,7 @@ This repo contains the various system design components info, questions and solu
 # Other HLD Services
 - [Observability & Monitoring](12_ObservabilityLogsServices/Readme.md)
 - [Benchmarking](Benchmarking.md)
-- [Engineering Blogs](EngineeringBlogs.md)
+- [Engineering Blogs](1_TechStacks/Readme.md)
 - [Open Source Contributions](OpenSourceContributions.md)
 
 # Programming & OOP Design & Problems (LLD)

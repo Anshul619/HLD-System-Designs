@@ -2,7 +2,7 @@
 # MongoDB
 - [MongoDB](https://www.mongodb.com/) is better suited for [high write and update throughput operations](../../../../7_PropertiesDistributedSystem/Scalability/LatencyThroughput.md) without draining CPU resources and/or causing disk I/O issues. 
 - It organizes data using a doubly linked data structure: documents contain linked lists to one another and to the `BSON-encoded` data behind the scenes.
-- It offers [high scalability, reliability, and performance](../../../Glossaries/ScalabilityDB.md).
+- It offers [high scalability, reliability, and performance](../../../ScalabilityDB.md).
 - [MongoDB]() is more suitable to manage NoSQL data requiring create, read, update and delete (CRUD) operations.
 
 ![img.png](assests/MongoDB_JSON.png)
@@ -28,7 +28,7 @@
 # MQL (Mongo Query Language)
 - [MongoDB]() has a rich query language called [Mongo Query Language (MQL)](https://www.mongodb.com/developer/products/atlas/getting-started-atlas-mongodb-query-language-mql/). 
 - It supports a wide variety of modern native drivers as well as a shell.
-- MongoDB supports [fully ACID compliant transactions](../../../Glossaries/ACIDTransactions/Readme.md).
+- MongoDB supports [fully ACID compliant transactions](../../../ACIDTransactions/Readme.md).
 
 # Book example - JSON-like document
 

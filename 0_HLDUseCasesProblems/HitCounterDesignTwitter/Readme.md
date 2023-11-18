@@ -11,7 +11,7 @@
 
 # Tech Stack
 - [Casandra](../../3_DatabaseServices/NoSQL-Databases/WideColumnDB/ApacheCasandra.md).
-- [Redis Cache](../../3_DatabaseServices/In-Memory-DB/Redis/Readme.md) (with Cluster enabled).
+- [Redis Cache](../../3_DatabaseServices/In-Memory-Databases/Redis/Readme.md) (with Cluster enabled).
 - [Zookeeper](../../10_ClusterCoordinationServices/ApacheZookeeper.md) for servers coordination.
 
 # Rainbird design

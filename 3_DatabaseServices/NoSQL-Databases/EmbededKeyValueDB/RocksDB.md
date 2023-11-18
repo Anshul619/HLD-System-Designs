@@ -1,13 +1,13 @@
 
 # Introduction
-- [RocksDB](http://rocksdb.org/) is an embedded key-value store and uses a [LSM-Tree](../../Glossaries/DataStructuresDB/LSMTree.md), written entirely in C++, for maximum performance.
-- Writes in RocksDB, are [append-only](../../Glossaries/DataStructuresDB/AppendOnlyProperty.md)
+- [RocksDB](http://rocksdb.org/) is an embedded key-value store and uses a [LSM-Tree](../../DataStructuresUsedInDB/LSMTree.md), written entirely in C++, for maximum performance.
+- Writes in RocksDB, are [append-only](../../DataStructuresUsedInDB/AppendOnlyProperty.md)
 - RocksDB is [optimized for fast, low latency storage](../../../7_PropertiesDistributedSystem/Scalability/LatencyThroughput.md) such as flash drives and high-speed disk drives. 
 - RocksDB exploits the full potential of high read/write rates offered by flash or RAM.
 
 # Ideal Use Cases
 - If the behavior of hot data (getting fetched frequently) is based of time-stamp then [Rocksdb]() would a smart choice.
-- But do optimize it for fallback using [bloom-filters](../../Glossaries/DataStructuresDB/LSMTree.md).
+- But do optimize it for fallback using [bloom-filters](../../DataStructuresUsedInDB/LSMTree.md).
 
 # :star: Real world use cases of RocksDB
 - [LinkedIn - Home Feed](../../../1_TechStacks/LinkedInTechStack.md)

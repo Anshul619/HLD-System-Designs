@@ -13,9 +13,9 @@
 
 | Feature            | Remarks                                                               |
 |--------------------|-----------------------------------------------------------------------|
-| Sharding in SQL DB | [Read more](../Glossaries/PartitioningSharding/Readme.md) |
+| Sharding in SQL DB | [Read more](../PartitioningSharding/Readme.md) |
 | SQL Tuning         | [Read more](SQLTuning.md)                                             |
-| Indexing           | [Read more](../Glossaries/DataStructuresDB/Indexing/Readme.md)        |
+| Indexing           | [Read more](../DataStructuresUsedInDB/Indexing/Readme.md)        |
 
 # Postgres vs MySQL
 

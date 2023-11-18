@@ -1,9 +1,9 @@
 # Apache HBase
 - An open source, non-relational, versioned database that runs on top of [Hadoop Distributed File System (HDFS)](../../../11_FileStorageServicesHDFS/ApacheHDFS.md) or [Amazon S3](../../../2_AWSServices/7_StorageServices/3_ObjectStorageS3/Readme.md) (using [EMRFS](../../../2_AWSServices/10_BigDataServices/ETLServices/BatchProcessing/AmazonEMR.md)). 
-- [Apache HBase](https://hbase.apache.org/) is a massively scalable, distributed big data store built for random, [strongly consistent](../../Glossaries/Consistency&Replication/Readme.md), real-time access for tables with `billions of rows and millions of columns`.
+- [Apache HBase](https://hbase.apache.org/) is a massively scalable, distributed big data store built for random, [strongly consistent](../../Consistency&Replication/Readme.md), real-time access for tables with `billions of rows and millions of columns`.
 
 # Key Features
-- [Highly scalable, distributed systems](../../Glossaries/ScalabilityDB.md).
+- [Highly scalable, distributed systems](../../ScalabilityDB.md).
 - [High Read/Writes in Apache HBase](../../../7_PropertiesDistributedSystem/Scalability/LatencyThroughput.md)
 - Linear scalability and modularity
 - Aid in exporting metrics through Hadoop metrics subsystem

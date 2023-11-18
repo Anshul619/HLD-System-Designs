@@ -54,7 +54,7 @@ The application should be able to support the following requirements.
 | User Activity - Relationship Store   | Graph Databases like [Neo4j](../../3_DatabaseServices/NoSQL-Databases/GraphDB/Neo4j.md) or Amazon Neptune                                                                    |
 | Data Streaming                       | [Kafka](../../5_MessageBrokers/Kafka/Readme.md) or [Amazon Kinesis](../../2_AWSServices/5_MessageBrokerServices/AmazonKinesis/Readme.md)                                     |
 | App Servers                          | Separate app servers for READ and WRITE (Since read-write ratio is 100:1).                                                                                                                           |
-| Home Feed DB                         | [Redis](../../3_DatabaseServices/In-Memory-DB/Redis/Readme.md)                                                                                                               |
+| Home Feed DB                         | [Redis](../../3_DatabaseServices/In-Memory-Databases/Redis/Readme.md)                                                                                                               |
 
 # Reliability and Redundancy
 - If we want to have [high availability](../../7_PropertiesDistributedSystem/Reliability/HighAvailability.md) of the system, we need to have multiple replicas of services running in the system so that even if a few services die down, the system remains available and running.

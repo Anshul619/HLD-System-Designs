@@ -4,6 +4,6 @@
 - Most message brokers are designed for small messages.
 
 # Key Features
-- [Keywords](Glossaries/Keywords.md)
+- [Keywords](Keywords.md)
 - [Comparison between Various Message Brokers](KafkaVsRabbitMQVsSQSVsSNS.md)
 - [Message Broker vs DB](MessageBrokerVsDB.md)

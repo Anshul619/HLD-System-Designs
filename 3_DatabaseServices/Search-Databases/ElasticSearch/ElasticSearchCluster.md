@@ -1,12 +1,12 @@
 # ElasticSearch Cluster
 - In [Elasticsearch](https://www.elastic.co/guide/en/elasticsearch/reference/current/add-elasticsearch-nodes.html), a [cluster](../../../7_PropertiesDistributedSystem/Scalability/ServersCluster.md) is a collection of nodes.
 - Cluster and nodes work together and hold the data, where node is an instance of Elasticsearch.
-- A cluster provides [joined indexing](../../Glossaries/DataStructuresDB/Indexing/Readme.md) as well as search capabilities to Elasticsearch users.
+- A cluster provides [joined indexing](../../DataStructuresUsedInDB/Indexing/Readme.md) as well as search capabilities to Elasticsearch users.
 
 ![img.png](assests/ElasticSearch-Cluster.png)
 
 # Sharding in ES Cluster
-- The data stored in an index can be divided into [multiple partitions/shards](../../Glossaries/PartitioningSharding/Readme.md).
+- The data stored in an index can be divided into [multiple partitions/shards](../../PartitioningSharding/Readme.md).
 - An Elasticsearch index has five shards by default.
 - Each shard is an instance of a [Lucene index](../Readme.md), which you can think of as a self-contained search engine that indexes and handles queries for a subset of the data in an Elasticsearch cluster.
 
