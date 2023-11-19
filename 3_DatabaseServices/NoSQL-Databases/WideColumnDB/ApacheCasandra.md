@@ -22,15 +22,15 @@
 
 # :star: Ideal Use Cases
 
-| Use Case                                                                             |
-|--------------------------------------------------------------------------------------|
-| Historical records                                                                   |
+| Use Case                                                                                        |
+|-------------------------------------------------------------------------------------------------|
+| Historical records                                                                              |
 | [High-Write, Low-Read](../../../7_PropertiesDistributedSystem/Scalability/LatencyThroughput.md) |
-| Processing server logs                                                               |
-| Social media posts                                                                   |
-| PDF documents                                                                        |
-| Emails etc.                                                                          |
-| Time Series Data                                                                     |
+| Processing server logs                                                                          |
+| Social media posts                                                                              |
+| PDF documents                                                                                   |
+| Emails etc.                                                                                     |
+| Time Series Data                                                                                |
 
 # :star: Real world use cases of Casandra
 
@@ -38,7 +38,7 @@
 
 ![](../../../1_TechStacks/PersonalizationSpotify/PersonalizationSpotify.drawio.png)
 
-[Read more](../../../1_TechStacks/PersonalizationSpotify)
+[Read more](../../../1_TechStacks/PersonalizationSpotify/Readme.md)
 
 ## Social Network Design Problem - User Entities like Posts, Comments etc.
 
@@ -56,11 +56,12 @@
 - [How Uber Manages a Million Writes Per Second Using Mesos and Cassandra Across Multiple Datacenters?](../../../1_TechStacks/Uber/UberCasandraMesos)
 - [Netflix - Casandra - Time Series Data](../../../1_TechStacks/NetflixTechStack.md)
 - [Directi uses Casandra to save HeatMaps (UI activities)](../../../1_TechStacks/DirectITechStack.md)
-- [Instagram - Casandra - Social Media Posts](../../../1_TechStacks/InstagramTechStack.md)
+- [Instagram - Social Media Posts](../../../1_TechStacks/InstagramTechStack.md)
 - [Twillo - Send Message API Design Problem](../../../0_HLDUseCasesProblems/SendSMSMessageAPITwillo/Readme.md)
 - [Twitter Hit Counter](../../../0_HLDUseCasesProblems/HitCounterDesignTwitter/Readme.md)
+- [Discord Migrates Trillions of Messages from Cassandra to ScyllaDB](https://www.infoq.com/news/2023/06/discord-cassandra-scylladb/)
 
-# Casandra's invention history - Facebook
+# History - Built by Facebook
 - Facebook originally built Cassandra to power its [Inbox search feature](https://m.facebook.com/nt/screen/?params=%7B%22note_id%22%3A10158772759272200%7D&path=%2Fnotes%2Fnote%2F&paipv=0&eav=AfYuSXXQPZ5fvm0_ScPdSlfj5BEFhRVT3iy_6Rsz7NZDbQ2vfq9opnedmTLSjG1aZBA&_rdr), with over 200 nodes deployed.
 - This was abandoned in late 2010 when they built Facebook Messaging platform on [Apache HBase](ApacheHBase.md) as they [found Cassandra's eventual consistency model to be a difficult pattern](../../Consistency&Replication/Readme.md).
 - [Read more](https://www.quora.com/Does-Facebook-use-Apache-Cassandra).

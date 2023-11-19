@@ -7,6 +7,7 @@
 | [Circuit Breaker Pattern](CircuitBreaker.md)                                                 | [MicroServices](../4_MicroServicesSOA)            |
 | [Command Query Responsibility Segregation (CQRS)](CQRS.md)                                   | [MicroServices](../4_MicroServicesSOA)            |
 | [Event Sourcing Pattern](EventSourcing.md)                                                   | [MicroServices](../4_MicroServicesSOA)            |
+| [Microservices - Design Patterns](../4_MicroServicesSOA/DesignPatterns.md)                   | [MicroServices](../4_MicroServicesSOA)            |
 | :star: [Event-Driven Architecture](../5_MessageBrokersEDA/EventDrivenArchitecture/Readme.md) | [Message Broker Services](../5_MessageBrokersEDA) |
 | [Pub-Sub model](../5_MessageBrokersEDA/EventDrivenArchitecture/PubSubModel.md)               | [Message Broker Services](../5_MessageBrokersEDA) |
 | [Point-2-Point model](../5_MessageBrokersEDA/EventDrivenArchitecture/PointToPointModel.md)   | [Message Broker Services](../5_MessageBrokersEDA) |
