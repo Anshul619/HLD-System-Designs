@@ -103,12 +103,12 @@
 ![img.png](https://accu.org/journals/overload/28/159/kozlovski/2.png)
 
 # acks=1 - example
-- If **ack=1** is set as ack level, producer is acknowledged only when message (**6** example message id) is stored in one of the broker (**Broker 1** in this case) successfully.
+- If **ack=1** is set as ack level, producer is acknowledged only when message (example message id - **6**) is stored in one of the broker (**Broker 1** in this case) successfully.
 
 ![img.png](https://accu.org/journals/overload/28/159/kozlovski/4.png)
 
 # acks=all - example
-- If **ack=all** is set as ack level, producer is acknowledged only when message (**6** example message id) is stored in all the brokers successfully.
+- If **ack=all** is set as ack level, producer is acknowledged only when message (example message id - **6**) is stored in all the brokers successfully.
 
 ![img.png](https://accu.org/journals/overload/28/159/kozlovski/6.png)
 
