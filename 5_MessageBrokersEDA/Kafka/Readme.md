@@ -80,11 +80,11 @@
 
 # High Availability Config
 
-| Config                           | Min. Value |
-|----------------------------------|------------|
-| Replication Factor               | 3          |
-| In-sync replicas                 | 2          |
-| Kafka Brokers (in different AZs) | 3          |
+| Config                                   | Min. Value |
+|------------------------------------------|------------|
+| Replication Factor                       | 3          |
+| In-sync replicas (`min.insync.replicas`) | 2          |
+| Kafka Brokers (in different AZs)         | 3          |
 
 # Kafka Ecosystem - External Components
 
@@ -100,17 +100,23 @@
 - **Broker1** & **Broker2** are in sync replicas (i.e. all messages are same in both the brokers).
 - While **Broker3** is out of sync replica.
 
-![img.png](https://accu.org/journals/overload/28/159/kozlovski/2.png)
+![](https://accu.org/journals/overload/28/159/kozlovski/2.png)
+
+[Read more](https://accu.org/journals/overload/28/159/kozlovski/)
 
 # acks=1 - example
 - If **ack=1** is set as ack level, producer is acknowledged only when message (example message id - **6**) is stored in one of the broker (**Broker 1** in this case) successfully.
 
-![img.png](https://accu.org/journals/overload/28/159/kozlovski/4.png)
+![](https://accu.org/journals/overload/28/159/kozlovski/4.png)
+
+[Read more](https://accu.org/journals/overload/28/159/kozlovski/)
 
 # acks=all - example
 - If **ack=all** is set as ack level, producer is acknowledged only when message (example message id - **6**) is stored in all the brokers successfully.
 
-![img.png](https://accu.org/journals/overload/28/159/kozlovski/6.png)
+![](https://accu.org/journals/overload/28/159/kozlovski/6.png)
+
+[Read more](https://accu.org/journals/overload/28/159/kozlovski/)
 
 # Other Points
 - [Kafka vs Others](../KafkaVsRabbitMQVsSQSVsSNS.md)
@@ -127,7 +133,6 @@
 - [Kafka Talk by Tri Hug](https://www.slideshare.net/mumrah/kafka-talk-tri-hug)
 - [Role of ZooKeeper in Kafka](https://www.youtube.com/watch?v=bnHWrSwPvig)
 - [Replication in Kafka](https://medium.com/@_amanarora/replication-in-kafka-58b39e91b64e)
-- [Kafka Acks Explained](https://accu.org/journals/overload/28/159/kozlovski/)
 - [Swiggy - BehindTheBug — Kafka Under The Water](https://bytes.swiggy.com/behindthebug-kafka-under-the-water-288c3d05b202)
 - [Benchmarking Apache Kafka, Apache Pulsar, and RabbitMQ: Which is the Fastest?](https://www.confluent.io/blog/kafka-fastest-messaging-system/)
 - [Designing and testing a highly available Kafka cluster on Kubernetes (without zookeeper)](https://learnk8s.io/kafka-ha-kubernetes)
