@@ -97,14 +97,18 @@
 | Zookeeper       | [Zookeeper](../../10_ClusterCoordinationServices/ApacheZookeeper.md) manages Kafka Cluster (new broker, new partition etc.), brokers coordination & election process (leader, Controller election etc.)                                                                  |
 
 # In-Sync Replicas (ISR)
+- **Broker1** & **Broker2** are in sync replicas (i.e. all messages are same in both the brokers).
+- While **Broker3** is out of sync replica.
 
 ![img.png](https://accu.org/journals/overload/28/159/kozlovski/2.png)
 
-# ACK level - acks=1
+# acks=1 - example
+- If **ack=1** is set as ack level, producer is acknowledged only when message (**6** example message id) is stored in one of the broker (**Broker 1** in this case) successfully.
 
 ![img.png](https://accu.org/journals/overload/28/159/kozlovski/4.png)
 
-# ACK level - acks=all
+# acks=all - example
+- If **ack=all** is set as ack level, producer is acknowledged only when message (**6** example message id) is stored in all the brokers successfully.
 
 ![img.png](https://accu.org/journals/overload/28/159/kozlovski/6.png)
 
