@@ -6,9 +6,5 @@
 
 ![img.png](../assests/thrift_img.png)
 
-# Thrift vs ProtocolBuffers
-- Thrift generates code to implement RPC clients and servers where Protocol Buffers seems mostly designed as a data-interchange format alone.
-- [Read more](https://stackoverflow.com/questions/69316/biggest-differences-of-thrift-vs-protocol-buffers)
-
 # References
 - [Thrift GitHub Code](https://github.com/apache/thrift)
