@@ -6,3 +6,7 @@
 > Kafka is based on [Log Based Queue](../../3_DatabaseServices/DataStructuresUsedInDB/AppendOnlyProperty.md)
 > - :star: Messages are persisted to [append-only log files](../../3_DatabaseServices/DataStructuresUsedInDB/AppendOnlyProperty.md) by the broker.
 > - Producers are [appending these log files (sequential write)](../../3_DatabaseServices/DataStructuresUsedInDB/AppendOnlyProperty.md) & consumers are reading a range of these files (**sequential reads**).
+
+# Why reading from Kafka is so fast?
+- Reading data out of Kafka is very fast thanks to `java.nio.channels.FileChannel#transferTo`.
+- This method uses `sendFile` system call which allows for very efficient transfer of data from a file to another file (including sockets).
