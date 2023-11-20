@@ -1,4 +1,4 @@
-# :star: Apache Kafka 
+# Apache Kafka 
 - [Apache Kafka](https://kafka.apache.org/) is an [open-source distributed event streaming platform](../EventDrivenArchitecture/Readme.md) used by thousands of companies for high-performance data pipelines, streaming analytics, data integration, and mission-critical applications.
 - [Kafka](https://kafka.apache.org/) is based on [Publish-Subscriber Model](../EventDrivenArchitecture/PubSubModel.md). And can be used for [Event-Driven Architecture](../EventDrivenArchitecture/Readme.md).
 - Kafka can process a large amount of data in a short amount of time (**1 million messages/sec**).
@@ -48,6 +48,10 @@
 | Extensibility                        | Allows multiple ways for applications to plugin and make use of Kafka.<br/>- Also, it has provisions for [new connectors](../../6_BigDataServices/DataConnectors/KafkaConnect.md) that you can write as needed.                                                                                                                                                                                 |
 | Data Processing/Transformation       | Using [Kafka Stream API](../../6_BigDataServices/ETLServices/StreamProcessing/KafkaStreams/Readme.md), Kafka allows for deriving new data streams using the existing data streams from producers.                                                                                                                                                                                               |
 
+# Kafka - Partitioning Layout
+
+![img.png](assets/Kafka-Partitioning-Layout.drawio.png)
+
 # Major Components of Kafka
 
 | Component                                | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
@@ -91,10 +95,6 @@
 | Kafka Streams   | [Streams API](../../6_BigDataServices/ETLServices/StreamProcessing/KafkaStreams/Readme.md) is a client library for building applications and [microservices](../../4_MicroServicesSOA/Readme.md), where the input and output data are stored in [Kafka clusters](Readme.md). |
 | kSQL            | [kSQL](kSQL.md) is a database purpose-built for stream processing applications.                                                                                                                                                                                          |
 | Zookeeper       | [Zookeeper](../../10_ClusterCoordinationServices/ApacheZookeeper.md) manages Kafka Cluster (new broker, new partition etc.), brokers coordination & election process (leader, Controller election etc.)                                                                  |
-
-# Kafka - Partitioning Layout
-
-![img.png](assets/Kafka-Partitioning-Layout.drawio.png)
 
 # In-Sync Replicas (ISR)
 
