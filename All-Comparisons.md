@@ -15,8 +15,10 @@
 | [Strong vs Semi vs Eventual Consistency/Replication](3_DatabaseServices/Consistency&Replication/Readme.md)            | [Database Services](3_DatabaseServices)                   |
 | [Amazon S3 vs Apache HDFS](11_FileStorageServicesHDFS/HDFSVsS3.md)                                                    | [File Storage Services](11_FileStorageServicesHDFS)       |
 | [Apache Spark vs Map Reduce](6_BigDataServices/ETLServices/ApacheSparkVsMapReduce.md)                                 | [Big Data - ETL Services](6_BigDataServices/ETLServices/) |
-| [REST vs GraphQL vs gRPC](8_APIProtocols/Readme.md)                                                                   | [API Tech Options](8_APIProtocols/Readme.md)              |
+| [REST vs GraphQL vs gRPC](8_APIProtocols/Readme.md)                                                                   | [API Protocols](8_APIProtocols/Readme.md)                 |
 | [Stateful vs Stateless](7_PropertiesDistributedSystem/StatefulVsStateless.md)                                         | [MicroServices](4_MicroServicesSOA)                       |
 | [Event Driven vs Request Response Pattern](4_MicroServicesSOA/EventDrivenVsRequestResponsePattern.md)                 | [MicroServices](4_MicroServicesSOA)                       |
 | [Web vs App Server](7_PropertiesDistributedSystem/WebVsAppServer.md)                                                  | [MicroServices](4_MicroServicesSOA)                       |
 | [Microservices Concerns - Spring Cloud vs K8s vs AWS](4_MicroServicesSOA/SpringCloudVsK8sVsAWS.md)                    | [MicroServices](4_MicroServicesSOA)                       |
+| [Avro vs Thrift vs Protocol Buffers](8_APIProtocols/EncodingLibraries/AvroVsThriftVsProtocolBuffers.md)               | [Encoding Libraries](8_APIProtocols/EncodingLibraries)    |
+
