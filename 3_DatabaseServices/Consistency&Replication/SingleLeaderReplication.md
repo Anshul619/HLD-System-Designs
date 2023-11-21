@@ -26,7 +26,7 @@ This replication is available as a built-in-feature in various technologies.
 |--------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | SQL/Relational Databases | [Amazon Aurora](../../2_AWSServices/6_DatabaseServices/AmazonRDS/AmazonAurora/Readme.md), PostgresSQL, MySQL etc.                                                                                                                            |
 | NoSQL Databases          | [Amazon Elastic Cache (Cluster Disabled)](../../2_AWSServices/6_DatabaseServices/AmazonElasticCache/ClusterMode.md), [Redis - Master Slave Replication](../In-Memory-Databases/Redis/RedisLeaderFollowReplication.md), MongoDB, DynamoDB etc. |
-| Message Brokers          | [Kafka Cluster](../../5_MessageBrokersEDA/Kafka/Readme.md), RabbitMQ                                                                                                                                                                                 |
+| Message Brokers          | [Kafka Cluster](../../4_MessageBrokersEDA/Kafka/Readme.md), RabbitMQ                                                                                                                                                                                 |
 
 # Leader Election Process
 - In case of failed leader, new leader would be chosen through an election process (where the leader is chosen by a majority of the remaining replicas), or by a previously [elected controller node](../../10_ClusterCoordinationServices/ControllerNode.md).

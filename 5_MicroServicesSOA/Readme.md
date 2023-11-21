@@ -15,6 +15,9 @@
 # Features
 - [Design Patterns](DesignPatterns.md)
 - [Spring Cloud vs K8s vs AWS](SpringCloudVsK8sVsAWS.md)
+- [API Gateway](1_APIGateway)
+- [Service Registry and Discovery](2_ServiceRegistry&Discovery/Readme.md)
+- [ServiceMesh](3_ServiceMesh.md)
 
 # :thumbsup: Advantages of Microservices design
 

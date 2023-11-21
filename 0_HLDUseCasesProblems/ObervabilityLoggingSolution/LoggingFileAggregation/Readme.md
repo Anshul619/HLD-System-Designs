@@ -14,7 +14,7 @@
 
 # Design Steps
 - Recently opened file handles should be stored in the local app server cache.
-- [Kafka topic name](../../../5_MessageBrokersEDA/Kafka/Readme.md) can be log file name.
+- [Kafka topic name](../../../4_MessageBrokersEDA/Kafka/Readme.md) can be log file name.
 - We would keep [rotating the log files at 10KB file size](https://www.mezmo.com/learn-log-management/what-is-log-rotation-how-does-it-work). (for best memory optimization)
 
 # What is the purpose of log rotation?

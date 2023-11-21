@@ -3,8 +3,8 @@
 | Comparison                                                                                                            | Service Type                                              |
 |-----------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------|
 | :star: [AWS - All Comparisons](2_AWSServices/AWS-All-Comparisons.md)                                                  |                                                           |
-| :star: [Message Broker vs DB](5_MessageBrokersEDA/MessageBrokerVsDB.md)                                               | [Message Broker Services](5_MessageBrokersEDA)            |
-| :star: [Message Brokers - Kafka vs Others](5_MessageBrokersEDA/KafkaVsRabbitMQVsSQSVsSNS.md)                          | [Message Broker Services](5_MessageBrokersEDA)            |
+| :star: [Message Broker vs DB](4_MessageBrokersEDA/MessageBrokerVsDB.md)                                               | [Message Broker Services](4_MessageBrokersEDA)            |
+| :star: [Message Brokers - Kafka vs Others](4_MessageBrokersEDA/KafkaVsRabbitMQVsSQSVsSNS.md)                          | [Message Broker Services](4_MessageBrokersEDA)            |
 | :star: [SQL vs NoSQL](3_DatabaseServices/SQLvsNoSQL/Readme.md)                                                        | [Database Services](3_DatabaseServices)                   |
 | [Terminologies - SQL vs Document vs Search DBs](3_DatabaseServices/SQLvsNoSQL/TermsComparisons.md)                    | [Database Services](3_DatabaseServices)                   |
 | [DynamoDB vs MongoDB vs Casandra](3_DatabaseServices/NoSQL-Databases/DynamoDBVsMongoDBVsCasandra.md)                  | [Database Services](3_DatabaseServices)                   |
@@ -16,9 +16,9 @@
 | [Amazon S3 vs Apache HDFS](11_FileStorageServicesHDFS/HDFSVsS3.md)                                                    | [File Storage Services](11_FileStorageServicesHDFS)       |
 | [Apache Spark vs Map Reduce](6_BigDataServices/ETLServices/ApacheSparkVsMapReduce.md)                                 | [Big Data - ETL Services](6_BigDataServices/ETLServices/) |
 | [REST vs GraphQL vs gRPC](8_APIProtocols/Readme.md)                                                                   | [API Protocols](8_APIProtocols/Readme.md)                 |
-| [Stateful vs Stateless](7_PropertiesDistributedSystem/StatefulVsStateless.md)                                         | [MicroServices](4_MicroServicesSOA)                       |
-| [Event Driven vs Request Response Pattern](4_MicroServicesSOA/EventDrivenVsRequestResponsePattern.md)                 | [MicroServices](4_MicroServicesSOA)                       |
-| [Web vs App Server](7_PropertiesDistributedSystem/WebVsAppServer.md)                                                  | [MicroServices](4_MicroServicesSOA)                       |
-| [Microservices Concerns - Spring Cloud vs K8s vs AWS](4_MicroServicesSOA/SpringCloudVsK8sVsAWS.md)                    | [MicroServices](4_MicroServicesSOA)                       |
+| [Stateful vs Stateless](7_PropertiesDistributedSystem/StatefulVsStateless.md)                                         | [MicroServices](5_MicroServicesSOA)                       |
+| [Event Driven vs Request Response Pattern](4_MessageBrokersEDA/EventDrivenVsRequestResponsePattern.md)                 | [MicroServices](5_MicroServicesSOA)                       |
+| [Web vs App Server](7_PropertiesDistributedSystem/WebVsAppServer.md)                                                  | [MicroServices](5_MicroServicesSOA)                       |
+| [Microservices Concerns - Spring Cloud vs K8s vs AWS](5_MicroServicesSOA/SpringCloudVsK8sVsAWS.md)                    | [MicroServices](5_MicroServicesSOA)                       |
 | [Avro vs Thrift vs Protocol Buffers](8_APIProtocols/EncodingLibraries/AvroVsThriftVsProtocolBuffers.md)               | [Encoding Libraries](8_APIProtocols/EncodingLibraries)    |
 

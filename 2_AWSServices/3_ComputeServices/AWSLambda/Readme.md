@@ -68,7 +68,7 @@
 [Read more](../AWSStepFunctions.md)
 
 ## Event Driven Architecture
-- [AWS Lambda]() is an example of an [event-driven architecture](../../../5_MessageBrokersEDA/EventDrivenArchitecture/Readme.md).
+- [AWS Lambda]() is an example of an [event-driven architecture](../../../4_MessageBrokersEDA/EventDrivenArchitecture/Readme.md).
 - Most AWS services generate events and act as an event source for Lambda.
 - Lambda runs custom code (functions) in response to events.
 - Lambda functions are designed to process these events and, once invoked, may initiate other actions or subsequent events.

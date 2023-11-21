@@ -1,7 +1,7 @@
 
 # Amazon EventBridge (formerly called Cloudwatch Events)
 - [Amazon EventBridge](https://aws.amazon.com/eventbridge/) is a serverless event bus that lets you receive, filter, transform, route, and deliver events. 
-- Using [Amazon EventBridge](), we can build [event-driven applications at scale](../../4_MicroServicesSOA) across AWS, existing systems, or SaaS applications.
+- Using [Amazon EventBridge](), we can build [event-driven applications at scale](../../5_MicroServicesSOA) across AWS, existing systems, or SaaS applications.
 - It uses the [Amazon CloudWatch Events API](../8_ObservabilityLogsServices/AmazonCloudWatch/Readme.md), but also includes more functionality, like the ability to ingest events from SaaS apps.
 
 # Amazon EventBridge rules
@@ -34,7 +34,7 @@
 - [Replaying archived Amazon EventBridge events](https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-replay-archived-event.html)
 
 # Other Links
-- :star: [Amazon EventBridge vs others](../../5_MessageBrokersEDA/KafkaVsRabbitMQVsSQSVsSNS.md)
+- :star: [Amazon EventBridge vs others](../../4_MessageBrokersEDA/KafkaVsRabbitMQVsSQSVsSNS.md)
 
 # References
 - [Reducing custom code by using advanced rules in Amazon EventBridge](https://aws.amazon.com/blogs/compute/reducing-custom-code-by-using-advanced-rules-in-amazon-eventbridge/)

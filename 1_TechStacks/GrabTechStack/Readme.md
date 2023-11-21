@@ -5,7 +5,7 @@
 | Cloud Platform                                      | [AWS](../../2_AWSServices/Readme.md)                                                                     |
 | OLTP - Transaction-DB (like orders etc.)            | [DynamoDB](../../2_AWSServices/6_DatabaseServices/AmazonDynamoDB/Readme.md)                              |
 | OLAP - Analytical-Queries (like order history etc.) | [MySQL - Amazon RDS](../../3_DatabaseServices/SQL-Databases/Readme.md)                          |
-| Data Streaming                                      | [Kafka](../../5_MessageBrokersEDA/Kafka/Readme.md)                                      |
+| Data Streaming                                      | [Kafka](../../4_MessageBrokersEDA/Kafka/Readme.md)                                      |
 | Search-DB (derived data)                            | [ElasticSearch](../../3_DatabaseServices/Search-Databases/ElasticSearch/Readme.md) |
 | Backend Language - GoLang                           | [GoLang](GoLangBackend.md)                                                                                 |
 | Container Orchestration                             | [Kubernates](../../9_ContainerOrchestrationServices/Kubernates/Readme.md)                   |

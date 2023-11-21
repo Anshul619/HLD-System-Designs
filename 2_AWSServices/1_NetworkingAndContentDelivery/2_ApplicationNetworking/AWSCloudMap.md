@@ -1,8 +1,8 @@
 # AWS Cloud Map
-- [AWS Cloud Map](https://aws.amazon.com/cloud-map/) is a [cloud resource discovery service](../../../4_MicroServicesSOA/2_ServiceRegistry&Discovery/Readme.md). 
+- [AWS Cloud Map](https://aws.amazon.com/cloud-map/) is a [cloud resource discovery service](../../../5_MicroServicesSOA/2_ServiceRegistry&Discovery/Readme.md). 
 - With Cloud Map, you can define custom names for your application resources, and it maintains the updated location of these dynamically changing resources. 
-- This increases your application availability because [your web service](../../../4_MicroServicesSOA/Readme.md) always discovers the most up-to-date locations of its resources.
-- Cloud Map allows you to register any application resources, such as databases, queues, [microservices](../../../4_MicroServicesSOA/Readme.md), and other cloud resources, with custom names.
+- This increases your application availability because [your web service](../../../5_MicroServicesSOA/Readme.md) always discovers the most up-to-date locations of its resources.
+- Cloud Map allows you to register any application resources, such as databases, queues, [microservices](../../../5_MicroServicesSOA/Readme.md), and other cloud resources, with custom names.
 - Cloud Map then constantly checks the health of resources to make sure the location is up-to-date.
 - The application can then query the registry for the location of the resources needed based on the application version and deployment environment.
 
@@ -19,7 +19,7 @@
 # AWS Cloud Map & Route53
 - Service load balancing happens using [Route53 multivalue routing policy](../1_EdgeNetworking/AmazonRoute53/Readme.md#multivalue-answer-routing).
 - One service will call other service with service name and those service names are DNS registered in private DNS hosted zone with record set.
-- There is no special proxy like [load balancer](ElasticLoadBalancer/Readme.md) in between [two microservices](../../../4_MicroServicesSOA/Readme.md), so no additional network hop which means very good performance improvement using [Service Discovery](../../../4_MicroServicesSOA/2_ServiceRegistry&Discovery/Readme.md).
+- There is no special proxy like [load balancer](ElasticLoadBalancer/Readme.md) in between [two microservices](../../../5_MicroServicesSOA/Readme.md), so no additional network hop which means very good performance improvement using [Service Discovery](../../../5_MicroServicesSOA/2_ServiceRegistry&Discovery/Readme.md).
 
 Example - If we have 3 notification service containers
 - 3 private IP addresses we will have for those 3 containers

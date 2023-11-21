@@ -4,7 +4,7 @@
 - This opens up possibilities for constructing and managing the operations of producers and consumers, as well as establishing reusable links between these solutions. 
 - A connector, for example, may capture [all database updates](../../3_DatabaseServices/ChangeDataCapture/Readme.md) and ensure that they are made available in a Kafka topic.
 
-![](../../5_MessageBrokersEDA/Kafka/assets/Kafka-Connect.png)
+![](../../4_MessageBrokersEDA/Kafka/assets/Kafka-Connect.png)
 
 # Key Features of Connectors
 - Pluggable Software Components
