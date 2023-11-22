@@ -3,7 +3,6 @@
 - We can only interact with ElasticSearch through [REST APIs](../../../8_APIProtocols/REST.md).
 - ElasticSearch can be deployed using [Amazon OpenSearch](../../../2_AWSServices/6_DatabaseServices/AmazonOpenSearch.md) service, on [AWS](../../../2_AWSServices).
 - For data analysis, it operates alongside Kibana, and Logstash to form the [ELK stack](../../../12_ObservabilityLogsServices/ELK.md).
-- ElasticSearch is [Paid and NOT open-sourced](https://www.elastic.co/pricing/).
 
 # :star: Real world use cases of ElasticSearch
 - [Food Ordering - HLD Design](../../../0_HLDUseCasesProblems/FoodOrderingZomatoSwiggy/Readme.md)
@@ -25,15 +24,18 @@
 ## Different data types supported
 - Textual
 - Numerical
-- [GeoSpatial (geo-point, geo-shape data types etc.)](#star-elasticsearch-geo-spatial-supportelasticsearchgeospatialsupportmd)
+- [GeoSpatial (geo-point, geo-shape data types etc.)](ElasticSearchGeoSpatialSupport.md)
 - Unstructured etc.
 
 ## REST APIs (JSON based)
-- [Search APIs](https://www.elastic.co/guide/en/elasticsearch/reference/current/search.html) (`GET /my-index-000001/_search`)
-- Document APIs
-- Aggregation APIs
-- Index APIs (`GET /_cat/indices`)
-- Cluster APIs
+
+| API name                                                                                   | Example URL                  |
+|--------------------------------------------------------------------------------------------|------------------------------|
+| [Search APIs](https://www.elastic.co/guide/en/elasticsearch/reference/current/search.html) | GET /my-index-000001/_search |
+| Index APIs                                                                                 | GET /_cat/indices            |
+| Document APIs                                                                              |                              |
+| Aggregation APIs                                                                           |                              |
+| Cluster APIs                                                                               |                              |
 
 ## :star: ElasticSearch Cluster
 
@@ -47,20 +49,11 @@
 
 [Read more](ElasticSearchDataStreams.md)
 
-## :star: [ElasticSearch Geo Spatial Support](ElasticSearchGeoSpatialSupport.md)
-
 ## Data Storage Architecture
 - Settings, index mapping, alternative cluster states, and other metadata are saved to Elasticsearch files outside the [Lucene](../Readme.md) environment.
 - In [Apache Lucene](../Readme.md), data updates are resource-intensive operations, because segments are immutable, and every commit creates a new segment, then segments are merged automatically. 
 - To avoid this excessive I/O, Elasticsearch creates dedicated transactional index logs, preventing low-level Lucene commits for each indexing procedure. 
 - These logs can also be used for recovery in case of data corruption.
-
-# What is NRT in Elasticsearch?
-- NRT is a full form of [(Near Real-Time Search) platform](https://www.elastic.co/guide/en/elasticsearch/reference/current/near-real-time.html). 
-- It is a near real-time search platform. 
-- It means there is a slight latency (mostly one second) from when you index a document until it becomes very searchable.
-
-![](https://www.elastic.co/guide/en/elasticsearch/reference/current/images/lucene-written-not-committed.png)
 
 # What is Ingest node?
 - Ingest node is use for pre-process documents before the actual document indexing happens. 
@@ -70,29 +63,9 @@
 # Other Points
 - [Installation using Docker ELK](https://github.com/deviantony/docker-elk)
 - [GraphQL with ElasticSearch](ElasticSearchWithGraphQL.md)
-
-# Sample Queries
-
-## Sort Search Results
-- [Read more](https://www.elastic.co/guide/en/elasticsearch/reference/current/sort-search-results.html)
-
-API - `GET /my-index-000001/_search`
-
-Request Body
-````json
-{
-  "sort" : [
-    { "post_date" : {"order" : "asc", "format": "strict_date_optional_time_nanos"}},
-    "user",
-    { "name" : "desc" },
-    { "age" : "desc" },
-    "_score"
-  ],
-  "query" : {
-    "term" : { "user" : "kimchy" }
-  }
-}
-````
+- [NRT - Near Real-Time Search platform](https://www.elastic.co/guide/en/elasticsearch/reference/current/near-real-time.html)
+- [Sample Search Query](SampleSearchQuery.md)
+- [ElasticSearch Pricing](https://www.elastic.co/pricing/).
 
 # References
 - [ElasticSearch from the Bottom Up](https://www.elastic.co/blog/found-elasticsearch-from-the-bottom-up)
