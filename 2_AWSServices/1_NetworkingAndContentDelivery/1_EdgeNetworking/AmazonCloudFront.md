@@ -3,6 +3,8 @@
 - It [securely deliver content with low latency and high transfer speeds](../../../7_PropertiesDistributedSystem/Scalability/LatencyThroughput.md).
 - CloudFront works as a [global Content Delivery Service (CDN)](../../../7_PropertiesDistributedSystem/CDNs/CDNs.md) to deliver the [static content](../../../7_PropertiesDistributedSystem/CDNs/StaticContent.md) efficiently to the end users.
 
+# Architecture
+
 ![](https://docs.aws.amazon.com/images/AmazonCloudFront/latest/DeveloperGuide/images/regional-edge-caches.png)
 
 # Features

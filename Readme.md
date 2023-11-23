@@ -21,8 +21,7 @@ This repo contains the various system design components info, questions and solu
       <td>
         <div class="container" style="background:white">
             <div class="block two first">
-                <a href="8_APIProtocols/REST.md" target="_blank">REST
-                </a>
+                <a href="8_APIProtocols/REST.md" target="_blank">REST</a>
                 <a href="8_APIProtocols/gRPC.md" target="_blank">
                   <img src="https://res.cloudinary.com/practicaldev/image/fetch/s--TNgs2Fd7--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/8susytd9w6lxe9sreqvd.jpg" width="150">
                 </a>

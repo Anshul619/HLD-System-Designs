@@ -6,5 +6,14 @@
 
 ![img.png](../assests/thrift_img.png)
 
+# Real world usages of Thrift
+- Facebook
+- Casandra
+- Hadoop supports access to its HDFS API through Thrift bindings
+- HBase leverages Thrift for a cross-language API
+- LastFM
+- Scribe
+- [Evernote](https://github.com/evernote/evernote-thrift) uses Thrift for its public apis
+
 # References
 - [Thrift GitHub Code](https://github.com/apache/thrift)

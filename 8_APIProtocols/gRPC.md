@@ -11,7 +11,7 @@
 
 # gRPC is contract-based (Protobuf)
 - A Contract needs to be available on both sides of communication to make sense of data going between them. 
-- To define the contracts, gRPC uses a declarative language called [Protocol Buffers (Protobuf)](EncodingLibraries/ProtocolBuffers.md).
+- To define the contracts, gRPC uses a declarative language called [Protocol Buffers (Protobuf)](SerializationFrameworks/ProtocolBuffers.md).
 
 ![img.png](assests/protobuf_img.png)
 
@@ -26,7 +26,7 @@
 
 # :thumbsdown: Disadvantages of gRPC
 - gRPC is currently much less popular than REST, and experienced developers are harder to find.
-- gRPC is not a native solution for customer-facing web applications because it requires `HTTP/2, which is not fully supported by browsers`. 
+- gRPC is not a native solution for customer-facing web applications because it requires **HTTP/2, which is not fully supported by browsers**. 
 - For example, client streaming and bidirectional streaming are not supported in browsers at all.
 - However, there’s a gRPC-Web project that enables using browser-to-backend communication over gRPC without creating a REST proxy.
 
