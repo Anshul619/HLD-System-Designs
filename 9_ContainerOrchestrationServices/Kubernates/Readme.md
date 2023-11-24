@@ -14,7 +14,7 @@
 | [Zomato](../../0_HLDUseCasesProblems/FoodOrderingZomatoSwiggy/Readme.md) |
 | [Swiggy](../../1_TechStacks/SwiggyTechStack.md)                          |
 | [Spotify](../../1_TechStacks/PersonalizationSpotify/Readme.md)           |
-| [Grab](../../1_TechStacks/GrabTechStack/Readme.md)                       |
+| [Grab](../../1_TechStacks/Grab/Readme.md)                       |
 | [LinkedIn](../../1_TechStacks/LinkedInTechStack.md)                      |
 | [Split.io](../../1_TechStacks/SplitIOTechStack.md)                       |
 | [Stripe](../../1_TechStacks/StripeTechStack.md)                          |

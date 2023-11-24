@@ -1,8 +1,8 @@
 # Apache Kafka 
 - [Apache Kafka](https://kafka.apache.org/) is an [open-source distributed event streaming platform](../EventDrivenArchitecture/Readme.md) used by thousands of companies for high-performance data pipelines, streaming analytics, data integration, and mission-critical applications.
 - [Kafka](https://kafka.apache.org/) is based on [Publish-Subscriber Model](../EventDrivenArchitecture/PubSubModel.md). And can be used for [Event-Driven Architecture](../EventDrivenArchitecture/Readme.md).
-- Kafka can process a large amount of data in a short amount of time (**1 million messages/sec**).
-- It also has [low latency](../../7_PropertiesDistributedSystem/Scalability/LatencyThroughput.md), making it possible to process data in real-time.
+- Kafka can process a [large amount of data](../../7_PropertiesDistributedSystem/Scalability/Throughput.md) in a short amount of time (**1 million messages/sec**).
+- It also has [low latency](../../7_PropertiesDistributedSystem/Scalability/Latency.md), making it possible to process data in real-time.
 
 # Basic Architecture of Kafka Cluster
 
@@ -29,10 +29,10 @@
 | [Twillo Send Message API Design - HLD Design](../../0_HLDUseCasesProblems/SendSMSMessageAPITwillo/Readme.md)                                     |
 | [Logging Solution in Distributed Systems - HLD Design](../../0_HLDUseCasesProblems/ObervabilityLoggingSolution/LoggingFileAggregation/Readme.md) |
 | [Flight Booking Search - HLD Design](../../0_HLDUseCasesProblems/FlightBookingSearchMakeMyTrip/Readme.md)                                        |
-| [Amplitude - Reducing costs with AZ-awareness for Kafka](../../1_TechStacks/AmplitudeSystemDesign/Readme.md)                                     |
+| [Amplitude - Reducing costs with AZ-awareness for Kafka](../../1_TechStacks/Amplitude/Readme.md)                                                 |
 | [BigCommerce - Real-time events](../../1_TechStacks/BigCommerce/Readme.md)                                                                       |
 | [Paypal - Kafka](../../1_TechStacks/PayPalTechStack.md)                                                                                          |
-| [Grab - Orders Processing](../../1_TechStacks/GrabTechStack/OrdersProcessing.md)                                                                 |
+| [Grab - Orders Processing](../../1_TechStacks/Grab/OrdersProcessing.md)                                                                          |
 | [Swiggy (through Confluent)](../../1_TechStacks/SwiggyTechStack.md)                                                                              |
 | [Split.io - Messsage Broker](../../1_TechStacks/SplitIOTechStack.md)                                                                             |
 

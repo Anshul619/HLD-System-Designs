@@ -2,19 +2,19 @@
 - [REST (REpresentational State Transfer)](https://restfulapi.net/) is the most mature of the 3 API technology options. 
 - REST can be defined as a stateless, cacheable, convention-based architecture for client-server interaction.
 - REST aims to follow [HTTP semantics](https://www.javatpoint.com/computer-network-http) closely. 
-- REST uses URLs to address resources and HTTP verbs (`GET, POST, PUT, DELETE, PATCH`) to express the action to take.
+- REST uses URLs to address resources and HTTP verbs (**GET, POST, PUT, DELETE, PATCH**) to express the action to take.
 - REST was described way back in 2000 in Roy Fielding’s doctoral dissertation as the core architectural principle of the World Wide Web.
 
 # Features
 
 | Feature                                                                                 | Description                                                                                                                                                                                                                                                                           |
 |-----------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Stateless nature](../7_PropertiesDistributedSystem/Readme.md#stateful-vs-stateless)               | Server never stores the client’s state (i.e. No Shared Context or Cookies).<br/>- When the client makes a request, it includes all information necessary for the server to process that request, and resends the information with subsequent requests if needed.                      |
+| [Stateless nature](../7_PropertiesDistributedSystem/StatefulVsStateless.md)             | Server never stores the client’s state (i.e. No Shared Context or Cookies).<br/>- When the client makes a request, it includes all information necessary for the server to process that request, and resends the information with subsequent requests if needed.                      |
 | Cacheable                                                                               | REST requires requests to be cacheable whenever possible, and caching is implemented using HTTP’s native caching headers.                                                                                                                                                             |
 | [Link relation](https://restful-api-design.readthedocs.io/en/latest/relationships.html) | To link two resources together i.e. specify relationship between resources.                                                                                                                                                                                                           |
 | Idempotent API                                                                          | In the context of REST APIs, when making multiple identical requests has the same effect as making a single request – then that REST API is called idempotent.                                                                                                                        |
-| [Speed is a feature](https://www.enchant.com/speed-is-a-feature)                        | -                                                                                                                                                                                                                                                                                     |
 | Versioning                                                                              | Academically speaking, it should probably be in a header. However, the version needs to be in the URL to ensure browser explorability of the resources across versions (remember the API requirements specified at the top of this post?) and to have a simpler developer experience. |
+| [Speed is a feature](https://www.enchant.com/speed-is-a-feature)                        |                                                                                                                                                                                                                                                                                       |
 
 # HTTP Headers
 

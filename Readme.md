@@ -110,15 +110,15 @@ This repo contains the various system design components info, questions and solu
     </tr>
     <tr>
       <td>
-        <a href="3_DatabaseServices/In-Memory-DB">In-Memory Cache/DBs</a>
+        <a href="3_DatabaseServices/In-Memory-Databases">In-Memory Cache/DBs</a>
       </td>
       <td>
         <div class="container" style="background:white">
             <div class="block two first">
-                <a href="3_DatabaseServices/In-Memory-DB/Redis/Readme.md" target="_blank">
+                <a href="3_DatabaseServices/In-Memory-Databases/Redis/Readme.md" target="_blank">
                   <img src="https://upload.wikimedia.org/wikipedia/en/6/6b/Redis_Logo.svg" width="150">
                 </a>
-                <a href="3_DatabaseServices/In-Memory-DB/AeroSpike.md" target="_blank">
+                <a href="3_DatabaseServices/In-Memory-Databases/AeroSpike.md" target="_blank">
                   <img src="https://aerospike.com/wp-content/uploads/2021/03/logo-4.png" width="150">
                 </a>
             </div>

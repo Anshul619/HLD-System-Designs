@@ -4,7 +4,7 @@
 |-----------------------------------------------------------------------|--------------------------------|----------------------------------------------------------------------------------|
 | [Scalability](../3_DatabaseServices/ScalabilityDB.md)  |                                | :white_check_mark: Recommended                                                   |
 | Built-in persistence, and lower prices                                |                                | :white_check_mark: Recommended                                                   |
-| [Performance](../7_PropertiesDistributedSystem/Scalability/LatencyThroughput.md) | :white_check_mark: Recommended |                                                                                  |
+| [Performance](../7_PropertiesDistributedSystem/Scalability/Latency.md) | :white_check_mark: Recommended |                                                                                  |
 | No limitations on file size or storage format                         | :white_check_mark: Recommended |                                                                                  |
 
 [Read more](https://www.integrate.io/blog/storing-apache-hadoop-data-cloud-hdfs-vs-s3/)

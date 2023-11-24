@@ -1,6 +1,6 @@
 # Introduction
 - [Apache HDFS (Hadoop Distributed File System)](https://hadoop.apache.org/docs/r1.2.1/hdfs_design.html) is a distributed file system that runs on standard or low-end hardware. (handles large data sets)
-- HDFS provides [better data throughput](../7_PropertiesDistributedSystem/Scalability/LatencyThroughput.md) than traditional file systems, in addition to [high fault tolerance](../7_PropertiesDistributedSystem/Reliability/FaultTolerance.md) and native support of large datasets.
+- HDFS provides [better data throughput](../7_PropertiesDistributedSystem/Scalability/Throughput.md) than traditional file systems, in addition to [high fault tolerance](../7_PropertiesDistributedSystem/Reliability/FaultTolerance.md) and native support of large datasets.
 
 # :+1: Scale in HDFS
 - It is used to scale a single Apache Hadoop cluster to hundreds & thousands (and even tens of thousands) of nodes.

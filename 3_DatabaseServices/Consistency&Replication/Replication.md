@@ -9,7 +9,7 @@
 | [Scalability](../../7_PropertiesDistributedSystem/Scalability)                                      | Being able to handle a higher volume of reads than a single machine could handle, by performing reads on replicas |
 | [High availability/Redundancy](../../7_PropertiesDistributedSystem/Reliability/HighAvailability.md) | Keeping the system running, even when one machine (or several machines, or an entire datacenter) goes down.       |
 | [Disconnected operation](../../7_PropertiesDistributedSystem/Reliability/FaultTolerance.md)         | Allowing an application to continue working when there is a network interruption.                                 |
-| [Latency](../../7_PropertiesDistributedSystem/Scalability/LatencyThroughput.md)                     | Placing data geographically close to users, so that users can interact with it faster                             |
+| [Latency](../../7_PropertiesDistributedSystem/Scalability/Latency.md)                     | Placing data geographically close to users, so that users can interact with it faster                             |
 
 # Popular Algos of Replication
 

@@ -1,5 +1,7 @@
 # Amplitude System Design
 
+![](AmplitudeHLD.png)
+
 # Tech Stack
 
 | Use Case                             | Service                                                                                                     |

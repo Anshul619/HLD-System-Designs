@@ -4,7 +4,7 @@
 
 # Key Features
 - [Highly scalable, distributed systems](../../ScalabilityDB.md).
-- [High Read/Writes in Apache HBase](../../../7_PropertiesDistributedSystem/Scalability/LatencyThroughput.md)
+- [High Read/Writes in Apache HBase](../../../7_PropertiesDistributedSystem/Scalability/Latency.md)
 - Linear scalability and modularity
 - Aid in exporting metrics through Hadoop metrics subsystem
 - Automated fail-over support and sharding of tables

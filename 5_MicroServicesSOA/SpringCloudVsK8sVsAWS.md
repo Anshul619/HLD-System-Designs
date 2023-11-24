@@ -1,7 +1,5 @@
 # Microservices Concern - Comparison of platforms
 
-[Amazon Cloudwatch](../2_AWSServices/8_ObservabilityLogsServices/AmazonCloudWatch/CloudwatchLogs.md)
-
 | Concern                      | Spring Cloud (Open Source)                                                      | Kubernates                                                                                               | AWS                                                                                                                   |
 |------------------------------|---------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------|
 | App Config Management        | [Netflix Archaius](https://github.com/Netflix/archaius)                         | [ConfigMaps](../9_ContainerOrchestrationServices/Kubernates/ConfigMaps.md)                               | [AWS System Manager - Param Store](../2_AWSServices/2c_SecurityServices/1_DataProtectionServices/AWSSystemManager.md) |

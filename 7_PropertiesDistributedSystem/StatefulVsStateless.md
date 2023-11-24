@@ -9,7 +9,7 @@
 - Imagine you have a web server serving requests.
 - If you follow [RESTful principles](../8_APIProtocols/REST.md), these servers will be stateless.
 - That means that you scale up horizontally by adding extra instances.
-- You send traffic to each by putting a [load balancer](Scalability/LoadBalancer.md) in front.
+- You send traffic to each by putting a [load balancer](LoadBalancer.md) in front.
 - That’s a proven and effective strategy that will take you far.
 
 To name another example, let’s consider containers.
