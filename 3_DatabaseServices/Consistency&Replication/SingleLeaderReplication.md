@@ -9,15 +9,6 @@
 
 ![](assets/Leader-Follow-Replication.drawio.png)
 
-# :stopwatch: Replica Lag - A major problem
-- It takes time (known as [Replica Lag](https://cloud.google.com/sql/docs/mysql/replication/replication-lag)) for data to be replicated b/w replicas in [multiple highly available zones (or regions)](../../2_AWSServices/AWS-Global-Architecture-Region-AZ.md).
-- Hence, [data consistency](Readme.md) won't be there for those milliseconds, which is known as [replica lag](https://cloud.google.com/sql/docs/mysql/replication/replication-lag).
-
-| Application                                                                                                                        |
-|------------------------------------------------------------------------------------------------------------------------------------|
-| [Replication lag - Amazon Aurora vs RDS](../../2_AWSServices/6_DatabaseServices/AmazonRDS/AmazonAuroraVsOtherDBEngines.md) |
-| [Flipkart - MySQL Replication Lag Analysis](../../1_TechStacks/Flipkart/FlipkartMySQLReplicationLagAnalysis.md)  |
-
 # Supported services
 
 This replication is available as a built-in-feature in various technologies.

@@ -8,7 +8,7 @@
 ![img.png](assets/CAP_Theorem.drawio.png)
 
 > Note - The use of the word [Consistency](../Consistency&Replication/Readme.md) in [CAP]() and its use in [ACID](../ACIDTransactions/Readme.md) do not refer to the same identical concept.
-> - In [CAP](), the term [Consistency](../Consistency&Replication/Readme.md) refers to the data mismatch during [replication lag](../Consistency&Replication/Replication.md).
+> - In [CAP](), the term [Consistency](../Consistency&Replication/Readme.md) refers to the data mismatch during [replication lag](../Consistency&Replication/ReplicationLag.md).
 > - In [ACID](../ACIDTransactions/Readme.md), it refers to the fact that a transaction will not violate the integrity constraints specified on the database schema.
 
 # Only 2 (of 3 CAP properties) possible at the same time
