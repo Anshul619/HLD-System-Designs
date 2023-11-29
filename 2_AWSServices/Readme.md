@@ -33,9 +33,9 @@
 
 ## Modern Data Architecture on AWS
 
-![](../0_HLDUseCasesProblems/AWS_ModernDataArchitecture/AWS-Data-Architecture-ETL-OLTP-OLAP-DataLake.png)
+![](../6_BigDataServices/AWS-Data-Architecture-ETL-OLTP-OLAP-DataLake.png)
 
-[Read more](../0_HLDUseCasesProblems/AWS_ModernDataArchitecture/Readme.md)
+[Read more](../6_BigDataServices/Readme.md)
 
 ## Click Stream Analytics on AWS
 

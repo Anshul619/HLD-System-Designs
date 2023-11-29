@@ -33,7 +33,7 @@
 
 # AWS - Stream-Processing Using Glue & S3
     
-![](../../../0_HLDUseCasesProblems/AWS_ModernDataArchitecture/AWS-Data-Architecture-ETL-OLTP-OLAP-DataLake.png)
+![](../../../6_BigDataServices/AWS-Data-Architecture-ETL-OLTP-OLAP-DataLake.png)
 
 # Terminologies Comparison with Kafka
 

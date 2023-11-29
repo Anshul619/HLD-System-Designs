@@ -3,7 +3,7 @@
 - Certain [data processing tasks, such as backups, filtering, and sorting](https://aws.amazon.com/what-is/batch-processing/), can be computed intensive and inefficient to run on individual data transactions.
 - Instead, data systems process such tasks in batches, often in off-peak times when computing resources are more commonly available, such as at the end of the day or overnight.
 
-![](../../../0_HLDUseCasesProblems/AWS_ModernDataArchitecture/AWS-Data-Architecture-ETL-OLTP-OLAP-DataLake.png)
+![](../../AWS-Data-Architecture-ETL-OLTP-OLAP-DataLake.png)
 
 > For example,
 > - Consider an ecommerce system that receives orders throughout the day.

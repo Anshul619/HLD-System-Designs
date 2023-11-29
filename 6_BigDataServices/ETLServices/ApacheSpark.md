@@ -26,7 +26,7 @@
 
 # Modern Data Architecture
 
-![](../../0_HLDUseCasesProblems/AWS_ModernDataArchitecture/AWS-Data-Architecture-ETL-OLTP-OLAP-DataLake.png)
+![](../AWS-Data-Architecture-ETL-OLTP-OLAP-DataLake.png)
 
 # References
 - [Top Spark Interview Questions](https://www.interviewbit.com/spark-interview-questions/)

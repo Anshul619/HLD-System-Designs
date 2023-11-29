@@ -50,9 +50,9 @@
 
 ## :star: Modern Data Architecture 
 
-![](../../../0_HLDUseCasesProblems/AWS_ModernDataArchitecture/AWS-Data-Architecture-ETL-OLTP-OLAP-DataLake.png)
+![](../../../6_BigDataServices/AWS-Data-Architecture-ETL-OLTP-OLAP-DataLake.png)
 
-[Read more](../../../0_HLDUseCasesProblems/AWS_ModernDataArchitecture/Readme.md)
+[Read more](../../../6_BigDataServices/Readme.md)
 
 ## :star: Amazon S3 + Amazon CloudFront: A Match Made in the Cloud
 - Instead of [directly accessing the S3 resource](https://aws.amazon.com/blogs/networking-and-content-delivery/amazon-s3-amazon-cloudfront-a-match-made-in-the-cloud/), we should use [CloudFront distribution](../../1_NetworkingAndContentDelivery/1_EdgeNetworking/AmazonCloudFront.md) in the middle (which acts as a [CDN](../../../7_PropertiesDistributedSystem/CDNs/CDNs.md))
