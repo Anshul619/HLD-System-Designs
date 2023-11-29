@@ -33,7 +33,7 @@
 
 ## Others
 - [Amazon DynamoDB Cluster](../../2_AWSServices/6_DatabaseServices/AmazonDynamoDB/Partioning.md)
-- [Apache Casandra](../11_WideColumn-Databases/ApacheCasandra.md) etc.
+- [Apache Casandra](../11_WideColumn-Databases/ApacheCasandra.md)
 - [Instagram - Postgres Sharding](../../0_HLDUseCasesProblems/SocialNetworkFacebookInstagram/Readme.md)
 
 # References
