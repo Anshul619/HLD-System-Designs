@@ -5,7 +5,7 @@
 - It offers [high scalability, reliability, and performance](../../../ScalabilityDB.md).
 - [MongoDB]() is more suitable to manage NoSQL data requiring create, read, update and delete (CRUD) operations.
 
-![img.png](assests/MongoDB_JSON.png)
+![img.png](MongoDB_JSON.png)
 
 # :star: Real world use cases of MongoDB
 - [Zomato - HLD Design](../../../../0_HLDUseCasesProblems/FoodOrderingZomatoSwiggy/Readme.md)

@@ -12,7 +12,7 @@
 | [Amazon RDS Clusters](../../2_AWSServices/6_DatabaseServices/AmazonRDS/MultiAZDeployment.md)             | Cluster of DB instances, across Multi-AZs |
 | [Redis Cluster](../../3_DatabaseServices/In-Memory-Databases/Redis/RedisCluster.md)                      | Cluster of Redis Nodes (In-Memory Cache)  |
 | [Amazon Elastic Cache Cluster](../../2_AWSServices/6_DatabaseServices/AmazonElasticCache/ClusterMode.md) | Cluster of Redis Nodes, across Multi-AZs  |
-| [ElasticSearch Cluster](../../3_DatabaseServices/Search-Databases/ElasticSearch/ElasticSearchCluster.md) | Cluster of JSON Data, Indexes etc.        |
+| [ElasticSearch Cluster](../../3_DatabaseServices/Search-Databases/ElasticSearch/Cluster.md) | Cluster of JSON Data, Indexes etc.        |
 | [OpenSearch Cluster](../../2_AWSServices/6_DatabaseServices/AmazonOpenSearch.md)                         | Cluster of JSON Data, Indexes etc.        |
 | [Casandra Cluster](../../3_DatabaseServices/NoSQL-Databases/WideColumnDB/ApacheCasandra.md)              | Cluster of wide-columns DBs               |
 | [Hadoop Cluster](../../6_BigDataServices/ETLServices/BatchProcessing/ApacheHadoop)                       | Cluster of different components           |

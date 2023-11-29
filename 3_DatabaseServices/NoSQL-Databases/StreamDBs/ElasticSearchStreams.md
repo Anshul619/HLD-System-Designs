@@ -8,7 +8,7 @@
 - For example, you can use ILM to automatically move older backing indices to less expensive hardware and delete unneeded indices. 
 - ILM can help you reduce costs and overhead as your data grows.
 
-![img.png](assests/ElasticSearch-DataStream.png)
+![img.png](../../Search-Databases/ElasticSearch/assests/ElasticSearch-DataStream.png)
 
 
 # Generation of backing index
