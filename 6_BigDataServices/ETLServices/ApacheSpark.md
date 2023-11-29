@@ -16,9 +16,9 @@
 
 # Data Sources
 - [Kafka](../../4_MessageBrokersEDA/Kafka/Readme.md)
-- [HBase](../../3_DatabaseServices/NoSQL-Databases/WideColumnDB/ApacheHBase.md)
+- [HBase](../../3_DatabaseServices/11_WideColumn-Databases/ApacheHBase.md)
 - [HDFS](../../11_FileStorageServicesHDFS/ApacheHDFS.md) 
-- [Cassandra](../../3_DatabaseServices/NoSQL-Databases/WideColumnDB/ApacheCasandra.md) etc.
+- [Cassandra](../../3_DatabaseServices/11_WideColumn-Databases/ApacheCasandra.md) etc.
 
 # Apache Spark vs Others
 - [Apache Spark vs Hadoop MapReduce](ApacheSparkVsMapReduce.md) 

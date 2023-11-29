@@ -18,7 +18,7 @@
 # :star: Real world use cases of GraphQL
 - [Zomato - HLD Design](../0_HLDUseCasesProblems/FoodOrderingZomatoSwiggy/Readme.md#GraphQL)
 - [Uber Driver Allocation](../../3_HLDDesignProblemsUC/DriverAllocationUberGoJek/Readme)
-- [GraphQL with ElasticSearch](../3_DatabaseServices/Search-Databases/ElasticSearch/GraphQLSupport.md)
+- [GraphQL with ElasticSearch](../3_DatabaseServices/9_Search-Databases/ElasticSearch/GraphQLSupport.md)
 
 # References
 - [What is GraphQL and why Facebook felt the need to build it?](https://buddy.works/tutorials/what-is-graphql-and-why-facebook-felt-the-need-to-build-it#why-facebook-built-graphql)

@@ -12,7 +12,7 @@
 | [Pub-Sub model](../4_MessageBrokersEDA/EventDrivenArchitecture/PubSubModel.md)               | [Message Broker Services](../4_MessageBrokersEDA) |
 | [Point-2-Point model](../4_MessageBrokersEDA/EventDrivenArchitecture/PointToPointModel.md)   | [Message Broker Services](../4_MessageBrokersEDA) |
 | [Fan-out pattern - Amazon SNS](../2_AWSServices/5_MessageBrokerServices/AmazonSNS.md)        | [Message Broker Services](../4_MessageBrokersEDA) |
-| [Sharding/Partitioning](../3_DatabaseServices/PartitioningSharding/Readme.md)                | [Database Services](../3_DatabaseServices/)       |
+| [Sharding/Partitioning](../3_DatabaseServices/3_PartitioningSharding/Readme.md)                | [Database Services](../3_DatabaseServices/)       |
 | [Domain Driven architecture](DomainDrivenArchitecture.md)                                    |                                                   |
 | [Shared nothing architecture](SharedNothingArchitecture.md)                                  |                                                   |
 | [Leader Election](../10_ClusterCoordinationServices/Readme.md)                               |                                                   |

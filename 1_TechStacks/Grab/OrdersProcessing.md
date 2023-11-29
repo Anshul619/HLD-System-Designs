@@ -13,7 +13,7 @@
 | Title                                                                                | Remarks                                                                                                                                                                 |
 |--------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Traffic                                                                              | A million of orders per day                                                                                                                                             |
-| [Consistency](../../3_DatabaseServices/Consistency&Replication/Readme.md) | Strong consistency for transactional queries, and eventually consistency for analytical queries.                                                                        |
+| [Consistency](../../3_DatabaseServices/4_Consistency&Replication/Readme.md) | Strong consistency for transactional queries, and eventually consistency for analytical queries.                                                                        |
 | Traffic Pattern - Peak Hours                                                         | During peak hours, the write Queries per Second (QPS) is three times of primary key reads; whilst the range Queries per Second are four times of the primary key reads. |
 
 # Requirements

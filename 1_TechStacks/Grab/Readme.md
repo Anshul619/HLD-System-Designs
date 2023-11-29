@@ -4,14 +4,14 @@
 |-----------------------------------------------------|------------------------------------------------------------------------------------------------------------|
 | Cloud Platform                                      | [AWS](../../2_AWSServices/Readme.md)                                                                     |
 | OLTP - Transaction-DB (like orders etc.)            | [DynamoDB](../../2_AWSServices/6_DatabaseServices/AmazonDynamoDB/Readme.md)                              |
-| OLAP - Analytical-Queries (like order history etc.) | [MySQL - Amazon RDS](../../3_DatabaseServices/SQL-Databases/Readme.md)                          |
+| OLAP - Analytical-Queries (like order history etc.) | [MySQL - Amazon RDS](../../3_DatabaseServices/7_SQL-Databases/Readme.md)                          |
 | Data Streaming                                      | [Kafka](../../4_MessageBrokersEDA/Kafka/Readme.md)                                      |
-| Search-DB (derived data)                            | [ElasticSearch](../../3_DatabaseServices/Search-Databases/ElasticSearch/Readme.md) |
+| Search-DB (derived data)                            | [ElasticSearch](../../3_DatabaseServices/9_Search-Databases/ElasticSearch/Readme.md) |
 | Backend Language - GoLang                           | [GoLang](GoLangBackend.md)                                                                                 |
 | Container Orchestration                             | [Kubernates](../../9_ContainerOrchestrationServices/Kubernates/Readme.md)                   |
 | Object Store, Data Lake                             | [Amazon S3](../../2_AWSServices/7_StorageServices/3_ObjectStorageS3/Readme.md)                           |
 | Graph Database                                      | [Amazon Neptune](../../2_AWSServices/6_DatabaseServices/AmazonNeptune.md)                                |
-| InMemory Cache                                      | [Redis](../../3_DatabaseServices/In-Memory-Databases/Redis/Readme.md)                  |
+| InMemory Cache                                      | [Redis](../../3_DatabaseServices/8_InMemory-Databases/Redis/Readme.md)                  |
 | Logging                                             | [ELK](https://engineering.grab.com/structured-logging)                                                     |
 
 # Use Cases

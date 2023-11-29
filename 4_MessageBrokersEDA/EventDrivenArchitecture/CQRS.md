@@ -4,4 +4,4 @@
 - [Read more](https://microservices.io/patterns/data/cqrs.html)
 
 # Disadvantages
-- [Eventually Consistency](../../3_DatabaseServices/Consistency&Replication/Readme.md)
+- [Eventually Consistency](../../3_DatabaseServices/4_Consistency&Replication/Readme.md)

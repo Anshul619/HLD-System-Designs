@@ -9,7 +9,7 @@
 |---------------------------------------------------------------------------------------------------------------------------|
 | [Apache Spark](../../../../6_BigDataServices/ETLServices/ApacheSpark.md)         |
 | [Apache Hadoop](../../../../6_BigDataServices/ETLServices/BatchProcessing/ApacheHadoop/Readme.md) |
-| [HBase](../../../../3_DatabaseServices/NoSQL-Databases/WideColumnDB/ApacheHBase.md)                            |
+| [HBase](../../../../3_DatabaseServices/11_WideColumn-Databases/ApacheHBase.md)                            |
 | Hive, Presto, and other big data workloads.                                                                               |
 
 # EMR File System (EMRFS)

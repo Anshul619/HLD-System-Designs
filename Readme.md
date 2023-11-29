@@ -110,15 +110,15 @@ This repo contains the various system design components info, questions and solu
     </tr>
     <tr>
       <td>
-        <a href="3_DatabaseServices/In-Memory-Databases">In-Memory Cache/DBs</a>
+        <a href="3_DatabaseServices/8_InMemory-Databases">In-Memory Cache/DBs</a>
       </td>
       <td>
         <div class="container" style="background:white">
             <div class="block two first">
-                <a href="3_DatabaseServices/In-Memory-Databases/Redis/Readme.md" target="_blank">
+                <a href="3_DatabaseServices/8_InMemory-Databases/Redis/Readme.md" target="_blank">
                   <img src="https://upload.wikimedia.org/wikipedia/en/6/6b/Redis_Logo.svg" width="150">
                 </a>
-                <a href="3_DatabaseServices/In-Memory-Databases/AeroSpike.md" target="_blank">
+                <a href="3_DatabaseServices/8_InMemory-Databases/AeroSpike.md" target="_blank">
                   <img src="https://aerospike.com/wp-content/uploads/2021/03/logo-4.png" width="150">
                 </a>
             </div>
@@ -127,15 +127,15 @@ This repo contains the various system design components info, questions and solu
     </tr>
     <tr>
       <td>
-        <a href="3_DatabaseServices/Search-Databases" target="_blank">Search DBs</a>
+        <a href="3_DatabaseServices/9_Search-Databases" target="_blank">Search DBs</a>
       </td>
       <td>
         <div class="container" style="background:white">
             <div class="block two first">
-                <a href="3_DatabaseServices/Search-Databases/ElasticSearch/Readme.md" target="_blank">
+                <a href="3_DatabaseServices/9_Search-Databases/ElasticSearch/Readme.md" target="_blank">
                   <img src="https://miro.medium.com/max/1200/1*20yTn7K6c6vcmEdgwAgjSA.png" width="150">
                 </a>
-                <a href="3_DatabaseServices/Search-Databases/ApacheSolr.md" target="_blank">
+                <a href="3_DatabaseServices/9_Search-Databases/ApacheSolr.md" target="_blank">
                   <img src="https://solr.apache.org/theme/images/identity/Solr_Logo_on_white.png" width="150">
                 </a>
             </div>
@@ -144,21 +144,21 @@ This repo contains the various system design components info, questions and solu
     </tr>
     <tr>
       <td>
-        <a href="3_DatabaseServices" target="_blank">Databases</a>
+        <a href="3_DatabaseServices" target="_blank">NoSQL Databases</a>
       </td>
       <td>
         <div class="container" style="background:white">
             <div class="block two first">
-                <a href="3_DatabaseServices/NoSQL-Databases/WideColumnDB/ApacheCasandra.md" target="_blank">
+                <a href="3_DatabaseServices/11_WideColumn-Databases/ApacheCasandra.md" target="_blank">
                   <img src="https://fontslogo.com/wp-content/uploads/2018/12/Apache-Cassandra-Logo-Font.jpg" width="150">
                 </a>
                 <a href="2_AWSServices/6_DatabaseServices/AmazonDynamoDB/Readme.md">
                   <img src="https://user-images.githubusercontent.com/6509926/70553550-f033b980-1b40-11ea-9192-759b3b1053b3.png" width="150">
                 </a>
-                <a href="3_DatabaseServices/NoSQL-Databases/DocumentDB/MongoDB/Readme.md" target="_blank">
+                <a href="3_DatabaseServices/10_Document-Databases/MongoDB/Readme.md" target="_blank">
                   <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/MongoDB_Logo.svg/2560px-MongoDB_Logo.svg.png" width="150">
                 </a>
-                <a href="3_DatabaseServices/NoSQL-Databases/WideColumnDB/ApacheHBase.md" target="_blank">
+                <a href="3_DatabaseServices/11_WideColumn-Databases/ApacheHBase.md" target="_blank">
                   <img src="https://hbase.apache.org/images/hbase_logo_with_orca_large.png" width="150">
                 </a>
             </div>

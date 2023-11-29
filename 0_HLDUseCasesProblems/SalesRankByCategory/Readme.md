@@ -26,7 +26,7 @@
 | t4        | product3     | category2   | 7   | 2.00        | 4         | 5        |
 | t5        | product4     | category1   | 1   | 5.00        | 5         | 6        |
 
-> Note - `id`, `category_id`, `product_id` columns should be [indexed](../../3_DatabaseServices/DataStructuresUsedInDB/Indexing/Readme.md), for faster performance.
+> Note - `id`, `category_id`, `product_id` columns should be [indexed](../../3_DatabaseServices/5_DataStructuresUsedInDB/Indexing/Readme.md), for faster performance.
 
 # How to populate Sales Rank table?
 - SalesRank service would get the sales data from sales table, then apply [Map Reduce](../../6_BigDataServices/ETLServices/ApacheSpark.md) and populate `sales_rank` table. 
@@ -115,7 +115,7 @@ The result would be the following sorted list, which we could insert into the sa
 ````
 
 # Scaling the design
-- To address the 40,000 average read requests per second (higher at peak), traffic for popular content (and their sales rank) should be handled by the [Redis Cache](../../3_DatabaseServices/In-Memory-Databases/Redis/Readme.md) instead of the database.
+- To address the 40,000 average read requests per second (higher at peak), traffic for popular content (and their sales rank) should be handled by the [Redis Cache](../../3_DatabaseServices/8_InMemory-Databases/Redis/Readme.md) instead of the database.
 - With the large volume of reads, the SQL Read Replicas might not be able to handle the cache misses. 
 - We'll probably need to employ additional SQL scaling patterns (like Federation, Sharding, Renormalization, SQL Tuning etc.).
 

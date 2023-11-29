@@ -50,11 +50,11 @@ The application should be able to support the following requirements.
 | Images Storage                       | [Amazon S3](../../2_AWSServices/7_StorageServices/3_ObjectStorageS3/Readme.md) or [HDFS](../../11_FileStorageServicesHDFS/ApacheHDFS.md)   |
 | Images MetaData                      | [Amazon DynamoDB](../../2_AWSServices/6_DatabaseServices/AmazonDynamoDB/Readme.md)                                                                                                                 |
 | Partitioning Key for images metadata | PhotoID                                                                                                                                                                                              |
-| User Activity - Data Entities Store  | [Amazon DynamoDB](../../2_AWSServices/6_DatabaseServices/AmazonDynamoDB/Readme.md) or [Cassandra](../../3_DatabaseServices/NoSQL-Databases/WideColumnDB/ApacheCasandra.md) |
-| User Activity - Relationship Store   | Graph Databases like [Neo4j](../../3_DatabaseServices/NoSQL-Databases/GraphDB/Neo4j.md) or Amazon Neptune                                                                    |
+| User Activity - Data Entities Store  | [Amazon DynamoDB](../../2_AWSServices/6_DatabaseServices/AmazonDynamoDB/Readme.md) or [Cassandra](../../3_DatabaseServices/11_WideColumn-Databases/ApacheCasandra.md) |
+| User Activity - Relationship Store   | Graph Databases like [Neo4j](../../3_DatabaseServices/13_Graph-Databases/Neo4j.md) or Amazon Neptune                                                                    |
 | Data Streaming                       | [Kafka](../../4_MessageBrokersEDA/Kafka/Readme.md) or [Amazon Kinesis](../../2_AWSServices/5_MessageBrokerServices/AmazonKinesis/Readme.md)                                     |
 | App Servers                          | Separate app servers for READ and WRITE (Since read-write ratio is 100:1).                                                                                                                           |
-| Home Feed DB                         | [Redis](../../3_DatabaseServices/In-Memory-Databases/Redis/Readme.md)                                                                                                               |
+| Home Feed DB                         | [Redis](../../3_DatabaseServices/8_InMemory-Databases/Redis/Readme.md)                                                                                                               |
 
 # Reliability and Redundancy
 - If we want to have [high availability](../../7_PropertiesDistributedSystem/Reliability/HighAvailability.md) of the system, we need to have multiple replicas of services running in the system so that even if a few services die down, the system remains available and running.
@@ -117,13 +117,13 @@ What are the different issues with "Partitioning based on UserID"?
 # User Activity Service
 
 ## Graph Data Models
-- The reason we have chosen a [Neo4j](../../3_DatabaseServices/NoSQL-Databases/GraphDB/Neo4j.md) graph data-model is that our data will contain complex relationships between data entities such as users, posts, and comments as nodes of the graph.
+- The reason we have chosen a [Neo4j](../../3_DatabaseServices/13_Graph-Databases/Neo4j.md) graph data-model is that our data will contain complex relationships between data entities such as users, posts, and comments as nodes of the graph.
 - After that, we will use edges of the graph to store relationships such as follows, likes, comments, and so forth.
 
 ![](https://live.staticflickr.com/65535/51813972019_ddfbe16c97_z.jpg)
 
 ## NoSQL Data Models
-- We will use NoSQL databases like [Amazon DynamoDB](../../2_AWSServices/6_DatabaseServices/AmazonDynamoDB/Readme.md) or [Cassandra](../../3_DatabaseServices/NoSQL-Databases/WideColumnDB/ApacheCasandra.md) to store information like user feeds, activities, and counters.
+- We will use NoSQL databases like [Amazon DynamoDB](../../2_AWSServices/6_DatabaseServices/AmazonDynamoDB/Readme.md) or [Cassandra](../../3_DatabaseServices/11_WideColumn-Databases/ApacheCasandra.md) to store information like user feeds, activities, and counters.
 - Each row will contain feed/activity information of the user.
 - We can also have a TTL based functionality to evict older posts.
 

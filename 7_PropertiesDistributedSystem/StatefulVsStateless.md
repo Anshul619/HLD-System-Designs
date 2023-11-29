@@ -2,7 +2,7 @@
 - [Stateless Protocol](https://www.geeksforgeeks.org/difference-between-stateless-and-stateful-protocol/) does not require the server to retain the server information or session details.
 - In a stateless architecture, the server must treat all client requests independently of prior requests or sessions, and should not store any session information locally.
 - Stateless applications can scale horizontally, since any request can be handled by any available computing resources (e.g. instances, containers or functions).
-- Sharing state with any instances, containers, or functions is possible by using in-memory object caching systems like [Redis](../3_DatabaseServices/In-Memory-Databases/Redis) or distributed databases like [Cassandra](../3_DatabaseServices/NoSQL-Databases/WideColumnDB/ApacheCasandra.md) or [Amazon DynamoDB](../2_AWSServices/6_DatabaseServices/AmazonDynamoDB/Readme.md), depending on the structure of the object and the requirements in terms of performances.
+- Sharing state with any instances, containers, or functions is possible by using in-memory object caching systems like [Redis](../3_DatabaseServices/8_InMemory-Databases/Redis) or distributed databases like [Cassandra](../3_DatabaseServices/11_WideColumn-Databases/ApacheCasandra.md) or [Amazon DynamoDB](../2_AWSServices/6_DatabaseServices/AmazonDynamoDB/Readme.md), depending on the structure of the object and the requirements in terms of performances.
 
 ## Statelessness - REST APIs
 - A system without state is much easier to scale.

@@ -15,16 +15,16 @@
 | :star: [Event Driven Architecture](../4_MessageBrokersEDA/EventDrivenArchitecture/Readme.md)           | Message Brokers   | Others                                 |
 | :star: [Point to Point Model](../4_MessageBrokersEDA/EventDrivenArchitecture/PointToPointModel.md)     | Message Brokers   | Others                                 |
 | :star: [Publish Subscriber Model](../4_MessageBrokersEDA/EventDrivenArchitecture/PubSubModel.md)       | Message Brokers   | Others                                 |
-| :star: [Indexing](../3_DatabaseServices/DataStructuresUsedInDB/Indexing/Readme.md)                     | Databases         | :rocket: [Scalability](Scalability)    |
+| :star: [Indexing](../3_DatabaseServices/5_DataStructuresUsedInDB/Indexing/Readme.md)                     | Databases         | :rocket: [Scalability](Scalability)    |
 | :star: [DB Scalability](../3_DatabaseServices/ScalabilityDB.md)                                        | Databases         | :rocket: [Scalability](Scalability)    |
-| :star: [ACID Properties of the Transaction](../3_DatabaseServices/ACIDTransactions/Readme.md)          | Databases         | Others                                 |
-| :star: [PACELC Theorem of the Distributed Systems](../3_DatabaseServices/CAP&PACELCTheorems/Readme.md) | Databases         | Others                                 |
-| :star: [Replication](../3_DatabaseServices/Consistency&Replication/Replication.md)                     | Databases         | :handshake: [Reliability](Reliability) |
-| :star: [Consistency Patterns](../3_DatabaseServices/Consistency&Replication/Readme.md)                 | Databases         | :handshake: [Reliability](Reliability) |
-| [Data Structures in DB](../3_DatabaseServices/DataStructuresUsedInDB/Readme.md)                        | Databases         | :rocket: [Scalability](Scalability)    |
-| [Partitioning/Sharding](../3_DatabaseServices/PartitioningSharding/Readme.md)                          | Databases         | :rocket: [Scalability](Scalability)    |
+| :star: [ACID Properties of the Transaction](../3_DatabaseServices/1_ACIDTransactions/Readme.md)          | Databases         | Others                                 |
+| :star: [PACELC Theorem of the Distributed Systems](../3_DatabaseServices/2_CAP&PACELCTheorems/Readme.md) | Databases         | Others                                 |
+| :star: [Replication](../3_DatabaseServices/4_Consistency&Replication/Replication.md)                     | Databases         | :handshake: [Reliability](Reliability) |
+| :star: [Consistency Patterns](../3_DatabaseServices/4_Consistency&Replication/Readme.md)                 | Databases         | :handshake: [Reliability](Reliability) |
+| [Data Structures in DB](../3_DatabaseServices/5_DataStructuresUsedInDB/Readme.md)                        | Databases         | :rocket: [Scalability](Scalability)    |
+| [Partitioning/Sharding](../3_DatabaseServices/3_PartitioningSharding/Readme.md)                          | Databases         | :rocket: [Scalability](Scalability)    |
 | [Storage Options](../11_FileStorageServicesHDFS/StorageOptions.md)                                     | Databases         | :rocket: [Scalability](Scalability)    |
-| [Change Data Capture](../3_DatabaseServices/ChangeDataCapture/Readme.md)                               | Databases         | Others                                 |
+| [Change Data Capture](../3_DatabaseServices/Others/ChangeDataCapture/Readme.md)                               | Databases         | Others                                 |
 
 # References
 - [How to build a multi-region active-active architecture on AWS](https://acloudguru.com/blog/engineering/why-and-how-do-we-build-a-multi-region-active-active-architecture)

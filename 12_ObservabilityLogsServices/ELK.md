@@ -2,7 +2,7 @@
 
 | Service                                                               | Category                | Remarks                                                                         |
 |-----------------------------------------------------------------------|-------------------------|---------------------------------------------------------------------------------|
-| [Elasticsearch](../3_DatabaseServices/Search-Databases/ElasticSearch) | NoSQL database          | Used to store the unstructured data                                             |
+| [Elasticsearch](../3_DatabaseServices/9_Search-Databases/ElasticSearch) | NoSQL database          | Used to store the unstructured data                                             |
 | [Logstash](https://www.elastic.co/logstash/)                          | Log pipeline tool       | Perform transformation on data                                                  |
 | [Kibana](https://www.elastic.co/kibana/)                              | Data visualization tool | Provides an interactive UI (User Interface) to the users for data visualization |
 

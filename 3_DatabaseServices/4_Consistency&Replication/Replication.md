@@ -1,0 +1,25 @@
+# Data Replication
+- [Replication](https://www.geeksforgeeks.org/data-replication-in-dbms/) is having multiple copies of the same data on different nodes.
+- It is widely used in the [distributed](../../7_PropertiesDistributedSystem/Readme.md) & [highly available](../../7_PropertiesDistributedSystem/Reliability/HighAvailability.md) database management systems (DBMS).
+
+# :+1: Advantages of Replication
+
+| Advantage                                                                                           | Description                                                                                                       |
+|-----------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------|
+| [Scalability](../../7_PropertiesDistributedSystem/Scalability)                                      | Being able to handle a higher volume of reads than a single machine could handle, by performing reads on replicas |
+| [High availability/Redundancy](../../7_PropertiesDistributedSystem/Reliability/HighAvailability.md) | Keeping the system running, even when one machine (or several machines, or an entire datacenter) goes down.       |
+| [Disconnected operation](../../7_PropertiesDistributedSystem/Reliability/FaultTolerance.md)         | Allowing an application to continue working when there is a network interruption.                                 |
+| [Latency](../../7_PropertiesDistributedSystem/Scalability/Latency.md)                               | Placing data geographically close to users, so that users can interact with it faster                             |
+
+# Popular Algos of Replication
+
+| Algo                                                           | Use Cases                                                                                                                                                                                                                                                      | Description                                                                                                                                                                                                                                                     |
+|----------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| :star: [Single-Leader replication](SingleLeaderReplication.md) | SQL-DBs like [Amazon Aurora](../../2_AWSServices/6_DatabaseServices/AmazonRDS/AmazonAurora/Readme.md), PostgreSQL etc. <br/>- Message Brokers like [Kafka](../../4_MessageBrokersEDA/Kafka/Readme.md) etc.<br/>- NoSQL-DBs like DynamoDB, MongoDB etc. | Clients send all writes to a single node (the leader), which sends a stream of data change events to the other replicas (followers). <br/>- Reads can be performed on any replica, but reads from followers might be stale.                                     |
+| Leaderless Replication                                         | [Casandra](../11_WideColumn-Databases/ApacheCasandra.md), [Dynamo systems](../5_DataStructuresUsedInDB/DynamoStyleDatabases.md) etc.                                                                                                                                   | Clients send each write to several nodes, and read from several nodes in parallel in order to detect and correct nodes with stale data.                                                                                                                         |
+| Multi-Leader replication                                       | Data-center (a leader in each datacenter)<br/>- Clients with offline operation (like mobile apps)<br/>- Collaborative editing (like Google Docs) etc.                                                                                                          | Clients send each write to one of several leader nodes, any of which can accept writes. <br/>- The leaders send streams of data change events to each other and to any follower nodes.<br/>- Biggest problem with this algo is write conflict & its resolution. |
+
+# Source(s) and further reading
+- [Redundancy and Replication](https://github.com/jeremyyew/tech-prep-jeremy.io/blob/master/systems-design/topics/databases/redundancy-and-replication.md)
+- [Google I/O 2009 - Transactions Across Datacenters](http://snarfed.org/transactions_across_datacenters_io.html)
+- [CAP by Jeremyyew](https://github.com/jeremyyew/tech-prep-jeremy.io/tree/master/systems-design/topics/consistency-availability-partition-tolerance-cap)
