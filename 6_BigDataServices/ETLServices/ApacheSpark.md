@@ -15,6 +15,10 @@
 - [Uber Driver Allocation](../../0_HLDUseCasesProblems/DriverAllocationUberGoJek/Readme.md)
 
 # Data Sources
+
+![](https://miro.medium.com/v2/resize:fit:1368/format:webp/1*kNBQi-vVM_J3vaqHS_HBWw.png)
+
+Example data sources
 - [Kafka](../../4_MessageBrokersEDA/Kafka/Readme.md)
 - [HBase](../../3_DatabaseServices/11_WideColumn-Databases/ApacheHBase.md)
 - [HDFS](../../11_FileStorageServicesHDFS/ApacheHDFS.md) 
