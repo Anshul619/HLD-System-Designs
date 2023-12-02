@@ -8,7 +8,7 @@
 - If you repeat your read request after a short time, the response should return the latest data.
 
 # Strongly Consistent Reads
-- [Strong Consistency Model](../../../3_DatabaseServices/4_Consistency&Replication/Readme.md) - When you request a strongly consistent read, DynamoDB returns a response with the most up-to-date data, reflecting the updates from all prior write operations that were successful. 
+- When you request a [strongly consistent read](../../../3_DatabaseServices/4_Consistency&Replication/Readme.md), DynamoDB returns a response with the most up-to-date data, reflecting the updates from all prior write operations that were successful. 
 
 However, this consistency comes with some disadvantages:
 - A strongly consistent read might not be available if there is a network delay or outage. In this case, DynamoDB may return a server error (HTTP 500).

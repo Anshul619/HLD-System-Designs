@@ -1,0 +1,2 @@
+# Cardinality
+- [Cardinality](https://orangematter.solarwinds.com/2020/01/05/what-is-cardinality-in-a-database/) is a mathematical term that refers to the number of unique values in a table column relative to the total number of rows in the table.
