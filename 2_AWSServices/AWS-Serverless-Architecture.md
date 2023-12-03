@@ -14,7 +14,7 @@ Every definition of [serverless](https://aws.amazon.com/serverless/) mentions th
 | :star: [AWS Lambda](3_ComputeServices/AWSLambda/Readme.md)                                       | Compute             |                                                                                 |
 | [AWS Fargate](3_ComputeServices/AWSFargate.md)                                                   | Compute             | [AWS Fargate vs Lambda](3_ComputeServices/AWSFargateVsLambda.md)                |
 | [AWS Step Functions](3_ComputeServices/AWSStepFunctions.md)                                      | Compute             |                                                                                 |
-| [Amazon DynamoDB](6_DatabaseServices/AmazonDynamoDB/Readme.md)                                   | Database            | [DynamoDB - Capacity Modes](6_DatabaseServices/AmazonDynamoDB/CapacityModes.md) |
+| [Amazon DynamoDB](6_DatabaseServices/AmazonDynamoDB/Readme.md)                                   | Database            | [DynamoDB - Capacity Modes](6_DatabaseServices/AmazonDynamoDB/CapacityModes/Readme.md) |
 | [Amazon Aurora](6_DatabaseServices/AmazonRDS/AmazonAurora/Readme.md)                             | Database            |                                                                                 |
 | [AWS Batch](10_BigDataServices/ETLServices/BatchProcessing/AWSBatch.md)                          | Big Data Processing |                                                                                 |
 | [AWS Glue](10_BigDataServices/ETLServices/StreamProcessing/AWSGlue.md)                           | Big Data Processing |                                                                                 |
