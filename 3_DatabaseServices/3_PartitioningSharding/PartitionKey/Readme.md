@@ -6,13 +6,13 @@
 
 # Recommendations for partition keys
 
-| Recommendation                                    | Remarks                                                                                                                                                                                                                                                |
-|---------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Use [high-cardinality](Cardinality.md) attributes | These are attributes that have distinct values for each item, like emailid, employee_no, customerid, sessionid, orderid, and so on.                                                                                                                    |
-| Use composite attributes                          | Try to combine more than one attribute to form a unique key, if that meets your access pattern.                                                                                                                                                        |
-| Add random numbers or digits                      | A [randomizing strategy](RandomizingStrategy.md) can greatly improve write throughput.                                                                                                                                                                 |
-| Keep related data together                        | Instead of distributing related data items across multiple tables, you should keep related items in your NoSQL system as close together as possible.                                                                                                   |
-| Cache the popular items                           | Cache the popular items when there is a high volume of read traffic using [Redis](../../8_InMemory-Databases/Redis/Readme.md) or [Amazon DynamoDB Accelerator (DAX)](../../../2_AWSServices/6_DatabaseServices/AmazonDynamoDB/Accelerator.md). |
+| Recommendation                                     | Remarks                                                                                                                                                                                                                                        |
+|----------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Use [high-cardinality](Cardinality.md) attributes  | These are attributes that have distinct values for each item, like **UUID**, emailid, employee_no, customerid, sessionid, orderid, and so on.                                                                                                  |
+| Use composite attributes                           | Try to combine more than one attribute to form a unique key, if that meets your access pattern.                                                                                                                                                |
+| Use Random Suffixes - Add random numbers or digits | A [randomizing strategy](RandomizingStrategy.md) can greatly improve write throughput.                                                                                                                                                         |
+| Keep related data together                         | Instead of distributing related data items across multiple tables, you should keep related items in your NoSQL system as close together as possible.                                                                                           |
+| Cache the popular items                            | Cache the popular items when there is a high volume of read traffic using [Redis](../../8_InMemory-Databases/Redis/Readme.md) or [Amazon DynamoDB Accelerator (DAX)](../../../2_AWSServices/6_DatabaseServices/AmazonDynamoDB/DAX.md). |
 
 # Anti-patterns for partition keys
 
@@ -31,5 +31,8 @@
 | Device ID, where each device accesses data at relatively similar intervals.                                    | High                   |
 | Device ID, where even if there are many devices being tracked, one is by far more popular than all the others. | Low                    |
 
-# Composite Primary Key - Example
-- Consider an orders table with **customerid#productid#countrycode** as the partition key and **order_date** as the sort key, where the symbol # is used to split different field.
+# Examples
+
+| Table Name | Type                  | Partition key                    | Sort Key   |
+|------------|-----------------------|----------------------------------|------------|
+| orders     | Composite Primary Key | customerid#productid#countrycode | order_date |

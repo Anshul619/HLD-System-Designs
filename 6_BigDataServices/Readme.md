@@ -1,6 +1,6 @@
 # Building modern data architecture
 
-![](AWS-Data-Architecture-ETL-OLTP-OLAP-DataLake.png)
+![](Data-Architecture-ETL-Ingestion-Processing-Analytics.png)
 
 # Layers in modern data architecture
 

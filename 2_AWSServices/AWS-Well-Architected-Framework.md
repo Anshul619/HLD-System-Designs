@@ -37,7 +37,7 @@ Lenses provide additional guidance tailored to specific industry and technology 
 | Operational Readiness                                   | [AWS System Manager](2c_SecurityServices/1_DataProtectionServices/AWSSystemManager.md) |
 | Operational Health                                      | [AWS CloudWatch](8_ObservabilityLogsServices/AmazonCloudWatch/Readme.md)                      |
 | Event Response                                          | [AWS Lambda](3_ComputeServices/AWSLambda/Readme.md)                                    |
-| Use analytics to learn from experience                  | [Amazon OpenSearch](6_DatabaseServices/AmazonOpenSearch.md)                            |
+| Use analytics to learn from experience                  | [Amazon OpenSearch](6_DatabaseServices/Search-Databases/AmazonOpenSearch.md)                            |
 | Share learnings with libraries, scripts & documentation | [AWS CodeCommit](9_InfrastructureAsCode/AWSCodePipeline.md)                            |
 
 # Financial Services Industry Lens - AWS Well-Architected Framework

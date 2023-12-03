@@ -13,9 +13,9 @@
 | [Redis Cluster](../../3_DatabaseServices/8_InMemory-Databases/Redis/RedisCluster.md)                      | Cluster of Redis Nodes (In-Memory Cache)  |
 | [Amazon Elastic Cache Cluster](../../2_AWSServices/6_DatabaseServices/AmazonElasticCache/ClusterMode.md) | Cluster of Redis Nodes, across Multi-AZs  |
 | [ElasticSearch Cluster](../../3_DatabaseServices/9_Search-Databases/ElasticSearch/Cluster.md) | Cluster of JSON Data, Indexes etc.        |
-| [OpenSearch Cluster](../../2_AWSServices/6_DatabaseServices/AmazonOpenSearch.md)                         | Cluster of JSON Data, Indexes etc.        |
+| [OpenSearch Cluster](../../2_AWSServices/6_DatabaseServices/Search-Databases/AmazonOpenSearch.md)                         | Cluster of JSON Data, Indexes etc.        |
 | [Casandra Cluster](../../3_DatabaseServices/11_WideColumn-Databases/ApacheCasandra.md)              | Cluster of wide-columns DBs               |
-| [Hadoop Cluster](../../6_BigDataServices/ETLServices/BatchProcessing/ApacheHadoop)                       | Cluster of different components           |
+| [Hadoop Cluster](../../6_BigDataServices/ApacheHadoop)                       | Cluster of different components           |
 
 # What is Cluster capacity?
 - In general, a cluster (for ex. [Kubernates cluster](../../9_ContainerOrchestrationServices/Kubernates/Readme.md)) can be seen as abstracting a set of individual nodes as a big "super node".

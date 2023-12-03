@@ -33,7 +33,7 @@
 
 ## Modern Data Architecture on AWS
 
-![](../6_BigDataServices/AWS-Data-Architecture-ETL-OLTP-OLAP-DataLake.png)
+![](../6_BigDataServices/Data-Architecture-ETL-Ingestion-Processing-Analytics.png)
 
 [Read more](../6_BigDataServices/Readme.md)
 
@@ -235,11 +235,11 @@
     </tr>
     <tr>
         <td>
-            <a href="6_DatabaseServices">Search Engine</a>
+            <a href="6_DatabaseServices/Search-Databases">Search Engine</a>
         </td>
         <td>
             <div class="container" style="background:white">
-                <a href="6_DatabaseServices/AmazonOpenSearch.md" target="_blank">
+                <a href="6_DatabaseServices/Search-Databases/AmazonOpenSearch.md" target="_blank">
                   <img src="https://d2908q01vomqb2.cloudfront.net/ca3512f4dfa95a03169c5a670a4c91a19b3077b4/2021/07/12/opensearch_logo_1000x500.png" width="150">
                 </a>
             </div>

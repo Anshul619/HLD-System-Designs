@@ -1,8 +1,4 @@
-# Relational Modeling
-- Relational modeling is done in DynamoDB, through [edge items](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/bp-modeling-nosql-B.html) in the record.
-- And GSI overloading is helpful in this case.
-
-# Entity Schema
+# Employee-Orders - Relational Modeling
 
 | Table         | Primary key  | Sort Key      |
 |---------------|--------------|---------------|

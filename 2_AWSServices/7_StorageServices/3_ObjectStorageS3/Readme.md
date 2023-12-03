@@ -50,7 +50,7 @@
 
 ## :star: Modern Data Architecture 
 
-![](../../../6_BigDataServices/AWS-Data-Architecture-ETL-OLTP-OLAP-DataLake.png)
+![](../../../6_BigDataServices/Data-Architecture-ETL-Ingestion-Processing-Analytics.png)
 
 [Read more](../../../6_BigDataServices/Readme.md)
 

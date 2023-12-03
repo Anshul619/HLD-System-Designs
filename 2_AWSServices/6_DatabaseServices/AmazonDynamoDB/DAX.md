@@ -1,4 +1,3 @@
-
 # DynamoDB Accelerator (DAX)
 - [DynamoDB Accelerator (DAX)](https://aws.amazon.com/dynamodb/dax/) provides caching capabilities for accessing data in microseconds (10 times performance improvement).
 - Amazon DynamoDB Accelerator (DAX) is a fully-managed, highly-available, in-memory caching service for [DynamoDB](Readme.md).
@@ -11,9 +10,17 @@
 - DAX is used to natively cache [DynamoDB](Readme.md) reads.
 
 # Use Cases
-- If your application is really read heavy and requires even lower latency than [DynamoDB](Readme.md) offers, you can add Amazon DynamoDB Accelerator, called DAX. 
-- DAX is an in-memory cache. 
-- Things like real-time bidding, social gaming, and trading applications are good candidates for using DAX.
+- Real-time bidding
+- Social gaming 
+- Trading applications
+
+# Types
+
+| Type        | Remarks |
+|-------------|---------|
+| Item Cache  |         |
+| Query Cache |         |
+
 
 # References
 - [Swiggy - Degraded Performance using DAX](https://bytes.swiggy.com/segmentation-at-swiggy-part-3-final-part-b740f7a3697d)

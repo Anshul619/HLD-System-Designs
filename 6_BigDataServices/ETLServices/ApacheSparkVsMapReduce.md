@@ -1,7 +1,7 @@
 
 # How is Apache Spark different from Hadoop MapReduce?
 
-| Basis            | [Apache Spark](ApacheSpark.md)                                                        | [Hadoop MapReduce](BatchProcessing/ApacheHadoop/Readme.md)                                                                                                                           | 
+| Basis            | [Apache Spark](ApacheSpark.md)                                                        | [Hadoop MapReduce](../ApacheHadoop/Readme.md)                                                                                                                           | 
 |------------------|-------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Data Processing  | Apache Spark can process the data both in near-real-time/stream and in batches.                       | MapReduce does only batch-wise processing of data.                                                                                                                                   | 
 | Speed            | Apache Spark runs approximately `100 times faster than MapReduce` for big data processing.            | MapReduce does slow processing of large data                                                                                                                                         | 

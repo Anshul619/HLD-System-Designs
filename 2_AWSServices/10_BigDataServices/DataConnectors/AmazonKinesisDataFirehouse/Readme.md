@@ -12,7 +12,7 @@
 |-------------------------------------------------------------------------------------------------------|----------------------------------------------------------|
 | [Amazon S3](../../../7_StorageServices/3_ObjectStorageS3/Readme.md)                                | [AWS data stores](../../../6_DatabaseServices)        |
 | [Amazon Redshift](../../StorageDBs/DataWarehouse/AmazonRedshift.md)                                | [AWS data stores](../../../6_DatabaseServices)        |
-| [Amazon OpenSearch](../../../6_DatabaseServices/AmazonOpenSearch.md)                        | [AWS data stores](../../../6_DatabaseServices)        |
+| [Amazon OpenSearch](../../../6_DatabaseServices/Search-Databases/AmazonOpenSearch.md)                        | [AWS data stores](../../../6_DatabaseServices)        |
 | [Data Lakes like S3 Data Lake etc.](../../StorageDBs/DataLakes)                                    | Data Lakes                                               |
 | [NewRelic](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/SubscriptionFilters.html)         | Logs/Analytics Tools                                     |
 | [MongoDB](../../../../3_DatabaseServices/10_Document-Databases/MongoDB/Readme.md) | [Open Source data store](../../../6_DatabaseServices) |
@@ -23,7 +23,7 @@
 
 # Big Data - Concepts, TechStack
 
-![](../../../../6_BigDataServices/AWS-Data-Architecture-ETL-OLTP-OLAP-DataLake.png)
+![](../../../../6_BigDataServices/Data-Architecture-ETL-Ingestion-Processing-Analytics.png)
 
 > Note
 > - When a [Kinesis data stream](../../../5_MessageBrokerServices/AmazonKinesis/AmazonKinesisDataStreams.md) is configured as the source of a Firehose delivery stream, [Firehose’s PutRecord and PutRecordBatch operations](../../../5_MessageBrokerServices/AmazonKinesis/AmazonKinesisDataStreams.md) are disabled and Kinesis Agent cannot write to Firehose delivery stream directly.

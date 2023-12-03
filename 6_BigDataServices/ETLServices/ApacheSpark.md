@@ -30,7 +30,7 @@ Example data sources
 
 # Modern Data Architecture
 
-![](../AWS-Data-Architecture-ETL-OLTP-OLAP-DataLake.png)
+![](../Data-Architecture-ETL-Ingestion-Processing-Analytics.png)
 
 # References
 - [Top Spark Interview Questions](https://www.interviewbit.com/spark-interview-questions/)

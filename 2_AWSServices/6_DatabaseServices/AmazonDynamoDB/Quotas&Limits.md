@@ -1,4 +1,4 @@
-# Quotas and Limits
+# Quotas and Limits - DynamoDB
 
 | Quota                              | Value              |
 |------------------------------------|--------------------|

@@ -1,7 +1,7 @@
 
 # Extract-Transform-Load (ETL)
 
-![](../AWS-Data-Architecture-ETL-OLTP-OLAP-DataLake.png)
+![](../Data-Architecture-ETL-Ingestion-Processing-Analytics.png)
 
 |           | Remarks                                                                                                                                                 |
 |-----------|---------------------------------------------------------------------------------------------------------------------------------------------------------|

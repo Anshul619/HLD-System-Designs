@@ -5,7 +5,7 @@
 - [Amazon Redshift](../../../2_AWSServices/10_BigDataServices/StorageDBs/DataWarehouse/AmazonRedshift.md) is most commonly used data warehouse on AWS.
 - This type of database is also known as [Columnar Database](https://aws.amazon.com/nosql/columnar/).
 
-![](../../AWS-Data-Architecture-ETL-OLTP-OLAP-DataLake.png)
+![](../../Data-Architecture-ETL-Ingestion-Processing-Analytics.png)
 
 # Why Data Warehouses?
 - Usually an analytic query needs to scan over a huge number of records, only reading a few columns per record, and calculates aggregate statistics (such as count, sum, or average) rather than returning the raw data to the user.
