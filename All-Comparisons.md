@@ -5,14 +5,14 @@
 | :star: [AWS - All Comparisons](2_AWSServices/AWS-All-Comparisons.md)                                                  |                                                                    |
 | :star: [Message Broker vs DB](4_MessageBrokersEDA/MessageBrokerVsDB.md)                                               | [Message Broker Services](4_MessageBrokersEDA)                     |
 | :star: [Message Brokers - Kafka vs Others](4_MessageBrokersEDA/KafkaVsRabbitMQVsSQSVsSNS.md)                          | [Message Broker Services](4_MessageBrokersEDA)                     |
-| :star: [SQL vs NoSQL](3_DatabaseServices/6_SQLvsNoSQL/Readme.md)                                                        | [Database Services](3_DatabaseServices)                            |
-| [Terminologies - SQL vs Document vs Search DBs](3_DatabaseServices/6_SQLvsNoSQL/TermsComparisons.md)                    | [Database Services](3_DatabaseServices)                            |
-| [DynamoDB vs MongoDB vs Casandra](3_DatabaseServices/DynamoDBVsMongoDBVsCasandra.md)                  | [Database Services](3_DatabaseServices)                            |
-| [Redis vs MemCache](3_DatabaseServices/8_InMemory-Databases/RedisVsMemcache.md)                                        | [Database Services](3_DatabaseServices)                            |
+| :star: [SQL vs NoSQL](3_DatabaseServices/SQLvsNoSQL.md)                                                               | [Database Services](3_DatabaseServices)                            |
+| [Terminologies - SQL vs Document vs Search DBs](3_DatabaseServices/TermsComparisons.md)                               | [Database Services](3_DatabaseServices)                            |
+| [DynamoDB vs MongoDB vs Casandra](3_DatabaseServices/DynamoDBVsMongoDBVsCasandra.md)                                  | [Database Services](3_DatabaseServices)                            |
+| [Redis vs MemCache](3_DatabaseServices/8_InMemory-Databases/RedisVsMemcache.md)                                       | [Database Services](3_DatabaseServices)                            |
 | [OLTP vs OLAP](3_DatabaseServices/OLTPvsOTAP.md)                                                                      | [Database Services](3_DatabaseServices)                            |
 | [Data Warehouse vs Data Lake](6_BigDataServices/StorageDBs/Glossaries/DataWarehousesVsLake.md)                        | [Database Services](3_DatabaseServices)                            |
 | [Fault Tolerance vs High Availability](7_PropertiesDistributedSystem/Reliability/FaultToleranceVsHighAvailability.md) | [Database Services](3_DatabaseServices)                            |
-| [Strong vs Semi vs Eventual Consistency/Replication](3_DatabaseServices/4_Consistency&Replication/Readme.md)            | [Database Services](3_DatabaseServices)                            |
+| [Strong vs Semi vs Eventual Consistency/Replication](3_DatabaseServices/4_Consistency&Replication/Readme.md)          | [Database Services](3_DatabaseServices)                            |
 | [Amazon S3 vs Apache HDFS](11_FileStorageServicesHDFS/HDFSVsS3.md)                                                    | [File Storage Services](11_FileStorageServicesHDFS)                |
 | [Apache Spark vs Map Reduce](6_BigDataServices/ETLServices/ApacheSparkVsMapReduce.md)                                 | [Big Data - ETL Services](6_BigDataServices/ETLServices/)          |
 | [REST vs GraphQL vs gRPC](8_APIProtocols/Readme.md)                                                                   | [API Protocols](8_APIProtocols/Readme.md)                          |
@@ -24,4 +24,4 @@
 | [Thrift vs Protocol Buffers](8_APIProtocols/SerializationFrameworks/ProtoBuffersVsThrift.md)                          | [Serialization Frameworks](8_APIProtocols/SerializationFrameworks) |
 | [Avro vs Others](8_APIProtocols/SerializationFrameworks/AvroVsOthers.md)                                              | [Serialization Frameworks](8_APIProtocols/SerializationFrameworks) |
 | [JSON vs Serialization Frameworks](8_APIProtocols/DataInterchangeFormats/JSONVsSerializationFrameworks.md)            | [Serialization Frameworks](8_APIProtocols/SerializationFrameworks) |
-| [Read Replica vs Cache](3_DatabaseServices/7_SQL-Databases/ReadReplicaVsCache.md)                                       | [Database Services](3_DatabaseServices)                            |
+| [Read Replica vs Cache](3_DatabaseServices/7_SQL-Databases/ReadReplicaVsCache.md)                                     | [Database Services](3_DatabaseServices)                            |

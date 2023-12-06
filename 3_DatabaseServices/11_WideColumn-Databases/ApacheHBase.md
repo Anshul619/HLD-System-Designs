@@ -3,7 +3,7 @@
 - [Apache HBase](https://hbase.apache.org/) is a massively scalable, distributed big data store built for random, [strongly consistent](../4_Consistency&Replication/Readme.md), real-time access for tables with `billions of rows and millions of columns`.
 
 # Key Features
-- [Highly scalable, distributed systems](../ScalabilityDB.md).
+- [Highly scalable, distributed systems](../Scalability.md).
 - [High Read/Writes in Apache HBase](../../7_PropertiesDistributedSystem/Scalability/Latency.md)
 - Linear scalability and modularity
 - Aid in exporting metrics through Hadoop metrics subsystem

@@ -16,10 +16,10 @@
 
 # Types
 
-| Type        | Remarks |
-|-------------|---------|
-| Item Cache  |         |
-| Query Cache |         |
+| Type        |
+|-------------|
+| Item Cache  |
+| Query Cache |
 
 
 # References

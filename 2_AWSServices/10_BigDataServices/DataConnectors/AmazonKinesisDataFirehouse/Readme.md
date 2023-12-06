@@ -15,7 +15,7 @@
 | [Amazon OpenSearch](../../../6_DatabaseServices/Search-Databases/AmazonOpenSearch.md)                        | [AWS data stores](../../../6_DatabaseServices)        |
 | [Data Lakes like S3 Data Lake etc.](../../StorageDBs/DataLakes)                                    | Data Lakes                                               |
 | [NewRelic](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/SubscriptionFilters.html)         | Logs/Analytics Tools                                     |
-| [MongoDB](../../../../3_DatabaseServices/10_Document-Databases/MongoDB/Readme.md) | [Open Source data store](../../../6_DatabaseServices) |
+| [MongoDB](../../../../3_DatabaseServices/10_Document-Databases/MongoDB.md) | [Open Source data store](../../../6_DatabaseServices) |
 | Splunk, Datadog, Dynatrace, Sumo Logic, LogicMonitor etc.                                             | Logs/Analytics Tools                                     |
 | HTTP End Point as destination                                                                         | Custom                                                   |
 

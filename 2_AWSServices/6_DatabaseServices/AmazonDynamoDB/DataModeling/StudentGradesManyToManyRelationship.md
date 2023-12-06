@@ -1,5 +1,5 @@
 # Student-Grades - Many-to-Many Relationship
-- 1 table with 1 GSI (without any joins) in [DynamoDB](../Readme.md), instead of 3 tables in [SQL db](../../../../3_DatabaseServices/6_SQLvsNoSQL/Readme.md) for many-many relatioship.
+- 1 table with 1 GSI (without any joins) in [DynamoDB](../Readme.md), instead of 3 tables in [SQL db](../../../../3_DatabaseServices/7_SQL-Databases/Readme.md) for many-many relatioship.
 
 # Base Table
 

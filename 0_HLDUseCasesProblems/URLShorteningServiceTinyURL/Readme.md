@@ -52,7 +52,7 @@ Gotcha: What if two people try to shorten the same URL?
 
 # Which database to use? - SQL vs NoSQL
 - [NoSQL](../../3_DatabaseServices/Readme.md) can be used here since we are anticipating a billion of rows & no relationship is needed between rows.
-- Read more about [NoSQL vs SQL](../../3_DatabaseServices/6_SQLvsNoSQL/Readme.md).
+- Read more about [NoSQL vs SQL](../../3_DatabaseServices/SQLvsNoSQL.md).
 
 # Cache frequently accessed URLs
 - We can cache URLs that are frequently accessed. (with `LRU - Least Recently Used` policy)

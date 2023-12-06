@@ -19,19 +19,19 @@
 
 # Key Features of ElasticSearch
 
-|                                 | Remarks                                                                                                                                                                                        |
-|---------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| REST API interface              | We can interact with ElasticSearch through [REST APIs](RESTAPIs.md).                                                                                                                           |
-| GraphQL support                 | ElasticSearch supports [GraphQL](GraphQLSupport.md) in its APIs.                                                                                                                               |
-| Default Config                  | An Elasticsearch index has **5 shards** and **1 replica** by default.                                                                                                                          |
-| Mapping                         | [Mapping](https://www.elastic.co/guide/en/elasticsearch/reference/current/mapping.html) is the process of defining how a document, and the fields it contains, are stored and indexed.         |
-| Sample Search Query             | [Sample Search Query](samples/SampleSearchQuery.md)                                                                                                                                            |
-| Ingest Node                     | Ingest node is used for pre-process documents before the actual document indexing happens. <br/>- It helps to intercepts bulk and index requests.                                              |
+|                                 | Remarks                                                                                                                                                                                         |
+|---------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| REST API interface              | We can interact with ElasticSearch through [REST APIs](RESTAPIs.md).                                                                                                                            |
+| GraphQL support                 | ElasticSearch supports [GraphQL](GraphQLSupport.md) in its APIs.                                                                                                                                |
+| Default Config                  | An Elasticsearch index has **5 shards** and **1 replica** by default.                                                                                                                           |
+| Mapping                         | [Mapping](https://www.elastic.co/guide/en/elasticsearch/reference/current/mapping.html) is the process of defining how a document, and the fields it contains, are stored and indexed.          |
+| Sample Search Query             | [Read more](samples/SampleSearchQuery.md)                                                                                                                                                       |
+| Ingest Node                     | Ingest node is used for pre-process documents before the actual document indexing happens. <br/>- It helps to intercepts bulk and index requests.                                               |
 | Data Storage                    | Settings, index mapping, alternative cluster states, and other metadata are saved to Elasticsearch files outside the [Lucene](../Readme.md) environment. This is to prevent excessive disk I/O. |
-| Elastic Stack                   | For data analysis, it operates alongside Kibana, and Logstash to form the [ELK stack](../../../12_ObservabilityLogsServices/ELK.md).                                                           |
-| Elastic Near-Real-Time platform | [Read more](https://www.elastic.co/guide/en/elasticsearch/reference/current/near-real-time.html)                                                                                               |
-| Pricing                         | [Read more](https://www.elastic.co/pricing/)                                                                                                                                                   |
-| Data Streaming                  | [Read more](../../Others/StreamDBs/ElasticSearchStreams.md)                                                                                                                                                                    |
+| Elastic Stack                   | For data analysis, it operates alongside Kibana, and Logstash to form the [ELK stack](../../../12_ObservabilityLogsServices/ELK.md).                                                            |
+| Elastic Near-Real-Time platform | [Read more](https://www.elastic.co/guide/en/elasticsearch/reference/current/near-real-time.html)                                                                                                |
+| Data Streaming                  | [Read more](../../Others/StreamDBs/ElasticSearchStreams.md)                                                                                                                                     |
+| Pricing                         | [Read more](https://www.elastic.co/pricing/)                                                                                                                                                    |
 
 # Different data types supported
 - Textual

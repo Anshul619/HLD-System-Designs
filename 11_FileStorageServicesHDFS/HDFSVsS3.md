@@ -2,7 +2,7 @@
 
 |                                                                       | [Apache HDFS](ApacheHDFS.md)   | [Amazon S3](../2_AWSServices/7_StorageServices/3_ObjectStorageS3/Readme.md) |
 |-----------------------------------------------------------------------|--------------------------------|----------------------------------------------------------------------------------|
-| [Scalability](../3_DatabaseServices/ScalabilityDB.md)  |                                | :white_check_mark: Recommended                                                   |
+| [Scalability](../3_DatabaseServices/Scalability.md)  |                                | :white_check_mark: Recommended                                                   |
 | Built-in persistence, and lower prices                                |                                | :white_check_mark: Recommended                                                   |
 | [Performance](../7_PropertiesDistributedSystem/Scalability/Latency.md) | :white_check_mark: Recommended |                                                                                  |
 | No limitations on file size or storage format                         | :white_check_mark: Recommended |                                                                                  |

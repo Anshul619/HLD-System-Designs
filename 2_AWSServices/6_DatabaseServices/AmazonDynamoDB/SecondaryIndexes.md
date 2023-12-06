@@ -14,9 +14,9 @@
 
 # Disadvantages of Secondary Indexes
 
-| Disadvantage     | Remarks                                                                                          |
-|------------------|--------------------------------------------------------------------------------------------------|
-| Cost             | Additional storage and throughput cost                                                           |
-| Write consistent | Hot keys                                                                                         |
-| Consistency      | GSI are [eventually consistent](../../../3_DatabaseServices/4_Consistency&Replication/Readme.md) |
-| Management       | Create, maintain, update indexes                                                                 |
+| Disadvantage     | Remarks                                                                                  |
+|------------------|------------------------------------------------------------------------------------------|
+| Cost             | Additional storage and throughput cost                                                   |
+| Consistency      | [Eventually consistent](../../../3_DatabaseServices/4_Consistency&Replication/Readme.md) |
+| Management       | Create, maintain, update indexes                                                         |
+| Write consistent | Hot keys                                                                                 |

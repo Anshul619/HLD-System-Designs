@@ -16,7 +16,7 @@
 | :star: [Point to Point Model](../4_MessageBrokersEDA/EventDrivenArchitecture/PointToPointModel.md)     | Message Brokers   | Others                                 |
 | :star: [Publish Subscriber Model](../4_MessageBrokersEDA/EventDrivenArchitecture/PubSubModel.md)       | Message Brokers   | Others                                 |
 | :star: [Indexing](../3_DatabaseServices/5_DataStructuresUsedInDB/Indexing/Readme.md)                     | Databases         | :rocket: [Scalability](Scalability)    |
-| :star: [DB Scalability](../3_DatabaseServices/ScalabilityDB.md)                                        | Databases         | :rocket: [Scalability](Scalability)    |
+| :star: [DB Scalability](../3_DatabaseServices/Scalability.md)                                        | Databases         | :rocket: [Scalability](Scalability)    |
 | :star: [ACID Properties of the Transaction](../3_DatabaseServices/1_ACIDTransactions/Readme.md)          | Databases         | Others                                 |
 | :star: [PACELC Theorem of the Distributed Systems](../3_DatabaseServices/2_CAP&PACELCTheorems/Readme.md) | Databases         | Others                                 |
 | :star: [Replication](../3_DatabaseServices/4_Consistency&Replication/Replication.md)                     | Databases         | :handshake: [Reliability](Reliability) |
