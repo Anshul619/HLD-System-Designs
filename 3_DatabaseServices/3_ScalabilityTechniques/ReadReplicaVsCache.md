@@ -3,6 +3,6 @@
 
 |                        | Read Replica | In-Memory Cache |
 |------------------------|--------------|-----------------|
-| Dynamic Query Patterns | Preferred    |                 |
+| Dynamic Query Patterns | Preferred    | Not-Preferred   |
 | Replica Lag            | Yes          | No              |
 | Data Consistency Bugs  | Less         | More            |

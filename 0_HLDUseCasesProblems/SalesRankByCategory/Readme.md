@@ -26,7 +26,7 @@
 | t4        | product3     | category2   | 7   | 2.00        | 4         | 5        |
 | t5        | product4     | category1   | 1   | 5.00        | 5         | 6        |
 
-> Note - `id`, `category_id`, `product_id` columns should be [indexed](../../3_DatabaseServices/5_DataStructuresUsedInDB/Indexing/Readme.md), for faster performance.
+> Note - `id`, `category_id`, `product_id` columns should be [indexed](../../3_DatabaseServices/3_ScalabilityTechniques/Indexing.md), for faster performance.
 
 # How to populate Sales Rank table?
 - SalesRank service would get the sales data from sales table, then apply [Map Reduce](../../6_BigDataServices/ETLServices/ApacheSpark.md) and populate `sales_rank` table. 

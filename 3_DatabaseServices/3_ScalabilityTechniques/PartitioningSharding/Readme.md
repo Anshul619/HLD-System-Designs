@@ -3,15 +3,15 @@
 - Instead of one shard for writes, we partition/shard the database based on a partition key. 
 - This would increase query throughput and overall system write throughput.
 
-> Note - This partitioning is not related to network partition (in [CAP Theorem](../2_CAP&PACELCTheorems/CAPTheorem.md)).
+> Note - This partitioning is not related to network partition (in [CAP Theorem](../../2_CAP&PACELCTheorems/CAPTheorem.md)).
 
 # Key Terminologies
 
 | Terminology         | Description                                                                                                                                                                                                           |
 |---------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Partition Key       | Partitioning would be done based on a partition key. <br/>- Hence we need to carefully [choose this key to distribute the data evenly b/w partitions](PartitionKey/Readme.md).                                        |
-| Hash Function       | Hash function helps to determine the partition for a given key.<br/>- MD5 as a hash function used in [Casandra](../11_WideColumn-Databases/ApacheCasandra.md), [MongoDB](../10_Document-Databases/MongoDB.md). |
-| Secondary Indexes   | [Global Secondary Indexes in DynamoDB](../../2_AWSServices/6_DatabaseServices/AmazonDynamoDB/Readme.md) <br/>- [Read more](../5_DataStructuresUsedInDB/Indexing/Readme.md)                                            |
+| Hash Function       | Hash function helps to determine the partition for a given key.<br/>- MD5 as a hash function used in [Casandra](../../11_WideColumn-Databases/ApacheCasandra.md), [MongoDB](../../10_Document-Databases/MongoDB.md). |
+| Secondary Indexes   | [Global Secondary Indexes in DynamoDB](../../../2_AWSServices/6_DatabaseServices/AmazonDynamoDB/Readme.md) <br/>- [Read more](../Indexing.md)                                            |
 | Consistent Hashing  | This handles data sharding with dynamic number of servers.                                                                                                                                                            |
 | Unique-ID-Generator | Since NoSQL dbs don't generate primary key automatically, we would have generate unique ID on the application side.                                                                                                   |
 
@@ -19,22 +19,22 @@
 
 ## Kafka Cluster
 
-![](../../4_MessageBrokersEDA/Kafka/assets/Kafka-Architecture.drawio.png)
+![](../../../4_MessageBrokersEDA/Kafka/assets/Kafka-Architecture.drawio.png)
 
 ## ElasticSearch Cluster
 
-![](../9_Search-Databases/ElasticSearch/assests/ElasticSearch-Cluster.png)
+![](../../9_Search-Databases/ElasticSearch/assests/ElasticSearch-Cluster.png)
 
 ## Redis Cluster
 
-![](../../2_AWSServices/6_DatabaseServices/AmazonElasticCache/assets/ElasticCache-Multi-AZ.drawio.png)
+![](../../../2_AWSServices/6_DatabaseServices/AmazonElasticCache/assets/ElasticCache-Multi-AZ.drawio.png)
 
-[Read more](../../2_AWSServices/6_DatabaseServices/AmazonElasticCache/Readme.md)
+[Read more](../../../2_AWSServices/6_DatabaseServices/AmazonElasticCache/Readme.md)
 
 ## Others
-- [Amazon DynamoDB Cluster](../../2_AWSServices/6_DatabaseServices/AmazonDynamoDB/Partioning.md)
-- [Apache Casandra](../11_WideColumn-Databases/ApacheCasandra.md)
-- [Instagram - Postgres Sharding](../../0_HLDUseCasesProblems/SocialNetworkFacebookInstagram/Readme.md)
+- [Amazon DynamoDB Cluster](../../../2_AWSServices/6_DatabaseServices/AmazonDynamoDB/Partioning.md)
+- [Apache Casandra](../../11_WideColumn-Databases/ApacheCasandra.md)
+- [Instagram - Postgres Sharding](../../../0_HLDUseCasesProblems/SocialNetworkFacebookInstagram/Readme.md)
 
 # References
 - [How Sharding Works?](https://medium.com/@jeeyoungk/how-sharding-works-b4dec46b3f6)

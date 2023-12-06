@@ -1,13 +1,15 @@
 # :star: Single-Leader replication
 
-> Also known as `Leader-Follower`, `Master-Slave`, `Primary-Replica` replication.
+![](assets/Leader-Follow-Replication.drawio.png)
+
+> Also known as Leader-Follower, Master-Slave, Primary-Replica replication.
+
+# Terminologies
 
 | Term                                                            | Description                                                                                                                                                                                                                                                                                                                                                                                                                                         |
 |-----------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Leader (also known as master or primary)                        | One of the replicas is designated the leader (also known as `master or primary`). <br/>- When clients want to write to the database, they must send their requests to the leader, which first writes the new data to its local storage.                                                                                                                                                                                                             |
 | Followers (read replicas, slaves, secondaries, or hot standbys) | Whenever the leader writes new data to its local storage, it also sends the data change to all of its followers as part of a [replication log or change stream](https://www.stitchdata.com/docs/replication/replication-methods/log-based-incremental). <br/>- Each follower takes the log from the leader and updates its local copy of the data‐ base accordingly, by applying all writes in the same order as they were processed on the leader. |
-
-![](assets/Leader-Follow-Replication.drawio.png)
 
 # Supported services
 
