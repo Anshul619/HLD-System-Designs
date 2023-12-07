@@ -1,6 +1,10 @@
-# SLA (Service Level Agreement)
-An [SLA](https://www.servicenow.com/products/itsm/what-is-sla.html) may state that the service is considered to be up if
-- It has a [latency/median response](Scalability/Latency.md) time of less than 200 ms.
-- A [99th percentile under 1s](Scalability/Latency.md) (if the response time is longer, it might as well be down).
-- And the service may be required to be up [at least 99.9% of the time](Reliability/HighAvailability.md#power-of-9s).
+# SLA Metrics
 - These metrics set expectations for clients of the service and allow customers to demand a refund if the SLA is not met.
+
+| Metric                                            | Example                |
+|---------------------------------------------------|------------------------|
+| [Latency/median response](Scalability/Latency.md) | Less than 200 ms       |
+| [99th percentile](Scalability/Latency.md)         | Less than 1 sec        |
+| [Uptime](Reliability/HighAvailability.md)         | At-least 99.9% of time |
+
+[Read more](https://www.servicenow.com/products/itsm/what-is-sla.html)
