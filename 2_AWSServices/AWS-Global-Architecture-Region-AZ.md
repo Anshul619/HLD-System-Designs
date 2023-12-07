@@ -1,27 +1,25 @@
 # AWS Global Architecture
 
-| Component                           | Count | Remarks                                |
-|-------------------------------------|-------|----------------------------------------|
-| :earth_americas: Geographic Regions | 25    |                                        |
-| Availability Zones(AZ)              | 69    |                                        |
-| Points Of Presence                  | 216   |                                        |
-| Local Zones                         |       | AWS data centers are located globally. |
+| Component                           | Count |
+|-------------------------------------|-------|
+| :earth_americas: Geographic Regions | 25    |
+| Availability Zones(AZ)              | 69    |
+| Points Of Presence                  | 216   |
+| Local Zones                         |       |
 
 ![img.png](https://d0.awsstatic.com/global-infrastructure/maps/Global_Infrastructure_5.13.png)
 
 # :earth_americas: Geographic Regions
-- A [region](https://aws.amazon.com/about-aws/global-infrastructure/regions_az/) is a `geographic location` where every data center inside the region is called an `availability zone`, AZ in short.
+- A [region](https://aws.amazon.com/about-aws/global-infrastructure/regions_az/) is a **geographic location** where every data center inside the region is called an **availability zone**, AZ in short.
 - There are 25 geographic regions available in AWS, around the world.
 - For examples,
   - us-east-1 (US East (N. Virginia))
   - eu-west-1 (Europe (Ireland))
   - eu-north-1 (Europe (Stockholm))
   - ap-south-1 (Asia Pacific (Mumbai))
-- [In AWS, every region would have its own cluster](../7_PropertiesDistributedSystem/Scalability/ServersCluster.md).
+- In AWS, every region would have its own [cluster](../7_PropertiesDistributedSystem/Scalability/ServersCluster.md).
 
-![img.png](../0_HLDUseCasesProblems/AWS_DesignMultiRegionActiveActiveArchitecture/AWS-Multi-Region-AZ-HA.drawio.png)
-
-## :star: AWS Region Consideration
+## AWS Region Consideration
 
 | Aspect               | Remarks                                                                                                                                                                                                                                                                                                                                                             |
 |----------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -48,11 +46,15 @@
 
 [Read more](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-regions-availability-zones.html#az-ids)
 
+## Sample AWS Architecture 
+
+![](../0_HLDUseCasesProblems/AWS_DesignMultiRegionActiveActiveArchitecture/AWS-Multi-Region-AZ-HA.drawio.png)
+
 # Points of Presence
 - [POPs](https://www.medianova.com/en-blog/what-is-a-pop-and-how-do-we-create-one/) are used for both [Amazon CloudFront](1_NetworkingAndContentDelivery/1_EdgeNetworking/AmazonCloudFront.md) to deliver content to end users at high speeds, and [Lambda@Edge](3_ComputeServices/AWSLambda/Readme.md) to run Lambda functions with the lowest possible latency. 
 - As of April 2020, there are 216 Points of Presence in 84 cities across 42 countries.
 
-![img.png](https://d2908q01vomqb2.cloudfront.net/5b384ce32d8cdef02bc3a139d4cac0a22bb029e8/2022/06/17/CloudFront_400-1024x580.png)
+![](https://d2908q01vomqb2.cloudfront.net/5b384ce32d8cdef02bc3a139d4cac0a22bb029e8/2022/06/17/CloudFront_400-1024x580.png)
 
 # Global vs Regional vs Availability Zone Resource locations
 
