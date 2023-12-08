@@ -22,7 +22,7 @@
 
 | Use Case                                                                                                                                         |
 |--------------------------------------------------------------------------------------------------------------------------------------------------|
-| [LinkedIn](../../1_TechStacks/LinkedInTechStack.md)                                                                                              |
+| [LinkedIn](../../1_TechStacks/LinkedIn/Readme.md)                                                                                              |
 | [Personalization at Spotify using Cassandra & Kafka](../../1_TechStacks/PersonalizationSpotify/Readme.md)                                        |
 | [Zomato - HLD Design](../../0_HLDUseCasesProblems/FoodOrderingZomatoSwiggy/Readme.md)                                                            |
 | [Uber Driver Allocation - HLD Design](../../0_HLDUseCasesProblems/DriverAllocationUberGoJek/Readme.md)                                           |
@@ -121,6 +121,7 @@
 # Other Points
 - [Kafka vs Others](../KafkaVsRabbitMQVsSQSVsSNS.md)
 - [Kafka Estimates](KafkaEstimations.md)
+- [Apache Kafka - Benchmarking@LinkedIn](../../1_TechStacks/LinkedIn/KafkaBenchmarking.md)
 - [Why Kafka is so fast?](WhyKafkaSoFast.md)
 - [Amazon Managed Streaming for Apache Kafka (MSK)](../../2_AWSServices/5_MessageBrokerServices/AmazonMSK.md) can be used to deploy Kafka on [AWS](../../2_AWSServices).
 
@@ -134,6 +135,5 @@
 - [Role of ZooKeeper in Kafka](https://www.youtube.com/watch?v=bnHWrSwPvig)
 - [Replication in Kafka](https://medium.com/@_amanarora/replication-in-kafka-58b39e91b64e)
 - [Swiggy - BehindTheBug — Kafka Under The Water](https://bytes.swiggy.com/behindthebug-kafka-under-the-water-288c3d05b202)
-- [Benchmarking Apache Kafka, Apache Pulsar, and RabbitMQ: Which is the Fastest?](https://www.confluent.io/blog/kafka-fastest-messaging-system/)
 - [Designing and testing a highly available Kafka cluster on Kubernetes (without zookeeper)](https://learnk8s.io/kafka-ha-kubernetes)
 - [ETL Is Dead, Long Live Streams: real-time streams w/ Apache Kafka](https://www.youtube.com/watch?v=I32hmY4diFY)

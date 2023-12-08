@@ -6,7 +6,7 @@
 | :star: [Grab](https://engineering.grab.com/)                               | Food Ordering  | [Grab - Order Processing](Grab/Readme.md)                                             |
 | [Zomato](https://blog.zomato.com/author/engineering)                       | Food Ordering  | [Zomato - System Design](../0_HLDUseCasesProblems/FoodOrderingZomatoSwiggy/Readme.md) |
 | [Swiggy](https://bytes.swiggy.com/)                                        | Food Ordering  | [Swiggy - TechStack](SwiggyTechStack.md)                                              |
-| [LinkedIn](https://engineering.linkedin.com/)                              | Social Network | [Linkedin - System Design](LinkedInTechStack.md)                                      |
+| [LinkedIn](https://engineering.linkedin.com/)                              | Social Network | [Linkedin - System Design](LinkedIn/Readme.md)                                      |
 | [Instagram](https://medium.com/@InstagramEng)                              | Social Network | [Instagram - System Design](InstagramTechStack.md)                                    |
 | [Paypal](https://medium.com/paypal-tech)                                   | Payment System | [Paypal - Kafka](PayPalTechStack.md)                                                  |
 | [Stripe](https://stripe.com/blog/engineering)                              | Payment System | [Stripe - System Design](StripeTechStack.md)                                          |
@@ -16,7 +16,7 @@
 | [Split.io](https://www.split.io/blog)                                      |                | [Split.io - System Design](SplitIOTechStack.md)                                       |
 | [Flipkart](https://blog.flipkart.tech/)                                    | E-commerce     | [Flipkart](Flipkart)                                                                  |
 | [BigCommerce](https://www.bigeng.io/)                                      | E-commerce     | [Big Commerce - System Design](BigCommerce/Readme.md)                                 |
-| [Netflix](https://netflixtechblog.com/)                                    |                | [Netflix - System Design](NetflixTechStack.md)                                        |
+| [Netflix](https://netflixtechblog.com/)                                    |                | [Netflix - System Design](Netflix/Readme.md)                                        |
 | [Directi - Zeta](https://engineering.zeta.tech)                            |                | [Zeta - System Design](DirectITechStack.md)                                           |
 | [Airbnb](https://medium.com/airbnb-engineering)                            |                | [Airbnb - System Design](Airbnb/Readme.md)                                            |
 | [Wix Engineering](https://medium.com/wix-engineering/)                     |                | [Wix - System Design](WixTechStack.md)                                                |

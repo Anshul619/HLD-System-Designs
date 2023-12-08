@@ -54,11 +54,11 @@ This repo contains the various system design components info, questions and solu
           <img src="https://i0.wp.com/www.australtech.net/wp-content/uploads/2019/05/cloudformation-logo.png" width="150">
         </a>
         <br/><br/>
-        <a href="9_ContainerOrchestrationServices/Kubernates/Readme.md">
+        <a href="9_Container&OrchestrationServices/Kubernates/Readme.md">
           <img src="https://logos-download.com/wp-content/uploads/2018/09/Kubernetes_Logo.png">
         </a>
         <br/><br/>
-        <a href="9_ContainerOrchestrationServices/Docker/Readme.md">
+        <a href="9_Container&OrchestrationServices/Docker/Readme.md">
           <img src="https://www.docker.com/wp-content/uploads/2022/03/vertical-logo-monochromatic.png">
         </a>
       </td>

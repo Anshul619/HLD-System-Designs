@@ -3,7 +3,7 @@
 | Component                           | Count |
 |-------------------------------------|-------|
 | :earth_americas: Geographic Regions | 25    |
-| Availability Zones(AZ)              | 69    |
+| Availability Zones (AZ)             | 69    |
 | Points Of Presence                  | 216   |
 | Local Zones                         |       |
 
@@ -31,6 +31,8 @@
 # Availability Zones (AZ)
 - [An Availability Zone (AZ)](https://aws.amazon.com/about-aws/global-infrastructure/regions_az/) is one or more discrete data centers with redundant power, networking, and connectivity in an AWS Region. 
 - AZs give customers the ability to operate production applications and databases that are more [highly available](../7_PropertiesDistributedSystem/Reliability/HighAvailability.md), [fault-tolerant](../7_PropertiesDistributedSystem/Reliability/FaultTolerance.md), and [scalable](../3_DatabaseServices/3_ScalabilityTechniques/Readme.md) than would be possible from a single data center.
+
+## AZ Concepts
 
 | Concept                                                                                                   | Remarks                                                                                                                                                                                                                                                                                                                                                                                                                      |
 |-----------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -68,6 +70,6 @@
 
 [Read more](https://jayendrapatil.com/aws-global-vs-regional-vs-az-resources/)
 
-# Source(s) and further reading
+# References
 - [What are the differences AWS Regions and Availability Zones?](https://www.quora.com/What-are-the-differences-AWS-Regions-and-Availability-Zones)
 

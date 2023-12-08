@@ -12,3 +12,4 @@
 # References
 - [RabbitMQ vs Kafka - InterviewBit](https://www.interviewbit.com/blog/rabbitmq-vs-kafka/)
 - [Benchmarking Apache Kafka and RabbitMQ: Which is the Fastest?](https://www.confluent.io/blog/kafka-fastest-messaging-system/)
+- [RabbitMQ Performance Measurements, part 2](https://blog.rabbitmq.com/posts/2012/04/rabbitmq-performance-measurements-part-2/)

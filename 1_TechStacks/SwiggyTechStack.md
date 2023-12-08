@@ -3,7 +3,7 @@
 | Use Case                                                                       | Service                                                                          |
 |--------------------------------------------------------------------------------|----------------------------------------------------------------------------------|
 | Cloud platform                                                                 | [AWS - EC2, Lambda, S3, DynamoDB, CodePipeline etc.](../2_AWSServices/Readme.md) |
-| Container Orchestration                                                        | [Kubernates with Docker](../9_ContainerOrchestrationServices/Readme.md)          |
+| Container Orchestration                                                        | [Kubernates with Docker](../9_Container&OrchestrationServices/Readme.md)          |
 | InMemory-Cache                                                                 | [Redis cache](../3_DatabaseServices/8_InMemory-Databases/Redis/Readme.md)                |
 | Message Broker - Pub/Sub                                                       | [Apache Kafka (using confluent)](../4_MessageBrokersEDA/Kafka/Readme.md)            |
 | Map-Reduce Jobs (like select driver, generate recommendations etc.)            | [Apache Spark](../6_BigDataServices/ETLServices/ApacheSpark.md)                  |

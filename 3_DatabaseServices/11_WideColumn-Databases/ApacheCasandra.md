@@ -54,7 +54,7 @@
 
 ## Other UCs
 - [How Uber Manages a Million Writes Per Second Using Mesos and Cassandra Across Multiple Datacenters?](../../1_TechStacks/Uber/UberCasandraMesos)
-- [Netflix - Casandra - Time Series Data](../../1_TechStacks/NetflixTechStack.md)
+- [Netflix - Casandra - Time Series Data](../../1_TechStacks/Netflix/Readme.md)
 - [Directi uses Casandra to save HeatMaps (UI activities)](../../1_TechStacks/DirectITechStack.md)
 - [Instagram - Social Media Posts](../../1_TechStacks/InstagramTechStack.md)
 - [Twillo - Send Message API Design Problem](../../0_HLDUseCasesProblems/SendSMSMessageAPITwillo/Readme.md)

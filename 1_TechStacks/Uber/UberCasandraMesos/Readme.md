@@ -17,8 +17,8 @@
 | Throughput            | More than a million writes/sec and ~100k reads/sec`                                                                                                                                             |
 
 # App Provisioning
-- Uber use [Docker containers](../../../9_ContainerOrchestrationServices/Docker/Readme.md) on [Mesos](../../../9_ContainerOrchestrationServices/ApacheMarathon&Mesos.md) to run their microservices with consistent configurations scalable, with help from Aurora for long-running services and cron jobs.
-- One of Uber infrastructure teams, Application Platform, produced a template library that builds services into shippable [Docker images](../../../9_ContainerOrchestrationServices/Docker/Readme.md).
+- Uber use [Docker containers](../../../9_Container&OrchestrationServices/Docker/Readme.md) on [Mesos](../../../9_Container&OrchestrationServices/ApacheMarathon&Mesos.md) to run their microservices with consistent configurations scalable, with help from Aurora for long-running services and cron jobs.
+- One of Uber infrastructure teams, Application Platform, produced a template library that builds services into shippable [Docker images](../../../9_Container&OrchestrationServices/Docker/Readme.md).
 
 # References
 - [HighScalability - How Uber Manages a Million Writes Per Second Using Mesos and Cassandra Across Multiple Datacenters?](http://highscalability.com/blog/2016/9/28/how-uber-manages-a-million-writes-per-second-using-mesos-and.html)

@@ -10,7 +10,7 @@
 - But do optimize it for fallback using [bloom-filters](../5_DataStructuresUsedInDB/LSMTree.md).
 
 # :star: Real world use cases of RocksDB
-- [LinkedIn - Home Feed](../../1_TechStacks/LinkedInTechStack.md)
+- [LinkedIn - Home Feed](../../1_TechStacks/LinkedIn/Readme.md)
 - [Facebook - Home Feed](../../1_TechStacks/FacebookTechStack.md)
 
 # References

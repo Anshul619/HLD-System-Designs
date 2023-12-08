@@ -1,0 +1,2 @@
+# Benchmarking Cassandra Scalability on AWS — Over a million writes per second
+- [Read more](https://netflixtechblog.com/benchmarking-cassandra-scalability-on-aws-over-a-million-writes-per-second-39f45f066c9e)

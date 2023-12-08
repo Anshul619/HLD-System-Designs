@@ -2,7 +2,7 @@
 - [Kubernetes](https://kubernetes.io), also known as K8s, is an OPEN-SOURCE system for automating deployment, [scaling](../../7_PropertiesDistributedSystem/Scalability), and management of containerized applications. 
 - [Kubernates]() is a [battle-tested container orchestration service](../Readme.md) i.e. manage, create containers (through pods, worker nodes).
 
-![img.png](../assets/Kubernates-Architecture.png)
+![](Kubernates-Architecture.png)
 
 > Kubernetes is a Greek word meaning `captain` in English.
 > - Like the captain is responsible for the safe journey of the ship in the seas, Kubernetes is responsible for carrying and delivering those boxes safely to locations where they can be used.
@@ -14,8 +14,8 @@
 | [Zomato](../../0_HLDUseCasesProblems/FoodOrderingZomatoSwiggy/Readme.md) |
 | [Swiggy](../../1_TechStacks/SwiggyTechStack.md)                          |
 | [Spotify](../../1_TechStacks/PersonalizationSpotify/Readme.md)           |
-| [Grab](../../1_TechStacks/Grab/Readme.md)                       |
-| [LinkedIn](../../1_TechStacks/LinkedInTechStack.md)                      |
+| [Grab](../../1_TechStacks/Grab/Readme.md)                                |
+| [LinkedIn](../../1_TechStacks/LinkedIn/Readme.md)                      |
 | [Split.io](../../1_TechStacks/SplitIOTechStack.md)                       |
 | [Stripe](../../1_TechStacks/StripeTechStack.md)                          |
 
