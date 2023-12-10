@@ -27,5 +27,5 @@
 | Write Query Speed | Faster                                                                                                                                                                              |                                                                         |
 | Security          |                                                                                                                                                                                     | A lot of security features are built in MySQL, and it is highly secure. |
 
-[Read more](ttps://www.ibm.com/cloud/blog/postgresql-vs-mysql-whats-the-difference)
+[Read more](https://www.ibm.com/cloud/blog/postgresql-vs-mysql-whats-the-difference)
 

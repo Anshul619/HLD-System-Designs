@@ -6,18 +6,13 @@
 
 ![](../0_HLDUseCasesProblems/FoodOrderingZomatoSwiggy/HLDFoodOrderingSystem.drawio.png)
 
-# OnPerm - Microservice Implementation in Spring Boot
-
-![](https://github.com/Anshul619/Programming-Languages/blob/main/1_Java/SpringBootAndMicroServices/assests/Spring-Boot-MicroService-OnPerm.drawio.png)
-
-[Read more](https://github.com/Anshul619/Programming-Languages/tree/main/1_Java/SpringBootAndMicroServices/Readme.md)
-
 # Features
 - [Design Patterns](DesignPatterns.md)
 - [Spring Cloud vs K8s vs AWS](SpringCloudVsK8sVsAWS.md)
 - [API Gateway](1_APIGateway)
 - [Service Registry and Discovery](2_ServiceRegistry&Discovery/Readme.md)
 - [ServiceMesh](3_ServiceMesh.md)
+- [OnPerm - Microservice Implementation in Spring Boot](https://github.com/Anshul619/Programming-Languages/tree/main/1_Java/SpringBootAndMicroServices/Readme.md)
 
 # :thumbsup: Advantages of Microservices design
 
