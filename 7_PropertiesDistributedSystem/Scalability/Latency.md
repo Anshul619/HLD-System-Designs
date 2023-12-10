@@ -1,8 +1,8 @@
 # Latency
 - [Latency/Response time](https://topic.alibabacloud.com/a/what-is-tps-what-is-qps-and-what-is-the-difference-_-internet_2_60_20293740.html) is the time required to perform an action or to produce some result.
 - Latency is measured in units of time - minutes, seconds, nanoseconds or clock periods.
-- For example - **50 ms to complete a request/transaction**.
-- [Latency comparison numbers](../../SystemEstimationTips.md#latency-comparison-numbers)
+- For example - **100 ms to complete a request/transaction**.
+- [Latency comparison numbers](../../SystemEstimations&Benchmarking/LatencyNumbers.md)
 
 # Importance of Latency
 - Latency is important as it affects overall business.

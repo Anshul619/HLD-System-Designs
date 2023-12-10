@@ -16,7 +16,7 @@
 
 # Supported Services
 - [AWS](../../2_AWSServices)
-- [NewRelic](../NewRelic.md)
+- [NewRelic](../NewRelic/Readme.md)
 - [Splunk](https://www.splunk.com)
 
 # Alternatives

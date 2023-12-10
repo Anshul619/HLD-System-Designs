@@ -23,7 +23,7 @@
 | Use Case                                                                                                                                         |
 |--------------------------------------------------------------------------------------------------------------------------------------------------|
 | [LinkedIn](../../1_TechStacks/LinkedIn/Readme.md)                                                                                              |
-| [Personalization at Spotify using Cassandra & Kafka](../../1_TechStacks/PersonalizationSpotify/Readme.md)                                        |
+| [Personalization at Spotify using Cassandra & Kafka](../../1_TechStacks/Spotify/Readme.md)                                        |
 | [Zomato - HLD Design](../../0_HLDUseCasesProblems/FoodOrderingZomatoSwiggy/Readme.md)                                                            |
 | [Uber Driver Allocation - HLD Design](../../0_HLDUseCasesProblems/DriverAllocationUberGoJek/Readme.md)                                           |
 | [Twillo Send Message API Design - HLD Design](../../0_HLDUseCasesProblems/SendSMSMessageAPITwillo/Readme.md)                                     |
@@ -121,7 +121,7 @@
 # Other Points
 - [Kafka vs Others](../KafkaVsRabbitMQVsSQSVsSNS.md)
 - [Kafka Estimates](KafkaEstimations.md)
-- [Apache Kafka - Benchmarking@LinkedIn](../../1_TechStacks/LinkedIn/KafkaBenchmarking.md)
+- [Apache Kafka - Benchmarking@LinkedIn](../../SystemEstimations&Benchmarking/Benchmarking/KafkaBenchmarking.md)
 - [Why Kafka is so fast?](WhyKafkaSoFast.md)
 - [Amazon Managed Streaming for Apache Kafka (MSK)](../../2_AWSServices/5_MessageBrokerServices/AmazonMSK.md) can be used to deploy Kafka on [AWS](../../2_AWSServices).
 

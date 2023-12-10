@@ -21,21 +21,21 @@
 
 # :thumbsup: Advantages of Microservices design
 
-| Title                                         | Remarks                                                                                                     |
-|-----------------------------------------------|-------------------------------------------------------------------------------------------------------------|
-| :star: Separation of Concern, loosely coupled | Each service can be scaled independently and would have its team which owns the microservice.               |
-| Scalability                                   | Scalability would become easy.                                                                              |
-| :sunglasses: Engineering                      | Dedicated data store & own programming language for each microservice.                                      |
-| rocket: Deployment becomes independent & fast | Deployment becomes easy, independent & fast.<br/>- A large monolithic code can take up to 1 day, to deploy. |
+| Title                                          | Remarks                                                                                                     |
+|------------------------------------------------|-------------------------------------------------------------------------------------------------------------|
+| :star: Separation of Concern, loosely coupled  | Each service can be scaled independently and would have its team which owns the microservice.               |
+| Scalability                                    | Scalability would become easy.                                                                              |
+| :sunglasses: Engineering                       | Dedicated data store & own programming language for each microservice.                                      |
+| :rocket: Deployment becomes independent & fast | Deployment becomes easy, independent & fast.<br/>- A large monolithic code can take up to 1 day, to deploy. |
 
 # :thumbsdown: Disadvantages of Microservices design
 
 | Title                       | Remarks                                                                                                   |
 |-----------------------------|-----------------------------------------------------------------------------------------------------------|
 | :family_man_woman_boy: Team | Monolithic is good for small team while Microservice is good for large team.                              |
-| :moneybag: Increased Budget | With microservices, the budget increases (deployment, time to make change, team size etc.)                |
+| :moneybag: Budget           | With microservices, the budget increases (deployment, time to make change, team size etc.)                |
 | Obviousness                 | With large number of services, it would be a bit tricky to find the microservice for the required change. |
-| Increased Complexity        | Wide variety of resources, exponential complexity increase.                                               |
+| Complexity                  | Wide variety of resources, exponential complexity increase.                                               |
 | Safety                      | The contract should be defined properly between microservices.                                            |
 | Resilience                  | Client should be able to handle failure scenarios properly.                                               |
 | Dependency                  | Micro-services would be dependent to each other. Sometimes, there can be circular dependencies also.      |

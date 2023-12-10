@@ -6,7 +6,7 @@ This repo contains the various system design components info, questions and solu
 - [Key Properties of Distributed Systems](7_PropertiesDistributedSystem/Readme.md)
 - [Database Design tips](3_DatabaseServices/Readme.md)
 - [System Design Tips](SystemDesignTips.md)
-- [System Estimation Tips](SystemEstimationTips.md)
+- [System Estimation & Benchmarking](SystemEstimations&Benchmarking)
 - [All Comparisons](All-Comparisons.md)
 - [Architecture Patterns](ArchitecturePatterns/Readme.md)
 
@@ -260,8 +260,6 @@ This repo contains the various system design components info, questions and solu
 
 # Other HLD Services
 - [Observability & Monitoring](12_ObservabilityLogsServices/Readme.md)
-- [Benchmarking](Benchmarking.md)
-- [Engineering Blogs](1_TechStacks/Readme.md)
 - [Open Source Contributions](OpenSourceContributions.md)
 
 # Programming & OOP Design & Problems (LLD)

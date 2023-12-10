@@ -3,9 +3,9 @@
 
 # :+1: Advantages of Indexes
 
-| Title                                  | Remarks                                                                                                                                                                            |
-|----------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `O(log n)` query time, instead of O(n) | Indexes are used to speed up lookups (log-time instead of scanning the entire table) and to keep the data in memory. <br/>- This increases performance of queries.                 |
+| Title                                | Remarks                                                                                                                                                                            |
+|--------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| O(log n) query time, instead of O(n) | Indexes are used to speed up lookups (log-time instead of scanning the entire table) and to keep the data in memory. <br/>- This increases performance of queries.                 |
 
 > Note - SQL indexes stop working after a certain data threshold (like after 1 billion records).
 
@@ -20,10 +20,10 @@
 
 # Data Structure Used
 
-| Data Structure                                           | Service                                                                                                                             |
-|----------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------|
-| [B-Tree](../5_DataStructuresUsedInDB/BTree.md)                                       | [SQL-DBs like Postgres, MySQL etc.](../7_SQL-Databases/Readme.md)<br/>- [MongoDB](../10_Document-Databases/MongoDB.md) |
-| [MemTables and Bloom Filters in LMS-Tree](../5_DataStructuresUsedInDB/LSMTree.md) | [NoSQL-DBs like Casandra, HBase](../11_WideColumn-Databases)                                                                     |
+| Data Structure                                                               | Service                                                                                                                |
+|------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------|
+| [B-Tree](BTree.md)                                    | [SQL-DBs like Postgres, MySQL etc.](../7_SQL-Databases/Readme.md)<br/>- [MongoDB](../10_Document-Databases/MongoDB.md) |
+| [MemTables and Bloom Filters in LMS-Tree](LSMTree.md) | [NoSQL-DBs like Casandra, HBase](../11_WideColumn-Databases)                                                           |
 
 # Types of Indexes
 

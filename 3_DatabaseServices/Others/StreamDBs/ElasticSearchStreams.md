@@ -1,6 +1,6 @@
 
 # Data Streams
-- [A data stream](https://www.elastic.co/guide/en/elasticsearch/reference/current/data-streams.html#data-streams) lets you store [append-only time series data across multiple indices](../../5_DataStructuresUsedInDB/AppendOnlyProperty.md) while giving you a single named resource for requests.
+- [A data stream](https://www.elastic.co/guide/en/elasticsearch/reference/current/data-streams.html#data-streams) lets you store [append-only time series data across multiple indices](../../5_DatabaseInternals/AppendOnlyProperty.md) while giving you a single named resource for requests.
 - Data streams are well-suited for logs, events, metrics, and other continuously generated data.
 - You can submit indexing and search requests directly to a data stream. 
 - The stream automatically routes the request to backing indices that store the stream’s data. 

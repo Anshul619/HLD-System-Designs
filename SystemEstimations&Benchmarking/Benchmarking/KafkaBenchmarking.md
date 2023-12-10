@@ -1,4 +1,4 @@
-# Benchmarking Apache Kafka: 2 Million Writes Per Second (On Three Cheap Machines)
+# Benchmarking Apache Kafka - 2 Million Writes Per Second (On Three Cheap Machines)
 - [Read more](https://engineering.linkedin.com/kafka/benchmarking-apache-kafka-2-million-writes-second-three-cheap-machines)
 
 # Machines
