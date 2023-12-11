@@ -56,7 +56,7 @@
 - [How Uber Manages a Million Writes Per Second Using Mesos and Cassandra Across Multiple Datacenters?](../../1_TechStacks/Uber/UberCasandraMesos)
 - [Netflix - Casandra - Time Series Data](../../1_TechStacks/Netflix/Readme.md)
 - [Directi uses Casandra to save HeatMaps (UI activities)](../../1_TechStacks/DirectITechStack.md)
-- [Instagram - Social Media Posts](../../1_TechStacks/InstagramTechStack.md)
+- [Instagram - Social Media Posts](../../1_TechStacks/Instagram/Readme.md)
 - [Twillo - Send Message API Design Problem](../../0_HLDUseCasesProblems/SendSMSMessageAPITwillo/Readme.md)
 - [Twitter Hit Counter](../../0_HLDUseCasesProblems/HitCounterDesignTwitter/Readme.md)
 - [Discord Migrates Trillions of Messages from Cassandra to ScyllaDB](https://www.infoq.com/news/2023/06/discord-cassandra-scylladb/)

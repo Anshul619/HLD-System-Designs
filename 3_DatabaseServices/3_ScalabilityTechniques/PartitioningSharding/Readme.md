@@ -34,11 +34,17 @@
 ## Others
 - [Amazon DynamoDB Cluster](../../../2_AWSServices/6_DatabaseServices/AmazonDynamoDB/Partioning.md)
 - [Apache Casandra](../../11_WideColumn-Databases/ApacheCasandra.md)
-- [Instagram - Postgres Sharding](../../../0_HLDUseCasesProblems/SocialNetworkFacebookInstagram/Readme.md)
+
+# Sharding Examples
+
+| Example                                                                                                        |
+|----------------------------------------------------------------------------------------------------------------|
+| [MySql Sharding @ Pinterest](../../../1_TechStacks/Pinterest/MySQLSharding.md)                                 |
+| [PostgreSQL Sharding @ Instagram](../../../1_TechStacks/Instagram/PostgreSharding.md)                          |
+| [PostgreSQL Sharding - System Design](../../../0_HLDUseCasesProblems/SocialNetworkFacebookInstagram/Readme.md) |
 
 # References
 - [How Sharding Works?](https://medium.com/@jeeyoungk/how-sharding-works-b4dec46b3f6)
 - [Sharding with Amazon Relational Database Service](https://aws.amazon.com/blogs/database/sharding-with-amazon-relational-database-service/)
 - [Interviewbit - Sharding a database](https://www.interviewbit.com/problems/sharding-a-database/)
-- [Sharding in MySQL Cluster](https://www.mysql.com/products/cluster/scalability.html)
 - [Amazon RDS - Back to Basics: Database Sharding to Horizontally Scale Databases](https://www.youtube.com/watch?v=9q-ZA6WtVy4)

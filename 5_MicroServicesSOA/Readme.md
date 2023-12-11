@@ -1,10 +1,8 @@
 # Microservices design
 - [Microservices](https://microservices.io/index.html) are a modern [Service-Oriented Architecture](https://www.geeksforgeeks.org/service-oriented-architecture/).
-- In a Microservice Architecture, each service is self-contained and implements a [single business capability](../ArchitecturePatterns/DomainDrivenArchitecture.md).
-- Microservice architecture makes it easier and fastest way to build and work on individual parts of an application, and thus the application as a whole.
+- In a [Microservice Architecture](), each service is self-contained and implements a [single business capability](../ArchitecturePatterns/DomainDrivenArchitecture.md).
+- [Microservice architecture]() makes it easier and fastest way to build and work on individual parts of an application, and thus the application as a whole.
 - Example - User Management, Order Management, Checkout, Address etc.
-
-![](../0_HLDUseCasesProblems/FoodOrderingZomatoSwiggy/HLDFoodOrderingSystem.drawio.png)
 
 # Features
 - [Design Patterns](DesignPatterns.md)
@@ -34,6 +32,10 @@
 | Safety                      | The contract should be defined properly between microservices.                                            |
 | Resilience                  | Client should be able to handle failure scenarios properly.                                               |
 | Dependency                  | Micro-services would be dependent to each other. Sometimes, there can be circular dependencies also.      |
+
+# Sample System design using microservices
+
+![](../0_HLDUseCasesProblems/FoodOrderingZomatoSwiggy/HLDFoodOrderingSystem.drawio.png)
 
 # References
 - [What Are Microservices Really All About? (And When Not To Use It)](https://www.youtube.com/watch?v=lTAcCNbJ7KE)

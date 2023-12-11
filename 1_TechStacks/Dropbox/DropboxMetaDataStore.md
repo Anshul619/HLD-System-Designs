@@ -1,6 +1,6 @@
 # Dropbox Saves Millions by Building a Scalable Metadata Store (for AuditLog Data) on Amazon DynamoDB and Amazon S3
 
-![img.png](DropboxAmazonDynamoDB.drawio.png)
+![](DropboxAmazonDynamoDB.drawio.png)
 
 [Read more](https://aws.amazon.com/solutions/case-studies/dropbox-dynamodb-case-study/?pg=dynamodb&sec=cs#dropbox)
 
@@ -11,7 +11,7 @@
 - We could scale **100–1,000 times on AWS** without designing the system ahead of time.
 
 # Continuing to Create a Superior User Storage Experience
-- The Alki team is now exploring how it might use [Amazon EMR](../../2_AWSServices/10_BigDataServices/ETLServices/BatchProcessing/AmazonEMR.md) to `more efficiently offload the data from Amazon DynamoDB to Amazon S3`, a process that is currently handled by Dropbox’s own batch processing system. 
+- The Alki team is now exploring how it might use [Amazon EMR](../../2_AWSServices/10_BigDataServices/ETLServices/BatchProcessing/AmazonEMR.md) to **more efficiently offload the data from Amazon DynamoDB to Amazon S3**, a process that is currently handled by Dropbox’s own batch processing system. 
 
 # References
 - [Dropbox Saves Millions by Building a Scalable Metadata Store on Amazon DynamoDB and Amazon S3](https://aws.amazon.com/solutions/case-studies/dropbox-dynamodb-case-study/?pg=dynamodb&sec=cs#dropbox)

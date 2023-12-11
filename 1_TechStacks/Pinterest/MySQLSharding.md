@@ -7,7 +7,7 @@
 - The config lives in [ZooKeeper](../../10_ClusterCoordinationServices/ApacheZookeeper.md) and, on update, is sent to services that maintain the MySQL shard.
 
 ````json
-[{“range”:     (0,511), “master”: “MySQL001A”, “slave”: “MySQL001B”},
+[{“range”: (0,511), “master”: “MySQL001A”, “slave”: “MySQL001B”},
  {“range”: (512, 1023), “master”: “MySQL002A”, “slave”: “MySQL002B”},
     ...
  {“range”: (3584, 4095), “master”: “MySQL008A”, “slave”: “MySQL008B”}]

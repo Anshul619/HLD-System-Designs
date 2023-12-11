@@ -24,12 +24,12 @@ The application should be able to support the following requirements.
 
 # Real-world systems
 
-|           | Remarks                                                         |
-|-----------|-----------------------------------------------------------------|
-| LinkedIn  | [Tech Stack](../../1_TechStacks/LinkedIn/Readme.md)  |
-| Instagram | [Tech Stack](../../1_TechStacks/InstagramTechStack.md) |
+|           | Remarks                                                |
+|-----------|--------------------------------------------------------|
+| LinkedIn  | [Tech Stack](../../1_TechStacks/LinkedIn/Readme.md)    |
+| Instagram | [Tech Stack](../../1_TechStacks/Instagram/Readme.md) |
 | Facebook  | [Tech Stack](../../1_TechStacks/FacebookTechStack.md)  |
-| Twitter   |                                                                 |
+| Twitter   |                                                        |
 
 
 # User Categories
@@ -100,7 +100,7 @@ What are the different issues with "Partitioning based on UserID"?
 - Storing all photos of a user on one shard can cause issues like unavailability of all the user’s data if that shard is down or higher latency if it is serving high load etc.
 
 ## Option2 - Partitioning based on PhotoID (recommended)
-- If we can generate unique PhotoIDs first and then find a shard number through `PhotoID % 10`, the above problems will have been solved.
+- If we can generate unique PhotoIDs first and then find a shard number through **PhotoID % 10**, the above problems will have been solved.
 
 # PhotoID-Server
 - We dedicate a separate database instance to generate auto-incrementing IDs.
