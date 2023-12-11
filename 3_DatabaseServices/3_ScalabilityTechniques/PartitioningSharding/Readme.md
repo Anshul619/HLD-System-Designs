@@ -11,28 +11,18 @@
 |---------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Partition Key       | Partitioning would be done based on a partition key. <br/>- Hence we need to carefully [choose this key to distribute the data evenly b/w partitions](PartitionKey/Readme.md).                                       |
 | Hash Function       | Hash function helps to determine the partition for a given key.<br/>- MD5 as a hash function used in [Casandra](../../11_WideColumn-Databases/ApacheCasandra.md), [MongoDB](../../10_Document-Databases/MongoDB.md). |
-| Secondary Indexes   | [Global Secondary Indexes in DynamoDB](../../../2_AWSServices/6_DatabaseServices/AmazonDynamoDB/Readme.md) <br/>- [Read more](../../5_DatabaseInternals/Indexing.md)                                                 |
+| Secondary Indexes   | [Read more](../../5_DatabaseInternals/Indexing.md)                                                                                                                                                                   |
 | Consistent Hashing  | This handles data sharding with dynamic number of servers.                                                                                                                                                           |
 | Unique-ID-Generator | Since NoSQL dbs don't generate primary key automatically, we would have generate unique ID on the application side.                                                                                                  |
 
-# Supported Clusters
-
-## Kafka Cluster
+# Kafka Cluster
 
 ![](../../../4_MessageBrokersEDA/Kafka/assets/Kafka-Architecture.drawio.png)
 
-## ElasticSearch Cluster
-
-![](../../9_Search-Databases/ElasticSearch/assests/ElasticSearch-Cluster.png)
-
-## Redis Cluster
-
-![](../../../2_AWSServices/6_DatabaseServices/AmazonElasticCache/assets/ElasticCache-Multi-AZ.drawio.png)
-
-[Read more](../../../2_AWSServices/6_DatabaseServices/AmazonElasticCache/Readme.md)
-
-## Others
+# Other Supported Clusters
 - [Amazon DynamoDB Cluster](../../../2_AWSServices/6_DatabaseServices/AmazonDynamoDB/Partioning.md)
+- [ElasticSearch Cluster](../../9_Search-Databases/ElasticSearch/Readme.md)
+- [Redis Cluster](../../../2_AWSServices/6_DatabaseServices/AmazonElasticCache/Readme.md)
 - [Apache Casandra](../../11_WideColumn-Databases/ApacheCasandra.md)
 
 # Sharding Examples
