@@ -1,7 +1,9 @@
 # Amazon Elastic Cache
 - [Amazon Elastic Cache](https://aws.amazon.com/elasticache/) is a [fully Managed Memcached or Redis](../../../3_DatabaseServices/8_InMemory-Databases/Redis/Readme.md).
-- Scale from one to many nodes, using [Cluster](../../../7_PropertiesDistributedSystem/Scalability/ServersCluster.md) and self-heal (automatically replaces dead instance).
-- It provides [single-digit millisecond speed (usually)](../../../7_PropertiesDistributedSystem/Scalability/Latency.md).
+- It scales from one to many nodes, using [Cluster](../../../7_PropertiesDistributedSystem/Scalability/ServersCluster.md) and self-heal (i.e. automatically replaces dead instance).
+- It provides [single-digit millisecond speed](../../../7_PropertiesDistributedSystem/Scalability/Latency.md).
+
+# Elastic Cache - Multi-AZ architecture
 
 ![img.png](assets/ElasticCache-Multi-AZ.drawio.png)
 
@@ -16,10 +18,10 @@
 
 # Caching strategies
 
-| Strategy                                                                                            | Description                                                                                                                                                                                | Read-Performance           |
-|-----------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------|
-| :star: [Write-through](https://docs.aws.amazon.com/AmazonElastiCache/latest/mem-ug/Strategies.html) | The [write-through strategy](https://docs.aws.amazon.com/AmazonElastiCache/latest/mem-ug/Strategies.html) adds data or updates data in the cache whenever data is written to the database. | Better than "lazy-loading" |
-| [Lazy loading](https://docs.aws.amazon.com/AmazonElastiCache/latest/mem-ug/Strategies.html)         | [Lazy loading](https://docs.aws.amazon.com/AmazonElastiCache/latest/mem-ug/Strategies.html) is a caching strategy that loads data into the cache only when necessary.                      | -                          |
+| Strategy                                                                                            | Description                                                                                                                                                                            | Read-Performance           |
+|-----------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------|
+| :star: [Write-through](https://docs.aws.amazon.com/AmazonElastiCache/latest/mem-ug/Strategies.html) | [Write-through strategy](https://docs.aws.amazon.com/AmazonElastiCache/latest/mem-ug/Strategies.html) adds data or updates data in the cache whenever data is written to the database. | Better than "lazy-loading" |
+| [Lazy loading](https://docs.aws.amazon.com/AmazonElastiCache/latest/mem-ug/Strategies.html)         | [Lazy loading](https://docs.aws.amazon.com/AmazonElastiCache/latest/mem-ug/Strategies.html) is a caching strategy that loads data into the cache only when necessary.                  | -                          |
 
 # References
 - [Benefits of Fully Managed Redis](https://aws.amazon.com/elasticache/redis/fully-managed-redis/)
