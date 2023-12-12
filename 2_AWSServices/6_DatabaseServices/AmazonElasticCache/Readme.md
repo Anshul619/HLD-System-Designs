@@ -18,10 +18,10 @@
 
 # Caching strategies
 
-| Strategy                                                                                            | Description                                                                                                                                                                            | Read-Performance           |
-|-----------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------|
+| Strategy                                                                                            | Description                                                                                                                                                                            | Read-Performance          |
+|-----------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------|
 | :star: [Write-through](https://docs.aws.amazon.com/AmazonElastiCache/latest/mem-ug/Strategies.html) | [Write-through strategy](https://docs.aws.amazon.com/AmazonElastiCache/latest/mem-ug/Strategies.html) adds data or updates data in the cache whenever data is written to the database. | Better than "lazy-loading" |
-| [Lazy loading](https://docs.aws.amazon.com/AmazonElastiCache/latest/mem-ug/Strategies.html)         | [Lazy loading](https://docs.aws.amazon.com/AmazonElastiCache/latest/mem-ug/Strategies.html) is a caching strategy that loads data into the cache only when necessary.                  | -                          |
+| [Lazy loading](https://docs.aws.amazon.com/AmazonElastiCache/latest/mem-ug/Strategies.html)         | [Lazy loading](https://docs.aws.amazon.com/AmazonElastiCache/latest/mem-ug/Strategies.html) is a caching strategy that loads data into the cache only when necessary.                  |                           |
 
 # References
 - [Benefits of Fully Managed Redis](https://aws.amazon.com/elasticache/redis/fully-managed-redis/)
