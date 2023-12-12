@@ -18,5 +18,5 @@
 | [Hadoop Cluster](../../6_BigDataServices/ApacheHadoop)                                                   | Cluster of different components           |
 
 # What is Cluster capacity?
-- In general, a cluster (for ex. [Kubernates cluster](../../9_Container&OrchestrationServices/Kubernates/Readme.md)) can be seen as abstracting a set of individual nodes as a big "super node".
+- In general, a cluster (for ex. [Kubernates cluster](../../9_Container&OrchestrationServices/Kubernates/Readme.md)) can be seen as abstracting a set of individual nodes as a big **super node**.
 - The total compute capacity (in terms of CPU and memory) of this super node is the sum of all the constituent nodes' capacities.

@@ -1,3 +1,3 @@
 # Language Agnostic
-- We should design the system considering agnostic feature (Language agnostic, AWS agnostic etc.) into the consideration.
 - [Language Agnostic](https://en.wikipedia.org/wiki/Language-agnostic) programming or scripting (also called language-neutral, language-independent, or cross-language) is a software development paradigm where a particular language is chosen because of its appropriateness for a particular task (taking into consideration all factors, including ecosystem, developer skill-sets, performance, etc.), and not purely because of the skill-set available within a development team.
+- We should design the system considering agnostic feature (Language agnostic, AWS agnostic etc.) into the consideration.
