@@ -2,13 +2,15 @@
 - [Apache Hadoop](https://hadoop.apache.org/) is an open source framework that is used to efficiently store and process **large datasets ranging in size from gigabytes to petabytes of data**. 
 - Instead of using one large computer to store and process the data, Hadoop allows [clustering multiple computers to analyze massive datasets](../../7_PropertiesDistributedSystem/Scalability/ServersCluster.md) in parallel more quickly.
 
-![img.png](HadoopStack.drawio.png)
+# Apache Hadoop Stack
 
-| Module                                                                     | Remarks                                                              |
+![](HadoopStack.drawio.png)
+
+| Stack                                                                      | Remarks                                                              |
 |----------------------------------------------------------------------------|----------------------------------------------------------------------|
 | [Apache MapReduce](../ETLServices/BatchProcessing/ApacheMapReduce.md)      | Data Processing/ETL Batch Processing                                 |
 | [Apache HDFS](../../11_FileStorageServicesHDFS/ApacheHDFS.md)              | Distributed file storage                                             |
-| [Apache Yarn](../../9_Container&OrchestrationServices/ApacheYarn.md)        | Cluster Management                                                   |
+| [Apache Yarn](../../9_Container&OrchestrationServices/ApacheYarn.md)       | Cluster Management                                                   |
 | [ApacheZookeeper](../../10_ClusterCoordinationServices/ApacheZookeeper.md) | Cluster coordination                                                 |
 | [Apache Hive](../DataAnalytics/ApacheHive.md)                              | Data Analytics                                                       |
 | Hadoop Common                                                              | It contains packages and libraries which are used for other modules. |

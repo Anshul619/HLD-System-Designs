@@ -3,8 +3,6 @@
 - Once processed, the data is passed off to an application, data store or another stream processing engine.
 - To transmit event stream from different Producers to [Stream Processor](), [message brokers](../../../4_MessageBrokersEDA/Readme.md) are used.
 
-![](../../Data-Architecture-ETL-Ingestion-Processing-Analytics.png)
-
 # Key tech
 
 | Tech                                                                                  |

@@ -1,3 +1,12 @@
+# How can we define big data?
+
+|              | Remarks                                                                      |
+|--------------|------------------------------------------------------------------------------|
+| Data Volume  | 100s of TB into PB-scale and higher                                          |
+| Architecture | Parallel Processing often involved - Hadoop, Spark, data warehouse platforms |
+| Necessity    | Processing of data sets too large for operational databases                  |
+| Nominally    | Big data tech sometimes imposed on small data problems                       |
+
 # Building modern data architecture
 
 ![](Data-Architecture-ETL-Ingestion-Processing-Analytics.png)
