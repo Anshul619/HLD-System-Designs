@@ -21,7 +21,7 @@
 - [Amazon Kinesis Data Streams](AmazonKinesis/Readme.md)
 - [Amazon Kinesis Data Firehouse](AmazonKinesis/Readme.md)
 - [API Gateway](../1_NetworkingAndContentDelivery/2_ApplicationNetworking/AmazonAPIGateway/Readme.md)
-- [Amazon Redshift Clusters](../10_BigDataServices/StorageDBs/DataWarehouse/AmazonRedshift.md)
+- [Amazon Redshift Clusters](../10_BigDataServices/DataStorage/DataWarehouses/AmazonRedshift.md)
 - [SAAS Integrations - Partner Sources](https://aws.amazon.com/eventbridge/integrations/)
 
 # Archives

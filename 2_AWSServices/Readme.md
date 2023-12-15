@@ -286,11 +286,11 @@
     </tr>
     <tr>
         <td>
-            <a href="10_BigDataServices/StorageDBs">Data Warehousing</a>
+            <a href="10_BigDataServices/DataStorage">Data Warehousing</a>
         </td>
         <td>
             <div class="container" style="background:white">
-                <a href="10_BigDataServices/StorageDBs/DataWarehouse/AmazonRedshift.md" target="_blank">
+                <a href="10_BigDataServices/DataStorage/DataWarehouses/AmazonRedshift.md" target="_blank">
                   <img src="https://w7.pngwing.com/pngs/404/507/png-transparent-amazon-com-amazon-redshift-amazon-web-services-amazon-relational-database-service-amazon-elasticache-amazon-redshift-blue-angle-text.png" width="150">
                 </a>
             </div>
