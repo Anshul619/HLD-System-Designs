@@ -3,7 +3,7 @@
 |              | Remarks                                                                                                                                                                     |
 |--------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Data Volume  | **100s of TB** to PB-scale and higher                                                                                                                                     |
-| Architecture | Parallel Processing often involved - [Hadoop](ApacheHadoop/Readme.md), [Spark](ETLServices/ApacheSpark.md), [data warehouse](StorageDBs/DataWarehouses/Readme.md) platforms |
+| Architecture | Parallel Processing often involved - [Hadoop](ApacheHadoop/Readme.md), [Spark](DataProcessing/ApacheSpark.md), [data warehouse](StorageDBs/DataWarehouses/Readme.md) platforms |
 | Necessity    | **Processing of data sets too large** for operational databases                                                                                                             |
 | Nominally    | Big data tech sometimes imposed on small data problems                                                                                                                      |
 

@@ -3,7 +3,7 @@
 
 # What is Apache Mesos? 
 - [Apache Mesos](https://mesos.apache.org/) is built using the same principles as the Linux kernel, only at a different level of abstraction. 
-- The Mesos kernel runs on every machine and provides applications (e.g., [Hadoop](../6_BigDataServices/ApacheHadoop), [Spark](../6_BigDataServices/ETLServices/ApacheSpark.md), [Kafka](../4_MessageBrokersEDA/Kafka/Readme.md), [Elasticsearch](../3_DatabaseServices/9_Search-Databases/ElasticSearch)) with API’s for resource management and scheduling across entire datacenter and cloud environments.
+- The Mesos kernel runs on every machine and provides applications (e.g., [Hadoop](../6_BigDataServices/ApacheHadoop), [Spark](../6_BigDataServices/DataProcessing/ApacheSpark.md), [Kafka](../4_MessageBrokersEDA/Kafka/Readme.md), [Elasticsearch](../3_DatabaseServices/9_Search-Databases/ElasticSearch)) with API’s for resource management and scheduling across entire datacenter and cloud environments.
 
 ## Features
 

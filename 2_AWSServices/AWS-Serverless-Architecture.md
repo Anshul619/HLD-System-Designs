@@ -16,8 +16,8 @@ Every definition of [serverless](https://aws.amazon.com/serverless/) mentions th
 | [AWS Step Functions](3_ComputeServices/AWSStepFunctions.md)                                      | Compute             |                                                                                 |
 | [Amazon DynamoDB](6_DatabaseServices/AmazonDynamoDB/Readme.md)                                   | Database            | [DynamoDB - Capacity Modes](6_DatabaseServices/AmazonDynamoDB/CapacityModes/Readme.md) |
 | [Amazon Aurora](6_DatabaseServices/AmazonRDS/AmazonAurora/Readme.md)                             | Database            |                                                                                 |
-| [AWS Batch](10_BigDataServices/ETLServices/BatchProcessing/AWSBatch.md)                          | Big Data Processing |                                                                                 |
-| [AWS Glue](10_BigDataServices/ETLServices/StreamProcessing/AWSGlue.md)                           | Big Data Processing |                                                                                 |
+| [AWS Batch](10_BigDataServices/DataProcessing/BatchProcessing/AWSBatch.md)                          | Big Data Processing |                                                                                 |
+| [AWS Glue](10_BigDataServices/DataProcessing/StreamProcessing/AWSGlue.md)                           | Big Data Processing |                                                                                 |
 | [API Gateway](1_NetworkingAndContentDelivery/2_ApplicationNetworking/AmazonAPIGateway/Readme.md) | API Gateway         |                                                                                 |
 | [Amazon SQS](5_MessageBrokerServices/AmazonSQS/Readme.md)                                        | Message Broker      |                                                                                 |
 

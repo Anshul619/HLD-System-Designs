@@ -14,7 +14,7 @@
 | [Fault Tolerance vs High Availability](7_PropertiesDistributedSystem/Reliability/FaultToleranceVsHighAvailability.md) | [Database Services](3_DatabaseServices)                               |
 | [Strong vs Semi vs Eventual Consistency/Replication](3_DatabaseServices/4_Consistency&Replication/Readme.md)          | [Database Services](3_DatabaseServices)                               |
 | [Amazon S3 vs Apache HDFS](11_FileStorageServicesHDFS/HDFSVsS3.md)                                                    | [File Storage Services](11_FileStorageServicesHDFS)                   |
-| [Apache Spark vs Map Reduce](6_BigDataServices/ETLServices/ApacheSparkVsMapReduce.md)                                 | [Big Data - ETL Services](6_BigDataServices/ETLServices/)             |
+| [Apache Spark vs Map Reduce](6_BigDataServices/DataProcessing/ApacheSparkVsMapReduce.md)                                 | [Big Data - ETL Services](6_BigDataServices/DataProcessing/)             |
 | [REST vs GraphQL vs gRPC](8_APIProtocols/Readme.md)                                                                   | [API Protocols](8_APIProtocols/Readme.md)                             |
 | [REST vs GraphQL](8_APIProtocols/RESTvsGraphQL.md)                                                                    | [API Protocols](8_APIProtocols/Readme.md)                             |
 | [Stateful vs Stateless](7_PropertiesDistributedSystem/StatefulVsStateless.md)                                         | [MicroServices](5_MicroServicesSOA)                                   |

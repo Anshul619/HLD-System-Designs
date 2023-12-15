@@ -29,7 +29,7 @@
 > Note - `id`, `category_id`, `product_id` columns should be [indexed](../../3_DatabaseServices/5_DatabaseInternals/Indexing.md), for faster performance.
 
 # How to populate Sales Rank table?
-- SalesRank service would get the sales data from sales table, then apply [Map Reduce](../../6_BigDataServices/ETLServices/ApacheSpark.md) and populate `sales_rank` table. 
+- SalesRank service would get the sales data from sales table, then apply [Map Reduce](../../6_BigDataServices/DataProcessing/ApacheSpark.md) and populate `sales_rank` table. 
 - And then sort those records.
 - A nightly job to update Sales Rank for last week.
 

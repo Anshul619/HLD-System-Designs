@@ -184,15 +184,15 @@ This repo contains the various system design components info, questions and solu
     </tr>
     <tr>
       <td>
-        <a href="6_BigDataServices/ETLServices/BatchProcessing/Readme.md">Batch Processing</a>
+        <a href="6_BigDataServices/DataProcessing/BatchProcessing/Readme.md">Batch Processing</a>
       </td>
       <td>
         <div class="container" style="background:white">
             <div class="block two first">
-                <a href="6_BigDataServices/ETLServices/BatchProcessing/ApacheHadoop/Readme.md" target="_blank">
+                <a href="6_BigDataServices/ApacheHadoop/Readme.md" target="_blank">
                   <img src="https://www.clipartmax.com/png/middle/180-1806192_hadoop-apache-hadoop-logo.png" width="150">
                 </a>
-                <a href="6_BigDataServices/ETLServices/ApacheSpark.md" target="_blank">
+                <a href="6_BigDataServices/DataProcessing/ApacheSpark.md" target="_blank">
                   <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Apache_Spark_logo.svg/1200px-Apache_Spark_logo.svg.png" width="150">
                 </a>
             </div>
@@ -201,18 +201,18 @@ This repo contains the various system design components info, questions and solu
     </tr>
     <tr>
       <td>
-        <a href="6_BigDataServices/ETLServices/StreamProcessing/Readme.md">Stream Processing</a>
+        <a href="6_BigDataServices/DataProcessing/StreamProcessing/Readme.md">Stream Processing</a>
       </td>
       <td>
         <div class="container" style="background:white">
             <div class="block two first">
-                <a href="6_BigDataServices/ETLServices/StreamProcessing/SparkStreaming.md" target="_blank">
+                <a href="6_BigDataServices/DataProcessing/StreamProcessing/SparkStreaming.md" target="_blank">
                   <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Apache_Spark_logo.svg/1200px-Apache_Spark_logo.svg.png" width="150">
                 </a>
-                <a href="6_BigDataServices/ETLServices/StreamProcessing/KafkaStreams/Readme.md" target="_blank">
+                <a href="6_BigDataServices/DataProcessing/StreamProcessing/KafkaStreams/Readme.md" target="_blank">
                   <img src="https://1.bp.blogspot.com/-LIHoqo96Dos/X7wKY2u124I/AAAAAAAAp88/SrC8E6Y-5l4Xil7UPrDRp-RuEx2GioXkQCLcBGAsYHQ/s435/kafka-streams.png" width="150">
                 </a>
-                <a href="2_AWSServices/10_BigDataServices/ETLServices/StreamProcessing/AmazonKinesisDataFirehouse/Readme.md" target="_blank">
+                <a href="2_AWSServices/10_BigDataServices/DataProcessing/StreamProcessing/AmazonKinesisDataFirehouse/Readme.md" target="_blank">
                   <img src="https://miro.medium.com/max/1190/0*UQBKjEff1uIsXH8W" width="150">
                 </a>
             </div>

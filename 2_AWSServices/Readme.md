@@ -298,11 +298,11 @@
     </tr>
     <tr>
         <td>
-            <a href="10_BigDataServices/ETLServices/BatchProcessing">Batch Processing</a>
+            <a href="10_BigDataServices/DataProcessing/BatchProcessing">Batch Processing</a>
         </td>
         <td>
             <div class="container" style="background:white">
-                <a href="10_BigDataServices/ETLServices/BatchProcessing/AmazonEMR.md" target="_blank">
+                <a href="10_BigDataServices/DataProcessing/BatchProcessing/AmazonEMR.md" target="_blank">
                   <img src="https://www.clipartmax.com/png/small/70-700800_amazon-emr.png" width="80">
                 </a>
             </div>
@@ -310,11 +310,11 @@
     </tr>
     <tr>
         <td>
-            <a href="10_BigDataServices/ETLServices/StreamProcessing">Stream Processing</a>
+            <a href="10_BigDataServices/DataProcessing/StreamProcessing">Stream Processing</a>
         </td>
         <td>
             <div class="container" style="background:white">
-                <a href="10_BigDataServices/ETLServices/StreamProcessing/AmazonKinesis.md" target="_blank">
+                <a href="10_BigDataServices/DataProcessing/StreamProcessing/AmazonKinesis.md" target="_blank">
                   <img src="https://miro.medium.com/max/1190/0*UQBKjEff1uIsXH8W" width="80">
                 </a>
             </div>

@@ -8,7 +8,7 @@
 
 | Stack                                                                      | Remarks                                                              |
 |----------------------------------------------------------------------------|----------------------------------------------------------------------|
-| [Apache MapReduce](../ETLServices/BatchProcessing/ApacheMapReduce.md)      | Data Processing/ETL Batch Processing                                 |
+| [Apache MapReduce](../DataProcessing/BatchProcessing/ApacheMapReduce.md)      | Data Processing/ETL Batch Processing                                 |
 | [Apache HDFS](../../11_FileStorageServicesHDFS/ApacheHDFS.md)              | Distributed file storage                                             |
 | [Apache Yarn](../../9_Container&OrchestrationServices/ApacheYarn.md)       | Cluster Management                                                   |
 | [ApacheZookeeper](../../10_ClusterCoordinationServices/ApacheZookeeper.md) | Cluster coordination                                                 |
@@ -20,7 +20,7 @@
 - Hadoop provides the building blocks on which other services and applications can be built.
 - Applications that collect data in various formats can place data into the Hadoop cluster by using an API operation to connect to the NameNode. 
 - The NameNode tracks the file directory structure and placement of **chunks** for each file, replicated across DataNodes. 
-- To run a job to query the data, provide a [MapReduce job](../ETLServices/BatchProcessing/ApacheMapReduce.md) made up of many map and reduce tasks that run against the data in [HDFS](../../11_FileStorageServicesHDFS/ApacheHDFS.md) spread across the DataNodes.
+- To run a job to query the data, provide a [MapReduce job](../DataProcessing/BatchProcessing/ApacheMapReduce.md) made up of many map and reduce tasks that run against the data in [HDFS](../../11_FileStorageServicesHDFS/ApacheHDFS.md) spread across the DataNodes.
 - Map tasks run on each node against the input files supplied, and reducers run to aggregate and organize the final output.
 
 # :thumbsup: Advantages
