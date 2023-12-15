@@ -12,7 +12,7 @@
 | [Apache HDFS](../../11_FileStorageServicesHDFS/ApacheHDFS.md)              | Distributed file storage                                             |
 | [Apache Yarn](../../9_Container&OrchestrationServices/ApacheYarn.md)       | Cluster Management                                                   |
 | [ApacheZookeeper](../../10_ClusterCoordinationServices/ApacheZookeeper.md) | Cluster coordination                                                 |
-| [Apache Hive](../DataAnalytics/ApacheHive.md)                              | Data Analytics                                                       |
+| [Apache Hive](../DataConsumption/ApacheHive.md)                              | Data Analytics                                                       |
 | Hadoop Common                                                              | It contains packages and libraries which are used for other modules. |
 
 # How Hadoop works?
