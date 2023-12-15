@@ -12,7 +12,3 @@
 # Common Data Warehouses
 - [Amazon Redshift](../../../2_AWSServices/10_BigDataServices/DataStorage/DataWarehouses/AmazonRedshift.md)
 - [ClickHouse](ClickHouse.md)
-
-# Building modern data architecture
-
-![](../../Data-Architecture-ETL-Ingestion-Processing-Analytics.png)
