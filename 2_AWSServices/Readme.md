@@ -305,7 +305,7 @@
                 <a href="10_BigDataServices/DataProcessing/AmazonEMR.md" target="_blank">
                   <img src="https://www.clipartmax.com/png/small/70-700800_amazon-emr.png" width="80">
                 </a>
-                <a href="10_BigDataServices/DataProcessing/AmazonKinesis.md" target="_blank">
+                <a href="5_MessageBrokerServices/AmazonKinesis/Readme.md" target="_blank">
                   <img src="https://miro.medium.com/max/1190/0*UQBKjEff1uIsXH8W" width="80">
                 </a>
             </div>

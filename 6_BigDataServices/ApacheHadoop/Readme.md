@@ -8,7 +8,7 @@
 
 | Stack                                                                       | Remarks                                                              |
 |-----------------------------------------------------------------------------|----------------------------------------------------------------------|
-| [Apache MapReduce](../DataProcessing/ApacheMapReduce/Readme.md)    | Data Processing/ETL Batch Processing                                 |
+| [Apache MapReduce](../DataProcessing/ApacheMapReduce/Readme.md)             | Data Processing/ETL Batch Processing                                 |
 | [Apache HDFS](../../11_FileStorageServicesHDFS/ApacheHDFS.md)               | Distributed file storage                                             |
 | [Apache Yarn](../../9_Container&OrchestrationServices/ApacheYarn.md)        | Cluster Management                                                   |
 | [Apache Zookeeper](../../10_ClusterCoordinationServices/ApacheZookeeper.md) | Cluster coordination                                                 |

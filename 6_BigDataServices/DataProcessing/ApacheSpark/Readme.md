@@ -10,8 +10,8 @@
 
 # :star: Real world use cases of Apache Spark
 
-|                                                                                           | Remarks                                                                                                               |
-|-------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------|
+|                                                                                              | Remarks                                                                                                               |
+|----------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------|
 | [Zomato - HLD Design](../../../0_HLDUseCasesProblems/FoodOrderingZomatoSwiggy/Readme.md)     | Generate recommendations based on continuous streams of user activity, order activity, pricing and promo changes etc. |
 | [Uber Driver Allocation](../../../0_HLDUseCasesProblems/DriverAllocationUberGoJek/Readme.md) | Select driver based on continuous streams of driver locations, user location etc.                                     |
 
@@ -31,9 +31,9 @@
 
 # Cluster Manager
 
-| Cluster Manager                                                                 |
-|---------------------------------------------------------------------------------|
-| Standalone cluster manager (spark's own cluster manager)                        |
+| Cluster Manager                                                                    |
+|------------------------------------------------------------------------------------|
+| Standalone cluster manager (spark's own cluster manager)                           |
 | [Hadoop Yarn](../../../9_Container&OrchestrationServices/ApacheYarn.md)            |
 | [Apache Mesos](../../../9_Container&OrchestrationServices/ApacheMarathon&Mesos.md) |
 | [Kubernates](../../../9_Container&OrchestrationServices/Kubernates/Readme.md)      |
@@ -45,8 +45,7 @@
 ![](https://miro.medium.com/v2/resize:fit:1368/format:webp/1*kNBQi-vVM_J3vaqHS_HBWw.png)
 
 # Apache Spark vs Others
-- [Apache Spark vs Hadoop MapReduce](../ApacheSparkVsHadoopMapReduce.md) 
-- [Apach Spark vs Storm](../ApacheSparkVsStorm.md)
+- [Apache Spark vs Hadoop MapReduce vs Flink vs Storm](../SparkVsMapReduceVsFlinkVsStorm.md)
 
 # References
 - [Top Spark Interview Questions](https://www.interviewbit.com/spark-interview-questions/)
