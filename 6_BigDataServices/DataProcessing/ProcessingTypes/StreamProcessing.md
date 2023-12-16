@@ -1,18 +1,19 @@
 # Stream processing systems (near-real-time systems)
 - [Stream processing](https://www.techtarget.com/searchdatamanagement/definition/stream-processing) is a data management technique that involves ingesting a continuous data stream to quickly analyze, filter, transform or enhance the data in real time.
 - Once processed, the data is passed off to an application, data store or another stream processing engine.
-- To transmit event stream from different Producers to [Stream Processor](), [message brokers](../../../4_MessageBrokersEDA/Readme.md) are used.
+- To transmit event stream from different producers to [Stream Processor](), [message brokers](../../../4_MessageBrokersEDA/Readme.md) are used.
 
 # Key tech
 
 | Tech                                                                                  |
 |---------------------------------------------------------------------------------------|
-| [Apache Spark](../ApacheSpark.md)                                                     |
-| [Kafka Streams](KafkaStreams/Readme.md)                                               |
+| [Apache Spark](../ApacheSpark/Readme.md)                                              |
+| [Kafka Streams](../KafkaStreams/Readme.md)                                            |
 | [AWS Kinesis](../../../2_AWSServices/5_MessageBrokerServices/AmazonKinesis/Readme.md) |
-| [Apache Storm](ApacheStorm.md)                                                        |
+| [Apache Storm](../ApacheStorm.md)                                                     |
+| [Apache Flink](../ApacheFlink.md)                                                        |
 
-# Generate Use Cases
+# :star: Generate Use Cases
 
 | Use Case                               | Description                                                                                                                                                                                                                                                                                                                             |
 |----------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|

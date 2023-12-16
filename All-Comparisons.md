@@ -10,11 +10,12 @@
 | [DynamoDB vs MongoDB vs Casandra](3_DatabaseServices/DynamoDBVsMongoDBVsCasandra.md)                                  | [Database Services](3_DatabaseServices)                               |
 | [Redis vs MemCache](3_DatabaseServices/8_InMemory-Databases/RedisVsMemcache.md)                                       | [Database Services](3_DatabaseServices)                               |
 | [OLTP vs OLAP](3_DatabaseServices/OLTPvsOTAP.md)                                                                      | [Database Services](3_DatabaseServices)                               |
-| [Data Warehouse vs Data Lake](6_BigDataServices/DataStorage/DataWarehousesVsLake.md)                        | [Database Services](3_DatabaseServices)                               |
+| [Data Warehouse vs Data Lake](6_BigDataServices/DataStorage/DataWarehousesVsLake.md)                                  | [Big Data - Data Storage](3_DatabaseServices)                         |
 | [Fault Tolerance vs High Availability](7_PropertiesDistributedSystem/Reliability/FaultToleranceVsHighAvailability.md) | [Database Services](3_DatabaseServices)                               |
 | [Strong vs Semi vs Eventual Consistency/Replication](3_DatabaseServices/4_Consistency&Replication/Readme.md)          | [Database Services](3_DatabaseServices)                               |
 | [Amazon S3 vs Apache HDFS](11_FileStorageServicesHDFS/HDFSVsS3.md)                                                    | [File Storage Services](11_FileStorageServicesHDFS)                   |
-| [Apache Spark vs Map Reduce](6_BigDataServices/DataProcessing/ApacheSparkVsMapReduce.md)                                 | [Big Data - ETL Services](6_BigDataServices/DataProcessing/)             |
+| [Apache Spark vs Hadoop Map Reduce](6_BigDataServices/DataProcessing/ApacheSparkVsHadoopMapReduce.md)                 | [Big Data - Data Processing](6_BigDataServices/DataProcessing/)       |
+| [Apache Spark vs Apache Storm](6_BigDataServices/DataProcessing/ApacheSparkVsStorm.md)               | [Big Data - Data Processing](6_BigDataServices/DataProcessing/)       |
 | [REST vs GraphQL vs gRPC](8_APIProtocols/Readme.md)                                                                   | [API Protocols](8_APIProtocols/Readme.md)                             |
 | [REST vs GraphQL](8_APIProtocols/RESTvsGraphQL.md)                                                                    | [API Protocols](8_APIProtocols/Readme.md)                             |
 | [Stateful vs Stateless](7_PropertiesDistributedSystem/StatefulVsStateless.md)                                         | [MicroServices](5_MicroServicesSOA)                                   |

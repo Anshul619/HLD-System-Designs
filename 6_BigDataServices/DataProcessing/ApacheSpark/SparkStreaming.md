@@ -10,4 +10,4 @@
 
 # Architecture
 
-![](assets/apache_spark_spark_streaming.png)
+![](apache_spark_spark_streaming.png)

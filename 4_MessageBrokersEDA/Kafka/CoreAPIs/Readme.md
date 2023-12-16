@@ -7,4 +7,4 @@
 | [Producer API](ProducerAPI.md)                                                            |
 | [Consumer API](ConsumerAPI.md)                                                            |
 | [Connect API](ConnectAPI.md)                                                                        |
-| [Streams API](../../../6_BigDataServices/DataProcessing/StreamProcessing/KafkaStreams/Readme.md) |
+| [Streams API](../../../6_BigDataServices/DataProcessing/KafkaStreams/Readme.md) |

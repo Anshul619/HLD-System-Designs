@@ -1,6 +1,6 @@
 # Data Warehouses vs Data Lake
 
-|                   | [Data Warehouse](DataWarehouses/Readme.md)                                                                                                       | [Data Lake](DataLakes/DataLake.md)                                                                               |
+|                   | [Data Warehouse](DataWarehouses/Readme.md)                                                                                                       | [Data Lake](DataLake.md)                                                                               |
 |-------------------|--------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------|
 | Data              | Relational from transactional systems, operational databases, and line of business applications.                                                 | Non-relational and relational from IoT devices, web sites, mobile apps, social media, and corporate applications |
 | Schema            | **schema-on-write**                                                                                                                              | **schema-on-read** i.e. written at the time of analysis                                                          |

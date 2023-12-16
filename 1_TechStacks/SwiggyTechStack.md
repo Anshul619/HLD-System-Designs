@@ -6,7 +6,7 @@
 | Container Orchestration                                                        | [Kubernates with Docker](../9_Container&OrchestrationServices/Readme.md)          |
 | InMemory-Cache                                                                 | [Redis cache](../3_DatabaseServices/8_InMemory-Databases/Redis/Readme.md)                |
 | Message Broker - Pub/Sub                                                       | [Apache Kafka (using confluent)](../4_MessageBrokersEDA/Kafka/Readme.md)            |
-| Map-Reduce Jobs (like select driver, generate recommendations etc.)            | [Apache Spark](../6_BigDataServices/DataProcessing/ApacheSpark.md)                  |
+| Map-Reduce Jobs (like select driver, generate recommendations etc.)            | [Apache Spark](../6_BigDataServices/DataProcessing/ApacheSpark/Readme.md)                  |
 | Socket Connection                                                              | Web Sockets                                                                      |
 | OLTP-DB (like pickers, orders, shipment, restaurants, delivery, shipment etc.) | MySQL, [DynamoDB]()                                                              |
 | Key-Value-DB (high throughput/read/writes)                                     | [DynamoDB]()                                                                     |
