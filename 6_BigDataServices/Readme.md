@@ -1,13 +1,13 @@
 # Layers in Big data architecture
 
-| Layer                   | Description                                                                                    |
-|-------------------------|------------------------------------------------------------------------------------------------|
-| Data Ingestion          | [Bring your data](../4_MessageBrokersEDA/Kafka/Readme.md) into your data platform.             |
-| Data Processing         | Create your [data processing pipelines](DataProcessing).                                       |
-| Data Cataloging         | Store your metadata.                                                                           |
-| Data Storage            | Store your [structured and unstructured data](DataStorage).                                    |
-| Data Consumption        | Enable your user personas for [purpose-built analytics](DataConsumption) and machine learning. |
-| Security and governance | Protect your data across the layers and data access management.                                |
+| Layer                   | Description                                                                                    | Remarks                                                                                                           |
+|-------------------------|------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------|
+| Data Ingestion          | [Bring your data](../4_MessageBrokersEDA/Kafka/Readme.md) into your data platform.             |                                                                                                                   |
+| Data Processing         | Create your [data processing pipelines](DataProcessing).                                       | [Apache Spark vs MapReduce vs Flink vs Storm vs Kafka Streams](DataProcessing/SparkVsMapReduceVsFlinkVsStorm.md), |
+| Data Cataloging         | Store your metadata.                                                                           |                                                                                                                   |
+| Data Storage            | Store your [structured and unstructured data](DataStorage).                                    |                                                                                                                   |
+| Data Consumption        | Enable your user personas for [purpose-built analytics](DataConsumption) and machine learning. |                                                                                                                   |
+| Security and governance | Protect your data across the layers and data access management.                                |                                                                                                                   |
 
 # General Use Cases of Big Data Processing
 
@@ -29,8 +29,6 @@
 | Machine learning systems             | [Batch Processing](DataProcessing/ProcessingTypes/BatchProcessing.md)   | Example - Classifiers (spam filters, anomaly detection, image recognition etc.)                                                                                                                                                                                                                                                          |
 
 # Various Services in Data layers
-- [Apache Spark vs MapReduce vs Flink vs Storm vs Kafka Streams](DataProcessing/SparkVsMapReduceVsFlinkVsStorm.md)
-- [AWS Glue vs Amazon EMR](../2_AWSServices/10_BigDataServices/DataProcessing/AWSGlueVsEMRVsBatch.md)
 
 ![](Data-Architecture-ETL-Ingestion-Processing-Analytics.png)
 

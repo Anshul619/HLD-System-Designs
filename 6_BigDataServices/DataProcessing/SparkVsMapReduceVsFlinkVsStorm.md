@@ -11,6 +11,9 @@
 | Fault tolerant  | :white_check_mark: Yes                                                                                                                                          | :white_check_mark: Yes                                                                                                                 | :white_check_mark: Yes                                                           | :white_check_mark: Yes              | :white_check_mark: Yes              |
 | AWS Service     | [Amazon EMR](../../2_AWSServices/10_BigDataServices/DataProcessing/AmazonEMR.md) & [AWS Glue](../../2_AWSServices/10_BigDataServices/DataProcessing/AWSGlue.md) | [Amazon Managed Service For Apache Flink](../../2_AWSServices/10_BigDataServices/DataProcessing/AmazonManagedServiceForApacheFlink.md) | [Amazon EMR](../../2_AWSServices/10_BigDataServices/DataProcessing/AmazonEMR.md) | :x: Not-supported                   | :x: Not-supported                   |
 
+# Others
+- [AWS Glue vs Amazon EMR](../../2_AWSServices/10_BigDataServices/DataProcessing/AWSGlueVsEMRVsBatch.md)
+
 # References
 - [Top Spark Interview Questions](https://www.interviewbit.com/spark-interview-questions/)
 - [Spark vs Hadoop MapReduce](https://www.integrate.io/blog/apache-spark-vs-hadoop-mapreduce/)
