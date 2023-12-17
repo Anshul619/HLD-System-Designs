@@ -14,7 +14,6 @@
 | [Link relation](https://restful-api-design.readthedocs.io/en/latest/relationships.html) | To link two resources together i.e. specify relationship between resources.                                                                                                                                                                                                           |
 | Idempotent API                                                                          | In the context of REST APIs, when making multiple identical requests has the same effect as making a single request – then that REST API is called idempotent.                                                                                                                        |
 | Versioning                                                                              | Academically speaking, it should probably be in a header. However, the version needs to be in the URL to ensure browser explorability of the resources across versions (remember the API requirements specified at the top of this post?) and to have a simpler developer experience. |
-| [Speed is a feature](https://www.enchant.com/speed-is-a-feature)                        |                                                                                                                                                                                                                                                                                       |
 
 # HTTP Headers
 
@@ -48,10 +47,7 @@
 | /companies/{companyId}/employees/{employeeId} | To access a subresource attached to a specific resource |
 
 # Design Effective & Safe APIs
-
-![](https://media.licdn.com/dms/image/D4E22AQGH_QbG8Jb2TA/feedshare-shrink_2048_1536/0/1696914794100?e=1700092800&v=beta&t=4CvXpMUISwFg4uc8d2Hr4YHr2PyGJ3WpTyGAVyeceK8)
-
-[Read more](https://www.linkedin.com/posts/bytebytego_systemdesign-coding-interviewtips-activity-7117376511090774016-PjMg?utm_source=share&utm_medium=member_desktop)
+- [Read more](https://www.linkedin.com/posts/bytebytego_systemdesign-coding-interviewtips-activity-7117376511090774016-PjMg?utm_source=share&utm_medium=member_desktop)
 
 # Reference
 - [Best Practices for Designing a Pragmatic RESTful API](https://www.vinaysahni.com/best-practices-for-a-pragmatic-restful-api)
