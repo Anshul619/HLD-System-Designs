@@ -42,10 +42,6 @@
 | [S3 Select](https://docs.aws.amazon.com/AmazonS3/latest/userguide/selecting-content-from-objects.html)                                                       | With [Amazon S3 Select](https://docs.aws.amazon.com/AmazonS3/latest/userguide/selecting-content-from-objects.html), you can use simple structured query language (SQL) statements to filter the contents of an Amazon S3 object and retrieve just the subset of data that you need. <br/>- By using Amazon S3 Select to filter this data, you can reduce the amount of data that Amazon S3 transfers, which reduces the cost and latency to retrieve this data. |
 | Transfer Charges                                                                                                                                             | There are no S3 data transfer charges when data is transferred in from the internet.                                                                                                                                                                                                                                                                                                                                                                            |
 
-## Cross-Region Supported
-
-![img.png](https://acg-wordpress-content-production.s3.us-west-2.amazonaws.com/app/uploads/2021/01/1_SMawCtVcSkQ6ZaQMZ0Vd7Q.png)
-
 # :star: Real world use cases of Amazon S3
 
 ## :star: Modern Data Architecture 
