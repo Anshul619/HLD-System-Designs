@@ -184,7 +184,7 @@ This repo contains the various system design components info, questions and solu
     </tr>
     <tr>
       <td>
-        <a href="6_BigDataServices/DataProcessing">Big Data Processing</a>
+        <a href="6_BigDataServices/Readme.md">Big Data Processing</a>
       </td>
       <td>
         <div class="container" style="background:white">
