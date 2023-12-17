@@ -80,7 +80,7 @@ This repo contains the various system design components info, questions and solu
                 <a href="2_AWSServices/5_MessageBrokerServices/AmazonEventBridge.md" target="_blank"><img src="https://user-images.githubusercontent.com/3268013/149550617-d92fa8ff-f95d-499c-8515-0ed0be976fbf.png" width="150"></a>
                 <a href="2_AWSServices/5_MessageBrokerServices/AmazonSNS.md" target="_blank"><img src="https://miro.medium.com/max/720/0*QjKNs9dEShlQ39VI.png" width="150"></a>
                 <a href="4_MessageBrokersEDA/RabbitMQ.md" target="_blank"><img src="https://www.logo.wine/a/logo/RabbitMQ/RabbitMQ-Logo.wine.svg" width="150"></a>
-                <a href="4_MessageBrokersEDA/ActiveMQ.md" target="_blank"><img src="https://cdn.icon-icons.com/icons2/2699/PNG/512/apache_activemq_logo_icon_168628.png" width="150"></a>
+                <a href="4_MessageBrokersEDA/ActiveMQ.md" target="_blank">ActiveMQ</a>
             </div>
         </div>
       </td>

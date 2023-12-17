@@ -7,7 +7,6 @@
 
 # Steps
 
-| Step                                                  |
 |-------------------------------------------------------|
 | 1. Setup your streaming data sources                  |
 | 2. Develop your SQL queries or streaming applications |
@@ -15,12 +14,12 @@
 
 # Supported AWS Services
 
-| AWS Service                                                                                            | Source | Destination (for processed data) |
-|--------------------------------------------------------------------------------------------------------|--------|----------------------------------|
-| [Kinesis Data Streams](../../5_MessageBrokerServices/AmazonKinesis/AmazonKinesisDataStreams.md)        | Yes    | Yes                              |
-| [Amazon MSK (Managed service for Kafka)](../../5_MessageBrokerServices/AmazonMSK.md)                   | Yes    | Yes                              |
-| [Amazon S3](../../7_StorageServices/3_ObjectStorageS3/Readme.md)                                       | Yes    | Yes                              |
-| [API Gateway](../../1_NetworkingAndContentDelivery/2_ApplicationNetworking/AmazonAPIGateway/Readme.md) | Yes    | No                               |
+| AWS Service                                                                                            | Source                 | Destination (for processed data) |
+|--------------------------------------------------------------------------------------------------------|------------------------|----------------------------------|
+| [Kinesis Data Streams](../../5_MessageBrokerServices/AmazonKinesis/AmazonKinesisDataStreams.md)        | :white_check_mark: Yes | :white_check_mark: Yes           |
+| [Amazon MSK (Managed service for Kafka)](../../5_MessageBrokerServices/AmazonMSK.md)                   | :white_check_mark: Yes | :white_check_mark: Yes           |
+| [Amazon S3](../../7_StorageServices/3_ObjectStorageS3/Readme.md)                                       | :white_check_mark: Yes | :white_check_mark: Yes           |
+| [API Gateway](../../1_NetworkingAndContentDelivery/2_ApplicationNetworking/AmazonAPIGateway/Readme.md) | :white_check_mark: Yes | :x: No                           |
 
 # Common Use Cases
 
