@@ -1,6 +1,6 @@
 # Data Warehouses
 - Data warehouse (part of [Online analytical processing - OLAP](../../../3_DatabaseServices/OLTPvsOTAP.md)) are used for data analytics (real-time) & insights.
-- The process of getting data in Data Warehouse is called [Extract-Transform-Load (ETL)](../../DataProcessing/ProcessingTypes/ETL.md).
+- The process of getting data in Data Warehouse is called [Extract-Transform-Load (ETL)](../../DataProcessing/ETL.md).
 - Data model of a data warehouse is most commonly relational, because [SQL](../../../3_DatabaseServices/7_SQL-Databases/Readme.md) is generally a good fit for analytic queries.
 - This type of database is also known as [Columnar Database](https://aws.amazon.com/nosql/columnar/).
 

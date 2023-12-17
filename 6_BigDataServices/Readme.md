@@ -15,12 +15,12 @@
 
 # How can we define big data?
 
-|              | Remarks                                                                                                                                                                              |
-|--------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Data Volume  | **100s of TB** to PB-scale and higher                                                                                                                                                |
+|              | Remarks                                                                                                                                                                                     |
+|--------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Data Volume  | **100s of TB** to PB-scale and higher                                                                                                                                                       |
 | Architecture | Parallel Processing often involved using [Hadoop](ApacheHadoop/Readme.md), [Spark](DataProcessing/ApacheSpark/Readme.md), [data warehouse](DataStorage/DataWarehouses/Readme.md) platforms. |
-| Necessity    | **Processing of data sets too large** for operational databases                                                                                                                      |
-| Nominally    | Big data tech sometimes imposed on small data problems                                                                                                                               |
+| Necessity    | **Processing of data sets too large** for operational databases                                                                                                                             |
+| Nominally    | Big data tech sometimes imposed on small data problems                                                                                                                                      |
 
 # Read more
 - [AWS Summit ASEAN 2023 | Simplify data management with modern data architecture on AWS (INSO203)](https://www.youtube.com/watch?v=hwF0AZaUc6U)
