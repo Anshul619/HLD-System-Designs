@@ -1,13 +1,13 @@
 # Layers in modern data architecture
 
-| Layer                   | Description                                                                                  |
-|-------------------------|----------------------------------------------------------------------------------------------|
-| Data Ingestion          | [Bring your data](../4_MessageBrokersEDA/Kafka/Readme.md) into your data platform.           |
-| Data Processing         | Create your [data processing pipelines](DataProcessing).                                     |
-| Data Cataloging         | Store your metadata.                                                                         |
-| Data Storage            | Store your [structured and unstructured data](DataStorage).                                  |
+| Layer                   | Description                                                                                    |
+|-------------------------|------------------------------------------------------------------------------------------------|
+| Data Ingestion          | [Bring your data](../4_MessageBrokersEDA/Kafka/Readme.md) into your data platform.             |
+| Data Processing         | Create your [data processing pipelines](DataProcessing).                                       |
+| Data Cataloging         | Store your metadata.                                                                           |
+| Data Storage            | Store your [structured and unstructured data](DataStorage).                                    |
 | Data Consumption        | Enable your user personas for [purpose-built analytics](DataConsumption) and machine learning. |
-| Security and governance | Protect your data across the layers and data access management.                              |
+| Security and governance | Protect your data across the layers and data access management.                                |
 
 # Various Services in Data layers
 
