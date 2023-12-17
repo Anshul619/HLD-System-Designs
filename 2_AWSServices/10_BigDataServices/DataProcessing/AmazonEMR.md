@@ -3,6 +3,8 @@
 - With EMR you can run Petabyte-scale analysis at less than half of the cost of traditional on-premises solutions and over 3x faster than standard [Apache Spark](../../../6_BigDataServices/DataProcessing/ApacheSpark/Readme.md). 
 - Amazon EMR uses [Hadoop, an open-source framework](../../../6_BigDataServices/ApacheHadoop/Readme.md), to distribute your data and processing across a resizable cluster of [Amazon EC2 instances](../../3_ComputeServices/AmazonEC2/Readme.md).
 
+![](https://fathomtech.io/blog/aws-emr-versus-glue/How-aws-emr-works.png)
+
 # Supported Big Data Frameworks
 
 | Service                                                                                                                                                           |

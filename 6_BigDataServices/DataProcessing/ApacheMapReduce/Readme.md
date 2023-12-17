@@ -5,7 +5,7 @@
 - Typically, both the input and the output of the job are stored in a file-system. 
 - The framework takes care of scheduling tasks, monitoring them and re-executes the failed tasks.
 
-![img.png](map_reduce.png)
+![](map_reduce.png)
 
 # Steps
 

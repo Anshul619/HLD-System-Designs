@@ -8,3 +8,4 @@
 
 # References
 - [AWS - Glue vs DataPipeline vs EMR vs DMS vs Batch vs Kinesis - What should one use ? Where, When and Why?](https://www.linkedin.com/pulse/aws-glue-vs-datapipeline-emr-dms-batch-kinesis-what-ramamurthy/)
+- [Comparing AWS Glue and EMR](https://fathomtech.io/blog/aws-emr-versus-glue/)
