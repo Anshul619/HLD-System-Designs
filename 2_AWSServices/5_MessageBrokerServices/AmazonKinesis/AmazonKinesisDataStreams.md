@@ -1,5 +1,5 @@
 # Amazon Kinesis Data Streams
-- [Amazon Kinesis Data Streams](https://aws.amazon.com/kinesis/data-streams/) is the [real-time data streaming service](../../../6_BigDataServices/DataProcessing/Readme.md) in Amazon Kinesis with high scalability and durability.
+- [Amazon Kinesis Data Streams](https://aws.amazon.com/kinesis/data-streams/) is the [real-time data streaming service](../../../6_BigDataServices/Readme.md) in [Amazon Kinesis]() with high scalability and durability.
 - [KDS]() can continuously capture gigabytes of data per second from hundreds of thousands of sources & then provide a concurrent feed of the data stream to the downstream applications.
 - The data collected is available in milliseconds, enabling real-time analytics.
 
