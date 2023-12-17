@@ -9,7 +9,7 @@
 | [Terminologies - SQL vs Document vs Search DBs](3_DatabaseServices/TermsComparisons.md)                                   | [Database Services](3_DatabaseServices)                               |
 | [DynamoDB vs MongoDB vs Casandra](3_DatabaseServices/DynamoDBVsMongoDBVsCasandra.md)                                      | [Database Services](3_DatabaseServices)                               |
 | [Redis vs MemCache](3_DatabaseServices/8_InMemory-Databases/RedisVsMemcache.md)                                           | [Database Services](3_DatabaseServices)                               |
-| [OLTP vs OLAP](3_DatabaseServices/OLTPvsOTAP.md)                                                                          | [Database Services](3_DatabaseServices)                               |
+| [OLTP vs OLAP](3_DatabaseServices/OLTPvsOTAP.md)                                                                          | [Big Data - Data Storage](3_DatabaseServices)                         |
 | [Data Warehouse vs Data Lake](6_BigDataServices/DataStorage/DataWarehousesVsLake.md)                                      | [Big Data - Data Storage](3_DatabaseServices)                         |
 | [Fault Tolerance vs High Availability](7_PropertiesDistributedSystem/Reliability/FaultToleranceVsHighAvailability.md)     | [Database Services](3_DatabaseServices)                               |
 | [Strong vs Semi vs Eventual Consistency/Replication](3_DatabaseServices/4_Consistency&Replication/Readme.md)              | [Database Services](3_DatabaseServices)                               |
