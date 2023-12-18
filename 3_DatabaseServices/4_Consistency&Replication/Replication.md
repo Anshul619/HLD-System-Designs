@@ -19,7 +19,7 @@
 | Leaderless Replication                                         | [Casandra](../11_WideColumn-Databases/ApacheCasandra.md), [Dynamo systems](../5_DatabaseInternals/DynamoStyleDatabases.md) etc.                                                                                                                                   | Clients send each write to several nodes, and read from several nodes in parallel in order to detect and correct nodes with stale data.                                                                                                                         |
 | Multi-Leader replication                                       | Data-center (a leader in each datacenter)<br/>- Clients with offline operation (like mobile apps)<br/>- Collaborative editing (like Google Docs) etc.                                                                                                          | Clients send each write to one of several leader nodes, any of which can accept writes. <br/>- The leaders send streams of data change events to each other and to any follower nodes.<br/>- Biggest problem with this algo is write conflict & its resolution. |
 
-# Source(s) and further reading
+# References
 - [Redundancy and Replication](https://github.com/jeremyyew/tech-prep-jeremy.io/blob/master/systems-design/topics/databases/redundancy-and-replication.md)
 - [Google I/O 2009 - Transactions Across Datacenters](http://snarfed.org/transactions_across_datacenters_io.html)
 - [CAP by Jeremyyew](https://github.com/jeremyyew/tech-prep-jeremy.io/tree/master/systems-design/topics/consistency-availability-partition-tolerance-cap)

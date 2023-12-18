@@ -5,3 +5,14 @@
 
 # Data Frame
 - A table or 2-D array like structure, in which each column contains measurements on one variable, and each row contains one case.
+
+````java
+import org.apache.spark.sql.types.{StringType, StructField, StructType}
+import org.apache.spark.sql.Row
+val schema = StructType( Array(
+                 StructField("language", StringType,true),
+                 StructField("users", StringType,true)
+             ))
+val rowRDD = rdd.map(attributes => Row(attributes._1, attributes._2))
+val dfFromRDD3 = spark.createDataFrame(rowRDD,schema)
+````
