@@ -6,6 +6,10 @@
 
 ![](AWS-Kinesis-Firehouse.drawio.png)
 
+> Note
+> - When a [Kinesis data stream](../../../5_MessageBrokerServices/AmazonKinesis/AmazonKinesisDataStreams.md) is configured as the source of a Firehose delivery stream, [Firehose’s PutRecord and PutRecordBatch operations](../../../5_MessageBrokerServices/AmazonKinesis/AmazonKinesisDataStreams.md) are disabled and Kinesis Agent cannot write to Firehose delivery stream directly.
+> - Data needs to be added to the [Kinesis data stream](../../../5_MessageBrokerServices/AmazonKinesis/AmazonKinesisDataStreams.md) through the [Kinesis Data Streams PutRecord and PutRecords operations](../../../5_MessageBrokerServices/AmazonKinesis/AmazonKinesisDataStreams.md) instead.
+
 # Supported Data Destinations
 
 | Data Destinations                                                                             | Destination Type                                      |
@@ -24,10 +28,6 @@
 # Amazon Kinesis Data Firehouse & Event Bridge
 
 ![](../../../5_MessageBrokerServices/assests/eventbridge/EventBridge.png)
-
-> Note
-> - When a [Kinesis data stream](../../../5_MessageBrokerServices/AmazonKinesis/AmazonKinesisDataStreams.md) is configured as the source of a Firehose delivery stream, [Firehose’s PutRecord and PutRecordBatch operations](../../../5_MessageBrokerServices/AmazonKinesis/AmazonKinesisDataStreams.md) are disabled and Kinesis Agent cannot write to Firehose delivery stream directly.
-> - Data needs to be added to the [Kinesis data stream](../../../5_MessageBrokerServices/AmazonKinesis/AmazonKinesisDataStreams.md) through the [Kinesis Data Streams PutRecord and PutRecords operations](../../../5_MessageBrokerServices/AmazonKinesis/AmazonKinesisDataStreams.md) instead.
 
 # References
 - [Delivering Real-time Streaming Data to Amazon S3 Using Amazon Kinesis Data Firehose](https://towardsdatascience.com/delivering-real-time-streaming-data-to-amazon-s3-using-amazon-kinesis-data-firehose-2cda5c4d1efe)
