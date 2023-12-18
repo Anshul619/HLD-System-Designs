@@ -1,7 +1,7 @@
 
 # Amazon Elastic File System (EFS)
 - [Amazon Elastic File System (EFS)](https://docs.aws.amazon.com/efs/latest/ug/whatisefs.html) is essentially [NAS as a service](https://aws.amazon.com/what-is/nas/).
-- It is a Network Storage system, underlying it is a storage array (SAN) and it offers the standard protocol for [multi session network file systems (NFS)](../Network-Protocol-Support.md).
+- It is a Network Storage system, underlying it is a storage array (SAN) and it offers the standard protocol for [multi session network file systems (NFS)](../Network-Protocols.md).
 - It is a POSIX compliant file storage system on AWS Cloud.
 
 # Features

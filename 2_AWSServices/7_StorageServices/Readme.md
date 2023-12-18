@@ -1,3 +1,3 @@
 # Storage Services
 
-![](assets/AWS-Storage-Services.png)
+![](AWS-Storage-Services.png)

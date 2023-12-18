@@ -3,7 +3,7 @@
 - With it, you can store files that support your latency-sensitive applications and workloads requiring local caching and file protocol access.
 - [S3 File Gateway]() moves your file data into an object format, which is highly durable and cost-efficient.
 - [S3 File Gateway]() supports data lakes, backups, and machine learning (ML) workflows.
-- You can store file data as objects in [Amazon S3 cloud storage](../3_ObjectStorageS3/Readme.md) using file protocols such as [NFS and SMB](../Network-Protocol-Support.md).
+- You can store file data as objects in [Amazon S3 cloud storage](../3_ObjectStorageS3/Readme.md) using file protocols such as [NFS and SMB](../Network-Protocols.md).
 - Objects written through [S3 File Gateway]() can be directly accessed in [Amazon S3](../3_ObjectStorageS3/Readme.md).
 
 ![](https://d1.awsstatic.com/cloud-storage/Amazon%20S3%20File%20Gateway%20How%20It%20Works%20Diagram.96e9f7180c6ec8b6212b4d6fadc4a9ac4507b421.png)

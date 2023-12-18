@@ -15,7 +15,7 @@
 
 | Feature                     | Remarks                                                                                                                                                                                                            |
 |-----------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Supported Protocols         | Data and file systems include [NFS file shares](../7_StorageServices/Network-Protocol-Support.md), [SMB file shares](../7_StorageServices/Network-Protocol-Support.md), and [self-managed object storage](). |
+| Supported Protocols         | Data and file systems include [NFS file shares](../7_StorageServices/Network-Protocols.md), [SMB file shares](../7_StorageServices/Network-Protocols.md), and [self-managed object storage](). |
 | Asynchronous data transfers | [AWS DataSync]() supports asynchronous or one-direction at a time transfers between on-premises file systems to [supported AWS Storage services](#supported-aws-destinations) in the AWS Cloud.                    |
 
 # Transferring files from on premises to AWS and back without leaving your VPC using AWS DataSync
