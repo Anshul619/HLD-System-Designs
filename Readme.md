@@ -198,7 +198,7 @@ This repo contains the various system design components info, questions and solu
                 <a href="6_BigDataServices/DataProcessing/KafkaStreams/Readme.md" target="_blank">
                   <img src="https://1.bp.blogspot.com/-LIHoqo96Dos/X7wKY2u124I/AAAAAAAAp88/SrC8E6Y-5l4Xil7UPrDRp-RuEx2GioXkQCLcBGAsYHQ/s435/kafka-streams.png" width="150">
                 </a>
-                <a href="2_AWSServices/10_BigDataServices/DataProcessing/AmazonKinesisDataFirehouse/Readme.md" target="_blank">
+                <a href="2_AWSServices/10_BigDataServices/DataConnectors/AmazonKinesisDataFirehouse/Readme.md" target="_blank">
                   <img src="https://miro.medium.com/max/1190/0*UQBKjEff1uIsXH8W" width="150">
                 </a>
             </div>
