@@ -246,7 +246,7 @@ This repo contains the various system design components info, questions and solu
 
 # Other HLD Services
 - [Observability & Monitoring](12_ObservabilityLogsServices/Readme.md)
-- [Open Source Contributions](OpenSourceContributions.md)
+- [Open Source Contributions](1_TechStacks/OpenSourceContributions.md)
 
 # Programming & OOP Design & Problems (LLD)
 - :star: [OOP Design](https://github.com/Anshul619/OOPs-Design-Patterns-LLD/blob/main/OOP.md)
