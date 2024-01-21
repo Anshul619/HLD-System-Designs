@@ -3,5 +3,9 @@
 - The application keeps the replica up to data by subscribing to Domain events (through [Message Brokers like Kafka](../../4_MessageBrokersEDA/Readme.md)) published by the service that own the data.
 - [Read more](https://microservices.io/patterns/data/cqrs.html)
 
+# Architecture
+
+![](https://microservices.io/i/patterns/data/QuerySideService.png)
+
 # Disadvantages
 - [Eventually Consistency](../../3_DatabaseServices/4_Consistency&Replication/Readme.md)

@@ -2,7 +2,7 @@
 
 # Features
 - Immutable data
-- Past event
+- Past event like OrderAdded etc.
 - JSON format
 
 # Examples

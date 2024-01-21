@@ -2,8 +2,8 @@
 
 | Scenario                                                                          | Remarks                                                                   |
 |-----------------------------------------------------------------------------------|---------------------------------------------------------------------------|
-| If there is a `network partition (P)`                                             | System can trade off between `availability and consistency (i.e. A and C)` |
-| else E - when the system is running normally in the absence of partition failures | System can trade off `between latency (L) and consistency (C)`            |
+| If there is a **network partition (P)**                                           | System can trade off between **availability (A)** and **consistency (C)** |
+| else E - when the system is running normally in the absence of partition failures | System can trade off between **latency (L)** and **consistency (C)**      |
 
 ![img.png](PACELC_Diagram.drawio.png)
 
@@ -12,10 +12,10 @@
 | DB                                                                          | P+A                | P+C                | E+L                | E+C                |
 |-----------------------------------------------------------------------------|--------------------|--------------------|--------------------|--------------------|
 | [DynamoDB](../../2_AWSServices/6_DatabaseServices/AmazonDynamoDB/Readme.md) |                    | :white_check_mark: | :white_check_mark: | :white_check_mark: |
-| [PostgresSQL](../7_SQL-Databases/Readme.md)                                   | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: |
-| [MongoDB](../10_Document-Databases/MongoDB)                            | :white_check_mark: |                    | :white_check_mark: |                    |
-| [Cassandra](../11_WideColumn-Databases/ApacheCasandra.md)              | :white_check_mark: | :white_check_mark: |                    |                    |
-| [HBase](../11_WideColumn-Databases/ApacheHBase.md)                     |                    | :white_check_mark: |                    | :white_check_mark: |
+| [PostgresSQL](../7_SQL-Databases/Readme.md)                                 | :white_check_mark: | :white_check_mark: | :white_check_mark: | :white_check_mark: |
+| [MongoDB](../10_Document-Databases/MongoDB)                                 | :white_check_mark: |                    | :white_check_mark: |                    |
+| [Cassandra](../11_WideColumn-Databases/ApacheCasandra.md)                   | :white_check_mark: | :white_check_mark: |                    |                    |
+| [HBase](../11_WideColumn-Databases/ApacheHBase.md)                          |                    | :white_check_mark: |                    | :white_check_mark: |
 
 # CAP Theorem
 - [Read more](CAPTheorem.md)
