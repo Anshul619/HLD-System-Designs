@@ -95,9 +95,7 @@ This repo contains the various system design components info, questions and solu
                 <a href="5_MicroServicesSOA/2_ServiceRegistry&Discovery/Eureka.md" target="_blank">
                   <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsLVq3RUn8c7AWSr_559ISKEpHkgVn5U3NKg&usqp=CAU" width="150">
                 </a>
-                <a href="2_AWSServices/1_NetworkingAndContentDelivery/2_ApplicationNetworking/AWSCloudMap.md" target="_blank">
-                  <img src="https://landscape.cncf.io/logos/aws-cloud-map.svg" width="150">
-                </a>
+                <a href="2_AWSServices/1_NetworkingAndContentDelivery/2_ApplicationNetworking/AWSCloudMap.md" target="_blank">AWS Cloud Map</a>
                 <a href="10_ClusterCoordinationServices/etcd.md" target="_blank">
                   <img src="https://cdn.freebiesupply.com/logos/large/2x/etcd-logo-png-transparent.png" width="150">
                 </a>
