@@ -17,8 +17,8 @@ Design driver allocation to riders in an Uber-like system
 
 # :star: Real-world Systems
 
-|       | Remarks                                                          |
-|-------|------------------------------------------------------------------|
+|       | Remarks                                                 |
+|-------|---------------------------------------------------------|
 | Uber  | [Uber](../../1_TechStacks/Uber)                         |
 | GoJek | [GoJek TechStack](../../1_TechStacks/GoJekTechStack.md) |
 

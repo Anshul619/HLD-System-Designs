@@ -1,4 +1,6 @@
 
+# Food Ordering System Design like Zomato, Swiggy etc.
+
 # Basic Requirements
 - Food ordering systems
 - User would have name & phoneNumber
@@ -21,11 +23,11 @@
 
 # Real-world Systems
 
-|        | Remarks                                                                 |
-|--------|-------------------------------------------------------------------------|
-| Zomato | [Swiggy - Tech Stack](../../1_TechStacks/ZomatoTechStack.md)    |
-| Swiggy | [Swiggy - Tech Stack](../../1_TechStacks/SwiggyTechStack.md)    |
-| Grab   | [Grab - Tech Stack](../../1_TechStacks/Grab/Readme.md) |
+|        | Remarks                                                      |
+|--------|--------------------------------------------------------------|
+| Zomato | [Swiggy - Tech Stack](../../1_TechStacks/ZomatoTechStack.md) |
+| Swiggy | [Swiggy - Tech Stack](../../1_TechStacks/SwiggyTechStack.md) |
+| Grab   | [Grab - Tech Stack](../../1_TechStacks/Grab/Readme.md)       |
 
 # Tech Decisions
 
