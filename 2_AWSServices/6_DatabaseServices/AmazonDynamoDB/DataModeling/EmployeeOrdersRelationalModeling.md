@@ -1,4 +1,5 @@
 # Employee-Orders - Relational Modeling
+- [Read more](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/bp-modeling-nosql-B.html)
 
 | Table         | Primary key  | Sort Key      |
 |---------------|--------------|---------------|
@@ -34,4 +35,3 @@
 | Find all Employees in specific Warehouse                                  | Use GSI-1, PK=WAREHOUSE1                                                                   |
 | Get all Orderitems for a Product including warehouse location inventories | Use GSI-1, PK=PRODUCT1                                                                     |
 
-[Read more](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/bp-modeling-nosql-B.html)
