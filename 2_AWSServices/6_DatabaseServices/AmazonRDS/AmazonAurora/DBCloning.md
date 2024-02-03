@@ -7,7 +7,7 @@
 |------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Copy-on-write protocol | Database cloning uses a copy-on-write protocol, in which data is copied only at the time the data changes, either on the source database or the clone database. Cloning is much faster than a manual snapshot of the DB cluster. |
 | Cross-Region           | :x: No<br/>- You cannot clone databases across AWS regions. The clone databases must be created in the same region as the source databases.                                                                                      |
-| Supported Engine       | Aurora (note - Aurora Serverless v1 is not supported)                                                                                                                                                                            |
+| Supported Engine       | Aurora Cluster                                                                                                                                                                                                                   |
 | Use Case               | DB Performance Testing, Pre-Release testing etc.                                                                                                                                                                                 |
 
 # How DB cloning works?

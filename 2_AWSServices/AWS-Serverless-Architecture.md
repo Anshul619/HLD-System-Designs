@@ -43,7 +43,7 @@ Every definition of [serverless](https://aws.amazon.com/serverless/) mentions th
 | Cost                    | The cost of hiring backend infrastructure engineers goes down, along with operational costs.                                                                                                    |
 | Customer obsession      | Abstraction from servers allows companies to dedicate more time and resources to developing and improving customer experience.                                                                  |
 | Startup friendly        | The serverless architecture pay-as-you-go model allows you to build an environment nearly for free and ease into the market without dealing with huge bills for minimum traffic.                |
-| Example AWS Services    | [Amazon Aurora Serverless](6_DatabaseServices/AmazonRDS/AmazonAurora/AuroraServerless.md), [Amazon DynamoDB](6_DatabaseServices/AmazonDynamoDB/Readme.md) etc.                                  |
+| Example AWS Services    | [Amazon Aurora Serverless](6_DatabaseServices/AmazonRDS/AmazonAurora/Serverless/Readme.md), [Amazon DynamoDB](6_DatabaseServices/AmazonDynamoDB/Readme.md) etc.                                 |
 
 # Benefits of a server-based architecture
 
