@@ -9,10 +9,11 @@
 | Microservice Pattern            | [Request-Response pattern](../../5_MicroServicesSOA/Readme.md)                                                                                                                                                                                         |
 | NoSQL DB                        | [Casandra](../../3_DatabaseServices/11_WideColumn-Databases/ApacheCasandra.md) - [Read more](https://netflixtechblog.com/exploring-data-netflix-9d87e20072e3)                                                                                          |
 | Time series DB                  | [Casandra](../../3_DatabaseServices/11_WideColumn-Databases/ApacheCasandra.md) - [Read more](https://netflixtechblog.com/scaling-time-series-data-storage-part-i-ec2b6d44ba39)                                                                         |
-| Benchmarking - Casandra         | [Read more](../../SystemEstimations&Benchmarking/Benchmarking/CasandraBenchmarking.md)                                                                                                                                                                                                                   |
+| Benchmarking - Casandra         | [Read more](../../SystemEstimations&Benchmarking/Benchmarking/CasandraBenchmarking.md)                                                                                                                                                                 |
 | Microservice - Dependency Graph | [How Netflix works: the (hugely simplified) complex stuff that happens every time you hit Play](https://medium.com/refraction-tech-everything/how-netflix-works-the-hugely-simplified-complex-stuff-that-happens-every-time-you-hit-play-3a40c9be254b) |
 | Cache                           | Memcache                                                                                                                                                                                                                                               |
 
 # Read more
 - [Mastering Chaos - A Netflix Guide to Microservices](https://www.youtube.com/watch?v=CZ3wIuvmHeM)
 - [Scaling Time Series Data Storage — Part I](https://netflixtechblog.com/scaling-time-series-data-storage-part-i-ec2b6d44ba39)
+- [AWS re:Invent 2023 - Safely migrate databases that serve millions of requests per second (NFX307)](https://www.youtube.com/watch?v=3bjnm1SXLlo)
