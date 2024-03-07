@@ -28,3 +28,4 @@
 - [Connect to the cluster's node](https://docs.aws.amazon.com/AmazonElastiCache/latest/red-ug/GettingStarted.ConnectToCacheNode.html)
 - [Mitigating Failures](https://docs.aws.amazon.com/AmazonElastiCache/latest/red-ug/FaultTolerance.html)
 - [AWS Redis cluster mode - what is the difference between Auto-failover and Multi-AZ flag?](https://stackoverflow.com/questions/69105387/aws-redis-cluster-mode-what-is-the-difference-between-auto-failover-and-multi)
+- [Caching Pitfalls Every Developer Should Know](https://www.youtube.com/watch?v=wh98s0XhMmQ)
