@@ -1,7 +1,7 @@
 
 # Redis vs Memcache
 
-|                                                          | [Redis](Redis/Readme.md) | [Memcache](https://memcached.org/) |
+| Feature                                                  | [Redis](Redis/Readme.md) | [Memcache](https://memcached.org/) |
 |----------------------------------------------------------|--------------------------|------------------------------------|
 | Multi-Threaded?                                          | :x: No (uses async. IO)  | :white_check_mark: Yes             |
 | Caching Feature                                          | :white_check_mark: Yes   | :white_check_mark: Yes             |

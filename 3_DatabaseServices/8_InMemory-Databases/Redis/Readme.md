@@ -64,3 +64,4 @@
 - [AWS ElastiCache vs RDS ReadReplica](https://stackoverflow.com/questions/24728634/aws-elasticache-vs-rds-readreplica)
 - [Design Cache](https://www.interviewbit.com/problems/design-cache/)
 - [ByteByteGo - System Design: Why is single-threaded Redis so fast?](https://www.youtube.com/watch?v=5TRFpFBccQM)
+- [Achieve over 500 million requests per second per cluster with Amazon ElastiCache for Redis 7.1](https://aws.amazon.com/blogs/database/achieve-over-500-million-requests-per-second-per-cluster-with-amazon-elasticache-for-redis-7-1/)

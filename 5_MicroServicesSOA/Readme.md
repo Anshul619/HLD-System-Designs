@@ -45,3 +45,4 @@
 - [Handling Microservices with gRPC and REST API](https://fonradar.medium.com/ali-okan-kara-a3d0b61610d)
 - [Materialized View Pattern](https://medium.com/design-microservices-architecture-with-patterns/materialized-view-pattern-f29ea249f8f8)
 - [Uber - Service Oriented Architecture](https://eng.uber.com/service-oriented-architecture/)
+- [Build microservices using Akka](https://developer.lightbend.com/docs/akka-guide/microservices-tutorial/index.html)
