@@ -38,8 +38,5 @@
 ## Preintegrations
 ![](https://newrelic.com/themes/custom/erno/assets/images/layout/section/integrations_logocardpattern.svg)
 
-# Pricing
-
-![](assets/newrelic_img.png)
-
-[Read more](https://newrelic.com/pricing)
+# References
+- [Mastering the Art of Problem Solving for Engineers](https://www.youtube.com/watch?v=y1sVfWef-RI)
