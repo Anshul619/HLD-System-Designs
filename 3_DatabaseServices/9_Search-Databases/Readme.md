@@ -14,7 +14,7 @@
 |-----------------------------------------------------------------------------|
 | [Elastic Search](ElasticSearch/Readme.md)                                   |
 | [Apache Solr](ApacheSolr.md)                                                |
-| [New Relic - Logs Analysis](../../12_ObservabilityLogsServices/NewRelic/Readme.md) |
+| [New Relic - Logs Analysis](../../12_ObservabilityServices/NewRelic/Readme.md) |
 | [MongoDB Atlas Search](MongoAtlasSearch.md)                                 |
 
 # :star: Real world usages of Search-DBs

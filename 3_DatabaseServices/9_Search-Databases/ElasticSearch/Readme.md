@@ -13,9 +13,9 @@
 # :star: General Use Cases of Search-Indexes
 - [Search - Full-text, Partial etc.](https://www.elastic.co/guide/en/elasticsearch/reference/current/full-text-queries.html)
 - [Search - Fuzzy Query](https://www.elastic.co/guide/en/elasticsearch/reference/current/query-dsl-fuzzy-query.html)
-- [Logs-analysis](../../../12_ObservabilityLogsServices/ELK.md)
-- [Dashboard, Visualize data, Metrics etc.](../../../12_ObservabilityLogsServices/ELK.md)
-- [Security, SIEM with ELK](../../../12_ObservabilityLogsServices/ELK.md)
+- [Logs-analysis](../../../12_ObservabilityServices/ELK.md)
+- [Dashboard, Visualize data, Metrics etc.](../../../12_ObservabilityServices/ELK.md)
+- [Security, SIEM with ELK](../../../12_ObservabilityServices/ELK.md)
 
 # Key Features of ElasticSearch
 
@@ -29,7 +29,7 @@
 | Sample Search Query | [Read more](samples/SampleSearchQuery.md)                                                                                                                                                                                                                      |
 | Ingest Node         | Ingest node is used for pre-process documents before the actual document indexing happens. <br/>- It helps to intercepts bulk and index requests.                                                                                                              |
 | Data Storage        | Settings, index mapping, alternative cluster states, and other metadata are saved to Elasticsearch files outside the [Lucene](../Readme.md) environment. This is to prevent excessive disk I/O.                                                                |
-| Elastic Stack       | For data analysis, it operates alongside Kibana, and Logstash to form the [ELK stack](../../../12_ObservabilityLogsServices/ELK.md).<br/>- [ElasticSearch data streaming](../../Others/StreamDBs/ElasticSearchStreams.md) is used for the logs.                |
+| Elastic Stack       | For data analysis, it operates alongside Kibana, and Logstash to form the [ELK stack](../../../12_ObservabilityServices/ELK.md).<br/>- [ElasticSearch data streaming](../../Others/StreamDBs/ElasticSearchStreams.md) is used for the logs.                |
 | Data Streaming      | [A data stream](../../Others/StreamDBs/ElasticSearchStreams.md) lets you store [append-only time series data (like logs) across multiple indices](../../5_DatabaseInternals/AppendOnlyProperty.md) while giving you a single named resource for requests. |
 | Pricing             | [Read more](https://www.elastic.co/pricing/)                                                                                                                                                                                                                   |
 | Auto Scaling        | Auto-expand indices based on search queries. [Read more](https://www.elastic.co/guide/en/elasticsearch/reference/current/index-modules.html).                                                                                                                  |

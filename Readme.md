@@ -224,13 +224,13 @@ This repo contains the various system design components info, questions and solu
     </tr>
     <tr>
       <td>
-        <a href="12_ObservabilityLogsServices/">Observability & Logging Services</a>
+        <a href="12_ObservabilityServices/">Observability & Logging Services</a>
       </td>
       <td>
-        <a href="12_ObservabilityLogsServices/NewRelic.md">
+        <a href="12_ObservabilityServices/NewRelic.md">
           <img src="https://www.vectorlogo.zone/logos/newrelic/newrelic-ar21.svg" width="150">
         </a>
-        <a href="12_ObservabilityLogsServices/ELK.md">
+        <a href="12_ObservabilityServices/ELK.md">
           <img src="https://miro.medium.com/max/746/1*DbdVXy9_6uJVe8q1NOYVfg.png" width="150">
         </a>
         <br/><br/>
