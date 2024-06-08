@@ -1,5 +1,5 @@
 # Spark Streaming
-- Spark Streaming supports [highly scalable](../../../3_DatabaseServices/3_ScalabilityTechniques/Readme.md), [fault-tolerant](../../../7_PropertiesDistributedSystem/Reliability/FaultTolerance.md) continuous stream processing which is mostly used in cases like fraud detection, website monitoring, website click baits, IoT (Internet of Things) sensors, etc.
+- Spark Streaming supports [highly scalable](../../../3_DatabaseServices/3_ScalabilityTechniques/Readme.md), [fault-tolerant](../../../7a_HighAvailability/FaultTolerance.md) continuous stream processing which is mostly used in cases like fraud detection, website monitoring, website click baits, IoT (Internet of Things) sensors, etc.
 
 # Features
 

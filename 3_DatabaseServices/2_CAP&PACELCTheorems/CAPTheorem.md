@@ -2,7 +2,7 @@
 
 [CAP Theorem](https://www.geeksforgeeks.org/the-cap-theorem-in-dbms/) stands for:
 - [Consistency](../4_Consistency&Replication/Readme.md)
-- [Availability](../../7_PropertiesDistributedSystem/Reliability/HighAvailability.md)
+- [Availability](../../7a_HighAvailability/HighAvailability.md)
 - [Partition Tolerance](NetworkPartition.md)
 
 ![img.png](assets/CAP_Theorem.drawio.png)

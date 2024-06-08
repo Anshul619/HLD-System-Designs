@@ -1,5 +1,5 @@
 # Why Kafka is so fast?
-- Kafka achieves [low latency](../../7_PropertiesDistributedSystem/Scalability/Latency.md) message delivery through [Sequential I/O and Zero Copy Principle](https://twitter.com/alexxubyte/status/1506663791961919488/photo/1).
+- Kafka achieves [low latency](../../7_Scalability/Latency.md) message delivery through [Sequential I/O and Zero Copy Principle](https://twitter.com/alexxubyte/status/1506663791961919488/photo/1).
 - Messages (events) in the [Kafka]() are immutable and can't be changed once it's pushed (due to [log based queue nature](../../3_DatabaseServices/5_DatabaseInternals/AppendOnlyProperty.md)).
 - The same techniques are commonly used in much other messaging/streaming platforms.
 

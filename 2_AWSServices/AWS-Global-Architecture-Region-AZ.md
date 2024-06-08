@@ -17,7 +17,7 @@
   - eu-west-1 (Europe (Ireland))
   - eu-north-1 (Europe (Stockholm))
   - ap-south-1 (Asia Pacific (Mumbai))
-- In AWS, every region would have its own [cluster](../7_PropertiesDistributedSystem/Scalability/ServersCluster.md).
+- In AWS, every region would have its own [cluster](../7_Scalability/ServersCluster.md).
 
 ## AWS Region Consideration
 
@@ -30,7 +30,7 @@
 
 # Availability Zones (AZ)
 - [An Availability Zone (AZ)](https://aws.amazon.com/about-aws/global-infrastructure/regions_az/) is one or more discrete data centers with redundant power, networking, and connectivity in an AWS Region. 
-- AZs give customers the ability to operate production applications and databases that are more [highly available](../7_PropertiesDistributedSystem/Reliability/HighAvailability.md), [fault-tolerant](../7_PropertiesDistributedSystem/Reliability/FaultTolerance.md), and [scalable](../3_DatabaseServices/3_ScalabilityTechniques/Readme.md) than would be possible from a single data center.
+- AZs give customers the ability to operate production applications and databases that are more [highly available](../7a_HighAvailability/HighAvailability.md), [fault-tolerant](../7a_HighAvailability/FaultTolerance.md), and [scalable](../3_DatabaseServices/3_ScalabilityTechniques/Readme.md) than would be possible from a single data center.
 
 ## AZ Concepts
 

@@ -3,10 +3,10 @@
 This repo contains the various system design components info, questions and solutions.
 - [HLD Design Problems](0_HLDUseCasesProblems)
 - [Real-world tech stacks](1_TechStacks)
-- [Key Properties of Distributed Systems](7_PropertiesDistributedSystem)
+- [Scalability](7_Scalability)
 - [Database Design tips](3_DatabaseServices/Readme.md)
 - [System Design Tips](SystemDesignTips.md)
-- [System Estimation & Benchmarking](7a_SystemEstimations&Benchmarking)
+- [System Estimation & Benchmarking](7c_SystemEstimations&Benchmarking)
 - [All Comparisons](All-Comparisons.md)
 - [Architecture Patterns](7b_ArchitecturePatterns/Readme.md)
 

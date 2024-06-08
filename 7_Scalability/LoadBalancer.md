@@ -1,5 +1,5 @@
 # Load Balancers
-- [Load Balancers](https://github.com/ema2159/Grokking-System-Design-Interview-Quizzes/blob/master/Quizzes/Load%20Balancer.org) are used for the [horizontal scalability](Scalability) & [high availability/fault-tolerance](Reliability/HighAvailability.md).
+- [Load Balancers](https://github.com/ema2159/Grokking-System-Design-Interview-Quizzes/blob/master/Quizzes/Load%20Balancer.org) are used for the [horizontal scalability](Scalability) & [high availability/fault-tolerance](../7a_HighAvailability/HighAvailability.md).
 - [LB]() helps to spread the traffic across a cluster of servers to improve responsiveness and availability of applications, websites or databases.
 - In AWS, [Elastic Load Balancer](../2_AWSServices/1_NetworkingAndContentDelivery/2_ApplicationNetworking/ElasticLoadBalancer/Readme.md) is used for the load balancing.
 

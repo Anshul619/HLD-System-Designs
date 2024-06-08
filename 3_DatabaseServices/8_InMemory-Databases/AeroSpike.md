@@ -1,6 +1,6 @@
 # Introduction
 - [Aerospike](https://aerospike.com/) is an open-source, modern database built from the ground up to push the limits of flash storage, processors and networks. 
-- It was designed to operate with [predictable low latency at high throughput](../../7_PropertiesDistributedSystem/Scalability/Latency.md) with uncompromising reliability, both [high availability](../../7_PropertiesDistributedSystem/Reliability/HighAvailability.md) and [ACID guarantees](../1_ACIDTransactions/Readme.md).
+- It was designed to operate with [predictable low latency at high throughput](../../7_Scalability/Latency.md) with uncompromising reliability, both [high availability](../../7a_HighAvailability/HighAvailability.md) and [ACID guarantees](../1_ACIDTransactions/Readme.md).
 
 # Why AeroSpike?
 - In-memory and NoSQL databases are a database combination that is being employed by a growing number of applications. 

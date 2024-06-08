@@ -30,7 +30,7 @@
 
 | Feature    | Limit                                                                                                                           |
 |------------|---------------------------------------------------------------------------------------------------------------------------------|
-| Throughput | Up to [10,000 requests per second](../../../../7_PropertiesDistributedSystem/Scalability/Throughput.md)                         |
+| Throughput | Up to [10,000 requests per second](../../../../7_Scalability/Throughput.md)                         |
 | Payload    | Up to 10MB in the request payload                                                                                               |
 | Protocol   | [API Gateway only works with HTTPS](https://docs.aws.amazon.com/apigateway/latest/developerguide/setup-http-integrations.html). |
 

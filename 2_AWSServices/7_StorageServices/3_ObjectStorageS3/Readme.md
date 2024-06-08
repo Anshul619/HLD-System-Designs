@@ -1,14 +1,14 @@
 # Amazon Simple Storage Service (S3)
 - [Amazon S3](https://aws.amazon.com/s3/) is an object store (flat-structure), meaning it is a higher layer data storage system, essentially [it is a database "blob" storage](https://www.techopedia.com/definition/32166/blob-storage), storing data in an underlying simple database as an object.
-- It's designed for [WRITE once READ many access i.e. append-only data structure](../../../3_DatabaseServices/5_DatabaseInternals/AppendOnlyProperty.md), perfect for [Static content](../../../7_PropertiesDistributedSystem/CDNs/StaticContent.md).
-- It's [distributed](../../../7_PropertiesDistributedSystem) and offers a very high level of redundancy i.e. [data is stored in 3 AZs within a specific region](../../AWS-Global-Architecture-Region-AZ.md).
+- It's designed for [WRITE once READ many access i.e. append-only data structure](../../../3_DatabaseServices/5_DatabaseInternals/AppendOnlyProperty.md), perfect for [Static content](../../../7_Scalability/CDNs/StaticContent.md).
+- It's [distributed](../../../7_Scalability) and offers a very high level of redundancy i.e. [data is stored in 3 AZs within a specific region](../../AWS-Global-Architecture-Region-AZ.md).
 
 # Use cases
 
 | Use Case                                                                                                | Description                                                                                                                                                                                                                                             |
 |---------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Static websites                                                                                         | You can configure your S3 bucket to host a [static website](StaticWebsiteHosting.md) of HTML, CSS, and client-side scripts.                                                                                                                             |
-| Static content                                                                                          | Because of the limitless scaling, the support for large files, and the fact that you access any object over the web at any time, Amazon S3 is the perfect place to store [static content](../../../7_PropertiesDistributedSystem/CDNs/StaticContent.md). |
+| Static content                                                                                          | Because of the limitless scaling, the support for large files, and the fact that you access any object over the web at any time, Amazon S3 is the perfect place to store [static content](../../../7_Scalability/CDNs/StaticContent.md). |
 | Backup and storage                                                                                      | [Amazon S3]() is a natural place to back up files (example [RDS Snapshots](../../12_Backup&DR/RDSSnapshot.md), [EBS snapshots](../../12_Backup&DR/EBSSnapshots.md) etc.) because it is highly redundant.                                                |
 | Media hosting                                                                                           | Because you can store unlimited objects, and each individual object can be up to 5 TBs, Amazon S3 is an ideal location to host video, photo, and music uploads.                                                                                         |
 | Data lakes                                                                                              | Amazon S3 is an optimal foundation for a [data lake](../../10_BigDataServices/DataStorage/DataLakes/S3DataLake.md) because of its virtually unlimited scalability.                                                                                      |
@@ -43,7 +43,7 @@
 # :star: Real world use cases of Amazon S3
 
 ## :star: Amazon S3 + Amazon CloudFront: A Match Made in the Cloud
-- Instead of [directly accessing the S3 resource](https://aws.amazon.com/blogs/networking-and-content-delivery/amazon-s3-amazon-cloudfront-a-match-made-in-the-cloud/), we should use [CloudFront distribution](../../1_NetworkingAndContentDelivery/1_EdgeNetworking/AmazonCloudFront.md) in the middle (which acts as a [CDN](../../../7_PropertiesDistributedSystem/CDNs/CDNs.md))
+- Instead of [directly accessing the S3 resource](https://aws.amazon.com/blogs/networking-and-content-delivery/amazon-s3-amazon-cloudfront-a-match-made-in-the-cloud/), we should use [CloudFront distribution](../../1_NetworkingAndContentDelivery/1_EdgeNetworking/AmazonCloudFront.md) in the middle (which acts as a [CDN](../../../7_Scalability/CDNs/CDNs.md))
 
 ![](https://d2908q01vomqb2.cloudfront.net/5b384ce32d8cdef02bc3a139d4cac0a22bb029e8/2018/06/27/4-v-2.png)
 

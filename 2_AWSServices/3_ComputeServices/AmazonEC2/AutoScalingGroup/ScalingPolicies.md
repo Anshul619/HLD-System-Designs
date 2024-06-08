@@ -22,7 +22,7 @@
 
 | Type            | Description                                                                                                                                                                  | Formula                                                     |
 |-----------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------|
-| Fleet Scaling   | Maintain desired number of instances across AZs (for [high availability](../../../../7_PropertiesDistributedSystem/Reliability/HighAvailability.md)) at all time. | Desired-Capacity = Min-Capacity = Max-Capacity = Fleet-Size |
+| Fleet Scaling   | Maintain desired number of instances across AZs (for [high availability](../../../../7a_HighAvailability/HighAvailability.md)) at all time. | Desired-Capacity = Min-Capacity = Max-Capacity = Fleet-Size |
 | Dynamic Scaling | Automatically increase or decrease resource capacity in relation to the demand.                                                                                              | Based on demand                                             |
 
 # Scaling Metrics

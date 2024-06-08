@@ -1,7 +1,7 @@
 # Amazon DynamoDB
 - [DynamoDB](https://aws.amazon.com/dynamodb/) is a fully managed [key-value & document DB](../../../3_DatabaseServices/10_Document-Databases/) service, for fast lookup using primary key.
 - Every record in a DynamoDB database can be considered as a map of attributes and values with a [primary key](Partioning.md) to retrieve the record.
-- All data items are stored on [Solid State Drives (SSDs)](../../../11_FileStorageServicesHDFS/StorageOptions.md), and are replicated across [3 Availability Zones](../../AWS-Global-Architecture-Region-AZ.md) for [high availability](../../../7_PropertiesDistributedSystem/Reliability/HighAvailability.md) and [durability](../../../3_DatabaseServices/1_ACIDTransactions/Durability.md). 
+- All data items are stored on [Solid State Drives (SSDs)](../../../11_FileStorageServicesHDFS/StorageOptions.md), and are replicated across [3 Availability Zones](../../AWS-Global-Architecture-Region-AZ.md) for [high availability](../../../7a_HighAvailability/HighAvailability.md) and [durability](../../../3_DatabaseServices/1_ACIDTransactions/Durability.md). 
 - With DynamoDB, you can offload the administrative burden of operating and scaling a highly available distributed database cluster, while paying a low price for only what you use.
 
 # :star: Real world use cases of DynamoDB

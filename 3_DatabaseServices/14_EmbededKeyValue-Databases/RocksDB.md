@@ -2,7 +2,7 @@
 # Introduction
 - [RocksDB](http://rocksdb.org/) is an embedded key-value store and uses a [LSM-Tree](../5_DatabaseInternals/LSMTree.md), written entirely in C++, for maximum performance.
 - Writes in RocksDB, are [append-only](../5_DatabaseInternals/AppendOnlyProperty.md)
-- RocksDB is [optimized for fast, low latency storage](../../7_PropertiesDistributedSystem/Scalability/Latency.md) such as flash drives and high-speed disk drives. 
+- RocksDB is [optimized for fast, low latency storage](../../7_Scalability/Latency.md) such as flash drives and high-speed disk drives. 
 - RocksDB exploits the full potential of high read/write rates offered by flash or RAM.
 
 # Ideal Use Cases

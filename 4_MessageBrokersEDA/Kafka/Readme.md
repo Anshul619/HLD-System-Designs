@@ -1,8 +1,8 @@
 # Apache Kafka 
 - [Apache Kafka](https://kafka.apache.org/) is an [open-source distributed event streaming platform](../EventDrivenArchitecture/Readme.md) used by thousands of companies for high-performance data pipelines, streaming analytics, data integration, and mission-critical applications.
 - [Kafka](https://kafka.apache.org/) is based on [Publish-Subscriber Model](../EventDrivenArchitecture/PubSubModel.md). And can be used for [Event-Driven Architecture](../EventDrivenArchitecture/Readme.md).
-- Kafka can process a [large amount of data](../../7_PropertiesDistributedSystem/Scalability/Throughput.md) in a short amount of time (**1 million messages/sec**).
-- It also has [low latency](../../7_PropertiesDistributedSystem/Scalability/Latency.md), making it possible to process data in real-time.
+- Kafka can process a [large amount of data](../../7_Scalability/Throughput.md) in a short amount of time (**1 million messages/sec**).
+- It also has [low latency](../../7_Scalability/Latency.md), making it possible to process data in real-time.
 
 # Basic Architecture of Kafka Cluster
 
@@ -44,7 +44,7 @@
 | Performance - High Throughput        | Each Kafka broker can serve more than **1 million messages per second** and can hold TBs of data.<br/>- Default configured message size in Kafka is **1MB**.                                                                                                                                                                                                                                    |
 | High Volume                          | Large amount of data can be stored in the Kafka pool.                                                                                                                                                                                                                                                                                                                                           |
 | Durability                           | The data is kept [persistent (as per retention policy)](../../3_DatabaseServices/1_ACIDTransactions/Durability.md) and tolerant to any hardware failures by copying the data in the clusters.                                                                                                                                                                                                     |
-| High Availability, Fault Tolerance   | The [distributed, partitioned, replicated](../../3_DatabaseServices/4_Consistency&Replication/Replication.md), and [fault-tolerant](../../7_PropertiesDistributedSystem/Reliability/FaultTolerance.md) nature of Kafka makes it very reliable.<br/>- Kafka connector can handle failures with three strategies summarised as **fast-fail**, **ignore** and **re-queue** (sends to another topic). |
+| High Availability, Fault Tolerance   | The [distributed, partitioned, replicated](../../3_DatabaseServices/4_Consistency&Replication/Replication.md), and [fault-tolerant](../../7a_HighAvailability/FaultTolerance.md) nature of Kafka makes it very reliable.<br/>- Kafka connector can handle failures with three strategies summarised as **fast-fail**, **ignore** and **re-queue** (sends to another topic). |
 | Extensibility                        | Allows multiple ways for applications to plugin and make use of Kafka.<br/>- Also, it has provisions for [new connectors](../../6_BigDataServices/DataConnectors/KafkaConnect.md) that you can write as needed.                                                                                                                                                                                 |
 | Data Processing/Transformation       | Using [Kafka Stream API](../../6_BigDataServices/DataProcessing/KafkaStreams/Readme.md), Kafka allows for deriving new data streams using the existing data streams from producers.                                                                                                                                                                                               |
 
@@ -122,7 +122,7 @@
 # Other Points
 - [Kafka vs Others](../KafkaVsRabbitMQVsSQSVsSNS.md)
 - [Kafka Estimates](KafkaEstimations.md)
-- [Apache Kafka - Benchmarking@LinkedIn](../../7a_SystemEstimations&Benchmarking/Benchmarking/KafkaBenchmarking.md)
+- [Apache Kafka - Benchmarking@LinkedIn](../../7c_SystemEstimations&Benchmarking/Benchmarking/KafkaBenchmarking.md)
 - [Why Kafka is so fast?](WhyKafkaSoFast.md)
 - [Amazon Managed Streaming for Apache Kafka (MSK)](../../2_AWSServices/5_MessageBrokerServices/AmazonMSK.md) can be used to deploy Kafka on [AWS](../../2_AWSServices).
 - [Kora: The Cloud Native Engine for Apache Kafka](https://www.confluent.io/blog/cloud-native-data-streaming-kafka-engine/)
