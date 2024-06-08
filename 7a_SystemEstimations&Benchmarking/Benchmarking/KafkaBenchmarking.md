@@ -29,10 +29,10 @@
 
 ## Results
 
-|            | Result            |
-|------------|-------------------|
+|            | Result              |
+|------------|---------------------|
 | Throughput | 821,557 records/sec |
-| Bytes/sec  | 78 MB/sec         |
+| Bytes/sec  | 78 MB/sec           |
 
 # Test2 - Single producer thread, 3x asynchronous replication
 

@@ -3,12 +3,12 @@
 This repo contains the various system design components info, questions and solutions.
 - [HLD Design Problems](0_HLDUseCasesProblems)
 - [Real-world tech stacks](1_TechStacks)
-- [Key Properties of Distributed Systems](7_PropertiesDistributedSystem/Readme.md)
+- [Key Properties of Distributed Systems](7_PropertiesDistributedSystem)
 - [Database Design tips](3_DatabaseServices/Readme.md)
 - [System Design Tips](SystemDesignTips.md)
-- [System Estimation & Benchmarking](SystemEstimations&Benchmarking)
+- [System Estimation & Benchmarking](7a_SystemEstimations&Benchmarking)
 - [All Comparisons](All-Comparisons.md)
-- [Architecture Patterns](ArchitecturePatterns/Readme.md)
+- [Architecture Patterns](7b_ArchitecturePatterns/Readme.md)
 
 # System Design - Tech Stack
 
@@ -242,10 +242,6 @@ This repo contains the various system design components info, questions and solu
   </tbody>
 </table>
 
-# Other HLD Services
-- [Observability & Monitoring](12_ObservabilityLogsServices/Readme.md)
-- [Open Source Contributions](1_TechStacks/OpenSourceContributions.md)
-
 # Programming & OOP Design & Problems (LLD)
 - :star: [OOP Design](https://github.com/Anshul619/OOPs-Design-Patterns-LLD/blob/main/OOP.md)
 - :star: [SOLID Principles](https://github.com/Anshul619/OOPs-Design-Patterns-LLD/blob/main/SOLID.md)
@@ -261,10 +257,13 @@ This repo contains the various system design components info, questions and solu
 - [TypeScript](https://github.com/Anshul619/Programming-Languages/tree/main/3_FrontEnd/TypeScript.md)
 - [Angular8](https://github.com/Anshul619/Programming-Languages/tree/main/3_FrontEnd/Angular8.md)
 
-# API Documentation, Testing
+# API Documentation, QA
 - :star: [Swagger](8_APIProtocols/API_Documentation/Swagger/Readme.md)
 - [Open API Spec](8_APIProtocols/API_Documentation/Swagger/OpenAPISpec.md)
-- [Testing](https://github.com/Anshul619/Programming-Languages/tree/main/5_QATools/Readme.md)
+- [QA/Testing](https://github.com/Anshul619/Programming-Languages/tree/main/5_QATools/Readme.md)
+
+# Other References
+- [Open Source Contributions](1_TechStacks/OpenSourceContributions.md)
 
 # Source(s) and further reading
 - [System Design Primer](https://github.com/donnemartin/system-design-primer)

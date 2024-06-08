@@ -122,7 +122,7 @@
 # Other Points
 - [Kafka vs Others](../KafkaVsRabbitMQVsSQSVsSNS.md)
 - [Kafka Estimates](KafkaEstimations.md)
-- [Apache Kafka - Benchmarking@LinkedIn](../../SystemEstimations&Benchmarking/Benchmarking/KafkaBenchmarking.md)
+- [Apache Kafka - Benchmarking@LinkedIn](../../7a_SystemEstimations&Benchmarking/Benchmarking/KafkaBenchmarking.md)
 - [Why Kafka is so fast?](WhyKafkaSoFast.md)
 - [Amazon Managed Streaming for Apache Kafka (MSK)](../../2_AWSServices/5_MessageBrokerServices/AmazonMSK.md) can be used to deploy Kafka on [AWS](../../2_AWSServices).
 - [Kora: The Cloud Native Engine for Apache Kafka](https://www.confluent.io/blog/cloud-native-data-streaming-kafka-engine/)

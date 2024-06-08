@@ -1,7 +1,7 @@
 # Amazon Simple Storage Service (S3)
 - [Amazon S3](https://aws.amazon.com/s3/) is an object store (flat-structure), meaning it is a higher layer data storage system, essentially [it is a database "blob" storage](https://www.techopedia.com/definition/32166/blob-storage), storing data in an underlying simple database as an object.
 - It's designed for [WRITE once READ many access i.e. append-only data structure](../../../3_DatabaseServices/5_DatabaseInternals/AppendOnlyProperty.md), perfect for [Static content](../../../7_PropertiesDistributedSystem/CDNs/StaticContent.md).
-- It's [distributed](../../../7_PropertiesDistributedSystem/Readme.md) and offers a very high level of redundancy i.e. [data is stored in 3 AZs within a specific region](../../AWS-Global-Architecture-Region-AZ.md).
+- It's [distributed](../../../7_PropertiesDistributedSystem) and offers a very high level of redundancy i.e. [data is stored in 3 AZs within a specific region](../../AWS-Global-Architecture-Region-AZ.md).
 
 # Use cases
 

@@ -10,8 +10,8 @@
 - Big Data workloads like map-reduce etc.
 
 # CPU Cycle
-- Adding two numbers takes a single CPU cycle
-- Every join waste one CPU cycle
+- Adding two numbers takes a single CPU cycle.
+- Every join waste one CPU cycle.
 
 # Why doesn't my program run faster with more CPUs?
 - Whether a program runs faster with more CPUs depends on the problem it is solving.
@@ -23,7 +23,7 @@ Sometimes adding more CPUs can slow a program down.
 - This is because passing data between threads involves switching contexts, which has significant cost, and that cost can increase with more CPUs.
 
 # GoRoutines and CPU Stats
-- Read here
+- [Read here](https://github.com/Anshul619/Golang/blob/main/GoRoutines%26Channels/Stats.md)
 
 # References
 - [How to run CPU-based Workloads for Deep Learning Using Thousands Of Spot Instances on AWS and GCP Without Getting a Headache](https://towardsdatascience.com/how-to-run-cpu-intensive-workloads-for-deep-learning-with-thousands-of-spot-instances-on-aws-and-85ce9d452f10)

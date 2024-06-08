@@ -1,6 +1,6 @@
 # Data Replication
 - [Replication](https://www.geeksforgeeks.org/data-replication-in-dbms/) is having multiple copies of the same data on different nodes.
-- It is widely used in the [distributed](../../7_PropertiesDistributedSystem/Readme.md) & [highly available](../../7_PropertiesDistributedSystem/Reliability/HighAvailability.md) database management systems (DBMS).
+- It is widely used in the [distributed](../../7_PropertiesDistributedSystem) & [highly available](../../7_PropertiesDistributedSystem/Reliability/HighAvailability.md) database management systems (DBMS).
 
 # :+1: Advantages of Replication
 
