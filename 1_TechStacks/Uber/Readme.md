@@ -2,7 +2,7 @@
 
 | Purpose                                 | Service                                                                                     |
 |-----------------------------------------|---------------------------------------------------------------------------------------------|
-| Data Encoding                           | [Apache Thrift](../../8_APIProtocols/SerializationFrameworks/Thrift.md)                     |
+| Data Encoding                           | [Apache Thrift](../../8_APIStandards/SerializationFrameworks/Thrift.md)                     |
 | Container Orchestration                 | [Apache Marathon & Mesos](../../9_Container&OrchestrationServices/ApacheMarathon&Mesos.md)  |
 | NoSQL DB                                | [20 Cassandra clusters](../../3_DatabaseServices/11_WideColumn-Databases/ApacheCasandra.md) |
 | Domain-Driven microservice architecture | [Read more](https://www.uber.com/en-IN/blog/microservice-architecture/)                     |

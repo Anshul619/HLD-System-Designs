@@ -16,16 +16,16 @@ This repo contains the various system design components info, questions and solu
   <tbody>
     <tr>
       <td>
-        <a href="8_APIProtocols/Readme.md">API Protocols</a>
+        <a href="8_APIStandards/Readme.md">API Protocols</a>
       </td>
       <td>
         <div class="container" style="background:white">
             <div class="block two first">
-                <a href="8_APIProtocols/REST.md" target="_blank">REST</a>
-                <a href="8_APIProtocols/gRPC.md" target="_blank">
+                <a href="8_APIStandards/REST.md" target="_blank">REST</a>
+                <a href="8_APIStandards/gRPC.md" target="_blank">
                   <img src="https://res.cloudinary.com/practicaldev/image/fetch/s--TNgs2Fd7--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/8susytd9w6lxe9sreqvd.jpg" width="150">
                 </a>
-                <a href="8_APIProtocols/GraphQL.md" target="_blank">
+                <a href="8_APIStandards/GraphQL.md" target="_blank">
                   <img src="https://marmelab.com/images/blog/graphql/logo.png" width="150">
                 </a>
             </div>
@@ -258,8 +258,8 @@ This repo contains the various system design components info, questions and solu
 - [Angular8](https://github.com/Anshul619/Programming-Languages/tree/main/3_FrontEnd/Angular8.md)
 
 # API Documentation, QA
-- :star: [Swagger](8_APIProtocols/API_Documentation/Swagger/Readme.md)
-- [Open API Spec](8_APIProtocols/API_Documentation/Swagger/OpenAPISpec.md)
+- :star: [Swagger](8_APIStandards/API_Documentation/Swagger/Readme.md)
+- [Open API Spec](8_APIStandards/API_Documentation/Swagger/OpenAPISpec.md)
 - [QA/Testing](https://github.com/Anshul619/Programming-Languages/tree/main/5_QATools/Readme.md)
 
 # Other References

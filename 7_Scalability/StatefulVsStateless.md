@@ -5,7 +5,7 @@
 - Sharing state with any instances, containers, or functions is possible by using in-memory object caching systems like [Redis](../3_DatabaseServices/8_InMemory-Databases/Redis) or distributed databases like [Cassandra](../3_DatabaseServices/11_WideColumn-Databases/ApacheCasandra.md) or [Amazon DynamoDB](../2_AWSServices/6_DatabaseServices/AmazonDynamoDB/Readme.md), depending on the structure of the object and the requirements in terms of performances.
 
 ## Examples
-- [REST APIs](../8_APIProtocols/REST.md)
+- [REST APIs](../8_APIStandards/REST.md)
 - [Container technologies](../9_Container&OrchestrationServices/Readme.md) like [Docker](../9_Container&OrchestrationServices/Docker/Readme.md), [Kubernetes](../9_Container&OrchestrationServices/Kubernates/Readme.md) etc.
 
 # Stateful Protocol
