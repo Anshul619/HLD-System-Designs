@@ -43,3 +43,4 @@
 
 # Read more
 - [AWS Summit ASEAN 2023 | Simplify data management with modern data architecture on AWS (INSO203)](https://www.youtube.com/watch?v=hwF0AZaUc6U)
+- [What is Data Pipeline? | Why Is It So Popular?](https://www.youtube.com/watch?v=kGT4PcTEPP8)
