@@ -22,3 +22,4 @@
 # References
 - [Martin Kleppmann | Kafka Summit London 2019 Keynote | Is Kafka a Database?](https://youtu.be/BuE6JvQE_CY)
 - [ACID Properties in DBMS](https://www.geeksforgeeks.org/acid-properties-in-dbms/)
+- [ACID Databases – Atomicity, Consistency, Isolation & Durability Explained](https://www.freecodecamp.org/news/acid-databases-explained/)

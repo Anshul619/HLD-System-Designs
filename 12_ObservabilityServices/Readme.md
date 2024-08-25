@@ -13,12 +13,15 @@
 | [Splunk](https://www.splunk.com/)                                                                | Observability, Alerts | No          | Splunk is a log aggregator while New Relic is a web application performance profiler. |
 | [SumoLogic](https://www.sumologic.com/)                                                          | Observability, Alerts | No          | Cloud-native SaaS analytics.                                                          |
 | [Source Code profiling](https://aws.amazon.com/codeguru/)                                        | Profiling             | No          |                                                                                       |
+| [Nagios](https://www.nagios.org/)                                                                | Observability         | Yes         |                                                                                       |
 
 # Terminologies
 
 | Term                           | Description                                                                                                                                                                                                                                                        |
 |--------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| MTTD (Mean time to Detection)  | MTTD is the amount of time, on average, between the start of an issue and when teams become aware of it. This does not include time spent troubleshooting or fixing the issue.                                                                                     |
-| MTTR (Mean time to Resolution) | MTTR is the average amount of time between when an issue is detected, and when systems are fixed and operating normally again. <br/>- Ideally this includes both time spent fixing the issue, and implementing proactive steps to prevent it from happening again. |
+| MTTD (Mean time to Detection)  | [MTTD](https://www.logicmonitor.com/blog/whats-the-difference-between-mttr-mttd-mttf-and-mtbf) is the amount of time, on average, between the start of an issue and when teams become aware of it. This does not include time spent troubleshooting or fixing the issue.                                                                                     |
+| MTTR (Mean time to Resolution) | [MTTR](https://www.logicmonitor.com/blog/whats-the-difference-between-mttr-mttd-mttf-and-mtbf) is the average amount of time between when an issue is detected, and when systems are fixed and operating normally again. <br/>- Ideally this includes both time spent fixing the issue, and implementing proactive steps to prevent it from happening again. |
 | Telemetry Data                 | MELT - Metrics, Events, Logs, and Traces.                                                                                                                                                                                                                          |
 
+# References
+- [Opportunities in Observability](https://rosslazer.com/posts/opps-in-o11y/)

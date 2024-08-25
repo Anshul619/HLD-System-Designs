@@ -13,7 +13,7 @@
 | [Point-2-Point model](../4_MessageBrokersEDA/EventDrivenArchitecture/PointToPointModel.md)                                        | [Message Broker Services](../4_MessageBrokersEDA) |
 | [Fan-out pattern - Amazon SNS](../2_AWSServices/5_MessageBrokerServices/AmazonSNS.md)                                             | [Message Broker Services](../4_MessageBrokersEDA) |
 | [Sharding/Partitioning](../3_DatabaseServices/3_ScalabilityTechniques/PartitioningSharding/Readme.md)                             | [Database Services](../3_DatabaseServices/)       |
-| [Domain Driven architecture](DomainDrivenArchitecture.md)                                                                         |                                                   |
+| [Domain Driven architecture](DomainDrivenDevelopment.md)                                                                          |                                                   |
 | [Shared nothing architecture](SharedNothingArchitecture.md)                                                                       |                                                   |
 | [Leader Election](../10_ClusterCoordinationServices/Readme.md)                                                                    |                                                   |
 | [Reactive Architecture](https://medium.com/big-data-cloud-computing-and-distributed-systems/reactive-architecture-i-5652f944f8fb) |                                                   |

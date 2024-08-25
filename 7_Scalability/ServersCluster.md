@@ -9,7 +9,7 @@
 |----------------------------------------------------------------------------------------------------------|-------------------------------------------|
 | [Kubernates Cluster](../9_Container&OrchestrationServices/Kubernates/Readme.md)                        | Cluster of Containers                     |
 | [Kafka Cluster](../4_MessageBrokersEDA/Kafka/Readme.md)                                               | Cluster of Topics (High-Throughput MQ)    |                     
-| [Amazon RDS Clusters](../2_AWSServices/6_DatabaseServices/AmazonRDS/MultiAZDeployment.md)             | Cluster of DB instances, across Multi-AZs |
+| [Amazon RDS Clusters](../2_AWSServices/6_DatabaseServices/AmazonRDS/RDSDeploymentOptions/MultiAZInstance.md)             | Cluster of DB instances, across Multi-AZs |
 | [Redis Cluster](../3_DatabaseServices/8_InMemory-Databases/Redis/RedisCluster.md)                     | Cluster of Redis Nodes (In-Memory Cache)  |
 | [Amazon Elastic Cache Cluster](../2_AWSServices/6_DatabaseServices/AmazonElasticCache/ClusterMode.md) | Cluster of Redis Nodes, across Multi-AZs  |
 | [ElasticSearch Cluster](../3_DatabaseServices/9_Search-Databases/ElasticSearch/Cluster.md)            | Cluster of JSON Data, Indexes etc.        |

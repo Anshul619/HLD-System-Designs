@@ -1,13 +1,13 @@
 # Microservices design
 - [Microservices](https://microservices.io/index.html) are a modern [Service-Oriented Architecture](https://www.geeksforgeeks.org/service-oriented-architecture/).
-- In a [Microservice Architecture](), each service is self-contained, implements a [single responsibility and business capability](../7b_ArchitecturePatterns/DomainDrivenArchitecture.md).
+- In a [Microservice Architecture](), each service is self-contained, implements a [single responsibility and business capability](../7b_ArchitecturePatterns/DomainDrivenDevelopment.md).
 - [Microservice architecture]() makes it easier and fastest way to build and work on individual parts of an application, and thus the application as a whole.
 - Example - User Management, Order Management, Checkout, Address etc.
 
 # Features
 - [Design Patterns](DesignPatterns/Readme.md)
 - [Spring Cloud vs K8s vs AWS](SpringCloudVsK8sVsAWS.md)
-- [API Gateway](1_APIGateway)
+- [API Gateway](1_APIGateway/Readme.md)
 - [Service Registry and Discovery](2_ServiceRegistry&Discovery/Readme.md)
 - [ServiceMesh](3_ServiceMesh.md)
 - [OnPerm - Microservice Implementation in Spring Boot](https://github.com/Anshul619/Programming-Languages/tree/main/1_Java/SpringBootAndMicroServices/Readme.md)
