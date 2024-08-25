@@ -2,20 +2,19 @@
 
 | Pattern                                                                                                                           | Service Type                                      |
 |-----------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------|
-| :star: [AWS - Serverless architecture](../2_AWSServices/AWS-Serverless-Architecture.md)                                           |                                                   |
-| :star: [MicroServices Pattern](../5_MicroServicesSOA/Readme.md)                                                                   | [MicroServices](../5_MicroServicesSOA)            |
-| [Circuit Breaker Pattern](CircuitBreaker.md)                                                                                      | [MicroServices](../5_MicroServicesSOA)            |
-| [Command Query Responsibility Segregation (CQRS)](../5_MicroServicesSOA/DesignPatterns/CQRS.md)                                   | [MicroServices](../5_MicroServicesSOA)            |
-| [Event Sourcing Pattern](../5_MicroServicesSOA/DesignPatterns/EventSourcing.md)                                                   | [MicroServices](../5_MicroServicesSOA)            |
-| [Microservices - Design Patterns](../5_MicroServicesSOA/DesignPatterns/Readme.md)                                                 | [MicroServices](../5_MicroServicesSOA)            |
+| :star: [AWS - Serverless architecture](../2_AWS/AWS-Serverless-Architecture.md)                                           |                                                   |
+| :star: [MicroServices Pattern](../5_MicroServices/DesignPatterns/Readme.md)                                                    | [MicroServices](../5_MicroServices/Readme.md)  |
 | :star: [Event-Driven Architecture](../4_MessageBrokersEDA/EventDrivenArchitecture/Readme.md)                                      | [Message Broker Services](../4_MessageBrokersEDA) |
-| [Pub-Sub model](../4_MessageBrokersEDA/EventDrivenArchitecture/PubSubModel.md)                                                    | [Message Broker Services](../4_MessageBrokersEDA) |
-| [Point-2-Point model](../4_MessageBrokersEDA/EventDrivenArchitecture/PointToPointModel.md)                                        | [Message Broker Services](../4_MessageBrokersEDA) |
-| [Fan-out pattern - Amazon SNS](../2_AWSServices/5_MessageBrokerServices/AmazonSNS.md)                                             | [Message Broker Services](../4_MessageBrokersEDA) |
-| [Sharding/Partitioning](../3_DatabaseServices/3_ScalabilityTechniques/PartitioningSharding/Readme.md)                             | [Database Services](../3_DatabaseServices/)       |
+| [Sharding/Partitioning](../3_Databases/3_ScalabilityTechniques/PartitioningSharding/Readme.md)                             | [Database Services](../3_Databases/)       |
 | [Domain Driven architecture](DomainDrivenDevelopment.md)                                                                          |                                                   |
 | [Shared nothing architecture](SharedNothingArchitecture.md)                                                                       |                                                   |
-| [Leader Election](../10_ClusterCoordinationServices/Readme.md)                                                                    |                                                   |
+| [Circuit Breaker Pattern](CircuitBreaker.md)                                                                                      | [MicroServices](../5_MicroServices/Readme.md)  |
+| [Command Query Responsibility Segregation (CQRS)](../5_MicroServices/DesignPatterns/CQRS.md)                                   | [MicroServices](../5_MicroServices/Readme.md)  |
+| [Event Sourcing Pattern](../5_MicroServices/DesignPatterns/EventSourcing.md)                                                   | [MicroServices](../5_MicroServices/Readme.md)  |
+| [Pub-Sub model](../4_MessageBrokersEDA/EventDrivenArchitecture/PubSubModel.md)                                                    | [Message Broker Services](../4_MessageBrokersEDA) |
+| [Point-2-Point model](../4_MessageBrokersEDA/EventDrivenArchitecture/PointToPointModel.md)                                        | [Message Broker Services](../4_MessageBrokersEDA) |
+| [Fan-out pattern - Amazon SNS](../2_AWS/5_MessageBrokerServices/AmazonSNS.md)                                             | [Message Broker Services](../4_MessageBrokersEDA) |
+| [Leader Election](../10_ClusterCoordination/Readme.md)                                                                    |                                                   |
 | [Reactive Architecture](https://medium.com/big-data-cloud-computing-and-distributed-systems/reactive-architecture-i-5652f944f8fb) |                                                   |
 
 # Read more

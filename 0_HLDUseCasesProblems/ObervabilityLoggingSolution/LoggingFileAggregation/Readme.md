@@ -5,12 +5,12 @@
   - If not create a file
   - Append data to file
 - Users can call this api concurrently
-- Ensure [durability](../../../3_DatabaseServices/1_ACIDTransactions/Durability.md) - file must be saved, before return true to the API.
+- Ensure [durability](../../../3_Databases/1_ACIDTransactions/Durability.md) - file must be saved, before return true to the API.
 
 ![img.png](LoggingFileAggregation.drawio.png)
 
 # Possible Design Options
-- Delayed/Eventual Aggregation, using [FileBeat & ELK Stack](../../../12_ObservabilityServices/ELK.md).
+- Delayed/Eventual Aggregation, using [FileBeat & ELK Stack](../../../12_Observability/ELK.md).
 
 # Design Steps
 - Recently opened file handles should be stored in the local app server cache.

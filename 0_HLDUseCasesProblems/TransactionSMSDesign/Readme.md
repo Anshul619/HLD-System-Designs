@@ -8,15 +8,15 @@
 
 | Tech Stack                                                                                                                             |
 |----------------------------------------------------------------------------------------------------------------------------------------|
-| [AWS AutoScaling Group](../../2_AWSServices/3_ComputeServices/AmazonEC2/AutoScalingGroup/Readme.md)                                  |
-| [AWS AutoScaling based on SQS Queue Size](../../2_AWSServices/3_ComputeServices/AmazonEC2/AutoScalingGroup/SQSBasedScalingPolicy.md) |
-| [Elastic Load Balancing](../../2_AWSServices/1_NetworkingAndContentDelivery/2_ApplicationNetworking/ElasticLoadBalancer/Readme.md)   |
-| [Amazon SQS](../../2_AWSServices/5_MessageBrokerServices/AmazonSQS/Readme.md)                                                        |
-| [Redis](../../3_DatabaseServices/8_InMemory-Databases/Redis/Readme.md)                                                 |
+| [AWS AutoScaling Group](../../2_AWS/3_ComputeServices/AmazonEC2/AutoScalingGroup/Readme.md)                                  |
+| [AWS AutoScaling based on SQS Queue Size](../../2_AWS/3_ComputeServices/AmazonEC2/AutoScalingGroup/SQSBasedScalingPolicy.md) |
+| [Elastic Load Balancing](../../2_AWS/1_NetworkingAndContentDelivery/2_ApplicationNetworking/ElasticLoadBalancer/Readme.md)   |
+| [Amazon SQS](../../2_AWS/5_MessageBrokerServices/AmazonSQS/Readme.md)                                                        |
+| [Redis](../../3_Databases/8_InMemory-Databases/Redis/Readme.md)                                                 |
 
 # How would we implement rate limiting of the 3rd party SMS providers? (& follow their SLA)
 - We would need to rate limit on our end, before calling 3rd-party API (which might have a limit in their SLA).
-- We can achieve this either by using [Redis](../../3_DatabaseServices/8_InMemory-Databases/Redis/Readme.md) (for distributed system) or we can check the current processing queue size to handle this.
+- We can achieve this either by using [Redis](../../3_Databases/8_InMemory-Databases/Redis/Readme.md) (for distributed system) or we can check the current processing queue size to handle this.
 - [To understand more about Rate Limiting, check here](../RateLimiterAPI/Readme.md)
 
 # References

@@ -13,7 +13,7 @@
 | Title                                                                                | Remarks                                                                                                                                                                 |
 |--------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Traffic                                                                              | A million of orders per day                                                                                                                                             |
-| [Consistency](../../3_DatabaseServices/4_Consistency&Replication/Readme.md) | Strong consistency for transactional queries, and eventually consistency for analytical queries.                                                                        |
+| [Consistency](../../3_Databases/4_Consistency&Replication/Readme.md) | Strong consistency for transactional queries, and eventually consistency for analytical queries.                                                                        |
 | Traffic Pattern - Peak Hours                                                         | During peak hours, the write Queries per Second (QPS) is three times of primary key reads; whilst the range Queries per Second are four times of the primary key reads. |
 
 # Requirements
@@ -24,19 +24,19 @@
 | Update an order                                              | Write      | OLTP/Transactional                                                                 |
 | Get order by id                                              | Read       | OLTP/Transactional                                                                 |
 | Get ongoing orders by passenger id.                          | Read       | OLTP/Transactional                                                                 |
-| Get historical orders by various conditions.                 | Read       | [OLAP/Analytical](../../6_BigDataServices/DataStorage/DataWarehouses/Readme.md) |
-| Get order statistics (for example, get the number of orders) | Read       | [OLAP/Analytical](../../6_BigDataServices/DataStorage/DataWarehouses/Readme.md) |
+| Get historical orders by various conditions.                 | Read       | [OLAP/Analytical](../../6_BigData/DataStorage/DataWarehouses/Readme.md) |
+| Get order statistics (for example, get the number of orders) | Read       | [OLAP/Analytical](../../6_BigData/DataStorage/DataWarehouses/Readme.md) |
 
 # Tech Stack
 
 | Purpose                 | Service                                                                            | Remarks                                                                                                                                          |
 |-------------------------|------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------|
-| OLTP Database           | [Amazon DynamoDB](../../2_AWSServices/6_DatabaseServices/AmazonDynamoDB/Readme.md) | An OLTP database serves queries critical to online order processing. <br/>- This table keeps data for only a short period of time.               |
+| OLTP Database           | [Amazon DynamoDB](../../2_AWS/6_DatabaseServices/AmazonDynamoDB/Readme.md) | An OLTP database serves queries critical to online order processing. <br/>- This table keeps data for only a short period of time.               |
 | OLAP database           | Amazon MySQL RDS                                                                   | an OLAP database has the same set of data, but serves our historical and statistical queries. <br/>- This database keeps data for a longer time. |
 | Data Ingestion Pipeline | [Kafka](../../4_MessageBrokersEDA/Kafka/Readme.md)                                    | The data ingestion pipeline ensures that the OLAP database data is eventually consistent.                                                        |
 
 # OLTP database - DynamoDB
-- The retention period of the [DynamoDB data](../../2_AWSServices/6_DatabaseServices/AmazonDynamoDB/Readme.md) is three months.
+- The retention period of the [DynamoDB data](../../2_AWS/6_DatabaseServices/AmazonDynamoDB/Readme.md) is three months.
 
 ![](https://engineering.grab.com/img/how-we-store-millions-orders/image2.png)
 

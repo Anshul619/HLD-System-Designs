@@ -3,7 +3,7 @@
 [Rate limiting](https://medium.com/geekculture/system-design-basics-rate-limiter-351c09a57d14) refers to preventing the frequency of an operation from exceeding a defined limit. 
 - In large-scale systems, rate limiting is commonly used to protect underlying services and resources. 
 - Rate limiting is generally used as a defensive mechanism in distributed systems, so that shared resources can maintain availability.
-- [AWS WAF](../../2_AWSServices/2c_SecurityServices/2_InfraProtectionServices/AWSWAF.md) can be used to rate limit the APIs in AWS.
+- [AWS WAF](../../2_AWS/2c_SecurityServices/2_InfraProtectionServices/AWSWAF.md) can be used to rate limit the APIs in AWS.
 
 ![img.png](assets/what-is-rate-limiting.png)
 
@@ -63,7 +63,7 @@ For example
 ## :star: Sliding Window algorithm
 
 We can maintain a sliding window if we can keep track of each request per user.
-- We can store the timestamp of each request in a [Redis Sorted Set](../../3_DatabaseServices/8_InMemory-Databases/Redis/Readme.md) in our ‘value’ field of hash-table.
+- We can store the timestamp of each request in a [Redis Sorted Set](../../3_Databases/8_InMemory-Databases/Redis/Readme.md) in our ‘value’ field of hash-table.
 - This is like Priority Queue Implementation.
 
 Let’s assume our rate limiter is allowing three requests per minute per user, so, whenever a new request comes in, the Rate Limiter will perform following steps:
@@ -76,7 +76,7 @@ Sliding Window Algorithm takes a lot of memory compared to the Fixed Window; thi
 - If we need to track one million users at any time, total memory we would need would be 12GB.
 
 What if we keep track of request counts for each user using multiple fixed time windows, e.g., 1/60th the size of our rate limit’s time window.
-- We can store our counters in a [Redis Hash](../../3_DatabaseServices/8_InMemory-Databases/Redis/Readme.md) since it offers incredibly efficient storage for fewer than 100 keys. 
+- We can store our counters in a [Redis Hash](../../3_Databases/8_InMemory-Databases/Redis/Readme.md) since it offers incredibly efficient storage for fewer than 100 keys. 
 - When each request increments a counter in the hash, it also sets the hash to expire an hour later. 
 - We will normalize each ‘time’ to a minute.
 
@@ -89,12 +89,12 @@ Rate Limiter will be responsible for deciding which request will be served by th
 For each unique user, we would keep a count representing how many requests the user has made and a timestamp when we started counting the requests.
 
 # Distributed Rate limiter implementation for an API
-- In distributed systems, Rate limit can be implemented using [Redis (as centralized data store, to solve inconsistency problem)](../../3_DatabaseServices/8_InMemory-Databases/Redis/Readme.md)
+- In distributed systems, Rate limit can be implemented using [Redis (as centralized data store, to solve inconsistency problem)](../../3_Databases/8_InMemory-Databases/Redis/Readme.md)
 
 ![img.png](assets/HLD%20-%20RateLimiter.drawio.png)
 
 Note:
-- If we are using [Redis](../../3_DatabaseServices/8_InMemory-Databases/Redis/Readme.md) to store our key-value, one solution to resolve the atomicity problem is to use [Redis lock](../../3_DatabaseServices/8_InMemory-Databases/Redis/Readme.md) for the duration of the read-update operation.
+- If we are using [Redis](../../3_Databases/8_InMemory-Databases/Redis/Readme.md) to store our key-value, one solution to resolve the atomicity problem is to use [Redis lock](../../3_Databases/8_InMemory-Databases/Redis/Readme.md) for the duration of the read-update operation.
 - This, however, would come at the expense of slowing down concurrent requests from the same user and introducing another layer of complexity
 
 # Should we rate limit by IP or by user?
@@ -113,7 +113,7 @@ Note:
 - The weakness of this rate-limiting would be that a hacker can perform a denial of service attack against a user by entering wrong credentials up to the limit; after that the actual user will not be able to log-in.
 
 ## How would it work?
-- When a request is made, a new temporary record is stored in [Redis](../../3_DatabaseServices/8_InMemory-Databases/Redis/Readme.md). 
+- When a request is made, a new temporary record is stored in [Redis](../../3_Databases/8_InMemory-Databases/Redis/Readme.md). 
 - This record is defined by the IP address of the request and will expire.
 - If a second request is made before the first expires, the record count is incremented.
 - For each request made within the rate limit window, the record is incremented.
@@ -129,12 +129,12 @@ Note:
 ## Two Major Issues & Solution
 
 ### Race Conditions
-- To solve the race condition while updating the counter in [Redis](../../3_DatabaseServices/8_InMemory-Databases/Redis/Readme.md), we would have to apply [transaction locks on the read-write operation](../../3_DatabaseServices/8_InMemory-Databases/Redis/Readme.md#redis-transaction-lock).
-- This would make the [counter update as atomic](../../3_DatabaseServices/1_ACIDTransactions/Atomicity.md) in Redis.
+- To solve the race condition while updating the counter in [Redis](../../3_Databases/8_InMemory-Databases/Redis/Readme.md), we would have to apply [transaction locks on the read-write operation](../../3_Databases/8_InMemory-Databases/Redis/Readme.md#redis-transaction-lock).
+- This would make the [counter update as atomic](../../3_Databases/1_ACIDTransactions/Atomicity.md) in Redis.
 - But this comes at a performance cost ( as latency would increase ).
 
 ### Inconsistency
-- Using the consistent data store (like [Redis](../../3_DatabaseServices/8_InMemory-Databases/Redis/Readme.md), [Cassandra](../../3_DatabaseServices/11_WideColumn-Databases/ApacheCasandra.md)), we can solve inconsistency problem of current rate limiting in distributed systems.
+- Using the consistent data store (like [Redis](../../3_Databases/8_InMemory-Databases/Redis/Readme.md), [Cassandra](../../3_Databases/11_WideColumn-Databases/ApacheCasandra.md)), we can solve inconsistency problem of current rate limiting in distributed systems.
 - This would add a bit of latency.
 
 # Estimation

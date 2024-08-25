@@ -1,5 +1,0 @@
-# Amazon DocumentDB
-- [Amazon DocumentDB](https://aws.amazon.com/documentdb/) is a fast, reliable, and fully managed database service that allows you to set up, operate, and scale [MongoDB-compatible databases](../../3_DatabaseServices/10_Document-Databases/MongoDB.md) in the cloud. 
-- With [Amazon DocumentDB](), you can run the same application code and use the same drivers and tools that you use with [MongoDB](../../3_DatabaseServices/10_Document-Databases/MongoDB.md).
-- [Amazon DocumentDB]() is used for storing semi-structured data as a document, rather than normalizing data across multiple tables, each with a unique and fixed structure, as in a relational database. 
-- Documents stored in a document database use nested key-value pairs to provide the document's schema.

@@ -4,7 +4,7 @@
 
 # Shard Config Table
 - It maintains the configuration of which shard on which machine?
-- The config lives in [ZooKeeper](../../10_ClusterCoordinationServices/ApacheZookeeper.md) and, on update, is sent to services that maintain the MySQL shard.
+- The config lives in [ZooKeeper](../../10_ClusterCoordination/ApacheZookeeper.md) and, on update, is sent to services that maintain the MySQL shard.
 
 ````json
 [{“range”: (0,511), “master”: “MySQL001A”, “slave”: “MySQL001B”},
