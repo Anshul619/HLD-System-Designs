@@ -6,6 +6,14 @@
 | [Blue-Green Deployment](https://circleci.com/blog/canary-vs-blue-green-downtime/)                                         | [Blue-green deployment](https://circleci.com/blog/canary-vs-blue-green-downtime/) splits the application environment into two equally-resourced sections, Blue and Green. <br/>- You serve the current application on one half of your environment (Blue) using your load balancer to direct traffic. <br/>- You can then deploy your new application to the other half of your environment (Green) without affecting the blue environment. |
 | Simple Deployment                                                                                                         | Simple deployment with new version, updating on old versions.                                                                                                                                                                                                                                                                                                                                                                               |
 
+# Blue-Green Deployment
+
+![](https://webplutora.wpenginepowered.com/wp-content/uploads/2022/05/Asset-159Deployment-Methods-1536x477.png)
+
+# Canary Deployment
+
+![](https://webplutora.wpenginepowered.com/wp-content/uploads/2022/05/Asset-160Deployment-Methods-931x1024.png)
+
 # AWS Supported Services for Canary or Blue-Green deployment
 
 | AWS Service                                                                                                                            | Remarks |
@@ -14,14 +22,6 @@
 | [AWS Global Accelerator](../2_AWS/1_NetworkingAndContentDelivery/1_EdgeNetworking/AWSGlobalAccelerator.md)             | -       |
 | [Elastic Load Balancer](../2_AWS/1_NetworkingAndContentDelivery/2_ApplicationNetworking/ElasticLoadBalancer/Readme.md) | -       |
 | [Code Deploy](../2_AWS/9_InfrastructureAsCode/AWSCodePipeline.md)                                                      | -       |
-
-# Blue-Green Deployment
-
-![](https://webplutora.wpenginepowered.com/wp-content/uploads/2022/05/Asset-159Deployment-Methods-1536x477.png)
-
-# Canary Deployment
-
-![](https://webplutora.wpenginepowered.com/wp-content/uploads/2022/05/Asset-160Deployment-Methods-931x1024.png)
 
 # Reference
 - [Canary vs blue-green deployment to reduce enterprise downtime](https://circleci.com/blog/canary-vs-blue-green-downtime/)
