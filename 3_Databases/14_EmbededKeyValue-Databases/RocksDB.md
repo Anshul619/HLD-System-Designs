@@ -11,7 +11,7 @@
 
 # :star: Real world use cases of RocksDB
 - [LinkedIn - Home Feed](../../1_TechStacks/LinkedIn/Readme.md)
-- [Facebook - Home Feed](../../1_TechStacks/FacebookTechStack.md)
+- [Facebook - Home Feed](../../1_TechStacks/Facebook.md)
 
 # References
 - [RocksDB: A High Performance Embedded Key-Value Store for Flash Storage - Data@Scale](https://www.youtube.com/watch?v=V_C-T5S-w8g)

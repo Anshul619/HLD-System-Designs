@@ -28,7 +28,7 @@ The application should be able to support the following requirements.
 |-----------|--------------------------------------------------------|
 | LinkedIn  | [Tech Stack](../../1_TechStacks/LinkedIn/Readme.md)    |
 | Instagram | [Tech Stack](../../1_TechStacks/Instagram/Readme.md) |
-| Facebook  | [Tech Stack](../../1_TechStacks/FacebookTechStack.md)  |
+| Facebook  | [Tech Stack](../../1_TechStacks/Facebook.md)  |
 | Twitter   |                                                        |
 
 

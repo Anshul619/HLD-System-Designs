@@ -2,17 +2,18 @@
 
 | Use Case               | Description                                                  | Benefit                                 |
 |------------------------|--------------------------------------------------------------|-----------------------------------------|
-| Automated KYC          | To power fast and accurate KYC                               | Enhanced onboarding experience          |
+| Automated KYC          | To power fast and accurate KYC                               | Enhanced on-boarding experience         |
 | Docs AI                | AI generated integration code, ready for testing and go-live | Improving integration experience        |
 | Fraud Suite            | Fraud Shield, RTO protection                                 | Reducing merchant frauds                |
 | Dynamic Routing Engine | To route transactions via fastest and most reliable pipe     | Ensuring most efficient routing         |
 | AI Recon               | To identify unreconciled transactions                        | Improving reconciliation experience     |
 | Tax                    | To simplify payroll and taxation processes                   | Improving payroll experience            |
 | RAY                    | Conversational chatbot for merchants                         | Less service volume and more cross sell |
+| Traffic Prediction     | Traffic prediction using AI, to pre-warm infra               |                                         |
 
 # DDD & AI for better developer experience
-- Consistent DDD modeling
-- Consistent Arch Patterns defined - for all services a consistent arch patterns with protobuffs, standard api definitions & event driven architecture was defined.
+- Consistent [DDD modeling](../../7b_ArchitecturePatterns/DomainDrivenDevelopment.md)
+- Consistent Arch Patterns defined - for all services a consistent arch patterns with [protobuffs](../../8_APIStandards/SerializationFrameworks/ProtocolBuffers.md), standard api definitions & event driven architecture was defined.
 - Domain specific language model for code gen 
 
 # Security in AI Modeling

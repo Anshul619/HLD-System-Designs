@@ -31,10 +31,10 @@
 | [Flight Booking Search - HLD Design](../../0_HLDUseCasesProblems/FlightBookingSearchMakeMyTrip/Readme.md)                                        |
 | [Amplitude - Reducing costs with AZ-awareness for Kafka](../../1_TechStacks/Amplitude/Readme.md)                                                 |
 | [BigCommerce - Real-time events](../../1_TechStacks/BigCommerce/Readme.md)                                                                       |
-| [Paypal - Kafka](../../1_TechStacks/PayPalTechStack.md)                                                                                          |
+| [Paypal - Kafka](../../1_TechStacks/PayPal.md)                                                                                          |
 | [Grab - Orders Processing](../../1_TechStacks/Grab/OrdersProcessing.md)                                                                          |
-| [Swiggy (through Confluent)](../../1_TechStacks/SwiggyTechStack.md)                                                                              |
-| [Split.io - Messsage Broker](../../1_TechStacks/SplitIOTechStack.md)                                                                             |
+| [Swiggy (through Confluent)](../../1_TechStacks/Swiggy.md)                                                                              |
+| [Split.io - Messsage Broker](../../1_TechStacks/SplitIO.md)                                                                             |
 
 # Top Features of Kafka
 

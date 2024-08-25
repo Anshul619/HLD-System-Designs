@@ -25,8 +25,8 @@
 
 |        | Remarks                                                      |
 |--------|--------------------------------------------------------------|
-| Zomato | [Swiggy - Tech Stack](../../1_TechStacks/ZomatoTechStack.md) |
-| Swiggy | [Swiggy - Tech Stack](../../1_TechStacks/SwiggyTechStack.md) |
+| Zomato | [Swiggy - Tech Stack](../../1_TechStacks/Zomato.md) |
+| Swiggy | [Swiggy - Tech Stack](../../1_TechStacks/Swiggy.md) |
 | Grab   | [Grab - Tech Stack](../../1_TechStacks/Grab/Readme.md)       |
 
 # Tech Decisions

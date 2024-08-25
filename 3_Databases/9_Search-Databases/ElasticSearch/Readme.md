@@ -8,7 +8,7 @@
 - [Logging Solution in Distributed Systems - HLD Design](../../../0_HLDUseCasesProblems/ObervabilityLoggingSolution/LoggingFileAggregation/Readme.md)
 - [Flight Booking Search - HLD Design](../../../0_HLDUseCasesProblems/FlightBookingSearchMakeMyTrip/Readme.md)
 - [Grab - Search Index Optimization](../../../1_TechStacks/Grab/SearchIndexing.md)
-- [Shopify: Powering the search for better help documentation using Elastic Site Search](../../../1_TechStacks/ShopifyTechStack.md)
+- [Shopify: Powering the search for better help documentation using Elastic Site Search](../../../1_TechStacks/Shopify.md)
 
 # :star: General Use Cases of Search-Indexes
 - [Search - Full-text, Partial etc.](https://www.elastic.co/guide/en/elasticsearch/reference/current/full-text-queries.html)

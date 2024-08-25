@@ -12,12 +12,12 @@
 | Use Case                                                                 |
 |--------------------------------------------------------------------------|
 | [Zomato](../../0_HLDUseCasesProblems/FoodOrderingZomatoSwiggy/Readme.md) |
-| [Swiggy](../../1_TechStacks/SwiggyTechStack.md)                          |
+| [Swiggy](../../1_TechStacks/Swiggy.md)                          |
 | [Spotify](../../1_TechStacks/Spotify/Readme.md)                          |
 | [Grab](../../1_TechStacks/Grab/Readme.md)                                |
 | [LinkedIn](../../1_TechStacks/LinkedIn/Readme.md)                        |
-| [Split.io](../../1_TechStacks/SplitIOTechStack.md)                       |
-| [Stripe](../../1_TechStacks/StripeTechStack.md)                          |
+| [Split.io](../../1_TechStacks/SplitIO.md)                       |
+| [Stripe](../../1_TechStacks/Stripe.md)                          |
 
 # Resources and Limits
 
