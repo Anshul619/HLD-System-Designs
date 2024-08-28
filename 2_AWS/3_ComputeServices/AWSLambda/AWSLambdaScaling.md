@@ -8,7 +8,7 @@
 | [Concurrency limit](https://aws.amazon.com/premiumsupport/knowledge-center/lambda-concurrency-limit-increase/) | If we set it to 0, the lambda would stop processing any events. It achieves following<br/>- Limit costs<br/>- Regulate how long it takes you to process a batch of events.<br/>- Match it with a downstream resource that cannot scale as quickly as Lambda, for example - [Support 3rd-party API rate limiting](https://aws.amazon.com/blogs/architecture/rate-limiting-strategies-for-serverless-applications/)            |
 
 # Per-shard Concurrency Limit
-- Streaming event sources (like [Amazon Kinesis Data Streams](../../5_MessageBrokerServices/AmazonKinesis/AmazonKinesisDataStreams.md)) measure concurrency by the number of shards. There is a limit of one concurrent Lambda invocation per shard.
+- Streaming event sources (like [Amazon Kinesis Data Streams](../../5_MessageBrokerServices/AmazonKinesis/Readme.md)) measure concurrency by the number of shards. There is a limit of one concurrent Lambda invocation per shard.
 - For most streaming services, Lambda will continue to retry a record, until the record is successfully processed, or the retention period for the record expires. 
 - That means that if one record in a batch fails, the whole batch of records and by extension the shard serving that batch is held up until the retention period expires. 
 - This is why it’s important to include code to handle a partial failure or poison message scenario, so you can get past a bad record.

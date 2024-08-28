@@ -1,6 +1,6 @@
 # Monzo Bank
 
-|               | Service            |
+| Purpose              | Service            |
 |---------------|--------------------|
 | Orchestrator  | Kubernates         |
 | Microservices | 2600 microservices |

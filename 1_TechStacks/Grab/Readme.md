@@ -18,7 +18,7 @@
 
 | Use Case                                          |
 |---------------------------------------------------|
-| [Grab Order Processing](OrdersProcessing.md)      |
+| [Grab Order Processing](OrderProcessing/Readme.md)      |
 | [Search Indexes Optimization](SearchIndexing.md)  |
 | [Graph Service Platform](GraphServicePlatform.md) |
 | [Kafka as Message Broker](KafkaMessageBroker.md)  |

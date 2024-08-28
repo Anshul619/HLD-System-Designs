@@ -13,13 +13,14 @@ Every definition of [serverless](https://aws.amazon.com/serverless/) mentions th
 |--------------------------------------------------------------------------------------------------|---------------------|----------------------------------------------------------------------------------------|
 | :star: [AWS Lambda](3_ComputeServices/AWSLambda/Readme.md)                                       | Compute             |                                                                                        |
 | [AWS Fargate](3_ComputeServices/AWSFargate.md)                                                   | Compute             | [AWS Fargate vs Lambda](3_ComputeServices/AWSFargateVsLambda.md)                       |
-| [AWS Step Functions](3_ComputeServices/AWSStepFunctions.md)                                      | Compute             |                                                                                        |
+| [AWS Step Functions](3_ComputeServices/AWSStepFunctions/Readme.md)                               | Compute             |                                                                                        |
 | [Amazon DynamoDB](6_DatabaseServices/AmazonDynamoDB/Readme.md)                                   | Database            | [DynamoDB - Capacity Modes](6_DatabaseServices/AmazonDynamoDB/CapacityModes/Readme.md) |
-| [Amazon Aurora](6_DatabaseServices/AmazonRDS/AmazonAurora/Readme.md)                             | Database            |                                                                                        |
+| [Amazon Aurora Serverless](6_DatabaseServices/AmazonRDS/AmazonAurora/Serverless/Readme.md)       | Database            |                                                                                        |
 | [AWS Batch](10_BigDataServices/DataProcessing/AWSBatch.md)                                       | Big Data Processing |                                                                                        |
 | [AWS Glue](10_BigDataServices/DataProcessing/AWSGlue.md)                                         | Big Data Processing |                                                                                        |
 | [API Gateway](1_NetworkingAndContentDelivery/2_ApplicationNetworking/AmazonAPIGateway/Readme.md) | API Gateway         |                                                                                        |
 | [Amazon SQS](5_MessageBrokerServices/AmazonSQS/Readme.md)                                        | Message Broker      |                                                                                        |
+
 
 # Considerations for serverless applications
 

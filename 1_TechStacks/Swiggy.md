@@ -1,6 +1,6 @@
 # Tech Stack
 
-| Use Case                                                                       | Service                                                                          |
+| Purpose                                                                        | Service                                                                          |
 |--------------------------------------------------------------------------------|----------------------------------------------------------------------------------|
 | Cloud platform                                                                 | [AWS - EC2, Lambda, S3, DynamoDB, CodePipeline etc.](../2_AWS/Readme.md) |
 | Container Orchestration                                                        | [Kubernates with Docker](../9_Container&Orchestration/Readme.md)          |

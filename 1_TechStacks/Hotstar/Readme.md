@@ -1,4 +1,4 @@
-# Scaling for Tsunami traffic (with own auto-scaler)
+# Hotstar - Scaling for Tsunami traffic (with own auto-scaler)
 
 | Title                        | Remarks                                                                                                                    |
 |------------------------------|----------------------------------------------------------------------------------------------------------------------------|

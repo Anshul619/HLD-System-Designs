@@ -20,7 +20,7 @@
 | Logs Aggregation           | ELK works best when logs from various Apps of an enterprise converge into a single ELK instance.<br/>- It provides amazing insights for this single instance and also eliminates the need to log into a hundred different log data sources. |
 | Installation               | Rapid on-premise installation                                                                                                                                                                                                               |
 | Scalability                | Easy to deploy Scales vertically and horizontally                                                                                                                                                                                           |
-| Supported Client Libraries | Elastic offers a host of language clients, which includes Ruby. Python. PHP, Perl, .NET, Java, and JavaScript, and more                                                                                                                     |
+| Supported Client Libraries | Elastic offers a host of language clients, which includes Ruby, Python, PHP, Perl, .NET, Java, and JavaScript, and more                                                                                                                     |
 
 # Other Points
 - [Distributed Logging Solution using ELK](../0_HLDUseCasesProblems/ObervabilityLoggingSolution/LoggingFileAggregation/Readme.md)

@@ -1,5 +1,5 @@
 # Launch Template
-- [Launch template](https://docs.aws.amazon.com/autoscaling/ec2/userguide/create-launch-template.html) includes the [ID of the Amazon Machine Image (AMI)](../AmazonMachineImages.md), the instance type, a key pair, security groups, and other parameters used to launch [EC2 instances](../Readme.md).
+- [Launch template](https://docs.aws.amazon.com/autoscaling/ec2/userguide/create-launch-template.html) includes the [ID of the Amazon Machine Image (AMI)](../../3_ComputeServices/AmazonEC2/AmazonMachineImages.md), the instance type, a key pair, security groups, and other parameters used to launch [EC2 instances](../../3_ComputeServices/AmazonEC2/Readme.md).
 
 # Launch Template vs Launch Configuration
 

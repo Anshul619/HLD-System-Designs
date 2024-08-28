@@ -1,0 +1,2 @@
+# Cooling Periods
+- [Cooldown periods](https://docs.aws.amazon.com/autoscaling/ec2/userguide/ec2-auto-scaling-scaling-cooldowns.html) help to prevent the initiation of additional scaling activities before the effects of previous activities are visible.

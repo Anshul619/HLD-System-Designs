@@ -6,14 +6,14 @@
 
 # :star: Real world use cases of DynamoDB
 
-| Use Case                                                                                                 | Remarks                                                                                                                                       |
-|----------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------|
-| [Grab - Order processing/OLTP](../../../1_TechStacks/Grab/OrdersProcessing.md)                           | DynamoDB used as OLTP system for orders processing (with 3 months TTL).                                                                       |
-| [Dropbox - Metadata store](../../../1_TechStacks/Dropbox/DropboxMetaDataStore.md)                        | DynamoDB used as OLTP/hot-storage system, for metadata ingestion.                                                                             |
-| [Image URLs & Metadata](../../../0_HLDUseCasesProblems/AWS_DesignUploadImageLambdaS3/Readme.md)          |                                                                                                                                               |
-| [Amazon Kinesis - Config Store](../../5_MessageBrokerServices/AmazonKinesis/AmazonKinesisDataStreams.md) |                                                                                                                                               |
-| [Amplitude - Metadata Store](../../../1_TechStacks/Amplitude/Readme.md)                                  |                                                                                                                                               |
-| [NGM - Mcafee](https://aws.amazon.com/solutions/case-studies/mcafee-dynamodb-case-study/)                | DynamoDB used as a reliable system to deliver tailored marketing campaign messages to its growing subscriber base of millions of subscribers. |
+| Use Case                                                                                        | Remarks                                                                                                                                       |
+|-------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------|
+| [Grab - Order processing/OLTP](../../../1_TechStacks/Grab/OrderProcessing/Readme.md)            | DynamoDB used as OLTP system for orders processing (with 3 months TTL).                                                                       |
+| [Dropbox - Metadata store](../../../1_TechStacks/Dropbox/DropboxMetaDataStore.md)               | DynamoDB used as OLTP/hot-storage system, for metadata ingestion.                                                                             |
+| [Image URLs & Metadata](../../../0_HLDUseCasesProblems/AWS_DesignUploadImageLambdaS3/Readme.md) |                                                                                                                                               |
+| [Amazon Kinesis - Config Store](../../5_MessageBrokerServices/AmazonKinesis/Readme.md)          |                                                                                                                                               |
+| [Amplitude - Metadata Store](../../../1_TechStacks/Amplitude/Readme.md)                         |                                                                                                                                               |
+| [NGM - Mcafee](https://aws.amazon.com/solutions/case-studies/mcafee-dynamodb-case-study/)       | DynamoDB used as a reliable system to deliver tailored marketing campaign messages to its growing subscriber base of millions of subscribers. |
 
 # Bookstore app on AWS
 

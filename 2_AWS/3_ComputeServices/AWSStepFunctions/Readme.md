@@ -1,6 +1,6 @@
 
 # AWS Step Functions
-- [AWS Step Functions](https://docs.aws.amazon.com/step-functions/latest/dg/welcome.html) is a serverless orchestration service that lets you integrate with [AWS Lambda](AWSLambda/Readme.md) functions and other AWS services to build business-critical applications.
+- [AWS Step Functions](https://docs.aws.amazon.com/step-functions/latest/dg/welcome.html) is a serverless orchestration service that lets you integrate with [AWS Lambda](../AWSLambda/Readme.md) functions and other AWS services to build business-critical applications.
 - [AWS Step Functions](https://docs.aws.amazon.com/step-functions/latest/dg/welcome.html) provides serverless orchestration for modern applications. 
 - Orchestration centrally manages a workflow by breaking it into multiple steps, adding flow logic, and tracking the inputs and outputs between the steps.
 
@@ -40,7 +40,7 @@
 |-------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Use wait states and callbacks                                                                                                                         | It’s a best practice to use wait states and callbacks to reduce costs when you are waiting on other tasks to finish.                                                                                                                   |
 | [Use timeouts to avoid stuck executions](https://docs.aws.amazon.com/step-functions/latest/dg/sfn-stuck-execution.html)                               | You also want to use timeouts within Step Functions to avoid stuck executions                                                                                                                                                          |
-| [Use Amazon S3](../7_StorageServices/3_ObjectStorageS3/Readme.md) if payload has the potential to grow beyond the limit for input or output data size | If your payload has the potential to grow beyond the limit for input or output data size, use [Amazon Simple Storge Service (Amazon S3)](../7_StorageServices/3_ObjectStorageS3/Readme.md) to store the data and pass the ARN of the S3 bucket. |
+| [Use Amazon S3](../../7_StorageServices/3_ObjectStorageS3/Readme.md) if payload has the potential to grow beyond the limit for input or output data size | If your payload has the potential to grow beyond the limit for input or output data size, use [Amazon Simple Storge Service (Amazon S3)](../../7_StorageServices/3_ObjectStorageS3/Readme.md) to store the data and pass the ARN of the S3 bucket. |
 | [Limit to StartExecution requests](https://docs.aws.amazon.com/step-functions/latest/apireference/API_StartExecution.html)                            | There is a limit to how many StartExecution requests can be made per second, and requests beyond that level will be throttled.                                                                                                         |
 
 # Standard vs Express Workflows

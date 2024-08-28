@@ -1,5 +1,5 @@
 # Scaling Policies
-- [AWS EC2 Auto Scaling](https://aws.amazon.com/getting-started/hands-on/ec2-auto-scaling-spot-instances/) enables you to automatically launch or terminate [Amazon EC2 instances](../Readme.md) based on user-defined policies, health status checks, and schedules.
+- [AWS EC2 Auto Scaling](https://aws.amazon.com/getting-started/hands-on/ec2-auto-scaling-spot-instances/) enables you to automatically launch or terminate [Amazon EC2 instances](../3_ComputeServices/AmazonEC2/Readme.md) based on user-defined policies, health status checks, and schedules.
 
 | Scaling policy                                                                                                                           | Type of Scaling | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
 |------------------------------------------------------------------------------------------------------------------------------------------|-----------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -7,6 +7,7 @@
 | :star: [Target Tracking](https://docs.aws.amazon.com/autoscaling/ec2/userguide/as-scaling-target-tracking.html)                          | Dynamic Scaling | Target value that represents the ideal average utilization or throughput level for your application.<br/>- For example, let's say that you currently have an application that runs on two instances, and you want the CPU utilization of the Auto Scaling group to stay at around 50 percent when the load on the application changes. <br/>- This gives you extra capacity to handle traffic spikes without maintaining an excessive number of idle resources.                                                                                           |
 | [Scheduled scaling](https://docs.aws.amazon.com/autoscaling/ec2/userguide/ec2-auto-scaling-scheduled-scaling.html)                       | Fleet Scaling   | Best for Auto Scaling your EC2 instances for predictable traffic patterns.<br/>- To use scheduled scaling, you create scheduled actions which are performed automatically as a function of date and time.                                                                                                                                                                                                                                                                                                                                                 |
 | [Simple Scaling](https://docs.aws.amazon.com/autoscaling/ec2/userguide/as-scaling-simple-step.html)                                      | Dynamic Scaling | With [simple scaling](https://docs.aws.amazon.com/autoscaling/ec2/userguide/as-scaling-simple-step.html), you choose scaling metrics and threshold values for the CloudWatch alarms that trigger the scaling process. <br/>- The main issue is that after a scaling activity is started, the policy must wait for the scaling activity or health check replacement to complete and the [cooldown period](https://docs.aws.amazon.com/autoscaling/ec2/userguide/ec2-auto-scaling-scaling-cooldowns.html) to expire before responding to additional alarms. |
+| [Predictive Scaling](https://docs.aws.amazon.com/autoscaling/ec2/userguide/ec2-auto-scaling-predictive-scaling.html)                     | Dynamic Scaling | Predictive scaling works by analyzing historical load data to detect daily or weekly patterns in traffic flows.                                                                                                                                                                                                                                                                                                                                                                                                                                           |
 
 # Capacity Parameters
 
@@ -22,16 +23,18 @@
 
 | Type            | Description                                                                                                                                                                  | Formula                                                     |
 |-----------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------|
-| Fleet Scaling   | Maintain desired number of instances across AZs (for [high availability](../../../../7a_HighAvailability/Readme.md)) at all time. | Desired-Capacity = Min-Capacity = Max-Capacity = Fleet-Size |
+| Fleet Scaling   | Maintain desired number of instances across AZs (for [high availability](../../7a_HighAvailability/Readme.md)) at all time. | Desired-Capacity = Min-Capacity = Max-Capacity = Fleet-Size |
 | Dynamic Scaling | Automatically increase or decrease resource capacity in relation to the demand.                                                                                              | Based on demand                                             |
 
 # Scaling Metrics
 
-| Metric                | Description                                                                                                                                                                                                        |
-|-----------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| CPU-Utilization       | For example - Auto scale for CPU usage of service above 80% for 5 mins. (avg, max, min etc. conditions)                                                                                                            |
-| Memory                |                                                                                                                                                                                                                    |
-| Amazon SQS queue size | Based on the [Amazon SQS queue size](SQSBasedScalingPolicy.md), the auto-scaling of the EC2 instances can also be done. [Read more](https://docs.aws.amazon.com/autoscaling/ec2/userguide/as-using-sqs-queue.html) |
+| Metric                   | Category      | Description                                                                                                                                                                                                        |
+|--------------------------|---------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| CPU-Utilization          | Service-level | For example - Auto scale for CPU usage of service above 80% for 5 mins. (avg, max, min etc. conditions)                                                                                                            |
+| Memory-Utilization       | Service-level |                                                                                                                                                                                                                    |
+| Avg Response time        | ALB-level     | Avg response time (ALB metric) as scaling metric                                                                                                                                                                   |
+| Request count per target | ALB-level     | Request count (ALB metric) as scaling metric                                                                                                                                                                       |
+| SQS queue size           | SQS           | Based on the [Amazon SQS queue size](SQSBasedScalingPolicy.md), the auto-scaling of the EC2 instances can also be done. [Read more](https://docs.aws.amazon.com/autoscaling/ec2/userguide/as-using-sqs-queue.html) |
 
 # Scaling Activities
 
@@ -44,6 +47,6 @@
 
 # Termination policy for Scale-In event
 
-![img.png](assets/ASG-Default-Termination-Policy.drawio.png)
+![img.png](EC2/assets/ASG-Default-Termination-Policy.drawio.png)
 
 [Read more](https://docs.aws.amazon.com/autoscaling/ec2/userguide/ec2-auto-scaling-termination-policies.html)

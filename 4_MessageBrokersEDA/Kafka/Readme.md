@@ -16,7 +16,7 @@
 | Data Ingestion - Real-time events, analytics etc.          | If we want to build our own Google Analytics or Amplitude (to track app activities, events etc.), we can use Kafka as a broker.                                                                              |
 | Distributed Logging - Logs Aggregation, Metrics            | Various systems in the IT infrastructure can push events/messages/logs in the Kafka. (example - [ELK stack](../../12_Observability/ELK.md))                                                      |
 | Stream Processing - Data Pipelines, Microservices etc.     | [Kafka Streams](../../6_BigData/DataProcessing/KafkaStreams/Readme.md) can be helpful in stream processing the events (map/reduce, aggregation, counts etc.).                        |
-| Data Pipelines - CDC of DBs                                | [Kafka connectors](../../6_BigData/DataConnectors/KafkaConnect.md) can be helpful to migrate from one DB to another, i.e. handle [CDC](../../3_Databases/Others/ChangeDataCapture/Readme.md). |
+| Data Pipelines - CDC of DBs                                | [Kafka connectors](../../6_BigData/DataConnectors/KafkaConnect.md) can be helpful to migrate from one DB to another, i.e. handle [CDC](../../3_Databases/15_ChangeDataCapture/Readme.md). |
 
 # :star: Real world use cases of Kafka
 
@@ -32,7 +32,7 @@
 | [Amplitude - Reducing costs with AZ-awareness for Kafka](../../1_TechStacks/Amplitude/Readme.md)                                                 |
 | [BigCommerce - Real-time events](../../1_TechStacks/BigCommerce/Readme.md)                                                                       |
 | [Paypal - Kafka](../../1_TechStacks/PayPal.md)                                                                                          |
-| [Grab - Orders Processing](../../1_TechStacks/Grab/OrdersProcessing.md)                                                                          |
+| [Grab - Orders Processing](../../1_TechStacks/Grab/OrderProcessing/Readme.md)                                                                          |
 | [Swiggy (through Confluent)](../../1_TechStacks/Swiggy.md)                                                                              |
 | [Split.io - Messsage Broker](../../1_TechStacks/SplitIO.md)                                                                             |
 

@@ -27,7 +27,7 @@
 | Config                                                                              | Type                 | Limit       | Remarks                                                                                                                                                                               |
 |-------------------------------------------------------------------------------------|----------------------|-------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | :star: Memory                                                                       | General              | -           | Example - 512 MB <br/>- Over provision memory to run your functions faster and reduce your costs (since cost is calculated based on compute time).                                    |
-| :star: Timeout                                                                      | General              | Max 15 mins | Example - 20 sec <br/>- Do not over-provision your function timeout settings.<br/>- If its greater than 15 mins, [AWS Step Functions](../AWSStepFunctions.md) might be better choice. |
+| :star: Timeout                                                                      | General              | Max 15 mins | Example - 20 sec <br/>- Do not over-provision your function timeout settings.<br/>- If its greater than 15 mins, [AWS Step Functions](../AWSStepFunctions/Readme.md) might be better choice. |
 | Ephemeral storage                                                                   | General              | -           | Example - 512 MB                                                                                                                                                                      |
 | Batch Size                                                                          | General              | 1 to 10     | Number of messages that can be in a batch                                                                                                                                             |
 | Number of default pollers (batches returned at one time)                            | General              | 5           | -                                                                                                                                                                                     |
@@ -63,9 +63,9 @@
 
 ## AWS Step Functions with Lambda
 
-![img.png](../assests/AWSStepFunctions.png)
+![img.png](../AWSStepFunctions/assests/AWSStepFunctions.png)
 
-[Read more](../AWSStepFunctions.md)
+[Read more](../AWSStepFunctions/Readme.md)
 
 ## Event Driven Architecture
 - [AWS Lambda]() is an example of an [event-driven architecture](../../../4_MessageBrokersEDA/EventDrivenArchitecture/Readme.md).
