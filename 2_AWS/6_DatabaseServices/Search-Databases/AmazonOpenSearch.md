@@ -8,11 +8,11 @@
 
 # Deployment Types
 
-|     |     |
-|-----|-----|
-| OpenSearch Serverless    |     |
-|     |     |
-|     |     |
+| Type                  | Description                                                                                                                           |
+|-----------------------|---------------------------------------------------------------------------------------------------------------------------------------|
+| OpenSearch Serverless | Start working with your data with a simple scalable solution                                                                          |
+| Managed Clusters      |                                                                                                                                       |
+| Ingestion             | Create an ingestion Serverless pipeline to filter, enrich, transform, and aggregate data and deliver to an OpenSearch Service domain. |
 
 
 # References
