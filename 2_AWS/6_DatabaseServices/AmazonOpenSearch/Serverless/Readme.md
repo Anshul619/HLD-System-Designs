@@ -1,13 +1,13 @@
 # Amazon OpenSearch Serverless
-- [Read more](https://docs.aws.amazon.com/opensearch-service/latest/developerguide/serverless.html)
-
-# Collections
-- A group of OpenSearch indexes/tables, that work together to support a specific workload/use case.
-- Alternative to OpenSearch clusters.
+- [Amazon OpenSearch Serverless](https://docs.aws.amazon.com/opensearch-service/latest/developerguide/serverless.html) is an on-demand, auto-scaling configuration for Amazon OpenSearch Service.
+- An OpenSearch Serverless collection is an OpenSearch cluster that scales compute capacity based on your application's needs. 
+- This contrasts with OpenSearch Service provisioned OpenSearch domains, which you manually manage capacity for.
 
 # Architecture
 - Traditional OpenSearch clusters have a single set of instances that perform both indexing and search operations, and index storage is tightly coupled with compute capacity. 
 - By contrast, OpenSearch Serverless uses a [cloud-native architecture]() that separates the indexing (ingest) components from the search (query) components, with Amazon S3 as the primary data storage for indexes.
+
+![](OpenSearch-Serverless.png)
 
 ## Data Ingestion/CRUD APIs
 - When you write data to a collection, OpenSearch Serverless distributes it to the indexing compute units. 
@@ -16,8 +16,6 @@
 ## Data Querying/Searching
 - When you perform a search on the collection data, OpenSearch Serverless routes requests to the search compute units that hold the data being queried. 
 - The search compute units download the indexed data directly from [S3](../../../7_StorageServices/3_S3ObjectStorage/Readme.md) (if it's not already cached locally), run search operations, and perform aggregations.
-
-![](OpenSearch-Serverless.png)
 
 # Collection Types
 
