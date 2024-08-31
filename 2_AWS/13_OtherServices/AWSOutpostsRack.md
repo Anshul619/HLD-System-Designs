@@ -16,4 +16,4 @@
 
 # Available Storages in AWS Outposts
 - [Amazon EBS](../7_StorageServices/1_BlockStorageTypes/AmazonEBS/Readme.md)
-- [Amazon S3](../7_StorageServices/3_ObjectStorageS3/Readme.md)
+- [Amazon S3](../7_StorageServices/3_S3ObjectStorage/Readme.md)

@@ -1,6 +1,6 @@
 # Fully-managed Services
 - Fully-managed resources are convenient and easy to manage.
-- [You don’t need to worry about redundancy and failover of AWS managed service](../7a_HighAvailability/FaultTolerance.md). It all falls on Amazon.
+- You don’t need to worry about [redundancy and failover](../7a_HighAvailability/FaultTolerance.md) of AWS managed service.
 - You don’t have to worry about backups, patches and fixes.
 - AWS takes care of it all, and you can even choose a preferred service window for such tasks.
 

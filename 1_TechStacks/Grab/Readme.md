@@ -9,7 +9,7 @@
 | Search-DB (derived data)                            | [ElasticSearch](../../3_Databases/9_Search-Databases/ElasticSearch/Readme.md) |
 | Backend Language - GoLang                           | [GoLang](GoLangBackend.md)                                                                                 |
 | Container Orchestration                             | [Kubernates](../../9_Container&Orchestration/Kubernates/Readme.md)                   |
-| Object Store, Data Lake                             | [Amazon S3](../../2_AWS/7_StorageServices/3_ObjectStorageS3/Readme.md)                           |
+| Object Store, Data Lake                             | [Amazon S3](../../2_AWS/7_StorageServices/3_S3ObjectStorage/Readme.md)                           |
 | Graph Database                                      | [Amazon Neptune](../../2_AWS/6_DatabaseServices/AmazonNeptune.md)                                |
 | InMemory Cache                                      | [Redis](../../3_Databases/8_InMemory-Databases/Redis/Readme.md)                  |
 | Logging                                             | [ELK](https://engineering.grab.com/structured-logging)                                                     |

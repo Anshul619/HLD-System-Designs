@@ -15,8 +15,8 @@
 | [Hive](../../../6_BigData/DataConsumption/ApacheHive.md), [Presto](../../../6_BigData/DataConsumption/PrestoDB.md), and other big data workloads. |
 
 # EMR File System (EMRFS)
-- The [EMR File System (EMRFS)](https://docs.aws.amazon.com/emr/latest/ReleaseGuide/emr-fs.html) is an implementation of [HDFS](../../../11_FileStorages/ApacheHDFS.md) that all Amazon EMR clusters use for reading and writing regular files from [Amazon EMR]() directly to [Amazon S3](../../7_StorageServices/3_ObjectStorageS3/Readme.md). 
-- [EMRFS](https://docs.aws.amazon.com/emr/latest/ReleaseGuide/emr-fs.html) provides the convenience of storing persistent data in [Amazon S3](../../7_StorageServices/3_ObjectStorageS3/Readme.md) for use with [Hadoop](../../../6_BigData/ApacheHadoop/Readme.md) while also providing features like data encryption.
+- The [EMR File System (EMRFS)](https://docs.aws.amazon.com/emr/latest/ReleaseGuide/emr-fs.html) is an implementation of [HDFS](../../../11_FileStorages/ApacheHDFS.md) that all Amazon EMR clusters use for reading and writing regular files from [Amazon EMR]() directly to [Amazon S3](../../7_StorageServices/3_S3ObjectStorage/Readme.md). 
+- [EMRFS](https://docs.aws.amazon.com/emr/latest/ReleaseGuide/emr-fs.html) provides the convenience of storing persistent data in [Amazon S3](../../7_StorageServices/3_S3ObjectStorage/Readme.md) for use with [Hadoop](../../../6_BigData/ApacheHadoop/Readme.md) while also providing features like data encryption.
 
 # Node Types
 

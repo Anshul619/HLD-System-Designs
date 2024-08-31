@@ -30,7 +30,7 @@
 | Change account name or root password or root email address                                              |
 | Change AWS support plan                                                                                 |
 | Close AWS account                                                                                       |
-| [Enable MFA on S3 bucket delete](../../7_StorageServices/3_ObjectStorageS3/Readme.md)                   |
+| [Enable MFA on S3 bucket delete](../../7_StorageServices/3_S3ObjectStorage/Readme.md)                   |
 | [Create Cloudfront key pair](../../1_NetworkingAndContentDelivery/1_EdgeNetworking/AmazonCloudFront.md) |
 | Register for GovCloud                                                                                   |
 

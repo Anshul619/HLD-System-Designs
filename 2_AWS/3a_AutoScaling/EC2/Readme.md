@@ -6,7 +6,7 @@
 
 | Feature                                       | Remarks |
 |-----------------------------------------------|---------|
-| [LaunchTemplate.md](LaunchTemplate&Config.md) |         |
+| [LaunchTemplate.md](LaunchTemplate.md) |         |
 | [ELB & Health Checks](HealthChecks.md)        |         |
 | [Scaling Policies](../ScalingPolicies.md)        |         |
 | [Cooldown periods](../CoolingPeriods.md)         |         |

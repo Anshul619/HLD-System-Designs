@@ -24,12 +24,12 @@ The application should be able to support the following requirements.
 
 # Real-world systems
 
-|           | Remarks                                                |
-|-----------|--------------------------------------------------------|
-| LinkedIn  | [Tech Stack](../../1_TechStacks/LinkedIn/Readme.md)    |
+|           | Remarks                                              |
+|-----------|------------------------------------------------------|
+| LinkedIn  | [Tech Stack](../../1_TechStacks/LinkedIn/Readme.md)  |
 | Instagram | [Tech Stack](../../1_TechStacks/Instagram/Readme.md) |
-| Facebook  | [Tech Stack](../../1_TechStacks/Facebook.md)  |
-| Twitter   |                                                        |
+| Facebook  | [Tech Stack](../../1_TechStacks/Facebook.md)         |
+| Twitter   |                                                      |
 
 
 # User Categories
@@ -47,7 +47,7 @@ The application should be able to support the following requirements.
 | Feature                              | Decision                                                                                                                                                                                             |
 |--------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Users DB                             | Postgres                                                                                                                                                                                             |
-| Images Storage                       | [Amazon S3](../../2_AWS/7_StorageServices/3_ObjectStorageS3/Readme.md) or [HDFS](../../11_FileStorages/ApacheHDFS.md)   |
+| Images Storage                       | [Amazon S3](../../2_AWS/7_StorageServices/3_S3ObjectStorage/Readme.md) or [HDFS](../../11_FileStorages/ApacheHDFS.md)   |
 | Images MetaData                      | [Amazon DynamoDB](../../2_AWS/6_DatabaseServices/AmazonDynamoDB/Readme.md)                                                                                                                 |
 | Partitioning Key for images metadata | PhotoID                                                                                                                                                                                              |
 | User Activity - Data Entities Store  | [Amazon DynamoDB](../../2_AWS/6_DatabaseServices/AmazonDynamoDB/Readme.md) or [Cassandra](../../3_Databases/11_WideColumn-Databases/ApacheCasandra.md) |

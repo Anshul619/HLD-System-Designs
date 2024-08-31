@@ -1,6 +1,3 @@
-# Cloudwatch Metrics
-- [Different metrices retention periods](https://aws.amazon.com/about-aws/whats-new/2016/11/cloudwatch-extends-metrics-retention-and-new-user-interface/) in cloudwatch.
-
 # CloudWatch's metrics for the Elastic Load Balancer
 
 ![img.png](https://www.splunk.com/content/dam/splunk-blogs/signalfx-assets/blog-images/ELB-CloudWatch-1024x457.png)

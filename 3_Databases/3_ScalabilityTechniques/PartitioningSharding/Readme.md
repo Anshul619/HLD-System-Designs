@@ -19,19 +19,15 @@
 
 ![](../../../4_MessageBrokersEDA/Kafka/assets/Kafka-Architecture.drawio.png)
 
-# Other Supported Clusters
+# Other Clusters & Examples
 - [Amazon DynamoDB Cluster](../../../2_AWS/6_DatabaseServices/AmazonDynamoDB/Partioning.md)
-- [ElasticSearch Cluster](../../9_Search-Databases/ElasticSearch/Readme.md)
-- [Redis Cluster](../../../2_AWS/6_DatabaseServices/AmazonElasticCache/Readme.md)
+- [ElasticSearch Cluster](../../9_Search-Databases/ElasticSearch/Sharding.md)
+- [Redis Cluster](../../../2_AWS/6_DatabaseServices/AmazonElasticCache/ClusterMode.md)
 - [Apache Casandra](../../11_WideColumn-Databases/ApacheCasandra.md)
-
-# Sharding Examples
-
-| Example                                                                                                        |
-|----------------------------------------------------------------------------------------------------------------|
-| [MySql Sharding @ Pinterest](../../../1_TechStacks/Pinterest/MySQLSharding.md)                                 |
-| [PostgreSQL Sharding @ Instagram](../../../1_TechStacks/Instagram/PostgreSharding.md)                          |
-| [PostgreSQL Sharding - System Design](../../../0_HLDUseCasesProblems/SocialNetworkFacebookInstagram/Readme.md) |
+- [OpenSearch Cluster](../../../2_AWS/6_DatabaseServices/AmazonOpenSearch/ManagedCluster.md)
+- [MySql Sharding @ Pinterest](../../../1_TechStacks/Pinterest/MySQLSharding.md)
+- [PostgreSQL Sharding @ Instagram](../../../1_TechStacks/Instagram/PostgreSharding.md)
+- [PostgreSQL Sharding - System Design](../../../0_HLDUseCasesProblems/SocialNetworkFacebookInstagram/Readme.md)
 
 # References
 - [How Sharding Works?](https://medium.com/@jeeyoungk/how-sharding-works-b4dec46b3f6)

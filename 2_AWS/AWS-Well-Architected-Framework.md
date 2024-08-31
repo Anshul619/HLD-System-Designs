@@ -32,13 +32,13 @@ Lenses provide additional guidance tailored to specific industry and technology 
 
 | Principal                                               | AWS Service                                                                            |
 |---------------------------------------------------------|----------------------------------------------------------------------------------------|
-| Design Operation Priorities                             | [AWS Trust Advisor](11_AWSCostOptimization/TrustedAdvisor.md)                                |
+| Design Operation Priorities                             | [AWS Trust Advisor](11_AWSCostOptimization/TrustedAdvisor.md)                          |
 | Design for Operations                                   | [AWS Cloudformation](9_InfrastructureAsCode/AWSCloudFormation/Readme.md)               |
 | Operational Readiness                                   | [AWS System Manager](2c_SecurityServices/1_DataProtectionServices/AWSSystemManager.md) |
-| Operational Health                                      | [AWS CloudWatch](8_ObservabilityLogsServices/AmazonCloudWatch/Readme.md)                      |
+| Operational Health                                      | [AWS CloudWatch](8_ObservabilityLogsServices/AmazonCloudWatch/Readme.md)               |
 | Event Response                                          | [AWS Lambda](3_ComputeServices/AWSLambda/Readme.md)                                    |
-| Use analytics to learn from experience                  | [Amazon OpenSearch](6_DatabaseServices/Search-Databases/AmazonOpenSearch.md)                            |
-| Share learnings with libraries, scripts & documentation | [AWS CodeCommit](9_InfrastructureAsCode/AWSCodePipeline.md)                            |
+| Use analytics to learn from experience                  | [Amazon OpenSearch](6_DatabaseServices/AmazonOpenSearch/Readme.md)           |
+| Share learnings with libraries, scripts & documentation | [AWS CodePipeline](9_InfrastructureAsCode/AWSCodePipeline.md)                          |
 
 # Financial Services Industry Lens - AWS Well-Architected Framework
 - The financial services industry has a unique set of risks and regulatory requirements. 

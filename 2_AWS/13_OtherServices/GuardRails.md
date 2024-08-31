@@ -3,9 +3,9 @@
 
 # AWS Services for guardrails
 
-| AWS Service                                                                                                                        | Remarks |
-|------------------------------------------------------------------------------------------------------------------------------------|---------|
-| [AWS PrivateLink](../1_NetworkingAndContentDelivery/3_NetworkFoundationsVPC/ConnectFromVPC/VPCEndPointsToSpecificAWSService/AWSPrivateLinkTechnology.md) | -       |
-| [Amazon CloudWatch](../8_ObservabilityLogsServices/AmazonCloudWatch/Readme.md)                                                            | -       |
-| [AWS Identity and Access Management (IAM)](../2a_IdentityServices/AWSIAM/Readme.md)                   | -       |
-| [AWS Key Management Service (AWS KMS)](../2c_SecurityServices/1_DataProtectionServices/AWSKMS.md)                        | -       |
+| AWS Service                                                                                                                                              | Remarks |
+|----------------------------------------------------------------------------------------------------------------------------------------------------------|---------|
+| [AWS PrivateLink](../1_NetworkingAndContentDelivery/3_NetworkFoundationsVPC/ConnectFromVPC/VPCEndPointsToSpecificAWSService/AWSPrivateLinkTechnology.md) |         |
+| [Amazon CloudWatch](../8_ObservabilityLogsServices/AmazonCloudWatch/Readme.md)                                                                           |         |
+| [AWS Identity and Access Management (IAM)](../2a_IdentityServices/AWSIAM/Readme.md)                                                                      |         |
+| [AWS Key Management Service (AWS KMS)](../2c_SecurityServices/1_DataProtectionServices/AWSKMS.md)                                                        |         |

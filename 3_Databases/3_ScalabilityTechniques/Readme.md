@@ -20,7 +20,7 @@
 
 # ElasticSearch Cluster
 
-![](../9_Search-Databases/ElasticSearch/assests/ElasticSearch-Cluster.png)
+![](../9_Search-Databases/ElasticSearch/Cluster.png)
 
 # Redis Cluster
 

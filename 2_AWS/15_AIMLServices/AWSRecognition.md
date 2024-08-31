@@ -1,0 +1,2 @@
+# Amazon Rekognition
+- [Amazon Rekognition](https://aws.amazon.com/rekognition/) offers pre-trained and customizable computer vision (CV) capabilities to extract information and insights from your images and videos.

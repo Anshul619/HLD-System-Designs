@@ -1,16 +1,6 @@
 # Launch Template
 - [Launch template](https://docs.aws.amazon.com/autoscaling/ec2/userguide/create-launch-template.html) includes the [ID of the Amazon Machine Image (AMI)](../../3_ComputeServices/AmazonEC2/AmazonMachineImages.md), the instance type, a key pair, security groups, and other parameters used to launch [EC2 instances](../../3_ComputeServices/AmazonEC2/Readme.md).
 
-# Launch Template vs Launch Configuration
-
-|                            | :+1: [Launch Template](https://docs.aws.amazon.com/autoscaling/ec2/userguide/create-launch-template.html) | Launch Configuration |
-|----------------------------|-----------------------------------------------------------------------------------------------------------|----------------------|
-| Strongly suggested by AWS? | :white_check_mark: Yes                                                                                    | :x: No               |
-| Multiple Instance Types?   | :white_check_mark: Yes                                                                                    | :x: No               |
-| Multiple Versions?         | :white_check_mark: Yes                                                                                    | :x: No               |
-| Dedicated Host (host)      | :white_check_mark: Yes                                                                                    | :x: No               |
-| Modifiable?                | :x: No                                                                                                    | :x: No               |
-
 # Instance Placement Tenancy
 
 | Tenancy                        | Supported Config                      | Remarks                                                                                                                                                                                                                                            |

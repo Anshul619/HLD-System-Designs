@@ -3,12 +3,12 @@
 - [GraphQL](https://graphql.org) can be used to dynamically get the data columns as needed. (like SQL)
 - Client has control of what data it needs from server?
 - GraphQL has a schema definition language for defining the types on a query.
-- Additionally, with GraphQL, you can enquire multiple entities in one request, and because less bits will be transferred over the wire so your projects will perform faster than while using [REST](REST.md).
+- Additionally, with GraphQL, you can enquire multiple entities in one request, and because less bits will be transferred over the wire so your projects will perform faster than while using [REST](../REST.md).
 
-![img.png](assests/graphql.png)
+![img.png](../assests/graphql.png)
 
 # Why GraphQL?
-- There are some issues with the [REST Architecture](REST.md) style such as Multiple endpoints, Over-fetching, and Under-fetching of resources.
+- There are some issues with the [REST Architecture](../REST.md) style such as Multiple endpoints, Over-fetching, and Under-fetching of resources.
 - There is no efficient way of handling various versions of native applications.
 - We can fetch multiple resources in a single endpoint. This reduces the time wasted in multiple round-trips from the browser.
 - With GraphQL, the client specifies the data it needs in the form of a query.
@@ -53,9 +53,9 @@
 - [Guild Dev](https://the-guild.dev/)
 
 # :star: Real world use cases of GraphQL
-- [Zomato - HLD Design](../0_HLDUseCasesProblems/FoodOrderingZomatoSwiggy/Readme.md)
-- [Uber Driver Allocation](../0_HLDUseCasesProblems/DriverAllocationUberGoJek/Readme.md)
-- [GraphQL with ElasticSearch](../3_Databases/9_Search-Databases/ElasticSearch/GraphQLSupport.md)
+- [Zomato - HLD Design](../../0_HLDUseCasesProblems/FoodOrderingZomatoSwiggy/Readme.md)
+- [Uber Driver Allocation](../../0_HLDUseCasesProblems/DriverAllocationUberGoJek/Readme.md)
+- [GraphQL with ElasticSearch](../../1_TechStacks/Smartive.md)
 - Facebook (contributor of GraphQL)
 - [GitHub](https://github.com/shurcooL/githubv4)
 

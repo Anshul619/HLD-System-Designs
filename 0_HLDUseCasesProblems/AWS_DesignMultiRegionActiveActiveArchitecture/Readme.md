@@ -14,7 +14,7 @@
 
 | Service                                                                                                                  |
 |--------------------------------------------------------------------------------------------------------------------------|
-| [Amazon S3](../../2_AWS/7_StorageServices/3_ObjectStorageS3/Readme.md#cross-region-supported)                  |
+| [Amazon S3](../../2_AWS/7_StorageServices/3_S3ObjectStorage/Readme.md#cross-region-supported)                  |
 | [Amazon Aurora Global Database](../../2_AWS/6_DatabaseServices/AmazonRDS/AmazonAurora/AuroraGlobalDatabase.md) |
 | [Amazon Dynamo DB Global Tables](../../2_AWS/6_DatabaseServices/AmazonDynamoDB/Readme.md)                      |
 

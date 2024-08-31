@@ -1,5 +1,5 @@
 # Deploy WordPress Site with Amazon CloudFront & S3
-- Step 1: Upload your content to [a static website enabled Amazon S3 bucket](../2_AWS/7_StorageServices/3_ObjectStorageS3/Readme.md) and grant object permissions.
+- Step 1: Upload your content to [a static website enabled Amazon S3 bucket](../2_AWS/7_StorageServices/3_S3ObjectStorage/Readme.md) and grant object permissions.
 - Step 2: Create a [CloudFront distribution](../2_AWS/1_NetworkingAndContentDelivery/1_EdgeNetworking/AmazonCloudFront.md).
 - Step 3: Access your content through [CloudFront](../2_AWS/1_NetworkingAndContentDelivery/1_EdgeNetworking/AmazonCloudFront.md).
 

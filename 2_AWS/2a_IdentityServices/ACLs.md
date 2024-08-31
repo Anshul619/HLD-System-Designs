@@ -7,7 +7,7 @@
 
 | AWS Service                                                                       | Remarks                                                                                                                |
 |-----------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------|
-| [Amazon S3](../7_StorageServices/3_ObjectStorageS3/Readme.md)                     | Instead of ACL, AWS recommends using [Amazon S3 bucket policies or IAM policies for access control](AWSIAM/Readme.md). |
+| [Amazon S3](../7_StorageServices/3_S3ObjectStorage/Readme.md)                     | Instead of ACL, AWS recommends using [Amazon S3 bucket policies or IAM policies for access control](AWSIAM/Readme.md). |
 | [AWS WAF](../2c_SecurityServices/2_InfraProtectionServices/AWSWAF.md)             | -                                                                                                                      |
 | [Amazon VPC](../1_NetworkingAndContentDelivery/3_NetworkFoundationsVPC/Readme.md) | -                                                                                                                      |
 

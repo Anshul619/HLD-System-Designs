@@ -5,7 +5,7 @@
 - You can submit indexing and search requests directly to a data stream. 
 - The stream automatically routes the request to backing indices that store the stream’s data. 
 
-![](../9_Search-Databases/ElasticSearch/assests/ElasticSearch-DataStream.png)
+![](ElasticSearch-DataStream.png)
 
 # Index lifecycle management (ILM)
 - You can use [index lifecycle management (ILM)](https://www.elastic.co/guide/en/elasticsearch/reference/current/index-lifecycle-management.html) to automate the management of these backing indices. 

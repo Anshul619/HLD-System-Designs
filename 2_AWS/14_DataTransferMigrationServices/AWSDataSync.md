@@ -7,7 +7,7 @@
 
 | AWS Service                                                                                                       |
 |-------------------------------------------------------------------------------------------------------------------|
-| [Amazon S3](../7_StorageServices/3_ObjectStorageS3/Readme.md)                                                  |
+| [Amazon S3](../7_StorageServices/3_S3ObjectStorage/Readme.md)                                                  |
 | [Amazon EFS](../7_StorageServices/2_FileStorageTypes/AmazonEFS.md)                                             |
 | [Amazon FSx for Windows File Server](../7_StorageServices/2_FileStorageTypes/AmazonFsXForWindowsFileServer.md) |
 
