@@ -16,13 +16,6 @@
 | [Replication - Cluster mode](ClusterMode.md)                                                | If cluster-mode is enabled, sharding would happen.                                                                                                                                                      |
 | [Redis AUTH command](https://docs.aws.amazon.com/AmazonElastiCache/latest/red-ug/auth.html) | Redis authentication tokens, or passwords, enable Redis to require a password before allowing clients to run commands, thereby improving data security.<br/>- IAM Auth is not supported by ElastiCache. |
 
-# Caching strategies
-
-| Strategy                                                                                            | Description                                                                                                                                                                            | Read-Performance          |
-|-----------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------|
-| :star: [Write-through](https://docs.aws.amazon.com/AmazonElastiCache/latest/mem-ug/Strategies.html) | [Write-through strategy](https://docs.aws.amazon.com/AmazonElastiCache/latest/mem-ug/Strategies.html) adds data or updates data in the cache whenever data is written to the database. | Better than "lazy-loading" |
-| [Lazy loading](https://docs.aws.amazon.com/AmazonElastiCache/latest/mem-ug/Strategies.html)         | [Lazy loading](https://docs.aws.amazon.com/AmazonElastiCache/latest/mem-ug/Strategies.html) is a caching strategy that loads data into the cache only when necessary.                  |                           |
-
 # References
 - [Benefits of Fully Managed Redis](https://aws.amazon.com/elasticache/redis/fully-managed-redis/)
 - [Connect to the cluster's node](https://docs.aws.amazon.com/AmazonElastiCache/latest/red-ug/GettingStarted.ConnectToCacheNode.html)

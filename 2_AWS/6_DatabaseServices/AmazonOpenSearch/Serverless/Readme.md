@@ -5,7 +5,7 @@
 
 # Architecture
 - Traditional OpenSearch clusters have a single set of instances that perform both indexing and search operations, and index storage is tightly coupled with compute capacity. 
-- By contrast, OpenSearch Serverless uses a [cloud-native architecture]() that separates the indexing (ingest) components from the search (query) components, with Amazon S3 as the primary data storage for indexes.
+- By contrast, OpenSearch Serverless uses a [cloud-native architecture]() that separates the indexing (ingest) components from the search (query) components, with [Amazon S3](../../../7_StorageServices/3_S3ObjectStorage/Readme.md) as the primary data storage for indexes.
 
 ![](OpenSearch-Serverless.png)
 
@@ -26,9 +26,10 @@
 | Vector search | Semantic search on vector embeddings that simplifies vector data management and powers machine learning (ML) augmented search experiences and generative AI applications, such as chatbots, personal assistants, and fraud detection. |
 
 # OCU
-- OpenSearch Serverless compute capacity for data ingestion, searching, and querying are measured in OpenSearch Compute Units (OCUs). 
+- [OpenSearch Serverless compute capacity]() for data ingestion, searching, and querying are measured in OpenSearch Compute Units (OCUs). 
 - Each OCU is a combination of **6 GiB of memory** and **corresponding virtual CPU (vCPU)**, as well as data transfer to Amazon S3. 
 - Each OCU includes enough hot ephemeral storage for **120 GiB of index data**.
+- Shared across collections.
 
 # References
 - [OpenSearch Service vs Serverless](https://docs.aws.amazon.com/opensearch-service/latest/developerguide/serverless-overview.html#serverless-comparison)
