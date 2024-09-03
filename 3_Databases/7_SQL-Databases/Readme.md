@@ -11,11 +11,11 @@
 
 # Features
 
-| Feature            | Remarks                                                               |
-|--------------------|-----------------------------------------------------------------------|
+| Feature            | Remarks                                                                |
+|--------------------|------------------------------------------------------------------------|
 | Sharding in SQL DB | [Read more](../3_ScalabilityTechniques/PartitioningSharding/Readme.md) |
-| SQL Tuning         | [Read more](../3_ScalabilityTechniques/SQLTuning.md)                                             |
-| Indexing           | [Read more](../5_DatabaseInternals/Indexing.md)        |
+| SQL Tuning         | [Read more](../3_ScalabilityTechniques/SQLTuning.md)                   |
+| Indexing           | [Read more](../5_DatabaseInternals/Indexing.md)                        |
 
 # Postgres vs MySQL
 

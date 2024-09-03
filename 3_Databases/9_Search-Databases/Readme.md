@@ -14,7 +14,7 @@
 | Service                                                                |
 |------------------------------------------------------------------------|
 | [Elastic Search](ElasticSearch/Readme.md)                              |
-| [Open Search](OpenSearch.md)                                           |
+| [Open Search](OpenSearch/Readme.md)                                           |
 | [Apache Solr](ApacheSolr.md)                                           |
 | [MongoDB Atlas Search](MongoAtlasSearch.md)                            |
 | [New Relic - Logs Analysis](../../12_Observability/NewRelic/Readme.md) |

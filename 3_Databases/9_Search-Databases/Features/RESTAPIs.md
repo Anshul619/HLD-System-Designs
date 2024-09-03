@@ -1,5 +1,5 @@
 # REST APIs (JSON based)
-- These apis are supported in both [elastic search](../ElasticSearch) and [open search](../OpenSearch.md).
+- These apis are supported in both [elastic search](../ElasticSearch) and [open search](../OpenSearch/Readme.md).
 
 | API name                             | Example URL                    |
 |--------------------------------------|--------------------------------|
