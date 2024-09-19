@@ -1,5 +1,5 @@
 # RDS Snapshots
-- [RDS](../6_DatabaseServices/AmazonRDS/Readme.md) stores the DB snapshots in the [Amazon S3 bucket](../7_StorageServices/3_S3ObjectStorage/Readme.md) belonging to the [same AWS region](../AWS-Global-Architecture-Region-AZ.md) where the [RDS instance](../6_DatabaseServices/AmazonRDS/Readme.md) is located.
+- [RDS](../1_DatabaseServices/AmazonRDS/Readme.md) stores the DB snapshots in the [Amazon S3 bucket](../6_StorageServices/3_S3ObjectStorage/Readme.md) belonging to the [same AWS region](../AWS-Global-Architecture-Region-AZ.md) where the [RDS instance](../1_DatabaseServices/AmazonRDS/Readme.md) is located.
 
 # Use Cases
 
@@ -13,8 +13,8 @@
 
 | Steps                                                                                                                                                                                                    |
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Share the [AWS KMS key](../2c_SecurityServices/1_DataProtectionServices/AWSKMS.md) that was used to encrypt the snapshot with any accounts that you want to be able to access the snapshot. |
-| Use the AWS Management Console, AWS CLI, or [Amazon RDS API](../6_DatabaseServices/AmazonRDS/Readme.md) to share the encrypted snapshot with the other accounts.                                                                                      |
+| Share the [AWS KMS key](../17_SecurityServices/1_DataProtectionServices/AWSKMS.md) that was used to encrypt the snapshot with any accounts that you want to be able to access the snapshot. |
+| Use the AWS Management Console, AWS CLI, or [Amazon RDS API](../1_DatabaseServices/AmazonRDS/Readme.md) to share the encrypted snapshot with the other accounts.                                                                                      |
 
 [Read more](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_ShareSnapshot.html)
 

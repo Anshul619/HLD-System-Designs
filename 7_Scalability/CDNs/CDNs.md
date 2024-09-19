@@ -2,7 +2,7 @@
 - [A content delivery network (CDN)](https://github.com/jeremyyew/tech-prep-jeremy.io/blob/master/systems-design/topics/cdns.md) is a globally distributed network of proxy servers, serving [static files/content](StaticContent.md) from locations closer to the user.
 - CDNs are a kind of cache that comes into play for [sites serving large amounts of static media](StaticContent.md).
 - If the system we are building is not large enough to have its own CDN, we can ease a future transition by serving the static media off a separate subdomain (e.g. static.yourservice.com) using a lightweight HTTP server like Nginx, and cut-over the DNS from your servers to a CDN later.
-- [Amazon Cloudfront](../../2_AWS/1_NetworkingAndContentDelivery/1_EdgeNetworking/AmazonCloudFront.md) is used as CDN in AWS.
+- [Amazon Cloudfront](../../2_AWS/16_NetworkingAndContentDelivery/1_EdgeNetworking/AmazonCloudFront.md) is used as CDN in AWS.
 
 ![](https://github.com/jeremyyew/tech-prep-jeremy.io/raw/master/.gitbook/assets/image%20%2814%29.png)
 

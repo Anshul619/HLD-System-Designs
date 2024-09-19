@@ -5,7 +5,7 @@
 
 | Use Case                                                                                                           |
 |--------------------------------------------------------------------------------------------------------------------|
-| [How Zomato Handles 100 Million Daily Search Queries using Apache Solr & SolrCloud?](../../1_TechStacks/Zomato.md) |
+| [How Zomato Handles 100 Million Daily Search Queries using Apache Solr & SolrCloud?](../../1_TechStacks/Zomato/Readme.md) |
 | [Instagram - Search](../../1_TechStacks/Instagram/Readme.md)                                                       |
 
 # Apache SolrCloud

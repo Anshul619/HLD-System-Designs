@@ -1,19 +1,20 @@
 
 # Monitoring Services & Tools
 
-| Service                                                                                          | Type                  | Open Source | Description                                                                           |
-|--------------------------------------------------------------------------------------------------|-----------------------|-------------|---------------------------------------------------------------------------------------|
-| :star: [New Relic](NewRelic/Readme.md)                                                           | Observability, Alerts | No          | Monitor, debug, and improve your entire stack.                                        |
-| :star: [PagerDuty](IncidentResponse/PagerDuty.md)                                                | IncidentResponse      | No          | Incident Response & On-Call Management                                                |
+| Service                                                                                  | Type                  | Open Source | Description                                                                           |
+|------------------------------------------------------------------------------------------|-----------------------|-------------|---------------------------------------------------------------------------------------|
+| :star: [New Relic](NewRelic/Readme.md)                                                   | Observability, Alerts | No          | Monitor, debug, and improve your entire stack.                                        |
+| :star: [PagerDuty](IncidentResponse/PagerDuty.md)                                        | IncidentResponse      | No          | Incident Response & On-Call Management                                                |
 | :star: [AWS Cloudwatch](../2_AWS/8_ObservabilityLogsServices/AmazonCloudWatch/Readme.md) | Observability, Alerts | No          | Observe and monitor AWS resources and applications in the cloud and on premises.      |
-| [Prometheus](Prometheus.md)                                                                      | Observability, Alerts | Yes         | Power your metrics and alerting with the leading open-source monitoring solution.     |
-| [Grafana](Grafana.md)                                                                            | Visualization         | Yes         | Compose and scale observability with one or all pieces of the stack.                  |
-| [ELK](ELK.md)                                                                                    | Observability         | Yes         | Logs Aggregation, Monitoring etc.                                                     |
-| [Uptime Robot](https://uptimerobot.com/)                                                         | Alerts                | No          | Uptime monitoring service.                                                            |
-| [Splunk](https://www.splunk.com/)                                                                | Observability, Alerts | No          | Splunk is a log aggregator while New Relic is a web application performance profiler. |
-| [SumoLogic](https://www.sumologic.com/)                                                          | Observability, Alerts | No          | Cloud-native SaaS analytics.                                                          |
-| [Source Code profiling](https://aws.amazon.com/codeguru/)                                        | Profiling             | No          |                                                                                       |
-| [Nagios](https://www.nagios.org/)                                                                | Observability         | Yes         |                                                                                       |
+| [Prometheus](Prometheus.md)                                                              | Observability, Alerts | Yes         | Power your metrics and alerting with the leading open-source monitoring solution.     |
+| [Grafana](Grafana.md)                                                                    | Visualization         | Yes         | Compose and scale observability with one or all pieces of the stack.                  |
+| [ELK](ELK.md)                                                                            | Observability         | Yes         | Logs Aggregation, Monitoring etc.                                                     |
+| [Uptime Robot](https://uptimerobot.com/)                                                 | Alerts                | No          | Uptime monitoring service.                                                            |
+| [Splunk](https://www.splunk.com/)                                                        | Observability, Alerts | No          | Splunk is a log aggregator while New Relic is a web application performance profiler. |
+| [SumoLogic](https://www.sumologic.com/)                                                  | Observability, Alerts | No          | Cloud-native SaaS analytics.                                                          |
+| [Source Code profiling](https://aws.amazon.com/codeguru/)                                | Profiling             | No          |                                                                                       |
+| [Nagios](https://www.nagios.org/)                                                        | Observability         | Yes         |                                                                                       |
+| [Falcon LogScale](https://library.humio.com/)                                            | Observability         | No          |                                                                                       |
 
 # Terminologies
 

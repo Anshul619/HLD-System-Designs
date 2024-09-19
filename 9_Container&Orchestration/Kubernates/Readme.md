@@ -124,7 +124,7 @@ behavior:
 - It is an open source tool designed to make installation of secure, [highly available clusters](../../7a_HighAvailability/Readme.md) easy and automatable.
 
 ### Step1 - Create Hosted Zone for Cluster
-- We require a hosted zone associated with [Route 53](../../2_AWS/1_NetworkingAndContentDelivery/1_EdgeNetworking/AmazonRoute53/Readme.md) which must be publicly resolvable.
+- We require a hosted zone associated with [Route 53](../../2_AWS/16_NetworkingAndContentDelivery/1_EdgeNetworking/AmazonRoute53/Readme.md) which must be publicly resolvable.
 
 ````shell
 aws route53 create-hosted-zone --name testikod.in --caller-reference 2017-02-24-11:12 --hosted-zone-config Comment="Hosted Zone for KOPS"
@@ -133,14 +133,14 @@ aws route53 create-hosted-zone --name testikod.in --caller-reference 2017-02-24-
 ### Step2 - Create State Store
 - KOPS internally uses Terraform. 
 - So we required external state store for storing states of a cluster. 
-- We are using [Amazon S3](../../2_AWS/7_StorageServices/3_S3ObjectStorage/Readme.md) for storing state.
+- We are using [Amazon S3](../../2_AWS/6_StorageServices/3_S3ObjectStorage/Readme.md) for storing state.
 
 ````shell
 aws s3api create-bucket --bucket testikod-in-state-store --region us-west-2
 ````
 
 ### Step3 - Create cluster
-- An instance group is a set of instances, which will be registered as kubernetes nodes. [On AWS this is implemented via auto-scaling-groups](../../2_AWS/3a_AutoScaling/Readme.md).
+- An instance group is a set of instances, which will be registered as kubernetes nodes. [On AWS this is implemented via auto-scaling-groups](../../2_AWS/5_AutoScaling/Readme.md).
 
 ````shell
 
@@ -231,7 +231,8 @@ Read more
 | OpenFaaS                    | [OpenFaaS](https://www.openfaas.com/) makes it simple to deploy both functions and existing code to Kubernetes                                                                                                                                                                                                                                                   |
 | Argo CD                     | [Argo CD](https://argo-cd.readthedocs.io/en/stable/getting_started/) is a declarative, GitOps continuous delivery tool for Kubernetes.                                                                                                                                                                                                                           |
 | Flagger (Canary Deployment) | [Flagger](https://docs.flagger.app/tutorials/nginx-progressive-delivery) takes a Kubernetes deployment and optionally a horizontal pod autoscaler (HPA), then creates a series of objects (Kubernetes deployments, ClusterIP services and canary ingress). These objects expose the application outside the cluster and drive the canary analysis and promotion. |
-| Karpenter                   | [Karpenter](https://karpenter.sh/) manages Just-in-time Nodes for Any Kubernetes Cluster.                                                                                                                                                                                                                                                                                                 |
+| Karpenter                   | [Karpenter](https://karpenter.sh/) manages Just-in-time Nodes for Any Kubernetes Cluster.                                                                                                                                                                                                                                                                        |
+| Kyverno                     | [Kyverno](https://kyverno.io/) is a policy engine designed for Kubernetes.                                                                                                                                                                                                                                                                                       |
 
 # References
 - [How to Manage Kubernetes With Kubectl?](https://www.suse.com/c/rancher_blog/how-to-manage-kubernetes-with-kubectl/)

@@ -1,0 +1,3 @@
+# AWS Compute Optimizer
+- [AWS Compute Optimizer](https://aws.amazon.com/compute-optimizer/) recommends optimal AWS Compute resources for your workloads to reduce costs and improve performance by using machine learning to analyze historical utilization metrics.
+- Compute Optimizer helps you choose the optimal [Amazon EC2 instance types](../Readme.md), including those that are part of an [Amazon EC2 Auto Scaling group](../../../5_AutoScaling/Readme.md), based on your utilization data.

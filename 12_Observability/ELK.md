@@ -7,7 +7,7 @@
 | [Kibana](https://www.elastic.co/kibana/)                              | Data visualization tool | Provides an interactive UI (User Interface) to the users for data visualization |
 
 # Observability System Design
-- [ELK]() can be deployed using [Amazon OpenSearch](../2_AWS/6_DatabaseServices/AmazonOpenSearch/Readme.md) on [AWS](../2_AWS).
+- [ELK]() can be deployed using [Amazon OpenSearch](../2_AWS/1_DatabaseServices/AmazonOpenSearch/Readme.md) on [AWS](../2_AWS).
 
 ![](ServersHealthObervabilityHLD.png)
 

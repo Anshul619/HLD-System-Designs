@@ -14,4 +14,4 @@
 | Continuously audit and assess the overall compliance of your AWS resource configurations with your organization’s policies and guidelines                                                                                      |
 | Track the relationships among resources and review resource dependencies prior to making changes                                                                                                                               |
 | Capture a comprehensive history of your AWS resource configuration changes to simplify troubleshooting of your operational issues                                                                                              |
-| Can also be configured to send information via [AWS SNS](../../5_MessageBrokerServices/AmazonSNS.md) when new logs are delivered                                                                                               |
+| Can also be configured to send information via [AWS SNS](../../4_MessageBrokerServices/AmazonSNS.md) when new logs are delivered                                                                                               |

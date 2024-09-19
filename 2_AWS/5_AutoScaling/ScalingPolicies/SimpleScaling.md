@@ -1,0 +1,3 @@
+# Simple Scaling
+- With [simple scaling](https://docs.aws.amazon.com/autoscaling/ec2/userguide/as-scaling-simple-step.html), you choose scaling metrics and threshold values for the CloudWatch alarms that trigger the scaling process.
+- The main issue is that after a scaling activity is started, the policy must wait for the scaling activity or health check replacement to complete and the [cooldown period](https://docs.aws.amazon.com/autoscaling/ec2/userguide/ec2-auto-scaling-scaling-cooldowns.html) to expire before responding to additional alarms.

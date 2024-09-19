@@ -1,7 +1,7 @@
 # Apache Casandra
 - [Apache Cassandra](https://cassandra.apache.org/_/index.html) is a free and open-source, distributed & [wide column store]().
 - It is a NoSQL database management system designed to handle large amounts of data across many commodity servers, providing [high availability with no single point of failure](../../7a_HighAvailability/FaultTolerance.md). 
-- [Amazon KeySpaces](../../2_AWS/6_DatabaseServices/AmazonKeySpaces.md) can be used to deploy Casandra on AWS.
+- [Amazon KeySpaces](../../2_AWS/1_DatabaseServices/AmazonKeySpaces.md) can be used to deploy Casandra on AWS.
 - :star: [DynamoDB vs Casandra vs MongoDB](../DynamoDBVsMongoDBVsCasandra.md)
 
 ![](https://www.scylladb.com/wp-content/uploads/Wide-column-Database-diagram.png)

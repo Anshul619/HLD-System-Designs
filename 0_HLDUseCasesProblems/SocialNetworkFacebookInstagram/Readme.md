@@ -47,12 +47,12 @@ The application should be able to support the following requirements.
 | Feature                              | Decision                                                                                                                                                                                             |
 |--------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Users DB                             | Postgres                                                                                                                                                                                             |
-| Images Storage                       | [Amazon S3](../../2_AWS/7_StorageServices/3_S3ObjectStorage/Readme.md) or [HDFS](../../11_FileStorages/ApacheHDFS.md)   |
-| Images MetaData                      | [Amazon DynamoDB](../../2_AWS/6_DatabaseServices/AmazonDynamoDB/Readme.md)                                                                                                                 |
+| Images Storage                       | [Amazon S3](../../2_AWS/6_StorageServices/3_S3ObjectStorage/Readme.md) or [HDFS](../../11_FileStorages/ApacheHDFS.md)   |
+| Images MetaData                      | [Amazon DynamoDB](../../2_AWS/1_DatabaseServices/AmazonDynamoDB/Readme.md)                                                                                                                 |
 | Partitioning Key for images metadata | PhotoID                                                                                                                                                                                              |
-| User Activity - Data Entities Store  | [Amazon DynamoDB](../../2_AWS/6_DatabaseServices/AmazonDynamoDB/Readme.md) or [Cassandra](../../3_Databases/11_WideColumn-Databases/ApacheCasandra.md) |
+| User Activity - Data Entities Store  | [Amazon DynamoDB](../../2_AWS/1_DatabaseServices/AmazonDynamoDB/Readme.md) or [Cassandra](../../3_Databases/11_WideColumn-Databases/ApacheCasandra.md) |
 | User Activity - Relationship Store   | Graph Databases like [Neo4j](../../3_Databases/13_Graph-Databases/Neo4j.md) or Amazon Neptune                                                                    |
-| Data Streaming                       | [Kafka](../../4_MessageBrokersEDA/Kafka/Readme.md) or [Amazon Kinesis](../../2_AWS/5_MessageBrokerServices/AmazonKinesis/Readme.md)                                     |
+| Data Streaming                       | [Kafka](../../4_MessageBrokersEDA/Kafka/Readme.md) or [Amazon Kinesis](../../2_AWS/4_MessageBrokerServices/AmazonKinesis/Readme.md)                                     |
 | App Servers                          | Separate app servers for READ and WRITE (Since read-write ratio is 100:1).                                                                                                                           |
 | Home Feed DB                         | [Redis](../../3_Databases/8_InMemory-Databases/Redis/Readme.md)                                                                                                               |
 
@@ -123,7 +123,7 @@ What are the different issues with "Partitioning based on UserID"?
 ![](https://live.staticflickr.com/65535/51813972019_ddfbe16c97_z.jpg)
 
 ## NoSQL Data Models
-- We will use NoSQL databases like [Amazon DynamoDB](../../2_AWS/6_DatabaseServices/AmazonDynamoDB/Readme.md) or [Cassandra](../../3_Databases/11_WideColumn-Databases/ApacheCasandra.md) to store information like user feeds, activities, and counters.
+- We will use NoSQL databases like [Amazon DynamoDB](../../2_AWS/1_DatabaseServices/AmazonDynamoDB/Readme.md) or [Cassandra](../../3_Databases/11_WideColumn-Databases/ApacheCasandra.md) to store information like user feeds, activities, and counters.
 - Each row will contain feed/activity information of the user.
 - We can also have a TTL based functionality to evict older posts.
 

@@ -2,7 +2,7 @@
 - Using [AWS Backup](https://aws.amazon.com/backup/), you can centralize and automate data protection across AWS services. 
 - AWS Backup offers a cost-effective, fully managed, policy-based service that further simplifies data protection at scale. 
 - AWS Backup also helps you support your regulatory compliance or business policies for data protection.
-- AWS Backup and native snapshots are stored in [AWS managed Amazon S3 buckets](../7_StorageServices/3_S3ObjectStorage/Readme.md).
+- AWS Backup and native snapshots are stored in [AWS managed Amazon S3 buckets](../6_StorageServices/3_S3ObjectStorage/Readme.md).
 
 [](assets/AWS-Backup.jpg)
 
@@ -15,7 +15,7 @@
 
 | Offering                                                                               | Description                                                                                                                                                                                                                                                                      |
 |----------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Service-native backups and snapshots                                                   | Service-native backups and snapshots are those backups that are tightly integrated with the service they support. <br/>- For example - Amazon EBS, [Amazon RDS](../6_DatabaseServices/AmazonRDS/Readme.md), Amazon DynamoDB, [Amazon S3](../7_StorageServices/3_S3ObjectStorage/Readme.md) etc. |
+| Service-native backups and snapshots                                                   | Service-native backups and snapshots are those backups that are tightly integrated with the service they support. <br/>- For example - Amazon EBS, [Amazon RDS](../1_DatabaseServices/AmazonRDS/Readme.md), Amazon DynamoDB, [Amazon S3](../6_StorageServices/3_S3ObjectStorage/Readme.md) etc. |
 | Centralized policy-based solution                                                      | With a centralized policy-based solution, you can create, automate, and simplify administration of all backups in your environment.                                                                                                                                              |
 | [AWS Elastic Disaster Recovery](https://aws.amazon.com/disaster-recovery/?nc=sn&loc=0) | If you require disaster recovery planning, AWS Elastic Disaster Recovery minimizes downtime and data loss with fast, reliable recovery of on-premises and cloud-based applications using affordable storage, minimal compute, and point-in-time recovery (PITR).                 |
 

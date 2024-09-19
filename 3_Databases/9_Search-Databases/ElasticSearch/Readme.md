@@ -1,6 +1,6 @@
 # Introduction
 - [ElasticSearch](https://www.elastic.co/elasticsearch/) is a distributed, [RESTful modern search](../../../8_APIStandards/REST.md) and [analytics engine](../../../6_BigData/DataConsumption) based on [Apache Lucene](../Readme.md).
-- [ElasticSearch]() can be deployed using [Amazon OpenSearch](../../../2_AWS/6_DatabaseServices/AmazonOpenSearch/Readme.md) service, on [AWS](../../../2_AWS).
+- [ElasticSearch]() can be deployed using [Amazon OpenSearch](../../../2_AWS/1_DatabaseServices/AmazonOpenSearch/Readme.md) service, on [AWS](../../../2_AWS).
 
 # :star: Real world use cases of ElasticSearch
 - [General use cases of ElasticSearch](../SearchUseCases.md)

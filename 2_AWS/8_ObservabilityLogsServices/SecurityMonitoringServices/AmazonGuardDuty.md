@@ -7,11 +7,11 @@
 
 | Service                                                                                        |
 |------------------------------------------------------------------------------------------------|
-| [Amazon S3](../../7_StorageServices/3_S3ObjectStorage/Readme.md)                               |
-| [Amazon EC2](../../3_ComputeServices/AmazonEC2/Readme.md)                                      |
-| [Amazon VPC Flow Logs](../../1_NetworkingAndContentDelivery/3_NetworkFoundationsVPC/Readme.md) |
+| [Amazon S3](../../6_StorageServices/3_S3ObjectStorage/Readme.md)                               |
+| [Amazon EC2](../../2_ComputeServices/AmazonEC2/Readme.md)                                      |
+| [Amazon VPC Flow Logs](../../16_NetworkingAndContentDelivery/3_NetworkFoundationsVPC/Readme.md) |
 | [AWS CloudTrail events](../AWSCloudTrail.md)                                                   |
-| [DNS logs](../../1_NetworkingAndContentDelivery/1_EdgeNetworking/AmazonRoute53/Readme.md)      |
+| [DNS logs](../../16_NetworkingAndContentDelivery/1_EdgeNetworking/AmazonRoute53/Readme.md)      |
 
 # Features
 

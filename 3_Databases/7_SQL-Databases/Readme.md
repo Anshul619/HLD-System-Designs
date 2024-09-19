@@ -3,7 +3,7 @@
 - Each row contains all the information about one entity and each column contains all the separate data points.
 
 # Most Popular Relational Databases 
-- [Amazon Aurora](../../2_AWS/6_DatabaseServices/AmazonRDS/AmazonAurora/Readme.md)
+- [Amazon Aurora](../../2_AWS/1_DatabaseServices/AmazonRDS/AmazonAurora/Readme.md)
 - Postgres
 - MySQL
 - Oracle

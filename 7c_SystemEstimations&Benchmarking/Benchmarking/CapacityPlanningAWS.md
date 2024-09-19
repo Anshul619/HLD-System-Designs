@@ -14,6 +14,6 @@ C = Candidate Cluster
 ````
 
 # Key Links
-- [Amazon EC2 instance types & use cases](../../2_AWS/3_ComputeServices/AmazonEC2/InstanceTypes.md)
+- [Amazon EC2 instance types & use cases](../../2_AWS/2_ComputeServices/AmazonEC2/InstanceTypes.md)
 - [Amazon EC2 instance comparison site](https://instances.vantage.sh/)
 - [GitHub Repo](https://github.com/Netflix-Skunkworks/service-capacity-modeling)

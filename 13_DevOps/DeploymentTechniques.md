@@ -18,9 +18,9 @@
 
 | AWS Service                                                                                                                            | Remarks |
 |----------------------------------------------------------------------------------------------------------------------------------------|---------|
-| [Route53 Weighted Routing Policy](../2_AWS/1_NetworkingAndContentDelivery/1_EdgeNetworking/AmazonRoute53/Readme.md)           | -       |
-| [AWS Global Accelerator](../2_AWS/1_NetworkingAndContentDelivery/1_EdgeNetworking/AWSGlobalAccelerator.md)             | -       |
-| [Elastic Load Balancer](../2_AWS/1_NetworkingAndContentDelivery/2_ApplicationNetworking/ElasticLoadBalancer/Readme.md) | -       |
+| [Route53 Weighted Routing Policy](../2_AWS/16_NetworkingAndContentDelivery/1_EdgeNetworking/AmazonRoute53/Readme.md)           | -       |
+| [AWS Global Accelerator](../2_AWS/16_NetworkingAndContentDelivery/1_EdgeNetworking/AWSGlobalAccelerator.md)             | -       |
+| [Elastic Load Balancer](../2_AWS/16_NetworkingAndContentDelivery/2_ApplicationNetworking/ElasticLoadBalancer/Readme.md) | -       |
 | [Code Deploy](../2_AWS/9_InfrastructureAsCode/AWSCodePipeline.md)                                                      | -       |
 
 # Reference

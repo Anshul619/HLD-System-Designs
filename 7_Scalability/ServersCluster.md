@@ -9,11 +9,11 @@
 |----------------------------------------------------------------------------------------------------------|-------------------------------------------|
 | [Kubernates Cluster](../9_Container&Orchestration/Kubernates/Readme.md)                        | Cluster of Containers                     |
 | [Kafka Cluster](../4_MessageBrokersEDA/Kafka/Readme.md)                                               | Cluster of Topics (High-Throughput MQ)    |                     
-| [Amazon RDS Clusters](../2_AWS/6_DatabaseServices/AmazonRDS/RDSDeploymentOptions/MultiAZInstance.md)             | Cluster of DB instances, across Multi-AZs |
+| [Amazon RDS Clusters](../2_AWS/1_DatabaseServices/AmazonRDS/RDSDeploymentOptions/MultiAZInstance.md)             | Cluster of DB instances, across Multi-AZs |
 | [Redis Cluster](../3_Databases/8_InMemory-Databases/Redis/RedisCluster.md)                     | Cluster of Redis Nodes (In-Memory Cache)  |
-| [Amazon Elastic Cache Cluster](../2_AWS/6_DatabaseServices/AmazonElasticCache/ClusterMode.md) | Cluster of Redis Nodes, across Multi-AZs  |
+| [Amazon Elastic Cache Cluster](../2_AWS/1_DatabaseServices/AmazonElasticCache/ClusterMode.md) | Cluster of Redis Nodes, across Multi-AZs  |
 | [ElasticSearch Cluster](../3_Databases/9_Search-Databases/ElasticSearch/Cluster.md)            | Cluster of JSON Data, Indexes etc.        |
-| [OpenSearch Cluster](../2_AWS/6_DatabaseServices/AmazonOpenSearch/Readme.md)        | Cluster of JSON Data, Indexes etc.        |
+| [OpenSearch Cluster](../2_AWS/1_DatabaseServices/AmazonOpenSearch/Readme.md)        | Cluster of JSON Data, Indexes etc.        |
 | [Casandra Cluster](../3_Databases/11_WideColumn-Databases/ApacheCasandra.md)                   | Cluster of wide-columns DBs               |
 | [Hadoop Cluster](../6_BigData/ApacheHadoop)                                                   | Cluster of different components           |
 

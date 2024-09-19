@@ -3,8 +3,8 @@
 | Purpose                 | Service                                                                                                                |
 |-------------------------|------------------------------------------------------------------------------------------------------------------------|
 | Container Orchestration | [Kubernates](../9_Container&Orchestration/Readme.md)                                   |
-| Application Networking  | [API Gateway](../2_AWS/1_NetworkingAndContentDelivery/2_ApplicationNetworking/AmazonAPIGateway/Readme.md) |
-| Serverless Compute      | [AWS Lambda](../2_AWS/3_ComputeServices/AWSLambda/Readme.md)                                              |
+| Application Networking  | [API Gateway](../2_AWS/16_NetworkingAndContentDelivery/2_ApplicationNetworking/AmazonAPIGateway/Readme.md) |
+| Serverless Compute      | [AWS Lambda](../2_AWS/2_ComputeServices/AWSLambda/Readme.md)                                              |
 | Message Broker          | [Kafka](../4_MessageBrokersEDA/Kafka/Readme.md)                                                  |
 | Observability           | [Prometheus](../12_Observability/Prometheus.md)                                                                                                             |
 | Distributed Tracing     | Jaeger                                                                                                                 |

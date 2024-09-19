@@ -25,7 +25,7 @@
 
 |        | Remarks                                                      |
 |--------|--------------------------------------------------------------|
-| Zomato | [Swiggy - Tech Stack](../../1_TechStacks/Zomato.md) |
+| Zomato | [Swiggy - Tech Stack](../../1_TechStacks/Zomato/Readme.md) |
 | Swiggy | [Swiggy - Tech Stack](../../1_TechStacks/Swiggy.md) |
 | Grab   | [Grab - Tech Stack](../../1_TechStacks/Grab/Readme.md)       |
 

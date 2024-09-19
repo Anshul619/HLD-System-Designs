@@ -13,9 +13,9 @@
 
 | Service                                                                            | Remarks                                                                                                                                                                                                         |
 |------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Amazon DynamoDB](../../2_AWS/6_DatabaseServices/AmazonDynamoDB/Readme.md) | [Amazon DynamoDB](../../2_AWS/6_DatabaseServices/AmazonDynamoDB/Readme.md) is built on the principles of [Dynamo](), but with [Single-leader replication](../4_Consistency&Replication/Replication.md). |
+| [Amazon DynamoDB](../../2_AWS/1_DatabaseServices/AmazonDynamoDB/Readme.md) | [Amazon DynamoDB](../../2_AWS/1_DatabaseServices/AmazonDynamoDB/Readme.md) is built on the principles of [Dynamo](), but with [Single-leader replication](../4_Consistency&Replication/Replication.md). |
 | [Apache Cassandra](../11_WideColumn-Databases/ApacheCasandra.md)                   |                                                                                                                                                                                                                 |
-| [Amazon S3](../../2_AWS/7_StorageServices/3_S3ObjectStorage/Readme.md)     | The index layer of [Amazon S3](../../2_AWS/7_StorageServices/3_S3ObjectStorage/Readme.md) implements and extends many core features of Dynamo.                                                          |
+| [Amazon S3](../../2_AWS/6_StorageServices/3_S3ObjectStorage/Readme.md)     | The index layer of [Amazon S3](../../2_AWS/6_StorageServices/3_S3ObjectStorage/Readme.md) implements and extends many core features of Dynamo.                                                          |
 | Others NoSQL-DBs like Project Voldemort and Riak etc.                              |                                                                                                                                                                                                                 |
 
 # References

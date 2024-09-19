@@ -8,7 +8,7 @@
 
 | Type                          | Service                                                                       | Remarks                                                                                                         |
 |-------------------------------|-------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------|
-| Fire-And-Forgot               | [Amazon SQS](../../2_AWS/5_MessageBrokerServices/AmazonSQS/Readme.md) | After pushing the message to the queue, producer doesn't wait for the response from the message queue.          |
+| Fire-And-Forgot               | [Amazon SQS](../../2_AWS/4_MessageBrokerServices/AmazonSQS/Readme.md) | After pushing the message to the queue, producer doesn't wait for the response from the message queue.          |
 | Request-Reply messaging model | [RabbitMQ](../RabbitMQ.md)                                                    | After pushing the message to the queue, producer waits for the reply from the consumer (through message queue). |
 
 # References

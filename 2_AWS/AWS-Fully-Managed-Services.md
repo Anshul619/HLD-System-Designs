@@ -10,9 +10,9 @@
 - You’re entirely responsible for patches, fixes, backups, [high availability](../7a_HighAvailability/Readme.md), software versions, dependencies, network infrastructure, security, and so on.
 
 Examples
-- [Amazon EC2](3_ComputeServices/AmazonEC2/Readme.md)
-- [Amazon RDS](6_DatabaseServices/AmazonRDS/Readme.md)
-- [Amazon VPC](1_NetworkingAndContentDelivery/3_NetworkFoundationsVPC/Readme.md)
+- [Amazon EC2](2_ComputeServices/AmazonEC2/Readme.md)
+- [Amazon RDS](1_DatabaseServices/AmazonRDS/Readme.md)
+- [Amazon VPC](16_NetworkingAndContentDelivery/3_NetworkFoundationsVPC/Readme.md)
 
 # References
 - [Fully-Managed vs Self-managed Services – Which One Do You Really Need?](https://bluesoft.com/blog/fully-managed-vs-self-managed-services-which-one-do-you-really-need/)

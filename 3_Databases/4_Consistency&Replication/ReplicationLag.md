@@ -6,5 +6,5 @@
 
 | Application                                                                                                                |
 |----------------------------------------------------------------------------------------------------------------------------|
-| [Replication lag - Amazon Aurora vs RDS](../../2_AWS/6_DatabaseServices/AmazonRDS/AmazonAuroraVsOtherDBEngines.md) |
+| [Replication lag - Amazon Aurora vs RDS](../../2_AWS/1_DatabaseServices/AmazonRDS/AmazonAuroraVsOtherDBEngines.md) |
 | [Flipkart - MySQL Replication Lag Analysis](../../1_TechStacks/Flipkart/MySQLReplicationLagAnalysis.md)            |

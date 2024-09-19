@@ -8,10 +8,10 @@
 
 | Tech Stack                                                                                                                             |
 |----------------------------------------------------------------------------------------------------------------------------------------|
-| [AWS AutoScaling Group](../../2_AWS/3a_AutoScaling/Readme.md)                                  |
-| [AWS AutoScaling based on SQS Queue Size](../../2_AWS/3a_AutoScaling/SQSBasedScalingPolicy.md) |
-| [Elastic Load Balancing](../../2_AWS/1_NetworkingAndContentDelivery/2_ApplicationNetworking/ElasticLoadBalancer/Readme.md)   |
-| [Amazon SQS](../../2_AWS/5_MessageBrokerServices/AmazonSQS/Readme.md)                                                        |
+| [AWS AutoScaling Group](../../2_AWS/5_AutoScaling/Readme.md)                                  |
+| [AWS AutoScaling based on SQS Queue Size](../../2_AWS/5_AutoScaling/ScalingPolicies/SQSBasedScalingPolicy.md) |
+| [Elastic Load Balancing](../../2_AWS/16_NetworkingAndContentDelivery/2_ApplicationNetworking/ElasticLoadBalancer/Readme.md)   |
+| [Amazon SQS](../../2_AWS/4_MessageBrokerServices/AmazonSQS/Readme.md)                                                        |
 | [Redis](../../3_Databases/8_InMemory-Databases/Redis/Readme.md)                                                 |
 
 # How would we implement rate limiting of the 3rd party SMS providers? (& follow their SLA)

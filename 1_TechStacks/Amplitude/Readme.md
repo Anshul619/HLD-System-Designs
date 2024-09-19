@@ -7,9 +7,9 @@
 | Use Case                             | Service                                                                                                   |
 |--------------------------------------|-----------------------------------------------------------------------------------------------------------|
 | Cloud Platform                       | [AWS](../../2_AWS/Readme.md)                                                                      |
-| Metadata store (files, columns etc.) | [Amazon DynamoDB](../../2_AWS/6_DatabaseServices/AmazonDynamoDB/Readme.md)                        |
+| Metadata store (files, columns etc.) | [Amazon DynamoDB](../../2_AWS/1_DatabaseServices/AmazonDynamoDB/Readme.md)                        |
 | Data Lake                            | [Amazon S3](../../2_AWS/10_BigDataServices/DataStorage/DataLakes/S3DataLake.md)                    |
-| Files Caching                        | [EC2 Instance Store](../../2_AWS/7_StorageServices/1_BlockStorageTypes/AmazonEC2InstanceStore.md) |
+| Files Caching                        | [EC2 Instance Store](../../2_AWS/6_StorageServices/1_BlockStorageTypes/AmazonEC2InstanceStore.md) |
 | Message Broker/Data-Ingestion        | [Apache Kafka](../../4_MessageBrokersEDA/Kafka/Readme.md)                                                 |
 | Data Warehouse                       | [Amazon Redshift](../../2_AWS/10_BigDataServices/DataStorage/DataWarehouses/AmazonRedshift.md)      |
 

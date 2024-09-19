@@ -14,9 +14,9 @@
 
 | Service                                                                                                                  |
 |--------------------------------------------------------------------------------------------------------------------------|
-| [Amazon S3](../../2_AWS/7_StorageServices/3_S3ObjectStorage/Readme.md#cross-region-supported)                  |
-| [Amazon Aurora Global Database](../../2_AWS/6_DatabaseServices/AmazonRDS/AmazonAurora/AuroraGlobalDatabase.md) |
-| [Amazon Dynamo DB Global Tables](../../2_AWS/6_DatabaseServices/AmazonDynamoDB/Readme.md)                      |
+| [Amazon S3](../../2_AWS/6_StorageServices/3_S3ObjectStorage/Readme.md#cross-region-supported)                  |
+| [Amazon Aurora Global Database](../../2_AWS/1_DatabaseServices/AmazonRDS/AmazonAurora/AuroraGlobalDatabase.md) |
+| [Amazon Dynamo DB Global Tables](../../2_AWS/1_DatabaseServices/AmazonDynamoDB/Readme.md)                      |
 
 # How to build multi-region active-active architecture in AWS?
 
@@ -25,7 +25,7 @@
 | Reliable data replication        | [Eventual consistency](../../3_Databases/4_Consistency&Replication/Readme.md) would have to be done, as databases are spread across multi-regions.                                                     |
 | Global network infrastructure    | [AWS Regions](../../2_AWS/AWS-Global-Architecture-Region-AZ.md) are connected to a private global network backbone, which provides lower cost and more consistent cross-region network latency when compared with the public internet. |
 | Build Stateless applications     | [Read more](../../7_Scalability/StatefulVsStateless.md)                                                                                                                                                               |
-| DNS routing using Amazon Route53 | [Read more](../../2_AWS/1_NetworkingAndContentDelivery/1_EdgeNetworking/AmazonRoute53/Readme.md)                                                                                                                                       |
+| DNS routing using Amazon Route53 | [Read more](../../2_AWS/16_NetworkingAndContentDelivery/1_EdgeNetworking/AmazonRoute53/Readme.md)                                                                                                                                       |
 
 # Source(s) and further reading
 - [How to build a multi-region active-active architecture on AWS?](https://acloudguru.com/blog/engineering/why-and-how-do-we-build-a-multi-region-active-active-architecture)

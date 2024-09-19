@@ -13,7 +13,7 @@
 | [Event Sourcing Pattern](../5_MicroServices/DesignPatterns/EventSourcing.md)                                                   | [MicroServices](../5_MicroServices/Readme.md)  |
 | [Pub-Sub model](../4_MessageBrokersEDA/EventDrivenArchitecture/PubSubModel.md)                                                    | [Message Broker Services](../4_MessageBrokersEDA) |
 | [Point-2-Point model](../4_MessageBrokersEDA/EventDrivenArchitecture/PointToPointModel.md)                                        | [Message Broker Services](../4_MessageBrokersEDA) |
-| [Fan-out pattern - Amazon SNS](../2_AWS/5_MessageBrokerServices/AmazonSNS.md)                                             | [Message Broker Services](../4_MessageBrokersEDA) |
+| [Fan-out pattern - Amazon SNS](../2_AWS/4_MessageBrokerServices/AmazonSNS.md)                                             | [Message Broker Services](../4_MessageBrokersEDA) |
 | [Leader Election](../10_ClusterCoordination/Readme.md)                                                                    |                                                   |
 | [Reactive Architecture](https://medium.com/big-data-cloud-computing-and-distributed-systems/reactive-architecture-i-5652f944f8fb) |                                                   |
 

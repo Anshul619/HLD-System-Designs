@@ -16,7 +16,7 @@
 
 | AWS Service                                                                                            | Source                 | Destination (for processed data) |
 |--------------------------------------------------------------------------------------------------------|------------------------|----------------------------------|
-| [Kinesis Data Streams](../../5_MessageBrokerServices/AmazonKinesis/Readme.md)                          | :white_check_mark: Yes | :white_check_mark: Yes           |
-| [Amazon MSK (Managed service for Kafka)](../../5_MessageBrokerServices/AmazonMSK.md)                   | :white_check_mark: Yes | :white_check_mark: Yes           |
-| [Amazon S3](../../7_StorageServices/3_S3ObjectStorage/Readme.md)                                       | :white_check_mark: Yes | :white_check_mark: Yes           |
-| [API Gateway](../../1_NetworkingAndContentDelivery/2_ApplicationNetworking/AmazonAPIGateway/Readme.md) | :white_check_mark: Yes | :x: No                           |
+| [Kinesis Data Streams](../../4_MessageBrokerServices/AmazonKinesis/Readme.md)                          | :white_check_mark: Yes | :white_check_mark: Yes           |
+| [Amazon MSK (Managed service for Kafka)](../../4_MessageBrokerServices/AmazonMSK.md)                   | :white_check_mark: Yes | :white_check_mark: Yes           |
+| [Amazon S3](../../6_StorageServices/3_S3ObjectStorage/Readme.md)                                       | :white_check_mark: Yes | :white_check_mark: Yes           |
+| [API Gateway](../../16_NetworkingAndContentDelivery/2_ApplicationNetworking/AmazonAPIGateway/Readme.md) | :white_check_mark: Yes | :x: No                           |

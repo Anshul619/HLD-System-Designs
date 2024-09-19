@@ -31,12 +31,12 @@
 
 | Purpose                 | Service                                                                            | Remarks                                                                                                                                          |
 |-------------------------|------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------|
-| OLTP Database           | [Amazon DynamoDB](../../../2_AWS/6_DatabaseServices/AmazonDynamoDB/Readme.md) | An OLTP database serves queries critical to online order processing. <br/>- This table keeps data for only a short period of time.               |
+| OLTP Database           | [Amazon DynamoDB](../../../2_AWS/1_DatabaseServices/AmazonDynamoDB/Readme.md) | An OLTP database serves queries critical to online order processing. <br/>- This table keeps data for only a short period of time.               |
 | OLAP database           | Amazon MySQL RDS                                                                   | an OLAP database has the same set of data, but serves our historical and statistical queries. <br/>- This database keeps data for a longer time. |
 | Data Ingestion Pipeline | [Kafka](../../../4_MessageBrokersEDA/Kafka/Readme.md)                                    | The data ingestion pipeline ensures that the OLAP database data is eventually consistent.                                                        |
 
 # OLTP database - DynamoDB
-- The retention period of the [DynamoDB data](../../../2_AWS/6_DatabaseServices/AmazonDynamoDB/Readme.md) is three months.
+- The retention period of the [DynamoDB data](../../../2_AWS/1_DatabaseServices/AmazonDynamoDB/Readme.md) is three months.
 
 ![](https://engineering.grab.com/img/how-we-store-millions-orders/image2.png)
 

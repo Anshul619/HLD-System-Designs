@@ -7,12 +7,12 @@
 | Indexing                                 | Reads        | All-DBs (except few like [Casandra](../11_WideColumn-Databases/ApacheCasandra.md))                                                                                                                                                                                                                           | [Read more](../5_DatabaseInternals/Indexing.md)                                                                                                                                                                                               |
 | Caching using In-Memory-DBs like Redis   | Reads        | None                                                                                                                                                                                                                                                                                                         | [Read more](ReadReplicaVsCache.md)                                                                                                                                                                                     |
 | SQL Tuning                               | Reads        | SQL-DBs                                                                                                                                                                                                                                                                                                      | [Read more](SQLTuning.md)                                                                                                                                                                                              |
-| :star: Partitioning/Sharding             | Writes       | No-SQL-DBs like [Amazon DynamoDB](../../2_AWS/6_DatabaseServices/AmazonDynamoDB/Readme.md), [Kafka Cluster](../../4_MessageBrokersEDA/Kafka/Readme.md), [Redis Cluster](../8_InMemory-Databases/Redis/RedisCluster.md), [ElasticSearch Cluster](../9_Search-Databases/ElasticSearch/Cluster.md) etc. | For very large datasets, or very high query throughput, we would need to break the data up into partitions, also known as [sharding](PartitioningSharding/Readme.md).                                             |
+| :star: Partitioning/Sharding             | Writes       | No-SQL-DBs like [Amazon DynamoDB](../../2_AWS/1_DatabaseServices/AmazonDynamoDB/Readme.md), [Kafka Cluster](../../4_MessageBrokersEDA/Kafka/Readme.md), [Redis Cluster](../8_InMemory-Databases/Redis/RedisCluster.md), [ElasticSearch Cluster](../9_Search-Databases/ElasticSearch/Cluster.md) etc. | For very large datasets, or very high query throughput, we would need to break the data up into partitions, also known as [sharding](PartitioningSharding/Readme.md).                                             |
 | Vertical Scale-up                        | Writes       | SQL-DBs                                                                                                                                                                                                                                                                                                      | Generally, it's **not recommended** to do vertical scalability (due to cost, other limitations).                                                                                                                       |
 
 # Amazon RDS Cluster
 
-![](../../2_AWS/6_DatabaseServices/AmazonRDS/assets/Multi-AZ/RDS-Multi-AZ-Replica.drawio.png)
+![](../../2_AWS/1_DatabaseServices/AmazonRDS/assets/Multi-AZ/RDS-Multi-AZ-Replica.drawio.png)
 
 # Kafka Cluster
 
@@ -24,7 +24,7 @@
 
 # Redis Cluster
 
-![](../../2_AWS/6_DatabaseServices/AmazonElasticCache/assets/ElasticCache-Multi-AZ.drawio.png)
+![](../../2_AWS/1_DatabaseServices/AmazonElasticCache/assets/ElasticCache-Multi-AZ.drawio.png)
 
 # References
 - [Scalability and High Availability](https://dzone.com/refcardz/scalability)

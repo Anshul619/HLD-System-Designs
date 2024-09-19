@@ -1,9 +1,9 @@
 # Redis Replication - Leader-follower technique
 - Redis supports [leader-follower replication](https://redis.io/docs/manual/replication/).
 - Leader (master) copy is maintained by [leader-follower (master-slave)](../../4_Consistency&Replication/SingleLeaderReplication.md) and replicated to n other follower (slave) nodes.
-- [Redis Replication supported in Amazon Elastic Cache](../../../2_AWS/6_DatabaseServices/AmazonElasticCache/Readme.md).
+- [Redis Replication supported in Amazon Elastic Cache](../../../2_AWS/1_DatabaseServices/AmazonElasticCache/Readme.md).
 
-![img.png](../../../2_AWS/6_DatabaseServices/AmazonElasticCache/assets/ElasticCache-Multi-AZ.drawio.png)
+![img.png](../../../2_AWS/1_DatabaseServices/AmazonElasticCache/assets/ElasticCache-Multi-AZ.drawio.png)
 
 # Advantages of Replication
 

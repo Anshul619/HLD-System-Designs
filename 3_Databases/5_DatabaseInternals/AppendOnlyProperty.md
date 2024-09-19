@@ -10,12 +10,12 @@
 |--------------------------------------------------------------------------------------------------------------------------------------|
 | :star: [LSM-Tree based NoSQL DBs like Casandra, RocksDB etc.](LSMTree.md)                                                            |
 | :star: [Kafka](../../4_MessageBrokersEDA/Kafka/Readme.md)                                                                            |
-| :star: [Amazon S3](../../2_AWS/7_StorageServices/3_S3ObjectStorage/Readme.md)                                                |
+| :star: [Amazon S3](../../2_AWS/6_StorageServices/3_S3ObjectStorage/Readme.md)                                                |
 | [Apache Lucene](../9_Search-Databases/Readme.md)                                                                                     |
 | [ElasticSearch Data Stream](../16_StreamingDB/ElasticSearchStreams.md)                                                             |
-| [Amazon Kinesis](../../2_AWS/5_MessageBrokerServices/AmazonKinesis/Readme.md)                                                |
+| [Amazon Kinesis](../../2_AWS/4_MessageBrokerServices/AmazonKinesis/Readme.md)                                                |
 | [Redis Streams](../16_StreamingDB/RedisStreams.md)                                                                                 |
-| [Amazon Aurora Global Database - Replication](../../2_AWS/6_DatabaseServices/AmazonRDS/AmazonAurora/AuroraGlobalDatabase.md) |
+| [Amazon Aurora Global Database - Replication](../../2_AWS/1_DatabaseServices/AmazonRDS/AmazonAurora/AuroraGlobalDatabase.md) |
 
 # References
 - [Building an Append-only Log From Scratch](https://eileen-code4fun.medium.com/building-an-append-only-log-from-scratch-e8712b49c924)

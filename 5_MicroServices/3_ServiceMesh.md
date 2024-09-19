@@ -5,7 +5,7 @@
 
 | Tech                                                                                                  |
 |-------------------------------------------------------------------------------------------------------|
-| [AWS App Mesh](../2_AWS/1_NetworkingAndContentDelivery/2_ApplicationNetworking/AWSAppMesh.md) |
+| [AWS App Mesh](../2_AWS/16_NetworkingAndContentDelivery/2_ApplicationNetworking/AWSAppMesh.md) |
 
 # Why service mesh? 
 
