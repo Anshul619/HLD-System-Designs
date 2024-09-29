@@ -8,5 +8,11 @@
 # Tools
 - [Debezium](Debezium.md)
 
+# Change Data Capture Techniques
+- [Timestamp based technique](https://hevodata.com/learn/change-data-capture/#timestamp)
+- [Triggers Based Technique](https://hevodata.com/learn/change-data-capture/#triggers)
+- [Snapshot Based Technique](https://hevodata.com/learn/change-data-capture/#snapshot) 
+- [Log Based Technique](https://hevodata.com/learn/change-data-capture/#log)
+
 # References
 - [Swiggy - Architecture of CDC System](https://bytes.swiggy.com/architecture-of-cdc-system-a975a081691f)

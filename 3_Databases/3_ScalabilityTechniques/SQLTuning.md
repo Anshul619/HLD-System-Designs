@@ -30,3 +30,4 @@ The table columns which are used in following SQL constructs should be indexed.
 - [Tuning Input/Output (I/O) Operations for PostgreSQL](https://severalnines.com/blog/tuning-io-operations-postgresql/)
 - [Secret To Optimizing SQL Queries - Understand The SQL Execution Order](https://www.youtube.com/watch?v=BHwzDmr6d7s)
 - [Analyzing Amazon RDS Database Workloads with Performance Insights](https://aws.amazon.com/blogs/database/analyzing-amazon-rds-database-workload-with-performance-insights/)
+- [How does SQL trigger affect performance?](https://stackoverflow.com/questions/56990262/how-does-sql-trigger-affect-performance)

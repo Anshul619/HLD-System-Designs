@@ -17,22 +17,22 @@
 
 # GraphQL Key Concepts
 
-|                      | Description                                                                                                                                                                                                                                                               |
-|----------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Queries              | A query is a request for data from the GraphQL API. It’s used to retrieve data from the server. Queries are used to fetch data from the server and are similar to SQL queries.                                                                                            |
-| Mutations            | A mutation is a way to modify data on the server. It’s used to create, update, or delete data on the server. Mutations follow the same syntactical structure as queries, but they always need to start with the mutation keyword.                                         |
-| Subscriptions        | Subscriptions allow the client to receive real-time updates from the server. This is useful for applications that require immediate updates, such as live updates or notifications.                                                                                       |
-| Schema               | It’s a definition of the capabilities of the API and defines how clients can request data. The schema is used to define the types of data that can be retrieved or modified, as well as the relationships between those types.                                            |
-| Types                | In GraphQL, types are used to define the structure of the data that can be retrieved or modified. There are two types of types: scalar types (such as Int, String, Boolean, ID, Float) and object types (which define a set of fields that can be retrieved or modified). |
-| Resolvers            | Resolvers are functions that are used to retrieve or modify data in the database. <br/>- They’re used to fetch or update data based on the query or mutation received from the client.                                                                                    |
-| Fields               |                                                                                                                                                                                                                                                                           |
-| Views                |                                                                                                                                                                                                                                                                           |
-| Introspection        |                                                                                                                                                                                                                                                                           |
-| Protocol             | GraphQL supports only HTTP POST verb with one URL like api.app.com and request body would contain all query params.                                                                                                                                                       |
-| API Gateway          | Single API URL (like api.app.com) would act as unified API gateway for all graphQL queries.                                                                                                                                                                               |
-| Graceful Degradation |                                                                                                                                                                                                                                                                           |
-| Caching              | Client side and server side query caching. (redis caching still need to be implemented for data caching)                                                                                                                                                                  |
-| Data Source          | The data source for resolvers can be REST api, DB, redis etc.                                                                                                                                                                                                             |
+|                          | Description                                                                                                                                                                                                                                                               |
+|--------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| :star: Schema            | It’s a definition of the capabilities of the API and defines how clients can request data. The schema is used to define the types of data that can be retrieved or modified, as well as the relationships between those types.                                            |
+| :star: Queries           | A query is a request for data from the GraphQL API. It’s used to retrieve data from the server. Queries are used to fetch data from the server and are similar to SQL queries.                                                                                            |
+| :star: Resolvers         | Resolvers are functions that are used to retrieve or modify data in the database. <br/>- They’re used to fetch or update data based on the query or mutation received from the client.                                                                                    |
+| Data Source for resolver | The data source for resolvers can be REST api, DB, redis etc.                                                                                                                                                                                                             |
+| Mutations                | A mutation is a way to modify data on the server. It’s used to create, update, or delete data on the server. Mutations follow the same syntactical structure as queries, but they always need to start with the mutation keyword.                                         |
+| Subscriptions            | Subscriptions allow the client to receive real-time updates from the server. This is useful for applications that require immediate updates, such as live updates or notifications.                                                                                       |
+| Types                    | In GraphQL, types are used to define the structure of the data that can be retrieved or modified. There are two types of types: scalar types (such as Int, String, Boolean, ID, Float) and object types (which define a set of fields that can be retrieved or modified). |
+| Fields                   |                                                                                                                                                                                                                                                                           |
+| Views                    |                                                                                                                                                                                                                                                                           |
+| Introspection            |                                                                                                                                                                                                                                                                           |
+| Protocol                 | GraphQL supports only HTTP POST verb with one URL like api.app.com and request body would contain all query params.                                                                                                                                                       |
+| API Gateway              | Single API URL (like **api.app.com**) would act as unified API gateway for all graphQL queries.                                                                                                                                                                           |
+| Graceful Degradation     |                                                                                                                                                                                                                                                                           |
+| Caching                  | Client side and server side query caching. (additional redis caching still need to be implemented for data caching)                                                                                                                                                       |
 
 # Limitations of GraphQL
 
@@ -47,7 +47,6 @@
 | Scalability                            | GraphQL can be more difficult to scale than RESTful APIs, especially for large and complex datasets, as it requires the server to process the query and return the data in the correct format.                                                  |
 | Lack of support for certain data types | GraphQL does not support certain data types, such as JSON, which can make it difficult to work with certain types of data.                                                                                                                      |
 
-
 # Other links
 - [Apollo Federation](https://www.apollographql.com/docs/federation/)
 - [Guild Dev](https://the-guild.dev/)
@@ -58,6 +57,7 @@
 - [GraphQL with ElasticSearch](../../1_TechStacks/Smartive.md)
 - Facebook (contributor of GraphQL)
 - [GitHub](https://github.com/shurcooL/githubv4)
+- [Dream11](../../1_TechStacks/Dream11.md)
 
 # Sample Code
 
@@ -87,3 +87,4 @@ mutation {
 - [GraphQL vs REST APIs | What's the Best Kind of API?](https://www.youtube.com/watch?v=F0_pkxQMZnc)
 - [Using GraphQL with Microservices in Go](https://outcrawl.com/go-graphql-gateway-microservices)
 - [GraphQL and Apollo: A Beginner’s Guide](https://krishcdbry.medium.com/graphql-and-apollo-a-beginners-guide-84c60d55dda2)
+- [Lessons from Scaling GraphQL to Half a Billion Requests per Minute - Tushar Mathur, Tailcall](https://www.youtube.com/watch?v=Esb7oQ0PuXw)
