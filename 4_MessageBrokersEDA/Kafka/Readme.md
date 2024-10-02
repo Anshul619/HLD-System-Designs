@@ -10,13 +10,13 @@
 
 # General use cases of Kafka
 
-| Use Case                                                   | Description                                                                                                                                                                                                  |
-|------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Message broker (PubSub model) in Event-Driven Architecture | Use Kafka when your application has a high throughput i.e. application has to process a large volume of messages, [event driven services](../EventDrivenArchitecture/Readme.md) etc.                         |
-| Data Ingestion - Real-time events, analytics etc.          | If we want to build our own Google Analytics or Amplitude (to track app activities, events etc.), we can use Kafka as a broker.                                                                              |
-| Distributed Logging - Logs Aggregation, Metrics            | Various systems in the IT infrastructure can push events/messages/logs in the Kafka. (example - [ELK stack](../../12_Observability/ELK.md))                                                      |
-| Stream Processing - Data Pipelines, Microservices etc.     | [Kafka Streams](../../6_BigData/DataProcessing/KafkaStreams/Readme.md) can be helpful in stream processing the events (map/reduce, aggregation, counts etc.).                        |
-| Data Pipelines - CDC of DBs                                | [Kafka connectors](../../6_BigData/DataConnectors/KafkaConnect.md) can be helpful to migrate from one DB to another, i.e. handle [CDC](../../3_Databases/15_ChangeDataCapture/Readme.md). |
+| Use Case                                                   | Description                                                                                                                                                                              |
+|------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Message broker (PubSub model) in Event-Driven Architecture | Use Kafka when your application has a high throughput i.e. application has to process a large volume of messages, [event driven services](../EventDrivenArchitecture/Readme.md) etc.     |
+| Data Ingestion - Real-time events, analytics etc.          | For example - If we want to build our own Google Analytics or Amplitude (to track app activities, events etc.), we can use Kafka as a broker.                                            |
+| Distributed Logging - Logs Aggregation, Metrics            | Various systems in the IT infrastructure can push events/messages/logs in the Kafka. (example - [ELK stack](../../12_Observability/ELK.md))                                              |
+| Stream Processing - Data Pipelines, Microservices etc.     | [Kafka Streams](../../6_BigData/DataProcessing/KafkaStreams/Readme.md) can be helpful in stream processing the events (map/reduce, aggregation, counts etc.).                            |
+| Data Pipelines - CDC of DBs                                | [Kafka connectors](../../6_BigData/DataConnectors/KafkaConnect.md) can be helpful to migrate from one DB to another i.e. [handle CDC](../../3_Databases/15_ChangeDataCapture/Readme.md). |
 
 # :star: Real world use cases of Kafka
 
