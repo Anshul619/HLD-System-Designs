@@ -1,0 +1,2 @@
+# AWS Device Farm
+- [AWS Device Farm](https://aws.amazon.com/device-farm/) is an application testing service that lets you improve the quality of your web and mobile applications by testing them across an extensive range of desktop browsers and real mobile devices, without having to provision and manage any testing infrastructure.

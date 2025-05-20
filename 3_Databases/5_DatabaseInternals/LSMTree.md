@@ -24,7 +24,7 @@
 
 | DB                                                             |
 |----------------------------------------------------------------|
-| [MongoDB](../10_Document-Databases/MongoDB.md)                 |
+| [MongoDB](../10_Document-Databases/MongoAtlas/Readme.md)                 |
 | [Casandra](../11_WideColumn-Databases/ApacheCasandra.md)       |
 | [ElasticSearch](../9_Search-Databases/ElasticSearch/Readme.md) |
 | [RocksDB](../14_EmbededKeyValue-Databases/RocksDB.md)          |

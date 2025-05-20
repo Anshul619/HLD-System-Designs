@@ -246,21 +246,21 @@ This repo contains the various system design components info, questions and solu
 - :star: [OOP Design](https://github.com/Anshul619/OOPs-Design-Patterns-LLD/blob/main/OOP.md)
 - :star: [SOLID Principles](https://github.com/Anshul619/OOPs-Design-Patterns-LLD/blob/main/SOLID.md)
 - :star: [Design Tips & Techniques](https://github.com/Anshul619/OOPs-Design-Patterns-LLD/blob/main/TipsAndTechniques.md)
-- :star: [Design Patterns](https://github.com/Anshul619/OOPs-Design-Patterns-LLD/blob/main/DesignPatterns.md)
+- :star: [Design Patterns](https://github.com/Anshul619/OOPs-Design-Patterns-LLD/blob/main/DesignPatterns)
   
 # Programming Languages
 - :star: [GoLang](https://github.com/Anshul619/golang)
-- [Spring Boot & Microservices](https://github.com/Anshul619/Programming-Languages/tree/main/1_Java/SpringBootAndMicroServices)
-- [Java](https://github.com/Anshul619/Programming-Languages/tree/main/1_Java)
-- [Hibernate](https://github.com/Anshul619/Programming-Languages/tree/main/1_Java/Hibernate.md)
-- [JavaScript](https://github.com/Anshul619/Programming-Languages/tree/main/2_JavaScript)
-- [TypeScript](https://github.com/Anshul619/Programming-Languages/tree/main/3_FrontEnd/TypeScript.md)
-- [Angular8](https://github.com/Anshul619/Programming-Languages/tree/main/3_FrontEnd/Angular8.md)
+- [Spring Boot & Microservices](https://github.com/Anshul619/Java/SpringBootAndMicroServices)
+- [Java](https://github.com/Anshul619/Java)
+- [Hibernate](https://github.com/Anshul619/Java/Hibernate.md)
+- [JavaScript](https://github.com/Anshul619/FrontEnd---JavaScript-TypeScript-React-Angular/tree/main/JavaScript)
+- [TypeScript](https://github.com/Anshul619/FrontEnd---JavaScript-TypeScript-React-Angular/tree/main/TypeScript)
+- [Angular8](https://github.com/Anshul619/FrontEnd---JavaScript-TypeScript-React-Angular/tree/main/AngularJs/Angular8.md)
 
 # API Documentation, QA
 - :star: [Swagger](8_APIStandards/API_Documentation/Swagger/Readme.md)
 - [Open API Spec](8_APIStandards/API_Documentation/Swagger/OpenAPISpec.md)
-- [QA/Testing](https://github.com/Anshul619/Programming-Languages/tree/main/5_QATools/Readme.md)
+- [QA/Testing](https://github.com/Anshul619/Others-SQL-QA-Git/tree/main/QA/Readme.md)
 
 # Other References
 - [Open Source Contributions](1_TechStacks/OpenSourceContributions.md)

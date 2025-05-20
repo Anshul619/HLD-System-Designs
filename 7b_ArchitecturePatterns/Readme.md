@@ -2,19 +2,19 @@
 
 | Pattern                                                                                                                           | Service Type                                      |
 |-----------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------|
-| :star: [AWS - Serverless architecture](../2_AWS/AWS-Serverless-Architecture.md)                                           |                                                   |
-| :star: [MicroServices Pattern](../5_MicroServices/DesignPatterns/Readme.md)                                                    | [MicroServices](../5_MicroServices/Readme.md)  |
+| :star: [AWS - Serverless architecture](../2_AWS/AWS-Serverless-Architecture.md)                                                   |                                                   |
+| :star: [MicroServices Pattern](../5_MicroServices/3_DesignPatterns/Readme.md)                                                       | [MicroServices](../5_MicroServices/Readme.md)     |
 | :star: [Event-Driven Architecture](../4_MessageBrokersEDA/EventDrivenArchitecture/Readme.md)                                      | [Message Broker Services](../4_MessageBrokersEDA) |
-| [Sharding/Partitioning](../3_Databases/3_ScalabilityTechniques/PartitioningSharding/Readme.md)                             | [Database Services](../3_Databases/)       |
+| [Sharding/Partitioning](../3_Databases/3_ScalabilityTechniques/PartitioningSharding/Readme.md)                                    | [Database Services](../3_Databases/)              |
 | [Domain Driven architecture](DomainDrivenDevelopment.md)                                                                          |                                                   |
 | [Shared nothing architecture](SharedNothingArchitecture.md)                                                                       |                                                   |
-| [Circuit Breaker Pattern](CircuitBreaker.md)                                                                                      | [MicroServices](../5_MicroServices/Readme.md)  |
-| [Command Query Responsibility Segregation (CQRS)](../5_MicroServices/DesignPatterns/CQRS.md)                                   | [MicroServices](../5_MicroServices/Readme.md)  |
-| [Event Sourcing Pattern](../5_MicroServices/DesignPatterns/EventSourcing.md)                                                   | [MicroServices](../5_MicroServices/Readme.md)  |
+| [Circuit Breaker Pattern](CircuitBreaker.md)                                                                                      | [MicroServices](../5_MicroServices/Readme.md)     |
+| [Command Query Responsibility Segregation (CQRS)](../5_MicroServices/3_DesignPatterns/CQRS.md)                                      | [MicroServices](../5_MicroServices/Readme.md)     |
+| [Event Sourcing Pattern](../5_MicroServices/3_DesignPatterns/EventSourcing.md)                                                      | [MicroServices](../5_MicroServices/Readme.md)     |
 | [Pub-Sub model](../4_MessageBrokersEDA/EventDrivenArchitecture/PubSubModel.md)                                                    | [Message Broker Services](../4_MessageBrokersEDA) |
 | [Point-2-Point model](../4_MessageBrokersEDA/EventDrivenArchitecture/PointToPointModel.md)                                        | [Message Broker Services](../4_MessageBrokersEDA) |
-| [Fan-out pattern - Amazon SNS](../2_AWS/4_MessageBrokerServices/AmazonSNS.md)                                             | [Message Broker Services](../4_MessageBrokersEDA) |
-| [Leader Election](../10_ClusterCoordination/Readme.md)                                                                    |                                                   |
+| [Fan-out pattern - Amazon SNS](../2_AWS/4_MessageBrokerServices/AmazonSNS.md)                                                     | [Message Broker Services](../4_MessageBrokersEDA) |
+| [Leader Election](../10_ClusterCoordination/Readme.md)                                                                            |                                                   |
 | [Reactive Architecture](https://medium.com/big-data-cloud-computing-and-distributed-systems/reactive-architecture-i-5652f944f8fb) |                                                   |
 
 # Read more

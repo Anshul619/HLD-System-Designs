@@ -7,6 +7,7 @@
 
 # Tools
 - [Debezium](Debezium.md)
+- [Oracle GoldenGate](https://docs.oracle.com/goldengate/c1230/gg-winux/GGCON/introduction-oracle-goldengate.htm#GGCON-GUID-EF513E68-4237-4CB3-98B3-2E203A68CBD4)
 
 # Change Data Capture Techniques
 - [Timestamp based technique](https://hevodata.com/learn/change-data-capture/#timestamp)

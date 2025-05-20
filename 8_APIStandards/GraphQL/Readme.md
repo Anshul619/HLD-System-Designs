@@ -58,6 +58,8 @@
 - Facebook (contributor of GraphQL)
 - [GitHub](https://github.com/shurcooL/githubv4)
 - [Dream11](../../1_TechStacks/Dream11.md)
+- [Shopify SDK](https://shopify.dev/docs/api/admin-graphql)
+- [Supabase](https://supabase.com/docs/guides/graphql)
 
 # Sample Code
 

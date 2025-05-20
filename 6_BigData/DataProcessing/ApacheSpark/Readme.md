@@ -31,9 +31,9 @@
 
 # Cluster Manager
 
-| Cluster Manager                                                                    |
-|------------------------------------------------------------------------------------|
-| Standalone cluster manager (spark's own cluster manager)                           |
+| Cluster Manager                                                            |
+|----------------------------------------------------------------------------|
+| Standalone cluster manager (spark's own cluster manager)                   |
 | [Hadoop Yarn](../../../9_Container&Orchestration/ApacheYarn.md)            |
 | [Apache Mesos](../../../9_Container&Orchestration/ApacheMarathon&Mesos.md) |
 | [Kubernates](../../../9_Container&Orchestration/Kubernates/Readme.md)      |
@@ -46,6 +46,9 @@
 
 # Apache Spark vs Others
 - [Apache Spark vs Hadoop MapReduce vs Flink vs Storm](../SparkVsMapReduceVsFlinkVsStorm.md)
+
+# Managed Services
+- [Oracle Data Flow](https://www.oracle.com/big-data/data-flow/)
 
 # References
 - [Top Spark Interview Questions](https://www.interviewbit.com/spark-interview-questions/)

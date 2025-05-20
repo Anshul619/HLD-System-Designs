@@ -26,6 +26,7 @@
 | Querying          | In general, PostgreSQL is best suited for systems that require execution of complex queries, or data warehousing and data analysis or complex procedures.                           |                                                                         |
 | Write Query Speed | Faster                                                                                                                                                                              |                                                                         |
 | Security          |                                                                                                                                                                                     | A lot of security features are built in MySQL, and it is highly secure. |
+| Scale             |                                                                                                                                                                                     | MySQL starts showing performance issues after 6TB data.                 |
 
 [Read more](https://www.ibm.com/cloud/blog/postgresql-vs-mysql-whats-the-difference)
 

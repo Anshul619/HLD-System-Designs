@@ -5,7 +5,7 @@
 - Example - User Management, Order Management, Checkout, Address etc.
 
 # Features
-- [Design Patterns](DesignPatterns/Readme.md)
+- [Design Patterns](3_DesignPatterns/Readme.md)
 - [Spring Cloud vs K8s vs AWS](SpringCloudVsK8sVsAWS.md)
 - [API Gateway](1_APIGateway/Readme.md)
 - [Service Registry and Discovery](2_ServiceRegistry&Discovery/Readme.md)
@@ -47,3 +47,4 @@
 - [Materialized View Pattern](https://medium.com/design-microservices-architecture-with-patterns/materialized-view-pattern-f29ea249f8f8)
 - [Uber - Service Oriented Architecture](https://eng.uber.com/service-oriented-architecture/)
 - [Build microservices using Akka](https://developer.lightbend.com/docs/akka-guide/microservices-tutorial/index.html)
+- [Using Containers to Build a Microservices Architecture](https://medium.com/aws-activate-startup-blog/using-containers-to-build-a-microservices-architecture-6e1b8bacb7d1)

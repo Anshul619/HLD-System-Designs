@@ -19,7 +19,7 @@
 | [Amazon Redshift](../../DataStorage/DataWarehouses/AmazonRedshift.md)                         | [AWS data stores](../../../1_DatabaseServices)        |
 | [Amazon OpenSearch](../../../1_DatabaseServices/AmazonOpenSearch/Readme.md)         | [AWS data stores](../../../1_DatabaseServices)        |
 | [NewRelic](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/SubscriptionFilters.html) | Logs/Analytics Tools                                  |
-| [MongoDB](../../../../3_Databases/10_Document-Databases/MongoDB.md)                           | [Open Source data store](../../../1_DatabaseServices) |
+| [MongoDB](../../../../3_Databases/10_Document-Databases/MongoAtlas/Readme.md)                           | [Open Source data store](../../../1_DatabaseServices) |
 | Splunk, Datadog, Dynatrace, Sumo Logic, LogicMonitor etc.                                     | Logs/Analytics Tools                                  |
 | HTTP End Point as destination                                                                 | Custom                                                |
 

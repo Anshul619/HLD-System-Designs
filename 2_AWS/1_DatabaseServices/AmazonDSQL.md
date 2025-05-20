@@ -1,0 +1,2 @@
+# Amazon DSQL
+- [Aurora DSQL](https://brooker.co.za/blog/2024/12/03/aurora-dsql.html) is a new serverless SQL database, optimized for transaction processing, and designed for the cloud. DSQL is designed to scale up and down to serve workloads of nearly any size, from your hobby project to your largest enterprise application.

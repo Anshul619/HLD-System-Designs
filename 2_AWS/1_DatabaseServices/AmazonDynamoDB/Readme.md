@@ -47,12 +47,7 @@
 | Logging operations using CloudTrail                 | DynamoDB is integrated with [CloudTrail](../../8_ObservabilityLogsServices/AWSCloudTrail.md), a service that provides a record of actions taken by a user, role, or an AWS service in DynamoDB. <br/>- CloudTrail captures all API calls for DynamoDB as events. <br/>- The calls captured include calls from the DynamoDB console and code calls to the DynamoDB API operations.                  |
 | PartiQL - a SQL-compatible query language           | DynamoDB supports [PartiQL, a SQL-compatible query language](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/ql-reference.html), to select, insert, update, and delete data in Amazon DynamoDB.                                                                                                                                                                                   |
 | Sparse Indexes                                      | [Read more](SparseIndexes.md)                                                                                                                                                                                                                                                                                                                                                                      |
-| APIs                                                | [Read more](RESTAPIs/Readme.md)                                                                                                                                                                                                                                                                                                                                                                        |
-
-# History of DynamoDB
-> [How Amazon’s DynamoDB helped reinvent databases?](https://www.networkworld.com/article/2932313/how-amazon-s-dynamodb-helped-reinvent-databases.html)
-> - Amazon DynamoDB is built on the principles of [Dynamo](../../../3_Databases/5_DatabaseInternals/DynamoStyleDatabases.md) and is a hosted service within the AWS infrastructure.
-> - However, while [Dynamo](../../../3_Databases/5_DatabaseInternals/DynamoStyleDatabases.md) is based on [leaderless replication](../../../3_Databases/4_Consistency&Replication/Replication.md), DynamoDB uses [single-leader replication](../../../3_Databases/4_Consistency&Replication/Replication.md).
+| REST APIs                                           | [Read more](RESTAPIs/Readme.md)                                                                                                                                                                                                                                                                                                                                                                        |
 
 # Data types supported in DynamoDB
 
@@ -81,3 +76,4 @@
 - [How to determine if Amazon DynamoDB is appropriate for your needs, and then plan your migration?](https://aws.amazon.com/blogs/database/how-to-determine-if-amazon-dynamodb-is-appropriate-for-your-needs-and-then-plan-your-migration/)
 - [DynamoDB Guide](https://www.dynamodbguide.com/what-is-dynamo-db)
 - [AWS re:Invent 2023 - Data modeling core concepts for Amazon DynamoDB](https://www.youtube.com/watch?v=l-Urbf4BaWg)
+- [How to solve common Amazon DynamoDB design puzzles | The Data Dive on AWS OnAir S01](https://www.youtube.com/watch?v=6QTg_iB1n9U)

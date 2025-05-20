@@ -23,3 +23,4 @@
 - [Martin Kleppmann | Kafka Summit London 2019 Keynote | Is Kafka a Database?](https://youtu.be/BuE6JvQE_CY)
 - [ACID Properties in DBMS](https://www.geeksforgeeks.org/acid-properties-in-dbms/)
 - [ACID Databases – Atomicity, Consistency, Isolation & Durability Explained](https://www.freecodecamp.org/news/acid-databases-explained/)
+- [The Dark Side of SQL Transactions](https://medium.com/@moksh.9/the-dark-side-of-sql-transactions-bbb122569c88)

@@ -14,9 +14,9 @@
 
 # Disadvantages of Secondary Indexes
 
-| Disadvantage     | Remarks                                                                                  |
-|------------------|------------------------------------------------------------------------------------------|
-| Cost             | Additional storage and throughput cost                                                   |
+|                  | Remarks                                                                           |
+|------------------|-----------------------------------------------------------------------------------|
+| Cost             | Additional storage and throughput cost                                            |
 | Consistency      | [Eventually consistent](../../../3_Databases/4_Consistency&Replication/Readme.md) |
-| Management       | Create, maintain, update indexes                                                         |
-| Write consistent | Hot keys                                                                                 |
+| Management       | Create, maintain, update indexes                                                  |
+| Write consistent | Hot keys                                                                          |

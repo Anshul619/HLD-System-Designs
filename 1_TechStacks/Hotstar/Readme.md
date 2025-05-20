@@ -28,3 +28,4 @@
 - [De-bottlenecking Aurora MySQL for 19 Million concurrent users](https://blog.hotstar.com/de-bottlenecking-aurora-mysql-for-19-million-concurrent-users-ee98d6247cfe)
 - [AWS re:Invent 2019: Scaling Hotstar.com for 25 million concurrent viewers (CMY302)](https://www.youtube.com/watch?v=mFpqrVxxwKc&t=1419s)
 - [Hotstar Platform & Scaling Strategy : Cloud DevOps Perspective](https://www.linkedin.com/pulse/hotstar-platform-scaling-strategy-cloud-devops-zia-tahir/)
+- [Scaling Infrastructure for Millions: From Challenges to Triumphs (Part 1)](https://blog.hotstar.com/scaling-infrastructure-for-millions-from-challenges-to-triumphs-part-1-6099141a99ef)

@@ -23,6 +23,16 @@
 | :star: 99.99% availability | Four 9s  | 52 mins                        | Video Delivery, Broadcast systems        |
 | 99.999% availability       | Five 9s  | 5 mins                         | Telecom Industry, Bank, ATM Transactions |
 
+# Availability & service providers
+- Each service provider may start measuring availability at different points in time. 
+- Some cloud providers start measuring it when they first offer the service, while some measure it for specific clients when they start using the service. 
+- Some providers might not reduce their reported availability numbers if their service was not down for all the clients.
+- Therefore, we should carefully understand how a specific provider calculates their availability numbers.
+
+## Excluded downtimes
+- The planned downtimes are excluded. 
+- Downtime due to cyberattacks might not be incorporated into the calculation of availability. 
+
 # Source(s) and further reading
 - [The quest for availability in the cloud](https://acloudguru.com/blog/engineering/the-quest-for-availability?utm_source=medium_blog&utm_medium=redirect&utm_campaign=medium_blog)
 - [Scalability and High Availability](https://dzone.com/refcardz/scalability)

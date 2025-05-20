@@ -4,3 +4,4 @@
 
 # Read more
 - [What is a Headless Data Architecture?](https://www.youtube.com/watch?v=dahs6jpCYQs)
+- [Automated optimization for Apache Iceberg tables](https://www.youtube.com/watch?v=wFoDmIyjWbw)
