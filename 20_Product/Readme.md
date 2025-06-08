@@ -1,7 +1,0 @@
-# Product
-
-|            | Description                                                                                                                                                                                                                           |
-|------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| LTV        | Lifetime Value (LTV) is a metric that estimates the total revenue a customer will generate over the course of their relationship with a business.                                                                                     |
-| CAC        | Customer Acquisition Cost (CAC) is the amount of money a business needs to spend to get an additional customer. It includes all marketing and sales expenses incurred in attracting and converting a prospect into a paying customer. |
-| Churn Rate | Churn rate (also known as attrition rate, turnover, customer turnover, or customer defection) is a measure of the proportion of individuals or items moving out of a group over a specific period.                                    |
