@@ -21,10 +21,10 @@ This repo contains the various system design components info, questions and solu
       <td>
         <div class="container" style="background:white">
             <div class="block two first">
-                <a href="8_APIStandards/REST.md" target="_blank">REST</a>
+                <a href="8_APIStandards/REST.md" target="_blank">REST</a>, 
                 <a href="8_APIStandards/gRPC.md" target="_blank">
                   gRPC
-                </a>, 
+                </a> 
                 <a href="8_APIStandards/GraphQL.md" target="_blank">
                   <img src="https://marmelab.com/images/blog/graphql/logo.png" width="150">
                 </a>
