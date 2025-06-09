@@ -24,7 +24,7 @@ This repo contains the various system design components info, questions and solu
                 <a href="8_APIStandards/REST.md" target="_blank">REST</a>
                 <a href="8_APIStandards/gRPC.md" target="_blank">
                   gRPC
-                </a>
+                </a>, 
                 <a href="8_APIStandards/GraphQL.md" target="_blank">
                   <img src="https://marmelab.com/images/blog/graphql/logo.png" width="150">
                 </a>
@@ -115,7 +115,7 @@ This repo contains the various system design components info, questions and solu
             <div class="block two first">
                 <a href="3_Databases/8_InMemory-Databases/Redis/Readme.md" target="_blank">
                   Redis
-                </a>
+                </a>, 
                 <a href="3_Databases/8_InMemory-Databases/AeroSpike.md" target="_blank">
                   Aerospike
                 </a>
