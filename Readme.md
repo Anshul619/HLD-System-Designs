@@ -23,7 +23,7 @@ This repo contains the various system design components info, questions and solu
             <div class="block two first">
                 <a href="8_APIStandards/REST.md" target="_blank">REST</a>
                 <a href="8_APIStandards/gRPC.md" target="_blank">
-                  <img src="https://res.cloudinary.com/practicaldev/image/fetch/s--TNgs2Fd7--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/8susytd9w6lxe9sreqvd.jpg" width="150">
+                  gRPC
                 </a>
                 <a href="8_APIStandards/GraphQL.md" target="_blank">
                   <img src="https://marmelab.com/images/blog/graphql/logo.png" width="150">
@@ -34,7 +34,7 @@ This repo contains the various system design components info, questions and solu
     </tr>
     <tr>
       <td>
-        <a href="7_Scability/CDNs">CDN</a>
+        <a href="7_Scalability/CDNs">CDN</a>
       </td>
       <td>
         <div class="container" style="background:white">
@@ -71,7 +71,7 @@ This repo contains the various system design components info, questions and solu
         <div class="container" style="background:white">
             <div class="block two first">
                 <a href="4_MessageBrokersEDA/Kafka/Readme.md" target="_blank">
-                  <img src="http://i1.wp.com/airisdata.com/wp-content/uploads/2016/01/kafka-logo-600x390.jpg?resize=600%2C390" width="150">
+                  <img src="https://imgs.search.brave.com/Dciv9E3-St4Ypkw-A7Avph4ennJBmZ1W2-7cVVoCNhc/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMuaWNvbi1pY29u/cy5jb20vMjY5OS9Q/TkcvNTEyL2FwYWNo/ZV9rYWZrYV9sb2dv/X2ljb25fMTY3ODY2/LnBuZw" width="150">
                 </a>
                 <a href="2_AWS/5_MessageBrokerServices/AmazonKinesis/AmazonKinesisDataStreams.md" target="_blank">
                   <img src="https://intellipaat.com/blog/wp-content/uploads/2022/08/image-75.png" width="150">
@@ -114,10 +114,10 @@ This repo contains the various system design components info, questions and solu
         <div class="container" style="background:white">
             <div class="block two first">
                 <a href="3_Databases/8_InMemory-Databases/Redis/Readme.md" target="_blank">
-                  <img src="https://upload.wikimedia.org/wikipedia/en/6/6b/Redis_Logo.svg" width="150">
+                  Redis
                 </a>
                 <a href="3_Databases/8_InMemory-Databases/AeroSpike.md" target="_blank">
-                  <img src="https://aerospike.com/wp-content/uploads/2021/03/logo-4.png" width="150">
+                  Aerospike
                 </a>
             </div>
         </div>
