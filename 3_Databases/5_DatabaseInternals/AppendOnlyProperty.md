@@ -12,9 +12,9 @@
 | :star: [Kafka](../../4_MessageBrokersEDA/Kafka/Readme.md)                                                                            |
 | :star: [Amazon S3](../../2_AWS/6_StorageServices/3_S3ObjectStorage/Readme.md)                                                |
 | [Apache Lucene](../9_Search-Databases/Readme.md)                                                                                     |
-| [ElasticSearch Data Stream](../16_StreamingDB/ElasticSearchStreams.md)                                                             |
+| [ElasticSearch Data Stream](../15_Streaming-Databases/ElasticSearchStreams.md)                                                             |
 | [Amazon Kinesis](../../2_AWS/4_MessageBrokerServices/AmazonKinesis/Readme.md)                                                |
-| [Redis Streams](../16_StreamingDB/RedisStreams.md)                                                                                 |
+| [Redis Streams](../15_Streaming-Databases/RedisStreams.md)                                                                                 |
 | [Amazon Aurora Global Database - Replication](../../2_AWS/1_DatabaseServices/AmazonRDS/AmazonAurora/AuroraGlobalDatabase.md) |
 
 # References

@@ -9,4 +9,4 @@
 [Read more](https://aws.amazon.com/what-is/etl/)
 
 # ETL Techniques
-- [Change Data Capture](../3_Databases/15_ChangeDataCapture/Readme.md)
+- [Change Data Capture](../3_Databases/5_DatabaseInternals/ChangeDataCapture/Readme.md)

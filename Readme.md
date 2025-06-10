@@ -6,7 +6,7 @@ This repo contains the various system design components info, questions and solu
 - [Scalability](7_Scalability)
 - [Database Design tips](3_Databases/Readme.md)
 - [System Design Tips](SystemDesignTips.md)
-- [System Estimation & Benchmarking](7c_SystemEstimations&Benchmarking)
+- [System Estimation & Benchmarking](7c_Estimations&Benchmarking)
 - [All Comparisons](All-Comparisons.md)
 - [Architecture Patterns](7b_ArchitecturePatterns/Readme.md)
 

@@ -16,7 +16,7 @@
 | Data Ingestion - Real-time events, analytics etc.          | For example - If we want to build our own Google Analytics or Amplitude (to track app activities, events etc.), we can use Kafka as a broker.                                            |
 | Distributed Logging - Logs Aggregation, Metrics            | Various systems in the IT infrastructure can push events/messages/logs in the Kafka. (example - [ELK stack](../../12_Observability/ELK.md))                                              |
 | Stream Processing - Data Pipelines, Microservices etc.     | [Kafka Streams](../../6_BigData/DataProcessing/KafkaStreams/Readme.md) can be helpful in stream processing the events (map/reduce, aggregation, counts etc.).                            |
-| Data Pipelines - CDC of DBs                                | [Kafka connectors](../../6_BigData/DataConnectors/KafkaConnect.md) can be helpful to migrate from one DB to another i.e. [handle CDC](../../3_Databases/15_ChangeDataCapture/Readme.md). |
+| Data Pipelines - CDC of DBs                                | [Kafka connectors](../../6_BigData/DataConnectors/KafkaConnect.md) can be helpful to migrate from one DB to another i.e. [handle CDC](../../3_Databases/5_DatabaseInternals/ChangeDataCapture/Readme.md). |
 
 # :star: Real world use cases of Kafka
 
@@ -123,7 +123,7 @@
 # Other Points
 - [Kafka vs Others](../KafkaVsRabbitMQVsSQSVsSNS.md)
 - [Kafka Estimates](KafkaEstimations.md)
-- [Apache Kafka - Benchmarking@LinkedIn](../../7c_SystemEstimations&Benchmarking/Benchmarking/KafkaBenchmarking.md)
+- [Apache Kafka - Benchmarking@LinkedIn](../../7c_Estimations&Benchmarking/Benchmarking/KafkaBenchmarking.md)
 - [Why Kafka is so fast?](WhyKafkaSoFast.md)
 - [Amazon Managed Streaming for Apache Kafka (MSK)](../../2_AWS/4_MessageBrokerServices/AmazonMSK.md) can be used to deploy Kafka on [AWS](../../2_AWS).
 - [Kora: The Cloud Native Engine for Apache Kafka](https://www.confluent.io/blog/cloud-native-data-streaming-kafka-engine/)
