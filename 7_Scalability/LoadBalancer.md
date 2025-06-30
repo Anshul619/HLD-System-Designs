@@ -18,8 +18,7 @@
 | Redundant Load Balancers | The load balancer can be a single point of failure; to overcome this, a second load balancer can be connected to the first to form a cluster.                                                                                                                                                                                                                                       |
 
 # What if load balancers fail? Are they not a single point of failure (SPOF)?
-- Load balancers are usually deployed in pairs as a means of disaster recovery. 
-- If one load balancer fails, and there’s nothing to failover to, the overall service will go down. 
+- Load balancers are usually deployed in pairs as a means of disaster recovery.
 - Generally, to maintain high availability, enterprises use clusters of load balancers that use heartbeat communication to check the health of load balancers at all times. 
 - On failure of primary LB, the backup can take over. 
 - But, if the entire cluster fails, manual rerouting can also be performed in case of emergencies.

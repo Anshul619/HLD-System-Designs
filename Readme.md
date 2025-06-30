@@ -1,13 +1,13 @@
 # Introduction
 
 This repo contains the various system design components info, questions and solutions.
+- [All Comparisons](All-Comparisons.md)
 - [HLD Design Problems](0_HLDUseCasesProblems)
 - [Real-world tech stacks](1_TechStacks)
 - [Scalability](7_Scalability)
 - [Database Design tips](3_Databases/Readme.md)
 - [System Design Tips](SystemDesignTips.md)
 - [System Estimation & Benchmarking](7c_Estimations&Benchmarking)
-- [All Comparisons](All-Comparisons.md)
 - [Architecture Patterns](7b_ArchitecturePatterns/Readme.md)
 
 # System Design - Tech Stack

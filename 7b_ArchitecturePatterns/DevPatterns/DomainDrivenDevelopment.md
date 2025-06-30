@@ -17,5 +17,5 @@
 - Hence, its preferred each repository is equipped with operations to deal with some aspect of your project.
 - Not all aspects may need a repository, but that is what you decide.
 
-![img.png](assets/ddd_img.png)
+![img.png](../assets/ddd_img.png)
 

@@ -1,3 +1,2 @@
 # Working Sets
-- [Working Set](https://shekhargulati.com/2012/01/10/how-working-set-affects-mongodb-performance/) is the amount of data(including indexes) that will be in used by your application and if this data fits in RAM then the application performance will be great else it would degrade drastically.
-- [Read more](https://shekhargulati.com/2012/01/10/how-working-set-affects-mongodb-performance/)
+- [Working Set](https://shekhargulati.com/2012/01/10/how-working-set-affects-mongodb-performance/) is the amount of data (including indexes) that will be in used by your application and if this data fits in RAM then the application performance will be great else it would degrade drastically.

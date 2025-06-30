@@ -1,5 +1,5 @@
 # Avro vs Others
-- [Avro](Avro.md) provides functionality similar to systems such as [Thrift](Thrift.md), [Protocol Buffers](ProtocolBuffers.md) etc.
+- [Avro](Avro.md) provides functionality similar to other protocols such as [Thrift](Thrift.md), [Protocol Buffers](ProtocolBuffers.md).
 
 | Feature           | [Avro](Avro.md) | [Protocol Buffers & Thrift](ProtocolBuffers.md) |
 |-------------------|-----------------|-------------------------------------------------|

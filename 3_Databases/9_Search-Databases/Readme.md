@@ -5,8 +5,8 @@
 | Based on Apache Lucene       | Search-DBs are based on [Apache Lucene - a text-search engine](https://lucene.apache.org/core/).                                                                                                         |
 | Used for derived data        | Search-DBs don't provide 100% durability, hence it should be used for [derived data](https://bonsai.io/blog/why-elasticsearch-should-not-be-your-primary-data-store) and not as primary source of truth. |
 | General use-cases            | [Read more](SearchUseCases.md)                                                                                                                                                                           |
-| Tokenizer                    | [Read more](Internals/Tokenizers.md)                                                                                                                                                                               |
-| Inverted Index               | [Read more](Internals/InvertedIndex.md)                                                                                                                                                                            |
+| Tokenizer                    | [Read more](Internals/Tokenizers.md)                                                                                                                                                                     |
+| Inverted Index               | [Read more](Internals/InvertedIndex.md)                                                                                                                                                                  |
 | Indices containing documents | Indices is like tables, documents like rows in Search-DBs.                                                                                                                                               |
 
 # Various Search-DBs

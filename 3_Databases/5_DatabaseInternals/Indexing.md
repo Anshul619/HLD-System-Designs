@@ -13,7 +13,7 @@
 
 | Title                                          | Remarks                                                                                                               |
 |------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------|
-| Increased storage space                        | Placing an index would add BTree data structure in disk, hence increasing space.                                      |
+| Increased storage space                        | Placing an index would add [BTree data structure](BTree.md) in disk, hence increasing space.                                  |
 | Slow Writes                                    | Writes could be slower since the index also needs to be updated. Hence, we should create only required indexes.       |
 | Drop indices before loading big-data           | When loading large amounts of data, it might be faster to disable indices, load the data, then rebuild the indices.   |
 | Incorrect compound indexes can be inconsistent | [Swiggy - BehindTheBug — Indexing Gone Wrong](https://bytes.swiggy.com/behindthebug-indexing-gone-wrong-6b4d682fd805) |

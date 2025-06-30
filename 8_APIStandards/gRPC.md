@@ -1,6 +1,6 @@
 # Introduction
 - [gRPC](https://grpc.io) is a modern open source high performance [Remote Procedure Call](https://www.geeksforgeeks.org/remote-procedure-call-rpc-in-operating-system/) framework that can run in any environment.
-- [gRPC](https://grpc.io) supports streams, where a call consists of not just one request and one response, but a series of requests and responses over time.
+- It supports streams, where a call consists of not just one request and one response, but a series of requests and responses over time.
 
 # Key Links
 

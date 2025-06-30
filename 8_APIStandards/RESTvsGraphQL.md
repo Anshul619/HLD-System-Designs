@@ -2,6 +2,8 @@
 
 ![img.png](assests/RESTvsGraphQL.png)
 
+# Comparisons
+
 | Feature                                    | GraphQL                                                                                                                                     | [REST](REST.md)                                         |
 |--------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------|
 | Flexibility                                | :+1: Client specify exact resource & fields in GraphQL schema (query param), it wants.                                                      | Rigid                                                   |

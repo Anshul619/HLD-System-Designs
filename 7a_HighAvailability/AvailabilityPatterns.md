@@ -5,7 +5,7 @@
 ### Active-Active policy
 - An active-active cluster is typically made up of at least two nodes, both actively running the same kind of service simultaneously.
 - In active-active, both servers are managing traffic, spreading the load between them.
-- This would enable application to be [fault-tolerant](FaultTolerance.md).
+- This would also enable application to be [fault-tolerant](FaultTolerance.md).
 
 ### Active-Passive policy
 - With active-passive fail-over, only the active server handles traffic & `heartbeats` are sent between the active and the passive server on standby.

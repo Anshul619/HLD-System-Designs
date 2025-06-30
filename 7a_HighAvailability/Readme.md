@@ -3,11 +3,9 @@
 - In AWS, [high availability]() is achieved through multiple deployments of the app in [different availability zones](../2_AWS/AWS-Global-Architecture-Region-AZ.md).
 - [High Availability vs Fault Tolerance](FaultToleranceVsHighAvailability.md)
 
-![](https://acg-wordpress-content-production.s3.us-west-2.amazonaws.com/app/uploads/2021/01/1_W7cR3GIoIafVXw1qjJdw1A.png)
-
 # Components of HA
 
-| Component  | Remarks                                                                                                                              |
+| Component  | Description                                                                                                                          |
 |------------|--------------------------------------------------------------------------------------------------------------------------------------|
 | Redundancy | Ensures that critical system components have another identical components with the same data, that can take over in case of failure. |
 | Monitoring | Identify problems in production systems that may disrupt or degrade service.                                                         |
@@ -23,13 +21,13 @@
 | :star: 99.99% availability | Four 9s  | 52 mins                        | Video Delivery, Broadcast systems        |
 | 99.999% availability       | Five 9s  | 5 mins                         | Telecom Industry, Bank, ATM Transactions |
 
-# Availability & service providers
+# How availability is measured?
 - Each service provider may start measuring availability at different points in time. 
 - Some cloud providers start measuring it when they first offer the service, while some measure it for specific clients when they start using the service. 
 - Some providers might not reduce their reported availability numbers if their service was not down for all the clients.
 - Therefore, we should carefully understand how a specific provider calculates their availability numbers.
 
-## Excluded downtimes
+## Excluded
 - The planned downtimes are excluded. 
 - Downtime due to cyberattacks might not be incorporated into the calculation of availability. 
 

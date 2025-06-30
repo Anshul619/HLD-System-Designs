@@ -3,7 +3,8 @@
 - A task that performs calculations on a small set of numbers, for example multiplying small matrices, is likely to be CPU bound.
 
 # CPU Intensive workloads
-- Big Time Complexity algorithm like O(n2) etc. Hence, minimize loops in the code, to decrease time complexity.
+- Big Time Complexity algorithm like O(n2) etc. 
+  - Hence, minimize loops in the code, to decrease time complexity.
 - Complex SQL Query joins, sub-query etc.
 - Machine learning workloads
 - Mathematical calculations like rules, multiplication, plus, subtraction etc.
@@ -14,7 +15,7 @@
 - Every join waste one CPU cycle.
 
 # Why doesn't my program run faster with more CPUs?
-- Whether a program runs faster with more CPUs depends on the problem it is solving.
+Whether a program runs faster with more CPUs depends on the problem it is solving.
 - The Go language provides concurrency primitives, such as goroutines and channels, but concurrency only enables parallelism when the underlying problem is intrinsically parallel.
 - Problems that are intrinsically sequential cannot be sped up by adding more CPUs, while those that can be broken into pieces that can execute in parallel can be speed up, sometimes dramatically.
 

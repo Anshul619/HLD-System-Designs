@@ -3,6 +3,6 @@
 
 ![img.png](../assests/protobuf_img.png)
 
-# Real world usages of Thrift
+# Real world usages of Protocol Buffers
 - Google
 - ActiveMQ uses protobuf for message store

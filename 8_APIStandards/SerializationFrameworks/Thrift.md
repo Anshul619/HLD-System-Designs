@@ -1,4 +1,3 @@
-
 # Thrift
 - [Thrift](https://thrift.apache.org) is a lightweight, language-independent software stack for point-to-point RPC implementation. 
 - Thrift provides clean abstractions and implementations for data transport, data serialization, and application level processing. 
