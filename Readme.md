@@ -40,7 +40,7 @@ This repo contains the various system design components info, questions and solu
         <div class="container" style="background:white">
             <div class="block two first">
                 <a href="2_AWS/1_NetworkingAndContentDelivery/1_EdgeNetworking/AmazonCloudFront.md" target="_blank">
-                  <img src="https://ericknavarro.io/images/thumbnails/12.png" width="150">
+                  <img src="https://www.pngall.com/wp-content/uploads/2016/03/Amazon-Cloudfront-Logo-PNG.png" width="150">
                 </a>
             </div>
         </div>
