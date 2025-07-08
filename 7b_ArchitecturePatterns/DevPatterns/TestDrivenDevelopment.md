@@ -1,5 +1,6 @@
 # Test Driven Development
-- [Test-Driven Development (TDD)](https://en.wikipedia.org/wiki/Test-driven_development) is a software development methodology that emphasizes writing tests before writing the actual code. It ensures that code is always tested and functional, reducing bugs and improving code quality.
+- [Test-Driven Development (TDD)](https://en.wikipedia.org/wiki/Test-driven_development) is a software development methodology that emphasizes writing tests before writing the actual code. 
+- It ensures that code is always tested and functional, reducing bugs and improving code quality.
 
 # Key Stages
 

@@ -234,7 +234,7 @@ This repo contains the various system design components info, questions and solu
           <img src="https://miro.medium.com/max/746/1*DbdVXy9_6uJVe8q1NOYVfg.png" width="150">
         </a>
         <br/><br/>
-        <a href="2_AWS/8_MonitoringServices/AmazonCloudWatch/Readme.md">
+        <a href="2_AWS/8_ObservabilityLogsServices/AmazonCloudWatch/Readme.md">
           <img src="https://miro.medium.com/max/800/1*ffbynFsxn43lPdne2kaHMQ.png" width="150">
         </a>
       </td>

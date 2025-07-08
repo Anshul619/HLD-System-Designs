@@ -1,6 +1,6 @@
 # Kubernates
-- [Kubernetes](https://kubernetes.io), also known as K8s, is an OPEN-SOURCE system for automating deployment, [scaling](../../7_Scalability), and management of containerized applications. 
-- [Kubernates]() is a [battle-tested container orchestration service](../Readme.md) i.e. manage, create containers (through pods, worker nodes).
+- [Kubernetes](https://kubernetes.io), also known as **K8s**, is an OPEN-SOURCE system for automating deployment, [scaling](../../7_Scalability), and management of containerized applications. 
+- It is a **battle-tested container orchestration service** i.e. manage, create containers (through pods, worker nodes).
 
 ![](Kubernates-Architecture.png)
 
@@ -12,12 +12,12 @@
 | Use Case                                                                 |
 |--------------------------------------------------------------------------|
 | [Zomato](../../0_HLDUseCasesProblems/FoodOrderingZomatoSwiggy/Readme.md) |
-| [Swiggy](../../1_TechStacks/Swiggy.md)                          |
+| [Swiggy](../../1_TechStacks/Swiggy.md)                                   |
 | [Spotify](../../1_TechStacks/Spotify/Readme.md)                          |
 | [Grab](../../1_TechStacks/Grab/Readme.md)                                |
 | [LinkedIn](../../1_TechStacks/LinkedIn/Readme.md)                        |
-| [Split.io](../../1_TechStacks/SplitIO.md)                       |
-| [Stripe](../../1_TechStacks/Stripe.md)                          |
+| [Split.io](../../1_TechStacks/SplitIO.md)                                |
+| [Stripe](../../1_TechStacks/Stripe.md)                                   |
 
 # Resources and Limits
 
@@ -31,10 +31,10 @@
 
 | Component                   | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
 |-----------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Control Plane (Master node) | [The control plane](https://kubernetes.io/docs/concepts/overview/components/) manages the worker nodes and the Pods in the cluster.<br/>- In production environments, the control plane usually runs across multiple computers and a cluster usually runs multiple nodes, providing [fault-tolerance and high availability](../../7a_HighAvailability/Readme.md).<br/>- [Nodes with controlplane]((https://kubernetes.io/docs/concepts/overview/components/)) role run the K8s master components (excluding [etcd](../../10_ClusterCoordination/etcd.md), as its separate role).           |
-| Worker Nodes                | Each docker/Pod container would run the micro-service (golang, java, python service etc.)<br/>- And a [worker node can have one or multiple pods](https://kubernetes.io/docs/concepts/architecture/nodes/).<br/>- Kubernates would manage the [worker nodes](https://kubernetes.io/docs/concepts/architecture/nodes/) i.e. Create, Update, Delete, Auto-Scale based on the configuration and params.                                                                                                                                                                                                                               |
+| Control Plane (Master node) | [The control plane](https://kubernetes.io/docs/concepts/overview/components/) manages the worker nodes and the pods in the cluster.<br/>- In production environments, the control plane usually runs across multiple computers and a cluster usually runs multiple nodes, providing [fault-tolerance and high availability](../../7a_HighAvailability/Readme.md).<br/>- [Nodes with controlplane]((https://kubernetes.io/docs/concepts/overview/components/)) role run the K8s master components (excluding [etcd](../../10_ClusterCoordination/etcd.md), as its separate role).                                                   |
+| Worker Nodes                | Each docker/Pod container would run the micro-service (golang, java, python services)<br/>- And a [worker node can have one or multiple pods](https://kubernetes.io/docs/concepts/architecture/nodes/).<br/>- Kubernates would manage the [worker nodes](https://kubernetes.io/docs/concepts/architecture/nodes/) i.e. Create, Update, Delete, Auto-Scale based on the configuration and params.                                                                                                                                                                                                                                   |
 | Pods                        | [Pods](https://kubernetes.io/docs/concepts/workloads/pods/) are the smallest deployable units of computing that you can create and manage in Kubernetes.<br/>- A Pod (as in a pod of whales or pea pod) is a group of one or more containers, with shared storage and network resources, and a specification for how to run the containers.<br/>- A pod can contain one or multiple containers (but generally one container).<br/>- [Minimum and Maximum Memory Constraints for a Namespace needs to be configured for the pod](https://kubernetes.io/docs/tasks/administer-cluster/manage-resources/memory-constraint-namespace/) |
-| Networking                  | K8s manages its own load balancer, service discovery (through [etcd](../../10_ClusterCoordination/etcd.md)) etc. [Read more](https://kubernetes.io/docs/concepts/services-networking/_print/)                                                                                                                                                                                                                                                                                                                                                                                                                              |
+| Networking                  | K8s manages its own load balancer, service discovery (through [etcd](../../10_ClusterCoordination/etcd.md)) etc. [Read more](https://kubernetes.io/docs/concepts/services-networking/_print/)                                                                                                                                                                                                                                                                                                                                                                                                                                      |
 | Cluster                     | [A Kubernetes cluster](https://kubernetes.io/docs/concepts/overview/components/) consists of a set of worker machines, called [nodes](), that run containerized applications. <br/>- Every cluster has at least one worker node.                                                                                                                                                                                                                                                                                                                                                                                                   |
 | Agents                      | Kubernetes agents perform various tasks on every node to manage the containers running on that node. For example:<br/>- cAdvisor collects and analyzes the resource usage of all containers on a node.<br/>- [kubelet](https://kubernetes.io/docs/reference/command-line-tools-reference/kubelet/) runs regular live-ness and readiness probes against each container on a node.                                                                                                                                                                                                                                                   |
 | Labels                      | [Labels](https://kubernetes.io/docs/concepts/overview/working-with-objects/labels/) are key/value pairs that are attached to objects, such as pods.<br/>- Labels are intended to be used to specify identifying attributes of objects that are meaningful and relevant to users, but do not directly imply semantics to the core system.                                                                                                                                                                                                                                                                                           |
@@ -50,15 +50,15 @@
 | ReplicationController | A [ReplicationController](https://kubernetes.io/docs/concepts/workloads/controllers/replicationcontroller/) ensures that a specified number of pod replicas are running at any one time. In other words, a ReplicationController makes sure that a pod or a homogeneous set of pods is always up and available.                                                                                                               |
 | Deployment Controller | [Deployment Controller](https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_DeploymentController.html) manages the rolling update and rollback of deployments (docker containers etc.)                                                                                                                                                                                                                              |
 
-## Workload Resources
+# Workload Resources
 
-### Deployments
+## Deployments
 - [A Deployment](https://kubernetes.io/docs/concepts/workloads/controllers/deployment/) provides declarative updates for Pods and ReplicaSets.
 - You describe a desired state in a Deployment, and the Deployment Controller changes the actual state to the desired state at a controlled rate. 
 - You can define Deployments to create new ReplicaSets, or to remove existing Deployments and adopt all their resources with new Deployments.
 - Every microservice, app component can be a deployment in K8s.
 
-### Replica Set
+## Replica Set
 - [ReplicasSet](https://kubernetes.io/docs/concepts/workloads/controllers/replicaset/) will ensure that the number of pods (defined in our config file) is always running in our cluster. 
 - Does not matter in which worker node they are running. 
 - The scheduler will schedule the pods on any node depending upon the free resources. 
@@ -68,13 +68,13 @@
 
 ![img.png](https://slathia15472244374.files.wordpress.com/2018/12/replicasset.png?w=810)
 
-### Daemon Set
+## Daemon Set
 - Whereas in the case of [DaemonSet](https://kubernetes.io/docs/concepts/workloads/controllers/daemonset/), it will ensure that one copy of pod defined in our configuration will always be available on every worker node.
 - Example - [newrelic-infra, newrelic-logging](https://docs.newrelic.com/docs/kubernetes-pixie/kubernetes-integration/get-started/introduction-kubernetes-integration) etc.
 
 ![img.png](https://slathia15472244374.files.wordpress.com/2018/12/daemonset.png?w=810)
 
-### StatefulSets
+## StatefulSets
 - [StatefulSets]((https://kubernetes.io/docs/concepts/workloads/controllers/statefulset/)) are used when state has to be persisted. 
 - Therefore, it uses volumeClaimTemplates / claims on persistent volumes to ensure they can keep the state across component restarts.
 - Example - [kube-state-metrics](https://github.com/kubernetes/kube-state-metrics) etc.
