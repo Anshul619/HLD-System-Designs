@@ -1,5 +1,5 @@
 # Read Consistency - DynamoDB
-- DynamoDB supports [eventually consistent and strongly consistent reads](../../../3_Databases/4_Consistency&Replication/Readme.md).
+- DynamoDB supports [eventually consistent and strongly consistent reads](../../../3_Databases/4_Consistency-Replication/Readme.md).
 
 |                | :star: Eventually Consistent Reads | Strongly Consistent Reads        |
 |----------------|------------------------------------|----------------------------------|

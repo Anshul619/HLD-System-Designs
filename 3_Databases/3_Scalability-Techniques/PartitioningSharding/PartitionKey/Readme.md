@@ -12,7 +12,7 @@
 | Use composite attributes                           | Try to combine more than one attribute to form a unique key, if that meets your access pattern.                                                                                                                                      |
 | Use Random Suffixes - Add random numbers or digits | A [randomizing strategy](RandomizingStrategy.md) can greatly improve write throughput.                                                                                                                                               |
 | Keep related data together                         | Instead of distributing related data items across multiple tables, you should keep related items in your NoSQL system as close together as possible.                                                                                 |
-| Cache the popular items                            | Cache the popular items when there is a high volume of read traffic using [Redis](../../../8_InMemory-Databases/Redis/Readme.md) or [Amazon DynamoDB Accelerator (DAX)](../../../../2_AWS/1_DatabaseServices/AmazonDynamoDB/DAX.md). |
+| Cache the popular items                            | Cache the popular items when there is a high volume of read traffic using [Redis](../../../8_Caching-InMemory-Databases/Redis/Readme.md) or [Amazon DynamoDB Accelerator (DAX)](../../../../2_AWS/1_DatabaseServices/AmazonDynamoDB/DAX.md). |
 
 # Anti-patterns for partition keys
 

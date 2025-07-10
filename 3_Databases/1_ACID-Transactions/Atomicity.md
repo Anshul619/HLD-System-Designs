@@ -18,5 +18,5 @@ It involves the following two operations.
 
 | Use Case                                                    |
 |-------------------------------------------------------------|
-| [Redis Transaction Lock](../8_InMemory-Databases/Redis/Readme.md) |
+| [Redis Transaction Lock](../8_Caching-InMemory-Databases/Redis/Readme.md) |
 

@@ -10,9 +10,9 @@
 
 # PACELC Theorem
 
-![img.png](../2_CAP&PACELCTheorems/PACELC_Diagram.drawio.png)
+![img.png](../2_CAP-PACELC-Theorems/PACELC_Diagram.drawio.png)
 
-[Read more](../2_CAP&PACELCTheorems/Readme.md)
+[Read more](../2_CAP-PACELC-Theorems/Readme.md)
 
 # References
 - [Data consistency](https://en.wikipedia.org/wiki/Data_consistency)

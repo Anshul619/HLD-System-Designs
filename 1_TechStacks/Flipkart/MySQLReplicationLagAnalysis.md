@@ -13,7 +13,7 @@
 | MySQL 5.6 Clusters | 250         | 26                            |
 | MySQL 5.7 Clusters | 450         | 3                             |
 
-[Read about replication lag](../../3_Databases/4_Consistency&Replication/ReplicationLag.md).
+[Read about replication lag](../../3_Databases/4_Consistency-Replication/ReplicationLag.md).
 
 # Test - Hardware Details
 

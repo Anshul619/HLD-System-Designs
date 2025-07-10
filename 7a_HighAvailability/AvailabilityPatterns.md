@@ -19,4 +19,4 @@
 - There is a potential for loss of data if the active system fails before any newly written data can be replicated to the passive.
 
 ## Replication
-- [Read here about replication](../3_Databases/4_Consistency&Replication/Replication.md)
+- [Read here about replication](../3_Databases/4_Consistency-Replication/Replication.md)

@@ -2,7 +2,7 @@
 
 | Principle               | Remarks                                                                                                            |
 |-------------------------|--------------------------------------------------------------------------------------------------------------------|
-| Caching                 | Use [redis](../3_Databases/8_InMemory-Databases/Redis/Readme.md), to improve performance of get apis.              |
+| Caching                 | Use [redis](../3_Databases/8_Caching-InMemory-Databases/Redis/Readme.md), to improve performance of get apis.              |
 | Connection Polling      | Maintain a pool of connections, instead of opening a new connection for every API request.                         |
 | Avoid N+1 Query pattern | Instead of querying data in N queries (with different ids), query data in 1 query.                                 |
 | Pagination              | Break large API response using limit & offset (relay based) or cursors.                                            |

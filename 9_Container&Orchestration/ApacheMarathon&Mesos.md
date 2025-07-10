@@ -12,7 +12,7 @@
 - Program like it's a single of resources.
 
 ### Linear Scalability
-- [Linear Scalability](../3_Databases/3_ScalabilityTechniques/Readme.md) - Industry proven to easily scale to 10,000s of nodes.
+- [Linear Scalability](../3_Databases/3_Scalability-Techniques/Readme.md) - Industry proven to easily scale to 10,000s of nodes.
 
 ### High availability
 - [Fault-tolerant](../7a_HighAvailability/Readme.md) replicated master and agents using [Zookeeper](../10_ClusterCoordination/ApacheZookeeper.md).

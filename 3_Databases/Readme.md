@@ -21,34 +21,34 @@
 |----------------------------------------------------------------------------------------------|----------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | [SQL vs NoSQL](SQLvsNoSQL.md)                                                                | General  | [Terms Comparison - SQL vs NoSQL](Terminologies.md)                                                                                                                                              |
 | [All Databases list](All-DBs-List.md)                                                        | General  |                                                                                                                                                                                                  |
-| [DB Scalability Techniques](3_ScalabilityTechniques/Readme.md)                               | General  |                                                                                                                                                                                                  |
+| [DB Scalability Techniques](3_Scalability-Techniques/Readme.md)                               | General  |                                                                                                                                                                                                  |
 | [OLTP vs OLAP](OLTPvsOTAP.md)                                                                | General  |                                                                                                                                                                                                  |
-| [Sharding of the database](3_ScalabilityTechniques/PartitioningSharding/Readme.md)           | Sharding | To scale the data store horizontally (& improve write scalability), shard the databases using [consistent hashing technique](3_ScalabilityTechniques/PartitioningSharding/ConsistentHashing.md). |
-| [Partitioning Key Tips](3_ScalabilityTechniques/PartitioningSharding/PartitionKey/Readme.md) | Sharding | Decide partition key carefully (to prevent hot partition problem).                                                                                                                               |
+| [Sharding of the database](3_Scalability-Techniques/PartitioningSharding/Readme.md)           | Sharding | To scale the data store horizontally (& improve write scalability), shard the databases using [consistent hashing technique](3_Scalability-Techniques/PartitioningSharding/ConsistentHashing.md). |
+| [Partitioning Key Tips](3_Scalability-Techniques/PartitioningSharding/PartitionKey/Readme.md) | Sharding | Decide partition key carefully (to prevent hot partition problem).                                                                                                                               |
 | [DynamoDB vs MongoDB vs Casandra](DynamoDBVsMongoDBVsCasandra.md)                            | NoSQL DB |                                                                                                                                                                                                  |
-| [SQL Tunning](3_ScalabilityTechniques/SQLTuning.md)                                          | SQL DB   | Tune queries, to improve performance of SQL Queries.                                                                                                                                             |
+| [SQL Tunning](3_Scalability-Techniques/SQLTuning.md)                                          | SQL DB   | Tune queries, to improve performance of SQL Queries.                                                                                                                                             |
 
 # NoSQL - Tips & Patterns
 
 | Tips                                                      | Description                                                                                                                                                                                                                                                                                                                                      |
 |-----------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Data that is accessed together, should be stored together | Instead of distributing related data items across multiple tables, you should keep related items in your NoSQL system as close together as possible.                                                                                                                                                                                             |
-| Vertical partitioning                                     | Breaks items into multiple items using [partition key](3_ScalabilityTechniques/PartitioningSharding/PartitionKey/Readme.md) & [sort key](3_ScalabilityTechniques/PartitioningSharding/PartitionKey/SortKey.md).<br/>- [Read more](https://aws.amazon.com/blogs/database/use-vertical-partitioning-to-scale-data-efficiently-in-amazon-dynamodb/) |
-| Use sort order                                            | All items with the same partition key value are stored together, in sorted order by [sort key value](3_ScalabilityTechniques/PartitioningSharding/PartitionKey/SortKey.md).                                                                                                                                                                      |
-| Distribute Queries                                        | Design [data keys](3_ScalabilityTechniques/PartitioningSharding/PartitionKey/Readme.md) to distribute traffic evenly across partitions as much as possible, avoiding [hot spots](3_ScalabilityTechniques/PartitioningSharding/PartitionKey/HotPartition.md).                                                                                     |
+| Vertical partitioning                                     | Breaks items into multiple items using [partition key](3_Scalability-Techniques/PartitioningSharding/PartitionKey/Readme.md) & [sort key](3_Scalability-Techniques/PartitioningSharding/PartitionKey/SortKey.md).<br/>- [Read more](https://aws.amazon.com/blogs/database/use-vertical-partitioning-to-scale-data-efficiently-in-amazon-dynamodb/) |
+| Use sort order                                            | All items with the same partition key value are stored together, in sorted order by [sort key value](3_Scalability-Techniques/PartitioningSharding/PartitionKey/SortKey.md).                                                                                                                                                                      |
+| Distribute Queries                                        | Design [data keys](3_Scalability-Techniques/PartitioningSharding/PartitionKey/Readme.md) to distribute traffic evenly across partitions as much as possible, avoiding [hot spots](3_Scalability-Techniques/PartitioningSharding/PartitionKey/HotPartition.md).                                                                                     |
 | Use secondary indexes                                     | By creating specific [secondary indexes](../2_AWS/1_DatabaseServices/AmazonDynamoDB/SecondaryIndexes.md), you can enable different queries than your main table can support, and that are still fast and relatively inexpensive.                                                                                                         |
 
 # PACLEC Theorem
 
-![](2_CAP&PACELCTheorems/PACELC_Diagram.drawio.png)
+![](2_CAP-PACELC-Theorems/PACELC_Diagram.drawio.png)
 
-[Read more](2_CAP&PACELCTheorems/Readme.md)
+[Read more](2_CAP-PACELC-Theorems/Readme.md)
 
 # ACID Transactions
 
-![](1_ACIDTransactions/assets/ACID_Property_DBMS.drawio.png)
+![](1_ACID-Transactions/assets/ACID_Property_DBMS.drawio.png)
 
-[Read more](1_ACIDTransactions/Readme.md)
+[Read more](1_ACID-Transactions/Readme.md)
 
 # References
 - :star: [AWS re:Invent 2021 - Which NoSQL database is right for you?](https://www.youtube.com/watch?v=ivBaro-8PhI)

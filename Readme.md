@@ -108,15 +108,15 @@ This repo contains the various system design components info, questions and solu
     </tr>
     <tr>
       <td>
-        <a href="3_Databases/8_InMemory-Databases">In-Memory Cache/DBs</a>
+        <a href="3_Databases/8_Caching-InMemory-Databases">In-Memory Cache/DBs</a>
       </td>
       <td>
         <div class="container" style="background:white">
             <div class="block two first">
-                <a href="3_Databases/8_InMemory-Databases/Redis/Readme.md" target="_blank">
+                <a href="3_Databases/8_Caching-InMemory-Databases/Redis/Readme.md" target="_blank">
                   Redis
                 </a>, 
-                <a href="3_Databases/8_InMemory-Databases/AeroSpike.md" target="_blank">
+                <a href="3_Databases/8_Caching-InMemory-Databases/AeroSpike.md" target="_blank">
                   Aerospike
                 </a>
             </div>

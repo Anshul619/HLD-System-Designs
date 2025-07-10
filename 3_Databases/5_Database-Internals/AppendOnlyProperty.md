@@ -4,8 +4,8 @@
 - Many data structures and databases implement [immutable objects](https://en.wikipedia.org/wiki/Immutable_object), effectively making their data structures append-only. 
 
 # Benefits
-- [Ensuring data consistency](../4_Consistency&Replication/Readme.md) 
-- [Improving performance](../3_ScalabilityTechniques/Readme.md) 
+- [Ensuring data consistency](../4_Consistency-Replication/Readme.md) 
+- [Improving performance](../3_Scalability-Techniques/Readme.md) 
 - And permitting rollbacks.
 
 # Supported Databases

@@ -11,5 +11,5 @@
 
 # History of DynamoDB
 > [How Amazon’s DynamoDB helped reinvent databases?](https://www.networkworld.com/article/2932313/how-amazon-s-dynamodb-helped-reinvent-databases.html)
-> - Amazon DynamoDB is built on the principles of [Dynamo](../../../3_Databases/5_DatabaseInternals/DynamoStyleDatabases.md) and is a hosted service within the AWS infrastructure.
-> - However, while [Dynamo](../../../3_Databases/5_DatabaseInternals/DynamoStyleDatabases.md) is based on [leaderless replication](../../../3_Databases/4_Consistency&Replication/Replication.md), DynamoDB uses [single-leader replication](../../../3_Databases/4_Consistency&Replication/Replication.md).
+> - Amazon DynamoDB is built on the principles of [Dynamo](../../../3_Databases/5_Database-Internals/DynamoStyleDatabases.md) and is a hosted service within the AWS infrastructure.
+> - However, while [Dynamo](../../../3_Databases/5_Database-Internals/DynamoStyleDatabases.md) is based on [leaderless replication](../../../3_Databases/4_Consistency-Replication/Replication.md), DynamoDB uses [single-leader replication](../../../3_Databases/4_Consistency-Replication/Replication.md).

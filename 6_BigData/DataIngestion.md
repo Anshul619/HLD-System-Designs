@@ -4,4 +4,4 @@
 
 # Useful Tools
 - [Kafka](../4_MessageBrokersEDA/Kafka/Readme.md)
-- [Debezium - CDC](../3_Databases/5_DatabaseInternals/ChangeDataCapture/Debezium.md)
+- [Debezium - CDC](../3_Databases/5_Database-Internals/ChangeDataCapture/Debezium.md)

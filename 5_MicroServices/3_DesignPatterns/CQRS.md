@@ -8,4 +8,4 @@
 ![](https://microservices.io/i/patterns/data/QuerySideService.png)
 
 # Disadvantages
-- [Eventually Consistency](../../3_Databases/4_Consistency&Replication/Readme.md)
+- [Eventually Consistency](../../3_Databases/4_Consistency-Replication/Readme.md)

@@ -17,6 +17,6 @@
 |                  | Remarks                                                                           |
 |------------------|-----------------------------------------------------------------------------------|
 | Cost             | Additional storage and throughput cost                                            |
-| Consistency      | [Eventually consistent](../../../3_Databases/4_Consistency&Replication/Readme.md) |
+| Consistency      | [Eventually consistent](../../../3_Databases/4_Consistency-Replication/Readme.md) |
 | Management       | Create, maintain, update indexes                                                  |
 | Write consistent | Hot keys                                                                          |

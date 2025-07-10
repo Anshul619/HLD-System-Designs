@@ -18,5 +18,5 @@
 - A single table with inverted indexes can usually enable simple queries to create and retrieve the complex hierarchical data structures required by your application.
 
 # GSI overloading
-- The fact that some of these entities use proper names and others use other entity IDs as [sort key](../../../../3_Databases/3_ScalabilityTechniques/PartitioningSharding/PartitionKey/SortKey.md) values allows the same [global secondary index](../SecondaryIndexes.md) to support multiple types of queries.
+- The fact that some of these entities use proper names and others use other entity IDs as [sort key](../../../../3_Databases/3_Scalability-Techniques/PartitioningSharding/PartitionKey/SortKey.md) values allows the same [global secondary index](../SecondaryIndexes.md) to support multiple types of queries.
 

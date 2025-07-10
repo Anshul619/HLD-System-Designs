@@ -11,7 +11,7 @@
 | Container Orchestration                             | [Kubernates](../../9_Container&Orchestration/Kubernates/Readme.md)                   |
 | Object Store, Data Lake                             | [Amazon S3](../../2_AWS/6_StorageServices/3_S3ObjectStorage/Readme.md)                           |
 | Graph Database                                      | [Amazon Neptune](../../2_AWS/1_DatabaseServices/AmazonNeptune.md)                                |
-| InMemory Cache                                      | [Redis](../../3_Databases/8_InMemory-Databases/Redis/Readme.md)                  |
+| InMemory Cache                                      | [Redis](../../3_Databases/8_Caching-InMemory-Databases/Redis/Readme.md)                  |
 | Logging                                             | [ELK](https://engineering.grab.com/structured-logging)                                                     |
 
 # Use Cases
