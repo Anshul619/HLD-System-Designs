@@ -5,10 +5,10 @@
 | :star: [AWS - Serverless architecture](../2_AWS/AWS-Serverless-Architecture.md)                                                   |                                                   |
 | :star: [MicroServices Pattern](../5_MicroServices/3_DesignPatterns/Readme.md)                                                     | [MicroServices](../5_MicroServices/Readme.md)     |
 | :star: [Event-Driven Architecture](../4_MessageBrokersEDA/EventDrivenArchitecture/Readme.md)                                      | [Message Broker Services](../4_MessageBrokersEDA) |
-| [Sharding/Partitioning](../3_Databases/3_Scalability-Techniques/PartitioningSharding/Readme.md)                                    | [Database Services](../3_Databases/)              |
+| [Sharding/Partitioning](../3_Databases/3_Scalability-Techniques/PartitioningSharding/Readme.md)                                   | [Database Services](../3_Databases/)              |
 | [Domain Driven development](DevPatterns/DomainDrivenDevelopment.md)                                                               |                                                   |
 | [Shared nothing architecture](SharedNothingArchitecture.md)                                                                       | [MicroServices](../5_MicroServices/Readme.md)     |
-| [Circuit Breaker Pattern](CircuitBreaker.md)                                                                                      | [MicroServices](../5_MicroServices/Readme.md)     |
+| [Circuit Breaker Pattern](RetryExponenialBackoff/CircuitBreaker.md)                                                               | [MicroServices](../5_MicroServices/Readme.md)     |
 | [Command Query Responsibility Segregation (CQRS)](../5_MicroServices/3_DesignPatterns/CQRS.md)                                    | [MicroServices](../5_MicroServices/Readme.md)     |
 | [Event Sourcing Pattern](../5_MicroServices/3_DesignPatterns/EventSourcing.md)                                                    | [MicroServices](../5_MicroServices/Readme.md)     |
 | [Pub-Sub model](../4_MessageBrokersEDA/EventDrivenArchitecture/PubSubModel.md)                                                    | [Message Broker Services](../4_MessageBrokersEDA) |

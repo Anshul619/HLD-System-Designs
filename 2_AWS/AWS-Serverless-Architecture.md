@@ -61,3 +61,4 @@ Every definition of [serverless](https://aws.amazon.com/serverless/) mentions th
 # References
 - [Building well-architected serverless applications: Optimizing application costs](https://aws.amazon.com/blogs/compute/building-well-architected-serverless-applications-optimizing-application-costs/)
 - [AWS Summit ASEAN 2023 | Composing integration patterns in serverless microservices (BOA301)](https://www.youtube.com/watch?v=ldTJaT-aZqU)
+- [Serverless Patterns Collection](https://serverlessland.com/)
