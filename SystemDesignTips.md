@@ -39,3 +39,4 @@
 
 # Reference
 - [LinkedIn Post](https://www.linkedin.com/feed/update/urn:li:activity:7173546625691234305?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7173546625691234305%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29)
+- [Golden Rules - System Design](https://leetcode.com/discuss/post/3616948/golden-rules-to-answer-in-a-system-desig-i41b/)
