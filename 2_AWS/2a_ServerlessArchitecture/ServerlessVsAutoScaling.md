@@ -1,6 +1,6 @@
 # Serverless vs Autoscaling
 
-| Feature              | [Serverless](AWS-Serverless-Architecture.md)       | [AutoScaling](5_AutoScaling/Readme.md)          |
+| Feature              | [Serverless](Readme.md)                            | [AutoScaling](../5_AutoScaling/Readme.md)        |
 |----------------------|----------------------------------------------------|--------------------------------------------------|
 | Scalability          | Automatic, cloud-provider managed                  | Manual configuration required                    |
 | Cost                 | Based on function executions and resources         | Based on instance provisioning and usage         |

@@ -11,15 +11,15 @@ Every definition of [serverless](https://aws.amazon.com/serverless/) mentions th
 
 | Serverless Service                                                                               | Service Type        | Remarks                                                                                |
 |--------------------------------------------------------------------------------------------------|---------------------|----------------------------------------------------------------------------------------|
-| :star: [AWS Lambda](2_ComputeServices/AWSLambda/Readme.md)                                       | Compute             |                                                                                        |
-| [AWS Fargate](2_ComputeServices/AWSFargate.md)                                                   | Compute             | [AWS Fargate vs Lambda](2_ComputeServices/AWSFargateVsLambda.md)                       |
-| [AWS Step Functions](2_ComputeServices/AWSStepFunctions/Readme.md)                               | Compute             |                                                                                        |
-| [Amazon DynamoDB](1_DatabaseServices/AmazonDynamoDB/Readme.md)                                   | Database            | [DynamoDB - Capacity Modes](1_DatabaseServices/AmazonDynamoDB/CapacityModes/Readme.md) |
-| [Amazon Aurora Serverless](1_DatabaseServices/AmazonRDS/AmazonAurora/Serverless/Readme.md)       | Database            |                                                                                        |
-| [AWS Batch](10_BigDataServices/DataProcessing/AWSBatch.md)                                       | Big Data Processing |                                                                                        |
-| [AWS Glue](10_BigDataServices/DataProcessing/AWSGlue.md)                                         | Big Data Processing |                                                                                        |
-| [API Gateway](16_NetworkingAndContentDelivery/2_ApplicationNetworking/AmazonAPIGateway/Readme.md) | API Gateway         |                                                                                        |
-| [Amazon SQS](4_MessageBrokerServices/AmazonSQS/Readme.md)                                        | Message Broker      |                                                                                        |
+| :star: [AWS Lambda](../2_ComputeServices/AWSLambda/Readme.md)                                       | Compute             |                                                                                        |
+| [AWS Fargate](../2_ComputeServices/AWSFargate.md)                                                   | Compute             | [AWS Fargate vs Lambda](../2_ComputeServices/AWSFargateVsLambda.md)                       |
+| [AWS Step Functions](../2_ComputeServices/AWSStepFunctions/Readme.md)                               | Compute             |                                                                                        |
+| [Amazon DynamoDB](../1_DatabaseServices/AmazonDynamoDB/Readme.md)                                   | Database            | [DynamoDB - Capacity Modes](../1_DatabaseServices/AmazonDynamoDB/CapacityModes/Readme.md) |
+| [Amazon Aurora Serverless](../1_DatabaseServices/AmazonRDS/AmazonAurora/Serverless/Readme.md)       | Database            |                                                                                        |
+| [AWS Batch](../10_BigDataServices/DataProcessing/AWSBatch.md)                                       | Big Data Processing |                                                                                        |
+| [AWS Glue](../10_BigDataServices/DataProcessing/AWSGlue.md)                                         | Big Data Processing |                                                                                        |
+| [API Gateway](../16_NetworkingAndContentDelivery/2_ApplicationNetworking/AmazonAPIGateway/Readme.md) | API Gateway         |                                                                                        |
+| [Amazon SQS](../4_MessageBrokerServices/AmazonSQS/Readme.md)                                        | Message Broker      |                                                                                        |
 
 
 # Considerations for serverless applications
@@ -44,7 +44,7 @@ Every definition of [serverless](https://aws.amazon.com/serverless/) mentions th
 | Cost                    | The cost of hiring backend infrastructure engineers goes down, along with operational costs.                                                                                                    |
 | Customer obsession      | Abstraction from servers allows companies to dedicate more time and resources to developing and improving customer experience.                                                                  |
 | Startup friendly        | The serverless architecture pay-as-you-go model allows you to build an environment nearly for free and ease into the market without dealing with huge bills for minimum traffic.                |
-| Example AWS Services    | [Amazon Aurora Serverless](1_DatabaseServices/AmazonRDS/AmazonAurora/Serverless/Readme.md), [Amazon DynamoDB](1_DatabaseServices/AmazonDynamoDB/Readme.md) etc.                                 |
+| Example AWS Services    | [Amazon Aurora Serverless](../1_DatabaseServices/AmazonRDS/AmazonAurora/Serverless/Readme.md), [Amazon DynamoDB](../1_DatabaseServices/AmazonDynamoDB/Readme.md) etc.                                 |
 
 # Benefits of a server-based architecture
 
@@ -56,7 +56,7 @@ Every definition of [serverless](https://aws.amazon.com/serverless/) mentions th
 | Overall control            | The company owns and manages the infrastructure, which provides full control over all aspects of the application.                                                                                       |
 | Compliance and security    | Having full control over the infrastructure allows for full visibility, which may be required for compliance and security standards.                                                                    |
 | Legacy applications        | Existing applications may not have the flexibility of decoupling individual parts and may be better suited to migrate to a server-based architecture.                                                   |
-| Example AWS Services       | [Amazon RDS](1_DatabaseServices/AmazonRDS/Readme.md), [Amazon EC2](2_ComputeServices/AmazonEC2/Readme.md) etc.                                                                                          |
+| Example AWS Services       | [Amazon RDS](../1_DatabaseServices/AmazonRDS/Readme.md), [Amazon EC2](../2_ComputeServices/AmazonEC2/Readme.md) etc.                                                                                          |
 
 # References
 - [Building well-architected serverless applications: Optimizing application costs](https://aws.amazon.com/blogs/compute/building-well-architected-serverless-applications-optimizing-application-costs/)

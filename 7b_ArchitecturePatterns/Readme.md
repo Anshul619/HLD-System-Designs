@@ -2,7 +2,7 @@
 
 | Pattern                                                                                                                           | Service Type                                      |
 |-----------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------|
-| :star: [AWS - Serverless architecture](../2_AWS/AWS-Serverless-Architecture.md)                                                   |                                                   |
+| :star: [AWS - Serverless architecture](../2_AWS/2a_ServerlessArchitecture/Readme.md)                                                   |                                                   |
 | :star: [MicroServices Pattern](../5_MicroServices/3_DesignPatterns/Readme.md)                                                     | [MicroServices](../5_MicroServices/Readme.md)     |
 | :star: [Event-Driven Architecture](../4_MessageBrokersEDA/EventDrivenArchitecture/Readme.md)                                      | [Message Broker Services](../4_MessageBrokersEDA) |
 | [Sharding/Partitioning](../3_Databases/3_Scalability-Techniques/PartitioningSharding/Readme.md)                                   | [Database Services](../3_Databases/)              |

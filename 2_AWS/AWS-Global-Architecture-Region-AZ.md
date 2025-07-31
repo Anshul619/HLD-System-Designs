@@ -14,22 +14,19 @@
   - eu-west-1 (Europe (Ireland))
   - eu-north-1 (Europe (Stockholm))
   - ap-south-1 (Asia Pacific (Mumbai))
-- [In AWS, every region would have its own cluster](../1_HLDDesignComponents/0_SystemGlossaries/Scalability/ServersCluster.md).
+- In AWS, every region would have its own cluster.
 
-## AWS Region Consideration
-- 
-
-![img.png](0_AWSDesigns/DesignMultiRegionActiveActiveArchitectureOnAWS/AWS-Multi-Region-AZ-HA.drawio.png)
+![img.png](../0_HLDUseCasesProblems/AWS_DesignMultiRegionActiveActiveArchitecture/AWS-Multi-Region-AZ-HA.drawio.png)
 
 # Availability Zones (AZ)
 - [An Availability Zone (AZ)](https://aws.amazon.com/about-aws/global-infrastructure/regions_az/) is `one or more discrete data centers` with redundant power, networking, and connectivity in an AWS Region. 
-- AZs give customers the ability to operate production applications and databases that are more [highly available](../1_HLDDesignComponents/0_SystemGlossaries/Reliability/HighAvailability.md), [fault-tolerant](../1_HLDDesignComponents/0_SystemGlossaries/Reliability/FaultTolerance&DisasterRecovery.md), and [scalable](../1_HLDDesignComponents/0_SystemGlossaries/Scalability/DBScalability.md) than would be possible from a single data center.
+- AZs give customers the ability to operate production applications and databases that are more [highly available](../7a_HighAvailability/Readme.md), [fault-tolerant](../7a_HighAvailability/FaultTolerance.md), and [scalable](../7_Scalability) than would be possible from a single data center.
 - [Most Regions]() are home to 2-3 different Availability Zones each, providing adequate redundancy when necessary within a given Region.
 - All Availability Zones within a single Region are connected to one another through [private fiber-optic networking](), allowing each Availability Zone to communicate with one another and transfer data quickly and efficiently as required.
 - There are `69 availability zones` available in AWS, around the world.
 
 Every AZ is labeled with a letter a, b, c etc.
-- For example - [AWS Region eu-central-1 has three availability zones eu-central-1a,1b,1c](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Concepts.RegionsAndAvailabilityZones.html).
+- For example - AWS Region eu-central-1 has three availability zones [eu-central-1a,1b,1c](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Concepts.RegionsAndAvailabilityZones.html).
 
 ![img.png](https://d0.awsstatic.com/global-infrastructure/maps/Global_Infrastructure_5.13.png)
 
