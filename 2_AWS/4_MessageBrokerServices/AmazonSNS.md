@@ -12,7 +12,7 @@
 - This pattern also known as [Fanout-pattern](https://aws.amazon.com/getting-started/hands-on/send-fanout-event-notifications/)
 - [Read more](https://docs.aws.amazon.com/sns/latest/dg/sns-system-to-system-messaging.html)
 
-![](assests/sns/FanOutPatternSQSSNS.png)
+![](assets/FanOutPatternSQSSNS.png)
 
 # Available Target Services
 - HTTP(s)

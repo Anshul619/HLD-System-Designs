@@ -57,7 +57,7 @@
 
 ## Amazon SNS with Lambda
 
-![img.png](../../4_MessageBrokerServices/assests/sns/FanOutPatternSQSSNS.png)
+![img.png](../../4_MessageBrokerServices/assets/FanOutPatternSQSSNS.png)
 
 [Read more](../../4_MessageBrokerServices/AmazonSNS.md)
 

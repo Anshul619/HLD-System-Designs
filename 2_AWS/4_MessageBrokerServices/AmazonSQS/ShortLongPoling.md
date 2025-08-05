@@ -1,5 +1,5 @@
 
-# Short & Long Polling
+# Short & Long Polling in SQS
 - [Amazon SQS](https://aws.amazon.com/sqs/faqs/) provides short polling and long polling to receive messages from a queue. 
 
 |              | Short polling                           | Long Poling                                                                                            |

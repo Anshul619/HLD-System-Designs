@@ -27,7 +27,7 @@
 
 # Amazon Data Firehouse & Event Bridge
 
-![](../../../4_MessageBrokerServices/assests/eventbridge/EventBridge.png)
+![](../../../4_MessageBrokerServices/assets/EventBridge.png)
 
 # References
 - [Delivering Real-time Streaming Data to Amazon S3 Using Amazon Kinesis Data Firehose](https://towardsdatascience.com/delivering-real-time-streaming-data-to-amazon-s3-using-amazon-kinesis-data-firehose-2cda5c4d1efe)
