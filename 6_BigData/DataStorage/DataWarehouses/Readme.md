@@ -10,5 +10,5 @@
 - Also, data warehouses are optimized for analytic access patterns (i.e. SQL databases with no indexes).
 
 # Common Data Warehouses
-- [Amazon Redshift](../../../2_AWS/10_BigDataServices/DataStorage/DataWarehouses/AmazonRedshift.md)
+- [Amazon Redshift](https://github.com/Anshul619/AWS-Services/tree/main/10_BigData/DataStorage/DataWarehouses/AmazonRedshift.md)
 - [ClickHouse](ClickHouse.md)

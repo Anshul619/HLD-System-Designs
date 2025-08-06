@@ -2,7 +2,7 @@
 
 | Comparison                                                                                                        | Service Type                                                       |
 |-------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------|
-| :star: [AWS - All Comparisons](2_AWS/AWS-All-Comparisons.md)                                                      |                                                                    |
+| :star: [AWS - All Comparisons](https://github.com/Anshul619/AWS-Services/tree/main/AWS-All-Comparisons.md)                                                      |                                                                    |
 | :star: [Message Broker vs DB](4_MessageBrokersEDA/MessageBrokerVsDB.md)                                           | [Message Broker Services](4_MessageBrokersEDA)                     |
 | :star: [Message Brokers - Kafka vs Others](4_MessageBrokersEDA/KafkaVsRabbitMQVsSQSVsSNS.md)                      | [Message Broker Services](4_MessageBrokersEDA)                     |
 | :star: [SQL vs NoSQL](3_Databases/SQLvsNoSQL.md)                                                                  | [Database Services](3_Databases)                                   |

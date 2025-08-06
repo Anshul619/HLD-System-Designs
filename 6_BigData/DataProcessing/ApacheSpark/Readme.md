@@ -12,8 +12,8 @@
 
 |                                                                                              | Remarks                                                                                                               |
 |----------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------|
-| [Zomato - HLD Design](../../../0_HLDUseCasesProblems/FoodOrderingZomatoSwiggy/Readme.md)     | Generate recommendations based on continuous streams of user activity, order activity, pricing and promo changes etc. |
-| [Uber Driver Allocation](../../../0_HLDUseCasesProblems/DriverAllocationUberGoJek/Readme.md) | Select driver based on continuous streams of driver locations, user location etc.                                     |
+| [Zomato - HLD Design](../../../0_UseCaseDesigns/FoodOrderingZomatoSwiggy/Readme.md)     | Generate recommendations based on continuous streams of user activity, order activity, pricing and promo changes etc. |
+| [Uber Driver Allocation](../../../0_UseCaseDesigns/DriverAllocationUberGoJek/Readme.md) | Select driver based on continuous streams of driver locations, user location etc.                                     |
 
 # Features
 

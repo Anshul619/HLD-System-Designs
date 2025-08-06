@@ -7,7 +7,7 @@
 - :star: [MongoDB vs Casandra vs DynamoDB](../../DynamoDBVsMongoDBVsCasandra.md)
 
 # :star: Real world use cases of MongoDB
-- [Zomato - HLD Design](../../../0_HLDUseCasesProblems/FoodOrderingZomatoSwiggy/Readme.md)
+- [Zomato - HLD Design](../../../0_UseCaseDesigns/FoodOrderingZomatoSwiggy/Readme.md)
 
 # General Use Cases
 

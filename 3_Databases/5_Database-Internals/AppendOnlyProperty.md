@@ -14,12 +14,12 @@
 |------------------------------------------------------------------------------------------------------------------------------|
 | :star: [LSM-Tree based NoSQL DBs like Casandra, RocksDB etc.](LSMTree.md)                                                    |
 | :star: [Kafka](../../4_MessageBrokersEDA/Kafka/Readme.md)                                                                    |
-| :star: [Amazon S3](../../2_AWS/6_StorageServices/3_S3ObjectStorage/Readme.md)                                                |
+| :star: [Amazon S3](https://github.com/Anshul619/AWS-Services/tree/main/6_FileStorages/3_S3ObjectStorage/Readme.md)                                                |
 | [Apache Lucene](../9_Search-Databases/Readme.md)                                                                             |
 | [ElasticSearch Data Stream](../15_Streaming-Databases/ElasticSearchStreams.md)                                               |
-| [Amazon Kinesis](../../2_AWS/4_MessageBrokerServices/AmazonKinesis/Readme.md)                                                |
+| [Amazon Kinesis](https://github.com/Anshul619/AWS-Services/tree/main/4_MessageBrokers/AmazonKinesis/Readme.md)                                                |
 | [Redis Streams](../15_Streaming-Databases/RedisStreams.md)                                                                   |
-| [Amazon Aurora Global Database - Replication](../../2_AWS/1_DatabaseServices/AmazonRDS/AmazonAurora/AuroraGlobalDatabase.md) |
+| [Amazon Aurora Global Database - Replication](https://github.com/Anshul619/AWS-Services/tree/main/1_Databases/AmazonRDS/AmazonAurora/AuroraGlobalDatabase.md) |
 
 # References
 - [Building an Append-only Log From Scratch](https://eileen-code4fun.medium.com/building-an-append-only-log-from-scratch-e8712b49c924)

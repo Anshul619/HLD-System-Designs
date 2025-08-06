@@ -15,7 +15,7 @@
 - Security Alerts
 
 # Supported Services
-- [AWS](../../2_AWS)
+- [AWS](https://github.com/Anshul619/AWS-Services/tree/main/)
 - [NewRelic](../NewRelic/Readme.md)
 - [Splunk](https://www.splunk.com)
 

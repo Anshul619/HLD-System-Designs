@@ -36,7 +36,7 @@
 
 # Sample System design using microservices
 
-![](../0_HLDUseCasesProblems/FoodOrderingZomatoSwiggy/HLDFoodOrderingSystem.drawio.png)
+![](../0_UseCaseDesigns/FoodOrderingZomatoSwiggy/HLDFoodOrderingSystem.drawio.png)
 
 # References
 - [What Are Microservices Really All About? (And When Not To Use It)](https://www.youtube.com/watch?v=lTAcCNbJ7KE)

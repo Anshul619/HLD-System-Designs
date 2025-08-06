@@ -30,7 +30,7 @@
 
 # Various Services in Data layers
 
-![](Data-Architecture-ETL-Ingestion-Processing-Analytics.png)
+![](../../AWS-Services/0_UseCaseDesigns/Data-Architecture-ETL-Ingestion-Processing-Analytics.png)
 
 # How can we define big data?
 

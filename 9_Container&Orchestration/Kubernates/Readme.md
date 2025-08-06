@@ -11,7 +11,7 @@
 
 | Use Case                                                                 |
 |--------------------------------------------------------------------------|
-| [Zomato](../../0_HLDUseCasesProblems/FoodOrderingZomatoSwiggy/Readme.md) |
+| [Zomato](../../0_UseCaseDesigns/FoodOrderingZomatoSwiggy/Readme.md) |
 | [Swiggy](../../1_TechStacks/Swiggy.md)                                   |
 | [Spotify](../../1_TechStacks/Spotify/Readme.md)                          |
 | [Grab](../../1_TechStacks/Grab/Readme.md)                                |
@@ -124,7 +124,7 @@ behavior:
 - It is an open source tool designed to make installation of secure, [highly available clusters](../../7a_HighAvailability/Readme.md) easy and automatable.
 
 ### Step1 - Create Hosted Zone for Cluster
-- We require a hosted zone associated with [Route 53](../../2_AWS/16_NetworkingAndContentDelivery/1_EdgeNetworking/AmazonRoute53/Readme.md) which must be publicly resolvable.
+- We require a hosted zone associated with [Route 53](https://github.com/Anshul619/AWS-Services/tree/main/16_NetworkingAndContentDelivery/1_EdgeNetworking/AmazonRoute53/Readme.md) which must be publicly resolvable.
 
 ````shell
 aws route53 create-hosted-zone --name testikod.in --caller-reference 2017-02-24-11:12 --hosted-zone-config Comment="Hosted Zone for KOPS"
@@ -133,14 +133,14 @@ aws route53 create-hosted-zone --name testikod.in --caller-reference 2017-02-24-
 ### Step2 - Create State Store
 - KOPS internally uses Terraform. 
 - So we required external state store for storing states of a cluster. 
-- We are using [Amazon S3](../../2_AWS/6_StorageServices/3_S3ObjectStorage/Readme.md) for storing state.
+- We are using [Amazon S3](https://github.com/Anshul619/AWS-Services/tree/main/6_FileStorages/3_S3ObjectStorage/Readme.md) for storing state.
 
 ````shell
 aws s3api create-bucket --bucket testikod-in-state-store --region us-west-2
 ````
 
 ### Step3 - Create cluster
-- An instance group is a set of instances, which will be registered as kubernetes nodes. [On AWS this is implemented via auto-scaling-groups](../../2_AWS/5_AutoScaling/Readme.md).
+- An instance group is a set of instances, which will be registered as kubernetes nodes. [On AWS this is implemented via auto-scaling-groups](https://github.com/Anshul619/AWS-Services/tree/main/5_AutoScaling/Readme.md).
 
 ````shell
 

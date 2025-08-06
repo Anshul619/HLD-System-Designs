@@ -2,7 +2,7 @@
 
 | Pattern                                                                                                                           | Service Type                                      |
 |-----------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------|
-| :star: [AWS - Serverless architecture](../2_AWS/2a_ServerlessArchitecture/Readme.md)                                                   |                                                   |
+| :star: [AWS - Serverless architecture](https://github.com/Anshul619/AWS-Services/tree/main/0_ServerlessArchitecture/Readme.md)                                                   |                                                   |
 | :star: [MicroServices Pattern](../5_MicroServices/3_DesignPatterns/Readme.md)                                                     | [MicroServices](../5_MicroServices/Readme.md)     |
 | :star: [Event-Driven Architecture](../4_MessageBrokersEDA/EventDrivenArchitecture/Readme.md)                                      | [Message Broker Services](../4_MessageBrokersEDA) |
 | [Sharding/Partitioning](../3_Databases/3_Scalability-Techniques/PartitioningSharding/Readme.md)                                   | [Database Services](../3_Databases/)              |
@@ -13,7 +13,7 @@
 | [Event Sourcing Pattern](../5_MicroServices/3_DesignPatterns/EventSourcing.md)                                                    | [MicroServices](../5_MicroServices/Readme.md)     |
 | [Pub-Sub model](../4_MessageBrokersEDA/EventDrivenArchitecture/PubSubModel.md)                                                    | [Message Broker Services](../4_MessageBrokersEDA) |
 | [Point-2-Point model](../4_MessageBrokersEDA/EventDrivenArchitecture/PointToPointModel.md)                                        | [Message Broker Services](../4_MessageBrokersEDA) |
-| [Fan-out pattern - Amazon SNS](../2_AWS/4_MessageBrokerServices/AmazonSNS.md)                                                     | [Message Broker Services](../4_MessageBrokersEDA) |
+| [Fan-out pattern - Amazon SNS](https://github.com/Anshul619/AWS-Services/tree/main/4_MessageBrokers/AmazonSNS.md)                                                     | [Message Broker Services](../4_MessageBrokersEDA) |
 | [Leader Election](../10_ClusterCoordination/Readme.md)                                                                            |                                                   |
 | [Reactive Architecture](https://medium.com/big-data-cloud-computing-and-distributed-systems/reactive-architecture-i-5652f944f8fb) |                                                   |
 

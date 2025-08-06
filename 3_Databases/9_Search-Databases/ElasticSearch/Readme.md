@@ -1,13 +1,13 @@
 # Introduction
 - [ElasticSearch](https://www.elastic.co/elasticsearch/) is a distributed, [RESTful modern search](../../../8_APIStandards/REST.md) and [analytics engine](../../../6_BigData/DataConsumption) based on [Apache Lucene](../Readme.md).
-- [ElasticSearch]() can be deployed using [Amazon OpenSearch](../../../2_AWS/1_DatabaseServices/AmazonOpenSearch/Readme.md) service, on [AWS](../../../2_AWS).
+- [ElasticSearch]() can be deployed using [Amazon OpenSearch](https://github.com/Anshul619/AWS-Services/tree/main/1_Databases/AmazonOpenSearch/Readme.md) service, on [AWS](https://github.com/Anshul619/AWS-Services/tree/main/).
 
 # :star: Real world use cases of ElasticSearch
 - [General use cases of ElasticSearch](../SearchUseCases.md)
-- [Food Ordering - HLD Design](../../../0_HLDUseCasesProblems/FoodOrderingZomatoSwiggy/Readme.md)
-- [Uber Driver Allocation - HLD Design](../../../0_HLDUseCasesProblems/DriverAllocationUberGoJek/Readme.md)
-- [Logging Solution in Distributed Systems - HLD Design](../../../0_HLDUseCasesProblems/ObervabilityLoggingSolution/LoggingFileAggregation/Readme.md)
-- [Flight Booking Search - HLD Design](../../../0_HLDUseCasesProblems/FlightBookingSearchMakeMyTrip/Readme.md)
+- [Food Ordering - HLD Design](../../../0_UseCaseDesigns/FoodOrderingZomatoSwiggy/Readme.md)
+- [Uber Driver Allocation - HLD Design](../../../0_UseCaseDesigns/DriverAllocationUberGoJek/Readme.md)
+- [Logging Solution in Distributed Systems - HLD Design](../../../0_UseCaseDesigns/ObervabilityLoggingSolution/LoggingFileAggregation/Readme.md)
+- [Flight Booking Search - HLD Design](../../../0_UseCaseDesigns/FlightBookingSearchMakeMyTrip/Readme.md)
 - [Grab - Search Index Optimization](../../../1_TechStacks/Grab/SearchIndexing.md)
 - [Shopify: Powering the search for better help documentation using Elastic Site Search](../../../1_TechStacks/Shopify.md)
 

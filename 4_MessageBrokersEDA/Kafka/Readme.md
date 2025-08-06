@@ -24,11 +24,11 @@
 |--------------------------------------------------------------------------------------------------------------------------------------------------|
 | [LinkedIn](../../1_TechStacks/LinkedIn/Readme.md)                                                                                              |
 | [Personalization at Spotify using Cassandra & Kafka](../../1_TechStacks/Spotify/Readme.md)                                        |
-| [Zomato - HLD Design](../../0_HLDUseCasesProblems/FoodOrderingZomatoSwiggy/Readme.md)                                                            |
-| [Uber Driver Allocation - HLD Design](../../0_HLDUseCasesProblems/DriverAllocationUberGoJek/Readme.md)                                           |
-| [Twillo Send Message API Design - HLD Design](../../0_HLDUseCasesProblems/SendSMSMessageAPITwillo/Readme.md)                                     |
-| [Logging Solution in Distributed Systems - HLD Design](../../0_HLDUseCasesProblems/ObervabilityLoggingSolution/LoggingFileAggregation/Readme.md) |
-| [Flight Booking Search - HLD Design](../../0_HLDUseCasesProblems/FlightBookingSearchMakeMyTrip/Readme.md)                                        |
+| [Zomato - HLD Design](../../0_UseCaseDesigns/FoodOrderingZomatoSwiggy/Readme.md)                                                            |
+| [Uber Driver Allocation - HLD Design](../../0_UseCaseDesigns/DriverAllocationUberGoJek/Readme.md)                                           |
+| [Twillo Send Message API Design - HLD Design](../../0_UseCaseDesigns/SendSMSMessageAPITwillo/Readme.md)                                     |
+| [Logging Solution in Distributed Systems - HLD Design](../../0_UseCaseDesigns/ObervabilityLoggingSolution/LoggingFileAggregation/Readme.md) |
+| [Flight Booking Search - HLD Design](../../0_UseCaseDesigns/FlightBookingSearchMakeMyTrip/Readme.md)                                        |
 | [Amplitude - Reducing costs with AZ-awareness for Kafka](../../1_TechStacks/Amplitude/Readme.md)                                                 |
 | [BigCommerce - Real-time events](../../1_TechStacks/BigCommerce/Readme.md)                                                                       |
 | [Paypal - Kafka](../../1_TechStacks/PayPal.md)                                                                                          |
@@ -125,7 +125,7 @@
 - [Kafka Estimates](KafkaEstimations.md)
 - [Apache Kafka - Benchmarking@LinkedIn](../../7c_Estimations&Benchmarking/Benchmarking/KafkaBenchmarking.md)
 - [Why Kafka is so fast?](WhyKafkaSoFast.md)
-- [Amazon Managed Streaming for Apache Kafka (MSK)](../../2_AWS/4_MessageBrokerServices/AmazonMSK.md) can be used to deploy Kafka on [AWS](../../2_AWS).
+- [Amazon Managed Streaming for Apache Kafka (MSK)](https://github.com/Anshul619/AWS-Services/tree/main/4_MessageBrokers/AmazonMSK.md) can be used to deploy Kafka on [AWS](https://github.com/Anshul619/AWS-Services/tree/main/).
 - [Kora: The Cloud Native Engine for Apache Kafka](https://www.confluent.io/blog/cloud-native-data-streaming-kafka-engine/)
 
 # References

@@ -1,6 +1,6 @@
 # High Availability
 - [High Availability (HA)](https://avinetworks.com/glossary/high-availability/) describes systems that are dependable enough to operate continuously without failing.
-- In AWS, [high availability]() is achieved through multiple deployments of the app in [different availability zones](../2_AWS/AWS-Global-Architecture-Region-AZ.md).
+- In AWS, [high availability]() is achieved through multiple deployments of the app in [different availability zones](https://github.com/Anshul619/AWS-Services/tree/main/AWS-Global-Architecture-Region-AZ.md).
 - [High Availability vs Fault Tolerance](FaultToleranceVsHighAvailability.md)
 
 # Components of HA

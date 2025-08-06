@@ -17,7 +17,7 @@
 
 # MapReduce vs Unix Tools
 - The main difference from pipelines of Unix commands is that [MapReduce]() can parallelize a computation across many machines, without you having to write code to explicitly handle the parallelism.
-- While [Unix tools](https://dasher.wustl.edu/chem478/software/unix-tools/) use stdin and stdout as input and output, [MapReduce]() jobs read and write files on a distributed filesystem like [HDFS](../../../../11_FileStorages/ApacheHDFS.md), [S3](../../../../2_AWS/7_StorageServices/3_ObjectStorageS3/Readme.md) etc.
+- While [Unix tools](https://dasher.wustl.edu/chem478/software/unix-tools/) use stdin and stdout as input and output, [MapReduce]() jobs read and write files on a distributed filesystem like [HDFS](../../../../11_FileStorages/ApacheHDFS.md), [S3](https://github.com/Anshul619/AWS-Services/tree/main//7_StorageServices/3_ObjectStorageS3/Readme.md) etc.
 
 # MapReduce workflows
 - It is very common for MapReduce jobs to be chained together into workflows, such that the output of one job becomes the input to the next job.

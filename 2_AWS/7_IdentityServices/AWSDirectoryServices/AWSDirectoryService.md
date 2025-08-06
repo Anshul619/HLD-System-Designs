@@ -1,8 +1,0 @@
-# AWS Directory Service
-- [AWS Directory Service](https://aws.amazon.com/directoryservice/) for Microsoft Active Directory, also known as AWS Managed Microsoft AD, activates your directory-aware workloads and AWS resources to use managed AD on AWS.
-
-| AWS Directory Service options                                                                                                  | Key Strength                                                                              | Remarks                                                                        |
-|--------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------|
-| :star: [AWS Managed Microsoft AD](https://docs.aws.amazon.com/directoryservice/latest/admin-guide/directory_microsoft_ad.html) | Big scale (more than 5000 users) with trust relationship b/w AWS directory and on-perm AD | Enables use of managed Active Directory in the AWS Cloud                       |
-| [Simple AD](https://docs.aws.amazon.com/directoryservice/latest/admin-guide/directory_simple_ad.html)                          | Low scale (less than 5000 users) without Advanced AD features like trust relationship     | Provides low-scale, low-cost basic Active Directory capability                 |
-| [AD Connector](https://docs.aws.amazon.com/directoryservice/latest/admin-guide/directory_ad_connector.html)                    | Connect on-perm AD for AWS login (without actual directory on AWS)                        | Enables on-premises users to access AWS services via on-perm Active Directory. |

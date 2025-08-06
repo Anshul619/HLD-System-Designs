@@ -17,8 +17,8 @@ This replication is available as a built-in-feature in various technologies.
 
 | Type                     | Tech                                                                                                                                                                                                                                                 |
 |--------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| SQL/Relational Databases | [Amazon Aurora](../../2_AWS/1_DatabaseServices/AmazonRDS/AmazonAurora/Readme.md), PostgresSQL, MySQL etc.                                                                                                                            |
-| NoSQL Databases          | [Amazon Elastic Cache (Cluster Disabled)](../../2_AWS/1_DatabaseServices/AmazonElasticCache/ClusterMode.md), [Redis - Master Slave Replication](../8_Caching-InMemory-Databases/Redis/RedisLeaderFollowReplication.md), MongoDB, DynamoDB etc. |
+| SQL/Relational Databases | [Amazon Aurora](https://github.com/Anshul619/AWS-Services/tree/main/1_Databases/AmazonRDS/AmazonAurora/Readme.md), PostgresSQL, MySQL etc.                                                                                                                            |
+| NoSQL Databases          | [Amazon Elastic Cache (Cluster Disabled)](https://github.com/Anshul619/AWS-Services/tree/main/1_Databases/AmazonElasticCache/ClusterMode.md), [Redis - Master Slave Replication](../8_Caching-InMemory-Databases/Redis/RedisLeaderFollowReplication.md), MongoDB, DynamoDB etc. |
 | Message Brokers          | [Kafka Cluster](../../4_MessageBrokersEDA/Kafka/Readme.md), RabbitMQ                                                                                                                                                                                 |
 
 # Leader Election Process

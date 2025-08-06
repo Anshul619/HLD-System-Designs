@@ -52,8 +52,8 @@
 - [Guild Dev](https://the-guild.dev/)
 
 # :star: Real world use cases of GraphQL
-- [Zomato - HLD Design](../../0_HLDUseCasesProblems/FoodOrderingZomatoSwiggy/Readme.md)
-- [Uber Driver Allocation](../../0_HLDUseCasesProblems/DriverAllocationUberGoJek/Readme.md)
+- [Zomato - HLD Design](../../0_UseCaseDesigns/FoodOrderingZomatoSwiggy/Readme.md)
+- [Uber Driver Allocation](../../0_UseCaseDesigns/DriverAllocationUberGoJek/Readme.md)
 - [GraphQL with ElasticSearch](../../1_TechStacks/Smartive.md)
 - Facebook (contributor of GraphQL)
 - [GitHub](https://github.com/shurcooL/githubv4)

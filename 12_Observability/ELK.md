@@ -7,11 +7,11 @@
 | [Kibana](https://www.elastic.co/kibana/)                              | Data visualization tool | Provides an interactive UI (User Interface) to the users for data visualization |
 
 # Observability System Design
-- [ELK]() can be deployed using [Amazon OpenSearch](../2_AWS/1_DatabaseServices/AmazonOpenSearch/Readme.md) on [AWS](../2_AWS).
+- [ELK]() can be deployed using [Amazon OpenSearch](https://github.com/Anshul619/AWS-Services/tree/main/1_Databases/AmazonOpenSearch/Readme.md) on [AWS](https://github.com/Anshul619/AWS-Services/tree/main/).
 
 ![](ServersHealthObervabilityHLD.png)
 
-[Read more](../0_HLDUseCasesProblems/ObervabilityLoggingSolution/Readme.md)
+[Read more](../0_UseCaseDesigns/ObervabilityLoggingSolution/Readme.md)
 
 # Features
 
@@ -23,6 +23,6 @@
 | Supported Client Libraries | Elastic offers a host of language clients, which includes Ruby, Python, PHP, Perl, .NET, Java, and JavaScript, and more                                                                                                                     |
 
 # Other Points
-- [Distributed Logging Solution using ELK](../0_HLDUseCasesProblems/ObervabilityLoggingSolution/LoggingFileAggregation/Readme.md)
+- [Distributed Logging Solution using ELK](../0_UseCaseDesigns/ObervabilityLoggingSolution/LoggingFileAggregation/Readme.md)
 - [How filebeat works?](https://www.elastic.co/guide/en/beats/filebeat/current/how-filebeat-works.html)
 - [Installation using Docker ELK](https://github.com/deviantony/docker-elk)

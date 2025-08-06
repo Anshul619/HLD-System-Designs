@@ -1,6 +1,6 @@
 # Sharding Supported (using Redis Cluster)
 - Redis scales horizontally with a deployment topology called [Redis Cluster](https://redis.io/docs/manual/scaling/).
-- [Redis cluster supported in Amazon Elastic Cache](../../../2_AWS/1_DatabaseServices/AmazonElasticCache/Readme.md).
+- [Redis cluster supported in Amazon Elastic Cache](https://github.com/Anshul619/AWS-Services/tree/main/1_Databases/AmazonElasticCache/Readme.md).
 
 ![img.png](https://i1.wp.com/www.learnsteps.com/wp-content/uploads/2020/07/cluster.png?w=840&ssl=1)
 

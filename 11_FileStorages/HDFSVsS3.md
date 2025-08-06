@@ -1,6 +1,6 @@
 # Apache HDFS vs Amazon S3
 
-|                                                                       | [Apache HDFS](ApacheHDFS.md)   | [Amazon S3](../2_AWS/6_StorageServices/3_S3ObjectStorage/Readme.md) |
+|                                                                       | [Apache HDFS](ApacheHDFS.md)   | [Amazon S3](https://github.com/Anshul619/AWS-Services/tree/main/6_FileStorages/3_S3ObjectStorage/Readme.md) |
 |-----------------------------------------------------------------------|--------------------------------|----------------------------------------------------------------------------------|
 | [Scalability](../3_Databases/3_Scalability-Techniques/Readme.md)  |                                | :white_check_mark: Recommended                                                   |
 | Built-in persistence, and lower prices                                |                                | :white_check_mark: Recommended                                                   |

@@ -6,8 +6,8 @@
 
 | Service                                                                                                |
 |--------------------------------------------------------------------------------------------------------|
-| [Amazon S3](../../2_AWS/10_BigDataServices/DataStorage/DataLakes/S3DataLake.md)                |
-| [AWS lake formation](../../2_AWS/10_BigDataServices/DataStorage/DataLakes/AWSLakeFormation.md) |
+| [Amazon S3](https://github.com/Anshul619/AWS-Services/tree/main/10_BigData/DataStorage/DataLakes/S3DataLake.md)                |
+| [AWS lake formation](https://github.com/Anshul619/AWS-Services/tree/main/10_BigData/DataStorage/DataLakes/AWSLakeFormation.md) |
 
 # Types of zones
 

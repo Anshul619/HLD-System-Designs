@@ -7,8 +7,8 @@
 |----------------------------------------------------------------------------------------------|--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | [Caching](https://redis.com/solutions/use-cases/caching/)                                    | All                | One of the advantage of cache is to remember the result of an expensive operation, to speed up the reads.                                                                                                    |
 | [Session Storage](https://redis.com/solutions/use-cases/session-management/)                 | All                | In order to address scalability and to provide a shared data storage for sessions that can be accessible from any individual web server, you can abstract the HTTP sessions from the web servers themselves. |
-| [Distributed Locks](https://redis.io/docs/manual/patterns/distributed-locks/)                | Strings            | We can use a Redis string to acquire locks among distributed services.<br/>- Example - [Twitter Hit Counter](../../../0_HLDUseCasesProblems/HitCounterDesignTwitter/Readme.md)                               |
-| [Rate Limiting](../../../0_HLDUseCasesProblems/RateLimiterAPI/Readme.md)                     | All                | We can apply a rate limiter for certain user IPs.                                                                                                                                                            |
+| [Distributed Locks](https://redis.io/docs/manual/patterns/distributed-locks/)                | Strings            | We can use a Redis string to acquire locks among distributed services.<br/>- Example - [Twitter Hit Counter](../../../0_UseCaseDesigns/HitCounterDesignTwitter/Readme.md)                               |
+| [Rate Limiting](../../../0_UseCaseDesigns/RateLimiterAPI/Readme.md)                     | All                | We can apply a rate limiter for certain user IPs.                                                                                                                                                            |
 | [Rank/Leaderboard](https://redis.com/solutions/use-cases/leaderboards/)                      | SortedSet          | We can use SortedSet to sort the articles.<br/>- Example - Best sellers, ranking etc.                                                                                                                        |
 | [GeoSpatial](https://redis.io/docs/data-types/geospatial/)                                   | GeoSpatial Indexes | Redis geospatial indexes let you store coordinates and search for them. <br/>- This data structure is useful for finding nearby points within a given radius or bounding box.                                |
 | [Message Broker - Queue with PubSub model](https://redis.com/solutions/use-cases/messaging/) | Lists              | We can use List for a message queue (with [PubSub](https://redis.io/docs/interact/pubsub/) modal).                                                                                                           |
@@ -20,9 +20,9 @@
 [Read more](https://www.youtube.com/watch?v=a4yX7RUgTxI)
 
 # :star: Real world use cases of Redis Cache
-- [Zomato - HLD Design](../../../0_HLDUseCasesProblems/FoodOrderingZomatoSwiggy/Readme.md)
-- [Twillo Send Message API Design - HLD Design](../../../0_HLDUseCasesProblems/SendSMSMessageAPITwillo/Readme.md)
-- [Transaction SMS - HLD Design](../../../0_HLDUseCasesProblems/TransactionSMSDesign/Readme.md)
+- [Zomato - HLD Design](../../../0_UseCaseDesigns/FoodOrderingZomatoSwiggy/Readme.md)
+- [Twillo Send Message API Design - HLD Design](../../../0_UseCaseDesigns/SendSMSMessageAPITwillo/Readme.md)
+- [Transaction SMS - HLD Design](../../../../AWS-Services/0_UseCaseDesigns/TransactionSMSDesign/Readme.md)
 
 # Key Features of Redis
 

@@ -4,7 +4,7 @@
 - [RabbitMQ](https://www.rabbitmq.com/) can be deployed in distributed and federated configurations to meet high-scale, high-availability requirements.
 
 # :star: Real world use cases of RabbitMQ
-- [Zomato - HLD Design](../0_HLDUseCasesProblems/FoodOrderingZomatoSwiggy/Readme.md)
+- [Zomato - HLD Design](../0_UseCaseDesigns/FoodOrderingZomatoSwiggy/Readme.md)
 
 # Other Links
 - [RabbitMQ vs Others](KafkaVsRabbitMQVsSQSVsSNS.md)

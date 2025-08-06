@@ -1,7 +1,7 @@
 # Apache Casandra
 - [Apache Cassandra](https://cassandra.apache.org/_/index.html) is a free and open-source, distributed & [wide column store]().
 - It is a NoSQL database management system designed to handle large amounts of data across many commodity servers, providing [high availability with no single point of failure](../../7a_HighAvailability/FaultTolerance.md). 
-- [Amazon KeySpaces](../../2_AWS/1_DatabaseServices/AmazonKeySpaces.md) can be used to deploy Casandra on AWS.
+- [Amazon KeySpaces](https://github.com/Anshul619/AWS-Services/tree/main/1_Databases/AmazonKeySpaces.md) can be used to deploy Casandra on AWS.
 - :star: [DynamoDB vs Casandra vs MongoDB](../DynamoDBVsMongoDBVsCasandra.md)
 
 ![](https://www.scylladb.com/wp-content/uploads/Wide-column-Database-diagram.png)
@@ -42,23 +42,23 @@
 
 ## Social Network Design Problem - User Entities like Posts, Comments etc.
 
-![](../../0_HLDUseCasesProblems/SocialNetworkFacebookInstagram/SocialNetworkDesignProblemHLD.png)
+![](../../0_UseCaseDesigns/SocialNetworkFacebookInstagram/SocialNetworkDesignProblemHLD.png)
 
-[Read more](../../0_HLDUseCasesProblems/SocialNetworkFacebookInstagram/Readme.md)
+[Read more](../../0_UseCaseDesigns/SocialNetworkFacebookInstagram/Readme.md)
 
 ## Flight Booking design problem - Search
 
-![](../../0_HLDUseCasesProblems/FlightBookingSearchMakeMyTrip/MakeMyTripFlightSearch.drawio.png)
+![](../../0_UseCaseDesigns/FlightBookingSearchMakeMyTrip/MakeMyTripFlightSearch.drawio.png)
 
-[Read more](../../0_HLDUseCasesProblems/FlightBookingSearchMakeMyTrip/Readme.md))
+[Read more](../../0_UseCaseDesigns/FlightBookingSearchMakeMyTrip/Readme.md))
 
 ## Other UCs
 - [How Uber Manages a Million Writes Per Second Using Mesos and Cassandra Across Multiple Datacenters?](../../1_TechStacks/Uber/UberCasandraMesos)
 - [Netflix - Casandra - Time Series Data](../../1_TechStacks/Netflix/Readme.md)
 - [Directi uses Casandra to save HeatMaps (UI activities)](../../1_TechStacks/DirectI.md)
 - [Instagram - Social Media Posts](../../1_TechStacks/Instagram/Readme.md)
-- [Twillo - Send Message API Design Problem](../../0_HLDUseCasesProblems/SendSMSMessageAPITwillo/Readme.md)
-- [Twitter Hit Counter](../../0_HLDUseCasesProblems/HitCounterDesignTwitter/Readme.md)
+- [Twillo - Send Message API Design Problem](../../0_UseCaseDesigns/SendSMSMessageAPITwillo/Readme.md)
+- [Twitter Hit Counter](../../0_UseCaseDesigns/HitCounterDesignTwitter/Readme.md)
 - [Discord Migrates Trillions of Messages from Cassandra to ScyllaDB](https://www.infoq.com/news/2023/06/discord-cassandra-scylladb/)
 
 # History - Built by Facebook

@@ -18,10 +18,10 @@
 
 | AWS Service                                                                                                                            | Remarks |
 |----------------------------------------------------------------------------------------------------------------------------------------|---------|
-| [Route53 Weighted Routing Policy](../2_AWS/16_NetworkingAndContentDelivery/1_EdgeNetworking/AmazonRoute53/Readme.md)           | -       |
-| [AWS Global Accelerator](../2_AWS/16_NetworkingAndContentDelivery/1_EdgeNetworking/AWSGlobalAccelerator.md)             | -       |
-| [Elastic Load Balancer](../2_AWS/16_NetworkingAndContentDelivery/2_ApplicationNetworking/ElasticLoadBalancer/Readme.md) | -       |
-| [Code Deploy](../2_AWS/9_InfrastructureAsCode/AWSCodePipeline.md)                                                      | -       |
+| [Route53 Weighted Routing Policy](https://github.com/Anshul619/AWS-Services/tree/main/16_NetworkingAndContentDelivery/1_EdgeNetworking/AmazonRoute53/Readme.md)           | -       |
+| [AWS Global Accelerator](https://github.com/Anshul619/AWS-Services/tree/main/16_NetworkingAndContentDelivery/1_EdgeNetworking/AWSGlobalAccelerator.md)             | -       |
+| [Elastic Load Balancer](https://github.com/Anshul619/AWS-Services/tree/main/16_NetworkingAndContentDelivery/2_ApplicationNetworking/ElasticLoadBalancer/Readme.md) | -       |
+| [Code Deploy](https://github.com/Anshul619/AWS-Services/tree/main/9_InfrastructureAsCode/AWSCodePipeline.md)                                                      | -       |
 
 # Reference
 - [Canary vs blue-green deployment to reduce enterprise downtime](https://circleci.com/blog/canary-vs-blue-green-downtime/)

@@ -2,7 +2,7 @@
 
 | Purpose                                                                        | Service                                                                          |
 |--------------------------------------------------------------------------------|----------------------------------------------------------------------------------|
-| Cloud platform                                                                 | [AWS - EC2, Lambda, S3, DynamoDB, CodePipeline etc.](../2_AWS/Readme.md) |
+| Cloud platform                                                                 | [AWS - EC2, Lambda, S3, DynamoDB, CodePipeline etc.](https://github.com/Anshul619/AWS-Services/tree/main/Readme.md) |
 | Container Orchestration                                                        | [Kubernates with Docker](../9_Container&Orchestration/Readme.md)          |
 | InMemory-Cache                                                                 | [Redis cache](../3_Databases/8_Caching-InMemory-Databases/Redis/Readme.md)                |
 | Message Broker - Pub/Sub                                                       | [Apache Kafka (using confluent)](../4_MessageBrokersEDA/Kafka/Readme.md)            |

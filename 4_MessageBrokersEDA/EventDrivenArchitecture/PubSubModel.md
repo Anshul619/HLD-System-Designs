@@ -9,9 +9,9 @@
 | Service                                                                                    |
 |--------------------------------------------------------------------------------------------|
 | [Kafka](../Kafka/Readme.md)                                                                |
-| [Amazon Kinesis Data Streams](../../2_AWS/4_MessageBrokerServices/AmazonKinesis/Readme.md) |
-| [Amazon EventBridge](../../2_AWS/4_MessageBrokerServices/AmazonEventBridge.md)             |
-| [Amazon SNS](../../2_AWS/4_MessageBrokerServices/AmazonSNS.md)                             |
+| [Amazon Kinesis Data Streams](https://github.com/Anshul619/AWS-Services/tree/main/4_MessageBrokers/AmazonKinesis/Readme.md) |
+| [Amazon EventBridge](https://github.com/Anshul619/AWS-Services/tree/main/4_MessageBrokers/AmazonEventBridge.md)             |
+| [Amazon SNS](https://github.com/Anshul619/AWS-Services/tree/main/4_MessageBrokers/AmazonSNS.md)                             |
 | [Active MQ](../ActiveMQ.md)                                                                |
 
 # References

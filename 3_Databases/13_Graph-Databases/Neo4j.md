@@ -3,7 +3,7 @@
 - [Cypher](https://neo4j.com/developer/cypher/) is a declarative query language for property graphs, created for the Neo4j graph database.
 
 # Real world use cases
-- [Social Network - User activity relationship store](../../0_HLDUseCasesProblems/SocialNetworkFacebookInstagram/Readme.md)
+- [Social Network - User activity relationship store](../../0_UseCaseDesigns/SocialNetworkFacebookInstagram/Readme.md)
 - [Recommendation engine](https://neo4j.com/use-cases/real-time-recommendation-engine/)
 
 # Terminologies

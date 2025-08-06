@@ -1,2 +1,0 @@
-# Amazon S3 Tables
-- [Amazon S3 Tables](https://aws.amazon.com/s3/features/tables/) deliver the first cloud object store with built-in [Apache Iceberg](../../../6_BigData/DataFormats/ApacheIceberg.md) support and streamline storing tabular data at scale.
