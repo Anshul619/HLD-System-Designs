@@ -7,9 +7,9 @@
 - Eureka naming server comes with the bundle of Spring Cloud. It runs on the default port 8761.
 - It also comes with a Java-based client component, the eureka client, which makes interactions with the service much easier.
 
-![](https://github.com/Anshul619/Programming-Languages/tree/main/1_Java/SpringBootAndMicroServices/assests/Spring-Boot-MicroService-OnPerm.drawio.png)
+![](https://github.com/Anshul619/SpringBoot/blob/main/assets/Spring-Boot-MicroService-OnPerm.drawio.png)
 
-[Read more](https://github.com/Anshul619/Programming-Languages/tree/main/1_Java/SpringBootAndMicroServices/README.md)
+[Read more](https://github.com/Anshul619/SpringBoot)
 
 # High Level Architecture
 
