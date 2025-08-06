@@ -8,8 +8,8 @@
 - [Uber Driver Allocation - HLD Design](../../../0_UseCaseDesigns/DriverAllocationUberGoJek/Readme.md)
 - [Logging Solution in Distributed Systems - HLD Design](../../../0_UseCaseDesigns/ObervabilityLoggingSolution/LoggingFileAggregation/Readme.md)
 - [Flight Booking Search - HLD Design](../../../0_UseCaseDesigns/FlightBookingSearchMakeMyTrip/Readme.md)
-- [Grab - Search Index Optimization](../../../1_TechStacks/Grab/SearchIndexing.md)
-- [Shopify: Powering the search for better help documentation using Elastic Site Search](../../../1_TechStacks/Shopify.md)
+- [Grab - Search Index Optimization](../../../../Real-World-Tech-Stacks/Grab/SearchIndexing.md)
+- [Shopify: Powering the search for better help documentation using Elastic Site Search](../../../../Real-World-Tech-Stacks/Shopify.md)
 
 # Key Features of ElasticSearch
 

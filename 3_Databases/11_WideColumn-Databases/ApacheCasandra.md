@@ -36,9 +36,9 @@
 
 ## Personalization at Spotify using Cassandra
 
-![](../../1_TechStacks/Spotify/PersonalizationSpotify.drawio.png)
+![](../../../Real-World-Tech-Stacks/Spotify/PersonalizationSpotify.drawio.png)
 
-[Read more](../../1_TechStacks/Spotify/Readme.md)
+[Read more](../../../Real-World-Tech-Stacks/Spotify/Readme.md)
 
 ## Social Network Design Problem - User Entities like Posts, Comments etc.
 
@@ -53,10 +53,10 @@
 [Read more](../../0_UseCaseDesigns/FlightBookingSearchMakeMyTrip/Readme.md))
 
 ## Other UCs
-- [How Uber Manages a Million Writes Per Second Using Mesos and Cassandra Across Multiple Datacenters?](../../1_TechStacks/Uber/UberCasandraMesos)
-- [Netflix - Casandra - Time Series Data](../../1_TechStacks/Netflix/Readme.md)
-- [Directi uses Casandra to save HeatMaps (UI activities)](../../1_TechStacks/DirectI.md)
-- [Instagram - Social Media Posts](../../1_TechStacks/Instagram/Readme.md)
+- [How Uber Manages a Million Writes Per Second Using Mesos and Cassandra Across Multiple Datacenters?](../../../Real-World-Tech-Stacks/Uber/UberCasandraMesos)
+- [Netflix - Casandra - Time Series Data](../../../Real-World-Tech-Stacks/Netflix/Readme.md)
+- [Directi uses Casandra to save HeatMaps (UI activities)](../../../Real-World-Tech-Stacks/DirectI.md)
+- [Instagram - Social Media Posts](../../../Real-World-Tech-Stacks/Instagram/Readme.md)
 - [Twillo - Send Message API Design Problem](../../0_UseCaseDesigns/SendSMSMessageAPITwillo/Readme.md)
 - [Twitter Hit Counter](../../0_UseCaseDesigns/HitCounterDesignTwitter/Readme.md)
 - [Discord Migrates Trillions of Messages from Cassandra to ScyllaDB](https://www.infoq.com/news/2023/06/discord-cassandra-scylladb/)

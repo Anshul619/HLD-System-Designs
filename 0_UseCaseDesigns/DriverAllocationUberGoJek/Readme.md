@@ -19,8 +19,8 @@ Design driver allocation to riders in an Uber-like system
 
 |       | Remarks                                                 |
 |-------|---------------------------------------------------------|
-| Uber  | [Uber](../../1_TechStacks/Uber)                         |
-| GoJek | [GoJek TechStack](../../1_TechStacks/GoJek.md) |
+| Uber  | [Uber](../../../Real-World-Tech-Stacks/Uber)                         |
+| GoJek | [GoJek TechStack](../../../Real-World-Tech-Stacks/GoJek.md) |
 
 # User Actors
 There are two types of users in our system

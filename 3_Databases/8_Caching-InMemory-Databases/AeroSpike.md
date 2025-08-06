@@ -9,9 +9,9 @@
 
 # :star: Real world use cases of AeroSpike
 - [Zomato - System Design](../../0_UseCaseDesigns/FoodOrderingZomatoSwiggy/Readme.md)
-- [Paypal](../../1_TechStacks/PayPal.md)
+- [Paypal](../../../Real-World-Tech-Stacks/PayPal.md)
 - [Dream11 - Hybrid](https://aerospike.com/customers/dream11/)
-- [PhonePe](../../1_TechStacks/PhonePe.md)
+- [PhonePe](../../../Real-World-Tech-Stacks/PhonePe.md)
 
 # References
 - [Aerospike - Millions records processed in milliseconds](https://www.trustradius.com/reviews/aerospike-2022-01-08-07-24-05)

@@ -22,19 +22,19 @@
 
 | Use Case                                                                                                                                         |
 |--------------------------------------------------------------------------------------------------------------------------------------------------|
-| [LinkedIn](../../1_TechStacks/LinkedIn/Readme.md)                                                                                              |
-| [Personalization at Spotify using Cassandra & Kafka](../../1_TechStacks/Spotify/Readme.md)                                        |
+| [LinkedIn](../../../Real-World-Tech-Stacks/LinkedIn/Readme.md)                                                                                              |
+| [Personalization at Spotify using Cassandra & Kafka](../../../Real-World-Tech-Stacks/Spotify/Readme.md)                                        |
 | [Zomato - HLD Design](../../0_UseCaseDesigns/FoodOrderingZomatoSwiggy/Readme.md)                                                            |
 | [Uber Driver Allocation - HLD Design](../../0_UseCaseDesigns/DriverAllocationUberGoJek/Readme.md)                                           |
 | [Twillo Send Message API Design - HLD Design](../../0_UseCaseDesigns/SendSMSMessageAPITwillo/Readme.md)                                     |
 | [Logging Solution in Distributed Systems - HLD Design](../../0_UseCaseDesigns/ObervabilityLoggingSolution/LoggingFileAggregation/Readme.md) |
 | [Flight Booking Search - HLD Design](../../0_UseCaseDesigns/FlightBookingSearchMakeMyTrip/Readme.md)                                        |
-| [Amplitude - Reducing costs with AZ-awareness for Kafka](../../1_TechStacks/Amplitude/Readme.md)                                                 |
-| [BigCommerce - Real-time events](../../1_TechStacks/BigCommerce/Readme.md)                                                                       |
-| [Paypal - Kafka](../../1_TechStacks/PayPal.md)                                                                                          |
-| [Grab - Orders Processing](../../1_TechStacks/Grab/OrderProcessing/Readme.md)                                                                          |
-| [Swiggy (through Confluent)](../../1_TechStacks/Swiggy.md)                                                                              |
-| [Split.io - Messsage Broker](../../1_TechStacks/SplitIO.md)                                                                             |
+| [Amplitude - Reducing costs with AZ-awareness for Kafka](../../../Real-World-Tech-Stacks/Amplitude/Readme.md)                                                 |
+| [BigCommerce - Real-time events](../../../Real-World-Tech-Stacks/BigCommerce/Readme.md)                                                                       |
+| [Paypal - Kafka](../../../Real-World-Tech-Stacks/PayPal.md)                                                                                          |
+| [Grab - Orders Processing](../../../Real-World-Tech-Stacks/Grab/OrderProcessing/Readme.md)                                                                          |
+| [Swiggy (through Confluent)](../../../Real-World-Tech-Stacks/Swiggy.md)                                                                              |
+| [Split.io - Messsage Broker](../../../Real-World-Tech-Stacks/SplitIO.md)                                                                             |
 
 # Top Features of Kafka
 
