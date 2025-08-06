@@ -87,3 +87,7 @@
 | Key Takeaway | Synchronous replication slows down the latency and throughput. |
 
 
+# References
+- [Benchmarking Apache Pulsar, Kafka, and RabbitMQ](https://www.confluent.io/blog/kafka-fastest-messaging-system/)
+
+

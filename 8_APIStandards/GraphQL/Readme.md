@@ -5,7 +5,7 @@
 - GraphQL has a schema definition language for defining the types on a query.
 - Additionally, with GraphQL, you can enquire multiple entities in one request, and because less bits will be transferred over the wire so your projects will perform faster than while using [REST](../REST.md).
 
-![img.png](../assests/graphql.png)
+![img.png](../assets/graphql.png)
 
 # Why GraphQL?
 - There are some issues with the [REST Architecture](../REST.md) style such as Multiple endpoints, Over-fetching, and Under-fetching of resources.

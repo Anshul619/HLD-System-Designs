@@ -1,6 +1,6 @@
 # REST vs GraphQL
 
-![img.png](assests/RESTvsGraphQL.png)
+![img.png](assets/RESTvsGraphQL.png)
 
 # Comparisons
 
