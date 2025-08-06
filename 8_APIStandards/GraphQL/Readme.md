@@ -54,10 +54,10 @@
 # :star: Real world use cases of GraphQL
 - [Zomato - HLD Design](../../0_UseCaseDesigns/FoodOrderingZomatoSwiggy/Readme.md)
 - [Uber Driver Allocation](../../0_UseCaseDesigns/DriverAllocationUberGoJek/Readme.md)
-- [GraphQL with ElasticSearch](../../../Real-World-Tech-Stacks/Smartive.md)
+- [GraphQL with ElasticSearch](https://github.com/Anshul619/Real-World-Tech-Stacks/tree/main/Smartive.md)
 - Facebook (contributor of GraphQL)
 - [GitHub](https://github.com/shurcooL/githubv4)
-- [Dream11](../../../Real-World-Tech-Stacks/Dream11.md)
+- [Dream11](https://github.com/Anshul619/Real-World-Tech-Stacks/tree/main/Dream11.md)
 - [Shopify SDK](https://shopify.dev/docs/api/admin-graphql)
 - [Supabase](https://supabase.com/docs/guides/graphql)
 

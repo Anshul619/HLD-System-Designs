@@ -25,9 +25,9 @@
 
 |        | Remarks                                                      |
 |--------|--------------------------------------------------------------|
-| Zomato | [Swiggy - Tech Stack](../../../Real-World-Tech-Stacks/Zomato/Readme.md) |
-| Swiggy | [Swiggy - Tech Stack](../../../Real-World-Tech-Stacks/Swiggy.md) |
-| Grab   | [Grab - Tech Stack](../../../Real-World-Tech-Stacks/Grab/Readme.md)       |
+| Zomato | [Swiggy - Tech Stack](https://github.com/Anshul619/Real-World-Tech-Stacks/tree/main/Zomato/Readme.md) |
+| Swiggy | [Swiggy - Tech Stack](https://github.com/Anshul619/Real-World-Tech-Stacks/tree/main/Swiggy.md) |
+| Grab   | [Grab - Tech Stack](https://github.com/Anshul619/Real-World-Tech-Stacks/tree/main/Grab/Readme.md)       |
 
 # Tech Decisions
 

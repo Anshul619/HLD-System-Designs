@@ -263,7 +263,7 @@ This repo contains the various system design components info, questions and solu
 - [QA/Testing](https://github.com/Anshul619/Others-SQL-QA-Git/tree/main/QA/Readme.md)
 
 # Other References
-- [Open Source Contributions](../Real-World-Tech-Stacks/OpenSourceContributions.md)
+- [Open Source Contributions](https://github.com/Anshul619/Real-World-Tech-Stacks/tree/main/OpenSourceContributions.md)
 
 # Source(s) and further reading
 - [System Design Primer](https://github.com/donnemartin/system-design-primer)

@@ -12,12 +12,12 @@
 | Use Case                                                                 |
 |--------------------------------------------------------------------------|
 | [Zomato](../../0_UseCaseDesigns/FoodOrderingZomatoSwiggy/Readme.md) |
-| [Swiggy](../../../Real-World-Tech-Stacks/Swiggy.md)                                   |
-| [Spotify](../../../Real-World-Tech-Stacks/Spotify/Readme.md)                          |
-| [Grab](../../../Real-World-Tech-Stacks/Grab/Readme.md)                                |
-| [LinkedIn](../../../Real-World-Tech-Stacks/LinkedIn/Readme.md)                        |
-| [Split.io](../../../Real-World-Tech-Stacks/SplitIO.md)                                |
-| [Stripe](../../../Real-World-Tech-Stacks/Stripe.md)                                   |
+| [Swiggy](https://github.com/Anshul619/Real-World-Tech-Stacks/tree/main/Swiggy.md)                                   |
+| [Spotify](https://github.com/Anshul619/Real-World-Tech-Stacks/tree/main/Spotify/Readme.md)                          |
+| [Grab](https://github.com/Anshul619/Real-World-Tech-Stacks/tree/main/Grab/Readme.md)                                |
+| [LinkedIn](https://github.com/Anshul619/Real-World-Tech-Stacks/tree/main/LinkedIn/Readme.md)                        |
+| [Split.io](https://github.com/Anshul619/Real-World-Tech-Stacks/tree/main/SplitIO.md)                                |
+| [Stripe](https://github.com/Anshul619/Real-World-Tech-Stacks/tree/main/Stripe.md)                                   |
 
 # Resources and Limits
 

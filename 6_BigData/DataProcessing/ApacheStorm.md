@@ -1,5 +1,5 @@
 # Personalization at Spotify using Storm, Cassandra, HDFS
 
-![](../../../Real-World-Tech-Stacks/Spotify/PersonalizationSpotify.drawio.png)
+![](https://github.com/Anshul619/Real-World-Tech-Stacks/tree/main/Spotify/PersonalizationSpotify.drawio.png)
 
-[Read more](../../../Real-World-Tech-Stacks/Spotify)
+[Read more](https://github.com/Anshul619/Real-World-Tech-Stacks/tree/main/Spotify)
