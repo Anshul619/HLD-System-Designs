@@ -39,7 +39,7 @@ This repo contains the various system design components info, questions and solu
       <td>
         <div class="container" style="background:white">
             <div class="block two first">
-                <a href="https://github.com/Anshul619/AWS-Services/tree/main//1_NetworkingAndContentDelivery/1_EdgeNetworking/AmazonCloudFront.md" target="_blank">
+                <a href="https://github.com/Anshul619/AWS-Services/tree/main/16_NetworkingAndContentDelivery/1_EdgeNetworking/AmazonCloudFront.md" target="_blank">
                   <img src="https://www.pngall.com/wp-content/uploads/2016/03/Amazon-Cloudfront-Logo-PNG.png" width="150">
                 </a>
             </div>
@@ -50,7 +50,7 @@ This repo contains the various system design components info, questions and solu
           <img src="https://i.pinimg.com/originals/50/bd/c9/50bdc91f32650905e776d6751478928c.png">
         </a>
         <br/><br/>
-        <a href="https://github.com/Anshul619/AWS-Services/tree/main//9_InfrastructureAsCode/AWSCloudFormation/Readme.md" target="_blank">
+        <a href="https://github.com/Anshul619/AWS-Services/tree/main/9_InfrastructureAsCode/AWSCloudFormation/Readme.md" target="_blank">
           <img src="https://i0.wp.com/www.australtech.net/wp-content/uploads/2019/05/cloudformation-logo.png" width="150">
         </a>
         <br/><br/>
@@ -73,12 +73,12 @@ This repo contains the various system design components info, questions and solu
                 <a href="4_MessageBrokersEDA/Kafka/Readme.md" target="_blank">
                   <img src="https://imgs.search.brave.com/Dciv9E3-St4Ypkw-A7Avph4ennJBmZ1W2-7cVVoCNhc/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMuaWNvbi1pY29u/cy5jb20vMjY5OS9Q/TkcvNTEyL2FwYWNo/ZV9rYWZrYV9sb2dv/X2ljb25fMTY3ODY2/LnBuZw" width="150">
                 </a>
-                <a href="https://github.com/Anshul619/AWS-Services/tree/main//5_MessageBrokerServices/AmazonKinesis/AmazonKinesisDataStreams.md" target="_blank">
+                <a href="https://github.com/Anshul619/AWS-Services/tree/main/4_MessageBrokers/AmazonKinesis/AmazonKinesisDataStreams.md" target="_blank">
                   <img src="https://intellipaat.com/blog/wp-content/uploads/2022/08/image-75.png" width="150">
                 </a>
-                <a href="https://github.com/Anshul619/AWS-Services/tree/main//5_MessageBrokerServices/AmazonSQS/Readme.md" target="_blank"><img src="https://i0.wp.com/blog.knoldus.com/wp-content/uploads/2021/09/sqs.png?w=711&ssl=1" width="150"></a>
-                <a href="https://github.com/Anshul619/AWS-Services/tree/main//5_MessageBrokerServices/AmazonEventBridge.md" target="_blank"><img src="https://user-images.githubusercontent.com/3268013/149550617-d92fa8ff-f95d-499c-8515-0ed0be976fbf.png" width="150"></a>
-                <a href="https://github.com/Anshul619/AWS-Services/tree/main//5_MessageBrokerServices/AmazonSNS.md" target="_blank"><img src="https://miro.medium.com/max/720/0*QjKNs9dEShlQ39VI.png" width="150"></a>
+                <a href="https://github.com/Anshul619/AWS-Services/tree/main/4_MessageBrokers/AmazonSQS/Readme.md" target="_blank"><img src="https://i0.wp.com/blog.knoldus.com/wp-content/uploads/2021/09/sqs.png?w=711&ssl=1" width="150"></a>
+                <a href="https://github.com/Anshul619/AWS-Services/tree/main/4_MessageBrokers/AmazonEventBridge.md" target="_blank"><img src="https://user-images.githubusercontent.com/3268013/149550617-d92fa8ff-f95d-499c-8515-0ed0be976fbf.png" width="150"></a>
+                <a href="https://github.com/Anshul619/AWS-Services/tree/main/4_MessageBrokers/AmazonSNS.md" target="_blank"><img src="https://miro.medium.com/max/720/0*QjKNs9dEShlQ39VI.png" width="150"></a>
                 <a href="4_MessageBrokersEDA/RabbitMQ.md" target="_blank"><img src="https://www.logo.wine/a/logo/RabbitMQ/RabbitMQ-Logo.wine.svg" width="150"></a>
                 <a href="4_MessageBrokersEDA/ActiveMQ.md" target="_blank">ActiveMQ</a>
             </div>
@@ -95,7 +95,7 @@ This repo contains the various system design components info, questions and solu
                 <a href="5_MicroServices/2_ServiceRegistry&Discovery/Eureka.md" target="_blank">
                   <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsLVq3RUn8c7AWSr_559ISKEpHkgVn5U3NKg&usqp=CAU" width="150">
                 </a>
-                <a href="https://github.com/Anshul619/AWS-Services/tree/main//1_NetworkingAndContentDelivery/2_ApplicationNetworking/AWSCloudMap.md" target="_blank">AWS Cloud Map</a>
+                <a href="https://github.com/Anshul619/AWS-Services/tree/main/16_NetworkingAndContentDelivery/2_ApplicationNetworking/AWSCloudMap.md" target="_blank">AWS Cloud Map</a>
                 <a href="10_ClusterCoordination/etcd.md" target="_blank">
                   <img src="https://cdn.freebiesupply.com/logos/large/2x/etcd-logo-png-transparent.png" width="150">
                 </a>
@@ -150,7 +150,7 @@ This repo contains the various system design components info, questions and solu
                 <a href="3_Databases/11_WideColumn-Databases/ApacheCasandra.md" target="_blank">
                   <img src="https://fontslogo.com/wp-content/uploads/2018/12/Apache-Cassandra-Logo-Font.jpg" width="150">
                 </a>
-                <a href="https://github.com/Anshul619/AWS-Services/tree/main//6_DatabaseServices/AmazonDynamoDB/Readme.md">
+                <a href="https://github.com/Anshul619/AWS-Services/tree/main/1_Databases/AmazonDynamoDB/Readme.md">
                   <img src="https://user-images.githubusercontent.com/6509926/70553550-f033b980-1b40-11ea-9192-759b3b1053b3.png" width="150">
                 </a>
                 <a href="3_Databases/10_Document-Databases/MongoDB.md" target="_blank">
@@ -196,7 +196,7 @@ This repo contains the various system design components info, questions and solu
                 <a href="6_BigData/DataProcessing/KafkaStreams/Readme.md" target="_blank">
                   <img src="https://1.bp.blogspot.com/-LIHoqo96Dos/X7wKY2u124I/AAAAAAAAp88/SrC8E6Y-5l4Xil7UPrDRp-RuEx2GioXkQCLcBGAsYHQ/s435/kafka-streams.png" width="150">
                 </a>
-                <a href="https://github.com/Anshul619/AWS-Services/tree/main//10_BigDataServices/DataConnectors/AmazonDataFirehouse/Readme.md" target="_blank">
+                <a href="https://github.com/Anshul619/AWS-Services/tree/main/10_BigData/DataConnectors/AmazonDataFirehouse/Readme.md" target="_blank">
                   <img src="https://miro.medium.com/max/1190/0*UQBKjEff1uIsXH8W" width="150">
                 </a>
             </div>
@@ -212,7 +212,7 @@ This repo contains the various system design components info, questions and solu
       <td>
         <div class="container" style="background:white">
             <div class="block two first">
-                <a href="https://github.com/Anshul619/AWS-Services/tree/main//7_StorageServices/3_ObjectStorageS3/Readme.md" target="_blank">
+                <a href="https://github.com/Anshul619/AWS-Services/tree/main/6_FileStorages/3_ObjectStorageS3/Readme.md" target="_blank">
                   <img src="https://miro.medium.com/max/580/1*DHe24MbDHtbkOeIJzxrfdA.png" width="150">
                 </a>
                 <a href="11_FileStorages/ApacheHDFS.md" target="_blank">
@@ -234,7 +234,7 @@ This repo contains the various system design components info, questions and solu
           <img src="https://miro.medium.com/max/746/1*DbdVXy9_6uJVe8q1NOYVfg.png" width="150">
         </a>
         <br/><br/>
-        <a href="https://github.com/Anshul619/AWS-Services/tree/main//8_ObservabilityLogsServices/AmazonCloudWatch/Readme.md">
+        <a href="https://github.com/Anshul619/AWS-Services/tree/main/8_ObservabilityLogs/AmazonCloudWatch/Readme.md">
           <img src="https://miro.medium.com/max/800/1*ffbynFsxn43lPdne2kaHMQ.png" width="150">
         </a>
       </td>
@@ -250,9 +250,9 @@ This repo contains the various system design components info, questions and solu
   
 # Programming Languages
 - :star: [GoLang](https://github.com/Anshul619/golang)
-- [Spring Boot & Microservices](https://github.com/Anshul619/Java/SpringBootAndMicroServices)
+- [Spring Boot & Microservices](https://github.com/Anshul619/SpringBoot)
 - [Java](https://github.com/Anshul619/Java)
-- [Hibernate](https://github.com/Anshul619/Java/Hibernate.md)
+- [Hibernate](https://github.com/Anshul619/Java/blob/main/Hibernate.md)
 - [JavaScript](https://github.com/Anshul619/FrontEnd---JavaScript-TypeScript-React-Angular/tree/main/JavaScript)
 - [TypeScript](https://github.com/Anshul619/FrontEnd---JavaScript-TypeScript-React-Angular/tree/main/TypeScript)
 - [Angular8](https://github.com/Anshul619/FrontEnd---JavaScript-TypeScript-React-Angular/tree/main/AngularJs/Angular8.md)
