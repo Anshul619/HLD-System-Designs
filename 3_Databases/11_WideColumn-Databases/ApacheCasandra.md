@@ -36,9 +36,9 @@
 
 ## Personalization at Spotify using Cassandra
 
-![](https://github.com/Anshul619/Real-World-Tech-Stacks/tree/main/Spotify/PersonalizationSpotify.drawio.png)
+![](https://github.com/Anshul619/Tech-Stacks-Live-Apps/tree/main/Spotify/PersonalizationSpotify.drawio.png)
 
-[Read more](https://github.com/Anshul619/Real-World-Tech-Stacks/tree/main/Spotify/Readme.md)
+[Read more](https://github.com/Anshul619/Tech-Stacks-Live-Apps/tree/main/Spotify/Readme.md)
 
 ## Social Network Design Problem - User Entities like Posts, Comments etc.
 
@@ -53,10 +53,10 @@
 [Read more](../../0_UseCaseDesigns/FlightBookingSearchMakeMyTrip/Readme.md))
 
 ## Other UCs
-- [How Uber Manages a Million Writes Per Second Using Mesos and Cassandra Across Multiple Datacenters?](https://github.com/Anshul619/Real-World-Tech-Stacks/tree/main/Uber/UberCasandraMesos)
-- [Netflix - Casandra - Time Series Data](https://github.com/Anshul619/Real-World-Tech-Stacks/tree/main/Netflix/Readme.md)
-- [Directi uses Casandra to save HeatMaps (UI activities)](https://github.com/Anshul619/Real-World-Tech-Stacks/tree/main/DirectI.md)
-- [Instagram - Social Media Posts](https://github.com/Anshul619/Real-World-Tech-Stacks/tree/main/Instagram/Readme.md)
+- [How Uber Manages a Million Writes Per Second Using Mesos and Cassandra Across Multiple Datacenters?](https://github.com/Anshul619/Tech-Stacks-Live-Apps/tree/main/Uber/UberCasandraMesos)
+- [Netflix - Casandra - Time Series Data](https://github.com/Anshul619/Tech-Stacks-Live-Apps/tree/main/Netflix/Readme.md)
+- [Directi uses Casandra to save HeatMaps (UI activities)](https://github.com/Anshul619/Tech-Stacks-Live-Apps/tree/main/DirectI.md)
+- [Instagram - Social Media Posts](https://github.com/Anshul619/Tech-Stacks-Live-Apps/tree/main/Instagram/Readme.md)
 - [Twillo - Send Message API Design Problem](../../0_UseCaseDesigns/SendSMSMessageAPITwillo/Readme.md)
 - [Twitter Hit Counter](../../0_UseCaseDesigns/HitCounterDesignTwitter/Readme.md)
 - [Discord Migrates Trillions of Messages from Cassandra to ScyllaDB](https://www.infoq.com/news/2023/06/discord-cassandra-scylladb/)

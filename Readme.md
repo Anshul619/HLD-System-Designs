@@ -3,7 +3,7 @@
 This repo contains the various system design components info, questions and solutions.
 - [All Comparisons](All-Comparisons.md)
 - [HLD Design Problems](0_UseCaseDesigns)
-- [Real-world tech stacks](https://github.com/Anshul619/Real-World-Tech-Stacks)
+- [Real-world tech stacks](https://github.com/Anshul619/Tech-Stacks-Live-Apps)
 - [Scalability](7_Scalability)
 - [Database Design tips](3_Databases/Readme.md)
 - [System Design Tips](SystemDesignTips.md)
@@ -263,7 +263,7 @@ This repo contains the various system design components info, questions and solu
 - [QA/Testing](https://github.com/Anshul619/Others-SQL-QA-Git/tree/main/QA/Readme.md)
 
 # Other References
-- [Open Source Contributions](https://github.com/Anshul619/Real-World-Tech-Stacks/tree/main/OpenSourceContributions.md)
+- [Open Source Contributions](https://github.com/Anshul619/Tech-Stacks-Live-Apps/tree/main/OpenSourceContributions.md)
 
 # Source(s) and further reading
 - [System Design Primer](https://github.com/donnemartin/system-design-primer)

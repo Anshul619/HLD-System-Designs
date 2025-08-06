@@ -10,8 +10,8 @@
 - But do optimize it for fallback using [bloom-filters](../5_Database-Internals/LSMTree.md).
 
 # :star: Real world use cases of RocksDB
-- [LinkedIn - Home Feed](https://github.com/Anshul619/Real-World-Tech-Stacks/tree/main/LinkedIn/Readme.md)
-- [Facebook - Home Feed](https://github.com/Anshul619/Real-World-Tech-Stacks/tree/main/Facebook.md)
+- [LinkedIn - Home Feed](https://github.com/Anshul619/Tech-Stacks-Live-Apps/tree/main/LinkedIn/Readme.md)
+- [Facebook - Home Feed](https://github.com/Anshul619/Tech-Stacks-Live-Apps/tree/main/Facebook.md)
 
 # References
 - [RocksDB: A High Performance Embedded Key-Value Store for Flash Storage - Data@Scale](https://www.youtube.com/watch?v=V_C-T5S-w8g)

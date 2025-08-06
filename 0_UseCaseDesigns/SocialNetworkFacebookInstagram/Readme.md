@@ -26,9 +26,9 @@ The application should be able to support the following requirements.
 
 |           | Remarks                                              |
 |-----------|------------------------------------------------------|
-| LinkedIn  | [Tech Stack](https://github.com/Anshul619/Real-World-Tech-Stacks/tree/main/LinkedIn/Readme.md)  |
-| Instagram | [Tech Stack](https://github.com/Anshul619/Real-World-Tech-Stacks/tree/main/Instagram/Readme.md) |
-| Facebook  | [Tech Stack](https://github.com/Anshul619/Real-World-Tech-Stacks/tree/main/Facebook.md)         |
+| LinkedIn  | [Tech Stack](https://github.com/Anshul619/Tech-Stacks-Live-Apps/tree/main/LinkedIn/Readme.md)  |
+| Instagram | [Tech Stack](https://github.com/Anshul619/Tech-Stacks-Live-Apps/tree/main/Instagram/Readme.md) |
+| Facebook  | [Tech Stack](https://github.com/Anshul619/Tech-Stacks-Live-Apps/tree/main/Facebook.md)         |
 | Twitter   |                                                      |
 
 

@@ -22,19 +22,19 @@
 
 | Use Case                                                                                                                                         |
 |--------------------------------------------------------------------------------------------------------------------------------------------------|
-| [LinkedIn](https://github.com/Anshul619/Real-World-Tech-Stacks/tree/main/LinkedIn/Readme.md)                                                                                              |
-| [Personalization at Spotify using Cassandra & Kafka](https://github.com/Anshul619/Real-World-Tech-Stacks/tree/main/Spotify/Readme.md)                                        |
+| [LinkedIn](https://github.com/Anshul619/Tech-Stacks-Live-Apps/tree/main/LinkedIn/Readme.md)                                                                                              |
+| [Personalization at Spotify using Cassandra & Kafka](https://github.com/Anshul619/Tech-Stacks-Live-Apps/tree/main/Spotify/Readme.md)                                        |
 | [Zomato - HLD Design](../../0_UseCaseDesigns/FoodOrderingZomatoSwiggy/Readme.md)                                                            |
 | [Uber Driver Allocation - HLD Design](../../0_UseCaseDesigns/DriverAllocationUberGoJek/Readme.md)                                           |
 | [Twillo Send Message API Design - HLD Design](../../0_UseCaseDesigns/SendSMSMessageAPITwillo/Readme.md)                                     |
 | [Logging Solution in Distributed Systems - HLD Design](../../0_UseCaseDesigns/ObervabilityLoggingSolution/LoggingFileAggregation/Readme.md) |
 | [Flight Booking Search - HLD Design](../../0_UseCaseDesigns/FlightBookingSearchMakeMyTrip/Readme.md)                                        |
-| [Amplitude - Reducing costs with AZ-awareness for Kafka](https://github.com/Anshul619/Real-World-Tech-Stacks/tree/main/Amplitude/Readme.md)                                                 |
-| [BigCommerce - Real-time events](https://github.com/Anshul619/Real-World-Tech-Stacks/tree/main/BigCommerce/Readme.md)                                                                       |
-| [Paypal - Kafka](https://github.com/Anshul619/Real-World-Tech-Stacks/tree/main/PayPal.md)                                                                                          |
-| [Grab - Orders Processing](https://github.com/Anshul619/Real-World-Tech-Stacks/tree/main/Grab/OrderProcessing/Readme.md)                                                                          |
-| [Swiggy (through Confluent)](https://github.com/Anshul619/Real-World-Tech-Stacks/tree/main/Swiggy.md)                                                                              |
-| [Split.io - Messsage Broker](https://github.com/Anshul619/Real-World-Tech-Stacks/tree/main/SplitIO.md)                                                                             |
+| [Amplitude - Reducing costs with AZ-awareness for Kafka](https://github.com/Anshul619/Tech-Stacks-Live-Apps/tree/main/Amplitude/Readme.md)                                                 |
+| [BigCommerce - Real-time events](https://github.com/Anshul619/Tech-Stacks-Live-Apps/tree/main/BigCommerce/Readme.md)                                                                       |
+| [Paypal - Kafka](https://github.com/Anshul619/Tech-Stacks-Live-Apps/tree/main/PayPal.md)                                                                                          |
+| [Grab - Orders Processing](https://github.com/Anshul619/Tech-Stacks-Live-Apps/tree/main/Grab/OrderProcessing/Readme.md)                                                                          |
+| [Swiggy (through Confluent)](https://github.com/Anshul619/Tech-Stacks-Live-Apps/tree/main/Swiggy.md)                                                                              |
+| [Split.io - Messsage Broker](https://github.com/Anshul619/Tech-Stacks-Live-Apps/tree/main/SplitIO.md)                                                                             |
 
 # Top Features of Kafka
 

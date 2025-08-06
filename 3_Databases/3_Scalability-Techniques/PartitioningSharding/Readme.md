@@ -33,8 +33,8 @@
 - [Redis Cluster](https://github.com/Anshul619/AWS-Services/tree/main/1_Databases/AmazonElasticCache/ClusterMode.md)
 - [Apache Casandra](../../11_WideColumn-Databases/ApacheCasandra.md)
 - [OpenSearch Cluster](https://github.com/Anshul619/AWS-Services/tree/main/1_Databases/AmazonOpenSearch/ManagedCluster.md)
-- [MySql Sharding @ Pinterest](https://github.com/Anshul619/Real-World-Tech-Stacks/tree/main/Pinterest/Readme.md)
-- [PostgreSQL Sharding @ Instagram](https://github.com/Anshul619/Real-World-Tech-Stacks/tree/main/Instagram/PostgreSharding.md)
+- [MySql Sharding @ Pinterest](https://github.com/Anshul619/Tech-Stacks-Live-Apps/tree/main/Pinterest/Readme.md)
+- [PostgreSQL Sharding @ Instagram](https://github.com/Anshul619/Tech-Stacks-Live-Apps/tree/main/Instagram/PostgreSharding.md)
 - [PostgreSQL Sharding - System Design](../../../0_UseCaseDesigns/SocialNetworkFacebookInstagram/Readme.md)
 
 # References
