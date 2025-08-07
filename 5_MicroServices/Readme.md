@@ -1,6 +1,6 @@
 # Microservices design
 - [Microservices](https://microservices.io/index.html) are a modern [Service-Oriented Architecture](https://www.geeksforgeeks.org/service-oriented-architecture/).
-- In a [Microservice Architecture](), each service is self-contained, implements a [single responsibility and business capability](../../LLD-OOPs-Design-Patterns/DomainDrivenDevelopment/Readme.md).
+- In a [Microservice Architecture](), each service is self-contained, implements a [single responsibility and business capability](https://github.com/Anshul619/LLD-OOPs-Design-Patterns/tree/main/DomainDrivenDevelopment/Readme.md).
 - [Microservice architecture]() makes it easier and fastest way to build and work on individual parts of an application, and thus the application as a whole.
 - Example - User Management, Order Management, Checkout, Address etc.
 
