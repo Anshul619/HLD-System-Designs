@@ -5,8 +5,8 @@
 ![img.png](assets/zookeeper_cluster_meta_data.png)
 
 # :star: Real world use cases
-- [Apache Kafka](../4_MessageBrokersEDA/Kafka/Readme.md#zookeeper)
-- [Apache HBase](../3_Databases/11_WideColumn-Databases/ApacheHBase.md)
+- [Apache Kafka](../2_MessageBrokersEDA/Kafka/Readme.md#zookeeper)
+- [Apache HBase](../1_Databases/11_WideColumn-Databases/ApacheHBase.md)
 - [Apache Marathon & Mesos](../9_Container&Orchestration/ApacheMarathon&Mesos.md)
-- [Apache SolrCloud](../3_Databases/9_Search-Databases/ApacheSolr.md)
+- [Apache SolrCloud](../1_Databases/9_Search-Databases/ApacheSolr.md)
 - [Twitter Hit Counter](../0_UseCaseDesigns/HitCounterDesignTwitter/Readme.md)

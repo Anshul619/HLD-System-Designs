@@ -50,14 +50,14 @@ The application should be able to support the following requirements.
 | Images Storage                       | [Amazon S3](https://github.com/Anshul619/AWS-Services/tree/main/6_FileStorages/3_S3ObjectStorage/Readme.md) or [HDFS](../../11_FileStorages/ApacheHDFS.md)   |
 | Images MetaData                      | [Amazon DynamoDB](https://github.com/Anshul619/AWS-Services/tree/main/1_Databases/AmazonDynamoDB/Readme.md)                                                                                                                 |
 | Partitioning Key for images metadata | PhotoID                                                                                                                                                                                              |
-| User Activity - Data Entities Store  | [Amazon DynamoDB](https://github.com/Anshul619/AWS-Services/tree/main/1_Databases/AmazonDynamoDB/Readme.md) or [Cassandra](../../3_Databases/11_WideColumn-Databases/ApacheCasandra.md) |
-| User Activity - Relationship Store   | Graph Databases like [Neo4j](../../3_Databases/13_Graph-Databases/Neo4j.md) or Amazon Neptune                                                                    |
-| Data Streaming                       | [Kafka](../../4_MessageBrokersEDA/Kafka/Readme.md) or [Amazon Kinesis](https://github.com/Anshul619/AWS-Services/tree/main/4_MessageBrokers/AmazonKinesis/Readme.md)                                     |
+| User Activity - Data Entities Store  | [Amazon DynamoDB](https://github.com/Anshul619/AWS-Services/tree/main/1_Databases/AmazonDynamoDB/Readme.md) or [Cassandra](../../1_Databases/11_WideColumn-Databases/ApacheCasandra.md) |
+| User Activity - Relationship Store   | Graph Databases like [Neo4j](../../1_Databases/13_Graph-Databases/Neo4j.md) or Amazon Neptune                                                                    |
+| Data Streaming                       | [Kafka](../../2_MessageBrokersEDA/Kafka/Readme.md) or [Amazon Kinesis](https://github.com/Anshul619/AWS-Services/tree/main/4_MessageBrokers/AmazonKinesis/Readme.md)                                     |
 | App Servers                          | Separate app servers for READ and WRITE (Since read-write ratio is 100:1).                                                                                                                           |
-| Home Feed DB                         | [Redis](../../3_Databases/8_Caching-InMemory-Databases/Redis/Readme.md)                                                                                                               |
+| Home Feed DB                         | [Redis](../../1_Databases/8_Caching-InMemory-Databases/Redis/Readme.md)                                                                                                               |
 
 # Reliability and Redundancy
-- If we want to have [high availability](../../7a_HighAvailability/Readme.md) of the system, we need to have multiple replicas of services running in the system so that even if a few services die down, the system remains available and running.
+- If we want to have [high availability](../../5_HighAvailability/Readme.md) of the system, we need to have multiple replicas of services running in the system so that even if a few services die down, the system remains available and running.
 - Redundancy removes the single point of failure in the system.
 
 # Images MetaData - DB Schema
@@ -117,13 +117,13 @@ What are the different issues with "Partitioning based on UserID"?
 # User Activity Service
 
 ## Graph Data Models
-- The reason we have chosen a [Neo4j](../../3_Databases/13_Graph-Databases/Neo4j.md) graph data-model is that our data will contain complex relationships between data entities such as users, posts, and comments as nodes of the graph.
+- The reason we have chosen a [Neo4j](../../1_Databases/13_Graph-Databases/Neo4j.md) graph data-model is that our data will contain complex relationships between data entities such as users, posts, and comments as nodes of the graph.
 - After that, we will use edges of the graph to store relationships such as follows, likes, comments, and so forth.
 
 ![](https://live.staticflickr.com/65535/51813972019_ddfbe16c97_z.jpg)
 
 ## NoSQL Data Models
-- We will use NoSQL databases like [Amazon DynamoDB](https://github.com/Anshul619/AWS-Services/tree/main/1_Databases/AmazonDynamoDB/Readme.md) or [Cassandra](../../3_Databases/11_WideColumn-Databases/ApacheCasandra.md) to store information like user feeds, activities, and counters.
+- We will use NoSQL databases like [Amazon DynamoDB](https://github.com/Anshul619/AWS-Services/tree/main/1_Databases/AmazonDynamoDB/Readme.md) or [Cassandra](../../1_Databases/11_WideColumn-Databases/ApacheCasandra.md) to store information like user feeds, activities, and counters.
 - Each row will contain feed/activity information of the user.
 - We can also have a TTL based functionality to evict older posts.
 

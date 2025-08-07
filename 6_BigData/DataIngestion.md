@@ -3,5 +3,5 @@
 - [Read more](https://docs.hevodata.com/data-ingestion/)
 
 # Useful Tools
-- [Kafka](../4_MessageBrokersEDA/Kafka/Readme.md)
-- [Debezium - CDC](../3_Databases/5_Database-Internals/ChangeDataCapture/Debezium.md)
+- [Kafka](../2_MessageBrokersEDA/Kafka/Readme.md)
+- [Debezium - CDC](../1_Databases/5_Database-Internals/ChangeDataCapture/Debezium.md)

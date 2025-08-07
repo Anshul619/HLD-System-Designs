@@ -3,7 +3,7 @@
 
 # What is Apache Mesos? 
 - [Apache Mesos](https://mesos.apache.org/) is built using the same principles as the Linux kernel, only at a different level of abstraction. 
-- The Mesos kernel runs on every machine and provides applications (e.g., [Hadoop](../6_BigData/ApacheHadoop), [Spark](../6_BigData/DataProcessing/ApacheSpark/Readme.md), [Kafka](../4_MessageBrokersEDA/Kafka/Readme.md), [Elasticsearch](../3_Databases/9_Search-Databases/ElasticSearch)) with API’s for resource management and scheduling across entire datacenter and cloud environments.
+- The Mesos kernel runs on every machine and provides applications (e.g., [Hadoop](../6_BigData/ApacheHadoop), [Spark](../6_BigData/DataProcessing/ApacheSpark/Readme.md), [Kafka](../2_MessageBrokersEDA/Kafka/Readme.md), [Elasticsearch](../1_Databases/9_Search-Databases/ElasticSearch)) with API’s for resource management and scheduling across entire datacenter and cloud environments.
 
 ## Features
 
@@ -12,13 +12,13 @@
 - Program like it's a single of resources.
 
 ### Linear Scalability
-- [Linear Scalability](../3_Databases/3_Scalability-Techniques/Readme.md) - Industry proven to easily scale to 10,000s of nodes.
+- [Linear Scalability](../1_Databases/3_Scalability-Techniques/Readme.md) - Industry proven to easily scale to 10,000s of nodes.
 
 ### High availability
-- [Fault-tolerant](../7a_HighAvailability/Readme.md) replicated master and agents using [Zookeeper](../10_ClusterCoordination/ApacheZookeeper.md).
+- [Fault-tolerant](../5_HighAvailability/Readme.md) replicated master and agents using [Zookeeper](../10_ClusterCoordination/ApacheZookeeper.md).
 - It uses [Zookeeper](../10_ClusterCoordination/ApacheZookeeper.md) for the leader election.
 - If the Mesos master is unavailable, existing tasks can continue to execute, but new resources cannot be allocated and new tasks cannot be launched. 
-- To reduce the chance of this situation occurring, Mesos has a [high-availability](../7a_HighAvailability/Readme.md) mode that uses multiple Mesos masters
+- To reduce the chance of this situation occurring, Mesos has a [high-availability](../5_HighAvailability/Readme.md) mode that uses multiple Mesos masters
   - One active master (called the leader or leading master) and several backups in case it fails. 
 - The masters elect the leader, with [Zookeeper](../10_ClusterCoordination/ApacheZookeeper.md) both coordinating the election and handling leader detection by masters, agents, and scheduler drivers
 

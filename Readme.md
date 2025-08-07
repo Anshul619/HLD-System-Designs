@@ -4,11 +4,11 @@ This repo contains the various system design components info, questions and solu
 - [All Comparisons](All-Comparisons.md)
 - [HLD Design Problems](0_UseCaseDesigns)
 - [Real-world tech stacks](https://github.com/Anshul619/Tech-Stacks-Live-Apps)
-- [Scalability](7_Scalability)
-- [Database Design tips](3_Databases/Readme.md)
+- [Scalability](4_Scalability)
+- [Database Design tips](1_Databases/Readme.md)
 - [System Design Tips](SystemDesignTips.md)
-- [System Estimation & Benchmarking](7c_Estimations&Benchmarking)
-- [Architecture Patterns](7b_ArchitecturePatterns/Readme.md)
+- [System Estimation & Benchmarking](15_Estimations&Benchmarking)
+- [Architecture Patterns](7_ArchitecturePatterns/Readme.md)
 
 # System Design - Tech Stack
 
@@ -34,7 +34,7 @@ This repo contains the various system design components info, questions and solu
     </tr>
     <tr>
       <td>
-        <a href="7_Scalability/CDNs">CDN</a>
+        <a href="4_Scalability/CDNs">CDN</a>
       </td>
       <td>
         <div class="container" style="background:white">
@@ -65,12 +65,12 @@ This repo contains the various system design components info, questions and solu
     </tr>
     <tr>
       <td>
-        <a href="4_MessageBrokersEDA">Message brokers</a>
+        <a href="2_MessageBrokersEDA">Message brokers</a>
       </td>
       <td>
         <div class="container" style="background:white">
             <div class="block two first">
-                <a href="4_MessageBrokersEDA/Kafka/Readme.md" target="_blank">
+                <a href="2_MessageBrokersEDA/Kafka/Readme.md" target="_blank">
                   <img src="https://imgs.search.brave.com/Dciv9E3-St4Ypkw-A7Avph4ennJBmZ1W2-7cVVoCNhc/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMuaWNvbi1pY29u/cy5jb20vMjY5OS9Q/TkcvNTEyL2FwYWNo/ZV9rYWZrYV9sb2dv/X2ljb25fMTY3ODY2/LnBuZw" width="150">
                 </a>
                 <a href="https://github.com/Anshul619/AWS-Services/tree/main/4_MessageBrokers/AmazonKinesis/AmazonKinesisDataStreams.md" target="_blank">
@@ -79,20 +79,20 @@ This repo contains the various system design components info, questions and solu
                 <a href="https://github.com/Anshul619/AWS-Services/tree/main/4_MessageBrokers/AmazonSQS/Readme.md" target="_blank"><img src="https://i0.wp.com/blog.knoldus.com/wp-content/uploads/2021/09/sqs.png?w=711&ssl=1" width="150"></a>
                 <a href="https://github.com/Anshul619/AWS-Services/tree/main/4_MessageBrokers/AmazonEventBridge.md" target="_blank"><img src="https://user-images.githubusercontent.com/3268013/149550617-d92fa8ff-f95d-499c-8515-0ed0be976fbf.png" width="150"></a>
                 <a href="https://github.com/Anshul619/AWS-Services/tree/main/4_MessageBrokers/AmazonSNS.md" target="_blank"><img src="https://miro.medium.com/max/720/0*QjKNs9dEShlQ39VI.png" width="150"></a>
-                <a href="4_MessageBrokersEDA/RabbitMQ.md" target="_blank"><img src="https://www.logo.wine/a/logo/RabbitMQ/RabbitMQ-Logo.wine.svg" width="150"></a>
-                <a href="4_MessageBrokersEDA/ActiveMQ.md" target="_blank">ActiveMQ</a>
+                <a href="2_MessageBrokersEDA/RabbitMQ.md" target="_blank"><img src="https://www.logo.wine/a/logo/RabbitMQ/RabbitMQ-Logo.wine.svg" width="150"></a>
+                <a href="2_MessageBrokersEDA/ActiveMQ.md" target="_blank">ActiveMQ</a>
             </div>
         </div>
       </td>
     </tr>
     <tr>
       <td>
-        <a href="5_MicroServices/2_ServiceRegistry&Discovery" target="_blank">MicroServices - Service Registry & Discovery</a>
+        <a href="3_MicroServices/2_ServiceRegistry&Discovery" target="_blank">MicroServices - Service Registry & Discovery</a>
       </td>
       <td>
         <div class="container" style="background:white">
             <div class="block two first">
-                <a href="5_MicroServices/2_ServiceRegistry&Discovery/Eureka.md" target="_blank">
+                <a href="3_MicroServices/2_ServiceRegistry&Discovery/Eureka.md" target="_blank">
                   <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsLVq3RUn8c7AWSr_559ISKEpHkgVn5U3NKg&usqp=CAU" width="150">
                 </a>
                 <a href="https://github.com/Anshul619/AWS-Services/tree/main/16_NetworkingAndContentDelivery/2_ApplicationNetworking/AWSCloudMap.md" target="_blank">AWS Cloud Map</a>
@@ -108,15 +108,15 @@ This repo contains the various system design components info, questions and solu
     </tr>
     <tr>
       <td>
-        <a href="3_Databases/8_Caching-InMemory-Databases">In-Memory Cache/DBs</a>
+        <a href="1_Databases/8_Caching-InMemory-Databases">In-Memory Cache/DBs</a>
       </td>
       <td>
         <div class="container" style="background:white">
             <div class="block two first">
-                <a href="3_Databases/8_Caching-InMemory-Databases/Redis/Readme.md" target="_blank">
+                <a href="1_Databases/8_Caching-InMemory-Databases/Redis/Readme.md" target="_blank">
                   Redis
                 </a>, 
-                <a href="3_Databases/8_Caching-InMemory-Databases/AeroSpike.md" target="_blank">
+                <a href="1_Databases/8_Caching-InMemory-Databases/AeroSpike.md" target="_blank">
                   Aerospike
                 </a>
             </div>
@@ -125,15 +125,15 @@ This repo contains the various system design components info, questions and solu
     </tr>
     <tr>
       <td>
-        <a href="3_Databases/9_Search-Databases" target="_blank">Search DBs</a>
+        <a href="1_Databases/9_Search-Databases" target="_blank">Search DBs</a>
       </td>
       <td>
         <div class="container" style="background:white">
             <div class="block two first">
-                <a href="3_Databases/9_Search-Databases/ElasticSearch/Readme.md" target="_blank">
+                <a href="1_Databases/9_Search-Databases/ElasticSearch/Readme.md" target="_blank">
                   <img src="https://miro.medium.com/max/1200/1*20yTn7K6c6vcmEdgwAgjSA.png" width="150">
                 </a>
-                <a href="3_Databases/9_Search-Databases/ApacheSolr.md" target="_blank">
+                <a href="1_Databases/9_Search-Databases/ApacheSolr.md" target="_blank">
                   <img src="https://solr.apache.org/theme/images/identity/Solr_Logo_on_white.png" width="150">
                 </a>
             </div>
@@ -142,21 +142,21 @@ This repo contains the various system design components info, questions and solu
     </tr>
     <tr>
       <td>
-        <a href="3_Databases" target="_blank">NoSQL Databases</a>
+        <a href="1_Databases" target="_blank">NoSQL Databases</a>
       </td>
       <td>
         <div class="container" style="background:white">
             <div class="block two first">
-                <a href="3_Databases/11_WideColumn-Databases/ApacheCasandra.md" target="_blank">
+                <a href="1_Databases/11_WideColumn-Databases/ApacheCasandra.md" target="_blank">
                   <img src="https://fontslogo.com/wp-content/uploads/2018/12/Apache-Cassandra-Logo-Font.jpg" width="150">
                 </a>
                 <a href="https://github.com/Anshul619/AWS-Services/tree/main/1_Databases/AmazonDynamoDB/Readme.md">
                   <img src="https://user-images.githubusercontent.com/6509926/70553550-f033b980-1b40-11ea-9192-759b3b1053b3.png" width="150">
                 </a>
-                <a href="3_Databases/10_Document-Databases/MongoDB.md" target="_blank">
+                <a href="1_Databases/10_Document-Databases/MongoDB.md" target="_blank">
                   <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/MongoDB_Logo.svg/2560px-MongoDB_Logo.svg.png" width="150">
                 </a>
-                <a href="3_Databases/11_WideColumn-Databases/ApacheHBase.md" target="_blank">
+                <a href="1_Databases/11_WideColumn-Databases/ApacheHBase.md" target="_blank">
                   <img src="https://hbase.apache.org/images/hbase_logo_with_orca_large.png" width="150">
                 </a>
             </div>

@@ -10,13 +10,13 @@
 | Low Latency                                 | Most reads < 100ms               |
 
 # Tech Stack
-- [Casandra](../../3_Databases/11_WideColumn-Databases/ApacheCasandra.md).
-- [Redis Cache](../../3_Databases/8_Caching-InMemory-Databases/Redis/Readme.md) (with Cluster enabled).
+- [Casandra](../../1_Databases/11_WideColumn-Databases/ApacheCasandra.md).
+- [Redis Cache](../../1_Databases/8_Caching-InMemory-Databases/Redis/Readme.md) (with Cluster enabled).
 - [Zookeeper](../../10_ClusterCoordination/ApacheZookeeper.md) for servers coordination.
 
 # Rainbird design
 - Aggregators buffer for 1 min (configurable).
-- Intelligent flush to [Casandra](../../3_Databases/11_WideColumn-Databases/ApacheCasandra.md)
+- Intelligent flush to [Casandra](../../1_Databases/11_WideColumn-Databases/ApacheCasandra.md)
 - Query Servers read once written.
 
 ![img.png](assets/hit_count_hld_design.png)
