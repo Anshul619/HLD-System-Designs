@@ -17,12 +17,12 @@
 
 # Popular Container Orchestration Services
 
-| Component                                                                             | Strength                                                                    | Type                                                                     |
-|---------------------------------------------------------------------------------------|-----------------------------------------------------------------------------|--------------------------------------------------------------------------|
-| :star: [Kubernates](Kubernates/Readme.md)                                             | Mostly used. Can run 10s of thousands of machines, across multiple clusters | [Container Orchestration Service](Readme.md)                             |
-| :star: [Amazon ECS](https://github.com/Anshul619/AWS-Services/tree/main/3_ContainerOrchestration/AmazonECS/Readme.md)    | Flexible, AWS managed service                                               | [Container Orchestration Service](Readme.md)                             |
-| [Apache Marathon & Mesos](ApacheMarathon&Mesos.md)                                    | Can run 10s of thousands of machines, across multiple clusters              | [Container Orchestration Service](Readme.md) (with own Containerization) |
-| [Red Hat OpenShift](https://www.redhat.com/en/technologies/cloud-computing/openshift) |                                                                             | [Container Orchestration Service](Readme.md)                             |
+| Component                                                                                                             | Strength                                                                    | Type                                                                     |
+|-----------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------|--------------------------------------------------------------------------|
+| :star: [Kubernates](Kubernates/Readme.md)                                                                             | Mostly used. Can run 10s of thousands of machines, across multiple clusters | [Container Orchestration Service](Readme.md)                             |
+| :star: [Amazon ECS](https://github.com/Anshul619/AWS-Services/tree/main/3_ContainerOrchestration/AmazonECS/Readme.md) | Flexible, AWS managed service                                               | [Container Orchestration Service](Readme.md)                             |
+| [Apache Marathon & Mesos](ApacheMarathon&Mesos.md)                                                                    | Can run 10s of thousands of machines, across multiple clusters              | [Container Orchestration Service](Readme.md) (with own Containerization) |
+| [Red Hat OpenShift](https://www.redhat.com/en/technologies/cloud-computing/openshift)                                 |                                                                             | [Container Orchestration Service](Readme.md)                             |
 
 # Other Links
 
