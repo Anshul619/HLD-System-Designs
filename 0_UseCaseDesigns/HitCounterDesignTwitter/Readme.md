@@ -12,7 +12,7 @@
 # Tech Stack
 - [Casandra](../../1_Databases/11_WideColumn-Databases/ApacheCasandra.md).
 - [Redis Cache](../../1_Databases/8_Caching-InMemory-Databases/Redis/Readme.md) (with Cluster enabled).
-- [Zookeeper](../../10_ClusterCoordination/ApacheZookeeper.md) for servers coordination.
+- [Zookeeper](../../../DevOps-SRE/5_ClusterCoordination/ApacheZookeeper.md) for servers coordination.
 
 # Rainbird design
 - Aggregators buffer for 1 min (configurable).

@@ -7,7 +7,7 @@ This repo contains the various system design components info, questions and solu
 - [Scalability](4_Scalability)
 - [Database Design tips](1_Databases/Readme.md)
 - [System Design Tips](SystemDesignTips.md)
-- [System Estimation & Benchmarking](15_Estimations&Benchmarking)
+- [System Estimation & Benchmarking](6_Estimations&Benchmarking)
 - [Architecture Patterns](7_ArchitecturePatterns/Readme.md)
 
 # System Design - Tech Stack
@@ -205,7 +205,7 @@ This repo contains the various system design components info, questions and solu
     </tr>
     <tr>
       <td>
-        <a href="11_FileStorages" target="_blank">
+        <a href="9_FileStorages" target="_blank">
           Distributed File Storage Services (for Files, Images etc.)
         </a>
       </td>
@@ -215,7 +215,7 @@ This repo contains the various system design components info, questions and solu
                 <a href="https://github.com/Anshul619/AWS-Services/tree/main/6_FileStorages/3_ObjectStorageS3/Readme.md" target="_blank">
                   <img src="https://miro.medium.com/max/580/1*DHe24MbDHtbkOeIJzxrfdA.png" width="150">
                 </a>
-                <a href="11_FileStorages/ApacheHDFS.md" target="_blank">
+                <a href="9_FileStorages/ApacheHDFS.md" target="_blank">
                   <img src="https://intellipaat.com/mediaFiles/2015/07/hadoop-hdfs.png" width="150">
                 </a>
             </div>

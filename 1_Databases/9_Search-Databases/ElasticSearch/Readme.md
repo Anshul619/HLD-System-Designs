@@ -1,5 +1,5 @@
 # Introduction
-- [ElasticSearch](https://www.elastic.co/elasticsearch/) is a distributed, [RESTful modern search](../../../8_API-Protocols/REST.md) and [analytics engine](../../../6_BigData/DataConsumption) based on [Apache Lucene](../Readme.md).
+- [ElasticSearch](https://www.elastic.co/elasticsearch/) is a distributed, [RESTful modern search](../../../8_API-Protocols/REST.md) and [analytics engine](../../../../Big-Data/DataConsumption) based on [Apache Lucene](../Readme.md).
 - [ElasticSearch]() can be deployed using [Amazon OpenSearch](https://github.com/Anshul619/AWS-Services/tree/main/1_Databases/AmazonOpenSearch/Readme.md) service, on [AWS](https://github.com/Anshul619/AWS-Services/tree/main/).
 
 # :star: Real world use cases of ElasticSearch
@@ -22,7 +22,7 @@
 | Sample Search Query | [Read more](../Samples/SampleSearchQuery.md)                                                                                                                                                                                                               |
 | Ingest Node         | Ingest node is used for pre-process documents before the actual document indexing happens. <br/>- It helps to intercepts bulk and index requests.                                                                                                       |
 | Data Storage        | Settings, index mapping, alternative cluster states, and other metadata are saved to Elasticsearch files outside the [Lucene](../Readme.md) environment. This is to prevent excessive disk I/O.                                                         |
-| Elastic Stack       | For data analysis, it operates alongside **Kibana**, and **Logstash** to form the [ELK stack](../../../12_Observability/ELK.md).<br/>- [ElasticSearch data streaming](../../15_Streaming-Databases/ElasticSearchStreams.md) is used for the logs.               |
+| Elastic Stack       | For data analysis, it operates alongside **Kibana**, and **Logstash** to form the [ELK stack](../../../../DevOps-SRE/3_Observability/ELK.md).<br/>- [ElasticSearch data streaming](../../15_Streaming-Databases/ElasticSearchStreams.md) is used for the logs.               |
 | Data Streaming      | [A data stream](../../15_Streaming-Databases/ElasticSearchStreams.md) lets you store [append-only time series data (like logs) across multiple indices](../../5_Database-Internals/AppendOnlyProperty.md) while giving you a single named resource for requests. |
 | Auto Scaling        | Auto-expand indices based on search queries. [Read more](https://www.elastic.co/guide/en/elasticsearch/reference/current/index-modules.html).                                                                                                           |
 | Pricing             | [Read more](https://www.elastic.co/pricing/)                                                                                                                                                                                                            |

@@ -10,7 +10,7 @@
 ![img.png](LoggingFileAggregation.drawio.png)
 
 # Possible Design Options
-- Delayed/Eventual Aggregation, using [FileBeat & ELK Stack](../../../12_Observability/ELK.md).
+- Delayed/Eventual Aggregation, using [FileBeat & ELK Stack](../../../../DevOps-SRE/3_Observability/ELK.md).
 
 # Design Steps
 - Recently opened file handles should be stored in the local app server cache.

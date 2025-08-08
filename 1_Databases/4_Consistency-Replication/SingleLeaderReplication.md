@@ -22,5 +22,5 @@ This replication is available as a built-in-feature in various technologies.
 | Message Brokers          | [Kafka Cluster](../../2_MessageBrokersEDA/Kafka/Readme.md), RabbitMQ                                                                                                                                                                                 |
 
 # Leader Election Process
-- In case of failed leader, new leader would be chosen through an election process (where the leader is chosen by a majority of the remaining replicas), or by a previously [elected controller node](../../10_ClusterCoordination/ControllerNode.md).
-- Technologies like [Zookeeper](../../10_ClusterCoordination/ApacheZookeeper.md) service is helpful for coordinating the election process.
+- In case of failed leader, new leader would be chosen through an election process (where the leader is chosen by a majority of the remaining replicas), or by a previously [elected controller node](../../../DevOps-SRE/5_ClusterCoordination/ControllerNode.md).
+- Technologies like [Zookeeper](../../../DevOps-SRE/5_ClusterCoordination/ApacheZookeeper.md) service is helpful for coordinating the election process.

@@ -6,7 +6,7 @@
 
 ## Examples
 - [REST APIs](../8_API-Protocols/REST.md)
-- [Container technologies](../9_Container&Orchestration/Readme.md) like [Docker](../9_Container&Orchestration/Docker/Readme.md), [Kubernetes](../9_Container&Orchestration/Kubernates/Readme.md) etc.
+- [Container technologies](../../DevOps-SRE/2_ContainerOrchestration/Readme.md) like [Docker](../../DevOps-SRE/1_Containers/Docker/Readme.md), [Kubernetes](../../DevOps-SRE/2_ContainerOrchestration/Kubernates/Readme.md) etc.
 
 # Stateful Protocol
 - [Stateful Protocol](https://www.geeksforgeeks.org/difference-between-stateless-and-stateful-protocol/) requires server to save the status and session information.

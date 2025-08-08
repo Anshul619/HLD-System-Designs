@@ -29,7 +29,7 @@ Pay attention to:
 - Heap usage / GC pressure 
 - Threadpool rejection rates (especially write/index)
 
-Use [Kibana or Elastic Stack Monitoring](../../../12_Observability/ELK.md) to visualize these.
+Use [Kibana or Elastic Stack Monitoring](../../../../DevOps-SRE/3_Observability/ELK.md) to visualize these.
 
 # Example Use Case: Time-Series Logging
 For a logging system (e.g., log ingestion from Beats/Fluentd):

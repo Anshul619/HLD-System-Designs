@@ -10,7 +10,7 @@
 | [Amazon Timestream](https://github.com/Anshul619/AWS-Services/tree/main/1_Databases/AmazonTimestream.md) | Yes           |                                                                                                                                                         |
 | [InfluxDB](InfluxDB.md)                                                         | Yes           | InfluxDB provides an SQL-like language with built-in time-centric functions for querying a data structure composed of measurements, series, and points. |
 | [Timescale](Timescale.md)                                                       | Yes           | Timescale extends PostgreSQL and supports SQL Queries along with additional SQL functions.                                                              |
-| [ElasticSearch (ELK Stack)](../../12_Observability/ELK.md)          | No            |                                                                                                                                                         |
+| [ElasticSearch (ELK Stack)](../../../DevOps-SRE/3_Observability/ELK.md)          | No            |                                                                                                                                                         |
 
 # Use Cases
 

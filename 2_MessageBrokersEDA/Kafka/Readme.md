@@ -14,9 +14,9 @@
 |------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Message broker (PubSub model) in Event-Driven Architecture | Use Kafka when your application has a high throughput i.e. application has to process a large volume of messages, [event driven services](../EventDrivenArchitecture/Readme.md) etc.     |
 | Data Ingestion - Real-time events, analytics etc.          | For example - If we want to build our own Google Analytics or Amplitude (to track app activities, events etc.), we can use Kafka as a broker.                                            |
-| Distributed Logging - Logs Aggregation, Metrics            | Various systems in the IT infrastructure can push events/messages/logs in the Kafka. (example - [ELK stack](../../12_Observability/ELK.md))                                              |
-| Stream Processing - Data Pipelines, Microservices etc.     | [Kafka Streams](../../6_BigData/DataProcessing/KafkaStreams/Readme.md) can be helpful in stream processing the events (map/reduce, aggregation, counts etc.).                            |
-| Data Pipelines - CDC of DBs                                | [Kafka connectors](../../6_BigData/DataConnectors/KafkaConnect.md) can be helpful to migrate from one DB to another i.e. [handle CDC](../../1_Databases/5_Database-Internals/ChangeDataCapture/Readme.md). |
+| Distributed Logging - Logs Aggregation, Metrics            | Various systems in the IT infrastructure can push events/messages/logs in the Kafka. (example - [ELK stack](../../../DevOps-SRE/3_Observability/ELK.md))                                              |
+| Stream Processing - Data Pipelines, Microservices etc.     | [Kafka Streams](../../../Big-Data/DataProcessing/KafkaStreams/Readme.md) can be helpful in stream processing the events (map/reduce, aggregation, counts etc.).                            |
+| Data Pipelines - CDC of DBs                                | [Kafka connectors](../../../Big-Data/DataConnectors/KafkaConnect.md) can be helpful to migrate from one DB to another i.e. [handle CDC](../../1_Databases/5_Database-Internals/ChangeDataCapture/Readme.md). |
 
 # :star: Real world use cases of Kafka
 
@@ -45,8 +45,8 @@
 | High Volume                          | Large amount of data can be stored in the Kafka pool.                                                                                                                                                                                                                                                                                                                                           |
 | Durability                           | The data is kept [persistent (as per retention policy)](../../1_Databases/1_ACID-Transactions/Durability.md) and tolerant to any hardware failures by copying the data in the clusters.                                                                                                                                                                                                     |
 | High Availability, Fault Tolerance   | The [distributed, partitioned, replicated](../../1_Databases/4_Consistency-Replication/Replication.md), and [fault-tolerant](../../5_HighAvailability/FaultTolerance.md) nature of Kafka makes it very reliable.<br/>- Kafka connector can handle failures with three strategies summarised as **fast-fail**, **ignore** and **re-queue** (sends to another topic). |
-| Extensibility                        | Allows multiple ways for applications to plugin and make use of Kafka.<br/>- Also, it has provisions for [new connectors](../../6_BigData/DataConnectors/KafkaConnect.md) that you can write as needed.                                                                                                                                                                                 |
-| Data Processing/Transformation       | Using [Kafka Stream API](../../6_BigData/DataProcessing/KafkaStreams/Readme.md), Kafka allows for deriving new data streams using the existing data streams from producers.                                                                                                                                                                                               |
+| Extensibility                        | Allows multiple ways for applications to plugin and make use of Kafka.<br/>- Also, it has provisions for [new connectors](../../../Big-Data/DataConnectors/KafkaConnect.md) that you can write as needed.                                                                                                                                                                                 |
+| Data Processing/Transformation       | Using [Kafka Stream API](../../../Big-Data/DataProcessing/KafkaStreams/Readme.md), Kafka allows for deriving new data streams using the existing data streams from producers.                                                                                                                                                                                               |
 
 # Kafka - Partitioning Layout
 
@@ -92,11 +92,11 @@
 
 | Component       | Remarks                                                                                                                                                                                                                                                                  |
 |-----------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Kafka Connect   | [Kafka Connect](../../6_BigData/DataConnectors/KafkaConnect.md) is a tool for scalably and reliably streaming data between [Apache Kafka]() and other systems.                                                                                                   |
+| Kafka Connect   | [Kafka Connect](../../../Big-Data/DataConnectors/KafkaConnect.md) is a tool for scalably and reliably streaming data between [Apache Kafka]() and other systems.                                                                                                   |
 | Schema Registry | [Schema Registry](SchemaRegistry.md) holds schemas & ensures that schema used by producer and consumer, are identical.                                                                                                                                                   |
-| Kafka Streams   | [Streams API](../../6_BigData/DataProcessing/KafkaStreams/Readme.md) is a client library for building applications and [microservices](../../3_MicroServices/Readme.md), where the input and output data are stored in [Kafka clusters](Readme.md). |
+| Kafka Streams   | [Streams API](../../../Big-Data/DataProcessing/KafkaStreams/Readme.md) is a client library for building applications and [microservices](../../3_MicroServices/Readme.md), where the input and output data are stored in [Kafka clusters](Readme.md). |
 | kSQL            | [kSQL](kSQL.md) is a database purpose-built for stream processing applications.                                                                                                                                                                                          |
-| Zookeeper       | [Zookeeper](../../10_ClusterCoordination/ApacheZookeeper.md) manages Kafka Cluster (new broker, new partition etc.), brokers coordination & election process (leader, Controller election etc.)                                                                  |
+| Zookeeper       | [Zookeeper](../../../DevOps-SRE/5_ClusterCoordination/ApacheZookeeper.md) manages Kafka Cluster (new broker, new partition etc.), brokers coordination & election process (leader, Controller election etc.)                                                                  |
 
 # In-Sync Replicas (ISR)
 - **Broker1** & **Broker2** are in sync replicas (i.e. all messages are same in both the brokers).
@@ -123,7 +123,7 @@
 # Other Points
 - [Kafka vs Others](../KafkaVsRabbitMQVsSQSVsSNS.md)
 - [Kafka Estimates](KafkaEstimations.md)
-- [Apache Kafka - Benchmarking@LinkedIn](../../15_Estimations&Benchmarking/Benchmarking/KafkaBenchmarking.md)
+- [Apache Kafka - Benchmarking@LinkedIn](../../6_Estimations&Benchmarking/Benchmarking/KafkaBenchmarking.md)
 - [Why Kafka is so fast?](WhyKafkaSoFast.md)
 - [Amazon Managed Streaming for Apache Kafka (MSK)](https://github.com/Anshul619/AWS-Services/tree/main/4_MessageBrokers/AmazonMSK.md) can be used to deploy Kafka on [AWS](https://github.com/Anshul619/AWS-Services/tree/main/).
 - [Kora: The Cloud Native Engine for Apache Kafka](https://www.confluent.io/blog/cloud-native-data-streaming-kafka-engine/)
