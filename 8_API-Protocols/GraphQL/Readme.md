@@ -17,7 +17,7 @@
 
 # GraphQL Key Concepts
 
-|                | Description                                                                                                                                                                                                                                                               |
+| Concept                  | Description                                                                                                                                                                                                                                                               |
 |--------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | :star: Schema            | It’s a definition of the capabilities of the API and defines how clients can request data. The schema is used to define the types of data that can be retrieved or modified, as well as the relationships between those types.                                            |
 | :star: Queries           | A query is a request for data from the GraphQL API. It’s used to retrieve data from the server. Queries are used to fetch data from the server and are similar to SQL queries.                                                                                            |
