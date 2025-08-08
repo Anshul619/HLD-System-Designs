@@ -13,7 +13,7 @@
 | [Pub-Sub model](../2_MessageBrokersEDA/EventDrivenArchitecture/PubSubModel.md)                                                    | [Message Broker Services](../2_MessageBrokersEDA) |
 | [Point-2-Point model](../2_MessageBrokersEDA/EventDrivenArchitecture/PointToPointModel.md)                                        | [Message Broker Services](../2_MessageBrokersEDA) |
 | [Fan-out pattern - Amazon SNS](https://github.com/Anshul619/AWS-Services/tree/main/4_MessageBrokers/AmazonSNS.md)                 | [Message Broker Services](../2_MessageBrokersEDA) |
-| [Leader Election](../../DevOps-SRE/5_ClusterCoordination/Readme.md)                                                                            |                                                   |
+| [Leader Election](https://github.com/Anshul619/DevOps-SRE/tree/main/5_ClusterCoordination/Readme.md)                                                                            |                                                   |
 | [Reactive Architecture](https://medium.com/big-data-cloud-computing-and-distributed-systems/reactive-architecture-i-5652f944f8fb) |                                                   |
 
 # Read more

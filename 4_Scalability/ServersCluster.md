@@ -7,7 +7,7 @@
 
 | Tech                                                                                                 | Remarks                              |
 |------------------------------------------------------------------------------------------------------|--------------------------------------|
-| [Kubernates Cluster](../../DevOps-SRE/2_ContainerOrchestration/Kubernates/Readme.md)                              | Cluster of Containers                |
+| [Kubernates Cluster](https://github.com/Anshul619/DevOps-SRE/tree/main/2_ContainerOrchestration/Kubernates/Readme.md)                              | Cluster of Containers                |
 | [Kafka Cluster](../2_MessageBrokersEDA/Kafka/Readme.md)                                              | Cluster of Topics (High-Throughput MQ) |                     
 | [Amazon RDS Clusters](https://github.com/Anshul619/AWS-Services/tree/main/1_Databases/AmazonRDS/RDSDeploymentOptions/MultiAZInstance.md) | Cluster of DB instances, across Multi-AZs |
 | [Redis Cluster](../1_Databases/8_Caching-InMemory-Databases/Redis/RedisCluster.md)                           | Cluster of Redis Nodes (In-Memory Cache) |
@@ -15,8 +15,8 @@
 | [ElasticSearch Cluster](../1_Databases/9_Search-Databases/ElasticSearch/Cluster.md)                  | Cluster of JSON Data, Indexes        |
 | [OpenSearch Cluster](https://github.com/Anshul619/AWS-Services/tree/main/1_Databases/AmazonOpenSearch/Readme.md)                         | Cluster of JSON Data, Indexes   |
 | [Casandra Cluster](../1_Databases/11_WideColumn-Databases/ApacheCasandra.md)                         | Cluster of wide-columns DBs          |
-| [Hadoop Cluster](../../Big-Data/ApacheHadoop)                                                          | Cluster of different components      |
+| [Hadoop Cluster](https://github.com/Anshul619/Big-Data/tree/main/ApacheHadoop)                                                          | Cluster of different components      |
 
 # What is Cluster capacity?
-- In general, a cluster (for ex. [Kubernates cluster](../../DevOps-SRE/2_ContainerOrchestration/Kubernates/Readme.md)) can be seen as abstracting a set of individual nodes as a big **super node**.
+- In general, a cluster (for ex. [Kubernates cluster](https://github.com/Anshul619/DevOps-SRE/tree/main/2_ContainerOrchestration/Kubernates/Readme.md)) can be seen as abstracting a set of individual nodes as a big **super node**.
 - The total compute capacity (in terms of CPU and memory) of this super node is the sum of all the constituent nodes' capacities.

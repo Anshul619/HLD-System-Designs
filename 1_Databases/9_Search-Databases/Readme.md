@@ -17,7 +17,7 @@
 | [Open Search](OpenSearch/Readme.md)                                           |
 | [Apache Solr](ApacheSolr.md)                                           |
 | [MongoDB Atlas Search](MongoAtlasSearch.md)                            |
-| [New Relic - Logs Analysis](../../../DevOps-SRE/3_Observability/NewRelic/Readme.md) |
+| [New Relic - Logs Analysis](https://github.com/Anshul619/DevOps-SRE/tree/main/3_Observability/NewRelic/Readme.md) |
 
 # Reference
 - [How does elasticsearch store data?](https://stackoverflow.com/questions/57328151/how-does-elasticsearch-store-data)

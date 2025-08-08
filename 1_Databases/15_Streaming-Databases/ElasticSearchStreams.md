@@ -18,4 +18,4 @@
 ````
 
 # Example Use Case
-- [Logs in ELK Stack](../../../DevOps-SRE/3_Observability/ELK.md)
+- [Logs in ELK Stack](https://github.com/Anshul619/DevOps-SRE/tree/main/3_Observability/ELK.md)
