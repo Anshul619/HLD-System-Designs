@@ -11,9 +11,9 @@
 
 # gRPC is contract-based (Protobuf)
 - A Contract needs to be available on both sides of communication to make sense of data going between them. 
-- To define the contracts, gRPC uses a declarative language called [Protocol Buffers (Protobuf)](SerializationFrameworks/ProtocolBuffers.md).
+- To define the contracts, gRPC uses a declarative language called [Protocol Buffers (Protobuf)](../SerializationFrameworks/ProtocolBuffers.md).
 
-![img.png](assets/protobuf_img.png)
+![img.png](../SerializationFrameworks/assets/protobuf_img.png)
 
 # :thumbsup: Advantages of gRPC
 

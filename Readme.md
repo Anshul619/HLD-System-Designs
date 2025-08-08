@@ -258,12 +258,9 @@ This repo contains the various system design components info, questions and solu
 - [Angular8](https://github.com/Anshul619/FrontEnd---JavaScript-TypeScript-React-Angular/tree/main/AngularJs/Angular8.md)
 
 # API Documentation, QA
-- :star: [Swagger](8_APIStandards/API_Documentation/Swagger/Readme.md)
-- [Open API Spec](8_APIStandards/API_Documentation/Swagger/OpenAPISpec.md)
-- [QA/Testing](https://github.com/Anshul619/Others-SQL-QA-Git/tree/main/QA/Readme.md)
-
-# Other References
-- [Open Source Contributions](https://github.com/Anshul619/Tech-Stacks-Live-Apps/tree/main/OpenSourceContributions.md)
+- :star: [Swagger](https://github.com/Anshul619/API-Documentation/tree/main)
+- [Open API Spec](https://github.com/Anshul619/API-Documentation/tree/main/OpenAPISpec.md)
+- [QA/Testing](https://github.com/Anshul619/Testing-QA/tree/main)
 
 # Source(s) and further reading
 - [System Design Primer](https://github.com/donnemartin/system-design-primer)
@@ -271,4 +268,3 @@ This repo contains the various system design components info, questions and solu
 - [System Design by Gaurav Sen](https://www.youtube.com/watch?v=xpDnVSmNFX0&list=PLMCXHnjXnTnvo6alSjVkgxV-VH6EPyvoX)
 - [ByteByteGo - System Design](https://github.com/ByteByteGoHq/system-design-101/Readme.md)
 - [System Design - Interview Questions](https://leetcode.com/discuss/interview-question/system-design?currentPage=1&orderBy=hot&query=)
-- [Tech Stacks](https://techstacks.io/stacks/)

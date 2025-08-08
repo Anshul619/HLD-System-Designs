@@ -17,7 +17,7 @@
 | [Strong vs Semi vs Eventual Consistency/Replication](1_Databases/4_Consistency-Replication/Readme.md)             | [Database Services](1_Databases)                                   |
 | [Amazon S3 vs Apache HDFS](./11_FileStorages/HDFSVsS3.md)                                                         | [File Storage Services](11_FileStorages)                           |
 | [Apache Spark vs Hadoop Map Reduce vs Flink vs Storm](6_BigData/DataProcessing/SparkVsMapReduceVsFlinkVsStorm.md) | [Big Data - Data Processing](6_BigData/DataProcessing/)            |
-| [REST vs GraphQL](8_APIStandards/RESTvsGraphQL.md)                                                                | [API Protocols](8_APIStandards/Readme.md)                          |
+| [REST vs GraphQL](8_APIStandards/Protocols/RESTvsGraphQL.md)                                                                | [API Protocols](8_APIStandards/Readme.md)                          |
 | [Stateful vs Stateless](4_Scalability/StatefulVsStateless.md)                                                     | [MicroServices](3_MicroServices)                                   |
 | [Event Driven vs Request Response Pattern](2_MessageBrokersEDA/EventDrivenVsRequestResponsePattern.md)            | [MicroServices](3_MicroServices)                                   |
 | [Web vs App Server](4_Scalability/WebVsAppServer.md)                                                              | [MicroServices](3_MicroServices)                                   |

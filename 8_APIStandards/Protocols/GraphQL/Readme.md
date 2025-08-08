@@ -5,7 +5,7 @@
 - GraphQL has a schema definition language for defining the types on a query.
 - Additionally, with GraphQL, you can enquire multiple entities in one request, and because less bits will be transferred over the wire so your projects will perform faster than while using [REST](../REST.md).
 
-![img.png](../assets/graphql.png)
+![img.png](assets/graphql.png)
 
 # Why GraphQL?
 - There are some issues with the [REST Architecture](../REST.md) style such as Multiple endpoints, Over-fetching, and Under-fetching of resources.
@@ -52,8 +52,8 @@
 - [Guild Dev](https://the-guild.dev/)
 
 # :star: Real world use cases of GraphQL
-- [Zomato - HLD Design](../../0_UseCaseDesigns/FoodOrderingZomatoSwiggy/Readme.md)
-- [Uber Driver Allocation](../../0_UseCaseDesigns/DriverAllocationUberGoJek/Readme.md)
+- [Zomato - HLD Design](../../../0_UseCaseDesigns/FoodOrderingZomatoSwiggy/Readme.md)
+- [Uber Driver Allocation](../../../0_UseCaseDesigns/DriverAllocationUberGoJek/Readme.md)
 - [GraphQL with ElasticSearch](https://github.com/Anshul619/Tech-Stacks-Live-Apps/tree/main/Smartive.md)
 - Facebook (contributor of GraphQL)
 - [GitHub](https://github.com/shurcooL/githubv4)

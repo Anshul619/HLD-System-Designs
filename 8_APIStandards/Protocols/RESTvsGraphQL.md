@@ -1,10 +1,10 @@
 # REST vs GraphQL
 
-![img.png](assets/RESTvsGraphQL.png)
+![img.png](GraphQL/assets/RESTvsGraphQL.png)
 
 # Comparisons
 
-| Feature                                    | GraphQL                                                                                                                                     | [REST](REST.md)                                         |
+| Feature                                    | GraphQL                                                                                                                                     | REST                                                    |
 |--------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------|
 | Flexibility                                | :+1: Client specify exact resource & fields in GraphQL schema (query param), it wants.                                                      | Rigid                                                   |
 | Speed                                      | :+1: GraphQL is faster than REST because as you can pick the fields you want to query, so the request will always be the smallest possible. |                                                         |
@@ -17,7 +17,7 @@
 
 # Similarities of REST with GraphQL
 
-Both [REST](REST.md) and [GraphQL]() are based on following,
+Both [REST](REST.md) and [GraphQL](GraphQL) are based on following,
 - HTTP
 - API URL
 - Can return JSON response
