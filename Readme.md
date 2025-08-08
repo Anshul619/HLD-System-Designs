@@ -16,16 +16,16 @@ This repo contains the various system design components info, questions and solu
   <tbody>
     <tr>
       <td>
-        <a href="8_APIStandards/Readme.md">API Protocols</a>
+        <a href="8_API-Protocols/Readme.md">API Protocols</a>
       </td>
       <td>
         <div class="container" style="background:white">
             <div class="block two first">
-                <a href="8_APIStandards/REST.md" target="_blank">REST</a>, 
-                <a href="8_APIStandards/gRPC.md" target="_blank">
+                <a href="8_API-Protocols/REST.md" target="_blank">REST</a>, 
+                <a href="8_API-Protocols/gRPC.md" target="_blank">
                   gRPC
                 </a> 
-                <a href="8_APIStandards/GraphQL.md" target="_blank">
+                <a href="8_API-Protocols/GraphQL.md" target="_blank">
                   <img src="https://marmelab.com/images/blog/graphql/logo.png" width="150">
                 </a>
             </div>

@@ -3,6 +3,6 @@
 - [Producer](CoreAPIs/ProducerAPI.md) sends schema id while pushing the data and [consumer](CoreAPIs/ConsumerAPI.md) look for schema id to get schema.
 
 # Supported Formats
-- [JSON](../../8_APIStandards/DataInterchangeFormats/JSON.md)
-- [Avro](../../8_APIStandards/SerializationFrameworks/Avro.md)
-- [Protocol Buffers](../../8_APIStandards/SerializationFrameworks/ProtocolBuffers.md)
+- [JSON](../../../Serialization-Data/Formats/JSON.md)
+- [Avro](../../../Serialization-Data/Frameworks/Avro.md)
+- [Protocol Buffers](../../../Serialization-Data/Frameworks/ProtocolBuffers.md)

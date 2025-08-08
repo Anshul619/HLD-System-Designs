@@ -17,7 +17,7 @@
 
 # GraphQL Key Concepts
 
-|                          | Description                                                                                                                                                                                                                                                               |
+|                | Description                                                                                                                                                                                                                                                               |
 |--------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | :star: Schema            | It’s a definition of the capabilities of the API and defines how clients can request data. The schema is used to define the types of data that can be retrieved or modified, as well as the relationships between those types.                                            |
 | :star: Queries           | A query is a request for data from the GraphQL API. It’s used to retrieve data from the server. Queries are used to fetch data from the server and are similar to SQL queries.                                                                                            |
@@ -36,7 +36,7 @@
 
 # Limitations of GraphQL
 
-|                                        | Description                                                                                                                                                                                                                                     |
+| Limitation                             | Description                                                                                                                                                                                                                                     |
 |----------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Complexity                             | GraphQL can be complex to learn and implement, especially for developers who are used to working with RESTful APIs. The schema-based approach requires a good understanding of the data model and the relationships between different entities. |
 | Over-engineering                       | GraphQL can lead to over-engineering, as developers may try to define too many types and fields, which can make the schema difficult to maintain and understand.                                                                                |
@@ -52,8 +52,8 @@
 - [Guild Dev](https://the-guild.dev/)
 
 # :star: Real world use cases of GraphQL
-- [Zomato - HLD Design](../../../0_UseCaseDesigns/FoodOrderingZomatoSwiggy/Readme.md)
-- [Uber Driver Allocation](../../../0_UseCaseDesigns/DriverAllocationUberGoJek/Readme.md)
+- [Zomato - HLD Design](../../0_UseCaseDesigns/FoodOrderingZomatoSwiggy/Readme.md)
+- [Uber Driver Allocation](../../0_UseCaseDesigns/DriverAllocationUberGoJek/Readme.md)
 - [GraphQL with ElasticSearch](https://github.com/Anshul619/Tech-Stacks-Live-Apps/tree/main/Smartive.md)
 - Facebook (contributor of GraphQL)
 - [GitHub](https://github.com/shurcooL/githubv4)
