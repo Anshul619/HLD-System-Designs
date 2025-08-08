@@ -165,15 +165,15 @@ This repo contains the various system design components info, questions and solu
     </tr>
     <tr>
       <td>
-        <a href="10_ClusterCoordination/Readme.md" target="_blank">Cluster Coordination Service & Config store</a>
+        <a href="https://github.com/Anshul619/DevOps-SRE/tree/main/2_ContainerOrchestration/Readme.md" target="_blank">Cluster Coordination Service & Config store</a>
       </td>
       <td>
         <div class="container" style="background:white">
             <div class="block two first">
-                <a href="10_ClusterCoordination/ApacheZookeeper.md" target="_blank">
+                <a href="https://github.com/Anshul619/DevOps-SRE/tree/main/2_ContainerOrchestration/ApacheZookeeper.md" target="_blank">
                   <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Apache_ZooKeeper_logo.svg/1200px-Apache_ZooKeeper_logo.svg.png" width="150">
                 </a>
-                <a href="10_ClusterCoordination/etcd.md" target="_blank">
+                <a href="https://github.com/Anshul619/DevOps-SRE/tree/main/2_ContainerOrchestration/etcd.md" target="_blank">
                   <img src="https://cdn.freebiesupply.com/logos/large/2x/etcd-logo-png-transparent.png" width="150">
                 </a>
             </div>
@@ -182,18 +182,18 @@ This repo contains the various system design components info, questions and solu
     </tr>
     <tr>
       <td>
-        <a href="6_BigData/Readme.md">Big Data Processing</a>
+        <a href="https://github.com/Anshul619/Big-Data/Readme.md">Big Data Processing</a>
       </td>
       <td>
         <div class="container" style="background:white">
             <div class="block two first">
-                <a href="6_BigData/DataProcessing/ApacheMapReduce/Readme.md" target="_blank">
+                <a href="https://github.com/Anshul619/Big-Data/tree/main/DataProcessing/ApacheMapReduce/Readme.md" target="_blank">
                   <img src="https://www.clipartmax.com/png/middle/180-1806192_hadoop-apache-hadoop-logo.png" width="150">
                 </a>
-                <a href="6_BigData/DataProcessing/ApacheSpark/Readme.md" target="_blank">
+                <a href="https://github.com/Anshul619/Big-Data/tree/main/DataProcessing/ApacheSpark/Readme.md" target="_blank">
                   <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Apache_Spark_logo.svg/1200px-Apache_Spark_logo.svg.png" width="150">
                 </a>
-                <a href="6_BigData/DataProcessing/KafkaStreams/Readme.md" target="_blank">
+                <a href="https://github.com/Anshul619/Big-Data/tree/main/DataProcessing/KafkaStreams/Readme.md" target="_blank">
                   <img src="https://1.bp.blogspot.com/-LIHoqo96Dos/X7wKY2u124I/AAAAAAAAp88/SrC8E6Y-5l4Xil7UPrDRp-RuEx2GioXkQCLcBGAsYHQ/s435/kafka-streams.png" width="150">
                 </a>
                 <a href="https://github.com/Anshul619/AWS-Services/tree/main/10_BigData/DataConnectors/AmazonDataFirehouse/Readme.md" target="_blank">
@@ -224,13 +224,13 @@ This repo contains the various system design components info, questions and solu
     </tr>
     <tr>
       <td>
-        <a href="12_Observability/">Observability & Logging Services</a>
+        <a href="https://github.com/Anshul619/DevOps-SRE/tree/main/3_Observability">Observability & Logging Services</a>
       </td>
       <td>
-        <a href="12_Observability/NewRelic">
+        <a href="https://github.com/Anshul619/DevOps-SRE/tree/main/3_Observability/NewRelic">
           <img src="https://www.vectorlogo.zone/logos/newrelic/newrelic-ar21.svg" width="150">
         </a>
-        <a href="12_Observability/ELK.md">
+        <a href="https://github.com/Anshul619/DevOps-SRE/tree/main/3_Observability/ELK.md">
           <img src="https://miro.medium.com/max/746/1*DbdVXy9_6uJVe8q1NOYVfg.png" width="150">
         </a>
         <br/><br/>
