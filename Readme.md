@@ -5,6 +5,7 @@ This repo contains the various system design components info, questions and solu
 - [HLD Design Problems](0_UseCaseDesigns)
 - [Real-world tech stacks](https://github.com/Anshul619/Tech-Stacks-Live-Apps)
 - [Scalability](4_Scalability)
+- [Debugging playbook](DebuggingPlaybook.md)
 - [Database Design tips](1_Databases/Readme.md)
 - [System Design Tips](SystemDesignTips.md)
 - [System Estimation & Benchmarking](6_Estimations&Benchmarking)

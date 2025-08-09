@@ -12,7 +12,7 @@ This is a production-grade scalability checklist covering:
 > - Priority: High → quick wins / immediate impact, Medium → medium effort, Low → micro-optimizations.
 
 # How to Use This Checklist?
-- Start with High Priority items in *Identify & fix DB issues* and *Reduce unnecessary load*.
+- Start with High Priority items in **Identify & fix DB issues** and **Reduce unnecessary load**.
 - Move on to improve resilience & scalability items for system stability.
 - Consider **(Architecture)** points when planning larger design changes.
 - Each row links to a deep dive in this repo or an external reference.
