@@ -5,7 +5,7 @@
 - Example - User Management, Order Management, Checkout, Address etc.
 
 # Features
-- [Design Patterns](3_DesignPatterns/Readme.md)
+- [Design Patterns](DesignPatterns.md)
 - [Spring Cloud vs K8s vs AWS](SpringCloudVsK8sVsAWS.md)
 - [API Gateway](1_APIGateway/Readme.md)
 - [Service Registry and Discovery](2_ServiceRegistry&Discovery/Readme.md)

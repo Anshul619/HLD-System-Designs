@@ -1,0 +1,3 @@
+# Leader Election Process
+- In case of failed leader, new leader would be chosen through an election process (where the leader is chosen by a majority of the remaining replicas), or by a previously [elected controller node](https://github.com/Anshul619/DevOps-SRE/tree/main/5_ClusterCoordination/ControllerNode.md).
+- Services like [Zookeeper](https://github.com/Anshul619/DevOps-SRE/tree/main/5_ClusterCoordination/ApacheZookeeper.md), etcd are helpful for coordinating the election process.

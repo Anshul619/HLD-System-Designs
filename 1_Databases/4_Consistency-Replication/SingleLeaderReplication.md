@@ -1,4 +1,4 @@
-# :star: Single-Leader replication
+# Single-Leader replication
 
 ![](assets/Leader-Follow-Replication.drawio.png)
 
@@ -15,12 +15,8 @@
 
 This replication is available as a built-in-feature in various technologies.
 
-| Type                     | Tech                                                                                                                                                                                                                                                 |
-|--------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| SQL/Relational Databases | [Amazon Aurora](https://github.com/Anshul619/AWS-Services/tree/main/1_Databases/AmazonRDS/AmazonAurora/Readme.md), PostgresSQL, MySQL etc.                                                                                                                            |
+| Type                     | Tech                                                                                                                                                                                                                                                                            |
+|--------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| SQL/Relational Databases | [Amazon Aurora](https://github.com/Anshul619/AWS-Services/tree/main/1_Databases/AmazonRDS/AmazonAurora/Readme.md), PostgresSQL, MySQL etc.                                                                                                                                      |
 | NoSQL Databases          | [Amazon Elastic Cache (Cluster Disabled)](https://github.com/Anshul619/AWS-Services/tree/main/1_Databases/AmazonElasticCache/ClusterMode.md), [Redis - Master Slave Replication](../8_Caching-InMemory-Databases/Redis/RedisLeaderFollowReplication.md), MongoDB, DynamoDB etc. |
-| Message Brokers          | [Kafka Cluster](../../2_MessageBrokersEDA/Kafka/Readme.md), RabbitMQ                                                                                                                                                                                 |
-
-# Leader Election Process
-- In case of failed leader, new leader would be chosen through an election process (where the leader is chosen by a majority of the remaining replicas), or by a previously [elected controller node](https://github.com/Anshul619/DevOps-SRE/tree/main/5_ClusterCoordination/ControllerNode.md).
-- Technologies like [Zookeeper](https://github.com/Anshul619/DevOps-SRE/tree/main/5_ClusterCoordination/ApacheZookeeper.md) service is helpful for coordinating the election process.
+| Message Brokers          | [Kafka Cluster](../../2_MessageBrokersEDA/Kafka/Readme.md), RabbitMQ                                                                                                                                                                                                            |
