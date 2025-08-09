@@ -77,7 +77,7 @@ This repo contains the various system design components info, questions and solu
                   <img src="https://intellipaat.com/blog/wp-content/uploads/2022/08/image-75.png" width="150">
                 </a>
                 <a href="https://github.com/Anshul619/AWS-Services/tree/main/4_MessageBrokers/AmazonSQS/Readme.md" target="_blank"><img src="https://i0.wp.com/blog.knoldus.com/wp-content/uploads/2021/09/sqs.png?w=711&ssl=1" width="150"></a>
-                <a href="https://github.com/Anshul619/AWS-Services/tree/main/4_MessageBrokers/AmazonEventBridge.md" target="_blank"><img src="https://user-images.githubusercontent.com/3268013/149550617-d92fa8ff-f95d-499c-8515-0ed0be976fbf.png" width="150"></a>
+                <a href="https://github.com/Anshul619/AWS-Services/tree/main/4_MessageBrokers/AmazonEventBridge" target="_blank"><img src="https://user-images.githubusercontent.com/3268013/149550617-d92fa8ff-f95d-499c-8515-0ed0be976fbf.png" width="150"></a>
                 <a href="https://github.com/Anshul619/AWS-Services/tree/main/4_MessageBrokers/AmazonSNS.md" target="_blank"><img src="https://miro.medium.com/max/720/0*QjKNs9dEShlQ39VI.png" width="150"></a>
                 <a href="2_MessageBrokersEDA/RabbitMQ.md" target="_blank"><img src="https://www.logo.wine/a/logo/RabbitMQ/RabbitMQ-Logo.wine.svg" width="150"></a>
                 <a href="2_MessageBrokersEDA/ActiveMQ.md" target="_blank">ActiveMQ</a>

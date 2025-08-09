@@ -5,6 +5,6 @@
 - MTBF - mean time between failures
 - MTTR - mean time to repair
 
-  ![img.png](assets/mtbf_mttr.png)
+![img.png](assets/mtbf_mttr.png)
 
 (We strive for a higher MTBF value and a lower MTTR value.)

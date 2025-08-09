@@ -1,5 +1,5 @@
 # Exponential Backoff
-- Retries failed operations, but waits progressively longer between each attempt.
+- Client retries failed operations, but waits progressively longer between each attempt (to server api).
 
 # Characteristics
 - Delay increases exponentially (e.g., 1s, 2s, 4s, 8s...).
@@ -21,3 +21,8 @@ var operation = retry.operation({
   randomize: true, // Randomizes the timeouts by multiplying with a factor between 1 to 2. Default is true.
 });
 ````
+
+## Exponential Backoff And Jitter @ AWS
+- Most AWS SDKs now support exponential backoff and jitter as part of their retry behavior when using standard or adaptive modes. 
+- Consequently, this pattern can be leveraged without having to incorporate personal logic around AWS SDK requests made to AWS services.
+- [Read more](https://aws.amazon.com/blogs/architecture/exponential-backoff-and-jitter/)

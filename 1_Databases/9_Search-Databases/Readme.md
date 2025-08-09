@@ -11,12 +11,12 @@
 
 # Various Search-DBs
 
-| Service                                                                |
-|------------------------------------------------------------------------|
-| [Elastic Search](ElasticSearch/Readme.md)                              |
-| [Open Search](OpenSearch/Readme.md)                                           |
-| [Apache Solr](ApacheSolr.md)                                           |
-| [MongoDB Atlas Search](MongoAtlasSearch.md)                            |
+| Service                                                                                                           |
+|-------------------------------------------------------------------------------------------------------------------|
+| [Elastic Search](ElasticSearch/Readme.md)                                                                         |
+| [Open Search](OpenSearch/Readme.md)                                                                               |
+| [Apache Solr](ApacheSolr.md)                                                                                      |
+| [MongoDB Atlas Search](MongoAtlasSearch.md)                                                                       |
 | [New Relic - Logs Analysis](https://github.com/Anshul619/DevOps-SRE/tree/main/3_Observability/NewRelic/Readme.md) |
 
 # Reference
