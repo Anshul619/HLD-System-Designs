@@ -4,12 +4,12 @@ This repo contains the various system design components info, questions and solu
 - [All Comparisons](All-Comparisons.md)
 - [HLD Design Problems](0_UseCaseDesigns)
 - [Real-world tech stacks](https://github.com/Anshul619/Tech-Stacks-Live-Apps)
-- [Scalability](4_Scalability)
-- [Debugging playbook](DebuggingPlaybook.md)
 - [Database Design tips](1_Databases/Readme.md)
 - [System Design Tips](SystemDesignTips.md)
 - [System Estimation & Benchmarking](6_Estimations&Benchmarking)
 - [Architecture Patterns](7_ArchitecturePatterns/Readme.md)
+- [Scalability](4_Scalability/Readme.md)
+- [API Performance & Scalability Optimization Playbook](https://github.com/Anshul619/Performance-Optimization-Playbook/tree/main)
 
 # System Design - Tech Stack
 
@@ -244,10 +244,10 @@ This repo contains the various system design components info, questions and solu
 </table>
 
 # Programming & OOP Design & Problems (LLD)
-- :star: [OOP Design](https://github.com/Anshul619/OOPs-Design-Patterns-LLD/blob/main/OOP.md)
-- :star: [SOLID Principles](https://github.com/Anshul619/OOPs-Design-Patterns-LLD/blob/main/SOLID.md)
-- :star: [Design Tips & Techniques](https://github.com/Anshul619/OOPs-Design-Patterns-LLD/blob/main/TipsAndTechniques.md)
-- :star: [Design Patterns](https://github.com/Anshul619/OOPs-Design-Patterns-LLD/blob/main/DesignPatterns)
+- :star: [OOP Design](https://github.com/Anshul619/LLD-OOPs-Design-Patterns/blob/main/OOPs.md)
+- :star: [SOLID Principles](https://github.com/Anshul619/LLD-OOPs-Design-Patterns/blob/main/SOLID.md)
+- :star: [Design Tips & Techniques](https://github.com/Anshul619/LLD-OOPs-Design-Patterns/blob/main/TipsAndTechniques.md)
+- :star: [Design Patterns](https://github.com/Anshul619/LLD-OOPs-Design-Patterns/blob/main/DesignPatterns)
   
 # Programming Languages
 - :star: [GoLang](https://github.com/Anshul619/golang)
@@ -261,7 +261,7 @@ This repo contains the various system design components info, questions and solu
 # API Documentation, QA
 - :star: [Swagger](https://github.com/Anshul619/API-Documentation/tree/main)
 - [Open API Spec](https://github.com/Anshul619/API-Documentation/tree/main/OpenAPISpec.md)
-- [QA/Testing](https://github.com/Anshul619/Testing-QA/tree/main)
+- [Testing/QA](https://github.com/Anshul619/Testing-QA/tree/main)
 
 # Source(s) and further reading
 - [System Design Primer](https://github.com/donnemartin/system-design-primer)
