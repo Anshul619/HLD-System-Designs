@@ -1,29 +1,34 @@
-# HLD System Design Checklist
+# HLD System Design Tips
+
+# Introduction
+- This document serves as a comprehensive guide for designing, building, and operating scalable, performant, and resilient systems. It consolidates best practices across the entire software lifecycle — from requirements gathering to deployment — ensuring that teams can make informed architectural decisions while balancing trade-offs between cost, complexity, and performance.
+- By following these recommendations, teams can create systems that not only meet current needs but also adapt gracefully to future requirements, ensuring long-term maintainability, reliability, and value.
+
+# Tips
 
 | Phase / Category                 | Tip                                                   | Remarks / Examples                                                                                                                 |
-| -------------------------------- | ----------------------------------------------------- |------------------------------------------------------------------------------------------------------------------------------------|
+| -------------------------------- |-------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------|
 | **Requirements Gathering**       | Understand functional & non-functional requirements   | Identify throughput, latency, availability, durability, compliance needs, and access patterns early.                               |
 |                                  | Define use cases and constraints                      | Include scale, cost, technology constraints, and regulatory requirements.                                                          |
 |                                  | Assume requirements will change                       | Design for flexibility — parameterize configs, use modular components.                                                             |
 |                                  | Accept tradeoffs                                      | There’s no perfect system — balance cost, complexity, performance, and maintainability.                                            |
 | **Performance Goals**            | Target high throughput with acceptable latency        | [Maximal throughput](4_Scalability/Throughput.md) and [acceptable latency](4_Scalability/Latency.md) — set quantifiable SLAs/SLOs. |
-|                                  | Avoid over-engineering                                | Build only what’s necessary to meet requirements<br/>- Add complexity only when justified.                                         |
+|                                  | Avoid over-engineering                                | - Build only what’s necessary to meet requirements<br/>- Add complexity only when justified.                                       |
 | **Scalability**                  | Design for horizontal scaling                         | Prefer stateless services, distributed data stores, partitioning/sharding.                                                         |
 |                                  | Use load balancing & autoscaling                      | Distribute traffic evenly and adapt to spikes.                                                                                     |
 |                                  | Use CDNs for global traffic                           | Reduce latency and offload origin servers.                                                                                         |
 |                                  | Consider microservices with event-driven architecture | Use message queues or Kafka for decoupling, scalability, and flexibility.                                                          |
 | **Fault Tolerance & Resilience** | Assume everything can fail                            | Design retries, failover, and graceful degradation.                                                                                |
 |                                  | Implement redundancy & replication                    | Avoid single points of failure for services and data.                                                                              |
-|                                  | Use heartbeat mechanisms                              | Detect node/service failures quickly.                                                                                              |
 |                                  | Apply resiliency patterns                             | Circuit breaker, bulkhead, backpressure.                                                                                           |
 | **Data Management**              | Choose DB based on query patterns                     | Use SQL for ACID and structured data<br/>- NoSQL for unstructured/denormalized data.<br/>- [Read more](1_Databases/Readme.md)      |
-|                                  | Optimize for workload type                            | For write-heavy → Kafka ingestion + NoSQL storage. <br/>- For read-heavy → denormalization.                                        |
+|                                  | Optimize for workload type                            | - For write-heavy → Kafka ingestion + NoSQL storage. <br/>- For read-heavy → denormalization.                                      |
 |                                  | Implement partitioning & sharding                     | Scale horizontally for large datasets.                                                                                             |
-|                                  | Plan for backup, restore, and retention               | Define RPO/RTO<br/>- Archive old data<br/>- Comply with regulations.                                                               |
+|                                  | Plan for backup, restore, and retention               | - Define RPO/RTO<br/>- Archive old data<br/>- Comply with regulations.                                                             |
 | **Caching & Optimization**       | Apply caching patterns appropriately                  | Write-through for write-heavy<br/>- Read-through for read-heavy workloads.                                                         |
 |                                  | Use search engines or indexing                        | Improve query performance for large datasets.                                                                                      |
 |                                  | Apply rate limiting                                   | Prevent overload and DoS attacks.                                                                                                  |
-| **API & Communication**          | Design APIs for performance                           | Support pagination, compression, and filtering.                                                                                    |
+| **API & Communication**          | Design APIs (REST) for performance                    | Support pagination, compression, and filtering.                                                                                    |
 |                                  | Plan API versioning & backward compatibility          | Avoid breaking changes for clients.                                                                                                |
 |                                  | Use real-time communication when needed               | WebSockets, SSE, or gRPC streaming for low-latency updates.                                                                        |
 | **Security & Compliance**        | Secure data in transit and at rest                    | Use TLS, encryption, and key rotation policies.                                                                                    |
@@ -36,7 +41,6 @@
 |                                  | Implement CI/CD pipelines                             | Automate build, test, and deploy; enforce quality gates.                                                                           |
 |                                  | Make operations idempotent                            | Enable safe retries without side effects.                                                                                          |
 | **Data Analytics**               | Include data lake or warehouse if analytics is needed | Store historical data for reporting, ML, or BI use cases.                                                                          |
-
 
 # Reference
 - [LinkedIn Post](https://www.linkedin.com/feed/update/urn:li:activity:7173546625691234305?updateEntityUrn=urn%3Ali%3Afs_updateV2%3A%28urn%3Ali%3Aactivity%3A7173546625691234305%2CFEED_DETAIL%2CEMPTY%2CDEFAULT%2Cfalse%29)
