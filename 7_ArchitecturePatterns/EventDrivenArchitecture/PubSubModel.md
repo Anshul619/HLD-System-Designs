@@ -8,11 +8,11 @@
 
 | Service                                                                                    |
 |--------------------------------------------------------------------------------------------|
-| [Kafka](../Kafka/Readme.md)                                                                |
+| [Kafka](../../2_MessageBrokersEDA/Kafka/Readme.md)                                                                |
 | [Amazon Kinesis Data Streams](https://github.com/Anshul619/AWS-Services/tree/main/4_MessageBrokers/AmazonKinesis/Readme.md) |
 | [Amazon EventBridge](https://github.com/Anshul619/AWS-Services/tree/main/4_MessageBrokers/AmazonEventBridge)             |
 | [Amazon SNS](https://github.com/Anshul619/AWS-Services/tree/main/4_MessageBrokers/AmazonSNS.md)                             |
-| [Active MQ](../ActiveMQ.md)                                                                |
+| [Active MQ](../../2_MessageBrokersEDA/ActiveMQ.md)                                                                |
 
 # References
 - [Pub/sub pattern](https://docs.aws.amazon.com/prescriptive-guidance/latest/modernization-integrating-microservices/pub-sub.html)

@@ -3,8 +3,8 @@
 
 # Various Technologies
 
-| Tech                                                                                           |
-|------------------------------------------------------------------------------------------------|
+| Tech                                                                                                                                      |
+|-------------------------------------------------------------------------------------------------------------------------------------------|
 | [AWS App Mesh](https://github.com/Anshul619/AWS-Services/tree/main/16_NetworkingAndContentDelivery/2_ApplicationNetworking/AWSAppMesh.md) |
 
 # Why service mesh? 

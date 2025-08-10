@@ -9,7 +9,7 @@
 | Type                          | Service                                                                       | Remarks                                                                                                         |
 |-------------------------------|-------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------|
 | Fire-And-Forgot               | [Amazon SQS](https://github.com/Anshul619/AWS-Services/tree/main/4_MessageBrokers/AmazonSQS/Readme.md) | After pushing the message to the queue, producer doesn't wait for the response from the message queue.          |
-| Request-Reply messaging model | [RabbitMQ](../RabbitMQ.md)                                                    | After pushing the message to the queue, producer waits for the reply from the consumer (through message queue). |
+| Request-Reply messaging model | [RabbitMQ](../../2_MessageBrokersEDA/RabbitMQ.md)                                                    | After pushing the message to the queue, producer waits for the reply from the consumer (through message queue). |
 
 # References
 - [Implementing enterprise integration patterns with AWS messaging services: point-to-point channels](https://aws.amazon.com/blogs/compute/implementing-enterprise-integration-patterns-with-aws-messaging-services-point-to-point-channels/)

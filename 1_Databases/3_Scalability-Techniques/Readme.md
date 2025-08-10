@@ -1,6 +1,3 @@
-# DB Scalability Techniques
-- [Read here about DB scalability techniques](../../4_Scalability/Readme.md)
-
 # Amazon RDS Cluster
 
 ![](https://github.com/Anshul619/AWS-Services/tree/main/1_Databases/AmazonRDS/assets/Multi-AZ/RDS-Multi-AZ-Replica.drawio.png)
@@ -16,6 +13,3 @@
 # Redis Cluster
 
 ![](https://github.com/Anshul619/AWS-Services/tree/main/1_Databases/AmazonElasticCache/assets/ElasticCache-Multi-AZ.drawio.png)
-
-# References
-- [Scalability and High Availability](https://dzone.com/refcardz/scalability)

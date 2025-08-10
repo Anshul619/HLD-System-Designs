@@ -1,5 +1,5 @@
 # Read Replica vs Cache
-- Read replica or [in-memory cache](../8_Caching-InMemory-Databases) increases read scalability, but it often creates some irritation due to data inconsistency or [replication lag](../4_Consistency-Replication/ReplicationLag.md).  
+- Read replica or [in-memory cache](../8_Caching-InMemory-Databases) increases read scalability, but it often creates some irritation due to data inconsistency or [replication lag](../4_Consistency-Replication/Replication/ReplicationLag.md).  
 
 |                        | Read Replica                 | In-Memory Cache   |
 |------------------------|------------------------------|-------------------|

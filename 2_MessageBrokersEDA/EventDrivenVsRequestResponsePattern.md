@@ -1,6 +1,6 @@
 # EventDriven vs Request-Response Microservices Communication Pattern
 
-|                | [Event-Driven](EventDrivenArchitecture/Readme.md) | Request-Response Pattern |
+|                | [Event-Driven](../7_ArchitecturePatterns/EventDrivenArchitecture/Readme.md) | Request-Response Pattern |
 |----------------|---------------------------------------------------|--------------------------|
 | Sync vs Async? | Asynchronous                                      | Synchronous              |
 | Behavior       | Immutable Fact                                    | Intent                   |
