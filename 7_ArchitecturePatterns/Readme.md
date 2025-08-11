@@ -6,10 +6,10 @@
 | :star: [MicroService Patterns](../3_MicroServices/DesignPatterns.md)                                                              | [MicroServices](../3_MicroServices/Readme.md)     |
 | :star: [Event-Driven Architecture](EventDrivenArchitecture/Readme.md)                                                             | [Message Broker Services](../2_MessageBrokersEDA) |
 | [Sharding/Partitioning](../1_Databases/3_Scalability-Techniques/PartitioningSharding/Readme.md)                                   | [Database Services](../1_Databases/)              |
-| [Shared nothing architecture](SharedNothingArchitecture.md)                                                                       | [MicroServices](../3_MicroServices/Readme.md)     |
+| [Shared nothing architecture](Microservices/SharedNothingArchitecture.md)                                                                       | [MicroServices](../3_MicroServices/Readme.md)     |
 | [Circuit Breaker Pattern](Resilience/CircuitBreaker.md)                                                                          | [MicroServices](../3_MicroServices/Readme.md)     |
-| [Command Query Responsibility Segregation (CQRS)](CQRS.md)                                                                        | [MicroServices](../3_MicroServices/Readme.md)     |
-| [Event Sourcing Pattern](EventSourcing.md)                                                                                        | [MicroServices](../3_MicroServices/Readme.md)     |
+| [Command Query Responsibility Segregation (CQRS)](Microservices/CQRS.md)                                                                        | [MicroServices](../3_MicroServices/Readme.md)     |
+| [Event Sourcing Pattern](Microservices/EventSourcing.md)                                                                                        | [MicroServices](../3_MicroServices/Readme.md)     |
 | [Pub-Sub model](EventDrivenArchitecture/PubSubModel.md)                                                                           | [Message Broker Services](../2_MessageBrokersEDA) |
 | [Point-2-Point model](EventDrivenArchitecture/PointToPointModel.md)                                                               | [Message Broker Services](../2_MessageBrokersEDA) |
 | [Fan-out pattern - Amazon SNS](https://github.com/Anshul619/AWS-Services/tree/main/4_MessageBrokers/AmazonSNS.md)                 | [Message Broker Services](../2_MessageBrokersEDA) |
