@@ -1,14 +1,14 @@
 # Caching
-- Caches take advantage of the locality of reference principle: recently requested data is likely to be requested again.
+- Caches take advantage of the locality of reference principle: **recently requested data is likely to be requested again**.
 - They are used in almost every computing layer: hardware, operating systems, web browsers, web applications, and more.
 - A cache is like a short-term memory: it has a limited amount of space, but is typically faster than the original data source and contains the most recently accessed items.
 
 # Caching strategies
 
-| Strategy                                                                                                 | Ideal Use Case  | Limitation                | Tag         | Description                                                                               |
-|----------------------------------------------------------------------------------------------------------|-----------------|---------------------------|-------------|-------------------------------------------------------------------------------------------|
-| [Read-through/Lazy loading](https://docs.aws.amazon.com/AmazonElastiCache/latest/mem-ug/Strategies.html) | Write-heavy app | Few cache misses on reads | Mostly-used | Its a caching strategy that loads data into the cache only when necessary (i.e. on read). |
-| [Write-through](https://docs.aws.amazon.com/AmazonElastiCache/latest/mem-ug/Strategies.html)             | Read-heavy app  | Increases write latency   |             | It adds or updates data in the cache whenever data is written to the database.            |
+| Strategy                                                                                                 | Tag         | Ideal Use Case  | Limitation                | Description                                                                               |
+|----------------------------------------------------------------------------------------------------------|-------------|-----------------|---------------------------|-------------------------------------------------------------------------------------------|
+| [Read-through/Lazy loading](https://docs.aws.amazon.com/AmazonElastiCache/latest/mem-ug/Strategies.html) | Mostly-used | Write-heavy app | Few cache misses on reads | Its a caching strategy that loads data into the cache only when necessary (i.e. on read). |
+| [Write-through](https://docs.aws.amazon.com/AmazonElastiCache/latest/mem-ug/Strategies.html)             |             | Read-heavy app  | Increased write latency   | It adds or updates data in the cache whenever data is written to the database.            |
 
 # Challenges
 

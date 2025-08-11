@@ -6,12 +6,12 @@
 
 # Key Parameters
 
-| Title                 | Remarks                                                                                                                                                        |
-|-----------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| :star: Query Patterns | How complex are your query patterns? <br/>- Do you just need retrieval by key, or also by various other parameters? Do you also need fuzzy search on the data? |
-| Consistency           | Is strong consistency required (read after write, especially when you switch writes to a different data-center) or eventual consistency is OK?                 |
-| Storage Capacity      | How much storage capacity is needed?                                                                                                                           |
-| Performance           | What is the needed throughput and latency?                                                                                                                     |
+| Title                 | Remarks                                                                                                                                                              |
+|-----------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| :star: Query Patterns | How complex are your query patterns? <br/>- Do you just need retrieval by key, or also by various other parameters?<br/>- Do you also need fuzzy search on the data? |
+| Consistency           | Is Strong Consistency required?<br/>- Read after write, especially when you switch writes to a different data-center <br/>Or Eventual Consistency is OK?             |
+| Performance           | What is the needed throughput and latency?                                                                                                                           |
+| Storage Capacity      | How much storage capacity is needed?                                                                                                                                 |
 
 [Read more](https://medium.com/wix-engineering/how-to-choose-the-right-database-for-your-service-97b1670c5632)
 

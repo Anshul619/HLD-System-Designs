@@ -16,7 +16,7 @@ It involves the following two operations.
 
 # Examples Use Cases
 
-| Use Case                                                    |
-|-------------------------------------------------------------|
+| Use Case                                                                  |
+|---------------------------------------------------------------------------|
 | [Redis Transaction Lock](../8_Caching-InMemory-Databases/Redis/Readme.md) |
 

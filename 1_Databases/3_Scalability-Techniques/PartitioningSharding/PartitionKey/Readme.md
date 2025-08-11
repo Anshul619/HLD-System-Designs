@@ -1,9 +1,3 @@
-# Partitioning Key Tips
-
-![](https://d2908q01vomqb2.cloudfront.net/887309d048beef83ad3eabf2a79a64a389ab1c9f/2018/09/10/dynamodb-partition-key-1.gif)
-
-[Read more](https://aws.amazon.com/blogs/database/choosing-the-right-dynamodb-partition-key/)
-
 # Recommendations for partition keys
 
 | Recommendation                                     | Remarks                                                                                                                                                                                                                              |
@@ -26,4 +20,10 @@
 | Table Name | Type                  | Partition key                    | Sort Key   |
 |------------|-----------------------|----------------------------------|------------|
 | orders     | Composite Primary Key | customerid#productid#countrycode | order_date |
+
+# Partitioning Key Tips - DynamoDB
+
+![](https://d2908q01vomqb2.cloudfront.net/887309d048beef83ad3eabf2a79a64a389ab1c9f/2018/09/10/dynamodb-partition-key-1.gif)
+
+[Read more](https://aws.amazon.com/blogs/database/choosing-the-right-dynamodb-partition-key/)
 

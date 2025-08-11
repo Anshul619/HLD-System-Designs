@@ -9,25 +9,22 @@
 
 | Terminology         | Description                                                                                                                                                                                                                    |
 |---------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Partition Key       | Partitioning would be done based on a partition key. <br/>- Hence we need to carefully [choose this key to distribute the data evenly b/w partitions](PartitionKey/Readme.md).                                                 |
+| Partition Key       | Partitioning would be done based on a partition key. <br/>- Hence we need to carefully [choose this key](PartitionKey/Readme.md) to distribute the data evenly b/w partitions.                                                 |
 | Hash Function       | Hash function helps to determine the partition for a given key.<br/>- MD5 as a hash function used in [Casandra](../../11_WideColumn-Databases/ApacheCasandra.md), [MongoDB](../../10_Document-Databases/MongoAtlas/Readme.md). |
-| Secondary Indexes   | [Read more](../../5_Database-Internals/Indexing.md)                                                                                                                                                                             |
+| Secondary Indexes   | [Read more](../../5_Database-Internals/Indexing.md)                                                                                                                                                                            |
 | Consistent Hashing  | This handles data sharding with dynamic number of servers.                                                                                                                                                                     |
 | Unique-ID-Generator | Since NoSQL dbs don't generate primary key automatically, we would have generate unique ID on the application side.                                                                                                            |
 
 # Common Problems of Data Partitioning
 
-|                           | Description                                                                                                                                                                                                                                                                                            |
-|---------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Joins and Denormalization | A common workaround for this problem is to denormalize the database so that queries that previously required joins can be performed from a single table. Of course, the service now has to deal with denormalization’s perils, such as data inconsistency.                                             |
-| Referential integrity     | This means, applications that require referential integrity on partitioned databases often have to enforce it in application code. Often in such cases, applications have to run regular SQL jobs to clean up dangling references.                                                                     |
-| Rebalancing               | Doing this without incurring downtime is extremely difficult. Using a scheme like directory-based Partitioning does make rebalancing a more palatable experience at the cost of increasing the complexity of the system and creating a new single point of failure (i.e. the lookup service/database). |
+|                           | Description                                                                                                                                                                                                                                                                                             |
+|---------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Joins and Denormalization | A common workaround for this problem is to denormalize the database so that queries that previously required joins can be performed from a single table. <br/>- Of course, the service now has to deal with denormalization’s perils, such as data inconsistency.                                       |
+| Referential integrity     | This means, applications that require referential integrity on partitioned databases often have to enforce it in application code. <br/>- Often in such cases, applications have to run regular SQL jobs to clean up dangling references.                                                               |
+| Rebalancing               | Doing this without incurring downtime is extremely difficult. Using a scheme like directory-based Partitioning does make re-balancing a more palatable experience at the cost of increasing the complexity of the system and creating a new single point of failure (i.e. the lookup service/database). |
 
-# Kafka Cluster
-
-![](../../../2_MessageBrokersEDA/Kafka/assets/Kafka-Architecture.drawio.png)
-
-# Other Clusters & Examples
+# Clusters & Examples
+- [Kafka Cluster](../../../2_MessageBrokersEDA/Kafka/assets/Kafka-Architecture.drawio.png)
 - [Amazon DynamoDB Cluster](https://github.com/Anshul619/AWS-Services/tree/main/1_Databases/AmazonDynamoDB/Partioning.md)
 - [ElasticSearch Cluster](../../9_Search-Databases/ElasticSearch/Sharding.md)
 - [Redis Cluster](https://github.com/Anshul619/AWS-Services/tree/main/1_Databases/AmazonElasticCache/ClusterMode.md)
