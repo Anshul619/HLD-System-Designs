@@ -5,12 +5,12 @@
 
 # List of time series databases
 
-| Time series DB                                                                  | SQL Supported | Remarks                                                                                                                                                 |
-|---------------------------------------------------------------------------------|---------------|---------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Time series DB                                                                                          | SQL Supported | Remarks                                                                                                                                                 |
+|---------------------------------------------------------------------------------------------------------|---------------|---------------------------------------------------------------------------------------------------------------------------------------------------------|
+| :star: [TimescaleDB extention](Timescale.md)                                                            | Yes           | Timescale extends PostgreSQL and supports SQL Queries along with additional SQL functions.                                                              |
+| [InfluxDB](InfluxDB.md)                                                                                 | Yes           | InfluxDB provides an SQL-like language with built-in time-centric functions for querying a data structure composed of measurements, series, and points. |
 | [Amazon Timestream](https://github.com/Anshul619/AWS-Services/tree/main/1_Databases/AmazonTimestream.md) | Yes           |                                                                                                                                                         |
-| [InfluxDB](InfluxDB.md)                                                         | Yes           | InfluxDB provides an SQL-like language with built-in time-centric functions for querying a data structure composed of measurements, series, and points. |
-| [Timescale](Timescale.md)                                                       | Yes           | Timescale extends PostgreSQL and supports SQL Queries along with additional SQL functions.                                                              |
-| [ElasticSearch (ELK Stack)](https://github.com/Anshul619/DevOps-SRE/tree/main/3_Observability/ELK.md)          | No            |                                                                                                                                                         |
+| [ElasticSearch (ELK Stack)](https://github.com/Anshul619/DevOps-SRE/tree/main/3_Observability/ELK.md)   | No            |                                                                                                                                                         |
 
 # Use Cases
 
