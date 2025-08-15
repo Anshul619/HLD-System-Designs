@@ -16,10 +16,10 @@
 | Feature             | Remarks                                                                                                                                                                                                                                                 |
 |---------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Near-time search    | Elasticsearch has near real-time search - document changes are not visible to search immediately, but will become visible within this timeframe. [Read more](https://www.elastic.co/guide/en/elasticsearch/reference/current/near-real-time.html)       |
-| REST API interface  | We can interact with ElasticSearch through [REST APIs](../Features/RESTAPIs.md).                                                                                                                                                                        |
+| REST API interface  | We can interact with ElasticSearch through [REST APIs](../Concepts/RESTAPIs.md).                                                                                                                                                                        |
 | Default Config      | An Elasticsearch index has **5 shards** and **1 replica** by default.                                                                                                                                                                                   |
-| Mapping (Optional)  | [Mapping](../Features/Mapping.md) is the process of defining how a document, and the fields it contains, are stored and indexed.                                                                                                                        |
-| Sample Search Query | [Read more](../Samples/SampleSearchQuery.md)                                                                                                                                                                                                               |
+| Mapping (Optional)  | [Mapping](../Concepts/Mapping.md) is the process of defining how a document, and the fields it contains, are stored and indexed.                                                                                                                        |
+| Sample Search Query | [Read more](../Samples/SearchQuery.md)                                                                                                                                                                                                               |
 | Ingest Node         | Ingest node is used for pre-process documents before the actual document indexing happens. <br/>- It helps to intercepts bulk and index requests.                                                                                                       |
 | Data Storage        | Settings, index mapping, alternative cluster states, and other metadata are saved to Elasticsearch files outside the [Lucene](../Readme.md) environment. This is to prevent excessive disk I/O.                                                         |
 | Elastic Stack       | For data analysis, it operates alongside **Kibana**, and **Logstash** to form the [ELK stack](https://github.com/Anshul619/DevOps-SRE/tree/main/3_Observability/ELK.md).<br/>- [ElasticSearch data streaming](../../15_Streaming-Databases/ElasticSearchStreams.md) is used for the logs.               |
@@ -33,7 +33,7 @@
 |---------------------------------------------------------------------------------------|
 | Textual                                                                               |
 | Numerical                                                                             |
-| [GeoSpatial (geo-point, geo-shape data types etc.)](../Features/GeoSpatialSupport.md) |
+| [GeoSpatial (geo-point, geo-shape data types etc.)](../Concepts/GeoSpatialSupport.md) |
 | Unstructured etc.                                                                     |
 
 # ElasticSearch Cluster

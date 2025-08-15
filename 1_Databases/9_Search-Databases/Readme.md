@@ -7,7 +7,8 @@
 | General use-cases            | [Read more](SearchUseCases.md)                                                                                                                                                                           |
 | Tokenizer                    | [Read more](Internals/Tokenizers.md)                                                                                                                                                                     |
 | Inverted Index               | [Read more](Internals/InvertedIndex.md)                                                                                                                                                                  |
-| Indices containing documents | Indices is like tables, documents like rows in Search-DBs.                                                                                                                                               |
+| Indices containing documents | Indices are like tables, documents like rows in Search-DBs.                                                                                                                                              |
+| Implementation               | Most important part of search db usage is query and [scaling (with sharding)](PerformanceTuning.md).                                                                                                                             |
 
 # Various Search-DBs
 
@@ -17,7 +18,6 @@
 | [Open Search](OpenSearch/Readme.md)                                                                               |
 | [Apache Solr](ApacheSolr.md)                                                                                      |
 | [MongoDB Atlas Search](MongoAtlasSearch.md)                                                                       |
-| [New Relic - Logs Analysis](https://github.com/Anshul619/DevOps-SRE/tree/main/3_Observability/NewRelic/Readme.md) |
 
 # Reference
 - [How does elasticsearch store data?](https://stackoverflow.com/questions/57328151/how-does-elasticsearch-store-data)

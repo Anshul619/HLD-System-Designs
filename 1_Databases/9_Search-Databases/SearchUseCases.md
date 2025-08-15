@@ -1,8 +1,8 @@
 # :star: General use cases of Search-DBs
 
-| Use Case                                                                                                                                      | Remarks                                                                          |
-|-----------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------|
-| [Application Search - Full-text, Partial, Fuzzy etc.](https://www.elastic.co/guide/en/elasticsearch/reference/current/full-text-queries.html) | Application search                                                               |
-| [Logs analysis](https://github.com/Anshul619/DevOps-SRE/tree/main/3_Observability/ELK.md)                                                                                                | Since data is indexed, hence logs analysis is fast in Search DBs.                |
-| [Data Observability - Dashboard, Metrics, Tracing etc.](https://github.com/Anshul619/DevOps-SRE/tree/main/3_Observability/ELK.md)                                                        | Since data aggregation is fast, hence data visualization is quick in Search DBs. |
-| Security, SIEM with [ELK](https://github.com/Anshul619/DevOps-SRE/tree/main/3_Observability/ELK.md)                                                                                      |                                                                                  |
+| Use Case                                                                                                                                 | Remarks                                                                          |
+|------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------|
+| [Application Search - Full-text, Partial, Fuzzy](https://www.elastic.co/guide/en/elasticsearch/reference/current/full-text-queries.html) | Application search                                                               |
+| [Logs analysis](https://github.com/Anshul619/DevOps-SRE/tree/main/3_Observability/ELK.md)                                                | Since data is indexed, hence logs analysis is fast in Search DBs.                |
+| [Observability - Dashboard, Metrics, Tracing etc.](https://github.com/Anshul619/DevOps-SRE/tree/main/3_Observability/ELK.md)             | Since data aggregation is fast, hence data visualization is quick in Search DBs. |
+| Security, SIEM with [ELK](https://github.com/Anshul619/DevOps-SRE/tree/main/3_Observability/ELK.md)                                      |                                                                                  |
