@@ -11,7 +11,7 @@
 |---------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Partition Key       | Partitioning would be done based on a partition key. <br/>- Hence we need to carefully [choose this key](PartitionKey/Readme.md) to distribute the data evenly b/w partitions.                                                 |
 | Hash Function       | Hash function helps to determine the partition for a given key.<br/>- MD5 as a hash function used in [Casandra](../../11_WideColumn-Databases/ApacheCasandra.md), [MongoDB](../../10_Document-Databases/MongoAtlas/Readme.md). |
-| Secondary Indexes   | [Read more](../../5_Database-Internals/Indexing.md)                                                                                                                                                                            |
+| Secondary Indexes   | [Read more](../../5_Database-Internals/DataStructures/Index.md)                                                                                                                                                                            |
 | Consistent Hashing  | This handles data sharding with dynamic number of servers.                                                                                                                                                                     |
 | Unique-ID-Generator | Since NoSQL dbs don't generate primary key automatically, we would have generate unique ID on the application side.                                                                                                            |
 

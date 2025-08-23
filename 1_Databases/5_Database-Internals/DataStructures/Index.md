@@ -13,17 +13,17 @@
 
 | Title                                          | Remarks                                                                                                               |
 |------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------|
-| Increased storage space                        | Placing an index would add [BTree data structure](BTree.md) in disk, hence increasing space.                                  |
+| Increased storage space                        | Placing an index would add [BTree data structure](BTree.md) in disk, hence increasing space.                          |
 | Slow Writes                                    | Writes could be slower since the index also needs to be updated. Hence, we should create only required indexes.       |
 | Drop indices before loading big-data           | When loading large amounts of data, it might be faster to disable indices, load the data, then rebuild the indices.   |
 | Incorrect compound indexes can be inconsistent | [Swiggy - BehindTheBug — Indexing Gone Wrong](https://bytes.swiggy.com/behindthebug-indexing-gone-wrong-6b4d682fd805) |
 
 # Data Structure Used
 
-| Data Structure                                        | Service                                                                                                                |
-|-------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------|
-| [B-Tree](BTree.md)                                    | [SQL-DBs like Postgres, MySQL etc.](../7_SQL-Databases/Readme.md)<br/>- [MongoDB](../10_Document-Databases/MongoAtlas/Readme.md) |
-| [MemTables and Bloom Filters in LMS-Tree](LSMTree.md) | [NoSQL-DBs like Casandra, HBase](../11_WideColumn-Databases)                                                           |
+| Data Structure                                        | Service                                                                                                                                |
+|-------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------|
+| [B-Tree](BTree.md)                                    | [SQL-DBs like Postgres, MySQL etc.](../../7_SQL-Databases/Readme.md)<br/>- [MongoDB](../../10_Document-Databases/MongoAtlas/Readme.md) |
+| [MemTables and Bloom Filters in LMS-Tree](LSMTree.md) | [NoSQL-DBs like Casandra, HBase](../../11_WideColumn-Databases)                                                                        |
 
 # Types of Indexes
 

@@ -1,6 +1,6 @@
 # Append-Only DB Property
 - [Append-Only](https://en.wikipedia.org/wiki/Append-only) is a property of computer data storage such that new data can be appended to the storage, but where [existing data is immutable](https://en.wikipedia.org/wiki/Immutable_object).
-- This makes [writes (i.e. throughput)](../../4_Scalability/Throughput.md) generally very fast.
+- This makes **writes (i.e. throughput)** generally very fast.
 - Many data structures and databases implement [immutable objects](https://en.wikipedia.org/wiki/Immutable_object), effectively making their data structures append-only. 
 
 # Benefits
@@ -10,15 +10,15 @@
 
 # Supported Databases
 
-| DB                                                                                                                           |
-|------------------------------------------------------------------------------------------------------------------------------|
-| :star: [LSM-Tree based NoSQL DBs like Casandra, RocksDB etc.](LSMTree.md)                                                    |
-| :star: [Kafka](../../2_MessageBrokersEDA/Kafka/Readme.md)                                                                    |
-| :star: [Amazon S3](https://github.com/Anshul619/AWS-Services/tree/main/6_FileStorages/3_S3ObjectStorage/Readme.md)                                                |
-| [Apache Lucene](../9_Search-Databases/Readme.md)                                                                             |
-| [ElasticSearch Data Stream](../15_Streaming-Databases/ElasticSearchStreams.md)                                               |
+| DB                                                                                                                                                            |
+|---------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| :star: [LSM-Tree based NoSQL DBs like Casandra, RocksDB etc.](DataStructures/LSMTree.md)                                                                                     |
+| :star: [Kafka](../../2_MessageBrokersEDA/Kafka/Readme.md)                                                                                                     |
+| :star: [Amazon S3](https://github.com/Anshul619/AWS-Services/tree/main/6_FileStorages/3_S3ObjectStorage/Readme.md)                                            |
+| [Apache Lucene](../9_Search-Databases/Readme.md)                                                                                                              |
+| [ElasticSearch Data Stream](../15_Streaming-Databases/ElasticSearchStreams.md)                                                                                |
 | [Amazon Kinesis](https://github.com/Anshul619/AWS-Services/tree/main/4_MessageBrokers/AmazonKinesis/Readme.md)                                                |
-| [Redis Streams](../15_Streaming-Databases/RedisStreams.md)                                                                   |
+| [Redis Streams](../15_Streaming-Databases/RedisStreams.md)                                                                                                    |
 | [Amazon Aurora Global Database - Replication](https://github.com/Anshul619/AWS-Services/tree/main/1_Databases/AmazonRDS/AmazonAurora/AuroraGlobalDatabase.md) |
 
 # References

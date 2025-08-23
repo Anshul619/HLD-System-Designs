@@ -7,7 +7,7 @@
 
 |                            | Data Structure | Target   | Remarks                                                                                                                                                                        |
 |----------------------------|----------------|----------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Append to Log-file in disk | Commit Log     | Disk     | It first sequentially writes the data [to log-file in disk in-append mode](AppendOnlyProperty.md).<br/>- Once written to disk, the data is immutable and is never overwritten. |
+| Append to Log-file in disk | Commit Log     | Disk     | It first sequentially writes the data [to log-file in disk in-append mode](../AppendOnlyProperty.md).<br/>- Once written to disk, the data is immutable and is never overwritten. |
 | Append data in Memtables   | Memtables      | InMemory | Data is also pushed in an in-memory sorted data structure known as MemTables.                                                                                                  |
 | Periodic flush to SSTables | SStables       | Disk     | Periodically, all the data is flushed from MemTables to on-disk storage known as [SSTables](https://www.scylladb.com/glossary/sstable/)).                                                                                     |
 | Indexing in SSTables       | Bloom filters  | InMemory | SSTables also maintain in-memory data structures known as Bloom filters which helps us to speed up the search while reading the data.                                          |
@@ -24,11 +24,11 @@
 
 | DB                                                             |
 |----------------------------------------------------------------|
-| [MongoDB](../10_Document-Databases/MongoAtlas/Readme.md)                 |
-| [Casandra](../11_WideColumn-Databases/ApacheCasandra.md)       |
-| [ElasticSearch](../9_Search-Databases/ElasticSearch/Readme.md) |
-| [RocksDB](../14_EmbededKeyValue-Databases/RocksDB.md)          |
-| [InfluxDB](../12_TimeSeries-Databases/InfluxDB.md)             |
+| [MongoDB](../../10_Document-Databases/MongoAtlas/Readme.md)       |
+| [Casandra](../../11_WideColumn-Databases/ApacheCasandra.md)       |
+| [ElasticSearch](../../9_Search-Databases/ElasticSearch/Readme.md) |
+| [RocksDB](../../14_EmbededKeyValue-Databases/RocksDB.md)          |
+| [InfluxDB](../../12_TimeSeries-Databases/InfluxDB.md)             |
 
 # Read more
 - [Understanding How Databases Store our Data: Introduction to LSM trees](https://javascript.plainenglish.io/understanding-how-databases-store-our-data-introduction-to-lsm-trees-ec1c46096570)
