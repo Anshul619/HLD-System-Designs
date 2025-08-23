@@ -5,4 +5,4 @@
 # Example
 - Find all documents, starting with `c`.
   
-![](../../5_Database-Internals/assets/inverted_indexes.png)
+![](../https://github.com/Anshul619/Database-Internals/blob/main/assets/inverted_indexes.png)

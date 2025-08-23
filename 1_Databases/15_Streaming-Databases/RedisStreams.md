@@ -1,2 +1,2 @@
 # Redis Streams
-- [Redis stream](https://redis.io/docs/data-types/streams/) is a data structure that acts like an [append-only log](../5_Database-Internals/AppendOnlyProperty.md) but also implements several operations to overcome some limits of a typical append-only log.
+- [Redis stream](https://redis.io/docs/data-types/streams/) is a data structure that acts like an [append-only log](https://github.com/Anshul619/Database-Internals/blob/main/AppendOnlyProperty.md) but also implements several operations to overcome some limits of a typical append-only log.

@@ -16,7 +16,7 @@
 | Data Ingestion - Real-time events, analytics etc.          | For example - If we want to build our own Google Analytics or Amplitude (to track app activities, events etc.), we can use Kafka as a broker.                                                                                              |
 | Distributed Logging - Logs Aggregation, Metrics            | Various systems in the IT infrastructure can push events/messages/logs in the Kafka. (example - [ELK stack](https://github.com/Anshul619/DevOps-SRE/tree/main/3_Observability/ELK.md))                                                                                   |
 | Stream Processing - Data Pipelines, Microservices etc.     | [Kafka Streams](https://github.com/Anshul619/Big-Data/tree/main/DataProcessing/KafkaStreams/Readme.md) can be helpful in stream processing the events (map/reduce, aggregation, counts etc.).                                              |
-| Data Pipelines - CDC of DBs                                | [Kafka connectors](https://github.com/Anshul619/Big-Data/tree/main/DataConnectors/KafkaConnect.md) can be helpful to migrate from one DB to another i.e. [handle CDC](../../1_Databases/5_Database-Internals/ChangeDataCapture/Readme.md). |
+| Data Pipelines - CDC of DBs                                | [Kafka connectors](https://github.com/Anshul619/Big-Data/tree/main/DataConnectors/KafkaConnect.md) can be helpful to migrate from one DB to another i.e. [handle CDC](https://github.com/Anshul619/Database-Internals/blob/main/ChangeDataCapture/Readme.md). |
 
 # :star: Real world use cases of Kafka
 
