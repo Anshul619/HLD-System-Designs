@@ -1,6 +1,6 @@
 
 # Static Content
-Following can be the static content, for [CDN](CDNs.md) which can be stored in [Amazon S3 bucket](https://github.com/Anshul619/AWS-Services/tree/main/6_FileStorages/3_S3ObjectStorage/Readme.md) and distributed using [Amazon Cloudfront](https://github.com/Anshul619/AWS-Services/tree/main/16_NetworkingAndContentDelivery/1_EdgeNetworking/AmazonCloudFront.md).
+Following can be the static content, for [CDN](Readme.md) which can be stored in [Amazon S3 bucket](https://github.com/Anshul619/AWS-Services/tree/main/6_FileStorages/3_S3ObjectStorage/Readme.md) and distributed using [Amazon Cloudfront](https://github.com/Anshul619/AWS-Services/tree/main/16_NetworkingAndContentDelivery/1_EdgeNetworking/AmazonCloudFront.md).
 - WebSite Code like HTML, CSS, JS etc.
 - Media like Image, Audio, Video, Songs etc.
 - Documents like PDFs, Docx etc.
