@@ -15,7 +15,7 @@
 | [ElasticSearch Cluster](../1_Databases/9_Search-Databases/ElasticSearch/Cluster.md)                                                      | Cluster of JSON Data, Indexes             |
 | [OpenSearch Cluster](https://github.com/Anshul619/AWS-Services/tree/main/1_Databases/AmazonOpenSearch/Readme.md)                         | Cluster of JSON Data, Indexes             |
 | [Casandra Cluster](../1_Databases/11_WideColumn-Databases/ApacheCasandra.md)                                                             | Cluster of wide-columns DBs               |
-| [Hadoop Cluster](https://github.com/Anshul619/Big-Data/tree/main/ApacheHadoop)                                                           | Cluster of different components           |
+| [Hadoop Cluster](https://github.com/Anshul619/data-engineering/tree/main/ApacheHadoop)                                                           | Cluster of different components           |
 
 # What is Cluster capacity?
 - In general, a cluster (for ex. [Kubernates cluster](https://github.com/Anshul619/DevOps-SRE/tree/main/2_ContainerOrchestration/Kubernates/Readme.md)) can be seen as abstracting a set of individual nodes as a big **super node**.

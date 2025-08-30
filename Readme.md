@@ -183,18 +183,18 @@ This repo contains the various system design components info, questions and solu
     </tr>
     <tr>
       <td>
-        <a href="https://github.com/Anshul619/Big-Data/Readme.md">Big Data Processing</a>
+        <a href="https://github.com/Anshul619/data-engineering/Readme.md">Big Data Processing</a>
       </td>
       <td>
         <div class="container" style="background:white">
             <div class="block two first">
-                <a href="https://github.com/Anshul619/Big-Data/tree/main/DataProcessing/ApacheMapReduce/Readme.md" target="_blank">
+                <a href="https://github.com/Anshul619/data-engineering/tree/main/DataProcessing/ApacheMapReduce/Readme.md" target="_blank">
                   <img src="https://www.clipartmax.com/png/middle/180-1806192_hadoop-apache-hadoop-logo.png" width="150">
                 </a>
-                <a href="https://github.com/Anshul619/Big-Data/tree/main/DataProcessing/ApacheSpark/Readme.md" target="_blank">
+                <a href="https://github.com/Anshul619/data-engineering/tree/main/DataProcessing/ApacheSpark/Readme.md" target="_blank">
                   <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Apache_Spark_logo.svg/1200px-Apache_Spark_logo.svg.png" width="150">
                 </a>
-                <a href="https://github.com/Anshul619/Big-Data/tree/main/DataProcessing/KafkaStreams/Readme.md" target="_blank">
+                <a href="https://github.com/Anshul619/data-engineering/tree/main/DataProcessing/KafkaStreams/Readme.md" target="_blank">
                   <img src="https://1.bp.blogspot.com/-LIHoqo96Dos/X7wKY2u124I/AAAAAAAAp88/SrC8E6Y-5l4Xil7UPrDRp-RuEx2GioXkQCLcBGAsYHQ/s435/kafka-streams.png" width="150">
                 </a>
                 <a href="https://github.com/Anshul619/AWS-Services/tree/main/10_BigData/DataConnectors/AmazonDataFirehouse/Readme.md" target="_blank">
